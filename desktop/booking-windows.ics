@@ -1,0 +1,269 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alaska Big Loop//Booking Windows//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Alaska Big Loop — Booking Windows
+X-WR-CALDESC:Reservation release dates and prep reminders for the Austin→Alaska Big Loop (2027).
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VEVENT
+UID:yellowstone-watch@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:👀 Watch: Yellowstone 2027 booking transition to Recreation.gov
+DESCRIPTION:WATCH ITEM — Yellowstone NP (Fishing Bridge RV Park)\, stay M
+ ay 6-11\, 2027.\n\nFishing Bridge RV Park and other concession campgrounds
+  are moving to Recreation.gov. The OLD window was ~6 months ahead\; the NE
+ W window under Recreation.gov is not yet confirmed.\n\nDO NOW:\n- Check Re
+ creation.gov + nps.gov/yell for official announcements on the 2027 transit
+ ion\n- Once the window is announced\, put the exact date/time on the calen
+ dar and replace this reminder\n\nFishing Bridge is hard-sided-RV-only (gri
+ zzly activity) — your 2005 Class A qualifies. It sells out almost immedi
+ ately in shoulder/peak season.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — 👀 Watch: Yellowstone 2027 booking trans
+ ition to Recreation.gov
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:yellowstone-likely@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:🟠 Likely window: Yellowstone (Fishing Bridge) booking ~6 months 
+ out
+DESCRIPTION:Yellowstone NP (Fishing Bridge RV Park)\, stay May 6-11\, 2027.
+ \n\nUnder the OLD ~6-month-ahead rule\, the window for a May 6\, 2027 arri
+ val would open around today (Nov 6\, 2026).\n\nThis date is INFERRED\, not
+  confirmed — the campground is mid-transition to Recreation.gov. Check R
+ ecreation.gov now and book the instant the window opens rather than assumi
+ ng the old timeline still applies.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — 🟠 Likely window: Yellowstone (Fishing B
+ ridge) booking ~6 months out
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:denali-heads-up@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:⚠️ In 5 days: Denali campground booking opens (reservedenali.co
+ m)
+DESCRIPTION:HEADS-UP — Denali NP (Riley Creek)\, stay Jul 3-10\, 2027.\n\
+ nDenali's in-park campgrounds book through reservedenali.com (or 800-622-7
+ 275) — NOT recreation.gov. Reservations have historically opened Dec 1 o
+ f the prior year.\n\nDO NOW:\n- Create/verify your reservedenali.com login
+ \n- Confirm the exact 2027 opening date + time on the site (Dec 1 is the h
+ istorical pattern\, not a guarantee)\n- Have exact dates (Jul 3-10\, 2027)
+  and rig specs ready: 40ft Class A + towed truck\n\nRiley Creek fills most
+  days in late June/July.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — ⚠️ In 5 days: Denali campground bookin
+ g opens (reservedenali.com)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:denali-open@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🔴 BOOK TODAY: Denali (Riley Creek) reservations open — reserve
+ denali.com
+DESCRIPTION:Denali NP (Riley Creek)\, stay Jul 3-10\, 2027.\n\nBook at rese
+ rvedenali.com (NOT recreation.gov)\, or 800-622-7275.\n\nRig: 2005 40ft Cl
+ ass A + towed 4x4 — check site length limits before selecting.\n\nNOTE: 
+ Dec 1 is the historical opening date. Verify the exact 2027 date/time on t
+ he site — if it has moved\, update this reminder.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Booking window opens TOMORROW — 🔴 BOOK TODAY: Denali (Rile
+ y Creek) reservations open — reservedenali.com
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Booking window opens in 1 hour — 🔴 BOOK TODAY: Denali (Ril
+ ey Creek) reservations open — reservedenali.com
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Booking window opens in 10 minutes — be logged in — 🔴 BO
+ OK TODAY: Denali (Riley Creek) reservations open — reservedenali.com
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fairbanks-extended@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:📞 Call Fairbanks parks re: extended-stay inventory (Jun 26-Jul 3
+  stay)
+DESCRIPTION:Fairbanks / North Pole\, AK — stay Jun 26 - Jul 3\, 2027 (pea
+ k Midnight Sun season).\n\nThis is a long\, peak-season resupply stop. Fai
+ rbanks-area parks fill with both tourists and long-term seasonal/construct
+ ion workers holding monthly sites. Standard night-by-night online booking 
+ may show NO availability even when sites exist.\n\nDO: Phone the parks dir
+ ectly and specifically ask about 'extended stay' or 'monthly' inventory ra
+ ther than relying on the online per-night flow.\n\nNo hard release date on
+  this one — it's a call-early item\, ~6 months out.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — 📞 Call Fairbanks parks re: extended-sta
+ y inventory (Jun 26-Jul 3 stay)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:parkscanada-confirm@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:👀 Confirm exact Parks Canada 2027 launch date (Banff/Jasper/Wate
+ rton)
+DESCRIPTION:WATCH ITEM — Parks Canada releases the ENTIRE season in one s
+ ingle high-demand launch.\n\nThis is the single biggest 'don't miss this m
+ oment' item on the whole trip. It affects THREE stops: Waterton\, Banff (T
+ unnel Mountain)\, and Jasper (Whistlers) — June 2027.\n\nFor 2026 the la
+ unch was Jan 27 at 8am MT. The exact 2027 date is announced by Parks Canad
+ a in advance and is NOT yet published.\n\nDO NOW:\n- Check parks.canada.ca
+ /voyage-travel/reserve for the announced 2027 launch date\n- Update the 'P
+ ARKS CANADA LAUNCH' event on this calendar to the real date/time\n- Create
+  your Parks Canada account NOW and verify the login works
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — 👀 Confirm exact Parks Canada 2027 launc
+ h date (Banff/Jasper/Waterton)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:parkscanada-headsup@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:⚠️ In ~5 days: Parks Canada season launch (Banff/Jasper/Waterto
+ n)
+DESCRIPTION:HEADS-UP — Parks Canada single-launch release expected ~Jan 2
+ 7\, 2027\, 8am MT.\n\nPREP CHECKLIST (do all of this before launch day):\n
+ - Parks Canada account created and logged in / password verified\n- Exact 
+ dates ready for all THREE parks: Waterton\, Banff (Tunnel Mountain)\, Jasp
+ er (Whistlers)\n- RANKED list of acceptable sites/campgrounds for each —
+  prime sites sell out in MINUTES\n- Rig specs to hand: 2005 40ft Class A +
+  towed 4x4 (site-fit is uncertain at all three)\n- Payment card saved and 
+ valid\n\nVERIFY the exact date — Jan 27 is the 2026 precedent\, not a co
+ nfirmed 2027 date.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — ⚠️ In ~5 days: Parks Canada season lau
+ nch (Banff/Jasper/Waterton)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:parkscanada-launch@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART:20270127T150000Z
+DTEND:20270127T160000Z
+SUMMARY:🔴 PARKS CANADA LAUNCH — be logged in NOW (Banff/Jasper/Waterto
+ n)
+DESCRIPTION:EXPECTED launch: Jan 27\, 2027\, 8:00am MT (based on the 2026 p
+ recedent — CONFIRM the real date).\n\nBook in priority order across Wate
+ rton\, Banff (Tunnel Mountain)\, Jasper (Whistlers). Prime sites reportedl
+ y sell out within minutes.\n\nRig: 2005 40ft Class A + towed 4x4 — each 
+ of the three has its own site-fit uncertainty.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Booking window opens TOMORROW — 🔴 PARKS CANADA LAUNCH — 
+ be logged in NOW (Banff/Jasper/Waterton)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Booking window opens in 1 hour — 🔴 PARKS CANADA LAUNCH —
+  be logged in NOW (Banff/Jasper/Waterton)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Booking window opens in 10 minutes — be logged in — 🔴 PA
+ RKS CANADA LAUNCH — be logged in NOW (Banff/Jasper/Waterton)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:liard-headsup@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:⚠️ In 5 days: Liard River Hot Springs booking opens (tightest o
+ n the trip)
+DESCRIPTION:HEADS-UP — Liard River Hot Springs PP\, BC. Stay: arrive Jun 
+ 16\, 2027.\n\nTHE SINGLE TIGHTEST RESERVATION SQUEEZE ON THE WHOLE ITINERA
+ RY.\n\nBC Parks uses a 3-month ROLLING window that releases daily at 7:00a
+ m Pacific\, exactly 3 months out. For a Jun 16\, 2027 arrival that is ~Mar
+  16\, 2027. Popular dates vanish within minutes.\n\nDO NOW:\n- BC Parks 'D
+ iscover Camping' account created and login verified\n- Decide your backup 
+ date AND backup campground in advance\n- Note: no hookups here regardless 
+ — this is dry camping either way\n\nNOTE: an older version of this plan 
+ had a Jun 21 arrival (window Mar 21). The current itinerary arrives Jun 16
+ \, so the window opens EARLIER — Mar 16.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT9H
+DESCRIPTION:Booking heads-up — ⚠️ In 5 days: Liard River Hot Springs 
+ booking opens (tightest on the trip)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:liard-open@alaskaloop
+DTSTAMP:20260727T120000Z
+DTSTART:20270316T140000Z
+DTEND:20270316T150000Z
+SUMMARY:🔴 LIARD BOOKING OPENS 7:00am PT — be logged in (vanishes in mi
+ nutes)
+DESCRIPTION:Liard River Hot Springs PP\, BC — 3-month rolling window open
+ s 7:00am Pacific TODAY for a Jun 16\, 2027 arrival.\n\nBe logged into BC P
+ arks Discover Camping BEFORE 7:00am PT. Popular dates can vanish within mi
+ nutes.\n\nBackup plan ready? No hookups here regardless — dry camping ei
+ ther way.\n\nIf your arrival date shifts\, this window shifts with it (alw
+ ays ~3 months before arrival).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Booking window opens TOMORROW — 🔴 LIARD BOOKING OPENS 7:00
+ am PT — be logged in (vanishes in minutes)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Booking window opens in 1 hour — 🔴 LIARD BOOKING OPENS 7:0
+ 0am PT — be logged in (vanishes in minutes)
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Booking window opens in 10 minutes — be logged in — 🔴 LI
+ ARD BOOKING OPENS 7:00am PT — be logged in (vanishes in minutes)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

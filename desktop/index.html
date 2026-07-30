@@ -92,6 +92,17 @@
   .leg-stop-list li::before{content:'';position:absolute;left:-14px;top:5px;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;}
   .leg-stop-list .stopname{font-weight:600;color:var(--text);}
   .leg-row-meta{font-size:.75rem;color:var(--muted);margin-top:2px;}
+  /* Per-leg alerts — the old single "read this first" box was split so each
+     warning sits on the stage it actually applies to. Orange stays reserved
+     for anything that could damage the coach. */
+  .leg-alerts{margin:8px 0 2px;display:flex;flex-direction:column;gap:6px;}
+  .leg-alert{display:flex;gap:8px;align-items:flex-start;font-size:.79rem;line-height:1.45;
+    padding:7px 10px;border-radius:7px;background:rgba(232,176,75,.10);color:#e6cf9a;
+    border-left:2px solid rgba(232,176,75,.55);}
+  .leg-alert .la-ic{flex:0 0 auto;font-size:.85rem;line-height:1.35;}
+  .leg-alert.la-rig{background:rgba(217,119,87,.13);color:#e8b49a;border-left-color:rgba(217,119,87,.7);}
+  .leg-alert.la-book{background:rgba(95,180,214,.12);color:#a8d4e8;border-left-color:rgba(95,180,214,.6);}
+  .leg-alert b{color:#fff;font-weight:700;}
   .flagbox{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:16px 18px;margin-bottom:18px;}
   .flagbox h3{margin:0 0 8px;font-size:1rem;}
   .flagbox ol{margin:0;padding-left:20px;color:var(--muted);font-size:.88rem;line-height:1.6;}
@@ -429,16 +440,7 @@ It opens as a normal web page. An internet connection is only needed for the map
       <div class="leg-panel" id="legPanel"></div>
     </div>
 
-    <div class="flagbox">
-      <h3>⚑ Read this before you plan around the dates below</h3>
-      <ol>
-        <li><b>These calendar dates are a straight-line calculation</b> — start date + each stop's nights, back to back, with zero rest/weather/buffer days added anywhere. As currently built that's <b id="flagboxTotals">…</b> — a genuine slow year-plus loop with a full winter desert tail (Palm Desert, Tucson, Camp Verde) built in as the main buffer. There's still no rest/breakdown slack layered on top of that, so a bad-weather day or a mechanical issue anywhere on the route pushes every date after it.</li>
-        <li><b>Denali Park Road Mile 43 (Pretty Rocks) closure</b> — targeted full reopening is 2027, not yet confirmed as of the last 2026-season update. Re-check nps.gov/dena close to your dates.</li>
-        <li><b>Parks Canada bookings (Waterton, Banff, Jasper, Kluane)</b> open on a fixed date the preceding winter and sell out in minutes — the single biggest "don't miss this date" item on the whole trip.</li>
-        <li><b>Going-to-the-Sun Rd (Glacier), McCarthy Road, the Dalton Highway, and Salmon Glacier Road</b> are all truck-only — the 40ft coach stages nearby in every case.</li>
-        <li><b>High San Juan / Rockies passes (Ouray, Wind River, Great Sand Dunes' Medano Pass)</b> are on the <i>outbound</i>/early-spring side of the loop this time, not a fall return — several arrive before the typical late-June/July snowmelt opening for the marquee 4x4 routes (flagged red/orange in Highlights & Weather below). The reverse risk applies to Great Basin's Wheeler Peak Drive on the spring return leg.</li>
-      </ol>
-    </div>
+    
 
     <p class="subhead" style="margin:14px 2px 6px">Full stop-by-stop timeline</p>
     <p style="font-size:.78rem;color:var(--muted);margin:0 2px 8px">"Miles to next" is straight-line distance between stops, not driving distance — actual road miles will run higher, sometimes a lot higher on mountain, gravel, or ferry-connected legs (Dawson Creek→Muncho Lake, Dawson City→Stewart, etc.).</p>
@@ -468,17 +470,7 @@ It opens as a normal web page. An internet connection is only needed for the map
       <div class="leg-panel" id="extLegPanel"></div>
     </div>
 
-    <div class="flagbox">
-      <h3>⚑ Read this before you plan around the dates below</h3>
-      <ol>
-        <li><b>This is one continuous journey with the Alaska Big Loop, not a separate trip.</b> The branch point is now Pagosa Springs, CO — Ouray, Mesa Verde/Mancos, Durango, and Pagosa Springs are in the main 89-stop loop, with Ouray/Durango/Pagosa Springs shortened to make room. Austin isn't visited again until the very end of the entire combined mega-trip, in Texas Hill Country's final stop — see Known Issues for the full reasoning.</li>
-        <li><b>The fall-color chase is the one truly fixed anchor.</b> Everything before it (Colorado high country, the Northern Plains, the Great Lakes, and rural Ontario/Quebec) is compressed or stretched as needed so Lake Placid, NY still lands right around late September — the real, researched peak for the Adirondacks — regardless of exactly when the main loop finishes at Pagosa Springs.</li>
-        <li><b>The Berkshires and Litchfield Hills were reordered</b> from the source document's placement (which had them arriving in early November, well past their real peak) to right after Lake Placid, so they're caught near their actual early-to-mid-October peak instead. This adds a real backtrack and a third US/Canada border crossing — see Known Issues for the trade-off in detail.</li>
-        <li><b>This route crosses into Canada twice</b> (Ontario, then Quebec) — a new consideration, since the main Alaska Big Loop's own Canada crossings were all in the west. Passports, a Canadian insurance rider for the coach and towed truck, and current pet rabies paperwork all need confirming before the first crossing at Stratford, ON.</li>
-        <li><b>The Winter Coast &amp; Gulf stage (Charleston through Natchez) has been removed</b> — Chattanooga, TN now connects directly to Hot Springs, AR. This pulled the whole Ozarks/Texas stage roughly 2 months earlier on the calendar, into real winter conditions instead of spring — see Known Issues for what that changes.</li>
-        <li><b>Several confirmed rig-fit restrictions are already routed around</b> — Needles Highway/Iron Mountain Road at Custer State Park, Fayette Station Road at New River Gorge, Smugglers Notch in Vermont, the Blue Ridge Parkway's NC tunnels near Asheville, and Newfound Gap Road in the Smokies — the coach never attempts any of these; each is a truck-only day trip from a nearby base, and Blue Ridge Parkway/Skyline Drive access generally can't be assumed in late fall/winter.</li>
-      </ol>
-    </div>
+    
 
     <p class="subhead" style="margin:18px 2px 6px">Full stop-by-stop timeline (example pacing)</p>
     <p style="font-size:.78rem;color:var(--muted);margin:0 2px 8px">"Miles to next" is straight-line distance between stops, not driving distance.</p>
@@ -666,6 +658,194 @@ if(flagboxTotalsEl){
 }
 
 // ---- Legs-at-a-glance side panel (replaces the old plain color-key legend) ----
+// ---- Real road geometry -------------------------------------------------
+// ROUTE_GEOM maps "fromStopId>toStopId" to an encoded polyline (precision 5)
+// of the actual driving route between those two stops. It is populated by
+// tools/build_routes.py, which calls a routing service once and bakes the
+// result in — nothing is fetched at page load, so the map still draws with no
+// signal. Any leg without geometry falls back to a dashed straight line, which
+// is also the honest way to show a stretch we couldn't route.
+const ROUTE_GEOM = {};
+const EXT_ROUTE_GEOM = {};
+
+// Standard Google/OSRM encoded-polyline decoder.
+function decodePolyline(str, precision){
+  const factor = Math.pow(10, precision == null ? 5 : precision);
+  let index = 0, lat = 0, lng = 0;
+  const out = [];
+  while(index < str.length){
+    let shift = 0, result = 0, byte;
+    do { byte = str.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while(byte >= 0x20);
+    lat += (result & 1) ? ~(result >> 1) : (result >> 1);
+    shift = 0; result = 0;
+    do { byte = str.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while(byte >= 0x20);
+    lng += (result & 1) ? ~(result >> 1) : (result >> 1);
+    out.push([lat / factor, lng / factor]);
+  }
+  return out;
+}
+
+// Draws the route one leg at a time so a routed leg can look different from an
+// unrouted one. Returns every coordinate drawn, for fitBounds.
+function drawRoute(stops, geom, layerGroup){
+  const all = [];
+  for(let i = 0; i < stops.length; i++){
+    const a = stops[i], b = stops[i+1];
+    all.push([a.lat, a.lng]);
+    if(!b) break;
+    const enc = geom[a.id + '>' + b.id];
+    if(enc){
+      const pts = decodePolyline(enc, 5);
+      if(pts.length > 1){
+        L.polyline(pts, {color:'#5fb4d6', weight:2, opacity:0.6, lineJoin:'round'}).addTo(layerGroup);
+        for(let k = 0; k < pts.length; k++) all.push(pts[k]);
+        continue;
+      }
+    }
+    // no geometry for this leg — say so with a dashed straight line
+    L.polyline([[a.lat,a.lng],[b.lat,b.lng]],
+      {color:'#5fb4d6', weight:1.5, opacity:0.45, dashArray:'4,5'}).addTo(layerGroup);
+  }
+  return all;
+}
+
+// ---- Per-leg alerts ----------------------------------------------------
+// These used to live in one "read this before you plan" box above the
+// timeline, which meant a Denali closure and a Colorado snow-gate sat side by
+// side hundreds of days apart. Each warning now renders on the stage it
+// actually applies to. Kind drives the colour: 'rig' (orange) is reserved for
+// anything that could damage the coach, 'book' (blue) is a date you have to be
+// awake for, and the default amber is a planning caveat.
+const LEG_ALERTS = {
+ "leg1": [
+  {
+   "kind": "plan",
+   "icon": "⏱",
+   "text": "<b>These dates have no slack in them.</b> They are a straight-line calculation — start date plus each stop’s nights, back to back, with zero rest, weather or breakdown days anywhere. One bad-weather day or a mechanical issue pushes every date after it. The winter desert tail (Quartzsite through Camp Verde) is the only real buffer built into the plan."
+  },
+  {
+   "kind": "rig",
+   "icon": "❄",
+   "text": "<b>The high passes are early-season on this routing.</b> Wind River and Great Sand Dunes’ Medano Pass sit on the outbound, early-spring side of the loop rather than a fall return, so several arrive before the typical late-June/July snowmelt opening for the marquee 4x4 routes. Flagged red/orange in Highlights &amp; Weather."
+  }
+ ],
+ "leg2": [
+  {
+   "kind": "book",
+   "icon": "◉",
+   "text": "<b>Parks Canada reservations are the tightest date on the whole trip.</b> Waterton, Banff and Jasper open on a fixed date the preceding winter and sell out in minutes — be logged in at the exact opening minute. The booking-windows calendar has alarms set for it."
+  },
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>Going-to-the-Sun Road is truck-only.</b> RVs are banned on the alpine section (21ft limit) — the coach stages at West Glacier and the drive is done in the pickup or on the shuttle."
+  }
+ ],
+ "leg3": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>Denali Park Road Mile 43 (Pretty Rocks).</b> Targeted full reopening is 2027 and was still unconfirmed as of the last 2026-season update. Re-check nps.gov/dena close to your dates — it changes what the Denali stop can actually be."
+  },
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>McCarthy Road and the Dalton Highway are truck-only.</b> McCarthy is ~60 miles of rough gravel with old railroad spikes; the Dalton is a working haul road. Drop the coach at Chitina and at Fairbanks respectively and take the 4x4 with two spares."
+  },
+  {
+   "kind": "book",
+   "icon": "◉",
+   "text": "<b>Kluane is a Parks Canada booking too</b> — same fixed winter opening date and the same sell-out risk as Banff and Jasper."
+  }
+ ],
+ "leg4": [
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>Salmon Glacier Road above Hyder is truck-only</b> — an unpaved active mine road. The coach stays in Stewart."
+  }
+ ],
+ "leg6": [
+  {
+   "kind": "rig",
+   "icon": "❄",
+   "text": "<b>Great Basin’s Wheeler Peak Scenic Drive is usually snow-gated until around Memorial Day</b>, and this leg arrives on the spring return — check before committing the day. Vehicles and trailers over 24ft are barred beyond mile 3 regardless of season."
+  },
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>The San Juan passes above Ouray are early-season here.</b> The Million Dollar Highway is open year-round but the high 4x4 routes off it (Black Bear, Imogene, Engineer) may still be snow-closed at these dates."
+  }
+ ]
+};
+const EXT_LEG_ALERTS = {
+ "colorado": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>This is one continuous journey with the Alaska loop, not a separate trip.</b> The branch point is Pagosa Springs, CO — Ouray, Mesa Verde, Durango and Pagosa are in the main loop, shortened to make room. Austin isn’t visited again until the very end, at the final Hill Country stop."
+  }
+ ],
+ "plains": [
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>Needles Highway and Iron Mountain Road at Custer State Park are truck-only.</b> Confirmed rig-fit restrictions — tunnels the coach cannot clear. Day-trip both from camp."
+  }
+ ],
+ "greatlakes": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>Three stops were added here and the order was corrected.</b> Porcupine Mountains and Tahquamenon Falls were missing entirely, and Marquette sits ~90 miles west of Munising, so the old order drove past it and doubled back. The leg now runs cleanly west to east."
+  }
+ ],
+ "ruralcanada": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>This route crosses into Canada twice</b> (Ontario, then Quebec). Passports, a Canadian insurance rider for the coach and the towed truck, and current rabies paperwork for the dog and cat all need confirming before the first crossing at Stratford, ON."
+  }
+ ],
+ "fallcolor": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>The fall-colour chase is the one truly fixed anchor of this trip.</b> Everything before it — Colorado, the Plains, the Great Lakes, rural Ontario and Quebec — is compressed or stretched so Lake Placid still lands around late September, the researched Adirondack peak. The Berkshires and Litchfield Hills were reordered to sit right after it, catching their early-to-mid-October peak instead of arriving in November; that adds a real backtrack and a third border crossing."
+  },
+  {
+   "kind": "book",
+   "icon": "◉",
+   "text": "<b>South Hero’s window is narrow and it closes hard.</b> Apple Island Resort shuts Oct 20 and North Beach Oct 15, and the islands’ day-use state parks are already closed after Labor Day. The Sept 28 arrival is deliberate — slipping it ten days strips out most of the reasons to be there."
+  },
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>Smugglers Notch in Vermont is truck-only</b> — the switchbacks are impassable for a 40ft coach and it is signed against them."
+  }
+ ],
+ "appalachian": [
+  {
+   "kind": "rig",
+   "icon": "⚠",
+   "text": "<b>Three confirmed rig-fit restrictions on this stage are already routed around:</b> Fayette Station Road at New River Gorge, the Blue Ridge Parkway’s NC tunnels near Asheville, and Newfound Gap Road in the Smokies. Each is a truck-only day trip from a nearby base. Blue Ridge Parkway and Skyline Drive access cannot be assumed in late fall or winter — both close sections for ice without much notice."
+  }
+ ],
+ "ozarks": [
+  {
+   "kind": "plan",
+   "icon": "⚑",
+   "text": "<b>This stage now lands in real winter, not spring.</b> Removing the Winter Coast &amp; Gulf leg (Charleston through Natchez) connected Chattanooga straight to Hot Springs and pulled everything after it roughly two months earlier on the calendar. See Known Issues for what that changes."
+  }
+ ]
+};
+function legAlertHtml(list){
+  if(!list || !list.length) return '';
+  return '<div class="leg-alerts">' + list.map(a =>
+    `<div class="leg-alert la-${a.kind}"><span class="la-ic">${a.icon}</span><span>${a.text}</span></div>`
+  ).join('') + '</div>';
+}
+
 document.getElementById('legPanel').innerHTML = '<p class="subhead" style="margin:0 0 4px">Legs at a glance</p>' +
   Object.keys(LEG_NAMES).map(k=>{
     const legStops = STOPS.filter(s=>s.leg===k);
@@ -690,7 +870,7 @@ document.getElementById('legPanel').innerHTML = '<p class="subhead" style="margi
           <div class="leg-row-meta">${fmtDate(legStops[0].arrive)} – ${fmtDate(legStops[legStops.length-1].depart)} · ${nights} nights${tempRangeBar(legTempRange(legStops), true, "Coldest average daily low to warmest average daily high across every stop in this leg (10-year historical average, 2014–2023) — the real spread to pack for across the whole stage, not an average-of-averages.")}</div>
         </div>
       </div>
-      <ul class="leg-stop-list">${stopListHtml}</ul>
+      ${legAlertHtml(LEG_ALERTS[k])}<ul class="leg-stop-list">${stopListHtml}</ul>
     </div>`;
   }).join('');
 
@@ -760,7 +940,8 @@ STOPS.forEach((s,i)=>{
   stopMarkers.push(marker);
   marker.addTo(routeLayerGroup);
 });
-const routeLine = L.polyline(latlngs,{color:'#5fb4d6',weight:1.5,opacity:0.45,dashArray:'4,5'});
+const routeLine = L.polyline(drawRoute(STOPS, ROUTE_GEOM, routeLayerGroup),
+  {color:'#5fb4d6', weight:0, opacity:0});   // invisible: only carries bounds for fitBounds
 routeLine.addTo(routeLayerGroup);
 routeLayerGroup.addTo(map);
 
@@ -9152,7 +9333,7 @@ document.getElementById('extLegPanel').innerHTML = '<p class="subhead" style="ma
           <div class="leg-row-meta">${fmtDate(legStops[0].arrive)} \u2013 ${fmtDate(legStops[legStops.length-1].depart)} \u00b7 ${nights} nights${tempRangeBar(legTempRange(legStops), true)}</div>
         </div>
       </div>
-      <ul class="leg-stop-list">${stopListHtml}</ul>
+      ${legAlertHtml(EXT_LEG_ALERTS[k])}<ul class="leg-stop-list">${stopListHtml}</ul>
     </div>`;
   }).join('');
 
@@ -9171,7 +9352,7 @@ EXT_STOPS.forEach((s,i)=>{
   marker.on('click', ()=>{ extShowStop(s.id); });
   marker.addTo(extRouteLayerGroup);
 });
-L.polyline(extLatLngs,{color:'#5fb4d6',weight:1.5,opacity:0.45,dashArray:'4,5'}).addTo(extRouteLayerGroup);
+drawRoute(EXT_STOPS, EXT_ROUTE_GEOM, extRouteLayerGroup);
 extRouteLayerGroup.addTo(extMap);
 
 const extNpLayerGroup = L.layerGroup();

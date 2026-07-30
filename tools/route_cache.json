@@ -1,1 +1,622 @@
-{}
+{
+"austin-depart>caprock-canyons": {
+"sig": "30.2672,-97.7431|34.4048,-101.0296",
+"geom": "aqvwDpmqsQkc]pXwwb@f_Uwlu@n_Keo{@rqxAsug@j|a@_qT~~CagY`x^swQlue@``Dn|c@u`D`|e@moOz{NonCtya@yyOpad@kuC~tu@woZrqNuue@pke@wi\\nnJgrE_wFs|y@ztDupK|aNewk@zmTsnN|dOss@tsQisu@j|EumGhbM{peBoiEqrMz{JqtY}Bxc@`}`@eqc@emE"
+},
+"caprock-canyons>santafe": {
+"sig": "34.4048,-101.0296|35.687,-105.9378",
+"geom": "wc_qE`jsgR|F|zBlwFp_A?luCwoIrvKcpIt|YgTjs{@umJz}a@cec@lyLwhj@rHinNrpLynQky@gUh|Gu}IlEkvJz~zA}bFx~\\rZtc\\vk]lokBh@dmMwxJf`XrFhxb@p{Ipef@iy@rzNvlJf|j@lyBl|e@|iSdtw@g~ChsVa|F|ijDcbh@lmYio]lpHiyRhpJ{gNizDwhR~xJ{hE{C"
+},
+"santafe>great-sand-dunes": {
+"sig": "35.687,-105.9378|37.7916,-105.5943",
+"geom": "abyxEn~qeSwdA~tAqcGgzBuj\\vuPwsKgE_oEzmJykSrwIyuR{bOaxWanBcnDqmZ_o]x{AuwSreJ_uQjiBeo`@osA_id@juGcso@_vKaf]w_Qgp}@xoDgDw{J_lA_AyzDyaUbl@q}P"
+},
+"great-sand-dunes>salida-buenavista": {
+"sig": "37.7916,-105.5943|38.5347,-105.9994",
+"geom": "{n{eFjxscStZ~|JygAp_ExlEz|Q_Q|cB~kA~@fDv{J}ihAbcG}|BvrAitIpa@{_g@nj^}|Kw{D_{@sgMu~@o\\"
+},
+"salida-buenavista>estes-rmnp": {
+"sig": "38.5347,-105.9994|40.3772,-105.5217",
+"geom": "sfejFp{}eS_nOjtNkbY~Nu|IntEuoGoyX}|Gbm@{zM_jE_~d@~mGw{KqfBck`@qkg@lLsnC_{Cbv@{nDk_GgTqaKhpImpc@yoHe`FmoAseJccGchMklE{fAikAqxIuxK}mAcjB_uKoePl|EawDniF_mf@_^e{F|wD{kIwI{tC`~CizM}NagKmmEq}ErpFp{@rmFwxTbmUoiDhxN"
+},
+"estes-rmnp>saratoga": {
+"sig": "40.3772,-105.5217|41.4519,-106.8067",
+"geom": "mdmuFfu`cSecNwhMyr@}yFxjHayZky@yuDfiB}sWuvi@wXkgEzyF|o@lmD}uApyAe`PkpBmwFnhCg{AflGytKlaEg|g@`~m@{bQfxNciWzFeg@jsCy~E|_@ipCxq]osH`cLsjE`{VmaIn}Nk}IxhHkaQ|kk@orIblLwsIjgWllCfg[icAzt`@ztHk~Bd`n@uX"
+},
+"saratoga>flaming-gorge": {
+"sig": "41.4519,-106.8067|40.9105,-109.7241",
+"geom": "mb_|F|t{jSe`n@tX{tHj~BmdHjhfAlrAxfXynAheLboOhoaBhnEneQx`Gl`y@aoBzgmAkbD|mI}nBj}]tpQtsq@n\\zgEslBjiE|aEvoEn|GpnUfk@hzOjwL`dGf~Pd`YleH|aBtjHc}D~_GvyBdjScnGdoUxvJjxBd_L`eIqgCdq@p|BrsAkjGjiBfpDoo@h_C"
+},
+"flaming-gorge>wind-river": {
+"sig": "40.9105,-109.7241|42.7502,-109.7365",
+"geom": "}htxFjav|Sno@i_CkiBgpDssAjjGeq@q|BaeIpgCkxBe_LeoUyvJejSbnG_`GwyBujHb}DaaHe~AsbQ}cYsvL{cG{k@y}Ow|GqnUirDi_EibNhn@upHzdHakCnuJcaS|JwgHzxBaeGnqH_gn@~mLquKmjAwx}@jc\\kpU`xQujHtHkz@hwB"
+},
+"wind-river>grand-teton": {
+"sig": "42.7502,-109.7365|43.9021,-110.6349",
+"geom": "co|cG~ow|S}aAaDqgC`fEeaErhLmkItjCo@bmKex@~bCygBnkYqeS`uBglLjnLqbDxDe|F|nDwZvlFoxApgBgQjrPgr@z_EgfKzcJs_CzqDqA`oEwr@fgBo_FjdF`q@buMy|A~}GklBxmCsu@fzGygEu}@syBrrCqzCji@ewAhdCovIh`CoaAk}D_iLivDurQguB_}FwvFiuFojB{lE}aFeJqvEo~BioFahK}lF_{CjvDaIhgEabDNqv@~{@mR|_Gqk@do@xd@r|@zW_c@"
+},
+"grand-teton>yellowstone": {
+"sig": "43.9021,-110.6349|44.5654,-110.3757",
+"geom": "iq}jGffgbTmdK~LyrGxnIcnEpVwuOgrEsfDtzAucFitBioCb_@gfMwsEwvB_pCoqP{qEchF~{AgtAsfCetDqtAyHqcCvuCcgDmzCuyJ}yEeqCijAbwBg_AiPqmEi|GzO}mA"
+},
+"yellowstone>west-yellowstone": {
+"sig": "44.5654,-110.3757|44.6621,-111.1042",
+"geom": "yd_oG`wt`T{O|mAq{@eu@olB|p@oeAwTo^`hDc{@loBki@xZyVhjAesBjmBmdB|ViuBfwDubB|y@ofBcHc\\u}@eqAiG|H`gD~gAfb@jwBvxJwIt}Ck|AtiEjEhfCcs@t_Epj@nY~WxaAcGlbAlu@n_CzbIxKqRb~BpdAr|@p@jdC{[j~BbrA|yMm{@b`KwlArr@cj@jxAt[zuApfAfN`T|nA}HxeIul@l}G_T?"
+},
+"west-yellowstone>craters-of-the-moon": {
+"sig": "44.6621,-111.1042|43.4165,-113.5162",
+"geom": "caroGj`ceT{~CrsYvSxrC`pC|wGj{E`~CfgUmg@|oSpgHr}GtqDbxFjjHlwHxkBhzNoyCbwCaeClhLlfEdzDnFzdIdsK~zG|_VhjAfbJlyJboFb{DhaExzB|fG`jIr`AbeQnmNd|\\nyRr`IdrKsAdfN{wCrrOc~Enai@~d@zeHmMtkXb_Gn~\\zt@rlMaj@tpRkfFbkJkjJba]qXvrSsdDd_FnwBlj@zw@niBtlEzgWljBbrDtyOxmLp}@`kB``A{}Btc@jrAbc@qeAngAnI"
+},
+"craters-of-the-moon>sawtooth-nra": {
+"sig": "43.4165,-113.5162|44.2149,-114.9339",
+"geom": "waahGza`tT{mBi{@obBzbDpcDn|IliGvuB~VfmGjnCbzNzSruKjlDv_JnAjjGbiBhtBx`Bd@fs@dkEnQnxEweEr}TcxAxHurDvtIckThlOkyItfJc{MbqDipG_\\orPdrFe|G~xEsz@jhCrbBtsLob@|qHu|D~kEglA|pDoeLjjJdrDl`Em`@pgBql@oj@aQxsBgjA`Nh_AryAsCbhCinD~zDwqA`v@ssB}d@a|Fr}BuaKmJygU~iIitAhuF{}FrbA"
+},
+"sawtooth-nra>twin-falls": {
+"sig": "44.2149,-114.9339|42.5558,-114.4701",
+"geom": "i|zlGdbo|Tz}FsbAhtAiuFxgU_jIbfYicChnD_{Duz@wbFhkD}_EerDm`ExoTogV{ByqZtoYelMbdVkoCbzOy`Mnyn@nvKdw\\jaN~d_BhvM"
+},
+"twin-falls>bozeman": {
+"sig": "42.5558,-114.4701|45.677,-111.0429",
+"geom": "{tvbGhmtyTqnAgbuDw|EspeAy|Hox_@god@obo@acLqs}@icr@qjJqwgAwejAy`oAcfz@kiTgrm@scR}mEmrSp_Hc`n@mrZsc\\suBydDwkL~}C_pZkgWdsAixNanLsdJvu@qhPnvDitKpgW_lLdvFqhVli@kdQkbO{_Yt|RypLiuMukTogAkb@}zZ"
+},
+"bozeman>glacier": {
+"sig": "45.677,-111.0429|48.495,-113.9812",
+"geom": "{fxuGbawdTi`GxwCexWttn@ehM~ho@z{FxrhBejG~l`AswJxaH_{Dljk@u{JtoMe}~@mwKslPln@igFjuMygBetTs|HkxEml@e}Jmf_@tzTu|Lbqd@m~ZrhQ{tKvae@`gGdec@}{MhxA{iZzwYicyA|}v@y|n@nqEs`OfrTgtOfwB{K|rUuaPh`Cov@vrHw__@S_rEwnUssSwdK"
+},
+"glacier>waterton": {
+"sig": "48.495,-113.9812|49.0508,-113.9114",
+"geom": "yt~fHj}tvT`KafEet@yiBfy@kpClFcfHdxKypLni@gaKlrH{zH~{Be{E~xN{cGxb@}|CvfDww@lSu|AyuAioNawGouJ_eAmrHa}BsfBalGodLc}Ek_EqpCguF}dFvrAadIljImwA|}Dg~Ag]`QeoC{n@g{@wvGxHakFtuFcaC~r@uu@zdCchCvcBuf@ci@sLfdEyt@dr@cW|wCenCrAu{BxtA{cHseCo~CboAkyCoUc_Bv{BuvJaPgJjhEqiBha@my@xmDko@fB}zAzxDoz@~qEj]~oIus@x`@rDx_B_gA~vBgxKdeFfWzeDarA`hD~HveG}sEj~B{jA|`CbPxtBjxD`dCpgBfvEbkAb_@"
+},
+"waterton>banff": {
+"sig": "49.0508,-113.9114|51.1784,-115.5708",
+"geom": "efkjHfggvTkiKqiLkeDp_A}aGykCisBfmD}tPqKahFhkHm~Byb@c{CzfDwz[|jCswJrl\\w{@bcR}uXe~AanCqiCoeUcsCwrPb~@qhBkmCs`N|wFal^h{BkvSn`HmtWlLaiCjmCakH`Gk}B{uCkwXjI?f{FouEfh@okDhzG_zCnOiiCq_D}gWWgsDzmq@y|Dm@atKaaQy_MgB}SdvTmuLfib@|pEt`f@h}JhyW|pD|qb@}vBbvHwqZ~mb@i_AfkFl`EnoE"
+},
+"banff>jasper": {
+"sig": "51.1784,-115.5708|52.8734,-118.0814",
+"geom": "_xjwHplk`Uq}@dnAl`EfhRuZv|EebJzdNoyLlpf@gp]`ei@yld@fsVquDhhTkjb@ldb@i~KjyQapIa_@k|BtqP{q_@j~f@c}BzeGr^h`Ck_Ao~A{hAdtLc{CxiGgZ|gL{|L|jPgrIznAo_Pd_M{`\\t{~@sgDrrRyaJngGusHus@axCpwOgoKnmJyt@fiEuuJ`dE"
+},
+"jasper>dawson-creek": {
+"sig": "52.8734,-118.0814|55.7596,-120.2377",
+"geom": "uyuaIrwuoUubJisGqzSndJm_MkwSciNquCkiIsfa@wxUi{XgwB`yJ{bUriTwaJcWmkBdib@osQdkl@{kLllGq`Yxy}@guI~qDidAtzeAfgGbfUwGrcJymDvdAapQifKqhKujTooBkg[c{ManOgbPcof@g_LmhJc{TlgHkbP`t\\}ns@eyDsbb@txRozQ}kGs`A|cMksQnrEPdd|Ag|BjkOquZh_]wyGfqQenT~biActr@~vTyl@tuP"
+},
+"dawson-creek>fort-nelson": {
+"sig": "55.7596,-120.2377|58.805,-122.6972",
+"geom": "episIr|z|Uk}d@x_hAmc]paCayShuNcnBdwVslTvlp@wpg@|fa@v[~cOakOlc`@kdAtdYslKdiKmqGx~Zqbk@j|p@_fCzxv@ixT|ru@k`Qj_JqkFmqH}nIhb\\iiTn{Bobt@`g_@utUghXka^mvMgiLg|PerToNqmIg}Xoq`@j{WkzYc@}vSyoJ}bPdsK{wRugK{bC|~F"
+},
+"fort-nelson>muncho-lake": {
+"sig": "58.805,-122.6972|58.9506,-125.7756",
+"geom": "mj|eJnh{kVv[fuL}tR`qaAdBxmd@|gDvqU|dE`nHjh@zzFf{Wzh_@fwDb~@rh@zbIgcBbcCgNnoIpzDvgHauBt`DhiAbxMuwA|fP`_DpwQpSrgRmzAry^fy@bgTun@xhF|kCzqZ}{@flLaiJt~[yjOxiVogF}YspBtrFreD`uMqsDb}WfArl[zuIrwSlbBpnLqb@~oHxeA~|M{hVn_LoyIsU"
+},
+"muncho-lake>liard": {
+"sig": "58.9506,-125.7756|59.4167,-126.1",
+"geom": "euxfJh~s~VhRmV{cG_r@o{A~lAavFhUm{TlvR{dMxtRwhDmWs|CwpDyvEqgAsaJxmDauB|`G{b@xkKeqA`uD_i@iE"
+},
+"liard>watson-lake-1": {
+"sig": "59.4167,-126.1|60.0637,-128.7093",
+"geom": "qtsiJ~_s`Wwd@hGq_BnqFioBfzXwdCdmF{uD~fEi{BpnH{dCr}Ckm@jdMaoEzmNqcAv{LyQn{SagBjrLq`E|iJow@xwMrd@|hGfxDrhL|At{BuoBxbK_iEtiA{lAzhCaxAhtIouChvFg[hfFixAjdC}bAjcJ}LhlP}vA|i@wyB}hC{z@pwB{xBtfAeoC{cE_}AefIqgCnLodBrtDgiDphA_zFvkH{ZziIc`E|rLdMdrCsd@deHhf@jfB{\\rkDe}@jnBhXthF}S|`EnlAfrK{j@z}Ffu@hgFngAbOtpA|lDzdAnsMqYdbJtl@j~Ez@rgFphCx_Gz[bqZgy@||L|p@~sDyq@jpCq|Ajt@qqDfzHimBouAkn@rt@{yCpqHsdE|tS"
+},
+"watson-lake-1>whitehorse-1": {
+"sig": "60.0637,-128.7093|60.7212,-135.0568",
+"geom": "odrmJdpqpWxqEpimAaiKjjaAqdJxka@_~HpszAviY~ekAieDfea@xvAtpr@faL|_q@lpMtbL|yHhs\\i}GvycAzeBrm[_sWjkjAg`H|aMmlCbcf@w_Qbey@yvv@~psAm\\t|YnvGhaQdo@pwTjdJr~XnsGnfm@kkAjwKatg@pygAmjHfkcB_iHh{O_vK~vB"
+},
+"whitehorse-1>kluane-1": {
+"sig": "60.7212,-135.0568|60.7522,-137.5108",
+"geom": "{qrqJngiwXchAhvBesAhxKcbBGatG~|GmkAho`@upAtzIyaCpnBei@pyFhp@lk[iI~~Qp_A`e^laGdnV`xCj{G~iCr{Oc[jjM}yEtyWkdBttSoNh~Idd@j}Qop@zwNwGh{h@olD`rPeyAluTt`Dxis@raE~rSlRxmHrz@pqAzdFej@"
+},
+"kluane-1>tok-1": {
+"sig": "60.7522,-137.5108|63.3367,-142.9861",
+"geom": "{sxqJxshfYq~Gvwa@c|Vdpc@weOfzz@crBthf@vvDhcUuu`@nzMc_@tcJa_d@pziAgxC|y[yge@bvg@mvJzybAgmEp`Bo~S~zt@ctUjbg@_sLpce@umCjc]{_Pb|Qync@ppCiv@`oKqgNboT{r[dI}|EzwVqxL{iAw|KluPwdG|jW{gMdqMwoJnsb@i_\\b`o@ysBvfUikFbeDkbC|}Tsd^dpz@uqB`ad@o}Lteb@_oBrkgA"
+},
+"tok-1>fairbanks-1": {
+"sig": "63.3367,-142.9861|64.7511,-147.3517",
+"geom": "imqaKd~ugZw`D~iiAtJrkXctDzlXvBdb[_}LtrM{rH_aCaoIpfLamTt|e@_jCvqi@faA|lm@y`BnaPktKvkLmxQ|vkAmja@d_{BwoK|iE_qEd}FegJztQw~CduQ_bGl_RnPvrMobDfzPbPzrJ_fAj_HdUpzTy`DxhOx|@fzSawCh~Ne{@nuT{rJhpJysDaqCurFbaDaiAzeJm|Eou@}nCzqHaePnhHacNveMguHvah@"
+},
+"fairbanks-1>denali": {
+"sig": "64.7511,-147.3517|63.73,-148.915",
+"geom": "kuejKxljb[qmAvxA}hAhwSygFx`Wcq@zzh@etFxuNrxAljUrdDlzCpjDdxT|YxfPvbDn{M_WjgDnkAfyJpsGfsTmq@bpIdpBjf\\iP`pRhqEluXxcLtk`@fcDdz@|pHu}H`kHpvAlfAu_Eh{DuBhvFepFzvErtE~wEw}@leJpkOrsAn{KbzEb_Lx_@buGpcEtKzkQglM``JqsNh}PcmDzlKspQ~{GmcBxqHaoQhaI_sD{c@xqChm@`w@"
+},
+"denali>talkeetna": {
+"sig": "63.73,-148.915|62.3208,-150.1064",
+"geom": "mg~cKn}{k[tpRq{Xt{LnrFd}R{gBtdMj_TjvOlsw@bqp@j_iA|cO``Jr`LzyRfkEv{XfgFlgFvpXjf_A|r^qRthHz_G~_o@okCnnHwmGz|I_g`@}kc@l`L"
+},
+"talkeetna>anchorage": {
+"sig": "62.3208,-150.1064|61.2181,-149.9003",
+"geom": "y_k{Jvtds[|jD_zDfnMzaAt~FygJ|_\\t~Gv`GqzC|mS`mFvoHuqBrzDlrDznOszJh_L_kU`vCupVhqJoiPclAkqNfB{fa@jrDyih@vbNhgAjjBrfRncHr|MthD`tNvbIdjLzjGz|@|jE|bJtjEbmQxh@po]"
+},
+"anchorage>cooper-landing": {
+"sig": "61.2181,-149.9003|60.4931,-149.7997",
+"geom": "oustJdl|q[m@mvDhtHkwAfjIcC~oGorD`sEmwGzyBm_GjvBosRfjBwmHmM}tQvyDcdN|y@okGp_B{gCwwAom_@dp@cmDfmB{uDjrAq~Hl}FaaI|dCwlGxbCqu@d\\poBevD`zKhuDdvQbkDlhIpfKlyLcc@t~Kq_Ef~Iq}@bUga@duDbnDzdE~{Aou@n{M||CvwS`}R|gCmsDbr@pkR|vDbmGru@bfEoz@zkE~JzcF"
+},
+"cooper-landing>seward": {
+"sig": "60.4931,-149.7997|60.1042,-149.4422",
+"geom": "wbfpJd{hq[_K{cFnz@{kEsu@cfE_dBybB}qAiiDiC{sHwj@wjCkIoyAnKs_AqSeaBj_EgwSnYkfEuZm}CzJos@fiGsVroHnZbuBawB`bBkBjh@{c@vuApc@jdBct@~s@|uA`pBpUzsCmgBb|BrQf`@{Yng@hu@hy@jMfu@dmAdzG`b@huEboG~l@zYzr@gZlpCzzCfeB~E"
+},
+"seward>ninilchik": {
+"sig": "60.1042,-149.4422|60.0522,-151.6675",
+"geom": "gbzmJ`|bo[geB_FmpC{zC{`BJiuEcoGezGab@axC{qCk}CfG{sClgBapBqU_t@}uAqgIxw@cuB`wB}aQbHzV|dEoYjfEa`EtvSz}@rhKhCzsH|vDbmGru@bfEg{@nwFbyAn~]yk@buHbXpdVq_Al|IcpDdkGs\\bcF~[r}FgjA|sj@zeAhwGcHn``@clApvHfAlmOrsC~sI`xBtg[brBnsF|jQ~wSd~BfcAjvF`oJrvE`qCvjKd`W|qBraCljErcBbhBthIxoAjp@tp@zzCjxDbgFzy@fuFxeHvnHbFhzAi\\uC"
+},
+"ninilchik>homer": {
+"sig": "60.0522,-151.6675|59.6425,-151.5483",
+"geom": "e~omJ|su|[fT|T`GchAbTlsAlpArn@f^tkBr_AdfAxzP|gEbcAxnAhkBzn@tp@|`C~eBls@vnBgWflAfrCfiAzW~uDp|ClzCko@|c@{mAfp@qJxE_`Evb@_q@l[myBjqAsdBffB_mEdwCclC|iCm`A`yAoxBlHgqC~|AmiIxCsoE"
+},
+"homer>trapper-creek": {
+"sig": "59.6425,-151.5483|62.3175,-150.22",
+"geom": "q{_kJzg~{[gkBhlTitZbrb@_wj@{mZubr@shpAkee@ioh@uuIkby@n|@gphBllGcvWiGiihAqmFgtM_aAq|TayBldGwwSa}RkfVgiHb_HsmPbc@u~KoeMwrOi_HerXr_D}{Oe|Ulrc@xn@vid@}sI|qZ`NfpQ_vEze[ezI|xPed[ruFms@aeWulEinQmwWieYilMmn]okBekRefNwgAcpDjlh@|gAfwp@wg\\di~@{nOrzJs`_AqxJmtJ|`a@kdHpzFy|MiiE"
+},
+"trapper-creek>palmer": {
+"sig": "62.3175,-150.22|61.7833,-147.7167",
+"geom": "eaj{Jj`{s[kA~nAveE|}AtlBqd@vjD|_AjdHqzFpoBmgGn^w}H|_C{kEfdBamH``D``CbrKbB|oAlaBj_GuzCfdBl|@zfDu]`wAt}Bh_D_l@lhCr|BvoHuqBrgE|nDjhBcnCf{HibFf|AuDnaE{bL|`Ci}Al~AktENurC`mCmrL|C_~CdzAiw@hj@mcEnwBabAhrBuiFhK}qDmxAm~HbHm}b@{VHasA{mPk_B}cE`Fe`Qm~BclHx\\g|@PooJkzCq}@ytCwtKi]jYhVswIqyDukIcPoqP_eBatDur@_}Kby@aiBylDunU}}@eaP_lDuiTeb@ue_@s~@{kG{]iaLb|@}zOhdAs{Fkk@q~Flq@}}FkKksH_iAqnJljAmoW"
+},
+"palmer>valdez": {
+"sig": "61.7833,-147.7167|61.1308,-146.3483",
+"geom": "_ycxJxupd[|C{dFsjAzs@bP{vVq{BsuXelG{`NabEukCieH_{`@a}GovOdb@kbp@g{AuvKqqD_dIoQyzOs{Iy`n@ez@idRmGg_y@oeAqkCiGy~|AfmDavFx{FqGnhDe{MzjGowAdtg@cqc@xePh{@drXheM~vCglAjuJajTzkBe_@`uQ~ge@xaCjTzbCcfFd|HpwAxa@|wGnfFfcLlZtmUtvDly`@rfFd_J~oA_bCt_@ggIzRjwS~pC~~Sh|EbaEwyBlsp@myIpnU~O~`K"
+},
+"valdez>chitina": {
+"sig": "61.1308,-146.3483|61.5164,-144.4322",
+"geom": "krbtJzsf|Zwl@ckBv[{tGlyIqnUx|B{ap@kfAoaC_xCepA_qC__TpOo{Imc@{zHw`@tR`@psH_pA~aCsfFe_JuvDmy`@mZumU{a@ajCuxBugB}iAooDud@y}GkxDgcB}_CpP{bCbfFyaCkTesDiqGalDmbNs~FoxMqqAhOceEvfHw~DlxK_wCflA{kNy|DieIogGk}Cx^k}@ey@aiDcwh@|cH{nVzqBip]ljDkxDzbDklYd}Ao|GvkCy_DdtBhzAlgDwCljBozA"
+},
+"chitina>mccarthy": {
+"sig": "61.5164,-144.4322|61.4353,-142.9314",
+"geom": "e|mvJx|ppZufCucKz_@erBtbA_u@_BwaEg`@yiApk@}_DmT_`Hr\\kzIki@cqAbIc}C|yAmuLluBa~HbdBu}AdyBktm@nfBgwD|CsuA`jDspCrhD__Jh|AweJvh@mjKaTadRudCe}]c@kpOsmAkcFgoA{xTowCy_Jll@s~C}_@a{A"
+},
+"mccarthy>fairbanks-2": {
+"sig": "61.4353,-142.9314|64.8378,-147.7164",
+"geom": "}|}uJdhkgZ~{Kxy}Bm}Offb@uoLphhApz@tjz@mdPxmCyxXrv|AndDdyi@semAvf|@}tf@gzXqfg@fu`@e~d@wfO}roAdqJogWhvd@{j]p_I_hP~aW}xe@dfEi|]si]e`p@`kDi~]bt_AuhNjttCm`fArvu@aoYbgoB"
+},
+"fairbanks-2>tok-2": {
+"sig": "64.8378,-147.7164|63.3367,-142.9861",
+"geom": "ytvjK`{qd[njBagAdw@giUjaFa}UhjAm}S|uFwmU`fCubTjiNouM~fPejH~lCepHl|Enu@`iA{eJtrFcaDxsD`qCzrJipJd{@ouT`wCi~Ny|@gzSx`DyhOeUqzT~eAk_HcP{rJnbDgzPoPwrM~aGm_Rv~CeuQdgJ{tQ~pEe}F`pK_gEbja@cb{BlxQ}vkAjtKwkLx`BoaPgaA}lm@~iCwqi@`mTu|e@`oIqfLzrH~`C~|LurMwBeb[btD{lXuJskXv`D_jiA"
+},
+"tok-2>kluane-2": {
+"sig": "63.3367,-142.9861|60.7522,-137.5108",
+"geom": "imqaKd~ugZ~nBskgAn}Lueb@tqBaad@rd^epz@jbC}}ThkFceDxsBwfUh_\\c`o@voJosb@zgMeqMvdG}jWv|KmuPpxLziA||E{wVzr[eIpgNcoThv@aoKxnc@qpCz_Pc|QtmCkc]~rLqce@btUkbg@n~S_{t@fmEq`BlvJ{ybAxge@cvg@fxC}y[`_d@qziAb_@ucJtu`@ozMwvDicUbrBuhf@vdOswz@b}Vyrc@p~Gwwa@"
+},
+"kluane-2>whitehorse-2": {
+"sig": "60.7522,-137.5108|60.7212,-135.0568",
+"geom": "{sxqJxshfY{dFdj@sz@qqAmRymHsaE_sSu`Dyis@dyAmuTnlDarPvGi{h@np@{wNed@k}QnNi~IjdButS|yEuyWb[kjM_jCs{OaxCk{GmaGenVq_Aae^hI__Rmp@sd[hi@k`GxaCqnBtpAuzIlkAio`@`tG_}GbbBFjsAkvK|gAgxB"
+},
+"whitehorse-2>dawson-city": {
+"sig": "60.7212,-135.0568|64.0601,-139.4325",
+"geom": "{qrqJngiwX{oPh_\\wyZe_I_}WtfPeefAfleBw{rBdqbBczk@f{KscF_`JqpUrr~@sza@hdo@uos@}ngAwkVx~BumKovNqs_Avvp@izYxohAccExkcA{hPtyk@{nUfbGgcS|kfAcnRffaC{`R`gj@|~Cbro@qzD|}o@"
+},
+"dawson-city>whitehorse-3": {
+"sig": "64.0601,-139.4325|60.7212,-135.0568",
+"geom": "cv~eK||_rYpzD}}o@}~Ccro@z`Ragj@bnRgfaCfcS}kfAznUgbGzhPuyk@bcEykcAhzYyohAps_Awvp@tmKnvNvkVy~Btos@|ngArza@ido@ppUsr~@rcF~_Jbzk@g{Kv{rBeqbBdefAgleB~|WufPj|Zv~HfmP{~["
+},
+"whitehorse-3>watson-lake-2": {
+"sig": "60.7212,-135.0568|60.0637,-128.7093",
+"geom": "{qrqJngiwX~uK_wB~hHi{OljHgkcB`tg@qygAjkAkwKosGofm@kdJs~Xeo@qwTovGiaQl\\u|Yxvv@_qsAv_Qcey@llCccf@f`H}aM~rWkkjA{eBsm[h}GwycA}yHis\\mpMubLgaL}_q@yvAupr@heDgea@wiY_fkA~}HqszApdJyka@`iKkjaAyqEqimA"
+},
+"watson-lake-2>boya-lake": {
+"sig": "60.0637,-128.7093|59.3667,-129.9833",
+"geom": "odrmJdpqpWmA|`PlvApnGqb@rvE|b@dxCqG|yHjZlqDpdCt_FwH``Hx}C{u@vmHzlCff@`~BjdJz}BrV~wEpmC|\\pb@}wBfsAmhA|wIzmCpjDsB`zBkgBnbHlnAb{D~rCpeApuJniEvtCdiDotDplFrW|eDhrDl~H_jB`lCgfAbrDyuFxqIwdH~vC~|DfuAx{Dp_@`tGjaBhyDn~BfwBzuBfdH`NpiJ_lB|pOsEdkF|dDpyKreApaOiaCthF_qDnzA_dGamE_nAYurChgDoaAj|CylDpw@dAzwClhBr`G~DduErmA|iAm~@|vBfuAhuB"
+},
+"boya-lake>dease-lake": {
+"sig": "59.3667,-129.9833|58.4392,-129.9942",
+"geom": "slmiJhqywWguAiuBl~@}vBsmA}iAspBuoRxlDqw@b|E{gIxdHzuEfxEi_B|~BoyEyYiyGncDtpTz|Ern@txFrjRhuFiyFdvC}vNtcCfYl|Wx~ZxvCbmYt~Zd}QrrOsuEjzFkzHb}Me|@fxGtuCjmP}`F"
+},
+"dease-lake>stewart-hyder": {
+"sig": "58.4392,-129.9942|55.9367,-129.9908",
+"geom": "s|tcJjnlxW`l_@qcZlvf@j|@`fMhsc@fzFjbEfd]_eXfwe@xxV~|AbdJnuOvzObnk@hkIvxKy{H`oMxuJby^wjEj~GomJi^yxQrsP{~XdgPsrDflAad[p|YqmYftUmbp@bmZkzVlcCnrCi_AnxEpoG`eBldd@khLg]d{oBje`@ftW"
+},
+"stewart-hyder>smithers": {
+"sig": "55.9367,-129.9908|54.7822,-127.1728",
+"geom": "mcltI~zkxWszPcfK{~@{bDeqCj_BuwGsiIceAobYlqA_nMtCwrXtjA_bFa_CswG|gAcyYrlG_xGti@guMrqHizPt_DjNfkDmkH`kG{dC|lWsd`@zxNobLjwDe{O|xHusGtkB}{Kza@}lXpxDsbOzkc@s{u@~hO{hAftEe_F|nLivAbmHgzEx_DdHxtCdyL`r@qpo@eiDigI_kHqxAi~HaxSsaDccA_f@owQjyHgnZrcDc~CxdKvEl}B}`Fh`Rw`@vmAwiBxaCnnAb|EgiJhaZusS"
+},
+"smithers>prince-george": {
+"sig": "54.7822,-127.1728|53.9171,-122.7497",
+"geom": "wrjmIfoegWhrDelKj}En@tGsoG`bGymIbmDyjL|WiuJloCgaEj~Wq}T~}FddA|sJizFe|@koL{wDeuC_sCsuNcpJ}pMkcAyuMz~@ccJv~DalSnlIgoHxrDgyRlp@idRhnQovZfaMe}M`{BmhJqVizOfjBm{Era@eiPjdFmjLbiAsfJxjFynE`tAslx@dtDu}XnqAifAs{AgtbA`a@ytSnpDukI`rAsriArjGmxBrkBw~D~b@uuc@bkBs_DjtB{sQtaDguk@riB}mGrf@}fZhsIqjk@gIe~LagCm`Q}xGkkM}|FodC"
+},
+"prince-george>clearwater": {
+"sig": "53.9171,-122.7497|51.6497,-120.0399",
+"geom": "{tahIrpelVtzB`sBffNkyTtdo@|mBlzPsnFdw_@keQj}_@sed@tzGd\\`pRhl]zpCmbM~iYysD|bw@xzH`iU{_L|yAocRloTm}HxwOqn\\jwH_fB`cBzdLb~EirB~cAm}c@fuMmkE|lY{q`@~~]gqmA|eYyyGr~EneHpzC}qK`_@m{cAhxK}ve@yvCyhU~tGkpNelFiwN~Xqd`@p{L}jLk|X_dE}dQ{cY"
+},
+"clearwater>osoyoos": {
+"sig": "51.6497,-120.0399|49.0325,-119.4423",
+"geom": "}yfzHjht{U|dQzcYzvZhuFjis@k~QlyO|`S`~Z|gBfr`@rtRj`LwgFxiDrhc@rbR_wE`mJx{HbdE|fPjdl@`}F`qUfsXjlDw`Akz@qdM|gQw}Ll}k@bgHts|@o{[p|Cm{k@baEguBtbHy_b@vqVi|Ox}Dc|f@xlb@cyRgsKcgRdxI}d["
+},
+"osoyoos>winthrop": {
+"sig": "49.0325,-119.4423|48.4762,-120.1859",
+"geom": "ytgjH`t_xUbc@vbDrm@rBloOckEnzA}dBncClf@nwFgwBvcLaq@jnOhjFfvEhlEjcCwIpcP~sMpkFavArxLuvIftLjlJz`FhjJqg@tWx[ndAdwDluBnQfcCeIj~BefG|wFyS`lG{rApkEqHtcGubB~}Fhq@xqErvBllEqDhrJh}@~|Gf_BngAkFzzDa`BhoGuiUpnK"
+},
+"winthrop>packwood": {
+"sig": "48.4762,-120.1859|46.607,-121.6726",
+"geom": "a`{fHrwp|UtiUqnKbaB}pGluEy~CfdKpkKpcGbkAvdA_dEh~FkuDjwBioJvsFf|A|rCygBoJudHx`CgyAps@c{G~pUakBndDhyEfrFzj@hiBpgFfmL``E`oB|fP}^lwIxfD~hJn}IqGnjYnaK|qE~hGbhHdTibBdmSkyFlrIweApvPcvCxgGhuAflCxeOv{G|yIqOlaBsbIbdEwgGr~BpL|qAlqS~eD`zDvuYhVtjUguQj}FwqA`}Ds|Fns@kwGfnGopApfFadLvfMkwMhpOlgEbdIfkQbzFhjG`gA}`AlWtzCmr@jfHooQn{SwnC|nPruDjeFni@lqKhbGp}Pqb@rsQvsEfzT}eBld^|}EzgRy|GflHifDbkNnlPzqS"
+},
+"packwood>silver-lake": {
+"sig": "46.607,-121.6726|46.2929,-122.8151",
+"geom": "w|m{GxeseVfaEzrB`cFjwK~_@xzB_@`w]iZngIzPfvBaiAjpLtaAfxFtiDt`LhHvrAoW~`B}oFlzJyVbxC~{@zeEkH|_B~\\xlAgB`bAhy@v~Bk_AvuKb}@xcGrCr|FoVnkAfZvl@tqAdc@d_@vfB_{BvjFjDp{XggAflIw[ffNxqIuDncCjk@lnKrb@dqAjcAl}NhxAd}DqeAijC{dCvLw}A`aAqlAdJcxCqVslA"
+},
+"silver-lake>olympic": {
+"sig": "46.2929,-122.8151|48.1181,-123.4307",
+"geom": "w`qyGlyrlVmbA`rK~`CxxB}aBfz@okr@awEebQhtRmsNkKyiJnyEe_k@kkSonCt}Ng_GzyFgx@f`Jq}BroBkjKu^wxV|mOaa_@y_LgpFyvI_pHqaBspKa|JimKyiOmsKefC}eGvzHebEavCue@spDsz_@|zAkoEabDmkB|jBmu@drO`yDtrFwxHneMafHrzcA"
+},
+"olympic>forks": {
+"sig": "48.1181,-123.4307|47.9503,-124.3843",
+"geom": "a`udHzqjpVfgAph@gIjlAh_ArmP`x@b|Bpi@uBlaBbsBbMxdCio@lqFoO~pGqtAxuGvg@||@~`@lrEfaBl~@reAfmDoTlvBrP|gEylD`pRfZhnBf\\~gT|k@`nGmUtfQyb@nvHfOxpDxqAxkD}EhxCrdClnE|mB`a@njCsHxxAfmAncAxE|rBcxB"
+},
+"forks>long-beach": {
+"sig": "47.9503,-124.3843|46.3487,-124.0535",
+"geom": "khtcHzxdvVd~Bp|CfiCohBzhIawLti@ajFndG}xE`xCxUpcLnj^`l^igJljFwhEk_DcqJ~~Kibi@s]uoU~vCoqIlvEuTjtJl{EjrNmBrlFn}BngCfnFnvCwdB~uEmmMj~MdaDbmBtxCjcFyk@b~Io{F`\\ygPjiF_jLbvIiwBdcVdnHbdNq{C`{Bp~Lm_F~wGnhDvqMpgR_]vvZ}vJgUbsG`iE|bIpdIhUdpBxiChFbaNslBaG"
+},
+"long-beach>cannon-beach": {
+"sig": "46.3487,-124.0535|45.8918,-123.9615",
+"geom": "kn{yG`fdtVrlB`Gx@mrHdv@V~aBiiFvyDgzBnnCcaDzm@uvAh\\aqEjbIsbDt}ExhK~aCbiBpcFumA`iOy`@|aFtjBnrA{[`lA~S~~@ep@f{Cp|B|u@xyAvsBt[NpXeXuC"
+},
+"cannon-beach>white-salmon": {
+"sig": "45.8918,-123.9615|45.729,-121.4896",
+"geom": "{gbwGjfrsVtY_YwuBqVy}DcfEj`F{tIit@g{Hfm@ilJw|@_`I|wAccDwTobChkBk_ItxBofBgOsrBbaAw_EdtDwbHp`DgrCbeDugI{]waNlcDm|JxnKmwLrtGulMjhZaugA}EgiIqw@cuApbAuuCo{Bq~@ox@guEhj@cdCor@u|BlWq{Bw`BcxAtv@abl@o`A{wVywCkjHyq@cxHigJme`@ecJu~Rvr@aoYagBseNic@{pU_|Aij@eAs`BwSd`A"
+},
+"white-salmon>welches": {
+"sig": "45.729,-121.4896|45.3776,-121.944",
+"geom": "ykbvG`modVxdA_tC~MbJ_v@fkCpxAdyA`\\cPrxEfhAfuFgAb}@dtBfaA|Fl~AflB~qC`a@dcBljAb{N_i@fk@tQvh@xgBl_A~HftD{sAnvCjN|uC}]``F`f@vyAthD|[`{F|k@jYfHnn@w[zs@`k@hMph@|mAngAi]`[f_@oBf`Akn@pRno@dhBThjBge@`gAabA~@}Nd_HiVlaAi_@|Czx@tnDuj@tvAr]`yE{l@`nCewBt_CckA~vDavAm_@c_BodBpO~fB"
+},
+"welches>bend": {
+"sig": "45.3776,-121.944|44.0582,-121.3153",
+"geom": "ml|sGj_ggVqO_gBdvD|dCneEe}Hc@_jRxrDqiNtoMy_B`xHocFtaIwcSrfIy_H|kEv@|f]mjPf|NieSz~CugQ|_GfEkNo|Hr~K}nH`}d@vwLpoc@qzD`ci@tn["
+},
+"bend>newport": {
+"sig": "44.0582,-121.3153|44.6368,-124.0535",
+"geom": "ub|kGtkmcVwoFsnAwbJfyE}x@daDwmI`tJy`ClgHkxJjhMrIxaBkqM`pKceAzsEgkHv`JbfAj`Iqj@xsItg@dhIijAtOhMx|Gmp@z|Br`@niEz`Cb}GwZnoC`eCdaLaWf_JhvAtlGqcAjfB_bA_}AcZv^fwA`uDogAdfHjs@`hIka@njFh}@l`Dcf@|gDfQd|Gpl@deDobBbxJhc@fyByt@vf@}\\n}EtcBhnS}u@bpDe{Jt{G{fEv}Fe|@~aF}oBdgCGbtGkpBtVoEpqFuy@dcBeBr}RweAnwJxNxqN`aCzbOxQrmHg~A~vD}bEhiByrCdrFpbCbmMobA|nAdk@r|FmdDzwHzQ~hPudArvAqpC~dQekD`sBnVbtDnaEdhEv~AhwEz[hlCelAvqM"
+},
+"newport>bandon": {
+"sig": "44.6368,-124.0535|43.1187,-124.4093",
+"geom": "_cmoGtddtVbvZ`yDbgLubBtbZd}Gpj_@nsAlcJgpDndWhd@hoWvuHd_SevInhJtuPhaJ_z@jtZnrHljTadEdqHxzAryAjrGnvN||Hn}GznOvvF|iB"
+},
+"bandon>crescent-city": {
+"sig": "43.1187,-124.4093|41.7558,-124.2026",
+"geom": "{rdfGlsivV~xU`h@ncq@f~NphJo{HvZuiDjcMqlD~cH_k@jrXd`H`SmmBjqRv}@tmi@grMpsIe~HxQskExjFc{GvqKubBtdEg_L~yUpiA|hHppI"
+},
+"crescent-city>fort-bragg": {
+"sig": "41.7558,-124.2026|39.4457,-123.8053",
+"geom": "slz}FniauVbmC}uI`jGiaGr~I~x@jnVm_PlzD`jC``KimIblJmp@`hBjuFnaKviErRzbEvcUpz@`bFzkHfgLkv@`hF{uE|jP`y@pfH{`FdkJtK~fDvzFjYdgIltLzsF~|H_sArsIx`B|jEmjJzcLgl@dpCkxH`tFsz@b~BosOjpHm~Lv_NkwAvvHagHluAeuFvmE}|@~KmoDr`D}wCdmIdlF|fS_pEfIflBdgEu|@lhCxvB~bPunHxqBenGjtCzxBwj@vkEtrFnqB|oFx`I|an@y}MzbQpsH"
+},
+"fort-bragg>marina": {
+"sig": "39.4457,-123.8053|36.6777,-121.802",
+"geom": "sfwoFrusrVv~C`PblMymh@ahJysn@boRefIp_JcpP~_[i_B`na@uzYxs[kkHvhPgjWlsNie@rdYoh[~o_@}oBfc]ol[fyc@qjHjlIq{d@duTutCx{X{md@zdd@gka@haVyhElyr@ugy@~mg@}jHp_Zpzg@juMr`F"
+},
+"marina>yosemite": {
+"sig": "36.6777,-121.802|37.7456,-119.5936",
+"geom": "_qz~EtnlfVumGg|@ioEiuDetAupBibC}iNedAiP_yB}iEefFYo]udI`_Cg~FaH}uNwdKonEseAecEacMqu@geBk_Bcz@irD{sBqlBwwAknFlJsoCasFsrL_QwvDslB_}DbqBuaCtvD_vLtx@e~uA{g@mgGamDqoJczh@cfAvCkr^orKmqZuyEskE{_IoiMkvDzFyaAiaNbnAmfFkeDvlAwjBufBgbAaoFihCt]w_FjbGk}@gj@cu@pt@m_HuyHydBns@}JikClaBajA_`Ay`C`Lm{CejAq`Atu@w_DexA_xG`O_}CwbHwxCvv@woHe`@_fEuq@g|C}mBicCn@tn@"
+},
+"yosemite>sequoia-kings-canyon": {
+"sig": "37.7456,-119.5936|36.4864,-118.8331",
+"geom": "qdkeFvb}xUl}FrcVf_HYblCauDhgMp`AtpFeuMxuNn|ElkD}fD~rFkAbbJniFt{D}}A~~DvpIrqYtwEdeS~}Iv`z@cs@~pl@sut@vz]}zRdDoi_AqvMiqKpuA_aLgkBh[usHmiJm_EicK"
+},
+"sequoia-kings-canyon>bakersfield": {
+"sig": "36.4864,-118.8331|35.3733,-119.0187",
+"geom": "q|t}EblhtUl_EhcKr{FhfE`w@bbDfkBi[}fApyCpPhkBs}@bJrY`gCfcHvpDlqDn}EdBfvFlnUhFrIe}@rbUqjLttPNzgD`tA|ok@eCh`_@dhFjy\\wwAdbH{`JztAwB"
+},
+"bakersfield>death-valley": {
+"sig": "35.3733,-119.0187|36.4622,-116.8656",
+"geom": "wy{vEzyluUngCu|Anu@muZ|lM}z^~i@cgNboOs`ZxcF}aBdpGot^ybCgfO|_CgxMs|h@k}]siSuoh@yiB{_Sevh@en^snFgvWkvH`iBsiRmlKkz[zt@ssKa_Lu{VpaCwh`@`bWco@o}V{li@{~R}jGmjIfd@azH}oFg~JvgOqgZ~lQirD"
+},
+"death-valley>vegas-area": {
+"sig": "36.4622,-116.8656|36.1699,-115.1398",
+"geom": "wop}ExhhhUxdAoW`_BweG`gCenBhtDkjJdwBwrBzQc{AuuAgtBpZifDlwBgpCj}G_mVp]__TchHegR|YehDnoBcxCpjKwj^~@wqRloHu`AtiDw`EjqBclHxiCopCj}Zqim@qPwrKmgBazIvPygCzgDgsHkrFkcLaNglGb{AopI{c@cvMakBmeGglPI}qF{mCvJkiB"
+},
+"vegas-area>joshua-tree": {
+"sig": "36.1699,-115.1398|34.1356,-116.0542",
+"geom": "ukw{Epgw}TlpFj}Ftnc@`Upye@ze`@f}s@duQfcBowJbwGchArqRt_M|`ClvGfzS|u@fxNftGhcQfyS|fWcY`oNaeG|cOhwL`eOcVxcOmjEh_@vgUz}SicBllPqwHlo_@tnEndDfpB]l`d@ntDQjEn_W"
+},
+"joshua-tree>borrego-springs": {
+"sig": "34.1356,-116.0542|33.2558,-116.375",
+"geom": "ubjoEvyicU|Clk_Ax`DrbRjuDfvI~wGfxIl{CsgBxqQhnEnxAy_Nx`Yuwg@bmDueMdNu_FjkK}`LzxNa{H|}L~VtlKe~@|yF_{FvtLgzE|fLkzHx_BxuH{oAraF}b@vnR}oC|pJdJx}HrbAjiF`zE|RnKfmM"
+},
+"borrego-springs>quartzsite": {
+"sig": "33.2558,-116.375|33.6636,-114.23",
+"geom": "wg~iExnheU|jGoj@fMkyF`lIshOjs@utQdpC{~PCiif@~fByjBlc@ukFtqCa_Ir}FcyF`K}fQrlFudDuAogN~aCkz@rz@}o{@gvCazNoE{pEq}BswEwIgyHu_D{aFksEi~@ibBugGgjJegEqvNi{Cu|HesKu~@shDyaFuiDwsKs_@{~Abz@etLo@PyiC}uDHF{hImiRnFbS}x[qbEmtUmtAgbCcbBwyZ"
+},
+"quartzsite>kofa-nwr": {
+"sig": "33.6636,-114.23|33.3597,-114.15",
+"geom": "o|mlEjqexTgRopA~gu@N|g@mwBz[ik@`c@s`D`u@amB"
+},
+"kofa-nwr>organ-pipe-ajo": {
+"sig": "33.3597,-114.15|31.9403,-112.8017",
+"geom": "yfsjE|kuwT}~ClsLa`t@OgtBadWbyYifrDrlUk`jBbenAjjCxdKbdExzA|lIldq@hiV~sYh~C`s^sn@~yKepRbsIcnEnpq@l|KrrLgg@"
+},
+"organ-pipe-ajo>tucson": {
+"sig": "31.9403,-112.8017|32.2226,-110.9747",
+"geom": "yj}aEl_noTsrLfg@wqP{rEyjVkxAs|GyjBzaGumFnxA_oNbiDmqt@|m@o{c@t}@w~Fb_g@}z_@bbFykIjq@ybFs}A_hNq|Ga`HqaEqcKsoDm~Xic@m_RasEcbR_FejE}bPkmi@ipAqmHYu}JavGecA"
+},
+"tucson>catalina-state-park": {
+"sig": "32.2226,-110.9747|32.4297,-110.9247",
+"geom": "wltcE`xidTk^hS{fOfAe`AaWobB`PegBqQg|C{}@_uA}HymBohCog@kS@g`@qZym@qu@~K"
+},
+"catalina-state-park>chiricahua-willcox": {
+"sig": "32.4297,-110.9247|32.2529,-109.832",
+"geom": "o}|dEhk`dTpu@_LjYjpAl|Cz_DvyHxtAzqStC\\~g@paHcaA~eFwiMvcCebBhbXoif@xd@ujDyHoyDtwEyv`@HsyRa}AmvGrDcuAxeAa|BfCkqBg|GufX}uKquK_yAsjCgpJezG_wPqn\\mlAc|@"
+},
+"chiricahua-willcox>bisbee-tombstone": {
+"sig": "32.2529,-109.832|31.4437,-109.9186",
+"geom": "elzcEbrj}SdaSpk^xoJvyGheNthOpcHfeXcCrcG|wEis@hdDg_EpIuqFpeIeyAdwJqlHxgSwxU`rD_VznGraC|_Ls{FdiFfc@vhLciR"
+},
+"bisbee-tombstone>patagonia-sonoita": {
+"sig": "31.4437,-109.9186|31.4919,-110.857",
+"geom": "gj|~Djn{}SqiEtgJuwBleBivA|oCaj@zLgh@|rCqsBbyEilAtmIbo@bfDes@vuH[|zH{yApRm@jtG{[j`AsaPnvEabEvA_Mz`L{sDfxLr@t{FjvAtbH`zC~cHtj@paGz|An`Cjt@bqDvdCpGjkO|eD|jEnoGpHlcAf~@brAf{Fv`Bkd@b^nPzgA_g@tYDrx@u_CvB~P~H"
+},
+"patagonia-sonoita>superior-globe": {
+"sig": "31.4919,-110.857|33.2795,-111.1608",
+"geom": "}ue_EnqrcTjiDaiElsM`gHb|Fd~Iu`Rd}F_lShzNuwXp}Acli@_lNaytAyq@e}YkxIsoMtw@mcWvwYelaAhu{@izm@kzFiuCwwa@"
+},
+"superior-globe>camp-verde": {
+"sig": "33.2795,-111.1608|34.5622,-111.8535",
+"geom": "szbjEdaneT|NvuLnsAhfEzl@nqMwsXjl_@fHr`wAsVxlA}bCdw@oEdpEocBdzCgX|iM{sYv|@cgVm]kve@bzE}yOc_CeuIrrB{zMk^wcD`|@{qKkvB_aD{~BkpH`D_{EtdBojJ{cAmmJyuIeaAslDyfHovAymIo`G{e@cbLybCgt@aRkuH"
+},
+"camp-verde>grand-canyon": {
+"sig": "34.5622,-111.8535|36.0544,-112.1401",
+"geom": "ol}qEbluiToxAbwDceE{_Bc{]euh@{zCikKgw[`rJq|EbzEsu_@eCqdEuzCoyMb}d@ikAt_y@w_Fwy@wlHd{CiwXbdAeam@c`Hsry@qcAo_GpzB"
+},
+"grand-canyon>zion": {
+"sig": "36.0544,-112.1401|37.2011,-113.1936",
+"geom": "az`{EljmkTxzA_fBumAupBvc@i}BhqAenB|bCaPfpBotFlCqiD|zCs`DujGijKvCcuEctDawGtyAsY~oCgrDduAxJbnKspF`AcnDocB}aEhA_iFv|BajQbjGsdIdlBmsFxYgmIkx@iq@oxWysC_wi@bFumOzfJmjIzcIqj^lwN_aPnbM_|UTyz@ywA}_LyzD_eCr[wq@xgBbdAf}EbhI`nHdq@piEnaGraF|dCnsK}vHj~f@p`Ah\\{NvzCqkCnqE~|ApiAiWpaJvrCfdDenCdB_{AtqIkcCsfB__NpJlT|_D}iJzaScgGd_[hQlqBdfGdxIp`ChxGxgClkOgJ`uOy`DvtPmvUvtQwtGn{OcdH|zD{pCb}F_nBviOmoHpmEvq@~hAqbIcxDtcBczAl|@etH"
+},
+"zion>great-basin": {
+"sig": "37.2011,-113.1936|39.0058,-114.2153",
+"geom": "{x`bFp|zqTabD~cK~cBtkBgyBjxC{nIzr@mcXiwLc{WoeEyvMweIo_EclKmxNe~Eg{e@k{BkkTgqEecJ{dHikJnu@ylJ{}E}rWv|Hk}JbaFyxFvcYuxC`~R`~CbpDaC`gEyxNpgl@fdAjhMqwLddd@kr\\`cYerh@bkRcwFbaMo~Dp`Bal@|jKpoA`xD"
+},
+"great-basin>bryce": {
+"sig": "39.0058,-114.2153|37.6283,-112.1676",
+"geom": "}lamFrybxTqoAaxD`l@}jKn~Dq`BbwFcaMdrh@ckRhy\\uqYrpLquc@gdAkhMxxNqgl@yvCq{LhoKm_k@vsa@sgPrd@}jQurJy~RsEopO|}Mf`@~nHojE|~MfwMdf@ycQjbGuuOn}IuvEbRspKhyZ|pC`T_}DxrLipDh^irMjdI}c\\|pK~zA"
+},
+"bryce>torrey": {
+"sig": "37.6283,-112.1676|38.2988,-111.4197",
+"geom": "ugtdFhvrkTsnKo}Atl@kfFfcCqi@zpA}gDdmDTjwAgaC|oFg]jeAi~EmVwjDigEenA}n@uoAx~@ulF_vCczEgo@yaGwpHexCssCcyEafDayAcpBmtLexB_pAsfB_oM|yA}zF`bFktIoiC_fFoJudE|l@_bAwwD{iEepAjPexBogB_|M|_JinAcBva@}t@wr@eHg]ajCgtIhcAwlFab@pOkx@wfByjBga@cwG}bCqiDytBqe@ipFb_C{eDs|BumDfFq}F`bDmvEu~@gnBhqEg}DoBspDrbD]jmB"
+},
+"torrey>moab": {
+"sig": "38.2988,-111.4197|38.5733,-109.5498",
+"geom": "_hwhFbt`gT|G{wC{eCsiA{j@a`D|y@}xHtuDcuJpMe`Ibp@_e@ojAcqDrZcfGtiBsjGa`BwlDyuHi{BmlEshVhj@m`Fo_Ag~Cf[g}EorAqdNnNqlEupJwfAsvl@{z[icPw}PihGe`BmbM{rMo}BwFcrD`eB}cHgiSotCc{OpeBewDqCyqFdxAyxHzzE}vKpb@g}JkcCaaWzyO{oArdKs|Gt~HamCrjDe}DpgMifF|iDgbGlp@w~GdlEg~D"
+},
+"moab>black-canyon-gunnison": {
+"sig": "38.5733,-109.5498|38.5754,-107.7416",
+"geom": "ezljFxls{SqjEn{Dar@naHsjDf`G{fMhhFsjDd}Du~H`mCsdKr|GazOnmAi}BiwQjyBogPro@a`i@kvGkxLu`[qja@gsK{kJmUabSewDyaIoy@kcHt~A}zFtwEgtGv~CkxPdrGivM{B__BxmDwrI`}EozCz}EukQlbPsaP~fGkpDnwFa|IjxDyXloGsnLfpBieKbaAgvOliI{tKjdYgbK`pKw~JdDi_\\_~GquCid@ccDmnAuZqWxhBcz@eRszAb}AfeAxpB"
+},
+"black-canyon-gunnison>ouray": {
+"sig": "38.5754,-107.7416|38.0233,-107.6714",
+"geom": "odljF|qppSgeAypB|e@cEts@_wAbz@dRpWyhBlnAtZhd@bcD`kBxVpk@zx@br@q@nEtt@vkAvO`@jwUhtAuAn^zbAd_FqF~jPc|MdlCytAbxC}TzqAgq@z~@jInnAoy@v~AlJtg@iqBvvA}rApxAr@faCpoB~jBaSbfBbaA|tBcrBjjU_hK"
+},
+"ouray>mancos": {
+"sig": "38.0233,-107.6714|37.3453,-108.2903",
+"geom": "slagFxqdpSvoFwdC`oGlvBxsB`fEhsHf{EjAgnAzwHuYrlB}lHyB~w@x_Fsv@lyEplDlt@nfFk`@d}AxrBv]~pAffCvxCtOwS|~AbxBxPpBhpApxBga@fnHbqBzgFJ~rMqw@zxBaiAb~MffH~|KzDzwAzrBvnEz{AbPnbFupA`_Bm@rmB|vAnv@|FxtDyeKjySzSnoLybBfhCjYthCg~AdWmx@raDpwA~kH"
+},
+"mancos>durango": {
+"sig": "37.3453,-108.2903|37.2753,-107.8801",
+"geom": "c_}bF|m}sSjCaw@av@goC_a@ks@{Bio@|WmfBn_@ez@tU}Spw@pG~NyJ~BaXkX{p@_Dw}@xbBghCtD{b@wb@wzGdH{oBve@g~@xa@msBbzBshCjaEi}IeGqsDuhAwY}LwUdP}x@aOuy@xp@yg@f_@qy@oXu`B}CqrAxMwk@_j@aL^iO"
+},
+"durango>pagosa-springs": {
+"sig": "37.2753,-107.8801|37.2696,-107.0089",
+"geom": "siobFrimqSzk@r\\nm@ip@rpCoh@dnBslBky@s}BsD}eKrf@gcQoMsfBhr@uaBsbC{cLc{DmgBkbBedCe^gzD~\\cw@cGaaCdfAsyBvmEu{C`qAoiCaUyiBfVoiHrc@go@rqBqp@sw@ivF|`@ejHaxBwiEyuAksKzRioBt_AmtAqKqo@_|AeoAwnCsdGkc@eoB~f@iz@aP}jB"
+},
+"salida-co>buena-vista-co": {
+"sig": "38.5347,-106.0067|38.8422,-106.131",
+"geom": "mlejFtm_fS_BuTsZa@i{@np@u}ExfHes@nb@eoAyBgw@`g@}Q|w@kr@mGi}H|yAc_BcLeiBbJqy@kd@{}Ag@cdA_]uj@tC_w@ps@cw@`tA}n@xW{\\td@a_CnBmdF`nByJgE"
+},
+"buena-vista-co>leadville-co": {
+"sig": "38.8422,-106.131|39.2508,-106.2925",
+"geom": "ckalF|uwfSsaIbgGagFz~@q}GfcEg`Clk@{|@b~BidAuRwbAzp@e|@|jBynI|qCauFfrDgbE~z@}pAcXuhDnfCuqB~\\uoB_`Hg`@zZe`@kxA"
+},
+"leadville-co>wind-river-ext": {
+"sig": "39.2508,-106.2925|42.8666,-109.8608",
+"geom": "idqnF|gwgSqyLvmGctQkwBqu]tyPmzXjfu@_f[sbGqkPlkTs`UpjE}aIdtQ}m_@pfLwuP~uRnc@``KavZb{MzYzsa@wyFxzMhxB`rS_iYocOkxRroNuku@beUizLiyDw_p@vaZk{hAakFvjRrklBmoB|`mAysGdah@drQx~q@apAptL{qMbYggMx_TsvRnFymPjkL_gn@~mLi`KuqAmf~@tf\\sw_@fqRsbWv`["
+},
+"wind-river-ext>scottsbluff-ne": {
+"sig": "42.8666,-109.8608|41.8666,-103.6672",
+"geom": "kksdG~dp}SrbWw`[`p_@imR~m~@sj\\h`KtqA~fn@_nLxmPkkLbaS}Jv|Lk{SzhNa]|xAkoF_qRm`x@~rGqyg@rpBcomAuz]_|nDzdJ{zdCasComc@~jf@seqAn`TmhX|}b@mcbB|cUycMdcIcub@cb@smc@keJmmgAru@iwdBmfGg_XgsCcz_Ace~B|V"
+},
+"scottsbluff-ne>custer-sd": {
+"sig": "41.8666,-103.6672|43.7669,-103.5992",
+"geom": "gap~FbnvwRuve@ryAerg@ksC{c@_l]mpGcrJqB{pYwwTnHanXxiOsxWldAwjZus`A}zQ`HsvM`e^cwc@vaA}f]d{[yfIv_AmPzjFuhEhaH_qLc}BoiDnrFcwCklEu~HxvJaOthK}wZhrCq~Aa|A"
+},
+"custer-sd>badlands-sd": {
+"sig": "43.7669,-103.5992|43.8554,-102.3397",
+"geom": "sfcjGddiwRkgFd`GwcDpEcqD_cA}cE{`G{nAj_@y_Es_CcgB_pJzoCuaAhb@kaDqp@ocDvc@cqAw{AsvCkEyyEglDunEc_@q{Kc{Ge}DemAisCw`AiiI{kEqdCk}CqBaoBk~FwCcj`@pvAgdHzDk{fAr`Fq}K~DwgOnvFknG`g@w_FntEa~IvwT}A~~DunF~fF_Il@~nOwoAxnC"
+},
+"badlands-sd>medora-nd": {
+"sig": "43.8554,-102.3397|46.9188,-103.5382",
+"geom": "immjG`uloRhnAy~Skfb@~zF}pNbtYsdF|`\\we@bxoCehu@bjj@}{q@xtgAk}a@gy@m{Wcfr@cxKsqFyhsB}TswE_xJym`@oeT{bdAtsEoaC{aGe|u@gh@_{@iq_@qhoA{g@r~@fla@gzDxy`@"
+},
+"medora-nd>bismarck-nd": {
+"sig": "46.9188,-103.5382|46.8083,-100.7837",
+"geom": "wsj}Gjn}vR~o@ajC{c@qeDn~A}uMf~@s{AfQ{wEqcAgu\\haAepi@mp@kth@ppAojJiE}vMbj@g~Cs]{rE~}@ixH_`@o_f@n{Cq`WqcAayG_Uufh@dg@izJ}TomwDxkDodPdmDiqF_BatG"
+},
+"bismarck-nd>itasca-mn": {
+"sig": "46.8083,-100.7837|47.2405,-95.2081",
+"geom": "khu|GbicfRiyD_vOtMgjsAwqDmdOs{IcgwLhCsfn@xpGihMoHua`Cl{DwtIdPumo@ogE}u@eG{prBjvI_|d@a{@cw\\g`Iifa@mjFonrA}vTno@mmCzdGim^cQisClhK"
+},
+"itasca-mn>duluth-mn": {
+"sig": "47.2405,-95.2081|46.7867,-92.1005",
+"geom": "eti_HdzbdQrCcjGbwI{wCkWykVwbCytHqJanKgpCeqEvmBqcBlHaoS`lJe_LpkA_qIpeGamEdSs_EtpEkk@hpAo|CvbAkjxAewAsba@rvM_mXu|Bsts@|c@qhiAsuAghJ`dLezXpjPuaTne@eeoAh|FkcHvt@syJv}KafTec@{rFsvHkcK"
+},
+"duluth-mn>grand-marais-mn": {
+"sig": "46.7867,-92.1005|47.7497,-90.3344",
+"geom": "{_q|GbkcqPipWoxi@o|EegPc_NkyRkIqgDqbGaxLibD{uBwrAwxHqyFo{Lo`KmlQ{fYoz_@mkE{oDg|LweRm`Rq_`@eiQ_pc@arKml`@a~G}n`@mBwaE"
+},
+"grand-marais-mn>bayfield-wi": {
+"sig": "47.7497,-90.3344|46.8108,-90.8137",
+"geom": "sbmbH`njfPlBvaE`~G|n`@`rKll`@diQ~oc@l`Rp_`@f|LveRlkEzoDzfYnz_@l_KvjQfzFh|LbsAryHhbDzuBnaFvpJlj@znFhwM|sR`iCbaKt{KxwVvkC`_DdvG~iPhiDhaEpkAmhBpfCag@p~AieF~qLwkNHirLom@osB|l@kuDd@ga\\stDs`AvAsyX}_MiPeBofDofDsjSH}}IchEsiF}`BudGaz@_aFJohGiaAudBaWinP}tAcvCOafEgeBuSwOewDegAohCio@mmIxwA}iJviBuyBuI}|Jd_B{iDplGdzC"
+},
+"bayfield-wi>porcupine-mountains-mi": {
+"sig": "46.8108,-90.8137|46.8253,-89.6424",
+"geom": "owu|Gr`hiPeGd|@ln@nX|{AlfEzj@hc@~uA{F`nAfaDdlE{fBloFnBnxAbfCtGz~B`zCjH|aBfo@biDbuD`wAz@rZknH{dDgaKvAstUyRgrEbpC_nItwFeyGzkCigGb~CgaMxDksN~]uaBjKodHE_hLntBczJbaA}`C|BaeHou@utAwx@}{GuJawMbg@_lLsS{b@ch@fQawJm_UqFegMolB{rPeeCmcJ{a@_wDmaEfEehAv`Bc}C|~@w~CcRypEurEqtBe@y|Az|@_xA~Gq~D{l@igE~DjjA`pH_GnpCs_@zJ"
+},
+"porcupine-mountains-mi>marquette-mi": {
+"sig": "46.8253,-89.6424|46.5436,-87.3954",
+"geom": "{nx|GzecbPrg@k|CkjAapHzfKzf@jkHudAxpEtrEv~CbRhfFu`DlaEgE~BmuFtlA}bDxtGa_h@pC{v_@t~HahEb|@ivEwnAi`T@cmL}zB}gVyH{}McoDs`LszA}oRsyEkdI|f@upCxd@ehc@prBu}GboAe{KdXunHwb@wpDzn@yxJvvFegNr_Awwc@mDywDwzCk|M~ZivDkoB_zF}uCeyR~`@utM"
+},
+"marquette-mi>munising-mi": {
+"sig": "46.5436,-87.3954|46.4109,-86.6492",
+"geom": "kpa{GhlltOfjBqArgCceErmBurAkRagE`^myKe~@kf[rLe{Hs\\glE~}@c{I~mCimEnEepEhm@mfA`iBkp@zo@s}DocAgbUx`@_eGsUudFpaAmYjbAts@|x@k|A"
+},
+"munising-mi>tahquamenon-falls-mi": {
+"sig": "46.4109,-86.6492|46.6046,-85.2074",
+"geom": "amgzGnwzoOzwCa|@~~@obPlgDq|JnMahkBbbAcfPuVqt^nqD_}DcHuvWxs@q{B{dXXukFmsNkmGyYamHwrLoN_{KutBy_FgjA{a@oe@yiD}z@yx@~a@ir@"
+},
+"tahquamenon-falls-mi>st-ignace-mi": {
+"sig": "46.6046,-85.2074|45.8667,-84.7278",
+"geom": "orm{Gpg`gO}`@pQdsAq{GcNenBepEy_BmQ}sF~u@c}H|iL_r@vnHh~JpkEjeBh`SmhIb_AweChjCmOzcBc_CfdR}@lqE|lA`{DmaKffG_HnaYk}X~jBse@dj@guK`lIa{A~kCxn@|iCyxB"
+},
+"st-ignace-mi>traverse-city-mi": {
+"sig": "45.8667,-84.7278|44.7631,-85.6206",
+"geom": "mi}vGtkcdOnjRlm@hbJip@pgBy~AdrEqmM|yEoU`jBgpA|m[cb@dnGctAxsKzmAl}GqvCf_JlRh~A_cAplCxiE`}DbnBbsDn_Fx`EbWdaBx_BvvNlP_Llj]l{Fja@jFnwE|xArZsG`nNxhXv~\\``Sj{HkD~lGsaF`sMPz_Jvz@bmEgSndVn_Dx}CxLpxAelBttN"
+},
+"traverse-city-mi>door-county-wi": {
+"sig": "44.7631,-85.6206|44.928,-87.3767",
+"geom": "gxepGvwqiOdlButNimDkwFag@osg@raFasMjD_mGa`Sk{HyhXw~\\rGanN}xAsZkFowEm{Fka@dLoe^wyWsrBczNwyOyfVneEmkp@nk@kfItbB}yHtnPe`\\aAjb@p}Gu_Cr}IgyC`r@{iE|pNoqO`lSylIf|a@hWpqJwkDjlMkeAhtPhdA~fGck@jq{AbvSnuLzaDtcd@~aCjqEjPprG`_G|nJ}h@feZ~{B~fHooA|qJ`zAbyJgw@vnt@wbDnlCqB|vHzmYtcQpbMiE`sDxeCx`C`lKlmErbFhjaA`xm@bxWxf[vrJlpD`q@r}GpiBg@hhGddNmhAl|GjcAlfFlvLrwHzkVb}Dx}E|`HvkDjcRt|k@dXx~FmzP_w@guLsjM_oDgmEe`IqVo_I{zL}vIadA}lOw`Scke@xLwkKexQecC}qAryF"
+},
+"door-county-wi>indiana-dunes-in": {
+"sig": "44.928,-87.3767|41.6533,-87.0524",
+"geom": "__fqGvxhtO|qAsyFdxQdcCyLvkKp~Rxke@heA`nOvzLpvI`eF|`SjdMdfDlu@fdMnuK~M~g[ysa@n|n@ciNjc]|wKrwx@?tk`@xtKtvGniQtlnDhdCprq@wkPpu\\gdS|gWelAlwM}mRllTgdBfrMkvSb{Oe`FhfEmoq@wnFmjc@wyDl["
+},
+"indiana-dunes-in>stratford-on": {
+"sig": "41.6533,-87.0524|43.3701,-80.9808",
+"geom": "_lf}FbthrOhnD}xBuxJ_th@_ub@cnh@}}\\yeMay\\{si@mdKsomCmuGqbf@byBqkc@qrEsgf@q~\\idHclg@{er@u_WshBekDuiG_bAsnRr|EiwYiab@o|rAoP}x^yvIsxc@sjA}}p@nyJoxbCmqDuqo@pu@q|zCutKmh@i{PosPbbAkpLa`Tg|gAqsWgpT"
+},
+"stratford-on>elora-on": {
+"sig": "43.3701,-80.9808|43.6773,-80.4331",
+"geom": "wvugG~pgmNug@s@}xOgcM~EqvUoh@xPwa@{eA{pIwuFpm@ciWevDk\\vq@clSyqB_VgoHvXszF_d@ggGc|IxoAy|A"
+},
+"elora-on>algonquin-on": {
+"sig": "43.6773,-80.4331|45.3216,-79.2168",
+"geom": "o|qiG|u|iNq{@gqGsbHisLu_a@}fa@qlVczjBydGv`Eg{u@bvKqhDjmCmxIw|KqtMkz`@qxIstDgsIkA{sN_~GqoIgdJ}~RizCioHxdIyaAsnCsuXecJmtJrrC}gU|Oi`LgdGuuE{sI"
+},
+"algonquin-on>pec-on": {
+"sig": "45.3216,-79.2168|43.9209,-77.1421",
+"geom": "{xrsGh_obNro@x|DzfQh~K|gUeP`xJgsCzpXhcJd~@`pCtsHygIxhS~vCvlA{_HnjNs|E~`CsxFldzBmbp@wZazB`~HmiCi{BwwIl{Ae_Rf{Oe{DmbWaeyBvh@caI_xDg_b@suP{jp@peKc~Ez{KgqNstCywXni@ck[zdBafO~mDjgA`aG}cD"
+},
+"pec-on>gananoque-on": {
+"sig": "43.9209,-77.1421|44.3301,-76.1658",
+"geom": "ohakGbwyuMq}AllAym@eZybCrnB_sFqhBa_@mhAihB{UgqAbe@_cCirBu_Bu_DauButAqeP`TuuIdlDedB{zUsoAqlFjDgrBqh@_|CqVs~H{vAsjv@|kA}rEpt@mpIssBe{JmrDioI_~As|[qjAycJptAkq@"
+},
+"gananoque-on>perth-on": {
+"sig": "44.3301,-76.1658|44.901,-76.2497",
+"geom": "ieqmGdb{oMg{Cdr@sTd~AqbDj~BuqE`Iu]kw@eyByq@wkAzYghAmk@guBvS_t@cg@gdHh}@ycBdv@qgFVwtEjnGm_Dzg@muDbjEwsC`d@u`BngB}v@kLm|@}`Bs{Ago@iiCqKg~A_bAkqE|~Fw{CuiAqvFkeK_v@pz@"
+},
+"perth-on>lake-placid-ny": {
+"sig": "44.901,-76.2497|44.2795,-73.9799",
+"geom": "ov`qGjpkpM{`@irJp|A{_Ns`CyrHnd@giE~kMk~QygAmsJzwAq~D{KooDloAoQhyFyuJjkKcgJjFgnBliKe_IwwJiyLo_G_kNdsFylDtrCp`DtYgeDrqAqtB_LaiDzgDqsUhjIa|R_SimFirLkiWySurYcyAmyN}w@yoZvxAk_BrZi{GtbBmwEwdAca@sManB|`CwXvnCymG`YyiB{|@wuBrfAykHuTelCxvDwiGtfHoeFfoG}g@tjFeqDjt@ekC`gCkDhJefJdjBmwEfkIgN`fKonHhxCsiX"
+},
+"lake-placid-ny>south-hero-vt": {
+"sig": "44.2795,-73.9799|44.636,-73.27",
+"geom": "kigmGhfpbM{eCqpG|Cwp@i`@ecAqeCem@cuBkuDcG{~Aqs@uvAotEguDuRcmHpmBi`HykAyeBekByp@gJukA}i@o|@ukCrJy`@om@iKopAg_BmiElUigBaz@wgBgNanCo}@cb@u`BotE}HkdFiZfVysD{[gpElk@u|BaIuyGu}B{|AnZsqAcSkaCraA_`C}SuxDieHrOq|Etg@yaAlvBmtAoOyo@xrAsoDl}@}BlmA}tCppBcv@sBirD`dAqsB~BlX"
+},
+"south-hero-vt>berkshires-ma": {
+"sig": "44.636,-73.27|42.3959,-73.2454",
+"geom": "gxloGjse~LxjAucJxoEqcGx_I`lD|jH_bDthF~bA`[n{C~nXlsFbsKgaCpzN~fA`jHhmItrRpsB~cmAkoAdvDmkEbnK{iBj`OpdF~yKihDxbYxuCxyGrzFrfFbc@rwC|rF`}GvcAd|ZwSxzC{hExdFdoB~xLgqDlgL|jAtmGrtExsMszBvyNjbBlzCsrBbuIl}CxaFoa@he@wvKncFcuK"
+},
+"berkshires-ma>litchfield-hills-ct": {
+"sig": "42.3959,-73.2454|41.7495,-73.1899",
+"geom": "kgwaGrx`~LgLluCl|Bzl@l{AuJ`x@kl@lz@bM`kEu}AzxAmiBdLq|@s_@iw@vCqjBh_@wsFjm@{`BjoDyqAtaD{tC~`D}aB~~AaQnaCsiBjkFoXpsA_u@th@|fAveB~\\`eCuzAhaAnGnj@om@rq@`MteL{zAznDjXznC`aApvAaTjfBfhA~nCz_@neJzyFvoAfF~{AphApsA|zFjkDnsC"
+},
+"litchfield-hills-ct>eastern-townships-qc": {
+"sig": "41.7495,-73.1899|45.2168,-72.4864",
+"geom": "ify}F`|u}LyaJibNgqTa_Jti@}tSk}GeqUgySkrLgi@eyRgeG}nJooGrnGenVmjGk~LtdFqom@}`CywQksNc~b@vpFeuYezTapdByuJuokA{ot@oozA{qUelb@pbAahKdcRgnb@h_OuiEz|HadLLo_Vj_`@ocYezJa`JxbV"
+},
+"eastern-townships-qc>stowe-vt": {
+"sig": "45.2168,-72.4864|44.4654,-72.6874",
+"geom": "ce~rG~qlyL`s@uwBnbGswF~j@_sJjnE`fCv_NzMnpCveFfmDkoC|tCjr@bjLqv@`dBtpCthJfW``PbuDldAfjA|dGz~TjtDt~B`zCa_AtwFdzBj_CceChrChzB~{Gx`ApcB~pAfbDfrH"
+},
+"stowe-vt>north-conway-nh": {
+"sig": "44.4654,-72.6874|44.0583,-71.1284",
+"geom": "ysknG`wszL_fDkvHexKggDmcBqrRdzImfSpEyjDbyAafBrLuhFt}HofM_@otDjkFmx@lA}mMcnEesObVefAvsG{cDmbEacMhjBeoC|lDdF|aHkxErlCerEmhAkgIpgCye@l@ehB||BcqEbFy|P`_B}vE}y@ebJllAkbSzmG}mHzfHujBbv@c|CxtMm|AbiA_oApV_nFiiAk_P_mB_{Akx@eeEhuE_xDfzAxMhd@irA"
+},
+"north-conway-nh>bar-harbor-me": {
+"sig": "44.0583,-71.1284|44.3876,-68.2039",
+"geom": "q|{kGpecqL`qK}wGvEs`F{m@qiHejCezC{q@exLenEcyIaRgeRfiAsnHpoKg}Hr{CggMebCooC_FqyN_lMctNxeHw}D}eBytCjd@gcKcbH}lN~PmcImtIsdSmXyzM{gGuuQozKq`K_kQtb@ewCsnEf}CebFws@qhLyiH_`KicDqbPoB{eGdsEegFgWm{GtmAcnBszF_kMiL}kXlrAe_HkeFsbXhPo{Gu~Mci[{gIo{@{bBm}K|gBalEmp@shOvlDgsW{E_gMfjJeqJlxHxP`oKqlF{sBwtW"
+},
+"bar-harbor-me>camden-me": {
+"sig": "44.3876,-68.2039|44.2098,-69.0648",
+"geom": "gm|mGtch_LpDhpAfd@b`@vYjhBbD|hCea@|nC~lBnmCoj@vcBzHxk@k{DzWumAfaC_dClqAw`BhD}bAor@wrCj[gbFr{DdNn|BevC`w@zE~fMyfBtbHx@xaBifA|gKkAzrDbYveAsU~wAbo@zuDchBx_Erk@f`E{HjuBnnA`f@yKnqArtHhk@zmAjnBda@tnCjnEbdJnUtqBf}BfoAll@ztFac@~oCla@~}AnnAgYfx@u{ClvEaq@jlBgcBbgAnIxcAelAxrDldCpk@loDteBnMdiBraAnlIlyG"
+},
+"camden-me>hudson-valley-ny": {
+"sig": "44.2098,-69.0648|41.925,-73.9107",
+"geom": "cvylGbfpdLntCtkBtm@huK`bKftUd_B~xc@r_JllJdhG`lSmOb|IzcQl{Xyd@p{i@|kBfdIrpc@`za@vfHvo@|tDjaFtoA~hJl{^zc`@pz[nkPn|[x}FlwTpi]vfe@|~OjpItwZnd@xxJp_JjeG|sJ~b@puYloaAjmXhfVvdI}mApjMzlf@vcE_L`pLx~I|lJ`jh@gb@blKkfHjlPfmBxeLckA|`FxoClhKkfB~sK`C|hZnyDndWkmE`te@}nKzvOedAzwU}cI`|N}l@lg^scIbzM|cCkx@j_DvtIi}@`_M|hEdtAjpAfgIroOtrDdlMxpMt}^tjGe_BzfM|wGpwN"
+},
+"hudson-valley-ny>delaware-water-gap-pa": {
+"sig": "41.925,-73.9107|41.0187,-75.1391",
+"geom": "eq{~FrubbMocEyfBqgB|sAwn@t~Hxc@fjJfcCtdAvtSfnUtpBbwCjJb~B`xDjmCz|@taCdIndGzoDdkO`vMl~KzrCtIjnCpvCnzE`m@p{Nr{QrlTjxNnyEfyH`dBjAnaFnjOfeCp{Cy}@lx@~u@bjBf`LphHz{H|mBn|GvsGftCnwGn`EbrE~|GnrWddCdM"
+},
+"delaware-water-gap-pa>gettysburg-pa": {
+"sig": "41.0187,-75.1391|39.8309,-77.2311",
+"geom": "ajjyFdfriMv_AmL~pDj|Jaf@b}Cxz@df@fXxjDzgCt_FzpMznCv}@woBj~I`^zcKobFhcEx{CffEvY~l@hbKhbKd~\\rqFheZsZl{a@~x@vbYtpIrp[`uKtjx@zUdxJ~rBlkGjbB|pOh_O|o`@nbAxyJflAlpA|nI_qC}LpyGt_CjnG`TzuEf}@|I~jCd|EbeOp|K|}Nt`GtfHvbGzuG`jBfmB`gCp}JxjFxwBlD||AbpE"
+},
+"gettysburg-pa>harpers-ferry-wv": {
+"sig": "39.8309,-77.2311|39.3253,-77.7397",
+"geom": "mmbrFtdkvMdmIoGdnAd~DdwBz`Bf~@piC`oGrzClq@rpChlIdwLjhApDd{BnqAfrBx]v|H{pAz|D}rC~sGtBl}Azd@nyBvjD|vAhH`r@fo@deAdxA`pCnkItmAtpT|pBl|EWdlG`oAjsAcI|tE}]qIhFs^"
+},
+"harpers-ferry-wv>staunton-va": {
+"sig": "39.3253,-77.7397|38.1496,-79.0559",
+"geom": "_v_oFhonyMprDtzRxoByC`|FdoJpcHx{BxdAz_HnoBbeAadDjmYxK|aDzwRtlMhkJzpJrlCbqGy_A~lGbaDtwIx}IzvKnvMvjJnmG|hJ`iFbrCv`D`}D~hPdsBhs\\xtUfwLnrKnj@|sChfEzcF|yIt{CjaNh]r`IhaIjjG|rAlc@rr@spAj}B`wDn{C"
+},
+"staunton-va>lexington-va": {
+"sig": "38.1496,-79.0559|37.784,-79.4428",
+"geom": "snzgFtyoaNty@byA~`Aau@~qAb]``Am\\pbDzsBdhC|gEnzDx|BtuChbF`eD`yAjoG`{FpiHxaJtwBxwHfmBbxD|sIl{Ee`@jgB`mBfvD"
+},
+"lexington-va>new-river-gorge-wv": {
+"sig": "37.784,-79.4428|38.0708,-81.0836",
+"geom": "eureFhd{cNglBowDa~@rsCksDhkAydJ|hWfkDvoHfuIrjHfyBxhHyWdxAsbEx|C|Bh_LrbIplPvi@jzLa`DbgL}kBfjCqv@xaQ|`GlqKcjBz{HfoDplF|CjvHea@neAwvD~`AgQjdCizFthMwnBdrKwhFldHcD~~EyjHlrC{hAp}FswFfgG`NpfA~nAmY`_CfyBrU|_Gm~BdgEiHf|BqvCtgC_fAvtE_pDliAdDhdDchBl`C_{Hh|DjqHpfLiz@fk@nj@|F"
+},
+"new-river-gorge-wv>floyd-va": {
+"sig": "38.0708,-81.0836|36.9126,-80.3192",
+"geom": "_wjgFlh{mNxfAmGcgBv`AdfDvmDp`Fr^fbA|qBteDqIfbDxkBfxCJ`oFffEpzDcGtpCdnDjpEg[vfC|v@nuGmeBhiBg_IzyGaqFn{E_S`cGhaBdvCwxAhsGgZtcBvdAxhFycIljM_YdjCq~BjwAnk@mCuqBvjC}aC|IocG_sCqxQa`DkxFrqI{lDe_By{Fp}AkzA{WoqEx`C{nKiPeqJ|_CqkEqg@qhHptBqlBzdA_uM`aIn|Bv{EovFxjBldBdoHmHxuEp{EvdKcbA|WqwBd~D|P`nDyyHfdIuqI"
+},
+"floyd-va>boone-nc": {
+"sig": "36.9126,-80.3192|36.2168,-81.6746",
+"geom": "_oh`F`jfiNxZdaCheE|hEvy@piDhGpxB}c@thDpbBl|FpZjfFp{@jkBeKxrCh_@zvC`r@hvAxtCtcCfAvaAllAt|Atk@xgCnEb~CrwDn|G~rCjhKhhDlrGjkC`uIl_C~bErlBlpAh{DviLfIrlDuv@lhDdn@lxCyr@twIzoAiOnfBpq@haB~C|vAm~@j}EhzAqDrmB|m@xu@~MtaD`v@~`@lbBf~Frc@nUeNtiAxw@`h@}f@|v@zgAtkCzL~nCtg@pQv\\jdAyE|bDfgAnjAdWiKru@dsA_X|rBti@|vB~oB`[qOdkB~^hsAnyEp{@pqAp_B|gArbDft@jc@lgAqQpgFwbE`bB|o@x{Caj@tbCd_Aki@l`DjvAzkHgIjx@zxAbbO"
+},
+"boone-nc>asheville-nc-v3": {
+"sig": "36.2168,-81.6746|35.5951,-82.5515",
+"geom": "kr`|EvaoqNfeAu^tVt|@e`@xdCxRbrEt{@daAjyCdf@|pA`iC`DhjAvjEpeGjk@jdBhhCroAl_A|pAnmAfB`LvcAbrA_Cv|FjzAhlAag@~uArVvVdZeQ~_Af}@d{@iInuA|vAdvBlb@yo@tm@pLnlBmj@~aD~VvmBqb@x|@tNlgFxsFv_@tnCzoDzyBn^jz@znC`jAjfD|CvcBbj@oPzjAlqBd}@zaDySnc@od@xzAnxFldBrcCnOl_CzgBlfAlNsfArLrlB`zAfbCuK|vIzr@dw@m_@x`DhLzwEbhAbcCrmBlvV~mCn~Hoy@hiByfCbqAkOlcB|a@~\\"
+},
+"asheville-nc-v3>bryson-city-nc": {
+"sig": "35.5951,-82.5515|35.4308,-83.4487",
+"geom": "ydgxE~izvNd_@nnDzhChi@bgAbtDuShjD`e@|tH{RdzBtm@nsDlh@`v@~OtbGs@nqBojA|v@c[nmDnpAlrLd_Bpx@~H~{CvqB`_Gb~C|sBhgCpXlb@b`FzpCl_EmBxvAzx@~}Aj`DvdBr^pzB|ElpF{]hvBteCvxEga@~{Cuq@jg@zn@`u@I`j@wsA~gAef@ae@_]tKpFdeDmpApl@gb@xwBgyA~lC`QxxCzt@jxAtBf~Cl\\|n@w|@ti@"
+},
+"bryson-city-nc>chattanooga-tn": {
+"sig": "35.4308,-83.4487|35.0456,-85.3097",
+"geom": "g_gwE`pi|NblAwf@t{G~cKcEjwEhvGpyFiXrlH`oSxhRoG|tAfuExoGeeAv|Hn~D|hP~nI|}MzsFlaDp_AzoDfwG`hJ}b@lsF|fBxoFwwA|{BtwBd|I}zC`~a@siEvpBcyAbmD|y@zxA_|@bl@nJrhBifBrk@gGjvB_bAn_@ePvsDnuAdqB}b@v}C`w@b{Ay_EhnLuxCruXn~BnfBedCniOxcDrjP~bFnuCjqBl}IxcJ~qKrk@xmCbIfpCmbBtrE|h@dbAoY`fCczA~sCglAqs@"
+},
+"chattanooga-tn>hot-springs-ar-v3": {
+"sig": "35.0456,-85.3097|34.5037,-93.0552",
+"geom": "_{{tEr`ugOhfNhhWgrP~|v@}d]deLeaDnbPqiq@fwf@ylMre\\ilN~dDuvm@fij@n}Mbw{@m[~gn@ich@vum@~~D`ff@|uV`jm@~Vjg}@vaIveVp~Bh|h@d`r@bjmDv~JvxCxtOx{Ypim@lrzAopFniFaDj|MpkGleDecC|~_@hxFvc}@jdR||h@pmb@f`wBbqLdm_DnqKjdChUz|Oli`@pffAaiAfwh@paIfig@"
+},
+"hot-springs-ar-v3>petit-jean-ar": {
+"sig": "34.5037,-93.0552|35.1223,-92.9385",
+"geom": "e_rqE~y}vPwdBjBmu@y^ej@suBwpDmkFqxAohA_UjpAucAnj@ev@hlCkoDpmE_}C{FwIrbAap@t`@unAKibAkx@}lBAmuAii@csClIglAlW}|EbcIquBk{@srCiKyv@xa@ejAojAqeCv}AwQvsAam@sVqQ{aAex@v|Ai^ae@_d@tX{Zkp@ieAloDah@bJ}p@giBcaAvlCmzDrnCsc@_FqdBvbF_tC|mBqpAe|AseFeuAoiCulDgwA_Iy_@e~Kx^{oH}i@apBrGsoChf@eO`Bcz@sc@w}Ejk@g\\}n@w}DubAuZjXxZh@d{C~XpBgPakB"
+},
+"petit-jean-ar>mount-magazine-ar": {
+"sig": "35.1223,-92.9385|35.1614,-93.6435",
+"geom": "o_kuE~|fvPmb@onAtbAtZ|n@v}Dkk@f\\rc@v}EaBbz@if@dOsGroC|i@`pBy^zoHx_@d~KfwA~HrkC`nDncFxsArk@rxAgxEx_GaNvoHzaBh`J{Ar_CghAdX{|ArcBopAhwFecB|_N}a@wJwhBlyBqcAyHmKryAwd@xMat@`|C`I|lB}ZuvAfEjzAo^b{Ask@kNjFzjAxx@pbA"
+},
+"mount-magazine-ar>jasper-ponca-ar": {
+"sig": "35.1614,-93.6435|36.0559,-93.1902",
+"geom": "i|ruEflpzP}_AqoCjk@nOfXovD|ZtvAyDk_CtaBwrFppEedBpsDcuUpbBu|B{yBmEubDqkGssCqmAocNeyZypBgiI}bDiw@ulL`N_aKqvCm_BzP_`Av`CebL`C{vAg{EqmHgTmzB_oDomCzFog@gxA_xFhsAsnCka@wkA~rEogFtf@qcMo_CqW`mDoeEznBsN|tDc|EtdF{aF|J{}D_~AaeAu{CgvAr|@mmCovA}cAfxCy{CnjAybDcxAy\\}pAo{CjmBfPncA"
+},
+"jasper-ponca-ar>mountain-view-ar": {
+"sig": "36.0559,-93.1902|35.8687,-92.121",
+"geom": "cz`{EzfxwPgPocAnfAsk@z]hSrHwcAnk@iP~j@j_AeMpPxdAzI`h@rp@fB{h@{|@_tA~dAofCt]{fGuy@cmIc`DgvDuuDusA{fDymEz@waBfzDcpB|GijCkf@orA_@utAlhBgcFcMexF`cC{DjQgz@|lFg_Hf_B_hAnbAxLjc@q~@jkBuiArR_`AxtB_RnD}n@|`AanAqA{yJtcDciCxfDkZbrDaxFuiCozH[yx@tbAurAeVodFoeBi{AaOyyBiz@w`AskA{Zkm@sgC~w@m_Ero@geA|_@wpD}Bq{@}rAaeB_Fo`Ca^s_@xOs_C_WihA`z@mgFp`A_GeA}mBfq@e}C}d@esC"
+},
+"mountain-view-ar>eureka-springs-ar-v3": {
+"sig": "35.8687,-92.121|36.4012,-93.7386",
+"geom": "mr|yEnmgqP|d@dsCao@blGq`A~Faz@lgFfl@`kJzvAraDqiClwLjm@rgC|fCr|A`OxyBneBh{AdVndFyaAnlCtiCnzHcrD`xFyfDjZucDbiCpAzyJmfA~}BytB~QkcDfjEwbDdz@i_GnzIsaC`BtK~zFmhBfcFvZr{H{wPdlI_eFl_G_xBxvF}iCpsAdR|bBgsDp|CurFh|K`l@tfEqe@xkUuuAxkEqeCvzBqe@l}PssAdwCsDlwFq_DhsF}nBr`IyXroGfuAliIotAbR"
+},
+"eureka-springs-ar-v3>bentonville-ar": {
+"sig": "36.4012,-93.7386|36.3729,-94.2088",
+"geom": "wqd}Erhc{Pvl@vWuu@b`@u`A|rCuT`Lw_@uJae@`r@oK{DckA|k@tC~[_`@x`AzXzl@kQp`Bmk@sKsc@tj@qlA|RsFxQdQtS}Jdw@{O~c@{h@rC_LlPyAtxA{mA|xBxHn`@nkA|`@Y|aBet@dwAfBvSfz@nkAneC~y@~cAfgA{@jg@rYbpA_Rrq@Et~@bp@nlD~aAxkCbmA~tAf|AdSbqAncBxiErbDaH`|Ng|AmA{FnkA"
+},
+"bentonville-ar>devils-den-ar": {
+"sig": "36.3729,-94.2088|35.7757,-94.2394",
+"geom": "sa_}Edd_~PNgkArcBdAnBsmBjlH|c@hp@oc@xd@czAnrBstAvfDgAhw@`c@l|@r_CvwA`^liEcQb|@no@zmCoAjwDkj@rhA{y@p]zeAxgEteC~hG}_BrbIljAb_E{f@~uCvh@|uGmfC~oB}Cv{A|j@hmAeOfqAlaAzTbiD|~FfwB"
+},
+"devils-den-ar>mena-ar": {
+"sig": "35.7757,-94.2394|34.5859,-94.2405",
+"geom": "ckjyEl`e~Ps_G_xBaT{fDpdHqd@jmIn{A~bBi]tkD_dEhkDxl@puNb~HpvO~~BfzC`zMffC|En_D`qGtgJtBpeBdjDdkCjh@heI_aFfnGk|KbuKweDfjM_l@j|AsfAyeA}iHfmByvMpxIkt@nwCafDp`BrhBzkCoq@`qIr^xjKk{LjfGbmAd_BdhDfzExSyUjhD~aF~qPns@dKfpBotG|iAqOrlBddIbsItQ`FbvE"
+},
+"mena-ar>hill-country-tx": {
+"sig": "34.5859,-94.2405|30.2752,-98.8719",
+"geom": "u`brEnje~Pjx[rk`@lqk@mfSlxp@buCxkN|yP||CavE~lhA|}B~y|@poyBoo@`ddAnvH~}f@{vBxl|A~|[lhc@bti@zliBvweBfbMjaRn{JnxPjs]|nrA`Jxg`Bpqm@h|NbvXnvVzeN~wSzmpAdtM~jQcwArz`@vli@~sHhpr@tuWn_Jtgz@{l@raUggHx|H"
+},
+"hill-country-tx>austin-home-v3": {
+"sig": "30.2752,-98.8719|30.2672,-97.7431",
+"geom": "wcxwDl}mzQrbAwzAzqC_`BvpAa`Clk@m}Jl@ecIcFy}AiwAocCxHm}IafA_wMyp@ysAmBq_E{{Aq~Fio@{tHtgBurA|pJsbBuF_kD`i@mcB{lAmjDkSuxCx}AcuDfVieC_t@enE~P{lEew@_gCpNq}CdnAurC}]kkQapE_bKwZ{cDpb@w_Dm`@qpAaJqbHi|F{eJhx@gxC"
+}
+}

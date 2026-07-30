@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch the real driving route between consecutive stops and bake it in."""
 
-import json, pathlib, sys, time, urllib.request
+import json, pathlib, subprocess, sys, time
 
 ROOT  = pathlib.Path(__file__).resolve().parent.parent
 SRC   = ROOT / 'desktop' / 'index.html'
@@ -35,9 +35,12 @@ def sig_for(a, b):
 
 def fetch(a, b):
     url = OSRM.format(a['lng'], a['lat'], b['lng'], b['lat'])
-    req = urllib.request.Request(url, headers={'User-Agent': 'alaska-trip-dashboard/1.0'})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        data = json.loads(r.read().decode())
+    out = subprocess.run(['curl','-sS','--max-time',str(TIMEOUT),
+                          '-A','alaska-trip-dashboard/1.0',url],
+                         capture_output=True, text=True)
+    if out.returncode != 0:
+        raise RuntimeError((out.stderr.strip() or 'curl exit %d' % out.returncode)[:120])
+    data = json.loads(out.stdout)
     if data.get('code') != 'Ok' or not data.get('routes'):
         raise RuntimeError(data.get('code', 'no route'))
     return data['routes'][0]['geometry']

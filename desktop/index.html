@@ -15,19 +15,24 @@
   *{box-sizing:border-box;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
   .top-sticky{position:sticky;top:0;z-index:1000;background:var(--bg);}
-  header{padding:22px 28px 16px;border-bottom:1px solid var(--border);}
-  .header-row{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
-  .header-title{flex:1;min-width:260px;}
-  .trip-toggle{display:inline-flex;gap:6px;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:4px;margin-bottom:10px;}
-  .trip-toggle-btn{background:transparent;border:none;color:var(--muted);font-size:.78rem;font-weight:700;padding:6px 14px;border-radius:7px;cursor:pointer;transition:background .12s,color .12s;letter-spacing:.01em;}
+  /* One-row header: trip toggle, title, stats and search all share a line so
+     the map and stop list get the vertical space instead. Wraps on narrow
+     windows rather than squashing. */
+  header{padding:10px 28px;border-bottom:1px solid var(--border);}
+  .header-row{display:flex;justify-content:flex-start;align-items:center;gap:14px;flex-wrap:wrap;}
+  .header-title{flex:0 1 auto;min-width:0;}
+  .trip-toggle{display:inline-flex;gap:4px;background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:3px;margin-bottom:0;flex:none;}
+  .trip-toggle-btn{background:transparent;border:none;color:var(--muted);font-size:.72rem;font-weight:700;padding:5px 10px;border-radius:6px;cursor:pointer;transition:background .12s,color .12s;letter-spacing:.01em;white-space:nowrap;}
   .trip-toggle-btn:hover{color:var(--text);}
   .trip-toggle-btn.active{background:var(--accent);color:#0f1216;}
-  header h1{margin:0 0 4px;font-size:1.5rem;letter-spacing:.2px;}
-  header p.sub{margin:0;color:var(--muted);font-size:.92rem;}
-  .stats{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0;}
-  .stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:8px 14px;min-width:100px;}
-  .stat .n{font-size:1.25rem;font-weight:700;}
-  .stat .l{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+  header h1{margin:0;font-size:1.06rem;letter-spacing:.2px;white-space:nowrap;}
+  header p.sub{margin:1px 0 0;color:var(--muted);font-size:.7rem;line-height:1.3;
+    max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .stats{display:flex;flex-wrap:nowrap;gap:6px;flex-shrink:1;min-width:0;}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:4px 9px;min-width:0;
+    white-space:nowrap;}
+  .stat .n{font-size:.95rem;font-weight:700;line-height:1.2;}
+  .stat .l{font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;line-height:1.2;}
   nav.tabs{display:flex;gap:6px;padding:12px 28px 0;border-bottom:1px solid var(--border);flex-wrap:wrap;}
   nav.tabs button{background:none;border:none;color:var(--muted);padding:10px 16px;font-size:.9rem;cursor:pointer;border-bottom:2px solid transparent;border-radius:6px 6px 0 0;}
   nav.tabs button.active{color:var(--text);border-bottom:2px solid var(--accent);background:var(--panel);}
@@ -134,19 +139,18 @@
   .holiday-detail strong{color:var(--text);}
   .holiday-foot{margin:10px 0 0;font-size:.72rem;color:var(--muted);font-style:italic;}
   /* ---------- Route search ---------- */
-  .searchwrap{position:relative;margin:12px 0 2px;max-width:640px;}
-  .searchbox{display:flex;align-items:center;gap:8px;background:var(--panel2);border:1px solid var(--border);
-    border-radius:10px;padding:8px 12px;transition:border-color .15s;}
+  .searchwrap{position:relative;margin:0;flex:1 1 200px;min-width:170px;max-width:420px;}
+  .searchbox{display:flex;align-items:center;gap:7px;background:var(--panel2);border:1px solid var(--border);
+    border-radius:9px;padding:6px 11px;transition:border-color .15s;}
   .searchwrap.focused .searchbox{border-color:var(--accent2);}
   .searchbox svg{flex:none;opacity:.6}
-  #routeSearch{flex:1;background:none;border:none;outline:none;color:var(--text);font-size:.92rem;font-family:inherit;min-width:0;}
+  #routeSearch{flex:1;background:none;border:none;outline:none;color:var(--text);font-size:.84rem;font-family:inherit;min-width:0;}
   #routeSearch::placeholder{color:var(--muted);opacity:.85}
   #routeSearch::-webkit-search-cancel-button{display:none}
   .search-clear{background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.15rem;line-height:1;
     padding:0 2px;display:none;}
   .searchwrap.has-q .search-clear{display:block}
   .search-clear:hover{color:var(--text)}
-  .search-hint{font-size:.72rem;color:var(--muted);margin:5px 2px 0}
   .search-results{position:absolute;z-index:1200;left:0;right:0;top:calc(100% + 6px);background:var(--panel);
     border:1px solid var(--border);border-radius:10px;box-shadow:0 12px 34px rgba(0,0,0,.55);
     max-height:60vh;overflow-y:auto;}
@@ -386,28 +390,26 @@ It opens as a normal web page. An internet connection is only needed for the map
 <div class="top-sticky">
 <header>
   <div class="header-row">
+    <div class="trip-toggle" id="tripToggle">
+      <button class="trip-toggle-btn active" data-trip="bigloop">Alaska Big Loop</button>
+      <button class="trip-toggle-btn" data-trip="extension">Complete East Extension</button>
+    </div>
     <div class="header-title">
-      <div class="trip-toggle" id="tripToggle">
-        <button class="trip-toggle-btn active" data-trip="bigloop">Alaska Big Loop</button>
-        <button class="trip-toggle-btn" data-trip="extension">Complete East Extension</button>
-      </div>
       <h1 id="tripTitle">Austin → Alaska Big Loop</h1>
       <p class="sub" id="tripSub">2005 40ft motorhome + towed 4x4 truck · dog &amp; cat aboard · draft departure March 22, 2027</p>
     </div>
     <div class="stats" id="statsRow"></div>
-  </div>
-
-  <div class="searchwrap" id="searchWrap">
-    <div class="searchbox">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-           stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
-      <input type="search" id="routeSearch" autocomplete="off" spellcheck="false"
-             placeholder="Is it on the route? Search a town, park, trail, campground&hellip;">
-      <button class="search-clear" id="searchClear" title="Clear search" aria-label="Clear search">&times;</button>
+    <div class="searchwrap" id="searchWrap">
+      <div class="searchbox">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input type="search" id="routeSearch" autocomplete="off" spellcheck="false"
+               placeholder="Search the route&hellip;"
+               title="Searches every stop, nearby town, campground, trail, scenic drive and activity across both trips — press Enter to jump to the top match.">
+        <button class="search-clear" id="searchClear" title="Clear search" aria-label="Clear search">&times;</button>
+      </div>
+      <div class="search-results hidden" id="searchResults"></div>
     </div>
-    <p class="search-hint">Searches every stop, nearby town, campground, trail, scenic drive and activity across
-       <em>both</em> trips &mdash; press Enter to jump to the top match.</p>
-    <div class="search-results hidden" id="searchResults"></div>
   </div>
 </header>
 
@@ -642,13 +644,18 @@ const optionalNights = STOPS.filter(s=>s.optional).reduce((a,s)=>a+s.nights,0);
 const totalNights = STOPS.reduce((a,s)=>a+s.nights,0);
 const coreNights = totalNights - optionalNights;
 const lastMainStop = STOPS[STOPS.length-1];
+// Short labels so all four fit the one-row header; the full wording lives in
+// the title attribute rather than being cut.
 const stats = [
-  {n:STOPS.length, l:'Stops'},
-  {n:optionalNights ? `${coreNights}` : totalNights, l:optionalNights ? `Nights on the road (+${optionalNights} optional)` : 'Nights on the road'},
-  {n:fmtDate(STOPS[0].arrive), l:'Depart Austin'},
-  {n:fmtDate(lastMainStop.depart), l:`Branches to extension (${lastMainStop.name.split(',')[0]})`},
+  {n:STOPS.length, l:'Stops', t:'Stops on the Alaska Big Loop'},
+  {n:optionalNights ? `${coreNights}` : totalNights,
+   l:optionalNights ? `Nights (+${optionalNights} opt)` : 'Nights',
+   t:optionalNights ? `Nights on the road, plus ${optionalNights} optional (the Dalton Highway / Arctic Circle extension)` : 'Nights on the road'},
+  {n:fmtDate(STOPS[0].arrive), l:'Depart', t:'Departs Austin'},
+  {n:fmtDate(lastMainStop.depart), l:`Branch (${lastMainStop.name.split(',')[0]})`,
+   t:`Branches to the East Extension at ${lastMainStop.name}`},
 ];
-const mainStatsHTML = stats.map(s=>`<div class="stat"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
+const mainStatsHTML = stats.map(s=>`<div class="stat" title="${s.t||s.l}"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
 document.getElementById('statsRow').innerHTML = mainStatsHTML;
 
 // Flagbox item 1 references the live totals so it can never drift out of sync
@@ -721,11 +728,6 @@ function drawRoute(stops, geom, layerGroup){
 // awake for, and the default amber is a planning caveat.
 const LEG_ALERTS = {
  "leg1": [
-  {
-   "kind": "plan",
-   "icon": "⏱",
-   "text": "<b>These dates have no slack in them.</b> They are a straight-line calculation — start date plus each stop’s nights, back to back, with zero rest, weather or breakdown days anywhere. One bad-weather day or a mechanical issue pushes every date after it. The winter desert tail (Quartzsite through Camp Verde) is the only real buffer built into the plan."
-  },
   {
    "kind": "rig",
    "icon": "❄",
@@ -9214,11 +9216,12 @@ function extNpBadge(stopId, extraClass){
 
 const extTotalNights = EXT_STOPS.reduce((a,s)=>a+s.nights,0);
 const extStatsHTML = [
-  {n:EXT_STOPS.length, l:'Stops'},
-  {n:extTotalNights, l:'Nights (example pacing)'},
-  {n:fmtDate(EXT_STOPS[0].arrive), l:`Leaves ${EXT_STOPS[0].name.split(',')[0]}, CO`},
-  {n:fmtDate(EXT_STOPS[EXT_STOPS.length-1].depart), l:'Home — trip complete (example run)'},
-].map(s=>`<div class="stat"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
+  {n:EXT_STOPS.length, l:'Stops', t:'Stops on the East Extension'},
+  {n:extTotalNights, l:'Nights', t:'Nights on the road (example pacing)'},
+  {n:fmtDate(EXT_STOPS[0].arrive), l:`Leaves ${EXT_STOPS[0].name.split(',')[0]}`,
+   t:`Leaves ${EXT_STOPS[0].name}, where the extension branches off the main loop`},
+  {n:fmtDate(EXT_STOPS[EXT_STOPS.length-1].depart), l:'Home', t:'Home — trip complete (example run)'},
+].map(s=>`<div class="stat" title="${s.t||s.l}"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join('');
 
 // ---- Trip-mode toggle: swaps the shared top header (title/subtitle/stats)
 // between the Alaska Big Loop and this extension, so only one trip's info

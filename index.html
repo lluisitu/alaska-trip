@@ -1,34 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alaska Trip</title>
-<style>
-:root{--bg:#0f1216;--panel:#171b21;--panel2:#1d222a;--border:#262c35;--text:#e8ebef;--muted:#9aa4b2;--accent:#e8b04b;--accent2:#5fb4d6}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
- min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px}
-.wrap{width:100%;max-width:560px}
-h1{font-size:1.3rem;margin:0 0 4px}
-p.sub{color:var(--muted);font-size:.85rem;margin:0 0 22px}
-a.card{display:block;text-decoration:none;background:var(--panel);border:1px solid var(--border);
- border-left:3px solid var(--accent);border-radius:12px;padding:17px 19px;color:var(--text);margin-bottom:12px;
- transition:background .12s,border-color .12s}
-a.card:hover{background:var(--panel2);border-color:var(--accent)}
-a.card.phone{border-left-color:var(--accent2)}
-a.card .t{font-weight:800;font-size:1.05rem;margin-bottom:3px}
-a.card .d{color:var(--muted);font-size:.8rem}
-h2{font-size:.66rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:800;margin:22px 0 9px}
-a.lnk{display:flex;gap:10px;align-items:baseline;text-decoration:none;background:var(--panel);border:1px solid var(--border);
- border-radius:9px;padding:9px 13px;color:var(--text);font-size:.85rem;margin-bottom:7px}
-a.lnk:hover{background:var(--panel2);border-color:var(--accent2)}
-a.lnk .why{color:var(--muted);font-size:.75rem;margin-left:auto;text-align:right}
-</style></head><body><div class="wrap">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Alaska Trip</title><style>
+body{margin:0;background:#0f1216;color:#e8ebef;font:15px/1.55 -apple-system,BlinkMacSystemFont,sans-serif;
+min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px}
+.w{width:100%;max-width:600px}h1{font-size:1.25rem;margin:0 0 3px}
+p{color:#9aa4b2;font-size:.82rem;margin:0 0 20px}
+.r{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+@media(max-width:520px){.r{grid-template-columns:1fr}}
+a{text-decoration:none;color:#e8ebef;background:#171b21;border:1px solid #262c35;display:block}
+a.b{border-left:3px solid #e8b04b;border-radius:12px;padding:17px 19px}
+a.b.p{border-left-color:#5fb4d6}a.b:hover{background:#1d222a;border-color:#e8b04b}
+a.b .t{font-weight:800;font-size:1.03rem;margin-bottom:3px}
+a.b .d{color:#9aa4b2;font-size:.77rem}
+h2{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:#9aa4b2;font-weight:800;margin:0 0 9px}
+.l{display:flex;flex-direction:column;gap:7px;margin-bottom:22px}
+a.k{display:flex;gap:11px;align-items:baseline;border-radius:9px;padding:9px 13px;font-size:.85rem}
+a.k:hover{background:#1d222a;border-color:#5fb4d6}
+a.k i{width:18px;flex:none;text-align:center;font-style:normal}
+a.k s{color:#9aa4b2;font-size:.75rem;margin-left:auto;text-align:right;text-decoration:none}
+.n{background:#171b21;border:1px solid #262c35;border-left:3px solid #7ec488;border-radius:9px;
+padding:11px 14px;color:#9aa4b2;font-size:.78rem}
+</style></head><body><div class="w">
 <h1>Alaska Trip</h1>
-<p class="sub">Austin → Alaska → home, and the East Extension. Pick a screen.</p>
-<a class="card" href="desktop/"><div class="t">🖥 Desktop dashboard</div><div class="d">Full map, all stops, research, booking board</div></a>
-<a class="card phone" href="mobile/"><div class="t">📱 Phone dashboard</div><div class="d">Lighter build for on the road</div></a>
+<p>Austin to Alaska and home, plus the East Extension. Public, no login, any device.</p>
+<div class="r">
+<a class="b" href="desktop/"><div class="t">Desktop dashboard</div><div class="d">Full map, 98 stops, research, booking board</div></a>
+<a class="b p" href="mobile/"><div class="t">Phone dashboard</div><div class="d">Lighter build for on the road</div></a>
+</div>
 <h2>Straight to a screen</h2>
-<a class="lnk" href="desktop/#tab=booking">◉ Booking Board <span class="why">what to book next</span></a>
-<a class="lnk" href="desktop/#tab=overview&layers=route,state">🗺 Map + all state parks <span class="why">route &amp; parks layers</span></a>
-<a class="lnk" href="desktop/#tab=stops&trip=extension">🍁 East Extension <span class="why">the second trip</span></a>
-<a class="lnk" href="desktop/booking-windows.ics">📅 Booking calendar <span class="why">.ics subscribe</span></a>
+<div class="l">
+<a class="k" href="desktop/#tab=booking"><i>&#9673;</i> Booking Board <s>what to book next</s></a>
+<a class="k" href="desktop/#tab=issues"><i>&#9873;</i> Known issues <s>every open decision</s></a>
+<a class="k" href="desktop/#tab=overview&layers=route,state"><i>&#9906;</i> Map and all 921 state parks <s>route and parks layers</s></a>
+<a class="k" href="desktop/#tab=stops"><i>&#9776;</i> All stops <s>the full itinerary</s></a>
+<a class="k" href="desktop/#tab=stops&trip=extension"><i>&#10047;</i> East Extension <s>the second trip</s></a>
+<a class="k" href="mobile/#tab=booking"><i>&#9635;</i> Booking Board on the phone <s>home-screen shortcut</s></a>
+</div>
+<h2>Preview any date</h2>
+<div class="l">
+<a class="k" href="desktop/?date=2027-06-20"><i>&#9788;</i> Mid-Alaska season <s>Jun 2027</s></a>
+<a class="k" href="desktop/?date=2027-10-05"><i>&#9650;</i> Larch at Winthrop <s>Oct 2027</s></a>
+<a class="k" href="desktop/?date=2027-12-25"><i>&#10052;</i> Christmas at Sequoia <s>Dec 2027</s></a>
+<a class="k" href="desktop/?date=2028-10-03"><i>&#9832;</i> Stowe at peak colour <s>Oct 2028</s></a>
+<a class="k" href="desktop/booking-windows.ics"><i>&#9993;</i> Booking calendar <s>.ics subscribe</s></a>
+</div>
+<div class="n">Published from GitHub Pages. Run <code>./publish.sh</code> in <code>~/alaska-repo</code> and both sites rebuild in about a minute.</div>
 </div></body></html>

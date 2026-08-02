@@ -37,6 +37,10 @@ def kv(decl):
                dict(re.findall(r'([\w-]+)\s*:\s*"((?:[^"\\]|\\.)*)"', raw))
     except Exception as e:
         print("  (kv skip",decl,e,")"); return {}
+RGEOM       = grab('const ROUTE_GEOM =','{','}')
+EXTRGEOM    = grab('const EXT_ROUTE_GEOM =','{','}')
+LEGALERT    = grab('const LEG_ALERTS =','{','}')
+EXTLEGALERT = grab('const EXT_LEG_ALERTS =','{','}')
 LEGN    = kv('const LEG_NAMES =')
 EXTLEGN = kv('const EXT_LEG_NAMES =')
 
@@ -53,9 +57,13 @@ DATA = {
  'issues': ISSUES or [], 'extIssues': EXTISS or [],
  'legNames': LEGN or {}, 'extLegNames': EXTLEGN or {},
  'legColors': LEGC, 'extLegColors': EXTLEGC,
+ 'legAlerts': LEGALERT or {}, 'extLegAlerts': EXTLEGALERT or {},
+ 'routeGeom': RGEOM or {}, 'extRouteGeom': EXTRGEOM or {},
 }
 print(f"stops={len(DATA['stops'])} ext={len(DATA['ext'])} issues={len(DATA['issues'])} extIssues={len(DATA['extIssues'])}")
 print(f"legColors={len(LEGC)} extLegColors={len(EXTLEGC)}")
+print(f"legAlerts={len(LEGALERT or {})} extLegAlerts={len(EXTLEGALERT or {})}")
+print(f"routeGeom={len(RGEOM or {})} extRouteGeom={len(EXTRGEOM or {})} routed legs")
 
 BLOB = json.dumps(DATA, ensure_ascii=False, separators=(',',':'))
 
@@ -114,6 +122,26 @@ main{padding:0 12px 20px;}
 .view.active{display:block;}
 .sechead{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);
   font-weight:700;margin:16px 2px 8px;}
+/* ---------- per-leg alerts ---------- */
+/* The desktop's single "read this first" box was split so each warning sits on
+   the stage it applies to. Orange stays reserved for coach-damage risks. */
+.legalerts{margin:10px 2px;display:none;flex-direction:column;gap:7px;}
+.legalerts.open{display:flex;}
+.legalert{display:flex;gap:8px;align-items:flex-start;font-size:.79rem;line-height:1.45;
+  padding:9px 11px;border-radius:8px;background:rgba(232,176,75,.10);color:#e6cf9a;
+  border-left:2px solid rgba(232,176,75,.55);}
+.legalert .la-ic{flex:0 0 auto;}
+.legalert.la-rig{background:rgba(217,119,87,.13);color:#e8b49a;border-left-color:rgba(217,119,87,.7);}
+.legalert.la-book{background:rgba(95,180,214,.12);color:#a8d4e8;border-left-color:rgba(95,180,214,.6);}
+.legalert b{color:#fff;font-weight:700;}
+.leglabel{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;font-weight:800;
+  margin:18px 2px 0;display:flex;align-items:center;gap:7px;min-height:34px;}
+.leglabel.tap{cursor:pointer;}
+.leglabel .lcount{margin-left:auto;font-weight:700;font-size:.64rem;opacity:.75;
+  display:flex;align-items:center;gap:5px;}
+.leglabel .lcar{transition:transform .15s;display:inline-block;}
+.leglabel.open .lcar{transform:rotate(90deg);}
+.leglabel .ldot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;}
 /* ---------- cards ---------- */
 .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;margin-bottom:9px;overflow:hidden;}
 .chead{display:flex;align-items:flex-start;gap:9px;padding:13px;cursor:pointer;min-height:56px;}
@@ -338,9 +366,37 @@ function cardHTML(s,i){
 }
 function tog(id){ const c=document.getElementById('mc-'+id); if(c) c.classList.toggle('open'); }
 
+const legAlerts = () => trip==='bigloop' ? (D.legAlerts||{}) : (D.extLegAlerts||{});
+function legAlertHTML(leg){
+  const list = legAlerts()[leg];
+  if(!list || !list.length) return '';
+  return '<div class="legalerts">' + list.map(function(a){
+    return '<div class="legalert la-'+esc(a.kind||'plan')+'"><span class="la-ic">'+esc(a.icon||'')+
+           '</span><span>'+(a.text||'')+'</span></div>';
+  }).join('') + '</div>';
+}
+function togAlerts(el){
+  const box = el.nextElementSibling;
+  if(box && box.classList.contains('legalerts')){ box.classList.toggle('open'); el.classList.toggle('open'); }
+}
 function renderStops(){
-  document.getElementById('stopsWrap').innerHTML =
-    '<div class="sechead">'+stops().length+' stops</div>' + stops().map(cardHTML).join('');
+  // Stage headers carry that stage's alerts, so a Denali closure shows up on
+  // the Alaska leg rather than in one wall of text at the top of the trip.
+  const arr = stops(), ln = legNames(), lc = legColors();
+  let out = '<div class="sechead">'+arr.length+' stops</div>', prev = null;
+  arr.forEach(function(s,i){
+    if(s.leg !== prev){
+      prev = s.leg;
+      const al = (legAlerts()[s.leg]||[]).length;
+      out += '<div class="leglabel'+(al?' tap':'')+'"'+(al?' onclick="togAlerts(this)"':'')+
+             '><span class="ldot" style="background:'+(lc[s.leg]||'#e8b04b')+'"></span>'+
+             esc(ln[s.leg]||s.leg||'')+
+             (al?'<span class="lcount">'+al+' alert'+(al>1?'s':'')+'<span class="lcar">\u203a</span></span>':'')+
+             '</div>' + legAlertHTML(s.leg);
+    }
+    out += cardHTML(s,i);
+  });
+  document.getElementById('stopsWrap').innerHTML = out;
 }
 function renderIssues(){
   const a=issues();
@@ -363,6 +419,36 @@ function renderStats(){
 
 /* ---------------- map ---------------- */
 let map=null, layer=null;
+const routeGeom = () => trip==='bigloop' ? (D.routeGeom||{}) : (D.extRouteGeom||{});
+/* Encoded-polyline decoder. The real driving geometry is baked in by
+   tools/build_routes.py, so this needs no network — the road shape survives
+   offline, which is the whole point on the Cassiar and the Alcan. */
+function decodePolyline(str){
+  let index=0, lat=0, lng=0; const out=[];
+  while(index < str.length){
+    let shift=0, result=0, byte;
+    do { byte=str.charCodeAt(index++)-63; result|=(byte&0x1f)<<shift; shift+=5; } while(byte>=0x20);
+    lat += (result&1) ? ~(result>>1) : (result>>1);
+    shift=0; result=0;
+    do { byte=str.charCodeAt(index++)-63; result|=(byte&0x1f)<<shift; shift+=5; } while(byte>=0x20);
+    lng += (result&1) ? ~(result>>1) : (result>>1);
+    out.push([lat/1e5, lng/1e5]);
+  }
+  return out;
+}
+/* Full coordinate path for the current trip: real roads where we have them,
+   a straight hop where we don't. Used by both the Leaflet map and the SVG. */
+function routePath(){
+  const a = stops().filter(s=>typeof s.lat==='number' && typeof s.lng==='number');
+  const g = routeGeom(), out = [];
+  for(let i=0;i<a.length;i++){
+    out.push([a[i].lat, a[i].lng]);
+    const b = a[i+1]; if(!b) break;
+    const enc = g[a[i].id+'>'+b.id];
+    if(enc){ const pts = decodePolyline(enc); for(let k=0;k<pts.length;k++) out.push(pts[k]); }
+  }
+  return out;
+}
 function legendHTML(){
   const ln=legNames(), lc=legColors(), seen={};
   stops().forEach(s=>{ if(s.leg) seen[s.leg]=1; });
@@ -385,7 +471,10 @@ function drawSvgFallback(){
   const sc=Math.min((W-2*P)/spanLo, (H-2*P)/spanLa);
   const ox=(W-spanLo*sc)/2, oy=(H-spanLa*sc)/2;
   const X=s=>ox+((s.lng-minLo)*k)*sc, Y=s=>oy+((maxLa-s.lat))*sc;
-  const pts=a.map(s=>X(s).toFixed(1)+','+Y(s).toFixed(1)).join(' ');
+  // follow the baked road geometry when it's there, stop-to-stop otherwise
+  const path = routePath();
+  const pts=(path.length>1 ? path.map(p=>({lat:p[0],lng:p[1]})) : a)
+    .map(s=>X(s).toFixed(1)+','+Y(s).toFixed(1)).join(' ');
   const lc=legColors();
   let dots='';
   a.forEach(s=>{ dots += '<circle cx="'+X(s).toFixed(1)+'" cy="'+Y(s).toFixed(1)+'" r="5.5" fill="'+
@@ -436,7 +525,8 @@ function drawMap(){
       fillColor:legColors()[s.leg]||'#e8b04b',fillOpacity:1})
       .bindPopup('<b>'+esc(s.name)+'</b><br>'+fmt(s.arrive)+' – '+fmt(s.depart)+' · '+(s.nights||0)+' nights'));
   });
-  if(pts.length>1) marks.push(L.polyline(pts,{color:'#5fb4d6',weight:2,opacity:.45}));
+  const path = routePath();
+  if(path.length>1) marks.push(L.polyline(path,{color:'#5fb4d6',weight:2,opacity:.5,lineJoin:'round'}));
   layer = L.layerGroup(marks).addTo(map);
   setTimeout(()=>{ map.invalidateSize(); if(pts.length) map.fitBounds(pts,{padding:[26,26]}); },80);
 }

@@ -276,12 +276,12 @@
 "geom": "sfwoFrusrVv~C`PblMymh@ahJysn@boRefIp_JcpP~_[i_B`na@uzYxs[kkHvhPgjWlsNie@rdYoh[~o_@}oBfc]ol[fyc@qjHjlIq{d@duTutCx{X{md@zdd@gka@haVyhElyr@ugy@~mg@}jHp_Zpzg@juMr`F"
 },
 "marina>yosemite": {
-"sig": "36.6777,-121.802|37.7456,-119.5936",
-"geom": "_qz~EtnlfVumGg|@ioEiuDetAupBibC}iNedAiP_yB}iEefFYo]udI`_Cg~FaH}uNwdKonEseAecEacMqu@geBk_Bcz@irD{sBqlBwwAknFlJsoCasFsrL_QwvDslB_}DbqBuaCtvD_vLtx@e~uA{g@mgGamDqoJczh@cfAvCkr^orKmqZuyEskE{_IoiMkvDzFyaAiaNbnAmfFkeDvlAwjBufBgbAaoFihCt]w_FjbGk}@gj@cu@pt@m_HuyHydBns@}JikClaBajA_`Ay`C`Lm{CejAq`Atu@w_DexA_xG`O_}CwbHwxCvv@woHe`@_fEuq@g|C}mBicCn@tn@"
+"sig": "36.6777,-121.802|37.5222,-119.9219",
+"geom": "_qz~EtnlfVumGg|@ioEiuDetAupBibC}iNedAiP_yB}iEefFYo]udI`_Cg~FaH}uNwdKonEseAecEacMqu@geBk_Bcz@irD{sBqlBwwAknFlJsoCasFsrL_QwvDslB_}DbqBuaChvDeqLdQkrkAvg@aeEyj@uwKmuD{sJuoh@c|@nBkw^esKioZwwEwhE{_IoiMkvDzFyaAobNx|AipEatDxw@gkBwgBye@ewE"
 },
 "yosemite>sequoia-kings-canyon": {
-"sig": "37.7456,-119.5936|36.4864,-118.8331",
-"geom": "qdkeFvb}xUl}FrcVf_HYblCauDhgMp`AtpFeuMxuNn|ElkD}fD~rFkAbbJniFt{D}}A~~DvpIrqYtwEdeS~}Iv`z@cs@~pl@sut@vz]}zRdDoi_AqvMiqKpuA_aLgkBh[usHmiJm_EicK"
+"sig": "37.5222,-119.9219|36.4864,-118.8331",
+"geom": "m{_dFte}zUj}AqyAnoHme@gQspBtoBeyF{uBuuJxiDaqHjlA{{@foFfqAbpEesAbdCaiLjeAlq@~xBu|Al`ATps@pvB~cBxr@da@vbDtrYfxE|jSj_Jxm[}DtqRan@|hAwz@bnG|z@jo_@syb@`bLu{Plt]gnRnJev_AwuDcgFy_HeiDm]_oCr}@cJaQyhBlgAa|CgkBh[aw@cbDs{FifEm_EicK"
 },
 "sequoia-kings-canyon>bakersfield": {
 "sig": "36.4864,-118.8331|35.3733,-119.0187",
@@ -630,5 +630,13 @@
 "litchfield-hills-ct>hudson-valley-ny": {
 "sig": "41.7495,-73.1899|41.925,-73.9107",
 "geom": "ify}F`|u}LypFt}BkoGj}Azg@rdEewBlbDlIhiByg@vrAstAvhByq@f@ea@p_Bx\\hwB__AnM_z@ck@k~Cfe@{gAqb@mMxX|GpfAcq@fwBxz@~_CetCrwFyWhfDpSlwDesAr_Bw`@rvBnIx|@_o@haBlPrlDoXxdBjc@fkBofCj{Jl}@~cAn{@zeDxqAjR|h@fbB`GrtCuzAzzDaKlwCvdDrkDhLj|BbdAbgAv_@leC"
+},
+"sequoia-kings-canyon>lone-pine": {
+"sig": "36.4864,-118.8331|36.606,-118.0629",
+"geom": "q|t}EblhtUl_EhcKr{FhfE`w@bbDfkBi[}fApyCpPhkBs}@bJrY`gCfcHvpDlqDn}EdBfvFlnUhFrIe}@``UgjLfwPDzgD`tAxfi@u@viCwqQ{XchNhk@k_CnkCfIb_Aa|CgiB_vEhvAgeD|J_iDqrCisEfq@kkE_|AkbBuGeiIqiA}rD|d@ilB_q@cm@`vA_LdsAicDdgBalMfnGp|AvdAh{AvxCqr@iuDgzDqFsgBfv@cShgBubGq{BitEu|AyvO}yDsiIVm}CibEq~BnOaiCqyC{zG~hAgiC`eMarFlsJ}nTx]}bDepNcbFika@~v@awFbmCsqJjlAad]dsJm_Un~@okJhcH_`Jyh@wsW|aB{bGaZmpRd`E"
+},
+"lone-pine>death-valley": {
+"sig": "36.606,-118.0629|36.4622,-116.8656",
+"geom": "irl~ErdroUxeDy`@je@}nKdxGkiOr`HqpHv`LqfHdkGo`Bf_FsgHfm@wmHhmAmqBya@yuBmfFs}D}bCeqF|iDcxCtA}nB~q@kuAgtAy[yCab@d}@yHbr@g_B_f@m|BhY{dAfk@cQi\\su@bS}yAajAgiVlf@_qCg[uaAykB_}AkyHokA{xB}nCsjAil@qgO{yCgyEa_C}jGmjIfd@azH}oFg~Jf}AsnDhjD}tEd}@exD~_EyhHn_Bsw@htDmWnvCsnAja@rPh}Bgc@"
 }
 }

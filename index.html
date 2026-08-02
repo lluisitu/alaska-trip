@@ -2,8 +2,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Alaska Trip</title><style>
 body{margin:0;background:#0f1216;color:#e8ebef;font:15px/1.55 -apple-system,BlinkMacSystemFont,sans-serif;
 min-height:100vh;display:flex;align-items:center;justify-content:center;padding:26px}
-.w{width:100%;max-width:600px}h1{font-size:1.25rem;margin:0 0 3px}
-p{color:#9aa4b2;font-size:.82rem;margin:0 0 20px}
+.w{width:100%;max-width:620px}h1{font-size:1.25rem;margin:0 0 3px}
+p.s{color:#9aa4b2;font-size:.82rem;margin:0 0 16px}
 .r{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
 @media(max-width:520px){.r{grid-template-columns:1fr}}
 a{text-decoration:none;color:#e8ebef;background:#171b21;border:1px solid #262c35;display:block}
@@ -17,31 +17,109 @@ a.k{display:flex;gap:11px;align-items:baseline;border-radius:9px;padding:9px 13p
 a.k:hover{background:#1d222a;border-color:#5fb4d6}
 a.k i{width:18px;flex:none;text-align:center;font-style:normal}
 a.k s{color:#9aa4b2;font-size:.75rem;margin-left:auto;text-align:right;text-decoration:none}
+.bar{background:#171b21;border:1px solid #262c35;border-left:3px solid #7ec488;border-radius:10px;
+padding:10px 13px;margin-bottom:18px;display:flex;gap:11px;align-items:center;flex-wrap:wrap;font-size:.8rem}
+.bar.fresh{border-left-color:#e8b04b}.bar.err{border-left-color:#e0384d}
+.bar .st{flex:1;min-width:200px;color:#9aa4b2}
+.bar .st b{color:#e8ebef}
+button{background:#1d222a;border:1px solid #262c35;color:#e8ebef;border-radius:8px;
+padding:6px 13px;font:inherit;font-size:.78rem;cursor:pointer}
+button:hover{border-color:#e8b04b}button:disabled{opacity:.5;cursor:default}
+.sha{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.75rem;color:#5fb4d6}
 .n{background:#171b21;border:1px solid #262c35;border-left:3px solid #7ec488;border-radius:9px;
-padding:11px 14px;color:#9aa4b2;font-size:.78rem}
+padding:11px 14px;color:#9aa4b2;font-size:.78rem;line-height:1.5}
+code{background:#1d222a;padding:1px 5px;border-radius:4px}
 </style></head><body><div class="w">
 <h1>Alaska Trip</h1>
-<p>Austin to Alaska and home, plus the East Extension. Public, no login, any device.</p>
-<div class="r">
-<a class="b" href="desktop/"><div class="t">Desktop dashboard</div><div class="d">Full map, 98 stops, research, booking board</div></a>
-<a class="b p" href="mobile/"><div class="t">Phone dashboard</div><div class="d">Lighter build for on the road</div></a>
+<p class="s">Austin to Alaska and home, plus the East Extension. Public, no login, any device.</p>
+
+<div class="bar" id="bar">
+  <span class="st" id="st">Checking what's published&hellip;</span>
+  <button id="btn">Check for updates</button>
 </div>
+
+<div class="r">
+<a class="b" data-live href="desktop/"><div class="t">Desktop dashboard</div><div class="d">Full map, 98 stops, research, booking board</div></a>
+<a class="b p" data-live href="mobile/"><div class="t">Phone dashboard</div><div class="d">Lighter build for on the road</div></a>
+</div>
+
 <h2>Straight to a screen</h2>
 <div class="l">
-<a class="k" href="desktop/#tab=booking"><i>&#9673;</i> Booking Board <s>what to book next</s></a>
-<a class="k" href="desktop/#tab=issues"><i>&#9873;</i> Known issues <s>every open decision</s></a>
-<a class="k" href="desktop/#tab=overview&layers=route,state"><i>&#9906;</i> Map and all 921 state parks <s>route and parks layers</s></a>
-<a class="k" href="desktop/#tab=stops"><i>&#9776;</i> All stops <s>the full itinerary</s></a>
-<a class="k" href="desktop/#tab=stops&trip=extension"><i>&#10047;</i> East Extension <s>the second trip</s></a>
-<a class="k" href="mobile/#tab=booking"><i>&#9635;</i> Booking Board on the phone <s>home-screen shortcut</s></a>
+<a class="k" data-live href="desktop/#tab=booking"><i>&#9673;</i> Booking Board <s>what to book next</s></a>
+<a class="k" data-live href="desktop/#tab=issues"><i>&#9873;</i> Known issues <s>open items only</s></a>
+<a class="k" data-live href="desktop/#tab=overview&layers=route,state"><i>&#9906;</i> Map and all 921 state parks <s>route and parks layers</s></a>
+<a class="k" data-live href="desktop/#tab=stops"><i>&#9776;</i> All stops <s>the full itinerary</s></a>
+<a class="k" data-live href="desktop/#tab=stops&trip=extension"><i>&#10047;</i> East Extension <s>the second trip</s></a>
+<a class="k" data-live href="mobile/#tab=booking"><i>&#9635;</i> Booking Board on the phone <s>home-screen shortcut</s></a>
 </div>
+
 <h2>Preview any date</h2>
 <div class="l">
-<a class="k" href="desktop/?date=2027-06-20"><i>&#9788;</i> Mid-Alaska season <s>Jun 2027</s></a>
-<a class="k" href="desktop/?date=2027-10-05"><i>&#9650;</i> Larch at Winthrop <s>Oct 2027</s></a>
-<a class="k" href="desktop/?date=2027-12-25"><i>&#10052;</i> Christmas at Sequoia <s>Dec 2027</s></a>
-<a class="k" href="desktop/?date=2028-10-03"><i>&#9832;</i> Stowe at peak colour <s>Oct 2028</s></a>
+<a class="k" data-live href="desktop/?date=2027-06-20"><i>&#9788;</i> Mid-Alaska season <s>Jun 2027</s></a>
+<a class="k" data-live href="desktop/?date=2027-10-05"><i>&#9650;</i> Larch at Winthrop <s>Oct 2027</s></a>
+<a class="k" data-live href="desktop/?date=2027-12-25"><i>&#10052;</i> Christmas at Sequoia <s>Dec 2027</s></a>
+<a class="k" data-live href="desktop/?date=2028-10-03"><i>&#9832;</i> Stowe at peak colour <s>Oct 2028</s></a>
 <a class="k" href="desktop/booking-windows.ics"><i>&#9993;</i> Booking calendar <s>.ics subscribe</s></a>
+<a class="k" href="https://github.com/lluisitu/alaska-trip/deployments" target="_blank" rel="noopener"><i>&#8635;</i> Pages build log <s>watch a deploy finish</s></a>
 </div>
-<div class="n">Published from GitHub Pages. Run <code>./publish.sh</code> in <code>~/alaska-repo</code> and both sites rebuild in about a minute.</div>
+
+<div class="n"><b style="color:#e8ebef">About that button.</b> It re-reads what GitHub has actually
+published and re-points every link at that exact build, so you never open a stale cached copy. It cannot
+<i>start</i> a rebuild &mdash; that needs a write token, and a token on a public page is a token anyone can
+use. Publishing is still <code>./publish.sh</code> in <code>~/alaska-repo</code>; Pages rebuilds by itself
+about a minute later, and this button is how you tell that it has.</div>
+
+<script>
+var REPO = 'lluisitu/alaska-trip';
+var bar = document.getElementById('bar'), st = document.getElementById('st'), btn = document.getElementById('btn');
+var firstSeen = null;
+
+// Put ?v=<sha> in the right place: before any #hash, merged with any existing query.
+function stamp(href, sha){
+  var hash = href.indexOf('#');
+  var base = hash < 0 ? href : href.slice(0, hash);
+  var frag = hash < 0 ? '' : href.slice(hash);
+  base = base.replace(/([?&])v=[^&]*&?/, '$1').replace(/[?&]$/, '');
+  base += (base.indexOf('?') >= 0 ? '&' : '?') + 'v=' + sha;
+  return base + frag;
+}
+function ago(iso){
+  var s = (Date.now() - new Date(iso)) / 1000;
+  if (s < 90) return 'just now';
+  if (s < 5400) return Math.round(s/60) + ' min ago';
+  if (s < 172800) return Math.round(s/3600) + ' h ago';
+  return Math.round(s/86400) + ' days ago';
+}
+function check(){
+  btn.disabled = true; btn.textContent = 'Checking…';
+  fetch('https://api.github.com/repos/' + REPO + '/commits/main',
+        { headers: { Accept: 'application/vnd.github+json' }, cache: 'no-store' })
+    .then(function(r){ if(!r.ok) throw new Error('GitHub says ' + r.status); return r.json(); })
+    .then(function(c){
+      var sha = c.sha.slice(0,7);
+      var when = c.commit.committer.date;
+      var subject = (c.commit.message || '').split('\n')[0];
+      var links = document.querySelectorAll('a[data-live]');
+      for (var i = 0; i < links.length; i++){
+        var a = links[i];
+        if(!a.getAttribute('data-href')) a.setAttribute('data-href', a.getAttribute('href'));
+        a.setAttribute('href', stamp(a.getAttribute('data-href'), sha));
+      }
+      var changed = firstSeen && firstSeen !== c.sha;
+      if(!firstSeen) firstSeen = c.sha;
+      bar.className = 'bar' + (changed ? ' fresh' : '');
+      st.innerHTML = 'Published <b>' + ago(when) + '</b> · <span class="sha">' + sha + '</span> · ' +
+        (subject.length > 62 ? subject.slice(0,62) + '…' : subject) +
+        (changed ? '<br><b style="color:#e8b04b">New build — links now point at it.</b>' : '');
+    })
+    .catch(function(e){
+      bar.className = 'bar err';
+      st.innerHTML = "Couldn't reach GitHub (" + e.message + '). The links below still work — ' +
+        'if one looks out of date, hard-reload it.';
+    })
+    .then(function(){ btn.disabled = false; btn.textContent = 'Check for updates'; });
+}
+btn.addEventListener('click', check);
+check();
+</script>
 </div></body></html>

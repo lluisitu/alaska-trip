@@ -129,7 +129,8 @@ const LEAFLET_JS_STUB = `
   await page.click('.tab-btn[data-view="issues"]');
   await page.waitForTimeout(300);
   const extIssueCards = await page.locator('#extIssuesWrap .issue-card').count();
-  console.log('Extension known-issue cards (expect 19):', extIssueCards);
+  console.log('Extension known-issue cards, open only by default (expect 15):', extIssueCards);
+  if (extIssueCards !== 15) errors.push('ext open-issue count is ' + extIssueCards + ', expected 15');
   const bigloopIssuesHidden = await page.locator('#view-issues .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop issues content hidden while in extension mode (expect true):', bigloopIssuesHidden);
   const wintercoastIssueGone = await page.evaluate(()=>{
@@ -149,7 +150,16 @@ const LEAFLET_JS_STUB = `
   const activeViewAfterToggleBack = await page.evaluate(()=>document.querySelector('section.view.active').id);
   console.log('Active view after toggle back (expect view-issues -- still on Known Issues tab):', activeViewAfterToggleBack);
   const mainIssueCards = await page.locator('#issuesWrap .issue-card').count();
-  console.log('Main dashboard issue cards visible again (expect 30):', mainIssueCards);
+  console.log('Main issue cards, open only by default (expect 18):', mainIssueCards);
+  if (mainIssueCards !== 18) errors.push('main open-issue count is ' + mainIssueCards + ', expected 18');
+  // Resolved items must still be reachable — they are the record of why a date is what it is.
+  await page.click('#issueCatBar button[data-f="all"]');
+  await page.waitForTimeout(200);
+  const allIssueCards = await page.locator('#issuesWrap .issue-card').count();
+  console.log('Main issue cards with "Everything, incl. resolved" (expect 30):', allIssueCards);
+  if (allIssueCards !== 30) errors.push('main all-issue count is ' + allIssueCards + ', expected 30');
+  await page.click('#issueCatBar button[data-f="open"]');
+  await page.waitForTimeout(150);
   const larchIssue = await page.evaluate(()=>ISSUES.some(i=>i.id==='larch-timing'));
   console.log('Larch-timing issue present (expect true):', larchIssue);
   const extIssuesHiddenNow = await page.locator('#view-issues .ext-only').evaluate(el=>el.classList.contains('hidden'));
@@ -193,6 +203,35 @@ const LEAFLET_JS_STUB = `
   if (!/Winthrop/.test(noteText)) errors.push('larch hover note does not name Winthrop: ' + noteText.slice(0, 120));
 
   // ---- Seasonal timing: every anchor must sit on the window it exists for.
+  console.log('\n--- Booking board ---');
+  const bk = await page.evaluate(() => {
+    const m = Object.fromEntries(STOPS.map(s => [s.id, s]));
+    const e = Object.fromEntries((EXT_DATA.STOPS || []).map(s => [s.id, s]));
+    const stale = [], noWhat = [], noHow = [], badOpen = [];
+    BOOKINGS.forEach(b => {
+      const s = (b.trip === 'main' ? m[b.id] : e[b.id]) || m[b.id] || e[b.id];
+      if (!s) { stale.push(b.id + ' (no such stop)'); return; }
+      if (b.arrive !== s.arrive) stale.push(b.id + ' says ' + b.arrive + ', stop is ' + s.arrive);
+      if (b.nights !== s.nights) stale.push(b.id + ' nights ' + b.nights + ' vs ' + s.nights);
+      if (!b.what) noWhat.push(b.id);
+      if (!b.howText) noHow.push(b.id);
+      if (b.opensISO && b.opensISO >= b.arrive) badOpen.push(b.id);
+    });
+    return { total: BOOKINGS.length, stale, noWhat, noHow, badOpen,
+             reserve: BOOKINGS.filter(b=>b.how==='reserve').length,
+             call: BOOKINGS.filter(b=>b.how==='call').length,
+             firstcome: BOOKINGS.filter(b=>b.how==='firstcome').length };
+  });
+  console.log('  bookings:', bk.total, '| reserve', bk.reserve, 'call', bk.call, 'first-come', bk.firstcome);
+  console.log('  ' + (bk.stale.length ? 'FAIL' : 'ok ') + ' no booking card holds a stale date (expect 0):', bk.stale.length);
+  if (bk.stale.length) { errors.push('stale booking cards: ' + bk.stale.slice(0,5).join('; ')); }
+  console.log('  ' + (bk.noWhat.length ? 'FAIL' : 'ok ') + ' every card says WHAT to book (expect 0 missing):', bk.noWhat.length);
+  if (bk.noWhat.length) errors.push('bookings with no what: ' + bk.noWhat.slice(0,5).join(','));
+  console.log('  ' + (bk.noHow.length ? 'FAIL' : 'ok ') + ' every card says HOW to book (expect 0 missing):', bk.noHow.length);
+  if (bk.noHow.length) errors.push('bookings with no howText: ' + bk.noHow.slice(0,5).join(','));
+  console.log('  ' + (bk.badOpen.length ? 'FAIL' : 'ok ') + ' no window opens after arrival (expect 0):', bk.badOpen.length);
+  if (bk.badOpen.length) errors.push('bookings opening after arrival: ' + bk.badOpen.join(','));
+
   console.log('\n--- Seasonal timing anchors ---');
   const timing = await page.evaluate(() => {
     const m = Object.fromEntries(STOPS.map(s => [s.id, s]));

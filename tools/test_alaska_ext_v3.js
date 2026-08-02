@@ -8,13 +8,14 @@ const LEAFLET_JS_STUB = `
     const obj = {};
     const methods = ['addTo','bindPopup','bindTooltip','unbindTooltip','on','setView','addLayer','removeLayer',
       'invalidateSize','fitBounds','getZoom','setZoom','remove','openPopup','closePopup','eachLayer','getSize',
-      'latLngToContainerPoint','getBounds'];
+      'latLngToContainerPoint','getBounds','getContainer','clearLayers'];
     methods.forEach(m=>{
       obj[m] = function(...args){
         if(m==='getZoom') return 5;
         if(m==='getSize') return {x:600,y:260};
         if(m==='latLngToContainerPoint') return {x:100,y:100};
         if(m==='getBounds') return { getCenter: ()=>({lat:0,lng:0}) };
+        if(m==='getContainer') return document.createElement('div');
         window.__mapCalls = window.__mapCalls || [];
         window.__mapCalls.push(m);
         return obj;
@@ -58,7 +59,7 @@ const LEAFLET_JS_STUB = `
 
   // ---- Nav structure: 4 tabs, no 5th "Complete East Extension" tab ----
   const navBtnCount = await page.locator('nav.tabs .tab-btn').count();
-  console.log('Nav tab count (expect 4):', navBtnCount);
+  console.log('Nav tab count (expect 5):', navBtnCount);
   const oldExtTabCount = await page.locator('button[data-view="ne-extension"]').count();
   console.log('Old "Complete East Extension" nav tab still present (expect 0):', oldExtTabCount);
 
@@ -90,7 +91,7 @@ const LEAFLET_JS_STUB = `
   const activeViewAfterToggle = await page.evaluate(()=>document.querySelector('section.view.active').id);
   console.log('Active view after toggle (expect view-overview -- toggle must NOT change tab):', activeViewAfterToggle);
   const statsAfterToggle = await page.locator('#statsRow .n').allTextContents();
-  console.log('Shared statsRow after toggle to extension (expect 56 first):', statsAfterToggle);
+  console.log('Shared statsRow after toggle to extension (expect 59 first):', statsAfterToggle);
   const bigloopMapHidden = await page.locator('#view-overview .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   const extMapShown = await page.locator('#view-overview .ext-only').evaluate(el=>!el.classList.contains('hidden'));
   console.log('Bigloop overview content hidden (expect true):', bigloopMapHidden);
@@ -102,7 +103,7 @@ const LEAFLET_JS_STUB = `
   await page.click('.tab-btn[data-view="stops"]');
   await page.waitForTimeout(300);
   const extCardsVisible = await page.locator('#extCardsWrap .card').count();
-  console.log('Extension stop cards visible (expect 56):', extCardsVisible);
+  console.log('Extension stop cards visible (expect 59):', extCardsVisible);
   const bigloopStopsHidden = await page.locator('#view-stops .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop stops content hidden while in extension mode (expect true):', bigloopStopsHidden);
   const charlestonGone = await page.locator('#ext-card-charleston-sc').count();
@@ -144,7 +145,9 @@ const LEAFLET_JS_STUB = `
   const activeViewAfterToggleBack = await page.evaluate(()=>document.querySelector('section.view.active').id);
   console.log('Active view after toggle back (expect view-issues -- still on Known Issues tab):', activeViewAfterToggleBack);
   const mainIssueCards = await page.locator('#issuesWrap .issue-card').count();
-  console.log('Main dashboard issue cards visible again (expect 21):', mainIssueCards);
+  console.log('Main dashboard issue cards visible again (expect 22):', mainIssueCards);
+  const larchIssue = await page.evaluate(()=>ISSUES.some(i=>i.id==='larch-timing'));
+  console.log('Larch-timing issue present (expect true):', larchIssue);
   const extIssuesHiddenNow = await page.locator('#view-issues .ext-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Extension issues content hidden after toggling back (expect true):', extIssuesHiddenNow);
 
@@ -153,6 +156,37 @@ const LEAFLET_JS_STUB = `
   await page.waitForTimeout(300);
   const mainMapVisible = await page.locator('#view-overview .bigloop-only').evaluate(el=>!el.classList.contains('hidden'));
   console.log('Main map content visible again (expect true):', mainMapVisible);
+
+  // ---- Strategy band: every seasonal window must point at the stop it exists for.
+  // This is the regression that shipped once already: clicking "Larch, North Cascades"
+  // jumped to Stewart/Hyder, the first stop that happened to fall inside the dates.
+  console.log('\n--- Strategy band anchors ---');
+  const anchors = await page.evaluate(() => {
+    const ids = new Set(STOPS.map(s => s.id));
+    const eids = new Set((EXT_DATA.STOPS || []).map(s => s.id));
+    const bad = [];
+    STRATEGY_TARGETS.forEach(t => { if (!t.anchor || !ids.has(t.anchor)) bad.push('main/' + t.key); });
+    EXT_STRATEGY_TARGETS.forEach(t => { if (!t.anchor || !eids.has(t.anchor)) bad.push('east/' + t.key); });
+    const drift = [...STRATEGY_TARGETS, ...EXT_STRATEGY_TARGETS].filter(t => t.anchorDrift).map(t => t.key);
+    const larch = STRATEGY_TARGETS.find(t => t.key === 'larch');
+    return { bad, drift, larchAnchor: larch && larch.anchor, segs: document.querySelectorAll('#stratMain .strat-seg').length };
+  });
+  console.log('Every target has a valid anchor stop id (expect []):', JSON.stringify(anchors.bad));
+  console.log('Anchors sitting outside their own window (expect []):', JSON.stringify(anchors.drift));
+  console.log('Larch target anchors on Winthrop (expect winthrop):', anchors.larchAnchor);
+  console.log('Strategy segments rendered on main timeline (expect 8):', anchors.segs);
+  if (anchors.bad.length) errors.push('strategy target with missing/invalid anchor: ' + anchors.bad.join(', '));
+  if (anchors.larchAnchor !== 'winthrop') errors.push('larch target no longer anchors on winthrop');
+
+  // Clicking the larch band must actually land on Winthrop's card, not merely set state.
+  await page.click('.tab-btn[data-view="overview"]');
+  await page.waitForTimeout(200);
+  const larchSeg = page.locator('#stratMain .strat-seg').nth(3);
+  await larchSeg.hover();
+  await page.waitForTimeout(120);
+  const noteText = await page.locator('#stratMainNote').innerText();
+  console.log('Hover note names Winthrop (expect true):', /Winthrop/.test(noteText));
+  if (!/Winthrop/.test(noteText)) errors.push('larch hover note does not name Winthrop: ' + noteText.slice(0, 120));
 
   console.log('\nPage errors:', errors.length);
   errors.forEach(e => console.log('  ERR:', e));

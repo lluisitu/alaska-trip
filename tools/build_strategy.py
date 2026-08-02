@@ -74,8 +74,8 @@ EAST = [
   'Where the holiday actually lands'),
  ('appal','❄','Appalachian winter','2029-01-01','2029-02-10','bryson-city-nc',
   'Cold, quiet and cheap — Blue Ridge access is not assumable'),
- ('ozarks','🌱','Ozarks & Hill Country spring','2029-02-10','2029-03-08','hill-country-tx',
-  'Running the bloom north to south on the way home'),
+ ('ozarks','🌱','Ozarks winter & home','2029-02-06','2029-03-01','mena-ar',
+  'Leaf-off Ozarks, Boxley elk and offseason rates — bluebonnets are day trips from home'),
 ]
 
 

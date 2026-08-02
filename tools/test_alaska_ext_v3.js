@@ -91,7 +91,7 @@ const LEAFLET_JS_STUB = `
   const activeViewAfterToggle = await page.evaluate(()=>document.querySelector('section.view.active').id);
   console.log('Active view after toggle (expect view-overview -- toggle must NOT change tab):', activeViewAfterToggle);
   const statsAfterToggle = await page.locator('#statsRow .n').allTextContents();
-  console.log('Shared statsRow after toggle to extension (expect 59 first):', statsAfterToggle);
+  console.log('Shared statsRow after toggle to extension (expect 58 first):', statsAfterToggle);
   const bigloopMapHidden = await page.locator('#view-overview .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   const extMapShown = await page.locator('#view-overview .ext-only').evaluate(el=>!el.classList.contains('hidden'));
   console.log('Bigloop overview content hidden (expect true):', bigloopMapHidden);
@@ -103,7 +103,11 @@ const LEAFLET_JS_STUB = `
   await page.click('.tab-btn[data-view="stops"]');
   await page.waitForTimeout(300);
   const extCardsVisible = await page.locator('#extCardsWrap .card').count();
-  console.log('Extension stop cards visible (expect 59):', extCardsVisible);
+  console.log('Extension stop cards visible (expect 58):', extCardsVisible);
+  if (extCardsVisible !== 58) errors.push('extension stop count is ' + extCardsVisible + ', expected 58');
+  const hillCountryGone = await page.locator('#ext-card-hill-country-tx').count();
+  console.log('hill-country-tx card gone (dropped, expect 0):', hillCountryGone);
+  if (hillCountryGone) errors.push('hill-country-tx stop still present');
   const bigloopStopsHidden = await page.locator('#view-stops .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop stops content hidden while in extension mode (expect true):', bigloopStopsHidden);
   const charlestonGone = await page.locator('#ext-card-charleston-sc').count();
@@ -125,7 +129,7 @@ const LEAFLET_JS_STUB = `
   await page.click('.tab-btn[data-view="issues"]');
   await page.waitForTimeout(300);
   const extIssueCards = await page.locator('#extIssuesWrap .issue-card').count();
-  console.log('Extension known-issue cards (expect 14):', extIssueCards);
+  console.log('Extension known-issue cards (expect 19):', extIssueCards);
   const bigloopIssuesHidden = await page.locator('#view-issues .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop issues content hidden while in extension mode (expect true):', bigloopIssuesHidden);
   const wintercoastIssueGone = await page.evaluate(()=>{
@@ -145,7 +149,7 @@ const LEAFLET_JS_STUB = `
   const activeViewAfterToggleBack = await page.evaluate(()=>document.querySelector('section.view.active').id);
   console.log('Active view after toggle back (expect view-issues -- still on Known Issues tab):', activeViewAfterToggleBack);
   const mainIssueCards = await page.locator('#issuesWrap .issue-card').count();
-  console.log('Main dashboard issue cards visible again (expect 22):', mainIssueCards);
+  console.log('Main dashboard issue cards visible again (expect 30):', mainIssueCards);
   const larchIssue = await page.evaluate(()=>ISSUES.some(i=>i.id==='larch-timing'));
   console.log('Larch-timing issue present (expect true):', larchIssue);
   const extIssuesHiddenNow = await page.locator('#view-issues .ext-only').evaluate(el=>el.classList.contains('hidden'));
@@ -187,6 +191,39 @@ const LEAFLET_JS_STUB = `
   const noteText = await page.locator('#stratMainNote').innerText();
   console.log('Hover note names Winthrop (expect true):', /Winthrop/.test(noteText));
   if (!/Winthrop/.test(noteText)) errors.push('larch hover note does not name Winthrop: ' + noteText.slice(0, 120));
+
+  // ---- Seasonal timing: every anchor must sit on the window it exists for.
+  console.log('\n--- Seasonal timing anchors ---');
+  const timing = await page.evaluate(() => {
+    const m = Object.fromEntries(STOPS.map(s => [s.id, s]));
+    const e = Object.fromEntries((EXT_DATA.STOPS || []).map(s => [s.id, s]));
+    return {
+      sequoia: m['sequoia-kings-canyon'].arrive, denali: m['denali'].arrive,
+      dawson: m['dawson-city'].arrive, winthrop: m['winthrop'].arrive,
+      longBeach: m['long-beach'].arrive, quartzsite: m['quartzsite'].arrive,
+      moabIn: m['moab'].arrive, moabOut: m['moab'].depart,
+      pagosa: m['pagosa-springs'].arrive,
+      mainNights: STOPS.reduce((a, s) => a + s.nights, 0),
+      mainEnd: STOPS[STOPS.length - 1].depart,
+      stowe: e['stowe-vt'].arrive, townships: e['eastern-townships-qc'].arrive,
+      barHarbor: e['bar-harbor-me'].arrive, porkies: e['porcupine-mountains-mi'].nights,
+    };
+  });
+  const want = {
+    sequoia: '2027-12-23', denali: '2027-07-29', dawson: '2027-08-30', winthrop: '2027-10-03',
+    longBeach: '2027-10-29', quartzsite: '2028-01-14', moabIn: '2028-04-01',
+    pagosa: '2028-04-27', mainNights: 405, mainEnd: '2028-04-30',
+    stowe: '2028-10-01', townships: '2028-10-05', barHarbor: '2028-10-16', porkies: 5,
+  };
+  for (const [k, v] of Object.entries(want)) {
+    const ok = timing[k] === v;
+    console.log(`  ${ok ? 'ok ' : 'FAIL'} ${k}: ${timing[k]}${ok ? '' : '  (expected ' + v + ')'}`);
+    if (!ok) errors.push(`timing ${k} is ${timing[k]}, expected ${v}`);
+  }
+  // Moab must be out of town before Easter Jeep Safari opens on ~Apr 8, 2028
+  const ejsClear = timing.moabOut <= '2028-04-08';
+  console.log('  ' + (ejsClear ? 'ok ' : 'FAIL') + ' Moab departs ' + timing.moabOut + ' (EJS starts ~Apr 8)');
+  if (!ejsClear) errors.push('Moab overlaps Easter Jeep Safari');
 
   console.log('\nPage errors:', errors.length);
   errors.forEach(e => console.log('  ERR:', e));

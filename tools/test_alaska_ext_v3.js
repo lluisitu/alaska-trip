@@ -129,8 +129,8 @@ const LEAFLET_JS_STUB = `
   await page.click('.tab-btn[data-view="issues"]');
   await page.waitForTimeout(300);
   const extIssueCards = await page.locator('#extIssuesWrap .issue-card').count();
-  console.log('Extension known-issue cards, open only by default (expect 15):', extIssueCards);
-  if (extIssueCards !== 15) errors.push('ext open-issue count is ' + extIssueCards + ', expected 15');
+  console.log('Extension known-issue cards, open only by default (expect 18):', extIssueCards);
+  if (extIssueCards !== 18) errors.push('ext open-issue count is ' + extIssueCards + ', expected 18');
   const bigloopIssuesHidden = await page.locator('#view-issues .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop issues content hidden while in extension mode (expect true):', bigloopIssuesHidden);
   const wintercoastIssueGone = await page.evaluate(()=>{
@@ -203,6 +203,37 @@ const LEAFLET_JS_STUB = `
   if (!/Winthrop/.test(noteText)) errors.push('larch hover note does not name Winthrop: ' + noteText.slice(0, 120));
 
   // ---- Seasonal timing: every anchor must sit on the window it exists for.
+  // East Extension parity: map points, richer content, and the disputed-detail disclosures.
+  console.log('\n--- East Extension parity ---');
+  const par = await page.evaluate(() => {
+    const E = EXT_DATA.STOPS.filter(s => s.nights > 0);
+    const n = k => E.reduce((a, s) => a + ((s[k] || []).length), 0);
+    return { stops: E.length, poi: n('poi'), acts: n('activities'), towns: n('nearbyTowns'),
+             offroad: n('offroad'), withPoi: E.filter(s => (s.poi || []).length).length,
+             flagged: E.filter(s => (s.reviewFlags || []).length).length,
+             mainActs: STOPS.reduce((a, s) => a + ((s.activities || []).length), 0) / STOPS.length };
+  });
+  console.log(`  ${par.stops} stops · ${par.poi} map points · ${par.acts} activities · ${par.towns} towns · ${par.offroad} 4x4`);
+  console.log(`  stops with map points (was 0, expect all ${par.stops}):`, par.withPoi);
+  if (par.poi < 380) errors.push('east POI count fell to ' + par.poi);
+  if (par.withPoi < par.stops) errors.push(par.stops - par.withPoi + ' east stops still have no map points');
+  const avgEast = par.acts / par.stops;
+  console.log(`  activities per stop — east ${avgEast.toFixed(1)} vs main ${par.mainActs.toFixed(1)}`);
+  if (avgEast < par.mainActs * 0.9) errors.push('east activities/stop ' + avgEast.toFixed(1) + ' still well below main');
+  console.log('  stops carrying disputed-detail disclosures:', par.flagged);
+
+  // Every booking must be reachable from the board — the bug was that 49 east ones were not.
+  const reach = await page.evaluate(() => {
+    const seen = new Set();
+    ['main','east'].forEach(t => BOOKINGS.filter(b => b.trip === t).forEach(b => seen.add(b.id + b.trip)));
+    return { total: BOOKINGS.length, reachable: seen.size,
+             main: BOOKINGS.filter(b=>b.trip==='main').length,
+             east: BOOKINGS.filter(b=>b.trip==='east').length };
+  });
+  console.log(`  bookings reachable by trip filter: ${reach.reachable}/${reach.total} (main ${reach.main}, east ${reach.east})`);
+  if (reach.reachable !== reach.total) errors.push('some bookings unreachable by trip filter');
+  if (!reach.east) errors.push('east bookings still unreachable');
+
   console.log('\n--- Booking board ---');
   const bk = await page.evaluate(() => {
     const m = Object.fromEntries(STOPS.map(s => [s.id, s]));

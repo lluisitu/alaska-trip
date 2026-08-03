@@ -823,14 +823,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
      The month bar says where you are. This says WHY — the seasonal windows the
      whole route is bent around, drawn on the same date scale so you can see at a
      glance whether the plan actually lands on them. */
-  .strat-wrap{margin:5px 0 12px;}
+  .strat-wrap{margin:4px 0 10px;}
   /* Windows overlap in time — Christmas sits inside Desert winter, the Klondike
      gold window sits inside the Alaska season — so drawing them all on one row
      made them collide and clip each other's labels. Each window now gets a lane
      of its own, assigned at render time, and the band grows to fit. */
   .strat-band{position:relative;border-radius:5px;background:var(--panel);
     border:1px solid var(--border);overflow:hidden;padding:2px 0;}
-  .strat-seg{position:absolute;height:19px;display:flex;align-items:center;gap:4px;
+  .strat-seg{position:absolute;height:17px;display:flex;align-items:center;gap:4px;
     padding:0 6px;font-size:.63rem;font-weight:700;white-space:nowrap;overflow:hidden;
     cursor:pointer;border-radius:3px;transition:filter .12s;}
   .strat-seg:hover{filter:brightness(1.4);}
@@ -3482,7 +3482,7 @@ function renderStrategy(wrapId, targets, jump){
   // Each window now gets a lane, and lanes are packed on how much room the
   // LABEL needs rather than only on the dates, so a three-week window still
   // gets to say its name instead of being truncated to "Lar…".
-  const ROW = 21;
+  const ROW = 19;
   const segs = targets.map((t,i)=>{
     const c = STRAT_COLORS[t.key] || '#7e8894';
     return `<div class="strat-seg" data-i="${i}" tabindex="0"

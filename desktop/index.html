@@ -848,7 +848,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .strat-seg.narrow .stx{display:none;}
   .strat-seg.tiny .si{display:none;}
   .strat-seg.lit{filter:brightness(1.5);outline:1px solid currentColor;}
-  .strat-note{font-size:.72rem;color:var(--muted);margin:7px 2px 0;min-height:2.6em;}
+  .strat-note{font-size:.72rem;color:var(--muted);margin:7px 2px 0;min-height:1.3em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .strat-note b{color:var(--text);}
   .strat-note .strat-anchor{color:var(--accent);}
   .timeline-bar{display:flex;width:100%;height:34px;border-radius:7px;overflow:hidden;border:1px solid var(--border);}
@@ -3497,7 +3498,7 @@ function renderStrategy(wrapId, targets, jump){
   }).join('');
   w.innerHTML = `<div class="strat-lab">Why the route is shaped this way — seasonal targets</div>
     <div class="strat-band">${segs}</div>
-    <div class="strat-note" id="${wrapId}Note">Hover a band to see the stop it exists for; click to open that stop.</div>`;
+    <div class="strat-note" id="${wrapId}Note">Hover a band for the stop it exists for; click to open it.</div>`;
 
   const band = w.querySelector('.strat-band');
   const layout = () => {
@@ -3513,16 +3514,28 @@ function renderStrategy(wrapId, targets, jump){
       (el.querySelector('.si').getBoundingClientRect().width +
        el.querySelector('.stx').scrollWidth + 20) / bw * 100);
 
-    // Pack lanes left to right, reserving whichever is wider: the window's own
-    // dates, or the space its label wants. That is what buys the room to spill.
+    // Pack lanes left to right. First pass reserves whichever is wider — the
+    // window's own dates, or the space its label wants — which is what buys the
+    // room to spill. But the band must never grow past two rows, so if that
+    // greedy pass wants a third, redo it claiming dates only. At most two of
+    // these windows ever overlap in time, so date-only packing always fits in
+    // two, and the labels fall back to spilling or truncating instead.
     const idx = els.map((_,i)=>i).sort((a,b)=> targets[a].left - targets[b].left);
-    const laneEnd = [], lane = [];
-    idx.forEach(i=>{
-      const claim = targets[i].left + Math.max(targets[i].width, need[i]) + 0.6;
-      let L = 0;
-      while(L < laneEnd.length && laneEnd[L] > targets[i].left) L++;
-      lane[i] = L; laneEnd[L] = claim;
-    });
+    const MAXLANES = 2;
+    const pack = greedy => {
+      const laneEnd = [], lane = [];
+      idx.forEach(i=>{
+        const claim = targets[i].left +
+          (greedy ? Math.max(targets[i].width, need[i]) : targets[i].width) + 0.6;
+        let L = 0;
+        while(L < laneEnd.length && laneEnd[L] > targets[i].left) L++;
+        lane[i] = L; laneEnd[L] = claim;
+      });
+      return { lane, lanes: laneEnd.length };
+    };
+    let packed = pack(true);
+    if(packed.lanes > MAXLANES) packed = pack(false);
+    const lane = packed.lane, laneEnd = { length: Math.min(packed.lanes, MAXLANES) };
     els.forEach((el,i)=>{ el.style.top = (3 + lane[i]*ROW) + 'px'; });
     band.style.height = (laneEnd.length*ROW + 3) + 'px';
 
@@ -3558,19 +3571,20 @@ function renderStrategy(wrapId, targets, jump){
     // date range is just a stop that shares the dates — landing on one of those
     // is how you end up at a bear-viewing boardwalk when you clicked "larch".
     const show = () => {
-      const others = t.stops.filter(s=>s.id !== t.anchor);
-      const names  = others.slice(0,4).map(s=>s.name).join(' · ');
+      // One line, and only the part you cannot get from the band itself: which
+      // stop the window exists for. The full rationale and the other stops that
+      // merely share the dates are in the segment's own tooltip — repeating
+      // them here pushed the note to two wrapped lines under every hover.
       if(!t.n){
-        note.innerHTML = `<b>${t.label}</b> ${fmtDate(t.start)} – ${fmtDate(t.end)} · ${t.why}. ` +
-          `<b style="color:#e0906d">No stop lands in this window.</b>`;
+        note.innerHTML = `<b>${t.label}</b> · ${fmtDate(t.start)} – ${fmtDate(t.end)} · ` +
+          `<b style="color:#e0906d">no stop lands in this window</b>`;
         return;
       }
-      note.innerHTML = `<b>${t.label}</b> ${fmtDate(t.start)} – ${fmtDate(t.end)} · ${t.why}. ` +
-        `<span class="strat-anchor">This window is for <b>${t.anchorName}</b> ` +
+      note.innerHTML = `<b>${t.label}</b> · ${fmtDate(t.start)} – ${fmtDate(t.end)} · ` +
+        `<span class="strat-anchor">for <b>${t.anchorName}</b> ` +
         `(${fmtDate(t.anchorArrive)}, ${t.anchorNights}n)` +
-        (t.anchorDrift ? ` <b style="color:#e0906d">— which currently falls outside the window</b>` : '') +
-        ` — click to open it.</span>` +
-        (others.length ? ` <span style="opacity:.75">Also in these dates: ${names}${others.length>4?` … +${others.length-4}`:''}</span>` : '');
+        (t.anchorDrift ? ` <b style="color:#e0906d">— outside its own window</b>` : '') +
+        ` — click to open</span>`;
     };
     const lit = on => { el.classList.toggle('lit', on); if(on) show(); };
     el.addEventListener('mouseenter', ()=>lit(true));

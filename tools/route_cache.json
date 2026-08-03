@@ -678,5 +678,33 @@
 "yuma-az>kofa-nwr": {
 "sig": "32.6667,-114.5722|33.3597,-114.15",
 "geom": "wgkfEjkhzTuQa}HkuDd@uHcwN_`CwuBsrBfVuxAs_@imAqbBeVkxAko@od@}eGeb@wpG}bCazR{xKmnGah@_`QrnAakPixC{_HwuCqtB_Ui}HsqDabOI|~CmsL"
+},
+"wind-river>twin-falls": {
+"sig": "42.7502,-109.7365|42.5558,-114.4701",
+"geom": "co|cG~ow|SulKrjRmkItjC}|Ctui@ckS~|BglLjnLk|KhoDc}D~na@gfKzcJ}uDdjNw|Et}Ehn@x{MmbGdjUt`FzyKvaG}}Bz}Dj`AnfGbhl@aoN|dR}fL`rDi{@`lHilW|h\\`W~dJsuAvpEeiC`q@m~Qx}XuuCf{Ps]txUn{B~kQd_L~tTaJxzExzp@b_u@x|RrzOn~p@t~IpQ|yRbqKnpi@tlf@jbs@j_Gd|[`zEj_eAmx@flsC`{Dj_Dsn@r_\\"
+},
+"twin-falls>sawtooth-nra": {
+"sig": "42.5558,-114.4701|44.2149,-114.9339",
+"geom": "{tvbGhmtyT_e_BivMaw\\iaNsyn@qvKczOx`McdVjoCuoYdlMnC~oZmpThiVdrDl`EikD|_Etz@vbFinD~zDcfYhcCygU~iIitAhuF{}FrbA"
+},
+"sawtooth-nra>craters-of-the-moon": {
+"sig": "44.2149,-114.9339|43.4165,-113.5162",
+"geom": "i|zlGdbo|Tz}FsbAhtAiuFxgU_jItaKlJ`|Fs}BrsB|d@vqAav@hnD_{DrCchCi_AsyAfjAaN`QysBpl@nj@l`@qgBerDm`EldLeiJhmAcrD`|DejEbc@wsHsbBusLrz@khCd|G_yEnrPerFhpG~[b{McqDjyIufJbkTilOtrDwtIbxAyHveEs}TeQ{vEqs@ylEy`Be@ciBitBoAkjGklDw_J{SsuKknCczN_WgmGmiGwuBqcDo|I``A{}Btc@jrAbc@qeAngAnI"
+},
+"craters-of-the-moon>grand-teton": {
+"sig": "43.4165,-113.5162|43.9021,-110.6349",
+"geom": "waahGza`tT{mBi{@obBzbDgxQ{yOcxH_{\\kpD}tCrdDe_FpXwrShlQ}tg@jq@}xQ{vHe|l@qVqra@~vJcuy@rAefNsqTcjk@eBcr_@~bDocRvzUqrY~dBaxJcoA_lH_nG|~DsoHogKstH{wb@|xR{sXnFkuY~yC{cL{kImaFokUgbDiiNu|IapEidFuiC{fMahK}lF_{CjvDaIhgEsyEn|@__AbpHt}@rX"
+},
+"grand-teton>west-yellowstone": {
+"sig": "43.9021,-110.6349|44.6621,-111.1042",
+"geom": "iq}jGffgbTmdK~LyrGxnI}oEjV}sOarEsfDtzAucFitBioCb_@gfMwsE}~B}sCsjRipEumBvqBfi@|p@kiBj`GnThzEwfCfvArjCb|N}sEtpOakBhFkjFerDwaAz}@obCmxDqvDp}CmwB|FuuAvfCeiE~[h_@xuEez@x{JkyBzsCpxBnqDskAfdR"
+},
+"west-yellowstone>yellowstone": {
+"sig": "44.6621,-111.1042|44.5654,-110.3757",
+"geom": "caroGj`ceT~S?tl@m}G|HyeIaT}nAqfAgNu[{uAbj@kxAvlAsr@l{@c`KcrA}yMz[k~Bq@kdCqdAs|@pRc~B{bIyKmu@o_CbGmbAaWm_Aok@{[bs@u_EkEifCj|AuiEvIu}CkwBwxJ_hAgb@}HagDdqAhGb\\t}@nfBbHtbB}y@huBgwDldB}VdsBkmBxVijAji@yZb{@moBn^ahDneAvTnlB}p@p{@du@zO}mA"
+},
+"yellowstone>bozeman": {
+"sig": "44.5654,-110.3757|45.677,-111.0429",
+"geom": "yd_oG`wt`T{O|mAq{@eu@_sDd[o^`hDi}BpvEsxEheCiuBfwDubB|y@yuEcoA|H`gDtfAp_@xnB|xHpEveDocBvbGam@jhI}`AhKm~BvcEmeG`_B{wB{lBg}HnaAsxIkd@gaFybCoEm}@ydK{B}yF`xKivEttAeyIjgGsgBreIkqCn~CgdNs_GkaDckDmyGwnMoqKooJ}rCisJ{}YctHcgC}nBs`Dho@giDoo@qgB`bMqIxoM~n@r`J}fAbvExnDroSk_Dh|GiwAtbK`OndC"
 }
 }

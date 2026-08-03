@@ -666,5 +666,17 @@
 "mena-ar>austin-home-v3": {
 "sig": "34.5859,-94.2405|30.2672,-97.7431",
 "geom": "u`brEnje~Pjx[rk`@lqk@mfSlxp@buCxkN|yP||CavE~lhA|}B~y|@poyBoo@`ddAnvH~}f@{vBxl|A~|[lhc@fvi@joiBrueBv_MjaRn{JpkP`k]|`PhcDn_QykF`r|@d_F|isAhii@`dOj|X`fl@vf[`~b@nwNfwo@unBxgUlnL"
+},
+"borrego-springs>imperial-dam": {
+"sig": "33.2558,-116.375|32.9013,-114.4954",
+"geom": "wg~iExnheU|jGoj@fMkyF`lIshOjs@utQdpC{~PCiif@~fByjBlc@ukFtqCa_It`GcaGnG_}PbmFsfDlCozNdak@ac@k@adi@rvKghg@gSyw\\qqBcyBoaEepLzqD_vh@voE{fBgH}j_@kaCi`CctE}L{vC}aFepGee@}uBjhJ_}CjrAkv@v|Ea}C~eA"
+},
+"imperial-dam>yuma-az": {
+"sig": "32.9013,-114.4954|32.6667,-114.5722",
+"geom": "s`ygElkyyTIoL~c@tE~x@ao@j~@cOba@ov@g\\omAnq@wvA~|CkrApp@qvEjdAypCp|Fr\\jiAvp@dVjxAhmApbB~wAr_@hsBgVx`Apm@d~@dgAtHbwNftDBxAl_I~OuB"
+},
+"yuma-az>kofa-nwr": {
+"sig": "32.6667,-114.5722|33.3597,-114.15",
+"geom": "wgkfEjkhzTuQa}HkuDd@uHcwN_`CwuBsrBfVuxAs_@imAqbBeVkxAko@od@}eGeb@wpG}bCazR{xKmnGah@_`QrnAakPixC{_HwuCqtB_Ui}HsqDabOI|~CmsL"
 }
 }

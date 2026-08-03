@@ -58,7 +58,7 @@ MAIN = [
   'Not a colour stop — storm watching, razor clams, rainforest'),
  ('xmas27','🎄','Christmas','2027-12-20','2027-12-27','sequoia-kings-canyon',
   'Where the holiday actually lands'),
- ('desert','🌵','Desert winter','2027-12-26','2028-03-15','quartzsite',
+ ('desert','🌵','Desert winter','2027-12-26','2028-03-15','imperial-dam',
   'The winter tail, and the only real buffer in the plan'),
  ('spring','🌸','Colorado Plateau spring','2028-03-15','2028-04-30','moab',
   'Utah and the San Juans before the summer heat and after the snow'),

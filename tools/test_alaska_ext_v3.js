@@ -137,7 +137,8 @@ const LEAFLET_JS_STUB = `
   await page.waitForTimeout(300);
   const extIssueCards = await page.locator('#extIssuesWrap .issue-card').count();
   console.log('Extension known-issue cards, open only by default (expect 18):', extIssueCards);
-  if (extIssueCards !== 18) errors.push('ext open-issue count is ' + extIssueCards + ', expected 18');
+  // Stowe's campground and Pinedale's missing campground were both closed on 3 Aug 2026.
+  if (extIssueCards !== 16) errors.push('ext open-issue count is ' + extIssueCards + ', expected 16');
   const bigloopIssuesHidden = await page.locator('#view-issues .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop issues content hidden while in extension mode (expect true):', bigloopIssuesHidden);
   const wintercoastIssueGone = await page.evaluate(()=>{
@@ -214,6 +215,29 @@ const LEAFLET_JS_STUB = `
   // publish.sh reruns every build step on every publish, so the SECOND run is the
   // normal case, not the first. build_phonecraft.py shipped a create-only path that
   // crashed on rerun — this asserts the output of a rebuild is byte-identical.
+  // The word "aurora" must not appear on stops where it will almost certainly not
+  // happen — printing it on 56 storm-only stops devalues the 14 where it will.
+  console.log('\n--- Aurora claimed only where it is on offer ---');
+  {
+    const a = await page.evaluate(() => {
+      let bad = [];
+      Object.keys(LIGHT).forEach(id => {
+        const A = LIGHT[id].aurora;
+        const should = !!(A && (A.verdict === 'prime' || A.verdict === 'good'));
+        if (should !== lightTitle(id).includes('aurora')) bad.push(id + ':title');
+        if (should !== lightBlock(id).includes('Aurora —')) bad.push(id + ':block');
+      });
+      return { bad, titled: Object.keys(LIGHT).filter(id => lightTitle(id).includes('aurora')).length,
+               dv: lightTitle('death-valley'), dawson: lightTitle('dawson-city') };
+    });
+    console.log('  stops titled with aurora (expect 14):', a.titled);
+    console.log('  Death Valley title (expect Light):', a.dv);
+    console.log('  Dawson City title (expect Light & aurora):', a.dawson.replace('&amp;','&'));
+    console.log('  mismatches (expect none):', a.bad.length ? a.bad.slice(0,5) : 'none');
+    if (a.bad.length) errors.push('aurora shown where verdict does not justify it: ' + a.bad.slice(0,5).join(','));
+    if (a.titled !== 14) errors.push('aurora-titled stop count is ' + a.titled + ', expected 14');
+  }
+
   console.log('\n--- Build steps are idempotent ---');
   {
     const { execSync } = require('fs') && require('child_process');
@@ -322,7 +346,8 @@ const LEAFLET_JS_STUB = `
     return {
       sequoia: m['sequoia-kings-canyon'].arrive, denali: m['denali'].arrive,
       dawson: m['dawson-city'].arrive, winthrop: m['winthrop'].arrive,
-      longBeach: m['long-beach'].arrive, quartzsite: m['quartzsite'].arrive,
+      longBeach: m['long-beach'].arrive, imperialDam: m['imperial-dam'].arrive,
+      yuma: m['yuma-az'].arrive, quartzsiteGone: STOPS.some(s => s.id === 'quartzsite'),
       moabIn: m['moab'].arrive, moabOut: m['moab'].depart,
       pagosa: m['pagosa-springs'].arrive,
       mainNights: STOPS.reduce((a, s) => a + s.nights, 0),
@@ -333,7 +358,8 @@ const LEAFLET_JS_STUB = `
   });
   const want = {
     sequoia: '2027-12-23', denali: '2027-07-29', dawson: '2027-08-30', winthrop: '2027-10-03',
-    longBeach: '2027-10-29', quartzsite: '2028-01-14', moabIn: '2028-04-01',
+    longBeach: '2027-10-29', imperialDam: '2028-01-14', yuma: '2028-01-18',
+    quartzsiteGone: false, moabIn: '2028-04-01',
     pagosa: '2028-04-27', mainNights: 405, mainEnd: '2028-04-30',
     stowe: '2028-10-01', townships: '2028-10-05', barHarbor: '2028-10-16', porkies: 5,
   };

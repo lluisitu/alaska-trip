@@ -1107,6 +1107,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
   @media(max-width:1100px){.grid4{grid-template-columns:1fr 1fr;}}
   @media(max-width:560px){.grid4{grid-template-columns:1fr;}}
+  /* Two columns, three rows: shot list and light join the four highlight boxes
+     instead of being buried under the Camping heading. */
+  .grid6{grid-template-columns:1fr 1fr;}
+  @media(max-width:900px){.grid6{grid-template-columns:1fr;}}
+  .grid6 .grid4-box-body{max-height:none;}
+  .grid6 .ph-wrap,.grid6 .lt-wrap{margin:0;background:transparent;border:none;padding:0;}
+  .grid6 .ph-head,.grid6 .lt-head{display:none;}
+  .grid6 .lt-grid{grid-template-columns:1fr;}
   .subhead{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 8px;font-weight:700;}
   .grid4-box{background:var(--panel2);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;}
   .grid4-box-title{background:var(--panel);border-bottom:1px solid var(--border);color:var(--accent);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;font-weight:800;padding:9px 12px;margin:0;width:100%;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:baseline;row-gap:2px;column-gap:8px;}
@@ -2709,7 +2717,7 @@ function renderCards(filter){
         </div>
         ${holidayBox(s)}
 
-        <div class="grid4" style="margin-top:16px">
+        <div class="grid4 grid6" style="margin-top:16px">
           <div class="grid4-box">
             <p class="grid4-box-title g4-drive"><span class="ic">🚙</span>Scenic drives${regionBrowseLink(s.id, s.name,'scenic')}</p>
             <div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart)}</div>
@@ -2726,13 +2734,21 @@ function renderCards(filter){
             <p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p>
             <div class="grid4-box-body">${townsGrid(s.nearbyTowns)}</div>
           </div>
+          <div class="grid4-box">
+            <p class="grid4-box-title g4-shot"><span class="ic">📷</span>Shot list</p>
+            <div class="grid4-box-body">${photoBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          </div>
+          <div class="grid4-box">
+            <p class="grid4-box-title g4-light"><span class="ic">☀️</span>Light &amp; aurora</p>
+            <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          </div>
         </div>
 
         <p class="sec-head sh-forum" style="margin-top:16px"><span class="ic">💬</span>Reddit / forum tips</p>
         <div class="campnote">${forumBlock(s)}</div>
 
         <p class="sec-head sh-camp" style="margin-top:16px"><span class="ic">⛺</span>Camping / boondock (40ft rig)</p>
-        ${photoBlock(s.id)}${lightBlock(s.id)}${campSection(s)}
+        ${campSection(s)}
       </div>
     </div>
   `).join('');
@@ -22348,16 +22364,24 @@ function extRenderCards(){
         <p class="sec-head sh-itin"><span class="ic">🥾</span>Suggested itinerary &amp; best times</p>
         ${extItinList(s.activities, s.name)}
         ${holidayBox(s)}
-        <div class="grid4" style="margin-top:16px">
+        <div class="grid4 grid6" style="margin-top:16px">
           <div class="grid4-box"><p class="grid4-box-title g4-drive"><span class="ic">🚙</span>Scenic drives${regionBrowseLink(s.id, s.name,'scenic')}</p><div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart)}</div></div>
           <div class="grid4-box"><p class="grid4-box-title g4-trail"><span class="ic">⛰️</span>AllTrails</p><div class="grid4-box-body">${linkList(s.alltrails, 'alltrails', s.name, s.arrive, s.depart)}</div></div>
           <div class="grid4-box"><p class="grid4-box-title g4-offroad"><span class="ic">🛞</span>Offroad / 4x4</p><div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart)}</div></div>
           <div class="grid4-box"><p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p><div class="grid4-box-body">${townsGrid(s.nearbyTowns)}</div></div>
+          <div class="grid4-box">
+            <p class="grid4-box-title g4-shot"><span class="ic">📷</span>Shot list</p>
+            <div class="grid4-box-body">${photoBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          </div>
+          <div class="grid4-box">
+            <p class="grid4-box-title g4-light"><span class="ic">☀️</span>Light &amp; aurora</p>
+            <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          </div>
         </div>
         <p class="sec-head sh-forum" style="margin-top:16px"><span class="ic">💬</span>Reddit / forum tips</p>
         <div class="campnote">${forumBlock(s)}</div>
         <p class="sec-head sh-camp" style="margin-top:16px"><span class="ic">⛺</span>Camping / boondock (40ft rig)</p>
-        ${photoBlock(s.id)}${lightBlock(s.id)}${campSection(s)}
+        ${campSection(s)}
       ${(s.reviewFlags && s.reviewFlags.length) ? `<details class="rf-det"><summary>&#9888; ${s.reviewFlags.length} detail${s.reviewFlags.length===1?'':'s'} disputed in review \u2014 check before relying on ${s.reviewFlags.length===1?'it':'them'}</summary>` + s.reviewFlags.map(f=>`<div class="rf-item"><b>${f.claim}</b><span>${f.problem}</span></div>`).join('') + `</details>` : ''}
       </div>
     </div>

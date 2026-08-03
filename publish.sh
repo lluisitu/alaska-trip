@@ -26,12 +26,13 @@ build_strategy*.py|tools/build_strategy.py
 build_bookings*.py|tools/build_bookings.py
 build_frozen*.py|tools/build_frozen.py
 build_light*.py|tools/build_light.py
+build_phonecraft*.py|tools/build_phonecraft.py
 build_vendor*.py|tools/build_vendor.py
 parks_db*.json|tools/parks_db.json
 PAIRS
 [ "$moved" -eq 0 ] && say "(nothing new in Downloads - publishing what's already here)"
 if command -v python3 >/dev/null 2>&1; then
-  for s in build_strategy build_frozen build_light build_bookings build_parks; do
+  for s in build_strategy build_frozen build_light build_phonecraft build_bookings build_parks; do
     [ -f "tools/$s.py" ] && { say "Running $s.py ..."; ( cd tools && python3 "$s.py" >/dev/null ) || fail "$s.py failed."; }
   done
   [ -f tools/build_routes.py ] && { say "Refreshing road geometry ..."; ( cd tools && python3 build_routes.py ) || say "(routing failed - keeping existing lines)"; }

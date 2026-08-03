@@ -211,6 +211,27 @@ const LEAFLET_JS_STUB = `
 
   // ---- Seasonal timing: every anchor must sit on the window it exists for.
   // East Extension parity: map points, richer content, and the disputed-detail disclosures.
+  // publish.sh reruns every build step on every publish, so the SECOND run is the
+  // normal case, not the first. build_phonecraft.py shipped a create-only path that
+  // crashed on rerun — this asserts the output of a rebuild is byte-identical.
+  console.log('\n--- Build steps are idempotent ---');
+  {
+    const { execSync } = require('fs') && require('child_process');
+    const crypto = require('crypto'), fs = require('fs');
+    const desk = path.resolve(__dirname, '..', 'desktop', 'index.html');
+    const before = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
+    let ok = true, err = '';
+    for (const s of ['build_strategy','build_frozen','build_light','build_phonecraft','build_bookings','build_parks']) {
+      try { execSync(`cd ${__dirname} && python3 ${s}.py`, { stdio: 'pipe' }); }
+      catch (e) { ok = false; err += s + ' crashed on rerun; '; }
+    }
+    const after = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
+    console.log('  all six build steps rerun cleanly:', ok || err);
+    console.log('  desktop byte-identical after rebuild:', before === after);
+    if (!ok) errors.push('build step crashed on rerun: ' + err);
+    if (before !== after) errors.push('rebuild changed desktop/index.html — a build step is not idempotent');
+  }
+
   console.log('\n--- Map actually renders ---');
   await page.click('.tab-btn[data-view="overview"]');
   await page.waitForTimeout(700);

@@ -45,6 +45,13 @@ const LEAFLET_JS_STUB = `
 
   await page.route('**/leaflet*.css', route => route.fulfill({ contentType: 'text/css', body: LEAFLET_CSS_STUB }));
   await page.route('**/leaflet*.js', route => route.fulfill({ contentType: 'application/javascript', body: LEAFLET_JS_STUB }));
+  // Leaflet is inlined into the build now, so the leaflet routes above no longer
+  // fire and the suite exercises the REAL library. That is what we want — but it
+  // means real tile requests, which must be stubbed by their actual host.
+  await page.route('**cartocdn.com**', route => route.fulfill({
+    contentType: 'image/png',
+    body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64')
+  }));
   await page.route('**tile**', route => route.fulfill({
     contentType: 'image/png',
     body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64')
@@ -204,6 +211,30 @@ const LEAFLET_JS_STUB = `
 
   // ---- Seasonal timing: every anchor must sit on the window it exists for.
   // East Extension parity: map points, richer content, and the disputed-detail disclosures.
+  console.log('\n--- Map actually renders ---');
+  await page.click('.tab-btn[data-view="overview"]');
+  await page.waitForTimeout(700);
+  const mapState = await page.evaluate(() => {
+    const m = document.getElementById('map');
+    return {
+      leaflet: typeof L,
+      inlined: !!document.querySelector('script') && document.documentElement.innerHTML.includes('leaflet inlined by build_vendor'),
+      cdn: document.documentElement.innerHTML.includes('cdnjs.cloudflare.com'),
+      panes: m ? m.querySelectorAll('.leaflet-pane').length : 0,
+      paths: m ? m.querySelectorAll('path').length : 0,
+      height: m ? Math.round(m.getBoundingClientRect().height) : 0,
+      top: m ? Math.round(m.getBoundingClientRect().top + window.scrollY) : 0,
+    };
+  });
+  console.log(`  leaflet=${mapState.leaflet} inlined=${mapState.inlined} cdn-ref=${mapState.cdn}`);
+  console.log(`  map ${mapState.height}px tall at y=${mapState.top}, ${mapState.panes} panes, ${mapState.paths} route paths`);
+  if (mapState.leaflet !== 'object') errors.push('Leaflet did not load');
+  if (!mapState.inlined) errors.push('Leaflet is NOT inlined — the map will break with no signal');
+  if (mapState.cdn) errors.push('build still references cdnjs');
+  if (mapState.panes < 1) errors.push('map has no Leaflet panes — it did not initialise');
+  if (mapState.paths < 50) errors.push('map drew only ' + mapState.paths + ' paths — route missing');
+  if (mapState.top > 800) errors.push('map starts at y=' + mapState.top + ' — pushed below the fold');
+
   console.log('\n--- East Extension parity ---');
   const par = await page.evaluate(() => {
     const E = EXT_DATA.STOPS.filter(s => s.nights > 0);

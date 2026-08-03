@@ -1,4 +1,22 @@
 import json, re, pathlib
+
+# ---------------------------------------------------------------------------
+# The phone build has to work with no signal — that is most of the point of it.
+# Leaflet is inlined into the desktop file by build_vendor.py; lift those blocks
+# across rather than pointing the phone at a CDN it will not be able to reach on
+# the Dempster.
+LEAFLET_MARK = '/* leaflet inlined by build_vendor.py */'
+
+
+def inlined_leaflet(desktop_html):
+    """Return (css_block, js_block) from the desktop build, or (None, None)."""
+    out = []
+    for tag in ('style', 'script'):
+        m = re.search(r'<%s>%s.*?</%s>' % (tag, re.escape(LEAFLET_MARK), tag),
+                      desktop_html, re.S)
+        out.append(m.group(0) if m else None)
+    return out[0], out[1]
+
 # Repo-relative: desktop/index.html is the MASTER; mobile/index.html is generated from it.
 _ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = _ROOT/'desktop'/'index.html'
@@ -625,5 +643,19 @@ window.__mobileReady = {stops:D.stops.length, ext:D.ext.length, idx:IDX.length};
 </body>
 </html>
 """
-open(OUT,'w').write(HTML.replace('__DATA__', BLOB))
-print("wrote", OUT, len(HTML.replace('__DATA__',BLOB)), "bytes")
+OUT_HTML = HTML.replace('__DATA__', BLOB)
+
+# Swap the CDN tags for the Leaflet already inlined in the desktop build, so the
+# phone works with no signal. This is the build that gets used on the Dempster.
+_CSS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'
+_JS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'
+_lc, _lj = inlined_leaflet(SRC.read_text())
+if _lc and _lj:
+    OUT_HTML = OUT_HTML.replace('<link rel="stylesheet" href="%s">' % _CSS_URL, _lc, 1)
+    OUT_HTML = OUT_HTML.replace('<script src="%s"></script>' % _JS_URL, _lj, 1)
+    print("   leaflet inlined into the phone build — map works offline")
+else:
+    print("   !! desktop build has no inlined leaflet; phone build still needs a CDN")
+
+open(OUT,'w').write(OUT_HTML)
+print("wrote", OUT, len(OUT_HTML), "bytes")

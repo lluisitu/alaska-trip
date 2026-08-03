@@ -26,6 +26,7 @@ build_strategy*.py|tools/build_strategy.py
 build_bookings*.py|tools/build_bookings.py
 build_frozen*.py|tools/build_frozen.py
 build_light*.py|tools/build_light.py
+build_vendor*.py|tools/build_vendor.py
 parks_db*.json|tools/parks_db.json
 PAIRS
 [ "$moved" -eq 0 ] && say "(nothing new in Downloads - publishing what's already here)"
@@ -35,6 +36,7 @@ if command -v python3 >/dev/null 2>&1; then
   done
   [ -f tools/build_routes.py ] && { say "Refreshing road geometry ..."; ( cd tools && python3 build_routes.py ) || say "(routing failed - keeping existing lines)"; }
   [ -f tools/build_mobile.py ] && { say "Regenerating phone build ..."; ( cd tools && python3 build_mobile.py >/dev/null ) || fail "Mobile rebuild failed."; }
+  [ -f tools/build_vendor.py ] && { say "Inlining Leaflet so the map works offline ..."; ( cd tools && python3 build_vendor.py ) || say "(leaflet inline skipped)"; }
 else
   say "(python3 not found - run xcode-select --install)"
 fi

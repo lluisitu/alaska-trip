@@ -823,20 +823,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
      The month bar says where you are. This says WHY — the seasonal windows the
      whole route is bent around, drawn on the same date scale so you can see at a
      glance whether the plan actually lands on them. */
-  .strat-wrap{margin:8px 0 18px;}
-  .strat-lab{font-size:.66rem;text-transform:uppercase;letter-spacing:.07em;font-weight:800;
-    color:var(--muted);margin:0 2px 5px;}
+  .strat-wrap{margin:5px 0 12px;}
   /* Windows overlap in time — Christmas sits inside Desert winter, the Klondike
      gold window sits inside the Alaska season — so drawing them all on one row
      made them collide and clip each other's labels. Each window now gets a lane
      of its own, assigned at render time, and the band grows to fit. */
-  .strat-band{position:relative;border-radius:6px;background:var(--panel);
-    border:1px solid var(--border);overflow:hidden;padding:3px 0;}
-  .strat-seg{position:absolute;height:23px;display:flex;align-items:center;gap:5px;
-    padding:0 7px;font-size:.66rem;font-weight:700;white-space:nowrap;overflow:hidden;
-    cursor:pointer;border-radius:4px;transition:filter .12s;}
+  .strat-band{position:relative;border-radius:5px;background:var(--panel);
+    border:1px solid var(--border);overflow:hidden;padding:2px 0;}
+  .strat-seg{position:absolute;height:19px;display:flex;align-items:center;gap:4px;
+    padding:0 6px;font-size:.63rem;font-weight:700;white-space:nowrap;overflow:hidden;
+    cursor:pointer;border-radius:3px;transition:filter .12s;}
   .strat-seg:hover{filter:brightness(1.4);}
-  .strat-seg .si{font-size:.78rem;flex:none;}
+  .strat-seg .si{font-size:.7rem;flex:none;}
   .strat-seg .stx{overflow:hidden;text-overflow:ellipsis;}
   /* Too narrow for the words: keep the icon, drop the text. The label is still
      in the tooltip and in the note line below, so nothing is actually lost. */
@@ -848,10 +846,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .strat-seg.narrow .stx{display:none;}
   .strat-seg.tiny .si{display:none;}
   .strat-seg.lit{filter:brightness(1.5);outline:1px solid currentColor;}
-  .strat-note{font-size:.72rem;color:var(--muted);margin:7px 2px 0;min-height:1.3em;
-    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .strat-note b{color:var(--text);}
-  .strat-note .strat-anchor{color:var(--accent);}
+
   .timeline-bar{display:flex;width:100%;height:34px;border-radius:7px;overflow:hidden;border:1px solid var(--border);}
   .timeline-bar > div{height:100%;box-sizing:border-box;border-right:1px solid rgba(0,0,0,.35);position:relative;}
   .timeline-bar > div:last-child{border-right:none;}
@@ -3487,7 +3482,7 @@ function renderStrategy(wrapId, targets, jump){
   // Each window now gets a lane, and lanes are packed on how much room the
   // LABEL needs rather than only on the dates, so a three-week window still
   // gets to say its name instead of being truncated to "Lar…".
-  const ROW = 26;
+  const ROW = 21;
   const segs = targets.map((t,i)=>{
     const c = STRAT_COLORS[t.key] || '#7e8894';
     return `<div class="strat-seg" data-i="${i}" tabindex="0"
@@ -3496,9 +3491,10 @@ function renderStrategy(wrapId, targets, jump){
       title="${t.label} — ${t.why}\n\nThis window is for: ${t.anchorName} (${t.anchorArrive}). Click to open it."
       ><span class="si">${t.icon}</span><span class="stx">${t.label}</span></div>`;
   }).join('');
-  w.innerHTML = `<div class="strat-lab">Why the route is shaped this way — seasonal targets</div>
-    <div class="strat-band">${segs}</div>
-    <div class="strat-note" id="${wrapId}Note">Hover a band for the stop it exists for; click to open it.</div>`;
+  // No heading and no note line: the month bar directly above already labels
+  // this area, and every segment carries its window, its rationale and its
+  // anchor stop in its own tooltip. Two rows of coloured bars, nothing else.
+  w.innerHTML = `<div class="strat-band">${segs}</div>`;
 
   const band = w.querySelector('.strat-band');
   const layout = () => {
@@ -3512,7 +3508,7 @@ function renderStrategy(wrapId, targets, jump){
     // What each label actually needs, in percent of the band.
     const need = els.map(el =>
       (el.querySelector('.si').getBoundingClientRect().width +
-       el.querySelector('.stx').scrollWidth + 20) / bw * 100);
+       el.querySelector('.stx').scrollWidth + 17) / bw * 100);
 
     // Pack lanes left to right. First pass reserves whichever is wider — the
     // window's own dates, or the space its label wants — which is what buys the
@@ -3536,8 +3532,8 @@ function renderStrategy(wrapId, targets, jump){
     let packed = pack(true);
     if(packed.lanes > MAXLANES) packed = pack(false);
     const lane = packed.lane, laneEnd = { length: Math.min(packed.lanes, MAXLANES) };
-    els.forEach((el,i)=>{ el.style.top = (3 + lane[i]*ROW) + 'px'; });
-    band.style.height = (laneEnd.length*ROW + 3) + 'px';
+    els.forEach((el,i)=>{ el.style.top = (2 + lane[i]*ROW) + 'px'; });
+    band.style.height = (laneEnd.length*ROW + 2) + 'px';
 
     // Now decide per segment whether the label fits inside its box, fits if it
     // overhangs into empty band to its right, or has to fall back to the icon.
@@ -3564,29 +3560,9 @@ function renderStrategy(wrapId, targets, jump){
   layout();
   if(typeof ResizeObserver === 'function') new ResizeObserver(layout).observe(band);
 
-  const note = document.getElementById(wrapId + 'Note');
   w.querySelectorAll('.strat-seg').forEach(el=>{
     const t = targets[+el.dataset.i];
-    // The anchor is the stop the window exists FOR. Everything else inside the
-    // date range is just a stop that shares the dates — landing on one of those
-    // is how you end up at a bear-viewing boardwalk when you clicked "larch".
-    const show = () => {
-      // One line, and only the part you cannot get from the band itself: which
-      // stop the window exists for. The full rationale and the other stops that
-      // merely share the dates are in the segment's own tooltip — repeating
-      // them here pushed the note to two wrapped lines under every hover.
-      if(!t.n){
-        note.innerHTML = `<b>${t.label}</b> · ${fmtDate(t.start)} – ${fmtDate(t.end)} · ` +
-          `<b style="color:#e0906d">no stop lands in this window</b>`;
-        return;
-      }
-      note.innerHTML = `<b>${t.label}</b> · ${fmtDate(t.start)} – ${fmtDate(t.end)} · ` +
-        `<span class="strat-anchor">for <b>${t.anchorName}</b> ` +
-        `(${fmtDate(t.anchorArrive)}, ${t.anchorNights}n)` +
-        (t.anchorDrift ? ` <b style="color:#e0906d">— outside its own window</b>` : '') +
-        ` — click to open</span>`;
-    };
-    const lit = on => { el.classList.toggle('lit', on); if(on) show(); };
+    const lit = on => el.classList.toggle('lit', on);
     el.addEventListener('mouseenter', ()=>lit(true));
     el.addEventListener('mouseleave', ()=>lit(false));
     el.addEventListener('focus', ()=>lit(true));

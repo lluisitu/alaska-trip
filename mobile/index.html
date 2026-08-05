@@ -670,6 +670,36 @@ svg.leaflet-image-layer.leaflet-interactive path {
 		print-color-adjust: exact;
 		}
 	}
+
+  /* ---- Glovebox sheet -------------------------------------------------
+     Printing was never possible: no print rules at all, so a print produced
+     the whole 4 MB app including every collapsed card. On the Cassiar and
+     between Fairbanks and Deadhorse there are days with no signal, and a
+     sheet of paper is the fallback that always works. Printing now yields
+     one page per OPEN stop card with the campground, the phone number, the
+     dates and the itinerary — and nothing else. */
+  @media print{
+    body{background:#fff !important;color:#000 !important;}
+    header, nav.tabs, footer, #mapTabs, .bk-filter, .bs-io, .bs-bar, .bs-fields,
+    .minimap-wrap, .mm-cov, .photo-grid, .trip-toggle, .searchbox, .chevron,
+    .tempbar, .card:not(.open) .card-body, .view:not(.active),
+    .pin-tag, .grid4-box.shotwide, details{display:none !important;}
+    .card{page-break-after:always;break-after:page;border:none !important;background:#fff !important;}
+    .card:not(.open){page-break-after:auto;break-after:auto;}
+    .card:not(.open) .card-head{padding:2px 0 !important;}
+    .card-head h3{font-size:15pt;color:#000 !important;}
+    .card-meta,.camp-line{color:#333 !important;}
+    .grid6,.grid6.packed{display:block !important;column-count:1 !important;}
+    .grid6 > *,.gcol > *{break-inside:avoid;}
+    .grid4-box,.grid2,.card-body{background:#fff !important;border-color:#bbb !important;
+      color:#000 !important;}
+    .sec-head,.grid4-box-title,.itin-name,.pw-name,.dec-what{color:#000 !important;}
+    .itin-detail,.campnote,.pw-note,.tnote{color:#333 !important;}
+    a{color:#000 !important;text-decoration:none;}
+    a[href^="http"]::after{content:"";}
+    .pw-verdict{background:#f4f4f4 !important;border-left-color:#666 !important;}
+    @page{margin:14mm;}
+  }
 </style>
 <style>
 :root{

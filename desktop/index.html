@@ -1146,12 +1146,28 @@ svg.leaflet-image-layer.leaflet-interactive path {
   @media(max-width:560px){.grid4{grid-template-columns:1fr;}}
   /* Two columns, three rows: shot list and light join the four highlight boxes
      instead of being buried under the Camping heading. */
-  .grid6{grid-template-columns:1fr 1fr;}
+  /* These six boxes have wildly different heights - a one-line Offroad note
+     next to a three-row towns grid - and CSS grid sizes every row to its
+     tallest cell, so the short ones were rendering as tall empty panels and
+     the row total was the sum of the maxima. Columns pack instead: each box
+     takes its own height and the flow fills column one then column two, so
+     the block is about the sum halved rather than the maxima summed.
+     Reading order becomes column-major, which happens to group the activity
+     boxes on the left and the media and conditions boxes on the right. */
+  .grid6{display:block;column-count:2;column-gap:16px;}
+  .grid6 > *{break-inside:avoid;-webkit-column-break-inside:avoid;
+    page-break-inside:avoid;margin-bottom:16px;display:block;}
+  @media(max-width:900px){.grid6{column-count:1;}}
   @media(max-width:900px){.grid6{grid-template-columns:1fr;}}
   .grid6 .grid4-box-body{max-height:none;}
   .grid6 .ph-wrap,.grid6 .lt-wrap{margin:0;background:transparent;border:none;padding:0;}
   .grid6 .ph-head,.grid6 .lt-head{display:none;}
   .grid6 .lt-grid{grid-template-columns:1fr;}
+  /* Light and Drone share one grid cell as two stacked boxes: both are short,
+     and giving each a full cell left half the row empty. */
+  .grid-stack{display:flex;flex-direction:column;gap:16px;min-width:0;}
+  .mm-cov{color:var(--muted);font-size:.72rem;margin-top:6px;line-height:1.45;}
+  .mm-cov b{color:var(--text);}
   .subhead{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 8px;font-weight:700;}
   .grid4-box{background:var(--panel2);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;}
   .grid4-box-title{background:var(--panel);border-bottom:1px solid var(--border);color:var(--accent);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;font-weight:800;padding:9px 12px;margin:0;width:100%;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:baseline;row-gap:2px;column-gap:8px;}
@@ -1178,6 +1194,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .temp-bar-mask{position:absolute;top:0;bottom:0;background:var(--bg);opacity:.82;}
   .temp-range b{color:var(--text);font-weight:600;}
   .temp-range.temp-range-sm .temp-bar-track{width:50px;}
+  /* Live link between a list entry and its numbered pin on that stop's map.
+     Looks like the old static .itin-pin badge but is interactive: hover lifts
+     the marker and its label, click flies the map there. */
+  .pin-tag{display:inline-flex;align-items:center;gap:1px;font-size:.66rem;font-weight:700;
+    padding:0 6px;border-radius:99px;margin-left:6px;background:rgba(232,176,75,.18);
+    color:#e8b04b;vertical-align:middle;white-space:nowrap;cursor:pointer;
+    border:1px solid transparent;transition:background .12s,color .12s,border-color .12s;}
+  .pin-tag:hover,.pin-tag:focus,.pin-tag.lit{background:#e8b04b;color:#15181d;
+    border-color:#fff;outline:none;}
+  /* Reverse direction: a pin was clicked, so its list row briefly glows. */
+  .pin-flash{animation:pinFlash 1.6s ease-out;border-radius:8px;}
+  @keyframes pinFlash{
+    0%,60%{background:rgba(232,176,75,.28);box-shadow:0 0 0 3px rgba(232,176,75,.28);}
+    100%{background:transparent;box-shadow:0 0 0 0 rgba(232,176,75,0);}
+  }
+  /* The map labels are permanent Leaflet tooltips, so lighting one up means
+     restyling its tooltip container. */
+  .leaflet-tooltip.mm-label-lit{background:#e8b04b !important;color:#15181d !important;
+    border-color:#fff !important;font-weight:700;z-index:1000;}
   .itin-pin{display:inline-flex;align-items:center;gap:1px;font-size:.66rem;font-weight:700;padding:0 6px;border-radius:99px;margin-left:6px;background:rgba(232,176,75,.18);color:#e8b04b;vertical-align:middle;white-space:nowrap;}
   .note{font-size:.85rem;color:var(--muted);line-height:1.5;padding:10px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--accent2);margin-bottom:14px;}
 
@@ -1495,15 +1530,81 @@ function npMatchesActivity(stopId, activityName){
 // when nothing lines up — many activities (e.g. "bison viewing near HQ") simply
 // aren't a separate mapped pin, and some pins aren't written up as activities.
 function poiNumberForActivity(stopId, activityName){
-  const stop = STOPS_BY_ID[stopId];
+  // STOPS_BY_ID only holds the main loop, so every East stop got zero pin
+  // badges no matter how well its itinerary matched its own map.
+  const stop = STOPS_BY_ID[stopId]
+    || (typeof EXT_DATA !== 'undefined' ? (EXT_DATA.STOPS || []).find(x => x.id === stopId) : null);
   if(!stop || !stop.poi || !stop.poi.length || !activityName) return null;
+
+  // Pass 1 — plain substring, either direction. This is the original rule and
+  // it is the safest, so it wins outright when it fires.
   const an = activityName.toLowerCase();
   for(let i=0;i<stop.poi.length;i++){
     const pn = (stop.poi[i].name||'').toLowerCase();
     if(pn && pn.length>3 && (an.includes(pn) || pn.includes(an))) return i+1;
   }
-  return null;
+
+  // Pass 2 — alias-aware token matching. Substring alone matched only 693 of
+  // the 2,473 named list entries, because the two lists were written
+  // independently: "Exit Glacier View Loop" vs "Exit Glacier / Harding
+  // Icefield Trailhead", "Perrine Bridge & Snake River Canyon Rim Trail" vs
+  // "Perrine Bridge / Snake River Canyon Rim Trail". The slashes, brackets and
+  // ampersands in these names are alias separators, not part of a compound
+  // name, so each side is split into candidate names and the words that carry
+  // no identity ("trail", "scenic", "overlook") are dropped before comparing.
+  // A match is only accepted when one side's words are wholly contained in the
+  // other's — a partial word overlap is a guess, and a badge that lights the
+  // wrong pin is worse than no badge.
+  const acts = POI_ALIASES(activityName);
+  if(!acts.length) return null;
+  // A long prose entry (some scenic-drive "names" are a full paragraph) can
+  // accidentally contain a fragment of a POI name, so those must match the
+  // POI's whole name, not one of its aliases.
+  const prose = POI_TOKENS(activityName).length > 12;
+  const hits = [];
+  for(let i=0;i<stop.poi.length;i++){
+    const pas = POI_ALIASES(stop.poi[i].name);
+    let best = 0;
+    pas.forEach((pt, ai) => {
+      if(pt.length < 2) return;
+      acts.forEach(at => {
+        if(at.length < 2) return;
+        if(POI_SUBSET(pt, at) && (!prose || ai === 0)) best = Math.max(best, pt.length*10 + 2);
+        else if(POI_SUBSET(at, pt)) best = Math.max(best, at.length*10 + 1);
+      });
+    });
+    if(best) hits.push({n: i+1, score: best});
+  }
+  if(!hits.length) return null;
+  hits.sort((a,b) => b.score - a.score);
+  // Two POIs matching equally well means the name does not identify one of
+  // them. Refuse rather than pick.
+  if(hits.length > 1 && hits[0].score === hits[1].score) return null;
+  return hits[0].n;
 }
+
+// Words that describe what a place IS rather than which place it is. Dropping
+// them is what lets "Inferno Cone Trail" find "Inferno Cone Overlook".
+const POI_SKIP_WORDS = new Set(['the','and','of','a','an','at','to','near','from','with','via','on','or',
+  'trail','trails','trailhead','road','loop','drive','hike','walk','area','national','state',
+  'park','forest','scenic','byway','route','highway','tour','visit','viewpoint','overlook',
+  'center','centre','historic','site','monument','recreation','start','district']);
+function POI_TOKENS(s){
+  return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim()
+    .split(' ').filter(w => w.length >= 4 && !POI_SKIP_WORDS.has(w));
+}
+// index 0 is always the whole name; the rest are the pieces around / ( ) , & + —
+function POI_ALIASES(s){
+  const raw = [s].concat(String(s||'').split(/[\/(),\u2013\u2014]|&|\+/));
+  const seen = new Set(), out = [];
+  raw.forEach(r => {
+    const t = POI_TOKENS(r), k = t.join(' ');
+    if(t.length && !seen.has(k)){ seen.add(k); out.push(t); }
+  });
+  return out;
+}
+function POI_SUBSET(a, b){ return a.every(w => b.includes(w)); }
 
 const LEG_COLORS = {leg1:'#e8b04b', leg2:'#5fb4d6', leg3:'#7ec488', leg4:'#d97757', leg5:'#b48ee8', leg6:'#c9506b'};
 const LEG_NAMES = {
@@ -2436,7 +2537,7 @@ function trailPillsHtml(it, arriveStr, departStr){
 // kind: 'alltrails' | 'offroad' | 'scenic' — picks the right search-site fallback when an item
 // has no url, or when the whole list is empty (still gives the section a working search link
 // instead of blank space).
-function linkList(items, kind, stopName, arriveStr, departStr){
+function linkList(items, kind, stopName, arriveStr, departStr, stopId){
   const fallbackFn = kind==='offroad' ? offroadSearchLink : kind==='scenic' ? scenicSearchLink : alltrailsSearchLink;
   if(!items || !items.length){
     if(!stopName) return '';
@@ -2447,7 +2548,8 @@ function linkList(items, kind, stopName, arriveStr, departStr){
     const url = it.url || fallbackFn(it.name ? it.name : cleanStopName(stopName||''));
     const label = it.url ? (it.label||it.url) : (it.label || (it.name ? '🔍 search' : '🔍 search near here'));
     const pillsHtml = trailPillsHtml(it, arriveStr, departStr);
-    return `<li>${it.name?('<b>'+it.name+'</b> — '):''}<a href="${url}" target="_blank" rel="noopener">${label}</a>${pillsHtml}</li>`;
+    const pinBadge = stopId ? pinTag(stopId, it.name) : '';
+    return `<li>${it.name?('<b>'+it.name+'</b>'+pinBadge+' — '):''}<a href="${url}" target="_blank" rel="noopener">${label}</a>${pillsHtml}</li>`;
   }).join('') + '</ul>';
 }
 function forumBlock(s){
@@ -2592,7 +2694,7 @@ function campSection(s){
 // and parkways pulled from your uploaded RV Life guide. Same rendering as the trail/offroad
 // lists (linkList), just without difficulty/rating pills since drives don't carry those.
 function scenicDrivesSection(s, stopName){
-  return `<p class="subhead">Scenic drives</p>${linkList(s.scenicDrives, 'scenic', stopName, s.arrive, s.depart)}`;
+  return `<p class="subhead">Scenic drives</p>${linkList(s.scenicDrives, 'scenic', stopName, s.arrive, s.depart, s.id)}`;
 }
 
 
@@ -2612,11 +2714,38 @@ function holidayBox(s){
     '<p class="holiday-foot">Dates follow each event’s recurring annual pattern — the specific year’s dates ' +
     'were not published yet when this was researched, so confirm before booking.</p></div>';
 }
+// How much of this stop's itinerary is actually on the map. The activities and
+// the map pins are two separate datasets: activities carry name, timing and
+// detail but no coordinates, and the pins were placed by hand. About a third of
+// activities match a pin by name; the rest have no coordinate anywhere in the
+// data, and inventing one for a trailhead is not an option. So say the number
+// rather than leaving the gap to be discovered.
+// One honest line under each minimap saying exactly how much of the card the map
+// actually covers — how many pins are drawn, how many were dropped for want of a
+// coordinate, and how many of the entries in the four lists beside it carry a 📍
+// badge that links to a pin. Without this, a map with 6 pins next to a card
+// listing 40 places reads as if 34 things were forgotten.
+function mapCoverage(s){
+  const poi = s.poi || [];
+  const drawn = poi.filter(p => p && p.lat != null && p.lng != null).length;
+  const dropped = poi.length - drawn;
+  const lists = []
+    .concat(s.activities || [], s.alltrails || [], s.offroad || [],
+            s.scenicDrives || [], s.nearbyTowns || []);
+  const named = lists.filter(x => x && x.name);
+  if(!drawn && !named.length) return '';
+  let hit = 0;
+  named.forEach(x => { if(poiNumberForActivity(s.id, x.name)) hit++; });
+  const parts = [`<b>${drawn}</b> pin${drawn === 1 ? '' : 's'} on this map`];
+  if(dropped) parts.push(`${dropped} more highlight${dropped === 1 ? ' has' : 's have'} no coordinate in the data, so ${dropped === 1 ? 'its number is' : 'their numbers are'} skipped here`);
+  if(named.length) parts.push(`<b>${hit} of ${named.length}</b> entries in the lists below link to a pin — hover a 📍 to lift it, click to fly there, or click a pin to jump back to its entry`);
+  return `<div class="mm-cov">${parts.join(' · ')}</div>`;
+}
+
 function itinList(activities, stopName, stopId){
   if(!activities || !activities.length) return '<div class="campnote">—</div>';
   return '<ul class="itin-list">' + activities.map(a=>{
-    const pinNum = poiNumberForActivity(stopId, a.name);
-    const pinBadge = pinNum ? `<span class="itin-pin" title="Shown as pin #${pinNum} on the local map to the left">📍${pinNum}</span>` : '';
+    const pinBadge = pinTag(stopId, a.name);
     return `
     <li class="itin-item">
       <div class="itin-head">
@@ -2629,11 +2758,11 @@ function itinList(activities, stopName, stopId){
   }).join('') + '</ul>';
 }
 
-function townsGrid(towns){
+function townsGrid(towns, stopId){
   if(!towns || !towns.length) return '<div class="campnote">—</div>';
   return '<div class="towns-grid">' + towns.map(t=>`
     <div class="town-card">
-      <div class="tn">${t.name}</div>
+      <div class="tn">${t.name}${stopId ? pinTag(stopId, t.name) : ''}</div>
       <div class="td">${t.distance||''}</div>
       <div class="tnote">${t.note||''}</div>
       <div class="itin-more" style="margin-top:6px"><a href="${wikiLink(t.name)}" target="_blank" rel="noopener">📖 Wikipedia</a> · <a href="${tripadvisorLink(t.name)}" target="_blank" rel="noopener">🧳 TripAdvisor</a></div>
@@ -2654,6 +2783,75 @@ function photoGrid(s){
       <span class="pn">${n}</span>
     </a>`).join('') + '</div>';
 }
+
+// ---- Live map wiring ---------------------------------------------------
+// The map and the lists beside it were two static things that happened to
+// describe the same places. They are now joined in both directions: hovering a
+// list item lifts its pin, clicking one flies the map to it, and clicking a pin
+// scrolls to the item and flashes it. It only works for the roughly 700 list
+// entries whose name matches a placed pin — the rest have no coordinate in the
+// data at all, which is what the coverage line under each map says.
+const MINIMAPS = {};
+
+function pinTag(stopId, name){
+  const n = poiNumberForActivity(stopId, name);
+  if(!n) return '';
+  return `<span class="pin-tag" data-stop="${stopId}" data-pin="${n}" tabindex="0"` +
+         ` title="Pin ${n} on the local map — hover to lift it, click to fly there">\ud83d\udccd${n}</span>`;
+}
+
+function pinHighlight(stopId, n, on){
+  const mm = MINIMAPS[stopId];
+  if(!mm) return;
+  const marker = mm.byPin[n];
+  if(marker && marker.setStyle){
+    marker.setStyle(on ? {radius: 10, weight: 3, color: '#fff'} : marker._baseStyle);
+    if(on && marker.bringToFront) marker.bringToFront();
+  }
+  // The name labels are permanent tooltips bound to the markers themselves,
+  // not separate layers, so the element to light up is the tooltip container.
+  const tip = marker && marker.getTooltip && marker.getTooltip();
+  if(tip && tip._container) tip._container.classList.toggle('mm-label-lit', !!on);
+  document.querySelectorAll(`.pin-tag[data-stop="${stopId}"][data-pin="${n}"]`)
+    .forEach(e => e.classList.toggle('lit', !!on));
+}
+
+function pinFly(stopId, n){
+  const mm = MINIMAPS[stopId];
+  if(!mm) return;
+  const marker = mm.byPin[n];
+  if(!marker) return;
+  mm.map.setView(marker.getLatLng(), Math.max(mm.map.getZoom(), 12), {animate: true});
+  marker.openPopup();
+}
+
+// Clicking a pin on the map walks back the other way: find whatever list item
+// claims that pin, scroll to it and flash it.
+function pinReveal(stopId, n){
+  const el = document.querySelector(`.pin-tag[data-stop="${stopId}"][data-pin="${n}"]`);
+  if(!el) return;
+  const row = el.closest('li, .hl-card, .town-card, .itin-item') || el.parentElement;
+  row.scrollIntoView({behavior: 'smooth', block: 'center'});
+  row.classList.add('pin-flash');
+  setTimeout(() => row.classList.remove('pin-flash'), 1600);
+}
+
+document.addEventListener('mouseover', e => {
+  const t = e.target.closest('.pin-tag');
+  if(t) pinHighlight(t.dataset.stop, +t.dataset.pin, true);
+});
+document.addEventListener('mouseout', e => {
+  const t = e.target.closest('.pin-tag');
+  if(t) pinHighlight(t.dataset.stop, +t.dataset.pin, false);
+});
+document.addEventListener('click', e => {
+  const t = e.target.closest('.pin-tag');
+  if(t){ e.preventDefault(); e.stopPropagation(); pinFly(t.dataset.stop, +t.dataset.pin); }
+});
+document.addEventListener('keydown', e => {
+  const t = e.target.closest && e.target.closest('.pin-tag');
+  if(t && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); pinFly(t.dataset.stop, +t.dataset.pin); }
+});
 
 const POI_COLORS = {trail:'#7ec488', sight:'#e8b04b', camp:'#5fb4d6', town:'#b48ee8', saved:'#f2c94c'};
 const initedMiniMaps = new Set();
@@ -2678,23 +2876,42 @@ function initMiniMap(s){
     // not just a static caption.
     const defs = [{lat:s.lat, lng:s.lng, html:`<a href="${imgSearchLink(s.name)}" target="_blank" rel="noopener">${s.name} (base)</a>`, cls:'mm-label mm-label-base'}];
     const bounds = [[s.lat,s.lng]];
-    const markers = [ L.circleMarker([s.lat,s.lng],{radius:7,color:'#fff',fillColor:LEG_COLORS[s.leg],fillOpacity:1,weight:2}).addTo(mm) ];
+    // Leg keys differ between the two trips, so resolve against whichever map
+    // has this one rather than assuming the main loop's.
+    const legColor = LEG_COLORS[s.leg]
+      || (typeof EXT_LEG_COLORS !== 'undefined' ? EXT_LEG_COLORS[s.leg] : null) || '#5fb4d6';
+    const markers = [ L.circleMarker([s.lat,s.lng],{radius:7,color:'#fff',fillColor:legColor,fillOpacity:1,weight:2}).addTo(mm) ];
     // Some stops carry POIs that were never given coordinates — Winthrop's eight
     // North Cascades trailheads are the case that surfaced this. Leaflet throws
     // "Invalid LatLng object" on the first one and the whole minimap dies, taking
     // the rest of the card's map with it. Draw what can be drawn; the ones with
     // no coordinates still appear in the stop's own lists, they just cannot be
     // pinned. Guessing a coordinate for a trailhead is not an option.
-    const mapPoi = (s.poi||[]).filter(p => p && p.lat != null && p.lng != null);
-    mapPoi.forEach((p,idx)=>{
+    // The pin number must be the POI's position in the stop's own `poi` array,
+    // NOT its position among the ones that could be drawn. Numbering the drawn
+    // subset 1..n silently shifted every number after a coordinate-less POI, so
+    // a list item badged “5” would light a marker that the map itself labelled
+    // “4”. Skipped numbers on the map are the honest signal that a POI exists
+    // but has no coordinate.
+    const byPin = {};
+    (s.poi||[]).forEach((p,idx)=>{
+      if(!p || p.lat == null || p.lng == null) return;
+      const pinNo = idx + 1;
       const c = POI_COLORS[p.type]||'#e8b04b';
       const isSaved = p.type==='saved';
       bounds.push([p.lat,p.lng]);
-      const marker = L.circleMarker([p.lat,p.lng],{radius:isSaved?7:5,color:isSaved?'#fff':c,fillColor:c,fillOpacity:0.9,weight:isSaved?2:1.5})
+      const baseStyle = {radius:isSaved?7:5,color:isSaved?'#fff':c,fillColor:c,fillOpacity:0.9,weight:isSaved?2:1.5};
+      const marker = L.circleMarker([p.lat,p.lng], baseStyle)
         .addTo(mm)
-        .bindPopup(`<b>${idx+1}. ${isSaved?'★ ':''}${p.name}</b><br><span style="text-transform:capitalize">${isSaved?'Your Google Maps pin':p.type}</span> · <a href="${imgSearchLink(p.name)}" target="_blank" rel="noopener">view photos</a>`);
+        .bindPopup(`<b>${pinNo}. ${isSaved?'★ ':''}${p.name}</b><br><span style="text-transform:capitalize">${isSaved?'Your Google Maps pin':p.type}</span> · <a href="${imgSearchLink(p.name)}" target="_blank" rel="noopener">view photos</a>`);
+      marker._baseStyle = baseStyle;
+      // The other direction: pin to list item.
+      marker.on('mouseover', ()=>pinHighlight(s.id, pinNo, true));
+      marker.on('mouseout',  ()=>pinHighlight(s.id, pinNo, false));
+      marker.on('click',     ()=>pinReveal(s.id, pinNo));
       markers.push(marker);
-      defs.push({lat:p.lat, lng:p.lng, html:`<a href="${imgSearchLink(p.name)}" target="_blank" rel="noopener"><b>${idx+1}</b> ${isSaved?'★ ':''}${p.name}</a>`, cls:'mm-label'});
+      byPin[pinNo] = marker;
+      defs.push({lat:p.lat, lng:p.lng, html:`<a href="${imgSearchLink(p.name)}" target="_blank" rel="noopener"><b>${pinNo}</b> ${isSaved?'★ ':''}${p.name}</a>`, cls:'mm-label'});
     });
     mm.invalidateSize();
     if(bounds.length>1){ mm.fitBounds(bounds, {padding:[26,26], maxZoom:12, animate:false}); }
@@ -2726,6 +2943,9 @@ function initMiniMap(s){
       placed.push({left, right, top:chosen.top, bottom:chosen.bottom});
       markers[i].bindTooltip(def.html, {permanent:true, interactive:true, direction, className:def.cls, offset: direction==='right' ? [6,chosen.dy] : [-6,chosen.dy]});
     });
+    // Register once the map is fully built, so the list items beside it can
+    // reach these markers by pin number.
+    MINIMAPS[s.id] = {map: mm, markers, byPin};
   }, 60);
 }
 
@@ -2776,6 +2996,7 @@ function renderCards(filter){
                 <span><span class="dot" style="background:${POI_COLORS.town}"></span>town</span>
                 <span><span class="dot" style="background:${POI_COLORS.saved};box-shadow:0 0 0 1.5px #fff inset;"></span>★ your Google Maps pin</span>
               </div>
+              ${mapCoverage(s)}
             </div>
           </div>
           <div>
@@ -2788,31 +3009,33 @@ function renderCards(filter){
         <div class="grid4 grid6" style="margin-top:16px">
           <div class="grid4-box">
             <p class="grid4-box-title g4-drive"><span class="ic">🚙</span>Scenic drives${regionBrowseLink(s.id, s.name,'scenic')}</p>
-            <div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart)}</div>
+            <div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart, s.id)}</div>
           </div>
           <div class="grid4-box">
             <p class="grid4-box-title g4-trail"><span class="ic">⛰️</span>AllTrails${regionBrowseLink(s.id, s.name,'alltrails')}</p>
-            <div class="grid4-box-body">${linkList(s.alltrails, 'alltrails', s.name, s.arrive, s.depart)}</div>
+            <div class="grid4-box-body">${linkList(s.alltrails, 'alltrails', s.name, s.arrive, s.depart, s.id)}</div>
           </div>
           <div class="grid4-box">
             <p class="grid4-box-title g4-offroad"><span class="ic">🛞</span>Offroad / 4x4${regionBrowseLink(s.id, s.name,'offroad')}</p>
-            <div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart)}</div>
+            <div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart, s.id)}</div>
           </div>
           <div class="grid4-box">
             <p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p>
-            <div class="grid4-box-body">${townsGrid(s.nearbyTowns)}</div>
+            <div class="grid4-box-body">${townsGrid(s.nearbyTowns, s.id)}</div>
           </div>
           <div class="grid4-box">
             <p class="grid4-box-title g4-shot"><span class="ic">📷</span>Shot list</p>
             <div class="grid4-box-body">${photoBlock(s.id) || '<div class="campnote">—</div>'}</div>
           </div>
-          <div class="grid4-box">
-            <p class="grid4-box-title g4-light"><span class="ic">☀️</span>${lightTitle(s.id)}</p>
-            <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
-          </div>
-          <div class="grid4-box">
-            <p class="grid4-box-title g4-drone"><span class="ic">🛸</span>${droneTitle(s.id)}</p>
-            <div class="grid4-box-body">${droneBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          <div class="grid-stack">
+            <div class="grid4-box">
+              <p class="grid4-box-title g4-light"><span class="ic">☀️</span>${lightTitle(s.id)}</p>
+              <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
+            </div>
+            <div class="grid4-box">
+              <p class="grid4-box-title g4-drone"><span class="ic">🛸</span>${droneTitle(s.id)}</p>
+              <div class="grid4-box-body">${droneBlock(s.id) || '<div class="campnote">—</div>'}</div>
+            </div>
           </div>
         </div>
 
@@ -3303,8 +3526,10 @@ function photoBlock(id){
 // ==================== LIGHT AT EACH STOP ====================
 // Computed offline by tools/build_light.py from the stop's own latitude and the
 // dates the trip is actually there — NOAA solar position and a Meeus lunar phase.
-// Local standard time, never shifted for daylight saving, because DST rules vary
-// by jurisdiction and a silently wrong hour is worse than a stated convention.
+// Wall-clock time in the stop's own timezone. These used to be local mean solar
+// time, which at Craters of the Moon is an hour and 34 minutes adrift — a golden
+// hour you would have missed entirely. build_light.py now converts through each
+// stop's IANA zone with the offset read for the actual date, so DST is handled.
 // The grid cell is titled for what the stop actually offers.
 // The computed sun for the stop, printed next to every shot's bearing.
 // A stated "facing SW" and a sunset at 294 degrees cannot both be right, and
@@ -3404,8 +3629,8 @@ function lightBlock(id){
     <div class="lt-grid">${rows.join('')}</div>
     <div class="lt-dark ${dark}">${L.darkNote}</div>
     ${aur}
-    <div class="lt-foot">Local standard time (not adjusted for daylight saving). Sun bearings are true, not magnetic —
-      useful for working out whether a viewpoint actually faces the light.</div>
+    <div class="lt-foot">Local clock time in this stop's own timezone, daylight saving included. Sun bearings are
+      true, not magnetic — useful for working out whether a viewpoint actually faces the light.</div>
   </div>`;
 }
 
@@ -22489,12 +22714,12 @@ EXT_STOPS.forEach((s,i)=>{
 });
 
 // ---- Stop cards (reuses shared pure helper functions from the main dashboard engine) ----
-function extItinList(activities, stopName){
+function extItinList(activities, stopName, stopId){
   if(!activities || !activities.length) return '<div class="campnote">\u2014</div>';
   return '<ul class="itin-list">' + activities.map(a=>`
     <li class="itin-item">
       <div class="itin-head">
-        <div class="itin-name">${a.name}</div>
+        <div class="itin-name">${a.name}${stopId ? pinTag(stopId, a.name) : ''}</div>
         ${moreInfoLinks(a.name, stopName)}
       </div>
       ${a.when?`<div class="itin-when">\u23f1 Best time: ${a.when}</div>`:''}
@@ -22521,25 +22746,47 @@ function extRenderCards(){
       <div class="card-body">
         <div class="blurb">${s.blurb}</div>
         ${s.note?`<div class="note">${s.note}</div>`:''}
-        <p class="sec-head sh-itin"><span class="ic">🥾</span>Suggested itinerary &amp; best times</p>
-        ${extItinList(s.activities, s.name)}
+
+        <div class="grid2 mapItinGrid">
+          <div>
+            <p class="sec-head sh-map"><span class="ic">🗺️</span>Local map — highlights &amp; trails near this stop</p>
+            <div class="minimap-wrap">
+              <div class="minimap" id="minimap-${s.id}"></div>
+              <div class="minimap-legend">
+                <span><span class="dot" style="background:${EXT_LEG_COLORS[s.leg]}"></span>this stop</span>
+                <span><span class="dot" style="background:${POI_COLORS.trail}"></span>trail</span>
+                <span><span class="dot" style="background:${POI_COLORS.sight}"></span>sight</span>
+                <span><span class="dot" style="background:${POI_COLORS.camp}"></span>camp</span>
+                <span><span class="dot" style="background:${POI_COLORS.town}"></span>town</span>
+                <span><span class="dot" style="background:${POI_COLORS.saved};box-shadow:0 0 0 1.5px #fff inset;"></span>★ your Google Maps pin</span>
+              </div>
+              ${mapCoverage(s)}
+            </div>
+          </div>
+          <div>
+            <p class="sec-head sh-itin"><span class="ic">🥾</span>Suggested itinerary &amp; best times</p>
+            ${extItinList(s.activities, s.name, s.id)}
+          </div>
+        </div>
         ${holidayBox(s)}
         <div class="grid4 grid6" style="margin-top:16px">
-          <div class="grid4-box"><p class="grid4-box-title g4-drive"><span class="ic">🚙</span>Scenic drives${regionBrowseLink(s.id, s.name,'scenic')}</p><div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart)}</div></div>
-          <div class="grid4-box"><p class="grid4-box-title g4-trail"><span class="ic">⛰️</span>AllTrails</p><div class="grid4-box-body">${linkList(s.alltrails, 'alltrails', s.name, s.arrive, s.depart)}</div></div>
-          <div class="grid4-box"><p class="grid4-box-title g4-offroad"><span class="ic">🛞</span>Offroad / 4x4</p><div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart)}</div></div>
-          <div class="grid4-box"><p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p><div class="grid4-box-body">${townsGrid(s.nearbyTowns)}</div></div>
+          <div class="grid4-box"><p class="grid4-box-title g4-drive"><span class="ic">🚙</span>Scenic drives${regionBrowseLink(s.id, s.name,'scenic')}</p><div class="grid4-box-body">${linkList(s.scenicDrives, 'scenic', s.name, s.arrive, s.depart, s.id)}</div></div>
+          <div class="grid4-box"><p class="grid4-box-title g4-trail"><span class="ic">⛰️</span>AllTrails</p><div class="grid4-box-body">${linkList(s.alltrails, 'alltrails', s.name, s.arrive, s.depart, s.id)}</div></div>
+          <div class="grid4-box"><p class="grid4-box-title g4-offroad"><span class="ic">🛞</span>Offroad / 4x4</p><div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart, s.id)}</div></div>
+          <div class="grid4-box"><p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p><div class="grid4-box-body">${townsGrid(s.nearbyTowns, s.id)}</div></div>
           <div class="grid4-box">
             <p class="grid4-box-title g4-shot"><span class="ic">📷</span>Shot list</p>
             <div class="grid4-box-body">${photoBlock(s.id) || '<div class="campnote">—</div>'}</div>
           </div>
-          <div class="grid4-box">
-            <p class="grid4-box-title g4-light"><span class="ic">☀️</span>${lightTitle(s.id)}</p>
-            <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
-          </div>
-          <div class="grid4-box">
-            <p class="grid4-box-title g4-drone"><span class="ic">🛸</span>${droneTitle(s.id)}</p>
-            <div class="grid4-box-body">${droneBlock(s.id) || '<div class="campnote">—</div>'}</div>
+          <div class="grid-stack">
+            <div class="grid4-box">
+              <p class="grid4-box-title g4-light"><span class="ic">☀️</span>${lightTitle(s.id)}</p>
+              <div class="grid4-box-body">${lightBlock(s.id) || '<div class="campnote">—</div>'}</div>
+            </div>
+            <div class="grid4-box">
+              <p class="grid4-box-title g4-drone"><span class="ic">🛸</span>${droneTitle(s.id)}</p>
+              <div class="grid4-box-body">${droneBlock(s.id) || '<div class="campnote">—</div>'}</div>
+            </div>
           </div>
         </div>
         <p class="sec-head sh-forum" style="margin-top:16px"><span class="ic">💬</span>Reddit / forum tips</p>
@@ -22561,7 +22808,17 @@ extRenderIssues();
 function extToggleCard(id){
   const card = document.getElementById('ext-card-'+id);
   if(!card) return;
+  const wasOpen = card.classList.contains('open');
   card.classList.toggle('open');
+  // The East trip's cards carried no local map at all — the markup and this
+  // call were only ever on the main loop. initMiniMap is keyed on stop id and
+  // both trips' ids are unique, so the same builder serves both. Leaflet has to
+  // size itself against a visible container, which is why it runs on open
+  // rather than at render.
+  if(!wasOpen){
+    const s = (typeof EXT_STOPS !== 'undefined' ? EXT_STOPS : []).find(x=>x.id===id);
+    if(s) initMiniMap(s);
+  }
 }
 function extShowStop(id){
   setTripMode('extension');

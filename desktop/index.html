@@ -1231,6 +1231,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background:rgba(95,180,214,.16);color:#5fb4d6;}
   .legchip.long{background:rgba(232,176,75,.18);color:#e8b04b;}
   .legchip.split{background:rgba(217,119,87,.22);color:#d97757;}
+  .passchip{display:inline-flex;align-items:center;gap:4px;font-size:.68rem;font-weight:700;
+    padding:1px 7px;border-radius:99px;margin-left:6px;vertical-align:middle;cursor:pointer;
+    border:1px solid transparent;}
+  .passchip:hover{border-color:currentColor;}
+  .passchip.easy{background:rgba(126,196,136,.16);color:#7ec488;}
+  .passchip.moderate{background:rgba(232,176,75,.18);color:#e8b04b;}
+  .passchip.hard{background:rgba(217,119,87,.20);color:#d97757;}
+  .passchip.severe{background:rgba(201,80,107,.26);color:#e2718c;}
   /* Nightly rate */
   .costchip{display:inline-flex;align-items:center;gap:4px;font-size:.68rem;font-weight:700;
     padding:1px 7px;border-radius:99px;margin-left:6px;vertical-align:middle;
@@ -3256,6 +3264,35 @@ function passTitle(stopId, nextId){
 }
 
 // ==================== The driving day ====================================
+function passChip(stopId, nextId){
+  if(!nextId) return '';
+  const leg = PASSES.legs[stopId + '>' + nextId];
+  if(!leg || !leg.worst) return '';
+  const n = leg.passes.length;
+  const label = {severe:'road closed to this rig', hard:'steep / restricted',
+                 moderate:'watch the road', easy:'easy road'}[leg.worst] || leg.worst;
+  const tip = (leg.verdict || '').replace(/"/g,'&quot;');
+  return `<span class="passchip ${leg.worst}" title="${tip}"
+    onclick="event.stopPropagation();openPassBox('${stopId}')">⛰ ${label}${n>1?' · '+n+' passes':''}</span>`;
+}
+// Open the card and take you straight to the box, since it sits well down the
+// card behind the itinerary and the maps.
+function openPassBox(stopId){
+  const card = document.getElementById('card-'+stopId) || document.getElementById('ext-card-'+stopId);
+  if(!card) return;
+  if(!card.classList.contains('open')){
+    const head = card.querySelector('.card-head');
+    if(head) head.click();
+  }
+  setTimeout(()=>{
+    const box = card.querySelector('.g4-road');
+    if(!box) return;
+    box.scrollIntoView({behavior:'smooth', block:'center'});
+    const wrap = box.parentElement;
+    wrap.classList.add('pin-flash');
+    setTimeout(()=>wrap.classList.remove('pin-flash'), 1600);
+  }, 420);
+}
 function legChip(stopId, nextId){
   if(!nextId) return '';
   const l = LEGINFO.legs[stopId + '>' + nextId];
@@ -3631,7 +3668,7 @@ function renderCards(filter){
           <div>
             <h3>${s.name}</h3>
             ${campLine(s.camp, s.nights)}${costChip(s.id)}
-            <div class="card-meta">${fmtDate(s.arrive)} – ${fmtDate(s.depart)} · ${s.nights} night${s.nights>1?'s':''} · ${LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}${optBadge(s)}</div>
+            <div class="card-meta">${fmtDate(s.arrive)} – ${fmtDate(s.depart)} · ${s.nights} night${s.nights>1?'s':''} · ${LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}${optBadge(s)}</div>
           </div>
         </div>
         <div class="card-head-right">
@@ -23426,7 +23463,7 @@ function extRenderCards(){
           <div>
             <h3>${s.name}</h3>
             ${campLine(s.camp, s.nights)}${costChip(s.id)}
-            <div class="card-meta">${fmtDate(s.arrive)} \u2013 ${fmtDate(s.depart)} \u00b7 ${s.nights} night${s.nights>1?'s':''} \u00b7 ${EXT_LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}</div>
+            <div class="card-meta">${fmtDate(s.arrive)} \u2013 ${fmtDate(s.depart)} \u00b7 ${s.nights} night${s.nights>1?'s':''} \u00b7 ${EXT_LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}</div>
           </div>
         </div>
         <div class="card-head-right">

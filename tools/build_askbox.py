@@ -211,6 +211,7 @@ const ASK_REPO_STEPS = [
   '    build_strategy build_frozen build_light build_phonecraft build_drone',
   '    build_passes build_legs build_costs build_petlog build_staynotes',
   '    build_rigfit build_campfacts build_swaps build_bookings build_parks',
+  '    build_askbox',
   '  Then build_routes.py, build_mobile.py and build_vendor.py.',
   '',
   '  Then gate on the suite: node tools/test_alaska_ext_v3.js must print',

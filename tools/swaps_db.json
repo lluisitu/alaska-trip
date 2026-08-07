@@ -1,0 +1,186 @@
+{
+ "swaps": [
+  {
+   "name": "Bryce Canyon RV Resort by Rjourney (Cannonville, UT)",
+   "g": null,
+   "gn": null,
+   "ft": null,
+   "phone": "435-523-4109",
+   "url": "https://rjourney.com/park/ut/bryce-canyon/",
+   "mi": null,
+   "why": "Its own page states year-round operation with full-hookup pull-through sites from $45, so it is open on 24 March when Ruby's is not; it sits on Hwy 12 about 4 miles past Tropic, well inside 30 miles of Bryce.",
+   "sources": [
+    "https://rjourney.com/park/ut/bryce-canyon/"
+   ],
+   "id": "bryce",
+   "replace": "Ruby's Inn RV Park and Campground",
+   "reason": "Ruby’s Inn opens 1 April; you arrive 24 March.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "name": "Hide-A-Way RV Park (Pagosa Springs)",
+   "g": null,
+   "gn": null,
+   "ft": null,
+   "phone": "970-799-2113",
+   "url": "https://hideawaypagosarvpark.com/",
+   "mi": 5,
+   "why": "It is open year-round with 30/50 amp full hookups at $65/night plus tax, so unlike the booked park it is actually operating on 27 April; it is 5 miles west of downtown Pagosa Springs on 20 acres.",
+   "sources": [
+    "https://hideawaypagosarvpark.com/"
+   ],
+   "id": "pagosa-springs",
+   "replace": "Pagosa Springs RV Park & Cabins",
+   "reason": "Pagosa Springs RV Park opens 1 May; you arrive 27 April.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "name": "Wanderlust RV Park & Cabins",
+   "g": 4.5,
+   "gn": 490,
+   "ft": 84,
+   "phone": "479-253-7385",
+   "url": "https://wander.bookmysites.com/reservations/checkout-availability",
+   "mi": 8,
+   "why": "It is open year-round so it actually exists on 2029-02-08 when Holiday Island is closed, its pull-throughs are 27 x 84 ft with 51 of the 93 sites pull-through and 66 on 50 amp, and it holds a 4.5 Google rating on 490 reviews - a documented big-rig park where the booked one is both shut and unconfirmed for length.",
+   "sources": [
+    "https://wanderlustrvpark.com/",
+    "https://wanderlustrvpark.com/rates/",
+    "https://wanderlog.com/place/details/2149919",
+    "https://www.rvparx.com/parks/wanderlust-rv-park-eureka-springs-ar.html"
+   ],
+   "id": "eureka-springs-ar-v3",
+   "replace": "Holiday Island RV Park (Holiday Island Campground)",
+   "reason": "Holiday Island runs April–October; you arrive 8 February.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "name": "Eagle River Campground (Chugach State Park)",
+   "g": 4.4,
+   "gn": 221,
+   "ft": null,
+   "phone": "907-269-8400 (DNR Public Information Center)",
+   "url": "https://dnr.alaska.gov/parks/aspunits/chugach/eaglerivercamp.htm",
+   "mi": 12,
+   "why": "Rates 4.4 vs 3.7 and the state park page states 'No RV size limit' (57 sites + 10 overflow) 12 miles north of Anchorage, versus Ship Creek's 40 ft back-in maximum.",
+   "sources": [
+    "https://dnr.alaska.gov/parks/aspunits/chugach/eaglerivercamp.htm",
+    "https://wanderlog.com/list/geoCategory/852477/best-rv-parks-and-rv-camping-in-anchorage"
+   ],
+   "id": "anchorage",
+   "replace": "Anchorage Ship Creek RV Park",
+   "reason": "Ship Creek rates 3.7 and caps at 40 ft back-in.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "name": "Island View RV Resort",
+   "g": 4.4,
+   "gn": 110,
+   "ft": null,
+   "phone": "250-495-7696",
+   "url": "https://islandviewrvresort.com/rates/",
+   "mi": 3,
+   "why": "Half a point higher on Google (4.4 vs 3.9) on the same lake, all sites full hookup (power/sewer/water), gated, and explicitly priced for big rigs - it publishes a $12/night oversize surcharge for RVs 40 ft and over, which is direct evidence it takes the coach.",
+   "sources": [
+    "https://wanderlog.com/place/details/1977735/island-view-rv-resort",
+    "https://islandviewrvresort.com/rates/",
+    "http://islandviewrvresort.com/"
+   ],
+   "id": "osoyoos",
+   "replace": "NK'Mip Campground & RV Park",
+   "reason": "NK’Mip rates 3.9; the replacement is 4.4 on the same lake.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "name": "Furnace Creek Campground (NPS)",
+   "g": 4.5,
+   "gn": 717,
+   "ft": null,
+   "phone": "760-786-2441 (Oct 15-Apr 15)",
+   "url": "https://www.recreation.gov/camping/campgrounds/232496",
+   "mi": 1,
+   "why": "Google 4.5 from 717 reviews and it is the only campground in the valley with full hookups - 18 hookup sites including 9 pull-throughs (67-69, 72-77) that Campflare describes as taking rigs up to about 100 ft total - reservable through Recreation.gov for the 15 Oct-15 Apr window that covers a 28 Dec arrival, at $30-$44.",
+   "sources": [
+    "https://www.recreation.gov/camping/campgrounds/232496",
+    "https://campflare.com/campground/furnace-creek-campground-496",
+    "https://wanderlog.com/list/geoCategory/850883/best-campgrounds-and-campsites-in-death-valley-national-park"
+   ],
+   "id": "death-valley",
+   "replace": "Fiddlers' Campground (The Oasis at Death Valley)",
+   "reason": "Fiddlers’ has no published hookups or rating; Furnace Creek is the only full-hookup campground in the valley.",
+   "type": "Private RV Resort/Park",
+   "rate": null,
+   "hookups": null
+  },
+  {
+   "id": "bentonville-ar",
+   "replace": "Blue Bull RV Park",
+   "name": "Blowing Springs Campground (Blowing Springs RV Park)",
+   "g": 4.7,
+   "gn": 690,
+   "ft": 50,
+   "phone": "479-855-8075",
+   "url": "https://bellavistapoa.com/thingstodo/recreation/blowingspringscampgrounds/",
+   "mi": 8,
+   "why": "Only park in the immediate Bentonville area that is simultaneously verified open year-round, full-hookup, big-rig-capable (50 ft max) and highly rated on Google (4.7 from 690 reviews, the largest review base in the region). It sits on the Back 40 / Blowing Springs trailhead 8 miles from downtown Bentonville, so it also happens to be the best-placed base for the Crystal Bridges / Bentonville MTB reason you are stopping there.",
+   "rate": "$55.00/night guest (non-member) before tax; $46.75 POA member; $41.25 activity-card; $330/week guest. Holiday rates higher.",
+   "hookups": "full - water, sewer, 30/50A electric, WiFi; 64 full-service RV pads (cement) + 11 primitive tent sites",
+   "type": "Public / POA-operated campground (Bella Vista Property Owners Association)",
+   "sources": [
+    "https://bellavistapoa.com/thingstodo/recreation/blowingspringscampgrounds/",
+    "https://wanderlog.com/place/details/1603334/blowing-springs-park",
+    "https://thedyrt.com/camping/arkansas/bella-vista-rv-park",
+    "https://www.campspot.com/c/rv-camping-in-arkansas/near-bentonville",
+    "https://www.campspot.com/park/blowing-springs-campground-bellavista-ar",
+    "https://www.visitbentonville.com/places-to-stay/camping/"
+   ],
+   "reason": "Blue Bull RV Park could not be shown to exist — dead domain, no directory listing."
+  },
+  {
+   "id": "mountain-view-ar",
+   "replace": "Ozark Folk Center State Park Campground",
+   "name": "Mountain View RV Park & Guest Motel",
+   "g": 4.9,
+   "gn": 486,
+   "ft": 45,
+   "phone": "(870) 269-3758",
+   "url": "https://mountainview-rvpark.com/rv-park",
+   "mi": 1,
+   "why": "It is the direct year-round answer to the Ozark Folk Center closure: 39-40 RV sites, full hookups, 1 mile from the Mountain View square, explicitly 'open for year round bookings' on the operator's own site and listed 'Open all year' by Good Sam. At 4.9 from 486 Google reviews it is also the highest-rated campground of any type I found in this whole four-stop exercise.",
+   "rate": "from $42/night for a 30/50A full-hookup site (tax included); $40/night 30A; book 6 consecutive nights and get the 7th free",
+   "hookups": "full - water, sewer, electric; 30A and 30/50A sites; pull-thru sites available; most sites on concrete pads; WiFi included",
+   "type": "Private RV Park (with motel and tiny homes)",
+   "sources": [
+    "https://mountainview-rvpark.com/",
+    "https://mountainview-rvpark.com/rv-park",
+    "https://wanderlog.com/place/details/6814125/mountain-view-rv-park--guest-motel",
+    "https://www.goodsam.com/campgrounds-rv-parks/arkansas/mountain-view/mountain-view-rv-park-and-guest-motel/cgid-202625337",
+    "https://maps.campendium.com/us/mountain-view-ar/camping-rv/mountain-view-rv-park-guest-motel-mountain-view-ar--0",
+    "https://thedyrt.com/camping/arkansas/mountain-view-rv-park-and-guest-house-motel"
+   ],
+   "reason": "The Ozark Folk Center campground is outside its 14 Apr–14 Nov season on 3 February, and the park page may no longer list campsites at all."
+  }
+ ],
+ "kept": [
+  {
+   "id": "chitina",
+   "camp": "Wrangell View RV Park",
+   "why": "Nothing within 35 miles is better. The only other hookup park, Kenny Lake Mercantile at 26 miles, drops you to 30-amp with no sewer and a 40 ft maximum. Liberty Falls is tent-only. Keep it, and phone (907) 823-2265 — Campendium lists a 32 ft maximum against the 50–70 ft sites on the park’s own booking engine."
+  },
+  {
+   "id": "great-basin",
+   "camp": "Whispering Elms Motel & RV Park",
+   "why": "Border Inn rates 4.0 against 3.9, but that listing covers a casino, motel and restaurant rather than the RV stalls, its sites are reported at 40 ft with no margin for the coach, and it is 9 miles out of Baker. A tenth of a star is not worth a tighter site further from the park."
+  }
+ ]
+}

@@ -1,0 +1,1376 @@
+{
+ "stops": {
+  "jasper": {
+   "id": "jasper",
+   "camp": "Whistlers Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.6,
+    "reviews": 1025,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "781 sites. Parks Canada lists full-service (water/sewer/electric) and electrical loops with 15, 30 and 50 amp service, and states the campground accommodates 'most sizes of motorhomes and trailers'. All sites were levelled and rebuilt after the 2024 wildfire. Parks Canada publishes no per-site dimensions on any public page. Campendium's directory entry carries a 98.4 ft max-RV field, but that is a community-maintained directory value, not a posted site length.",
+   "phone": "1-877-737-3783 (Parks Canada reservation line); 780-852-6176 (park, per Campendium)",
+   "booking_url": "https://reservation.pc.gc.ca/",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/camping",
+    "https://wanderlog.com/list/geoCategory/850624/best-campgrounds-and-campsites-in-jasper-national-park",
+    "https://maps.campendium.com/ca/ab/camping-rv/whistlers-campground-ab--1",
+    "https://www.campingjasper.com/Whistlers-Campground.html"
+   ],
+   "notes": "Season is May 6 - Oct 12 (dates as published for the current year; 2027 dates are not out yet), so a 2027-06-04 arrival is comfortably in season. Rate not captured: the Parks Canada fee page was not fetched, and Campendium's $49 figure is user-reported, so rate is null rather than guessed. No posted site length exists for this campground - book a full-service pull-through and confirm length by phone. Both campgrounds still run at reduced capacity after the 2024 Jasper wildfire.",
+   "better_alternative": null
+  },
+  "chitina": {
+   "id": "chitina",
+   "camp": "Wrangell View RV Park",
+   "exists": true,
+   "google": {
+    "rating": 3.8,
+    "reviews": 20,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 70,
+   "sites_40ft_plus": 12,
+   "site_detail": "Booking engine lists sites individually: Sites 4-5 are 70 ft with 30/50A, water and sewage at $65/night; sites 6-10 (and on) are 50 ft with the same hookups at $50/night. Every listed site clears 40 ft.",
+   "phone": "907-823-2265",
+   "booking_url": "https://www.wrangellviewrvpark.com/",
+   "rate": "$50-65/night",
+   "open_on_arrival": null,
+   "sources": [
+    "https://www.wrangellviewrvpark.com/",
+    "https://wanderlog.com/place/details/1869228/wrangell-view-rv-park",
+    "http://www.campgroundsalaska.com/wrangellviewrvpark.php",
+    "https://www.alaska.org/detail/wrangell-view-rv-park-1",
+    "https://www.chitinanative.com/wrangell-view-rv-park-campground",
+    "https://www.mydriveholiday.com/usa/alaska/chitina/campgrounds/wrangell-view-rv-park",
+    "park booking engine (screenshot, 6 Aug 2026)"
+   ],
+   "notes": "Google rating 3.8 is below the 4.0 threshold, but no better 40-ft-capable alternative could be verified within 30 miles - Chitina has essentially no other serviced RV park, and the listed alt Liberty Falls State Recreation Site is a small no-hookup state site not suited to a 40 ft coach. Season dates are not published anywhere, so open_on_arrival is null; the park answers the phone Tue-Sat 12-4pm and 2026 reservations opened Jan 1, 2026. The homepage links to parkwith.us booking pages for two properties but the direct booking URL could not be extracted; call to confirm a 40 ft site. Phone conflict: chitinanative.com lists 907-823-2223, the park's own site and mydriveholiday list 907-823-2265.",
+   "better_alternative": null,
+   "observed": "site lengths read off the park booking engine by LLuis, 6 Aug 2026"
+  },
+  "whitehorse-2": {
+   "id": "whitehorse-2",
+   "camp": "Hi Country RV Park",
+   "exists": true,
+   "google": {
+    "rating": 4.1,
+    "reviews": 375,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "125 spaces, 24 ft wide. Pull-throughs are 24 x 50 ft; back-ins are 20 x 35 ft. 55 full-hookup sites, 52 water-only, 52 electric-only, 18 no-hookup; 20/30/50 amp. Only the pull-throughs take a 40 ft coach - the back-ins at 35 ft do not. The count of pull-throughs is not published.",
+   "phone": "867-667-7445",
+   "booking_url": "https://www.campspot.com/park/hi-country-rv-park",
+   "rate": "CAD $61.50/night 30 amp full service (pull-through or back-in); $57.50 20 amp full service pull-through; $47.50 20 amp + water back-in; $40.50 unserviced. 2025 rates, per 2 people, plus GST.",
+   "open_on_arrival": true,
+   "sources": [
+    "https://hicountryrv.com/",
+    "https://www.campspot.com/park/hi-country-rv-park",
+    "https://wanderlog.com/place/details/1869204/hi-country-rv-park",
+    "https://www.rvparx.com/parks/hi-country-rv-park-whitehorse-yt.html",
+    "https://adventuregenie.com/rv-campgrounds/yukon-territory/whitehorse/hi-country-rv-park"
+   ],
+   "notes": "Site count varies by source: park says 'over 120', rvparx 125, AdventureGenie 122. AdventureGenie lists max site dimensions as 73 x 14 ft, which contradicts rvparx's 24 x 50 ft pull-throughs; the 50 ft figure is the more consistent one and is the number to plan against. Aug 29 is in season but the park notes reduced services in May and September due to cold. Book a pull-through explicitly - the 35 ft back-ins will not take the coach.",
+   "better_alternative": null
+  },
+  "osoyoos": {
+   "id": "osoyoos",
+   "camp": "NK'Mip Campground & RV Park",
+   "exists": true,
+   "google": {
+    "rating": 3.9,
+    "reviews": 649,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 130,
+   "sites_40ft_plus": null,
+   "site_detail": "409 sites, 310 with full hookups, 30 and 50 amp. Pull-throughs are 30 x 130 ft; back-ins are 30 x 60 ft. Both types clear 40 ft with room to spare. Rate categories are 30/50 amp Full Service & Boulevard, 30 amp Waterfront Full Service, and 30 amp Full Service; the published price sheet gives no dimensions.",
+   "phone": "250-495-7279",
+   "booking_url": "https://online.rezexpert.com/book?business_code=400014",
+   "rate": "CAD $47/day (30/50 amp full service, Sep 9-30) dropping to $40/day from Oct 1; waterfront full service $67/day. Plus 5% GST. 2025 price sheet.",
+   "open_on_arrival": true,
+   "sources": [
+    "https://campingosoyoos.com/",
+    "https://campingosoyoos.com/site-features/",
+    "https://campingosoyoos.com/wp-content/uploads/2025/05/Price-Sheet-2025-1-1.pdf",
+    "https://wanderlog.com/place/details/1225436/nkmip-campgrounds",
+    "https://www.rvparx.com/parks/nk-mip-rv-park-osoyoos-bc.html",
+    "https://www.newmarcorp.com/rvresorts/nkmip-rv-park"
+   ],
+   "notes": "Open year-round, so a 2027-09-30 arrival is fine and lands right on the Sep 30/Oct 1 rate break. Size is not the issue here - the 3.9 Google rating is. Recurring review themes: unreliable WiFi, electrical breaker trips, shower maintenance, and price rises. The exact number of 40 ft+ sites is not published.",
+   "better_alternative": {
+    "name": "Island View RV Resort",
+    "google": {
+     "rating": 4.4,
+     "reviews": 110
+    },
+    "max_site_ft": null,
+    "phone": "250-495-7696",
+    "url": "https://islandviewrvresort.com/rates/",
+    "distance_mi": 3,
+    "why": "Half a point higher on Google (4.4 vs 3.9) on the same lake, all sites full hookup (power/sewer/water), gated, and explicitly priced for big rigs - it publishes a $12/night oversize surcharge for RVs 40 ft and over, which is direct evidence it takes the coach.",
+    "sources": [
+     "https://wanderlog.com/place/details/1977735/island-view-rv-resort",
+     "https://islandviewrvresort.com/rates/",
+     "http://islandviewrvresort.com/"
+    ]
+   }
+  },
+  "fort-bragg": {
+   "id": "fort-bragg",
+   "camp": "Pomo RV Park & Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.2,
+    "reviews": 401,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "96 sites on 17 wooded acres. 74 full-hookup, 22 water-only, 22 electric-only, 20 tent; 30 and 50 amp. 6 pull-throughs at 30 x 60 ft. Max RV length 60 ft. Site dimensions for the back-ins are not published, and the park's own site map page shows an image only with no dimensions.",
+   "phone": "707-964-3373",
+   "booking_url": "https://app.fireflyreservations.com/reserve/property/PomoRVParkandCampground",
+   "rate": "$73.00 + tax full hookup (incl. cable); $68.00 + tax power/water; 50 amp add-on $6.15. Prices include all mandatory fees per California SB 478.",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.pomorv.com/",
+    "https://www.pomorv.com/rates/",
+    "https://wanderlog.com/place/details/4130832/pomo-rv-park--campground",
+    "https://www.rvparx.com/parks/pomo-rv-park-campground-fort-bragg-ca.html",
+    "https://www.roverpass.com/c/pomo-rv-park-campground-fort-bragg-ca/"
+   ],
+   "notes": "Open year-round, so 2027-12-10 is fine. Only 6 sites are confirmed 60 ft pull-throughs; the number of back-ins that take 40 ft is not published - request one of the 6 pull-throughs or confirm by phone. RoverPass still shows stale rates ($49/$47); the park's own rates page ($73/$68) is the current figure. Wanderlog files this place under 'Ukiah, CA' but the address (17999 Tregoning, Fort Bragg 95437) and phone confirm it is the right park.",
+   "better_alternative": null
+  },
+  "great-basin": {
+   "id": "great-basin",
+   "camp": "Whispering Elms Motel & RV Park",
+   "exists": true,
+   "google": {
+    "rating": 3.9,
+    "reviews": 332,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 45,
+   "sites_40ft_plus": 11,
+   "site_detail": "Per-site lengths posted on the ResNexus booking engine. 30 amp full-hookup pull-throughs: RV001 33ft, RV003 35ft, RV005/007/009/011/013 40ft each, all $50/night. 50 amp full-hookup pull-throughs: RV017 45ft, RV018 40ft, $60/night. 50 amp back-in only (30/50 combo, full hookups): RV021, RV022, RV023, RV024 all 40ft, $60/night. That is 11 sites at 40 ft or longer, with RV017 at 45 ft the longest.",
+   "phone": "775-234-9900",
+   "booking_url": "https://resnexus.com/resnexus/reservations/book/62FBCC3E-F66F-48AD-9300-C23EC8C75E6A",
+   "rate": "$50/night (30 amp) - $60/night (50 amp)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.whisperingelms.com/",
+    "https://resnexus.com/resnexus/reservations/book/62FBCC3E-F66F-48AD-9300-C23EC8C75E6A",
+    "https://wanderlog.com/place/details/795046/whispering-elms-motel--rv-park",
+    "https://www.roverpass.com/c/whispering-elms-campground-baker-nv/"
+   ],
+   "notes": "Open year-round; 2028-03-21 arrival is fine. Rating is 3.9, just under the 4.0 trigger, but nothing nearby beats it on the numbers that matter. The only comparable option inside 30 miles is Border Inn Casino & RV Park (~13 mi east on US-50 at the NV/UT line), Google 4.0 with 690 reviews as of 2026-08-06 - a 0.1 improvement, and its RV park publishes no site lengths anywhere I could fetch, so switching would trade 11 documented 40 ft sites for an unknown. Ely NV full-hookup parks are ~60 mi, outside the 30 mi radius. Recommendation: stay, and book RV017 (45 ft, 50 amp) or RV018. Note a 40 ft site is exactly 40 ft - the toad will need to go elsewhere.",
+   "better_alternative": null
+  },
+  "mancos": {
+   "id": "mancos",
+   "camp": "Mesa Verde RV Resort",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "Pull-throughs are 35 x 60 ft; back-ins are 24 x 35 ft. Max site length 60 ft. 36 full-hookup sites, 12 water/electric, 10 tent; 30 and 50 amp. Advertised as big-rig friendly (Woodall's Top Rated, AAA Approved). The 60 ft pull-throughs take the coach; the 35 ft back-ins do not.",
+   "phone": "970-533-7421",
+   "booking_url": "https://properties.camping.com/Mesa-Verde-RV-Resort/Reservations",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://mesaverdervresort.com/",
+    "https://www.rvparx.com/parks/mesa-verde-rv-resort-mancos-co.html",
+    "https://adventuregenie.com/rv-campgrounds/colorado/mancos/mesa-verde-rv-resort",
+    "https://www.parkadvisor.com/us/colorado/mancos/1004529/Mesa+Verde+RV+Resort"
+   ],
+   "notes": "Season is March 1 - November 30, so 2028-04-15 for 7 nights is in season. Google review count could not be verified - Google Maps is blocked by this session's egress proxy and no Wanderlog page exists for this park; the 4.7 rating comes from rvparx, whose Google-rating field matched Wanderlog exactly on three cross-checks (Hi Country 4.1, Nk'Mip 3.9, Pomo 4.2) but whose review-count field is a constant '20' and is not trustworthy. Site count differs by source: rvparx 48 spaces, AdventureGenie 34. Rates are not published online - call. Book a pull-through; the back-ins are 35 ft.",
+   "better_alternative": null
+  },
+  "grand-marais-mn": {
+   "id": "grand-marais-mn",
+   "camp": "Grand Marais Recreation Area Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.6,
+    "reviews": 767,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "296 sites. Booking categories are Electric Water & Sewer Pull Thru, EWS Standard, EWS Premium, EWS Lakeside, Electric & Water, plus primitive and marina slips. All RV sites have 20 and 30 amp, many also 50 amp. Lakeside sites 1-18 are drop-in only. No site dimensions are published on the camping page, the details page, the campground-map page or the Firefly booking engine.",
+   "phone": "800-998-0959",
+   "booking_url": "https://app.fireflyreservations.com/reserve/property/GrandMaraisRecreationArea",
+   "rate": "2026 rates: pull-thru full hookup $58/night Jun-Sep ($53 May & Oct); standard full hookup $53.50 ($48.50); lakeside full hookup $70 ($65, drop-in only); electric/water $49.50 ($44.50). Plus 12.375% sales tax and $10 reservation fee. 7 nights for the price of 6 on reservable sites.",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.grandmaraisrecreationarea.com/camping",
+    "https://www.grandmaraisrecreationarea.com/rates",
+    "https://www.grandmaraisrecreationarea.com/more-details",
+    "https://www.grandmaraisrecreationarea.com/recreation-area-map",
+    "https://app.fireflyreservations.com/reserve/property/GrandMaraisRecreationArea",
+    "https://wanderlog.com/place/details/533836/grand-marais-campground--marina"
+   ],
+   "notes": "Open year round (bathhouses May to mid-October), so 2028-07-05 is fine, and the 6-night stay qualifies for the weekly discount if extended to 7. Site lengths are genuinely not published - the recreation area does not post dimensions anywhere. Call 800-998-0959 before booking to confirm a 40 ft coach fits the Electric/Water/Sewer Pull Thru category. Google figures are from the Wanderlog mirror of the 'Grand Marais Campground & Marina' Google listing (same address 114 S 8th Ave W, same phone, same website).",
+   "better_alternative": null
+  },
+  "tahquamenon-falls-mi": {
+   "id": "tahquamenon-falls-mi",
+   "camp": "Rivermouth Modern Campground, Tahquamenon Falls SP",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 350,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "72 modern sites (Campnab shows 71 reservable) at 32130 W South River Rd, 5 miles south of Paradise. Electric service, some sites with 50 amp; no sewer hookups. Paved and pull-through sites plus ADA-only sites. Campflare gives a 50 ft max RV/trailer length for both Tahquamenon loops. Campendium's directory entry instead shows 35 ft. Michigan DNR publishes per-site lengths only inside the MIDNRReservations booking flow, which could not be read without a live date search.",
+   "phone": "906-492-3415 (park); 800-447-2757 (reservations)",
+   "booking_url": "https://midnrreservations.com",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.michigan.gov/recsearch/parks/tahquamenonfalls",
+    "https://campflare.com/campground/tahquamenon-misp",
+    "https://maps.campendium.com/us/paradise-mi/nature/rivermouth-modern-campground",
+    "https://campnab.com/parks/michigan/tahquamenon-falls-state-park/rivermouth-modern",
+    "https://wanderlog.com/place/details/1065031/tahquamenon-falls-state-park-rivermouth-campgrounds"
+   ],
+   "notes": "THIS IS THE BIGGEST LENGTH RISK IN THE SET. Two directories disagree by 15 ft (Campflare 50 ft vs Campendium 35 ft) and I could not reach the authoritative per-site data. Michigan DNR sells by individual site number with a posted length on each - run a date search on MIDNRReservations.com for 2028-07-31 and filter by site length before booking, or call 906-492-3415. Michigan.gov says the park is open year-round; Campendium says April-October. Either way 2028-07-31 is in season. Rate not captured - Campendium's $38 is user-reported, not a posted figure. A Michigan Recreation Passport is required for vehicle entry. If Rivermouth turns out to cap below 40 ft, the listed alt Lower Falls Modern (Hemlock loop) is the same park, 188 sites across Hemlock and Portage, 30 amp standard with some 50 amp, and Campflare gives it the same 50 ft cap.",
+   "better_alternative": null
+  },
+  "stratford-on": {
+   "id": "stratford-on",
+   "camp": "Wildwood Conservation Area",
+   "exists": true,
+   "google": {
+    "rating": 4.1,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "Max RV length 50 ft; back-in sites are 22 x 50 ft. rvparx reports 210 sites with 110 electric (30 amp max) and 110 with water; ontarioconservationareas.ca reports 386 campsites; AdventureGenie reports 360. Seasonal RV sites in the Antler and Blue Jay campgrounds offer 30 amp and 15 amp. Managed by the Upper Thames River Conservation Authority at 3995 Line 9, St. Marys.",
+   "phone": "519-284-2292 ext. 434 (camping); 519-284-2931 (main)",
+   "booking_url": "https://upperthames.goingtocamp.com",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.rvparx.com/parks/wildwood-conservation-area-st-marys-on.html",
+    "https://www.wildwoodconservationarea.ca/camping",
+    "https://ontarioconservationareas.ca/conservation-areas/wildwood/",
+    "https://adventuregenie.com/rv-campgrounds/ontario/st-marys/wildwood-conservation-area",
+    "https://www.discoverstmarys.ca/en/see-and-do/camping.aspx"
+   ],
+   "notes": "50 ft back-ins take the 40 ft coach with 10 ft to spare, and the rating clears 4.0, so no alternative search was triggered. Two caveats. First, the Google review count is unverified - Google Maps is blocked by this session's egress proxy, no Wanderlog page exists for this site, and rvparx's review-count field is a constant, so only the 4.1 rating value is reported. Second, source disagreement on site count is large (210 vs 360 vs 386) and AdventureGenie flags the park as 'temporarily closed' while ontarioconservationareas.ca says open year-round - the UTRCA's own camping page is live and taking bookings from Feb 1, so treat the AdventureGenie flag as stale. Rates are on a separate Fees page not fetched. 2028-08-27 is mid-season. Note only 30 amp is available - no 50 amp anywhere in the park.",
+   "better_alternative": null
+  },
+  "perth-on": {
+   "id": "perth-on",
+   "camp": "Murphys Point Provincial Park (Hogg Bay Campground)",
+   "exists": true,
+   "google": {
+    "rating": 4.3,
+    "reviews": 345,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "174 campsites park-wide, 47 with electrical service, 30 RV pull-through sites. Hogg Bay is the campground with the electrical pull-through sites and Ontario Parks describes it as serving campers with larger trailers; the Ash Hill loop within it mixes electrical and non-electrical. Fallows Campground has no electrical except the barrier-free site #154. Ontario Parks does not publish site lengths on the park pages - per-site dimensions exist only inside the reservation system, which returned HTTP 403.",
+   "phone": "613-267-5060",
+   "booking_url": "https://reservations.ontarioparks.ca",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.ontarioparks.ca/park/murphyspoint",
+    "https://www.ontarioparks.ca/park/murphyspoint/camping",
+    "https://www.ontarioparks.ca/park/murphyspoint/facilities",
+    "https://wanderlog.com/place/details/320105/murphys-point-provincial-park",
+    "https://rvplacestogo.com/murphys-point-provincial-park/"
+   ],
+   "notes": "Camping season for 2026 is May 8 - Oct 13, so a 2028-09-18 arrival sits inside the comparable window, but 2028 dates are not published yet and mid-September is close enough to the October close that it is worth re-checking when Ontario Parks posts them. Length is unverified and there is a real access concern: an RV reviewer with a big rig reports the majority of Hogg Bay sites are sloped and uneven, roads are narrow and one-way, and 'the trees, the slope and the one-way road direction make getting into and out of the sites challenging especially for the bigger rigs'. Rating clears 4.0 so no alternative search was triggered, but confirm a specific pull-through site number and its posted length through reservations.ontarioparks.ca or 613-267-5060 before committing 5 nights.",
+   "better_alternative": null
+  },
+  "hot-springs-ar-v3": {
+   "id": "hot-springs-ar-v3",
+   "camp": "Lake Catherine State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 3318,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "70 sites across Camps A, B and C, plus 6 primitive tent sites and 1 yurt. 47 Class AAA sites with water, 50 amp electric and sewer, many directly on the lakeshore. 23 Class B sites with water and 30 amp. Park-wide maximum RV/trailer length is 50 ft. No pull-through sites - every site is back-in. Campflare flags the 47 Class AAA sites as taking 40 ft+ but that is its own derived flag, not an Arkansas State Parks posting.",
+   "phone": "501-844-4176",
+   "booking_url": "https://reserve.arkansasstateparks.com/lake-catherine",
+   "rate": "$24 - $48/night depending on class",
+   "open_on_arrival": true,
+   "sources": [
+    "https://campflare.com/campground/arkansas-lake-catherine",
+    "https://www.arkansas.com/state-parks/explore/parks/lake-catherine-state-park",
+    "https://wanderlog.com/place/details/257791/lake-catherine-state-park",
+    "https://reserve.arkansasstateparks.com/lake-catherine"
+   ],
+   "notes": "Campground and picnic areas are open year-round with bathhouses open all year, so 2029-01-11 for 7 nights works; restrooms are seasonal (March-November). Strong Google standing (4.7 on 3,318 reviews) and the 50 ft park maximum clears the coach, so no alternative needed. Two things to verify by phone: the exact per-site length of the Class AAA site you pick, and back-in access - there are no pull-throughs here, and with the toad that means unhitching at every arrival. The Arkansas reserve site returned HTTP 403 to direct fetch, so per-site lengths came from Campflare's mirror of the reservation data. One source rendered a Class B rate as '$85 per day', which conflicts with the $24-$48 range and appears to be a parsing artifact - do not rely on it.",
+   "better_alternative": null
+  },
+  "eureka-springs-ar-v3": {
+   "id": "eureka-springs-ar-v3",
+   "camp": "Holiday Island RV Park (Holiday Island Campground)",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "31 campsites, all with full water, sewer and electric, 30 and 50 amp. The only length information published is the rate tier split: 'Basic camp sites are 24' and under' and 'Premium sites are 25' and longer'. No upper bound is stated anywhere, so whether any site takes 40 ft is unknown. Run by the Holiday Island Suburban Improvement District at 21 N Star Loop.",
+   "phone": "479-253-6995 (campground host Danny Albright also 417-850-0944; off-season 479-253-9700)",
+   "booking_url": null,
+   "rate": "Non-property owners $26.78/day basic, $31.25/day premium (property owners $13.39/$16.07), plus state sales and tourism tax",
+   "open_on_arrival": false,
+   "sources": [
+    "https://holidayisland.us/campground/",
+    "https://www.yelp.com/biz/holiday-island-campground-eureka-springs"
+   ],
+   "notes": "HARD BLOCKER: the camping season runs from the first weekend in April through October 31. The 2029-02-08 arrival is roughly two months before the campground opens, so this booking cannot stand. There is also no online booking - reservations are by phone only. Google rating could not be verified: Google Maps is blocked by this session's egress proxy, no Wanderlog or rvparx page exists for this campground, and my web-search budget ran out before I could find another mirror. 'Premium sites are 25' and longer' is the only published length statement and it does not confirm 40 ft.",
+   "better_alternative": {
+    "name": "Wanderlust RV Park & Cabins",
+    "google": {
+     "rating": 4.5,
+     "reviews": 490
+    },
+    "max_site_ft": 84,
+    "phone": "479-253-7385",
+    "url": "https://wander.bookmysites.com/reservations/checkout-availability",
+    "distance_mi": 8,
+    "why": "It is open year-round so it actually exists on 2029-02-08 when Holiday Island is closed, its pull-throughs are 27 x 84 ft with 51 of the 93 sites pull-through and 66 on 50 amp, and it holds a 4.5 Google rating on 490 reviews - a documented big-rig park where the booked one is both shut and unconfirmed for length.",
+    "sources": [
+     "https://wanderlustrvpark.com/",
+     "https://wanderlustrvpark.com/rates/",
+     "https://wanderlog.com/place/details/2149919",
+     "https://www.rvparx.com/parks/wanderlust-rv-park-eureka-springs-ar.html"
+    ]
+   }
+  },
+  "anchorage": {
+   "id": "anchorage",
+   "camp": "Anchorage Ship Creek RV Park",
+   "exists": true,
+   "google": {
+    "rating": 3.7,
+    "reviews": 274,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 70,
+   "sites_40ft_plus": 4,
+   "site_detail": "116 full-hookup RV sites plus 20 tent sites. Posted lengths: 'Max Length - 40 ft, 70 ft in pull-thru sites', with 4 pull-through sites. Hookups listed as 30 amp with 50 amp N/A. Rates: $79 water/sewer/electric, $89 pull-through W/S/E, $59 dry/tent.",
+   "phone": "907-789-0052 (park); 800-323-5757 (reservations)",
+   "booking_url": "https://www.alaskatraveladventures.com/rv-park/reservation-request-anchorage",
+   "rate": "$59-$89/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.alaskatraveladventures.com/rv-park/anchorage-ship-creek-rv-park",
+    "http://www.campgroundsalaska.com/ship-creek-landing-anchorage.php",
+    "https://akcampgrounds.com/campgrounds/ship-creek-rv-park/",
+    "https://wanderlog.com/place/details/1052492/ship-creek-rv-park",
+    "https://wanderlog.com/list/geoCategory/852477/best-rv-parks-and-rv-camping-in-anchorage",
+    "https://www.roverpass.com/c/anchorage-ship-creek-rv-park-anchorage-ak/"
+   ],
+   "notes": "Google 3.7 is below the 4.0 bar. The park itself publishes no per-site dimensions; the 40ft/70ft figures come from the campgroundsalaska.com directory listing, not from the operator - confirm by phone. Same directory says 30 amp only (50 amp N/A) and season May 1-Sep 15, while the operator's own page says May 1-Sep 30; either way 7 Jul 2027 is inside the season. Only 4 pull-throughs, so a 40 ft coach on a back-in site would be at the stated 40 ft maximum. RoverPass shows lower rates ($39/$49/$19) than the operator page - operator page treated as authoritative.",
+   "better_alternative": {
+    "name": "Eagle River Campground (Chugach State Park)",
+    "google": {
+     "rating": 4.4,
+     "reviews": 221
+    },
+    "max_site_ft": null,
+    "phone": "907-269-8400 (DNR Public Information Center)",
+    "url": "https://dnr.alaska.gov/parks/aspunits/chugach/eaglerivercamp.htm",
+    "distance_mi": 12,
+    "why": "Rates 4.4 vs 3.7 and the state park page states 'No RV size limit' (57 sites + 10 overflow) 12 miles north of Anchorage, versus Ship Creek's 40 ft back-in maximum.",
+    "sources": [
+     "https://dnr.alaska.gov/parks/aspunits/chugach/eaglerivercamp.htm",
+     "https://wanderlog.com/list/geoCategory/852477/best-rv-parks-and-rv-camping-in-anchorage"
+    ]
+   }
+  },
+  "mccarthy": {
+   "id": "mccarthy",
+   "camp": "Base Camp Kennicott",
+   "exists": true,
+   "google": {
+    "rating": 4.4,
+    "reviews": 87,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "Open, undesignated gravel camping at Mile 59.4 McCarthy Road. No per-site dimensions published; pricing is split by rig size - 'Vehicle up to 25 feet' = Basic camping $35/day, 'Vehicles over 25 feet' = Oversize camping $45/day. No hookups and no dump station; come self-contained. Parking-only 24 hr $12.",
+   "phone": "907-554-1062 (listed as emergency contact only during the summer season)",
+   "booking_url": null,
+   "rate": "$45/night oversize (over 25 ft); $35/night basic",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.basecampkennicott.com/",
+    "https://wanderlog.com/place/details/2013652/base-camp-kennicott",
+    "https://www.alaska.org/detail/base-camp-kennicott"
+   ],
+   "notes": "No reservations taken - 'RESERVATIONS ARE NOT REQUIRED. Check in with the camp host when you arrive', so booking_url is null. Published season is May 21-Sep 30 for the 2026 season; 2027 dates are not yet posted, but 17 Aug sits mid-season. There is no published maximum site length because sites are open ground - the only size language is the over-25 ft oversize rate class, which a 40 ft coach falls into. No potable water, pit toilets, no trash. Separately worth checking: the 59-mile McCarthy Road is the real constraint for a 40 ft coach, not the campground.",
+   "better_alternative": null
+  },
+  "dawson-city": {
+   "id": "dawson-city",
+   "camp": "Gold Rush Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.1,
+    "reviews": 241,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "83 sites. The Cloudbeds booking engine sells sites by length class: 'RV - 15 AMP Full Service, Under 25ft', 'RV - 30 AMP Full Service, Under 25ft', 'RV - 30 AMP Full Service, Under 40ft', 'RV - 30 AMP Full Service, Over 40ft (Pull-Through)', 'RV - 15 AMP Water Only, Under 30ft', and a dry site class. The over-40 ft class is pull-through with 30 amp, water and sewer. Park notes site length excludes the tow vehicle and that sites fit roughly one 10 ft slide-out.",
+   "phone": "867-993-4543; 1-866-330-5006 toll-free (Canada)",
+   "booking_url": "https://hotels.cloudbeds.com/reservation/BXO5dg",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://goldrushcampground.com/campground/",
+    "https://hotels.cloudbeds.com/reservation/BXO5dg",
+    "https://wanderlog.com/place/details/543487/gold-rush-campground",
+    "https://yukoninfo.com/listing/gold-rush-campground-rv-park/"
+   ],
+   "notes": "Book the 'Over 40ft (Pull-Through)' class explicitly - the booking engine's next class down caps at 40 ft. Exact feet for the over-40 class are not published, only the class label. Nightly rates are not shown on the public pages or on the Cloudbeds landing page without a date search, so rate is null. Season is mid-May to mid-September, so 30 Aug 2027 is in season, but a 9-night stay running to 8 Sep is near the close - confirm the closing date for 2027. Several reviews say sites are small/tight for larger RVs.",
+   "better_alternative": null
+  },
+  "welches": {
+   "id": "welches",
+   "camp": "Mt Hood Village RV Resort (Encore)",
+   "exists": true,
+   "google": null,
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "382 sites total, more than 300 wooded RV sites across several loops. The Dyrt lists maximum RV length 50 ft, full-hookup pull-through and back-in sites, 50 amp available, described as big-rig friendly. All RV sites have electric, water and cable per the resort's own site. Open year round.",
+   "phone": "877-864-2728 (reservations); 877-570-2267 (resort)",
+   "booking_url": "https://newbook.rvonthego.com/",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.rvonthego.com/oregon/mt-hood-village-rv-resort/",
+    "https://www.rvonthego.com/oregon/mt-hood-village-rv-resort/policies",
+    "https://mthoodvillagerv.com/",
+    "https://thedyrt.com/camping/oregon/mt-hood-village-rv-resort"
+   ],
+   "notes": "Google rating could not be retrieved: Google Maps and all search-engine result pages are blocked by robots.txt for the fetch tool, and no Google-sourced mirror (Wanderlog) carries this property. Recorded as null rather than guessed. For reference only, The Dyrt's own (non-Google) rating is 4.5 from 43 reviews. The 50 ft maximum is The Dyrt's figure - Encore publishes no site dimensions or length limits on either the resort page or the policies page - so confirm site length when booking. No published nightly rate; Encore rates are quoted only through the Newbook booking engine.",
+   "better_alternative": null
+  },
+  "death-valley": {
+   "id": "death-valley",
+   "camp": "Fiddlers' Campground (The Oasis at Death Valley)",
+   "exists": true,
+   "google": null,
+   "max_site_ft": 41,
+   "sites_40ft_plus": null,
+   "site_detail": "Dry campground beside The Ranch: 'These sites do not have water, sewer or electrical hookups and are back-in only', max 8 guests and one vehicle per site, showers at The Ranch pool. Campendium lists maximum RV length 41 ft and a last-paid rate of $38/night. Reviewers describe it as an open gravel parking area with no shade or privacy.",
+   "phone": "800-236-7916",
+   "booking_url": "https://secure.oasisatdeathvalley.com/booking/lodging",
+   "rate": "$38/night (Campendium last-reported; not published on the resort site)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.oasisatdeathvalley.com/lodging/fiddlers-campground/",
+    "https://maps.campendium.com/us/ca/camping-rv/fiddlers-campground"
+   ],
+   "notes": "Google rating unavailable (Maps and search engines are robots-blocked; no Wanderlog entry for this concession campground) - null, not guessed. The non-Google signal is bad: Campendium 2.0 from 11 reviews, with complaints about 24/7 generators, double-booking and missing advertised amenities. The 41 ft maximum is Campendium's figure; the resort publishes no site dimensions. Back-in only with no hookups, so a 40 ft coach fits but only just, on generator power. The tow pickup is a problem here: the campground states one vehicle per site.",
+   "better_alternative": {
+    "name": "Furnace Creek Campground (NPS)",
+    "google": {
+     "rating": 4.5,
+     "reviews": 717
+    },
+    "max_site_ft": null,
+    "phone": "760-786-2441 (Oct 15-Apr 15)",
+    "url": "https://www.recreation.gov/camping/campgrounds/232496",
+    "distance_mi": 1,
+    "why": "Google 4.5 from 717 reviews and it is the only campground in the valley with full hookups - 18 hookup sites including 9 pull-throughs (67-69, 72-77) that Campflare describes as taking rigs up to about 100 ft total - reservable through Recreation.gov for the 15 Oct-15 Apr window that covers a 28 Dec arrival, at $30-$44.",
+    "sources": [
+     "https://www.recreation.gov/camping/campgrounds/232496",
+     "https://campflare.com/campground/furnace-creek-campground-496",
+     "https://wanderlog.com/list/geoCategory/850883/best-campgrounds-and-campsites-in-death-valley-national-park"
+    ]
+   }
+  },
+  "bryce": {
+   "id": "bryce",
+   "camp": "Ruby's Inn RV Park and Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.4,
+    "reviews": 1950,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "Around 240-250 sites, half a mile from the park entrance. The Firefly booking engine filters by 'Full Hook-up', 'Electric & Water Hook-up' and a dedicated 'Big Rig Full Hook-up' class, and states 'Sites are actual size', but no lengths in feet are published on either the booking engine or the park's pages.",
+   "phone": "866-866-6616",
+   "booking_url": "https://app.fireflyreservations.com/reserve/property/RubysInnRVParkandCampground",
+   "rate": null,
+   "open_on_arrival": false,
+   "sources": [
+    "https://www.rubysinn.com/rv-park-campground/",
+    "https://www.brycecanyoncampgrounds.com/bryce-canyon-campground/",
+    "https://app.fireflyreservations.com/reserve/property/RubysInnRVParkandCampground",
+    "https://wanderlog.com/list/geoCategory/850919/best-campgrounds-and-campsites-in-bryce-canyon-national-park"
+   ],
+   "notes": "Biggest issue is the calendar, not the rating: rubysinn.com states the RV park operates April 1 to October 30, so a 24 Mar 2028 arrival is about a week before opening. The campground's own site (brycecanyoncampgrounds.com) says 'late March through late October', so the two operator pages disagree - call before relying on either. Rating is fine (4.4 / 1,950). No site lengths published anywhere, though a 'Big Rig Full Hook-up' class exists; ask Firefly/the office for the big-rig pad length. No published nightly rates.",
+   "better_alternative": {
+    "name": "Bryce Canyon RV Resort by Rjourney (Cannonville, UT)",
+    "google": null,
+    "max_site_ft": null,
+    "phone": "435-523-4109",
+    "url": "https://rjourney.com/park/ut/bryce-canyon/",
+    "distance_mi": null,
+    "why": "Its own page states year-round operation with full-hookup pull-through sites from $45, so it is open on 24 March when Ruby's is not; it sits on Hwy 12 about 4 miles past Tropic, well inside 30 miles of Bryce.",
+    "sources": [
+     "https://rjourney.com/park/ut/bryce-canyon/"
+    ]
+   }
+  },
+  "pagosa-springs": {
+   "id": "pagosa-springs",
+   "camp": "Pagosa Springs RV Park & Cabins",
+   "exists": true,
+   "google": null,
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "Sites are sold by named class with numbered sites but no dimensions: Premier Mountainside #9-15 $68 (50/30A, water, sewer), Pull Through #18-20 $58 (water and electric only), Big Rig #15-B to #27/28-B $68 (50/30A, water, sewer), Mountain View #29-39 $63, Premier Riverside #40-50 $68. Monthly $1,150 all-inclusive, restricted to Big Rig and Mountain View sites.",
+   "phone": "970-264-9264; 1-888-724-6727",
+   "booking_url": "https://www.pagosaspringsrvpark.com/2026-rates.html",
+   "rate": "$58-$68/night",
+   "open_on_arrival": false,
+   "sources": [
+    "https://www.pagosaspringsrvpark.com/rv-sites.html",
+    "https://www.pagosaspringsrvpark.com/2026-rates.html"
+   ],
+   "notes": "The park's rates page states a season of May 1 - September 30, so a 27 Apr 2028 arrival falls 4 days before opening. (The season line on the 2026 rates page is dated 2025, so confirm - but the May 1 start has been consistent.) Google rating could not be retrieved (Maps and search engines robots-blocked, no Wanderlog entry) - null, not guessed. No site lengths in feet are published anywhere on the site despite a dedicated 'Big Rig' class; call to confirm a 40 ft coach fits and where the tow truck parks. Direct online booking URL is not exposed on the public pages - reservations are by phone or through an unlinked portal.",
+   "better_alternative": {
+    "name": "Hide-A-Way RV Park (Pagosa Springs)",
+    "google": null,
+    "max_site_ft": null,
+    "phone": "970-799-2113",
+    "url": "https://hideawaypagosarvpark.com/",
+    "distance_mi": 5,
+    "why": "It is open year-round with 30/50 amp full hookups at $65/night plus tax, so unlike the booked park it is actually operating on 27 April; it is 5 miles west of downtown Pagosa Springs on 20 acres.",
+    "sources": [
+     "https://hideawaypagosarvpark.com/"
+    ]
+   }
+  },
+  "porcupine-mountains-mi": {
+   "id": "porcupine-mountains-mi",
+   "camp": "Union Bay Modern Campground, Porcupine Mountains Wilderness State Park",
+   "exists": true,
+   "google": null,
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "120 modern sites, all with electric hookups, on Lake Superior. Campsitephotos states 'Campsites can accommodate tents, trailers and RVs (20 to 60 feet)', so the site range tops out at 60 ft and a 40 ft coach is within range on the longer sites. Reservations through Michigan DNR (midnrreservations.com); reservable May through October.",
+   "phone": "906-885-5275",
+   "booking_url": "https://midnrreservations.com/",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.campsitephotos.com/campground/mi/union-bay/"
+   ],
+   "notes": "Google rating could not be retrieved (Maps/search engines robots-blocked; no Wanderlog entry found) - null, not guessed. The 20-60 ft range is campsitephotos' summary of the DNR data; it does not break down how many individual sites reach 40 ft, so book a specific site through midnrreservations.com where per-site lengths are shown in the booking flow. Electric only - no water or sewer at the site. Nightly rate not published on the fetched source.",
+   "better_alternative": null
+  },
+  "traverse-city-mi": {
+   "id": "traverse-city-mi",
+   "camp": "Keith J. Charters Traverse City State Park Campground",
+   "exists": true,
+   "google": null,
+   "max_site_ft": 40,
+   "sites_40ft_plus": null,
+   "site_detail": "343-348 sites in three loops on 75 acres, 2 miles from downtown. West loop has 20/30/50 amp, central and east loops 20/30 amp. RVezy's listing states maximum RV length 40 feet, with pull-through sites available; sanitation station on site. Michigan DNR lists the modern campground as closed through the 2026 season with a scheduled reopening of April 1, 2027.",
+   "phone": "231-922-5270 (park); 800-447-2757 (reservations)",
+   "booking_url": "https://www.midnrreservations.com/",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.michigan.gov/recsearch/parks/traversecity",
+    "https://www.rvezy.com/rv-rentals/campground/c667bcd2-95c1-4ff3-87d0-c48aaa68a3ef"
+   ],
+   "notes": "Flag: the only published maximum length is exactly 40 ft (RVezy listing), which leaves zero margin for a 40 ft coach and no room for the tow pickup on-site - verify per-site lengths in the midnrreservations booking flow and plan on parking the truck elsewhere. The DNR page does not publish lengths at all. The campground was closed for a rebuild through the 2026 season, reopening 1 Apr 2027, so it should be open for a 9 Aug 2028 arrival, but re-check the post-renovation site dimensions since they may change. Google rating unavailable (Maps/search engines robots-blocked, no Wanderlog entry) - null. No alternative verified: the web-search budget for this session ran out before Platte River Campground (Sleeping Bear Dunes) could be checked.",
+   "better_alternative": null
+  },
+  "algonquin-on": {
+   "id": "algonquin-on",
+   "camp": "Lake of Two Rivers Campground, Algonquin Provincial Park",
+   "exists": true,
+   "google": null,
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "241 sites in four loops in a white pine forest at km 31.4 of the Highway 60 corridor; 'over 200 campsites, over half of which have electrical hook ups' and the campground 'can accommodate all types of camping equipment'. 2026 operating season posted as May 8 to October 25. Some sites get Highway 60 traffic noise.",
+   "phone": null,
+   "booking_url": "https://reservations.ontarioparks.ca",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.ontarioparks.ca/park/algonquin/lakeoftworivers",
+    "https://www.ontarioparks.ca/park/algonquin/lakeoftworivers/camping",
+    "https://www.algonquinpark.on.ca/visit/camping/lake-of-two-rivers-campground.php"
+   ],
+   "notes": "No per-site or maximum RV length is published on any Ontario Parks or Friends of Algonquin page - lengths appear only inside the reservations.ontarioparks.ca booking flow, which needs a live date search. Recorded as null rather than estimated. Phone is also null: the Lake of Two Rivers campground office closed permanently on 1 April 2026 and enquiries are directed to the Mew Lake office, whose number is not printed on these pages. Google rating unavailable (Maps/search engines robots-blocked; no Wanderlog entry) - null. Season dates shown are for 2026; 4 Sep 2028 is comfortably mid-season. Mew Lake (the listed alternative) is the year-round campground and is the better big-rig bet if Two Rivers' sites turn out short.",
+   "better_alternative": null
+  },
+  "eastern-townships-qc": {
+   "id": "eastern-townships-qc",
+   "camp": "Camping Lac-Stukely, Parc national du Mont-Orford (Sepaq)",
+   "exists": true,
+   "google": null,
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "273 serviced and semi-serviced campsites in the Lac-Stukely sector, spread over 12 named camping areas (L'Erable, La Pruche, Le Bouleau, Le Chene, Le Cedre, Le Frene, Le Hetre, Le Merisier, Le Meleze-Est, Le Meleze-Ouest, Le Sapin, Tilleul), described as semi-shaded sites for tents and RVs. Season mid-May to mid-October. The neighbouring Lac-Fraser sector has 148 sites of which 50 have electricity.",
+   "phone": "1-800-665-6527",
+   "booking_url": "https://www.sepaq.com/en/reservation/camping/parc-national-du-mont-orford/lac-stukely",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.sepaq.com/pq/mor/index.dot?language_id=1",
+    "https://www.sepaq.com/en/reservation/camping/parc-national-du-mont-orford/lac-stukely",
+    "https://www.sepaq.com/en/reservation/camping/init?ou=parc-national-du-mont-orford&type=Camping"
+   ],
+   "notes": "Sepaq publishes no site dimensions or maximum RV length on its public pages - each site's dimensions appear only in the reservation engine after a date search, so max_site_ft is null. Rates likewise only appear in the booking flow. Season is 'mid-May to mid-October (subject to change)': a 5 Oct 2028 arrival for 6 nights runs to 11 Oct, right up against the close, so confirm the 2028 closing date before booking. Google rating unavailable (Maps/search engines robots-blocked, no Wanderlog entry) - null. Sepaq serviced sites in Quebec parks are frequently short for a 40 ft coach; this is the entry most in need of a phone call.",
+   "better_alternative": null
+  },
+  "petit-jean-ar": {
+   "id": "petit-jean-ar",
+   "camp": "Petit Jean State Park Campground",
+   "exists": true,
+   "google": null,
+   "max_site_ft": 101,
+   "sites_40ft_plus": null,
+   "site_detail": "144 campsites in several loops. Class AAA sites have full hookups (water, 50 amp electric, sewer); Class B sites have water and 30 amp; there is also a 22-site rally area. All standard sites have concrete pads, table, grill and fire ring; modern bathhouses and a dump station. Campflare (which mirrors the reservation system's vehicle data) lists maximum RV length 101 ft and maximum trailer length 101 ft, with pull-through sites available. Park is open year-round.",
+   "phone": "501-727-5431",
+   "booking_url": "https://reserve.arkansasstateparks.com/petit-jean",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://campflare.com/campground/arkansas-petit-jean",
+    "https://www.arkansas.com/state-parks/explore/parks/petit-jean-state-park"
+   ],
+   "notes": "The 101 ft figure is the campground-wide maximum from Campflare's mirror of the reservation data, not a per-site number - the reserve.arkansasstateparks.com booking flow shows each site's length, and reserve.arkansasstateparks.com returned 403 to the fetch tool so it could not be read directly. Book a Class AAA full-hookup site. Google rating could not be retrieved (Maps/search engines robots-blocked; the session's web-search budget ran out before a Wanderlog entry could be located) - null, not guessed. Nightly rates not captured. 18 Jan 2029 is fine - the park is open year-round, though Petit Jean sits on a mountain top and winter ice is the practical risk.",
+   "better_alternative": null
+  },
+  "bentonville-ar": {
+   "id": "bentonville-ar",
+   "camp": "Blue Bull RV Park",
+   "exists": false,
+   "google": null,
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": null,
+   "phone": null,
+   "booking_url": null,
+   "rate": null,
+   "open_on_arrival": null,
+   "sources": [
+    "https://www.bluebullrvpark.com/"
+   ],
+   "notes": "COULD NOT VERIFY THIS PARK EXISTS. The URL carried in the dashboard data (https://www.bluebullrvpark.com/) does not resolve - DNS lookup for both bluebullrvpark.com and www.bluebullrvpark.com returns nothing, while a control domain resolves normally, so the domain is dead or was never live. Guessed listing URLs on Campendium, RoverPass and The Dyrt all returned 404, and this session's web-search budget was exhausted before a directory listing could be found. 'exists' is set to false in the sense of 'not verifiable from any source that could be fetched' - it is not proof of closure. Everything else is null by necessity. This entry needs a manual check (search Google Maps for 'Blue Bull RV Park Bentonville AR' and confirm by phone) before anyone books or plans around it. The listed alternative, Prairie Creek Park on Beaver Lake (US Army Corps of Engineers, roughly 20-25 minutes from downtown Bentonville), is the obvious fallback but could not be verified either: its Recreation.gov facility ID was not found and guessed IDs resolved to other parks.",
+   "better_alternative": null
+  },
+  "seward": {
+   "id": "seward",
+   "camp": "Stoney Creek RV Park",
+   "exists": true,
+   "google": {
+    "rating": 4.5,
+    "reviews": 185,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "No per-site dimension table published. Park states all sites are 30 ft wide and 'most sites are at least 50 feet long', and that it can 'easily accommodate big rigs'. 68 of the sites have sewer; some have 50A.",
+   "phone": "907-224-6465 (seasonal) / 1-877-437-6366 (year-round toll-free)",
+   "booking_url": "https://scrv.bookmysites.com/reservations/checkout-availability",
+   "rate": null,
+   "open_on_arrival": null,
+   "sources": [
+    "https://stoneycreekrvpark.com/",
+    "https://www.hipcamp.com/en-US/land/alaska-stoney-creek-rv-park-6p0h69kw",
+    "https://wanderlog.com/place/details/1066372/stoney-creek-rv-park",
+    "https://wanderlog.com/list/geoCategory/852639/best-rv-parks-and-rv-camping-in-seward"
+   ],
+   "notes": "STATUS RISK CONFIRMED: the park's own home page carries the notice 'Stoney Creek RV Park will be Closed for Park Renovations the entire 2026 season. Please check back for updates after October 2026.' Nothing has been published about 2027, so open_on_arrival for 2027-07-14 is genuinely unknown (normal season is Memorial Day weekend to Labor Day weekend, which would contain the arrival date). Nightly rate is not published anywhere I could fetch. Google rating read off the Wanderlog place page, which labels the figure 'from Google' with the Google logo. Fallbacks if 2027 does not reopen, with verified Google figures from the same Wanderlog Seward list: Seward Military Resort 4.5 (233) but military-eligible only; Seward KOA Holiday 4.3 (192); Harborside Campground 4.3 (73); Iditarod Campground 4.3 (28); Resurrection Campground 4.1 (250); Marathon Campground 3.8 (36). Seward RipTide RV Resort (1823 Nash Rd, 907-491-1769, ResNexus booking, full hookup $70 / electric $60 / dry $40) publishes no site lengths and I could not find a verifiable Google rating for it.",
+   "better_alternative": null
+  },
+  "fairbanks-2": {
+   "id": "fairbanks-2",
+   "camp": "River's Edge Resort RV Park",
+   "exists": true,
+   "google": {
+    "rating": 4.0,
+    "reviews": 266,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "Three hookup classes, no per-site dimensions published: Super Hook-Up (50A, pull-through only) $91.95; Full Hook-Up (30A, back-in and pull-through) $86.95; Basic Hook-Up (30A, back-in only) $81.95. Riverfront sites +$10/day, Good Sam 10% off. Park describes 'wide pull-throughs'; site count stated variously as 157, 169 and 187.",
+   "phone": "907-474-0286 / 800-770-3343",
+   "booking_url": "https://www.campspot.com/book/riversedge-fairbanks-ak",
+   "rate": "$81.95-$91.95/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.riversedge.net/fairbanks-rv-park",
+    "https://www.riversedge.net/rv-park-reservation",
+    "https://www.goodsam.com/campgrounds-rv-parks/alaska/fairbanks/river-s-edge-resort-rv-park-910000496",
+    "https://maps.campendium.com/us/fairbanks-ak/camping-rv/rivers-edge-rv-park-campground",
+    "https://wanderlog.com/place/details/1201589/rivers-edge-rv-park--campground"
+   ],
+   "notes": "The 60 ft max is Campendium's figure, not a park-published number - the park itself publishes no site lengths at all, only 'wide pull-throughs'. Worth a phone call to confirm a 40 ft coach plus the towed pickup. Two flags: (1) the Wanderlog place page mirroring the Google listing shows the business as 'Temporarily Closed' as of 2026-08-06, even though riversedge.net is still taking reservations; (2) the rating is exactly 4.0 (266 reviews), i.e. right on the threshold, and Good Sam's own separate rating is 3.5 from 10 reviews. Season: park says 'May to September'; Good Sam lists May 25 - Sep 12; the 2025 booking window was May 15 - Sep 15. Arrival 2027-08-23 sits inside all of those. No better alternative offered: the only researched alt, Tanana Valley Campground, imposed a hard 35 ft total-setup limit effective 1 July 2025, so it cannot take this rig at all.",
+   "better_alternative": null
+  },
+  "whitehorse-3": {
+   "id": "whitehorse-3",
+   "camp": "Hi Country RV Park",
+   "exists": true,
+   "google": {
+    "rating": 4.1,
+    "reviews": 375,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 40,
+   "sites_40ft_plus": null,
+   "site_detail": "127 sites; park says 'over 120 sites for rigs of all sizes' but publishes no per-site dimensions. Site types and 2025 rates: 30A full service $61.50, 20A full service $57.50, 20A + water $47.50, unserviced/tent $40.50 (2 people, GST extra). Both pull-through and back-in.",
+   "phone": "867-667-7445",
+   "booking_url": "https://www.campspot.com/book/hicountryrv",
+   "rate": "CAD $40.50-$61.50/night + GST (2025 rates)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://hicountryrv.com/",
+    "https://maps.campendium.com/ca/whitehorse-yt/camping-rv/hi-country-rv-park",
+    "https://www.campspot.com/park/hi-country-rv-park",
+    "https://wanderlog.com/place/details/1869204/%E3%83%8F%E3%82%A4%E3%82%AB%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC-rv-%E3%83%91%E3%83%BC%E3%82%AF"
+   ],
+   "notes": "Max 40 ft is Campendium's figure (the park publishes no lengths), which puts a 40 ft coach exactly at the ceiling. Campendium reviewers repeatedly describe 'very close quarters', narrow interior roads and tight turns, with one 40 ft fifth-wheel owner reporting 'challenging access throughout'. Rating 4.1 and nominally takes 40 ft so no alternative is strictly triggered, but I would phone ahead and ask for a pull-through. Park operates year-round with limited services in May and September due to cold; arrival 2027-09-08 is inside the serviced shoulder. Researched alts for reference, both with verified Google figures: Pioneer RV Park & Campground 3.9 (222), 867-668-5944 - rates lower than the current pick; Wolf Creek Campground (Yukon Government, ~15 min south) 4.5 (168) but it is an unserviced government campground with no hookups and no published site lengths.",
+   "better_alternative": null
+  },
+  "newport": {
+   "id": "newport",
+   "camp": "Pacific Shores Motorcoach Resort",
+   "exists": true,
+   "google": {
+    "rating": 4.3,
+    "reviews": 268,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 40,
+   "sites_40ft_plus": null,
+   "site_detail": "213 privately-owned lots rented out nightly through Meredith Lodging; no per-lot dimensions published. Rate tiers: Premium $90-$126, View $126-$171, Clubhouse $113-$176, Oceanfront $196 (all-inclusive, per night). Hard rig restriction: Class A and Class C motorcoaches only, minimum 25 ft, 'in well maintained, Like New condition' - no Class B, travel trailers, fifth wheels, toy haulers or tents.",
+   "phone": "541-265-3750 (resort) / 541-648-7957 (reservations)",
+   "booking_url": "https://www.meredithlodging.com/oregon-beach-rentals/pacific-shores-motorcoach-resort",
+   "rate": "$90-$196/night",
+   "open_on_arrival": null,
+   "sources": [
+    "https://psmcr.com/",
+    "https://www.meredithlodging.com/oregon-beach-rentals/pacific-shores-motorcoach-resort",
+    "https://maps.campendium.com/us/newport-or/camping-rv/pacific-shores-motorcoach-resort",
+    "https://wanderlog.com/place/details/798169/pacific-shores-luxury-motorcoach-resort"
+   ],
+   "notes": "Max 40 ft is Campendium's figure, not published by the resort - a 40 ft coach would be exactly at that stated ceiling, so confirm by phone before booking a specific lot. No open-season dates are published on either psmcr.com or the Meredith Lodging booking page, so I could not verify the 2027-11-21 arrival; the Meredith page does list nightly availability without any seasonal caveat and Campendium shows it as 'open to all'. Also check the towed pickup: the resort's rules are written around motorcoaches only and say nothing about where a toad parks. Researched alts, with verified Google figures: Port of Newport RV Park & Marina 3.9 (182) - lower rated, with reviewers flagging the Annex area specifically; South Beach State Park, per-site maxima range 30-50 ft across loops A-G with 30A electric and water (only host sites have full hookups), reservations 800-452-5687.",
+   "better_alternative": null
+  },
+  "camp-verde": {
+   "id": "camp-verde",
+   "camp": "Dead Horse Ranch State Park (Cottonwood, AZ)",
+   "exists": true,
+   "google": {
+    "rating": 4.6,
+    "reviews": 1232,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 65,
+   "sites_40ft_plus": null,
+   "site_detail": "Loops: Quail 43 sites, Red-Tail 36 sites, Cooper's Hawk 27 sites (all with water and 30/50A), Blackhawk 17 non-electric tent-only. Park states 'most of the pull-through sites can accommodate 40-foot motor homes and truck and trailer rigs up to 65 feet'. Campendium lists the campground max as 65 ft across 127 sites. No per-site table published. Generators prohibited; 14-night max per 30 days.",
+   "phone": "928-634-5283 (park) / 1-877-697-2757 (reservations)",
+   "booking_url": "https://azstateparks.com/dead-horse/camping-and-cabins/camping-at-dead-horse-ranch",
+   "rate": "$30-$35/night electric, $20 non-electric, +$15 extra vehicle",
+   "open_on_arrival": true,
+   "sources": [
+    "https://azstateparks.com/dead-horse/camping-and-cabins/camping-at-dead-horse-ranch",
+    "https://maps.campendium.com/us/cottonwood-az/camping-rv/dead-horse-ranch-state-park",
+    "https://wanderlog.com/place/details/290481/dead-horse-ranch-state-park"
+   ],
+   "notes": "Good match: 4.6 rating and pull-throughs explicitly rated for 40 ft motorhomes. Two practical warnings from the park's own page: it 'is often sold out in the spring and fall' (arrival is 4 March, peak Verde Valley season, and the stay is 8 nights) and there is a 14-night maximum, which the 8-night stay is inside. The $15/night extra-vehicle fee will apply to the towed pickup. No seasonal closure is published - AZ state park campgrounds run year-round - but I could not find an explicit statement, so treat open_on_arrival as high-confidence rather than quoted. Alternative for reference if it sells out: Verde Ranch RV Resort, Google 4.6 (1,069), 928-567-7126, 389 full-hookup 30/50A sites, https://campspot.com/book/verderanchrvresort - equal rating, full hookups instead of water/electric, but it publishes no site lengths either.",
+   "better_alternative": null
+  },
+  "torrey": {
+   "id": "torrey",
+   "camp": "Thousand Lakes RV Park",
+   "exists": true,
+   "google": {
+    "rating": 4.5,
+    "reviews": 678,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 70,
+   "sites_40ft_plus": null,
+   "site_detail": "This park does publish per-site-type lengths: Full Hook-Up Back-In 70' (vehicles under 70 ft), Full Hook-Up Pull-Thru 65' (under 65 ft), Full Hook-Up Pull-Thru 50' (under 50 ft), Water & Electricity Back-In 40' (under 40 ft), Water & Electricity Back-In 26' (under 26 ft), Dry Sites (under 45 ft). 79 total sites across tent, six RV categories and seven lodging units. Three of the six RV categories comfortably clear 40 ft; the 'Back-In 40'' type is a hard 'under 40 ft' so it will not take this coach.",
+   "phone": "435-425-3500 / 800-355-8995",
+   "booking_url": "https://resnexus.com/resnexus/reservations/book/458157CF-18E5-4131-B2F8-B3331D185C84",
+   "rate": "from $35.95/night (2 people; +$5 per person age 7+)",
+   "open_on_arrival": null,
+   "sources": [
+    "https://thousandlakesrvpark.com/",
+    "https://thousandlakesrvpark.com/rv-sites-and-amenities/",
+    "https://www.hipcamp.com/en-US/land/utah-thousand-lakes-rv-park-wz6hvz8z",
+    "https://wanderlog.com/place/details/525933/thousand-lakes-rv-park"
+   ],
+   "notes": "Best-documented site lengths of any stop in this batch - book one of the Full Hook-Up 50'/65'/70' types, not the 40' back-in. Open season dates are NOT published on the park website or the Hipcamp listing, so the 2028-03-28 arrival is unverified; Torrey sits at 6,800 ft and several parks there open late March / early April, so confirm by phone. The ResNexus booking engine is CAPTCHA-protected so I could not read the live per-site rate table; the '$35.95' figure is the Hipcamp-listed starting rate. Alternatives in `alts` were not researched further because the current pick is 4.5 and clearly takes 40 ft+.",
+   "better_alternative": null
+  },
+  "itasca-mn": {
+   "id": "itasca-mn",
+   "camp": "Pine Ridge Campground, Itasca State Park",
+   "exists": true,
+   "google": {
+    "rating": 4.6,
+    "reviews": 300,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "Itasca has 160 sites with electric hookups rated 'up to 60 feet' (30/50A); Pine Ridge itself is listed at 158 sites across multiple loops with electric in the Oak and Spruce loops, water spigots at each site, no sewer at site. Pull-through sites available and the campground is described as big-rig friendly. Campflare lists max trailer length 60 ft (its 90 ft 'max RV' figure looks like an aggregate artefact - use 60 ft).",
+   "phone": "888-646-6367 (MN DNR reservations) / 651-296-6157 (info)",
+   "booking_url": "https://reservemn.usedirect.com/MinnesotaWeb/",
+   "rate": "$25-$35/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.campsitephotos.com/campground/mn/itasca-state-park/",
+    "https://campflare.com/campground/pine-ridge-campground-minnesotastateparks-839",
+    "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00181",
+    "https://wanderlog.com/place/details/828313/pine-ridge-campground"
+   ],
+   "notes": "The '60 feet' is a campground-wide statement about the electric sites, not a per-site table - reservemn.usedirect.com does show a per-site driveway length when you pick dates, and that is worth checking for the specific site number before booking. No park-direct phone number is published for Itasca on the DNR page I could fetch, only the statewide DNR numbers. Arrival 2028-06-24 is mid-season; showers and flush toilets run May to early October.",
+   "better_alternative": null
+  },
+  "marquette-mi": {
+   "id": "marquette-mi",
+   "camp": "Marquette Tourist Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.4,
+    "reviews": 660,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 44,
+   "sites_40ft_plus": null,
+   "site_detail": "110 sites on ~40 acres: 100 with electric hookups, of which 38 have full water and sewer; the rest primitive tent. 2026 rates $30 primitive / $45 electric / $55 full hookup, plus a $7 reservation fee. Pull-through sites and 30A/50A available. City publishes no per-site dimensions; Campendium reports the campground max as 44 ft.",
+   "phone": "906-228-0465",
+   "booking_url": "https://www.campspot.com/book/marquettemi",
+   "rate": "$30-$55/night (2026)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://marquettemi.gov/community-services/parks-and-recreation/tourist-park/",
+    "https://maps.campendium.com/us/marquette-mi/camping-rv/marquette-tourist-park-campground-marquette-mi--0",
+    "https://wanderlog.com/place/details/229312/%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B3%B5%EC%9B%90"
+   ],
+   "notes": "44 ft max leaves only 4 ft of margin on the coach, and that figure is Campendium's rather than the City of Marquette's - the city page states no length limit at all. Campspot does list a max vehicle length per site once dates are entered, so pick the site number deliberately. Season in 2026 ran May 22 - Oct 18, so a 2028-07-22 arrival is comfortably inside a normal season. No alternatives were supplied in `alts` and none were researched, since 4.4 and 44 ft do not trigger the replacement rule.",
+   "better_alternative": null
+  },
+  "door-county-wi": {
+   "id": "door-county-wi",
+   "camp": "Peninsula State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.8,
+    "reviews": 5617,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 50,
+   "sites_40ft_plus": null,
+   "site_detail": "Five campgrounds: Tennison Bay 188 sites (97 electric), South Nicolet Bay 143 sites (54 electric), Welcker's Point 81 sites (0 electric), North Nicolet Bay 44 sites (0 electric), Weborg Point 12 sites (12 electric). Park-wide maximum RV and trailer length listed as 50 ft; the WI DNR pages publish no per-site or per-campground lengths. Tennison Bay is the one open year-round for winter camping. Electric sites only - no water or sewer at site.",
+   "phone": "920-868-3258",
+   "booking_url": "https://wisconsin.goingtocamp.com/",
+   "rate": "$28-$110/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://dnr.wisconsin.gov/topic/parks/peninsula/recreation/camping",
+    "https://campflare.com/campground/peninsula-state-park-wisc",
+    "https://wanderlog.com/list/geoCategory/1578280/best-campgrounds-and-campsites-in-door-county"
+   ],
+   "notes": "The 4.8 (5,617) Google figure is for Peninsula State Park as a whole; the separately-listed Tennison Bay Campground shows 4.7 (92). The 50 ft park-wide max is Campflare's aggregate, not a WI DNR publication - goingtocamp.com shows a per-site maximum vehicle length when you enter dates, and Door County state park sites vary a lot, so choose the site number rather than trusting the park-wide number. Target the electric loops (Tennison Bay or South Nicolet Bay); the non-electric loops would mean six nights on generator/solar. Arrival 2028-08-16 is peak Door County season - these sites book out 11 months ahead.",
+   "better_alternative": null
+  },
+  "pec-on": {
+   "id": "pec-on",
+   "camp": "Sandbanks Provincial Park (Outlet / Woodlands / Richardson's)",
+   "exists": true,
+   "google": {
+    "rating": 4.6,
+    "reviews": 5723,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "620 campsites total, 268 with electrical service and 56 RV pull-through sites. Woodlands: all sites electrical. Richardson's: 19 electrical. Outlet River A has a few electrical sites; Outlet River B has electrical pull-throughs and more privacy. Cedars is the sheltered/private family campground. Ontario Parks publishes no trailer or RV length limits on either the camping or facilities pages.",
+   "phone": "613-393-3319",
+   "booking_url": "https://reservations.ontarioparks.ca",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.ontarioparks.ca/park/sandbanks",
+    "https://www.ontarioparks.ca/park/sandbanks/camping",
+    "https://www.ontarioparks.ca/park/sandbanks/facilities",
+    "https://wanderlog.com/place/details/254753/sandbanks-provincial-park"
+   ],
+   "notes": "Site length is genuinely not published anywhere I could reach - Ontario Parks only exposes per-site maximum vehicle length inside the reservations.ontarioparks.ca booking flow, which is a JavaScript app I could not read. This is the biggest open item in the batch: book an Outlet River B electrical pull-through and verify the posted site length in the booking system before committing, because Ontario provincial park sites are frequently short. Rates likewise are only on the annual fee schedule (https://www.ontarioparks.ca/fees/camping/2026), not the park page. Camping season in 2026 runs April 24 - October 26, so a 2028-09-09 arrival will be inside a normal season. Ontario Parks reservations open five months ahead to the day.",
+   "better_alternative": null
+  },
+  "north-conway-nh": {
+   "id": "north-conway-nh",
+   "camp": "Saco River Family Camping",
+   "exists": true,
+   "google": {
+    "rating": 4.3,
+    "reviews": 462,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 100,
+   "sites_40ft_plus": null,
+   "site_detail": "Per-site-type maxima are published: Deluxe W/E/S/C 100 ft, Pool Side Deluxe W/E/S/C 100 ft, Premium W/E/S/C 48 ft (30A, buddy sites), Grand W/E/S/C 45 ft, Grand Dog Runner 45 ft, Premium Riverfront W/E 45 ft, Deluxe Riverfront W/E/S 40 ft (parallel park). 200-230 sites on 50 acres; 50A available.",
+   "phone": "603-356-3360",
+   "booking_url": "https://booking.staylist.app/sacoriver",
+   "rate": "from $73/night (2 adults + 2 children)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://sacoriverfamilycamping.com/rates/",
+    "https://sacoriverfamilycamping.com/faqs/",
+    "https://nhlovescampers.com/campgrounds/saco-river-camping-area/",
+    "https://www.hipcamp.com/en-US/land/new-hampshire-saco-river-family-camping-88lhyll7",
+    "https://wanderlog.com/place/details/778493/saco-river-family-camping"
+   ],
+   "notes": "SEASON FLAG: the published 2026 season is May 15 - October 15. The 2028 arrival of October 11 with 5 nights would run to October 16, i.e. roughly one night past a normal season close. Confirm the 2028 closing date, or trim to 4 nights. Take a Deluxe or Pool Side Deluxe (100 ft) or Premium W/E/S/C (48 ft); avoid the 40 ft Deluxe Riverfront, which is a parallel-park site. Also note only two vehicles per site are allowed and some sites allow one or none, which matters with the towed pickup. WMNF alternatives in `alts` are both weak for this rig: White Ledge is 28 sites, vault toilets, no hookups, $30/night, mid-May to mid-October, and publishes no RV length limit; Covered Bridge on the Kancamagus likewise publishes no length figure on the Forest Service page I could fetch, and neither has hookups for a 5-night October stay.",
+   "better_alternative": null
+  },
+  "mount-magazine-ar": {
+   "id": "mount-magazine-ar",
+   "camp": "Lake Dardanelle State Park (Russellville)",
+   "exists": true,
+   "google": {
+    "rating": 4.8,
+    "reviews": 1913,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 40,
+   "sites_40ft_plus": null,
+   "site_detail": "Russellville area: Class AAA 16 sites (water/50A/sewer), Class AA 14 sites (water/30A/sewer), Class B 27 sites (water/30A); loops A (sites 1-16, 50A), C (25-53, 30A), D (54-65, 30A), E (66-83, 30A) - there are no sites 17-24. 30 full-hookup plus 40 water/electric sites. Pull-throughs available; bathhouses open year-round.",
+   "phone": "479-967-5516",
+   "booking_url": "https://reserve.arkansasstateparks.com/lake-dardanelle",
+   "rate": "$25-$40/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.campsitephotos.com/campground/ar/lake-dardanelle-state-park/",
+    "https://campflare.com/campground/arkansas-lake-dardanelle",
+    "https://www.arkansas.com/state-parks/explore/parks/lake-dardanelle-state-park",
+    "https://wanderlog.com/tp/59448/russellville-trip-planner"
+   ],
+   "notes": "CONFLICTING LENGTH DATA: Campsitephotos states a maximum vehicle length of 40 feet for this campground; Campflare states 93 feet. I have reported the conservative 40 ft. Either way the rig fits, but it may fit exactly, so pick the site number in the Arkansas reservation system where per-site length is shown. The arkansas.com park page displays '$85' as the rate for all three site classes, which is inconsistent with every other source and with Arkansas state park pricing - I have used the $25-$40 range instead and flagged the $85 as probably an error on that page. Campground is open year-round, so a 2029-01-23 arrival is fine. Worth noting on pacing: Lake Dardanelle is about 35-40 miles from Mount Magazine itself. The in-park option, Mount Magazine State Park Campground (Cameron Bluff, on the summit), publishes a 75 ft maximum RV length with full hookups (water, 30/50A, sewer) at $35-$40 across 18 sites - materially closer to the destination and longer sites, though I could not verify its Google rating, so I have not promoted it to better_alternative.",
+   "better_alternative": null
+  },
+  "devils-den-ar": {
+   "id": "devils-den-ar",
+   "camp": "Lake Fort Smith State Park",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 1316,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 60,
+   "sites_40ft_plus": null,
+   "site_detail": "30 sites in two loops: Loop A 20 Class AAA sites with full hookups (water, 30/50A, sewer), Loop B 10 Class B sites with water and 30A. Pull-through options available; year-round dump station. Campflare lists the campground maximum at 60 ft; the Arkansas State Parks page publishes no length figure.",
+   "phone": "479-369-2469",
+   "booking_url": "https://reserve.arkansasstateparks.com/lake-fort-smith",
+   "rate": "$25-$40/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.arkansas.com/state-parks/explore/parks/lake-fort-smith-state-park",
+    "https://campflare.com/campground/arkansas-lake-fort-smith",
+    "https://wanderlog.com/place/details/686407/lake-fort-smith-state-park"
+   ],
+   "notes": "WINTER SERVICE FLAG: the campground and picnic area are open all year, but restrooms are only open March-November and showers close December-February, when the park accommodates self-contained RVs only. The 2029-02-19 arrival falls squarely in that window - fine for a self-contained coach, but no bathhouse for 5 nights. Only 30 sites total, so book early. The 60 ft max is Campflare's aggregate rather than a state figure; verify per-site length in the Arkansas reservation system. Alternative in `alts`, Devil's Den State Park: Google rating not verifiable (the Wanderlog result for that name resolved to Devil's Hole State Park in New York, a different place, so I did not record a figure); Campflare describes it as big-rig friendly with 50A Class AAA sites and its 144 ft 'max RV length' is clearly a data artefact. Its real constraint is access - Highway 74 into the park is winding mountain road and trailers over 26 ft are cautioned against it, which makes it a poor choice for a 40 ft coach towing a pickup.",
+   "better_alternative": null
+  },
+  "trapper-creek": {
+   "id": "trapper-creek",
+   "camp": "K'esugi Ken Campground - Denali State Park (RV Loop)",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 110,
+   "sites_40ft_plus": 32,
+   "site_detail": "RV Loop is 32 electric RV campsites, numbered 011-038. Alaska DNR states all RV sites take at least a 75 ft RV, with 5 pull-throughs up to 100 ft. The ReserveAmerica facility record lists the longest sites as 110 ft pull-through electric (sites 020 and 032); other named pull-throughs are 021, 023, 030. Electric sites are $28/night in peak season.",
+   "phone": "907-745-3975",
+   "booking_url": "https://alaskastateparks.reserveamerica.com/camping/kesugi-ken-campground/r/campgroundDetails.do?contractCode=AK&parkId=1181700",
+   "rate": "$28/night (electric site, peak season)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://dnr.alaska.gov/parks/aspunits/matsu/kesugiken.htm",
+    "https://alaskastateparks.reserveamerica.com/camping/kesugi-ken-campground/r/campgroundDetails.do?contractCode=AK&parkId=1181700"
+   ],
+   "notes": "Google rating/review count NOT VERIFIED - Google Maps, Google Search and every Google-rating mirror I could reach were blocked or JS-only from this environment, so I will not quote a number. Two published max lengths disagree slightly: Alaska DNR says 'all RV sites at least 75 ft, 5 pull-through sites up to 100 ft'; the ReserveAmerica facility record shows 110 ft on sites 020 and 032. Either way every RV-loop site takes a 40 ft coach comfortably. Season per DNR is mid-May to mid-September and ReserveAmerica shows the operating window Jun 1 - Sep 30, so the 2027-08-05 arrival is inside the season. Reservation call centre is 1-844-351-9733; 907-745-3975 is the Mat-Su area park info line.",
+   "better_alternative": null
+  },
+  "kluane-2": {
+   "id": "kluane-2",
+   "camp": "Pine Lake Campground (Yukon Government)",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 92,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "62 campsites, 7 of them pull-through, on Pine Lake about 7 km east of Haines Junction. Yukon Parks does not publish per-site lengths for its territorial campgrounds, and the Yukon.ca site page lists only site count and pull-through count.",
+   "phone": "867-667-5652",
+   "booking_url": "https://yukon.goingtocamp.com/",
+   "rate": "$18/night camping voucher, or $20/night cash paid on site (Yukon government campground fee, GST included)",
+   "open_on_arrival": true,
+   "sources": [
+    "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/site/pine-lake-campground",
+    "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/get-campsite-permit",
+    "https://wanderlog.com/place/details/834960/pine-lake-campground",
+    "https://www.goodsam.com/campgrounds-rv-parks/yukon-territory/haines-junction/pine-lake-201205413"
+   ],
+   "notes": "Google rating 4.7 / 92 reviews is taken from Wanderlog, which republishes the Google Maps rating and labels it as such; I could not open Google Maps directly to re-confirm the live count. NO PUBLISHED SITE LENGTH - Yukon Parks does not post one, so the 40 ft question is unverified; the 7 pull-throughs are the sites to target and this is the one thing worth phoning about. Phone numbers found differ by source: Good Sam lists 867-667-5652, ParkAdvisor lists 867-667-5648; both are Yukon Parks general lines, not a campground office. Yukon.ca shows the 2026 season as May 8 - Oct 1 and territorial camping fees apply May 1 - Sep 30, so a 2027-08-28 arrival is mid-season. goingtocamp is the only reservation channel; some sites stay first-come.",
+   "better_alternative": null
+  },
+  "watson-lake-2": {
+   "id": "watson-lake-2",
+   "camp": "Downtown RV Park (currently planned)",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 80,
+   "sites_40ft_plus": null,
+   "site_detail": "Big Rigs Best Bet's site-by-site listing gives front-section sites at approximately 80 ft and rear sites (#78-83) at approximately 60 ft. Full hookup on #19-35 (except #27); rear section #78-83 is water and electric only. 30 amp service. Wi-Fi only reaches the office area.",
+   "phone": "867-536-2646",
+   "booking_url": "https://www.downtownrvyukon.com/reservation",
+   "rate": "from $50/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://big-rigs-rv.com/business-directory/downtown-rv-park/",
+    "https://www.goodsam.com/campgrounds-rv-parks/yukon-territory/watson-lake/downtown-rv-park-890000760",
+    "https://northernstay.com/campground/downtown-rv-park"
+   ],
+   "notes": "Google rating NOT VERIFIED. What I could verify from other rating systems is poor: Good Sam guest average 2.1 stars from 9 reviews (Good Sam inspector scores Facility 6.5 / Restrooms 10 / Appeal 7.5). Do not treat those as Google numbers. Length is fine - 80 ft front sites take the 40 ft coach easily. Season sources disagree slightly: Good Sam says Apr 15 - Oct 15, Big Rigs Best Bet says Apr 1 - mid October; either way 2027-09-12 is open. The park's own site is a JavaScript-only page, so no rates or site list could be read from it; the /reservation page is the booking route.",
+   "better_alternative": {
+    "name": "Baby Nugget RV Park at Nugget City",
+    "google": {
+     "rating": null,
+     "reviews": null
+    },
+    "max_site_ft": 100,
+    "phone": "867-536-2307",
+    "url": "https://babynuggetrvpark.nuggetcity.com/index.php/reserve-today/",
+    "distance_mi": null,
+    "why": "Much longer sites (#34 and #35 over 100 ft, #2-13 about 90 ft, #31-33 about 80 ft) and better Good Sam inspector scores (Facility 7 / Restrooms 10 / Appeal 9 vs 6.5 / 10 / 7.5), against a Downtown RV Park guest average of 2.1 stars.",
+    "sources": [
+     "https://big-rigs-rv.com/business-directory/baby-nugget-rv-park-2/",
+     "https://www.goodsam.com/campgrounds-rv-parks/yukon-territory/watson-lake/baby-nugget-rv-park-220000276",
+     "https://babynuggetrvpark.nuggetcity.com/"
+    ]
+   }
+  },
+  "bandon": {
+   "id": "bandon",
+   "camp": "Bullards Beach State Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 1609,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 66,
+   "sites_40ft_plus": null,
+   "site_detail": "103 full-hookup sites and 82 electrical-with-water sites, plus 13 yurts, a horse camp and a hiker/biker camp. Max vehicle length published for the campground is 66 ft; loops are described as big-rig friendly with pull-throughs. Oregon State Parks does not publish a per-site length table, so the count of sites at 40 ft or more is unknown.",
+   "phone": "541-347-2209",
+   "booking_url": "https://oregonstateparks.reserveamerica.com/",
+   "rate": "$29-$83/night across all site types",
+   "open_on_arrival": true,
+   "sources": [
+    "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=50",
+    "https://campflare.com/campground/bullards-beach-state-park-398",
+    "https://wanderlog.com/place/details/182755/bullards-beach-state-park"
+   ],
+   "notes": "Google 4.7 / 1,609 reviews via Wanderlog's republished Google Maps figure. IMPORTANT SEASONAL POINT for a 2027-11-27 arrival: only C-loop is open year-round. A-loop runs mid-March to early November and B-loop mid-May to mid-October, so the late-November stay is restricted to C-loop inventory - check that C-loop has a 40 ft-capable full-hookup site before booking. Reservations 800-452-5687; 541-347-2209 is the park.",
+   "better_alternative": null
+  },
+  "zion": {
+   "id": "zion",
+   "camp": "Zion River Resort RV Park & Campground",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 70,
+   "sites_40ft_plus": 37,
+   "site_detail": "Site-by-site lengths from Big Rigs Best Bet: sites #1-8 and #35-42 are 70 ft (16 sites); #11-14 approach 65 ft (4 sites); #10, #15-20 and #22-31 are 60 ft (17 sites) - at least 37 sites at 40 ft or more. #1, #2 and #39 are straight-shot pull-throughs. Park describes paved pads with full hookups, 30/50 amp, water, sewer and Wi-Fi.",
+   "phone": "435-635-8594",
+   "booking_url": "https://www.camplife.com/1326/reservation/step1",
+   "rate": "$35-$42/night by site type per the RoverPass listing (Back-In Standard $35, Riverside Back-In $38, Pull-Thru 30/50 $42); the resort publishes no rates on its own site",
+   "open_on_arrival": true,
+   "sources": [
+    "https://big-rigs-rv.com/business-directory/zion-river-resort/",
+    "https://www.zionriverresort.com/",
+    "https://www.roverpass.com/c/zion-river-resort-rv-park-campground-virgin-ut/",
+    "https://www.rvparking.com/ut/virgin/zion-river-resort"
+   ],
+   "notes": "Google rating NOT VERIFIED. Length is comfortably fine - 16 sites at 70 ft. The 37-site count for 40 ft-plus is my arithmetic on the site numbers listed by Big Rigs Best Bet, not a figure the park publishes. The rate range is third-party (RoverPass) and looks low for Zion in March; the CampLife booking engine is JavaScript-only so live rates could not be read. Year-round operation is asserted by RVParking.com and implied by the resort's snowbird page, but the resort itself does not state season dates - the 2028-03-15 arrival should be fine but confirm. Alt 'Watchman Campground' was checked and is not a like-for-like substitute: no full hookups, and the Zion-Mt Carmel tunnel restriction (35 ft 9 in) shapes access in that canyon.",
+   "better_alternative": null
+  },
+  "moab": {
+   "id": "moab",
+   "camp": "Sun Outdoors Canyonlands Gateway",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 110,
+   "sites_40ft_plus": 27,
+   "site_detail": "Published site-type table: Extra Large Full Hookup Pull Through 110 ft (4 sites); Premium Full Hookup Pull Through 90 ft (19 sites); Deluxe Full Hookup Pull Through 40-50 ft (4 sites); Standard Extended Full Hookup Pull Through 35 ft (26 sites); Standard Full Hookup Pull Through 30 ft (24 sites). So 27 of 77 RV sites take 40 ft or more, and 23 take 90 ft or more.",
+   "phone": "435-259-7854",
+   "booking_url": "https://www.sunoutdoors.com/reservations?hotel=ARC",
+   "rate": "from $88/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.sunoutdoors.com/utah/sun-outdoors-canyonlands-gateway",
+    "https://www.goodsam.com/campgrounds-rv-parks/utah/moab/sun-outdoors-canyonlands-gateway-950000885"
+   ],
+   "notes": "Google rating NOT VERIFIED for this specific property. Careful with name collisions in Moab - this is 13701 N Highway 191 (about 13 miles north of town), a different property from Sun Outdoors Moab Downtown at 555 S Main (Google 4.1 / 900 via Wanderlog), Sun Outdoors North Moab (Google 3.7 / 1,207) and Sun Outdoors Arches Gateway. Good Sam gives Canyonlands Gateway inspector scores 8 / 7.5 / 9 but a guest overall of only 3.1 from 11 reviews - not a Google figure, but worth knowing. Open all year. Because 40 ft fits and no verified Google rating is below 4.0, no substitution is proposed; the alts (Moab Valley RV Resort, Portal RV Resort) could not be rated - Wanderlog carries Portal RV Resort with no rating and does not carry Moab Valley RV Resort.",
+   "better_alternative": null
+  },
+  "duluth-mn": {
+   "id": "duluth-mn",
+   "camp": "Jay Cooke State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.9,
+    "reviews": 3752,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 58,
+   "sites_40ft_plus": null,
+   "site_detail": "Max RV length 58 ft. 21 sites with electric (20/30/50 amp), plus 5 more electric sites available in winter; each site has a parking spur, table and fire ring. No per-site length table is published, so the number of sites at 40 ft or more is unknown - the wooded spurs at Jay Cooke are the practical constraint, not the stated 58 ft maximum.",
+   "phone": "218-673-7000",
+   "booking_url": null,
+   "rate": "$23-$35/night",
+   "open_on_arrival": true,
+   "sources": [
+    "https://campflare.com/campground/jay-cooke-state-park-campground-minnesotastateparks-884",
+    "https://wanderlog.com/place/details/23252/jay-cooke-state-park"
+   ],
+   "notes": "Google 4.9 / 3,752 reviews is the Google listing for Jay Cooke State Park as a whole (780 E Hwy 210, Carlton MN) via Wanderlog - the park, not a separate campground listing, so read it as a park rating. booking_url is null on purpose: Minnesota state park sites book through the state's ReserveMN/UseDirect portal, but I could not fetch that page to confirm the exact campground URL and will not guess one. Phone numbers differ by source - 218-673-7000 is the park office on the Google listing, Campflare shows 218-384-4610. Open year-round with full amenities May-October; 2028-06-29 arrival is peak season.",
+   "better_alternative": null
+  },
+  "munising-mi": {
+   "id": "munising-mi",
+   "camp": "Munising Tourist Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.5,
+    "reviews": 944,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 75,
+   "sites_40ft_plus": 15,
+   "site_detail": "Big Rigs Best Bet lists pull-in sites #1-5 at 75 ft (#7 at 60 ft), pull-thru sites #15-17 at 65 ft, and back-in sites #37, 38, 42, 47-51 at 70 ft - at least 15 named sites at 40 ft or more. Full hookups on #1-5, 15, 16, 17, 47, 48, 49, 58 and 61-67; the park's own site says #72-79, 81-85 and 88-100 are full hookup (electric/water/sewer) with the rest electric and water only, and A-V plus 80 are rustic tent sites. Roughly 100 sites total. Long cords and hoses may be needed on shared hookups.",
+   "phone": "906-387-3145",
+   "booking_url": "https://www.campspot.com/book/munisingtouristparkcampground",
+   "rate": "RV from $55/night; RV-Lite from $45; tent $40",
+   "open_on_arrival": true,
+   "sources": [
+    "https://munisingtouristpark.com/",
+    "https://big-rigs-rv.com/business-directory/city-of-munising-tourist-park/",
+    "https://wanderlog.com/place/details/798260/munising-tourist-park-campground"
+   ],
+   "notes": "Google 4.5 / 944 reviews via Wanderlog's republished Google Maps figure. The park itself publishes no site lengths - the 75 ft figure and the site numbers come from the Big Rigs Best Bet directory listing, which is a posted-site-length directory rather than a rig somebody reported, but it is not the city's own document. Note the full-hookup site numbers in the two sources do not line up (Big Rigs names #1-5/15-17/47-49/58/61-67; the park names #72-79, 81-85, 88-100), most likely because the park renumbered - worth confirming which numbered sites are both full hookup and 40 ft-capable when booking. Season May 14 - Oct 17 per the park (Big Rigs says 5/15-10/15), so the 2028-07-25 arrival is mid-season. Campspot is the booking engine; same-day bookings by phone only.",
+   "better_alternative": null
+  },
+  "indiana-dunes-in": {
+   "id": "indiana-dunes-in",
+   "camp": "Indiana Dunes State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": 4.7,
+    "reviews": 7769,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 55,
+   "sites_40ft_plus": null,
+   "site_detail": "147 campsites, 134 of them electric and predominantly 50 amp. The longest sites in the Indiana Dunes Campground Electric loop are listed at 55 ft (back-in); site 009 is 50 ft. Back-in configuration throughout. No per-site table was published showing how many sites reach 40 ft.",
+   "phone": "219-926-1952",
+   "booking_url": "https://indianastateparks.reserveamerica.com/camping/indiana-dunes-state-park/r/campgroundDetails.do?contractCode=IN&parkId=570035",
+   "rate": "$33/night electric",
+   "open_on_arrival": true,
+   "sources": [
+    "https://indianastateparks.reserveamerica.com/camping/indiana-dunes-state-park/r/campgroundDetails.do?contractCode=IN&parkId=570035",
+    "https://wanderlog.com/place/details/465247/indiana-dunes-state-park"
+   ],
+   "notes": "Google 4.7 / 7,769 reviews is the Google listing for Indiana Dunes State Park (1600 N 25 E, Chesterton) via Wanderlog - the park as a whole, not a campground-only listing. Sites are back-in and top out at 55 ft, so a 40 ft coach fits but only on the longer sites; filter for length when the 12-month booking window opens (the ReserveAmerica page currently only shows dates through Aug 2027, which is the rolling window, not a closure). Arrival 2028-08-22 is in season.",
+   "better_alternative": null
+  },
+  "gananoque-on": {
+   "id": "gananoque-on",
+   "camp": "Ivy Lea Campground",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "140+ campsites operated by Parks of the St. Lawrence, offering regular (unserviced), electric-only and serviced recreational-vehicle sites plus roofed accommodation. No site lengths are published anywhere on the operator's pages. The operator flags that sites 73-76, 84, 88 and 89 sit beneath the 1000 Islands Bridge and may have construction activity.",
+   "phone": "613-659-3057",
+   "booking_url": "https://reservations.parks.on.ca/",
+   "rate": null,
+   "open_on_arrival": null,
+   "sources": [
+    "https://www.stlawrenceparks.com/to-do/camping/ivy-lea-campground/",
+    "https://www.stlawrenceparks.com/to-do/camping/"
+   ],
+   "notes": "Weakest entry in this batch. Google rating NOT VERIFIED (Wanderlog carries The Ivy Lea Club, a different business, not the campground). No site length, no rates and no operating dates are published on the Parks of the St. Lawrence pages - rates and dates sit behind links I could not open, and the booking URL shown on the campground page is the generic reservations.parks.on.ca portal, which I could not confirm actually lands on Ivy Lea inventory. For a 40 ft coach this stop needs a phone call to 613-659-3057 to confirm a site that takes 40 ft, the September operating dates and the rate. The 2028-09-14 arrival is likely inside the season (these campgrounds typically run to Thanksgiving weekend) but that is not verified.",
+   "better_alternative": {
+    "name": "1000 Islands / Ivy Lea KOA Holiday",
+    "google": {
+     "rating": null,
+     "reviews": null
+    },
+    "max_site_ft": 60,
+    "phone": null,
+    "url": "https://koa.com/campgrounds/ivy-lea/",
+    "distance_mi": null,
+    "why": "Publishes actual per-site lengths (site #21 at 60 ft, #56/#57 at about 60 ft on 30 amp, garden back-ins #126/#128 at 60 ft, #127/#129 at 55 ft, #59 at 50 ft), which Ivy Lea Campground does not - it is the fallback if the 40 ft question cannot be answered by phone.",
+    "sources": [
+     "https://big-rigs-rv.com/business-directory/1000-islands-ivy-lea-koa-holiday/",
+     "https://koa.com/campgrounds/ivy-lea/"
+    ]
+   }
+  },
+  "delaware-water-gap-pa": {
+   "id": "delaware-water-gap-pa",
+   "camp": "Delaware Water Gap / Pocono Mountain KOA Holiday",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 102,
+   "sites_40ft_plus": null,
+   "site_detail": "Level pull-through sites 'as long as 102 feet', maximum 50 amp service, KOA Patio sites available, described as Big Rig Friendly. KOA does not publish a per-site length table on the campground page, so the count of 40 ft-plus sites is unknown. 227 Hollow Road, East Stroudsburg PA 18302.",
+   "phone": "570-223-8000",
+   "booking_url": "https://koa.com/campgrounds/delaware-water-gap/reserve/",
+   "rate": null,
+   "open_on_arrival": true,
+   "sources": [
+    "https://koa.com/campgrounds/delaware-water-gap/"
+   ],
+   "notes": "Google rating NOT VERIFIED. Open all year, so 2028-11-11 is inside the season - but the campground states water to the sites is shut off from approximately November 15 through April 1 due to freezing, with only a water-fill station and heated bathhouse available. A 5-night stay from Nov 11 straddles that cutoff, so plan to fill and use the on-board tank from about the 15th. Rates are not published on the campground page; they only appear inside the reservation flow.",
+   "better_alternative": null
+  },
+  "mountain-view-ar": {
+   "id": "mountain-view-ar",
+   "camp": "Ozark Folk Center State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": null,
+   "sites_40ft_plus": null,
+   "site_detail": "No campsite information is published by Arkansas State Parks for this park. The official park page lists only cabin lodging (The Cabins at Dry Creek) - no campsite classes, counts, hookups or lengths. A third-party guide states the official description 'does not explicitly describe tent, primitive, RV, or group campsites' and points to the adjacent private Ozark RV Park for full hookups.",
+   "phone": "870-269-3851",
+   "booking_url": "https://reserve.arkansasstateparks.com/ozark-folk-center",
+   "rate": null,
+   "open_on_arrival": false,
+   "sources": [
+    "https://www.arkansas.com/state-parks/explore/parks/ozark-folk-center-state-park",
+    "https://outdoorithm.com/campgrounds/ar/ozark-folk-center-campground/ozark-folk-center-campground"
+   ],
+   "notes": "TWO PROBLEMS, both worth acting on. (1) SEASON: the park's published operating season is April 14 - November 14 (2026 dates), with only the cabins office open year-round. The 2029-02-03 arrival falls in the closed window, so open_on_arrival is false. (2) EXISTENCE/CAPACITY: I could not confirm from any Arkansas State Parks source that a bookable campground still operates here - the official page now lists cabins only, and the state reservation site returned 403 to me. 'exists' is set true because a ReserveAmerica campground record for the park still exists, but treat that as unconfirmed and phone 870-269-3851. No site length, no site count and no camping rate are published anywhere I could reach, so all three are null rather than guessed.",
+   "better_alternative": {
+    "name": "Ozark RV Park & Cabins",
+    "google": {
+     "rating": null,
+     "reviews": null
+    },
+    "max_site_ft": null,
+    "phone": "870-200-9090",
+    "url": "https://resnexus.com/resnexus/Reservations/Book/953F908A-1DBE-4383-B11A-58672353A7D5",
+    "distance_mi": null,
+    "why": "Private, full-hookup, adjacent to the Folk Center at 1022 Park Avenue in Mountain View and bookable year-round through ResNexus, which sidesteps the state park's April-November season that closes the booked pick on the arrival date.",
+    "sources": [
+     "https://ozarkrvpark.com/",
+     "https://outdoorithm.com/campgrounds/ar/ozark-folk-center-campground/ozark-folk-center-campground"
+    ]
+   }
+  },
+  "mena-ar": {
+   "id": "mena-ar",
+   "camp": "Queen Wilhelmina State Park Campground",
+   "exists": true,
+   "google": {
+    "rating": null,
+    "reviews": null,
+    "checked": "2026-08-06"
+   },
+   "max_site_ft": 40,
+   "sites_40ft_plus": null,
+   "site_detail": "41 campsites plus one hike-in tent site: 8 Class A (water and 50 amp), 27 Class B (water and 30 amp), 5 Class C (water only, tent), 1 hike-in primitive. No sewer hookups anywhere in the campground. Arkansas State Parks publishes no site lengths; The Dyrt states 'paved sites accommodate RVs up to 40 feet' while Campendium lists the max RV length as 36 ft.",
+   "phone": "479-394-2863",
+   "booking_url": "https://reserve.arkansasstateparks.com/queen-wilhelmina/camping",
+   "rate": "$23-$25/night per third-party listings; Arkansas State Parks shows rates only inside the booking calendar",
+   "open_on_arrival": true,
+   "sources": [
+    "https://www.arkansas.com/state-parks/explore/parks/queen-wilhelmina-state-park",
+    "https://reserve.arkansasstateparks.com/queen-wilhelmina/camping",
+    "https://maps.campendium.com/us/mena-ar/camping-rv/queen-wilhelmina-state-park-campground",
+    "https://thedyrt.com/camping/arkansas/arkansas-queen-wilhelmina-state-park"
+   ],
+   "notes": "LENGTH IS THE RISK HERE and the two third-party figures conflict: The Dyrt says up to 40 ft, Campendium says 36 ft max. The park publishes nothing, so a 40 ft coach is right at or just over the limit - phone 479-394-2863 and ask for a specific Class A site length before booking. Google rating NOT VERIFIED (Campendium 4.5 from 10 reviews and The Dyrt 3.5 from 19 reviews are that site's own users, not Google). Also seasonal: the park is open all year but restrooms operate March 1 - November 30 and water is limited December-February, so a 2029-02-24 arrival lands in the limited-water window and the bathhouse may not open until March 1 - only the last day of a 5-night stay. One useful note from reviews: most sites were laid out to be driven into by a motorcoach rather than backed into, which suits this rig. No better alternative is proposed because the web search budget for this session ran out before I could rate nearby Mena-area parks; the alt Shady Lake Recreation Area (Ouachita NF) was not verified and USFS lake campgrounds in that district are generally short-site.",
+   "better_alternative": null
+  }
+ }
+}

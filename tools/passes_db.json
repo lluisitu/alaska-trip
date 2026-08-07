@@ -1,0 +1,1799 @@
+{
+ "legs": [
+  {
+   "from": "great-sand-dunes",
+   "to": "salida-buenavista",
+   "route": "CO-150 / US-160 / CO-17 / US-285 north up the San Luis Valley",
+   "passes": [
+    {
+     "name": "Poncha Pass",
+     "elev_ft": 9010,
+     "max_grade_pct": null,
+     "direction_note": "Northbound this is a steady climb out of the San Luis Valley followed by a descent into Salida; US-285 crosses it connecting Alamosa with Salida. Grade percentage not found on an official source, so left null.",
+     "rv_restriction": "No posted length or weight restriction found",
+     "seasonal": "Open year round; no seasonal closure found in the sources checked. Early April arrival means snow is possible.",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Poncha_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - Poncha is one of the gentler Colorado crossings, but plan it as a fair-weather day given the 3 April date."
+  },
+  {
+   "from": "salida-buenavista",
+   "to": "estes-rmnp",
+   "route": "US-285 north over South Park, then US-285/C-470 to Boulder and US-36 to Estes Park",
+   "passes": [
+    {
+     "name": "Trout Creek Pass",
+     "elev_ft": 9346,
+     "max_grade_pct": null,
+     "direction_note": "Climb east out of the Arkansas Valley near Buena Vista onto South Park. Carried by both US-24 and US-285. Note the summit sign is reported to be about 140 ft off the surveyed elevation.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; winter storms in April are routine at this elevation.",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Trout_Creek_Pass"
+     ]
+    },
+    {
+     "name": "Kenosha Pass",
+     "elev_ft": 9984,
+     "max_grade_pct": null,
+     "direction_note": "Eastbound descent off South Park down the North Fork South Platte valley on US-285. The long downhill toward Bailey/Conifer is the part to manage in a heavy coach - use the engine brake and low gear rather than the service brakes.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Kenosha_Pass"
+     ]
+    }
+   ],
+   "verdict": "Doable but it is a genuine two-summit day with a long eastbound descent off Kenosha - drive it early, dry, and slow; do not be tempted onto I-70 over the Eisenhower Tunnel as an alternative without checking chain law first."
+  },
+  {
+   "from": "estes-rmnp",
+   "to": "saratoga",
+   "route": "US-36 / US-34 to Loveland, US-287 north through Virginia Dale to Laramie, then WY-130 east or I-80 to Walcott and WY-130/WY-230",
+   "passes": [
+    {
+     "name": "Trail Ridge Road (US-34 through RMNP) - NOT AVAILABLE",
+     "elev_ft": 12183,
+     "max_grade_pct": null,
+     "direction_note": "The scenic line from Estes to the west side of RMNP tops out at 12,183 ft and is described by NPS as the highest continuous paved road in the United States. It is not a viable route on 16 April and it is not the direction of travel here - listed so it is not mistakenly routed.",
+     "rv_restriction": "No length limit posted for Trail Ridge itself, but the adjacent Old Fall River Road prohibits vehicles over 25 ft and any vehicle pulling a trailer or tow vehicle - that road is absolutely off limits to this rig.",
+     "seasonal": "Trail Ridge is a seasonal alpine road; Old Fall River Road opens early July and closes early October (2026 opening was 4 July).",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/romo/planyourvisit/road_status.htm"
+     ]
+    },
+    {
+     "name": "Snowy Range Pass (WY-130)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The 29-mile Snowy Range Scenic Byway stretch of WY-130 between Laramie and the Saratoga side. Wyoming Highway Patrol describes the byway as peaking over 12,000 ft; the exact road summit elevation was not confirmed on an official source so it is left null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "WYHP states WY-130 is generally open Memorial Day through October. On a 16 April arrival the direct route over the Snowies will still be gated - route via I-80 to Walcott Junction instead.",
+     "severity": "severe",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    }
+   ],
+   "verdict": "Reconsider the line, not the leg - the pretty route over the Snowy Range is closed in April, so plan on US-287 to Laramie then I-80 west to Walcott and north to Saratoga."
+  },
+  {
+   "from": "saratoga",
+   "to": "flaming-gorge",
+   "route": "WY-130 / I-80 west over Elk Mountain and the Red Desert to Rock Springs, then US-191 / WY-530 south to Manila",
+   "passes": [
+    {
+     "name": "I-80 Summit (Sherman Hill / Elk Mountain corridor)",
+     "elev_ft": 8640,
+     "max_grade_pct": 6,
+     "direction_note": "Wyoming Highway Patrol lists the I-80 summit at 8,640 ft with average grades of about 6%, plus winding curves, strong winds and rapidly changing weather. For a 40 ft coach towing, the wind is the bigger hazard than the grade - this corridor is a well-known blow-over stretch.",
+     "rv_restriction": "No length limit, but Wyoming routinely issues light/high-profile vehicle wind closures on this corridor",
+     "seasonal": "Open year round; frequent winter and spring closures for wind and snow",
+     "severity": "hard",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    },
+    {
+     "name": "WY-70 Battle Pass (alternative, not recommended)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The direct westward line from Saratoga over the Sierra Madre. No official elevation, grade or restriction data was found for WY-70 in the sources checked, so all figures are null - treat as unverified and do not route a 60 ft combination over it on the strength of a map line.",
+     "rv_restriction": "unknown - not verified",
+     "seasonal": "unknown - not verified; high-elevation Wyoming byways of this type are typically gated until late spring",
+     "severity": "hard",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach on I-80, but treat this as a wind day rather than a grade day - check WYDOT wind advisories before rolling, and do not take WY-70 without confirming it is open."
+  },
+  {
+   "from": "wind-river",
+   "to": "twin-falls",
+   "route": "US-191 north to Hoback Junction, US-26/US-89 through the Snake River Canyon and Alpine, then US-26 to Idaho Falls and I-15/I-84",
+   "passes": [
+    {
+     "name": "Teton Pass (WY-22) - AVOID",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The obvious-looking shortcut from Jackson west into Idaho. WYHP describes it as rising approximately 2,400 ft with steep grades, sharp curves and avalanche exposure. The exact summit elevation and grade percentage were not confirmed on a WYDOT/WYHP page, so both are null. This is the single worst place on the itinerary to take a 60 ft combination.",
+     "rv_restriction": "60,000 lb maximum gross vehicle weight at all times; no trailers of any kind allowed on the pass between 15 November and 1 April. WYDOT has also reduced the maximum posted truck speed on WYO 22 Teton Pass from 55 mph to 45 mph.",
+     "seasonal": "Open year round but chains may be required; trailer ban 15 Nov - 1 Apr",
+     "severity": "severe",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information",
+      "https://www.dot.state.wy.us/news/wydot-has-revised-restrictions-on-teton-pass"
+     ]
+    },
+    {
+     "name": "Togwotee Pass (US-26/287) - reference only",
+     "elev_ft": 9655,
+     "max_grade_pct": null,
+     "direction_note": "Not on this leg but the other high crossing in the region; WYHP notes annual snowfall often exceeds 25 feet. Relevant if the Wind River stop is reached from or left toward Dubois.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round with heavy snow",
+     "severity": "moderate",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    }
+   ],
+   "verdict": "The leg is fine provided you route the long way round via the Snake River Canyon and Alpine - do not put this rig over Teton Pass in either direction."
+  },
+  {
+   "from": "twin-falls",
+   "to": "sawtooth-nra",
+   "route": "US-93 / ID-75 Sawtooth Scenic Byway north through Ketchum to Stanley",
+   "passes": [
+    {
+     "name": "Galena Summit",
+     "elev_ft": 8701,
+     "max_grade_pct": null,
+     "direction_note": "Northbound the climb out of the Wood River Valley above Ketchum is followed by a switchbacked descent into the Sawtooth Valley toward Stanley. Grade percentage not found on an ITD source, so left null. ITD has an active slide-mitigation project on this section of SH-75.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round but heavy snow; the summit is high enough that early May storms are normal",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Galena_Summit"
+     ]
+    }
+   ],
+   "verdict": "Manageable but it is the hardest single climb of the Idaho section - do it in daylight in settled weather and expect to be in low gear for the descent to Stanley."
+  },
+  {
+   "from": "sawtooth-nra",
+   "to": "craters-of-the-moon",
+   "route": "ID-75 south back over Galena to Shoshone, then US-93/US-26/US-20 to Arco",
+   "passes": [
+    {
+     "name": "Galena Summit (southbound)",
+     "elev_ft": 8701,
+     "max_grade_pct": null,
+     "direction_note": "Southbound you climb the switchbacks out of the Sawtooth Valley and then have a long descent toward Ketchum. The alternative ID-21 route to Lowman/Idaho City is a narrow mountain road and no official length or grade data was found for it - do not substitute it blind.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round, heavy snow",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Galena_Summit"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach if you retrace ID-75 - do not shortcut over ID-21 toward Boise with a 60 ft combination on unverified information."
+  },
+  {
+   "from": "craters-of-the-moon",
+   "to": "grand-teton",
+   "route": "US-20/26 to Idaho Falls, US-26 to Swan Valley and Alpine, US-89 through the Snake River Canyon to Jackson, then US-26/89/191 north to Colter Bay",
+   "passes": [
+    {
+     "name": "Teton Pass (WY-22) - AVOID",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Mapping software will offer WY-22 over Teton Pass from Victor, Idaho as the short way into Jackson. WYHP records a rise of roughly 2,400 ft with steep grades, sharp curves and avalanche exposure; summit elevation and grade percentage not confirmed on an official page.",
+     "rv_restriction": "60,000 lb GVW cap at all times; trailers of any kind banned 15 Nov - 1 Apr; WYDOT truck speed reduced to 45 mph",
+     "seasonal": "Open year round with chain requirements",
+     "severity": "severe",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information",
+      "https://www.dot.state.wy.us/news/wydot-has-revised-restrictions-on-teton-pass"
+     ]
+    },
+    {
+     "name": "Snake River Canyon (US-89, Alpine to Hoback)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The safe alternative to Teton Pass. No official grade or elevation figures were located for this canyon section, so both fields are null - it is a low-gradient river-grade road but narrow with limited pull-outs.",
+     "rv_restriction": "unknown - no restriction found",
+     "seasonal": "Open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    }
+   ],
+   "verdict": "Route the long way through Alpine and the Snake River Canyon and this leg is easy; take Teton Pass and you are on a 10%-class alpine grade in a heavy older coach with a toad."
+  },
+  {
+   "from": "grand-teton",
+   "to": "west-yellowstone",
+   "route": "US-89/191/287 north through Yellowstone's South Entrance to West Thumb and Madison, then US-20 west",
+   "passes": [
+    {
+     "name": "Craig Pass / West Thumb - Old Faithful section",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Interior Yellowstone roads are narrow, have poor shoulders and heavy wildlife-jam stop-start traffic. NPS does not publish elevation or grade figures for Craig Pass on its park roads page, so both are null here.",
+     "rv_restriction": "No park-wide vehicle length restriction was found on the NPS park roads page",
+     "seasonal": "NPS states the only road generally open year round to regular vehicles is North Entrance (Gardiner) through to Cooke City via Tower Junction; most other park roads are closed to regular vehicles from early November to late April. Projected 2026 opening dates are published but were not retrievable from the static page.",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach for a 12 May arrival, but confirm the South Entrance and West Thumb-Madison segments are actually open on the NPS road status line (307-344-2117) before committing - a closed interior road means a very long detour."
+  },
+  {
+   "from": "west-yellowstone",
+   "to": "yellowstone",
+   "route": "US-20 to Madison, Grand Loop Road via Norris and Canyon or via Old Faithful and West Thumb to Fishing Bridge",
+   "passes": [
+    {
+     "name": "Dunraven Pass (Tower-Canyon) and Craig Pass (Old Faithful-West Thumb)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Both interior Grand Loop crossings are narrow with tight radius curves and long drop-offs. NPS publishes projected opening dates for each segment but the elevations and grades are not given on the official roads page, so they are null.",
+     "rv_restriction": "No park-wide length limit found on the NPS page. Individual pullouts and the Dunraven section are widely reported to be unsuited to long combinations - treat as unverified.",
+     "seasonal": "Most park roads closed to regular vehicles early November to late April; individual segments open on staggered spring dates",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine, but unhook the pickup and leave the coach at Fishing Bridge for interior sightseeing - the Grand Loop is a poor place for a 60 ft combination even when open."
+  },
+  {
+   "from": "yellowstone",
+   "to": "bozeman",
+   "route": "Grand Loop north to Mammoth, US-89 through Gardiner and Paradise Valley to Livingston, I-90 west",
+   "passes": [
+    {
+     "name": "Beartooth Highway (US-212) - NOT on this route",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Listed only to rule it out. The Beartooth leaves Yellowstone at the Northeast Entrance toward Red Lodge and is a long detour from a Fishing Bridge to Bozeman run. No elevation or grade figure is cited here because none was confirmed from an official DOT or NPS page during this research.",
+     "rv_restriction": "unknown - not verified",
+     "seasonal": "Seasonal alpine highway, closed in winter - exact dates not verified",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+     ]
+    },
+    {
+     "name": "Mammoth to Gardiner descent and Bozeman Pass (I-90)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The descent from Mammoth to Gardiner is the steepest sustained grade on the northern exit. Bozeman Pass on I-90 is an interstate-standard crossing. No official elevation or grade figures were confirmed for either, so both are null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "NPS states the Gardiner-to-Cooke City road via Tower Junction is the only park road generally open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - the north exit via Gardiner is the standard big-rig route out of Yellowstone; do not detour over the Beartooth."
+  },
+  {
+   "from": "glacier",
+   "to": "waterton",
+   "route": "US-2 over Marias Pass to East Glacier, US-89 north to Babb, Chief Mountain Highway (MT-17/AB-6) to Waterton",
+   "passes": [
+    {
+     "name": "Going-to-the-Sun Road / Logan Pass - PROHIBITED",
+     "elev_ft": 6646,
+     "max_grade_pct": null,
+     "direction_note": "Logan Pass is the 6,646 ft high point of the Going-to-the-Sun Road. NPS prohibits vehicles and vehicle combinations longer than 21 feet (including bumpers) and wider than 8 feet (including mirrors) between Avalanche Creek and Rising Sun, and warns that vehicles over 10 feet in height may have difficulty west of Logan Pass due to rock overhangs. A 40 ft coach is over the limit by itself; with the pickup it is nearly three times the limit.",
+     "rv_restriction": "Hard prohibition: over 21 ft length or 8 ft width banned Avalanche Creek to Rising Sun",
+     "seasonal": "The alpine portion typically opens by early July with no fixed date, and is typically fully open until the third Monday of October. On a 27 May departure it would not be open anyway.",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/glac/planyourvisit/gtsrinfo.htm"
+     ]
+    },
+    {
+     "name": "Marias Pass (US-2)",
+     "elev_ft": 5213,
+     "max_grade_pct": null,
+     "direction_note": "This is the correct route for the coach. Marias Pass is the lowest crossing of the Continental Divide between Canada and central New Mexico, with a broad open approach through a valley one to six miles wide at gentle grade. Grade percentage not published on an MDT source, so null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Northernmost US pass open to automobile traffic year round",
+     "severity": "easy",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Marias_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach via US-2 over Marias Pass - but Going-to-the-Sun is flatly off limits to this rig at any time of year, so plan Glacier sightseeing around the pickup only."
+  },
+  {
+   "from": "waterton",
+   "to": "banff",
+   "route": "AB-6 north to Pincher Creek, AB-3 Crowsnest corridor, AB-22 Cowboy Trail north, then AB-1 Trans-Canada west",
+   "passes": [
+    {
+     "name": "Crowsnest Pass (Highway 3)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Only skirted on this routing. It is the southernmost rail and highway route through the Canadian Rockies and the lowest-elevation mountain pass in Canada south of Yellowhead Pass. An exact elevation figure was not confirmed from Alberta Transportation or BC MoTI, so it is null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round",
+     "severity": "easy",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Crowsnest_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - the Cowboy Trail north is foothills driving with no significant summit, and the only real caution is crosswind on AB-22."
+  },
+  {
+   "from": "banff",
+   "to": "jasper",
+   "route": "AB-1 to Lake Louise, then Highway 93 North (Icefields Parkway)",
+   "passes": [
+    {
+     "name": "Bow Summit",
+     "elev_ft": 6800,
+     "max_grade_pct": null,
+     "direction_note": "Bow Summit is 2,088 metres (6,800 feet) above sea level and is the highest point on the drive from Banff to Jasper. Grade percentage is not published in the official parkway planner, so null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round but subject to winter and shoulder-season closures; a 4 June crossing is normal",
+     "severity": "moderate",
+     "sources": [
+      "https://icefieldsparkway.com/assets/volumes/pdf/Icefields_Parkway_Planner_-_Downloadable_Doc.pdf"
+     ]
+    },
+    {
+     "name": "Sunwapta Pass",
+     "elev_ft": 6677,
+     "max_grade_pct": null,
+     "direction_note": "2,035 m / 6,677 ft, the second highest point on the Icefields Parkway, roughly 108 km southeast of Jasper. Northbound this is the descent past the Columbia Icefield toward the Sunwapta valley - the section known as the Big Bend. No official grade figure was found for the Big Bend, so it is null; treat it as the one place on the parkway to be in low gear.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round with winter closures",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sunwapta_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach and one of the best drives on the trip - the only planning item is fuel, since Saskatchewan River Crossing is the only service point on the 231 km / 144 mile parkway, so fill at Lake Louise before starting."
+  },
+  {
+   "from": "fort-nelson",
+   "to": "muncho-lake",
+   "route": "Alaska Highway (BC-97) north over Steamboat Mountain and Summit Pass",
+   "passes": [
+    {
+     "name": "Summit Pass (Summit Lake)",
+     "elev_ft": 4281,
+     "max_grade_pct": null,
+     "direction_note": "1,305 m / 4,281 ft, the highest point on the Alaska Highway. It is one of two passes the Alaska Highway uses to cut west across the Rocky Mountain ranges; further north is the lower Muncho Pass. Grade percentage is not published by BC MoTI, so null - but the climb over Steamboat Mountain south of the summit and the descent to MacDonald Creek are the sustained sections.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; snow possible in any month at this latitude and elevation",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Summit_Pass_(British_Columbia)"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach but it is the biggest single climb and descent on the Alaska Highway - take it slowly, watch coolant and transmission temperature on the Steamboat climb, and expect stone-sheep traffic stops on the descent."
+  },
+  {
+   "from": "kluane-1",
+   "to": "tok-1",
+   "route": "Alaska Highway (YT-1 / AK-2) via Destruction Bay, Burwash Landing and Beaver Creek to the Alaska border and Tok",
+   "passes": [
+    {
+     "name": "Destruction Bay to Beaver Creek frost-heave section (no named summit)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "This is not a grade problem but a surface problem - the stretch north of Destruction Bay is the most permafrost-damaged part of the whole Alaska Highway, with heaves, dips and gravel breaks that punish a heavy older chassis at anything above crawling speed. No official Yukon Highways figure for the number or severity of heaves was located during this research, so all numeric fields are null.",
+     "rv_restriction": "No posted length or weight limit found",
+     "seasonal": "Open year round; heave damage is worst in spring and early summer, which is exactly the 25 June timing here",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Summit_Pass_(British_Columbia)"
+     ]
+    }
+   ],
+   "verdict": "The coach will get through, but this is the leg most likely to cost you a cracked storage bay, a broken weld or a failed shock - plan a very short driving day, drop tyre pressure to the manufacturer's loaded spec, and drive it at 45-50 km/h rather than trying to make Tok in one push."
+  },
+  {
+   "from": "anchorage",
+   "to": "cooper-landing",
+   "route": "Seward Highway (AK-1) south along Turnagain Arm over Turnagain Pass, then Sterling Highway west",
+   "passes": [
+    {
+     "name": "Turnagain Pass",
+     "elev_ft": 900,
+     "max_grade_pct": null,
+     "direction_note": "900 feet (274 m), the highest point on the Seward Highway at about milepost 70. Low by mountain-pass standards; the real hazards on this leg are the cliff-side Turnagain Arm section south of Anchorage with tight curves and no shoulder, and heavy summer tourist traffic. Grade not published by Alaska DOT, so null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; the Chugach National Forest Avalanche Information Center focuses its forecasting on this pass, so winter avalanche closures occur",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Turnagain_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - the elevation is trivial, but the Turnagain Arm cliff section rewards an early start before the day traffic builds."
+  },
+  {
+   "from": "palmer",
+   "to": "valdez",
+   "route": "Glenn Highway (AK-1) east over Tahneta Pass and Eureka Summit to Glennallen, then Richardson Highway (AK-4) south over Thompson Pass and through Keystone Canyon",
+   "passes": [
+    {
+     "name": "Eureka Summit",
+     "elev_ft": 3322,
+     "max_grade_pct": null,
+     "direction_note": "3,322 ft on the Glenn Highway - the highest point on that road. Long, exposed, treeless approaches on both sides. Grade percentage not published by Alaska DOT, so null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://themilepost.com/articles/the-10-highest-highway-passes-in-alaska/"
+     ]
+    },
+    {
+     "name": "Tahneta Pass",
+     "elev_ft": 3000,
+     "max_grade_pct": null,
+     "direction_note": "3,000 ft on the Glenn Highway, just west of Eureka Summit. Part of the same sustained climb.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://themilepost.com/articles/the-10-highest-highway-passes-in-alaska/"
+     ]
+    },
+    {
+     "name": "Thompson Pass",
+     "elev_ft": 2678,
+     "max_grade_pct": null,
+     "direction_note": "2,678 ft on the Richardson Highway. Southbound into Valdez this is the serious one: a sustained descent from the summit through Keystone Canyon to sea level in a short distance, in a corridor that is among the snowiest places in Alaska. Grade percentage not published on an Alaska DOT page, so left null rather than guessed.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round but closes for avalanche control and severe weather; 10 August is not a concern",
+     "severity": "hard",
+     "sources": [
+      "https://themilepost.com/articles/the-10-highest-highway-passes-in-alaska/"
+     ]
+    }
+   ],
+   "verdict": "Doable but this is the hardest Alaska leg for brakes - the Thompson Pass descent into Valdez should be driven in low gear with the exhaust brake on from the summit, not managed on the service brakes."
+  },
+  {
+   "from": "chitina",
+   "to": "mccarthy",
+   "route": "McCarthy Road (60 miles unpaved) east from Chitina",
+   "passes": [
+    {
+     "name": "McCarthy Road - not a pass, a hard vehicle restriction",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "NPS describes 60 miles of unpaved state-maintained road, two hours each way, built on an old 1909 railway grade - narrow, winding, with ruts, washboard and occasional railroad-spike hazards. The Kuskulana Bridge at mile 17.2 is a one-lane bridge 238 feet above the river with oncoming-traffic warnings. Parking is at the Kennicott River Bridge; McCarthy is half a mile further and Kennecott five miles, reached only on foot, by bike or by shuttle.",
+     "rv_restriction": "No numeric length limit is posted, but there is no vehicle access to McCarthy or Kennecott at all - every vehicle stops at the Kennicott River footbridge. NPS states most passenger vehicles can make the road in normal summer conditions and recommends a full-size spare and an adequate jack.",
+     "seasonal": "Summer road; conditions deteriorate outside the maintained season",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/wrst/planyourvisit/mccarthy-road-guide.htm"
+     ]
+    }
+   ],
+   "verdict": "Reconsider - do not take the coach down the McCarthy Road. Leave it at Chitina and run the 60 miles in the pickup; the one-lane 238 ft Kuskulana Bridge and the mandatory stop at the footbridge make this a toad-only day."
+  },
+  {
+   "from": "watson-lake-2",
+   "to": "dease-lake",
+   "route": "Alaska Highway west to Junction 37, then Stewart-Cassiar Highway (BC-37) south via Boya Lake and Good Hope Lake",
+   "passes": [
+    {
+     "name": "Stewart-Cassiar Highway general character (Gnat Pass and Good Hope section)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "BC MoTI describes the highway as hard surface, either pavement or sealcoat, with approximately one kilometre of gravel; limited sight lines in mountainous terrain; narrow bridges that require caution and a willingness to yield; and sections where road markings may be absent. Gnat Pass elevation was not confirmed on a BC government source, so it is null.",
+     "rv_restriction": "No posted length limit found. BC's own advice to keep right because of limited sight lines and to approach narrow bridges with caution applies directly to a 60 ft combination.",
+     "seasonal": "BC MoTI notes snow is possible in late spring and early fall - a mid-September southbound run is inside that window",
+     "severity": "hard",
+     "sources": [
+      "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/driving-tips"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach but plan it as a wilderness leg, not a highway leg - fuel at every opportunity, expect no cell coverage between Watson Lake and Dease Lake, and slow right down for the narrow bridges and unmarked sections."
+  },
+  {
+   "from": "dease-lake",
+   "to": "stewart-hyder",
+   "route": "BC-37 south to Meziadin Junction, then BC-37A west to Stewart",
+   "passes": [
+    {
+     "name": "Bear Pass (Highway 37A)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Highway 37A runs 65 km / 40 miles from Meziadin Junction to Stewart and Hyder. The road is extremely vulnerable to avalanches through Bear Pass, and BC MoTI runs an anti-avalanche programme through it. Elevation and grade figures were not published on the sources located, so both are null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round with avalanche-control closures; a 19 September arrival is outside the main avalanche season",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/British_Columbia_Highway_37A"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach in September - it is a spectacular 40-mile spur past Bear Glacier, but check DriveBC before committing since there is no alternative route in or out of Stewart."
+  },
+  {
+   "from": "clearwater",
+   "to": "osoyoos",
+   "route": "BC-5 south to Kamloops, BC-97C Okanagan Connector to Kelowna, BC-97 south through the Okanagan to Osoyoos",
+   "passes": [
+    {
+     "name": "Pennask Summit (Highway 97C, Okanagan Connector)",
+     "elev_ft": null,
+     "max_grade_pct": 6.5,
+     "direction_note": "The BC government's own elevation and grade profile for Highway 97C shows sustained grades of 4.7% and 6.5% across the Merritt-to-Kelowna crossing. The summit elevation could only be read approximately off the profile graph so it is left null rather than stated as fact. Eastbound the long descent into Kelowna is the brake-management section.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; snow occurs on this summit outside winter - it is high enough that unexpected June snow has been recorded",
+     "severity": "hard",
+     "sources": [
+      "https://www2.gov.bc.ca/assets/gov/driving-and-transportation/driving/elevations/hwy_97c_pennask_pass_grade-profile.pdf"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach, but the 6.5% descent into Kelowna is a real brake test with a toad - the slower BC-97 through Vernon is a legitimate alternative if the weather is poor."
+  },
+  {
+   "from": "osoyoos",
+   "to": "winthrop",
+   "route": "BC-97/US-97 south through Oroville and Tonasket, then WA-20 west over Loup Loup Pass to Twisp and Winthrop",
+   "passes": [
+    {
+     "name": "Loup Loup Pass",
+     "elev_ft": 4020,
+     "max_grade_pct": null,
+     "direction_note": "4,020 ft (1,225 m) on State Route 20 between Okanogan and Twisp. Grade percentages were not confirmed on a WSDOT source, so null. Westbound the descent into the Methow Valley is the sustained section.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Kept open in winter; not one of the seasonally gated Washington passes",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Loup_Loup_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - a straightforward 4,000 ft crossing, and the only planning item is the Canada-US border with a towed vehicle."
+  },
+  {
+   "from": "winthrop",
+   "to": "packwood",
+   "route": "WA-20 east to US-97, south to Ellensburg and I-82/US-12, or WA-410 over Chinook and WA-123 over Cayuse",
+   "passes": [
+    {
+     "name": "Chinook Pass (SR 410) and Cayuse Pass (SR 123)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The direct scenic line from the Yakima side to Packwood. WSDOT's historical record shows both passes opened 23 May 2025 and closed 24 October 2025; in 2024 they remained closed for the whole season due to heavy snowfall and avalanche danger. Elevations were not given on the WSDOT closure-dates page, so null. A 9 October arrival is inside the normal open window but close to the edge.",
+     "rv_restriction": "No posted length limit found on the WSDOT source",
+     "seasonal": "Seasonal closure, typically late October or early November to late May; some years they do not open at all",
+     "severity": "hard",
+     "sources": [
+      "https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates"
+     ]
+    },
+    {
+     "name": "North Cascades Highway (SR 20 west of Winthrop) - check before relying on it",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The westward continuation of SR 20 out of Winthrop over Rainy and Washington passes has the longest seasonal closure of any Washington pass; WSDOT's record shows a 2026 partial reopening on 30 April. If you plan to see the North Cascades from Winthrop, confirm it is open on 3-9 October.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Longest seasonal closure of the Washington passes; typically closed from late autumn until spring",
+     "severity": "hard",
+     "sources": [
+      "https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach if you go round via US-97 and I-82; if you want Chinook and Cayuse, check WSDOT the week before because early October is right at the edge of their season."
+  },
+  {
+   "from": "welches",
+   "to": "bend",
+   "route": "US-26 east over Government Camp and Blue Box Pass to Warm Springs, then US-97 south to Bend",
+   "passes": [
+    {
+     "name": "Mount Hood Highway summit (Government Camp, US-26)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Eastbound from Welches this is a continuous climb past Laurel Hill to Government Camp and then a long descent toward the Warm Springs side. No ODOT-published elevation or grade percentage was confirmed during this research, so both fields are null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Kept open in winter but this is a designated snow-zone with chain requirements; a 15 November crossing is well inside the season when ODOT posts chain or traction-tyre requirements",
+     "severity": "hard",
+     "sources": [
+      "https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates"
+     ]
+    }
+   ],
+   "verdict": "Reconsider the date rather than the route - the crossing itself is well within the coach's ability, but mid-November over Mount Hood means a real chance of a chain-up day with a 60 ft combination; watch TripCheck and be willing to wait a day."
+  },
+  {
+   "from": "bend",
+   "to": "newport",
+   "route": "US-20 west over Santiam Pass to Albany, then US-20/US-101 to Newport",
+   "passes": [
+    {
+     "name": "Santiam Pass (US-20)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The main Cascade crossing between Bend and the Willamette Valley. No ODOT-published elevation or grade figure was verified during this research, so both are null - do not rely on the commonly quoted number without checking TripCheck.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Kept open in winter as a designated snow zone with chain requirements; a 21 November crossing is inside the chain season",
+     "severity": "hard",
+     "sources": [
+      "https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach in clear weather, but late November over the Oregon Cascades is a weather-window decision, not a calendar decision."
+  },
+  {
+   "from": "crescent-city",
+   "to": "fort-bragg",
+   "route": "US-101 south through Last Chance Grade, Eureka, Richardson Grove and Leggett, then CA-1 to Fort Bragg",
+   "passes": [
+    {
+     "name": "Last Chance Grade (US-101, Del Norte County)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "A three-mile section of US-101 between Klamath and Crescent City, north of Wilson Creek. Caltrans has spent over $100 million on repairs since 1997 and its geotechnical assessment found a high risk that some form of road closure would occur within a 50-year span. There is no viable alternative route if it fails - the emergency alternate is a steep 27-mile logging road needing 2.5+ hours of four-wheel-drive travel and unsuitable for public use.",
+     "rv_restriction": "No length restriction, but active landslide monitoring and one-way controls have been used here historically",
+     "seasonal": "Open, actively monitored; landslide risk is highest in the winter rainy season, and 3 December is in that season",
+     "severity": "hard",
+     "sources": [
+      "https://lastchancegrade.com/app_pages/view/493"
+     ]
+    },
+    {
+     "name": "Richardson Grove / US-101 south of Leggett - LENGTH RESTRICTION",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Caltrans states that access to the Eureka area on US-101 south of Leggett requires 'California Legal' vehicles, with a maximum 65 feet overall combination length and a maximum 40 feet kingpin-to-rear-axle. A 40 ft motorhome towing a pickup is around 60 ft and is therefore under the 65 ft ceiling, but this is the tightest constraint on the entire west-coast section and the old-growth curves through the grove are genuinely narrow.",
+     "rv_restriction": "Maximum 65 ft overall combination length, maximum 40 ft KPRA - verify your actual measured combination length before committing",
+     "seasonal": "Open year round",
+     "severity": "severe",
+     "sources": [
+      "https://dot.ca.gov/programs/traffic-operations/legal-truck-access/eureka"
+     ]
+    },
+    {
+     "name": "CA-1 Leggett to the coast",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The CA-1 connector from US-101 at Leggett over the coast range is a tight, switchbacked mountain road. No Caltrans-published length restriction or grade figure was confirmed for it in this research, so all fields are null - which is itself the finding: do not take an unverified narrow coastal connector in a 60 ft combination.",
+     "rv_restriction": "unknown - not verified",
+     "seasonal": "unknown - not verified; subject to winter slide closures",
+     "severity": "severe",
+     "sources": [
+      "https://dot.ca.gov/programs/traffic-operations/legal-truck-access/eureka"
+     ]
+    }
+   ],
+   "verdict": "Reconsider this leg carefully - it is the tightest legal-length section of the whole trip, and the CA-1 Leggett connector to Fort Bragg is the one place where I would measure the combination and phone Caltrans District 1 before setting off."
+  },
+  {
+   "from": "yosemite",
+   "to": "sequoia-kings-canyon",
+   "route": "CA-140 to Merced, CA-99 south to Visalia, CA-198 east to Three Rivers",
+   "passes": [
+    {
+     "name": "Generals Highway / CA-198 into Sequoia - HARD RESTRICTION",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "NPS advises that vehicles longer than 24 feet are not advised between Foothills Visitor Center and Potwisha Campground, and that vehicles longer than 22 feet are not advised between Potwisha and the Giant Forest Museum. Critically, single vehicles longer than 40 feet are prohibited on that Potwisha-to-Giant Forest section. Moro Rock / Crescent Meadow Road prohibits single vehicles over 22 ft and all vehicles towing units. Crystal Cave Road prohibits vehicles over 22 ft. Mineral King Road prohibits single vehicles over 40 ft and does not permit RVs or trailers in its campgrounds. Panoramic Point Road prohibits RVs and trailers entirely.",
+     "rv_restriction": "A 40 ft coach is at or over the hard 40 ft prohibition and roughly double the 22 ft advisory - the coach cannot go up to Giant Forest, and the towed pickup cannot go up Moro Rock / Crescent Meadow Road while towing.",
+     "seasonal": "Open year round subject to snow chains; a 23 December arrival means winter conditions on the upper Generals Highway",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/seki/planyourvisit/oversized-vehicle.htm"
+     ]
+    }
+   ],
+   "verdict": "Base the coach at Three Rivers and see the park entirely in the unhooked pickup - the 40 ft prohibition on the Generals Highway means the motorhome legally cannot reach Giant Forest."
+  },
+  {
+   "from": "lone-pine",
+   "to": "death-valley",
+   "route": "US-395 to CA-136, then CA-190 east over Towne Pass into Death Valley",
+   "passes": [
+    {
+     "name": "Towne Pass (CA-190)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The eastbound crossing from the Owens Valley into Death Valley. NPS documents that the tightest curve on the CA-190 section has a radius of 350 feet with an official 55 mph limit but drivers advised to slow to 30 mph, and that between 2009 and 2014 six collisions occurred in a 0.6-mile section (mileposts 69.2-69.8), five with injuries - a rate Caltrans described as over four times higher than the statewide average for similar facilities. Elevation and grade percentage were not confirmed from an NPS or Caltrans page, so both are null despite commonly quoted figures.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; 28 December is a good time to do this, since the real hazard here is summer heat and brake/engine overheating on the long descent to Stovepipe Wells",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/deva/learn/news/towne-pass-curve-correction.htm"
+     ]
+    }
+   ],
+   "verdict": "Doable in late December but this is a serious descent - go down in low gear, keep off the service brakes, and pull over to let the drivetrain cool rather than pushing straight through to Stovepipe Wells."
+  },
+  {
+   "from": "death-valley",
+   "to": "vegas-area",
+   "route": "CA-190 east to Death Valley Junction, CA-127/NV-372 to Pahrump, NV-160 over Mountain Springs Summit to Las Vegas",
+   "passes": [
+    {
+     "name": "Mountain Springs Summit (NV-160)",
+     "elev_ft": 5496,
+     "max_grade_pct": null,
+     "direction_note": "5,496 feet (1,675 m) on State Route 160, connecting the Pahrump Valley with the Las Vegas Valley. Eastbound the descent toward Las Vegas is the sustained section. Grade percentage not published on an NDOT source, so null.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; occasional winter snow closures at the summit",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Mountain_Springs_Summit"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - a straightforward divided-highway crossing, and the widened NV-160 is far easier than the Death Valley approaches."
+  },
+  {
+   "from": "joshua-tree",
+   "to": "borrego-springs",
+   "route": "CA-62 west to I-10, west to CA-86S or CA-78, then S-22 or S-3 into Borrego Springs",
+   "passes": [
+    {
+     "name": "Montezuma Grade (County Road S-22 from Ranchita)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The western descent into Borrego Springs on S-22 is a steep, tightly switchbacked mountain grade. No Caltrans or San Diego County published grade percentage, elevation or length restriction was verified during this research, so every numeric field is null - which is the finding: do not take a 60 ft combination down an unverified county mountain grade. Approach Borrego Springs from the east via the Salton Sea side (CA-86 to S-22 eastbound) instead, which is desert-floor driving.",
+     "rv_restriction": "unknown - not verified",
+     "seasonal": "Open year round",
+     "severity": "hard",
+     "sources": [
+      "https://dot.ca.gov/programs/traffic-operations/legal-truck-access/eureka"
+     ]
+    }
+   ],
+   "verdict": "Fine if you come in from the east across the desert floor; reconsider entirely if the routing sends you down the Montezuma Grade from Ranchita."
+  },
+  {
+   "from": "chiricahua-willcox",
+   "to": "bisbee-tombstone",
+   "route": "AZ-181/AZ-186 from Chiricahua to Willcox, I-10 and AZ-80 south",
+   "passes": [
+    {
+     "name": "Bonita Canyon Drive, Chiricahua National Monument - LENGTH RESTRICTION",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "NPS states that all vehicles or trailers must be less than 29 feet including racks to enter, because the road has a dip that prevents larger vehicles from entering. This affects the Chiricahua stop itself rather than the road between towns.",
+     "rv_restriction": "Under 29 ft including racks - the 40 ft coach cannot enter; visit in the unhooked pickup from a base in Willcox",
+     "seasonal": "Open year round",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/chir/planyourvisit/bonita-canyon-campground.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine on the highway, but park the coach in Willcox - the monument road has a hard 29 ft limit that this rig cannot meet."
+  },
+  {
+   "from": "camp-verde",
+   "to": "grand-canyon",
+   "route": "I-17 north to Flagstaff, then US-180/AZ-64 to the South Rim - NOT AZ-89A through Oak Creek Canyon",
+   "passes": [
+    {
+     "name": "AZ-89A Oak Creek Canyon switchbacks - LENGTH RESTRICTION",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The scenic Sedona-to-Flagstaff route climbs out of Oak Creek Canyon through a series of hairpin turns posted for no trucks over 50 ft. A 40 ft coach towing a pickup is around 60 ft and is over that limit. Elevation and grade percentage were not published on an ADOT source, so both are null.",
+     "rv_restriction": "No trucks over 50 ft through the hairpin section - this rig does not qualify",
+     "seasonal": "Open year round; ADOT has closed the switchbacks for multi-week construction periods in the past",
+     "severity": "severe",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+     ]
+    },
+    {
+     "name": "I-17 climb to Flagstaff",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The correct route: a long sustained interstate climb from the Verde Valley up onto the Colorado Plateau at Flagstaff. No ADOT-published grade percentage was verified, so null. Southbound in the other direction this is a long descent with runaway ramps.",
+     "rv_restriction": "No posted length limit",
+     "seasonal": "Open year round; Flagstaff is at high elevation and 12 March can bring snow",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach on I-17, but Oak Creek Canyon on 89A is off limits at 60 ft - see Sedona in the pickup from Camp Verde."
+  },
+  {
+   "from": "grand-canyon",
+   "to": "zion",
+   "route": "AZ-64/US-89 north to Kanab, then UT-9 west - the Zion-Mount Carmel Tunnel is on this line",
+   "passes": [
+    {
+     "name": "Zion-Mount Carmel Tunnel (UT-9 / SR-9) - HARD SIZE RESTRICTION",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "UDOT posts the following limits for SR-9 through the tunnel: height 11 ft 4 in (3.45 m), width 7 ft 10 in (2.39 m), single vehicle length 35 ft 9 in (10.9 m), weight 50,000 lb, and combined vehicle/trailer length 50 ft (15.24 m) with the trailer not exceeding 26 ft from hitch to rear axle. Semi-trucks, hazardous materials, pedestrians and bicycles are prohibited entirely. A 40 ft coach exceeds the single-vehicle length limit on its own and is far over the 7 ft 10 in width and 11 ft 4 in height figures. The UDOT page also states that from 7 June 2026 permits are no longer available and oversized vehicles must use alternate routes around the park.",
+     "rv_restriction": "The rig cannot use the tunnel under any circumstances - approach Zion from the west via I-15 and UT-9 from La Verkin to Virgin instead",
+     "seasonal": "Open year round subject to escort/permit rules, which the source says end 7 June 2026",
+     "severity": "severe",
+     "sources": [
+      "https://zionarea.udot.utah.gov/road-restrictions-2/"
+     ]
+    }
+   ],
+   "verdict": "Reconsider the route - go Kanab to Hurricane via US-89/UT-59/AZ-389 or round via I-15 and approach Virgin from the west, because the coach physically cannot pass the Zion tunnel and there is no permit route after June 2026."
+  },
+  {
+   "from": "zion",
+   "to": "great-basin",
+   "route": "UT-9 west to I-15, north to Beaver/Milford, UT-21 west to US-6/US-50 and NV-487 to Baker",
+   "passes": [
+    {
+     "name": "Connors Pass (US-50, east of Ely)",
+     "elev_ft": 7729,
+     "max_grade_pct": null,
+     "direction_note": "7,729 ft (2,356 m), the highest point along US-50 in Nevada. US-50 crosses several mountain ranges using 17 passes and one tunnel across the state. Sacramento Pass on the Baker approach was not confirmed with an elevation on any source checked, so it is not listed with a number.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round; late March at 7,700 ft in eastern Nevada can still see snow",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/U.S._Route_50_in_Nevada"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - long, empty and high but with easy gradients; the real planning item is fuel and services, not grade."
+  },
+  {
+   "from": "bryce",
+   "to": "torrey",
+   "route": "UT-12 Scenic Byway east through Escalante and Boulder over Boulder Mountain to Torrey",
+   "passes": [
+    {
+     "name": "Boulder Mountain summit (UT-12)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Utah's tourism board states the byway reaches approximately 9,000 feet at its summit on Boulder Mountain, climbing the eastern flank into Dixie National Forest. Because the sources give only an approximate figure rather than a surveyed summit elevation, elev_ft is left null - treat 'over 9,000 ft' as the working figure.",
+     "rv_restriction": "No posted length limit found on any official source checked",
+     "seasonal": "Open year round but subject to winter closures after major storms; the Boulder Mountain stretch is described as treacherous in winter. A 28 March crossing is a shoulder-season risk.",
+     "severity": "hard",
+     "sources": [
+      "https://www.visitutah.com/articles/the-all-american-road-scenic-byway-12",
+      "https://capitolreefcountry.com/scenic-byway-12/"
+     ]
+    },
+    {
+     "name": "The Hogback (UT-12, Escalante to Boulder)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "A ridge-spine section with dramatic drop-offs on both sides and hairpin turns between Escalante and Boulder. No official width, length restriction or grade figure was published on the sources checked, so all fields are null - but the described combination of hairpins and unguarded drop-offs on both sides of a narrow ridge is the concern for a 60 ft combination.",
+     "rv_restriction": "unknown - no posted restriction found, which is not the same as safe",
+     "seasonal": "Open year round subject to storm closures",
+     "severity": "severe",
+     "sources": [
+      "https://www.visitutah.com/articles/the-all-american-road-scenic-byway-12",
+      "https://capitolreefcountry.com/scenic-byway-12/"
+     ]
+    }
+   ],
+   "verdict": "Reconsider - UT-12 over the Hogback and Boulder Mountain is a superb drive but it is a narrow ridge road with unguarded drop-offs and a 9,000 ft summit in late March; the safe alternative is UT-12 west to US-89, north to I-70 and east to UT-24 into Torrey."
+  },
+  {
+   "from": "ouray",
+   "to": "mancos",
+   "route": "US-550 south over Red Mountain, Molas and Coal Bank passes to Durango, then US-160 west",
+   "passes": [
+    {
+     "name": "Red Mountain Pass",
+     "elev_ft": 11018,
+     "max_grade_pct": 8,
+     "direction_note": "11,018 ft with an 8% grade on the north side. The section toward Ouray is winding and narrow with no shoulder, with sharp switchbacks carved into near-vertical quartzite cliffs hundreds of feet above the river below. Southbound out of Ouray you climb this immediately from the town; northbound it is a long unguarded descent. Avalanches are frequent and can block the highway for some time.",
+     "rv_restriction": "No posted length limit was found, but the combination of no shoulder, no guardrail in places and sharp switchbacks makes this the least suitable paved highway on the itinerary for a 60 ft combination",
+     "seasonal": "Nominally open year round but CDOT closes it repeatedly - the pass has been closed for extended periods for avalanche, mud and debris. A 10-15 April transit is squarely in the closure-prone window.",
+     "severity": "severe",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Red_Mountain_Pass"
+     ]
+    },
+    {
+     "name": "Molas Pass and Coal Bank Pass",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The two further summits between Silverton and Durango on the same US-550 run. Their elevations were not confirmed from a CDOT source during this research, so both are null - do not plan on numbers from memory. They are lower and more open than Red Mountain but add two more full climbs and descents to the same day.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round with winter closures",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Red_Mountain_Pass"
+     ]
+    }
+   ],
+   "verdict": "Reconsider - this is the single worst leg on the itinerary for this rig. The sane alternative from Ouray to Mancos is west on CO-62 to Placerville, CO-145 over Lizard Head to Dolores and east on CO-184, or further west via US-491; if you do take US-550, do it southbound, early, dry, and with the pickup driven separately."
+  },
+  {
+   "from": "durango",
+   "to": "pagosa-springs",
+   "route": "US-160 east over Yellow Jacket Pass",
+   "passes": [
+    {
+     "name": "Yellow Jacket Pass (US-160)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The modest crossing between Bayfield and Pagosa Springs. No CDOT-published elevation or grade figure was verified during this research, so both are null. It is a routine highway grade compared with anything else on the San Juan section.",
+     "rv_restriction": "No posted length limit found",
+     "seasonal": "Open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/La_Veta_Pass"
+     ]
+    },
+    {
+     "name": "Wolf Creek Pass (US-160 east of Pagosa) - beyond the last stop",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Not crossed on this leg, but it is immediately east of the final stop and CDOT runs a dedicated commercial-vehicle safety campaign for it. No figures are given here because none were verified from a CDOT page during this research - if the trip continues east from Pagosa, research this pass properly first.",
+     "rv_restriction": "unknown - not verified",
+     "seasonal": "Open year round with heavy snow closures",
+     "severity": "severe",
+     "sources": [
+      "https://en.wikipedia.org/wiki/La_Veta_Pass"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - an easy finish to the loop, but if you continue east past Pagosa, Wolf Creek Pass needs its own research before you commit."
+  },
+  {
+   "from": "buena-vista-co",
+   "to": "leadville-co",
+   "route": "US-24 Buena Vista - Leadville (day trip), returning south on US-24/US-285 to Salida",
+   "passes": [
+    {
+     "name": "Tennessee Pass (US-24)",
+     "elev_ft": 10424,
+     "max_grade_pct": 3,
+     "direction_note": "Western approach grades up to 3%, eastern approach maximum 1.4%; summit is nearly level with no major hairpins",
+     "rv_restriction": "No posted length or weight restriction found",
+     "seasonal": "Generally open all year, closes only during severe winter storms",
+     "severity": "easy",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Tennessee_Pass_(Colorado)"
+     ]
+    }
+   ],
+   "verdict": "Mechanically the gentlest 10,000-ft pass in Colorado and fine in the coach, but at 10,400 ft expect noticeable power loss on an older chassis, so run the Leadville day trip in the pickup and leave the coach parked."
+  },
+  {
+   "from": "leadville-co",
+   "to": "wind-river-ext",
+   "route": "US-285 north over Trout Creek and Kenosha passes to Denver, I-25 north to Casper, WY-220/US-287 to Lander, WY-28 over South Pass, US-191 north to Pinedale",
+   "passes": [
+    {
+     "name": "Trout Creek Pass (US-285/US-24)",
+     "elev_ft": 9346,
+     "max_grade_pct": null,
+     "direction_note": "Climb northbound out of the Arkansas valley at Johnson Village into South Park; grade percentage not verified. Note the summit sign elevation is reported to be in error by about 140 ft",
+     "rv_restriction": "No posted restriction found",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Trout_Creek_Pass"
+     ]
+    },
+    {
+     "name": "Kenosha Pass (US-285)",
+     "elev_ft": 9984,
+     "max_grade_pct": null,
+     "direction_note": "Southwestern side is the steeper one, winding up the flank of a mountainside; northeastern approach is fairly gentle, with amply wide highway and easily negotiable curves. Grade percentage not verified",
+     "rv_restriction": "No posted restriction found",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Kenosha_Pass"
+     ]
+    },
+    {
+     "name": "South Pass (WY-28)",
+     "elev_ft": 7550,
+     "max_grade_pct": null,
+     "direction_note": "Continental Divide crossing between Lander and Farson; grade percentage not published by Wyoming Highway Patrol",
+     "rv_restriction": "No posted restriction found",
+     "seasonal": "Not verified",
+     "severity": "easy",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    },
+    {
+     "name": "Eisenhower-Johnson Memorial Tunnel / Loveland Pass (I-70 - only if a GPS reroutes you west)",
+     "elev_ft": 11990,
+     "max_grade_pct": 6.7,
+     "direction_note": "Loveland Pass (US-6) is the hazmat detour around the tunnel: 11,990 ft, a steady 6.7% grade with numerous hairpin turns, 800 vertical ft above the tunnel. This is not a road for a 60-ft combination",
+     "rv_restriction": "Colorado rule 2 CCR 601-8 s3.02: all vehicles transporting placarded quantities of hazardous materials must use Loveland Pass (US 6) when the pass is open. A private motorhome's onboard propane is not a placarded quantity, so the tunnel itself is normally legal for you; separately, trucks over 13 ft 11 in (4.24 m) cannot use the tunnel",
+     "seasonal": "Loveland Pass closes in severe winter storms, at which point all traffic including normally forbidden hazmat must use the tunnel",
+     "severity": "hard",
+     "sources": [
+      "https://www.law.cornell.edu/regulations/colorado/2-CCR-601-8-3.00",
+      "https://en.wikipedia.org/wiki/Loveland_Pass"
+     ]
+    }
+   ],
+   "verdict": "The US-285 north / I-25 / WY-28 routing keeps you under 10,000 ft with no tunnel or length issue and is the right call in the coach; only the I-70 variant is a problem, and Loveland Pass must never be used with this rig."
+  },
+  {
+   "from": "wind-river-ext",
+   "to": "scottsbluff-ne",
+   "route": "US-191 south to I-80, east through Rock Springs, Rawlins and Laramie to Cheyenne, then I-25 south and US-26 east",
+   "passes": [
+    {
+     "name": "Sherman Summit / I-80 Summit (Cheyenne to Laramie)",
+     "elev_ft": 8640,
+     "max_grade_pct": 6,
+     "direction_note": "Average grades of about 6% on the interstate between Cheyenne and Laramie; highest point on I-80 nationally",
+     "rv_restriction": "No length restriction; Wyoming Highway Patrol lists this among its mountain road advisories for commercial carriers",
+     "seasonal": "Wyoming routinely closes I-80 here for wind and snow; specific closure criteria not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://whp.wyo.gov/commercial-carrier/mountain-road-information"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - four-lane interstate the whole way - but this is a late-May crossing of the windiest stretch of I-80 in the country, so check WYDOT closures the morning you go."
+  },
+  {
+   "from": "custer-sd",
+   "to": "badlands-sd",
+   "route": "US-16/SD-79 east to Rapid City then I-90 east, or US-385/SD-44. The scenic US-16A Iron Mountain Road and SD-87 Needles Highway must NOT be used",
+   "passes": [
+    {
+     "name": "Needles Eye Tunnel (SD-87 Needles Highway)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Narrowest tunnel in the Black Hills; the highway is a series of tight switchbacks between granite spires",
+     "rv_restriction": "Posted tunnel dimensions 8 ft 0 in wide by 9 ft 9 in high - impassable for a 40-ft Class A by a very wide margin",
+     "seasonal": "Not verified",
+     "severity": "severe",
+     "sources": [
+      "https://www.custerresorts.com/activities/scenic-drives/needles-highway"
+     ]
+    },
+    {
+     "name": "Iron Creek Tunnel (SD-87 Needles Highway)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Second tunnel on the Needles Highway",
+     "rv_restriction": "Posted tunnel dimensions 8 ft 9 in wide by 10 ft 10 in high - impassable",
+     "seasonal": "Not verified",
+     "severity": "severe",
+     "sources": [
+      "https://www.custerresorts.com/activities/scenic-drives/needles-highway"
+     ]
+    },
+    {
+     "name": "Scovel Johnson Tunnel (US-16A Iron Mountain Road)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Smallest of the three Iron Mountain Road tunnels; the road also has pigtail bridges and switchbacks",
+     "rv_restriction": "Posted tunnel dimensions 10 ft 9 in wide by 11 ft 0 in high - impassable",
+     "seasonal": "Not verified",
+     "severity": "severe",
+     "sources": [
+      "https://www.custerresorts.com/activities/scenic-drives/iron-mountain-road"
+     ]
+    },
+    {
+     "name": "Doane Robinson and C.C. Gideon Tunnels (US-16A Iron Mountain Road)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The two larger Iron Mountain Road tunnels, still far too small for a coach",
+     "rv_restriction": "Doane Robinson 12 ft 0 in wide by 11 ft 4 in high; C.C. Gideon 13 ft 0 in wide by 11 ft 0 in high",
+     "seasonal": "Not verified",
+     "severity": "severe",
+     "sources": [
+      "https://www.custerresorts.com/activities/scenic-drives/iron-mountain-road"
+     ]
+    }
+   ],
+   "verdict": "Reconsider any routing software that sends you over US-16A or SD-87 - every tunnel there is under 11 ft 5 in high and under 13 ft wide, so the coach physically cannot pass; take US-16/SD-79 to I-90 and see the Needles and Iron Mountain in the pickup."
+  },
+  {
+   "from": "grand-marais-mn",
+   "to": "bayfield-wi",
+   "route": "MN-61 south to Duluth, US-2/US-53 and WI-13 north to Bayfield. The Madeline Island crossing is a local side trip from Bayfield",
+   "passes": [
+    {
+     "name": "Madeline Island Ferry (Bayfield - La Pointe)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Short Lake Superior crossing; the only vehicle access to Madeline Island in summer",
+     "rv_restriction": "Motorhomes are charged by overall length including hitch, racks and anything extending beyond the bumpers. Published motorhome tiers stop at '30 ft to less than 35 ft'; '35 ft and over' requires calling the office at 715-747-2051. Vehicles over 8.5 ft wide pay a $300 surcharge each way, 10 ft or wider $450 each way. The line does not take reservations for motorhomes or trailers",
+     "seasonal": "Ferry does not run year-round (winter ice road/windsled); July date is well inside the sailing season",
+     "severity": "moderate",
+     "sources": [
+      "https://madferry.com/ferry-rates"
+     ]
+    }
+   ],
+   "verdict": "Fine as a leg, but do not put the coach on the Madeline Island ferry - no reservations are taken for motorhomes and nothing over 35 ft is even priced; leave it in Bayfield and take the pickup across."
+  },
+  {
+   "from": "munising-mi",
+   "to": "tahquamenon-falls-mi",
+   "route": "County Road H-58 east through Pictured Rocks to Grand Marais, then M-77/M-28/M-123; or the all-highway M-28/M-123 alternative",
+   "passes": [
+    {
+     "name": "County Road H-58 (Pictured Rocks corridor)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "NPS states plainly that 'H-58 is suitable for vehicles of all sizes'. Long sections have very little or no shoulder and the road carries logging trucks and ORVs",
+     "rv_restriction": "No length or weight restriction posted by the National Park Service",
+     "seasonal": "Many roads in the area are closed by snow in winter; a late-July run is unaffected",
+     "severity": "easy",
+     "sources": [
+      "https://home.nps.gov/piro/planyourvisit/directions.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine in the coach - the NPS explicitly rates H-58 as suitable for all vehicle sizes - but the no-shoulder sections mean no casual roadside stops with 60 ft of rig."
+  },
+  {
+   "from": "st-ignace-mi",
+   "to": "traverse-city-mi",
+   "route": "I-75 south across the Mackinac Bridge to Mackinaw City, then US-31/M-72 south to Traverse City",
+   "passes": [
+    {
+     "name": "Mackinac Bridge",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Five-mile suspension crossing, fully exposed to Straits of Mackinac crosswinds",
+     "rv_restriction": "Maximum speed 45 mph; 20 mph for vehicles exceeding 30 tons (60,000 lb); maximum allowable vehicle weight 72 tons; no stopping and no U-turns on the bridge. No published length or height limit",
+     "seasonal": "Wind rules: 20-35 mph high wind advisory, high-profile vehicles (RVs, trailers) should travel no faster than 20 mph; 35-50 mph escorts required and high-profile vehicles must wait to be escorted; 65 mph and above the bridge is closed to all traffic",
+     "severity": "moderate",
+     "sources": [
+      "https://www.mackinacbridge.org/fares-traffic/rules-regulations/",
+      "https://www.mackinacbridge.org/ufaqs/what-wind-conditions-result-in-high-wind-warnings-escorts-partial-closures-and-full-closures/"
+     ]
+    }
+   ],
+   "verdict": "No dimensional problem at all for the coach, but check the bridge wind status before rolling - a 40-ft high-profile coach with a toad falls squarely into the escort/advisory category above 20 mph of wind."
+  },
+  {
+   "from": "traverse-city-mi",
+   "to": "door-county-wi",
+   "route": "Option A: US-31/US-10 to Ludington and the SS Badger carferry to Manitowoc, then WI-42 north. Option B: drive around the bottom of Lake Michigan via US-131/I-196/I-94/I-43 through Milwaukee and Green Bay",
+   "passes": [
+    {
+     "name": "SS Badger carferry (Ludington - Manitowoc)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Four-hour Lake Michigan crossing that saves several hundred miles of driving",
+     "rv_restriction": "RVs, campers and trailers are charged $11 per foot one way, and trailers are measured from the back bumper of the tow vehicle to the furthest point of the trailer. No maximum length, height, width or weight is published anywhere on the operator's fares or FAQ pages - this must be confirmed by phone (1-800-841-4243) before you commit to the routing",
+     "seasonal": "Seasonal operation; the operator publishes a season schedule but exact 2028 dates are obviously not yet available",
+     "severity": "moderate",
+     "sources": [
+      "https://ssbadger.com/fares/",
+      "https://ssbadger.com/faqs/"
+     ]
+    }
+   ],
+   "verdict": "The ferry is attractive but its size limits are simply not published - call before planning around it, and be ready to fall back on the drive around through Milwaukee, which has no restriction of any kind."
+  },
+  {
+   "from": "door-county-wi",
+   "to": "indiana-dunes-in",
+   "route": "WI-42/I-43 south through Milwaukee, then I-94 to I-294 Tri-State Tollway around the west side of Chicago and I-80/I-90 east to Indiana Dunes",
+   "passes": [
+    {
+     "name": "Chicago metro low viaducts",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Chicago's older street grid is full of railroad viaducts. The city's convention is that an unposted viaduct has a clearance over 14 ft 6 in and only lower ones carry a posted number; individual street clearances are published in a separate CDOT list that could not be retrieved for this report",
+     "rv_restriction": "Specific clearance figures NOT VERIFIED. Do not let a routing app take a 40-ft coach onto Chicago city streets, Lake Shore Drive or the boulevard system - use I-294/I-80 and stay on tollway and interstate",
+     "seasonal": "None",
+     "severity": "moderate",
+     "sources": [
+      "https://www.chicago.gov/city/en/depts/cdot/provdrs/bridge/svcs/viaduct_clearances.html"
+     ]
+    }
+   ],
+   "verdict": "Fine if you stay on I-294/I-80/I-90; the only real risk is a shortcut through city streets, and since the exact viaduct clearances could not be verified the safe answer is simply never to leave the tollway."
+  },
+  {
+   "from": "indiana-dunes-in",
+   "to": "stratford-on",
+   "route": "I-94/I-69 east to Port Huron and across the Blue Water Bridge into Sarnia, then ON-402 east to London and ON-7/ON-8 to Stratford. Do NOT use the Detroit-Windsor Tunnel",
+   "passes": [
+    {
+     "name": "Detroit-Windsor Tunnel (avoid)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The obvious-looking Detroit crossing, and a trap for a coach",
+     "rv_restriction": "Maximum height 12 ft 8 in (3.8 m) and maximum width 8 ft 6 in (2.6 m). Vehicles transporting hazardous materials or carrying hazmat placards are prohibited. A 40-ft Class A will normally exceed the 12 ft 8 in height limit",
+     "seasonal": "None",
+     "severity": "severe",
+     "sources": [
+      "https://www.dwtunnel.com/faqs/"
+     ]
+    },
+    {
+     "name": "Ontario legal dimension limits",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Applies for the whole Ontario portion of the trip",
+     "rv_restriction": "Maximum height 4.15 m (13 ft 7 in), maximum width 2.6 m (8 ft 6 in), maximum length of an individual vehicle 12.5 m (41 ft 0 in), maximum overall length of a combination 23 m (75 ft 5 in). A 40-ft coach is 12.19 m - legal, but with under a foot of margin on the single-vehicle limit, so measure the true bumper-to-bumper length including any rear rack",
+     "seasonal": "None",
+     "severity": "moderate",
+     "sources": [
+      "https://cdn.ymaws.com/www.ctea.ca/resource/resmgr/docs/mto_spif/2024_ontario_vwd_public_guid.pdf"
+     ]
+    }
+   ],
+   "verdict": "Cross at the Blue Water Bridge at Port Huron, not the Detroit-Windsor Tunnel, which is 12 ft 8 in and bans placarded loads; once in Ontario the combination is legal at roughly 18.3 m against a 23 m limit, but the 40-ft coach is close to Ontario's 12.5 m single-vehicle limit."
+  },
+  {
+   "from": "perth-on",
+   "to": "lake-placid-ny",
+   "route": "ON-15/ON-401 to the Thousand Islands Bridge (or the Ogdensburg-Prescott bridge), then I-81/NY-37/NY-3 to Saranac Lake and NY-86 east into Lake Placid",
+   "passes": [
+    {
+     "name": "NY-73 Cascade Pass (avoid as the approach)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "NY-73 is the direct approach to Lake Placid from the Northway (I-87) and climbs steeply past Chapel Pond and between the Cascade Lakes. Grade percentages, summit elevation and curve radii could NOT be verified from any official New York State source",
+     "rv_restriction": "No posted restriction found. Approach instead on NY-86 from Saranac Lake, which is the flatter, wider corridor",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/New_York_State_Route_73"
+     ]
+    },
+    {
+     "name": "Thousand Islands Parkway (ON)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Scenic alternative to ON-401 along the St. Lawrence",
+     "rv_restriction": "No truck or commercial-vehicle restriction found in any source consulted; treat as unrestricted but unconfirmed",
+     "seasonal": "None",
+     "severity": "easy",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Thousand_Islands_Parkway"
+     ]
+    }
+   ],
+   "verdict": "Fine, but come into Lake Placid the long way round on NY-86 through Saranac Lake rather than up NY-73 from the Northway - the NY-73 grades could not be verified and it is not a road to discover with 60 ft behind you."
+  },
+  {
+   "from": "lake-placid-ny",
+   "to": "south-hero-vt",
+   "route": "NY-86/NY-3 to Plattsburgh and the Lake Champlain ferry to Grand Isle; or drive around the north end of the lake on US-11/NY-9B to Rouses Point and US-2 south",
+   "passes": [
+    {
+     "name": "Lake Champlain Ferry (Plattsburgh NY - Grand Isle VT)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Year-round crossing, roughly 12 minutes",
+     "rv_restriction": "All vessels on this route are limited to 40 tons and a maximum height of 13 ft 6 in. Fare tiers run to 36-45 ft ($35.50), 45-54 ft, 54-63 ft, 63-72 ft and over 72 ft at $2.00/ft, so no maximum length is stated - but the 13 ft 6 in HEIGHT limit is the binding constraint for a 40-ft Class A with roof air units",
+     "seasonal": "This is the year-round route of the three Lake Champlain crossings",
+     "severity": "hard",
+     "sources": [
+      "https://ferries.com/vt-ny-ferry-routes/grand-isle-vt-to-plattsburgh-ny/rates-restrictions/"
+     ]
+    }
+   ],
+   "verdict": "Measure the coach's true roof height before committing - the ferry's 13 ft 6 in limit leaves almost no margin on a 2005 40-ft Class A, and the drive around via Rouses Point costs about ninety minutes and no risk at all."
+  },
+  {
+   "from": "south-hero-vt",
+   "to": "stowe-vt",
+   "route": "US-2 south to I-89, I-89 south to Waterbury, then VT-100 north into Stowe. VT-108 through Smugglers' Notch is prohibited and must be hard-blocked in the GPS",
+   "passes": [
+    {
+     "name": "Smugglers' Notch (VT-108)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Tight hairpins between boulders at the notch. VTrans states that oversized vehicles physically cannot navigate the turns regardless of what a GPS says, and will become stuck",
+     "rv_restriction": "Single vehicles greater than 40 ft in length are prohibited; combination vehicles greater than 45 ft in length are prohibited. Fines begin at $1,000.00 and can exceed $4,000 for a second offense. Your combination is roughly 60 ft - illegal and physically impassable",
+     "seasonal": "VT-108 through the notch closes for the winter season each year; exact dates vary and were not verified",
+     "severity": "severe",
+     "sources": [
+      "https://vtrans.vermont.gov/notch"
+     ]
+    }
+   ],
+   "verdict": "Already correctly routed around - keep it that way; VT-108 bans combinations over 45 ft outright and the recovery bill for a stuck coach in the notch dwarfs the fine."
+  },
+  {
+   "from": "stowe-vt",
+   "to": "eastern-townships-qc",
+   "route": "VT-100 north to I-89, north to the Highgate Springs / St-Armand crossing, then A-35/A-10 east into the Eastern Townships",
+   "passes": [
+    {
+     "name": "Quebec tunnel propane restrictions (relevant only if you detour via Montreal)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The Eastern Townships route on A-35/A-10 does not pass through any of these tunnels, but a Montreal side trip would",
+     "rv_restriction": "Restricted tunnels are Louis-Hippolyte-La Fontaine, Ville-Marie and Viger in Montreal, Joseph-Samson in Quebec City, and Melocheville in Beauharnois. Maximum permitted is 2 bottles with a capacity of 46 litres each of propane or other flammable gas; it is recommended to close the valve of a propane tank before crossing",
+     "seasonal": "None",
+     "severity": "easy",
+     "sources": [
+      "https://www.quebec.ca/en/transports/traffic-road-safety/traffic-rules-tips-for-all-vehicles/transporting-commonly-used-hazardous-materials"
+     ]
+    }
+   ],
+   "verdict": "Easy leg in the coach; the only thing to know is the Quebec tunnel propane rule if you ever swing through Montreal, and a standard motorhome's two-bottle setup complies."
+  },
+  {
+   "from": "eastern-townships-qc",
+   "to": "north-conway-nh",
+   "route": "A-55/I-91 south to St. Johnsbury, US-2 east to Lancaster, then US-3/NH-115 and either US-302 through Crawford Notch or NH-16 through Pinkham Notch into the Mount Washington Valley",
+   "passes": [
+    {
+     "name": "Crawford Notch (US-302)",
+     "elev_ft": 1900,
+     "max_grade_pct": null,
+     "direction_note": "The notch sits at approximately 1,900 ft; the eastbound side drops steeply toward Bartlett along the Willey slide face. Grade percentage is not published by NH DOT and could NOT be verified",
+     "rv_restriction": "No posted length restriction found",
+     "seasonal": "Open year round; subject to weather and occasional temporary closures",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Crawford_Notch"
+     ]
+    },
+    {
+     "name": "Pinkham Notch (NH-16)",
+     "elev_ft": 2032,
+     "max_grade_pct": null,
+     "direction_note": "NH-16 between Gorham and Jackson past the Mount Washington Auto Road; wider and more gradual than Crawford Notch but the higher summit. Grade percentage not verified",
+     "rv_restriction": "No posted length restriction found",
+     "seasonal": "Open year round",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Pinkham_Notch"
+     ]
+    },
+    {
+     "name": "Kancamagus Pass (NH-112 Kancamagus Highway)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The byway authority describes the high point at Kancamagus Pass as 'just under 3,000 feet' - a precise figure could NOT be verified from an official source, so it is left null rather than guessed. The drive is 34.5 miles along NH-112",
+     "rv_restriction": "No posted length restriction found, but there are no gas stations, restaurants or hotels anywhere along the 34.5-mile route",
+     "seasonal": "Not verified; winter closures of the through-route are possible",
+     "severity": "hard",
+     "sources": [
+      "https://kancamagushighway.com/"
+     ]
+    }
+   ],
+   "verdict": "The coach can get into North Conway on US-302 or NH-16, but this is the hardest sustained-grade leg in New England and the published grade percentages simply do not exist - descend in low gear, and run the Kancamagus as a pickup day trip rather than dragging 60 ft over it with no services for 34 miles."
+  },
+  {
+   "from": "north-conway-nh",
+   "to": "bar-harbor-me",
+   "route": "US-302 east to the Portland area, I-95 north to Bangor, then US-1A/ME-3 to Ellsworth and Bar Harbor. Avoid ME-113 through Evans Notch",
+   "passes": [
+    {
+     "name": "ME-113 Evans Notch",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The tempting shortcut east from the Mount Washington Valley. Reported to be narrow, winding and seasonally gated, but NO official Maine DOT or US Forest Service figure for elevation, grade, width or closure dates could be verified",
+     "rv_restriction": "NOT VERIFIED - treat as unsuitable until confirmed",
+     "seasonal": "Reported seasonal closure, dates unverified",
+     "severity": "hard",
+     "sources": [
+      "https://trailsnh.com/roads/status/Rte-113/evans-notch-road-maine"
+     ]
+    },
+    {
+     "name": "Acadia National Park road clearances (at the destination)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "These are the in-park restrictions once you arrive, not the approach",
+     "rv_restriction": "Park Loop Road from Sieur de Monts to Sand Beach is closed to vehicles taller than 12 ft 2 in (3.70 m); Park Loop Road from Fabbri Picnic Area to Wildwood Stables closed above 12 ft 0 in (3.65 m); Stanley Brook Road closed above 10 ft 4 in (3.15 m); Fish House Road closed above 11 ft 6 in (3.50 m). Cadillac Summit Road, Echo Lake Beach Road, Lurvey Spring Road, Duck Brook Road and Lighthouse Road are closed to RVs and trailers entirely",
+     "seasonal": "Park Loop Road sections close seasonally; dates not verified",
+     "severity": "severe",
+     "sources": [
+      "https://home.nps.gov/acad/planyourvisit/oversized-vehicles.htm"
+     ]
+    }
+   ],
+   "verdict": "Approach on US-302/I-95 only, never ME-113, and plan to base the coach in Ellsworth or Trenton - essentially every scenic road inside Acadia is closed to a vehicle of this height and none of it is passable in the coach."
+  },
+  {
+   "from": "camden-me",
+   "to": "berkshires-ma",
+   "route": "US-1 to I-295/I-95 south, I-495 to I-90 (Mass Pike) west to Lee. MA-2 Mohawk Trail is the scenic alternative and should be avoided in the coach",
+   "passes": [
+    {
+     "name": "Mohawk Trail / Whitcomb Summit (MA-2)",
+     "elev_ft": 2272,
+     "max_grade_pct": null,
+     "direction_note": "MA-2 reaches 2,272 ft at Whitcomb Summit; on the western side of the summit is the famous Hairpin Turn and lookout above North Adams. Grade percentage is not published and could NOT be verified",
+     "rv_restriction": "No posted length restriction found, but the Hairpin Turn is a switchback that a 60-ft combination should not attempt",
+     "seasonal": "Not verified",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Mohawk_Trail"
+     ]
+    }
+   ],
+   "verdict": "Take I-90 to the Lee exit - it is flat, wide and tolled; the Mohawk Trail's Hairpin Turn at the top of a 2,272-ft summit is a pickup drive, not a coach route."
+  },
+  {
+   "from": "litchfield-hills-ct",
+   "to": "hudson-valley-ny",
+   "route": "US-44 west across the state line to Millerton and Rhinebeck, or CT-4/US-7 to I-84. The Taconic State Parkway must NOT be used",
+   "passes": [
+    {
+     "name": "Taconic State Parkway",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The natural-looking north-south route through Dutchess and Columbia counties, and one of the most common GPS traps in the northeast. Stone-arch overpasses were built to 1930s passenger-car standards; specific clearance heights are not published by NYSDOT and could NOT be verified",
+     "rv_restriction": "The parkway 'is open only to passenger vehicles, as with other parkways in New York'. Commercial vehicles, trucks and by extension a 40-ft motorhome with a toad are prohibited. Minimum overpass clearances NOT VERIFIED - assume they are low",
+     "seasonal": "None",
+     "severity": "severe",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Taconic_State_Parkway"
+     ]
+    }
+   ],
+   "verdict": "Stay on US-44 and the numbered state routes - the Taconic is passenger-car only, its bridge clearances are unpublished, and this is the single most likely place on the whole trip for a navigation app to destroy the roof."
+  },
+  {
+   "from": "hudson-valley-ny",
+   "to": "delaware-water-gap-pa",
+   "route": "I-84 west to Port Jervis, then I-84/US-6 into Pennsylvania and US-209/PA-739 south to the Delaware Water Gap. The Palisades Interstate Parkway must NOT be used",
+   "passes": [
+    {
+     "name": "Palisades Interstate Parkway",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Runs north from the George Washington Bridge along the west bank of the Hudson - a plausible-looking southbound route out of the Hudson Valley",
+     "rv_restriction": "'The Palisades Interstate Parkway is limited to passenger cars and motorcycles only. Trucks and cars pulling trailers, R.V.s/motor homes, and cars or pickup trucks with commercial or combination plates or business markings or advertising are prohibited on the Parkway.' Commercial vehicles are prohibited on the entire length",
+     "seasonal": "None",
+     "severity": "severe",
+     "sources": [
+      "https://njpalisades.org/regulations/",
+      "https://en.wikipedia.org/wiki/Palisades_Interstate_Parkway"
+     ]
+    },
+    {
+     "name": "Delaware Water Gap NRA park roads",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "US-209 is the main north-south road on the Pennsylvania side; Old Mine Road is the New Jersey equivalent and is narrow and historic",
+     "rv_restriction": "Commercial vehicles with 5 or more axles are prohibited throughout the park. Vehicles exceeding state load, weight or size limits must obtain a permit prior to operating on any park road. No park-specific length limit is published; Old Mine Road width was NOT VERIFIED",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/dewa/learn/management/upload/DEWA-Compendium-MAR2026-S.pdf"
+     ]
+    }
+   ],
+   "verdict": "Fine on I-84/US-209 in the coach; the parkway ban is absolute and explicitly names motorhomes, and inside the NRA keep the coach on US-209 rather than Old Mine Road."
+  },
+  {
+   "from": "harpers-ferry-wv",
+   "to": "staunton-va",
+   "route": "US-340 south to Front Royal then I-81 south through the Shenandoah Valley. Skyline Drive must NOT be used in the coach",
+   "passes": [
+    {
+     "name": "Mary's Rock Tunnel (Skyline Drive, Shenandoah NP)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "At Skyline Drive milepost 32.4, just south of Thornton Gap - unavoidable if you enter Skyline Drive at Front Royal and drive south",
+     "rv_restriction": "Maximum clearance of 12 ft 8 in, and that measurement applies to both lanes so there is no centreline dodge. Skyline Drive's speed limit is 35 mph. A 2005 40-ft Class A will normally exceed 12 ft 8 in",
+     "seasonal": "Skyline Drive is generally open 24/7 but closes in inclement weather; late-November travel means real closure risk",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/shen/planyourvisit/driving-skyline-drive.htm"
+     ]
+    }
+   ],
+   "verdict": "Use US-340/I-81 - the 12 ft 8 in Mary's Rock Tunnel makes Skyline Drive a roof-removal event for this coach, and the whole drive is a pickup outing anyway at 35 mph."
+  },
+  {
+   "from": "staunton-va",
+   "to": "lexington-va",
+   "route": "I-81 south, roughly 35 miles. The Blue Ridge Parkway is the scenic alternative and carries the tunnel constraint below",
+   "passes": [
+    {
+     "name": "Blue Ridge Parkway tunnels",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "26 tunnels total, 25 in North Carolina and 1 in Virginia, so the Virginia stretch near Lexington is the least constrained part of the Parkway",
+     "rv_restriction": "'Many, but not all, of the parkway tunnels have a minimum vertical clearance of 14 feet 0 inches at the edgeline striping.' The two lowest are Big Witch (MP 461.2) at 11 ft 7 in at the edgeline / 18 ft 0 in at the centerline, and Lickstone Ridge (MP 458.8) at 11 ft 8 in edgeline / 17 ft 7 in centerline. Crossing the centre line to gain height is illegal and dangerous",
+     "seasonal": "Parkway sections close seasonally for ice and snow; a December crossing is likely to find gates shut",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/blri/planyourvisit/tunnel-heights.htm"
+     ]
+    }
+   ],
+   "verdict": "Fine on I-81 in the coach; take the Parkway only in the pickup, and note that the lowest tunnels are all far south of here in North Carolina."
+  },
+  {
+   "from": "lexington-va",
+   "to": "new-river-gorge-wv",
+   "route": "I-64 west via Covington, White Sulphur Springs, Lewisburg and Sandstone to Beckley, then US-19 north",
+   "passes": [
+    {
+     "name": "Sandstone Mountain (I-64)",
+     "elev_ft": null,
+     "max_grade_pct": 7,
+     "direction_note": "A seven-percent grade downhill eastbound for seven miles (11 km) at Sandstone Mountain. Westbound, which is your direction, it is a seven-mile climb - the dangerous direction is the return trip",
+     "rv_restriction": "No length restriction. Two emergency truck escape ramps serve the eastbound descent, and a truck speed advisory system automatically weighs each truck and indicates the speed at which it should begin the downhill section",
+     "seasonal": "Not verified; December ice is a genuine concern at this elevation",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Interstate_64_in_West_Virginia"
+     ]
+    }
+   ],
+   "verdict": "Westbound the coach only has to climb it, so this leg is acceptable - but a 7% grade over 7 miles is the steepest sustained interstate grade on the whole extension and the eastbound direction demands low gear, an exhaust brake and a cool-down stop."
+  },
+  {
+   "from": "new-river-gorge-wv",
+   "to": "floyd-va",
+   "route": "US-19 south to I-77 south through the East River Mountain and Big Walker Mountain tunnels, past Wytheville, over Fancy Gap Mountain, then US-58/VA-8 to Floyd",
+   "passes": [
+    {
+     "name": "East River Mountain Tunnel (I-77)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "5,412 ft (1,650 m) long, on the West Virginia / Virginia state line - one of only two vehicular tunnels in the US to cross a state line",
+     "rv_restriction": "Vertical clearance NOT VERIFIED and hazmat/propane rules NOT VERIFIED - the VDOT hazardous materials page could not be retrieved for this report. Virginia does restrict hazmat in some of its tunnels under 24VAC30-61-40; confirm with VDOT before travelling with propane aboard",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/East_River_Mountain_Tunnel",
+      "https://law.lis.virginia.gov/admincodeexpand/title24/agency30/chapter61/"
+     ]
+    },
+    {
+     "name": "Big Walker Mountain Tunnel (I-77)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "4,229 ft (1,289 m) long, north of Wytheville",
+     "rv_restriction": "Vertical clearance NOT VERIFIED. Same VDOT hazmat caveat as East River Mountain",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Big_Walker_Mountain_Tunnel"
+     ]
+    },
+    {
+     "name": "Fancy Gap Mountain (I-77)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The Blue Ridge escarpment descent south of Hillsville. Grade percentage and length could NOT be verified from VDOT. The area is noted as the site of many fatal accidents, often due to fog and wind in the mountains",
+     "rv_restriction": "No posted length restriction found",
+     "seasonal": "Dense fog is a year-round hazard here and is the primary cause of the pile-up crashes",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Interstate_77_in_Virginia"
+     ]
+    }
+   ],
+   "verdict": "Passable in the coach, but three separate figures on this leg could not be verified - tunnel clearances and the Fancy Gap grade - so phone VDOT before travelling this one, and never enter the Fancy Gap descent in fog."
+  },
+  {
+   "from": "boone-nc",
+   "to": "asheville-nc-v3",
+   "route": "US-221/US-321 to I-40 west, or NC-105/NC-181 to US-70. The Blue Ridge Parkway between Blowing Rock and Asheville must NOT be used in the coach",
+   "passes": [
+    {
+     "name": "Blue Ridge Parkway, North Carolina section",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "25 of the Parkway's 26 tunnels are in North Carolina, and the stretch you would be tempted by - Blowing Rock to Asheville, including the Linn Cove Viaduct - runs straight into them",
+     "rv_restriction": "Lowest edgeline clearances are Big Witch at 11 ft 7 in and Lickstone Ridge at 11 ft 8 in; 'many, but not all' tunnels have a minimum vertical clearance of 14 ft 0 in at the edgeline striping. Crossing the centre line to use the higher crown clearance is illegal",
+     "seasonal": "NPS closes Parkway sections for ice and snow; a late-December crossing will very likely find gates closed",
+     "severity": "severe",
+     "sources": [
+      "https://www.nps.gov/blri/planyourvisit/tunnel-heights.htm"
+     ]
+    }
+   ],
+   "verdict": "Run the coach down US-321/I-40 and drive the Parkway in the pickup - with 11 ft 7 in edgeline clearances and a December closure risk, the Parkway is not an option for the coach in either dimension or season."
+  },
+  {
+   "from": "asheville-nc-v3",
+   "to": "bryson-city-nc",
+   "route": "I-40 west to exit 27, then US-74 (Great Smoky Mountains Expressway) west to Bryson City",
+   "passes": [
+    {
+     "name": "US-441 Newfound Gap Road (Great Smoky Mountains NP)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "Not on the through-route, but the obvious day-trip drive from Bryson City over to Gatlinburg",
+     "rv_restriction": "'Commercial vehicles are always prohibited on US 441/Newfound Gap Road and in all of Great Smoky Mountains National Park (with the exception of the Spur).' Violators face citations and fines up to $5,000. No specific length or weight threshold is published - the ban is on vehicle class, not size",
+     "seasonal": "Newfound Gap Road closes for snow and ice in winter; a late-December visit is at real risk",
+     "severity": "moderate",
+     "sources": [
+      "https://www.nps.gov/grsm/learn/news/route-441-newfound-gap-road-is-closed-to-commercial-vehicles.htm"
+     ]
+    }
+   ],
+   "verdict": "The I-40/US-74 through-route is four-lane and entirely fine in the coach; just do Newfound Gap in the pickup and check the winter gate status first."
+  },
+  {
+   "from": "bryson-city-nc",
+   "to": "chattanooga-tn",
+   "route": "US-74 west through the Nantahala Gorge, US-64/US-74 through the Ocoee Gorge to Cleveland TN, then I-75 south. The four-lane alternative is US-74 east to I-40 west through Knoxville and I-75 south",
+   "passes": [
+    {
+     "name": "Ocoee Gorge (US-64/US-74)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "19 miles (31 km) of US-64/US-74 along the north bank of the Ocoee River, mostly two-lane - the only remaining two-lane sections of US-64 in Tennessee. Grade percentages and curve radii are not published and could NOT be verified",
+     "rv_restriction": "No posted length restriction found. The route is prone to rockslides; a November 2009 slide near Ocoee Dam No. 2 blocked it for months",
+     "seasonal": "Rockslide closures can be open-ended; check TDOT before committing",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Ocoee_Scenic_Byway"
+     ]
+    }
+   ],
+   "verdict": "Reconsider - two lanes with no shoulders through a rockslide-prone river gorge is a poor place for 60 ft of rig; the I-40/Knoxville detour is longer but four-lane end to end."
+  },
+  {
+   "from": "chattanooga-tn",
+   "to": "hot-springs-ar-v3",
+   "route": "I-24 west over Monteagle Mountain to Nashville, I-40 west to Little Rock, then US-70 west to Hot Springs",
+   "passes": [
+    {
+     "name": "Monteagle Mountain (I-24)",
+     "elev_ft": 2000,
+     "max_grade_pct": 6,
+     "direction_note": "Rises to an elevation of around 2,000 ft. Eastbound the descent is a 6% grade over about 4.1 miles dropping 1,161 ft with two runaway truck ramps, which are on the LEFT due to the terrain. Westbound - your direction - you climb that 6% face and then descend the western side, which drops 778 ft over four miles at a 5% grade",
+     "rv_restriction": "Truck speed limit 45 mph against a 55 mph general limit. A truck inspection and brake-adjustment station sits at the top of the eastbound downgrade",
+     "seasonal": "Not verified; winter ice on the plateau is a recognised hazard",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Monteagle_Mountain"
+     ]
+    }
+   ],
+   "verdict": "Doable and the direction is in your favour - westbound you climb the 6% side and descend the gentler 5% side - but hold 45 mph on the descent, use the engine brake, and remember the escape ramps here are on the left, not the right."
+  },
+  {
+   "from": "hot-springs-ar-v3",
+   "to": "petit-jean-ar",
+   "route": "AR-7 north to Ola/Perry, then AR-154 west and up onto Petit Jean Mountain",
+   "passes": [
+    {
+     "name": "AR-154 Petit Jean Mountain climb",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "AR-154 is the only paved access onto the Petit Jean plateau and climbs the mountain face in switchbacks. NO elevation, grade, curve-radius or length figure is published by ARDOT or Arkansas State Parks and none could be verified for this report",
+     "rv_restriction": "NOT VERIFIED. Arkansas State Parks publishes campsite classes for Petit Jean but no RV length limit and no access-road warning. Phone the park before arriving with a 40-ft coach and toad",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://www.arkansas.com/state-parks/explore/parks/petit-jean-state-park"
+     ]
+    }
+   ],
+   "verdict": "Nothing here could be verified, which is itself the finding - call Petit Jean State Park and confirm both the AR-154 climb and the site length before you commit the coach, and be prepared to unhook the pickup at the bottom."
+  },
+  {
+   "from": "petit-jean-ar",
+   "to": "mount-magazine-ar",
+   "route": "AR-154 down off Petit Jean, AR-10 west to Havana, then AR-309 (Mount Magazine Scenic Byway) up the mountain",
+   "passes": [
+    {
+     "name": "Mount Magazine / Signal Hill (AR-309 Mount Magazine Scenic Byway)",
+     "elev_ft": 2753,
+     "max_grade_pct": null,
+     "direction_note": "Signal Hill, the higher of Mount Magazine's two summits, reaches 2,753 ft - the highest point in Arkansas. Access is a 10-mile drive along Highway 309 from Havana. Grade percentage and curve radii are NOT published and could not be verified",
+     "rv_restriction": "No posted length restriction found. Confirm the state park lodge/campground road and site lengths by phone before arriving",
+     "seasonal": "Not verified; late-January ice at 2,753 ft is a real risk in the Ozarks",
+     "severity": "hard",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Magazine"
+     ]
+    }
+   ],
+   "verdict": "A 10-mile climb to the highest point in the state in late January with no published grade data - phone the park, and if there is any doubt base the coach in the Arkansas River valley and take the pickup up AR-309."
+  },
+  {
+   "from": "mount-magazine-ar",
+   "to": "jasper-ponca-ar",
+   "route": "AR-309 down to AR-10, AR-23 or AR-7 north through the Boston Mountains to Jasper, then AR-74/AR-43 for Ponca",
+   "passes": [
+    {
+     "name": "Boston Mountains crossing (AR-7 / AR-23 / AR-43)",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "AR-7 is a designated Arkansas scenic byway through the steepest part of the Ozarks, and AR-43 drops off the plateau into the Buffalo River valley at Ponca. NO grade, elevation or curve-radius figures are published by ARDOT for any of these and none could be verified",
+     "rv_restriction": "NOT VERIFIED for AR-7, AR-23 or AR-43. Note that the neighbouring AR-74 does carry an official state park warning against large trailers (see the Devil's Den leg), which is a fair indication of the character of roads in this area",
+     "seasonal": "Not verified; late-January ice on north-facing Ozark grades is common",
+     "severity": "hard",
+     "sources": [
+      "https://www.arkansas.com/arkansas-scenic-7-byway",
+      "https://ardot.gov/divisions/right-of-way/row_sections/beautification-section/scenic-byways/"
+     ]
+    }
+   ],
+   "verdict": "Reconsider the Ponca portion in the coach - AR-43 into the Buffalo River valley is unverified in every dimension and the nearby AR-74 is officially flagged as unsuitable for large trailers; base at Jasper on AR-7 and run the last leg in the pickup."
+  },
+  {
+   "from": "bentonville-ar",
+   "to": "devils-den-ar",
+   "route": "I-49/US-71 south to West Fork, then AR-170 south into the park. AR-74 from Winslow must NOT be used",
+   "passes": [
+    {
+     "name": "AR-74 Winslow descent into Devil's Den",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The short-looking approach from I-49 at Winslow, and the one a routing app will pick",
+     "rv_restriction": "Official Arkansas State Parks brochure: 'Large trailers should not use Hwy. 74 from Winslow to the park, due to steep and winding roads.' No numeric grade or length limit is published",
+     "seasonal": "Not verified",
+     "severity": "hard",
+     "sources": [
+      "https://www.arkansasstateparks.com/sites/default/files/2025-10/a116c856070dec50e0d6ce68c3e85712_parkinformationbrochure.pdf"
+     ]
+    },
+    {
+     "name": "AR-170 approach from West Fork",
+     "elev_ft": null,
+     "max_grade_pct": null,
+     "direction_note": "The park's recommended approach; AR-170 still winds through steep Ozark topography but carries no official warning",
+     "rv_restriction": "No warning or length limit published. The park has 107 campsites but publishes no maximum RV length - confirm site length by phone",
+     "seasonal": "Not verified",
+     "severity": "moderate",
+     "sources": [
+      "https://www.arkansasstateparks.com/sites/default/files/2025-10/a116c856070dec50e0d6ce68c3e85712_parkinformationbrochure.pdf",
+      "https://en.wikipedia.org/wiki/Arkansas_Highway_170"
+     ]
+    }
+   ],
+   "verdict": "Approach only on AR-170 from West Fork - the park itself warns large trailers off AR-74 - and confirm a 40-ft site by phone, because Devil's Den publishes no maximum RV length anywhere."
+  },
+  {
+   "from": "devils-den-ar",
+   "to": "mena-ar",
+   "route": "US-71/I-49 south past Fort Smith, then US-71 south to Mena. Talimena Scenic Drive is a side trip, not a through-route",
+   "passes": [
+    {
+     "name": "Talimena National Scenic Byway (AR-88 / OK-1)",
+     "elev_ft": 2681,
+     "max_grade_pct": null,
+     "direction_note": "54.0 miles along the crest of Rich Mountain (2,681 ft, second-tallest peak in Arkansas) and the Winding Stair Mountains between Mena AR and Talihina OK. Grade percentages are not published and could NOT be verified",
+     "rv_restriction": "No seasonal or vehicle restrictions are stated in any source consulted, but a 54-mile ridge-crest byway with no services is not a sensible place for a 60-ft combination",
+     "seasonal": "Not verified; ice and fog on the ridge are known late-winter hazards",
+     "severity": "moderate",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Talimena_Scenic_Drive"
+     ]
+    }
+   ],
+   "verdict": "US-71 south is a straightforward four-lane-and-two-lane run in the coach; keep Talimena as a pickup day drive out of Mena."
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+name: Rebuild the dashboard
+
+# Two ways in, and no laptop needed for either:
+#
+#   * Run workflow — the button on the Actions tab, which works in the GitHub
+#     mobile app and in a phone browser. Use it after editing overrides.json,
+#     or any time you want the road geometry refreshed.
+#   * Automatically, whenever overrides.json is committed — so publishing a
+#     change from the dashboard on a phone rebuilds the whole thing by itself.
+#
+# What it does that a phone cannot: bakes the overrides into the real
+# itinerary, regenerates every derived layer from them (light times, booking
+# windows, costs, passes, drone verdicts, the phone build), fetches the road
+# geometry for legs that have none, and refuses to publish if the Playwright
+# suite finds a single page error.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_overrides:
+        description: 'Bake overrides.json into the itinerary (turn off to rebuild only)'
+        type: boolean
+        default: true
+      refresh_routes:
+        description: 'Fetch road geometry for unrouted legs (needs the router to be up)'
+        type: boolean
+        default: true
+  push:
+    paths:
+      - 'overrides.json'
+      - 'tools/**'
+
+concurrency:
+  # Two rebuilds racing would both commit and one would lose.
+  group: rebuild
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright and Chromium
+        # Pinned to the version the suite was verified against. A floating
+        # version means a browser update can fail the gate on a day you are
+        # trying to publish a campground change from a rest area.
+        run: |
+          npm install --no-save playwright@1.56.0
+          npx playwright install --with-deps chromium
+
+      - name: Bake the road changes into the itinerary
+        if: ${{ github.event_name == 'push' || inputs.apply_overrides }}
+        run: cd tools && python3 apply_overrides.py
+
+      - name: Run the build
+        run: |
+          cd tools
+          # Twice: build_bookings rebuilds its cards from stops that
+          # apply_overrides and build_swaps have just rewritten, so one pass
+          # leaves the file a step behind itself.
+          for pass in 1 2; do
+            for s in build_strategy build_frozen build_light build_phonecraft build_drone \
+                     build_passes build_legs build_costs build_petlog build_staynotes \
+                     build_rigfit build_campfacts build_swaps build_bookings build_parks; do
+              [ -f "$s.py" ] || continue
+              [ "$pass" = 1 ] && echo "  $s"
+              python3 "$s.py" > /dev/null || { echo "!! $s.py failed"; exit 1; }
+            done
+          done
+
+      - name: Fetch road geometry for unrouted legs
+        if: ${{ github.event_name == 'push' || inputs.refresh_routes }}
+        # The runner has real network, which the machine this was built on did
+        # not — this is where the dashed straight lines finally get a road. The
+        # script refuses to write if it would end up with fewer routed legs
+        # than it started with, so a router being down cannot wipe the map.
+        run: cd tools && python3 build_routes.py || echo "(routing unavailable — keeping the lines we have)"
+
+      - name: Regenerate the phone build and inline Leaflet
+        run: |
+          cd tools
+          python3 build_mobile.py
+          python3 build_vendor.py
+
+      - name: Test
+        # The gate. Nothing is committed if the dashboard throws a single page
+        # error, if a build step is not idempotent, or if a seasonal anchor has
+        # been broken by the change.
+        run: node tools/test_alaska_ext_v3.js
+
+      - name: Commit the rebuilt dashboard
+        run: |
+          git config user.name  'alaska-trip rebuild'
+          git config user.email 'actions@github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed — the dashboard was already up to date."
+            exit 0
+          fi
+          git diff --cached --stat | tail -12
+          git commit -m "Rebuild: apply road changes and regenerate derived data
+
+          Ran from the Actions tab or by a commit to overrides.json.
+          Every build step rerun, road geometry refreshed, phone build
+          regenerated, Playwright suite green."
+          git push
+
+      - name: Where to look
+        run: |
+          echo "Desktop  https://lluisitu.github.io/alaska-trip/desktop/"
+          echo "Phone    https://lluisitu.github.io/alaska-trip/mobile/"
+          echo "Pages takes about a minute to serve the new build."

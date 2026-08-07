@@ -1,0 +1,274 @@
+{
+ "_meta": {
+  "researched_on": "2026-08-05",
+  "scope": "US->Canada->US pet import; cell coverage gaps on northern highways; propane/dump/water on remote legs",
+  "caution": "Every item below was taken from a page actually fetched on 2026-08-05, with the source's own last-modified date recorded where the page showed one. Pet import rules and border-station hours change without notice. RE-CHECK ALL PET ITEMS 60-90 DAYS BEFORE 22 MARCH 2027 AND AGAIN BEFORE THE APRIL 2028 EASTERN TRIP. Where a fact could not be verified from a source, it is stated as unverified rather than filled in."
+ },
+ "pets": {
+  "into_canada": [
+   {
+    "requirement": "Dog 8 months or older: proof of rabies vaccination - a rabies certificate issued by a licensed veterinarian proving vaccination within the last 3 years. No health certificate required, and no USDA endorsement required, for an owner-accompanied pet dog.",
+    "applies_to": "dog",
+    "lead_time": "Vaccination must be current on the day of crossing. Get the certificate from your vet before leaving Austin; no government application or advance filing is required. If the rabies booster falls due mid-trip, renew before the northbound crossing.",
+    "source": "https://www.aphis.usda.gov/pet-travel/us-to-another-country-export/pet-travel-us-canada"
+   },
+   {
+    "requirement": "Cat 3 months or older: a veterinarian's certificate stating the cat is currently vaccinated against rabies (alternatives in the CFIA reference document are origin from a rabies-free country where the cat lived for the 6 months before entry, or a Rabies Neutralising Antibody Titre Test result of at least 0.5 IU/ml). The certificate must show the date of vaccination and the type of vaccine. No health certificate and no USDA endorsement required.",
+    "applies_to": "cat",
+    "lead_time": "Must be valid at the crossing. Obtain before departure. Kittens under 3 months are exempt, which does not apply to an adult cat.",
+    "source": "https://www.aphis.usda.gov/pet-travel/us-to-another-country-export/pet-travel-us-canada"
+   },
+   {
+    "requirement": "CFIA Import Reference Document (the authority behind the border requirement): domestic dogs 8 months or older from a country that is not rabies-free require either a valid rabies vaccination certificate or an RNATT of at least 0.5 IU/ml; domestic cats 3 months or older require a veterinarian's certificate showing current rabies vaccination, rabies-free origin, or RNATT of at least 0.5 IU/ml. Cats under 3 months face no restrictions.",
+    "applies_to": "both",
+    "lead_time": "No lead time beyond having a current vaccination and the paper certificate in hand. Document date modified 2025-10-08.",
+    "source": "https://inspection.canada.ca/en/animal-health/terrestrial-animals/imports/import-policies/general/reference-document"
+   },
+   {
+    "requirement": "Declare the animals to the CBSA officer and present original paper documents. CBSA can 'refuse entry, confiscate or detain an animal' if it is undeclared, lacks the necessary permits/certificates, appears sick, or is not transported humanely. CBSA enforces, CFIA sets, the requirements.",
+    "applies_to": "both",
+    "lead_time": "At the border. Carry physical originals, not phone photos - CBSA specifically recommends original copies. Page date modified 2024-06-27.",
+    "source": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/animals-animaux-eng.html"
+   },
+   {
+    "requirement": "CFIA states that only dogs, cats and ferrets qualify as pets, and advises contacting your veterinarian as soon as travel details are known because requirements could include a health certificate, updated vaccinations, testing or medications. CFIA's binding, situation-specific answer comes from its AIRS (Automated Import Reference System) tool, which is interactive and must be re-run close to departure.",
+    "applies_to": "both",
+    "lead_time": "Re-run AIRS 60-90 days before each crossing. Page date modified 2025-03-13.",
+    "source": "https://inspection.canada.ca/en/travelling-pets-food-plants/travelling-pets"
+   },
+   {
+    "requirement": "NOT VERIFIED: no microchip requirement for entry into Canada appears on the APHIS US-to-Canada page or in the CFIA import reference document. Do not read that as a definitive 'no microchip needed' - but a microchip is required by CDC to come back into the US (below), so both animals should be chipped regardless.",
+    "applies_to": "both",
+    "lead_time": "n/a",
+    "source": "https://www.aphis.usda.gov/pet-travel/us-to-another-country-export/pet-travel-us-canada"
+   }
+  ],
+  "back_into_us": [
+   {
+    "requirement": "Dog: a CDC Dog Import Form receipt. CDC states this is 'the only required documentation for dogs entering or returning to the United States that have been only in dog rabies-free or low-risk countries in the past 6 months.' Only high-risk countries are listed on the CDC website; a country not listed is treated as dog-rabies-free or low-risk (Canada is not on the high-risk list).",
+    "applies_to": "dog",
+    "lead_time": "Fill it out online in advance of travel. For a dog that has been only in the US, Canada and Mexico, the receipt is valid for multiple entries for six months from the date of issuance, as long as the country of departure does not change. So one submission covers repeated BC/Yukon/Alaska border hops within a six-month window; a 13-month trip with four crossings will need the form re-submitted at least twice.",
+    "source": "https://www.cdc.gov/importation/dogs/rabies-free-low-risk-countries.html"
+   },
+   {
+    "requirement": "Dog: must be at least 6 months old at the time of entry or return, must have a microchip that can be detected with a universal scanner, and must appear healthy on arrival. Dogs from rabies-free/low-risk countries may enter at any airport, seaport or land border crossing.",
+    "applies_to": "dog",
+    "lead_time": "Microchip must be in place before departure. CDC's FAQ also states the rabies vaccination 'must also have been administered after the dog's microchip was inserted' - so if the dog is re-vaccinated during the trip, make sure the chip predates it. Confirm the chip reads on a universal scanner at the vet before leaving.",
+    "source": "https://www.cdc.gov/importation/dogs/rabies-free-low-risk-countries.html"
+   },
+   {
+    "requirement": "Dog: CDC confirms the rules apply to US dogs leaving and returning. 'All dogs entering or returning to the U.S. must be accompanied by a CDC Dog Import Form receipt.' For dogs that have not been outside Canada, Mexico and the US, 'you will only need to fill out the CDC Dog Import Form online' - no rabies certificate, no vet form, no USDA endorsement is required by CDC.",
+    "applies_to": "dog",
+    "lead_time": "Before each 6-month window. FAQ page last updated 2026-04-28.",
+    "source": "https://www.cdc.gov/importation/dogs/faqs.html"
+   },
+   {
+    "requirement": "Cat: CDC states 'Cats are not required to have proof of rabies vaccination for importation into the United States.' Cats must appear healthy on arrival and are subject to inspection at ports of entry; if a cat appears ill, a veterinary examination at the owner's expense may be required. There is no CDC import form for cats.",
+    "applies_to": "cat",
+    "lead_time": "None federally. CDC still recommends rabies vaccination and notes destination states may impose their own requirements. Page last updated 2025-08-22.",
+    "source": "https://www.cdc.gov/importation/bringing-an-animal-into-the-us/index.html"
+   },
+   {
+    "requirement": "ALASKA STATE REQUIREMENT (applies on first entry into Alaska, including arriving by road from Yukon, and is separate from CDC): a Certificate of Veterinary Inspection (CVI/health certificate) issued by a licensed and accredited veterinarian within 30 days of import, valid 30 days. Dogs and cats must be at least 12 weeks old and have a current rabies vaccination. If the first rabies vaccination was given within 30 days before arrival, the animal must be confined in Alaska for the remainder of those 30 days. No permit required unless the animal originates in a rabies quarantine area.",
+    "applies_to": "both",
+    "lead_time": "This is the single tightest constraint on the whole itinerary: the CVI must be issued within 30 days of entering Alaska, so it CANNOT be obtained in Austin before a March departure if Alaska entry is months later. Plan a vet visit in Whitehorse (or Dawson City / Fort Nelson) within 30 days of the Alaska border. Page last updated 2026-06-04.",
+    "source": "https://dec.alaska.gov/eh/vet/import/dog-cat-ferret/"
+   },
+   {
+    "requirement": "The CDC Dog Import Form asks for: importer name/email/address and recipient details; dog's name, age, sex, breed, colour/markings, microchip number, and a photo taken within 90 days; whether the dog has been in a high-risk rabies country in the previous six months; and a signed attestation. For rabies-free/low-risk departures the form instructions list importer ID (passport, driver's licence or air waybill), dog details, purpose of importation, travel type, departure country and arrival date.",
+    "applies_to": "dog",
+    "lead_time": "Have a current photo and the microchip number to hand when filling it in. Form-instructions page last updated 2026-04-28.",
+    "source": "https://www.cdc.gov/importation/dogs/dog-import-form-instructions.html"
+   }
+  ],
+  "watch": [
+   "The current US dog rules date from the CDC rule that took effect 1 August 2024. The CDC FAQ page was last updated 28 April 2026 and contains NO announcement of any further change. That is not a guarantee - re-check https://www.cdc.gov/importation/dogs/index.html and the Dog Importation Navigator 60-90 days before 22 March 2027.",
+   "The CDC Dog Import Form itself carries 'OMB NO. 0920-1383 EXP DATE 5/31/2027' - the form's information-collection approval expires 31 May 2027, mid-trip. Forms are normally renewed, but the form layout, the URL, or the required fields could change around that date. Re-check before any crossing after May 2027, including the Washington re-entry and the whole 2028-29 eastern trip.",
+   "CDC's 'Entry Requirements for Dogs from Dog-Rabies Free or Low-Risk Countries' page still shows a last-updated date of 22 July 2024 while the FAQ shows 28 April 2026. Treat the FAQ as the more current of the two and verify against the Navigator tool.",
+   "Canada's binding requirement is whatever AIRS returns on the day. The static CFIA Import Reference Document was last modified 8 October 2025. Re-run AIRS before each of the four crossings.",
+   "The high-risk-country list is what determines whether the easy path applies. It is maintained by CDC and can change. Confirm Canada is still not on it before each return crossing.",
+   "Alaska's DEC page was last updated 4 June 2026. The 30-day CVI window means the certificate must be obtained in Canada, from a vet the itinerary must be built around. Confirm the rule is unchanged and identify a Whitehorse or Dawson City vet in advance - appointment availability in a town of that size in peak season is the real risk, not the rule.",
+   "For the 2028-29 Ontario/Quebec trip the same federal rules on both sides apply (CFIA/CBSA in, CDC out), but provincial and US state requirements differ from BC/Yukon/Alaska. New York, Vermont and Michigan state requirements were NOT researched here and should be checked separately.",
+   "NOT VERIFIED: whether any Canadian province requires anything beyond the federal CFIA rule for a transiting pet. No provincial requirement was found, but no provincial source was checked."
+  ]
+ },
+ "cell_gaps": [
+  {
+   "road": "Alaska Highway (BC, PSPC-maintained section km 133-968)",
+   "gap": "km 133 (near Fort St. John) to km 555 (near Tetsa River Regional Park)",
+   "approx_miles": 262,
+   "note": "Official federal wording: 'from km 133 to 555: intermittent service, with no service in some areas'. Fort Nelson (km 455) is inside this stretch and does have service. This is the section Public Services and Procurement Canada maintains; the page was date-modified 2025-12-16.",
+   "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/bridges-docks-dams/alaska-highway/information-motorists-trucking-traffic.html"
+  },
+  {
+   "road": "Alaska Highway (BC, PSPC-maintained section)",
+   "gap": "km 555 (near Tetsa River Regional Park) north-west to the Yukon border (km 968)",
+   "approx_miles": 257,
+   "note": "Official federal wording: 'northwest of km 555 (near Tetsa River Regional Park) to the Yukon border: no cell phone service'. This is a flat statement of NO service over 413 km. By the same page's own kilometre markers this dead stretch contains Rocky Mountain Lodge (km 605), Toad River Lodge (km 648), Double G at Muncho Lake (km 698), Northern Rockies Lodge at Muncho Lake (km 708), Liard Hot Springs Lodge (km 764), Coal River (km 823) and Contact Creek (km 908) - i.e. the scenic Stone Mountain / Muncho Lake / Liard Hot Springs core of the drive is entirely without cell service. This is the single longest confirmed dead zone on the northbound route.",
+   "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/bridges-docks-dams/alaska-highway/information-motorists-trucking-traffic.html"
+  },
+  {
+   "road": "BC-37 Cassiar (Stewart-Cassiar) Highway",
+   "gap": "Kitwanga Junction (Hwy 16) to Watson Lake, Yukon - the entire highway except the Stewart spur",
+   "approx_miles": 450,
+   "note": "BC Ministry of Transportation, verbatim: 'Cellular service is only available at Kitwanga, Stewart and Watson Lake.' Stewart is 65 km off-route on Hwy 37A. BC's own route page gives the total distance from the Hwy 16 junction to the Yukon border as 725 kilometres (450 miles). So on the through-route there is effectively NO cell service for the whole Cassiar - Meziadin Junction, Bell II, Iskut, Dease Lake, Jade City and Good Hope Lake are all dead. Internet (not cellular) is available at Stewart, Dease Lake and Watson Lake and at some businesses for a fee. Driving-tips page last updated 2025-04-28.",
+   "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/driving-tips"
+  },
+  {
+   "road": "BC-37 Cassiar Highway (route length reference)",
+   "gap": "Kitwanga Junction to the Yukon border",
+   "approx_miles": 450,
+   "note": "'The total distance from the junction of Highway 16 to the Yukon border is 725 kilometres (450 miles).' Page last updated 2025-04-28. Used to size the coverage gap above.",
+   "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar"
+  },
+  {
+   "road": "Klondike Highway and all Yukon highways generally",
+   "gap": "Between every pair of Yukon communities - Whitehorse to Carmacks to Pelly Crossing to Stewart Crossing to Dawson City",
+   "approx_miles": null,
+   "note": "Travel Yukon (official territorial tourism site): there is 'cellular/mobile phone coverage in all Yukon communities' but 'coverage does not extend along Yukon highways or into wilderness areas', and travellers should 'be prepared for a few hours with no cellphone signal when driving between communities'. Coverage is therefore a series of islands at Whitehorse, Carmacks, Pelly Crossing, Stewart Crossing area communities and Dawson City, with dead road in between. Page last updated 2023-05-19 - the oldest source in this set; re-check. NOT VERIFIED: the exact start/end points and length of each individual Klondike Highway gap. No official source gives named gap endpoints or distances for the Klondike Highway.",
+   "source": "https://www.travelyukon.com/en/there-cell-coverage-yukon"
+  },
+  {
+   "road": "Klondike Highway (Whitehorse-Dawson City) and Alaska Highway (Whitehorse-Kluane Lake)",
+   "gap": "Whitehorse to Dawson City; Whitehorse to Kluane Lake",
+   "approx_miles": null,
+   "note": "The Globe and Mail's investigation into Canadian road dead zones reports that on the highway between Whitehorse and Dawson City '65 per cent of major road distance remains unconnected', and identifies the Whitehorse-to-Kluane-Lake highway as having dead zones. It also reports BC 'lacks mobile service on 32 per cent of its major roads'. CAVEAT: this is a news source, not an official one, and the article's publication date was not stated in the page content that was fetched. Treat the 65% figure as indicative only.",
+   "source": "https://www.theglobeandmail.com/canada/article-cellphone-service-dead-zones-canadian-roads-public-safety/"
+  },
+  {
+   "road": "Dalton Highway (AK-11)",
+   "gap": "Fairbanks to Deadhorse - essentially the whole 500 miles",
+   "approx_miles": 500,
+   "note": "BLM, verbatim: 'Cell phone service is extremely limited. Currently, only GCI and AT&T are available in Coldfoot and scattered locations along the highway.' The BLM Dalton Highway Visitor Guide adds 'There is limited cell phone coverage and public Internet access between Fairbanks and Deadhorse' and 'There are no medical facilities between Fairbanks and Deadhorse, a distance of 500 miles/800 km.' Pay phones exist at Yukon River Camp, Coldfoot, Wiseman and Deadhorse. Truckers monitor CB Channel 19 and the guide advises using a CB radio to call for help and relay a message to the Alaska State Troopers.",
+   "source": "https://www.blm.gov/visit/dalton-highway"
+  },
+  {
+   "road": "Dalton Highway (AK-11) - guide detail",
+   "gap": "Fairbanks to Deadhorse",
+   "approx_miles": 500,
+   "note": "Source for the pay-phone locations (Yukon River Camp, Coldfoot, Wiseman, Deadhorse), the fee WiFi at Coldfoot Camp and Yukon Crossing, and the CB Channel 19 advice. NOTE: this is the 2018-19 edition of the visitor guide - the oldest document cited in this file. Re-check for a current edition before travelling.",
+   "source": "https://www.blm.gov/sites/blm.gov/files/documents/files/PublicRoom_Alaska_DaltonHwy_VisitorGuide-web.pdf"
+  },
+  {
+   "road": "Taylor Highway (AK-5) / Top of the World Highway",
+   "gap": "Tetlin Junction to Eagle / to the Canadian border at Poker Creek",
+   "approx_miles": null,
+   "note": "Alaska DOT&PF, verbatim: 'Due to its remote location, cell service is unreliable so plan accordingly.' Also: 'The road opens in April and remains accessible until mid-October' and 'The first 60 miles are paved, but the rest is gravel, which can become soft, wet, or rough.' NOT VERIFIED: no official source was found stating the length of the coverage gap on the Top of the World Highway itself between Dawson City and the Alaska border, nor confirming whether there is any service at Chicken. Assume none.",
+   "source": "https://dot.alaska.gov/highways/taylor/"
+  },
+  {
+   "road": "Top of the World Highway - border station constraint (not cell, but plan-critical)",
+   "gap": "Poker Creek / Little Gold Creek border crossing",
+   "approx_miles": null,
+   "note": "The crossing is seasonal and has fixed hours: for the 2024 season it opened Friday 17 May and closed Sunday 15 September, operating 9 am to 7 pm Yukon Time, seven days a week, and 'the port closes during winter'. Yukon states the extended season 'will apply in future years', with dates subject to shift for adverse weather. With no cell service on the approach there is no way to check hours en route - confirm dates before committing to the Dawson City-to-Chicken leg. News release dated 2024-04-25; re-confirm the 2027 season dates.",
+   "source": "https://yukon.ca/en/news/summer-season-extended-little-gold-creek-border-crossing-four-weeks"
+  },
+  {
+   "road": "All - what to use instead (Yukon official)",
+   "gap": "n/a",
+   "approx_miles": null,
+   "note": "Government of Yukon, verbatim advice when out of range: 'use a landline to call 9-1-1 or a satellite phone to call 867-668-9911.' That satellite-dialled emergency number is the concrete, official fallback for the Yukon legs and is worth programming into any satellite device. The page notes 'Cell phone service is not available everywhere in the Yukon' but does not name segments. It does NOT mention InReach/SPOT-style satellite messengers, highway lodge phones or radio. Page date modified 2025-05-09.",
+   "source": "https://yukon.ca/en/get-help-when-phones-dont-work"
+  },
+  {
+   "road": "All - what travellers actually use (specialist source)",
+   "gap": "n/a",
+   "approx_miles": null,
+   "note": "Mobile Internet Resource Center, last major update 2026-03-26: 'the roads to Alaska are very long and go through hundreds of miles of beautiful nothingness at a time. Where there are no towns, there's typically no cellular signal - even on Canadian towers.' It recommends AT&T as the carrier with 'the best odds of being connected', notes T-Mobile coverage in Alaska comes via roaming on GCI, notes that Starlink's inter-satellite links let it 'cover areas of the world that it's not practical to install ground stations like polar regions', and mentions the Garmin inReach for emergencies during the Canada transit. CAVEAT: this is a specialist commercial publication, not an official source, and it gives no per-highway gap distances.",
+   "source": "https://www.rvmobileinternet.com/guides/north-to-alaska-mobile-internet/"
+  },
+  {
+   "road": "NOT VERIFIED",
+   "gap": "The 'highway lodge phone network'",
+   "approx_miles": null,
+   "note": "No official source was found describing a lodge-to-lodge phone or radio network along the BC Alaska Highway or the Cassiar. The only verified lodge/camp phones on any of these roads are the pay phones BLM lists on the Dalton at Yukon River Camp, Coldfoot, Wiseman and Deadhorse. Do not plan on lodge phones in BC or Yukon without confirming directly with the lodges.",
+   "source": "https://www.blm.gov/sites/blm.gov/files/documents/files/PublicRoom_Alaska_DaltonHwy_VisitorGuide-web.pdf"
+  }
+ ],
+ "supplies": [
+  {
+   "topic": "fuel",
+   "where": "Alaska Highway, BC, km 133 to km 968 (Fort St. John area to the Yukon border)",
+   "note": "Official PSPC list. SUMMER stations: Wonowon (km 161), Pink Mountain (km 225), Buckinghorse River (km 278), Fort Nelson (km 455), Rocky Mountain Lodge (km 605), Toad River Lodge (km 648), Double G Lodge at Muncho Lake (km 698), Northern Rockies Lodge at Muncho Lake (km 708), Liard Hot Springs Lodge (km 764), Coal River (km 823), Contact Creek (km 908). WINTER stations drop Buckinghorse River, Rocky Mountain Lodge and Coal River - leaving a 193 km gap from Fort Nelson (455) to Toad River (648) and a 144 km gap from Liard Hot Springs (764) to Contact Creek (908). The page warns 'operating hours may vary daily and seasonally' and that 'travellers should plan refuelling stops in advance'. A 22 March 2027 departure from Austin could reach this section while winter hours still apply. Page date modified 2025-12-16.",
+   "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/bridges-docks-dams/alaska-highway/information-motorists-trucking-traffic.html"
+  },
+  {
+   "topic": "fuel",
+   "where": "BC-37 Cassiar Highway",
+   "note": "BC Ministry of Transportation, verbatim: 'The longest distance between fuel pumps is from Dease Lake to the Yukon (Watson Lake), a distance of 270 kilometres.' Minor mechanical assistance is available only in Stewart, Dease Lake and Watson Lake; major repairs only in Whitehorse, Terrace or Smithers. 'Businesses such as restaurants, groceries and accommodations are limited along Highway 37 and some operate seasonally.' For a 40-foot Class A towing a pickup, 270 km with no pump and no cell service is the defining constraint of the Cassiar. Page last updated 2025-11-07.",
+   "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/available-services"
+  },
+  {
+   "topic": "water",
+   "where": "BC-37 Cassiar Highway rest areas",
+   "note": "BC rest areas along Hwy 37 offer 'basic facilities, with no potable water sources', and overnight camping is not permitted at provincial rest areas. So no water fill and no legal overnight at the provincial pullouts - boondocking must be on Crown land or at the commercial/provincial campgrounds. Page last updated 2025-11-07.",
+   "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/available-services"
+  },
+  {
+   "topic": "water and dump",
+   "where": "Yukon government campgrounds (all of them, on the Alaska, Klondike and Campbell highways)",
+   "note": "Yukon Parks, verbatim: 'There is no potable water provided by Yukon Parks. Always bring potable water with you or have a way to treat nearby natural water sources.' And: 'You must use a commercial dump station for RV liquid waste' - dumping holding tanks or sewage in parks is prohibited. Practical consequence: across the entire Yukon leg, water and dump are only available at commercial RV parks and municipal facilities in Watson Lake, Whitehorse, Dawson City and a handful of highway lodges. Tank capacity, not campsite availability, sets the pace between towns. Page date modified 2026-07-24.",
+   "source": "https://yukon.ca/en/parks-rules"
+  },
+  {
+   "topic": "dump, water, fuel, food, lodging",
+   "where": "Dalton Highway, Fairbanks to Deadhorse",
+   "note": "BLM Dalton Highway Visitor Guide: fuel, food and lodging exist only at Yukon Crossing, Five Mile, Coldfoot, Wiseman and Deadhorse, with most 'closed in winter' or 'limited services in winter'. DUMP STATIONS EXIST ONLY AT YUKON CROSSING AND COLDFOOT - there is no dump station north of Coldfoot in either direction until you return. 'It's best to bring water with you.' Showers and laundry only at Coldfoot and Deadhorse. No medical facilities over the full 500 miles / 800 km. CAVEAT: this is the 2018-19 edition of the guide; verify against a current edition before running a 40-foot coach up the Dalton.",
+   "source": "https://www.blm.gov/sites/blm.gov/files/documents/files/PublicRoom_Alaska_DaltonHwy_VisitorGuide-web.pdf"
+  },
+  {
+   "topic": "propane",
+   "where": "Whitehorse, Yukon",
+   "note": "Superior Propane lists a Whitehorse location at '106 Galena Rd., Whitehorse' (1-866-761-5854), offering delivery and refill. This is the only propane supplier location on the northern route that could be positively confirmed from a source in this research.",
+   "source": "https://www.superiorpropane.com/city/whitehorse"
+  },
+  {
+   "topic": "propane",
+   "where": "Cassiar Highway (Dease Lake) and Watson Lake - UNVERIFIED",
+   "note": "Superior Propane's city pages for Dease Lake and Watson Lake both return 'No data item for this city' - i.e. no branch address is published for either. Their national phone line is 1-877-873-7467. NOT VERIFIED: whether propane can actually be bought at Dease Lake, Iskut, Bell II, Meziadin Junction or Watson Lake. The official BC services page for Hwy 37 lists fuel, mechanical help and rest areas but says nothing about propane at all. TREAT PROPANE ON THE CASSIAR AS UNAVAILABLE UNTIL CONFIRMED BY PHONE. Fill in Smithers/Terrace before turning north, and again at Whitehorse.",
+   "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/available-services"
+  },
+  {
+   "topic": "propane",
+   "where": "Alaska Highway BC lodge corridor (km 555 to km 968) - UNVERIFIED",
+   "note": "The official PSPC page lists gas stations by kilometre but makes no mention of propane anywhere on the 835 km it maintains. NOT VERIFIED: whether any of Rocky Mountain Lodge, Toad River, Muncho Lake, Liard Hot Springs, Coal River or Contact Creek sells propane. Since this same stretch has no cell service, you cannot phone ahead from the road - call from Fort Nelson (km 455) or arrive full.",
+   "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/bridges-docks-dams/alaska-highway/information-motorists-trucking-traffic.html"
+  },
+  {
+   "topic": "propane",
+   "where": "Dalton Highway - UNVERIFIED",
+   "note": "Neither the BLM Dalton Highway page nor the visitor guide's services listing mentions propane at any of Yukon Crossing, Five Mile, Coldfoot, Wiseman or Deadhorse. NOT VERIFIED, but the safe planning assumption is that there is no propane between Fairbanks and Deadhorse - a 1,000-mile round trip. Fill in Fairbanks.",
+   "source": "https://www.blm.gov/visit/dalton-highway"
+  },
+  {
+   "topic": "propane at the border",
+   "where": "US/Canada crossings, cylinder legality",
+   "note": "Transport Canada authorises US-specification cylinders in Canada: 'Department of Transportation (DOT) cylinders and tubes - manufactured according to U.S. rules in 49 CFR (marked DOT)' are permitted, and 'Canada and the U.S. recognize each other's approved UN pressure receptacles, allowing those marked CAN or USA to be used interchangeably in both countries.' Propane must be transported upright unless the container is designed otherwise. Requalification frequency depends on the cylinder specification and the gas, per CSA B339. Page date modified 2026-01-13. Practical read: a US-marked DOT portable cylinder is legal to carry in Canada; whether an individual Canadian filler will refill it is a separate commercial question this research could not verify.",
+   "source": "https://tc.canada.ca/en/dangerous-goods/containers/cylinders-spheres-tubes/faq-cylinders-tubes"
+  },
+  {
+   "topic": "propane at the border",
+   "where": "Canada, dangerous-goods exemption for personal-use propane",
+   "note": "The Transportation of Dangerous Goods Regulations section 1.15 (150 kg gross mass exemption) relieves most requirements where the dangerous goods are 'in a quantity or concentration available to the general public' and are transported '(i) by a user or purchaser of the dangerous goods, or (ii) by a retailer to or from a user or purchaser', with a total gross mass not exceeding 150 kg. CAVEAT / NOT VERIFIED: this was read from Transport Canada's Part 1 overview and applies most cleanly to portable cylinders. Whether and how it applies to a fixed ASME tank that is part of a motorhome was NOT established - no source addressed motorhome-mounted tanks specifically.",
+   "source": "https://tc.canada.ca/en/dangerous-goods/part-1"
+  },
+  {
+   "topic": "propane at the border",
+   "where": "CBSA and US CBP - NOT VERIFIED",
+   "note": "NO official CBSA or US CBP source was found stating that RV propane must be turned off, sealed or declared at a land border crossing. The widely repeated advice that you must shut propane off at the border could not be confirmed from any government source in this research. Do not treat it as a rule, and do not treat its absence as permission - ask at the crossing.",
+   "source": "https://www.cbsa-asfc.gc.ca/services/fpa-apa/animals-animaux-eng.html"
+  },
+  {
+   "topic": "propane on ferries",
+   "where": "Alaska Marine Highway System vessels (relevant only if an Inside Passage or Whittier leg is used)",
+   "note": "AMHS hazardous materials rules: 'All Hazardous Materials must be declared' at the ticket booth or to a vessel officer. 'Propane valves must be closed and sealed by terminal personnel and the cylinders must be upright and firmly secured, to prevent tipping.' Recreational vehicles are limited to a maximum of two cylinders connected to a regulator and secured in or on the vehicle, plus one additional cylinder not exceeding 9 kg (20 lb) for BBQ purposes. Document dated 16 APR 2019 - re-check before booking.",
+   "source": "https://dot.alaska.gov/amhs/doc/hazmat_public.pdf"
+  },
+  {
+   "topic": "general",
+   "where": "Alaska Highway overall",
+   "note": "The MILEPOST advises planning 'for 100 to 150 miles between services on a couple stretches of highway', that 'not all highway businesses are open year-round, nor are most services available 24 hours a day', and to 'drive on the top half of your tank'. It also confirms that 'Alaska provider coverage is spotty to nonexistent along the Alaska Highway in Yukon and northern British Columbia outside major communities like Whitehorse, Fort Nelson, Fort St. John and Dawson Creek.' Commercial guide, not an official source; no page date shown.",
+   "source": "https://themilepost.com/getting-started/faq-driving-the-alaska-highway/"
+  }
+ ]
+}

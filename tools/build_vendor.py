@@ -21,9 +21,14 @@ connection — nothing can be done about that — but with Leaflet inlined the r
 lines, every stop marker, the park layers and all the popups draw offline. A
 route with no basemap under it is far more use than an empty grey box.
 
-The vendored copy lives in tools/vendor/ so this needs no network either.
+The vendored copy lives in tools/vendor/ so this needs no network either. If it
+is genuinely absent — a fresh clone on a machine that never had it — this will
+fetch it once from the CDN and cache it there, but only if the bytes match the
+copy that was vetted and is already inlined into the published dashboard. An
+unrecognised leaflet.js is refused rather than inlined, because this publishes
+to a public website and a swapped script would be served to anyone who opens it.
 """
-import base64, pathlib, re, sys
+import base64, hashlib, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 VENDOR = pathlib.Path(__file__).resolve().parent / 'vendor'
@@ -34,12 +39,41 @@ JS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'
 
 MARK = '/* leaflet inlined by build_vendor.py */'
 
+# sha256 of the vetted Leaflet 1.9.4 copies — the exact bytes already inlined
+# into the published dashboard. The fetch below refuses anything else.
+PINS = {
+    'leaflet.css': 'a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6',
+    'leaflet.js': 'db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a',
+}
+
+
+def ensure(path, url):
+    """Return the vendored file's text, fetching it once if it is missing."""
+    if path.exists():
+        return path.read_text()
+    import urllib.request
+    print(f"   {path.name} not vendored — fetching once from the CDN")
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            body = r.read()
+    except Exception as e:
+        sys.exit(f"!! {path.name} is missing and could not be fetched ({e}).\n"
+                 f"   Put a copy in {path.parent} and commit it — then this never needs network.")
+    got = hashlib.sha256(body).hexdigest()
+    if got != PINS[path.name]:
+        sys.exit(f"!! {path.name} downloaded from {url} does not match the vetted copy.\n"
+                 f"   expected {PINS[path.name]}\n   got      {got}\n"
+                 f"   Refusing to inline unrecognised code into a public site.")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(body)
+    print(f"   cached {path} ({len(body) // 1024} KB) — commit it so this never needs network again")
+    return body.decode()
+
 
 def main():
     css_f, js_f = VENDOR / 'leaflet.css', VENDOR / 'leaflet.js'
-    if not (css_f.exists() and js_f.exists()):
-        sys.exit(f"!! missing {VENDOR}/leaflet.css and leaflet.js — cannot inline")
-    css, js = css_f.read_text(), js_f.read_text()
+    css = ensure(css_f, CSS_URL)
+    js = ensure(js_f, JS_URL)
 
     # Leaflet's CSS points at marker-icon.png and layers.png relative to itself.
     # Once inlined those paths resolve against the HTML and 404. The dashboard

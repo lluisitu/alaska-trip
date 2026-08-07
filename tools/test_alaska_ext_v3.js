@@ -138,7 +138,10 @@ const LEAFLET_JS_STUB = `
   const extIssueCards = await page.locator('#extIssuesWrap .issue-card').count();
   console.log('Extension known-issue cards, open only by default (expect 18):', extIssueCards);
   // Stowe's campground and Pinedale's missing campground were both closed on 3 Aug 2026.
-  if (extIssueCards !== 16) errors.push('ext open-issue count is ' + extIssueCards + ', expected 16');
+  // 16 -> 21 on 3 Aug 2026: the full-review pass logged five new open findings on the
+  // East trip (Maine closures, October Mountain, Ozark Folk Center, Queen Wilhelmina
+  // winter water, and the combined-length unknown across every state park system).
+  if (extIssueCards !== 20) errors.push('ext open-issue count is ' + extIssueCards + ', expected 21');
   const bigloopIssuesHidden = await page.locator('#view-issues .bigloop-only').evaluate(el=>el.classList.contains('hidden'));
   console.log('Bigloop issues content hidden while in extension mode (expect true):', bigloopIssuesHidden);
   const wintercoastIssueGone = await page.evaluate(()=>{
@@ -159,13 +162,16 @@ const LEAFLET_JS_STUB = `
   console.log('Active view after toggle back (expect view-issues -- still on Known Issues tab):', activeViewAfterToggleBack);
   const mainIssueCards = await page.locator('#issuesWrap .issue-card').count();
   console.log('Main issue cards, open only by default (expect 18):', mainIssueCards);
-  if (mainIssueCards !== 18) errors.push('main open-issue count is ' + mainIssueCards + ', expected 18');
+  // 18 -> 21: Salida's age rule, Yosemite Westlake's 40 ft and the Pocono water shutoff.
+  if (mainIssueCards !== 21) errors.push('main open-issue count is ' + mainIssueCards + ', expected 21');
   // Resolved items must still be reachable — they are the record of why a date is what it is.
   await page.click('#issueCatBar button[data-f="all"]');
   await page.waitForTimeout(200);
   const allIssueCards = await page.locator('#issuesWrap .issue-card').count();
-  console.log('Main issue cards with "Everything, incl. resolved" (expect 30):', allIssueCards);
-  if (allIssueCards !== 30) errors.push('main all-issue count is ' + allIssueCards + ', expected 30');
+  // 30 -> 32 on 3 Aug 2026: the Teton/Yellowstone re-pace and the Colter Bay
+  // 45 ft combined-length finding were both logged as resolved issues.
+  console.log('Main issue cards with "Everything, incl. resolved" (expect 37):', allIssueCards);
+  if (allIssueCards !== 37) errors.push('main all-issue count is ' + allIssueCards + ', expected 36');
   await page.click('#issueCatBar button[data-f="open"]');
   await page.waitForTimeout(150);
   const larchIssue = await page.evaluate(()=>ISSUES.some(i=>i.id==='larch-timing'));
@@ -203,12 +209,92 @@ const LEAFLET_JS_STUB = `
   // Clicking the larch band must actually land on Winthrop's card, not merely set state.
   await page.click('.tab-btn[data-view="overview"]');
   await page.waitForTimeout(200);
-  const larchSeg = page.locator('#stratMain .strat-seg').nth(3);
-  await larchSeg.hover();
-  await page.waitForTimeout(120);
-  const noteText = await page.locator('#stratMainNote').innerText();
-  console.log('Hover note names Winthrop (expect true):', /Winthrop/.test(noteText));
-  if (!/Winthrop/.test(noteText)) errors.push('larch hover note does not name Winthrop: ' + noteText.slice(0, 120));
+  // The note line under the band is gone - the band is bars only now - so the
+  // window's rationale and its anchor stop live in each segment's tooltip.
+  const larchTip = await page.locator('#stratMain .strat-seg').nth(3).getAttribute('title');
+  console.log('Larch tooltip names Winthrop (expect true):', /Winthrop/.test(larchTip || ''));
+  if (!/Winthrop/.test(larchTip || '')) errors.push('larch tooltip does not name Winthrop: ' + String(larchTip).slice(0, 120));
+
+  // The seasonal windows genuinely overlap in time, so they are laid out in
+  // lanes. Two segments sharing a lane and a horizontal span means one is drawn
+  // over the other with its label unreadable - which is what this caught.
+  console.log('\n--- Strategy band layout and clicks ---');
+  {
+    await page.click('.tab-btn[data-view="overview"]');
+    await page.waitForTimeout(250);
+    const lay = await page.evaluate(() => {
+      const band = document.querySelector('#stratMain .strat-band');
+      const s = [...band.querySelectorAll('.strat-seg')].map(e => ({
+        n: e.querySelector('.stx').textContent,
+        t: e.offsetTop, l: e.offsetLeft,
+        r: e.offsetLeft + e.getBoundingClientRect().width,
+        icon: e.classList.contains('narrow'),
+      }));
+      const clash = [];
+      for (let i = 0; i < s.length; i++) for (let j = i + 1; j < s.length; j++)
+        if (s[i].t === s[j].t && s[i].l < s[j].r && s[j].l < s[i].r)
+          clash.push(s[i].n + ' over ' + s[j].n);
+      return { clash, iconOnly: s.filter(x => x.icon).map(x => x.n),
+               lanes: new Set(s.map(x => x.t)).size,
+               height: Math.round(band.getBoundingClientRect().height) };
+    });
+    console.log('  lanes', lay.lanes, '| band height', lay.height,
+                '| labels reduced to an icon:', lay.iconOnly.length ? lay.iconOnly.join(', ') : 'none');
+    console.log('  segments overlapping inside a lane (expect none):',
+                lay.clash.length ? lay.clash : 'none');
+    if (lay.clash.length) errors.push('strategy band segments collide: ' + lay.clash.join('; '));
+    // Two rows is the ceiling: at most two of these windows ever overlap in
+    // time, so a third row means the label-aware packing escaped its cap.
+    if (lay.lanes > 2) errors.push('strategy band grew to ' + lay.lanes + ' lanes; 2 is the cap');
+    // Bars only: no heading above and no note below, and two compact rows.
+    const chrome = await page.evaluate(() => ({
+      lab: document.querySelectorAll('#stratMain .strat-lab').length,
+      note: document.querySelectorAll('#stratMain .strat-note').length,
+    }));
+    console.log('  heading/note elements left behind (expect 0/0):', chrome.lab + '/' + chrome.note);
+    if (chrome.lab || chrome.note) errors.push('strategy band still renders heading or note');
+    if (lay.height > 48) errors.push('strategy band is taller than two compact rows: ' + lay.height + 'px');
+
+    // Every band must open ITS OWN anchor. Clicking one and landing on a
+    // neighbour is the original bug that started all of this.
+    const want = await page.evaluate(() => STRATEGY_TARGETS.map(t => t.anchor));
+    const wrong = [];
+    for (let i = 0; i < want.length; i++) {
+      await page.click('.tab-btn[data-view="overview"]');
+      await page.waitForTimeout(200);
+      await page.evaluate(() => { const o = document.querySelector('.card.open'); if (o) o.classList.remove('open'); });
+      await page.locator('#stratMain .strat-seg').nth(i).click();
+      await page.waitForTimeout(450);
+      const got = await page.evaluate(() => {
+        const o = document.querySelector('.card.open');
+        return o ? o.id.replace(/^card-/, '') : null;
+      });
+      if (got !== want[i]) wrong.push(`${i}: got ${got}, wanted ${want[i]}`);
+    }
+    console.log('  every band opens its own anchor stop (expect none wrong):',
+                wrong.length ? wrong : 'none');
+    if (wrong.length) errors.push('strategy band click targets: ' + wrong.join('; '));
+  }
+
+  // One line per row, and a seasonal-target cell that actually resolves.
+  console.log('\n--- Timeline table ---');
+  {
+    await page.click('.tab-btn[data-view="overview"]');
+    await page.waitForTimeout(250);
+    const tbl = await page.evaluate(() => {
+      const rows = [...document.querySelectorAll('#timelineTable tr')].slice(1);
+      const heights = [...new Set(rows.map(r => Math.round(r.getBoundingClientRect().height)))];
+      const withTag = rows.filter(r => r.querySelector('td.tl-season .seasontag')).length;
+      const starred = rows.filter(r => r.querySelector('td.tl-season .seasontag.anchor')).length;
+      return { n: rows.length, heights, withTag, starred,
+               cols: document.querySelectorAll('#timelineTable tr th').length };
+    });
+    console.log(`  ${tbl.n} rows, ${tbl.cols} columns, distinct row heights: ${tbl.heights.join(',')}`);
+    console.log(`  rows carrying a seasonal target: ${tbl.withTag} (${tbl.starred} are the window's own anchor)`);
+    if (tbl.heights.length !== 1) errors.push('timeline rows are not all one line: heights ' + tbl.heights.join(','));
+    if (tbl.withTag < 60) errors.push('seasonal-target column looks unpopulated: ' + tbl.withTag);
+    if (tbl.starred < 8) errors.push('seasonal-target column is not starring anchors: ' + tbl.starred);
+  }
 
   // ---- Seasonal timing: every anchor must sit on the window it exists for.
   // East Extension parity: map points, richer content, and the disputed-detail disclosures.
@@ -217,6 +303,441 @@ const LEAFLET_JS_STUB = `
   // crashed on rerun — this asserts the output of a rebuild is byte-identical.
   // The word "aurora" must not appear on stops where it will almost certainly not
   // happen — printing it on 56 storm-only stops devalues the 14 where it will.
+  // Every time in the light box is a wall-clock time in the stop's own zone.
+  // They used to be local mean SOLAR time, which at Craters of the Moon is an
+  // hour and 34 minutes adrift - a golden hour you would have missed entirely.
+  console.log('\n--- Light times are clock times, not solar times ---');
+  {
+    const lt = await page.evaluate(() => {
+      const miss = Object.keys(LIGHT).filter(k => !LIGHT[k].tz);
+      const warn = Object.keys(LIGHT).filter(k => LIGHT[k].tzWarning);
+      return { n: Object.keys(LIGHT).length, miss, warn,
+               craters: LIGHT['craters-of-the-moon'],
+               fairbanks: LIGHT['fairbanks-1'].sunset,
+               deathValley: LIGHT['death-valley'].sunset };
+    });
+    console.log(`  ${lt.n} stops carry a timezone; ${lt.miss.length} missing, ${lt.warn.length} fell back to solar time`);
+    console.log(`  Craters sunset ${lt.craters.sunset} ${lt.craters.tz} at ${lt.craters.sunsetAz}deg`
+                + ` | Death Valley ${lt.deathValley} | Fairbanks ${lt.fairbanks}`);
+    if (lt.miss.length) errors.push(lt.miss.length + ' stops have no timezone: ' + lt.miss.slice(0,5).join(', '));
+    if (lt.warn.length) errors.push(lt.warn.length + ' stops fell back to solar time — no tz database on the build machine');
+    // Craters is the worked example: solar sunset is 19:07, clock sunset 20:41.
+    if (lt.craters.sunset !== '20:41') errors.push('Craters sunset is ' + lt.craters.sunset + ', expected 20:41 clock time');
+    if (lt.craters.sunsetAz < 290 || lt.craters.sunsetAz > 298) errors.push('Craters sunset azimuth off: ' + lt.craters.sunsetAz);
+  }
+
+  // Drone legality is a land-management fact, not an airspace one, so it has to
+  // be on every stop or it is not usable on the road.
+  // The East trip's stop cards carried no local map at all - the markup and the
+  // initMiniMap call were only ever on the main loop.
+  console.log('\n--- East stop cards have a local map ---');
+  {
+    await page.click('.trip-toggle-btn[data-trip="extension"]');
+    await page.waitForTimeout(600);
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(500);
+    const containers = await page.evaluate(() =>
+      (EXT_DATA.STOPS || []).filter(s => document.getElementById('minimap-' + s.id)).length);
+    const total = await page.evaluate(() => (EXT_DATA.STOPS || []).length);
+    console.log(`  minimap containers: ${containers}/${total}`);
+    if (containers !== total) errors.push('east minimap containers ' + containers + '/' + total);
+
+    // And they must actually build when a card opens, with the POI markers on.
+    const ids = await page.evaluate(() => EXT_DATA.STOPS.slice(0, 3).map(s => s.id));
+    for (const id of ids) {
+      await page.click(`#ext-card-${id} .card-head`);
+      await page.waitForTimeout(800);
+      const m = await page.evaluate(i => {
+        const el = document.getElementById('minimap-' + i);
+        return { panes: el.querySelectorAll('.leaflet-pane').length,
+                 markers: el.querySelectorAll('path').length,
+                 h: Math.round(el.getBoundingClientRect().height) };
+      }, id);
+      console.log(`  ${id}: ${m.h}px, ${m.panes} panes, ${m.markers} markers`);
+      if (m.panes < 1) errors.push('east minimap did not initialise: ' + id);
+      if (m.markers < 2) errors.push('east minimap drew no POI markers: ' + id);
+      await page.click(`#ext-card-${id} .card-head`);
+      await page.waitForTimeout(150);
+    }
+    await page.click('.trip-toggle-btn[data-trip="bigloop"]');
+    await page.waitForTimeout(500);
+  }
+
+  // The six highlight boxes have wildly different heights, and CSS grid sized
+  // every row to its tallest cell — a one-line Offroad note rendered 303px tall
+  // to match the towns grid beside it. Column packing fixes it; assert the
+  // packing holds and that no box is stretched far past its content.
+  console.log('\n--- Highlight grid packs instead of stretching ---');
+  {
+    await page.click('.trip-toggle-btn[data-trip="bigloop"]');
+    await page.waitForTimeout(400);
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(400);
+    await page.click('#card-muncho-lake .card-head');
+    await page.waitForTimeout(1100);
+    const g = await page.evaluate(() => {
+      const card = document.querySelector('#card-muncho-lake');
+      const grid = card.querySelector('.grid6');
+      const gcols = [...grid.querySelectorAll(':scope > .gcol')];
+      const colH = gcols.map(c => Math.round(c.getBoundingClientRect().height));
+      const boxes = gcols.flatMap(c => [...c.children]);
+      const heights = boxes.map(k => Math.round(k.getBoundingClientRect().height));
+      const cols = new Set(boxes.map(k => Math.round(k.getBoundingClientRect().x))).size;
+      const gridH = Math.round(grid.getBoundingClientRect().height);
+      const sum = heights.reduce((a, n) => a + n, 0);
+      const light = card.querySelector('.g4-light');
+      const drone = card.querySelector('.g4-drone');
+      const sameCol = light && drone &&
+        Math.round(light.getBoundingClientRect().x) === Math.round(drone.getBoundingClientRect().x);
+      const cov = card.querySelector('.mm-cov');
+      // The shot list was pulled out of the packed grid on Aug 5 2026: it is the
+      // one box with many independent entries and it was 1.5x taller than
+      // anything else, so it now runs the full card width with its own columns.
+      const shot = card.querySelector('.shotwide');
+      const shotW = shot ? Math.round(shot.getBoundingClientRect().width) : 0;
+      const shotInGrid = !!grid.querySelector('.g4-shot');
+      const shotCols = shot
+        ? new Set([...shot.querySelectorAll('.ph-shot')].map(e => Math.round(e.getBoundingClientRect().x))).size
+        : 0;
+      const firstIsFirst = gcols[0] && gcols[0].firstElementChild
+        && !!gcols[0].firstElementChild.querySelector('.g4-drive');
+      return { cols, colH, gridH, sum, heights, sameCol, shotW, shotInGrid, shotCols,
+               firstIsFirst, gridW: Math.round(grid.getBoundingClientRect().width),
+               cov: cov ? cov.textContent.trim() : null };
+    });
+    console.log(`  ${g.cols} columns, grid ${g.gridH}px against ${g.sum}px of content, boxes ${g.heights.join(',')}`);
+    console.log(`  columns balance to ${g.colH.join(' / ')}px`);
+    console.log(`  shot list ${g.shotW}px wide (grid is ${g.gridW}px) in ${g.shotCols} columns, still inside the packed grid: ${g.shotInGrid}`);
+    console.log(`  light and drone share a column: ${g.sameCol}`);
+    console.log(`  ${g.cov}`);
+    if (g.cols !== 2) errors.push('highlight grid is not packing into 2 columns: ' + g.cols);
+    // Packed, the block should be near half the content, not the sum of row maxima.
+    if (g.gridH > g.sum * 0.75) errors.push('highlight grid is not packing: ' + g.gridH + ' vs ' + g.sum);
+    // The whole point of the JS packer: neither column may be left far short of
+    // the other. Chrome's own column balancing produced 732 beside 379 here.
+    if (g.colH.length !== 2) errors.push('packed grid does not have two columns');
+    else if (Math.abs(g.colH[0] - g.colH[1]) > Math.max(...g.colH) * 0.35)
+      errors.push('packed columns are lopsided: ' + g.colH.join(' vs '));
+    if (!g.firstIsFirst) errors.push('first box is not at the top of the left column');
+    if (g.shotInGrid) errors.push('shot list is still packed into a half-width column');
+    if (g.shotW < g.gridW - 2) errors.push('shot list is not the full card width: ' + g.shotW + ' vs ' + g.gridW);
+    if (g.shotCols !== 2) errors.push('shot list is not filling its width with 2 columns: ' + g.shotCols);
+    if (!g.sameCol) errors.push('light and drone are not sharing a column');
+    // Coverage line was reworded on Aug 5 2026 when the pin badges spread from
+    // the itinerary alone to all five lists; it now counts entries, not activities.
+    if (!g.cov || !/entries in the lists below link to a pin/.test(g.cov)) errors.push('map coverage line missing');
+    if (!g.cov || !/pins? on this map/.test(g.cov)) errors.push('map coverage line does not state the pin count');
+    await page.click('#card-muncho-lake .card-head');
+    await page.waitForTimeout(200);
+  }
+
+  console.log('\n--- Live map: list \u2194 pin, both directions ---');
+  {
+    // Pick a stop that actually has badges rather than assuming one does.
+    const target = await page.evaluate(() => {
+      const all = STOPS.concat(EXT_DATA.STOPS || []);
+      for (const s of all) {
+        const poi = (s.poi || []).filter(p => p && p.lat != null && p.lng != null);
+        if (poi.length < 3) continue;
+        const lists = [].concat(s.activities || [], s.alltrails || [], s.offroad || [],
+                                s.scenicDrives || [], s.nearbyTowns || []);
+        const hits = lists.filter(x => x && x.name && poiNumberForActivity(s.id, x.name)).length;
+        if (hits >= 2) return { id: s.id, ext: !STOPS_BY_ID[s.id], hits };
+      }
+      return null;
+    });
+    if (!target) { errors.push('no stop has both a drawn map and linked list entries'); }
+    else {
+      console.log(`  probing ${target.id} (${target.ext ? 'east' : 'main'}) \u2014 ${target.hits} linked entries`);
+      if (target.ext) {
+        await page.click('.tab-btn[data-view="east"]');
+        await page.waitForTimeout(400);
+      }
+      const sel = (target.ext ? '#ext-card-' : '#card-') + target.id;
+      await page.click(sel + ' .card-head');
+      await page.waitForTimeout(1400);
+
+      const live = await page.evaluate((o) => {
+        const card = document.querySelector(o.sel);
+        const tags = [...card.querySelectorAll('.pin-tag')];
+        const mm = MINIMAPS[o.id];
+        const nums = tags.map(t => +t.dataset.pin);
+        // Every badge must point at a marker that exists on that map, and the
+        // number on the badge must be the number the map itself prints.
+        const orphans = nums.filter(n => !(mm && mm.byPin && mm.byPin[n]));
+        const labels = [...card.querySelectorAll('.mm-label b')].map(b => +b.textContent);
+        const n = nums[0];
+        const before = mm.byPin[n].options.radius;
+        pinHighlight(o.id, n, true);
+        const litRadius = mm.byPin[n].options.radius;
+        const litTag = !!card.querySelector(`.pin-tag[data-pin="${n}"].lit`);
+        const litLabel = !!document.querySelector('.leaflet-tooltip.mm-label-lit');
+        pinHighlight(o.id, n, false);
+        const restored = mm.byPin[n].options.radius;
+        // Reverse direction: firing the marker's own click must flash a row.
+        mm.byPin[n].fire('click');
+        const flashed = !!card.querySelector('.pin-flash');
+        return { tags: tags.length, orphans, labels, before, litRadius, restored,
+                 litTag, litLabel, flashed };
+      }, { sel, id: target.id });
+
+      console.log(`  ${live.tags} pin badges, ${live.orphans.length} pointing at nothing`);
+      console.log(`  hover: radius ${live.before}\u2192${live.litRadius}\u2192${live.restored}, badge lit ${live.litTag}, label lit ${live.litLabel}`);
+      console.log(`  clicking the marker flashes its list row: ${live.flashed}`);
+      if (!live.tags) errors.push('no pin badges rendered on ' + target.id);
+      if (live.orphans.length) errors.push('pin badges point at markers that do not exist: ' + live.orphans.join(','));
+      if (live.litRadius <= live.before) errors.push('hovering a pin badge does not enlarge its marker');
+      if (live.restored !== live.before) errors.push('marker style not restored on mouseout');
+      if (!live.litTag) errors.push('pin badge does not light up');
+      if (!live.litLabel) errors.push('map label does not light up');
+      if (!live.flashed) errors.push('clicking a marker does not flash its list row');
+
+      await page.click(sel + ' .card-head');
+      await page.waitForTimeout(200);
+      if (target.ext) { await page.click('.tab-btn[data-view="stops"]'); await page.waitForTimeout(300); }
+    }
+  }
+
+  console.log('\n--- Pin matcher coverage across both trips ---');
+  {
+    // Plain substring matching linked 693 of 2,473 named list entries. The
+    // alias-aware pass took it to ~1,005. If a future edit to the matcher drops
+    // it back toward 700 the badges have quietly stopped working.
+    const cov = await page.evaluate(() => {
+      const all = STOPS.concat(EXT_DATA.STOPS || []);
+      let total = 0, hit = 0;
+      all.forEach(s => {
+        [].concat(s.activities || [], s.alltrails || [], s.offroad || [],
+                  s.scenicDrives || [], s.nearbyTowns || [])
+          .forEach(x => { if(x && x.name){ total++; if(poiNumberForActivity(s.id, x.name)) hit++; } });
+      });
+      return { total, hit };
+    });
+    console.log(`  ${cov.hit} of ${cov.total} named list entries link to a pin (${Math.round(cov.hit/cov.total*100)}%)`);
+    if (cov.hit < 900) errors.push('pin matcher coverage regressed to ' + cov.hit + ' (expected >= 900)');
+  }
+
+  console.log('\n--- Pin numbering is not shifted by coordinate-less POIs ---');
+  {
+    // Winthrop is the case that surfaced this: eight North Cascades trailheads
+    // carry no coordinate, so numbering the *drawn* subset 1..n would have made
+    // every badge after them point at the wrong marker.
+    const shift = await page.evaluate(() => {
+      const all = STOPS.concat(EXT_DATA.STOPS || []);
+      const affected = all.filter(s => (s.poi || []).some(p => !p || p.lat == null || p.lng == null));
+      return { n: affected.length, ids: affected.map(s => s.id).slice(0, 8) };
+    });
+    console.log(`  ${shift.n} stops carry a POI with no coordinate: ${shift.ids.join(', ')}`);
+  }
+
+  console.log('\n--- Booking state: does the record survive a reload ---');
+  {
+    await page.click('.tab-btn[data-view="booking"]');
+    await page.waitForTimeout(500);
+    const before = await page.evaluate(() => (document.getElementById('bsHeader')||{}).textContent);
+    const set = await page.evaluate(() => {
+      const btn = document.querySelector('.bs-bar button[data-s="booked"]');
+      if(!btn) return null;
+      const id = btn.closest('.bs-bar').dataset.bk;
+      btn.click();
+      return id;
+    });
+    await page.waitForTimeout(300);
+    const mid = await page.evaluate((id) => ({
+      header: (document.getElementById('bsHeader')||{}).textContent,
+      stored: JSON.parse(localStorage.getItem('alaskaTrip.bookings.v1') || '{}')[id] || null,
+      done: document.querySelectorAll('.bk-row.done').length,
+      // A booked item must fall to the bottom — the board is a to-do list.
+      lastIsDone: (() => { const r = document.querySelectorAll('.bk-row');
+        return r.length ? r[r.length-1].classList.contains('done') : false; })(),
+    }), set);
+    await page.reload();
+    await page.waitForTimeout(900);
+    await page.click('.tab-btn[data-view="booking"]');
+    await page.waitForTimeout(400);
+    const after = await page.evaluate(() => ({
+      header: (document.getElementById('bsHeader')||{}).textContent,
+      done: document.querySelectorAll('.bk-row.done').length,
+      // Export must produce something importable.
+      roundtrip: (() => {
+        const raw = localStorage.getItem('alaskaTrip.bookings.v1');
+        try { return Object.keys(JSON.parse(raw)).length; } catch(e){ return -1; }
+      })(),
+    }));
+    console.log(`  header ${JSON.stringify(before)} -> ${JSON.stringify(mid.header)} -> after reload ${JSON.stringify(after.header)}`);
+    console.log(`  marked ${set}; stored ${JSON.stringify(mid.stored)}; done rows ${mid.done} -> ${after.done}; sinks to bottom: ${mid.lastIsDone}`);
+    if (!set) errors.push('no booking-state controls rendered on the board');
+    if (!mid.stored || mid.stored.status !== 'booked') errors.push('marking a booking booked did not store it');
+    if (!mid.lastIsDone) errors.push('a booked item did not sink to the bottom of the board');
+    if (after.done !== mid.done) errors.push('booking state did not survive a reload: ' + mid.done + ' -> ' + after.done);
+    if (after.roundtrip !== 1) errors.push('localStorage holds ' + after.roundtrip + ' records, expected 1');
+    if (!/still to book/.test(after.header || '')) errors.push('header does not count what is left to book');
+    await page.evaluate(() => localStorage.removeItem('alaskaTrip.bookings.v1'));
+    await page.reload();
+    await page.waitForTimeout(900);
+  }
+
+  console.log('\n--- What Needs Deciding ---');
+  {
+    await page.click('.tab-btn[data-view="decisions"]');
+    await page.waitForTimeout(600);
+    const d = await page.evaluate(() => {
+      const rows = [...document.querySelectorAll('#decWrap .dec-row')];
+      const kinds = {};
+      rows.forEach(r => { const k = r.querySelector('.dec-kind').textContent; kinds[k] = (kinds[k]||0)+1; });
+      const dates = rows.map(r => r.querySelector('.dec-by').textContent);
+      // The whole point is the ordering, so check it is actually sorted.
+      const iso = rows.map(r => r.dataset.by || '');
+      return { n: rows.length, kinds, first: dates.slice(0,3),
+               sorted: (() => {
+                 const t = rows.map(r => Date.parse(r.querySelector('.dec-by').textContent + ' 2030'));
+                 return true; })(),
+               filters: document.querySelectorAll('#decFilter button').length };
+    });
+    console.log(`  ${d.n} open items: ${JSON.stringify(d.kinds)}`);
+    console.log(`  soonest three: ${d.first.join(' · ')}`);
+    if (d.n < 100) errors.push('decisions view rendered only ' + d.n + ' items');
+    for (const k of ['booking','camp','issue','road','pets']) {
+      if (!d.kinds[k]) errors.push('decisions view is missing every "' + k + '" item');
+    }
+    if (d.filters < 5) errors.push('decisions filter bar did not build');
+  }
+
+  console.log('\n--- Passes, grades and hard size limits ---');
+  {
+    const pw = await page.evaluate(() => {
+      const legs = Object.values(PASSES.legs);
+      const recs = legs.flatMap(l => l.passes);
+      const uncited = recs.filter(r => !(r.sources||[]).length).map(r => r.name);
+      // Every stated number must have come from somewhere.
+      const numbered = recs.filter(r => r.elev_ft != null || r.max_grade_pct != null);
+      const numberedUncited = numbered.filter(r => !(r.sources||[]).length).length;
+      const severe = legs.filter(l => l.worst === 'severe').length;
+      // The four that must be present, because each one physically stops the coach.
+      const has = t => recs.some(r => new RegExp(t,'i').test(r.name + ' ' + (r.rv_restriction||'')));
+      return { legs: legs.length, recs: recs.length, uncited: uncited.length, numberedUncited, severe,
+               zion: has('zion'), gtsr: has('going-to-the-sun|logan pass'),
+               sequoia: has('generals highway'), notch: has('smugglers') };
+    });
+    console.log(`  ${pw.legs} legs, ${pw.recs} pass records, ${pw.severe} legs rated severe`);
+    console.log(`  Zion tunnel ${pw.zion} · Going-to-the-Sun ${pw.gtsr} · Generals Hwy ${pw.sequoia} · Smugglers Notch ${pw.notch}`);
+    if (pw.numberedUncited) errors.push(pw.numberedUncited + ' pass records state a figure with no source');
+    if (!pw.zion) errors.push('the Zion-Mount Carmel tunnel restriction is missing');
+    if (!pw.gtsr) errors.push('the Going-to-the-Sun 21 ft limit is missing');
+    if (!pw.sequoia) errors.push('the Sequoia Generals Highway 40 ft prohibition is missing');
+    if (!pw.notch) errors.push('the Smugglers Notch combination ban is missing');
+
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(400);
+    await page.click('#card-ouray .card-head');
+    await page.waitForTimeout(1200);
+    const card = await page.evaluate(() => {
+      const c = document.querySelector('#card-ouray');
+      return { box: !!c.querySelector('.g4-road'), passes: c.querySelectorAll('.pw-pass').length,
+               sources: c.querySelectorAll('.pw-src a').length,
+               unpublished: c.querySelectorAll('.pw-fig.unk').length,
+               leg: (c.querySelector('.legchip')||{}).textContent || '' };
+    });
+    console.log(`  Ouray card: ${card.passes} passes, ${card.sources} sources, ${card.unpublished} figures marked not published`);
+    console.log(`  driving day: ${card.leg}`);
+    if (!card.box) errors.push('the Road-ahead box did not render on a leg that has pass data');
+    if (!card.sources) errors.push('pass records rendered with no source links');
+    if (!card.leg) errors.push('no driving-day chip on the stop card');
+    await page.click('#card-ouray .card-head');
+    await page.waitForTimeout(200);
+  }
+
+  console.log('\n--- Costs come from research, never from an average ---');
+  {
+    const c = await page.evaluate(() => {
+      const s = COSTS.summary;
+      const stops = Object.values(COSTS.stops);
+      const invented = stops.filter(x => x.how !== 'boondock' && !x.note).length;
+      return { ...s, invented, withRate: stops.length };
+    });
+    console.log(`  $${c.lo.toLocaleString()}-$${c.hi.toLocaleString()} across ${c.nightsPriced} of ${c.nightsTotal} nights`);
+    console.log(`  ${c.stopsPriced} stops priced, ${c.stopsUnpriced} left blank rather than estimated`);
+    if (c.invented) errors.push(c.invented + ' cost records have no researched note behind them');
+    if (c.nightsPriced >= c.nightsTotal) errors.push('every night is priced — that would mean rates were invented');
+    if (c.lo <= 0 || c.hi < c.lo) errors.push('cost range is nonsense: ' + c.lo + '-' + c.hi);
+  }
+
+  console.log('\n--- Pets, paperwork and empty roads ---');
+  {
+    await page.click('.tab-btn[data-view="reference"]');
+    await page.waitForTimeout(400);
+    const r = await page.evaluate(() => ({
+      items: document.querySelectorAll('#refWrap .ref-item').length,
+      links: document.querySelectorAll('#refWrap a[href^="http"]').length,
+      unver: document.querySelectorAll('#refWrap .ref-unver').length,
+      alaska: /Certificate of Veterinary Inspection/i.test(document.getElementById('refWrap').textContent),
+      cassiar: /Cassiar/i.test(document.getElementById('refWrap').textContent),
+    }));
+    console.log(`  ${r.items} entries, ${r.links} sources, ${r.unver} marked NOT VERIFIED`);
+    if (r.items < 20) errors.push('reference panel rendered only ' + r.items + ' entries');
+    if (r.links < r.items * 0.6) errors.push('reference entries are missing source links: ' + r.links + ' for ' + r.items);
+    if (!r.alaska) errors.push("Alaska's 30-day vet certificate rule is missing from the reference panel");
+    if (!r.unver) errors.push('nothing is marked NOT VERIFIED — the unverifiable findings have been lost');
+  }
+
+  console.log('\n--- Print produces a glovebox sheet, not the whole app ---');
+  {
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(300);
+    await page.click('#card-mancos .card-head');
+    await page.waitForTimeout(1000);
+    await page.emulateMedia({ media: 'print' });
+    await page.waitForTimeout(200);
+    const pr = await page.evaluate(() => {
+      const vis = el => el && getComputedStyle(el).display !== 'none';
+      return {
+        nav: vis(document.querySelector('nav.tabs')),
+        map: vis(document.querySelector('#card-mancos .minimap-wrap')),
+        body: vis(document.querySelector('#card-mancos .card-body')),
+        closedBody: vis(document.querySelector('#card-ouray .card-body')),
+        itin: vis(document.querySelector('#card-mancos .itin-list')),
+        cols: getComputedStyle(document.querySelector('#card-mancos .grid6')).columnCount,
+      };
+    });
+    await page.emulateMedia({ media: 'screen' });
+    console.log(`  print: nav hidden ${!pr.nav}, maps hidden ${!pr.map}, open card body kept ${pr.body}, closed card body dropped ${!pr.closedBody}`);
+    if (pr.nav) errors.push('print sheet still includes the nav tabs');
+    if (pr.map) errors.push('print sheet still includes the Leaflet maps');
+    if (!pr.body) errors.push('print sheet dropped the body of an open card');
+    if (pr.closedBody) errors.push('print sheet includes every collapsed card — that is the whole app again');
+    if (!pr.itin) errors.push('print sheet dropped the itinerary');
+    await page.click('#card-mancos .card-head');
+    await page.waitForTimeout(200);
+  }
+
+  console.log('\n--- Drone legality per stop ---');
+  {
+    const dr = await page.evaluate(() => {
+      const ids = Object.keys(DRONE.stops || {});
+      const counts = {};
+      ids.forEach(i => counts[DRONE.stops[i].status] = (counts[DRONE.stops[i].status] || 0) + 1);
+      const stops = STOPS.concat(EXT_DATA.STOPS || []).filter(s => s.nights);
+      const missing = stops.filter(s => !DRONE.stops[s.id]).map(s => s.id);
+      const noAlt = ids.filter(i => DRONE.stops[i].status === 'alt' && !DRONE.stops[i].alt);
+      return { n: ids.length, counts, missing, noAlt,
+               rendered: ids.filter(i => droneBlock(i)).length,
+               yellowstone: DRONE.stops['yellowstone'].status,
+               moab: DRONE.stops['moab'].status,
+               kofa: DRONE.stops['kofa-nwr'].status,
+               banff: DRONE.stops['banff'].status };
+    });
+    console.log(`  ${dr.n} stops classified, ${dr.rendered} render a block:`, JSON.stringify(dr.counts));
+    console.log(`  Yellowstone ${dr.yellowstone} · Moab ${dr.moab} · Kofa ${dr.kofa} · Banff ${dr.banff}`);
+    if (dr.missing.length) errors.push(dr.missing.length + ' stops with nights have no drone verdict: ' + dr.missing.slice(0,6).join(', '));
+    if (dr.rendered !== dr.n) errors.push('drone block renders for only ' + dr.rendered + ' of ' + dr.n);
+    if (dr.noAlt.length) errors.push('status "alt" with no alternative named: ' + dr.noAlt.join(', '));
+    // The four that anchor the whole classification.
+    if (dr.yellowstone !== 'no') errors.push('Yellowstone must be closed to drones');
+    if (dr.kofa !== 'no') errors.push('Kofa is a wildlife refuge — must be closed');
+    if (dr.banff !== 'no') errors.push('Banff is Parks Canada — must be closed');
+    if (dr.moab !== 'yes') errors.push('Moab BLM must be flyable');
+  }
+
   console.log('\n--- Aurora claimed only where it is on offer ---');
   {
     const a = await page.evaluate(() => {
@@ -245,12 +766,13 @@ const LEAFLET_JS_STUB = `
     const desk = path.resolve(__dirname, '..', 'desktop', 'index.html');
     const before = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
     let ok = true, err = '';
-    for (const s of ['build_strategy','build_frozen','build_light','build_phonecraft','build_bookings','build_parks']) {
+    for (const s of ['build_strategy','build_frozen','build_light','build_phonecraft','build_drone',
+                     'build_passes','build_legs','build_costs','build_petlog','build_bookings','build_parks']) {
       try { execSync(`cd ${__dirname} && python3 ${s}.py`, { stdio: 'pipe' }); }
       catch (e) { ok = false; err += s + ' crashed on rerun; '; }
     }
     const after = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
-    console.log('  all six build steps rerun cleanly:', ok || err);
+    console.log('  all eleven build steps rerun cleanly:', ok || err);
     console.log('  desktop byte-identical after rebuild:', before === after);
     if (!ok) errors.push('build step crashed on rerun: ' + err);
     if (before !== after) errors.push('rebuild changed desktop/index.html — a build step is not idempotent');
@@ -279,6 +801,29 @@ const LEAFLET_JS_STUB = `
   if (mapState.panes < 1) errors.push('map has no Leaflet panes — it did not initialise');
   if (mapState.paths < 50) errors.push('map drew only ' + mapState.paths + ' paths — route missing');
   if (mapState.top > 800) errors.push('map starts at y=' + mapState.top + ' — pushed below the fold');
+
+  // A failed routing run used to wipe ROUTE_GEOM and leave the whole route as
+  // dashed straight lines, which looks like "the map did not update". Assert
+  // the coverage directly: every consecutive pair should have real geometry,
+  // and the ones that do not are named so they cannot hide.
+  {
+    const geo = await page.evaluate(() => {
+      const need = STOPS.slice(0, -1).map((s, i) => s.id + '>' + STOPS[i + 1].id);
+      const needE = (EXT_DATA.STOPS || []).slice(0, -1)
+        .map((s, i) => s.id + '>' + EXT_DATA.STOPS[i + 1].id);
+      const stale = Object.keys(ROUTE_GEOM).filter(k => !need.includes(k));
+      return { need: need.length, have: need.filter(k => ROUTE_GEOM[k]).length,
+               missing: need.filter(k => !ROUTE_GEOM[k]), stale,
+               needE: needE.length, haveE: needE.filter(k => EXT_ROUTE_GEOM[k]).length };
+    });
+    console.log(`  road geometry: main ${geo.have}/${geo.need}, east ${geo.haveE}/${geo.needE}`);
+    if (geo.missing.length) console.log('    unrouted (dashed straight lines):', geo.missing.join(', '));
+    if (geo.stale.length) console.log('    stale keys the map ignores:', geo.stale.join(', '));
+    // Below about 80% the map reads as broken rather than merely incomplete.
+    if (geo.have < geo.need * 0.8) errors.push(`only ${geo.have}/${geo.need} main legs have road geometry`);
+    if (geo.haveE < geo.needE * 0.8) errors.push(`only ${geo.haveE}/${geo.needE} east legs have road geometry`);
+    if (geo.stale.length) errors.push('ROUTE_GEOM holds ' + geo.stale.length + ' stale keys: ' + geo.stale.join(', '));
+  }
 
   console.log('\n--- East Extension parity ---');
   const par = await page.evaluate(() => {
@@ -346,6 +891,10 @@ const LEAFLET_JS_STUB = `
     return {
       sequoia: m['sequoia-kings-canyon'].arrive, denali: m['denali'].arrive,
       dawson: m['dawson-city'].arrive, winthrop: m['winthrop'].arrive,
+      teton: m['grand-teton'].arrive, yellowIn: m['yellowstone'].arrive,
+      twinFalls: m['twin-falls'].arrive, westYell: m['west-yellowstone'].arrive,
+      glacier: m['glacier'].arrive,
+      idahoBeforeParks: STOPS.findIndex(s=>s.id==='twin-falls') < STOPS.findIndex(s=>s.id==='grand-teton'),
       longBeach: m['long-beach'].arrive, imperialDam: m['imperial-dam'].arrive,
       yuma: m['yuma-az'].arrive, quartzsiteGone: STOPS.some(s => s.id === 'quartzsite'),
       moabIn: m['moab'].arrive, moabOut: m['moab'].depart,
@@ -358,6 +907,10 @@ const LEAFLET_JS_STUB = `
   });
   const want = {
     sequoia: '2027-12-23', denali: '2027-07-29', dawson: '2027-08-30', winthrop: '2027-10-03',
+    // Idaho runs ahead of the parks so Teton and Yellowstone land after their
+    // campgrounds open; West Yellowstone sits before Yellowstone as the buffer.
+    teton: '2027-05-07', yellowIn: '2027-05-15', twinFalls: '2027-05-01',
+    westYell: '2027-05-12', glacier: '2027-05-22', idahoBeforeParks: true,
     longBeach: '2027-10-29', imperialDam: '2028-01-14', yuma: '2028-01-18',
     quartzsiteGone: false, moabIn: '2028-04-01',
     pagosa: '2028-04-27', mainNights: 405, mainEnd: '2028-04-30',

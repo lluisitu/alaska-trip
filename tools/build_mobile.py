@@ -47,6 +47,12 @@ STOPS   = grab('const STOPS =','[',']')
 EXT     = grab('const EXT_DATA =','{','}')
 ISSUES  = grab('const ISSUES =','[',']')
 EXTISS  = grab('const EXT_ISSUES =','[',']')
+# The phone build is the one that goes offline, and the Cassiar and the Alcan
+# are exactly where a pass restriction or a 450-mile dead zone matters most —
+# so the road data and the off-grid reference ride along.
+PASSES  = grab('const PASSES =','{','}')
+LEGINFO = grab('const LEGINFO =','{','}')
+PETLOG  = grab('const PETLOG =','{','}')
 def kv(decl):
     # LEG_NAMES uses JS literal syntax (unquoted keys), so JSON.parse fails — regex it.
     try:
@@ -77,11 +83,15 @@ DATA = {
  'legColors': LEGC, 'extLegColors': EXTLEGC,
  'legAlerts': LEGALERT or {}, 'extLegAlerts': EXTLEGALERT or {},
  'routeGeom': RGEOM or {}, 'extRouteGeom': EXTRGEOM or {},
+ 'passes': (PASSES or {}).get('legs', {}), 'legInfo': (LEGINFO or {}).get('legs', {}),
+ 'petlog': PETLOG or {},
 }
 print(f"stops={len(DATA['stops'])} ext={len(DATA['ext'])} issues={len(DATA['issues'])} extIssues={len(DATA['extIssues'])}")
 print(f"legColors={len(LEGC)} extLegColors={len(EXTLEGC)}")
 print(f"legAlerts={len(LEGALERT or {})} extLegAlerts={len(EXTLEGALERT or {})}")
 print(f"routeGeom={len(RGEOM or {})} extRouteGeom={len(EXTRGEOM or {})} routed legs")
+print(f"passes={len(DATA['passes'])} legs with pass data \u00b7 legInfo={len(DATA['legInfo'])} driving days")
+print(f"petlog: {len(DATA['petlog'].get('cell_gaps',[]))} cell gaps, {len(DATA['petlog'].get('supplies',[]))} supply notes")
 
 BLOB = json.dumps(DATA, ensure_ascii=False, separators=(',',':'))
 
@@ -196,6 +206,22 @@ main{padding:0 12px 20px;}
 .sec.verdict .sec-t{background:rgba(126,196,136,.11);color:#9ed4a8;}
 .iname{font-weight:600;}
 .idet{font-size:.79rem;color:var(--muted);margin-top:3px;line-height:1.5;}
+/* Road ahead + off-grid. Both exist on the phone precisely because the phone
+   is what you have when there is no signal to look anything up. */
+.dchip{display:inline-block;font-size:.68rem;font-weight:700;padding:0 6px;border-radius:99px;
+  background:rgba(95,180,214,.16);color:#5fb4d6;}
+.dchip.mid{background:rgba(232,176,75,.18);color:#e8b04b;}
+.dchip.far{background:rgba(217,119,87,.22);color:#d97757;}
+.pass{border-top:1px solid var(--border);padding:7px 0;}
+.pass:first-child{border-top:none;}
+.sev{font-size:.62rem;text-transform:uppercase;letter-spacing:.04em;font-weight:800;
+  padding:1px 6px;border-radius:99px;vertical-align:middle;}
+.sev.easy{background:rgba(126,196,136,.18);color:#7ec488;}
+.sev.moderate{background:rgba(232,176,75,.18);color:#e8b04b;}
+.sev.hard{background:rgba(217,119,87,.20);color:#d97757;}
+.sev.severe{background:rgba(201,80,107,.24);color:#e2718c;}
+.pfig{font-size:.72rem;color:var(--muted);margin-top:2px;}
+.prest{font-size:.79rem;line-height:1.5;margin-top:3px;color:#e2718c;font-weight:600;}
 .chip{display:inline-block;font-size:.66rem;padding:2px 8px;border-radius:20px;margin-left:5px;
   vertical-align:1px;white-space:nowrap;}
 .chip.green{background:rgba(126,196,136,.16);color:#7ec488;}
@@ -296,6 +322,7 @@ Open it in Safari or Chrome on your phone and it will load normally.</div></nosc
     <div id="mapLegend"></div>
   </section>
   <section class="view" id="v-issues"><div id="issuesWrap"></div></section>
+  <section class="view" id="v-offgrid"><div id="offgridWrap"></div></section>
   <section class="view" id="v-search"><div id="srWrap"><div class="empty">Type at least two letters to search every stop, campground, trail and scenic drive across both trips.</div></div></section>
 </main>
 
@@ -308,6 +335,8 @@ Open it in Safari or Chrome on your phone and it will load normally.</div></nosc
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Map</button>
   <button data-view="issues">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 9v5M12 17.5v.5"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Issues</button>
+  <button data-view="offgrid">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8.8a16 16 0 0 1 20 0"/><path d="M5 12.3a11 11 0 0 1 14 0"/><path d="M8.5 15.8a6 6 0 0 1 7 0"/><path d="M12 19.5v.01"/><path d="M3 3l18 18"/></svg>Off-grid</button>
   <button data-view="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search</button>
 </nav>
@@ -377,12 +406,72 @@ function cardHTML(s,i){
                '<div class="idet">'+esc(cr[k].finding)+'</div>');
   });
   if(cr.verdict) b += sec('verdict','\ud83d\udccb','Booking verdict','<div class="idet">'+esc(cr.verdict)+'</div>');
+  b += roadAheadHTML(s.id);
   return '<div class="card" id="mc-'+esc(s.id)+'"><div class="chead" onclick="tog(\''+s.id+'\')">'+
     '<span class="dot" style="background:'+col+'"></span><div class="cbody-t"><div class="cname">'+esc(s.name)+'</div>'+
-    '<div class="cmeta">'+fmt(s.arrive)+' – '+fmt(s.depart)+' · '+(s.nights||0)+'n · '+esc(nm)+chip(s.weather)+'</div></div>'+
+    '<div class="cmeta">'+fmt(s.arrive)+' – '+fmt(s.depart)+' · '+(s.nights||0)+'n · '+esc(nm)+chip(s.weather)+drivingChip(s.id)+'</div></div>'+
     '<div class="chev">›</div></div><div class="cbody">'+b+'</div></div>';
 }
 function tog(id){ const c=document.getElementById('mc-'+id); if(c) c.classList.toggle('open'); }
+
+/* The leg leaving this stop. On a phone with no signal in the middle of the
+   Cassiar, "9.8 h of driving and a 40 ft prohibition ahead" is the single most
+   useful thing the screen can say. */
+function nextId(id){
+  const a = stops(); const i = a.findIndex(s=>s.id===id);
+  return (i>=0 && i<a.length-1) ? a[i+1].id : null;
+}
+function drivingChip(id){
+  const n = nextId(id); if(!n) return '';
+  const l = (D.legInfo||{})[id+'>'+n]; if(!l) return '';
+  const cls = l.split ? 'far' : l.long ? 'mid' : '';
+  return ' \u00b7 <span class="dchip '+cls+'">\ud83d\ude90 '+l.mi+' mi \u00b7 ~'+l.hours+' h</span>';
+}
+function roadAheadHTML(id){
+  const n = nextId(id); if(!n) return '';
+  const leg = (D.passes||{})[id+'>'+n]; if(!leg) return '';
+  const real = t => t && !/^no posted|^none found|^unknown/i.test(String(t).trim());
+  let v = leg.verdict ? '<div class="idet"><b>'+esc(leg.verdict)+'</b></div>' : '';
+  v += (leg.passes||[]).map(function(pp){
+    let x = '<div class="pass"><div class="iname">'+esc(pp.name)+
+      (pp.severity?' <span class="sev '+esc(pp.severity)+'">'+esc(pp.severity)+'</span>':'')+'</div>';
+    const figs = [];
+    if(pp.elev_ft) figs.push(pp.elev_ft.toLocaleString()+' ft');
+    if(pp.max_grade_pct) figs.push(pp.max_grade_pct+'% grade');
+    if(figs.length) x += '<div class="pfig">'+figs.join(' \u00b7 ')+'</div>';
+    if(real(pp.rv_restriction)) x += '<div class="prest">\u26a0 '+esc(pp.rv_restriction)+'</div>';
+    if(pp.direction_note) x += '<div class="idet">'+esc(pp.direction_note)+'</div>';
+    return x + '</div>';
+  }).join('');
+  const worst = leg.worst ? ' \u2014 worst '+leg.worst : '';
+  return sec('road','\u26f0\ufe0f','Road ahead'+worst, v);
+}
+/* Off-grid: where the phone stops working and where the propane runs out.
+   Rendered from the same researched data as the desktop, and it is on the
+   phone precisely because you cannot look it up when you need it. */
+function offgridHTML(){
+  const pl = D.petlog || {};
+  if(!pl.cell_gaps) return '';
+  const src = u => u ? ' <a href="'+esc(u)+'" target="_blank" rel="noopener">source \u2197</a>' : '';
+  let out = '<div class="sechead">No signal, no propane, no dump</div>';
+  out += '<div class="card open"><div class="cbody">';
+  out += sec('warn','\ud83d\udcf5','Where the phone stops working',
+    (pl.cell_gaps||[]).map(g=>'<div class="pass"><div class="iname">'+esc(g.road)+
+      (g.approx_miles?' <span class="sev hard">~'+g.approx_miles+' mi</span>':'')+'</div>'+
+      (g.gap?'<div class="pfig">'+esc(g.gap)+'</div>':'')+
+      '<div class="idet">'+esc(g.note||'')+src(g.source)+'</div></div>').join(''));
+  out += sec('camp','\u26fd','Fuel, propane, water and dump',
+    (pl.supplies||[]).map(s=>'<div class="pass"><div class="iname">'+esc(s.topic)+' \u2014 '+esc(s.where)+'</div>'+
+      '<div class="idet">'+esc(s.note||'')+src(s.source)+'</div></div>').join(''));
+  if(pl.pets){
+    const req = l => (l||[]).map(r=>'<div class="pass"><div class="iname">'+
+      esc(r.applies_to==='both'?'Dog and cat':r.applies_to==='dog'?'Dog':'Cat')+'</div>'+
+      '<div class="idet">'+esc(r.requirement)+'<br><b>When:</b> '+esc(r.lead_time||'\u2014')+src(r.source)+'</div></div>').join('');
+    out += sec('itin','\ud83d\udc15','Pets into Canada', req(pl.pets.into_canada));
+    out += sec('itin','\ud83c\uddfa\ud83c\uddf8','Pets back into the US', req(pl.pets.back_into_us));
+  }
+  return out + '</div></div>';
+}
 
 const legAlerts = () => trip==='bigloop' ? (D.legAlerts||{}) : (D.extLegAlerts||{});
 function legAlertHTML(leg){
@@ -415,6 +504,11 @@ function renderStops(){
     out += cardHTML(s,i);
   });
   document.getElementById('stopsWrap').innerHTML = out;
+}
+function renderOffgrid(){
+  const w = document.getElementById('offgridWrap');
+  if(w) w.innerHTML = offgridHTML() ||
+    '<div class="empty">No off-grid reference data in this build.</div>';
 }
 function renderIssues(){
   const a=issues();
@@ -618,7 +712,7 @@ function setView(v){
 function setTrip(t){
   trip=t;
   document.querySelectorAll('#tripSeg button').forEach(b=>b.classList.toggle('active',b.dataset.trip===t));
-  renderStats(); renderStops(); renderIssues();
+  renderStats(); renderStops(); renderIssues(); renderOffgrid();
   if(document.getElementById('v-map').classList.contains('active')) drawMap();
 }
 document.getElementById('tabbar').addEventListener('click',e=>{
@@ -637,7 +731,7 @@ const bt=document.getElementById('backTop');
 window.addEventListener('scroll',()=>bt.classList.toggle('show',window.scrollY>700),{passive:true});
 bt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-buildIndex(); renderStats(); renderStops(); renderIssues();
+buildIndex(); renderStats(); renderStops(); renderIssues(); renderOffgrid();
 window.__mobileReady = {stops:D.stops.length, ext:D.ext.length, idx:IDX.length};
 </script>
 </body>

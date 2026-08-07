@@ -25807,8 +25807,19 @@ function askStopBlock(id){
   const cf = (later(() => CAMPFACTS, {stops: {}}).stops || {})[id];
   out.push('  Campground: ' + (camp || 'none recorded'));
   if(cf){
-    if(cf.exists === false) out.push('  ** COULD NOT BE SHOWN TO EXIST — no page, no listing, no phone. **');
-    if(cf.open === false) out.push('  ** CLOSED ON THE ARRIVAL DATE. **');
+    // CAMPFACTS records what was researched, which is not always what the stop
+    // now points at — build_swaps.py applies a replacement without re-running
+    // the research behind it. Naming the subject of every fact below is what
+    // stops the brief from printing "closed on the arrival date" directly under
+    // the campground that was chosen precisely because it is open.
+    const subj = cf.camp || camp || 'the campground on file';
+    const same = !cf.camp || !camp || cf.camp.slice(0, 24) === camp.slice(0, 24);
+    if(!same) out.push('  NOTE: everything from here to the rig-fit line was researched about '
+      + subj + ', which is NOT the campground named above. The swap was applied after the '
+      + 'research was recorded, so do not read these facts as being about the current choice.');
+    if(cf.exists === false) out.push('  ** ' + subj
+      + ' COULD NOT BE SHOWN TO EXIST — no page, no listing, no phone. **');
+    if(cf.open === false) out.push('  ** ' + subj + ' IS CLOSED ON THE ARRIVAL DATE. **');
     out.push('  Longest site: ' + (cf.ft != null ? cf.ft + ' ft' : 'not published — unknown, not assumed')
       + (cf.n40 != null ? ' (' + cf.n40 + ' site' + (cf.n40 === 1 ? '' : 's') + ' take 40 ft)' : ''));
     out.push('  Google: ' + (cf.g != null

@@ -37,7 +37,13 @@ const LEAFLET_JS_STUB = `
 `;
 
 (async () => {
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+  // Let Playwright resolve the browser it installed. The path here used to be
+  // hardcoded to /opt/pw-browsers/chromium, which is not where `npx playwright
+  // install chromium` puts it on the runner OR on a laptop — so the suite threw
+  // before it opened the page, and every run of rebuild.yml failed at this line
+  // without ever testing anything. Set PW_CHROMIUM to override.
+  const browser = await chromium.launch(
+    process.env.PW_CHROMIUM ? { executablePath: process.env.PW_CHROMIUM } : {});
   const page = await browser.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));

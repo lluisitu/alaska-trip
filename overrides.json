@@ -1,0 +1,6 @@
+{
+  "_what": "Plan changes made on the road. The dashboard fetches this file at load and applies it on every device. Edit it on github.com from a phone, commit, and GitHub Pages republishes in about a minute.",
+  "_shape": "stopId -> { nights: +N | -N, skip: true, camp: \"name\" }",
+  "updated": null,
+  "stops": {}
+}

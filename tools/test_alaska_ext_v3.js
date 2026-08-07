@@ -170,8 +170,11 @@ const LEAFLET_JS_STUB = `
   const allIssueCards = await page.locator('#issuesWrap .issue-card').count();
   // 30 -> 32 on 3 Aug 2026: the Teton/Yellowstone re-pace and the Colter Bay
   // 45 ft combined-length finding were both logged as resolved issues.
-  console.log('Main issue cards with "Everything, incl. resolved" (expect 37):', allIssueCards);
-  if (allIssueCards !== 37) errors.push('main all-issue count is ' + allIssueCards + ', expected 36');
+  // 37 -> 45 on 6 Aug 2026: eight campgrounds were replaced — four shut on the
+  // arrival date, one that could not be shown to exist, three rated too poorly
+  // to keep — and each swap is logged as a resolved issue.
+  console.log('Main issue cards with "Everything, incl. resolved" (expect 45):', allIssueCards);
+  if (allIssueCards !== 45) errors.push('main all-issue count is ' + allIssueCards + ', expected 45');
   await page.click('#issueCatBar button[data-f="open"]');
   await page.waitForTimeout(150);
   const larchIssue = await page.evaluate(()=>ISSUES.some(i=>i.id==='larch-timing'));
@@ -641,6 +644,28 @@ const LEAFLET_JS_STUB = `
     console.log(`  Ouray card: ${card.passes} passes, ${card.sources} sources, ${card.unpublished} figures marked not published`);
     console.log(`  driving day: ${card.leg}`);
     if (!card.box) errors.push('the Road-ahead box did not render on a leg that has pass data');
+    // The box lives well down an expanded card, so from the stop list there was
+    // no way to see which legs carried a prohibition without opening all 155.
+    const chip = await page.evaluate(() => {
+      const all = [...document.querySelectorAll('#cardsWrap .passchip')];
+      const sev = all.filter(e => e.classList.contains('severe')).length;
+      return { n: all.length, sev, text: (all[0]||{}).textContent || '' };
+    });
+    console.log(`  ${chip.n} severity chips on the collapsed stop lines, ${chip.sev} of them severe`);
+    if (chip.n < 20) errors.push('only ' + chip.n + ' pass chips on the stop list');
+    if (!chip.sev) errors.push('no stop line flags a severe leg');
+    await page.click('#card-ouray .passchip');
+    await page.waitForTimeout(1500);
+    const jump = await page.evaluate(() => {
+      const c = document.getElementById('card-ouray');
+      const box = c.querySelector('.g4-road');
+      const r = box ? box.getBoundingClientRect() : null;
+      return { opened: c.classList.contains('open'),
+               inView: r ? (r.top > -60 && r.top < window.innerHeight) : false };
+    });
+    console.log(`  clicking a chip opens the card (${jump.opened}) and scrolls the box into view (${jump.inView})`);
+    if (!jump.opened) errors.push('clicking a pass chip does not open the card');
+    if (!jump.inView) errors.push('clicking a pass chip does not bring the Road-ahead box into view');
     if (!card.sources) errors.push('pass records rendered with no source links');
     if (!card.leg) errors.push('no driving-day chip on the stop card');
     await page.click('#card-ouray .card-head');
@@ -710,6 +735,391 @@ const LEAFLET_JS_STUB = `
     await page.waitForTimeout(200);
   }
 
+  console.log('\n--- Campground options collapse to one line ---');
+  {
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(400);
+    await page.click('#card-cannon-beach .card-head');
+    await page.waitForTimeout(1300);
+    const camp = await page.evaluate(() => {
+      const c = document.getElementById('card-cannon-beach');
+      const opts = [...c.querySelectorAll('.camp-option')];
+      const heads = opts.map(o => Math.round(o.querySelector('.camp-opt-head').getBoundingClientRect().height));
+      // A closed <details> still reports a box for its hidden children in
+      // Chrome, so "is the body visible" has to be measured as "is the option
+      // taller than its own summary" rather than off the body's own rect.
+      const bodyShown = opts.filter(o => {
+        const oh = o.getBoundingClientRect().height;
+        const sh = o.querySelector('.camp-opt-head').getBoundingClientRect().height;
+        return oh > sh + 24;
+      }).length;
+      // The summary must carry the decisive facts and nothing else.
+      const first = c.querySelector('.camp-opt-head').textContent.replace(/\s+/g,' ').trim();
+      return { n: opts.length, open: c.querySelectorAll('.camp-option[open]').length,
+               bodyShown, heads, block: Math.round(c.querySelector('.camp-cols').getBoundingClientRect().height),
+               first, firstLen: first.length,
+               shortPrice: !!c.querySelector('.camp-price'),
+               flag: c.querySelectorAll('.camp-flag').length };
+    });
+    console.log(`  ${camp.n} options, ${camp.open} open, camping block ${camp.block}px`);
+    console.log(`  first summary (${camp.firstLen} chars): ${camp.first}`);
+    if (camp.open !== 0) errors.push('campground options are not collapsed by default');
+    if (camp.bodyShown !== 0) errors.push(camp.bodyShown + ' option bodies are visible while collapsed');
+    if (camp.firstLen > 90) errors.push('summary line is still a paragraph: ' + camp.firstLen + ' chars');
+    if (!camp.shortPrice) errors.push('no short rate on the summary line');
+    if (camp.block > 400) errors.push('collapsed camping block is still ' + camp.block + 'px');
+
+    await page.click('#card-cannon-beach .camp-option .camp-opt-head');
+    await page.waitForTimeout(300);
+    const opened = await page.evaluate(() => {
+      const c = document.getElementById('card-cannon-beach');
+      const o = c.querySelector('.camp-option[open]');
+      return { open: !!o, body: o ? o.querySelector('.camp-opt-body').getBoundingClientRect().height > 0 : false,
+               keptFullPrice: !!(o && o.querySelector('.camp-fullprice')),
+               keptSource: !!(o && o.querySelector('.camp-source')) };
+    });
+    console.log(`  clicking expands it: ${opened.open}, full price sentence kept: ${opened.keptFullPrice}`);
+    if (!opened.open || !opened.body) errors.push('clicking a campground summary does not expand it');
+    if (!opened.keptFullPrice) errors.push('the full price sentence was lost, not moved');
+
+    // On paper the chosen campground still prints in full.
+    await page.emulateMedia({ media: 'print' });
+    await page.waitForTimeout(150);
+    const pr = await page.evaluate(() => {
+      const c = document.getElementById('card-cannon-beach');
+      const vis = e => e && getComputedStyle(e).display !== 'none';
+      return { primary: vis(c.querySelector('.camp-primary .camp-opt-body')),
+               other: vis(c.querySelector('.camp-option:not(.camp-primary) .camp-opt-body')),
+               summaries: [...c.querySelectorAll('.camp-opt-head')].filter(vis).length };
+    });
+    await page.emulateMedia({ media: 'screen' });
+    console.log(`  print: chosen campground in full ${pr.primary}, alternatives as ${pr.summaries} one-liners`);
+    if (!pr.primary) errors.push('the glovebox sheet lost the chosen campground detail');
+    if (pr.other) errors.push('the glovebox sheet prints every alternative in full again');
+    await page.click('#card-cannon-beach .card-head');
+    await page.waitForTimeout(200);
+  }
+
+  console.log('\n--- Does the coach fit: length claims ---');
+  {
+    const rf = await page.evaluate(() => {
+      const v = Object.values(RIGFIT.opts);
+      const counts = {};
+      v.forEach(x => counts[x.s] = (counts[x.s] || 0) + 1);
+      // Every verdict that rejects or reassures must rest on a POSTED limit,
+      // never on somebody's review — a crowdsourced sighting is not a rule.
+      const decisive = v.filter(x => ['fits','fits-exact','combined-tight','too-short'].includes(x.s));
+      const fromReview = decisive.filter(x => x.src !== 'posted').length;
+      // A posted site length is the SITE. The coach is 40 ft and the toad parks
+      // in overflow, so 40 ft posted is a fit — the only case where the 60 ft
+      // combined figure is the bar is a limit that says it covers the tow
+      // vehicle, and that has its own status.
+      const badFits = v.filter(x => x.s === 'fits' && x.ft < RIGFIT.coach).length;
+      const badCombo = v.filter(x => x.s === 'combined-tight' && x.ft >= RIGFIT.combo).length;
+      const badShort = v.filter(x => x.s === 'too-short' && x.ft >= RIGFIT.coach).length;
+      return { n: v.length, counts, fromReview, badFits, badShort, badCombo,
+               coach: RIGFIT.coach, combo: RIGFIT.combo };
+    });
+    console.log(`  ${rf.n} options carry a length claim: ${JSON.stringify(rf.counts)}`);
+    console.log(`  measured against ${rf.coach} ft coach / ${rf.combo} ft with the toad`);
+    if (rf.fromReview) errors.push(rf.fromReview + ' fit/reject verdicts rest on a review rather than a posted limit');
+    if (rf.badFits) errors.push(rf.badFits + ' options say "fits" below the coach length');
+    if (rf.badCombo) errors.push(rf.badCombo + ' combined-limit options are flagged tight above 60 ft');
+    if (rf.badShort) errors.push(rf.badShort + ' options say "too short" at or above the coach length');
+    if (!rf.counts['unpublished']) errors.push('nothing is marked as having no published limit — the honest case vanished');
+
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(400);
+    await page.click('#card-cannon-beach .card-head');
+    await page.waitForTimeout(1200);
+    const chips = await page.evaluate(() => {
+      const c = document.getElementById('card-cannon-beach');
+      return { chips: c.querySelectorAll('.camp-fit').length,
+               opts: c.querySelectorAll('.camp-option').length,
+               text: [...c.querySelectorAll('.camp-fit')].map(e => e.textContent.trim()) };
+    });
+    console.log(`  Cannon Beach: ${chips.chips} of ${chips.opts} options show a fit chip — ${chips.text.join(' · ')}`);
+    await page.click('#card-cannon-beach .card-head');
+    await page.waitForTimeout(200);
+  }
+
+  console.log('\n--- Verified campground facts ---');
+  {
+    const cf = await page.evaluate(() => {
+      const v = Object.values(CAMPFACTS.stops);
+      const cited = v.filter(x => (x.ft || x.g != null) && (!x.sources || !x.sources.length)).length;
+      return { n: v.length,
+               lengths: v.filter(x => x.ft).length,
+               ratings: v.filter(x => x.g != null).length,
+               poor: v.filter(x => x.g != null && x.g < CAMPFACTS.good).length,
+               shut: v.filter(x => x.open === false || x.exists === false).length,
+               alts: v.filter(x => x.alt).length,
+               cited,
+               chitina: CAMPFACTS.stops['chitina'] };
+    });
+    console.log(`  ${cf.n} campgrounds: ${cf.lengths} site lengths, ${cf.ratings} Google ratings, ${cf.alts} alternatives`);
+    console.log(`  ${cf.poor} rated below ${'4.0'} · ${cf.shut} closed or unverifiable on the arrival date`);
+    if (cf.cited) errors.push(cf.cited + ' campfacts entries state a figure with no source');
+    if (!cf.shut) errors.push('no closed-on-arrival findings survived — the alarms were lost');
+    // The one LLuis checked by hand: its booking engine lists 70 ft sites.
+    if (!cf.chitina || cf.chitina.ft !== 70) errors.push('the Chitina site length read off the booking engine was lost');
+
+    // Those closures must reach the decisions list, not just the card.
+    await page.click('.tab-btn[data-view="decisions"]');
+    await page.waitForTimeout(500);
+    const dec = await page.evaluate(() => {
+      const t = document.getElementById('decWrap').textContent;
+      return { closed: /closed on your arrival date/i.test(t),
+               ghost: /could not be shown to exist/i.test(t) };
+    });
+    console.log(`  closures reach the decisions list: ${dec.closed} · unverifiable park flagged: ${dec.ghost}`);
+    if (!dec.closed) errors.push('closed-on-arrival campgrounds do not appear in the decisions list');
+    if (!dec.ghost) errors.push('the unverifiable campground does not appear in the decisions list');
+  }
+
+  console.log('\n--- Change the plan on the road ---');
+  {
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(500);
+    const ctl = await page.evaluate(() => document.querySelectorAll('.nights-ctl').length);
+    console.log(`  ${ctl} night controls`);
+    if (ctl < 100) errors.push('only ' + ctl + ' night controls rendered');
+
+    const r = await page.evaluate(() => {
+      PLAN.bump('muncho-lake', 1); PLAN.bump('muncho-lake', 1);
+      planBump('muncho-lake', 0);
+      const rows = planFor(STOPS);
+      const dawson = rows.find(x => x.id === 'dawson-city');
+      const before = rows.find(x => x.id === 'liard');
+      const br = planBreakages();
+      return { nights: rows.find(x => x.id === 'muncho-lake').nights,
+               dawsonWas: dawson.origArrive, dawsonNow: dawson.arrive,
+               untouched: before && before.arrive,
+               drift: rows[rows.length - 1].drift,
+               hard: br.filter(b => b.sev === 'hard').length,
+               anchors: br.filter(b => b.sev === 'hard').map(b => b.name),
+               bar: !!document.querySelector('.planbar.bad'),
+               brief: planBrief() };
+    });
+    console.log(`  +2 nights at Muncho Lake -> Dawson City ${r.dawsonWas} becomes ${r.dawsonNow}, drift ${r.drift}`);
+    console.log(`  ${r.hard} timing anchors broken: ${r.anchors.join(', ')}`);
+    if (r.nights !== 6) errors.push('the extra nights did not apply: ' + r.nights);
+    if (r.drift !== 2) errors.push('downstream drift is ' + r.drift + ', expected 2');
+    if (r.dawsonNow === r.dawsonWas) errors.push('a later stop did not move');
+    // The whole point: it must say what the change breaks, not just move dates.
+    if (!r.hard) errors.push('a 2-day slip broke no anchor at all — the consequence check is not running');
+    if (!r.bar) errors.push('the plan banner did not turn red on a hard breakage');
+    if (!/NET DRIFT, Alaska loop: \+2 days/.test(r.brief)) errors.push('the brief reports the wrong drift');
+    // Renamed from CHANGE to NIGHTS when the override layer grew DROP and CAMP.
+    if (!/NIGHTS  muncho-lake/.test(r.brief)) errors.push('the brief does not name the change');
+
+    // The override layer must carry every structured change, not just nights:
+    // a stop dropped and a campground swapped are the other two things that
+    // actually happen on the road.
+    const any = await page.evaluate(() => {
+      PLAN.toggleSkip('watson-lake-1');
+      const s = STOPS.find(x => x.id === 'santafe');
+      const alt = (s.campResearch.paid_options || [])[1];
+      PLAN.setCamp('santafe', alt.name);
+      planRerender();
+      const rows = planFor(STOPS);
+      const w = rows.find(x => x.id === 'watson-lake-1');
+      const sf = rows.find(x => x.id === 'santafe');
+      const br = planBreakages().filter(x => x.sev !== 'info');
+      return { skipNights: w.nights, skipFlag: w.skip, gaveBack: w.origNights,
+               camp: sf.camp, origCamp: sf.origCamp,
+               saysDropped: br.some(x => /dropped/.test(x.what)),
+               saysCamp: br.some(x => /campground changed/.test(x.what)),
+               brief: planBrief(),
+               pickers: document.querySelectorAll('.camp-picker select').length };
+    });
+    console.log(`  dropping a stop returns its ${any.gaveBack} night(s); campground swap: ${any.origCamp.slice(0,22)} -> ${any.camp.slice(0,22)}`);
+    console.log(`  ${any.pickers} campground pickers rendered`);
+    if (any.skipNights !== 0 || !any.skipFlag) errors.push('dropping a stop did not zero its nights');
+    if (any.camp === any.origCamp) errors.push('the campground swap did not take');
+    if (!any.saysDropped) errors.push('a dropped stop is not reported in the breakages');
+    if (!any.saysCamp) errors.push('a campground swap is not reported in the breakages');
+    if (!/DROP    watson-lake-1/.test(any.brief)) errors.push('the brief does not carry the dropped stop');
+    if (!/CAMP    santafe/.test(any.brief)) errors.push('the brief does not carry the campground swap');
+    if (!any.pickers) errors.push('no campground picker rendered');
+    await page.evaluate(() => { PLAN.toggleSkip('watson-lake-1'); PLAN.setCamp('santafe', ''); planRerender(); });
+
+    // Adding a stop is the one change that cannot be finished on the phone, so
+    // it is held as an explicit proposal and handed to Claude Code, which has
+    // the repo and can push.
+    const add = await page.evaluate(() => {
+      PLAN.addStop({after: 'muncho-lake', where: 'Toad River, BC', nights: 2,
+                    why: 'the boot collection and the stone sheep', at: '2027-06-16'});
+      planRerender();
+      const rows = planFor(STOPS);
+      window.__nav = []; window.openUrl = u => window.__nav.push(u);
+      const ro = window.open; window.open = () => null;
+      researchAndBuild();
+      window.open = ro;
+      const nav = window.__nav[0] || '';
+      const q = decodeURIComponent((nav.split('q=')[1] || '').split('&')[0]);
+      const liard = rows.find(x => x.id === 'liard');
+      const r = { adds: PLAN.adds().length, panel: !!document.querySelector('.plan-adds'),
+                  moved: liard.arrive !== liard.origArrive,
+                  isCode: /^claude:\/\/code\/new/.test(nav),
+                  repo: /repo=lluisitu%2Falaska-trip/.test(nav),
+                  saysResearch: /NEW STOPS TO RESEARCH AND ADD/.test(q),
+                  saysPush: /commit and push/.test(q),
+                  saysSendBack: /send back/.test(q) };
+      PLAN.dropAdd(0); planRerender();
+      return r;
+    });
+    console.log(`  a proposed stop shifts the dates (${add.moved}) and is labelled unresearched (${add.panel})`);
+    console.log(`  hands off to Claude Code with the repo attached: ${add.isCode && add.repo}`);
+    if (!add.adds) errors.push('the proposed stop was not stored');
+    if (!add.moved) errors.push('a proposed stop does not shift the stops after it');
+    if (!add.panel) errors.push('the proposal is not labelled as unresearched');
+    if (!add.isCode || !add.repo) errors.push('research-and-build does not open Claude Code with the repo');
+    if (!add.saysResearch) errors.push('the brief does not ask for the research');
+    // A session that can push must not be told to hand files back.
+    if (!add.saysPush || add.saysSendBack) errors.push('the repo brief still asks for files to be sent back');
+
+    // The shared layer: a change published to overrides.json reaches every
+    // device, and a local change layers on top of it rather than replacing it.
+    const shared = await page.evaluate(() => {
+      SHARED.stops = {'liard': {nights: 1}}; SHARED.updated = '2027-06-14'; SHARED.loaded = true;
+      planRerender();
+      const before = planFor(STOPS).find(x => x.id === 'liard').nights;
+      PLAN.bump('liard', 1); planRerender();
+      const after = planFor(STOPS).find(x => x.id === 'liard').nights;
+      const j = JSON.parse(overridesJson());
+      const where = (document.querySelector('.plan-where') || {}).textContent || '';
+      PLAN.setCamp('liard', ''); delete PLAN.localAll()['liard'];
+      SHARED.stops = {}; SHARED.loaded = false; planRerender();
+      return { before, after, published: j.stops.liard && j.stops.liard.nights,
+               saysShared: /shared file/.test(where), saysLocal: /this device/.test(where) };
+    });
+    console.log(`  shared +1 night applies (${shared.before} nights), local +1 layers on top (${shared.after})`);
+    console.log(`  the banner distinguishes shared from local: ${shared.saysShared && shared.saysLocal}`);
+    if (shared.after !== shared.before + 1) errors.push('a local change did not layer over the shared file');
+    if (shared.published !== 2) errors.push('the JSON to publish does not carry the merged value');
+    if (!shared.saysShared || !shared.saysLocal) errors.push('the banner does not say which changes are shared');
+
+    // Reload: the change is still there.
+    await page.reload();
+    await page.waitForTimeout(1000);
+    await page.click('.tab-btn[data-view="stops"]');
+    await page.waitForTimeout(500);
+    const kept = await page.evaluate(() => PLAN.delta('muncho-lake'));
+    console.log(`  survives a reload: ${kept === 2}`);
+    if (kept !== 2) errors.push('the plan change did not survive a reload');
+    // Undo puts everything back.
+    const undone = await page.evaluate(() => {
+      PLAN.reset(); planRerender();
+      const rows = planFor(STOPS);
+      return { drift: rows[rows.length - 1].drift, bar: !!document.querySelector('.planbar') };
+    });
+    if (undone.drift !== 0 || undone.bar) errors.push('undo did not restore the published plan');
+    console.log(`  undo restores the published plan: ${undone.drift === 0 && !undone.bar}`);
+    await page.evaluate(() => localStorage.removeItem('alaskaTrip.plan.v1'));
+    await page.reload();
+    await page.waitForTimeout(900);
+  }
+
+  console.log('\n--- Notes back to Claude ---');
+  {
+    await page.click('.tab-btn[data-view="issues"]');
+    await page.waitForTimeout(600);
+    const boxes = await page.evaluate(() => document.querySelectorAll('.notebox textarea').length);
+    console.log(`  ${boxes} note boxes on the issues board`);
+    if (boxes < 5) errors.push('only ' + boxes + ' note boxes rendered');
+
+    const typed = await page.evaluate(() => {
+      const t = [...document.querySelectorAll('.issue-card .notebox textarea')][0];
+      const card = t.closest('.issue-card');
+      t.value = 'Recheck this one — the booking engine shows 70ft sites.';
+      t.dispatchEvent(new Event('input'));
+      card.querySelector('.issue-action-btn.approve').click();
+      return true;
+    });
+    await page.waitForTimeout(800);
+    await page.reload();
+    await page.waitForTimeout(1000);
+    await page.click('.tab-btn[data-view="issues"]');
+    await page.waitForTimeout(600);
+    const after = await page.evaluate(() => ({
+      count: (document.getElementById('noteCount') || {}).textContent,
+      approved: !!document.querySelector('.issue-card.issue-approved'),
+      brief: noteBrief(Object.keys(NOTES.all())),
+    }));
+    console.log(`  after a reload: ${after.count} note kept, approval kept: ${after.approved}`);
+    if (after.count !== '1') errors.push('the note did not survive a reload');
+    if (!after.approved) errors.push('the approve/skip decision did not survive a reload');
+    // The brief has to carry the anchors, or Claude has to ask which stop it was.
+    for (const must of ['ISSUE  id=', 'stop=', 'STOP   arrives', 'MY NOTE:', 'MY DECISION:']) {
+      if (!after.brief.includes(must)) errors.push('the brief is missing "' + must + '"');
+    }
+    if (!/Recheck this one/.test(after.brief)) errors.push('the brief does not contain what was typed');
+    console.log('  brief carries: ' + ['id', 'stop', 'arrival date', 'current camp', 'the note', 'the decision']
+      .filter((_, k) => true).join(', '));
+    // Three notes typed in a burst must all survive. A single shared debounce
+    // timer meant the second cancelled the first's save, so a box could be
+    // pushed and send nothing at all.
+    const burst = await page.evaluate(async () => {
+      const t = [...document.querySelectorAll('#issuesWrap .issue-card .notebox textarea')];
+      t[0].value = 'AAA'; t[0].dispatchEvent(new Event('input'));
+      t[1].value = 'BBB'; t[1].dispatchEvent(new Event('input'));
+      t[2].value = 'CCC'; t[2].dispatchEvent(new Event('input'));
+      await new Promise(r => setTimeout(r, 900));
+      window.__nav = []; window.openUrl = u => window.__nav.push(u);
+      const ro = window.open; window.open = () => null;
+      document.querySelectorAll('#issuesWrap .issue-card .notebox button.push')[1].click();
+      window.open = ro;
+      const sent = decodeURIComponent((window.__nav[0] || '').split('q=')[1] || '');
+      return { stored: NOTES.count(), sent,
+               only: /BBB/.test(sent) && !/AAA/.test(sent) && !/CCC/.test(sent),
+               arms: /github\.com\/lluisitu\/alaska-trip/.test(sent) };
+    });
+    console.log(`  three notes typed in a burst: ${burst.stored} stored`);
+    console.log(`  pushing one box sends only that box: ${burst.only}`);
+    console.log(`  the brief tells a fresh session where the repo is: ${burst.arms}`);
+    if (burst.stored !== 3) errors.push('a burst of notes lost some: ' + burst.stored + ' of 3 stored');
+    if (!burst.only) errors.push('pushing one box did not send exactly that box');
+    if (!burst.arms) errors.push('the brief does not tell a new conversation where the repo is');
+
+    // The push button: deep link first, web fallback if nothing handles it,
+    // clipboard always, and an honest marker when the text is too long.
+    const push = await page.evaluate(() => {
+      window.__nav = []; window.__open = [];
+      window.openUrl = u => window.__nav.push(u);
+      const realOpen = window.open;
+      window.open = u => { window.__open.push(u); return null; };
+      pushToClaude();
+      return new Promise(res => setTimeout(() => {
+        window.open = realOpen;
+        res({ nav: window.__nav[0] || '', open: window.__open[0] || '' });
+      }, 1800));
+    });
+    const deep = decodeURIComponent((push.nav.split('q=')[1] || ''));
+    console.log(`  push opens ${push.nav.split('?')[0]} and falls back to ${push.open.split('?')[0]}`);
+    if (!/^claude:\/\/cowork\/new/.test(push.nav)) errors.push('push does not use the Claude deep link: ' + push.nav.slice(0, 40));
+    if (!/^https:\/\/claude\.ai\//.test(push.open)) errors.push('push has no web fallback');
+    if (!/MY NOTE:/.test(deep)) errors.push('the pushed link does not carry the note');
+
+    const big = await page.evaluate(() => {
+      for (let i = 0; i < 400; i++) NOTES.set('bulk' + i, { text: 'x'.repeat(80) });
+      window.__nav = []; window.openUrl = u => window.__nav.push(u);
+      const realOpen = window.open; window.open = () => null;
+      pushToClaude();
+      const sent = decodeURIComponent((window.__nav[0] || '').split('q=')[1] || '');
+      window.open = realOpen;
+      return { full: noteBrief(Object.keys(NOTES.all())).length, sent: sent.length,
+               marked: /TRUNCATED/.test(sent), limit: PUSH_LIMIT };
+    });
+    console.log(`  ${big.full} chars of notes -> ${big.sent} in the link (limit ${big.limit}), cut marked: ${big.marked}`);
+    if (big.sent > big.limit) errors.push('the pushed link exceeds the ' + big.limit + '-character limit');
+    if (!big.marked) errors.push('an over-long push is truncated without saying so');
+
+    await page.evaluate(() => localStorage.removeItem('alaskaTrip.notes.v1'));
+    await page.reload();
+    await page.waitForTimeout(900);
+  }
+
   console.log('\n--- Drone legality per stop ---');
   {
     const dr = await page.evaluate(() => {
@@ -764,18 +1174,103 @@ const LEAFLET_JS_STUB = `
     const { execSync } = require('fs') && require('child_process');
     const crypto = require('crypto'), fs = require('fs');
     const desk = path.resolve(__dirname, '..', 'desktop', 'index.html');
+    const STEPS = ['build_strategy','build_frozen','build_light','build_phonecraft','build_drone',
+                   'build_passes','build_legs','build_costs','build_petlog','build_staynotes',
+                   'build_rigfit','build_campfacts','build_swaps','build_bookings','build_parks'];
+    for (const s of STEPS) { try { execSync(`cd ${__dirname} && python3 ${s}.py`, { stdio: 'pipe' }); } catch (e) {} }
     const before = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
     let ok = true, err = '';
-    for (const s of ['build_strategy','build_frozen','build_light','build_phonecraft','build_drone',
-                     'build_passes','build_legs','build_costs','build_petlog','build_bookings','build_parks']) {
+    // Run the whole sequence once to settle it — build_bookings rebuilds from
+    // what build_swaps writes — then again to prove the second pass is a no-op.
+    // Convergence is the property that matters; "unchanged after exactly one
+    // run" was never true once steps started reading each other's output.
+    for (const s of STEPS) {
       try { execSync(`cd ${__dirname} && python3 ${s}.py`, { stdio: 'pipe' }); }
       catch (e) { ok = false; err += s + ' crashed on rerun; '; }
     }
     const after = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
-    console.log('  all eleven build steps rerun cleanly:', ok || err);
+    console.log('  all fifteen build steps rerun cleanly:', ok || err);
     console.log('  desktop byte-identical after rebuild:', before === after);
     if (!ok) errors.push('build step crashed on rerun: ' + err);
     if (before !== after) errors.push('rebuild changed desktop/index.html — a build step is not idempotent');
+  }
+
+  console.log('\n--- Road changes bake in, and cannot bake in twice ---');
+  {
+    // apply_overrides.py is the one build step that changes the plan rather
+    // than describing it, and it is the one the GitHub Action runs before
+    // everything else. Two things have to hold or an extra night taken on the
+    // road quietly corrupts eighteen months of dates: the shift has to cascade
+    // to every later stop and to the booking cards, and running it again must
+    // do nothing at all. The second is the dangerous one — the Action fires on
+    // any push to overrides.json, so a re-run is a matter of when, not if.
+    const { execSync } = require('child_process');
+    const crypto = require('crypto'), fs = require('fs');
+    const desk = path.resolve(__dirname, '..', 'desktop', 'index.html');
+    const ovrP = path.resolve(__dirname, '..', 'overrides.json');
+    const deskBak = fs.readFileSync(desk);
+    const ovrBak = fs.existsSync(ovrP) ? fs.readFileSync(ovrP) : null;
+
+    const arr = (decl) => {          // the same string-aware brace match the build scripts use
+      const h = fs.readFileSync(desk, 'utf8');
+      const i = h.indexOf(decl), s = h.indexOf('[', i);
+      let d = 0, ins = false, esc = false;
+      for (let j = s; j < h.length; j++) {
+        const ch = h[j];
+        if (ins) { if (esc) esc = false; else if (ch === '\\') esc = true; else if (ch === '"') ins = false; }
+        else if (ch === '"') ins = true;
+        else if (ch === '[') d++;
+        else if (ch === ']' && --d === 0) return JSON.parse(h.slice(s, j + 1));
+      }
+      throw new Error('unterminated ' + decl);
+    };
+    const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
+
+    try {
+      const was = arr('const STOPS ='), wasBk = arr('const BOOKINGS =');
+      const target = was[5], next = was[6], last = was[was.length - 1];
+      const wasBkT = wasBk.find(b => b.id === target.id);
+
+      fs.writeFileSync(ovrP, JSON.stringify(
+        { updated: '2027-01-01T00:00:00Z', stops: { [target.id]: { nights: 2 } } }, null, 2) + '\n');
+      execSync(`cd ${__dirname} && python3 apply_overrides.py`, { stdio: 'pipe' });
+
+      const now = arr('const STOPS ='), nowBk = arr('const BOOKINGS =');
+      const t = now.find(s => s.id === target.id), n = now.find(s => s.id === next.id);
+      const gained = t.nights - target.nights;
+      const nextShift = days(next.arrive, n.arrive);
+      const endShift = days(last.depart, now[now.length - 1].depart);
+      const left = Object.keys(JSON.parse(fs.readFileSync(ovrP, 'utf8')).stops || {}).length;
+
+      console.log(`  +2 nights at ${target.id}: ${target.nights} -> ${t.nights} nights,`
+                + ` arrive unchanged (${t.arrive === target.arrive})`);
+      console.log(`  cascade: next stop +${nextShift}d, trip end +${endShift}d (expect +2 and +2)`);
+      console.log('  overrides.json emptied (expect 0 stops left):', left);
+      if (gained !== 2) errors.push(`apply_overrides added ${gained} nights, expected 2`);
+      if (t.arrive !== target.arrive) errors.push('apply_overrides moved the arrival of the stop that gained the night');
+      if (nextShift !== 2) errors.push(`the stop after the change moved ${nextShift} days, expected 2`);
+      if (endShift !== 2) errors.push(`the end of the trip moved ${endShift} days, expected 2`);
+      if (left !== 0) errors.push('overrides.json still holds the change after applying — it would apply again');
+
+      if (wasBkT) {
+        const bk = nowBk.find(b => b.id === target.id);
+        const bkShift = bk ? days(wasBkT.depart, bk.depart) : null;
+        console.log(`  booking card for ${target.id} followed the stop: depart +${bkShift}d (expect +2)`);
+        if (bkShift !== 2) errors.push(`booking card depart moved ${bkShift} days, expected 2 — the card and the stop disagree`);
+      }
+
+      const settled = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
+      execSync(`cd ${__dirname} && python3 apply_overrides.py`, { stdio: 'pipe' });
+      const again = crypto.createHash('md5').update(fs.readFileSync(desk)).digest('hex');
+      console.log('  second run changes nothing:', settled === again);
+      if (settled !== again) errors.push('apply_overrides is not idempotent — a re-run shifted the dates a second time');
+    } finally {
+      // Restore byte-for-byte. This block is the only one that edits the plan
+      // rather than the derived layers, and leaving a test shift in the
+      // repository would publish it.
+      fs.writeFileSync(desk, deskBak);
+      if (ovrBak !== null) fs.writeFileSync(ovrP, ovrBak); else fs.unlinkSync(ovrP);
+    }
   }
 
   console.log('\n--- Map actually renders ---');

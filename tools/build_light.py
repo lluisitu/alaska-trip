@@ -156,6 +156,43 @@ def hm(x):
     return f"{h:02d}:{m:02d}"
 
 
+def zone_offset(tz, date):
+    """UTC offset in hours for an IANA zone on a given date, DST included.
+
+    zoneinfo is standard library from Python 3.9 and reads the system tz
+    database, so this needs no pip install and no network. If a machine has
+    neither, the caller falls back to solar time and says so rather than
+    printing a clock time that is quietly wrong.
+    """
+    try:
+        from zoneinfo import ZoneInfo
+        import datetime as _dt
+        off = _dt.datetime(date.year, date.month, date.day, 12,
+                           tzinfo=ZoneInfo(tz)).utcoffset()
+        return off.total_seconds() / 3600.0
+    except Exception:
+        return None
+
+
+def to_clock(solar_hours, lng, tz, date):
+    """Local mean solar time at a longitude -> the time on the wall clock.
+
+    events() works in local mean solar time, which is what the astronomy wants
+    and NOT what anybody reads off a phone. At Craters of the Moon the gap is
+    an hour and 34 minutes: solar sunset 19:07, actual sunset 20:41 MDT. Every
+    golden-hour time on every card was showing the solar figure, so the whole
+    light box was up to two hours out - and golden hour is exactly the thing
+    you set an alarm for.
+
+        local mean solar time = UTC + lng/15
+        wall clock            = UTC + zone offset
+    """
+    if solar_hours is None: return None
+    off = zone_offset(tz, date)
+    if off is None: return solar_hours
+    return solar_hours - lng / 15.0 + off
+
+
 # Geomagnetic latitude, not geographic, decides whether you are under the auroral
 # oval — the oval is centred on the magnetic pole over northern Canada, which is why
 # Dawson City beats Fairbanks despite being further south. IGRF dipole for ~2027.
@@ -217,26 +254,36 @@ def aurora(lat, lng, arrive, depart):
             'best': sorted(prime, key=lambda n: (n['moon'], -n['darkHours']))[:4]}
 
 
-def describe(lat, lng, arrive, depart):
-    """Light at the midpoint of the stay — the representative day."""
+def describe(lat, lng, arrive, depart, tz=None):
+    """Light at the midpoint of the stay — the representative day.
+
+    Every time that comes out of here is a WALL CLOCK time in the stop's own
+    timezone, converted from the local mean solar time the astronomy works in.
+    """
     a, b = D(arrive), D(depart)
     mid = a + (b - a) // 2
     ev = events(lat, lng, mid)
     decl = ev['declination']
+    clk = lambda x: to_clock(x, lng, tz, mid) if tz else x
     out = {'date': mid.isoformat(), 'declination': decl}
+    if tz:
+        out['tz'] = tz
+        if zone_offset(tz, mid) is None:
+            out['tzWarning'] = ('No timezone database on the build machine — these times are local '
+                                'solar time, not clock time.')
     if isinstance(ev['sun'], tuple):
         rise, set_ = ev['sun']
         ha = (rise - ev['solarNoon']) * 15.0
         az_r, _ = azimuth(lat, decl, ha)
         az_s, _ = azimuth(lat, decl, -ha)
-        out['sunrise'], out['sunset'] = hm(rise), hm(set_)
+        out['sunrise'], out['sunset'] = hm(clk(rise)), hm(clk(set_))
         out['sunriseAz'], out['sunsetAz'] = round(az_r), round(az_s)
         out['sunriseDir'], out['sunsetDir'] = compass(az_r), compass(az_s)
         out['dayLength'] = round((set_ - rise), 1)
         if isinstance(ev['golden'], tuple):
             g0, g1 = ev['golden']
-            out['goldenMorning'] = [hm(rise), hm(g0)]
-            out['goldenEvening'] = [hm(g1), hm(set_)]
+            out['goldenMorning'] = [hm(clk(rise)), hm(clk(g0))]
+            out['goldenEvening'] = [hm(clk(g1)), hm(clk(set_))]
             out['goldenMinutes'] = round((g0 - rise) * 60)
     elif ev['sun'] == 'above':
         out['sunrise'] = out['sunset'] = None
@@ -259,9 +306,9 @@ def describe(lat, lng, arrive, depart):
         d0, d1 = ev['astro']
         hours = (24 - (d1 - d0))
         out['darkness'] = 'partial'
-        out['darkStart'], out['darkEnd'] = hm(d1), hm(d0)
+        out['darkStart'], out['darkEnd'] = hm(clk(d1)), hm(clk(d0))
         out['darkHours'] = round(hours, 1)
-        out['darkNote'] = (f"Astronomical dark {hm(d1)} to {hm(d0)} — {hours:.1f} hours."
+        out['darkNote'] = (f"Astronomical dark {hm(clk(d1))} to {hm(clk(d0))} — {hours:.1f} hours."
                            if hours >= 1 else
                            f"Barely {hours*60:.0f} minutes of true darkness — marginal for stars.")
     # Moon, at the same midpoint, plus the darkest night of the stay.
@@ -291,7 +338,7 @@ def main():
         for s in stops:
             if not s['nights']: continue
             try:
-                light[s['id']] = describe(s['lat'], s['lng'], s['arrive'], s['depart'])
+                light[s['id']] = describe(s['lat'], s['lng'], s['arrive'], s['depart'], s.get('tz'))
             except Exception as exc:
                 warn.append(f"{s['id']}: {exc}")
     if warn:

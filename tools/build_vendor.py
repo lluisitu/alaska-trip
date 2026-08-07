@@ -23,10 +23,29 @@ route with no basemap under it is far more use than an empty grey box.
 
 The vendored copy lives in tools/vendor/ so this needs no network either. If it
 is genuinely absent — a fresh clone on a machine that never had it — this will
-fetch it once from the CDN and cache it there, but only if the bytes match the
-copy that was vetted and is already inlined into the published dashboard. An
-unrecognised leaflet.js is refused rather than inlined, because this publishes
-to a public website and a swapped script would be served to anyone who opens it.
+fetch it once and cache it there, but only if the bytes match the copy that was
+vetted and is already inlined into the published dashboard. An unrecognised
+leaflet.js is refused rather than inlined, because this publishes to a public
+website and a swapped script would be served to anyone who opens it.
+
+TWO THINGS THAT WERE WRONG HERE, BOTH OF WHICH COST A WORKFLOW RUN
+The fetch used to happen before anything worked out whether there was anything
+to inline. Both builds already carrying Leaflet still meant two network round
+trips to then do nothing — and on a machine behind a filter, a hard exit in a
+step that had no work to do. The order is now: decide, then fetch only if needed.
+
+And the fetch pointed at cdnjs while PINS holds the checksums of the npm dist
+files. Those are not the same bytes and never can be: cdnjs serves leaflet.min.css,
+npm ships dist/leaflet.css unminified, so the pin check was guaranteed to fail
+the moment it ever ran. The pins are right and the URL was wrong, so the URL
+moved to unpkg, which serves the npm dist unchanged (verified against
+`npm pack leaflet@1.9.4`).
+
+Note the two are deliberately different addresses. The built HTML *references*
+cdnjs — that is what build_mobile.py writes into the phone shell and what the
+tags being replaced look like — while the bytes are *fetched* from unpkg. The
+replacement target and the download source are not the same thing, and collapsing
+them back into one constant would re-break one or the other.
 """
 import base64, hashlib, pathlib, re, sys
 
@@ -34,13 +53,22 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 VENDOR = pathlib.Path(__file__).resolve().parent / 'vendor'
 TARGETS = [ROOT / 'desktop' / 'index.html', ROOT / 'mobile' / 'index.html']
 
-CSS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'
-JS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'
+# What the built HTML references, and therefore what gets replaced. build_mobile.py
+# writes these exact URLs into the phone shell.
+CDN_CSS = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'
+CDN_JS = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'
+
+# Where the bytes come from when the vendored copy is missing. Not the same as
+# the URLs above — see the docstring. unpkg serves the npm dist files, which is
+# what PINS was taken from.
+SRC_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+SRC_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
 
 MARK = '/* leaflet inlined by build_vendor.py */'
 
-# sha256 of the vetted Leaflet 1.9.4 copies — the exact bytes already inlined
-# into the published dashboard. The fetch below refuses anything else.
+# sha256 of the vetted Leaflet 1.9.4 copies — the npm dist bytes, which are the
+# exact bytes already inlined into the published dashboard. The fetch below
+# refuses anything else.
 PINS = {
     'leaflet.css': 'a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6',
     'leaflet.js': 'db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a',
@@ -52,7 +80,7 @@ def ensure(path, url):
     if path.exists():
         return path.read_text()
     import urllib.request
-    print(f"   {path.name} not vendored — fetching once from the CDN")
+    print(f"   {path.name} not vendored — fetching once from {url}")
     try:
         with urllib.request.urlopen(url, timeout=30) as r:
             body = r.read()
@@ -71,9 +99,29 @@ def ensure(path, url):
 
 
 def main():
-    css_f, js_f = VENDOR / 'leaflet.css', VENDOR / 'leaflet.js'
-    css = ensure(css_f, CSS_URL)
-    js = ensure(js_f, JS_URL)
+    # Decide what needs doing BEFORE fetching anything. The common case by far is
+    # that both builds are already inlined, and that case must not touch the
+    # network at all — build_vendor.py runs on every publish, including from a
+    # rest area on a phone hotspot.
+    todo = []
+    for path in TARGETS:
+        if not path.exists():
+            print(f"   skip {path.name} (not present)"); continue
+        h = path.read_text()
+        if MARK in h:
+            print(f"   {path.parent.name}/{path.name}: already inlined")
+            continue
+        if not (CDN_CSS in h or CDN_JS in h):
+            print(f"   !! {path.parent.name}: no cdnjs Leaflet reference found — not touching it")
+            continue
+        todo.append((path, h))
+
+    if not todo:
+        print("   nothing to inline — no fetch needed")
+        return
+
+    css = ensure(VENDOR / 'leaflet.css', SRC_CSS)
+    js = ensure(VENDOR / 'leaflet.js', SRC_JS)
 
     # Leaflet's CSS points at marker-icon.png and layers.png relative to itself.
     # Once inlined those paths resolve against the HTML and 404. The dashboard
@@ -82,25 +130,15 @@ def main():
     # rather than ship something visibly broken offline.
     css = re.sub(r'url\((["\']?)[^)]*\.png\1\)', lambda _m: 'none', css)
 
-    for path in TARGETS:
-        if not path.exists():
-            print(f"   skip {path.name} (not present)"); continue
-        h = path.read_text(); before = len(h)
-        if MARK in h:
-            print(f"   {path.parent.name}/{path.name}: already inlined")
-            continue
-        n_css = len(re.findall(re.escape(CSS_URL), h))
-        n_js = len(re.findall(re.escape(JS_URL), h))
-        if not (n_css or n_js):
-            print(f"   !! {path.parent.name}: no cdnjs Leaflet reference found — not touching it")
-            continue
-        css_block = f'<style>{MARK}\n{css}</style>'
-        js_block = f'<script>{MARK}\n{js}</script>'
-        h = re.sub(r'<link[^>]*href="%s"[^>]*>' % re.escape(CSS_URL),
+    css_block = f'<style>{MARK}\n{css}</style>'
+    js_block = f'<script>{MARK}\n{js}</script>'
+    for path, h in todo:
+        before = len(h)
+        h = re.sub(r'<link[^>]*href="%s"[^>]*>' % re.escape(CDN_CSS),
                    lambda _m: css_block, h, count=1)
-        h = re.sub(r'<script[^>]*src="%s"[^>]*></script>' % re.escape(JS_URL),
+        h = re.sub(r'<script[^>]*src="%s"[^>]*></script>' % re.escape(CDN_JS),
                    lambda _m: js_block, h, count=1)
-        if CSS_URL in h or JS_URL in h:
+        if CDN_CSS in h or CDN_JS in h:
             sys.exit(f"!! {path} still references the CDN after inlining — the tag shape must have changed")
         path.write_text(h)
         print(f"   {path.parent.name}/{path.name}: inlined "

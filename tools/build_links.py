@@ -77,32 +77,24 @@ def ex(hh, decl, o='[', c=']'):
 
 
 def note_for(t):
-    """The uses/cruise/season line, until those become real badges."""
+    """What is left after the pills have taken everything they can show.
+
+    Uses, difficulty, distance, time, rating and the cruise verdict are all pills
+    now. Repeating them here made every row a paragraph — on Caprock, where every
+    trail is multiuse, "hike/bike/horse · bike-legal but not cruising" appeared
+    seven times in one box. The note keeps only what a pill cannot carry.
+    """
     bits = []
-    uses = t.get('uses')
-    if uses:
-        bits.append('/'.join(uses))
-    if t.get('cruise') is True:
-        bits.append('gravel cruise')
-    elif t.get('cruise') == 'candidate':
-        bits.append('possible gravel cruise — unconfirmed'
-                    + (': ' + t['cruise_reason'] if t.get('cruise_reason') else ''))
-    elif t.get('cruise') is False and 'bike' in (uses or []):
-        # The reason matters more than the verdict when the verdict is "no" —
-        # the Trailway looks like a flat rail bed on paper and is not one.
-        bits.append('bike-legal but not cruising'
-                    + (': ' + t['cruise_reason'] if t.get('cruise_reason') else ''))
     if t.get('elevation_gain'):
         bits.append(t['elevation_gain'] + ' gain')
-    if t.get('stats_note'):
-        bits.append(t['stats_note'])
-    if t.get('official_length'):
-        bits.append('official ' + t['official_length'])
     at = t.get('alltrails') or {}
     if at.get('match') == 'contains':
-        bits.append('AllTrails route includes this trail')
-    if at.get('match') == 'none' or at.get('tier') == 'unlisted':
-        bits.append('no AllTrails listing — official source only')
+        # The distance pill is the longer route's; say so once, briefly. The full
+        # explanation rides in stats_note as a tooltip, not as body text.
+        bits.append('AllTrails route includes this trail'
+                    + (f"; official {t['official_length']}" if t.get('official_length') else ''))
+    elif at.get('match') == 'none' or at.get('tier') == 'unlisted':
+        bits.append('no AllTrails listing — official source')
     if t.get('season'):
         bits.append(t['season'])
     return ' · '.join(bits) or None
@@ -126,11 +118,28 @@ def build_item(t):
         item['url'] = url
         if not at.get('url'):
             item['label'] = (t.get('other_links') or [{}])[0].get('label') or 'source'
-    for k in ('difficulty', 'distance', 'time'):
+    for k in ('difficulty', 'time'):
         if t.get(k):
             item[k] = t[k]
+    # Distance is always a pill, never buried in the note. Where the listing has
+    # no distance the authority's own length takes the pill — Mesa Trail is not
+    # on AllTrails and TPWD's 3.1 mi is the real number, so it belongs up top
+    # with every other trail's mileage rather than in a sentence underneath.
+    dist = t.get('distance') or t.get('official_length')
+    if dist:
+        item['distance'] = dist
     if t.get('reviews'):
-        item['rating'] = t['reviews'] + ' reviews'
+        r = t['reviews']
+        item['rating'] = r if '(' in r else r + ' reviews'
+    if t.get('uses'):
+        item['uses'] = t['uses']
+    # A `false` verdict with a reason is worth as much as a positive one — the
+    # Trailway reads as a flat rail bed everywhere else and is sand, rock and
+    # goatheads. Carry it as a pill with the reason on hover, not as a paragraph.
+    if t.get('cruise') in (True, 'candidate') or (t.get('cruise') is False and t.get('cruise_reason')):
+        item['cruise'] = t['cruise']
+        if t.get('cruise_reason'):
+            item['cruiseWhy'] = t['cruise_reason']
     note = note_for(t)
     if note:
         item['note'] = note

@@ -39,7 +39,7 @@ cd tools
 python3 apply_overrides.py          # bakes road changes into real dates, then empties overrides.json
 for p in 1 2; do for s in build_strategy build_frozen build_light build_phonecraft build_drone \
   build_passes build_legs build_costs build_petlog build_staynotes build_rigfit build_campfacts \
-  build_swaps build_bookings build_parks build_askbox; do python3 $s.py; done; done
+  build_swaps build_bookings build_parks build_askbox build_links; do python3 $s.py; done; done
 python3 build_routes.py && python3 build_mobile.py && python3 build_vendor.py
 cd .. && node tools/test_alaska_ext_v3.js     # must print "Page errors: 0"
 ```

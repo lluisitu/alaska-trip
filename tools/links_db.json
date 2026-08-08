@@ -1,0 +1,328 @@
+{
+  "_what": "Trail, highlight and route links per stop, with the evidence tier for each one.",
+  "_why": "The trail boxes were built when direct listing URLs could not be found, so half the named trails render as a search magnifier (135 of 265 main-loop items, 129 of 233 extension items). They can be found now. This file is the source; build_links.py injects it into STOPS/EXT_DATA. Editing the consts by hand is silently overwritten by the next build.",
+  "_tiers": {
+    "official": "Fetched from the managing authority (state park, NPS, USFS) and confirmed 200 with the expected content type, from this machine.",
+    "indexed": "Returned by web search with a matching title and a review count. The page itself could NOT be loaded — alltrails.com answers 403 to every request from here, so a 403 proves nothing either way. Real, but one tier below official.",
+    "unlisted": "Confirmed to exist by the managing authority, but no AllTrails listing found. Deliberately carries no trail link rather than a search that goes nowhere."
+  },
+  "_match": {
+    "exact": "The official trail and the AllTrails listing are the same object.",
+    "contains": "The AllTrails listing is a longer user-assembled route that includes this official trail. Both are shown; the official name and length stay primary.",
+    "none": "No listing matched."
+  },
+  "_uses": "From the managing authority, not inferred. hike | bike | horse.",
+  "_cruise": "true only where reviews support riding it at cruising pace on gravel tyres: rail-grade or packed surface, no walk sections, no puncture-hazard reports. Bike-legal is not sufficient. Technical singletrack is bike-legal nearly everywhere and is not what this flags.",
+  "_dogs": "Stop-level dog rule where the managing authority publishes one. This trip carries a dog for 405 nights; a stop where dogs are banned from every trail needs to say so on the card.",
+
+  "stops": {
+    "caprock-canyons": {
+      "authority": "Texas Parks & Wildlife Department",
+      "official_links": [
+        {"label": "Official trail list", "url": "https://tpwd.texas.gov/state-parks/caprock-canyons/trails-info", "tier": "official"},
+        {"label": "Trailway", "url": "https://tpwd.texas.gov/state-parks/caprock-canyons/trailway", "tier": "official"},
+        {"label": "Park trails map (PDF)", "url": "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4506_0079s.pdf", "tier": "official"},
+        {"label": "Trailway map (PDF)", "url": "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4506_0079w.pdf", "tier": "official"},
+        {"label": "Interactive trail map", "url": "https://tpwd.texas.gov/spdest/parkinfo/maps/gis/caprock_canyons/", "tier": "official"}
+      ],
+      "dogs": "Leashed at all times. Free-roaming bison on trails and in the campground — TPWD advises substantial distance.",
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/texas/caprock-canyons-state-park-trailway",
+      "note": "TPWD: 'All trails are multiuse unless otherwise indicated.' Every named trail here permits hiking, biking and equestrian, so use is an attribute, not a section. The canyon trails are rocky singletrack — bike-legal but not cruising.",
+      "trails": [
+        {
+          "name": "Haynes Ridge Overlook Trail",
+          "official_length": "2.3 mi",
+          "distance": "6.6 mi loop",
+          "elevation_gain": "872 ft",
+          "reviews": "4.8 (1,307)",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "stats_note": "distance/gain/rating are the AllTrails route that contains this trail; 2.3 mi is TPWD's length for the trail itself. Difficulty not published by either — not guessed.",
+          "alltrails": {
+            "name": "Haynes Ridge and Upper North Prong Trail Loop",
+            "url": "https://www.alltrails.com/trail/us/texas/haynes-ridge-and-upper-canyon-trail-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "was": "Haynes Ridge Overlook — no url, label 'search AllTrails'"
+        },
+        {
+          "name": "Mesa Trail",
+          "official_length": "3.1 mi round trip",
+          "difficulty": "Easy-Moderate",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": "candidate",
+          "cruise_reason": "Komoot describes it as primarily packed sand and a flat, relatively easy path — the surface profile the Trailway turned out not to have. Bike-legal per TPWD. Worth checking on the ground before committing to it as the dog-carrier ride here.",
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [
+            {"label": "Komoot", "url": "https://www.komoot.com/highlight/6831197", "tier": "community", "note": "Also called Mesa Rim Trail. Winds around the mesa, packed sand, crosses a few stream beds, quieter than the rest of the park. Komoot's 0.46 mi is the highlight segment, not the trail — TPWD's 3.1 mi round trip stands."}
+          ],
+          "was": "Mesa Trail — no url. Confirmed real by TPWD; AllTrails has no standalone listing. Found via Komoot after widening the search."
+        },
+        {
+          "name": "Caprock Canyon Rim Trail (Spur Loop)",
+          "distance": "1.9 mi",
+          "difficulty": "Easy",
+          "elevation_gain": "49 ft",
+          "reviews": "4.5 (611)",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/texas/caprock-canyon-rim-trail-spur-loop", "match": "exact", "tier": "indexed"},
+          "note_source": "Flat for the most part with little elevation gain — the park's best short canyon-vista walk and the strongest easy option here."
+        },
+        {
+          "name": "Caprock Canyon Rim Trail",
+          "distance": "6.5 mi",
+          "time": "2.5-3 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "469 ft",
+          "reviews": "4.4 (253)",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/texas/caprock-canyon-rim-trail", "match": "exact", "tier": "indexed"},
+          "note_source": "First 1-2 miles are easy with great views, then harder with fewer views. Wildflowers in spring — relevant, arrival is 22 Mar."
+        },
+        {
+          "name": "Eagle Point Trail",
+          "official_length": "2.0 mi",
+          "distance": "4.1 mi out-and-back",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "449 ft",
+          "reviews": "721",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "alltrails": {
+            "name": "Eagle Point Trail",
+            "url": "https://www.alltrails.com/trail/us/texas/eagle-point-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "was": "Eagle Point Trail — no url. TPWD 2.0 mi one way reconciles with the 4.1 mi out-and-back."
+        },
+        {
+          "name": "Upper South Prong Trail",
+          "official_length": "2.6 mi",
+          "distance": "7.0 mi loop",
+          "difficulty": "Challenging",
+          "elevation_gain": "885 ft",
+          "reviews": "277",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "stats_note": "the AllTrails figures are for the three-trail loop; 2.6 mi is TPWD's length for Upper South Prong alone.",
+          "alltrails": {
+            "name": "Upper South Prong Trail, Upper North Prong Trail and North Prong Spur",
+            "url": "https://www.alltrails.com/trail/us/texas/upper-south-prong-trail-upper-north-prong-trail-and-north-prong-spur",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "was": "Upper South Prong — no url. Existing 2.6-mile tag matches TPWD exactly."
+        }
+      ],
+      "biking": [
+        {
+          "name": "Caprock Canyons Trailway",
+          "official_length": "64 mi, former Fort Worth & Denver rail bed, through the 742-ft Clarity Tunnel",
+          "distance": "64 mi point-to-point",
+          "reviews": "44",
+          "uses": ["hike", "bike", "horse"],
+          "cruise": false,
+          "cruise_reason": "Ruled out on rider reports, not on paper. Surface is a sand-and-clay mix needing 700x35c minimum; rocky for the ~13 mi from South Plains to Clarity Tunnel; repeated goathead puncture reports; the tunnel itself is sandy and guano-covered and has to be walked. Described as remote and for prepared riders.",
+          "alltrails": {
+            "name": "Caprock Canyon Trailway",
+            "url": "https://www.alltrails.com/trail/us/texas/caprock-canyon-trailway",
+            "stats": "44 reviews",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {"label": "TrailLink itinerary", "url": "https://www.traillink.com/trail-itinerary/caprock-canyons-state-park-trailway/", "tier": "indexed"},
+            {"label": "FATMAP/Strava gravel route", "url": "https://fatmap.com/discover/route/united-states-of-america/texas/gravel-biking/caprock-canyons-trailway/134089", "tier": "indexed"},
+            {"label": "Texas Parks & Wildlife Magazine", "url": "https://tpwmagazine.com/archive/2024/may/ed_1_biking/", "tier": "indexed"}
+          ]
+        }
+      ],
+      "blurb_fix": {
+        "problem": "The activity card says the Trailway is 'a flat, packed-gravel former rail bed'. Riders describe sand and clay, rock, and goatheads. That description reads as an invitation to a casual ride.",
+        "replace": "flat, packed-gravel former rail bed",
+        "with": "former rail bed — sand and clay, rocky in sections, gravel tyres and puncture kit"
+      }
+    },
+
+    "santafe": {
+      "authority": "Santa Fe National Forest / City of Santa Fe",
+      "official_links": [
+        {"label": "Santa Fe NF recreation area", "url": "https://www.fs.usda.gov/recarea/santafe/recarea/?recid=73084", "tier": "official"}
+      ],
+      "trails": [
+        {
+          "name": "Atalaya Mountain",
+          "distance": "6.4 mi",
+          "time": "4-4.5 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "1,797 ft",
+          "reviews": "3,612",
+          "uses": ["hike"],
+          "cruise": false,
+          "dogs": "Allowed on leash (per AllTrails reviews).",
+          "alltrails": {
+            "name": "Atalaya Mountain Trail",
+            "url": "https://www.alltrails.com/trail/us/new-mexico/atalaya-mountain-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "was": "Atalaya Mountain — no url, tag 'strenuous climb with city and mountain views'. Confirmed strenuous: 1,797 ft."
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Bandelier Main Pueblo Loop plus Alcove House when open.",
+          "problem": "A prose sentence in the trail list, and Bandelier is a separate NPS unit ~45 min away, not a Santa Fe trail.",
+          "action": "Move to activities with the official link below.",
+          "official_link": {"label": "Bandelier NM hiking", "url": "https://www.nps.gov/band/planyourvisit/hiking.htm", "tier": "official"}
+        }
+      ]
+    },
+
+    "great-sand-dunes": {
+      "authority": "National Park Service",
+      "official_links": [
+        {"label": "Hiking at Great Sand Dunes", "url": "https://www.nps.gov/grsa/planyourvisit/hiking.htm", "tier": "official"},
+        {"label": "Pets", "url": "https://www.nps.gov/grsa/planyourvisit/pets.htm", "tier": "official"}
+      ],
+      "dogs": "Leashed, 6 ft max. Permitted on Mosca Pass Trail (Preserve), Dunes Overlook Trail, Medano Pass Primitive Road, main use areas and Pinon Flats Campground. NOT permitted off the Dunes Overlook Trail, in the dunefield beyond the first high ridge, north of Point of No Return, or on Sand Ramp Trail.",
+      "note": "All five existing trail entries already carry direct URLs. This stop needs the dog overlay, not links: two of the five are explicitly dog-permitted and the dunefield ones are limited.",
+      "needs_check": ["Montville Nature Trail", "Wellington Ditch Trail", "High Dune Loop"],
+      "needs_check_why": "The NPS pets page names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited. It does not name Montville or Wellington either way. Not inferring — to be confirmed with the park."
+    },
+
+    "salida-buenavista": {
+      "authority": "USFS / City of Salida / Chaffee County",
+      "trails": [
+        {
+          "name": "Midland Trail near Buena Vista",
+          "problem": "Ambiguous — three different Midland routes exist near Buena Vista and the entry does not say which.",
+          "candidates": [
+            {"name": "Midland Railroad Grade (Historic)", "url": "https://www.alltrails.com/trail/us/colorado/midland-railroad-grade-historic", "stats": "8.8 mi point-to-point, moderate, 72 reviews, birding/hiking/MTB, dogs on leash", "tier": "indexed", "note": "Former rail grade — the gravel-cruise candidate of the three."},
+            {"name": "Midland Hill Trail", "url": "https://www.alltrails.com/trail/us/colorado/midland-hill-trail", "stats": "5.0 mi out-and-back, challenging, 4.7 (1,619)", "tier": "indexed", "note": "Buena Vista's most popular MTB climb — not cruising."},
+            {"name": "Midland Bike Trail", "url": "https://www.alltrails.com/trail/us/colorado/midland-bike-trail--2", "stats": "10.0 mi out-and-back, moderately challenging, 54 reviews", "tier": "indexed"}
+          ],
+          "cruise_candidate": "Midland Railroad Grade (Historic)",
+          "cruise": "unconfirmed",
+          "cruise_next": "Read surface reports before flagging. A rail grade is the right shape but the surface has not been checked."
+        }
+      ],
+      "not_a_trail": [
+        {"entry": "Arkansas Hills trail system directly above Salida.", "problem": "A trail system, not a trail. No single listing can be matched."},
+        {"entry": "Browns Canyon river and upland routes.", "problem": "Prose. 'Routes' plural, no named trail."}
+      ]
+    },
+
+    "estes-rmnp": {
+      "authority": "National Park Service",
+      "official_links": [
+        {"label": "Pets in RMNP", "url": "https://www.nps.gov/romo/planyourvisit/pets.htm", "tier": "official"}
+      ],
+      "dogs": "PROHIBITED on every trail. NPS: 'Pets are prohibited on ALL Rocky Mountain National Park trails, tundra, and meadows.' Leashed pets are confined to roads, parking areas, campgrounds and picnic areas. Violations are citable, with a mandatory court appearance in Denver.",
+      "dogs_impact": "Five nights, 11-16 Apr 2027, and not one of the eight trails on this card can be walked with the dog. This is not a link problem and it is the most important thing on the stop.",
+      "trails": [
+        {
+          "name": "Sprague Lake",
+          "uses": ["hike"],
+          "cruise": false,
+          "alltrails": {"name": "Sprague Lake Loop", "url": "https://www.alltrails.com/trail/us/colorado/sprague-lake-trail", "stats": "0.8 mi loop, 36 ft gain, easy, 5,304 reviews, boardwalks, stroller-friendly", "match": "exact", "tier": "indexed"},
+          "was": "Sprague Lake for an easy acclimatization walk. — no url"
+        },
+        {
+          "name": "Lily Lake",
+          "uses": ["hike"],
+          "cruise": false,
+          "alltrails": {"name": "Lily Lake Trail", "url": "https://www.alltrails.com/trail/us/colorado/lily-lake-trail-641", "stats": "0.8 mi, 32 ft gain, easy, 2,356 reviews", "match": "exact", "tier": "indexed"},
+          "was": "Lily Lake and Lily Ridge. — no url"
+        }
+      ],
+      "not_a_trail": [
+        {"entry": "Alluvial Fan and Horseshoe Park.", "problem": "Two place names, not a trail."}
+      ]
+    },
+
+    "flaming-gorge": {
+      "authority": "USDA Forest Service — Ashley National Forest",
+      "reclassify": [
+        {
+          "name": "Sheep Creek Loop Scenic Byway",
+          "from": "alltrails",
+          "to": "scenicDrives",
+          "why": "A 12.9-mile scenic byway filed in the hiking box. AllTrails rates it 'Easy' because it is a drive. Confirmed misfile.",
+          "url": "https://www.alltrails.com/trail/us/utah/sheep-creek-loop-scenic-byway",
+          "same_as": "Sheep Creek Canyon Geological Loop",
+          "same_as_why": "The scenic-drives box already carries this road as 'Sheep Creek Canyon Geological Loop' with a Daggett County link. Same loop off UT-44 — so the AllTrails URL folds in as a second link rather than listing one road twice."
+        }
+      ],
+      "not_a_trail": [
+        {"entry": "Red Canyon rim paths for the best effort-to-view ratio.", "problem": "Prose, and it duplicates 'Red Canyon Rim Trail' which is already listed directly above it with a working URL."}
+      ]
+    },
+
+    "wind-river": {
+      "authority": "USDA Forest Service — Bridger-Teton National Forest",
+      "problem": "All three entries in the trail box were TRAILHEADS, not trails — car parks with signboards. Replaced with the actual routes that leave them, per the rule that a trail entry must be a trail and must carry distance, time, difficulty and reviews.",
+      "seasonal": "The stop's own blurb, note and red weather flag already say the alpine trailheads are snowed in at this date. The trail box was the only part of the card that did not. Elkhart Park sits at 9,500 ft and winter road maintenance stops ~3 miles short of it, just past White Pine Ski Area; conditions reports put reliable access at mid-to-late June. Arrival is 24 Apr 2027, seven nights. Every trail below is out of reach on this visit and is tagged as such rather than removed — the stop is a deliberate lower-elevation scouting stop and the real Wind River visit is Pinedale, late May 2028, on the East trip.",
+      "trails": [
+        {
+          "name": "Photographers Point via Pole Creek Trail",
+          "distance": "9.5 mi out-and-back",
+          "time": "3 h 54 min",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "1,145 ft",
+          "reviews": "483",
+          "uses": ["hike"],
+          "cruise": false,
+          "season": "Best July-September. Trailhead road not maintained past White Pine Ski Area until mid-to-late June.",
+          "season_conflict": true,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/wyoming/photographers-point-via-pole-creek-trail", "match": "exact", "tier": "indexed"},
+          "was": "Elkhart Park / Photographer's Point Trailhead — a trailhead, no url"
+        },
+        {
+          "name": "Elkhart Park Trailhead Loop: Cook and Seneca Lakes",
+          "reviews": "40",
+          "uses": ["hike"],
+          "cruise": false,
+          "season_conflict": true,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/wyoming/elkhart-park-trailhead-loop-cook-and-seneca-lakes", "match": "exact", "tier": "indexed"},
+          "needs": "distance, time, difficulty not returned by search — page load required"
+        },
+        {
+          "name": "Big Sandy Lake via Big Sandy Trail",
+          "reviews": "437",
+          "uses": ["hike"],
+          "cruise": false,
+          "season": "Big Sandy Road is 60 miles of rough forest road from Pinedale; snow can block it into July.",
+          "season_conflict": true,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/wyoming/big-sandy-lake-via-big-sandy-trail", "match": "exact", "tier": "indexed"},
+          "was": "Big Sandy Trailhead — a trailhead, no url",
+          "needs": "distance, time, difficulty not returned by search — page load required"
+        },
+        {
+          "name": "Cirque of Towers, Bears Ears Trail, and Hailey Pass",
+          "distance": "43.8 mi",
+          "time": "21.5-23.5 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "8,208 ft",
+          "reviews": "65",
+          "uses": ["hike"],
+          "cruise": false,
+          "season_conflict": true,
+          "alltrails": {"url": "https://www.alltrails.com/trail/us/wyoming/cirque-of-towers-big-sandy", "match": "exact", "tier": "indexed"},
+          "note": "A multi-day backpack, not a day hike. Listed because the stop names the Cirque, but it is not a candidate on this trip at all — with or without snow."
+        }
+      ],
+      "unresolved": {
+        "entry": "Scab Creek Recreation Area Trailhead",
+        "problem": "A BLM trailhead into the Bridger Wilderness. No day-hike trail listing matched it in search — the routes leaving it are wilderness backpacking routes.",
+        "action": "Move to activities, where the stop already describes it correctly, and leave the trail box without it."
+      },
+      "low_elevation_gap": "The stop's note points at CCC Ponds and the New Fork River corridor as what is actually walkable in late April. Neither is indexed on AllTrails. These need a Wyoming Game & Fish / BLM source, not a trail-database one — outstanding."
+    }
+  }
+}

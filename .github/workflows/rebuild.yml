@@ -120,8 +120,29 @@ jobs:
           regenerated, Playwright suite green."
           git push
 
+      - name: Mark this as the build to come back to
+        # Everything above this line passed. So whatever is at HEAD right now is
+        # a dashboard that builds, converges and clears the whole suite — and
+        # that is worth being able to get back to without thinking.
+        #
+        # The tag moves to here every time a build goes green, so 'last-good'
+        # always means "the most recent one that worked", not some fixed point
+        # in the past that drifts further away. If a later change breaks the
+        # site, "Put the dashboard back" on the Actions tab returns to exactly
+        # this commit. See restore.yml.
+        #
+        # -f on both because the tag is meant to move; without it the second
+        # green build would fail trying to create a tag that already exists.
+        run: |
+          git tag -f last-good
+          git push -f origin last-good
+          echo "last-good now points at $(git rev-parse --short HEAD)"
+
       - name: Where to look
         run: |
           echo "Desktop  https://lluisitu.github.io/alaska-trip/desktop/"
           echo "Phone    https://lluisitu.github.io/alaska-trip/mobile/"
           echo "Pages takes about a minute to serve the new build."
+          echo
+          echo "If this build turns out to be wrong: Actions tab -> Put the dashboard"
+          echo "back -> Run workflow. No arguments needed."

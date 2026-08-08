@@ -1,0 +1,164 @@
+name: Put the dashboard back
+
+# ---------------------------------------------------------------------------
+# THE DASHBOARD IS BROKEN AND YOU ARE AT A CAMPSITE. START HERE.
+#
+# Press "Run workflow". Change nothing. Press the green button.
+#
+# In about a minute the site goes back to the last build that passed all its
+# checks, and the phone and desktop dashboards work again. You do not need a
+# laptop, you do not need to know what broke, and you cannot make it worse by
+# running this — it only ever puts back files that were already known good.
+#
+# If it asks you anything, the answer is already filled in. Leave it.
+# ---------------------------------------------------------------------------
+#
+# What "last-good" means
+#   Every time the rebuild finishes without a single error, it moves a marker
+#   called last-good onto that version. So last-good is always the most recent
+#   dashboard that actually worked — not a fixed old copy that gets staler.
+#
+# What this puts back
+#   The two dashboards (desktop and mobile), the build scripts in tools/, and
+#   overrides.json. That is the whole published site plus everything that builds
+#   it. Anything you changed after last-good in those places is undone — that is
+#   the point.
+#
+# What it does NOT do
+#   It does not delete your history. The bad version is still in the repo and
+#   can be looked at later; this just stops it being the one on the website.
+#   It also does not re-run the build, so nothing new can break while you are
+#   trying to get back to safety. Once you are somewhere with signal and time,
+#   "Rebuild the dashboard" -> Run workflow will build and re-test from here.
+#
+# If you need an older one than last-good
+#   Type a different tag or commit into the box instead. Only do that if you
+#   know which one you want; last-good is the right answer nearly always.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Leave this alone unless you know otherwise'
+        default: 'last-good'
+        required: false
+
+concurrency:
+  # Deliberately the same group as the rebuild. A restore and a rebuild running
+  # at the same time would both commit and one would silently lose — which, in
+  # the middle of trying to recover, is the worst possible moment for it.
+  group: rebuild
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The whole history and all the tags — last-good is a tag, and a
+          # shallow clone would not have it or the commit behind it.
+          fetch-depth: 0
+
+      - name: Put the files back
+        # The ref goes through the environment rather than straight into the
+        # script. Anything typed into that box on the Actions tab would
+        # otherwise be pasted into a shell as-is.
+        env:
+          REF: ${{ inputs.ref }}
+        run: |
+          set -euo pipefail
+          REF="${REF:-last-good}"
+
+          if ! SHA=$(git rev-parse --verify --quiet "${REF}^{commit}"); then
+            echo "!! There is nothing called '${REF}' in this repository."
+            if [ "$REF" = "last-good" ]; then
+              echo "   No build has passed yet, so there is no known-good version to"
+              echo "   return to. Nothing has been changed."
+            else
+              echo "   Check the spelling, or leave the box as last-good and run it again."
+            fi
+            exit 1
+          fi
+
+          echo "Going back to ${REF} — commit ${SHA}"
+          git log -1 --format='  built %cd%n  %s' --date=short "$SHA"
+
+          git config user.name  'alaska-trip restore'
+          git config user.email 'actions@github.com'
+
+          # Only ask for the paths that actually exist back there. A path that
+          # did not exist yet at that version is not an error — it just means
+          # the right answer is for it to be gone again, which the removal below
+          # already did.
+          PATHS=""
+          for p in desktop mobile tools overrides.json; do
+            if git cat-file -e "${SHA}:${p}" 2>/dev/null; then PATHS="${PATHS} ${p}"; fi
+          done
+          if [ -z "$PATHS" ]; then
+            echo "!! ${REF} contains none of desktop, mobile, tools or overrides.json."
+            echo "   That does not look like a version of this dashboard. Nothing changed."
+            exit 1
+          fi
+
+          # Remove first, then restore. A plain checkout of a path only
+          # overwrites files that exist in the target version — anything ADDED
+          # since would survive and quietly stay behind, which is not a restore,
+          # it is a merge. Nothing is pushed unless the whole script succeeds,
+          # so a failure here leaves the published site untouched.
+          git rm -r --quiet --ignore-unmatch desktop mobile tools overrides.json
+          git checkout "$SHA" -- $PATHS
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo
+            echo "Already identical to ${REF} — nothing to put back."
+            echo "If the site still looks wrong, the problem is not the files:"
+            echo "wait a minute for the page to refresh, or force-reload it."
+            exit 0
+          fi
+
+          echo
+          git diff --cached --stat | tail -12
+
+          SUBJECT=$(git log -1 --format='%s' "$SHA")
+          BUILT=$(git log -1 --format='%cd' --date=short "$SHA")
+          # Via a heredoc rather than -m, or every line of the message arrives
+          # with this file's YAML indentation baked into it.
+          # Every line below is indented to this block's level so YAML keeps it
+          # inside the script; the dedent puts the message back at column 0.
+          git commit -F - <<EOF
+          Restore desktop, mobile, tools and overrides.json to ${REF}
+
+          Rolled back from the Actions tab to ${SHA}, which is what the marker
+          '${REF}' was pointing at: "${SUBJECT}", built ${BUILT}.
+
+          Restored:${PATHS}
+
+          That commit is the most recent one whose Playwright suite passed with
+          zero page errors, so the dashboards it carries are known to load, to
+          build, and to hold every seasonal anchor. Whatever was published after
+          it is undone here, which is the point of running this. It is still in
+          the history if it is wanted back.
+
+          This does not rebuild anything. Run 'Rebuild the dashboard' when there
+          is time and signal, to build and re-test from this point.
+          EOF
+          git push
+
+      - name: What happens now
+        run: |
+          echo "Done. GitHub Pages serves main, so the site follows on its own —"
+          echo "give it about a minute, then reload the page on the phone."
+          echo
+          echo "  Desktop  https://lluisitu.github.io/alaska-trip/desktop/"
+          echo "  Phone    https://lluisitu.github.io/alaska-trip/mobile/"
+          echo
+          echo "Nothing was rebuilt, on purpose — the files put back are the ones"
+          echo "that already passed. When you have time, run 'Rebuild the"
+          echo "dashboard' to build and re-test from here."

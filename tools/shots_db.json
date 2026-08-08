@@ -1,0 +1,75 @@
+{
+  "_what": "Per-shot overrides for the shot list: tags the derivation gets wrong or cannot see, and extra links.",
+  "_why": "build_shots.py derives tags from each shot's own light/craft/subject prose, which covers all 565 without hand-writing 565 entries. This file is where a human disagrees. An entry's `tags` REPLACES the derived set; `addTags` appends to it; `links` are merged by URL.",
+  "_tags": {
+    "when": "dawn | sunrise | golden | sunset | blue hour | night | midday — what time you have to be standing there",
+    "subject": "wildlife | astro | aurora | water | people | blue hour",
+    "conditions": "needs clear sky | moon-dependent | truck | seasonal — the things that make a shot fail on the day"
+  },
+  "_maps": "Every shot with lat/lng gets a Google Maps pin automatically, and coordinates quoted inside vantage prose become links. Shots with no coordinate get no link — never guessed from a place name.",
+  "_scope": "Leg 1 (9 stops, 28 shots) reviewed by hand. The rest are derived only.",
+
+  "shots": {
+    "caprock-canyons": {
+      "Bison breath on the caprock at first light": {
+        "tags": ["dawn", "sunrise", "wildlife", "truck", "seasonal"],
+        "why": "Derivation missed 'truck' — the vantage says work from the vehicle because the herd is free-ranging and often on the road, which is a safety instruction, not a convenience. Seasonal because the breath-steam only happens while Panhandle mornings are still near freezing, and 22 Mar is the edge of that.",
+        "links": [
+          {"label": "TPWD bison herd", "url": "https://tpwd.texas.gov/state-parks/caprock-canyons/bison"}
+        ]
+      },
+      "Near-full moon rising over Haynes Ridge": {
+        "tags": ["sunset", "blue hour", "night", "moon-dependent"],
+        "why": "The whole shot exists because the moon is 99% on this stay — it is moon-dependent in the positive direction, which the rule reads as a warning. Kept, because the same flag tells you the Milky Way is off the table."
+      },
+      "Clarity Tunnel as pure geometry": {
+        "tags": ["midday", "seasonal", "truck"],
+        "addTags": [],
+        "why": "A 9-mile round trip on the Trailway from Monk's Crossing, on a surface riders describe as sand, clay and goatheads — the truck tag is about reaching the trailhead, not riding it. Seasonal because the bat colony is a warm-season occupant and late March is early.",
+        "links": [
+          {"label": "TPWD — Clarity Tunnel bat site", "url": "https://tpwd.texas.gov/huntwild/wild/species/bats/bat-watching-sites/clarity-tunnel.phtml"},
+          {"label": "Trailway map (PDF)", "url": "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4506_0079w.pdf"}
+        ]
+      }
+    },
+
+    "great-sand-dunes": {
+      "Star trails over the dunefield": {
+        "tags": ["night", "astro", "needs clear sky", "moon-dependent"],
+        "why": "Dogs are permitted on the Dunes Overlook Trail but not in the dunefield beyond the first high ridge — worth knowing before walking out in the dark with the dog.",
+        "links": [
+          {"label": "NPS — pets at Great Sand Dunes", "url": "https://www.nps.gov/grsa/planyourvisit/pets.htm"}
+        ]
+      },
+      "The last sandhill cranes": {
+        "tags": ["dawn", "wildlife", "seasonal"],
+        "why": "'The last' is doing real work — the Monte Vista crane migration is essentially over by early April and the stop arrives 30 Mar. This is the tightest seasonal window on the leg."
+      }
+    },
+
+    "estes-rmnp": {
+      "Bear Lake ice, Hallett Peak alpenglow": {
+        "addTags": ["no dogs"],
+        "why": "NPS bans pets from every RMNP trail, tundra and meadow. Any shot here that leaves the road is a shot the dog cannot come on, and that is a planning fact, not a footnote.",
+        "links": [
+          {"label": "NPS — pets in RMNP", "url": "https://www.nps.gov/romo/planyourvisit/pets.htm"}
+        ]
+      },
+      "Moraine Park elk at first light, no antlers": {
+        "addTags": ["no dogs"],
+        "why": "Roadside, so the dog can be in the truck — but the tag keeps the rule visible on the stop where it bites hardest."
+      }
+    },
+
+    "wind-river": {
+      "Greater sage-grouse strutting at Speedway Lek": {
+        "tags": ["dawn", "wildlife", "seasonal", "truck"],
+        "why": "Lek display peaks late March to mid-May and the stop is 24 Apr - 1 May, so this is one of the few things at this stop that is genuinely IN season while the alpine trailheads are still snowed in. Worth flagging as the reason to set an alarm here."
+      },
+      "Fremont Lake ice-out with the range still white": {
+        "tags": ["golden", "water", "seasonal"],
+        "why": "Ice-out timing is the whole shot and it varies by weeks year to year — a condition to check on arrival, not to plan around."
+      }
+    }
+  }
+}

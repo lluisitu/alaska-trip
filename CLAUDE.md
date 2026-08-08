@@ -56,6 +56,36 @@ filter cannot.
 `./publish.sh` does the same thing locally and pushes. A token needs the **`workflow`** scope to push
 anything under `.github/workflows/`, or the push is rejected and publish.sh misreports it as expired.
 
+## How changes reach the site
+
+Four routes in. Roughly in the order you will want them:
+
+1. **The dashboard's Publish button** — a night more or less, a stop skipped, a different campground.
+   Writes `overrides.json` through github.com's editor, entirely from a phone. Committing it fires
+   `rebuild.yml`, which bakes the change into real dates and republishes in about a minute. The only
+   route that needs no conversation with anyone.
+2. **The dashboard's Ask Claude tab** — anything needing research or judgement: is this still the
+   right campground, what happens if the tundra is late, find somewhere near Tok that takes the coach.
+   It assembles a brief carrying everything already known about the stop, so the answer starts from
+   the research rather than from a blank page. *Make the change* opens Claude Code on the repo and it
+   can finish the job; *Talk it through* opens a conversation that changes nothing.
+3. **The Code tab directly** — when you already know what needs doing and it is more than a night
+   count. Claude Code clones, edits the db and the build script, runs the loop and the suite, and
+   pushes; the workflow republishes.
+4. **`./publish.sh`** — the fallback, not the normal route. It exists for when GitHub itself is
+   unreachable, or when something has to be built and inspected before it goes anywhere. It needs the
+   laptop, a working credential and network to the outside world, and it does by hand what the runner
+   does for free.
+
+**Cowork cannot push.** It has no write path to this repository at all, so it is for discussion,
+planning and reading — whatever it concludes still has to travel by one of the four routes above.
+
+**When a build goes wrong: Actions tab → "Put the dashboard back" → Run workflow, no arguments.**
+Every rebuild that passes moves a `last-good` tag onto the commit that passed, so `last-good` always
+means the most recent dashboard that actually worked. The restore returns `desktop/`, `mobile/`,
+`tools/` and `overrides.json` to it and pushes. It deliberately does **not** rebuild — nothing new
+can break while you are trying to get back to safety. `restore.yml`, written to be read in a panic.
+
 ## What must not break
 
 The itinerary is not a list of places, it is a **sequence of dated windows**, most of which exist for
@@ -112,9 +142,10 @@ shift several days. A change that crosses a hard anchor should fail loudly, not 
 - Three phone calls nobody has made: Salida RV Resort's 20-year rule (719-882-1569), Yosemite
   Westlake 40 ft (209-878-3847), Wrangell View 32 ft vs 70 ft conflict (907-823-2265).
 - 26 stops still have no published length for the booked campground.
-- 10 main-loop legs are drawn as dashed straight lines — `build_routes.py` on the runner should fix
-  them.
-- `build_routes.py` and `build_vendor.py` in the repo lag the versions that were verified green.
+- ~~10 main-loop legs drawn as dashed straight lines~~ — fixed. `build_routes.py` ran on the runner
+  and every leg now has road geometry; the suite reports main 98/98, east 57/57.
+- `build_routes.py` in the repo lags the version that was verified green. `build_vendor.py` no longer
+  does — it was rewritten and verified against the pins.
 
 ## Where the rest of the reasoning lives
 

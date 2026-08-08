@@ -76,7 +76,7 @@ jobs:
             for s in build_strategy build_frozen build_light build_phonecraft build_drone \
                      build_passes build_legs build_costs build_petlog build_staynotes \
                      build_rigfit build_campfacts build_swaps build_bookings build_parks \
-                     build_askbox; do
+                     build_askbox build_links; do
               [ -f "$s.py" ] || continue
               [ "$pass" = 1 ] && echo "  $s"
               python3 "$s.py" > /dev/null || { echo "!! $s.py failed"; exit 1; }

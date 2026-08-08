@@ -1120,8 +1120,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
   .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 20px;cursor:pointer;}
   .card-head:hover{background:var(--panel2);}
-  .card-title{display:flex;align-items:center;gap:10px;}
+  /* stop-row layout start — hand-maintained, no build script owns this */
+  /* The head used to be a narrow left column with the whole right half empty: the
+     title stack and the meta line both sat in .card-title at its natural width, so
+     the meta wrapped onto three or four lines while ~40% of the row stayed blank.
+     .card-title now grows to fill the row, and .card-meta is a single wrapping flex
+     line with the nights control pushed to the far right — two rows instead of four. */
+  .card-title{display:flex;align-items:center;gap:10px;flex:1;min-width:0;}
+  .card-title > div{flex:1;min-width:0;}
   .card-title h3{margin:0;font-size:1.05rem;}
+  /* Name, campground and rate on one baseline instead of three stacked blocks.
+     .card-camp is a div, so it used to force its own line and push the rate chip
+     onto a third. Wraps on a narrow window rather than truncating. */
+  .card-idline{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 10px;min-width:0;}
+  .card-idline .card-camp{margin:0;max-width:min(38ch,100%);}
+  .card-meta{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;margin-top:3px;}
+  /* Pushes the −/nights/+/⤫/+stop cluster to the right edge of the meta line.
+     Only when it is the last child, so a wrapped row does not strand it mid-line. */
+  .card-meta > .nights-ctl:last-child{margin-left:auto;}
+  /* stop-row layout end */
   .card-head-right{display:flex;align-items:center;gap:12px;flex-shrink:0;}
   .card-meta{color:var(--muted);font-size:.82rem;margin-top:4px;}
   .card-camp{color:var(--accent);font-size:.8rem;font-weight:600;margin:1px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -4807,9 +4824,8 @@ function renderCards(filter){
         <div class="card-title">
           <span class="legdot" style="background:${LEG_COLORS[s.leg]}"></span>
           <div>
-            <h3>${s.name}</h3>
-            ${campLine(PLAN.camp(s.id) || s.camp, s.nights)}${costChip(s.id)}
-            <div class="card-meta">${planRow(s.id, fmtDate(s.arrive) + ' – ' + fmtDate(s.depart))} · ${s.nights} night${s.nights>1?'s':''} · ${LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${nightsControl(s)}${weatherChip(s.weather)}${optBadge(s)}</div>
+            <div class="card-idline"><h3>${s.name}</h3>${campLine(PLAN.camp(s.id) || s.camp, s.nights)}${costChip(s.id)}</div>
+            <div class="card-meta">${planRow(s.id, fmtDate(s.arrive) + ' – ' + fmtDate(s.depart))} · ${s.nights} night${s.nights>1?'s':''} · ${LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}${optBadge(s)}${nightsControl(s)}</div>
           </div>
         </div>
         <div class="card-head-right">
@@ -25365,9 +25381,8 @@ function extRenderCards(){
         <div class="card-title">
           <span class="legdot" style="background:${EXT_LEG_COLORS[s.leg]}"></span>
           <div>
-            <h3>${s.name}</h3>
-            ${campLine(PLAN.camp(s.id) || s.camp, s.nights)}${costChip(s.id)}
-            <div class="card-meta">${fmtDate(s.arrive)} \u2013 ${fmtDate(s.depart)} \u00b7 ${s.nights} night${s.nights>1?'s':''} \u00b7 ${EXT_LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${nightsControl(s)}${weatherChip(s.weather)}</div>
+            <div class="card-idline"><h3>${s.name}</h3>${campLine(PLAN.camp(s.id) || s.camp, s.nights)}${costChip(s.id)}</div>
+            <div class="card-meta">${fmtDate(s.arrive)} \u2013 ${fmtDate(s.depart)} \u00b7 ${s.nights} night${s.nights>1?'s':''} \u00b7 ${EXT_LEG_NAMES[s.leg]}${legChip(s.id, nextStopId(s.id))}${passChip(s.id, nextStopId(s.id))}${weatherChip(s.weather)}${nightsControl(s)}</div>
           </div>
         </div>
         <div class="card-head-right">

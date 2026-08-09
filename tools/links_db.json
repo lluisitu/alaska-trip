@@ -2368,6 +2368,161 @@
           ]
         }
       ]
+    },
+    "grand-canyon": {
+      "authority": "National Park Service",
+      "dogs_verdict": "partial",
+      "official_links": [
+        {
+          "label": "Pets at Grand Canyon",
+          "url": "https://www.nps.gov/grca/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "SPLIT BY THE RIM. NPS: \"Leashed pets are allowed on trails above the rim\" on the South Rim, and \"Pets are not permitted below the rim (on inner canyon trails).\" So the Rim Trail is open to the dog and every descent is not.",
+      "trail_dogs": {
+        "Rim Trail, Yavapai Point to Mather Point.": true,
+        "Grand Canyon Rim Mules to Mather Point": true,
+        "South Kaibab Trail to Ooh Aah Point": false,
+        "15 Mile Resthouse via Bright Angel Trail": false
+      }
+    },
+    "zion": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in Zion",
+          "url": "https://www.nps.gov/zion/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED except one trail. NPS: \"The only trail that allows pets is the Pa'rus Trail, which begins at the Zion Canyon Visitor Center.\" Not on any other trail, in wilderness, on the shuttle buses, or in buildings. Keep the dog out of the Virgin River — harmful cyanobacteria.",
+      "dogs_exception": "Pa'rus Trail only — flat, paved, from the Zion Canyon Visitor Center."
+    },
+    "olympic": {
+      "authority": "National Park Service",
+      "dogs_verdict": "partial",
+      "official_links": [
+        {
+          "label": "Pets in Olympic",
+          "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on all trails except a named few: Peabody Creek Trail, Rialto Beach to Ellen Creek, the Kalaloch beaches between the Hoh and Quinault Reservations, Madison Falls Trail, Spruce Railroad Trail, and July Creek Loop. Leash 6 ft.",
+      "trail_dogs": {
+        "Devils Punchbowl via Spruce Railroad Trail": true,
+        "Marymere Falls Trail": false,
+        "Sol Duc Falls Nature Trail": false,
+        "Hoh Rain Forest Hall of Moss": false,
+        "Hole in the Wall Trail": false
+      },
+      "note": "Spruce Railroad Trail is both the dog-legal trail here AND a former rail grade — the shape that has produced the only confirmed gravel cruises on this trip. Worth a surface check."
+    },
+    "yosemite": {
+      "authority": "National Park Service",
+      "dogs_verdict": "partial",
+      "official_links": [
+        {
+          "label": "Pets in Yosemite",
+          "url": "https://www.nps.gov/yose/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on trails \"even if carried\" — NPS states there are no exceptions for carried pets. Allowed on a few paved paths: Bridalveil Fall, Lower Yosemite Fall, the paved Cook's Meadow path, the paved road to Mirror Lake, Wawona Meadow Loop, and some Wawona/Hodgdon fire roads.",
+      "trail_dogs": {
+        "Lower Yosemite Fall Trail": true,
+        "Valley Loop Trail": false
+      }
+    },
+    "great-basin": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets at Great Basin",
+          "url": "https://www.nps.gov/grba/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on most trails. Two exceptions: Lexington Arch Trail, and the trail between Baker and the Great Basin Visitor Center. Leash 6 ft.",
+      "dogs_exception": "Lexington Arch Trail and the Baker-to-visitor-centre trail only."
+    },
+    "black-canyon-gunnison": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets at Black Canyon",
+          "url": "https://www.nps.gov/blca/planyourvisit/pets2.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on all hiking trails, ski trails and in the inner canyon — with one exception, the Rim Rock Trail, leash 6 ft. And that exception is itself closed to dogs in summer because of deer defending fawns.",
+      "dogs_exception": "Rim Rock Trail only, and not in summer — deer with fawns."
+    },
+    "joshua-tree": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in Joshua Tree",
+          "url": "https://www.nps.gov/jotr/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on hiking trails and in the backcountry. Two paved exceptions — Oasis of Mara and Keys View — plus anywhere a vehicle can go, within 100 ft of roads, parking or campgrounds."
+    },
+    "death-valley": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in Death Valley",
+          "url": "https://www.nps.gov/deva/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on trails and in wilderness, \"even when carried in backpacks, purses, or strollers\". Leashed dogs are fine wherever a car can go — paved and unpaved roads, parking, campgrounds. Titus Canyon Road is a road, so it counts; Golden Canyon does not.",
+      "trail_dogs": {
+        "Titus Canyon Road (west exit)": true,
+        "Golden Canyon Trailhead": false
+      }
+    },
+    "grand-teton": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in Grand Teton",
+          "url": "https://www.nps.gov/grte/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED. NPS: \"Pets are prohibited on trails, pathways, beaches, in buildings, and swimming in any park waters.\" Also banned on the multi-use pathway and beyond 30 ft from roadways. Permitted in campgrounds, turnouts, picnic areas and on roads — and in the surrounding Bridger-Teton National Forest, which is the workaround here."
+    },
+    "sequoia-kings-canyon": {
+      "authority": "National Park Service",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in Sequoia & Kings Canyon",
+          "url": "https://www.nps.gov/seki/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on ALL trails, explicitly including the paved ones — NPS names the General Sherman Tree Trail, Big Trees Trail and Grant Tree Trail. Pets are allowed only in parking lots, on paved roads, in campgrounds and picnic areas. Every one of this stop's five trails is closed to the dog, including the Christmas ones."
+    },
+    "kluane-1": {
+      "authority": "Parks Canada",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards."
+    },
+    "kluane-2": {
+      "authority": "Parks Canada",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards."
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",

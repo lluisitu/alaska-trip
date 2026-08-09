@@ -77,7 +77,15 @@
           "wildlife",
           "seasonal"
         ],
-        "why": "'The last' is doing real work — the Monte Vista crane migration is essentially over by early April and the stop arrives 30 Mar. This is the tightest seasonal window on the leg."
+        "why": "'The last' is doing real work — the Monte Vista crane migration is essentially over by early April and the stop arrives 30 Mar. This is the tightest seasonal window on the leg.",
+        "fix": {
+          "lat": 37.47,
+          "lng": -106.15
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "The vantage named Monte Vista NWR but printed the Alamosa POI coordinate, 24.4 km due east — the wrong town, at 06:00 for a 06:48 sunrise. Now carries real lat/lng for the refuge, where it previously had none at all."
       }
     },
     "estes-rmnp": {
@@ -161,6 +169,289 @@
           "INTERNAL CONTRADICTION"
         ],
         "fix_why": "The vantage said 90 minutes and the caution said 2 hours for the same drive. The review measured it at about 72 miles, 1 h 35 - 1 h 45, so the 90-minute figure was right and the caution was inflating the cost of the shot on an already-tight 2-night stop. The 2.5-billion-year age was attached to the wrong rock."
+      }
+    },
+    "talkeetna": {
+      "Denali over the three-river confluence": {
+        "fix": {
+          "lat": 62.3235,
+          "lng": -150.1175
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 3.7 km NNW out in the braided Susitna channel, not a place you walk to. Moved to the river landing at the north end of Main Street, which is what the vantage describes — and it is a pre-05:00 start with a long lens and tripod."
+      }
+    },
+    "sequoia-kings-canyon": {
+      "General Sherman's base in falling snow": {
+        "fix": {
+          "lat": 36.5813,
+          "lng": -118.7513
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 2.1 km west, out toward Round Meadow. Moved to the General Sherman Tree. In December, navigating in snow before dawn with the main lot often closed, the wrong side of the grove is a practical problem."
+      }
+    },
+    "anchorage": {
+      "Ship Creek, salmon and skyline": {
+        "fix": {
+          "lat": 61.2233,
+          "lng": -149.8792,
+          "facing": "SW"
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was on the Tony Knowles Coastal Trail, 4.6 km away — wrong creek, wrong side of downtown. Moved to the Ship Creek dam and footbridge. Facing corrected to SW: from the footbridge the downtown towers bear about 230 deg, so the old W bearing put the skyline off the left edge instead of stacked behind the fish."
+      },
+      "Flattop at 23:00": {
+        "fix": {
+          "lat": 61.1017,
+          "lng": -149.6822
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Longitude was transposed — .2861 instead of .6822 — dropping the pin 21.3 km into the roadless Chugach backcountry. Moved to the Glen Alps trailhead. Navigating to the old point at 21:00 for a 23:15 summit sends you to the wrong side of the range with no time to recover."
+      }
+    },
+    "palmer": {
+      "Matanuska medial moraines from the highway wayside": {
+        "fix": {
+          "lat": 61.788,
+          "lng": -147.748
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was on the glacier surface itself, 17.1 km inside privately controlled guided-tour-only ice that the shot own caution says you must not walk on. Moved to the state recreation site at Glenn Highway MP 101, which is the free public wayside the shot is actually about."
+      }
+    },
+    "smithers": {
+      "Twin Falls under the first termination dust": {
+        "fix": {
+          "lat": 54.806,
+          "lng": -127.296
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 10.6 km ENE on the valley floor toward the airport; Glacier Gulch is on the flank of Hudson Bay Mountain on the opposite side of town. The stated access off Lake Kathlyn Road was right — only the pin was wrong, and wrong enough to send the truck out of the valley."
+      }
+    },
+    "vegas-area": {
+      "Calico Hills at first light, no reservation needed": {
+        "fix": {
+          "lat": 36.147,
+          "lng": -115.425
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was at the fee station by the visitor centre, not the named vantage. Moved to the Calico I overlook. With a 06:00 gate and a 06:50 sunrise the drive up the one-way scenic loop has to be counted."
+      }
+    },
+    "cooper-landing": {
+      "Sockeye stacking under Russian River Falls": {
+        "fix": {
+          "lat": 60.458,
+          "lng": -149.985
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 12.8 km west, out past Jean Lake with no trailhead and no falls. The shot own text said milepost 52 Sterling Highway, which is correct — moved to the Russian River Campground trailhead to match it."
+      }
+    },
+    "valdez": {
+      "Bridal Veil Falls, Keystone Canyon, in rain": {
+        "fix": {
+          "lat": 61.085,
+          "lng": -145.975
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 15.6 km up in the high country above Thompson Pass, past the canyon entirely. Moved to Richardson Highway MP 13-14, which is the 15 minutes from Valdez the shot claims rather than 30-35."
+      }
+    },
+    "bandon": {
+      "Cape Blanco taking weather": {
+        "fix": {
+          "lat": 42.8375,
+          "lng": -124.5636
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Both numbers were wrong in opposite directions: the pin was 2.1 km inland near the campground, and the trailhead coordinate quoted in the text was 1.64 km offshore in the Pacific. Moved to the lighthouse."
+      }
+    },
+    "grand-canyon": {
+      "Full moon rising over the eastern canyon": {
+        "fix": {
+          "lat": 36.0323,
+          "lng": -111.8536
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "The text argues for Lipan Point over the Watchtower, then printed the Watchtower coordinate — navigating to it lands you at the viewpoint the shot just told you not to use. Moved to Lipan Point, 2.85 km west."
+      }
+    },
+    "cannon-beach": {
+      "The Peter Iredale at dusk": {
+        "fix": {
+          "lat": 46.1793,
+          "lng": -123.98
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was in the Fort Stevens historic-area interior, 4 km NE of the wreck. Moved to the Peter Iredale beach access. The instruction is to park and walk 100 m onto the sand, in the dark, inside a 25-minute post-sunset window."
+      }
+    },
+    "durango": {
+      "Cliff Palace with nobody in it": {
+        "fix": {
+          "lat": 37.1675,
+          "lng": -108.473
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin fell 1.6 km short of the Cliff Palace Loop entirely. Moved to the Cliff Palace Overlook — for a 200-400mm frame across a canyon from one specific pull-out, the wrong pull-out is the whole shot."
+      }
+    },
+    "sawtooth-nra": {
+      "Sawtooths in the still water, Little Redfish Lake": {
+        "fix": {
+          "lat": 44.167,
+          "lng": -114.919
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "The shot insists on Little Redfish and printed the coordinate for big Redfish, 3.1 km away at the end of the paved road. Moved to Chinook Bay, about 0.4 miles in from ID-75, which is where the shot own cited reference places it."
+      }
+    },
+    "white-salmon": {
+      "Stonehenge Memorial on Armistice Day": {
+        "fix": {
+          "lat": 45.694,
+          "lng": -120.808
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 0.72 km SSE of the museum, below the highway grade toward the river — wrong side of both the museum and SR-14. This is the departure-day shot with a fixed 11 November window and possibly a timed ceremony."
+      },
+      "Catherine Creek arch and the oak savanna": {
+        "fix": {
+          "lat": 45.7104,
+          "lng": -121.3622
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 4.87 km WSW, out in the Columbia River channel — no oak bench, no arch, no parking. Moved to the Old Highway 8 trailhead per WTA."
+      }
+    },
+    "flaming-gorge": {
+      "An angler in the tailwater below the dam": {
+        "fix": {
+          "lat": 40.916,
+          "lng": -109.349
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was at the dam end of the Little Hole trail, which would have you walking DOWNstream — the opposite of the stated approach, and the facing only makes sense from the real Little Hole trailhead 6 km ENE. Moved there."
+      }
+    },
+    "denali": {
+      "Dall sheep and the braided Savage River": {
+        "fix": {
+          "lat": 63.74,
+          "lng": -149.296
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was in the Nenana River valley south of the park entrance, off the park road entirely. Moved to the Savage River day-use area at Mile 15 — the end of the private-vehicle section, which is what the narrative describes."
+      }
+    },
+    "packwood": {
+      "Naches Peak Loop — crimson huckleberry and Rainier in the tarn": {
+        "fix": {
+          "lat": 46.8697,
+          "lng": -121.5192
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Wrong pass, 28 km off: the pin was White Pass on US-12, copied from the trip POI. Naches Peak starts at Tipsoo Lake on Chinook Pass, a different highway reached via SR-123 and Cayuse Pass. A 5am arrival at the wrong pass loses the alpenglow with no recovery."
+      },
+      "Reflection Lakes before the wind": {
+        "fix": {
+          "lat": 46.769,
+          "lng": -121.7325
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was the Ohanapecosh coordinate, reused verbatim from the Silver Falls shot below it — 13.5 km away and an hour apart by road. For a shot that is ten minutes of dead-calm alpenglow on a shoreline, the wrong lake in the dark is a total loss."
+      }
+    },
+    "welches": {
+      "Trillium Lake, first snow on Hood": {
+        "fix": {
+          "lat": 45.2733,
+          "lng": -121.7375
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Pin was 4.5 km north up toward US-26. Moved to the lake and its dam viewpoint. The whole shot is 20 minutes of alpenglow on a pre-dawn arrival."
+      }
+    },
+    "yosemite": {
+      "Half Dome's last light from Sentinel Bridge": {
+        "fix": {
+          "lat": 37.7455,
+          "lng": -119.5877,
+          "light": {
+            "from": "roughly 4:10-4:35pm",
+            "to": "roughly 4:25-4:55pm, straddling the 16:41-16:43 sunset rather than ending before it"
+          }
+        },
+        "resolves": [
+          "COORDINATE"
+        ],
+        "fix_why": "Two errors. The pin was the Lower Yosemite Fall trailhead, 800 m away on the wrong side of the village — moved to Sentinel Bridge. And the stated 16:10-16:35 window ENDS 6-8 minutes before the sun actually sets on 19-23 Dec (16:41-16:43), when alpenglow on the face peaks at and just after true sunset."
+      }
+    },
+    "stewart-hyder": {
+      "The elbow of the Salmon Glacier from the summit viewpoint": {
+        "fix": {
+          "facing": "N/NW"
+        },
+        "fix_why": "Facing corrected: from anywhere on Salmon River Road the glacier and its elbow lie north to north-west, so the old S bearing pointed away from the subject. The coordinate is left alone and the flag stays OPEN — the finding could not resolve whether the pin is short of the summit viewpoint or the bearing was simply wrong, and guessing a replacement is how a wrong pin gets made."
+      }
+    },
+    "tucson": {
+      "Snow above saguaros on the Catalina Highway": {
+        "fix": {
+          "lat": null,
+          "lng": null
+        },
+        "resolves": [
+          "COORDINATE / VANTAGE MISMATCH"
+        ],
+        "fix_why": "The pin was Mount Lemmon Ski Valley, 10.3 km away and ~2,500 ft above the saguaro belt — from there no cactus is visible and the shot cannot be made. The finding does not give a Windy Point coordinate and I will not supply one, so the pin is REMOVED rather than replaced. The vantage text still names Windy Point."
       }
     }
   },

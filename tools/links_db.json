@@ -2220,6 +2220,154 @@
           "why": "Restates the Hobo Pool and downtown entries above."
         }
       }
+    },
+    "dawson-city": {},
+    "watson-lake-2": {
+      "authority": "Town of Watson Lake, Yukon",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on leash — Parks Canada and BC Parks both permit dogs on trails, unlike the US national parks on this route.",
+      "trails": [
+        {
+          "name": "Wye Lake Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/yukon/wye-lake-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.0 mi loop",
+          "time": "43 min",
+          "difficulty": "Easy",
+          "reviews": "60",
+          "uses": [
+            "hike"
+          ],
+          "was": "Wye Lake Park — no url",
+          "season": "Best June-August; arrival 12 Sep is past it.",
+          "note_source": "Reviewers note missing interpretive signs and bugs."
+        }
+      ]
+    },
+    "boya-lake": {
+      "authority": "BC Parks — Tā Ch'ilā Provincial Park",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on leash — Parks Canada and BC Parks both permit dogs on trails, unlike the US national parks on this route.",
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/british-columbia/ta-chila-provincial-park-boya-lake",
+      "trails": [
+        {
+          "name": "Beaver Lodge Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "1.8 mi",
+          "elevation_gain": "236 ft",
+          "reviews": "4.7 (56)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Beaver Lodge Trail (south end) — no url",
+          "note_source": "The park's best-rated trail. AllTrails has it inside the Tā Ch'ilā park page but returned no direct listing url, so it carries the park link on the box heading instead of a constructed one."
+        },
+        {
+          "name": "Lake Shore Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "1.9 mi",
+          "uses": [
+            "hike"
+          ],
+          "was": "Lakeshore Trail (north campground) — no url",
+          "note_source": "The park's longest. Same situation — no direct listing url surfaced."
+        }
+      ]
+    },
+    "dease-lake": {
+      "authority": "BC Parks",
+      "note": "The single trail entry here was 'Boya Lake trails (Tā Ch'ilā PP)' — those belong to the Boya Lake stop two days earlier, not to Dease Lake. Left in place pending a real Dease Lake trail; not linked to another stop's trails."
+    },
+    "stewart-hyder": {},
+    "prince-george": {
+      "authority": "BC Parks — Ancient Forest / Chun T'oh Whudujut",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on leash — Parks Canada and BC Parks both permit dogs on trails, unlike the US national parks on this route.",
+      "trails": [
+        {
+          "name": "Big Tree and Treebeard Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/big-tree-and-treeheard-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.8 mi",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "833 ft",
+          "reviews": "4.8 (302)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Ancient Forest Boardwalk Trail / Ancient Forest Universal Access Trail — two entries, no urls",
+          "note_source": "Boardwalk sections through inland temperate rainforest — well maintained and accessible."
+        }
+      ]
+    },
+    "clearwater": {
+      "authority": "BC Parks — Wells Gray Provincial Park",
+      "dogs_verdict": "allowed",
+      "dogs": "Allowed on leash — Parks Canada and BC Parks both permit dogs on trails, unlike the US national parks on this route.",
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/british-columbia/wells-gray-provincial-park",
+      "trails": [
+        {
+          "name": "Trophy Meadows Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/trophy-meadows-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "7.7 mi",
+          "time": "4-4.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,692 ft",
+          "reviews": "698",
+          "uses": [
+            "hike"
+          ],
+          "was": "Trophy Meadows Trailhead — a trailhead, not a trail",
+          "note_source": "Wildflowers peak late July; arrival is 26 Sep, so expect the meadows gone over."
+        },
+        {
+          "name": "Moul Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/moul-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.4 mi",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "639 ft",
+          "reviews": "1,453",
+          "uses": [
+            "hike"
+          ],
+          "was": "Moul Falls Trailhead — a trailhead, not a trail",
+          "season": "AllTrails lists this trail as CLOSED. Check BC Parks before counting on it — it is the stop's marquee walk."
+        },
+        {
+          "name": "Clearwater River Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/clearwater-river-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "70",
+          "uses": [
+            "hike"
+          ]
+        }
+      ]
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",

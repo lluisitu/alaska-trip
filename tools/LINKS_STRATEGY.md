@@ -13,6 +13,18 @@ Read this with `links_db.json` (the data) and `build_links.py` (the injector) op
 
 **Never invent a URL, a coordinate, a length, a difficulty or a rating.**
 
+**A URL is COPIED from a search result. It is never built from a name.** AllTrails
+slugs are unpredictable — `--2` and `--3` suffixes, reworded titles, loops indexed
+under a different name than the one the page displays. A slug assembled from a
+trail's title looks exactly like a real one right up until it 404s in front of
+you, and by then you are at a trailhead with no signal.
+
+This is written this bluntly because it already happened here: four URLs in
+`links_db.json` were constructed from trail names. Three were right and one —
+City of Rocks' South Fork Circle Creek loop — was not. Three-for-four is luck,
+not verification, and the one that failed did so in front of the person planning
+the trip. If a search does not return the URL, the trail gets no link.
+
 If a figure cannot be sourced, it is recorded as absent. An absence gets phoned
 about; a wrong number gets acted on. A wrong RV length strands a 40 ft coach on a
 road it cannot turn around on, and a wrong trail difficulty puts a dog and a

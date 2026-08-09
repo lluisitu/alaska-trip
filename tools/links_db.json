@@ -202,7 +202,7 @@
           "other_links": [
             {
               "label": "TrailLink itinerary",
-              "url": "https://www.traillink.com/trail-itinerary/caprock-canyons-state-park-trailway/",
+              "url": "https://www.traillink.com/trail/caprock-canyons-state-park-trailway/",
               "tier": "indexed"
             },
             {
@@ -541,16 +541,15 @@
           "was": "Not in the trails box at all — Shoshone Falls was a highlight with no trail entry."
         },
         {
-          "name": "South Fork Circle Creek and North Fork Circle Loop",
-          "distance": "6.4 mi",
-          "elevation_gain": "1,423 ft",
-          "reviews": "4.8 (391)",
+          "name": "Stripe Rock to North Fork Circle Creek Trail",
+          "distance": "8.6 mi",
+          "reviews": "40",
           "uses": [
             "hike"
           ],
-          "note_source": "City of Rocks — the reserve's best-rated trail. Truck-only day trip, unpaved access.",
+          "note_source": "City of Rocks. Replaces a \"South Fork Circle Creek and North Fork Circle Loop\" entry whose url was constructed from the name and 404d — that loop is real and rated 4.8 from 375, but no search returned a direct link for it, so it is not linked here.",
           "alltrails": {
-            "url": "https://www.alltrails.com/trail/us/idaho/south-fork-circle-creek-and-north-fork-circle-loop",
+            "url": "https://www.alltrails.com/trail/us/idaho/stripe-rock-to-north-fork-circle-creek-trail",
             "match": "exact",
             "tier": "indexed"
           },
@@ -558,16 +557,20 @@
         },
         {
           "name": "Creekside Towers Trail",
-          "reviews": "4.7 (308)",
+          "reviews": "4.7 (312)",
           "uses": [
             "hike"
           ],
-          "note_source": "City of Rocks — the kid-friendly pick, through the granite formations.",
+          "note_source": "City of Rocks — the reserve's most popular short loop, through the granite towers.",
           "alltrails": {
             "url": "https://www.alltrails.com/trail/us/idaho/creekside-towers-trail",
             "match": "exact",
             "tier": "indexed"
-          }
+          },
+          "distance": "1.4 mi loop",
+          "time": "51 min",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "416 ft"
         }
       ],
       "note": "No star rating surfaced for this listing, only the review count.",
@@ -631,8 +634,8 @@
               "url": "https://www.alltrails.com/parks/us/idaho/city-of-rocks-national-reserve"
             },
             {
-              "label": "Best-rated: Circle Creek Loop",
-              "url": "https://www.alltrails.com/trail/us/idaho/south-fork-circle-creek-and-north-fork-circle-loop"
+              "label": "Best-rated short loop: Creekside Towers",
+              "url": "https://www.alltrails.com/trail/us/idaho/creekside-towers-trail"
             }
           ],
           "reviews": "4.7 avg (849)",
@@ -663,7 +666,9 @@
         "Thousand Springs Scenic Byway (US-30)": {
           "wiki": "https://en.wikipedia.org/wiki/Thousand_Springs_Scenic_Byway"
         }
-      }
+      },
+      "drop_note": true,
+      "drop_note_why": "It explained why the stop moved from mid-May to 1 May — reasoning that mattered while the date was being decided and is now history sitting above the things you act on. Its own conclusion is that you cannot know until about two weeks out anyway, since Shoshone Falls depends on federal releases from the Upper Snake reservoirs rather than the calendar. Removed from the card; the Idaho Power and USGS reasoning is preserved here and in git history if the date is ever revisited."
     },
     "sawtooth-nra": {
       "authority": "USDA Forest Service — Sawtooth National Recreation Area",
@@ -1004,14 +1009,17 @@
             "match": "exact",
             "tier": "indexed"
           },
-          "distance": "3.7 mi",
+          "distance": "3.7 mi out-and-back",
           "elevation_gain": "967 ft",
-          "reviews": "4.0 (106)",
+          "reviews": "4.0 (104)",
           "uses": [
             "hike"
           ],
           "was": "Favor signed short lakeshore and roadside walks. — prose, not a trail",
-          "note_source": "AllTrails' top pick for the park. Named for the sheep this stop exists to see."
+          "note_source": "Rocky, undefined path with poor trail visibility — boots and poles per reviewers. Caribou and moose, and the jade-green lake.",
+          "time": "2 h 03 min",
+          "difficulty": "Moderately challenging",
+          "season": "Best May-September; arrival is 12 Jun."
         },
         {
           "name": "Mineral Lick Trail",
@@ -1422,14 +1430,15 @@
             "match": "exact",
             "tier": "indexed"
           },
-          "distance": "9.2 km",
-          "elevation_gain": "256 m",
-          "reviews": "4.9 (1,012)",
+          "distance": "5.7 mi out-and-back",
+          "elevation_gain": "859 ft",
+          "reviews": "4.9 (1,034)",
           "uses": [
             "hike"
           ],
           "was": "Root Glacier Trail — no url",
-          "note_source": "The highest-rated trail on the whole leg."
+          "note_source": "Departs Kennecott Mill Town, which is 4.5 mi from McCarthy on foot — or a $10 shuttle to the trailhead. Crampons or ice spikes needed to step onto the ice.",
+          "time": "2.5-3 hr"
         },
         {
           "name": "Bonanza Mine Trail",
@@ -1450,5 +1459,6 @@
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",
-  "_activities": "Per-stop overrides for the highlights list. Each entry maps an activity's name to a verified entity: its real Wikipedia article, its direct AllTrails listing where it IS a trail, and the official page. Activities with an entry render real links and pills; activities without one keep the generic name-derived search links, which is the honest fallback until they are researched. `drop: true` removes a duplicate restatement of another activity."
+  "_activities": "Per-stop overrides for the highlights list. Each entry maps an activity's name to a verified entity: its real Wikipedia article, its direct AllTrails listing where it IS a trail, and the official page. Activities with an entry render real links and pills; activities without one keep the generic name-derived search links, which is the honest fallback until they are researched. `drop: true` removes a duplicate restatement of another activity.",
+  "_url_provenance": "EVERY url here must be COPIED from a search result that returned it. Never construct a slug from a trail's name — alltrails slugs are unpredictable (--2, --3 suffixes, reworded titles) and a fabricated one looks exactly like a real one until it 404s in front of you at a trailhead. This rule exists because four urls were built from names in this file; three happened to be right and one was not, which is luck, not verification."
 }

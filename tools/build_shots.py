@@ -122,12 +122,37 @@ def main():
     raw = ex(h, 'const PHOTO =')
     PHOTO = json.loads(raw)
 
-    tagged = pinned = linked = overridden = 0
+    tagged = pinned = linked = overridden = fixed = resolved = 0
     unlocated = []
     for sid, shots in PHOTO.items():
         by_title = over.get(sid, {})
         for s in shots:
             entry = by_title.get(s['title'], {})
+            # ---- Apply review findings to the shot itself -------------------
+            # A review pass found 138 problems across 126 shots and wrote each
+            # into a flag. Exactly one had ever been applied. So the card showed
+            # the wrong time, bearing or distance up top with the correction
+            # folded away under "full notes" — and the tag derivation, which
+            # reads the light text, was deriving tags from the wrong times.
+            #
+            # `fix` rewrites the shot's own fields; the flag it resolves is then
+            # re-labelled src='fixed', which the renderer already shows as
+            # "corrections applied" rather than "problems found".
+            for field, repl in (entry.get('fix') or {}).items():
+                if isinstance(repl, dict):
+                    old, new = repl.get('from'), repl.get('to')
+                    if old and old in (s.get(field) or ''):
+                        s[field] = s[field].replace(old, new)
+                        fixed += 1
+                else:
+                    s[field] = repl
+                    fixed += 1
+            for key in entry.get('resolves') or []:
+                for f in (s.get('flags') or []):
+                    if key in f.get('text', ''):
+                        f['src'] = 'fixed'
+                        resolved += 1
+
             t = entry.get('tags') or tags_for(s)
             if entry.get('tags'):
                 overridden += 1
@@ -161,6 +186,10 @@ def main():
     print(f"  tagged {tagged} ({overridden} from shots_db.json, rest derived)")
     print(f"  map pins on {pinned}; {len(unlocated)} shots have no coordinate and get no link")
     print(f"  linkified coordinates in {linked} vantage notes")
+    print(f"  applied {fixed} review corrections, resolving {resolved} flag(s)")
+    openf = sum(1 for v in PHOTO.values() for x in v
+                for f in (x.get("flags") or []) if f.get("src") != "fixed")
+    print(f"  STILL OPEN: {openf} review findings not yet applied to their shot")
 
 
 if __name__ == '__main__':

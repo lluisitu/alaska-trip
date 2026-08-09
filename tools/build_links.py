@@ -298,6 +298,15 @@ def apply_stop(stop, entry, log):
             log.append(f"  {sid}: + {b['name']} (biking)")
         else:
             box[hit] = item
+    # A stop `note` that only explains a scheduling decision already made. The
+    # reasoning was worth writing down when the date was being chosen; on the
+    # card it is a paragraph of history above the things you actually act on.
+    # Removed here rather than in build_staynotes, which filters notes it
+    # recognises as pacing changelog and did not catch this one.
+    if entry.get('drop_note') and stop.get('note'):
+        stop['note'] = None
+        log.append(f"  {sid}: removed the stop note — {entry.get('drop_note_why', 'no reason given')[:70]}")
+
     fix = entry.get('blurb_fix')
     if fix and fix['replace'] in (stop.get('blurb') or ''):
         stop['blurb'] = stop['blurb'].replace(fix['replace'], fix['with'])

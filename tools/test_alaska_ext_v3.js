@@ -67,6 +67,30 @@ const LEAFLET_JS_STUB = `
   await page.goto(filePath);
   await page.waitForTimeout(800);
 
+  // ---- Fail fast on a script that threw during the first render ----
+  // A single throw up here leaves the page half-built, and every assertion below
+  // then waits 30s for a selector that will never exist before dying on an
+  // uncaught TimeoutError — which says "locator timed out" and not one word about
+  // the actual cause. The errors were already being collected; they just never
+  // got printed. This stops at the real reason instead.
+  //
+  // The specific bug this exists for, hit four times now: reading a top-level
+  // `const` from a function that runs during the first render, before the
+  // declaration's own line has executed. It throws rather than returning
+  // undefined, and it blanks all 98 stop cards. See CLAUDE.md, "Temporal dead
+  // zone", and prefer a hoisted `function` or the `later(fn, fallback)` helper.
+  if (errors.length) {
+    console.log('\n!! The page threw while loading — nothing below would be meaningful.\n');
+    errors.slice(0, 5).forEach(e => console.log('  ' + e));
+    if (/before initialization/.test(errors.join('\n'))) {
+      console.log('\n  This is the temporal-dead-zone trap: a const read before its');
+      console.log('  declaration ran. Use a hoisted function() or later(fn, fallback).');
+    }
+    console.log('\nPage errors: ' + errors.length);
+    await browser.close();
+    process.exit(1);
+  }
+
   const title = await page.title();
   console.log('Title:', title);
 

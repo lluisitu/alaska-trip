@@ -52,7 +52,7 @@ disagreeing reformat the file back and forth forever.
 Idempotent: each run rebuilds the covered stops' lists from the db, so running
 it twice changes nothing the second time. Standard library only; no network.
 """
-import json, pathlib, sys
+import json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'desktop' / 'index.html'
@@ -103,8 +103,11 @@ def note_for(t):
 def item_sort_key(x):
     """Same rule as sort_key, applied to a built item so the whole box is ordered —
     including entries this pass did not touch. Built items keep the review string
-    in `rating`, which review_count()/star() both read."""
-    return sort_key(x)
+    in `rating`, which review_count()/star() both read.
+
+    Entries still awaiting research sort below everything real, whatever their
+    difficulty — they are placeholders, not options."""
+    return (1 if x.get('pending') else 0,) + tuple(sort_key(x))
 
 
 def build_item(t):
@@ -304,6 +307,99 @@ def apply_stop(stop, entry, log):
             a['detail'] = a['detail'].replace(fix['replace'], fix['with'])
 
 
+# --- Global pass -----------------------------------------------------------
+# Everything above needs research per stop. These rules do not: they are the
+# guidelines applied mechanically to all 157 stops, using data already present.
+
+# A trail entry must be a trail. These end a name that is really a sentence.
+PROSE = re.compile(r'\.\s*$')
+TRAILHEAD = re.compile(r'\btrail\s*head\b|\btrailhead\b', re.I)
+# A drive filed in the hiking box. Deliberately narrow — "Rock Castle Gorge Trail
+# (Blue Ridge Parkway MP 167.1)" is a hike whose name mentions a parkway, so the
+# pattern must match what the entry IS, not what it is near.
+IS_DRIVE = re.compile(r'\b(scenic (drive|byway)|auto (road|tour)|byway|skyway|'
+                      r'scenic loop|auto toll)\b', re.I)
+IS_OFFROAD = re.compile(r'\b(4x4|4wd|ohv|jeep road|primitive road)\b', re.I)
+
+
+def norm_key(n):
+    """For duplicate detection: lowercase, no punctuation, no leading article."""
+    s = re.sub(r'[^a-z0-9 ]+', ' ', str(n or '').lower())
+    s = re.sub(r'\b(the|a|an)\b', ' ', s)
+    return ' '.join(s.split())
+
+
+def global_pass(stops, log):
+    """Sort every box, drop prose and trailheads, move drives and 4x4 routes out,
+    and remove entries duplicated inside a box or across boxes."""
+    counts = {'sorted': 0, 'prose': 0, 'trailhead': 0, 'drive': 0, 'offroad': 0, 'dup': 0}
+    for s in stops:
+        box = s.get('alltrails') or []
+        keep = []
+        for it in box:
+            n = it.get('name', '')
+            # FLAG, do not delete. A first version dropped these outright and it
+            # made the dashboard worse in the meantime: "Angels Landing / Grotto
+            # Trailhead" is the only mention of Angels Landing on that stop, and
+            # "Rim Trail, Yavapai Point to Mather Point." is a real trail whose
+            # name merely ends in a full stop. Deleting information before the
+            # research that replaces it exists is not a fix. These carry a marker,
+            # sort to the bottom of the box, and are cleared as each leg is done.
+            if not it.get('url') and (PROSE.search(n) or TRAILHEAD.search(n)):
+                is_th = bool(TRAILHEAD.search(n))
+                counts['trailhead' if is_th else 'prose'] += 1
+                it['pending'] = True
+                it['note'] = ('trailhead, not a trail — the route that leaves it is not researched yet'
+                              if is_th else
+                              'not a trail entry yet — needs the named route, or a move to activities')
+                keep.append(it)
+                continue
+            if IS_DRIVE.search(n):
+                dest = s.setdefault('scenicDrives', [])
+                if not any(norm_key(x.get('name')) == norm_key(n) for x in dest):
+                    dest.append({k: v for k, v in it.items() if k in ('name', 'url', 'note')})
+                counts['drive'] += 1
+                continue
+            if IS_OFFROAD.search(n):
+                dest = s.setdefault('offroad', [])
+                if not any(norm_key(x.get('name')) == norm_key(n) for x in dest):
+                    dest.append({k: v for k, v in it.items() if k in ('name', 'url', 'note')})
+                counts['offroad'] += 1
+                continue
+            keep.append(it)
+        if len(keep) != len(box):
+            s['alltrails'] = keep
+        # Duplicates inside each box — Great Sand Dunes carried Medano Pass twice
+        # in `offroad`, once per source.
+        for field in ('alltrails', 'offroad', 'scenicDrives'):
+            items = s.get(field) or []
+            seen, out = {}, []
+            for it in items:
+                k = norm_key(it.get('name'))
+                if k in seen:
+                    # Keep the richer entry, but do not lose the other's link.
+                    first = out[seen[k]]
+                    if it.get('url') and it['url'] != first.get('url'):
+                        first.setdefault('alt_url', it['url'])
+                    if len(json.dumps(it)) > len(json.dumps(first)):
+                        it.setdefault('alt_url', first.get('url')) if first.get('url') else None
+                        out[seen[k]] = it
+                    counts['dup'] += 1
+                    continue
+                seen[k] = len(out)
+                out.append(it)
+            if len(out) != len(items):
+                s[field] = out
+        for field in ('alltrails', 'offroad', 'scenicDrives'):
+            if s.get(field):
+                s[field] = sorted(s[field], key=item_sort_key)
+                counts['sorted'] += 1
+    log.append(f"  global: sorted {counts['sorted']} boxes; flagged {counts['prose']} prose "
+               f"and {counts['trailhead']} trailheads as pending research (kept, sorted last); "
+               f"moved {counts['drive']} drives and {counts['offroad']} 4x4 routes to their own "
+               f"box; merged {counts['dup']} duplicates")
+
+
 def main():
     db = json.loads(DB.read_text())
     h = SRC.read_text()
@@ -325,6 +421,9 @@ def main():
 
     if missing:
         sys.exit('!! links_db.json names stops that do not exist: ' + ', '.join(missing))
+
+    # Applies to every stop, researched or not.
+    global_pass(stops + ext['STOPS'], log)
 
     # Park-level browse link on the trail box heading. Without an entry here the
     # heading falls back to the whole state — Caprock read "Browse Texas hikes".

@@ -136,6 +136,8 @@ def build_item(t):
         item['rating'] = r if '(' in r else r + ' reviews'
     if t.get('uses'):
         item['uses'] = t['uses']
+    if t.get('dogs') is not None:
+        item['dogs'] = t['dogs']
     # A `false` verdict with a reason is worth as much as a positive one — the
     # Trailway reads as a flat rail bed everywhere else and is sand, rock and
     # goatheads. Carry it as a pill with the reason on hover, not as a paragraph.
@@ -265,8 +267,6 @@ def apply_stop(stop, entry, log):
         gone = before - len(stop['alltrails'])
         if gone:
             log.append(f"  {sid}: dropped {gone} entry/entries that were not trails")
-    if stop.get('alltrails'):
-        stop['alltrails'] = sorted(stop['alltrails'], key=item_sort_key)
     for r in entry.get('reclassify') or []:
         if r.get('from') == 'alltrails' and r.get('to') == 'scenicDrives':
             before = len(stop.get('alltrails') or [])
@@ -305,6 +305,40 @@ def apply_stop(stop, entry, log):
     for a in (stop.get('activities') or []):
         if fix and fix['replace'] in (a.get('detail') or ''):
             a['detail'] = a['detail'].replace(fix['replace'], fix['with'])
+
+    # ---- Dog verdict, per trail -------------------------------------------
+    # LAST in this function on purpose. An earlier version ran it before the
+    # biking entries were merged in, so the Caprock Trailway — the one bike
+    # option at that stop — came out with no verdict while the six trails beside
+    # it were all green. Anything that annotates the box has to run after
+    # everything that adds to the box.
+    #
+    # The trip carries a dog for 405 nights and four US national parks on this
+    # route close every trail to it. This puts the answer on each row.
+    #
+    # Absence is NOT a green light. A stop with no researched rule gets no icon
+    # at all, because "we did not check" and "dogs are welcome" must never look
+    # the same on a card read at a trailhead.
+    verdict = entry.get('dogs_verdict')
+    per_trail = entry.get('trail_dogs') or {}
+    if verdict or per_trail:
+        for it in (stop.get('alltrails') or []):
+            name = it.get('name')
+            if name in per_trail:                 # the authority named this trail
+                val = per_trail[name]
+                if val is None:
+                    it.pop('dogs', None)          # named neither way — stay silent
+                else:
+                    it['dogs'] = val
+            elif verdict == 'allowed':
+                it['dogs'] = True
+            elif verdict == 'prohibited':
+                it['dogs'] = False
+            # 'partial' with no per-trail entry falls through to no icon.
+        if entry.get('dogs_exception'):
+            stop['dogsException'] = entry['dogs_exception']
+    if stop.get('alltrails'):
+        stop['alltrails'] = sorted(stop['alltrails'], key=item_sort_key)
 
 
 # --- Global pass -----------------------------------------------------------

@@ -224,7 +224,8 @@
         "problem": "The activity card says the Trailway is 'a flat, packed-gravel former rail bed'. Riders describe sand and clay, rock, and goatheads. That description reads as an invitation to a casual ride.",
         "replace": "flat, packed-gravel former rail bed",
         "with": "former rail bed — sand and clay, rocky in sections, gravel tyres and puncture kit"
-      }
+      },
+      "dogs_verdict": "allowed"
     },
     "santafe": {
       "authority": "Santa Fe National Forest / City of Santa Fe",
@@ -268,7 +269,8 @@
             "tier": "official"
           }
         }
-      ]
+      ],
+      "dogs_verdict": "allowed"
     },
     "great-sand-dunes": {
       "authority": "National Park Service",
@@ -291,7 +293,16 @@
         "Wellington Ditch Trail",
         "High Dune Loop"
       ],
-      "needs_check_why": "The NPS pets page names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited. It does not name Montville or Wellington either way. Not inferring — to be confirmed with the park."
+      "needs_check_why": "The NPS pets page names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited. It does not name Montville or Wellington either way. Not inferring — to be confirmed with the park.",
+      "dogs_verdict": "partial",
+      "trail_dogs": {
+        "Mosca Pass Trail": true,
+        "Dunes Overlook Trail": true,
+        "High Dune Loop": false,
+        "Montville Nature Trail": null,
+        "Wellington Ditch Trail": null
+      },
+      "trail_dogs_why": "NPS names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited, which rules out High Dune. It says nothing either way about Montville or Wellington Ditch, so those stay null and show no icon rather than a guess."
     },
     "salida-buenavista": {
       "authority": "USFS / City of Salida / Chaffee County",
@@ -385,7 +396,8 @@
           "entry": "Alluvial Fan and Horseshoe Park.",
           "problem": "Two place names, not a trail."
         }
-      ]
+      ],
+      "dogs_verdict": "prohibited"
     },
     "flaming-gorge": {
       "authority": "USDA Forest Service — Ashley National Forest",
@@ -563,7 +575,8 @@
             "hike"
           ]
         }
-      ]
+      ],
+      "dogs_verdict": "allowed"
     },
     "craters-of-the-moon": {
       "authority": "National Park Service",
@@ -604,7 +617,8 @@
         }
       ],
       "dogs": "PROHIBITED on hiking trails, boardwalks, backcountry and all thermal areas. NPS: pets are allowed only in developed areas within 100 feet of roads, parking areas and campgrounds, on a leash no longer than six feet.",
-      "dogs_impact": "Five nights at Fishing Bridge and the dog cannot leave the roadside. Same as Grand Teton and Glacier on this leg — three consecutive US parks where every trail is closed to it."
+      "dogs_impact": "Five nights at Fishing Bridge and the dog cannot leave the roadside. Same as Grand Teton and Glacier on this leg — three consecutive US parks where every trail is closed to it.",
+      "dogs_verdict": "prohibited"
     },
     "glacier": {
       "authority": "National Park Service",
@@ -652,7 +666,9 @@
           ],
           "was": "Trail of the Cedars — no url"
         }
-      ]
+      ],
+      "dogs_verdict": "prohibited",
+      "dogs_exception": "Apgar to West Glacier bike path, when snow-free."
     },
     "waterton": {
       "authority": "Parks Canada",
@@ -709,7 +725,8 @@
         "entry": "Red Rock Canyon / Blakiston Falls",
         "problem": "Described consistently as a short easy walk from the Red Rock Canyon day-use area with many stairs, but no standalone AllTrails listing surfaced for Blakiston Falls itself.",
         "action": "Keep the name, no trail link, widen to Parks Canada or Komoot on the next pass."
-      }
+      },
+      "dogs_verdict": "allowed"
     },
     "banff": {
       "authority": "Parks Canada",
@@ -780,7 +797,8 @@
           "was": "Fenland Trail — no url",
           "season": "AllTrails lists this trail as CLOSED. Verify with Parks Canada trail conditions before counting on it."
         }
-      ]
+      ],
+      "dogs_verdict": "allowed"
     },
     "jasper": {
       "authority": "Parks Canada",
@@ -836,7 +854,8 @@
           "was": "Maligne Canyon — no url",
           "season": "Best May-October."
         }
-      ]
+      ],
+      "dogs_verdict": "allowed"
     },
     "muncho-lake": {
       "authority": "BC Parks",
@@ -1148,7 +1167,9 @@
         }
       ],
       "dogs": "PROHIBITED on park trails and off-trail in the wilderness, and not allowed on the park buses. NPS: pets are permitted on park roads, parking lots and campground roads, plus two exceptions — the Roadside Hiking Trail and the Roadside Bike Trail, on a leash of 6 ft or shorter.",
-      "dogs_impact": "Seven nights at Riley Creek. The two roadside trails are the whole of what the dog can walk, and the bus ban means the deep-park day trips are dog-free by definition."
+      "dogs_impact": "Seven nights at Riley Creek. The two roadside trails are the whole of what the dog can walk, and the bus ban means the deep-park day trips are dog-free by definition.",
+      "dogs_verdict": "prohibited",
+      "dogs_exception": "Roadside Hiking Trail and Roadside Bike Trail only, leash 6 ft or shorter."
     },
     "trapper-creek": {
       "authority": "Alaska State Parks — Denali State Park",
@@ -1290,5 +1311,6 @@
         }
       ]
     }
-  }
+  },
+  "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop."
 }

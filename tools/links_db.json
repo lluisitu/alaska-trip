@@ -837,6 +837,458 @@
           "season": "Best May-October."
         }
       ]
+    },
+    "muncho-lake": {
+      "authority": "BC Parks",
+      "trails": [
+        {
+          "name": "Stone's Sheep Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/stones-sheep-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.7 mi",
+          "elevation_gain": "967 ft",
+          "reviews": "4.0 (106)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Favor signed short lakeshore and roadside walks. — prose, not a trail",
+          "note_source": "AllTrails' top pick for the park. Named for the sheep this stop exists to see."
+        },
+        {
+          "name": "Mineral Lick Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/mineral-lick-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.7 mi loop",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "104 ft",
+          "reviews": "73",
+          "uses": [
+            "hike"
+          ]
+        },
+        {
+          "name": "Red Rock Canyon Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/red-rock-canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3 mi",
+          "time": "1.5-2 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "521 ft",
+          "reviews": "38",
+          "uses": [
+            "hike"
+          ]
+        }
+      ]
+    },
+    "whitehorse-1": {
+      "authority": "City of Whitehorse / Yukon",
+      "trails": [
+        {
+          "name": "Miles Canyon Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/yukon/miles-canyon-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "9.6 mi loop",
+          "time": "4-4.5 hr",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "1,043 ft",
+          "reviews": "347",
+          "uses": [
+            "hike"
+          ],
+          "was": "Miles Canyon and Chadburn Lake trails. — prose naming two separate systems"
+        },
+        {
+          "name": "Miles Canyon South Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/yukon/miles-canyon-loop--3",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "236",
+          "uses": [
+            "hike"
+          ]
+        },
+        {
+          "name": "Chadburn and Canyon City Ski",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/yukon/chadburn-and-canyon-city-ski",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.2 mi loop",
+          "difficulty": "Easy",
+          "reviews": "45",
+          "uses": [
+            "hike"
+          ],
+          "note_source": "The easy option of the Chadburn network — the 14.6 mi Shwatka loop is the hard one."
+        },
+        {
+          "name": "Chadburn Lake Trails: South Blue Route",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/yukon/chadburn-lake-trails-south-blue-route",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.1 mi loop",
+          "difficulty": "Moderately challenging",
+          "reviews": "7",
+          "uses": [
+            "hike"
+          ]
+        }
+      ],
+      "note": "The old entry \"Choose signed, well-used routes and carry bear spray.\" is advice, not a trail — belongs with the stop notes."
+    },
+    "talkeetna": {
+      "authority": "Talkeetna Lakes Park / Mat-Su Borough",
+      "trails": [
+        {
+          "name": "Talkeetna Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/talkeetna-lake-trail--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.4 mi loop",
+          "time": "1 h 23 min",
+          "difficulty": "Easy",
+          "elevation_gain": "390 ft",
+          "reviews": "4.5 (966)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Lake Loop Trail / Talkeetna Lakes Park and river trails — no url, and two entries for one system",
+          "season": "Best April-October; arrival 3 Jul is peak.",
+          "note_source": "Reviewers: heavy mosquitoes and muddy patches — bug cover matters more than boots here."
+        },
+        {
+          "name": "Talkeetna Lakes Ski Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/talkeetna-lakes-ski-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.4 mi loop",
+          "difficulty": "Easy",
+          "uses": [
+            "hike"
+          ]
+        }
+      ]
+    },
+    "cooper-landing": {
+      "authority": "USDA Forest Service — Chugach National Forest",
+      "trails": [
+        {
+          "name": "Russian River Falls",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/to-the-russian-river-falls",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.8 mi out-and-back",
+          "time": "1 h 58 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.5 (2,006)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Russian River Falls Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "Resurrection Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/resurrection-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "12.4 mi out-and-back",
+          "time": "5 h 18 min",
+          "difficulty": "Challenging",
+          "reviews": "4.6 (99)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Resurrection Pass Trail north trailhead — a trailhead"
+        },
+        {
+          "name": "Russian Lakes Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/russian-lakes-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "97",
+          "uses": [
+            "hike"
+          ]
+        }
+      ],
+      "unresolved": {
+        "entry": "Hidden Creek Trailhead (Skilak Lake)",
+        "problem": "Described as a hike to Skilak Lake but no listing with distance or rating surfaced.",
+        "action": "Keep the name, no invented link; widen on the next pass."
+      }
+    },
+    "seward": {
+      "authority": "National Park Service — Kenai Fjords",
+      "trails": [
+        {
+          "name": "Exit Glacier View and Overlook Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/exit-glacier-overlook-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.2 mi loop",
+          "time": "58 min",
+          "difficulty": "Easy",
+          "reviews": "4,362",
+          "uses": [
+            "hike"
+          ],
+          "was": "Exit Glacier View and Overlook loops. — prose"
+        },
+        {
+          "name": "Harding Icefield Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/harding-ice-field-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "8.8 mi out-and-back",
+          "time": "5 h 56 min",
+          "difficulty": "Challenging",
+          "elevation_gain": "3,234 ft",
+          "reviews": "4.9 (6,224)",
+          "uses": [
+            "hike"
+          ],
+          "season": "Snow can hold on the trail into early July with avalanche danger; arrival is 14 Jul, just past that.",
+          "note_source": "Kept despite being hard — 4.9 from 6,224 is outstanding by the ordering rule."
+        }
+      ]
+    },
+    "homer": {
+      "authority": "City of Homer / Kachemak Bay",
+      "trails": [
+        {
+          "name": "Diamond Creek Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/diamond-creek-trail--3",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.8 mi out-and-back",
+          "time": "2 h 08 min",
+          "difficulty": "Moderate",
+          "elevation_gain": "731 ft",
+          "reviews": "4.3 (272)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Diamond Creek Trail — no url",
+          "note_source": "Forest down to the beach. Reviewers report mud and steep sections."
+        },
+        {
+          "name": "Homestead Trail Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/homestead-trail-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.8 mi loop",
+          "time": "2 h 34 min",
+          "difficulty": "Moderately challenging",
+          "uses": [
+            "hike"
+          ],
+          "was": "Homestead Trail — no url"
+        },
+        {
+          "name": "Homer Spit Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/homer-spit-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "202",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "cruise": "candidate",
+          "cruise_reason": "The Spit is flat and level along the shore — the shape of a dog-carrier ride. Surface not confirmed; check on arrival."
+        }
+      ]
+    },
+    "denali": {
+      "authority": "National Park Service",
+      "official_links": [
+        {
+          "label": "Pets in Denali",
+          "url": "https://www.nps.gov/dena/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on park trails and off-trail in the wilderness, and not allowed on the park buses. NPS: pets are permitted on park roads, parking lots and campground roads, plus two exceptions — the Roadside Hiking Trail and the Roadside Bike Trail, on a leash of 6 ft or shorter.",
+      "dogs_impact": "Seven nights at Riley Creek. The two roadside trails are the whole of what the dog can walk, and the bus ban means the deep-park day trips are dog-free by definition."
+    },
+    "trapper-creek": {
+      "authority": "Alaska State Parks — Denali State Park",
+      "trails": [
+        {
+          "name": "Byers Lake Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/byers-lake-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.9 mi",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "400 ft",
+          "reviews": "227",
+          "uses": [
+            "hike"
+          ],
+          "was": "Byers Lake — no url"
+        },
+        {
+          "name": "Little Coal Creek Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/little-coal-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "6.7 mi",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,902 ft",
+          "reviews": "4.6 (347)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Little Coal Creek Trailhead (Kesugi Ridge north) — a trailhead"
+        },
+        {
+          "name": "Kesugi Ridge (Curry Ridge) Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/kesugi-ridge-curry-ridge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "30.2 mi",
+          "time": "15.5-17 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "5,971 ft",
+          "reviews": "4.8 (257)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Curry Ridge is the primary hike and Denali viewpoint. — prose",
+          "note_source": "A multi-day traverse, not a day hike — the stop text calls Curry Ridge \"the primary hike\", which is only true of a much shorter section of it."
+        }
+      ],
+      "note": "\"Moose Flats Loop provides an easier outing.\" was prose; no listing surfaced under that name."
+    },
+    "valdez": {
+      "authority": "City of Valdez / Chugach NF",
+      "trails": [
+        {
+          "name": "Solomon Gulch Viewpoint",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/solomon-gulch-viewpoint",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.5 mi",
+          "elevation_gain": "853 ft",
+          "reviews": "4.5 (544)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Solomon Gulch Trail — no url"
+        },
+        {
+          "name": "Solomon Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/solomon-lake-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "266",
+          "uses": [
+            "hike"
+          ]
+        },
+        {
+          "name": "Dock Point Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "0.9 mi",
+          "elevation_gain": "118 ft",
+          "reviews": "4.5 (428)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Dock Point Trail — no url",
+          "note_source": "Real and well reviewed, but AllTrails indexes it only as a point of interest, not a trail listing — so no direct trail link."
+        }
+      ]
+    },
+    "mccarthy": {
+      "authority": "National Park Service — Wrangell-St. Elias",
+      "trails": [
+        {
+          "name": "Root Glacier Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/root-glacier-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "9.2 km",
+          "elevation_gain": "256 m",
+          "reviews": "4.9 (1,012)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Root Glacier Trail — no url",
+          "note_source": "The highest-rated trail on the whole leg."
+        },
+        {
+          "name": "Bonanza Mine Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/bonanza-mine-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "8.6 mi",
+          "elevation_gain": "3,923 ft",
+          "reviews": "4.7 (283)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bonanza Mine Trail — no url"
+        }
+      ]
     }
   }
 }

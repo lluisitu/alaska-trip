@@ -504,29 +504,166 @@
       "low_elevation_gap": "The stop's note points at CCC Ponds and the New Fork River corridor as what is actually walkable in late April. Neither is indexed on AllTrails. These need a Wyoming Game & Fish / BLM source, not a trail-database one — outstanding."
     },
     "twin-falls": {
-      "authority": "City of Twin Falls / Idaho",
+      "authority": "City of Twin Falls / NPS (City of Rocks) / Idaho",
       "trails": [
         {
           "name": "Snake River Canyon Rim Trail",
-          "alltrails": {
-            "url": "https://www.alltrails.com/trail/us/idaho/snake-river-canyon-rim-trail",
-            "match": "exact",
-            "tier": "indexed"
-          },
           "distance": "11.4 mi out-and-back",
           "time": "4 h 08 min",
           "elevation_gain": "836 ft",
-          "reviews": "916",
+          "reviews": "4.6 (916)",
           "uses": [
             "hike",
             "bike"
           ],
           "cruise": true,
-          "cruise_reason": "Fully paved the whole way and described as made for a family bike ride or pushing a stroller — 836 ft spread over 11.4 mi is barely a grade. The first confirmed dog-carrier ride on the trip.",
-          "was": "Snake River Canyon Rim Trail — no url"
+          "cruise_reason": "Fully paved the whole way, mostly flat, and reviewers describe it as made for a family ride or pushing a stroller. Limited shade and wind are the only caveats. Passes right under Perrine Bridge.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/snake-river-canyon-rim-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "was": "Snake River Canyon Rim Trail — had a review count but no star; 4.6 now sourced."
+        },
+        {
+          "name": "Shoshone Falls Observation Deck Trail",
+          "reviews": "640",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note_source": "Paved path and boardwalk to several vantage points over the 900 ft-wide falls. Reviewers report the route can be poorly marked. Dog-friendly.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/shoshone-falls-observation-deck-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "was": "Not in the trails box at all — Shoshone Falls was a highlight with no trail entry."
+        },
+        {
+          "name": "South Fork Circle Creek and North Fork Circle Loop",
+          "distance": "6.4 mi",
+          "elevation_gain": "1,423 ft",
+          "reviews": "4.8 (391)",
+          "uses": [
+            "hike"
+          ],
+          "note_source": "City of Rocks — the reserve's best-rated trail. Truck-only day trip, unpaved access.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/south-fork-circle-creek-and-north-fork-circle-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "was": "Not in the trails box — City of Rocks was a highlight with no trails."
+        },
+        {
+          "name": "Creekside Towers Trail",
+          "reviews": "4.7 (308)",
+          "uses": [
+            "hike"
+          ],
+          "note_source": "City of Rocks — the kid-friendly pick, through the granite formations.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/creekside-towers-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
         }
       ],
-      "note": "No star rating surfaced for this listing, only the review count."
+      "note": "No star rating surfaced for this listing, only the review count.",
+      "dogs_verdict": "allowed",
+      "dogs": "Snake River Canyon Rim Trail and the Shoshone Falls observation trail are both reported dog-friendly. City of Rocks is an NPS-managed National Reserve co-managed with Idaho State Parks — leash rules apply; trail-by-trail policy not separately verified.",
+      "area_browse_alltrails": "https://www.alltrails.com/us/idaho/twin-falls",
+      "activities": {
+        "Shoshone Falls": {
+          "entity": "Shoshone Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Shoshone_Falls"
+            },
+            {
+              "label": "AllTrails — Shoshone Falls Park",
+              "url": "https://www.alltrails.com/parks/us/idaho/shoshone-falls-park"
+            },
+            {
+              "label": "Observation Deck Trail",
+              "url": "https://www.alltrails.com/trail/us/idaho/shoshone-falls-observation-deck-trail"
+            }
+          ],
+          "reviews": "640",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true
+        },
+        "Perrine Bridge & Snake River Canyon Rim Trail": {
+          "entity": "Perrine Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Perrine_Bridge"
+            },
+            {
+              "label": "AllTrails — Canyon Rim Trail",
+              "url": "https://www.alltrails.com/trail/us/idaho/snake-river-canyon-rim-trail"
+            }
+          ],
+          "distance": "11.4 mi out-and-back",
+          "time": "4 h 08 min",
+          "reviews": "4.6 (916)",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "cruise": true,
+          "dogs": true
+        },
+        "City of Rocks National Reserve (day trip, truck only)": {
+          "entity": "City of Rocks National Reserve",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/City_of_Rocks_National_Reserve"
+            },
+            {
+              "label": "AllTrails — all reserve trails",
+              "url": "https://www.alltrails.com/parks/us/idaho/city-of-rocks-national-reserve"
+            },
+            {
+              "label": "Best-rated: Circle Creek Loop",
+              "url": "https://www.alltrails.com/trail/us/idaho/south-fork-circle-creek-and-north-fork-circle-loop"
+            }
+          ],
+          "reviews": "4.7 avg (849)",
+          "uses": [
+            "hike"
+          ]
+        },
+        "Perrine Bridge and the Snake River Canyon Rim Trail.": {
+          "drop": true,
+          "why": "Word-for-word restatement of the Perrine Bridge activity above."
+        },
+        "City of Rocks National Reserve as a longer truck-only day trip.": {
+          "drop": true,
+          "why": "Restatement of the City of Rocks activity above."
+        }
+      },
+      "towns": {
+        "Jerome, ID": {
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jerome,_Idaho"
+            }
+          ]
+        }
+      },
+      "scenic_links": {
+        "Thousand Springs Scenic Byway (US-30)": {
+          "wiki": "https://en.wikipedia.org/wiki/Thousand_Springs_Scenic_Byway"
+        }
+      }
     },
     "sawtooth-nra": {
       "authority": "USDA Forest Service — Sawtooth National Recreation Area",
@@ -1312,5 +1449,6 @@
       ]
     }
   },
-  "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop."
+  "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",
+  "_activities": "Per-stop overrides for the highlights list. Each entry maps an activity's name to a verified entity: its real Wikipedia article, its direct AllTrails listing where it IS a trail, and the official page. Activities with an entry render real links and pills; activities without one keep the generic name-derived search links, which is the honest fallback until they are researched. `drop: true` removes a duplicate restatement of another activity."
 }

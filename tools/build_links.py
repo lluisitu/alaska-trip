@@ -306,6 +306,40 @@ def apply_stop(stop, entry, log):
         if fix and fix['replace'] in (a.get('detail') or ''):
             a['detail'] = a['detail'].replace(fix['replace'], fix['with'])
 
+    # ---- Highlights ---------------------------------------------------------
+    # The activity list was the worst-served box on the card: 1,105 entries, each
+    # rendering three links built by shoving its own headline into a search URL.
+    # "Bike or walk the Caprock Canyons Trailway" searched Wikipedia for that
+    # whole sentence and returned "List of cycleways". And where a highlight IS a
+    # trail — Perrine Bridge, City of Rocks — it showed none of the distance,
+    # difficulty or rating the trails box shows for the same thing.
+    #
+    # An entry here gives a highlight its real entity: verified links, and the
+    # trail stats when it is a trail. Activities with no entry keep the generic
+    # search links, which stays honest until they are researched.
+    acts = entry.get('activities') or {}
+    if acts:
+        kept, dropped = [], 0
+        for a in (stop.get('activities') or []):
+            spec = acts.get(a.get('name'))
+            if spec and spec.get('drop'):
+                dropped += 1
+                continue
+            if spec:
+                for k in ('entity', 'links', 'difficulty', 'distance', 'time',
+                          'uses', 'cruise', 'dogs'):
+                    if spec.get(k) is not None:
+                        a[k] = spec[k]
+                if spec.get('reviews'):
+                    a['rating'] = spec['reviews']
+                if spec.get('cruise_reason'):
+                    a['cruiseWhy'] = spec['cruise_reason']
+            kept.append(a)
+        stop['activities'] = kept
+        linked = sum(1 for a in kept if a.get('links'))
+        log.append(f"  {sid}: {linked} highlights given real links"
+                   + (f", {dropped} duplicate(s) removed" if dropped else ""))
+
     # ---- Dog verdict, per trail -------------------------------------------
     # LAST in this function on purpose. An earlier version ran it before the
     # biking entries were merged in, so the Caprock Trailway — the one bike

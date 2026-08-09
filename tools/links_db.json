@@ -490,6 +490,353 @@
         "action": "Move to activities, where the stop already describes it correctly, and leave the trail box without it."
       },
       "low_elevation_gap": "The stop's note points at CCC Ponds and the New Fork River corridor as what is actually walkable in late April. Neither is indexed on AllTrails. These need a Wyoming Game & Fish / BLM source, not a trail-database one — outstanding."
+    },
+    "twin-falls": {
+      "authority": "City of Twin Falls / Idaho",
+      "trails": [
+        {
+          "name": "Snake River Canyon Rim Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/snake-river-canyon-rim-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "11.4 mi out-and-back",
+          "time": "4 h 08 min",
+          "elevation_gain": "836 ft",
+          "reviews": "916",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "cruise": true,
+          "cruise_reason": "Fully paved the whole way and described as made for a family bike ride or pushing a stroller — 836 ft spread over 11.4 mi is barely a grade. The first confirmed dog-carrier ride on the trip.",
+          "was": "Snake River Canyon Rim Trail — no url"
+        }
+      ],
+      "note": "No star rating surfaced for this listing, only the review count."
+    },
+    "sawtooth-nra": {
+      "authority": "USDA Forest Service — Sawtooth National Recreation Area",
+      "dogs": "Allowed on leash (per AllTrails listing).",
+      "trails": [
+        {
+          "name": "Fishhook Creek Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/fishhook-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.6 mi",
+          "time": "1 h 36 min",
+          "difficulty": "Easy",
+          "elevation_gain": "288 ft",
+          "reviews": "4.7 (2,232)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Fishhook Creek Trail / Redfish Lake trails — no url, two trails in one entry",
+          "season": "Best May-October — arrival is 3 May, the very start of it."
+        },
+        {
+          "name": "Redfish Lake Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/redfish-lake-full-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "94",
+          "uses": [
+            "hike"
+          ],
+          "note_source": "Split out of the combined entry above."
+        },
+        {
+          "name": "Redfish Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/redfish-lake-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "61",
+          "uses": [
+            "hike"
+          ]
+        }
+      ]
+    },
+    "craters-of-the-moon": {
+      "authority": "National Park Service",
+      "official_links": [
+        {
+          "label": "Craters of the Moon NM",
+          "url": "https://www.nps.gov/crmo/index.htm",
+          "tier": "official"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Inferno Cone Viewpoint",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/idaho/inferno-cone-viewpoint",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.4 mi",
+          "time": "0.5-1 hr",
+          "elevation_gain": "141 ft",
+          "reviews": "4.7 (690)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Inferno Cone / Loop Drive trails — no url, and it named a drive and a trail together",
+          "note_source": "Steep and short, 360-degree views of the Great Rift, Snake River Plain and the Pioneers."
+        }
+      ]
+    },
+    "yellowstone": {
+      "authority": "National Park Service",
+      "official_links": [
+        {
+          "label": "Pets in Yellowstone",
+          "url": "https://www.nps.gov/yell/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on hiking trails, boardwalks, backcountry and all thermal areas. NPS: pets are allowed only in developed areas within 100 feet of roads, parking areas and campgrounds, on a leash no longer than six feet.",
+      "dogs_impact": "Five nights at Fishing Bridge and the dog cannot leave the roadside. Same as Grand Teton and Glacier on this leg — three consecutive US parks where every trail is closed to it."
+    },
+    "glacier": {
+      "authority": "National Park Service",
+      "official_links": [
+        {
+          "label": "Pets in Glacier",
+          "url": "https://www.nps.gov/glac/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED. NPS: \"Pets are not permitted on trails, along lake shores outside of developed locations, in the backcountry, or in any building.\" Allowed in vehicles, frontcountry campgrounds, picnic and parking areas, and on the Apgar-to-West Glacier bike path when snow-free.",
+      "dogs_impact": "The Apgar-West Glacier bike path is the one place the dog can come on this stop — and it is a paved path, so it is also the bike option here.",
+      "trails": [
+        {
+          "name": "Avalanche Lake",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/montana/avalanche-lake--6",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "6.1 mi",
+          "time": "2.5-3 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "780 ft",
+          "reviews": "4.8 (31,298)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Avalanche Lake Trail — no url",
+          "note_source": "Limited parking and crowds — reviewers say arrive early."
+        },
+        {
+          "name": "Trail of the Cedars",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/montana/trail-of-the-cedars--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.9 mi loop",
+          "time": "18 min",
+          "difficulty": "Easy",
+          "reviews": "4.7 (3,547)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Trail of the Cedars — no url"
+        }
+      ]
+    },
+    "waterton": {
+      "authority": "Parks Canada",
+      "dogs": "Allowed on trails, on a leash of 3 m or less — Parks Canada, and it is the law. Local bulletins close specific trails to dogs (groomed ski trails in winter, wildlife closures); check trailhead boards. This is the opposite of the US parks earlier on this leg.",
+      "dogs_impact": "First stop on the trip where the dog can walk a national-park trail. Waterton follows five nights in Glacier where it could not leave the road.",
+      "trails": [
+        {
+          "name": "Bear's Hump",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/bears-hump",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.5 mi",
+          "elevation_gain": "715 ft",
+          "reviews": "4.7 (5,338)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bear's Hump Trail — no url; and a second prose entry, 'Bear's Hump for a short, steep panorama if snow-free.'",
+          "note_source": "Short and steep — the classic Waterton townsite panorama."
+        },
+        {
+          "name": "Upper Bertha Falls and Bertha Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/upper-bertha-falls-and-bertha-lake-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "7.5 mi",
+          "time": "4.5-5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,958 ft",
+          "reviews": "2,680",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bertha Lake Trail — no url"
+        },
+        {
+          "name": "Bertha Lake Loop from Waterton Park",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/bertha-lake-loop-from-waterton-park",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "586",
+          "uses": [
+            "hike"
+          ]
+        }
+      ],
+      "unresolved": {
+        "entry": "Red Rock Canyon / Blakiston Falls",
+        "problem": "Described consistently as a short easy walk from the Red Rock Canyon day-use area with many stairs, but no standalone AllTrails listing surfaced for Blakiston Falls itself.",
+        "action": "Keep the name, no trail link, widen to Parks Canada or Komoot on the next pass."
+      }
+    },
+    "banff": {
+      "authority": "Parks Canada",
+      "official_links": [
+        {
+          "label": "Keep dogs on leash — Banff",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/visit/faune-wildlife/chiens-dogs",
+          "tier": "official"
+        },
+        {
+          "label": "Trail conditions",
+          "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking/etat-sentiers-trail-conditions",
+          "tier": "official"
+        }
+      ],
+      "dogs": "Allowed on trails, on a leash of 3 m or less — Parks Canada, and it is the law. Local bulletins close specific trails to dogs (groomed ski trails in winter, wildlife closures); check trailhead boards. This is the opposite of the US parks earlier on this leg.",
+      "trails": [
+        {
+          "name": "Tunnel Mountain Summit",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/tunnel-mountain-summit",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.9 mi",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "869 ft",
+          "reviews": "17,712",
+          "uses": [
+            "hike"
+          ],
+          "was": "Tunnel Mountain Trail — no url",
+          "note_source": "Walkable from the Tunnel Mountain campground itself — no drive needed."
+        },
+        {
+          "name": "Johnston Canyon to Upper Falls",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/johnston-canyon-to-upper-falls",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.5 mi",
+          "time": "1 h 57 min",
+          "difficulty": "Moderate",
+          "elevation_gain": "905 ft",
+          "reviews": "14,314",
+          "uses": [
+            "hike"
+          ],
+          "was": "Johnston Canyon — no url"
+        },
+        {
+          "name": "Fenland Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/fenland-trail--3",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.2 mi",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "190 ft",
+          "reviews": "1,332",
+          "uses": [
+            "hike"
+          ],
+          "was": "Fenland Trail — no url",
+          "season": "AllTrails lists this trail as CLOSED. Verify with Parks Canada trail conditions before counting on it."
+        }
+      ]
+    },
+    "jasper": {
+      "authority": "Parks Canada",
+      "dogs": "Allowed on trails, on a leash of 3 m or less — Parks Canada, and it is the law. Local bulletins close specific trails to dogs (groomed ski trails in winter, wildlife closures); check trailhead boards. This is the opposite of the US parks earlier on this leg.",
+      "trails": [
+        {
+          "name": "Old Fort Point Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/old-fort-valley-of-the-five-lakes-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.4 mi",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "587 ft",
+          "reviews": "3,398",
+          "uses": [
+            "hike"
+          ],
+          "was": "Old Fort Point Trail — no url"
+        },
+        {
+          "name": "Valley of the Five Lakes Trail from Old Fort Point Road",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/valley-of-the-five-lakes-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "11.5 mi",
+          "time": "5.5-6 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "1,975 ft",
+          "reviews": "392",
+          "uses": [
+            "hike"
+          ],
+          "was": "Valley of the Five Lakes — no url",
+          "note_source": "The 11.5 mi figure is the full route FROM Old Fort Point Road. The Valley of the Five Lakes loop on its own is much shorter — check which one you mean before setting out."
+        },
+        {
+          "name": "Sixth Bridge via Maligne Canyon Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/alberta/maligne-canyon-to-old-fort-point-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "6.8 km loop",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "was": "Maligne Canyon — no url",
+          "season": "Best May-October."
+        }
+      ]
     }
   }
 }

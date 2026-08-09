@@ -1030,6 +1030,28 @@
         "Red Canyon Visitor Center and overlooks, if the seasonal facility and access road are open.": {
           "drop": true,
           "why": "Restates the Red Canyon entry."
+        },
+        "Drive Ashley National Forest 4x4/backroads (e.g., toward Ute Mountain Fire Tower)": {
+          "entity": "Ashley National Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ashley_National_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 82
+        },
+        "Manila is the useful service town; Dutch John is the smaller gateway community.": {
+          "entity": "Dutch John, Utah",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dutch_John%2C_Utah"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
         }
       },
       "activities_note": "Sheep Creek Geological Loop has no Wikipedia article, so it links to Daggett County's own scenic-drives page and the AllTrails listing rather than a guessed one."
@@ -1168,6 +1190,28 @@
         "Pinedale's Museum of the Mountain Man, compact downtown, and Fremont Lake.": {
           "drop": true,
           "why": "Restates the museum and Fremont Lake entries above."
+        },
+        "Scab Creek Trail into the Bridger Wilderness": {
+          "entity": "Bridger Wilderness",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bridger_Wilderness"
+            }
+          ],
+          "auto": true,
+          "auto_km": 47
+        },
+        "Drive/hike toward Big Sandy Trailhead — gateway to Cirque of the Towers": {
+          "entity": "Cirque of the Towers",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cirque_of_the_Towers"
+            }
+          ],
+          "auto": true,
+          "auto_km": 41
         }
       }
     },
@@ -1386,7 +1430,31 @@
           ]
         }
       ],
-      "dogs_verdict": "allowed"
+      "dogs_verdict": "allowed",
+      "activities": {
+        "Redfish Lake day-use & lakeshore walk": {
+          "entity": "Redfish Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Redfish_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Redfish Lake day-use area and lakeshore walk — the single most photographed view in the recreation area.": {
+          "entity": "Redfish Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Redfish_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        }
+      }
     },
     "craters-of-the-moon": {
       "authority": "National Park Service",
@@ -1428,7 +1496,64 @@
       ],
       "dogs": "PROHIBITED on hiking trails, boardwalks, backcountry and all thermal areas. NPS: pets are allowed only in developed areas within 100 feet of roads, parking areas and campgrounds, on a leash no longer than six feet.",
       "dogs_impact": "Five nights at Fishing Bridge and the dog cannot leave the roadside. Same as Grand Teton and Glacier on this leg — three consecutive US parks where every trail is closed to it.",
-      "dogs_verdict": "prohibited"
+      "dogs_verdict": "prohibited",
+      "activities": {
+        "Fishing Bridge & Yellowstone Lake shoreline": {
+          "entity": "Yellowstone Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Yellowstone_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Hayden Valley wildlife watching": {
+          "entity": "Hayden Valley",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hayden_Valley"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Old Faithful & Upper Geyser Basin": {
+          "entity": "Old Faithful",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Old_Faithful"
+            }
+          ],
+          "auto": true,
+          "auto_km": 38
+        },
+        "Grand Prismatic Spring Overlook & Grand Canyon of the Yellowstone": {
+          "entity": "Grand Canyon of the Yellowstone",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Yellowstone"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        },
+        "Hayden Valley at dawn or dusk, Yellowstone Lake, Mud Volcano, and the Grand Canyon of the Yellowstone.": {
+          "entity": "Hayden Valley",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hayden_Valley"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        }
+      }
     },
     "glacier": {
       "authority": "National Park Service",
@@ -1478,7 +1603,64 @@
         }
       ],
       "dogs_verdict": "prohibited",
-      "dogs_exception": "Apgar to West Glacier bike path, when snow-free."
+      "dogs_exception": "Apgar to West Glacier bike path, when snow-free.",
+      "activities": {
+        "Logan Pass & Hidden Lake Overlook": {
+          "entity": "Logan Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Logan_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Many Glacier — Grinnell Glacier or Iceberg Lake": {
+          "entity": "Many Glacier",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Many_Glacier"
+            }
+          ],
+          "auto": true,
+          "auto_km": 41
+        },
+        "Highline Trail from Logan Pass": {
+          "entity": "Logan Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Logan_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Lake McDonald & Apgar Village": {
+          "entity": "Lake McDonald",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_McDonald"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Lake McDonald, Apgar, McDonald Creek, and accessible portions of Going-to-the-Sun Road.": {
+          "entity": "Lake McDonald",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_McDonald"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        }
+      }
     },
     "waterton": {
       "authority": "Parks Canada",
@@ -1536,7 +1718,31 @@
         "problem": "Described consistently as a short easy walk from the Red Rock Canyon day-use area with many stairs, but no standalone AllTrails listing surfaced for Blakiston Falls itself.",
         "action": "Keep the name, no trail link, widen to Parks Canada or Komoot on the next pass."
       },
-      "dogs_verdict": "allowed"
+      "dogs_verdict": "allowed",
+      "activities": {
+        "Prince of Wales Hotel & Cameron Falls": {
+          "entity": "Prince of Wales Hotel",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Prince_of_Wales_Hotel"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Waterton Lake boat cruise or Crypt Lake Trail": {
+          "entity": "Waterton Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Waterton_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        }
+      }
     },
     "banff": {
       "authority": "Parks Canada",
@@ -1608,7 +1814,97 @@
           "season": "AllTrails lists this trail as CLOSED. Verify with Parks Canada trail conditions before counting on it."
         }
       ],
-      "dogs_verdict": "allowed"
+      "dogs_verdict": "allowed",
+      "activities": {
+        "Banff townsite — Bow Falls & Bow River Trail": {
+          "entity": "Bow Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bow_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Lake Louise — Lakeshore Trail & Lake Agnes Tea House": {
+          "entity": "Lake Agnes Tea House",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Agnes_Tea_House"
+            }
+          ],
+          "auto": true,
+          "auto_km": 54
+        },
+        "Moraine Lake — Rockpile Trail & Consolation Lakes": {
+          "entity": "Moraine Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Moraine_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 46
+        },
+        "Icefields Parkway day trip — Peyto Lake & Columbia Icefield": {
+          "entity": "Peyto Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Peyto_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 90
+        },
+        "Sulphur Mountain Gondola & Upper Hot Springs, or Johnston Canyon": {
+          "entity": "Banff Upper Hot Springs",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Banff_Upper_Hot_Springs"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Banff town, Bow Falls, Lake Minnewanka, and the Bow Valley Parkway.": {
+          "entity": "Bow Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bow_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Johnston Canyon at the earliest practical hour.": {
+          "entity": "Johnston Creek (Alberta)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Johnston_Creek_%28Alberta%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Moraine Lake private-vehicle restrictions and shuttle rules must be checked for 2027.": {
+          "entity": "Moraine Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Moraine_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 46
+        }
+      }
     },
     "jasper": {
       "authority": "Parks Canada",
@@ -1665,7 +1961,64 @@
           "season": "Best May-October."
         }
       ],
-      "dogs_verdict": "allowed"
+      "dogs_verdict": "allowed",
+      "activities": {
+        "Old Fort Point & Lac Beauvert walk": {
+          "entity": "Lac Beauvert",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lac_Beauvert"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Maligne Canyon & Maligne Lake cruise to Spirit Island": {
+          "entity": "Maligne Canyon",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Maligne_Canyon"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "Icefields Parkway south — Athabasca & Sunwapta Falls": {
+          "entity": "Sunwapta Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sunwapta_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 48
+        },
+        "Stop selectively at Bow Lake, Saskatchewan River Crossing, Columbia Icefield viewpoints, Sunwapta Falls, and Athabasca Falls.": {
+          "entity": "Saskatchewan River Crossing, Alberta",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Saskatchewan_River_Crossing%2C_Alberta"
+            }
+          ],
+          "auto": true,
+          "auto_km": 135
+        },
+        "From camp, explore Jasper town, Pyramid Lake, Maligne Canyon, and Maligne Lake when open.": {
+          "entity": "Maligne Canyon",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Maligne_Canyon"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        }
+      }
     },
     "muncho-lake": {
       "authority": "BC Parks",
@@ -1721,7 +2074,53 @@
             "hike"
           ]
         }
-      ]
+      ],
+      "activities": {
+        "Stone Mountain Provincial Park — Summit Peak & Flower Springs": {
+          "entity": "Stone Mountain Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Stone_Mountain_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 72
+        },
+        "Liard River Hot Springs day trip": {
+          "entity": "Liard River Hot Springs Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Liard_River_Hot_Springs_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 56
+        },
+        "Muncho Lake shoreline, morning reflections, Stone Mountain scenery, and the highway’s wildlife corridors.": {
+          "entity": "Muncho Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Muncho_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        },
+        "Drive north toward the mineral licks and fold a Toad River stop into a scenic day.": {
+          "entity": "Toad River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Toad_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 69
+        }
+      }
     },
     "whitehorse-1": {
       "authority": "City of Whitehorse / Yukon",
@@ -1785,7 +2184,20 @@
           ]
         }
       ],
-      "note": "The old entry \"Choose signed, well-used routes and carry bear spray.\" is advice, not a trail — belongs with the stop notes."
+      "note": "The old entry \"Choose signed, well-used routes and carry bear spray.\" is advice, not a trail — belongs with the stop notes.",
+      "activities": {
+        "Takhini Hot Springs": {
+          "entity": "Takhini Hot Springs",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Takhini_Hot_Springs"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
     },
     "talkeetna": {
       "authority": "Talkeetna Lakes Park / Mat-Su Borough",
@@ -1876,6 +2288,41 @@
         "entry": "Hidden Creek Trailhead (Skilak Lake)",
         "problem": "Described as a hike to Skilak Lake but no listing with distance or rating surfaced.",
         "action": "Keep the name, no invented link; widen on the next pass."
+      },
+      "activities": {
+        "Hidden Creek Trail down to Skilak Lake": {
+          "entity": "Skilak Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Skilak_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Kenai Lake viewpoint and fishing": {
+          "entity": "Kenai Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kenai_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Kenai River, Kenai Lake, Russian River area, and a guided float or fishing trip.": {
+          "entity": "Kenai River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kenai_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 81
+        }
       }
     },
     "seward": {
@@ -1915,7 +2362,31 @@
           "season": "Snow can hold on the trail into early July with avalanche danger; arrival is 14 Jul, just past that.",
           "note_source": "Kept despite being hard — 4.9 from 6,224 is outstanding by the ordering rule."
         }
-      ]
+      ],
+      "activities": {
+        "Kenai Fjords full-day boat tour": {
+          "entity": "Kenai Fjords National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kenai_Fjords_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 37
+        },
+        "Alaska SeaLife Center, Seward harbor, Lowell Point, and Exit Glacier.": {
+          "entity": "Alaska SeaLife Center",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Alaska_SeaLife_Center"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
     },
     "homer": {
       "authority": "City of Homer / Kachemak Bay",
@@ -1968,7 +2439,31 @@
           "cruise": "candidate",
           "cruise_reason": "The Spit is flat and level along the shore — the shape of a dog-carrier ride. Surface not confirmed; check on arrival."
         }
-      ]
+      ],
+      "activities": {
+        "Bear-viewing flight to Katmai/Lake Clark": {
+          "entity": "Lake Clark (Alaska)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Clark_%28Alaska%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 166
+        },
+        "Homer Spit, Pratt Museum, Old Town, Bishop’s Beach, and Skyline Drive overlooks.": {
+          "entity": "Homer Spit",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Homer_Spit"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        }
+      }
     },
     "denali": {
       "authority": "National Park Service",
@@ -2086,7 +2581,31 @@
           "was": "Dock Point Trail — no url",
           "note_source": "Real and well reviewed, but AllTrails indexes it only as a point of interest, not a trail listing — so no direct trail link."
         }
-      ]
+      ],
+      "activities": {
+        "Thompson Pass, Worthington Glacier, Keystone Canyon, Bridal Veil and Horsetail falls.": {
+          "entity": "Thompson Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Thompson_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 33
+        },
+        "Valdez Museum, harbor, Solomon Gulch fish hatchery, and a Columbia or Meares Glacier cruise.": {
+          "entity": "Meares Glacier",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Meares_Glacier"
+            }
+          ],
+          "auto": true,
+          "auto_km": 59
+        }
+      }
     },
     "mccarthy": {
       "authority": "National Park Service — Wrangell-St. Elias",
@@ -2123,7 +2642,20 @@
           ],
           "was": "Bonanza Mine Trail — no url"
         }
-      ]
+      ],
+      "activities": {
+        "Kennecott Mines mill tour": {
+          "entity": "Kennecott, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        }
+      }
     },
     "austin-depart": {
       "activities": {
@@ -2218,10 +2750,68 @@
         "Soak in Saratoga's Hobo Hot Pool and walk the compact downtown.": {
           "drop": true,
           "why": "Restates the Hobo Pool and downtown entries above."
+        },
+        "The Snowy Range is a major scenic prize later in summer, but late April is winter at elevation; assume the high byway is closed.": {
+          "entity": "Medicine Bow Mountains",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Medicine_Bow_Mountains"
+            }
+          ],
+          "auto": true,
+          "auto_km": 92
         }
       }
     },
-    "dawson-city": {},
+    "dawson-city": {
+      "activities": {
+        "Gold panning at Discovery Claim": {
+          "entity": "Discovery Claim",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Discovery_Claim"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Tombstone Territorial Park day trip — peak fall color": {
+          "entity": "Tombstone Territorial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tombstone_Territorial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 45
+        },
+        "Downtown Dawson historic walk + SS Keno paddlewheeler": {
+          "entity": "SS Keno",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/SS_Keno"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        },
+        "Explore the goldfields loop and Discovery Claim in the truck.": {
+          "entity": "Discovery Claim",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Discovery_Claim"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        }
+      }
+    },
     "watson-lake-2": {
       "authority": "Town of Watson Lake, Yukon",
       "dogs_verdict": "allowed",
@@ -2245,7 +2835,20 @@
           "season": "Best June-August; arrival 12 Sep is past it.",
           "note_source": "Reviewers note missing interpretive signs and bugs."
         }
-      ]
+      ],
+      "activities": {
+        "Add a sign to the Sign Post Forest": {
+          "entity": "Sign Post Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
     },
     "boya-lake": {
       "authority": "BC Parks — Tā Ch'ilā Provincial Park",
@@ -2281,13 +2884,108 @@
           "was": "Lakeshore Trail (north campground) — no url",
           "note_source": "The park's longest. Same situation — no direct listing url surfaced."
         }
-      ]
+      ],
+      "activities": {
+        "Canoe or kayak Boya Lake": {
+          "entity": "Tā Ch'ilā Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 51
+        },
+        "Visit Jade City": {
+          "entity": "Jade City",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jade_City"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
     },
     "dease-lake": {
       "authority": "BC Parks",
-      "note": "The single trail entry here was 'Boya Lake trails (Tā Ch'ilā PP)' — those belong to the Boya Lake stop two days earlier, not to Dease Lake. Left in place pending a real Dease Lake trail; not linked to another stop's trails."
+      "note": "The single trail entry here was 'Boya Lake trails (Tā Ch'ilā PP)' — those belong to the Boya Lake stop two days earlier, not to Dease Lake. Left in place pending a real Dease Lake trail; not linked to another stop's trails.",
+      "activities": {
+        "Dease Lake waterfront stop": {
+          "entity": "Dease Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dease_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Grand Canyon of the Stikine viewpoints via Telegraph Creek Road": {
+          "entity": "Grand Canyon of the Stikine",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Stikine"
+            }
+          ],
+          "auto": true,
+          "auto_km": 59
+        },
+        "Telegraph Creek historic village": {
+          "entity": "Telegraph Creek",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Telegraph_Creek"
+            }
+          ],
+          "auto": true,
+          "auto_km": 91
+        },
+        "Dease Lake shoreline and a quiet recovery day.": {
+          "entity": "Dease Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dease_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
     },
-    "stewart-hyder": {},
+    "stewart-hyder": {
+      "activities": {
+        "Salmon Glacier viewpoint drive": {
+          "entity": "Salmon Glacier",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Salmon_Glacier"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Salmon Glacier is the signature drive if the road is open, snow-free, and locally recommended.": {
+          "entity": "Salmon Glacier",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Salmon_Glacier"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        }
+      }
+    },
     "prince-george": {
       "authority": "BC Parks — Ancient Forest / Chun T'oh Whudujut",
       "dogs_verdict": "allowed",
@@ -2367,7 +3065,53 @@
             "hike"
           ]
         }
-      ]
+      ],
+      "activities": {
+        "Helmcken Falls viewpoint": {
+          "entity": "Helmcken Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Helmcken_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        },
+        "Dawson Falls & Bailey's Chute short walks": {
+          "entity": "Dawson Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dawson_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 36
+        },
+        "Helmcken Falls, Dawson Falls, Spahats Falls, Bailey’s Chute, and the main Wells Gray corridor.": {
+          "entity": "Helmcken Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Helmcken_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        },
+        "The road to Helmcken Falls is generally the most reliable core access, but weather and maintenance still govern.": {
+          "entity": "Helmcken Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Helmcken_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        }
+      }
     },
     "grand-canyon": {
       "authority": "National Park Service",
@@ -2385,6 +3129,41 @@
         "Grand Canyon Rim Mules to Mather Point": true,
         "South Kaibab Trail to Ooh Aah Point": false,
         "15 Mile Resthouse via Bright Angel Trail": false
+      },
+      "activities": {
+        "Rim Trail — Yavapai Point to Mather Point": {
+          "entity": "Mather Point",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mather_Point"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Desert View Watchtower": {
+          "entity": "Desert View Watchtower",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Desert_View_Watchtower"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "South Kaibab Trail to Ooh Aah Point": {
+          "entity": "South Kaibab Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/South_Kaibab_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        }
       }
     },
     "zion": {
@@ -2398,7 +3177,53 @@
         }
       ],
       "dogs": "PROHIBITED except one trail. NPS: \"The only trail that allows pets is the Pa'rus Trail, which begins at the Zion Canyon Visitor Center.\" Not on any other trail, in wilderness, on the shuttle buses, or in buildings. Keep the dog out of the Virgin River — harmful cyanobacteria.",
-      "dogs_exception": "Pa'rus Trail only — flat, paved, from the Zion Canyon Visitor Center."
+      "dogs_exception": "Pa'rus Trail only — flat, paved, from the Zion Canyon Visitor Center.",
+      "activities": {
+        "Zion Canyon Scenic Drive (shuttle)": {
+          "entity": "Floor of the Valley Road",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Floor_of_the_Valley_Road"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Angels Landing": {
+          "entity": "Angels Landing",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Angels_Landing"
+            }
+          ],
+          "auto": true,
+          "auto_km": 23
+        },
+        "Emerald Pools Trail": {
+          "entity": "Historical buildings and structures of Zion National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Historical_buildings_and_structures_of_Zion_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 29
+        },
+        "Kolob Canyons (Timber Creek Overlook)": {
+          "entity": "Zion National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Zion_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        }
+      }
     },
     "olympic": {
       "authority": "National Park Service",
@@ -2418,7 +3243,53 @@
         "Hoh Rain Forest Hall of Moss": false,
         "Hole in the Wall Trail": false
       },
-      "note": "Spruce Railroad Trail is both the dog-legal trail here AND a former rail grade — the shape that has produced the only confirmed gravel cruises on this trip. Worth a surface check."
+      "note": "Spruce Railroad Trail is both the dog-legal trail here AND a former rail grade — the shape that has produced the only confirmed gravel cruises on this trip. Worth a surface check.",
+      "activities": {
+        "Hurricane Ridge": {
+          "entity": "Hurricane Ridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hurricane_Ridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Lake Crescent & Marymere Falls": {
+          "entity": "Lake Crescent",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Crescent"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Hoh Rain Forest": {
+          "entity": "Hoh Rainforest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hoh_Rainforest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 47
+        },
+        "Rialto Beach / Hole-in-the-Wall": {
+          "entity": "Rialto Beach",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rialto_Beach"
+            }
+          ],
+          "auto": true,
+          "auto_km": 93
+        }
+      }
     },
     "yosemite": {
       "authority": "National Park Service",
@@ -2434,6 +3305,19 @@
       "trail_dogs": {
         "Lower Yosemite Fall Trail": true,
         "Valley Loop Trail": false
+      },
+      "activities": {
+        "Tunnel View": {
+          "entity": "Tunnel View",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tunnel_View"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        }
       }
     },
     "great-basin": {
@@ -2447,7 +3331,20 @@
         }
       ],
       "dogs": "PROHIBITED on most trails. Two exceptions: Lexington Arch Trail, and the trail between Baker and the Great Basin Visitor Center. Leash 6 ft.",
-      "dogs_exception": "Lexington Arch Trail and the Baker-to-visitor-centre trail only."
+      "dogs_exception": "Lexington Arch Trail and the Baker-to-visitor-centre trail only.",
+      "activities": {
+        "Lehman Caves guided tour": {
+          "entity": "Great Basin National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Great_Basin_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
     },
     "black-canyon-gunnison": {
       "authority": "National Park Service",
@@ -2472,7 +3369,20 @@
           "tier": "official"
         }
       ],
-      "dogs": "PROHIBITED on hiking trails and in the backcountry. Two paved exceptions — Oasis of Mara and Keys View — plus anywhere a vehicle can go, within 100 ft of roads, parking or campgrounds."
+      "dogs": "PROHIBITED on hiking trails and in the backcountry. Two paved exceptions — Oasis of Mara and Keys View — plus anywhere a vehicle can go, within 100 ft of roads, parking or campgrounds.",
+      "activities": {
+        "Ryan Mountain": {
+          "entity": "Ryan Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ryan_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        }
+      }
     },
     "death-valley": {
       "authority": "National Park Service",
@@ -2488,6 +3398,52 @@
       "trail_dogs": {
         "Titus Canyon Road (west exit)": true,
         "Golden Canyon Trailhead": false
+      },
+      "activities": {
+        "Zabriskie Point sunrise viewing": {
+          "entity": "Zabriskie Point",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Zabriskie_Point"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "Badwater Basin boardwalk walk": {
+          "entity": "Badwater Basin",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Badwater_Basin"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        },
+        "Dante's View overlook": {
+          "entity": "Dante's View",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dante%27s_View"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Ubehebe Crater rim walk": {
+          "entity": "Ubehebe Crater",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ubehebe_Crater"
+            }
+          ],
+          "auto": true,
+          "auto_km": 80
+        }
       }
     },
     "grand-teton": {
@@ -2500,7 +3456,53 @@
           "tier": "official"
         }
       ],
-      "dogs": "PROHIBITED. NPS: \"Pets are prohibited on trails, pathways, beaches, in buildings, and swimming in any park waters.\" Also banned on the multi-use pathway and beyond 30 ft from roadways. Permitted in campgrounds, turnouts, picnic areas and on roads — and in the surrounding Bridger-Teton National Forest, which is the workaround here."
+      "dogs": "PROHIBITED. NPS: \"Pets are prohibited on trails, pathways, beaches, in buildings, and swimming in any park waters.\" Also banned on the multi-use pathway and beyond 30 ft from roadways. Permitted in campgrounds, turnouts, picnic areas and on roads — and in the surrounding Bridger-Teton National Forest, which is the workaround here.",
+      "activities": {
+        "String Lake & Leigh Lake shoreline walk": {
+          "entity": "Leigh Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Leigh_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Jenny Lake shuttle boat to Hidden Falls & Inspiration Point": {
+          "entity": "Jenny Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jenny_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Oxbow Bend, Mormon Row, Signal Mountain drive": {
+          "entity": "Mormon Row Historic District",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mormon_Row_Historic_District"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Mormon Row and the historic districts when access is open.": {
+          "entity": "Mormon Row Historic District",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mormon_Row_Historic_District"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        }
+      }
     },
     "sequoia-kings-canyon": {
       "authority": "National Park Service",
@@ -2512,20 +3514,4001 @@
           "tier": "official"
         }
       ],
-      "dogs": "PROHIBITED on ALL trails, explicitly including the paved ones — NPS names the General Sherman Tree Trail, Big Trees Trail and Grant Tree Trail. Pets are allowed only in parking lots, on paved roads, in campgrounds and picnic areas. Every one of this stop's five trails is closed to the dog, including the Christmas ones."
+      "dogs": "PROHIBITED on ALL trails, explicitly including the paved ones — NPS names the General Sherman Tree Trail, Big Trees Trail and Grant Tree Trail. Pets are allowed only in parking lots, on paved roads, in campgrounds and picnic areas. Every one of this stop's five trails is closed to the dog, including the Christmas ones.",
+      "activities": {
+        "General Sherman Tree (via truck)": {
+          "entity": "General Sherman Tree",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/General_Sherman_Tree"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Grant Grove / General Grant Tree (via truck, Kings Canyon side)": {
+          "entity": "General Grant Grove",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/General_Grant_Grove"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        },
+        "General Sherman Tree — the largest tree on Earth by volume; the road up is truck-only, so this whole stop runs on the towed 4x4.": {
+          "entity": "General Sherman Tree",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/General_Sherman_Tree"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Grant Grove / General Grant Tree on the Kings Canyon side.": {
+          "entity": "General Grant Grove",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/General_Grant_Grove"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        }
+      }
     },
     "kluane-1": {
       "authority": "Parks Canada",
       "dogs_verdict": "allowed",
-      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards."
+      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards.",
+      "activities": {
+        "Kluane visitor centre, Kathleen Lake, Dezadeash Lake, and roadside mountain viewpoints.": {
+          "entity": "Kathleen Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kathleen_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        }
+      }
     },
     "kluane-2": {
       "authority": "Parks Canada",
       "dogs_verdict": "allowed",
       "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards."
+    },
+    "west-yellowstone": {
+      "activities": {
+        "Grizzly & Wolf Discovery Center": {
+          "entity": "Grizzly & Wolf Discovery Center",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grizzly_%26_Wolf_Discovery_Center"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Earthquake Lake (Quake Lake) & Hebgen Lake drive": {
+          "entity": "Quake Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Quake_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        }
+      }
+    },
+    "bozeman": {
+      "activities": {
+        "Museum of the Rockies": {
+          "entity": "Museum of the Rockies",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Museum_of_the_Rockies"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "fort-nelson": {
+      "activities": {
+        "Muskwa / Fort Nelson River evening walk": {
+          "entity": "Fort Nelson River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Nelson_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 111
+        }
+      }
+    },
+    "liard": {
+      "activities": {
+        "This is intentionally a short travel day after four nights at Muncho Lake.": {
+          "entity": "Muncho Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Muncho_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 50
+        }
+      }
+    },
+    "watson-lake-1": {
+      "activities": {
+        "Add a sign to the Sign Post Forest": {
+          "entity": "Sign Post Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
+    },
+    "tok-1": {
+      "activities": {
+        "Tetlin National Wildlife Refuge viewing": {
+          "entity": "Tetlin National Wildlife Refuge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tetlin_National_Wildlife_Refuge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 95
+        },
+        "Tok River State Recreation Site riverside walk": {
+          "entity": "Tok, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "fairbanks-1": {
+      "activities": {
+        "Pioneer Park (Gold Rush Town, SS Nenana)": {
+          "entity": "Nenana (steamer)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Nenana_%28steamer%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Riverboat Discovery — Chena River sternwheeler tour": {
+          "entity": "Chena River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chena_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "University of Alaska Museum of the North": {
+          "entity": "University of Alaska Museum of the North",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/University_of_Alaska_Museum_of_the_North"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        },
+        "Creamer's Field Migratory Waterfowl Refuge": {
+          "entity": "Creamer's Field Migratory Waterfowl Refuge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Creamer%27s_Field_Migratory_Waterfowl_Refuge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        }
+      }
+    },
+    "anchorage": {
+      "activities": {
+        "Tony Knowles Coastal Trail": {
+          "entity": "Tony Knowles Coastal Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tony_Knowles_Coastal_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        },
+        "Turnagain Arm scenic drive": {
+          "entity": "Turnagain Arm",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Turnagain_Arm"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        }
+      }
+    },
+    "ninilchik": {
+      "activities": {
+        "Deep Creek State Recreation Area beach launch": {
+          "entity": "Ninilchik, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ninilchik%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Volcano-watching across Cook Inlet": {
+          "entity": "Cook Inlet",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cook_Inlet"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        }
+      }
+    },
+    "palmer": {
+      "activities": {
+        "Knik Glacier / Jim Creek off-road route": {
+          "entity": "Knik Glacier",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Knik_Glacier"
+            }
+          ],
+          "auto": true,
+          "auto_km": 56
+        }
+      }
+    },
+    "fairbanks-2": {
+      "activities": {
+        "Chena Hot Springs day trip": {
+          "entity": "Chena Hot Springs, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 82
+        },
+        "Chena Hot Springs, Angel Rocks, Museum of the North, and any Fairbanks sights missed earlier.": {
+          "entity": "Chena Hot Springs, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 82
+        }
+      }
+    },
+    "tok-2": {
+      "activities": {
+        "Tetlin National Wildlife Refuge viewing": {
+          "entity": "Tetlin National Wildlife Refuge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tetlin_National_Wildlife_Refuge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 95
+        },
+        "Tok River State Recreation Site riverside walk": {
+          "entity": "Tok, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "whitehorse-2": {
+      "activities": {
+        "Takhini Hot Springs": {
+          "entity": "Takhini Hot Springs",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Takhini_Hot_Springs"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
+    },
+    "whitehorse-3": {
+      "activities": {
+        "Takhini Hot Springs": {
+          "entity": "Takhini Hot Springs",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Takhini_Hot_Springs"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
+    },
+    "smithers": {
+      "activities": {
+        "Babine Mountains Provincial Park hike": {
+          "entity": "Babine Mountains Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Babine_Mountains_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 23
+        },
+        "Walk the compact downtown and Bulkley River area.": {
+          "entity": "Bulkley River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bulkley_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 61
+        }
+      }
+    },
+    "osoyoos": {
+      "activities": {
+        "Frosty Mountain larches (Manning Park)": {
+          "entity": "Frosty Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Frosty_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 103
+        },
+        "Spotted Lake (Kłlilxʷ / Lake Kliluk) roadside viewpoint": {
+          "entity": "Spotted Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Spotted_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        },
+        "Swim/paddle at Osoyoos Lake": {
+          "entity": "Osoyoos Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Osoyoos_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 4
+        },
+        "Osoyoos Desert Centre boardwalk walk": {
+          "entity": "Okanagan Desert",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Okanagan_Desert"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        }
+      }
+    },
+    "winthrop": {
+      "activities": {
+        "Pearrygin Lake State Park": {
+          "entity": "Pearrygin Lake State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pearrygin_Lake_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "packwood": {
+      "activities": {
+        "Snowgrass Flats day hike, Goat Rocks Wilderness": {
+          "entity": "Goat Rocks Wilderness",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Goat_Rocks_Wilderness"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        }
+      }
+    },
+    "silver-lake": {
+      "activities": {
+        "Johnston Ridge Observatory / SR-504 — currently inaccessible by road": {
+          "entity": "Mount St. Helens National Volcanic Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_St._Helens_National_Volcanic_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 49
+        },
+        "Ape Cave lava tube": {
+          "entity": "Mount St. Helens National Volcanic Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_St._Helens_National_Volcanic_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 49
+        }
+      }
+    },
+    "forks": {
+      "activities": {
+        "Hoh Rainforest — Hall of Mosses & Hoh River Trail": {
+          "entity": "Hoh Rainforest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hoh_Rainforest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 36
+        },
+        "Rialto Beach to Hole-in-the-Wall": {
+          "entity": "Rialto Beach",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rialto_Beach"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "La Push beaches (First, Second, Third Beach)": {
+          "entity": "La Push, Washington",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/La_Push%2C_Washington"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Sol Duc Falls": {
+          "entity": "Sol Duc River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sol_Duc_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 12
+        },
+        "Bogachiel State Park nature walk": {
+          "entity": "Bogachiel State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bogachiel_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        },
+        "Forks Timber Museum": {
+          "entity": "Forks, Washington",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Forks%2C_Washington"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
+    },
+    "long-beach": {
+      "activities": {
+        "Explore Cape Disappointment State Park": {
+          "entity": "Cape Disappointment State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cape_Disappointment_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "Birdwatch at Leadbetter Point State Park": {
+          "entity": "Leadbetter Point State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Leadbetter_Point_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Day trip to Astoria, Oregon": {
+          "entity": "Astoria, Oregon",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Astoria%2C_Oregon"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        }
+      }
+    },
+    "cannon-beach": {
+      "activities": {
+        "Haystack Rock & Ecola State Park": {
+          "entity": "Haystack Rock",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Haystack_Rock"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Astoria Column & Fort Stevens": {
+          "entity": "Astoria Column",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Astoria_Column"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        },
+        "Haystack Rock — the 235-ft sea stack Cannon Beach is known for; a tide-pool and nesting-bird site, best visited at low tide.": {
+          "entity": "Haystack Rock",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Haystack_Rock"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Ecola State Park, a few minutes north, for classic coastal overlooks.": {
+          "entity": "Ecola State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ecola_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Astoria Column — 164-step spiral climb for river-mouth views.": {
+          "entity": "Astoria Column",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Astoria_Column"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        },
+        "Fort Stevens State Park — WWII-era fort with the rusted Peter Iredale shipwreck.": {
+          "entity": "Fort Stevens (Oregon)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Stevens_%28Oregon%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        }
+      }
+    },
+    "white-salmon": {
+      "activities": {
+        "Wahclella Falls": {
+          "entity": "Wahclella Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wahclella_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 38
+        },
+        "Klickitat Trail rail-trail": {
+          "entity": "Klickitat Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Klickitat_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Maryhill Stonehenge & Maryhill Museum of Art": {
+          "entity": "Maryhill Stonehenge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Maryhill_Stonehenge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 53
+        },
+        "White Salmon River scenic overlook / rafting put-in": {
+          "entity": "White Salmon River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/White_Salmon_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "welches": {
+      "activities": {
+        "Timberline Lodge": {
+          "entity": "Timberline Lodge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Timberline_Lodge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Wildwood Recreation Site": {
+          "entity": "Wildwood Recreation Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wildwood_Recreation_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Zigzag River & Zigzag Ranger Station": {
+          "entity": "Zigzag River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Zigzag_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "bend": {
+      "activities": {
+        "Smith Rock State Park — Misery Ridge Loop": {
+          "entity": "Smith Rock State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Smith_Rock_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 37
+        },
+        "Tumalo Falls": {
+          "entity": "Tumalo Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tumalo_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "Lava River Cave": {
+          "entity": "Lava River Cave",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lava_River_Cave"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Deschutes River Trail / Old Mill District": {
+          "entity": "Deschutes River Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Deschutes_River_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Newberry National Volcanic Monument (Lava Butte & Lava Lands Visitor Center)": {
+          "entity": "Newberry National Volcanic Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Newberry_National_Volcanic_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 41
+        },
+        "Old Mill District, High Desert Museum, downtown Bend, Smith Rock, and Newberry volcanic viewpoints where open.": {
+          "entity": "Old Mill District",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Old_Mill_District"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        }
+      }
+    },
+    "newport": {
+      "activities": {
+        "Yaquina Head Outstanding Natural Area (Lighthouse, Cobble Beach tide pools, Quarry Cove)": {
+          "entity": "Yaquina Head",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Yaquina_Head"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Otter Crest Loop & Cape Foulweather scenic drive": {
+          "entity": "Cape Foulweather",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cape_Foulweather"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Yaquina Bay Lighthouse & State Recreation Site": {
+          "entity": "Yaquina Bay Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Yaquina_Bay_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Sea Lion Caves (day trip toward Florence)": {
+          "entity": "Sea Lion Caves",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sea_Lion_Caves"
+            }
+          ],
+          "auto": true,
+          "auto_km": 58
+        }
+      }
+    },
+    "bandon": {
+      "activities": {
+        "Face Rock State Scenic Viewpoint & Bandon Beach sea stacks": {
+          "entity": "Face Rock State Scenic Viewpoint",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Face_Rock_State_Scenic_Viewpoint"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Coquille River Lighthouse (Bullards Beach State Park)": {
+          "entity": "Coquille River Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Coquille_River_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Cape Blanco State Park — lighthouse & loop hike": {
+          "entity": "Cape Blanco (Oregon)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cape_Blanco_%28Oregon%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        },
+        "Bandon Dunes Golf Resort area (viewing/walking, not necessarily playing)": {
+          "entity": "Bandon Dunes Golf Resort",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bandon_Dunes_Golf_Resort"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        }
+      }
+    },
+    "crescent-city": {
+      "activities": {
+        "Stout Grove (Jedediah Smith Redwoods State Park)": {
+          "entity": "Jedediah Smith Redwoods State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Battery Point Lighthouse": {
+          "entity": "Battery Point Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Battery_Point_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Trees of Mystery & Sky Trail Gondola": {
+          "entity": "Trees of Mystery",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Trees_of_Mystery"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        }
+      }
+    },
+    "fort-bragg": {
+      "activities": {
+        "Devil's Punchbowl (Headlands Trail), Russian Gulch State Park": {
+          "entity": "Russian Gulch State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Russian_Gulch_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Jug Handle State Natural Reserve — Ecological Staircase Trail": {
+          "entity": "Jug Handle State Natural Reserve",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jug_Handle_State_Natural_Reserve"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        },
+        "Point Cabrillo Light Station State Historic Park": {
+          "entity": "Point Cabrillo Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Point_Cabrillo_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "MacKerricher State Park — Laguna Point boardwalk & harbor seals": {
+          "entity": "MacKerricher State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/MacKerricher_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Skunk Train — Pudding Creek Express": {
+          "entity": "California Western Railroad",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/California_Western_Railroad"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        }
+      }
+    },
+    "marina": {
+      "activities": {
+        "Monterey Bay Aquarium": {
+          "entity": "Monterey Bay Aquarium",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Monterey_Bay_Aquarium"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Point Lobos State Natural Reserve": {
+          "entity": "Point Lobos",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Point_Lobos"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "17-Mile Drive through Pebble Beach": {
+          "entity": "Pebble Beach, California",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pebble_Beach%2C_California"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        },
+        "Fort Ord National Monument — hiking & mountain biking": {
+          "entity": "Fort Ord",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Ord"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "Marina State Beach dune walk": {
+          "entity": "Marina State Beach",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Marina_State_Beach"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Cannery Row & Old Fisherman's Wharf, Monterey": {
+          "entity": "Cannery Row",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cannery_Row"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        }
+      }
+    },
+    "vegas-area": {
+      "activities": {
+        "Valley of Fire State Park — Fire Wave & White Domes": {
+          "entity": "Valley of Fire State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Valley_of_Fire_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 64
+        },
+        "Valley of Fire State Park — Fire Wave and White Domes.": {
+          "entity": "Valley of Fire State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Valley_of_Fire_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 64
+        }
+      }
+    },
+    "borrego-springs": {
+      "activities": {
+        "Font's Point at sunset (truck)": {
+          "entity": "Anza-Borrego Desert State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Salton Sea day trip": {
+          "entity": "Salton Sea",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Salton_Sea"
+            }
+          ],
+          "auto": true,
+          "auto_km": 51
+        }
+      }
+    },
+    "imperial-dam": {
+      "activities": {
+        "Mittry Lake wildlife area": {
+          "entity": "Mittry Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mittry_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        }
+      }
+    },
+    "yuma-az": {
+      "activities": {
+        "Yuma Territorial Prison State Historic Park": {
+          "entity": "Yuma Territorial Prison",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Yuma_Territorial_Prison"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        },
+        "Colorado River State Historic Park and the Yuma East Wetlands": {
+          "entity": "Colorado River State Historic Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Colorado_River_State_Historic_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        }
+      }
+    },
+    "kofa-nwr": {
+      "activities": {
+        "Palm Canyon Trail": {
+          "entity": "Kofa National Wildlife Refuge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kofa_National_Wildlife_Refuge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        }
+      }
+    },
+    "tucson": {
+      "activities": {
+        "Saguaro National Park — East and West districts": {
+          "entity": "Saguaro National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Saguaro_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 23
+        },
+        "Sabino Canyon tram and hiking": {
+          "entity": "Sabino Canyon",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sabino_Canyon"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Arizona-Sonora Desert Museum": {
+          "entity": "Arizona-Sonora Desert Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arizona-Sonora_Desert_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        },
+        "Pima Air & Space Museum": {
+          "entity": "Pima Air & Space Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pima_Air_%26_Space_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 14
+        },
+        "Saguaro east and west, Arizona-Sonora Desert Museum, Sabino Canyon, Mission San Xavier, and historic neighborhoods.": {
+          "entity": "Arizona-Sonora Desert Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arizona-Sonora_Desert_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        }
+      }
+    },
+    "catalina-state-park": {
+      "activities": {
+        "Romero Canyon to Romero Pools": {
+          "entity": "Romero Canyon",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Romero_Canyon"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Biosphere 2": {
+          "entity": "Biosphere 2",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Biosphere_2"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        }
+      }
+    },
+    "bisbee-tombstone": {
+      "activities": {
+        "Kartchner Caverns": {
+          "entity": "Kartchner Caverns State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kartchner_Caverns_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 59
+        },
+        "Ramsey Canyon & Coronado Memorial": {
+          "entity": "Coronado National Memorial",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Coronado_National_Memorial"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        }
+      }
+    },
+    "superior-globe": {
+      "activities": {
+        "Boyce Thompson Arboretum": {
+          "entity": "Boyce Thompson Arboretum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Boyce_Thompson_Arboretum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        },
+        "Picketpost Mountain": {
+          "entity": "Picketpost Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Picketpost_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "camp-verde": {
+      "activities": {
+        "Cathedral Rock hike": {
+          "entity": "Cathedral Rock",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cathedral_Rock"
+            }
+          ],
+          "auto": true,
+          "auto_km": 29
+        },
+        "Montezuma Castle & Montezuma Well": {
+          "entity": "Montezuma Well",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Montezuma_Well"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "bryce": {
+      "activities": {
+        "Bryce Canyon scenic drive": {
+          "entity": "Bryce Canyon National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Red Canyon (Dixie National Forest)": {
+          "entity": "Dixie National Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dixie_National_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 65
+        }
+      }
+    },
+    "torrey": {
+      "activities": {
+        "Goblin Valley State Park day trip": {
+          "entity": "Goblin Valley State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Goblin_Valley_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 69
+        }
+      }
+    },
+    "moab": {
+      "activities": {
+        "Arches NP — Delicate Arch Trail": {
+          "entity": "Arches National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arches_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Arches NP — Devils Garden / Landscape Arch": {
+          "entity": "Arches National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arches_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Canyonlands Island in the Sky — Mesa Arch": {
+          "entity": "Mesa Arch",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mesa_Arch"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        },
+        "Dead Horse Point State Park": {
+          "entity": "Dead Horse Point State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        }
+      }
+    },
+    "ouray": {
+      "activities": {
+        "Box Canyon Falls & Ouray Hot Springs Pool": {
+          "entity": "Ouray, Colorado",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ouray%2C_Colorado"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        },
+        "Yankee Boy Basin / Alpine Loop for peak fall aspen color": {
+          "entity": "Yankee Boy Basin",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Yankee_Boy_Basin"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        }
+      }
+    },
+    "mancos": {
+      "activities": {
+        "Cliff Palace ranger-guided tour": {
+          "entity": "Cliff Palace",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cliff_Palace"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        },
+        "Chapin Mesa Archeological Museum & Spruce Tree House overlook": {
+          "entity": "Chapin Mesa Archeological Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chapin_Mesa_Archeological_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 25
+        },
+        "Anasazi Heritage Center (Dolores)": {
+          "entity": "Canyons of the Ancients Visitor Center and Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Canyons_of_the_Ancients_Visitor_Center_and_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        }
+      }
+    },
+    "durango": {
+      "activities": {
+        "Mesa Verde National Park": {
+          "entity": "Mesa Verde National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 55
+        },
+        "Animas River Trail & San Juan Skyway drive": {
+          "entity": "San Juan Skyway Scenic and Historic Byway",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/San_Juan_Skyway_Scenic_and_Historic_Byway"
+            }
+          ],
+          "auto": true,
+          "auto_km": 71
+        }
+      }
+    },
+    "pagosa-springs": {
+      "activities": {
+        "Chimney Rock National Monument": {
+          "entity": "Chimney Rock National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chimney_Rock_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Wolf Creek Pass scenic drive": {
+          "entity": "Wolf Creek Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wolf_Creek_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Rio Chama scenic drive & Tierra Wools weaving village": {
+          "entity": "Rio Chama",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rio_Chama"
+            }
+          ],
+          "auto": true,
+          "auto_km": 159
+        }
+      }
+    },
+    "salida-co": {
+      "activities": {
+        "Arkansas Headwaters Recreation Area": {
+          "entity": "Arkansas Headwaters Recreation Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arkansas_Headwaters_Recreation_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Side trips to Poncha Springs, Howard, and Coaldale": {
+          "entity": "Poncha Springs, Colorado",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Poncha_Springs%2C_Colorado"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Hike Browns Canyon National Monument from Ruby Mountain": {
+          "entity": "Browns Canyon National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Browns_Canyon_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        },
+        "Truck day over Monarch Pass on US 50": {
+          "entity": "Monarch Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Monarch_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Gravel run up to O'Haver Lake": {
+          "entity": "O'Haver Lake",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/O%27Haver_Lake"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Drive the Marshall Pass railroad grade": {
+          "entity": "Marshall Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Marshall_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        }
+      }
+    },
+    "buena-vista-co": {
+      "activities": {
+        "Collegiate Peaks scenic views": {
+          "entity": "Collegiate Peaks",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Collegiate_Peaks"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Browns Canyon from the north end": {
+          "entity": "Browns Canyon National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Browns_Canyon_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        }
+      }
+    },
+    "leadville-co": {
+      "activities": {
+        "Leadville National Historic District": {
+          "entity": "Leadville, Colorado",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Leadville%2C_Colorado"
+            }
+          ],
+          "auto": true,
+          "auto_km": 84
+        },
+        "Turquoise Lake / Twin Lakes": {
+          "entity": "Sugar Loaf Dam",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sugar_Loaf_Dam"
+            }
+          ],
+          "auto": true,
+          "auto_km": 86
+        },
+        "Turquoise Lake loop drive": {
+          "entity": "Sugar Loaf Dam",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sugar_Loaf_Dam"
+            }
+          ],
+          "auto": true,
+          "auto_km": 86
+        },
+        "Leadville National Fish Hatchery": {
+          "entity": "Leadville National Fish Hatchery",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Leadville_National_Fish_Hatchery"
+            }
+          ],
+          "auto": true,
+          "auto_km": 84
+        },
+        "Drive to the Mount Elbert trailheads (and look, not climb)": {
+          "entity": "Mount Elbert",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Elbert"
+            }
+          ],
+          "auto": true,
+          "auto_km": 75
+        }
+      }
+    },
+    "wind-river-ext": {
+      "activities": {
+        "Museum of the Mountain Man, Pinedale": {
+          "entity": "Museum of the Mountain Man",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Museum_of_the_Mountain_Man"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Museum of the Mountain Man": {
+          "entity": "Museum of the Mountain Man",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Museum_of_the_Mountain_Man"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        }
+      }
+    },
+    "scottsbluff-ne": {
+      "activities": {
+        "Scotts Bluff National Monument": {
+          "entity": "Scotts Bluff National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Scotts_Bluff_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Chimney Rock National Historic Site": {
+          "entity": "Chimney Rock National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chimney_Rock_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        },
+        "Saddle Rock Trail to the summit of Scotts Bluff": {
+          "entity": "Scotts Bluff National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Scotts_Bluff_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        }
+      }
+    },
+    "custer-sd": {
+      "activities": {
+        "Custer State Park wildlife loop": {
+          "entity": "Custer State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Custer_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        },
+        "Black Elk Peak from Sylvan Lake": {
+          "entity": "Black Elk Peak",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Black_Elk_Peak"
+            }
+          ],
+          "auto": true,
+          "auto_km": 12
+        },
+        "Wind Cave National Park cave tour": {
+          "entity": "Wind Cave National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wind_Cave_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 25
+        }
+      }
+    },
+    "medora-nd": {
+      "activities": {
+        "Theodore Roosevelt National Park (South Unit)": {
+          "entity": "Theodore Roosevelt National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Medora Musical and the Pitchfork Steak Fondue": {
+          "entity": "Medora Musical",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Medora_Musical"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        }
+      }
+    },
+    "bismarck-nd": {
+      "activities": {
+        "Fort Abraham Lincoln State Park": {
+          "entity": "Fort Abraham Lincoln",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Abraham_Lincoln"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "North Dakota Heritage Center & State Museum": {
+          "entity": "North Dakota Heritage Center",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/North_Dakota_Heritage_Center"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "North Dakota State Capitol": {
+          "entity": "North Dakota State Capitol",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/North_Dakota_State_Capitol"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Knife River Indian Villages National Historic Site": {
+          "entity": "Knife River Indian Villages National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Knife_River_Indian_Villages_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 76
+        },
+        "Cross Ranch State Park": {
+          "entity": "Cross Ranch State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cross_Ranch_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 47
+        }
+      }
+    },
+    "itasca-mn": {
+      "activities": {
+        "Mississippi Headwaters walk": {
+          "entity": "Lake Itasca",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Itasca"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "duluth-mn": {
+      "activities": {
+        "Canal Park & Aerial Lift Bridge": {
+          "entity": "Aerial Lift Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Aerial_Lift_Bridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Gooseberry Falls State Park (day trip)": {
+          "entity": "Gooseberry Falls State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gooseberry_Falls_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 63
+        },
+        "Watch the ore boats at the Aerial Lift Bridge": {
+          "entity": "Aerial Lift Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Aerial_Lift_Bridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Great Lakes Aquarium, Duluth waterfront": {
+          "entity": "Great Lakes Aquarium",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Great_Lakes_Aquarium"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        }
+      }
+    },
+    "grand-marais-mn": {
+      "activities": {
+        "Tettegouche State Park": {
+          "entity": "Tettegouche State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Tettegouche_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 80
+        },
+        "Temperance River State Park": {
+          "entity": "Temperance River State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Temperance_River_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 46
+        },
+        "Devil's Kettle at Judge C. R. Magney State Park": {
+          "entity": "Judge C. R. Magney State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Judge_C._R._Magney_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        },
+        "Grand Portage National Monument": {
+          "entity": "Grand Portage National Monument",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grand_Portage_National_Monument"
+            }
+          ],
+          "auto": true,
+          "auto_km": 53
+        },
+        "Cascade River State Park": {
+          "entity": "Cascade River State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cascade_River_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        }
+      }
+    },
+    "bayfield-wi": {
+      "activities": {
+        "Apostle Islands National Lakeshore boat tour": {
+          "entity": "Apostle Islands National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Apostle_Islands_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Madeline Island ferry to La Pointe": {
+          "entity": "Madeline Island",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Madeline_Island"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Big Bay State Park on Madeline Island": {
+          "entity": "Big Bay State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Big_Bay_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Apostle Islands boat cruise or lighthouse trip": {
+          "entity": "Apostle Islands",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Apostle_Islands"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Big Top Chautauqua at Mount Ashwabay": {
+          "entity": "Big Top Chautauqua",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Big_Top_Chautauqua"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        }
+      }
+    },
+    "porcupine-mountains-mi": {
+      "activities": {
+        "Lake of the Clouds overlook": {
+          "entity": "Lake of the Clouds",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_of_the_Clouds"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Presque Isle River waterfalls": {
+          "entity": "Presque Isle River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Presque_Isle_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Hike the escarpment above Lake of the Clouds": {
+          "entity": "Lake of the Clouds",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_of_the_Clouds"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Bond Falls day trip": {
+          "entity": "Bond Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bond_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 60
+        }
+      }
+    },
+    "marquette-mi": {
+      "activities": {
+        "Presque Isle Park": {
+          "entity": "Presque Isle Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Presque_Isle_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Drive and walk Presque Isle Park": {
+          "entity": "Presque Isle Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Presque_Isle_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Marquette Harbor Light": {
+          "entity": "Marquette Harbor Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Marquette_Harbor_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        }
+      }
+    },
+    "munising-mi": {
+      "activities": {
+        "Pictured Rocks boat tour": {
+          "entity": "Pictured Rocks National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pictured_Rocks_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Munising Falls & Miners Falls": {
+          "entity": "Munising Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Munising_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Miners Castle": {
+          "entity": "Pictured Rocks National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pictured_Rocks_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Pictured Rocks boat cruise from Munising": {
+          "entity": "Pictured Rocks National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pictured_Rocks_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Munising Falls": {
+          "entity": "Munising Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Munising_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Grand Sable Dunes and the Log Slide Overlook": {
+          "entity": "Pictured Rocks National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pictured_Rocks_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Wagner Falls": {
+          "entity": "Wagner Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wagner_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "tahquamenon-falls-mi": {
+      "activities": {
+        "Great Lakes Shipwreck Museum, Whitefish Point": {
+          "entity": "Great Lakes Shipwreck Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Great_Lakes_Shipwreck_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Whitefish Point Light Station (1861)": {
+          "entity": "Whitefish Point Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Whitefish_Point_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Whitefish Point Bird Observatory": {
+          "entity": "Whitefish Point Bird Observatory",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Whitefish_Point_Bird_Observatory"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Crisp Point Light": {
+          "entity": "Crisp Point Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Crisp_Point_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        }
+      }
+    },
+    "st-ignace-mi": {
+      "activities": {
+        "Mackinac Island ferry day trip": {
+          "entity": "Mackinac Island",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mackinac_Island"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        },
+        "Mackinac Bridge views": {
+          "entity": "Mackinac Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mackinac_Bridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        },
+        "Mackinac Island by ferry": {
+          "entity": "Mackinac Island",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mackinac_Island"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        },
+        "Colonial Michilimackinac, Mackinaw City": {
+          "entity": "Fort Michilimackinac",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Michilimackinac"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "McGulpin Point Light": {
+          "entity": "McGulpin Point Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/McGulpin_Point_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        },
+        "Waugoshance Point, Wilderness State Park": {
+          "entity": "Waugoshance Point",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Waugoshance_Point"
+            }
+          ],
+          "auto": true,
+          "auto_km": 25
+        }
+      }
+    },
+    "traverse-city-mi": {
+      "activities": {
+        "Sleeping Bear Dunes": {
+          "entity": "Sleeping Bear Dunes National Lakeshore",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sleeping_Bear_Dunes_National_Lakeshore"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        },
+        "Leelanau Peninsula wine/orchard drive": {
+          "entity": "Leelanau Peninsula",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Leelanau_Peninsula"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        },
+        "Old Mission Peninsula drive on M-37": {
+          "entity": "Peninsula Township, Michigan",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Peninsula_Township%2C_Michigan"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Traverse City State Park beach": {
+          "entity": "Traverse City State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Traverse_City_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        }
+      }
+    },
+    "door-county-wi": {
+      "activities": {
+        "Peninsula State Park": {
+          "entity": "Peninsula State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Peninsula_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Ephraim & Sister Bay villages": {
+          "entity": "Sister Bay, Wisconsin",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sister_Bay%2C_Wisconsin"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        },
+        "Newport State Park (quieter alternative)": {
+          "entity": "Newport State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Newport_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 45
+        },
+        "Eagle Tower, Peninsula State Park": {
+          "entity": "Peninsula State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Peninsula_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Eagle Bluff Lighthouse": {
+          "entity": "Eagle Bluff Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Eagle_Bluff_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 29
+        },
+        "Newport State Park": {
+          "entity": "Newport State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Newport_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 45
+        },
+        "Cana Island Light": {
+          "entity": "Cana Island Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cana_Island_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 31
+        },
+        "Cycling and hiking in Peninsula State Park": {
+          "entity": "Peninsula State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Peninsula_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        }
+      }
+    },
+    "indiana-dunes-in": {
+      "activities": {
+        "Indiana Dunes National Park beaches/trails": {
+          "entity": "Indiana Dunes National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Indiana_Dunes_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        }
+      }
+    },
+    "stratford-on": {
+      "activities": {
+        "Stratford Festival": {
+          "entity": "Stratford Festival",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Stratford_Festival"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Canadian Baseball Hall of Fame, St. Marys": {
+          "entity": "Canadian Baseball Hall of Fame",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Canadian_Baseball_Hall_of_Fame"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        }
+      }
+    },
+    "elora-on": {
+      "activities": {
+        "Elora Gorge Conservation Area": {
+          "entity": "Elora Gorge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Elora_Gorge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Elora Gorge rim trails": {
+          "entity": "Elora Gorge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Elora_Gorge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Elora Quarry": {
+          "entity": "Elora Gorge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Elora_Gorge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "West Montrose Covered Bridge": {
+          "entity": "West Montrose Covered Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/West_Montrose_Covered_Bridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Elora Cataract Trailway": {
+          "entity": "Elora Cataract Trailway",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Elora_Cataract_Trailway"
+            }
+          ],
+          "auto": true,
+          "auto_km": 16
+        },
+        "Belwood Lake and the Shand Dam": {
+          "entity": "Lake Belwood",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Belwood"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "algonquin-on": {
+      "activities": {
+        "Algonquin Provincial Park": {
+          "entity": "Algonquin Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Algonquin_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 83
+        },
+        "Arrowhead Provincial Park": {
+          "entity": "Arrowhead Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Arrowhead_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        }
+      }
+    },
+    "pec-on": {
+      "activities": {
+        "Sandbanks Provincial Park": {
+          "entity": "Sandbanks Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sandbanks_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        }
+      }
+    },
+    "gananoque-on": {
+      "activities": {
+        "Thousand Islands boat tour": {
+          "entity": "Thousand Islands",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Thousand Islands National Park": {
+          "entity": "Thousand Islands National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Mallorytown Landing": {
+          "entity": "Front of Yonge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Front_of_Yonge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 33
+        },
+        "Charleston Lake Provincial Park": {
+          "entity": "Charleston Lake Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Charleston_Lake_Provincial_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        }
+      }
+    },
+    "perth-on": {
+      "activities": {
+        "Rideau Canal (UNESCO site)": {
+          "entity": "Rideau Canal",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rideau_Canal"
+            }
+          ],
+          "auto": true,
+          "auto_km": 73
+        },
+        "Rideau Canal lockstations by truck": {
+          "entity": "Rideau Canal",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rideau_Canal"
+            }
+          ],
+          "auto": true,
+          "auto_km": 73
+        },
+        "Foley Mountain Conservation Area, Westport": {
+          "entity": "Foley Mountain Conservation Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Foley_Mountain_Conservation_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        }
+      }
+    },
+    "lake-placid-ny": {
+      "activities": {
+        "Whiteface Mountain": {
+          "entity": "Whiteface Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Whiteface_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Hike from Heart Lake at the Adirondak Loj": {
+          "entity": "Adirondak Loj",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Adirondak_Loj"
+            }
+          ],
+          "auto": true,
+          "auto_km": 11
+        },
+        "Take the whole family up Mount Marcy — or don't": {
+          "entity": "Mount Marcy",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Marcy"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        }
+      }
+    },
+    "south-hero-vt": {
+      "activities": {
+        "Island Line Trail and the Colchester Causeway": {
+          "entity": "Island Line Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Island_Line_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 10
+        },
+        "Burlington waterfront and Church Street Marketplace": {
+          "entity": "Church Street Marketplace",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Church_Street_Marketplace"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        },
+        "Shelburne Museum": {
+          "entity": "Shelburne Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Shelburne_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Shelburne Farms": {
+          "entity": "Shelburne Farms",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Shelburne_Farms"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        },
+        "Knight Point State Park — closed for the season": {
+          "entity": "Knight Point State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Knight_Point_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Swim or beachcomb at Sand Bar State Park": {
+          "entity": "Sand Bar State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Sand_Bar_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "stowe-vt": {
+      "activities": {
+        "Smugglers Notch (truck day trip)": {
+          "entity": "Smugglers Notch",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Smugglers_Notch"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        },
+        "Take the truck up through Smugglers Notch": {
+          "entity": "Smugglers Notch",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Smugglers_Notch"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "eastern-townships-qc": {
+      "activities": {
+        "Knowlton & North Hatley villages": {
+          "entity": "North Hatley",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/North_Hatley"
+            }
+          ],
+          "auto": true,
+          "auto_km": 41
+        },
+        "Hike Mont Orford": {
+          "entity": "Mont Orford",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mont_Orford"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Drive to North Hatley on Lac Massawippi": {
+          "entity": "North Hatley",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/North_Hatley"
+            }
+          ],
+          "auto": true,
+          "auto_km": 41
+        }
+      }
+    },
+    "north-conway-nh": {
+      "activities": {
+        "Drive the Mount Washington Auto Road in the pickup": {
+          "entity": "Mount Washington Auto Road",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Washington_Auto_Road"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Walk to Diana's Baths": {
+          "entity": "Diana's Baths",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Diana%27s_Baths"
+            }
+          ],
+          "auto": true,
+          "auto_km": 4
+        },
+        "Drive US 302 through Crawford Notch": {
+          "entity": "Crawford Notch",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Crawford_Notch"
+            }
+          ],
+          "auto": true,
+          "auto_km": 29
+        }
+      }
+    },
+    "bar-harbor-me": {
+      "activities": {
+        "Park Loop Road, Acadia NP": {
+          "entity": "Acadia National Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Acadia_National_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 4
+        },
+        "Jordan Pond & the Bubbles": {
+          "entity": "Jordan Pond",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Jordan_Pond"
+            }
+          ],
+          "auto": true,
+          "auto_km": 7
+        },
+        "Cross to the Schoodic Peninsula": {
+          "entity": "Schoodic Peninsula",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Schoodic_Peninsula"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "camden-me": {
+      "activities": {
+        "Camden Hills State Park": {
+          "entity": "Camden Hills State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Camden_Hills_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Drive out to Owls Head Light": {
+          "entity": "Owls Head Light",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Owls_Head_Light"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "berkshires-ma": {
+      "activities": {
+        "Mount Greylock": {
+          "entity": "Mount Greylock",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Greylock"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Drive to the summit of Mount Greylock": {
+          "entity": "Mount Greylock",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Greylock"
+            }
+          ],
+          "auto": true,
+          "auto_km": 28
+        },
+        "Hike to Bash Bish Falls": {
+          "entity": "Bash Bish Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bash_Bish_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 38
+        }
+      }
+    },
+    "litchfield-hills-ct": {
+      "activities": {
+        "Kent Falls State Park": {
+          "entity": "Kent Falls State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kent_Falls_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Climb the falls trail at Kent Falls State Park": {
+          "entity": "Kent Falls State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kent_Falls_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 19
+        },
+        "Take in Mount Tom State Park": {
+          "entity": "Mount Tom State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Tom_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        },
+        "Drive to the West Cornwall Covered Bridge": {
+          "entity": "West Cornwall Covered Bridge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/West_Cornwall_Covered_Bridge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        }
+      }
+    },
+    "hudson-valley-ny": {
+      "activities": {
+        "FDR's Springwood / Vanderbilt Mansion": {
+          "entity": "Vanderbilt Mansion National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Vanderbilt_Mansion_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Vanderbilt Mansion grounds and the Hudson bluff overlook": {
+          "entity": "Vanderbilt Mansion National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Vanderbilt_Mansion_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Kaaterskill Falls": {
+          "entity": "Kaaterskill Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kaaterskill_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        }
+      }
+    },
+    "delaware-water-gap-pa": {
+      "activities": {
+        "Delaware Water Gap National Recreation Area": {
+          "entity": "Delaware Water Gap National Recreation Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Delaware_Water_Gap_National_Recreation_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        },
+        "Drive Old Mine Road on the New Jersey side": {
+          "entity": "New Jersey",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/New_Jersey"
+            }
+          ],
+          "auto": true,
+          "auto_km": 125
+        },
+        "Big Pocono State Park summit road": {
+          "entity": "Big Pocono State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Big_Pocono_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "Bushkill Falls": {
+          "entity": "Bushkill Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bushkill_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        }
+      }
+    },
+    "gettysburg-pa": {
+      "activities": {
+        "Gettysburg National Military Park": {
+          "entity": "Gettysburg National Military Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gettysburg_National_Military_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        },
+        "Eisenhower National Historic Site": {
+          "entity": "Eisenhower National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Eisenhower_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 5
+        },
+        "Gravel touring in Michaux State Forest": {
+          "entity": "Michaux State Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Michaux_State_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        }
+      }
+    },
+    "harpers-ferry-wv": {
+      "activities": {
+        "Harpers Ferry National Historical Park": {
+          "entity": "Harpers Ferry National Historical Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Harpers_Ferry_National_Historical_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Loudoun Heights": {
+          "entity": "Loudoun Heights, Virginia",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Loudoun_Heights%2C_Virginia"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Bolivar Heights — the short option": {
+          "entity": "Bolivar Heights Battlefield",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bolivar_Heights_Battlefield"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Antietam National Battlefield": {
+          "entity": "Antietam National Battlefield",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Antietam_National_Battlefield"
+            }
+          ],
+          "auto": true,
+          "auto_km": 16
+        }
+      }
+    },
+    "staunton-va": {
+      "activities": {
+        "Skyline Drive north from Rockfish Gap": {
+          "entity": "Rockfish Gap",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rockfish_Gap"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Frontier Culture Museum": {
+          "entity": "Frontier Culture Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Frontier_Culture_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 3
+        }
+      }
+    },
+    "lexington-va": {
+      "activities": {
+        "Drive Goshen Pass": {
+          "entity": "Goshen Pass",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Goshen_Pass"
+            }
+          ],
+          "auto": true,
+          "auto_km": 16
+        },
+        "Douthat State Park": {
+          "entity": "Douthat State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Douthat_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 35
+        }
+      }
+    },
+    "new-river-gorge-wv": {
+      "activities": {
+        "Babcock State Park and the Glade Creek Grist Mill": {
+          "entity": "Babcock State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Babcock_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        }
+      }
+    },
+    "floyd-va": {
+      "activities": {
+        "Mabry Mill on the Parkway": {
+          "entity": "Mabry Mill",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mabry_Mill"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "New River Trail State Park": {
+          "entity": "New River Trail State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/New_River_Trail_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 48
+        },
+        "Fairy Stone State Park": {
+          "entity": "Fairy Stone State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fairy_Stone_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
+    },
+    "boone-nc": {
+      "activities": {
+        "Grandfather Mountain": {
+          "entity": "Grandfather Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grandfather_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Grandfather Mountain and the Mile High Swinging Bridge": {
+          "entity": "Grandfather Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grandfather_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Profile Trail, Grandfather Mountain State Park": {
+          "entity": "Grandfather Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Grandfather_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Linville Falls and the gorge rim": {
+          "entity": "Linville Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Linville_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 37
+        },
+        "Elk Knob State Park": {
+          "entity": "Elk Knob State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Elk_Knob_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 13
+        }
+      }
+    },
+    "asheville-nc-v3": {
+      "activities": {
+        "Pisgah National Forest waterfalls": {
+          "entity": "Pisgah National Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pisgah_National_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 34
+        },
+        "Mount Mitchell — check access first": {
+          "entity": "Mount Mitchell",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Mitchell"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        },
+        "DuPont State Recreational Forest waterfalls": {
+          "entity": "DuPont State Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/DuPont_State_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 44
+        }
+      }
+    },
+    "bryson-city-nc": {
+      "activities": {
+        "Newfound Gap Road (truck only, weather permitting)": {
+          "entity": "Newfound Gap",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Newfound_Gap"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "Drive Newfound Gap Road over the crest": {
+          "entity": "Newfound Gap",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Newfound_Gap"
+            }
+          ],
+          "auto": true,
+          "auto_km": 20
+        },
+        "Oconaluftee Visitor Center and the elk": {
+          "entity": "Oconaluftee (Great Smoky Mountains)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Oconaluftee_%28Great_Smoky_Mountains%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 16
+        },
+        "Great Smoky Mountains Railroad": {
+          "entity": "Great Smoky Mountains Railroad",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountains_Railroad"
+            }
+          ],
+          "auto": true,
+          "auto_km": 0
+        },
+        "Fontana Dam and the Nantahala Gorge": {
+          "entity": "Fontana Dam",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fontana_Dam"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        }
+      }
+    },
+    "chattanooga-tn": {
+      "activities": {
+        "Lookout Mountain": {
+          "entity": "Lookout Mountain",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lookout_Mountain"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        },
+        "Cloudland Canyon State Park": {
+          "entity": "Cloudland Canyon State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cloudland_Canyon_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Ruby Falls": {
+          "entity": "Ruby Falls",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ruby_Falls"
+            }
+          ],
+          "auto": true,
+          "auto_km": 4
+        },
+        "Rock City Gardens and the Enchanted Garden of Lights": {
+          "entity": "Rock City (attraction)",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rock_City_%28attraction%29"
+            }
+          ],
+          "auto": true,
+          "auto_km": 9
+        }
+      }
+    },
+    "hot-springs-ar-v3": {
+      "activities": {
+        "Bathhouse Row": {
+          "entity": "Bathhouse Row",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bathhouse_Row"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Hot Springs Mountain Tower & trails": {
+          "entity": "Hot Springs Mountain Tower",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hot_Springs_Mountain_Tower"
+            }
+          ],
+          "auto": true,
+          "auto_km": 2
+        },
+        "Bathhouse Row and the Fordyce": {
+          "entity": "Bathhouse Row",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bathhouse_Row"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Falls Branch Trail, Lake Catherine State Park": {
+          "entity": "Lake Catherine State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Catherine_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 15
+        },
+        "Caddo Bend Trail, Lake Ouachita State Park": {
+          "entity": "Lake Ouachita State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Ouachita_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 17
+        },
+        "Garvan Woodland Gardens": {
+          "entity": "Garvan Woodland Gardens",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Garvan_Woodland_Gardens"
+            }
+          ],
+          "auto": true,
+          "auto_km": 8
+        },
+        "Mid-America Science Museum": {
+          "entity": "Mid-America Science Museum",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mid-America_Science_Museum"
+            }
+          ],
+          "auto": true,
+          "auto_km": 6
+        }
+      }
+    },
+    "petit-jean-ar": {
+      "activities": {
+        "Mather Lodge": {
+          "entity": "Mather Lodge",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mather_Lodge"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        }
+      }
+    },
+    "mount-magazine-ar": {
+      "activities": {
+        "Lodge at Mount Magazine": {
+          "entity": "Mount Magazine",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Lake Dardanelle State Park visitor center": {
+          "entity": "Lake Dardanelle State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Dardanelle_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 42
+        }
+      }
+    },
+    "jasper-ponca-ar": {
+      "activities": {
+        "Buffalo National River float/scenic drive": {
+          "entity": "Buffalo National River",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ],
+          "auto": true,
+          "auto_km": 70
+        },
+        "Hawksbill Crag (Whitaker Point)": {
+          "entity": "Upper Buffalo Wilderness",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Upper_Buffalo_Wilderness"
+            }
+          ],
+          "auto": true,
+          "auto_km": 30
+        },
+        "Buffalo River Trail from Ponca": {
+          "entity": "Buffalo River Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_River_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 22
+        }
+      }
+    },
+    "mountain-view-ar": {
+      "activities": {
+        "Blanchard Springs Caverns": {
+          "entity": "Blanchard Springs Caverns",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Blanchard_Springs_Caverns"
+            }
+          ],
+          "auto": true,
+          "auto_km": 12
+        },
+        "Bull Shoals-White River State Park day run": {
+          "entity": "Bull Shoals-White River State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Bull_Shoals-White_River_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 69
+        },
+        "Ozark National Forest gravel loops": {
+          "entity": "Ozark–St. Francis National Forest",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ozark%E2%80%93St._Francis_National_Forest"
+            }
+          ],
+          "auto": true,
+          "auto_km": 223
+        }
+      }
+    },
+    "eureka-springs-ar-v3": {
+      "activities": {
+        "Eureka Springs historic downtown": {
+          "entity": "Eureka Springs, Arkansas",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Eureka_Springs%2C_Arkansas"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Christ of the Ozarks": {
+          "entity": "Christ of the Ozarks",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Christ_of_the_Ozarks"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Withrow Springs State Park": {
+          "entity": "Withrow Springs State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Withrow_Springs_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        }
+      }
+    },
+    "bentonville-ar": {
+      "activities": {
+        "Crystal Bridges Museum of American Art": {
+          "entity": "Crystal Bridges Museum of American Art",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Crystal_Bridges_Museum_of_American_Art"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Hobbs State Park-Conservation Area": {
+          "entity": "Hobbs State Park – Conservation Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Hobbs_State_Park_%E2%80%93_Conservation_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 26
+        },
+        "Crystal Bridges trails and the Razorback Greenway": {
+          "entity": "Crystal Bridges Museum of American Art",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Crystal_Bridges_Museum_of_American_Art"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Pea Ridge National Military Park": {
+          "entity": "Pea Ridge National Military Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Pea_Ridge_National_Military_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 18
+        },
+        "War Eagle Mill": {
+          "entity": "War Eagle Mill",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/War_Eagle_Mill"
+            }
+          ],
+          "auto": true,
+          "auto_km": 27
+        }
+      }
+    },
+    "devils-den-ar": {
+      "activities": {
+        "Devil's Den State Park trails": {
+          "entity": "Devil's Den State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Devil%27s_Den_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 1
+        },
+        "Lake Fort Smith State Park": {
+          "entity": "Lake Fort Smith State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Lake_Fort_Smith_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 14
+        },
+        "Fort Smith National Historic Site": {
+          "entity": "Fort Smith National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fort_Smith_National_Historic_Site"
+            }
+          ],
+          "auto": true,
+          "auto_km": 46
+        },
+        "Prairie Grove Battlefield State Park": {
+          "entity": "Prairie Grove Battlefield State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Prairie_Grove_Battlefield_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 24
+        }
+      }
+    },
+    "mena-ar": {
+      "activities": {
+        "Queen Wilhelmina State Park": {
+          "entity": "Queen Wilhelmina State Park",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Queen_Wilhelmina_State_Park"
+            }
+          ],
+          "auto": true,
+          "auto_km": 16
+        },
+        "Ouachita National Recreation Trail": {
+          "entity": "Ouachita National Recreation Trail",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ouachita_National_Recreation_Trail"
+            }
+          ],
+          "auto": true,
+          "auto_km": 21
+        },
+        "Cossatot River State Park-Natural Area": {
+          "entity": "Cossatot River State Park-Natural Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Cossatot_River_State_Park-Natural_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 33
+        },
+        "Shady Lake Recreation Area": {
+          "entity": "Shady Lake Recreation Area",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Shady_Lake_Recreation_Area"
+            }
+          ],
+          "auto": true,
+          "auto_km": 32
+        }
+      }
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",
   "_activities": "Per-stop overrides for the highlights list. Each entry maps an activity's name to a verified entity: its real Wikipedia article, its direct AllTrails listing where it IS a trail, and the official page. Activities with an entry render real links and pills; activities without one keep the generic name-derived search links, which is the honest fallback until they are researched. `drop: true` removes a duplicate restatement of another activity.",
-  "_url_provenance": "EVERY url here must be COPIED from a search result that returned it. Never construct a slug from a trail's name — alltrails slugs are unpredictable (--2, --3 suffixes, reworded titles) and a fabricated one looks exactly like a real one until it 404s in front of you at a trailhead. This rule exists because four urls were built from names in this file; three happened to be right and one was not, which is luck, not verification."
+  "_url_provenance": "EVERY url here must be COPIED from a search result that returned it. Never construct a slug from a trail's name — alltrails slugs are unpredictable (--2, --3 suffixes, reworded titles) and a fabricated one looks exactly like a real one until it 404s in front of you at a trailhead. This rule exists because four urls were built from names in this file; three happened to be right and one was not, which is luck, not verification.",
+  "_auto": "Entries marked auto:true were resolved by resolve_highlights.py — the headline reduced to candidate entity names and checked against Wikipedia's real article index. Exact hits only; a fuzzy match is treated as no match. Hand-written entries are richer and are never overwritten."
 }

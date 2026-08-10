@@ -139,6 +139,17 @@ def main():
             # re-labelled src='fixed', which the renderer already shows as
             # "corrections applied" rather than "problems found".
             for field, repl in (entry.get('fix') or {}).items():
+                if isinstance(repl, dict) and 'append' in repl:
+                    # Annotating a field rather than rewriting it. Writing that
+                    # as {from: X, to: X + note} is self-referential and grows
+                    # the field on every build — it tripped the guard below three
+                    # times in one sitting, so it gets a first-class operation.
+                    add = repl['append']
+                    cur = s.get(field) or ''
+                    if add not in cur:
+                        s[field] = (cur + ' ' + add).strip()
+                        fixed += 1
+                    continue
                 if isinstance(repl, dict):
                     old, new = repl.get('from'), repl.get('to')
                     # A `to` that still contains its own `from` re-matches on the

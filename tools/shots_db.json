@@ -86,6 +86,18 @@
           "COORDINATE"
         ],
         "fix_why": "The vantage named Monte Vista NWR but printed the Alamosa POI coordinate, 24.4 km due east — the wrong town, at 06:00 for a 06:48 sunrise. Now carries real lat/lng for the refuge, where it previously had none at all."
+      },
+      "The ice column inside Zapata Falls": {
+        "fix": {
+          "difficulty": "real hike",
+          "vantage": {
+            "append": "NOTE: this coordinate is the TRAILHEAD — the slot and the ice column are about half a mile further up the creek and ~200 ft higher."
+          }
+        },
+        "resolves": [
+          "DIFFICULTY / COORDINATE"
+        ],
+        "fix_why": "Rated \"short walk\" while its own caution asks for neoprene to wade a snowmelt creek, microspikes for glazed rock inside the slot, and 3.5 miles of rough washboard gravel that may still be snow-drifted. The same yardstick rates Bear's Hump a real hike. The pin was the trailhead, not the falls."
       }
     },
     "estes-rmnp": {
@@ -327,6 +339,17 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was at the fee station by the visitor centre, not the named vantage. Moved to the Calico I overlook. With a 06:00 gate and a 06:50 sunrise the drive up the one-way scenic loop has to be counted."
+      },
+      "The Strip's light dome from the desert": {
+        "fix": {
+          "vantage": {
+            "append": "NOTE: from the SR-159 pull-outs the Red Rock escarpment is BEHIND you, not in the frame — the foreground here is open desert, Joshua and yucca."
+          }
+        },
+        "resolves": [
+          "SUN/SITE GEOMETRY"
+        ],
+        "fix_why": "SR-159 runs along the eastern base of the escarpment, so looking east at the city glow puts the cliffs behind the camera. Silhouetting them against the dome would need you east of the escarpment — which puts the glow behind you instead. The desert-foreground half of the shot works; the escarpment half cannot."
       }
     },
     "cooper-landing": {
@@ -339,6 +362,16 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was 12.8 km west, out past Jean Lake with no trailhead and no falls. The shot own text said milepost 52 Sterling Highway, which is correct — moved to the Russian River Campground trailhead to match it."
+      },
+      "Skilak Lake under wind": {
+        "fix": {
+          "facing": "W/NW",
+          "light": "Shoot up-lake, W to NW. The old note asked for side light from the north-west while facing SE — but the evening sun here sits at azimuth 280-305, which from a SE-facing camera is directly behind the photographer. That is flat frontal light, the one condition where chop and whitecaps do NOT read as texture. Turning to face W-NW puts the light across and behind the waves, which is what makes them read."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "Facing and light rationale contradicted each other, and the stated combination produces exactly the flat light the shot is trying to avoid."
       }
     },
     "valdez": {
@@ -351,6 +384,15 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was 15.6 km up in the high country above Thompson Pass, past the canyon entirely. Moved to Richardson Highway MP 13-14, which is the 15 minutes from Valdez the shot claims rather than 30-35."
+      },
+      "Allison Point — bears, sea lions and the terminal": {
+        "fix": {
+          "facing": "W/NW"
+        },
+        "resolves": [
+          "SUN/SITE GEOMETRY"
+        ],
+        "fix_why": "Allison Point sits on the SOUTH shore of Port Valdez — the water, the Solomon Gulch outfall and all the animal action are north to north-west. Facing SW from the Dayville Road pullouts points inland at the mountainside behind you. The predator-prey-and-oil-infrastructure frame needs W-NW."
       }
     },
     "bandon": {
@@ -982,8 +1024,109 @@
         ],
         "fix_why": "Both road claims were wrong in the direction that would have made you skip the shot on a four-night stop."
       }
+    },
+    "long-beach": {
+      "Waikiki Beach in a Pacific gale": {
+        "fix": {
+          "lat": 46.2775,
+          "lng": -124.0533,
+          "vantage": {
+            "from": "with the jetty and the North Head headland behind",
+            "to": "with the North Jetty and the CAPE DISAPPOINTMENT headland and lighthouse behind (North Head is a different headland 3 km away)"
+          },
+          "light": "Backlit, and better for it. Camera faces W and sunset is at azimuth 250 — 20 degrees apart — so spray and storm surf are lit from behind rather than in front. Expose for the highlights and let the wave shapes go to silhouette and translucence."
+        },
+        "resolves": [
+          "Sun check",
+          "VANTAGE / LANDMARK"
+        ],
+        "fix_why": "Two headlands 3 km apart were conflated, and the pin was 700 m north of the actual parking area — on a gale day with a short window that matters. Light description also had the geometry backwards."
+      }
+    },
+    "crescent-city": {
+      "Battery Point at a winter low tide": {
+        "fix": {
+          "light": "Backlit. Camera faces SW and sunset is at azimuth 240 — 15 degrees apart — so the lighthouse and the tidepool foreground are rim-lit against the sun, not front-lit. Expose for the sky, use the wet rock as reflective foreground, and accept the lighthouse as a shape rather than a detailed subject."
+        },
+        "resolves": [
+          "Sun check"
+        ],
+        "fix_why": "The card described front-light that the geometry cannot deliver at that hour."
+      }
+    },
+    "yellowstone": {
+      "Breaking ice on Yellowstone Lake": {
+        "fix": {
+          "caution": {
+            "append": "NOT AVAILABLE on the first day at least: NPS opens the East Entrance Road over Sylvan Pass and the Canyon-to-Lake section on the first Friday in May, and arrival is Thursday 6 May 2027. Lake Butte Overlook is beyond that gate."
+          },
+          "reference": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "The opening claim came from a stale non-authoritative source and does not survive the actual arrival date."
+      }
+    },
+    "waterton": {
+      "Prince of Wales on its knoll, dawn": {
+        "fix": {
+          "facing": "ESE",
+          "vantage": {
+            "append": "NOTE: shoot from the Emerald Bay shoreline in the townsite, not the hotel car park — the old pin was the hotel itself, and Vimy Peak bears ESE from Emerald Bay."
+          }
+        },
+        "resolves": [
+          "SUN GEOMETRY + COORDINATE"
+        ],
+        "fix_why": "The vantage rejected the hotel car park and then gave the hotel's own coordinate with a NE facing. Vimy Peak — whose lighting the craft note uses as the trigger — bears 121 degrees ESE from Emerald Bay, 145 degrees away from the stated bearing and impossible to hold in the same 24-70mm frame."
+      },
+      "The Kenow burn on the Red Rock Parkway": {
+        "fix": {
+          "subject": {
+            "from": "Eight years on",
+            "to": "Nearly ten years on (the Kenow fire burned September 2017; this stay is May 2027)"
+          }
+        },
+        "resolves": [
+          "FACTUAL"
+        ],
+        "fix_why": "Not pedantry — it changes the picture. By year ten a significant fraction of the standing snags in Blakiston Valley will have fallen and the understory is well advanced, which undercuts the \"rank on rank of repeating black verticals\" that the 70-200mm compression depends on."
+      }
+    },
+    "dawson-city": {
+      "Aurora over the Yukon from Midnight Dome": {
+        "fix": {
+          "facing": "N",
+          "light": "Full darkness arrives about two hours later than the card said — on 3 September at Dawson, sunset is 21:25, civil twilight ends 22:17 and nautical twilight runs later still, so \"true darkness around 23:30\" understates it. Face NORTH: the aurora sits north from Dawson, and the old W-facing frame points at the town and the Yukon confluence, which only works during a strong overhead substorm."
+        },
+        "resolves": [
+          "SEASON/DARKNESS"
+        ],
+        "fix_why": "Wrong by roughly two hours on when to be up there, and pointed at the wrong quarter of the sky.",
+        "tags": [
+          "night",
+          "aurora",
+          "needs clear sky"
+        ]
+      }
+    },
+    "prince-george": {
+      "Mill steam at first light": {
+        "fix": {
+          "vantage": {
+            "from": "looking upstream and across at the mill stacks",
+            "to": "looking DOWNSTREAM and across at the mill stacks"
+          }
+        },
+        "resolves": [
+          "ORIENTATION"
+        ],
+        "fix_why": "The facing tag was right and the word \"upstream\" was wrong — the pulp mill bears 67 degrees ENE from Cottonwood Island, which is downstream. As written the two directions sent you to opposite ends of the park in the dark."
+      }
     }
   },
   "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong.",
-  "_blocked": "blocked:true marks a finding that cannot be applied without information nobody has published — usually a replacement coordinate. It counts toward `prog` in progress.py but never toward `have`, because closing it would mean inventing the number."
+  "_blocked": "blocked:true marks a finding that cannot be applied without information nobody has published — usually a replacement coordinate. It counts toward `prog` in progress.py but never toward `have`, because closing it would mean inventing the number.",
+  "_append": "fix: {field: {append: 'text'}} adds a note to the end of a field, once. Use it for annotations — writing them as {from: X, to: X + note} is self-referential and grows the field on every build."
 }

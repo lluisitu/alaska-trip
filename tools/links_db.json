@@ -3161,7 +3161,21 @@
           "auto": true,
           "auto_km": 5
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Rim Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Rim Trail, Yavapai Point to Mather Point. — prose entry",
+          "note_source": "The dog-legal walk here: NPS allows leashed pets on trails ABOVE the rim. No single listing matched the Yavapai-to-Mather section cleanly."
+        }
+      ]
     },
     "zion": {
       "authority": "National Park Service",
@@ -3220,7 +3234,55 @@
           "auto": true,
           "auto_km": 20
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Angels Landing Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/angels-landing-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.3 mi",
+          "elevation_gain": "1,827 ft",
+          "reviews": "4.9 (40,726)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Angels Landing / Grotto Trailhead — a trailhead, not a trail",
+          "note_source": "Permit required by lottery for the chains section. Dogs prohibited — Pa'rus is the only dog trail in Zion."
+        },
+        {
+          "name": "The Watchman Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/the-watchman-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.3 mi",
+          "time": "1.5-2 hr",
+          "elevation_gain": "636 ft",
+          "reviews": "4.7 (23,037)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Watchman Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "The Narrows",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "varies — Temple of Sinawava upstream",
+          "uses": [
+            "hike"
+          ],
+          "was": "Temple of Sinawava (Narrows trailhead) — a trailhead",
+          "note_source": "No single AllTrails listing matched cleanly; the route is a river walk of whatever length you choose. Drysuit season and flash-flood risk govern it, not a trail listing."
+        }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/zion-national-park"
     },
     "olympic": {
       "authority": "National Park Service",
@@ -3341,7 +3403,39 @@
           "auto": true,
           "auto_km": 0
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Bristlecone Pine and Glacier Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/bristlecone-pine-glacier-trail--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.9 mi",
+          "time": "2-2.5 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "797 ft",
+          "reviews": "1,404",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bristlecone Pine / Alpine Lakes Loop — two separate routes in one entry",
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail."
+        },
+        {
+          "name": "Alpine Lakes, Bristlecone, and Glacier Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/bristlecone-and-alpine-lakes-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "1,542",
+          "uses": [
+            "hike"
+          ]
+        }
+      ]
     },
     "black-canyon-gunnison": {
       "authority": "National Park Service",
@@ -3441,7 +3535,35 @@
           "auto": true,
           "auto_km": 80
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Golden Canyon Trail to Red Cathedral",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/golden-canyon-trail-to-red-cathedral",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "3,488",
+          "uses": [
+            "hike"
+          ],
+          "was": "Golden Canyon Trailhead — a trailhead, not a trail",
+          "note_source": "The fuller route from that trailhead; a shorter 0.9 mi Golden Canyon listing also exists (521 reviews)."
+        },
+        {
+          "name": "Titus Canyon Road",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "bike"
+          ],
+          "was": "Titus Canyon Road (west exit) — a road, not a trail",
+          "note_source": "Kept because dogs ARE permitted on it — Death Valley allows pets wherever a car can go, so this is the stop's dog-legal option."
+        }
+      ]
     },
     "grand-teton": {
       "authority": "National Park Service",
@@ -4639,7 +4761,44 @@
           "auto": true,
           "auto_km": 64
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Calico Tanks Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/calico-tanks-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "reviews": "10,192",
+          "uses": [
+            "hike"
+          ],
+          "was": "Calico Tanks / Fire Wave / White Domes — three trails in one entry, and duplicated in two more"
+        },
+        {
+          "name": "Fire Wave Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "note_source": "Valley of Fire State Park, a separate unit from Red Rock — no direct url surfaced."
+        },
+        {
+          "name": "White Domes Loop",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "note_source": "Valley of Fire State Park — no direct url surfaced."
+        }
+      ]
     },
     "borrego-springs": {
       "activities": {
@@ -4780,7 +4939,23 @@
           "auto": true,
           "auto_km": 18
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Hutch's Pool via West Fork Sabino Trail FS #24",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "reviews": "4.7 (601)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Sabino Canyon Recreation Area — a recreation area, not a trail",
+          "note_source": "Sabino Canyon's best-rated route. No direct listing url surfaced; the area page is on the box heading."
+        }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/sabino-canyon-recreation-area"
     },
     "catalina-state-park": {
       "activities": {
@@ -4884,7 +5059,40 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Cathedral Rock Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/cathedral-rock-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.3 mi out-and-back",
+          "difficulty": "Challenging",
+          "reviews": "4.9 (29,056)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Cathedral Rock — no url",
+          "note_source": "Short but steep slickrock scrambling — the difficulty is in the grade, not the distance."
+        },
+        {
+          "name": "Devil's Bridge Trail via Dry Creek Road",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/devils-bridge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.0 mi out-and-back",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.8 (32,088)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Devil's Bridge Trailhead — a trailhead, not a trail"
+        }
+      ]
     },
     "bryce": {
       "activities": {
@@ -4910,7 +5118,57 @@
           "auto": true,
           "auto_km": 65
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Navajo Loop Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/navajo-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.5 mi loop",
+          "time": "1-2 hr",
+          "elevation_gain": "550 ft",
+          "reviews": "7,676",
+          "uses": [
+            "hike"
+          ],
+          "was": "Sunset Point (Navajo Loop trailhead) — a trailhead, not a trail"
+        },
+        {
+          "name": "Mossy Cave Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/mossy-cave-turret-arch-and-little-windows-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.9 mi",
+          "elevation_gain": "118 ft",
+          "reviews": "4.5 (9,981)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Mossy Cave Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "Fairyland Loop Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/fairyland-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "8.1 mi",
+          "time": "4-4.5 hr",
+          "elevation_gain": "1,555 ft",
+          "reviews": "12,704",
+          "uses": [
+            "hike"
+          ],
+          "was": "Fairyland Point — a viewpoint, not a trail"
+        }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/bryce-canyon-national-park"
     },
     "torrey": {
       "activities": {
@@ -4925,7 +5183,41 @@
           "auto": true,
           "auto_km": 69
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Hickman Bridge Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/hickman-bridge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.8 mi",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "416 ft",
+          "reviews": "10,855",
+          "uses": [
+            "hike"
+          ],
+          "was": "Hickman Bridge Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "Cassidy Arch Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/cassidy-arch-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.3 mi out-and-back",
+          "reviews": "7,003",
+          "uses": [
+            "hike"
+          ],
+          "was": "Cassidy Arch Trailhead — a trailhead, not a trail"
+        }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/capitol-reef-national-park"
     },
     "moab": {
       "activities": {
@@ -4973,7 +5265,51 @@
           "auto": true,
           "auto_km": 18
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Delicate Arch Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/utah/delicate-arch-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.1 mi out-and-back",
+          "time": "1 h 33 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "38,060",
+          "uses": [
+            "hike"
+          ],
+          "was": "Delicate Arch Trail — no url"
+        },
+        {
+          "name": "Mesa Arch Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "0.5 mi",
+          "uses": [
+            "hike"
+          ],
+          "was": "Mesa Arch Trail — no url",
+          "note_source": "Canyonlands Island in the Sky. AllTrails indexes Mesa Arch as a point of interest rather than a trail listing, so it carries no direct trail link."
+        },
+        {
+          "name": "Double Arch — Windows Section",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Windows Section + Double Arch — no url",
+          "note_source": "One of several short walks in the Windows Section of Arches; no standalone listing surfaced."
+        }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/arches-national-park"
     },
     "ouray": {
       "activities": {
@@ -4999,7 +5335,38 @@
           "auto": true,
           "auto_km": 10
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Ouray Perimeter Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/colorado/ouray-perimeter-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.6 mi loop",
+          "time": "3 h 11 min",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "1,489 ft",
+          "reviews": "9,163",
+          "uses": [
+            "hike"
+          ],
+          "was": "Perimeter Trail — no url"
+        },
+        {
+          "name": "Blue Lakes Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Blue Lakes Trail — no url",
+          "note_source": "Real and well known, but no direct listing url surfaced. Arrival is 10-15 April, when the Blue Lakes basin is still deep in snow — check before planning around it."
+        }
+      ]
     },
     "mancos": {
       "activities": {
@@ -5036,7 +5403,22 @@
           "auto": true,
           "auto_km": 27
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Petroglyph Point Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/explore/trail/us/colorado/petroglyph-point-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Petroglyph Point Trailhead — a trailhead, not a trail",
+          "note_source": "Mesa Verde. Register at the trailhead; the loop passes a large petroglyph panel."
+        }
+      ]
     },
     "durango": {
       "activities": {

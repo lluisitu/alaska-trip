@@ -6528,7 +6528,21 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "authority": "National Park Service — Acadia",
+      "dogs_verdict": "allowed",
+      "official_links": [
+        {
+          "label": "Pets in Acadia",
+          "url": "https://www.nps.gov/acad/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "ALLOWED on most trails — 100 miles of trail and 45 miles of carriage road, leash 6 ft. Acadia is one of the most dog-friendly national parks on this entire trip. Six trails are closed to pets outright: Precipice, BEEHIVE, Ladder Trail to Dorr Mountain, Beech Cliffs, Perpendicular (Mansell Mountain), and Jordan Cliffs between Penobscot East Trail and the carriage road. Nine more are \"not recommended\".",
+      "trail_dogs": {
+        "Beehive Trail": false
+      },
+      "dogs_note": "The Beehive is named on this card AND is one of the six trails Acadia closes to dogs — the iron-rung climb. Everything else here is open to the dog, including Cadillac South Ridge and Gorham Mountain."
     },
     "camden-me": {
       "activities": {
@@ -6835,7 +6849,22 @@
           "auto": true,
           "auto_km": 3
         }
-      }
+      },
+      "authority": "National Park Service — Shenandoah",
+      "dogs_verdict": "allowed",
+      "official_links": [
+        {
+          "label": "Pets in Shenandoah",
+          "url": "https://www.nps.gov/shen/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery.",
+      "trail_dogs": {
+        "Stony Man Trail": false,
+        "Old Rag Mountain Loop Trail": false
+      },
+      "dogs_note": "Two of this stop's trails are on Shenandoah's short prohibited list — Stony Man's blue-blazed summit portion and the Old Rag trails (Ridge Access, Ridge, Saddle). Everything ELSE in the park is open to the dog, which still makes this one of the best stops on the trip for walking together; it is just that both trails currently named here happen to be exceptions. Worth adding dog-legal Shenandoah trails to this card."
     },
     "lexington-va": {
       "activities": {
@@ -6861,7 +6890,17 @@
           "auto": true,
           "auto_km": 35
         }
-      }
+      },
+      "authority": "National Park Service — Shenandoah / Blue Ridge Parkway",
+      "dogs_verdict": "allowed",
+      "official_links": [
+        {
+          "label": "Pets in Shenandoah",
+          "url": "https://www.nps.gov/shen/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery."
     },
     "new-river-gorge-wv": {
       "activities": {
@@ -7068,7 +7107,19 @@
           "auto": true,
           "auto_km": 32
         }
-      }
+      },
+      "authority": "National Park Service — Great Smoky Mountains",
+      "dogs_verdict": "prohibited",
+      "official_links": [
+        {
+          "label": "Pets in the Smokies",
+          "url": "https://www.nps.gov/grsm/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ],
+      "dogs": "PROHIBITED on trails, with exactly two exceptions: the Gatlinburg Trail and the Oconaluftee River Trail. Leash 6 ft on those. NPS actively discourages bringing pets because most trails are off-limits.",
+      "dogs_exception": "Gatlinburg Trail and Oconaluftee River Trail only.",
+      "dogs_note": "Oconaluftee is the accessible one from this side — the Bryson City stop already names the Oconaluftee Visitor Center in its highlights, so the dog-legal walk is the one you were going to anyway."
     },
     "chattanooga-tn": {
       "activities": {

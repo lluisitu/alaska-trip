@@ -3348,7 +3348,13 @@
           "auto": true,
           "auto_km": 93
         }
-      }
+      },
+      "not_a_trail": [
+        {
+          "entry": "Olympic road conditions",
+          "problem": "A road-status link, not a trail. Belongs with the stop notes."
+        }
+      ]
     },
     "yosemite": {
       "authority": "National Park Service",
@@ -3474,7 +3480,38 @@
         }
       ],
       "dogs": "PROHIBITED on all hiking trails, ski trails and in the inner canyon — with one exception, the Rim Rock Trail, leash 6 ft. And that exception is itself closed to dogs in summer because of deer defending fawns.",
-      "dogs_exception": "Rim Rock Trail only, and not in summer — deer with fawns."
+      "dogs_exception": "Rim Rock Trail only, and not in summer — deer with fawns.",
+      "trails": [
+        {
+          "name": "Oak Flat Loop Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/colorado/oak-flat-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.5 mi",
+          "difficulty": "Moderate",
+          "elevation_gain": "334 ft",
+          "reviews": "1,434",
+          "uses": [
+            "hike"
+          ],
+          "was": "Oak Flat Trail — no url",
+          "note_source": "Dogs prohibited — Black Canyon allows them only on Rim Rock, and not in summer."
+        },
+        {
+          "name": "Warner Point Nature Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Warner Point Nature Trail — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "joshua-tree": {
       "authority": "National Park Service",
@@ -4219,6 +4256,16 @@
           ],
           "was": "Grasshopper Pass from Harts Pass — no url",
           "note_source": "Harts Pass road is the highest drivable road in Washington and is not coach ground — truck only, and it closes early with snow. No direct listing url surfaced."
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Cutthroat Lake",
+          "problem": "Superseded — folded into the Cutthroat Lake and Cutthroat Pass entry, the single listed route."
+        },
+        {
+          "entry": "Cutthroat Pass via PCT",
+          "problem": "The same route as the entry above, under a second name."
         }
       ]
     },
@@ -5255,6 +5302,16 @@
           ],
           "note_source": "Valley of Fire State Park — no direct url surfaced."
         }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Calico Tanks Trail (Red Rock Canyon).",
+          "problem": "Duplicate of the Calico Tanks Trail entry, which carries the listing."
+        },
+        {
+          "entry": "Fire Wave and White Domes trails (Valley of Fire).",
+          "problem": "Duplicate — both are separate entries now."
+        }
       ]
     },
     "borrego-springs": {
@@ -5296,7 +5353,33 @@
           "auto": true,
           "auto_km": 9
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Betty's Kitchen National Recreation Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Betty's Kitchen National Recreation Trail — no url",
+          "note_source": "A short interpretive loop on the Colorado below Imperial Dam. No direct listing url surfaced in search. Name kept; no constructed slug."
+        },
+        {
+          "name": "Painted Desert Trail, Imperial NWR",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Painted Desert Trail, Imperial NWR — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "yuma-az": {
       "activities": {
@@ -5901,7 +5984,42 @@
           "auto": true,
           "auto_km": 71
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Animas River Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/colorado/animas-river-trail-675",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "6.2 mi out-and-back",
+          "time": "1 h 52 min",
+          "difficulty": "Easy",
+          "reviews": "1,063",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "was": "Animas River Trail — no url",
+          "note_source": "Paved urban river path through Durango — flat, easy and bike-legal.",
+          "cruise": "candidate",
+          "cruise_reason": "A paved, flat 6.2 mi river path rated Easy — the shape that has produced every confirmed cruise on this trip. Paved rather than gravel, so check it suits the dog carrier, but it is the strongest candidate on leg 6."
+        },
+        {
+          "name": "Horse Gulch Trail System",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "was": "Horse Gulch Trail System — a system, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "pagosa-springs": {
       "activities": {
@@ -5938,7 +6056,33 @@
           "auto": true,
           "auto_km": 159
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Treasure Falls",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Treasure Falls Trailhead — a trailhead, not a trail",
+          "note_source": "San Juan National Forest, off US-160 about 15 miles north-east of Pagosa Springs. AllTrails indexes it as a point of interest rather than a trail listing."
+        },
+        {
+          "name": "Piedra River Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Piedra River Trailhead — a trailhead, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "salida-co": {
       "activities": {

@@ -540,18 +540,31 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was in the Nenana River valley south of the park entrance, off the park road entirely. Moved to the Savage River day-use area at Mile 15 — the end of the private-vehicle section, which is what the narrative describes."
+      },
+      "Mount Healy ridge at last light": {
+        "fix": {
+          "light": "Sunset is 23:03 on 29 July and 22:41 on 5 August — 11 to 33 minutes later than the \"around 10:30pm\" the card said. So \"the last two hours of light\" runs later than written and the descent is a midnight return, not a twilight one. The headtorch note was right; the schedule under it was an hour optimistic."
+        },
+        "resolves": [
+          "SUN TIME"
+        ],
+        "fix_why": "An hour of optimism on a ridge descent is the kind that gets found out in the dark."
       }
     },
     "packwood": {
       "Naches Peak Loop — crimson huckleberry and Rainier in the tarn": {
         "fix": {
           "lat": 46.8697,
-          "lng": -121.5192
+          "lng": -121.5192,
+          "subject": {
+            "append": "SEASON CAUTION: 9-16 October is the LATE edge for subalpine huckleberry at 5,400-5,850 ft, with a real chance of brown slopes rather than scarlet. Treat the vine-maple and Ohanapecosh version as the fallback plan, not the bonus."
+          }
         },
         "resolves": [
-          "COORDINATE"
+          "COORDINATE",
+          "SEASON"
         ],
-        "fix_why": "Wrong pass, 28 km off: the pin was White Pass on US-12, copied from the trip POI. Naches Peak starts at Tipsoo Lake on Chinook Pass, a different highway reached via SR-123 and Cayuse Pass. A 5am arrival at the wrong pass loses the alpenglow with no recovery."
+        "fix_why": "The card called this window \"precisely\" right; it is the late edge of it."
       },
       "Reflection Lakes before the wind": {
         "fix": {
@@ -574,6 +587,17 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was 4.5 km north up toward US-26. Moved to the lake and its dam viewpoint. The whole shot is 20 minutes of alpenglow on a pre-dawn arrival."
+      },
+      "Spawning coho through the underwater window, Wildwood": {
+        "fix": {
+          "caution": {
+            "append": "CORRECTION: BLM lists Wildwood as a YEAR-ROUND day-use site, seven days a week, 8am to half an hour before sunset. The old closure caution would have made you skip an available shot. The 8am opening does rule out any first-light plan but not the overcast-midday one. The Streamwatch window and November coho timing both check out."
+          }
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "Wrong in the direction that costs you the shot entirely."
       }
     },
     "yosemite": {
@@ -590,6 +614,15 @@
           "COORDINATE"
         ],
         "fix_why": "Two errors. The pin was the Lower Yosemite Fall trailhead, 800 m away on the wrong side of the village — moved to Sentinel Bridge. And the stated 16:10-16:35 window ENDS 6-8 minutes before the sun actually sets on 19-23 Dec (16:41-16:43), when alpenglow on the face peaks at and just after true sunset."
+      },
+      "Bridalveil in a winter wind": {
+        "fix": {
+          "light": "Shade and soft light, not backlit spray. On 19-23 December the sun never clears the south rim into the Bridalveil amphitheatre — it is in shade all day. Backlit spray there is a spring and summer picture. Plan the shade frame and the ice-rimed boulder foreground instead, which is the version December gives."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "The stated light does not exist on these dates at this latitude and season."
       }
     },
     "stewart-hyder": {
@@ -1634,6 +1667,63 @@
           "SUN TIME"
         ],
         "fix_why": "Two independent errors compounding in the same direction."
+      }
+    },
+    "fairbanks-1": {
+      "Sandhill crane colts at Creamer's Field": {
+        "fix": {
+          "subject": {
+            "append": "EXPECTATION: late June is the THINNEST crane period of the year here — the spectacle is spring (late April-May) and autumn (mid-Aug-Sept). Expect one or two family groups feeding quietly, with colts still small and cinnamon rather than leggy. Worth doing, but below the midnight-sun and North Pole frames in priority."
+          }
+        },
+        "resolves": [
+          "SEASON"
+        ],
+        "fix_why": "The shot promised a spectacle that happens two months either side of this visit."
+      }
+    },
+    "tok-2": {
+      "First aurora of the trip, mirrored in a Tetlin lake": {
+        "fix": {
+          "light": "No true darkness, and the odds are lower than the card implied. On 27-28 Aug at 63.16N the sun bottoms out at -17.1 degrees — astronomical dark never arrives. Combined with residual twilight in the northern sky, exactly where you are told to point, a faint arc washes out; only a strong Kp 4+ display registers. On a one-night stop that materially changes the odds.",
+          "vantage": {
+            "append": "CONTRADICTION: the Nutzotin and Mentasta ranges lie SOUTH of the Alaska Highway, so the mountain backdrop and the northern aurora sky are in opposite directions from these overlooks. Scout a separate north-facing pond in daylight rather than assuming one vantage does both jobs."
+          }
+        },
+        "resolves": [
+          "SEASON / DARKNESS",
+          "VANTAGE CONTRADICTION"
+        ],
+        "fix_why": "Two findings: darkness that does not arrive, and a composition whose two halves face opposite ways.",
+        "tags": [
+          "night",
+          "aurora",
+          "needs clear sky"
+        ]
+      }
+    },
+    "dease-lake": {
+      "Frost mist on Dease Lake at dawn": {
+        "fix": {
+          "light": "Sunrise is 07:16-07:18 on 18-19 Sept, azimuth 85 — not \"around 6:45am\". Following the old \"be in place 45 minutes before\" put you on an unlit shore at 06:00 in the cold for nothing. And backlit mist needs the sun over your right shoulder shooting north-west, or a west-shore pull-out."
+        },
+        "resolves": [
+          "SUN TIME + VANTAGE GEOMETRY"
+        ],
+        "fix_why": "Half an hour early in the dark at freezing point, for a light direction that also did not work. The given coordinate is slightly south of the lake's actual south end — left alone rather than nudged to a guess."
+      }
+    },
+    "patagonia-sonoita": {
+      "Bare cottonwoods on Sonoita Creek": {
+        "fix": {
+          "caution": {
+            "append": "FATAL AS SCHEDULED: the Nature Conservancy preserve is closed Mondays and Tuesdays year-round, and 28-29 Feb 2028 are Monday and Tuesday. Oct-Mar hours are 7:30am-4pm and there is an unmentioned $8/person fee. Either shoot the Paton Center or Sonoita Creek State Natural Area (dawn-to-dusk), or accept mid-morning light on the single open day."
+          }
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "Two of the three days on this stop fall on the preserve's closed days, and the fee was unmentioned."
       }
     }
   },

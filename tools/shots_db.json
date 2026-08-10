@@ -1377,6 +1377,144 @@
         ],
         "fix_why": "The old coordinate sat beyond the Upper Lehman winter gate that the shot's own caution says not to drive past. Moved to the gate itself, which the finding names."
       }
+    },
+    "custer-sd": {
+      "Red dogs on the Wildlife Loop": {
+        "fix": {
+          "light": "Backlit. Camera faces E and sunrise is at azimuth 57 — 33 degrees apart — so the calves are rim-lit through dust and breath rather than front-lit. Expose for the highlights and let the bodies go dark."
+        },
+        "resolves": [
+          "Sun check"
+        ],
+        "fix_why": "Described front-light the geometry cannot give."
+      },
+      "Rushmore framed in an Iron Mountain tunnel": {
+        "fix": {
+          "facing": "NW"
+        },
+        "resolves": [
+          "SUN/COMPASS GEOMETRY"
+        ],
+        "fix_why": "The Iron Mountain tunnels sit south-east of Rushmore, so the framing shot looks NW. Everything else in the entry is consistent with standing SE and shooting NW — only the facing field contradicted it, and anyone pre-planning from that field would scout the wrong side of the road."
+      },
+      "Full moon rising behind the Cathedral Spires": {
+        "fix": {
+          "light": "Evening of 6 JUNE, not later — full moon is 7 June 2028 06:08 UTC, so the 6th is the night the moon rises near sunset. And shoot from NORTH-WEST of a formation facing SE: the moon rises in the south-east, and from the Cathedral Spires trailhead on SD-87 the spires are to your west, so a SE moonrise cannot be behind them from there."
+        },
+        "resolves": [
+          "SEASON/TIMING + SUN-MOON GEOMETRY"
+        ],
+        "fix_why": "Two days late and pointed the wrong way — the two errors compound into a shot that cannot be made as written.",
+        "tags": [
+          "night",
+          "moon-dependent"
+        ]
+      }
+    },
+    "bayfield-wi": {
+      "Mainland sea caves from the water": {
+        "fix": {
+          "subject": {
+            "from": "Red Devonian sandstone",
+            "to": "Red Cambrian sandstone (the Bayfield Group — Orienta, Devils Island and Chequamegon formations)"
+          }
+        },
+        "resolves": [
+          "FACTUAL"
+        ],
+        "fix_why": "Wrong geological period by roughly half a billion years. The rest of the entry is sound: shooting S from a kayak is right, and the late-afternoon bounce-light call is correct for a north-facing cliff."
+      },
+      "Milky Way over Lake Superior from Big Bay": {
+        "fix": {
+          "light": "Best hour is 22:15-23:45 — core transit computes to ~23:15, so the old \"highest around 23:30-01:00\" drifts past the peak. And the moon is not as thin as stated: last quarter is 14 July 2028, so on the 15th it is 44% lit rising 00:12 and still significant on the 16th. The genuinely dark window is early, before moonrise."
+        },
+        "resolves": [
+          "MOON"
+        ],
+        "fix_why": "Overstated the darkness on the only nights available before departure on the 17th.",
+        "tags": [
+          "night",
+          "astro",
+          "moon-dependent",
+          "needs clear sky"
+        ]
+      }
+    },
+    "saratoga": {
+      "Steam off the Hobo Pool at first light": {
+        "fix": {
+          "facing": "E",
+          "light": "Shoot EAST into the low sun. Sunrise on 18 April is 06:23 at azimuth 75 (ENE), so the old west-facing frame puts the sun squarely behind the camera — flat frontal light, the one condition where rising steam does not read. Backlit steam is the whole picture here."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "A sub-freezing dawn committed to a frame that could not be lit as described."
+      }
+    },
+    "dawson-creek": {
+      "Kiskatinaw curved timber bridge": {
+        "fix": {
+          "subject": {
+            "from": "built by the US Army in 1942-43",
+            "to": "built by Dow Construction of Toronto in 1942-43 (not the US Army — the shot's own cited reference says so)"
+          }
+        },
+        "resolves": [
+          "FACT / ATTRIBUTION"
+        ],
+        "fix_why": "The entry contradicted the source it cited."
+      }
+    },
+    "tok-1": {
+      "Near-midnight light over the Tetlin wetlands": {
+        "fix": {
+          "subject": {
+            "append": "NOTE: the near-midnight sun is NW and the mountain backdrop is S — they are not in the same frame. Choose the light or the mountains."
+          },
+          "vantage": {
+            "append": "DISTANCE: verify which pull-outs you mean before committing — this is a ONE-NIGHT stop with a 22:30-00:30 window and a competing moose shot on the same road, and the difference between an 80-mile and a 150-mile round trip decides whether the stop works at all."
+          }
+        },
+        "resolves": [
+          "ACCESS / DISTANCE",
+          "ORIENTATION"
+        ],
+        "fix_why": "Two findings on one shot: a composition that does not exist, and a drive length that decides whether the night is usable at all."
+      }
+    },
+    "fairbanks-2": {
+      "First aurora of the season": {
+        "fix": {
+          "light": "Narrower than written, and for a different reason. The season does not restart because \"the nights get astronomically dark around 20-21 August\" — and on this four-night stay a waning gibbous at 58% sits 15-27 degrees up on the first two nights. Plan the attempts for the last two nights, after moonset, and treat the sample as small."
+        },
+        "resolves": [
+          "SEASON"
+        ],
+        "fix_why": "The stated reason for the window was wrong and the usable window is half what was implied.",
+        "tags": [
+          "night",
+          "aurora",
+          "moon-dependent",
+          "needs clear sky"
+        ]
+      }
+    },
+    "boya-lake": {
+      "Aurora over still water": {
+        "fix": {
+          "light": "FULL MOON falls on the middle night of this stay — 15 Sept 2027. The whole point is a dark sky mirrored in still water, and the lake will be carrying the moon instead. Either drop this shot or re-pace the stop by about a week; there is no version of it that works on these dates."
+        },
+        "resolves": [
+          "SEASON/DATE"
+        ],
+        "fix_why": "Not a wording problem — the dates and the shot are incompatible, and the still-water concept makes it worse rather than better.",
+        "tags": [
+          "night",
+          "aurora",
+          "moon-dependent"
+        ]
+      }
     }
   },
   "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong.",

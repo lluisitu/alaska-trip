@@ -3377,7 +3377,33 @@
           "auto": true,
           "auto_km": 30
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Lower Yosemite Fall Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Lower Yosemite Fall Trail — no url",
+          "note_source": "Paved and one of the few Yosemite trails where DOGS ARE PERMITTED. No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Valley Loop Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Valley Loop Trail — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "great-basin": {
       "authority": "National Park Service",
@@ -4085,7 +4111,21 @@
           "auto": true,
           "auto_km": 6
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Frosty Mountain Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Frosty Mountain Trail (Manning Park) — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "winthrop": {
       "activities": {
@@ -4100,7 +4140,87 @@
           "auto": true,
           "auto_km": 3
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Maple Pass Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/maple-pass-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "6.8 mi loop",
+          "time": "4 h 14 min",
+          "difficulty": "Challenging",
+          "reviews": "4.9 (15,207)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Maple Pass Loop — no url",
+          "note_source": "The larch stop exists for this. Most popular and hardest trail in Winthrop, and the fall colour is why 3 Oct is a frozen date."
+        },
+        {
+          "name": "Blue Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/blue-lake-trail--7",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.6 mi",
+          "time": "2.5-3 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "921 ft",
+          "reviews": "8,279",
+          "uses": [
+            "hike"
+          ],
+          "was": "Blue Lake Trail — no url"
+        },
+        {
+          "name": "Goat Peak Lookout Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/goat-peak-lookout-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.6 mi out-and-back",
+          "time": "2 h 33 min",
+          "difficulty": "Challenging",
+          "reviews": "454",
+          "uses": [
+            "hike"
+          ],
+          "was": "Goat Peak Lookout — no url"
+        },
+        {
+          "name": "Cutthroat Lake and Cutthroat Pass",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/cutthroat-lake-and-cutthroat-pass",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "11.6 mi out-and-back",
+          "time": "5 h 52 min",
+          "difficulty": "Challenging",
+          "reviews": "593",
+          "uses": [
+            "hike"
+          ],
+          "was": "Cutthroat Lake and Cutthroat Pass via PCT — two entries for one route"
+        },
+        {
+          "name": "Grasshopper Pass from Harts Pass",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Grasshopper Pass from Harts Pass — no url",
+          "note_source": "Harts Pass road is the highest drivable road in Washington and is not coach ground — truck only, and it closes early with snow. No direct listing url surfaced."
+        }
+      ]
     },
     "packwood": {
       "activities": {
@@ -4115,7 +4235,33 @@
           "auto": true,
           "auto_km": 20
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Packwood Lake Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Packwood Lake Trailhead — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Snowgrass Flat Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Snowgrass Flat Trailhead — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "silver-lake": {
       "activities": {
@@ -4141,7 +4287,33 @@
           "auto": true,
           "auto_km": 49
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Ape Cave",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Ape Cave — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Hummocks Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Hummocks Trailhead — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "forks": {
       "activities": {
@@ -4211,7 +4383,54 @@
           "auto": true,
           "auto_km": 0
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Hall of Mosses Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/hoh-rain-forest-hall-of-moss",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.1 mi",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "82 ft",
+          "reviews": "4.8 (11,052)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Hoh Rainforest Visitor Center / Hall of Mosses — a visitor centre and a trail in one entry"
+        },
+        {
+          "name": "Sol Duc Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/sol-duc-falls-nature-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.8 mi",
+          "elevation_gain": "262 ft",
+          "reviews": "4.8 (10,148)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Sol Duc Falls Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "Rialto Beach to Hole-in-the-Wall",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "1.5 mi each way",
+          "uses": [
+            "hike"
+          ],
+          "was": "Rialto Beach — no url",
+          "note_source": "No formal trail — you walk the beach itself to Split Rock and Hole-in-the-Wall. Tide-dependent, and this is one of the six Olympic trails where DOGS ARE PERMITTED (Rialto to Ellen Creek)."
+        }
+      ]
     },
     "long-beach": {
       "activities": {
@@ -4248,7 +4467,21 @@
           "auto": true,
           "auto_km": 26
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Discovery Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Discovery Trail (Long Beach trailhead) — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "cannon-beach": {
       "activities": {
@@ -4366,7 +4599,56 @@
           "auto": true,
           "auto_km": 2
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Wahclella Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/oregon/wahclella-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.9 mi",
+          "time": "0.5-1 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "308 ft",
+          "reviews": "4.8 (8,915)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Wahclella Falls Trailhead — a trailhead, not a trail"
+        },
+        {
+          "name": "Dog Mountain Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/washington/dog-mountain-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.9 mi",
+          "time": "5-5.5 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "2,824 ft",
+          "reviews": "7,831",
+          "uses": [
+            "hike"
+          ],
+          "was": "Dog Mountain Trailhead — a trailhead, not a trail",
+          "note_source": "Permit required on spring weekends for the wildflower season; the stop is late October, outside that."
+        },
+        {
+          "name": "Catherine Creek",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Catherine Creek — no url",
+          "note_source": "The arch and oak-savanna bench. No direct listing url surfaced; the WTA trailhead coordinate is in the shot-list correction for this stop."
+        }
+      ]
     },
     "welches": {
       "activities": {
@@ -4403,7 +4685,38 @@
           "auto": true,
           "auto_km": 3
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Ramona Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/oregon/ramona-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "7.4 mi",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,072 ft",
+          "reviews": "4.8 (8,786)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Ramona Falls — no url",
+          "note_source": "Seasonal footbridge over the Sandy River is removed in winter — the stop is 6-9 Nov, so check before going."
+        },
+        {
+          "name": "Mirror Lake Trail #664",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Mirror Lake / Glacier View Trailhead — a trailhead, not a trail",
+          "note_source": "From the Mirror Lake trailhead near Government Camp; continues to Tom, Dick and Harry Mountain. No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "bend": {
       "activities": {
@@ -4473,7 +4786,33 @@
           "auto": true,
           "auto_km": 1
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Smith Rock State Park",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Smith Rock State Park — a park, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Todd Lake",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Todd Lake — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "newport": {
       "activities": {
@@ -4521,7 +4860,21 @@
           "auto": true,
           "auto_km": 58
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Cobble Beach / Quarry Cove tide pools",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Cobble Beach / Quarry Cove Tide Pools — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "bandon": {
       "activities": {
@@ -4569,7 +4922,21 @@
           "auto": true,
           "auto_km": 8
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Cape Blanco Loop",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Cape Blanco Loop Trailhead — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "crescent-city": {
       "activities": {
@@ -4606,7 +4973,45 @@
           "auto": true,
           "auto_km": 21
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Stout Grove",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Stout Grove — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Damnation Creek Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Damnation Creek Trailhead — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Fern Canyon Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Fern Canyon Trailhead (Gold Bluffs Beach) — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "fort-bragg": {
       "activities": {
@@ -4665,7 +5070,33 @@
           "auto": true,
           "auto_km": 0
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Jug Handle State Natural Reserve",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Jug Handle State Natural Reserve — a reserve, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Russian Gulch Falls Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Russian Gulch State Park (waterfall trailhead) — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "marina": {
       "activities": {
@@ -4735,7 +5166,33 @@
           "auto": true,
           "auto_km": 11
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Point Lobos State Natural Reserve",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Point Lobos State Natural Reserve — a reserve, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Badger Hills Trail, Fort Ord",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Fort Ord National Monument (Badger Hills Trailhead) — a trailhead",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     },
     "vegas-area": {
       "activities": {
@@ -7935,6 +8392,34 @@
           "auto_km": 32
         }
       }
+    },
+    "lone-pine": {
+      "trails": [
+        {
+          "name": "Mobius Arch Loop",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Mobius Arch Loop — no url",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        },
+        {
+          "name": "Alabama Hills Movie Road",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Alabama Hills Movie Road — a road, not a trail",
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ]
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",

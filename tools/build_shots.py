@@ -122,6 +122,14 @@ def main():
     raw = ex(h, 'const PHOTO =')
     PHOTO = json.loads(raw)
 
+    # A db key that matches no shot is a silent no-op: the correction is written,
+    # looks applied, and never reaches the card. One title was mistyped from a
+    # truncated console listing and sat unapplied through three commits.
+    ghosts = [f"{sid}/{t}" for sid, shots in over.items()
+              for t in shots if t not in {x['title'] for x in PHOTO.get(sid, [])}]
+    if ghosts:
+        sys.exit('!! shots_db keys matching no shot:\n  ' + '\n  '.join(ghosts))
+
     tagged = pinned = linked = overridden = fixed = resolved = 0
     unlocated = []
     for sid, shots in PHOTO.items():

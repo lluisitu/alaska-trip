@@ -117,7 +117,17 @@
         "addTags": [
           "no dogs"
         ],
-        "why": "Roadside, so the dog can be in the truck — but the tag keeps the rule visible on the stop where it bites hardest."
+        "why": "Roadside, so the dog can be in the truck — but the tag keeps the rule visible on the stop where it bites hardest.",
+        "fix": {
+          "facing": "E",
+          "vantage": {
+            "append": "Shoot from the pull-outs looking EAST across the meadow, with the light coming toward you — sunrise here is at azimuth 77 (ENE), so the W-facing frame the card described puts the sun behind the camera and gives flat frontal light, not the rim-light it promises."
+          }
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "The antler-drop premise and the 25 yd rule were both right; only the direction was wrong."
       }
     },
     "wind-river": {
@@ -385,7 +395,7 @@
         ],
         "fix_why": "Pin was 15.6 km up in the high country above Thompson Pass, past the canyon entirely. Moved to Richardson Highway MP 13-14, which is the 15 minutes from Valdez the shot claims rather than 30-35."
       },
-      "Allison Point — bears, sea lions and the terminal": {
+      "Allison Point — bears, sea lions and the end of the run": {
         "fix": {
           "facing": "W/NW"
         },
@@ -411,12 +421,18 @@
       "Full moon rising over the eastern canyon": {
         "fix": {
           "lat": 36.0323,
-          "lng": -111.8536
+          "lng": -111.8536,
+          "light": "NOT POSSIBLE ON THESE DATES. Full moon is 10 March 2028 at 18:06 MST and arrival is 12 March — two days after. The best moonrise-at-sunset nights were 9-11 March, all before you get there. By the 12th the moon rises well after sunset into a dark sky, which is exactly the circumstance the shot says makes an honest single-frame photograph impossible. Either move the stop or drop the shot."
         },
         "resolves": [
-          "COORDINATE"
+          "COORDINATE",
+          "FATAL"
         ],
-        "fix_why": "The text argues for Lipan Point over the Watchtower, then printed the Watchtower coordinate — navigating to it lands you at the viewpoint the shot just told you not to use. Moved to Lipan Point, 2.85 km west."
+        "fix_why": "The shot's whole premise is the one night when moonrise and sunset coincide. On this stay there is no such night, and the card presented it as the reason to be there.",
+        "tags": [
+          "night",
+          "moon-dependent"
+        ]
       }
     },
     "cannon-beach": {
@@ -580,6 +596,28 @@
           "COORDINATE / VANTAGE MISMATCH"
         ],
         "fix_why": "The pin was Mount Lemmon Ski Valley, 10.3 km away and ~2,500 ft above the saguaro belt — from there no cactus is visible and the shot cannot be made. The finding does not give a Windy Point coordinate and I will not supply one, so the pin is REMOVED rather than replaced. The vantage text still names Windy Point."
+      },
+      "Saguaro forest at Valley View, last light": {
+        "fix": {
+          "caution": {
+            "append": "NOTE: snow on the Catalinas CANNOT be in this frame — from Saguaro NP West the saguaro ranks face NW and the Catalinas bear ENE, 137 degrees apart. At sunset the Catalinas are behind your right shoulder. Pick one or the other."
+          }
+        },
+        "resolves": [
+          "SUN/SITE GEOMETRY"
+        ],
+        "fix_why": "The caution promised a combination no lens can produce from this vantage."
+      },
+      "Tent city on the frontage road — the Gem Show": {
+        "fix": {
+          "vantage": {
+            "append": "DATES UNRESOLVED: the body asserted the 2027 show (11-14 Feb) while this stay is 2028, and the caution then says to verify the 2028 dates — two contradictory claims. Verify with the Tucson Gem & Mineral Society before planning around it."
+          }
+        },
+        "resolves": [
+          "DATES"
+        ],
+        "fix_why": "The card gave the wrong year and the wrong days, then told you to check the year it had not used. Neither claim is actionable, so the card now says that plainly rather than picking one."
       }
     },
     "kluane-2": {
@@ -1123,6 +1161,82 @@
           "ORIENTATION"
         ],
         "fix_why": "The facing tag was right and the word \"upstream\" was wrong — the pulp mill bears 67 degrees ENE from Cottonwood Island, which is downstream. As written the two directions sent you to opposite ends of the park in the dark."
+      }
+    },
+    "death-valley": {
+      "Salt polygons under a moonless sky": {
+        "fix": {
+          "facing": "WSW",
+          "light": "Aim WSW at Telescope Peak, not north — from Badwater the peak bears 257 degrees, so the old \"90 minutes of 30s frames aimed north over Telescope Peak\" is geometrically impossible and the facing: S tag contradicted both. And the stay is NOT all moonless: new moon falls 27 Dec, the day before arrival, so a 16-24% crescent sits over the Panamints until well after 20:30 on 31 Dec and 1 Jan — lighting the salt and washing exactly the part of the sky this shot wants black. The first nights are the dark ones."
+        },
+        "resolves": [
+          "SEASON/MOON",
+          "SUN/SKY GEOMETRY"
+        ],
+        "fix_why": "Two findings on one shot: an impossible aim, and a moon claim that is wrong in the direction that costs you the frame. Star trails pivot on the celestial pole; from Badwater that is nowhere near Telescope Peak.",
+        "tags": [
+          "night",
+          "astro",
+          "needs clear sky",
+          "moon-dependent"
+        ]
+      }
+    },
+    "ouray": {
+      "Avalanche paths on Red Mountain Pass": {
+        "fix": {
+          "facing": "NW",
+          "light": "Late morning, facing NW at the EAST-facing paths across the valley. The old SE facing pointed the camera at NW-facing slopes — the opposite aspect to the one the shot says will be lit and showing debris-cone relief. At 10:00-11:00 on these dates the sun is at azimuth 111-130, which rakes the east-facing paths."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "Facing and stated subject were on opposite sides of the valley."
+      },
+      "Inside the Box Canyon slot": {
+        "fix": {
+          "difficulty": "may be closed",
+          "caution": {
+            "append": "LIKELY CLOSED for this entire stay: the City of Ouray publishes Box Canyon Falls as closed from early November, with the published season implying it does not reopen until May. Arrival is 10-15 April 2028. Confirm with the city before counting on it."
+          }
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "The card read this as a minor uncertainty and rated it a short walk. The published season says the gate is locked for the whole visit."
+      }
+    },
+    "duluth-mn": {
+      "A thousand-footer under the Lift Bridge": {
+        "fix": {
+          "light": "Backlit. Camera faces NE and sunrise is at azimuth 54 — nine degrees apart — so the ship and the bridge are shapes against the light, not front-lit. That suits the subject: expose for the sky, let the hull and the lift span go to silhouette, and use the water for reflected colour."
+        },
+        "resolves": [
+          "Sun check"
+        ],
+        "fix_why": "Nine degrees off the sun is as backlit as it gets; the card described the opposite."
+      }
+    },
+    "jasper": {
+      "Black spar forest above the townsite": {
+        "fix": {
+          "subject": {
+            "append": "SEASON NOTE: the fireweed and green understory described here is a July/August subject. On 4-9 June the burn will show black verticals over residual snow and new grass, not the colour layer — plan for the starker version."
+          }
+        },
+        "resolves": [
+          "SEASON MISMATCH"
+        ],
+        "fix_why": "The fire facts and the ethics caution are correct; the recovery vegetation is a month or two ahead of these dates."
+      },
+      "Athabasca Falls at peak melt": {
+        "fix": {
+          "facing": "S/SSW"
+        },
+        "resolves": [
+          "VANTAGE ORIENTATION"
+        ],
+        "fix_why": "The river arrives from the SSW and exits the quartzite slot to the NNE, and the lower platforms sit downstream — so \"looking back up the slot\" from them faces S/SSW, not N. Everything else is sound: early June is genuine peak melt and the 1/2 s call over a 6-stop ND is right for structured meltwater."
       }
     }
   },

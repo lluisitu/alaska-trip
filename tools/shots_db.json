@@ -1238,6 +1238,145 @@
         ],
         "fix_why": "The river arrives from the SSW and exits the quartzite slot to the NNE, and the lower platforms sit downstream — so \"looking back up the slot\" from them faces S/SSW, not N. Everything else is sound: early June is genuine peak melt and the 1/2 s call over a 6-stop ND is right for structured meltwater."
       }
+    },
+    "kluane-1": {
+      "King's Throne cirque, late evening": {
+        "fix": {
+          "subject": {
+            "append": "NOTE: Kathleen Lake and the Icefield Ranges are NOT in the same frame — the lake is NE of the cirque rim and the Icefields (Logan, Kaskawulsh) are the other way. Pick one."
+          },
+          "light": {
+            "append": "Timing runs later than stated: computed sunset on 23 June is ~23:39 and sunrise ~04:39, about 25 and 20 minutes later than the 23:15 / 04:20 written here."
+          }
+        },
+        "resolves": [
+          "GEOGRAPHY"
+        ],
+        "fix_why": "Two subjects in opposite directions presented as one frame, and the evening window understated."
+      },
+      "Kathleen Lake at midnight": {
+        "fix": {
+          "light": "Facing SW at the cirque, this is a dim blue-hour SIDE light, not the warm low sun the subject implied — those two halves of the frame are in opposite directions. Either turn north over the lake and lose the cirque, or keep the cirque and shoot it honestly as blue hour. The moon call is right: waning gibbous on 23 June, full on the 19th."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "The card promised light that only exists in the direction the camera is not pointing."
+      }
+    },
+    "ninilchik": {
+      "Holy Transfiguration above Cook Inlet": {
+        "fix": {
+          "facing": "NW",
+          "vantage": {
+            "append": "Shoot from the SOUTH-EAST / inland side of the churchyard looking NW — Redoubt bears 309 and Iliamna 268 from the church, so neither is in a SW frame."
+          }
+        },
+        "resolves": [
+          "SUN GEOMETRY + INTERNALLY CONTRADICTORY VANTAGE"
+        ],
+        "fix_why": "Facing SW put both volcanoes outside the frame. The classic composition is from the inland side looking north-west."
+      },
+      "Tractor launch at Deep Creek": {
+        "fix": {
+          "light": "Front light or flat overcast, not back-light. Deep Creek beach faces W into Cook Inlet and in late July the morning sun is low and to the north-east, behind you — straight down the working lane. The tide may force a morning launch, but describe the light for what it is."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "Back-light on a west-facing beach in the morning is not available."
+      }
+    },
+    "mccarthy": {
+      "McCarthy, the town and the people in it": {
+        "fix": {
+          "caution": {
+            "append": "CORRECTION: astronomical darkness has NOT returned at 61.4N by mid-August — combined with a waning gibbous still above 85% on the 23rd, aurora here is close to unavailable, not \"a bonus\". The rest of the moon note is right."
+          }
+        },
+        "resolves": [
+          "SEASON MISMATCH"
+        ],
+        "fix_why": "The darkness claim was the error; it turned an unavailable thing into an advertised one."
+      }
+    },
+    "osoyoos": {
+      "Spotted Lake rings from the viewpoint": {
+        "fix": {
+          "facing": "N"
+        },
+        "resolves": [
+          "VANTAGE ORIENTATION"
+        ],
+        "fix_why": "Spotted Lake is on the NORTH side of Highway 3 and the signed pull-out runs along its southern edge, so the view is north. Facing SE pointed away from the lake. Distance, the ONA ownership since 2001 and the do-not-pass-the-fence caution were all correct — only the bearing was wrong, and with no option to reposition it has to be right."
+      }
+    },
+    "fort-bragg": {
+      "Point Cabrillo Light at the solstice sunset": {
+        "fix": {
+          "caution": {
+            "append": "NOT SHOOTABLE inside park hours: Point Cabrillo Light Station SHP is open sunrise to sunset, and the lit-lens frame needs the lamp on after dark. Arrange access with the docents in advance or drop that frame. Sunset azimuth is 240.9 (WSW), not \"almost due south-west\"."
+          }
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "The specified frame requires being inside a park that closes at the moment the shot becomes possible."
+      },
+      "Southbound grays from the headland": {
+        "fix": {
+          "light": "Low afternoon sun to the WSW, shooting into it. The entry contradicted itself — \"late morning with the sun behind you\" immediately followed by \"a blow needs side- or back-light to register\". A blow only reads backlit, so take the afternoon light (sunset azimuth ~241) rather than the flat morning. The watcher-with-a-scope fallback is unaffected and still good."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "One entry gave opposite instructions two sentences apart."
+      }
+    },
+    "joshua-tree": {
+      "Orion over monzogranite, not the Milky Way": {
+        "fix": {
+          "light": "The moon inverts this, so pick a plan. First quarter is 4 Jan 2028 (17:40 PST), not \"by the 8th\" — illumination is 35% on 3 Jan setting 23:21, 45% on the 4th. So either accept moonlight on the granite and shoot Orion in the ESE early on 3-4 Jan, or wait until after 23:20 on 3 Jan and recompose south. What you cannot do is have both a dark sky and the early-evening Orion position."
+        },
+        "resolves": [
+          "MOON DATA WRONG"
+        ],
+        "fix_why": "The moon dates were wrong in the direction that reverses the advice.",
+        "tags": [
+          "night",
+          "astro",
+          "moon-dependent",
+          "needs clear sky"
+        ]
+      }
+    },
+    "chiricahua-willcox": {
+      "Cranes lifting off the Willcox playa": {
+        "fix": {
+          "craft": {
+            "append": "NOTE: the \"west with the sun behind you for lit birds against the Dos Cabezas\" alternative does not exist — the Dos Cabezas are the INTO-THE-SUN direction at dawn, so that backdrop is the silhouette option only."
+          }
+        },
+        "resolves": [
+          "GEOGRAPHY"
+        ],
+        "fix_why": "The alternative frame put the range and the light in the same direction. Sunrise time and the season caveat were both correct."
+      }
+    },
+    "great-basin": {
+      "Snow line and sagebrush": {
+        "fix": {
+          "lat": 39.011,
+          "lng": -114.244,
+          "light": {
+            "append": "NOTE: Wheeler Peak is WEST of Baker and Hwy 488, so this vantage faces W and sees the peak's EAST face — which is in shadow by late afternoon. Morning light is what lifts that face."
+          }
+        },
+        "resolves": [
+          "SUN GEOMETRY + COORDINATE PAST THE STATED CLOSURE"
+        ],
+        "fix_why": "The old coordinate sat beyond the Upper Lehman winter gate that the shot's own caution says not to drive past. Moved to the gate itself, which the finding names."
+      }
     }
   },
   "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong.",

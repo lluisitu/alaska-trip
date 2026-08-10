@@ -514,7 +514,9 @@
         "fix": {
           "facing": "N/NW"
         },
-        "fix_why": "Facing corrected: from anywhere on Salmon River Road the glacier and its elbow lie north to north-west, so the old S bearing pointed away from the subject. The coordinate is left alone and the flag stays OPEN — the finding could not resolve whether the pin is short of the summit viewpoint or the bearing was simply wrong, and guessing a replacement is how a wrong pin gets made."
+        "fix_why": "Facing corrected: from anywhere on Salmon River Road the glacier and its elbow lie north to north-west, so the old S bearing pointed away from the subject. The coordinate is left alone and the flag stays OPEN — the finding could not resolve whether the pin is short of the summit viewpoint or the bearing was simply wrong, and guessing a replacement is how a wrong pin gets made.",
+        "blocked": true,
+        "blocked_why": "The finding cannot say whether the pin is short of the summit viewpoint or the bearing is inverted, and gives no replacement coordinate. The bearing half is applied; the pin needs someone who has driven the Salmon River Road."
       },
       "Bear Glacier and its trimline — a retreat photograph": {
         "fix": {
@@ -832,6 +834,10 @@
           "astro",
           "needs clear sky"
         ]
+      },
+      "Mobius Arch, first light on Whitney": {
+        "blocked": true,
+        "blocked_why": "The shot has no lat/lng at all and the finding supplies none. It is a one-morning dawn commitment, 45 minutes early in the dark on graded dirt, on a loop the caution says is easy to lose. This needs a real coordinate, not a guess."
       }
     },
     "organ-pipe-ajo": {
@@ -978,5 +984,6 @@
       }
     }
   },
-  "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong."
+  "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong.",
+  "_blocked": "blocked:true marks a finding that cannot be applied without information nobody has published — usually a replacement coordinate. It counts toward `prog` in progress.py but never toward `have`, because closing it would mean inventing the number."
 }

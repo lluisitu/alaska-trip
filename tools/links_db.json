@@ -636,33 +636,25 @@
       "authority": "USFS / City of Salida / Chaffee County",
       "trails": [
         {
-          "name": "Midland Trail near Buena Vista",
-          "problem": "Ambiguous — three different Midland routes exist near Buena Vista and the entry does not say which.",
-          "candidates": [
-            {
-              "name": "Midland Railroad Grade (Historic)",
-              "url": "https://www.alltrails.com/trail/us/colorado/midland-railroad-grade-historic",
-              "stats": "8.8 mi point-to-point, moderate, 72 reviews, birding/hiking/MTB, dogs on leash",
-              "tier": "indexed",
-              "note": "Former rail grade — the gravel-cruise candidate of the three."
-            },
-            {
-              "name": "Midland Hill Trail",
-              "url": "https://www.alltrails.com/trail/us/colorado/midland-hill-trail",
-              "stats": "5.0 mi out-and-back, challenging, 4.7 (1,619)",
-              "tier": "indexed",
-              "note": "Buena Vista's most popular MTB climb — not cruising."
-            },
-            {
-              "name": "Midland Bike Trail",
-              "url": "https://www.alltrails.com/trail/us/colorado/midland-bike-trail--2",
-              "stats": "10.0 mi out-and-back, moderately challenging, 54 reviews",
-              "tier": "indexed"
-            }
+          "name": "Midland Railroad Grade (Historic)",
+          "cruise": "candidate",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/colorado/midland-railroad-grade-historic",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "8.8 mi point-to-point",
+          "time": "3 h 15 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "72",
+          "uses": [
+            "hike",
+            "bike"
           ],
-          "cruise_candidate": "Midland Railroad Grade (Historic)",
-          "cruise": "unconfirmed",
-          "cruise_next": "Read surface reports before flagging. A rail grade is the right shape but the surface has not been checked."
+          "dogs": true,
+          "cruise_reason": "A former rail grade, which is the shape that has produced every confirmed cruise on this trip. Dogs on leash per the listing. Surface not verified — check before committing to it as the dog-carrier ride here.",
+          "note_source": "Resolved from the ambiguous \"Midland Trail near Buena Vista\" — three different Midland routes exist there. Midland Hill (5.0 mi, challenging) and Midland Bike Trail (10.0 mi) are Buena Vista's MTB climbs; the rail grade is the one that suits this trip.",
+          "was": "Midland Trail near Buena Vista. — ambiguous, no url; three different Midland routes exist there"
         }
       ],
       "not_a_trail": [
@@ -673,6 +665,11 @@
         {
           "entry": "Browns Canyon river and upland routes.",
           "problem": "Prose. 'Routes' plural, no named trail."
+        },
+        {
+          "entry": "Midland Trail near Buena Vista.",
+          "problem": "Ambiguous prose — three different Midland routes exist near Buena Vista and this named none of them.",
+          "action": "Superseded by the Midland Railroad Grade (Historic) entry. Removed explicitly because an earlier build had already ADDED the new name under a different title, so the was-key matched that instead of this and left the original behind — a wrinkle of merge-never-replace worth knowing about."
         }
       ],
       "activities": {

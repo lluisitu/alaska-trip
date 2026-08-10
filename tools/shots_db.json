@@ -503,6 +503,31 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was at the dam end of the Little Hole trail, which would have you walking DOWNstream — the opposite of the stated approach, and the facing only makes sense from the real Little Hole trailhead 6 km ENE. Moved there."
+      },
+      "Red Canyon rim, first light on the far wall": {
+        "fix": {
+          "facing": "N",
+          "subject": {
+            "from": "Weber Sandstone",
+            "to": "Uinta Mountain Group quartzite and sandstone — the rock Powell named Flaming Gorge for (the Weber is at Sheep Creek, the next shot along)"
+          }
+        },
+        "resolves": [
+          "SUN GEOMETRY + COORDINATES"
+        ],
+        "fix_why": "The rim trail and visitor-centre overlook are on the SOUTH rim looking NORTH across the reservoir, so the whole orientation was inverted — and the named formation belonged to the neighbouring shot."
+      },
+      "Sheep Creek Canyon — the Uinta Fault stood on end": {
+        "fix": {
+          "reference": null,
+          "caution": {
+            "append": "The Sheep Creek Geologic Loop road is CLOSED IN WINTER — load-bearing for a 20-24 April visit. Confirm with the Manila FS office, 435-784-3445."
+          }
+        },
+        "resolves": [
+          "REFERENCE"
+        ],
+        "fix_why": "The reference was a soft 404 — it served the site homepage rather than a Sheep Creek page, so it looked alive while carrying none of the facts cited from it. Removed, and the winter-closure fact it was supposed to support is now stated on the card with the phone number that can confirm it."
       }
     },
     "denali": {
@@ -1514,6 +1539,101 @@
           "aurora",
           "moon-dependent"
         ]
+      }
+    },
+    "winthrop": {
+      "Blue Lake under Liberty Bell, larch amphitheatre": {
+        "fix": {
+          "facing": "E/ESE",
+          "light": "Backlit, and work the WEST shore. Liberty Bell bears 79 and the Early Winters Spires 97 from the lake — due E to ESE, not NE — and October sunrise is at azimuth 110, so from a west-shore position the spires are contre-jour. That is a stronger frame than the promised side-lit larch: shoot into it, let the larch glow translucent and the rock go graphic."
+        },
+        "resolves": [
+          "ORIENTATION",
+          "Sun check"
+        ],
+        "fix_why": "Wrong shore and wrong bearing on a stop that exists for one week of larch — 3 Oct is a frozen date precisely because the window is that narrow."
+      },
+      "Washington Pass Overlook at first light": {
+        "fix": {
+          "facing": "SW/SSW"
+        },
+        "resolves": [
+          "SUN GEOMETRY / FACING"
+        ],
+        "fix_why": "The facing was about 165 degrees out. Liberty Bell bears 212 and the Early Winters Spires 203 from the overlook, so facing NE points at Kangaroo Ridge — away from the subject. This is the field you set up from in the dark for a four-minute alpenglow window."
+      }
+    },
+    "marina": {
+      "Light shafts in the kelp forest tank": {
+        "fix": {
+          "light": {
+            "append": "NOTE: the headline shaft frame is NOT available on these dates — five days before the solstice the Monterey sun peaks too low to drive shafts down through the kelp tank. The lower-level silhouette-through-surface version and the Open Sea sardine ball both survive; plan for those."
+          }
+        },
+        "resolves": [
+          "SEASON / SUN GEOMETRY"
+        ],
+        "fix_why": "The shot's whole premise needs a high sun that does not exist in mid-December."
+      }
+    },
+    "borrego-springs": {
+      "Font's Point at last light": {
+        "fix": {
+          "subject": {
+            "append": "NOTE: the Santa Rosa Mountains are NOT in this frame — they bear about 340 (NNW) from the rim, directly behind the camera. A SE frame holds the badlands and the Salton trough. The facing is right for the light; only the named backdrop was wrong."
+          }
+        },
+        "resolves": [
+          "ORIENTATION"
+        ],
+        "fix_why": "Named a background range that sits behind the photographer."
+      },
+      "Breceda's serpent under a winter sky": {
+        "fix": {
+          "light": "FULL MOON THROUGH THE WHOLE STAY. Full moon is 11 Jan 2028 20:03 PST, the middle of a 8-14 Jan visit, and even the pre-dawn escape is gone — at 05:00 on the 13th the moon is 97% lit at 36 degrees altitude, sitting in the western sky through the exact 04:00-06:00 core window. Shoot the sculptures lit BY the moon instead, which actually suits them, and drop the dark-sky premise."
+        },
+        "resolves": [
+          "SEASON/DATE"
+        ],
+        "fix_why": "Six nights, no dark sky, and no pre-dawn window either. Reframed rather than left as an impossible promise — moonlight on Breceda's metalwork is a real picture.",
+        "tags": [
+          "night",
+          "moon-dependent"
+        ]
+      },
+      "Bighorn on the Palm Canyon slopes": {
+        "fix": {
+          "subject": {
+            "from": "In January they come lower and are more visible than in the heat",
+            "to": "POSSIBLE, NOT LIKELY in January — standard Anza-Borrego guidance is the opposite of the old claim: Peninsular bighorn concentrate near water in the HEAT, so summer is when they come low and visible"
+          }
+        },
+        "resolves": [
+          "SEASON / ANIMAL BEHAVIOUR"
+        ],
+        "fix_why": "The seasonal claim was inverted, which oversold the odds. The endangered-species approach cautions are correct and stay."
+      }
+    },
+    "porcupine-mountains-mi": {
+      "Fog in the basin, Lake of the Clouds": {
+        "fix": {
+          "light": "Backlit. Camera faces W and sunset is at azimuth 302 — 32 degrees apart — so the basin fog is lit from behind, which is what makes fog luminous. Expose for the bright fog and let the escarpment go dark."
+        },
+        "resolves": [
+          "Sun check"
+        ],
+        "fix_why": "Described front-light; backlit fog is both what is available and the better picture."
+      }
+    },
+    "fort-nelson": {
+      "Alaska Highway iron under 11pm light": {
+        "fix": {
+          "light": "21:45-23:30, not earlier. Fort Nelson runs Mountain Standard Time year-round with no DST, and computed sunset on 10-12 June is 33 minutes later than the card said — so the old window opened before the sun was even down. Also 10-12 June is 9-11 days from the solstice, not six. Both errors push the same way: get there later than the shot says."
+        },
+        "resolves": [
+          "SUN TIME"
+        ],
+        "fix_why": "Two independent errors compounding in the same direction."
       }
     }
   },

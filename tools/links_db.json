@@ -7397,7 +7397,62 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Stowe Pinnacle Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "reviews": "4.8 (3,237)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Stowe Pinnacle Trail — no url",
+          "note_source": "Stowe's most popular and hardest trail. No direct listing url surfaced in search. Name kept; no constructed slug."
+        },
+        {
+          "name": "Bingham Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/vermont/bingham-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.5 mi out-and-back",
+          "time": "19 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.6 (2,348)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bingham Falls — no url"
+        },
+        {
+          "name": "Moss Glen Falls Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Moss Glen Falls (Stowe) — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        },
+        {
+          "name": "Mount Mansfield via Sunset Ridge",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Mount Mansfield via Sunset Ridge / — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "eastern-townships-qc": {
       "activities": {
@@ -7522,7 +7577,78 @@
       "trail_dogs": {
         "Beehive Trail": false
       },
-      "dogs_note": "The Beehive is named on this card AND is one of the six trails Acadia closes to dogs — the iron-rung climb. Everything else here is open to the dog, including Cadillac South Ridge and Gorham Mountain."
+      "dogs_note": "The Beehive is named on this card AND is one of the six trails Acadia closes to dogs — the iron-rung climb. Everything else here is open to the dog, including Cadillac South Ridge and Gorham Mountain.",
+      "trails": [
+        {
+          "name": "Cadillac Mountain South Ridge Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/maine/cadillac-mountain-south-ridge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "7.0 mi out-and-back",
+          "difficulty": "Moderately challenging",
+          "reviews": "5,568",
+          "uses": [
+            "hike"
+          ],
+          "was": "Cadillac Mountain South Ridge Trail — no url",
+          "note_source": "Dogs permitted — Acadia allows them on most trails, and this is one of them.",
+          "dogs": true
+        },
+        {
+          "name": "Beehive Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Beehive Trail — no url",
+          "note_source": "The iron-rung climb from Sand Beach. One of only six Acadia trails CLOSED to dogs. AllTrails indexes it as a point of interest and inside a combined Precipice loop that is itself marked CLOSED; no clean standalone listing surfaced.",
+          "dogs": false
+        },
+        {
+          "name": "Gorham Mountain Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Gorham Mountain Trail — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "dogs": true
+        },
+        {
+          "name": "Jordan Pond Path",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Jordan Pond Path — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "dogs": true
+        },
+        {
+          "name": "Ocean Path",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Ocean Path (Ocean Trail) — no url",
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "dogs": true
+        }
+      ]
     },
     "camden-me": {
       "activities": {
@@ -8243,7 +8369,21 @@
           "auto": true,
           "auto_km": 1
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Cedar Falls Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Rock House Cave / Bear Cave Trail — a different trail",
+          "note_source": "Arkansas' most photographed place: from Mather Lodge steeply down Cedar Creek Canyon to the 95 ft falls. No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "mount-magazine-ar": {
       "activities": {
@@ -8269,7 +8409,21 @@
           "auto": true,
           "auto_km": 42
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Signal Hill Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "was": "Bear Hollow Trail — a different trail",
+          "note_source": "To the highest point in Arkansas at 2,753 ft. No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "jasper-ponca-ar": {
       "activities": {
@@ -8306,7 +8460,37 @@
           "auto": true,
           "auto_km": 22
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Whitaker Point Trail (Hawksbill Crag)",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/whitaker-point-trail-hawksbill-crag",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.7 mi out-and-back",
+          "difficulty": "Moderately easy",
+          "elevation_gain": "328 ft",
+          "reviews": "4.8 (5,763)",
+          "uses": [
+            "hike"
+          ],
+          "was": "Buffalo River Trail (Ponca to Steel Creek) — a different trail; Hawksbill Crag is the marquee walk here",
+          "note_source": "The narrow sandstone overhang 200 ft above the valley — the most photographed spot in the Ozarks."
+        },
+        {
+          "name": "Lost Valley Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "uses": [
+            "hike"
+          ],
+          "note_source": "Along Clark Creek past natural bridges to Eden Falls and Cobb Cave. Crushed rock to natural surface. No direct listing url surfaced in search. Name kept; no constructed slug."
+        }
+      ]
     },
     "mountain-view-ar": {
       "activities": {

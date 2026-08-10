@@ -201,7 +201,17 @@ def main():
                 continue
             title, ll = r
             if not ll:
-                nocoord += 1          # a person, a museum, an abstract topic
+                # No coordinates: a person, a museum, an event. TRIED AND
+                # REJECTED — accepting these on an exact title match was tested
+                # on a 60-item sample and was wrong 7 times in 10:
+                #   "Bisbee Mining & Historical Museum"  -> Historical Museum
+                #   "Dredge No. 4 National Historic Site" -> National historic site
+                #   "Calico Tanks Trail (Red Rock Canyon)" -> Red Rock Canyon
+                # The candidate generator emits sub-phrases, and generic phrases
+                # like those ARE real articles, so an exact title match carries
+                # no information. Without coordinates there is nothing left to
+                # verify against, so these go to the hand-research pile.
+                nocoord += 1
                 continue
             if not (stop_ll and stop_ll[0]) or km(stop_ll, ll) > MAX_KM:
                 farflung += 1         # right name, wrong continent

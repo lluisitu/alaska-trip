@@ -116,7 +116,14 @@
           "seasonal",
           "truck"
         ],
-        "why": "Lek display peaks late March to mid-May and the stop is 24 Apr - 1 May, so this is one of the few things at this stop that is genuinely IN season while the alpine trailheads are still snowed in. Worth flagging as the reason to set an alarm here."
+        "why": "Lek display peaks late March to mid-May and the stop is 24 Apr - 1 May, so this is one of the few things at this stop that is genuinely IN season while the alpine trailheads are still snowed in. Worth flagging as the reason to set an alarm here.",
+        "fix": {
+          "craft": "Longest lens you own, braced on the door frame, and expect a SMALL subject. WGFD puts the lek about 400 yards south of County Road 113 and you never leave the vehicle — at ~365 m a strutting male subtends only 2-3% of the frame width even at 600mm. This is a heavily-cropped environmental frame of birds on a lek, not a frame-filling portrait. Shoot for the scene: several males, frost, low light across the sage."
+        },
+        "resolves": [
+          "CRAFT / expectation mismatch"
+        ],
+        "fix_why": "The card implied a portrait the optics cannot produce at the only range the access rules allow — a pre-dawn drive on a mud-season road for a disappointment."
       },
       "Fremont Lake ice-out with the range still white": {
         "tags": [
@@ -133,6 +140,15 @@
           "Sun check"
         ],
         "fix_why": "The card had you getting up in the dark for a colour split that happens twelve hours later."
+      },
+      "Pronghorn on the migration bottleneck at Trapper's Point": {
+        "fix": {
+          "reference": null
+        },
+        "resolves": [
+          "REFERENCE is wrong"
+        ],
+        "fix_why": "The reference resolved to an archived 2012 Grand Teton news release about ranger-led SAGE-GROUSE lek trips — pasted from the other shot at this same stop. Nothing about pronghorn, the Path of the Pronghorn or Trapper's Point. Removed rather than replaced with a guess."
       }
     },
     "twin-falls": {
@@ -236,18 +252,69 @@
           "COORDINATE"
         ],
         "fix_why": "Pin was on the glacier surface itself, 17.1 km inside privately controlled guided-tour-only ice that the shot own caution says you must not walk on. Moved to the state recreation site at Glenn Highway MP 101, which is the free public wayside the shot is actually about."
+      },
+      "Independence Mine in the tundra turn": {
+        "fix": {
+          "subject": {
+            "from": "Early August is the week the Hatcher Pass tundra starts to turn",
+            "to": "Early August is still GREEN at 3,500 ft in the Talkeetnas — fireweed is typically in flower, not gone to seed, and the dwarf birch has not rusted yet. The turn is weeks away"
+          }
+        },
+        "resolves": [
+          "SEASON"
+        ],
+        "fix_why": "The evening light window (20:00-22:00 against a 22:15 sunset at azimuth 306) and the fog alternative are both sound, so the shot survives — but the colour was the reason it was scheduled, and that reason is wrong."
+      },
+      "Qiviut, hands and horn": {
+        "fix": {
+          "subject": {
+            "from": "Qiviut is combed out of the musk oxen during the spring moult",
+            "to": "NO COMBING SESSION on 9-10 August — the moult, and therefore the combing, runs roughly April to June, so the frame at this stop is the fence-line keeper-and-horns version. Qiviut is taken from the musk oxen during the spring shed"
+          }
+        },
+        "resolves": [
+          "SEASON"
+        ],
+        "fix_why": "The stated primary subject cannot happen on the only night at this stop. The fallback is now the plan rather than the consolation. The farm does not publish combing dates — worth calling. (First attempt tripped the self-reference guard — the replacement repeated the phrase it was replacing, which would have grown the field on every build.)"
       }
     },
     "smithers": {
       "Twin Falls under the first termination dust": {
         "fix": {
           "lat": 54.806,
-          "lng": -127.296
+          "lng": -127.296,
+          "light": "Overcast is the reliable version. The old note claimed a north-east-facing gulch \"holds shade well into the morning\" — a NE aspect is precisely the one that CATCHES low morning sun, and at the equinox sunrise azimuth here is ~96 degrees. The walls are steep enough that the floor may stay shadowed for a while, but that needs checking on the ground rather than trusting; flat overcast light on wet rock is the version that works whatever the aspect does."
         },
         "resolves": [
-          "COORDINATE"
+          "COORDINATE",
+          "LIGHT RATIONALE"
         ],
-        "fix_why": "Pin was 10.6 km ENE on the valley floor toward the airport; Glacier Gulch is on the flank of Hudson Bay Mountain on the opposite side of town. The stated access off Lake Kathlyn Road was right — only the pin was wrong, and wrong enough to send the truck out of the valley."
+        "fix_why": "The stated reason inverted how aspect and sun work, so anyone reasoning from it would pick exactly the wrong morning."
+      },
+      "Witset Canyon — the fishery, with consent": {
+        "fix": {
+          "reference": null,
+          "lat": 55.007,
+          "lng": -127.342
+        },
+        "resolves": [
+          "BROKEN REFERENCE"
+        ],
+        "fix_why": "The reference host tourismwitset.com has no DNS record at all — and it was the contact route for the consent step this shot correctly insists on, which makes it the most consequential dead link in the set. Removed rather than replaced with a guess; the permission still has to be sought, now without a starting URL. Coordinate also moved 11 km south-west from a point north-east of the village to Witset itself."
+      },
+      "Bulkley Valley hayfields under a fresh snowline": {
+        "fix": {
+          "vantage": {
+            "from": "The Highway 16 corridor north of Smithers toward Telkwa",
+            "to": "The Highway 16 corridor SOUTH-EAST of Smithers toward Telkwa (Telkwa is ~13 km south-east; going north on 16 heads to Witset, the opposite way)"
+          },
+          "light": "Backlit, and worth shooting that way. Camera faces W and sunset is at azimuth 271 — one degree apart — so the bale lines and barns are rim-lit against the light rather than front-lit. Expose for the sky and let the foreground go graphic."
+        },
+        "resolves": [
+          "GEOGRAPHY",
+          "Sun check"
+        ],
+        "fix_why": "Sent the traveller the wrong way down the valley on the one scouting afternoon they have, and described front-light the geometry cannot give."
       }
     },
     "vegas-area": {
@@ -448,6 +515,15 @@
           "facing": "N/NW"
         },
         "fix_why": "Facing corrected: from anywhere on Salmon River Road the glacier and its elbow lie north to north-west, so the old S bearing pointed away from the subject. The coordinate is left alone and the flag stays OPEN — the finding could not resolve whether the pin is short of the summit viewpoint or the bearing was simply wrong, and guessing a replacement is how a wrong pin gets made."
+      },
+      "Bear Glacier and its trimline — a retreat photograph": {
+        "fix": {
+          "facing": "S/SE"
+        },
+        "resolves": [
+          "FACING is inverted"
+        ],
+        "fix_why": "Bear Glacier sits on the SOUTH side of Highway 37A across Strohn Lake — on the left driving west from Meziadin. Facing N turned the camera onto the opposite valley wall, and the trimline-over-ice-front composition only works aimed at the glacier."
       }
     },
     "tucson": {
@@ -529,6 +605,18 @@
           "midday",
           "seasonal"
         ]
+      },
+      "Apache Leap and the ground underneath it": {
+        "fix": {
+          "vantage": {
+            "from": "US 60 pullouts east of Superior looking up at the Apache Leap cliff face",
+            "to": "from the town side, WEST of and below the escarpment, looking up and east at the cliff face"
+          }
+        },
+        "resolves": [
+          "VANTAGE / sun geometry contradiction"
+        ],
+        "fix_why": "Apache Leap is the west-facing escarpment immediately east of and above Superior. Both the facing: E field and the late-afternoon light note require you to be WEST of it. The stated pullouts put you above and behind the wall inside Queen Creek Canyon — no cliff face to look up at, no town below, no sunset light on the rock."
       }
     },
     "moab": {
@@ -571,6 +659,179 @@
           "SUN GEOMETRY (self-contradictory)"
         ],
         "fix_why": "The instruction was right and the stated reason was wrong — it claimed a west-facing facade lit by an eastern sunrise, which cannot happen, and anyone reasoning from it would stand on the wrong side. The pin was also 2.6 km north-east on Antelope Flats Road rather than on Mormon Row."
+      },
+      "Red dogs on Antelope Flats": {
+        "fix": {
+          "light": "Backlit, and shoot it that way. Camera faces W and sunset is at azimuth 293 — only 23 degrees apart — so the calves are rim-lit against the light, not front-lit. That is a better picture than the card implied: expose for the highlights, let the bodies go dark, and use the low sun through the dust and the fur."
+        },
+        "resolves": [
+          "Sun check"
+        ],
+        "fix_why": "The card described front-light the geometry cannot give. Rather than move the shot, this describes what is actually there — a rim-lit frame — because backlit red dogs in dust is the stronger image anyway."
+      }
+    },
+    "bozeman": {
+      "Main Street closed by the Bridgers": {
+        "fix": {
+          "subject": {
+            "from": "Late May is graduation and end-of-semester week — the town is at its most itself",
+            "to": "Late May is the quiet gap — MSU commencement is early-to-mid May, so the students have already gone and the summer season has not started"
+          }
+        },
+        "resolves": [
+          "SEASON detail wrong"
+        ],
+        "fix_why": "The blue-hour geometry was fine; only the human-activity premise was misdated. You arrive to a quieter town than the card promised, which changes what the street scene actually is."
+      }
+    },
+    "muncho-lake": {
+      "Solstice midnight blue": {
+        "fix": {
+          "light": "Solstice midnight, and treat the moon as a non-factor. Computed illumination on 12-15 June 2027 is 62%, 72%, 81% and 88% — but a waxing gibbous this near the solstice sits at declination around -20 degrees and barely clears the horizon at 58.95N. It will not light the Terminal Range across the lake. What you actually have is the sky itself: the sun only reaches ~7.6 degrees below the horizon at 01:00, so this is all-night nautical twilight — deep blue, never dark."
+        },
+        "resolves": [
+          "MOON claim"
+        ],
+        "fix_why": "Planning around moonlight that cannot arrive. The picture is the twilight, not the moon.",
+        "tags": [
+          "night",
+          "blue hour",
+          "water"
+        ]
+      }
+    },
+    "trapper-creek": {
+      "First aurora of the season over Denali View South": {
+        "fix": {
+          "light": "NOT an aurora window — there is no darkness. Stay is 5-9 Aug 2027 at 62.66N, where the sun's minimum depression at solar midnight is only about -11 degrees: bright nautical twilight all night, no astronomical dark at all. Shoot the twilight over Denali instead, which is genuinely good here. The moon note is also only half right — illumination runs 13.5% on 5 Aug to 43% by the night of 8 Aug."
+        },
+        "resolves": [
+          "SEASON — there is not enough darkness"
+        ],
+        "fix_why": "The stop is named for a shot that is physically impossible on its own dates. The consolation — Denali under all-night twilight — is real and is now what the card describes.",
+        "tags": [
+          "night",
+          "blue hour"
+        ]
+      }
+    },
+    "kofa-nwr": {
+      "Desert bighorn on the skyline": {
+        "fix": {
+          "subject": {
+            "from": "January is the tail of the rut",
+            "to": "January is the START of lambing — Arizona desert bighorn breed roughly July to October, and lambs arrive January to June"
+          }
+        },
+        "resolves": [
+          "SEASON claim is backwards"
+        ],
+        "fix_why": "It matters operationally, not just factually: in late January you will meet ewes with newborn lambs rather than rutting rams. Different picture, and a higher disturbance risk — the ethical caution was right for the wrong reason.",
+        "tags": [
+          "wildlife",
+          "seasonal"
+        ]
+      },
+      "New moon over the Kofa Mountains": {
+        "fix": {
+          "light": {
+            "from": "any dark evening 25–29 January",
+            "to": "any dark evening 25-26 January — you depart on the 27th, and the 26th is the true new moon at 0.0%"
+          }
+        },
+        "resolves": [
+          "DATE RANGE extends past the stay"
+        ],
+        "fix_why": "Three of the five offered evenings fall after departure. The 26th is the genuinely dark night and is now the one named."
+      }
+    },
+    "glacier": {
+      "An empty Going-to-the-Sun Road": {
+        "fix": {
+          "difficulty": "long hike or bike day",
+          "vantage": {
+            "from": "two to four miles",
+            "to": "about twelve miles — a ~24-mile round trip on foot, or a serious bike day"
+          }
+        },
+        "resolves": [
+          "ACCESS / EFFORT"
+        ],
+        "fix_why": "The described subject — the cliff-shelf cut into the Garden Wall with Heavens Peak and Bird Woman Falls across the valley — is roughly 12 miles above the Avalanche Creek closure gate, not the 2-4 the card costed. And a 24-mile day guarantees you are in avalanche terrain in the afternoon, which the shot's own caution says to avoid."
+      },
+      "Lake McDonald cobbles at first light": {
+        "fix": {
+          "light": "Evening, not first light. From Apgar the head of the lake bears ~42 degrees and sunrise on 24 May is at azimuth 57 — shooting NE up-lake at dawn puts the rising sun almost in the frame and the Divide in silhouette. Sunset at 21:22, azimuth 304, front-lights those same peaks with the sun behind your left shoulder, which is the geometry this shot actually describes. Mirror-calm water is just as available in the evening on a still day."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "Same picture, wrong end of the day — and the title still says \"at first light\", worth renaming on the next edit.",
+        "tags": [
+          "sunset",
+          "water"
+        ]
+      }
+    },
+    "liard": {
+      "Moose in the warm swamp at 23:00": {
+        "fix": {
+          "light": "21:00-22:00, not 23:00. BC Parks gates the Alpha Pool 7am to 22:30 with no admission after 22:00, and the vantage is the boardwalk inside that gate — so the old 22:30-00:30 window sat entirely inside the closure. In mid-June at this latitude the sun is still up and low at 21:00, which is warm light on the swamp anyway. It is the gate that kills the later window, not the light."
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "The shot was scheduled entirely inside the park's closure. Worth confirming with BC Parks whether the boardwalk, as distinct from the pool, stays open later."
+      }
+    },
+    "olympic": {
+      "Hole-in-the-Wall on a first-storm swell": {
+        "fix": {
+          "light": "Afternoon, and drop the sunset requirement. The shot was built on \"pick the day where a minus tide and sunset overlap\" — on 19-25 Oct 2027 at La Push no such day exists. The workable frame is the 25 Oct low at 16:07 in flat afternoon light. Chasing the overlap means walking the 1.5 miles back on a flooding tide in the dark, which is the drowning hazard the shot's own caution names."
+        },
+        "resolves": [
+          "SEASON/TIDE"
+        ],
+        "fix_why": "The day the shot was built around does not occur during the stay.",
+        "tags": [
+          "midday",
+          "water",
+          "seasonal"
+        ]
+      }
+    },
+    "newport": {
+      "Cobble Beach on a minus tide": {
+        "fix": {
+          "light": "One usable afternoon: 25 Nov, low of -0.49 ft at 16:23, about 18 minutes before sunset. The old rationale was inverted — it claimed late-November afternoon minus tides against unphotographable pre-dawn summer ones, but of the week only 24 and 25 Nov fall in usable light and only the 25th clears the shot's own \"roughly 0.0 ft or lower\" bar. Treat it as a single-day shot, not a week of chances.",
+          "facing": "W"
+        },
+        "resolves": [
+          "FACING and COORDINATES",
+          "SEASON/TIDE"
+        ],
+        "fix_why": "Two findings on one shot. The tide window is a quarter of what was claimed. And facing was tagged E while the craft note asks for the lighthouse behind the stones — Yaquina Head Light stands at the far WESTERN tip, so the camera looks west. The coordinate is left alone: the finding says both pins sit north of the tower and the vantage describes ground south and east of it, but gives no replacement, and I will not invent one.",
+        "tags": [
+          "sunset",
+          "water",
+          "seasonal"
+        ]
+      }
+    },
+    "lone-pine": {
+      "Orion over the crest": {
+        "fix": {
+          "light": "Not 18:30 — Orion is below the eastern horizon then, and facing W at that hour gives you Pegasus and Cygnus setting. Orion clears the Sierra crest only in the small hours. New moon falls ~28 Dec so the sky is genuinely dark, but this collides with the 07:04 Mobius Arch dawn on the single night here: one or the other, not both."
+        },
+        "resolves": [
+          "SKY GEOMETRY"
+        ],
+        "fix_why": "The stated hour pointed the camera at the wrong half of the sky, and fixing it creates a real conflict with the other shot at this stop that the card should state rather than hide.",
+        "tags": [
+          "night",
+          "astro",
+          "needs clear sky"
+        ]
       }
     }
   },

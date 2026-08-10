@@ -409,7 +409,7 @@ def norm_key(n):
 def global_pass(stops, log):
     """Sort every box, drop prose and trailheads, move drives and 4x4 routes out,
     and remove entries duplicated inside a box or across boxes."""
-    counts = {'sorted': 0, 'prose': 0, 'trailhead': 0, 'drive': 0, 'offroad': 0, 'dup': 0}
+    counts = {'sorted': 0, 'prose': 0, 'trailhead': 0, 'drive': 0, 'offroad': 0, 'dup': 0, 'split': 0}
     for s in stops:
         box = s.get('alltrails') or []
         keep = []
@@ -467,6 +467,33 @@ def global_pass(stops, log):
                 out.append(it)
             if len(out) != len(items):
                 s[field] = out
+        # ---- Scenic drives and offroad: name, note, rig ----------------------
+        # Two fixes the strategy doc called for and nothing had applied.
+        #
+        # 1. The name field holds a whole sentence on 142 of 256 scenic drives —
+        #    "Thousand Springs Scenic Byway (US-30) — a paved Snake River
+        #    canyon-rim byway past springs and waterfalls; a relaxed truck
+        #    day-drive..." That is a name and a description welded together, so
+        #    the link text reads as prose. Split on the em-dash: the road keeps
+        #    the name, the rest becomes the note.
+        # 2. rig. Settled by the person driving — no scenic road and no 4x4
+        #    route is done in the coach. It is a standing decision, not a
+        #    per-entry research question, so it is applied here rather than
+        #    looked up 157 times.
+        for field in ('scenicDrives', 'offroad'):
+            for it in (s.get(field) or []):
+                n = it.get('name') or ''
+                if ' — ' in n:
+                    head, tail = n.split(' — ', 1)
+                    # Only split when what is left is plausibly a name, not when
+                    # the dash is mid-sentence in something already short.
+                    if 3 < len(head) < 80 and len(tail) > 20:
+                        it['name'] = head.strip()
+                        extra = tail.strip()
+                        it['note'] = (extra if not it.get('note')
+                                      else it['note'] + ' · ' + extra)
+                        counts['split'] += 1
+                it['rig'] = 'truck'
         for field in ('alltrails', 'offroad', 'scenicDrives'):
             if s.get(field):
                 s[field] = sorted(s[field], key=item_sort_key)
@@ -474,7 +501,8 @@ def global_pass(stops, log):
     log.append(f"  global: sorted {counts['sorted']} boxes; flagged {counts['prose']} prose "
                f"and {counts['trailhead']} trailheads as pending research (kept, sorted last); "
                f"moved {counts['drive']} drives and {counts['offroad']} 4x4 routes to their own "
-               f"box; merged {counts['dup']} duplicates")
+               f"box; merged {counts['dup']} duplicates; split {counts['split']} drive/offroad "
+               f"names off their descriptions and set rig=truck on all of them")
 
 
 def main():

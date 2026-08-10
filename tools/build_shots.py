@@ -141,6 +141,13 @@ def main():
             for field, repl in (entry.get('fix') or {}).items():
                 if isinstance(repl, dict):
                     old, new = repl.get('from'), repl.get('to')
+                    # A `to` that still contains its own `from` re-matches on the
+                    # next run and the field grows forever — the md5 never
+                    # settles. Caught by the three-run idempotency check; this
+                    # makes it a hard error instead of a slow leak.
+                    if old and new and old in new:
+                        sys.exit(f"!! shots_db: fix for {s['title']!r} field {field!r} would "
+                                 f"re-apply forever — 'to' contains 'from'")
                     if old and old in (s.get(field) or ''):
                         s[field] = s[field].replace(old, new)
                         fixed += 1

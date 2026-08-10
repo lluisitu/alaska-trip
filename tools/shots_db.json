@@ -120,11 +120,19 @@
       },
       "Fremont Lake ice-out with the range still white": {
         "tags": [
-          "golden",
+          "sunset",
           "water",
           "seasonal"
         ],
-        "why": "Ice-out timing is the whole shot and it varies by weeks year to year — a condition to check on arrival, not to plan around."
+        "why": "Ice-out timing is the whole shot and it varies by weeks year to year — a condition to check on arrival, not to plan around.",
+        "fix": {
+          "light": "Sunset, not sunrise. From Sandy Beach the range bears NE, and late-April sunrise is at azimuth ~66-70 degrees — only 25 degrees off the camera axis, so at dawn the range front you can see is its west/south-west aspect, backlit and in shadow. The warm-lit white range over a cold blue-shadowed lake is an EVENING phenomenon from Pinedale. Same picture, opposite end of the day."
+        },
+        "resolves": [
+          "SUN GEOMETRY",
+          "Sun check"
+        ],
+        "fix_why": "The card had you getting up in the dark for a colour split that happens twelve hours later."
       }
     },
     "twin-falls": {
@@ -452,6 +460,117 @@
           "COORDINATE / VANTAGE MISMATCH"
         ],
         "fix_why": "The pin was Mount Lemmon Ski Valley, 10.3 km away and ~2,500 ft above the saguaro belt — from there no cactus is visible and the shot cannot be made. The finding does not give a Windy Point coordinate and I will not supply one, so the pin is REMOVED rather than replaced. The vantage text still names Windy Point."
+      }
+    },
+    "kluane-2": {
+      "The King's Throne cirque over Kathleen Lake": {
+        "fix": {
+          "light": "Morning. The cirque opens to the north-east — which is why the vantage faces NE down onto Kathleen Lake — so it takes direct sun EARLY and is flat grey by late afternoon. The old note sent you up for an afternoon window on a bowl that is already in shadow by then."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "This stop is one night, 28-29 Aug, and the climb is 4-6 hours. Aiming it at the wrong half of the day did not just cost the light, it cost the only chance at the shot.",
+        "tags": [
+          "dawn",
+          "sunrise"
+        ]
+      },
+      "The wall behind Haines Junction": {
+        "fix": {
+          "light": "Sunrise. The Kluane front rises on the WEST side of the Shakwak Trench, so from pullouts east of the village you are looking at an east-facing wall: it takes the first light while the plain is still in shadow. At sunset — azimuth ~297 degrees in late August — that same face goes into shadow first and the plain holds the light, which is the reverse of the two-plane separation this shot is after."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "Light window inverted. The coordinate is also the townsite rather than the pullout the vantage describes; no replacement was given, so the pin stays and says what it is instead of being moved to a guess. The pin is deliberately left as-is and not annotated in the vantage text: an earlier attempt appended the caveat to a string that still contained the coordinate, so the replacement re-applied on every run and the file never converged.",
+        "tags": [
+          "dawn",
+          "sunrise"
+        ]
+      }
+    },
+    "silver-lake": {
+      "The volcano across Silver Lake at first light": {
+        "fix": {
+          "light": "Sunset, not first light. From the visitor centre St Helens bears 103 degrees ESE — and mid-October sunrise azimuth here is 103-104 degrees, so at dawn the sun rises essentially THROUGH the mountain and any long lens is shooting into flare at a dead backlit silhouette. The lit west face over still water is an evening picture: sunset azimuth ~256 degrees puts the light squarely on the flank you can see."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "The entry calls this \"the reliable shot at this stop\", so the whole stop leaned on a frame that could not be made at the stated hour. Title still says \"at first light\" — worth renaming when the shot list is next edited.",
+        "tags": [
+          "sunset",
+          "water"
+        ]
+      }
+    },
+    "bend": {
+      "Monkey Face over a fog-filled Crooked River canyon": {
+        "fix": {
+          "light": "Be on the ridge 30 minutes before sunrise. Facing west from Misery Ridge with the sun coming up behind you, the canyon fog is FRONT-lit — it glows white and holds detail — and the spires warm up at the same time. Backlit fog would need you shooting toward the sun, which is the opposite direction. The picture is real; the old description had the optics backwards and would have had you metering for a glow that never arrives."
+        },
+        "resolves": [
+          "LIGHT description"
+        ],
+        "fix_why": "Internally contradictory: it had the spires already lit at the same moment the sun cleared the rim behind them."
+      }
+    },
+    "superior-globe": {
+      "Mexican gold poppies on Peridot Mesa": {
+        "fix": {
+          "light": "Mid-morning to mid-afternoon. Mexican gold poppies CLOSE as light and temperature fall, and on the mesa in early March they are typically shut by mid-to-late afternoon — well before the last hour of daylight (sunset ~18:30 on 2-4 Mar). Any backlit low-sun work has to happen before the flowers fold, not after."
+        },
+        "resolves": [
+          "TIMING"
+        ],
+        "fix_why": "The card recommended the exact hour the subject disappears, then acknowledged the flowers close and did not change the advice. It is a 60-mile drive east from Superior and needs a permit — arriving to shut flowers is the whole cost.",
+        "tags": [
+          "midday",
+          "seasonal"
+        ]
+      }
+    },
+    "moab": {
+      "Delicate Arch at last light — and the frame everyone misses": {
+        "fix": {
+          "vantage": {
+            "from": "the south rim of the bowl",
+            "to": "the standard viewing rim NORTH-WEST of the arch, shooting south-east"
+          },
+          "facing": "SE"
+        },
+        "resolves": [
+          "SUN GEOMETRY / composition"
+        ],
+        "fix_why": "The premise is the La Sals filling the space behind the arch. They bear 145 degrees — south-east — so the frame only exists from north-west of the arch looking SE, which is where the standard rim happens to be. As written it sent you to the south rim facing N, with the range directly behind the camera and out of shot entirely."
+      }
+    },
+    "santafe": {
+      "Canyon Road, lit windows, no farolitos": {
+        "fix": {
+          "light": {
+            "from": "18:45–19:20 in late March",
+            "to": "19:25-19:50 in late March"
+          }
+        },
+        "resolves": [
+          "LIGHT WINDOW"
+        ],
+        "fix_why": "Sunset on 24-30 Mar is 19:22 and civil twilight ends 19:47, so the stated 18:45-19:20 window ended two minutes BEFORE sunset — direct late daylight with the window lights invisible, which is precisely the failure the shot exists to avoid."
+      }
+    },
+    "grand-teton": {
+      "Moulton Barn with the range still white": {
+        "fix": {
+          "lat": 43.6494,
+          "lng": -110.6603,
+          "light": "Sunrise. The photographed facade of the T.A. Moulton barn faces roughly EAST, toward Mormon Row Road — which is why the standard frame works: you stand east of it and shoot WNW with the sun at your back, the barn front lit warm while the Tetons behind catch alpenglow."
+        },
+        "resolves": [
+          "SUN GEOMETRY (self-contradictory)"
+        ],
+        "fix_why": "The instruction was right and the stated reason was wrong — it claimed a west-facing facade lit by an eastern sunrise, which cannot happen, and anyone reasoning from it would stand on the wrong side. The pin was also 2.6 km north-east on Antelope Flats Road rather than on Mormon Row."
       }
     }
   },

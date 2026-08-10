@@ -833,6 +833,149 @@
           "needs clear sky"
         ]
       }
+    },
+    "organ-pipe-ajo": {
+      "The core rising before dawn": {
+        "fix": {
+          "light": "05:20-06:00, with the core very low over the range. The galactic centre only crosses altitude zero around 04:55 and needs several more degrees to be worth shooting, so the old 04:15-06:00 window front-loads an hour of nothing. Moon is not a constraint — new moon is ~26 Jan 2028, so every pre-dawn of the 8-night stay through about 3 Feb is moonless."
+        },
+        "resolves": [
+          "WINDOW OVERSTATED"
+        ],
+        "fix_why": "An hour of standing in the cold before the subject is above the horizon.",
+        "tags": [
+          "night",
+          "astro",
+          "needs clear sky"
+        ]
+      }
+    },
+    "salida-buenavista": {
+      "F Street, blue hour, spring runoff not yet started": {
+        "fix": {
+          "vantage": {
+            "from": "Stand on the F Street bridge over the Arkansas, mid-span, and shoot north up F Street into town",
+            "to": "Stand ON F Street between roughly 1st and 3rd, looking north/NNE toward the bridge"
+          }
+        },
+        "resolves": [
+          "VANTAGE"
+        ],
+        "fix_why": "The historic district is on the SOUTH bank and the bridge sits at its edge — from mid-span you are looking away from the storefronts the shot is about. The NE facing tag was right; the standing position was not."
+      }
+    },
+    "west-yellowstone": {
+      "Quake Lake's drowned forest": {
+        "fix": {
+          "vantage": {
+            "from": "the US-287 pull-outs west of it, along the north shore",
+            "to": "the US-287 pull-outs EAST of the visitor centre, along the lakeshore"
+          },
+          "reference": null
+        },
+        "resolves": [
+          "REFERENCE",
+          "VANTAGE / GEOGRAPHY"
+        ],
+        "fix_why": "Two findings. The visitor centre sits on top of the 1959 slide that dammed the Madison, so the lake and its snags are east of it — the stated pull-outs face the empty side. And the Forest Service reference no longer resolves after their site migration; the caution told you to confirm opening dates through a dead link, so it is removed rather than replaced with a guessed URL."
+      }
+    },
+    "whitehorse-1": {
+      "Miles Canyon at midnight": {
+        "fix": {
+          "light": "21:30-23:45, not 23:00-01:30. Whitehorse at 60.72N does NOT have midnight sun — the sun sets around midnight at solstice, so over half the old window has no directional light at all. Note also that with the camera facing N and the late sun near north, you are shooting INTO the light rather than receiving it across the canyon wall."
+        },
+        "resolves": [
+          "SUN GEOMETRY"
+        ],
+        "fix_why": "The card promised a sun that has not set, in a place where it sets."
+      },
+      "Muskox and thinhorn at the preserve": {
+        "fix": {
+          "difficulty": "short walk",
+          "light": "Inside opening hours only — 10:00 to 18:00. The Yukon Wildlife Preserve does NOT permit personal vehicles — their own FAQ is explicit — so the \"drive the 5 km loop slowly in the truck\" instruction and the roadside difficulty are both wrong. It is a walked loop, or the scheduled bus. The preserve also closes at 18:00. The old \"evening, from about 20:00\" window falls entirely after closing. Walk the loop, or book the 15:00 bus."
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "Unshootable as written, twice over: the vehicle is not allowed and the hour is after the gate."
+      }
+    },
+    "whitehorse-3": {
+      "Muskox in September coat": {
+        "fix": {
+          "difficulty": "short walk",
+          "light": "Morning only, 10:00 opening to about 12:00. The Yukon Wildlife Preserve does NOT permit personal vehicles — their own FAQ is explicit — so the \"drive the 5 km loop slowly in the truck\" instruction and the roadside difficulty are both wrong. It is a walked loop, or the scheduled bus. The preserve also closes at 18:00. The stated evening half (18:30-20:30) is after closing, so the reachable window is the morning — and it is not the first two hours of light either, since sunrise is ~07:15 and the gate opens at 10:00."
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "Same defect as the June visit to the same preserve."
+      },
+      "Aurora over the Yukon River": {
+        "fix": {
+          "light": "Late night, after moonset. \"Best on the nights either side of new moon\" is unfollowable on these fixed dates — 8-12 Sept 2027 runs from a 7-day to an 11-day waxing gibbous, 46% to 85% illuminated. The dark window shrinks to the tail of each night and by the last night is essentially gone. Expect a washed sky before moonset and plan the attempts after it."
+        },
+        "resolves": [
+          "SEASON/MOON"
+        ],
+        "fix_why": "The shot gave advice that cannot be followed on dates that cannot move, without saying so.",
+        "tags": [
+          "night",
+          "aurora",
+          "moon-dependent",
+          "needs clear sky"
+        ]
+      }
+    },
+    "seward": {
+      "Harding Icefield from above the ice": {
+        "fix": {
+          "reference": "https://www.nps.gov/kefj/planyourvisit/harding_icefield_trail.htm",
+          "light": "Start at first light and accept the icefield in mid-morning light. The old \"leave the trailhead by 03:30-04:00 to be at the upper viewpoints for first light around 05:00\" contradicts the shot's own \"allow 6-8 hours\" — you cannot climb 3,200 ft in an hour. Going up in the dark also puts you on a brushy trail in bear country before daylight."
+        },
+        "resolves": [
+          "ACCESS / self-contradiction"
+        ],
+        "fix_why": "The reference 404d because the live NPS page uses underscores rather than hyphens — corrected rather than removed, since the real page exists."
+      },
+      "The year markers on Exit Glacier Road": {
+        "fix": {
+          "facing": "W/WSW"
+        },
+        "resolves": [
+          "FACING"
+        ],
+        "fix_why": "Exit Glacier Road runs almost due west and the terminus lies west-to-south-west beyond it, so the NW tag was off by 45-70 degrees. Low consequence for exposure — the shot wants flat overcast — but it misleads anyone pre-checking a sun-position app for the early-morning variant."
+      }
+    },
+    "chitina": {
+      "Kuskulana Bridge from below the deck": {
+        "fix": {
+          "light": {
+            "from": "Mid-August gives full dark by around 22:30",
+            "to": "Mid-August sunset here is about 21:35, so 22:30 is barely 55 minutes past it — civil-to-nautical twilight, NOT full dark"
+          }
+        },
+        "resolves": [
+          "LIGHT/SEASON DETAIL"
+        ],
+        "fix_why": "Harmless for the pre-sunset frame the shot actually wants, but anyone planning a night or star frame off that sentence would be an hour or more out at 61.5N."
+      }
+    },
+    "clearwater": {
+      "Helmcken Falls in autumn low water": {
+        "fix": {
+          "caution": {
+            "from": "Wells Gray park roads and facilities begin shutting down after mid-Sep",
+            "to": "The Clearwater Valley Road corridor is open YEAR-ROUND, plowed and sanded through winter — late September is not a closure risk. The only real caveat is that some lower-corridor parking areas can be unusable in deep winter. Facilities begin winding down after mid-Sep"
+          }
+        },
+        "resolves": [
+          "ACCESS"
+        ],
+        "fix_why": "Both road claims were wrong in the direction that would have made you skip the shot on a four-night stop."
+      }
     }
   },
   "_fix": "Applies a review finding to the shot itself. `fix` maps a field to either a replacement string, or {from, to} for a substring swap; `resolves` lists a phrase from the flag text, and any flag containing it is re-labelled src='fixed' so the card reads 'corrections applied' instead of 'problems found'. Fixes run BEFORE tags are derived — the derivation reads the light text, so correcting a time after tagging would leave the tags wrong."

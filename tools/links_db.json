@@ -3269,17 +3269,22 @@
           "was": "Watchman Trailhead — a trailhead, not a trail"
         },
         {
-          "name": "The Narrows",
+          "name": "The Zion Narrows Riverside Walk",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/utah/the-zion-narrows-riverside-walk",
+            "match": "exact",
+            "tier": "indexed"
           },
-          "distance": "varies — Temple of Sinawava upstream",
+          "distance": "2.1 mi",
           "uses": [
             "hike"
           ],
           "was": "Temple of Sinawava (Narrows trailhead) — a trailhead",
-          "note_source": "No single AllTrails listing matched cleanly; the route is a river walk of whatever length you choose. Drysuit season and flash-flood risk govern it, not a trail listing."
+          "note_source": "The maintained paved walk at the end of the Zion Canyon Scenic Drive. The full Narrows route continues up the river beyond its end — that is the drysuit-and-flash-flood one, and is not this listing.",
+          "time": "1 h 03 min",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "433 ft",
+          "reviews": "4.6 (16,067)"
         }
       ],
       "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/zion-national-park"
@@ -4302,16 +4307,21 @@
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         },
         {
-          "name": "Snowgrass Flat Trail",
+          "name": "Snowgrass Flats and Goat Lake Loop",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/washington/snowgrass-flats-and-goat-lake-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Snowgrass Flat Trailhead — a trailhead",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "Seven listed routes reach Snowgrass Flat; this is the classic loop. A 12.4 mi day in the Goat Rocks — arrival is 9-16 Oct, when the high country can already be under snow.",
+          "distance": "12.4 mi loop",
+          "time": "6 h 23 min",
+          "difficulty": "Challenging",
+          "reviews": "1,593"
         }
       ]
     },
@@ -4342,28 +4352,35 @@
       },
       "trails": [
         {
-          "name": "Ape Cave",
+          "name": "Ape Cave Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/washington/ape-cave-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Ape Cave — no url",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "Trail No. 239 inside the lava tube — the longest continuous lava tube in the continental US at 2.5 miles, and a National Recreation Trail taking 170,000 visitors a year. Timed-entry permits apply in season.",
+          "reviews": "2,264"
         },
         {
           "name": "Hummocks Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/washington/hummocks-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Hummocks Trailhead — a trailhead",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "Interpretive loop through the debris-avalanche landscape of the 18 May 1980 eruption.",
+          "distance": "2.4 mi loop",
+          "elevation_gain": "249 ft",
+          "difficulty": "Easy",
+          "reviews": "4.6 (1,683)"
         }
       ]
     },
@@ -5306,26 +5323,32 @@
           "was": "Calico Tanks / Fire Wave / White Domes — three trails in one entry, and duplicated in two more"
         },
         {
-          "name": "Fire Wave Trail",
+          "name": "Fire Wave, White Domes and Seven Wonders Loop",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/nevada/fire-wave-white-domes-seven-wonders-loop",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
-          "note_source": "Valley of Fire State Park, a separate unit from Red Rock — no direct url surfaced."
+          "note_source": "Valley of Fire. AllTrails marks this combined loop CLOSED — check Nevada State Parks before planning it. The White Domes Trail listing above is the open alternative.",
+          "reviews": "6,763"
         },
         {
-          "name": "White Domes Loop",
+          "name": "White Domes Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/nevada/white-domes-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
-          "note_source": "Valley of Fire State Park — no direct url surfaced."
+          "note_source": "Valley of Fire State Park.",
+          "distance": "1.1 mi loop",
+          "elevation_gain": "150 ft",
+          "reviews": "3,307"
         }
       ],
       "not_a_trail": [
@@ -5852,27 +5875,37 @@
         {
           "name": "Mesa Arch Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/utah/mesa-arch",
+            "match": "exact",
+            "tier": "indexed"
           },
-          "distance": "0.5 mi",
+          "distance": "0.6 mi loop",
           "uses": [
             "hike"
           ],
           "was": "Mesa Arch Trail — no url",
-          "note_source": "Canyonlands Island in the Sky. AllTrails indexes Mesa Arch as a point of interest rather than a trail listing, so it carries no direct trail link."
+          "note_source": "Canyonlands Island in the Sky. Sunrise is the famous frame and the crowd is real — the shot list has this stop covered too.",
+          "time": "14 min",
+          "difficulty": "Easy",
+          "reviews": "12,704"
         },
         {
-          "name": "Double Arch — Windows Section",
+          "name": "Double Arch Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/utah/double-arch-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Windows Section + Double Arch — no url",
-          "note_source": "One of several short walks in the Windows Section of Arches; no standalone listing surfaced."
+          "note_source": "Arches, Windows Section. Note there is a Double Arch Trail in KENTUCKY with a similar name — this is the Utah listing.",
+          "distance": "0.6 mi",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "91 ft",
+          "reviews": "7,830"
         }
       ],
       "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/arches-national-park"

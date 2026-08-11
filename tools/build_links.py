@@ -243,6 +243,12 @@ def apply_stop(stop, entry, log):
         replaced = 0
         for t in real:
             keys = {norm(t['name'])}
+            # `was_name` is the exact previous name. `was` is prose and was
+            # being split on an em-dash to recover it — which fails whenever the
+            # old name itself contains one ("Double Arch — Windows Section"),
+            # silently adding a duplicate instead of replacing.
+            if t.get('was_name'):
+                keys.add(norm(t['was_name']))
             if t.get('was'):
                 keys.add(norm(t['was'].split(' — ')[0]))
             item = build_item(t)

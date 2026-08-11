@@ -1477,8 +1477,9 @@
           "uses": [
             "hike"
           ],
-          "was": "Inferno Cone / Loop Drive trails — no url, and it named a drive and a trail together",
-          "note_source": "Steep and short — 360-degree views over the Great Rift, the Snake River Plain and the Pioneers. Best-rated walking trail in the monument."
+          "was": "Inferno Cone Trail — renamed to the listing's own title",
+          "note_source": "Steep and short — 360-degree views over the Great Rift, the Snake River Plain and the Pioneers. Best-rated walking trail in the monument.",
+          "was_name": "Inferno Cone Trail"
         }
       ]
     },
@@ -2207,16 +2208,17 @@
             "tier": "indexed"
           },
           "distance": "3.4 mi loop",
-          "time": "1 h 23 min",
+          "time": "1.5-2 hr",
           "difficulty": "Easy",
           "elevation_gain": "390 ft",
           "reviews": "4.5 (966)",
           "uses": [
             "hike"
           ],
-          "was": "Lake Loop Trail / Talkeetna Lakes Park and river trails — no url, and two entries for one system",
+          "was": "Lake Loop Trail — renamed to the listing's own title",
           "season": "Best April-October; arrival 3 Jul is peak.",
-          "note_source": "Reviewers: heavy mosquitoes and muddy patches — bug cover matters more than boots here."
+          "note_source": "Loons, foxes, moose, otters and beaver. Reviewers are consistent about heavy mosquitoes and muddy patches — bug cover matters more than boots here in July.",
+          "was_name": "Lake Loop Trail"
         },
         {
           "name": "Talkeetna Lakes Ski Loop",
@@ -2230,6 +2232,12 @@
           "uses": [
             "hike"
           ]
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Talkeetna Denali Viewpoint",
+          "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
         }
       ]
     },
@@ -2576,7 +2584,7 @@
             "hike"
           ],
           "was": "Dock Point Trail — no url",
-          "note_source": "Real and well reviewed, but AllTrails indexes it only as a point of interest, not a trail listing — so no direct trail link."
+          "note_source": "Short and easy, with the marsh, the small-boat dock and the ring of mountains around Valdez. AllTrails indexes it only as a point of interest, not a trail listing, so it carries no trail link — but the figures are real. alaska.org also documents it."
         }
       ],
       "activities": {
@@ -2828,10 +2836,11 @@
           "uses": [
             "hike"
           ],
-          "was": "Wye Lake Park — no url",
+          "was": "Wye Lake Park — renamed to the listing's own title",
           "season": "Best June-August; arrival 12 Sep is past it.",
           "note_source": "Reviewers note missing interpretive signs and bugs.",
-          "elevation_gain": "141 ft"
+          "elevation_gain": "141 ft",
+          "was_name": "Wye Lake Park"
         }
       ],
       "activities": {
@@ -2959,7 +2968,13 @@
           "auto": true,
           "auto_km": 2
         }
-      }
+      },
+      "not_a_trail": [
+        {
+          "entry": "Boya Lake trails (Tā Ch'ilā PP)",
+          "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        }
+      ]
     },
     "stewart-hyder": {
       "activities": {
@@ -3007,8 +3022,15 @@
           "uses": [
             "hike"
           ],
-          "was": "Ancient Forest Boardwalk Trail / Ancient Forest Universal Access Trail — two entries, no urls",
-          "note_source": "Ancient Forest / Chun T'oh Whudujut, 120 km east of Prince George — 2.3 km of boardwalk to the Big Tree, Tree Beard and a cascading waterfall, through thousand-year-old western red cedars. BC Parks: bcparks.ca/ancient-forest-chun-toh-whudujut-park"
+          "was": "Ancient Forest Boardwalk Trail — renamed to the listing's own title",
+          "note_source": "Ancient Forest / Chun T'oh Whudujut, 120 km east of Prince George — 2.3 km of boardwalk to the Big Tree, Tree Beard and a cascading waterfall, through thousand-year-old western red cedars. BC Parks: bcparks.ca/ancient-forest-chun-toh-whudujut-park",
+          "was_name": "Ancient Forest Boardwalk Trail"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Ancient Forest Universal Access Trail",
+          "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
         }
       ]
     },
@@ -3283,12 +3305,13 @@
           "uses": [
             "hike"
           ],
-          "was": "Temple of Sinawava (Narrows trailhead) — a trailhead",
+          "was": "The Narrows — renamed to the listing's own title",
           "note_source": "The maintained paved walk at the end of the Zion Canyon Scenic Drive. The full Narrows route continues up the river beyond its end — that is the drysuit-and-flash-flood one, and is not this listing.",
           "time": "1 h 03 min",
           "difficulty": "Moderately challenging",
           "elevation_gain": "433 ft",
-          "reviews": "4.6 (16,067)"
+          "reviews": "4.6 (16,067)",
+          "was_name": "The Narrows"
         }
       ],
       "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/zion-national-park"
@@ -3865,7 +3888,13 @@
           "auto": true,
           "auto_km": 0
         }
-      }
+      },
+      "not_a_trail": [
+        {
+          "entry": "Wye Lake Park",
+          "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        }
+      ]
     },
     "tok-1": {
       "activities": {
@@ -3991,7 +4020,14 @@
           "auto": true,
           "auto_km": 34
         }
-      }
+      },
+      "trails": [],
+      "not_a_trail": [
+        {
+          "entry": "Ninilchik River mouth",
+          "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        }
+      ]
     },
     "palmer": {
       "activities": {
@@ -4320,12 +4356,13 @@
           "uses": [
             "hike"
           ],
-          "was": "Snowgrass Flat Trailhead — a trailhead",
+          "was": "Snowgrass Flat Trail — renamed to the listing's own title",
           "note_source": "Seven listed routes reach Snowgrass Flat; this is the classic loop. A 12.4 mi day in the Goat Rocks — arrival is 9-16 Oct, when the high country can already be under snow.",
           "distance": "12.4 mi loop",
           "time": "6 h 23 min",
           "difficulty": "Challenging",
-          "reviews": "1,593"
+          "reviews": "1,593",
+          "was_name": "Snowgrass Flat Trail"
         }
       ]
     },
@@ -4365,9 +4402,10 @@
           "uses": [
             "hike"
           ],
-          "was": "Ape Cave — no url",
+          "was": "Ape Cave — renamed to the listing's own title",
           "note_source": "Trail No. 239 inside the lava tube — the longest continuous lava tube in the continental US at 2.5 miles, and a National Recreation Trail taking 170,000 visitors a year. Timed-entry permits apply in season.",
-          "reviews": "2,264"
+          "reviews": "2,264",
+          "was_name": "Ape Cave"
         },
         {
           "name": "Hummocks Trail",
@@ -4787,9 +4825,10 @@
           "uses": [
             "hike"
           ],
-          "was": "Mirror Lake / Glacier View Trailhead — a trailhead, not a trail",
+          "was": "Mirror Lake Trail #664 — renamed to the listing's own title",
           "note_source": "The most popular trail in Oregon by review count. About 2 miles to the lake; continues to Tom, Dick and Harry Mountain.",
-          "reviews": "4.7 (9,204)"
+          "reviews": "4.7 (9,204)",
+          "was_name": "Mirror Lake Trail #664"
         }
       ]
     },
@@ -5177,13 +5216,14 @@
           "uses": [
             "hike"
           ],
-          "was": "Jug Handle State Natural Reserve — a reserve, not a trail",
+          "was": "Jug Handle State Natural Reserve — renamed to the listing's own title",
           "note_source": "The ecological staircase — five marine terraces, each about 100,000 years older than the last.",
           "distance": "1.9 mi",
           "time": "41 min",
           "difficulty": "Easy",
           "elevation_gain": "144 ft",
-          "reviews": "75"
+          "reviews": "75",
+          "was_name": "Jug Handle State Natural Reserve"
         },
         {
           "name": "Russian Gulch Waterfall Loop",
@@ -5195,12 +5235,13 @@
           "uses": [
             "hike"
           ],
-          "was": "Russian Gulch State Park (waterfall trailhead) — a trailhead",
+          "was": "Russian Gulch Falls Trail — renamed to the listing's own title",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why.",
           "distance": "4.2 mi loop",
           "time": "1 h 52 min",
           "difficulty": "Moderately challenging",
-          "reviews": "1,829"
+          "reviews": "1,829",
+          "was_name": "Russian Gulch Falls Trail"
         }
       ]
     },
@@ -5284,9 +5325,10 @@
           "uses": [
             "hike"
           ],
-          "was": "Point Lobos State Natural Reserve — a reserve, not a trail",
+          "was": "Point Lobos State Natural Reserve — renamed to the listing's own title",
           "note_source": "Coastal loop south of Carmel — harbour seals, sea lions, otters in the kelp. Reserve entry fee and the car park fills early.",
-          "reviews": "15,517"
+          "reviews": "15,517",
+          "was_name": "Point Lobos State Natural Reserve"
         },
         {
           "name": "Badger Hills Trail, Fort Ord",
@@ -5352,7 +5394,9 @@
             "hike"
           ],
           "note_source": "Valley of Fire. AllTrails marks this combined loop CLOSED — check Nevada State Parks before planning it. The White Domes Trail listing above is the open alternative.",
-          "reviews": "6,763"
+          "reviews": "6,763",
+          "was": "Fire Wave Trail — renamed to the listing's own title",
+          "was_name": "Fire Wave Trail"
         },
         {
           "name": "White Domes Trail",
@@ -5367,7 +5411,9 @@
           "note_source": "Valley of Fire State Park.",
           "distance": "1.1 mi loop",
           "elevation_gain": "150 ft",
-          "reviews": "3,307"
+          "reviews": "3,307",
+          "was": "White Domes Loop — renamed to the listing's own title",
+          "was_name": "White Domes Loop"
         }
       ],
       "not_a_trail": [
@@ -5918,13 +5964,14 @@
           "uses": [
             "hike"
           ],
-          "was": "Windows Section + Double Arch — no url",
+          "was": "Double Arch — Windows Section — renamed to the listing's own title",
           "note_source": "Arches, Windows Section. Note there is a Double Arch Trail in KENTUCKY with a similar name — this is the Utah listing.",
           "distance": "0.6 mi",
           "time": "0.5-1 hr",
           "difficulty": "Easy",
           "elevation_gain": "91 ft",
-          "reviews": "7,830"
+          "reviews": "7,830",
+          "was_name": "Double Arch — Windows Section"
         }
       ],
       "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/arches-national-park"

@@ -2117,6 +2117,24 @@
           ],
           "auto": true,
           "auto_km": 69
+        },
+        "Arrival & lakeshore orientation, Strawberry Flats": {
+          "entity": "Muncho Lake Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Muncho Lake Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Muncho_Lake_Provincial_Park"
+            }
+          ]
+        },
+        "MacDonald Creek / MacDonald Campground hike": {
+          "entity": "Muncho Lake Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Muncho Lake Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Muncho_Lake_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -2194,6 +2212,47 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "SS Klondike National Historic Site": {
+          "entity": "SS Klondike",
+          "links": [
+            {
+              "label": "Wikipedia — SS Klondike",
+              "url": "https://en.wikipedia.org/wiki/SS_Klondike"
+            }
+          ]
+        },
+        "Miles Canyon & Yukon Suspension Footbridge": {
+          "entity": "Miles Canyon (Yukon)",
+          "links": [
+            {
+              "label": "Wikipedia — Miles Canyon",
+              "url": "https://en.wikipedia.org/wiki/Miles_Canyon_%28Yukon%29"
+            }
+          ]
+        },
+        "Yukon Wildlife Preserve + Fish Ladder": {
+          "entity": "Yukon Wildlife Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Yukon Wildlife Preserve",
+              "url": "https://en.wikipedia.org/wiki/Yukon_Wildlife_Preserve"
+            }
+          ],
+          "note": "Personal vehicles are NOT permitted on the loop — walk it or take the bus, and the gate closes at 18:00."
+        },
+        "Carcross, Emerald Lake, and the Southern Lakes make an excellent truck day trip.": {
+          "entity": "Carcross",
+          "links": [
+            {
+              "label": "Wikipedia — Carcross",
+              "url": "https://en.wikipedia.org/wiki/Carcross"
+            },
+            {
+              "label": "Wikipedia — Emerald Lake",
+              "url": "https://en.wikipedia.org/wiki/Emerald_Lake_%28Yukon%29"
+            }
+          ]
         }
       }
     },
@@ -2239,7 +2298,36 @@
           "entry": "Talkeetna Denali Viewpoint",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
         }
-      ]
+      ],
+      "activities": {
+        "Historic downtown Talkeetna walk": {
+          "entity": "Talkeetna, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Talkeetna, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        },
+        "Walk historic Talkeetna early and late, outside tour-bus peaks.": {
+          "entity": "Talkeetna, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Talkeetna, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        },
+        "Visit the Talkeetna Historical Society Museum and riverfront.": {
+          "entity": "Talkeetna, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Talkeetna, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        }
+      }
     },
     "cooper-landing": {
       "authority": "USDA Forest Service — Chugach National Forest",
@@ -2327,6 +2415,42 @@
           ],
           "auto": true,
           "auto_km": 81
+        },
+        "Hike Russian River Falls Trail": {
+          "entity": "Russian River (Kenai Peninsula)",
+          "links": [
+            {
+              "label": "Wikipedia — Russian River",
+              "url": "https://en.wikipedia.org/wiki/Russian_River_%28Kenai_Peninsula%29"
+            }
+          ]
+        },
+        "Drive Skilak Lake Road (tow vehicle only)": {
+          "entity": "Skilak Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Skilak Lake",
+              "url": "https://en.wikipedia.org/wiki/Skilak_Lake"
+            }
+          ]
+        },
+        "Guided Kenai River raft trip (Upper Canyon)": {
+          "entity": "Kenai River",
+          "links": [
+            {
+              "label": "Wikipedia — Kenai River",
+              "url": "https://en.wikipedia.org/wiki/Kenai_River"
+            }
+          ]
+        },
+        "Day-hike the north end of Resurrection Pass Trail": {
+          "entity": "Resurrection Pass Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Resurrection Pass Trail",
+              "url": "https://en.wikipedia.org/wiki/Resurrection_Pass_Trail"
+            }
+          ]
         }
       }
     },
@@ -2390,6 +2514,24 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Harding Icefield Trail": {
+          "entity": "Harding Icefield",
+          "links": [
+            {
+              "label": "Wikipedia — Harding Icefield",
+              "url": "https://en.wikipedia.org/wiki/Harding_Icefield"
+            }
+          ]
+        },
+        "Exit Glacier View/Overlook Loop": {
+          "entity": "Exit Glacier",
+          "links": [
+            {
+              "label": "Wikipedia — Exit Glacier",
+              "url": "https://en.wikipedia.org/wiki/Exit_Glacier"
+            }
+          ]
         }
       }
     },
@@ -2467,6 +2609,24 @@
           ],
           "auto": true,
           "auto_km": 6
+        },
+        "The Homer Spit walk": {
+          "entity": "Homer Spit",
+          "links": [
+            {
+              "label": "Wikipedia — Homer Spit",
+              "url": "https://en.wikipedia.org/wiki/Homer_Spit"
+            }
+          ]
+        },
+        "Seldovia is the more charming small-town boat excursion.": {
+          "entity": "Seldovia, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Seldovia, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Seldovia%2C_Alaska"
+            }
+          ]
         }
       }
     },
@@ -2482,7 +2642,50 @@
       "dogs": "PROHIBITED on park trails and off-trail in the wilderness, and not allowed on the park buses. NPS: pets are permitted on park roads, parking lots and campground roads, plus two exceptions — the Roadside Hiking Trail and the Roadside Bike Trail, on a leash of 6 ft or shorter.",
       "dogs_impact": "Seven nights at Riley Creek. The two roadside trails are the whole of what the dog can walk, and the bus ban means the deep-park day trips are dog-free by definition.",
       "dogs_verdict": "prohibited",
-      "dogs_exception": "Roadside Hiking Trail and Roadside Bike Trail only, leash 6 ft or shorter."
+      "dogs_exception": "Roadside Hiking Trail and Roadside Bike Trail only, leash 6 ft or shorter.",
+      "activities": {
+        "Denali shuttle bus into the park": {
+          "entity": "Denali National Park and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Denali National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            }
+          ],
+          "note": "Dogs are NOT allowed on the park buses, which makes every deep-park trip dog-free by definition."
+        },
+        "Horseshoe Lake Trail & Mount Healy Overlook": {
+          "entity": "Horseshoe Lake Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Horseshoe Lake Trail",
+              "url": "https://en.wikipedia.org/wiki/Horseshoe_Lake_Trail"
+            }
+          ]
+        },
+        "Savage River Loop / Savage Alpine Trail": {
+          "entity": "Savage River (Alaska)",
+          "links": [
+            {
+              "label": "Wikipedia — Savage River",
+              "url": "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29"
+            }
+          ]
+        },
+        "Denali Visitor Center, sled-dog kennels, Savage River, and Teklanika-area bus stops.": {
+          "entity": "Denali National Park and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Denali National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            },
+            {
+              "label": "Wikipedia — Savage River",
+              "url": "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29"
+            }
+          ]
+        }
+      }
     },
     "trapper-creek": {
       "authority": "Alaska State Parks — Denali State Park",
@@ -2539,7 +2742,36 @@
           "note_source": "A multi-day traverse, not a day hike — the stop text calls Curry Ridge \"the primary hike\", which is only true of a much shorter section of it."
         }
       ],
-      "note": "\"Moose Flats Loop provides an easier outing.\" was prose; no listing surfaced under that name."
+      "note": "\"Moose Flats Loop provides an easier outing.\" was prose; no listing surfaced under that name.",
+      "activities": {
+        "Hike K'esugi Ridge Trail (Little Coal Creek access)": {
+          "entity": "Kesugi Ridge",
+          "links": [
+            {
+              "label": "Wikipedia — Kesugi Ridge",
+              "url": "https://en.wikipedia.org/wiki/Kesugi_Ridge"
+            }
+          ]
+        },
+        "Curry Ridge Trail from K'esugi Ken Campground": {
+          "entity": "Denali State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Denali State Park",
+              "url": "https://en.wikipedia.org/wiki/Denali_State_Park"
+            }
+          ]
+        },
+        "Day trip to Talkeetna": {
+          "entity": "Talkeetna, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Talkeetna, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        }
+      }
     },
     "valdez": {
       "authority": "City of Valdez / Chugach NF",
@@ -2609,6 +2841,15 @@
           ],
           "auto": true,
           "auto_km": 59
+        },
+        "Solomon Gulch Trail & fish hatchery": {
+          "entity": "Solomon Gulch Hatchery",
+          "links": [
+            {
+              "label": "Wikipedia — Solomon Gulch Hatchery",
+              "url": "https://en.wikipedia.org/wiki/Solomon_Gulch_Hatchery"
+            }
+          ]
         }
       }
     },
@@ -2659,6 +2900,33 @@
           ],
           "auto": true,
           "auto_km": 10
+        },
+        "Root Glacier Trail": {
+          "entity": "Root Glacier",
+          "links": [
+            {
+              "label": "Wikipedia — Root Glacier",
+              "url": "https://en.wikipedia.org/wiki/Root_Glacier"
+            }
+          ]
+        },
+        "Bonanza Mine Trail": {
+          "entity": "Bonanza Mine",
+          "links": [
+            {
+              "label": "Wikipedia — Bonanza Mine",
+              "url": "https://en.wikipedia.org/wiki/Bonanza_Mine"
+            }
+          ]
+        },
+        "McCarthy village, Kennicott historic mining district, and guided mill tour.": {
+          "entity": "Kennecott, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
         }
       }
     },
@@ -3796,6 +4064,33 @@
           ],
           "auto": true,
           "auto_km": 22
+        },
+        "Kluane NP Visitor Centre (Da Kų Cultural Centre)": {
+          "entity": "Kluane National Park and Reserve",
+          "links": [
+            {
+              "label": "Wikipedia — Kluane National Park and Reserve",
+              "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+            }
+          ]
+        },
+        "King's Throne Trail": {
+          "entity": "Kluane National Park and Reserve",
+          "links": [
+            {
+              "label": "Wikipedia — Kluane National Park and Reserve",
+              "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+            }
+          ]
+        },
+        "Sheep Mountain & Soldier's Summit": {
+          "entity": "Kluane National Park and Reserve",
+          "links": [
+            {
+              "label": "Wikipedia — Kluane National Park and Reserve",
+              "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+            }
+          ]
         }
       }
     },
@@ -3872,6 +4167,33 @@
           ],
           "auto": true,
           "auto_km": 50
+        },
+        "Soak in the Alpha Pool": {
+          "entity": "Liard River Hot Springs Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Liard River Hot Springs Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Liard_River_Hot_Springs_Provincial_Park"
+            }
+          ]
+        },
+        "Soak in the hot springs and walk the wetland boardwalk.": {
+          "entity": "Liard River Hot Springs Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Liard River Hot Springs Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Liard_River_Hot_Springs_Provincial_Park"
+            }
+          ]
+        },
+        "Moose-watching from the boardwalk": {
+          "entity": "Liard River Hot Springs Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Liard River Hot Springs Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Liard_River_Hot_Springs_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -3887,6 +4209,24 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Simulated aurora show, Northern Lights Space & Science Centre": {
+          "entity": "Northern Lights Centre",
+          "links": [
+            {
+              "label": "Wikipedia — Northern Lights Centre",
+              "url": "https://en.wikipedia.org/wiki/Northern_Lights_Centre"
+            }
+          ]
+        },
+        "Northern Lights Centre if the schedule fits.": {
+          "entity": "Northern Lights Centre",
+          "links": [
+            {
+              "label": "Wikipedia — Northern Lights Centre",
+              "url": "https://en.wikipedia.org/wiki/Northern_Lights_Centre"
+            }
+          ]
         }
       },
       "not_a_trail": [
@@ -3919,6 +4259,15 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Tok Mainstreet Visitor Center": {
+          "entity": "Tok, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Tok, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ]
         }
       }
     },
@@ -3967,6 +4316,62 @@
           ],
           "auto": true,
           "auto_km": 22
+        },
+        "North Pole (Santa Claus House) + Gold Dredge No. 8": {
+          "entity": "North Pole, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — North Pole, Alaska",
+              "url": "https://en.wikipedia.org/wiki/North_Pole%2C_Alaska"
+            },
+            {
+              "label": "Wikipedia — Santa Claus House",
+              "url": "https://en.wikipedia.org/wiki/Santa_Claus_House"
+            },
+            {
+              "label": "Wikipedia — Gold Dredge 8",
+              "url": "https://en.wikipedia.org/wiki/Gold_Dredge_8"
+            }
+          ]
+        },
+        "Museum of the North, Morris Thompson Cultural and Visitors Center, Fountainhead Antique Auto Museum, and Creamer's Field": {
+          "entity": "University of Alaska Museum of the North",
+          "links": [
+            {
+              "label": "Wikipedia — University of Alaska Museum of the North",
+              "url": "https://en.wikipedia.org/wiki/University_of_Alaska_Museum_of_the_North"
+            },
+            {
+              "label": "Wikipedia — Morris Thompson Cultural and Visitors Center",
+              "url": "https://en.wikipedia.org/wiki/Morris_Thompson_Cultural_and_Visitors_Center"
+            },
+            {
+              "label": "Wikipedia — Fountainhead Antique Auto Museum",
+              "url": "https://en.wikipedia.org/wiki/Fountainhead_Antique_Auto_Museum"
+            },
+            {
+              "label": "Wikipedia — Creamer's Field Migratory Waterfowl Refuge",
+              "url": "https://en.wikipedia.org/wiki/Creamer%27s_Field_Migratory_Waterfowl_Refuge"
+            }
+          ]
+        },
+        "Chena Hot Springs Road and Angel Rocks as a separate truck day if not using it for aurora.": {
+          "entity": "Chena Hot Springs",
+          "links": [
+            {
+              "label": "Wikipedia — Chena Hot Springs, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
+            }
+          ]
+        },
+        "Pioneer Park is optional; downtown and the riverfront are better for local character.": {
+          "entity": "Pioneer Park (Fairbanks)",
+          "links": [
+            {
+              "label": "Wikipedia — Pioneer Park",
+              "url": "https://en.wikipedia.org/wiki/Pioneer_Park_%28Fairbanks%29"
+            }
+          ]
         }
       }
     },
@@ -3993,6 +4398,19 @@
           ],
           "auto": true,
           "auto_km": 26
+        },
+        "Alaska Native Heritage Center and Anchorage Museum.": {
+          "entity": "Alaska Native Heritage Center",
+          "links": [
+            {
+              "label": "Wikipedia — Alaska Native Heritage Center",
+              "url": "https://en.wikipedia.org/wiki/Alaska_Native_Heritage_Center"
+            },
+            {
+              "label": "Wikipedia — Anchorage Museum",
+              "url": "https://en.wikipedia.org/wiki/Anchorage_Museum"
+            }
+          ]
         }
       }
     },
@@ -4019,6 +4437,42 @@
           ],
           "auto": true,
           "auto_km": 34
+        },
+        "Walk Old Ninilchik Village and the beach below": {
+          "entity": "Ninilchik, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Ninilchik, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Ninilchik%2C_Alaska"
+            }
+          ]
+        },
+        "Old Ninilchik Village, the Russian Orthodox church, beach, and harbor.": {
+          "entity": "Ninilchik, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Ninilchik, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Ninilchik%2C_Alaska"
+            }
+          ]
+        },
+        "Fish the Ninilchik River": {
+          "entity": "Ninilchik, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Ninilchik, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Ninilchik%2C_Alaska"
+            }
+          ]
+        },
+        "Deep Creek State Recreation Area and Anchor Point.": {
+          "entity": "Anchor Point, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Anchor Point, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Anchor_Point%2C_Alaska"
+            }
+          ]
         }
       },
       "trails": [],
@@ -4067,6 +4521,32 @@
           ],
           "auto": true,
           "auto_km": 82
+        },
+        "Dalton Highway detour to the Arctic Circle / Coldfoot": {
+          "entity": "Dalton Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Dalton Highway",
+              "url": "https://en.wikipedia.org/wiki/Dalton_Highway"
+            },
+            {
+              "label": "Wikipedia — Arctic Circle",
+              "url": "https://en.wikipedia.org/wiki/Arctic_Circle"
+            },
+            {
+              "label": "Wikipedia — Coldfoot, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Coldfoot%2C_Alaska"
+            }
+          ]
+        },
+        "Large Animal Research Station tours and local farmers markets are worthwhile.": {
+          "entity": "Large Animal Research Station",
+          "links": [
+            {
+              "label": "Wikipedia — Large Animal Research Station",
+              "url": "https://en.wikipedia.org/wiki/Large_Animal_Research_Station"
+            }
+          ]
         }
       }
     },
@@ -8880,6 +9360,107 @@
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
       ]
+    },
+    "dawson-creek": {
+      "activities": {
+        "Mile 0 Post & Alaska Highway House": {
+          "entity": "Alaska Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Alaska Highway",
+              "url": "https://en.wikipedia.org/wiki/Alaska_Highway"
+            },
+            {
+              "label": "Wikipedia — Dawson Creek",
+              "url": "https://en.wikipedia.org/wiki/Dawson_Creek"
+            }
+          ]
+        },
+        "Photograph Mile 0 and walk the compact historic area.": {
+          "entity": "Dawson Creek",
+          "links": [
+            {
+              "label": "Wikipedia — Dawson Creek",
+              "url": "https://en.wikipedia.org/wiki/Dawson_Creek"
+            }
+          ]
+        },
+        "Visit the Alaska Highway House for road history and current local context.": {
+          "entity": "Alaska Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Alaska Highway",
+              "url": "https://en.wikipedia.org/wiki/Alaska_Highway"
+            }
+          ]
+        }
+      }
+    },
+    "chitina": {
+      "activities": {
+        "Drive the McCarthy Road to McCarthy & Kennecott (in the towed 4x4, not the motorhome)": {
+          "entity": "McCarthy Road",
+          "links": [
+            {
+              "label": "Wikipedia — McCarthy Road",
+              "url": "https://en.wikipedia.org/wiki/McCarthy_Road"
+            },
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
+        },
+        "Tour Kennecott Mines National Historic Landmark": {
+          "entity": "Kennecott, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
+        },
+        "Watch fish wheels and dipnetters on the Copper River at Chitina": {
+          "entity": "Copper River (Alaska)",
+          "links": [
+            {
+              "label": "Wikipedia — Copper River",
+              "url": "https://en.wikipedia.org/wiki/Copper_River_%28Alaska%29"
+            }
+          ]
+        },
+        "Stop at the Wrangell-St. Elias NPS ranger station in Chitina": {
+          "entity": "Wrangell–St. Elias National Park and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Wrangell–St. Elias National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Wrangell%E2%80%93St._Elias_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Walk historic Chitina townsite": {
+          "entity": "Chitina, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Chitina, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Chitina%2C_Alaska"
+            }
+          ]
+        },
+        "Chitina historic district, Copper River viewpoints, and the park visitor contact station.": {
+          "entity": "Chitina, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Chitina, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Chitina%2C_Alaska"
+            },
+            {
+              "label": "Wikipedia — Copper River",
+              "url": "https://en.wikipedia.org/wiki/Copper_River_%28Alaska%29"
+            }
+          ]
+        }
+      }
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",

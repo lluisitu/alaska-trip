@@ -1473,12 +1473,12 @@
           "distance": "0.4 mi",
           "time": "0.5-1 hr",
           "elevation_gain": "141 ft",
-          "reviews": "4.7 (690)",
+          "reviews": "4.7 (732)",
           "uses": [
             "hike"
           ],
           "was": "Inferno Cone / Loop Drive trails — no url, and it named a drive and a trail together",
-          "note_source": "Steep and short, 360-degree views of the Great Rift, Snake River Plain and the Pioneers."
+          "note_source": "Steep and short — 360-degree views over the Great Rift, the Snake River Plain and the Pioneers. Best-rated walking trail in the monument."
         }
       ]
     },
@@ -2821,8 +2821,8 @@
             "match": "exact",
             "tier": "indexed"
           },
-          "distance": "2.0 mi loop",
-          "time": "43 min",
+          "distance": "2 mi loop",
+          "time": "0.5-1 hr",
           "difficulty": "Easy",
           "reviews": "60",
           "uses": [
@@ -2830,7 +2830,8 @@
           ],
           "was": "Wye Lake Park — no url",
           "season": "Best June-August; arrival 12 Sep is past it.",
-          "note_source": "Reviewers note missing interpretive signs and bugs."
+          "note_source": "Reviewers note missing interpretive signs and bugs.",
+          "elevation_gain": "141 ft"
         }
       ],
       "activities": {
@@ -2856,17 +2857,20 @@
         {
           "name": "Beaver Lodge Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/canada/british-columbia/beaver-lodge-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "distance": "1.8 mi",
           "elevation_gain": "236 ft",
-          "reviews": "4.7 (56)",
+          "reviews": "4.7 (60)",
           "uses": [
             "hike"
           ],
           "was": "Beaver Lodge Trail (south end) — no url",
-          "note_source": "The park's best-rated trail. AllTrails has it inside the Tā Ch'ilā park page but returned no direct listing url, so it carries the park link on the box heading instead of a constructed one."
+          "note_source": "Ta Ch'ila's best-rated trail — from the campground along the lake edge into the forest. Recovered on an open search. Note there are Beaver Lodge trails in Oklahoma (marked CLOSED) and New York; this is the BC one.",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy"
         },
         {
           "name": "Lake Shore Trail",
@@ -2879,7 +2883,7 @@
             "hike"
           ],
           "was": "Lakeshore Trail (north campground) — no url",
-          "note_source": "The park's longest. Same situation — no direct listing url surfaced."
+          "note_source": "BC Parks publishes the campground map showing Beaver Lodge and Lakeshore trails: nrs.objectstore.gov.bc.ca tachila_boya_lakes_campground_map. No separate AllTrails listing surfaced."
         }
       ],
       "activities": {
@@ -3004,7 +3008,7 @@
             "hike"
           ],
           "was": "Ancient Forest Boardwalk Trail / Ancient Forest Universal Access Trail — two entries, no urls",
-          "note_source": "Boardwalk sections through inland temperate rainforest — well maintained and accessible."
+          "note_source": "Ancient Forest / Chun T'oh Whudujut, 120 km east of Prince George — 2.3 km of boardwalk to the Big Tree, Tree Beard and a cascading waterfall, through thousand-year-old western red cedars. BC Parks: bcparks.ca/ancient-forest-chun-toh-whudujut-park"
         }
       ]
     },
@@ -4774,16 +4778,18 @@
           "note_source": "Seasonal footbridge over the Sandy River is removed in winter — the stop is 6-9 Nov, so check before going."
         },
         {
-          "name": "Mirror Lake Trail #664",
+          "name": "Mirror Lake Loop",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/oregon/mirror-lake-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Mirror Lake / Glacier View Trailhead — a trailhead, not a trail",
-          "note_source": "From the Mirror Lake trailhead near Government Camp; continues to Tom, Dick and Harry Mountain. No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "The most popular trail in Oregon by review count. About 2 miles to the lake; continues to Tom, Dick and Harry Mountain.",
+          "reviews": "4.7 (9,204)"
         }
       ]
     },
@@ -5162,28 +5168,39 @@
       },
       "trails": [
         {
-          "name": "Jug Handle State Natural Reserve",
+          "name": "Jug Handle Beach and Ecological Staircase Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/california/jug-handle-beach-and-ecological-staircase-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Jug Handle State Natural Reserve — a reserve, not a trail",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "The ecological staircase — five marine terraces, each about 100,000 years older than the last.",
+          "distance": "1.9 mi",
+          "time": "41 min",
+          "difficulty": "Easy",
+          "elevation_gain": "144 ft",
+          "reviews": "75"
         },
         {
-          "name": "Russian Gulch Falls Trail",
+          "name": "Russian Gulch Waterfall Loop",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/california/russian-gulch-waterfall-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Russian Gulch State Park (waterfall trailhead) — a trailhead",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why.",
+          "distance": "4.2 mi loop",
+          "time": "1 h 52 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "1,829"
         }
       ]
     },
@@ -5258,16 +5275,18 @@
       },
       "trails": [
         {
-          "name": "Point Lobos State Natural Reserve",
+          "name": "Point Lobos Loop Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/california/point-lobos-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Point Lobos State Natural Reserve — a reserve, not a trail",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "note_source": "Coastal loop south of Carmel — harbour seals, sea lions, otters in the kelp. Reserve entry fee and the car park fills early.",
+          "reviews": "15,517"
         },
         {
           "name": "Badger Hills Trail, Fort Ord",

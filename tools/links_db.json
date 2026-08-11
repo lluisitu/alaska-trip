@@ -3082,6 +3082,24 @@
           ],
           "auto": true,
           "auto_km": 17
+        },
+        "Dredge No. 4 National Historic Site tour": {
+          "entity": "Dredge No. 4",
+          "links": [
+            {
+              "label": "Wikipedia — Dredge No. 4",
+              "url": "https://en.wikipedia.org/wiki/Dredge_No._4"
+            }
+          ]
+        },
+        "Midnight Dome sunset viewpoint": {
+          "entity": "Dawson City",
+          "links": [
+            {
+              "label": "Wikipedia — Dawson City",
+              "url": "https://en.wikipedia.org/wiki/Dawson_City"
+            }
+          ]
         }
       }
     },
@@ -3122,6 +3140,15 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Revisit the Sign Post Forest only if desired.": {
+          "entity": "Sign Post Forest",
+          "links": [
+            {
+              "label": "Wikipedia — Sign Post Forest",
+              "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
+            }
+          ]
         }
       }
     },
@@ -3267,6 +3294,33 @@
           ],
           "auto": true,
           "auto_km": 21
+        },
+        "Bear Glacier roadside viewpoint": {
+          "entity": "Bear Glacier (British Columbia)",
+          "links": [
+            {
+              "label": "Wikipedia — Bear Glacier",
+              "url": "https://en.wikipedia.org/wiki/Bear_Glacier_%28British_Columbia%29"
+            }
+          ]
+        },
+        "Hyder, Alaska border-town stop": {
+          "entity": "Hyder, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Hyder, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Hyder%2C_Alaska"
+            }
+          ]
+        },
+        "Stewart’s historic center, estuary boardwalk, and Bear Glacier viewpoint.": {
+          "entity": "Stewart, British Columbia",
+          "links": [
+            {
+              "label": "Wikipedia — Stewart, British Columbia",
+              "url": "https://en.wikipedia.org/wiki/Stewart%2C_British_Columbia"
+            }
+          ]
         }
       }
     },
@@ -3300,7 +3354,18 @@
           "entry": "Ancient Forest Universal Access Trail",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
         }
-      ]
+      ],
+      "activities": {
+        "Ancient Forest / Chun T'oh Whudujut Provincial Park boardwalk": {
+          "entity": "Ancient Forest/Chun T'oh Whudujut Provincial Park and Protected Area",
+          "links": [
+            {
+              "label": "Wikipedia — Ancient Forest/Chun T'oh Whudujut Provincial Park and Protected Area",
+              "url": "https://en.wikipedia.org/wiki/Ancient_Forest/Chun_T%27oh_Whudujut_Provincial_Park_and_Protected_Area"
+            }
+          ]
+        }
+      }
     },
     "clearwater": {
       "authority": "BC Parks — Wells Gray Provincial Park",
@@ -3401,6 +3466,33 @@
           ],
           "auto": true,
           "auto_km": 35
+        },
+        "Spahats Falls & Canyon": {
+          "entity": "Wells Gray Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Wells Gray Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Wells_Gray_Provincial_Park"
+            }
+          ]
+        },
+        "Moul Falls Trail (with cave access)": {
+          "entity": "Wells Gray Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Wells Gray Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Wells_Gray_Provincial_Park"
+            }
+          ]
+        },
+        "Trophy Mountain / Trophy Meadows alpine hike": {
+          "entity": "Wells Gray Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Wells Gray Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Wells_Gray_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -3682,6 +3774,15 @@
           ],
           "auto": true,
           "auto_km": 30
+        },
+        "Lower Yosemite Fall Trail": {
+          "entity": "Yosemite Falls",
+          "links": [
+            {
+              "label": "Wikipedia — Yosemite Falls",
+              "url": "https://en.wikipedia.org/wiki/Yosemite_Falls"
+            }
+          ]
         }
       },
       "trails": [
@@ -3734,6 +3835,15 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Wheeler Peak Scenic Drive (truck only)": {
+          "entity": "Wheeler Peak (Nevada)",
+          "links": [
+            {
+              "label": "Wikipedia — Wheeler Peak",
+              "url": "https://en.wikipedia.org/wiki/Wheeler_Peak_%28Nevada%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -3840,6 +3950,33 @@
           ],
           "auto": true,
           "auto_km": 18
+        },
+        "Hidden Valley & Barker Dam": {
+          "entity": "Barker Dam",
+          "links": [
+            {
+              "label": "Wikipedia — Barker Dam",
+              "url": "https://en.wikipedia.org/wiki/Barker_Dam"
+            }
+          ]
+        },
+        "Noah Purifoy Outdoor Desert Art Museum": {
+          "entity": "Noah Purifoy",
+          "links": [
+            {
+              "label": "Wikipedia — Noah Purifoy",
+              "url": "https://en.wikipedia.org/wiki/Noah_Purifoy"
+            }
+          ]
+        },
+        "Pioneertown & Pappy & Harriet's": {
+          "entity": "Pioneertown, California",
+          "links": [
+            {
+              "label": "Wikipedia — Pioneertown, California",
+              "url": "https://en.wikipedia.org/wiki/Pioneertown%2C_California"
+            }
+          ]
         }
       }
     },
@@ -3902,6 +4039,33 @@
           ],
           "auto": true,
           "auto_km": 80
+        },
+        "Artists Drive and Artists Palette scenic drive": {
+          "entity": "Artist's Drive",
+          "links": [
+            {
+              "label": "Wikipedia — Artist's Drive",
+              "url": "https://en.wikipedia.org/wiki/Artist%27s_Drive"
+            }
+          ]
+        },
+        "Mesquite Flat Sand Dunes": {
+          "entity": "Mesquite Flat Sand Dunes",
+          "links": [
+            {
+              "label": "Wikipedia — Places of interest in the Death Valley area",
+              "url": "https://en.wikipedia.org/wiki/Places_of_interest_in_the_Death_Valley_area"
+            }
+          ]
+        },
+        "Devil's Golf Course": {
+          "entity": "Devil's Golf Course",
+          "links": [
+            {
+              "label": "Wikipedia — Places of interest in the Death Valley area",
+              "url": "https://en.wikipedia.org/wiki/Places_of_interest_in_the_Death_Valley_area"
+            }
+          ]
         }
       },
       "trails": [
@@ -4046,6 +4210,15 @@
           ],
           "auto": true,
           "auto_km": 32
+        },
+        "Moro Rock": {
+          "entity": "Moro Rock",
+          "links": [
+            {
+              "label": "Wikipedia — Moro Rock",
+              "url": "https://en.wikipedia.org/wiki/Moro_Rock"
+            }
+          ]
         }
       }
     },
@@ -4629,6 +4802,15 @@
           ],
           "auto": true,
           "auto_km": 61
+        },
+        "Moricetown Canyon traditional salmon fishery": {
+          "entity": "Witset",
+          "links": [
+            {
+              "label": "Wikipedia — Witset",
+              "url": "https://en.wikipedia.org/wiki/Witset"
+            }
+          ]
         }
       }
     },
@@ -4677,6 +4859,24 @@
           ],
           "auto": true,
           "auto_km": 6
+        },
+        "Nk'Mip Desert Cultural Centre": {
+          "entity": "Nk'Mip Desert Cultural Centre",
+          "links": [
+            {
+              "label": "Wikipedia — Nk'Mip Desert Cultural Centre",
+              "url": "https://en.wikipedia.org/wiki/Nk%27Mip_Desert_Cultural_Centre"
+            }
+          ]
+        },
+        "Explore Oliver and nearby wineries selectively.": {
+          "entity": "Osoyoos",
+          "links": [
+            {
+              "label": "Wikipedia — Osoyoos",
+              "url": "https://en.wikipedia.org/wiki/Osoyoos"
+            }
+          ]
         }
       },
       "trails": [
@@ -4706,6 +4906,24 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Washington Pass Overlook": {
+          "entity": "Washington Pass",
+          "links": [
+            {
+              "label": "Wikipedia — Washington Pass",
+              "url": "https://en.wikipedia.org/wiki/Washington_Pass"
+            }
+          ]
+        },
+        "Maple Pass Loop — the larch hike": {
+          "entity": "North Cascades National Park",
+          "links": [
+            {
+              "label": "Wikipedia — North Cascades National Park",
+              "url": "https://en.wikipedia.org/wiki/North_Cascades_National_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -4811,6 +5029,24 @@
           ],
           "auto": true,
           "auto_km": 20
+        },
+        "Silver Falls Loop at Ohanapecosh": {
+          "entity": "Ohanapecosh River",
+          "links": [
+            {
+              "label": "Wikipedia — Ohanapecosh River",
+              "url": "https://en.wikipedia.org/wiki/Ohanapecosh_River"
+            }
+          ]
+        },
+        "White Pass Scenic Byway drive": {
+          "entity": "White Pass (Washington)",
+          "links": [
+            {
+              "label": "Wikipedia — White Pass",
+              "url": "https://en.wikipedia.org/wiki/White_Pass_%28Washington%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -4869,6 +5105,33 @@
           ],
           "auto": true,
           "auto_km": 49
+        },
+        "Mt. St. Helens Visitor Center at Silver Lake": {
+          "entity": "Mount St. Helens",
+          "links": [
+            {
+              "label": "Wikipedia — Mount St. Helens",
+              "url": "https://en.wikipedia.org/wiki/Mount_St._Helens"
+            }
+          ]
+        },
+        "Coldwater Lake": {
+          "entity": "Coldwater Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Coldwater Lake",
+              "url": "https://en.wikipedia.org/wiki/Coldwater_Lake"
+            }
+          ]
+        },
+        "Castle Rock riverfront and murals": {
+          "entity": "Castle Rock, Washington",
+          "links": [
+            {
+              "label": "Wikipedia — Castle Rock, Washington",
+              "url": "https://en.wikipedia.org/wiki/Castle_Rock%2C_Washington"
+            }
+          ]
         }
       },
       "trails": [
@@ -5057,6 +5320,28 @@
           ],
           "auto": true,
           "auto_km": 26
+        },
+        "Drive or walk the 'World's Longest Beach'": {
+          "entity": "Long Beach, Washington",
+          "links": [
+            {
+              "label": "Wikipedia — Long Beach, Washington",
+              "url": "https://en.wikipedia.org/wiki/Long_Beach%2C_Washington"
+            }
+          ]
+        },
+        "Visit Oysterville and Willapa Bay oyster farms": {
+          "entity": "Oysterville, Washington",
+          "links": [
+            {
+              "label": "Wikipedia — Oysterville, Washington",
+              "url": "https://en.wikipedia.org/wiki/Oysterville%2C_Washington"
+            },
+            {
+              "label": "Wikipedia — Willapa Bay",
+              "url": "https://en.wikipedia.org/wiki/Willapa_Bay"
+            }
+          ]
         }
       },
       "trails": [
@@ -5189,6 +5474,24 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Dog Mountain Trail (permit hike)": {
+          "entity": "Dog Mountain (Washington)",
+          "links": [
+            {
+              "label": "Wikipedia — Dog Mountain",
+              "url": "https://en.wikipedia.org/wiki/Dog_Mountain_%28Washington%29"
+            }
+          ]
+        },
+        "Hood River waterfront & windsurfing/kiteboarding": {
+          "entity": "Hood River, Oregon",
+          "links": [
+            {
+              "label": "Wikipedia — Hood River, Oregon",
+              "url": "https://en.wikipedia.org/wiki/Hood_River%2C_Oregon"
+            }
+          ]
         }
       },
       "trails": [
@@ -5275,6 +5578,33 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Trillium Lake Loop": {
+          "entity": "Trillium Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Trillium Lake",
+              "url": "https://en.wikipedia.org/wiki/Trillium_Lake"
+            }
+          ]
+        },
+        "Ramona Falls Loop": {
+          "entity": "Ramona Falls",
+          "links": [
+            {
+              "label": "Wikipedia — Ramona Falls",
+              "url": "https://en.wikipedia.org/wiki/Ramona_Falls"
+            }
+          ]
+        },
+        "Salmon River Trail": {
+          "entity": "Salmon River (Oregon)",
+          "links": [
+            {
+              "label": "Wikipedia — Salmon River",
+              "url": "https://en.wikipedia.org/wiki/Salmon_River"
+            }
+          ]
         }
       },
       "trails": [
@@ -5379,6 +5709,24 @@
           ],
           "auto": true,
           "auto_km": 1
+        },
+        "Cascade Lakes Scenic Byway drive with Todd Lake stop": {
+          "entity": "Cascade Lakes Scenic Byway",
+          "links": [
+            {
+              "label": "Wikipedia — Cascade Lakes Scenic Byway",
+              "url": "https://en.wikipedia.org/wiki/Cascade_Lakes_Scenic_Byway"
+            }
+          ]
+        },
+        "Pilot Butte": {
+          "entity": "Pilot Butte (Oregon)",
+          "links": [
+            {
+              "label": "Wikipedia — Pilot Butte",
+              "url": "https://en.wikipedia.org/wiki/Pilot_Butte_%28Oregon%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -5453,6 +5801,24 @@
           ],
           "auto": true,
           "auto_km": 58
+        },
+        "Oregon Coast Aquarium": {
+          "entity": "Oregon Coast Aquarium",
+          "links": [
+            {
+              "label": "Wikipedia — Oregon Coast Aquarium",
+              "url": "https://en.wikipedia.org/wiki/Oregon_Coast_Aquarium"
+            }
+          ]
+        },
+        "Devil's Punchbowl State Natural Area": {
+          "entity": "Devil's Punchbowl State Natural Area",
+          "links": [
+            {
+              "label": "Wikipedia — Devil's Punchbowl State Natural Area",
+              "url": "https://en.wikipedia.org/wiki/Devil%27s_Punchbowl_State_Natural_Area"
+            }
+          ]
         }
       },
       "trails": [
@@ -5515,6 +5881,24 @@
           ],
           "auto": true,
           "auto_km": 8
+        },
+        "Old Town Bandon waterfront": {
+          "entity": "Bandon, Oregon",
+          "links": [
+            {
+              "label": "Wikipedia — Bandon, Oregon",
+              "url": "https://en.wikipedia.org/wiki/Bandon%2C_Oregon"
+            }
+          ]
+        },
+        "Cape Blanco Historic Heritage Site (Hughes House & lighthouse)": {
+          "entity": "Cape Blanco Light",
+          "links": [
+            {
+              "label": "Wikipedia — Cape Blanco Light",
+              "url": "https://en.wikipedia.org/wiki/Cape_Blanco_Light"
+            }
+          ]
         }
       },
       "trails": [
@@ -5571,6 +5955,24 @@
           ],
           "auto": true,
           "auto_km": 21
+        },
+        "Fern Canyon (Prairie Creek Redwoods, via Davison Road)": {
+          "entity": "Prairie Creek Redwoods State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Prairie Creek Redwoods State Park",
+              "url": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
+            }
+          ]
+        },
+        "Damnation Creek Trail (Del Norte Coast Redwoods)": {
+          "entity": "Del Norte Coast Redwoods State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Del Norte Coast Redwoods State Park",
+              "url": "https://en.wikipedia.org/wiki/Del_Norte_Coast_Redwoods_State_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -5683,6 +6085,15 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Glass Beach / Noyo Headlands Park": {
+          "entity": "Glass Beach (Fort Bragg, California)",
+          "links": [
+            {
+              "label": "Wikipedia — Glass Beach",
+              "url": "https://en.wikipedia.org/wiki/Glass_Beach_%28Fort_Bragg%2C_California%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -5792,6 +6203,19 @@
           ],
           "auto": true,
           "auto_km": 11
+        },
+        "Carmel-by-the-Sea & Pacific Grove stroll": {
+          "entity": "Carmel-by-the-Sea, California",
+          "links": [
+            {
+              "label": "Wikipedia — Carmel-by-the-Sea, California",
+              "url": "https://en.wikipedia.org/wiki/Carmel-by-the-Sea%2C_California"
+            },
+            {
+              "label": "Wikipedia — Pacific Grove, California",
+              "url": "https://en.wikipedia.org/wiki/Pacific_Grove%2C_California"
+            }
+          ]
         }
       },
       "trails": [
@@ -5847,6 +6271,24 @@
           ],
           "auto": true,
           "auto_km": 64
+        },
+        "Red Rock Canyon NCA Scenic Drive": {
+          "entity": "Red Rock Canyon National Conservation Area",
+          "links": [
+            {
+              "label": "Wikipedia — Red Rock Canyon National Conservation Area",
+              "url": "https://en.wikipedia.org/wiki/Red_Rock_Canyon_National_Conservation_Area"
+            }
+          ]
+        },
+        "Calico Tanks Trail (Red Rock Canyon)": {
+          "entity": "Red Rock Canyon National Conservation Area",
+          "links": [
+            {
+              "label": "Wikipedia — Red Rock Canyon National Conservation Area",
+              "url": "https://en.wikipedia.org/wiki/Red_Rock_Canyon_National_Conservation_Area"
+            }
+          ]
         }
       },
       "trails": [
@@ -5930,6 +6372,33 @@
           ],
           "auto": true,
           "auto_km": 51
+        },
+        "Borrego Palm Canyon Trail": {
+          "entity": "Anza-Borrego Desert State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Anza-Borrego Desert State Park",
+              "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+            }
+          ]
+        },
+        "The Slot": {
+          "entity": "Anza-Borrego Desert State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Anza-Borrego Desert State Park",
+              "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+            }
+          ]
+        },
+        "Galleta Meadows sky art": {
+          "entity": "Anza-Borrego Desert State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Anza-Borrego Desert State Park",
+              "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+            }
+          ]
         }
       }
     },
@@ -6013,6 +6482,24 @@
           ],
           "auto": true,
           "auto_km": 17
+        },
+        "Kofa Queen Canyon (truck)": {
+          "entity": "Kofa National Wildlife Refuge",
+          "links": [
+            {
+              "label": "Wikipedia — Kofa National Wildlife Refuge",
+              "url": "https://en.wikipedia.org/wiki/Kofa_National_Wildlife_Refuge"
+            }
+          ]
+        },
+        "Castle Dome City ghost town": {
+          "entity": "Castle Dome City, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Castle Dome Landing, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Castle_Dome_Landing%2C_Arizona"
+            }
+          ]
         }
       }
     },
@@ -6072,6 +6559,37 @@
           ],
           "auto": true,
           "auto_km": 18
+        },
+        "Mount Lemmon Scenic Byway drive and cooler hiking": {
+          "entity": "Mount Lemmon",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Lemmon",
+              "url": "https://en.wikipedia.org/wiki/Mount_Lemmon"
+            }
+          ]
+        },
+        "Colossal Cave Mountain Park": {
+          "entity": "Colossal Cave",
+          "links": [
+            {
+              "label": "Wikipedia — Colossal Cave",
+              "url": "https://en.wikipedia.org/wiki/Colossal_Cave"
+            }
+          ]
+        },
+        "Day trips to Tubac, Bisbee, and Sonoita wine country": {
+          "entity": "Tubac, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Tubac, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Tubac%2C_Arizona"
+            },
+            {
+              "label": "Wikipedia — Bisbee, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Bisbee%2C_Arizona"
+            }
+          ]
         }
       },
       "trails": [
@@ -6114,6 +6632,15 @@
           ],
           "auto": true,
           "auto_km": 18
+        },
+        "Canyon Loop Trail": {
+          "entity": "Catalina State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Catalina State Park",
+              "url": "https://en.wikipedia.org/wiki/Catalina_State_Park"
+            }
+          ]
         }
       }
     },
@@ -6140,6 +6667,24 @@
           ],
           "auto": true,
           "auto_km": 35
+        },
+        "Queen Mine Tour": {
+          "entity": "Queen Mine",
+          "links": [
+            {
+              "label": "Wikipedia — Copper Queen Mine",
+              "url": "https://en.wikipedia.org/wiki/Copper_Queen_Mine"
+            }
+          ]
+        },
+        "Walking old Bisbee": {
+          "entity": "Bisbee, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Bisbee, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Bisbee%2C_Arizona"
+            }
+          ]
         }
       }
     },
@@ -6166,6 +6711,24 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Besh-Ba-Gowah": {
+          "entity": "Besh-Ba-Gowah",
+          "links": [
+            {
+              "label": "Wikipedia — Besh-Ba-Gowah",
+              "url": "https://en.wikipedia.org/wiki/Besh-Ba-Gowah"
+            }
+          ]
+        },
+        "Apache Trail / Fish Creek Hill (truck only)": {
+          "entity": "Apache Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Apache Trail",
+              "url": "https://en.wikipedia.org/wiki/Apache_Trail"
+            }
+          ]
         }
       }
     },
@@ -6192,6 +6755,33 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Sedona Red Rocks day trip": {
+          "entity": "Sedona, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Sedona, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Sedona%2C_Arizona"
+            }
+          ]
+        },
+        "Bell Rock Pathway": {
+          "entity": "Bell Rock (Arizona)",
+          "links": [
+            {
+              "label": "Wikipedia — Bell Rock",
+              "url": "https://en.wikipedia.org/wiki/Bell_Rock_%28Arizona%29"
+            }
+          ]
+        },
+        "Jerome ghost town day trip": {
+          "entity": "Jerome, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Jerome, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Jerome%2C_Arizona"
+            }
+          ]
         }
       },
       "trails": [
@@ -6251,6 +6841,15 @@
           ],
           "auto": true,
           "auto_km": 65
+        },
+        "Navajo Loop & Queen's Garden combo": {
+          "entity": "Queen's Garden Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Queen's Garden Trail",
+              "url": "https://en.wikipedia.org/wiki/Queen%27s_Garden_Trail"
+            }
+          ]
         }
       },
       "trails": [
@@ -6316,6 +6915,33 @@
           ],
           "auto": true,
           "auto_km": 69
+        },
+        "Capitol Reef Scenic Drive": {
+          "entity": "Capitol Reef National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Capitol Reef National Park",
+              "url": "https://en.wikipedia.org/wiki/Capitol_Reef_National_Park"
+            }
+          ]
+        },
+        "Fruita Historic District & Gifford Homestead": {
+          "entity": "Fruita, Utah",
+          "links": [
+            {
+              "label": "Wikipedia — Fruita, Utah",
+              "url": "https://en.wikipedia.org/wiki/Fruita%2C_Utah"
+            }
+          ]
+        },
+        "Cathedral Valley 4x4 loop (towed truck only)": {
+          "entity": "Cathedral Valley",
+          "links": [
+            {
+              "label": "Wikipedia — Cathedral Valley",
+              "url": "https://en.wikipedia.org/wiki/Cathedral_Valley"
+            }
+          ]
         }
       },
       "trails": [
@@ -6398,6 +7024,24 @@
           ],
           "auto": true,
           "auto_km": 18
+        },
+        "Fisher Towers Trail": {
+          "entity": "Fisher Towers",
+          "links": [
+            {
+              "label": "Wikipedia — Fisher Towers",
+              "url": "https://en.wikipedia.org/wiki/Fisher_Towers"
+            }
+          ]
+        },
+        "Corona Arch Trail": {
+          "entity": "Corona Arch",
+          "links": [
+            {
+              "label": "Wikipedia — Corona Arch",
+              "url": "https://en.wikipedia.org/wiki/Corona_Arch"
+            }
+          ]
         }
       },
       "trails": [
@@ -6479,6 +7123,15 @@
           ],
           "auto": true,
           "auto_km": 10
+        },
+        "Million Dollar Highway to Silverton": {
+          "entity": "Million Dollar Highway",
+          "links": [
+            {
+              "label": "Wikipedia — U.S. Route 550",
+              "url": "https://en.wikipedia.org/wiki/U.S._Route_550"
+            }
+          ]
         }
       },
       "trails": [
@@ -6547,6 +7200,24 @@
           ],
           "auto": true,
           "auto_km": 27
+        },
+        "Balcony House ranger-guided tour": {
+          "entity": "Mesa Verde National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Mesa Verde National Park",
+              "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+            }
+          ]
+        },
+        "Mesa Top Loop Road": {
+          "entity": "Mesa Verde National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Mesa Verde National Park",
+              "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -6588,6 +7259,15 @@
           ],
           "auto": true,
           "auto_km": 71
+        },
+        "Durango & Silverton Narrow Gauge Railroad fall photo run": {
+          "entity": "Durango and Silverton Narrow Gauge Railroad",
+          "links": [
+            {
+              "label": "Wikipedia — Durango and Silverton Narrow Gauge Railroad",
+              "url": "https://en.wikipedia.org/wiki/Durango_and_Silverton_Narrow_Gauge_Railroad"
+            }
+          ]
         }
       },
       "trails": [
@@ -6662,6 +7342,24 @@
           ],
           "auto": true,
           "auto_km": 159
+        },
+        "Soak at the Pagosa hot springs": {
+          "entity": "Pagosa Springs, Colorado",
+          "links": [
+            {
+              "label": "Wikipedia — Pagosa Springs, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Pagosa_Springs%2C_Colorado"
+            }
+          ]
+        },
+        "Cumbres & Toltec Scenic Railroad day trip (Chama)": {
+          "entity": "Cumbres and Toltec Scenic Railroad",
+          "links": [
+            {
+              "label": "Wikipedia — Cumbres and Toltec Scenic Railroad",
+              "url": "https://en.wikipedia.org/wiki/Cumbres_and_Toltec_Scenic_Railroad"
+            }
+          ]
         }
       },
       "trails": [
@@ -9359,7 +10057,27 @@
           "was": "Alabama Hills Movie Road — a road, not a trail",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
-      ]
+      ],
+      "activities": {
+        "Mobius Arch Loop": {
+          "entity": "Alabama Hills",
+          "links": [
+            {
+              "label": "Wikipedia — Alabama Hills",
+              "url": "https://en.wikipedia.org/wiki/Alabama_Hills"
+            }
+          ]
+        },
+        "Whitney Portal Road": {
+          "entity": "Whitney Portal",
+          "links": [
+            {
+              "label": "Wikipedia — Whitney Portal, California",
+              "url": "https://en.wikipedia.org/wiki/Whitney_Portal%2C_California"
+            }
+          ]
+        }
+      }
     },
     "dawson-creek": {
       "activities": {
@@ -9457,6 +10175,90 @@
             {
               "label": "Wikipedia — Copper River",
               "url": "https://en.wikipedia.org/wiki/Copper_River_%28Alaska%29"
+            }
+          ]
+        }
+      }
+    },
+    "organ-pipe-ajo": {
+      "activities": {
+        "Ajo Mountain Drive (truck)": {
+          "entity": "Organ Pipe Cactus National Monument",
+          "links": [
+            {
+              "label": "Wikipedia — Organ Pipe Cactus National Monument",
+              "url": "https://en.wikipedia.org/wiki/Organ_Pipe_Cactus_National_Monument"
+            }
+          ]
+        },
+        "Estes Canyon–Bull Pasture Loop": {
+          "entity": "Organ Pipe Cactus National Monument",
+          "links": [
+            {
+              "label": "Wikipedia — Organ Pipe Cactus National Monument",
+              "url": "https://en.wikipedia.org/wiki/Organ_Pipe_Cactus_National_Monument"
+            }
+          ]
+        },
+        "Ajo plaza & Scenic Loop": {
+          "entity": "Ajo, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Ajo, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Ajo%2C_Arizona"
+            }
+          ]
+        }
+      }
+    },
+    "chiricahua-willcox": {
+      "activities": {
+        "The Big Loop": {
+          "entity": "Chiricahua National Monument",
+          "links": [
+            {
+              "label": "Wikipedia — Chiricahua National Monument",
+              "url": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+            }
+          ]
+        },
+        "Echo Canyon Grottoes Loop": {
+          "entity": "Chiricahua National Monument",
+          "links": [
+            {
+              "label": "Wikipedia — Chiricahua National Monument",
+              "url": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+            }
+          ]
+        },
+        "Fort Bowie NHS": {
+          "entity": "Fort Bowie National Historic Site",
+          "links": [
+            {
+              "label": "Wikipedia — Fort Bowie",
+              "url": "https://en.wikipedia.org/wiki/Fort_Bowie"
+            }
+          ]
+        },
+        "Willcox wine country": {
+          "entity": "Willcox, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Willcox, Arizona",
+              "url": "https://en.wikipedia.org/wiki/Willcox%2C_Arizona"
+            }
+          ]
+        }
+      }
+    },
+    "patagonia-sonoita": {
+      "activities": {
+        "Patagonia-Sonoita Creek Preserve": {
+          "entity": "Patagonia-Sonoita Creek Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Patagonia-Sonoita Creek Preserve",
+              "url": "https://en.wikipedia.org/wiki/Patagonia-Sonoita_Creek_Preserve"
             }
           ]
         }

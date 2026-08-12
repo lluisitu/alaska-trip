@@ -1,0 +1,1028 @@
+{
+  "_meta": {
+    "pass": "east extension block C — trails with no link",
+    "stops": 18,
+    "trails_researched": 33,
+    "method": "Open-web search (no domain restriction), URLs copied from search results only. alltrails.com itself returns 403 to automated fetching, so AllTrails facts come from indexed titles/snippets and are tiered 'indexed'. Official park/forest pages were fetched directly where cited as 'official'.",
+    "note_on_missing_fields": "Fields are omitted, never guessed. Where an AllTrails star rating never appeared in an indexed snippet, only the review count is carried, in stats_note."
+  },
+  "stops": {
+    "delaware-water-gap-pa": {
+      "trails": [
+        {
+          "name": "Bushkill Falls Trail",
+          "distance": "1.7 mi",
+          "elevation_gain": "370 ft",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "name": "Bushkill Falls Red Trail",
+            "url": "https://www.alltrails.com/trail/us/pennsylvania/bushkill-falls-red-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Bushkill Falls (operator)",
+              "url": "https://www.visitbushkillfalls.com/things-to-do/trails/",
+              "tier": "official",
+              "note": "Bushkill Falls is privately operated and gated; four colour-coded trails, paid admission. The Red Trail is the full eight-waterfall circuit and the one AllTrails indexes."
+            }
+          ],
+          "stats_note": "AllTrails listing shows 796–845 reviews across indexed snapshots; no star rating appeared in any indexed snippet. Distance and gain are AllTrails GPS figures — the operator does not publish a length, and third-party guides quote anywhere from 1.4 to 2 mi."
+        },
+        {
+          "name": "Dingmans Falls Trail",
+          "distance": "1.4 mi out-and-back",
+          "official_length": "0.4 mi one-way",
+          "elevation_gain": "246 ft",
+          "difficulty": "Easy",
+          "alltrails": {
+            "name": "Dingmans Falls via Dingmans Creek Trail [CLOSED]",
+            "url": "https://www.alltrails.com/trail/us/pennsylvania/dingmans-falls-via-dingmans-creek-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Delaware Water Gap NRA",
+              "url": "https://www.nps.gov/dewa/planyourvisit/dingmans-creek-trail.htm",
+              "tier": "official",
+              "note": "CLOSED. NPS: the access road, visitor center and trail are closed from 12 May 2025 for bridge replacement and trail reconstruction — 'All traffic is prohibited, including pedestrian, vehicle, and cyclist traffic.' No reopening date published as of this pass. NPS length 0.4 mi one-way; first 0.3 mi is stroller and wheelchair accessible, last 0.1 mi is mostly stairs."
+            },
+            {
+              "label": "AllTrails — Dingmans Creek Trail [CLOSED]",
+              "url": "https://www.alltrails.com/trail/us/pennsylvania/dingmans-creek-trail",
+              "tier": "indexed",
+              "note": "Second AllTrails listing for the same boardwalk, also flagged CLOSED in its own title."
+            }
+          ],
+          "stats_note": "Distance/gain are AllTrails GPS for the round trip; 0.4 mi one-way is the NPS published length. AllTrails itself carries [CLOSED] in the listing title — the closure is real, not stale crowd data."
+        },
+        {
+          "name": "Raymondskill Falls Trail",
+          "distance": "0.5 mi loop",
+          "official_length": "0.3 mi",
+          "elevation_gain": "114 ft",
+          "difficulty": "Easy to Moderate",
+          "reviews": "4.7 (2,120)",
+          "alltrails": {
+            "name": "Raymondskill Falls Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/pennsylvania/raymondskill-falls-loop-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Raymondskill Creek Trail",
+              "url": "https://www.nps.gov/dewa/planyourvisit/raymondskill-creek-trail.htm",
+              "tier": "official",
+              "note": "NPS: 0.3 mile, Easy to Moderate. PETS ARE NOT ALLOWED ON THIS TRAIL. Upper parking lot closed early January to mid-April. Tallest waterfall in Pennsylvania."
+            },
+            {
+              "label": "NPS — Raymondskill Falls",
+              "url": "https://www.nps.gov/places/raymondskill-falls.htm",
+              "tier": "official",
+              "note": "Describes the third-of-a-mile descent into the hemlock ravine to the wooden viewing platforms."
+            }
+          ],
+          "stats_note": "0.5 mi / 114 ft is AllTrails' GPS loop; NPS publishes 0.3 mi for the same walk. Difficulty is the NPS grade, not AllTrails'."
+        }
+      ]
+    },
+    "gettysburg-pa": {
+      "trails": [
+        {
+          "name": "Billy Yank Trail",
+          "distance": "9.7 mi loop",
+          "elevation_gain": "748 ft",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.6 (994)",
+          "alltrails": {
+            "name": "The Billy Yank Trail",
+            "url": "https://www.alltrails.com/trail/us/pennsylvania/the-billy-yank-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e2813360817/the-billy-yank-trail",
+              "tier": "community",
+              "note": "Komoot logs the same route at 10.8 mi with 570 ft gain — a different GPS trace of the same walk."
+            },
+            {
+              "label": "New Birth of Freedom Council — Gettysburg Heritage Trails",
+              "url": "https://newbirthoffreedom.org/gettysburg-heritage-trails-program/",
+              "tier": "community",
+              "note": "The route's origin: Billy Yank and Johnny Reb are the two hiking segments of the Scouting Gettysburg Heritage Trails programme, not NPS-built footpaths."
+            }
+          ],
+          "stats_note": "AllTrails 9.7 mi / 748 ft vs Komoot 10.8 mi / 570 ft — both are GPS traces of a self-guided battlefield route, and neither is an official published length. AllTrails average time 3 h 32 min."
+        },
+        {
+          "name": "Johnny Reb Trail",
+          "distance": "4 mi",
+          "difficulty": "Easy",
+          "alltrails": {
+            "name": "Johnny Reb Trail",
+            "url": "https://www.alltrails.com/trail/us/pennsylvania/johnny-reb-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e2813361442/johnny-reb-trail",
+              "tier": "community",
+              "note": "Same route, second trace."
+            },
+            {
+              "label": "Garmin Trails",
+              "url": "https://connect.garmin.com/modern/trails/US/pennsylvania/johnny-reb-trail",
+              "tier": "community",
+              "note": "Logs it as a 3.7 mi casual loop, 1.5–2.5 h."
+            }
+          ],
+          "stats_note": "AllTrails 4 mi / ~2.5 h and 644 reviews; no star rating in the indexed snippet. Garmin gives 3.7 mi for the same loop. Difficulty 'easy' is described by npplan and Garmin, not published by NPS. No water on the route."
+        },
+        {
+          "name": "Bridle Trail Loop",
+          "official_length": "7.25 mi loop",
+          "difficulty": "Mainly easy with a few moderate hills on the south side of the park",
+          "uses": ["hike", "horse"],
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "National Park Planner — Bridle Trail Loop Hike",
+              "url": "https://npplan.com/parks-by-state/pennsylvania-national-parks/gettysburg-national-military-park-park-at-a-glance/gettysburg-national-military-park-bridle-trail-loop-hike/",
+              "tier": "community",
+              "note": "7.25-mile loop, 5.5 hours. Calls it the best hike in the park — it links the Bridle Trail with the footpaths around the base of Big and Little Round Top."
+            },
+            {
+              "label": "National Park Planner — Gettysburg hiking and biking",
+              "url": "https://npplan.com/parks-by-state/pennsylvania-national-parks/gettysburg-national-military-park-park-at-a-glance/gettysburg-national-military-park-hiking-and-biking/",
+              "tier": "community",
+              "note": "Context for the whole trail network; notes the battlefield 'trails' are largely walking routes rather than built footpaths."
+            }
+          ],
+          "stats_note": "No AllTrails listing found for the Bridle Trail Loop under any wording. Length and difficulty are National Park Planner's, not an NPS publication — treat as approximate. The trail itself is the park's horse trail, so hiking and horse use are both established; bicycle status not sourced."
+        },
+        {
+          "name": "Little Round Top",
+          "alltrails": {
+            "name": "Little Round Top (point of interest page only — no trail listing)",
+            "url": "https://www.alltrails.com/poi/us/pennsylvania/little-round-top",
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Little Round Top trail map",
+              "url": "https://www.nps.gov/gett/learn/historyculture/little-round-top-trail-map.htm",
+              "tier": "official",
+              "note": "NPS publishes the formalized trail network built during the Little Round Top rehabilitation project — 'These new formalized trails have replaced many of the old social trails where extreme erosion had occurred.' NPS is the authority for current access; a crowd-sourced AllTrails list still carries a stale 'Little Round Top closed' note from the rehabilitation years."
+            },
+            {
+              "label": "NPS — Little Round Top",
+              "url": "https://www.nps.gov/gett/learn/historyculture/little-round-top.htm",
+              "tier": "official",
+              "note": "Site overview and rehabilitation project video."
+            }
+          ],
+          "stats_note": "AllTrails has a point-of-interest page for Little Round Top and says two trails reach it, but no trail listing carries the name. NPS publishes no single length for the summit paths. Confirmed to exist by the National Park Service; recorded unlisted rather than linked to a route that is not the same walk."
+        }
+      ]
+    },
+    "harpers-ferry-wv": {
+      "trails": [
+        {
+          "name": "Weverton Cliffs (Appalachian Trail)",
+          "distance": "1.7 mi out-and-back",
+          "elevation_gain": "570 ft",
+          "difficulty": "Moderate",
+          "reviews": "4.8 (5,765)",
+          "alltrails": {
+            "name": "Weverton Cliffs",
+            "url": "https://www.alltrails.com/trail/us/maryland/weverton-cliffs--3",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Appalachian Trail Conservancy",
+              "url": "https://appalachiantrail.org/hikes/weverton-cliffs/",
+              "tier": "official",
+              "note": "ATC's own hike page, with the trailhead directions: from US 340 take MD 67 North to the first right at Weverton Cliff Rd; large paved lot on the right."
+            }
+          ],
+          "stats_note": "1.7 mi / 570 ft / 4.8 from 5,765 reviews are AllTrails' own figures via its Weverton Cliffs point-of-interest page; the trail listing title showed 5,817 reviews in a later crawl, so the count is still climbing. Average 1–1.5 hr. The slug carries a --3 suffix — it is not derivable from the name."
+        }
+      ]
+    },
+    "staunton-va": {
+      "trails": [
+        {
+          "name": "Stony Man Trail",
+          "distance": "1.5 mi",
+          "official_length": "1.6 mi round trip",
+          "elevation_gain": "318 ft",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "name": "Stony Man via Appalachian Trail",
+            "url": "https://www.alltrails.com/trail/us/virginia/stony-man-via-appalachian-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Stony Man",
+              "url": "https://www.nps.gov/thingstodo/stony-man.htm",
+              "tier": "official",
+              "note": "NPS route: from the Stony Man parking area at Skyline Drive mile 41.7, take the Appalachian Trail to the trail post. Second highest peak in Shenandoah."
+            },
+            {
+              "label": "NPS — Stony Man Trailhead",
+              "url": "https://www.nps.gov/places/000/stony-man.htm",
+              "tier": "official",
+              "note": "Trailhead page."
+            }
+          ],
+          "stats_note": "Important: AllTrails indexes the Appalachian Trail approach, not the Stony Man Trail itself — its own description says the AT route 'runs parallel to the Stony Man Trail and may become overgrown in the warmer months'. 1.5 mi / 318 ft is AllTrails for the AT route; 1.6 mi round trip is the NPS figure for the walk to the summit. 9,311 reviews on the AllTrails listing; no star rating in the indexed snippet."
+        }
+      ]
+    },
+    "lexington-va": {
+      "trails": [
+        {
+          "name": "Cedar Creek Trail",
+          "distance": "2.1 mi out-and-back",
+          "elevation_gain": "390 ft",
+          "difficulty": "Easy",
+          "reviews": "4.7 (3,685)",
+          "alltrails": {
+            "name": "Lace Falls via Cedar Creek Trail",
+            "url": "https://www.alltrails.com/trail/us/virginia/cedar-creek-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e1751860678/cedar-creek-trail-natural-bridge-state-park",
+              "tier": "community",
+              "note": "Same trail, graded easy."
+            }
+          ],
+          "stats_note": "The listing is named for its destination, Lace Falls, not for the trail. The route descends 137 stone steps under the 215 ft Natural Bridge and ends at the falls — the stairs are the reason third-party guides grade it harder than AllTrails' 'easy'. Highest-rated trail in Natural Bridge State Park."
+        },
+        {
+          "name": "Buck Hill Trail",
+          "distance": "2.3 mi loop",
+          "difficulty": "Moderately challenging",
+          "alltrails": {
+            "name": "Buck Hill Trail",
+            "url": "https://www.alltrails.com/trail/us/virginia/buck-hill-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e1751844624/buck-hill-trail-loop-natural-bridge-state-park",
+              "tier": "community",
+              "note": "Grades the same loop 'easy' where AllTrails says moderately challenging. Starts near the Natural Bridge Caverns car park."
+            },
+            {
+              "label": "Lexington & Rockbridge tourism",
+              "url": "https://explore.lexingtonvirginia.com/collections/rockbridge-outdoors/place/buck-hill-trail",
+              "tier": "community",
+              "note": "Green-blazed and easy to follow; young oak, hickory and poplar forest."
+            }
+          ],
+          "stats_note": "AllTrails 2.3 mi loop, average 1 h 5 min, 223 reviews; no star rating in the indexed snippet. Difficulty is disputed between AllTrails (moderately challenging) and Komoot (easy)."
+        },
+        {
+          "name": "Skyline Trail",
+          "difficulty": "Easy",
+          "reviews": "4.4 (262)",
+          "alltrails": {
+            "name": "Skyline Trail Loop",
+            "url": "https://www.alltrails.com/trail/us/virginia/skyline-trail-loop-2",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot — Skyline Trail & Jefferson's Point loop",
+              "url": "https://www.komoot.com/smarttour/e1751871251/skyline-trail-jefferson-s-point-loop-natural-bridge-state-park",
+              "tier": "community",
+              "note": "Graded easy. Adds Jefferson's Point to the loop."
+            },
+            {
+              "label": "Lexington & Rockbridge tourism",
+              "url": "https://lexingtonvirginia.com/outdoors/activities/attractions/skyline-trail",
+              "tier": "community",
+              "note": "Walks the loop clockwise from the kiosk; red Skyline Trail sign marks the start."
+            }
+          ],
+          "stats_note": "No distance surfaced from AllTrails in any indexed snippet, and neither Natural Bridge State Park nor the tourism board publishes one — recorded absent rather than guessed. The --2 suffix on the slug means there is more than one Skyline Trail Loop in Virginia; this is the Natural Bridge one, confirmed by the park page that ranks it."
+        }
+      ]
+    },
+    "floyd-va": {
+      "trails": [
+        {
+          "name": "Buffalo Mountain Natural Area Preserve",
+          "alltrails": {
+            "name": "Buffalo Mountain Trail",
+            "url": "https://www.alltrails.com/trail/us/virginia/buffalo-mountain-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — preserve page",
+              "url": "https://www.alltrails.com/parks/us/virginia/buffalo-mountain-natural-area-preserve",
+              "tier": "indexed",
+              "note": "Area browse page for the preserve — a candidate for AREA_BROWSE_ALLTRAILS."
+            },
+            {
+              "label": "AllTrails — Buffalo Mountain Ridge Trail",
+              "url": "https://www.alltrails.com/trail/us/virginia/buffalo-mountain-ridge-trail",
+              "tier": "indexed",
+              "note": "Second listing, 116 reviews: an out-and-back through forest to the same summit."
+            },
+            {
+              "label": "The Outbound — Buffalo Mountain Loop",
+              "url": "https://www.theoutbound.com/virginia/hiking/hike-buffalo-mountain",
+              "tier": "community",
+              "note": "The summit is naturally treeless with 360-degree Blue Ridge views."
+            }
+          ],
+          "stats_note": "Our entry is the preserve, not a trail. The walk itself is the Buffalo Mountain Trail, which AllTrails describes as following the Oak and Barrens Loop Trail to the highest point in Floyd County; 409 reviews, no star rating or distance in any indexed snippet. Summit elevation 3,971 ft per third-party guides. No length published by Virginia DCR that could be sourced this pass."
+        }
+      ]
+    },
+    "boone-nc": {
+      "trails": [
+        {
+          "name": "Grandfather Trail (to Calloway Peak)",
+          "distance": "4.4 mi",
+          "official_length": "2.4 mi one-way from the Top Shop parking area",
+          "elevation_gain": "1,538 ft",
+          "reviews": "4.9 (2,474)",
+          "alltrails": {
+            "name": "Grandfather Trail to Calloway Peak (Watauga Viewpoint)",
+            "url": "https://www.alltrails.com/trail/us/north-carolina/grandfather-trail-to-watauga-viewpoint",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Grandfather Mountain (operator)",
+              "url": "https://grandfather.com/grandfather-trail/",
+              "tier": "official",
+              "note": "'The route follows the crest of Grandfather Mountain from the Top Shop Parking Area out 2.4 miles to Calloway Peak.' Access is through the paid Grandfather Mountain attraction gate — reviewers confirm you pay to start here."
+            },
+            {
+              "label": "Grandfather Mountain — Profile Trail",
+              "url": "https://grandfather.com/profile-trail/",
+              "tier": "official",
+              "note": "The free alternative: the Profile Trail from the state park side ends at Calloway Gap (5,675 ft) at the Grandfather Trail junction. AllTrails also lists Calloway Peak via Profile Trail separately."
+            },
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e1087197073/grandfather-trail-to-calloway-peak-grandfather-mountain-state-park",
+              "tier": "community",
+              "note": "Graded 'expert'. The Grandfather Trail crest route uses ladders and cables — this is not a stroll, and it is the one trail on this card a dog should not be taken up."
+            }
+          ],
+          "stats_note": "4.4 mi / 1,538 ft is AllTrails' GPS round trip; the operator publishes 2.4 mi one-way. AllTrails does not surface a difficulty grade in the indexed snippet — Komoot grades it expert."
+        },
+        {
+          "name": "Price Lake Loop Trail (Julian Price Park)",
+          "official_length": "2.7 mi loop",
+          "difficulty": "Easy",
+          "alltrails": {
+            "name": "Price Lake Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/north-carolina/price-lake-loop-trail-2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Julian Price Park hiking trails",
+              "url": "https://www.nps.gov/blri/planyourvisit/julian-price-trails.htm",
+              "tier": "official",
+              "note": "'This easy 2.7-mile loop circles the shoreline of 47-acre Price Lake.' Blue Ridge Parkway milepost 297."
+            },
+            {
+              "label": "Explore Boone",
+              "url": "https://www.exploreboone.com/outdoors/hiking/price-lake-trail/",
+              "tier": "community",
+              "note": "Family hike around the Parkway's largest lake; boat rental at the campground."
+            }
+          ],
+          "stats_note": "2.7 mi is the NPS published length; National Park Planner quotes 2.3 mi for the same loop. AllTrails carries 1,550 reviews and grades it easy but surfaced neither a distance nor a star rating. Slug has a -2 suffix."
+        }
+      ]
+    },
+    "bryson-city-nc": {
+      "trails": [
+        {
+          "name": "Noland Divide Trail",
+          "distance": "11.4 mi one-way",
+          "elevation_gain": "~4,750 ft",
+          "difficulty": "Hard",
+          "alltrails": {
+            "name": "Noland Divide Trail",
+            "url": "https://www.alltrails.com/trail/us/north-carolina/noland-divide",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "HikingProject",
+              "url": "https://www.hikingproject.com/trail/7008253/noland-divide-trail",
+              "tier": "community",
+              "note": "'Long and steep, with the greatest net gain in elevation of any trail in the Smokies.'"
+            },
+            {
+              "label": "Smokies 900",
+              "url": "https://smokies900.org/trails/noland-divide-trail",
+              "tier": "community",
+              "note": "Elevation profile and GPX for the full trail."
+            },
+            {
+              "label": "Explore Bryson City",
+              "url": "https://www.explorebrysoncity.com/listing/noland-divide-trail/1182/",
+              "tier": "community",
+              "note": "Trailhead is by the Deep Creek entrance, a short drive from downtown Bryson City."
+            }
+          ],
+          "stats_note": "Distance and gain are from third-party trail guides (11.3–11.6 mi one-way, 4,689–4,750 ft), not from AllTrails, which surfaced no figures for the base listing — only for the much longer 18.3 mi and 34.9 mi loops built on top of it. As a one-way ridge climb this is a shuttle or a turnaround, not a loop."
+        }
+      ]
+    },
+    "chattanooga-tn": {
+      "trails": [
+        {
+          "name": "Cloudland Canyon — West Rim Loop Trail",
+          "distance": "4.9 mi loop",
+          "elevation_gain": "718 ft",
+          "reviews": "4.8 (6,850)",
+          "alltrails": {
+            "name": "Cloudland Canyon West Rim Loop",
+            "url": "https://www.alltrails.com/trail/us/georgia/cloudland-canyon-west-rim-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Georgia State Parks — Cloudland Canyon trails",
+              "url": "https://gastateparks.org/CloudlandCanyon/Trails",
+              "tier": "official",
+              "note": "The park describes West Rim as a lollipop-style hike with a three-mile loop in the middle; other guides call the whole thing a five-mile lollipop."
+            },
+            {
+              "label": "AllTrails — alternate West Rim start",
+              "url": "https://www.alltrails.com/trail/us/georgia/west-rim-loop-trail-via-cloudland-canyon-park-road",
+              "tier": "indexed",
+              "note": "Second listing starting from the small lot off Cloudland Canyon Park Road."
+            }
+          ],
+          "stats_note": "Highest-rated trail in the park by a wide margin. 4.9 mi / 718 ft are AllTrails GPS; Georgia State Parks describes the loop portion as three miles, so published and GPS lengths measure different things."
+        },
+        {
+          "name": "Cloudland Canyon — Waterfalls Trail (Cherokee Falls & Hemlock Falls)",
+          "distance": "1.2 mi",
+          "elevation_gain": "453 ft",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "name": "Cherokee Falls and Hemlock Falls Trail",
+            "url": "https://www.alltrails.com/trail/us/georgia/hemlock-falls-trail--2",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Georgia State Parks — Cloudland Canyon trails",
+              "url": "https://gastateparks.org/CloudlandCanyon/Trails",
+              "tier": "official",
+              "note": "'The strenuous Waterfalls Trail begins at the Main Trailhead and drops quickly down into the canyon depths to two sizable waterfalls, Cherokee and Hemlock Falls.' Note the park says STRENUOUS where AllTrails says moderate — the difference is roughly 600 stairs back out of the canyon."
+            },
+            {
+              "label": "AllTrails — Bear Creek Trail variant",
+              "url": "https://www.alltrails.com/trail/us/georgia/cherokee-falls-to-hemlock-falls-via-bear-creek-trail",
+              "tier": "indexed",
+              "note": "Longer route linking the two falls via Bear Creek Trail."
+            }
+          ],
+          "stats_note": "Distance/gain are AllTrails GPS (1.9 km / 138 m). Difficulty is the disagreement that matters: AllTrails grades it moderate, Georgia State Parks grades it strenuous. Take the park's grade — the descent is stairs the whole way and has to be reclimbed."
+        },
+        {
+          "name": "Signal Point / Julia Falls Overlook (Cumberland Trail)",
+          "distance": "5.4 mi out-and-back",
+          "elevation_gain": "875 ft",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "name": "Signal Point Park to Edwards Point",
+            "url": "https://www.alltrails.com/trail/us/tennessee/signal-point-park-to-edwards-point",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Cumberland Trail Conference",
+              "url": "https://cumberlandtrail.org/trail-section/signal-edwards-points/",
+              "tier": "official",
+              "note": "The Signal & Edwards Points section is the southern terminus of the Cumberland Trail. Trail-managing authority for the section."
+            },
+            {
+              "label": "AllTrails — Signal Point Park area page",
+              "url": "https://www.alltrails.com/parks/us/tennessee/signal-point-park",
+              "tier": "indexed",
+              "note": "Area browse page — candidate for AREA_BROWSE_ALLTRAILS."
+            }
+          ],
+          "stats_note": "The 5.4 mi / 875 ft figure is the full Signal Point to Edwards Point out-and-back, which is the only route AllTrails indexes here. Julia Falls Overlook alone is signed at 0.4 mi from Signal Point — a fraction of the listed route, and the shorter walk if the day is short. Julia Falls is a wet-weather waterfall. 1,160 reviews, no star rating surfaced."
+        },
+        {
+          "name": "Tennessee Riverwalk",
+          "distance": "11.1 mi point-to-point",
+          "official_length": "13 mi",
+          "elevation_gain": "308 ft",
+          "uses": ["hike", "bike"],
+          "alltrails": {
+            "name": "The Tennessee Riverwalk",
+            "url": "https://www.alltrails.com/trail/us/tennessee/the-tennessee-riverwalk",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "TrailLink",
+              "url": "https://www.traillink.com/trail/tennessee-riverwalk/",
+              "tier": "community",
+              "note": "13 miles, 1503 Middle St to 4637 Amnicola Hwy, Chattanooga. Rail-trail database entry — the right source for surface and access points."
+            },
+            {
+              "label": "Visit Chattanooga",
+              "url": "https://www.visitchattanooga.com/blog/post/a-guide-to-chattanoogas-riverwalk/",
+              "tier": "community",
+              "note": "Paved and mostly flat; biking, walking and running all normal use."
+            },
+            {
+              "label": "AllTrails — Riverwalk short path",
+              "url": "https://www.alltrails.com/trail/us/tennessee/tennessee-riverwalk-short-path",
+              "tier": "indexed",
+              "note": "255 reviews. A downtown segment of the same route if the full 11 mi is too much."
+            }
+          ],
+          "stats_note": "AllTrails traces 11.1 mi point-to-point; TrailLink and the city publish 13 mi and local guides say 16 mi as extensions open. Paved throughout — the strongest cruise candidate on this card. 589 reviews on the AllTrails listing, no star rating surfaced."
+        },
+        {
+          "name": "Sunset Rock (Lookout Mountain, via West Brow Rd spur)",
+          "distance": "0.2 mi out-and-back",
+          "elevation_gain": "98 ft",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "name": "Sunset Rock Viewpoint",
+            "url": "https://www.alltrails.com/trail/us/tennessee/sunset-rock-viewpoint",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Southeast Tennessee tourism",
+              "url": "https://www.southeasttennessee.com/hiking-to-lookout-mountains-sunset-rock/",
+              "tier": "community",
+              "note": "Sunset Rock is a scenic overlook on Lookout Mountain's western bluff, inside Chickamauga & Chattanooga National Military Park."
+            },
+            {
+              "label": "AllTrails — Sunset Rock point of interest",
+              "url": "https://www.alltrails.com/poi/us/tennessee/lookout-mountain/sunset-rock",
+              "tier": "indexed",
+              "note": "Lists the longer approaches, including the climb from near the historic Cravens House, for anyone who wants more than the spur."
+            }
+          ],
+          "stats_note": "0.2 mi / 98 ft is the West Brow Road spur only — effectively a car-park viewpoint walk, which matches our entry. The Cravens House approach is a genuine climb and a different day. Parking on West Brow is about eight spaces. 434 reviews, no star rating surfaced."
+        }
+      ]
+    },
+    "hot-springs-ar-v3": {
+      "trails": [
+        {
+          "name": "Hot Springs Mountain Trail & Tower",
+          "official_length": "1.7 mi one way",
+          "difficulty": "Easy",
+          "alltrails": {
+            "name": "Hot Spring Mountain Loop via Gulpha Gorge Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/hot-springs-mountain-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hot Springs Mountain Trail",
+              "url": "https://www.nps.gov/thingstodo/hot-springs-mountain-trail.htm",
+              "tier": "official",
+              "note": "'Hot Springs Mountain Trail is an easy stroll around the top of the mountain with several scenic overlooks. Distance (one way): 1.7mi (2.7km)'"
+            },
+            {
+              "label": "NPS — Hot Springs and North Mountain trails overview",
+              "url": "https://www.nps.gov/thingstodo/hike-the-hot-springs-and-north-mountain-trails.htm",
+              "tier": "official",
+              "note": "How the mountain-top trails connect; easiest to reach from Bathhouse Row."
+            },
+            {
+              "label": "AllTrails — bigger loop with Goat Rock",
+              "url": "https://www.alltrails.com/trail/us/arkansas/hot-springs-mountain-trail-loop-to-gulpha-gorge-and-goat-rock",
+              "tier": "indexed",
+              "note": "4.6 star rating; the park's most popular running route, adding Goat Rock and the Gulpha Gorge descent."
+            },
+            {
+              "label": "HikingProject — Hot Springs Mountain Loop",
+              "url": "https://www.hikingproject.com/trail/7017759/hot-springs-mountain-loop",
+              "tier": "community",
+              "note": "Loop version of the summit walk."
+            }
+          ],
+          "stats_note": "Watch the mismatch: our entry is the easy 1.7 mi summit stroll to the observation tower (NPS figure), but the AllTrails listing that sits at the /hot-springs-mountain-trail slug is titled 'Hot Spring Mountain Loop via Gulpha Gorge Trail' and starts with a steep climb out of Gulpha Gorge. AllTrails surfaced no distance, gain or rating for it. Use the NPS length. The Mountain Tower itself is a paid, separately-operated observation tower at the top."
+        }
+      ]
+    },
+    "petit-jean-ar": {
+      "trails": [
+        {
+          "name": "Cedar Falls Trail",
+          "distance": "1.9 mi",
+          "elevation_gain": "367 ft",
+          "reviews": "4.8 (3,467)",
+          "alltrails": {
+            "name": "Cedar Falls Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/cedar-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Arklahoma Hiker",
+              "url": "https://arkokhiker.org/central-arkansas/petit-jean-sp-cedar-falls-trail/",
+              "tier": "community",
+              "note": "Logs it as 2 mi out-and-back starting behind Mather Lodge."
+            }
+          ],
+          "stats_note": "AllTrails describes it as one of Arkansas' most photographed places: from Mather Lodge it drops steeply into Cedar Creek Canyon to a 95 ft waterfall. Distance/gain are AllTrails GPS; no AllTrails difficulty grade surfaced, and the descent-then-reclimb makes third-party grades range from moderate to strenuous — do not read 'easy' into the absence."
+        },
+        {
+          "name": "Rock House Cave / Bear Cave Trail",
+          "distance": "1.2 mi out-and-back",
+          "elevation_gain": "127 ft",
+          "alltrails": {
+            "name": "Bear Cave Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/bear-cave-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Petit Jean Rock House Cave Trail",
+              "url": "https://www.alltrails.com/trail/us/arkansas/petit-jean-rock-house-cave-trail",
+              "tier": "indexed",
+              "note": "The other half of our entry: a short, easy trail to Rock House Cave, a large rock shelter, and the Turtle Rocks."
+            },
+            {
+              "label": "AllTrails — Rock House Cave and Lookout Trail",
+              "url": "https://www.alltrails.com/trail/us/arkansas/rock-house-cave-and-lookout-trail",
+              "tier": "indexed",
+              "note": "Longer variant taking in the lookout."
+            },
+            {
+              "label": "Arklahoma Hiker — Bear Cave Trail",
+              "url": "https://arkokhiker.org/central-arkansas/petit-jean-sp-bear-cave-trail/",
+              "tier": "community",
+              "note": "Logs Bear Cave at 0.5 mi. Access from Highway 154."
+            }
+          ],
+          "stats_note": "Our entry bundles two separate trails that AllTrails lists apart. The stats given are Bear Cave Trail's (1.2 mi / 127 ft, 0.5–1 hr, 1,110 reviews; no star rating surfaced). Bear Cave is a maze under and between giant sandstone boulders — good with a dog on a lead, awkward with anything wide."
+        }
+      ]
+    },
+    "mount-magazine-ar": {
+      "trails": [
+        {
+          "name": "Signal Hill Trail",
+          "distance": "1.8 mi loop",
+          "elevation_gain": "252 ft",
+          "difficulty": "Easy",
+          "reviews": "4.5 (1,343)",
+          "alltrails": {
+            "name": "Signal Hill Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/signal-hill-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Mount Magazine State Park",
+              "url": "https://www.alltrails.com/parks/us/arkansas/mount-magazine-state-park",
+              "tier": "indexed",
+              "note": "Area browse page — candidate for AREA_BROWSE_ALLTRAILS."
+            },
+            {
+              "label": "Arklahoma Hiker",
+              "url": "https://arkokhiker.org/west-ark/mount-magazine-signal-hill-trail-loop/",
+              "tier": "community",
+              "note": "Logs a 1.4-mile loop around the north and east of Signal Hill."
+            }
+          ],
+          "stats_note": "Signal Hill is the highest point in Arkansas at 2,753 ft. AllTrails 1.8 mi / 252 ft vs Arklahoma Hiker's 1.4 mi loop. The only trail in this block with a complete set of AllTrails figures."
+        }
+      ]
+    },
+    "jasper-ponca-ar": {
+      "trails": [
+        {
+          "name": "Lost Valley Trail",
+          "distance": "2.4 mi out-and-back",
+          "elevation_gain": "249 ft",
+          "difficulty": "Easy to moderate",
+          "reviews": "4.8 (4,798)",
+          "alltrails": {
+            "name": "Lost Valley Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/lost-valley-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Lost Valley Trail",
+              "url": "https://www.nps.gov/thingstodo/hike-the-lost-valley-trail.htm",
+              "tier": "official",
+              "note": "'Lost Valley Trail is an easy to moderate hike with occasional benches on the first portion for resting.' Buffalo National River is the managing authority."
+            },
+            {
+              "label": "Buffalo Outdoor Center",
+              "url": "https://www.buffaloriver.com/hiking/lost-valley/",
+              "tier": "community",
+              "note": "Directions: from Ponca, south on Hwy 43 about 1.5 miles to the paved turnoff on the right. Large car park."
+            }
+          ],
+          "stats_note": "2.4 mi / 249 ft are AllTrails GPS; the difficulty grade is the NPS one. Follows Clark Creek past natural bridges to Eden Falls. Most-reviewed trail in this whole block and the most popular running trail in Arkansas."
+        },
+        {
+          "name": "Buffalo River Trail (Ponca to Steel Creek segment)",
+          "distance": "4.1 mi",
+          "difficulty": "Moderate",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e1165688957/buffalo-river-trail-ponca-to-steel-creek",
+              "tier": "community",
+              "note": "Moderate 4.1-mile hike with river views and bluffs. A second Komoot trace of the same segment (e2813520458) grades it easy at 4.5 mi."
+            },
+            {
+              "label": "Buffalo Outdoor Center — Ponca to Steel Creek",
+              "url": "https://www.buffaloriver.com/hiking/ponca-to-steel-creek/",
+              "tier": "community",
+              "note": "Starts at the Ponca access; cross the Ponca low-water bridge to pick up the trail."
+            },
+            {
+              "label": "Arklahoma Hiker",
+              "url": "https://arkokhiker.org/northwest-arkansas/buffalo-river-trail-ponca-to-steel-creek-cpg/",
+              "tier": "community",
+              "note": "Puts the Ponca low-water bridge to Steel Creek Campground stretch at 2.2 miles one way, 4 miles out-and-back."
+            }
+          ],
+          "stats_note": "No AllTrails listing for the HIKING segment. The AllTrails result that matches this name — 'Buffalo River Paddle Route from Ponca to Steel Creek' — is a float trip, not this walk, and has deliberately not been linked. Lengths disagree by source: 2.2 mi one way (Arklahoma Hiker), 4.1 mi (Komoot), 4.5 mi (Komoot alternate), 4.6 mi (secretfalls) — the segment is walked both one-way and out-and-back. Buffalo National River (NPS) is the managing authority."
+        }
+      ]
+    },
+    "mountain-view-ar": {
+      "trails": [
+        {
+          "name": "Ozark Folk Center State Park grounds trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Arkansas State Parks — Ozark Folk Center",
+              "url": "https://www.arkansas.com/state-parks/parks/ozark-folk-center-state-park",
+              "tier": "official",
+              "note": "Fetched and read: the managing authority's own park page names NO trail and publishes NO trail length for the grounds. The park is open mid-April to mid-November. Guided walks such as the 'Herbs, History & Healing Hike' appear as events, not as a marked trail."
+            },
+            {
+              "label": "AllTrails — Whitewater Creek Trail",
+              "url": "https://www.alltrails.com/trail/us/arkansas/whitewater-creek-trail--2",
+              "tier": "indexed",
+              "note": "The nearest real listing, 194 reviews: it connects the Ozark Folk Center to the Stone County Amphitheater and City Park in Mountain View. This is the walk that gets you off the grounds and into town — a better use of an afternoon than the grounds paths."
+            }
+          ],
+          "stats_note": "Recorded as unlisted, not as a failure: Arkansas State Parks confirms the park but does not publish a named grounds trail, and no trail database indexes one. The grounds paths are craft-village walkways rather than a trail. Nothing invented."
+        }
+      ]
+    },
+    "eureka-springs-ar-v3": {
+      "trails": [
+        {
+          "name": "Passion Play Trails / Magnetic Mountain",
+          "official_length": "over 18 miles of trail on a 667-acre property",
+          "uses": ["hike", "bike"],
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "The Great Passion Play — Trails",
+              "url": "https://www.greatpassionplay.org/trails.html",
+              "tier": "official",
+              "note": "The landowner and trail manager: 'We have over 18 miles of world-class mountain biking trails on our 667-acre property for all skill levels.'"
+            },
+            {
+              "label": "The Great Passion Play — Trail descriptions",
+              "url": "https://www.greatpassionplay.org/trail-descriptions.html",
+              "tier": "official",
+              "note": "Splits the network into 'Shared-Use and Mountain-Bike Optimized Trails' — this is the authority statement that hiking is permitted, not just tolerated. Individual trails carry Biblically-inspired names."
+            },
+            {
+              "label": "Trailforks — Passion Play hiking view",
+              "url": "https://www.trailforks.com/region/passion-play-24483/?activitytype=6",
+              "tier": "community",
+              "note": "37 trails mapped. Trailforks warns plainly: 'These trails are built specifically with mountain biking in mind and are therefore graded on mountain biking difficulty' — a blue here is not a hiker's blue."
+            },
+            {
+              "label": "OZ Trails NWA",
+              "url": "https://www.oztrails.com/trail/the-great-passion-play/",
+              "tier": "community",
+              "note": "Regional trail authority listing; describes over 18 miles of professionally built mountain biking and hiking trails, part of the Marble Flats system."
+            }
+          ],
+          "stats_note": "Kept in the trails box rather than reclassified because the landowner explicitly designates shared-use trails, so hiking is legal — but it is a network, not a single trail, and every published difficulty grade on it is a mountain-bike grade. No AllTrails listing exists for it under any wording tried. Blind-corner descents shared with bikes: not a place to walk a dog on a long lead."
+        },
+        {
+          "name": "Historic District Walking Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Visit Eureka Springs — Downtown Historic District",
+              "url": "https://www.traveleurekasprings.com/places-to-visit/eureka-springs-downtown/",
+              "tier": "official",
+              "note": "The city tourism authority's page for the Downtown Historic District — the district this walk is through. It is a streetscape stroll, not a built path."
+            },
+            {
+              "label": "Visit Eureka Springs — 8 walking trails",
+              "url": "https://www.visiteurekasprings.com/these-loops-were-made-for-walkin-8-walking-trails-with-wonderful-views/",
+              "tier": "official",
+              "note": "The city's own list of walking loops, e.g. the 1.3 mi Starlite North loop through wooded terrain — the closest thing to a published in-town trail inventory."
+            },
+            {
+              "label": "EurekaSprings.com — Parks and Trails",
+              "url": "https://www.eurekasprings.com/parksandtrails/",
+              "tier": "community",
+              "note": "Overview of the city's connected park and trail system."
+            }
+          ],
+          "stats_note": "No AllTrails listing and no published length from the city for a route by this name. Confirmed only as the Eureka Springs Downtown Historic District walk by the city tourism authority. Third-party sources describe a 3.5-mile 'Historic Loop' past 300+ pre-1910 Victorian homes, but nothing official carries that figure, so it is not recorded as the length."
+        }
+      ]
+    },
+    "bentonville-ar": {
+      "trails": [],
+      "not_a_trail": [
+        {
+          "name": "Coler Mountain Bike Preserve",
+          "what_it_really_is": "A 300-acre mountain-bike preserve, not a trail: 20+ miles across 56 mapped trails, run by the Peel Compton Foundation. Trailforks maps the network at https://www.trailforks.com/region/coler-mountain-bike-preserve/map/ ; the operator's page is https://peelcompton.org/coler-mountain-bike-preserve/ and the city tourism page is https://www.visitbentonville.com/things-to-do/parks-trails-lakes/coler/ . Hiking IS permitted and the operator lists it alongside biking and camping — but AllTrails' own preserve page (https://www.alltrails.com/parks/us/arkansas/coler-mountain-bike-preserve) indexes exactly ONE trail for hiking out of the 56, which is the honest measure of how much of this is a walking destination. Belongs in the biking box or as an activity, not as a hiking trail."
+        },
+        {
+          "name": "Slaughter Pen Trail System",
+          "what_it_really_is": "A trail SYSTEM, not a trail — the City of Bentonville calls it 'This 23+ mile mountain bike system' and an IMBA Silver Level Ride Center (https://www.bentonville.ar.gov/1071/Slaughter-Pen-Trails); OZ Trails puts it at 30+ miles (https://www.oztrails.com/trail/slaughter-pen/) and Trailforks maps 150 individual trails (https://www.trailforks.com/region/slaughter-pen-trails/). Multi-use — TripAdvisor lists it as 'Slaughter Pen Hollow Multi-Use Trail System' and Trailforks tags hiking and trail running alongside mountain and e-bike — so walkers are legal, but every trail is built and graded for bikes. The one AllTrails route that covers it, https://www.alltrails.com/trail/us/arkansas/slaughter-pen-hollow-trail (All American, Seed Tick, Medusa, Tatamagouche), is described by AllTrails itself as 'This mountain bike-focused route'. Reclassify to biking."
+        }
+      ]
+    },
+    "devils-den-ar": {
+      "trails": [
+        {
+          "name": "Butterfield Hiking Trail (Ozark Highlands Trail segment)",
+          "official_length": "15 mi loop",
+          "difficulty": "Moderate to Strenuous",
+          "reviews": "4.4 (1,165)",
+          "alltrails": {
+            "name": "Butterfield Hiking Trail",
+            "url": "https://www.alltrails.com/trail/us/arkansas/butterfield-hiking-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Arkansas State Parks — Butterfield Hiking Trail",
+              "url": "https://www.arkansas.com/state-parks/explore/trails/butterfield-hiking-trail",
+              "tier": "official",
+              "note": "Managing authority's trail page. Named for the Butterfield Stagecoach, which ran the area 1858–1861."
+            },
+            {
+              "label": "HikingProject",
+              "url": "https://www.hikingproject.com/trail/7105863/butterfield-trail",
+              "tier": "community",
+              "note": "'One of the few looped backpacking trails in the state.'"
+            },
+            {
+              "label": "Arklahoma Hiker",
+              "url": "https://arkokhiker.org/northwest-arkansas/butterfield-hiking-trail/",
+              "tier": "community",
+              "note": "15-mile loop from Devil's Den State Park near West Fork; ten of those miles run through the Ozark National Forest."
+            },
+            {
+              "label": "Komoot",
+              "url": "https://www.komoot.com/smarttour/e1142828516/butterfield-hiking-trail",
+              "tier": "community",
+              "note": "'A challenging 15-mile loop that can be completed as an all-day trek or backpacking trip with one or two nights on the trail.'"
+            }
+          ],
+          "stats_note": "Correction worth carrying: this is NOT an Ozark Highlands Trail segment. It is its own 15-mile loop that begins and ends in Devil's Den State Park, with about 10 miles running through the Ozark National Forest. Length and difficulty are the state park / Arklahoma Hiker figures — AllTrails surfaced no distance or gain in any indexed snippet. It is the most popular trail in Devil's Den State Park at 4.4 from 1,165 reviews, but at 15 miles and 9 hours it is an overnight or a very long day, not an afternoon."
+        }
+      ]
+    },
+    "mena-ar": {
+      "trails": [
+        {
+          "name": "Ouachita National Recreation Trail (Rich Mountain segment)",
+          "alltrails": {
+            "name": "Ouachita National Recreation Trail (OT): Section 3",
+            "url": "https://www.alltrails.com/trail/us/arkansas/ouachita-national-recreation-trail-ot-section-3",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "USFS — Ouachita National Forest, Rich Mountain",
+              "url": "https://www.fs.usda.gov/r08/ouachita/recreation/rich-mountain",
+              "tier": "official",
+              "note": "Managing authority. Rich Mountain is the highest point in the Ouachita National Forest at 2,681 ft."
+            },
+            {
+              "label": "AllTrails — Rich Mountain point of interest",
+              "url": "https://www.alltrails.com/poi/us/arkansas/mena/rich-mountain",
+              "tier": "indexed",
+              "note": "Confirms the mapping: 'This route follows Section 3 of the Ouachita National Recreation Trail, a long-distance route through the rugged mountains of western Arkansas.'"
+            },
+            {
+              "label": "HikingProject — Rich Mountain Trail",
+              "url": "https://www.hikingproject.com/trail/7025708/rich-mountain-trail",
+              "tier": "community",
+              "note": "The separate Rich Mountain Trail joins the Ouachita Trail at mile 8.5. Trailforks grades this one black-diamond singletrack, 8 miles — a different and harder line than the OT section."
+            },
+            {
+              "label": "AllTrails — full Ouachita Trail",
+              "url": "https://www.alltrails.com/trail/us/arkansas/ouachita-national-recreation-trail",
+              "tier": "indexed",
+              "note": "The whole east-to-west through-route, for context on where Section 3 sits."
+            }
+          ],
+          "stats_note": "AllTrails surfaced no distance, gain, difficulty or rating for Section 3 in any indexed snippet — recorded absent. What it does say: no permits are required for the segment, and overnight use is supported by three-sided shelters and established dispersed campsites. Section 3 is the segment that covers Rich Mountain, confirmed by AllTrails' own Rich Mountain point-of-interest page."
+        },
+        {
+          "name": "Janssen Park Trails (Mena)",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "City of Mena — Janssen Park",
+              "url": "https://menaarkansas.us/parks/mena_parks/janssen.htm",
+              "tier": "official",
+              "note": "The City of Mena owns and manages the park and confirms it exists, but publishes no trail name or length."
+            },
+            {
+              "label": "Visit Mena — city parks",
+              "url": "https://visitmena.com/attractions/mena-city-parks/",
+              "tier": "official",
+              "note": "City tourism listing for the Mena parks, including a walking/biking trail in the city park system."
+            },
+            {
+              "label": "Wikipedia — Janssen Park",
+              "url": "https://en.wikipedia.org/wiki/Janssen_Park",
+              "tier": "community",
+              "note": "'A large grassy expanse with occasional mature trees, and features walkways radiating from a central drive, which circles around Mena's oldest building, the c. 1850s Shelton log cabin.'"
+            }
+          ],
+          "stats_note": "Confirmed to exist by the City of Mena; no trail database lists it and no authority publishes a length. Realistically a municipal park with radiating walkways and a log cabin, not a hiking trail — a twenty-minute leg-stretch with the dog rather than a walk to plan a morning around. AllTrails has only an empty 'explore/parks' stub for Janssen Park, which is not a listing and has not been linked."
+        }
+      ]
+    }
+  }
+}

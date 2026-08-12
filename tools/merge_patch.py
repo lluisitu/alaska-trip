@@ -66,6 +66,24 @@ NAMED_LISTS = ('trails', 'offroad', 'scenicDrives_patch', 'not_a_trail', 'not_a_
 MERGE_DICTS = ('activities', 'trail_dogs')
 
 
+def negative_finding(field, old, new):
+    """True when `old` records a failed search and `new` actually found the thing.
+
+    `{"match": "none", "tier": "unlisted"}` does not mean "there is no listing".
+    It means "this pass did not find one" — and a domain-restricted search
+    returns FEWER AllTrails results than an open search does, which is how
+    Warner Point, Horse Gulch and Piedra River were all filed as unlisted while
+    having perfectly good listings. A later pass that produces a url supersedes
+    the negative, the same way a null trail_dogs is superseded by a real rule.
+
+    The reverse is NOT symmetric: a url replaced by "none" is a real conflict
+    and stops, because that is either a dead link or a worse search.
+    """
+    if field != 'alltrails' or not isinstance(old, dict) or not isinstance(new, dict):
+        return False
+    return not old.get('url') and bool(new.get('url'))
+
+
 def merge_stop(cur, new, sid, log, force):
     for key, val in new.items():
         if key in MERGE_DICTS and isinstance(val, dict):
@@ -94,8 +112,12 @@ def merge_stop(cur, new, sid, log, force):
                         if f == 'name':
                             continue
                         if f in tgt and tgt[f] != v and f not in force:
-                            log.append(f'  CONFLICT {sid}.{key}[{name[:36]!r}].{f} already set, skipped')
-                            continue
+                            if negative_finding(f, tgt[f], v):
+                                log.append(f'  SUPERSEDED {sid}.{key}[{name[:36]!r}].{f} '
+                                           f'was "no listing", now found')
+                            else:
+                                log.append(f'  CONFLICT {sid}.{key}[{name[:36]!r}].{f} already set, skipped')
+                                continue
                         tgt[f] = v
                     log.append(f'  ~ {sid}.{key}[{name[:36]!r}] merged')
                 else:

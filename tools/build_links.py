@@ -326,6 +326,16 @@ def apply_stop(stop, entry, log):
             log.append(f"  {sid}: dropped {x['entry'][:40]!r} from offroad — {x['problem'][:50]}")
 
     # Prose and trailheads that are not trails at all come out by name.
+    # Research arrives as patch files written by hand and by agents, and a
+    # patch using {name, what_it_really_is} instead of {entry, problem} crashed
+    # this script with a bare KeyError. The build loop was swallowing stderr at
+    # the time, so it looked like the merge simply had no effect — the data was
+    # in the db and never reached the page. Name the file and the field.
+    for x in (entry.get('not_a_trail') or []) + (entry.get('not_a_route') or []):
+        if 'entry' not in x:
+            sys.exit(f"!! links_db.json: {sid} has a not_a_trail/not_a_route item with no "
+                     f"'entry' key: {json.dumps(x, ensure_ascii=False)[:120]}\n"
+                     f"   The shape is {{entry, problem}}, not {{name, what_it_really_is}}.")
     drop = {norm(x['entry']) for x in (entry.get('not_a_trail') or [])}
     un = entry.get('unresolved')
     if un:

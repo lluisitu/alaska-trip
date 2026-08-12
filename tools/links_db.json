@@ -1129,6 +1129,9 @@
               "url": "https://en.wikipedia.org/wiki/Fly_fishing"
             }
           ]
+        },
+        "Sheep Creek Geological Loop in the truck after confirming road conditions and any length restrictions.": {
+          "entity": "The Sheep Creek Canyon Geological Loop, the paved/gravel byway off UT-44 in the Ashley NF above Manila. No Wikipedia article: no article anywhere contains the phrase, and the Flaming Gorge NRA article names Sheep Creek only in an image caption ('Sheep Creek Overlook'), so it does not document the loop. The sibling entry 'Sheep Creek Canyon Geological Loop scenic drive' on this stop already carries the Daggett County and AllTrails links."
         }
       },
       "activities_note": "Sheep Creek Geological Loop has no Wikipedia article, so it links to Daggett County's own scenic-drives page and the AllTrails listing rather than a guessed one.",
@@ -2027,6 +2030,15 @@
             {
               "label": "Wikipedia — Cameron Lake",
               "url": "https://en.wikipedia.org/wiki/Cameron_Lake_%28Alberta%29"
+            }
+          ]
+        },
+        "The compact park rewards slow mornings rather than a packed checklist.": {
+          "entity": "'The compact park' is Waterton Lakes National Park itself — the stop's own park, 505 km2 in the southwest corner of Alberta.",
+          "links": [
+            {
+              "label": "Wikipedia — Waterton Lakes NP",
+              "url": "https://en.wikipedia.org/wiki/Waterton_Lakes_National_Park"
             }
           ]
         }
@@ -3791,6 +3803,9 @@
               "url": "https://en.wikipedia.org/wiki/Dawson_City"
             }
           ]
+        },
+        "Genuine rest / resupply day": {
+          "entity": "A logistics day, not a place — laundry, rig maintenance and pet downtime. Nothing named to link; the Klondike/Cassiar push referred to in the detail is linked from the driving entries, not from a rest day."
         }
       },
       "offroad": [
@@ -4027,6 +4042,15 @@
               "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
             }
           ]
+        },
+        "Paddle only in calm weather with cold-water protection; rentals may already be closed for the season.": {
+          "entity": "The paddling water is Boya Lake, in what is now Ta Ch'ila Provincial Park (renamed from Boya Lake PP). The article documents the lake and park; it says nothing about rentals or conditions, which are the researched part of this note.",
+          "links": [
+            {
+              "label": "Wikipedia — Tā Chʼilā PP (Boya Lake)",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -4090,6 +4114,9 @@
               "url": "https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Stikine"
             }
           ]
+        },
+        "The loaded SS-1251 raises center of gravity and braking demands on steep grades; it is not the preferred configuration.": {
+          "entity": "SS-1251 is the truck-camper model carried on the pickup, in a note about Telegraph Creek Road grades. A product model designation: no Wikipedia article, and no parent article documents it. Recorded as unknown rather than linked to a generic 'truck camper' article, which would not be the same thing."
         }
       },
       "not_a_trail": [
@@ -5298,6 +5325,15 @@
               "url": "https://en.wikipedia.org/wiki/Grand_Teton_National_Park"
             }
           ]
+        },
+        "A quiet dawn at Oxbow Bend is more rewarding than repeatedly changing camps.": {
+          "entity": "Oxbow Bend, the slack bend of the Snake River below Mount Moran. No article of its own ('Oxbow Bend' and 'Oxbow Bend, Wyoming' are both redlinks, and Mount Moran's article never mentions it); the Grand Teton National Park article names and locates it — 'wetlands ... along the Snake River near Oxbow Bend near Moran'.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Teton NP (Oxbow Bend)",
+              "url": "https://en.wikipedia.org/wiki/Grand_Teton_National_Park"
+            }
+          ]
         }
       }
     },
@@ -6322,6 +6358,15 @@
               "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
             }
           ]
+        },
+        "Tok is a logistics stop; do not consume the safety buffer with a long excursion.": {
+          "entity": "Tok, Alaska — the town itself, which the headline names. Matches the two sibling entries on this stop that already use the Tok article.",
+          "links": [
+            {
+              "label": "Wikipedia — Tok, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ]
         }
       },
       "offroad": [
@@ -6400,6 +6445,9 @@
               "url": "https://en.wikipedia.org/wiki/Aurora"
             }
           ]
+        },
+        "Favor a rest day, river walk, museum, or local meal over another long drive.": {
+          "entity": "Generic pacing advice with no single referent — 'a museum' and 'a river walk' are unnamed (the Whitehorse article has no 'museum' mention at all). The city article is already linked from 'Revisit only the Whitehorse attractions missed in June.' on this same stop, so nothing is lost."
         }
       },
       "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53), which covers the Miles Canyon and Yukon River riverfront trails; Fish Lake is outside city limits on Kwanlin Dun settlement and Yukon Crown land, and no authority publishes a dog rule for that trail.",
@@ -6703,6 +6751,21 @@
               "url": "https://en.wikipedia.org/wiki/Twisp%2C_Washington"
             }
           ]
+        },
+        "Blue Lake Trail": {
+          "entity": "The Blue Lake trail off SR 20 below Liberty Bell. No article, and no parent documents it: the Washington Pass, Liberty Bell Mountain and Lexington Tower articles contain no 'Blue Lake' text (Lexington Tower's only hit is a compass-neighbour nav box, not documentation)."
+        },
+        "Goat Peak Lookout": {
+          "entity": "Goat Peak, 7,001 ft, in the North Cascades — the article documents the working USFS fire lookout on the summit, the Methow River valley views and the Forest Road 52 trailhead 1 mile southeast of Mazama, matching this entry exactly. (One of three Washington summits named Goat Peak; this is the Mazama one.)",
+          "links": [
+            {
+              "label": "Wikipedia — Goat Peak",
+              "url": "https://en.wikipedia.org/wiki/Goat_Peak"
+            }
+          ]
+        },
+        "Grasshopper Pass from Harts Pass": {
+          "entity": "The PCT segment south from Harts Pass. Neither pass has an article — 'Harts Pass', 'Hart's Pass' and 'Harts Pass (Washington)' are all redlinks. The only article containing 'Grasshopper Pass' is Mount Ballard, and only in a photo caption ('seen from PCT at Grasshopper Pass'); Slate Peak mentions Harts Pass Road only as a closure note. Neither documents the pass."
         }
       },
       "trails": [
@@ -7537,6 +7600,9 @@
               "url": "https://en.wikipedia.org/wiki/Windsurfing"
             }
           ]
+        },
+        "Catherine Creek Loop": {
+          "entity": "The Catherine Creek recreation area in the Columbia River Gorge NSA, Klickitat County, WA. No article: 'Catherine Creek' on Wikipedia is a 32-mile creek in NORTHEASTERN OREGON (Grande Ronde valley) and is a different watercourse entirely — rejected on identity. The Columbia River Gorge article's raw text never mentions Catherine Creek."
         }
       },
       "trails": [
@@ -14265,6 +14331,15 @@
               "url": "https://en.wikipedia.org/wiki/Avon_River_%28Ontario%29"
             }
           ]
+        },
+        "T.J. Dolan Natural Area": {
+          "entity": "The 57-acre reserve on the Avon River in Stratford. No article, and the Stratford, Ontario article's raw text never mentions Dolan. The only 'T.J. Dolan' hits on Wikipedia are unrelated people."
+        },
+        "Wildwood Lake Trail from the campsite": {
+          "entity": "The 24 km lake trail at Wildwood Conservation Area. No article: 'Wildwood Conservation Area' and every 'Wildwood Lake' Ontario title are redlinks (Southwestern Ontario links it as a redlink), the Upper Thames River Conservation Authority article carries only the name in a bare list, and the Wildwood Dam article documents the flood-control dam without naming the reservoir or any trail."
+        },
+        "Avon Trail": {
+          "entity": "The 130 km Avon Trail, St. Marys to Conestogo. No article — the title is a redlink and every 'Avon Trail' hit on Wikipedia is in England (River Avon, Avon Gorge, Severn Way). The Grand Valley Trail article, which the Avon Trail connects to, never mentions it, and the Avon River (Ontario) article is a different entity — the river, not the hiking route — so it is not usable as a stand-in."
         }
       },
       "trails": [
@@ -14488,6 +14563,19 @@
               "url": "https://en.wikipedia.org/wiki/Dorset%2C_Ontario"
             }
           ]
+        },
+        "Booth's Rock Trail": {
+          "entity": "Booth's Rock Trail at Rock Lake in Algonquin Provincial Park. No article of its own, but two articles document it: Rock Lake (Algonquin Park) — 'The 5 km Booth's Rock hiking trail overlooks the Lake' plus the Barclay Estate and the gravel road in from Highway 60 — and the Algonquin Provincial Park trail list, which gives it as 5.1 km, the figure in this entry.",
+          "links": [
+            {
+              "label": "Wikipedia — Rock Lake (Algonquin Park)",
+              "url": "https://en.wikipedia.org/wiki/Rock_Lake_%28Algonquin_Park%29"
+            },
+            {
+              "label": "Wikipedia — Algonquin PP (trail list)",
+              "url": "https://en.wikipedia.org/wiki/Algonquin_Provincial_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -14655,6 +14743,9 @@
               "url": "https://en.wikipedia.org/wiki/Prince_Edward_County%2C_Ontario"
             }
           ]
+        },
+        "Point Petre and the south shore": {
+          "entity": "Point Petre, the crown-land point on Prince Edward County's south shore. No article, and the Prince Edward County article's raw text contains neither 'Petre' nor 'south shore' nor 'alvar'. The articles that do contain 'Point Petre' are about the CF-105 Arrow test range, CFB Picton and shipwreck lists — a different sense of the place, rejected on identity."
         }
       },
       "trails": [
@@ -15024,6 +15115,9 @@
               "url": "https://en.wikipedia.org/wiki/Merrickville%E2%80%93Wolford"
             }
           ]
+        },
+        "Point Trail and Sylvan Trail": {
+          "entity": "Two trails inside Murphys Point Provincial Park. The park article names only two of its five trails — the 1 km Loon Lake Trail and the 6.5 km Rideau Trail — and no article anywhere contains 'Sylvan Trail' or 'Point Trail' in this sense, so the park article does not document either."
         }
       },
       "trails": [
@@ -15195,6 +15289,9 @@
               "url": "https://en.wikipedia.org/wiki/Saranac_Lake%2C_New_York"
             }
           ]
+        },
+        "Paddle straight off your campsite at Fish Creek Pond": {
+          "entity": "Fish Creek Pond and its state campground in the Adirondacks. No article contains the phrase 'Fish Creek Pond' at all; the Saranac Lakes Wild Forest and Saint Regis Canoe Area articles, which cover the surrounding land, never mention it, and the only 'Fish Creek Ponds' hit is a one-line gazetteer entry in Harrietstown, New York, which documents nothing about the ponds or the campground."
         }
       },
       "offroad": [
@@ -15316,6 +15413,65 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Cross to Burlington for a proper town day": {
+          "entity": "Burlington, Vermont — the city named in the headline, eleven miles south across the lake.",
+          "links": [
+            {
+              "label": "Wikipedia — Burlington, Vermont",
+              "url": "https://en.wikipedia.org/wiki/Burlington%2C_Vermont"
+            }
+          ]
+        },
+        "Drive out to Isle La Motte and Saint Anne's Shrine": {
+          "entity": "Both named things have their own articles: Isle La Motte, the northernmost Champlain island, and Saint Anne's Shrine — confirmed as the Isle La Motte shrine on Lake Champlain (site of Fort Sainte Anne, 1666), not one of the several other Saint Anne shrines.",
+          "links": [
+            {
+              "label": "Wikipedia — Isle La Motte",
+              "url": "https://en.wikipedia.org/wiki/Isle_La_Motte"
+            },
+            {
+              "label": "Wikipedia — Saint Anne's Shrine",
+              "url": "https://en.wikipedia.org/wiki/Saint_Anne%27s_Shrine"
+            }
+          ]
+        },
+        "Grand Isle–Plattsburgh ferry": {
+          "entity": "The route has no article of its own, but the Lake Champlain Transportation Company article documents it under its own heading 'Grand Isle-Plattsburgh' — an ice-breaking route with 24-hour year-round service between Grand Isle, VT and Cumberland Head, Plattsburgh, NY — which is exactly the claim in this entry.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Champlain Transportation Co.",
+              "url": "https://en.wikipedia.org/wiki/Lake_Champlain_Transportation_Company"
+            }
+          ]
+        },
+        "Run the causeway drive up US Route 2 through the islands": {
+          "entity": "US Route 2 is the named thing; the Vermont article covers the Grand Isle County section that crosses Lake Champlain 'over several bridges' and lists the South Hero junction. Knight Point State Park, the North Hero day-use park named in the note, is confirmed separately — sand beach, boat rentals and the Campmeeting Point Natural Area with its rare plant species.",
+          "links": [
+            {
+              "label": "Wikipedia — U.S. Route 2 in Vermont",
+              "url": "https://en.wikipedia.org/wiki/U.S._Route_2_in_Vermont"
+            },
+            {
+              "label": "Wikipedia — Knight Point State Park",
+              "url": "https://en.wikipedia.org/wiki/Knight_Point_State_Park"
+            }
+          ]
+        },
+        "Snow Farm Vineyard & Distillery": {
+          "entity": "A working winery and distillery on West Shore Road. No Wikipedia article; the only mention anywhere is a one-line directory row in List of wineries in New England ('Snow Farm Vineyard and Distillery - South Hero'), which documents nothing about it. The card already carries the winery's own site."
+        },
+        "Walk the shoreline at Grand Isle State Park": {
+          "entity": "Grand Isle State Park in Grand Isle, Vermont — the 226-acre lakeshore park; the article confirms the lean-to and cabin sites, hot showers and trailer sanitary station this entry relies on. Disambiguated from the Louisiana park of the same name.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Isle State Park",
+              "url": "https://en.wikipedia.org/wiki/Grand_Isle_State_Park_%28Vermont%29"
+            }
+          ]
+        },
+        "Watch the sunset from the west shore": {
+          "entity": "A viewing direction, not a place: 'the west shore' of South Hero across the widest part of Lake Champlain to the Adirondack High Peaks. Nothing named, and linking the lake or the High Peaks would point at neither the shore nor the sunset window this entry is about."
         }
       },
       "dogs": "Split stop: the two Missisquoi NWR trails take a leashed dog under the refuge's own rule, but Vermont publishes nothing reachable for Mount Philo or Niquette Bay, so treat both state parks as unknown until Vermont State Parks is phoned.",
@@ -15401,6 +15557,12 @@
               "url": "https://en.wikipedia.org/wiki/Stowe_Recreation_Path"
             }
           ]
+        },
+        "Base yourself at Gold Brook and stay put": {
+          "entity": "Gold Brook Campground on VT 100 south of Stowe village. No article. Wikipedia's 'Gold Brook' hit is the Gold Brook Covered Bridge (Emily's Bridge, 1844) — a different thing on the same stream, already linked from the 'Covered bridges' entry on this stop — so it is rejected here on identity."
+        },
+        "Time it for peak colour": {
+          "entity": "Foliage timing for the Stowe/Waterbury elevation band, not an entity. The places the note names for dropping elevation — Mount Mansfield and the notch — are already linked from the Mansfield toll road and Smugglers Notch entries on this stop."
         }
       },
       "trails": [

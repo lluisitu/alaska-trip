@@ -68,6 +68,33 @@ the card says which is which.
 - **Komoot, TrailLink, FATMAP, TPWD, NPS, USFS all fetch fine.** Prefer them
   whenever they can answer the question.
 
+#### Batched API calls degrade silently. Control every batch.
+
+Four separate incidents on this project, all the same shape: a call asking about
+many items returns a result that *looks* complete and is wrong for everything
+past the first item. Nothing errors. The failure is always a FALSE NEGATIVE,
+which is the dangerous direction — it reads as "checked, nothing there".
+
+1. `action=query&titles=A|B|C` — MediaWiki numbers every missing title `-1`,
+   `-2`, `-3`… Testing only for `-1` scored every miss after the first as a real
+   article. **Shipped 32 links to articles that do not exist.**
+2. The identical bug, uncaught, in a second copy of that code. Fixing one did
+   not fix the other, and the second one is what put the 32 links on the page.
+   Grep for the pattern, do not fix the file you happen to be in.
+3. `prop=extracts` with `exlimit` — forces `exintro` and returns EMPTY text for
+   every page after the first. Reads exactly like "the article never mentions
+   it"; briefly made 10 parent articles look like they documented nothing.
+4. `prop=extracts` **drops bulleted lists entirely.** Algonquin's extract had
+   zero hits for "Booth" while the wikitext carries `'''Booth's Rock''': 5.1 km`
+   — the exact figure the entry needed.
+
+So: when the question is *"does this article mention X"*, use `action=parse` or
+an `insource:` search, never `prop=extracts`. And put a known-false item in
+**every** batch, in the **last** position — that is where these bugs hide.
+`wiki_batch.py` tests the `missing` key and rejects disambiguation pages; run
+invented names like `Qqxzptl Museum of Nonexistence` through it and confirm
+`NONE` before trusting a run.
+
 ---
 
 ## 3. The trails box

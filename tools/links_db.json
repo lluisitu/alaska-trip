@@ -2488,6 +2488,24 @@
               "url": "https://en.wikipedia.org/wiki/Emerald_Lake_%28Yukon%29"
             }
           ]
+        },
+        "Miles Canyon & Yukon Suspension Footbridge": {
+          "entity": "Miles Canyon, Yukon River near Whitehorse. The footbridge (Robert Lowe Bridge) has no article — note the existing 'Yukon Suspension Bridge' article is a DIFFERENT bridge, on the South Klondike Hwy over the Tutshi River in BC.",
+          "links": [
+            {
+              "label": "Wikipedia — Miles Canyon Basalts",
+              "url": "https://en.wikipedia.org/wiki/Miles_Canyon_Basalts"
+            }
+          ]
+        },
+        "Whitehorse has enough museums, food, and services to justify a true rest day.": {
+          "entity": "Whitehorse, Yukon",
+          "links": [
+            {
+              "label": "Wikipedia — Whitehorse",
+              "url": "https://en.wikipedia.org/wiki/Whitehorse"
+            }
+          ]
         }
       },
       "not_a_route": [
@@ -2565,6 +2583,37 @@
             {
               "label": "Wikipedia — Talkeetna, Alaska",
               "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        },
+        "Denali flightseeing / glacier landing": {
+          "entity": "Denali",
+          "links": [
+            {
+              "label": "Wikipedia — Denali",
+              "url": "https://en.wikipedia.org/wiki/Denali"
+            }
+          ]
+        },
+        "Talkeetna Denali Viewpoint / Lake Loop Trail": {
+          "entity": "Talkeetna, Alaska; Denali. The viewpoint/lake-loop trails have no articles.",
+          "links": [
+            {
+              "label": "Wikipedia — Talkeetna, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            },
+            {
+              "label": "Wikipedia — Denali",
+              "url": "https://en.wikipedia.org/wiki/Denali"
+            }
+          ]
+        },
+        "A Denali flightseeing trip with glacier landing is the signature expense; schedule it early in the stay so weather permits a second attempt.": {
+          "entity": "Denali",
+          "links": [
+            {
+              "label": "Wikipedia — Denali",
+              "url": "https://en.wikipedia.org/wiki/Denali"
             }
           ]
         }
@@ -2684,6 +2733,24 @@
               "url": "https://en.wikipedia.org/wiki/Kenai_River"
             }
           ]
+        },
+        "Hike Russian River Falls Trail": {
+          "entity": "Russian River, Kenai Peninsula (article confirms Cooper Landing / Kenai River)",
+          "links": [
+            {
+              "label": "Wikipedia — Russian River, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Russian_River_%28Alaska%29"
+            }
+          ]
+        },
+        "Cooper Landing Historical Museum": {
+          "entity": "Cooper Landing, Alaska — the museum itself has no article",
+          "links": [
+            {
+              "label": "Wikipedia — Cooper Landing, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Cooper_Landing%2C_Alaska"
+            }
+          ]
         }
       },
       "dogs_verdict": "partial",
@@ -2783,6 +2850,15 @@
             {
               "label": "Wikipedia — Exit Glacier",
               "url": "https://en.wikipedia.org/wiki/Exit_Glacier"
+            }
+          ]
+        },
+        "The national park has no RV campground; Stoney Creek is the practical coach base.": {
+          "entity": "Kenai Fjords National Park — 'the national park' at Seward. Stoney Creek RV Park has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Kenai Fjords National Park",
+              "url": "https://en.wikipedia.org/wiki/Kenai_Fjords_National_Park"
             }
           ]
         }
@@ -2899,6 +2975,15 @@
               "url": "https://en.wikipedia.org/wiki/Seldovia%2C_Alaska"
             }
           ]
+        },
+        "Halibut fishing charter": {
+          "entity": "Pacific halibut",
+          "links": [
+            {
+              "label": "Wikipedia — Pacific halibut",
+              "url": "https://en.wikipedia.org/wiki/Pacific_halibut"
+            }
+          ]
         }
       }
     },
@@ -2932,6 +3017,46 @@
             {
               "label": "Wikipedia — Denali National Park and Preserve",
               "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Horseshoe Lake Trail & Mount Healy Overlook": {
+          "entity": "Mount Healy, Denali NP (article confirms Denali National Park and Preserve). Horseshoe Lake has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Healy",
+              "url": "https://en.wikipedia.org/wiki/Mount_Healy"
+            }
+          ]
+        },
+        "Savage River Loop / Savage Alpine Trail": {
+          "entity": "Savage River, Denali NP — no separate article; the park article documents the Savage River road end and loop trail",
+          "links": [
+            {
+              "label": "Wikipedia — Denali National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Pretty Rocks construction has closed the road around Mile 43 in recent seasons; check the 2027 operating plan rather than assuming Eielson access.": {
+          "entity": "Denali Park Road / Eielson Visitor Center — neither has its own article; the park article documents both",
+          "links": [
+            {
+              "label": "Wikipedia — Denali National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Denali Visitor Center, sled-dog kennels, Savage River, and Teklanika-area bus access deserve separate half-days.": {
+          "entity": "Denali Visitor Center + park sled-dog kennels (documented in the park article); Teklanika River",
+          "links": [
+            {
+              "label": "Wikipedia — Denali National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
+            },
+            {
+              "label": "Wikipedia — Teklanika River",
+              "url": "https://en.wikipedia.org/wiki/Teklanika_River"
             }
           ]
         }
@@ -3009,6 +3134,50 @@
             {
               "label": "Wikipedia — Talkeetna, Alaska",
               "url": "https://en.wikipedia.org/wiki/Talkeetna%2C_Alaska"
+            }
+          ]
+        },
+        "Hike K'esugi Ridge Trail (Little Coal Creek access)": {
+          "entity": "K'esugi Ridge Trail — no article of its own; the Denali State Park article lists Kesugi Ridge Trail and Little Coal Creek Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Denali State Park",
+              "url": "https://en.wikipedia.org/wiki/Denali_State_Park"
+            }
+          ]
+        },
+        "Byers Lake Loop Trail": {
+          "entity": "Byers Lake, Denali State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Byers Lake",
+              "url": "https://en.wikipedia.org/wiki/Byers_Lake_%28Alaska%29"
+            }
+          ]
+        },
+        "Denali viewpoint pullouts on the Parks Highway": {
+          "entity": "Denali; George Parks Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Denali",
+              "url": "https://en.wikipedia.org/wiki/Denali"
+            },
+            {
+              "label": "Wikipedia — George Parks Highway",
+              "url": "https://en.wikipedia.org/wiki/George_Parks_Highway"
+            }
+          ]
+        },
+        "Denali viewpoints along the Parks Highway are worthwhile only where the coach can enter and exit safely.": {
+          "entity": "Denali; George Parks Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Denali",
+              "url": "https://en.wikipedia.org/wiki/Denali"
+            },
+            {
+              "label": "Wikipedia — George Parks Highway",
+              "url": "https://en.wikipedia.org/wiki/George_Parks_Highway"
             }
           ]
         }
@@ -3097,6 +3266,19 @@
           ],
           "auto": true,
           "auto_km": 59
+        },
+        "Salmon/halibut fishing derby": {
+          "entity": "Salmon; Pacific halibut",
+          "links": [
+            {
+              "label": "Wikipedia — Salmon",
+              "url": "https://en.wikipedia.org/wiki/Salmon"
+            },
+            {
+              "label": "Wikipedia — Pacific halibut",
+              "url": "https://en.wikipedia.org/wiki/Pacific_halibut"
+            }
+          ]
         }
       }
     },
@@ -3150,6 +3332,33 @@
         },
         "McCarthy village, Kennicott historic mining district, and guided mill tour.": {
           "entity": "Kennecott, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
+        },
+        "Root Glacier Trail": {
+          "entity": "Root Glacier — no article of its own; the Kennecott article describes it and the glacial trail from Kennecott",
+          "links": [
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
+        },
+        "Bonanza Mine Trail": {
+          "entity": "Bonanza Mine — no article of its own; documented in the Kennecott, Alaska article",
+          "links": [
+            {
+              "label": "Wikipedia — Kennecott, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Kennecott%2C_Alaska"
+            }
+          ]
+        },
+        "Root Glacier guided walk is highly recommended unless experienced and properly equipped for glacier hazards.": {
+          "entity": "Root Glacier (see above)",
           "links": [
             {
               "label": "Wikipedia — Kennecott, Alaska",
@@ -4813,6 +5022,24 @@
               "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
             }
           ]
+        },
+        "Drive part of the Haines Road in the truck for some of the route’s finest accessible scenery.": {
+          "entity": "Haines Highway (Haines Road)",
+          "links": [
+            {
+              "label": "Wikipedia — Haines Highway",
+              "url": "https://en.wikipedia.org/wiki/Haines_Highway"
+            }
+          ]
+        },
+        "Thechàl Dhâl and Soldier’s Summit can be combined on the northbound departure if conditions and time suit.": {
+          "entity": "Thechàl Dhâl = Sheep Mountain, Kluane NP (article names Thechàl Dhâl explicitly). Soldier's Summit has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Sheep Mountain (Thechàl Dhâl)",
+              "url": "https://en.wikipedia.org/wiki/Sheep_Mountain_%28Yukon%29"
+            }
+          ]
         }
       },
       "not_a_route": [
@@ -5011,6 +5238,15 @@
           ],
           "auto": true,
           "auto_km": 111
+        },
+        "Fort Nelson Heritage Museum": {
+          "entity": "Fort Nelson Heritage Museum, Fort Nelson BC — the museum itself has no article; the town article does",
+          "links": [
+            {
+              "label": "Wikipedia — Fort Nelson, BC",
+              "url": "https://en.wikipedia.org/wiki/Fort_Nelson%2C_British_Columbia"
+            }
+          ]
         }
       },
       "authority": "BC Parks — Stone Mountain Park (Flower Springs, Summit Lake); the town trails are Northern Rockies Regional Municipality",
@@ -5098,6 +5334,15 @@
           ],
           "auto": true,
           "auto_km": 0
+        },
+        "Simulated aurora show, Northern Lights Space & Science Centre": {
+          "entity": "Aurora (the phenomenon the show simulates). The Northern Lights Space & Science Centre in Watson Lake has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Aurora",
+              "url": "https://en.wikipedia.org/wiki/Aurora"
+            }
+          ]
         }
       },
       "not_a_trail": [
@@ -5132,6 +5377,15 @@
           "auto_km": 2
         },
         "Tok Mainstreet Visitor Center": {
+          "entity": "Tok, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Tok, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ]
+        },
+        "Tok is a logistics town. A relaxed meal and early night are more valuable than adding an excursion.": {
           "entity": "Tok, Alaska",
           "links": [
             {
@@ -5232,6 +5486,41 @@
               "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
             }
           ]
+        },
+        "Museum of the North, Morris Thompson Cultural and Visitors Center, Fountainhead Antique Auto Museum, and Creamer’s Field.": {
+          "entity": "University of Alaska Museum of the North; Creamer's Field Migratory Waterfowl Refuge. Morris Thompson Cultural and Visitors Center and Fountainhead Antique Auto Museum have no articles.",
+          "links": [
+            {
+              "label": "Wikipedia — Museum of the North",
+              "url": "https://en.wikipedia.org/wiki/University_of_Alaska_Museum_of_the_North"
+            },
+            {
+              "label": "Wikipedia — Creamer's Field",
+              "url": "https://en.wikipedia.org/wiki/Creamer%27s_Field_Migratory_Waterfowl_Refuge"
+            }
+          ]
+        },
+        "Chena Hot Springs Road and Angel Rocks as a separate truck day if not using the entire stay for the Dalton.": {
+          "entity": "Chena Hot Springs; Dalton Highway ('the Dalton'). Angel Rocks has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Chena Hot Springs",
+              "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
+            },
+            {
+              "label": "Wikipedia — Dalton Highway",
+              "url": "https://en.wikipedia.org/wiki/Dalton_Highway"
+            }
+          ]
+        },
+        "Pioneer Park is optional; downtown and the riverfront are better for local context.": {
+          "entity": "Pioneer Park, Fairbanks",
+          "links": [
+            {
+              "label": "Wikipedia — Pioneer Park, Fairbanks",
+              "url": "https://en.wikipedia.org/wiki/Pioneer_Park_%28Fairbanks%2C_Alaska%29"
+            }
+          ]
         }
       },
       "scenicDrives_patch": [
@@ -5286,6 +5575,15 @@
             {
               "label": "Wikipedia — Anchorage Museum",
               "url": "https://en.wikipedia.org/wiki/Anchorage_Museum"
+            }
+          ]
+        },
+        "Flattop Mountain Trail": {
+          "entity": "Flattop Mountain, Chugach State Park, Anchorage",
+          "links": [
+            {
+              "label": "Wikipedia — Flattop Mountain",
+              "url": "https://en.wikipedia.org/wiki/Flattop_Mountain_%28Anchorage%2C_Alaska%29"
             }
           ]
         }
@@ -5383,6 +5681,15 @@
               "url": "https://en.wikipedia.org/wiki/Anchor_Point%2C_Alaska"
             }
           ]
+        },
+        "Visit Holy Transfiguration of Our Lord Russian Orthodox Church": {
+          "entity": "Holy Transfiguration of Our Lord Chapel, Ninilchik, Alaska (1901) — article confirms Ninilchik",
+          "links": [
+            {
+              "label": "Wikipedia — Holy Transfiguration of Our Lord Chapel",
+              "url": "https://en.wikipedia.org/wiki/Holy_Transfiguration_of_Our_Lord_Chapel"
+            }
+          ]
         }
       },
       "trails": [],
@@ -5405,6 +5712,15 @@
           ],
           "auto": true,
           "auto_km": 56
+        },
+        "Musk Ox Farm": {
+          "entity": "Muskox — the Musk Ox Farm in Palmer has no article",
+          "links": [
+            {
+              "label": "Wikipedia — Muskox",
+              "url": "https://en.wikipedia.org/wiki/Muskox"
+            }
+          ]
         }
       }
     },
@@ -5446,6 +5762,24 @@
             {
               "label": "Wikipedia — Coldfoot, Alaska",
               "url": "https://en.wikipedia.org/wiki/Coldfoot%2C_Alaska"
+            }
+          ]
+        },
+        "Aurora viewing becomes increasingly plausible as nights darken; use cloud and aurora forecasts and seek a dark legal pullout.": {
+          "entity": "Aurora",
+          "links": [
+            {
+              "label": "Wikipedia — Aurora",
+              "url": "https://en.wikipedia.org/wiki/Aurora"
+            }
+          ]
+        },
+        "Large Animal Research Station tours and local farmers markets are worthwhile if operating.": {
+          "entity": "Robert G. White Large Animal Research Station — no article of its own; documented in the UAF article",
+          "links": [
+            {
+              "label": "Wikipedia — University of Alaska Fairbanks",
+              "url": "https://en.wikipedia.org/wiki/University_of_Alaska_Fairbanks"
             }
           ]
         }
@@ -11723,6 +12057,15 @@
             {
               "label": "Wikipedia — Copper River",
               "url": "https://en.wikipedia.org/wiki/Copper_River_%28Alaska%29"
+            }
+          ]
+        },
+        "Liberty Falls State Recreation Site short walk": {
+          "entity": "Liberty Falls SRA — redirects to Edgerton Highway, whose article documents the site at mile 23",
+          "links": [
+            {
+              "label": "Wikipedia — Edgerton Highway",
+              "url": "https://en.wikipedia.org/wiki/Edgerton_Highway"
             }
           ]
         }

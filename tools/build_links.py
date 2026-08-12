@@ -533,6 +533,26 @@ def main():
     if missing:
         sys.exit('!! links_db.json names stops that do not exist: ' + ', '.join(missing))
 
+    # Strip links proven not to exist, everywhere, every run. The page is MERGED
+    # into rather than rebuilt, so deleting an entry from the db does not remove
+    # a link that was already written into it — 29 dead Wikipedia links survived
+    # exactly that way. This is the only thing that actually takes them out.
+    dead = set(db.get('dead_links') or [])
+    if dead:
+        gone = 0
+        for s in stops + ext['STOPS']:
+            for a in (s.get('activities') or []):
+                links = a.get('links') or []
+                keep = [l for l in links if l.get('url') not in dead]
+                if len(keep) != len(links):
+                    gone += len(links) - len(keep)
+                    if keep:
+                        a['links'] = keep
+                    else:
+                        a.pop('links', None); a.pop('entity', None)
+        if gone:
+            log.append(f"  stripped {gone} link(s) proven not to exist")
+
     # Applies to every stop, researched or not.
     global_pass(stops + ext['STOPS'], log)
 

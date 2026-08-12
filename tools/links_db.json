@@ -2222,25 +2222,6 @@
             }
           ]
         },
-        "Miles Canyon & Yukon Suspension Footbridge": {
-          "entity": "Miles Canyon (Yukon)",
-          "links": [
-            {
-              "label": "Wikipedia — Miles Canyon",
-              "url": "https://en.wikipedia.org/wiki/Miles_Canyon_%28Yukon%29"
-            }
-          ]
-        },
-        "Yukon Wildlife Preserve + Fish Ladder": {
-          "entity": "Yukon Wildlife Preserve",
-          "links": [
-            {
-              "label": "Wikipedia — Yukon Wildlife Preserve",
-              "url": "https://en.wikipedia.org/wiki/Yukon_Wildlife_Preserve"
-            }
-          ],
-          "note": "Personal vehicles are NOT permitted on the loop — walk it or take the bus, and the gate closes at 18:00."
-        },
         "Carcross, Emerald Lake, and the Southern Lakes make an excellent truck day trip.": {
           "entity": "Carcross",
           "links": [
@@ -2416,15 +2397,6 @@
           "auto": true,
           "auto_km": 81
         },
-        "Hike Russian River Falls Trail": {
-          "entity": "Russian River (Kenai Peninsula)",
-          "links": [
-            {
-              "label": "Wikipedia — Russian River",
-              "url": "https://en.wikipedia.org/wiki/Russian_River_%28Kenai_Peninsula%29"
-            }
-          ]
-        },
         "Drive Skilak Lake Road (tow vehicle only)": {
           "entity": "Skilak Lake",
           "links": [
@@ -2440,15 +2412,6 @@
             {
               "label": "Wikipedia — Kenai River",
               "url": "https://en.wikipedia.org/wiki/Kenai_River"
-            }
-          ]
-        },
-        "Day-hike the north end of Resurrection Pass Trail": {
-          "entity": "Resurrection Pass Trail",
-          "links": [
-            {
-              "label": "Wikipedia — Resurrection Pass Trail",
-              "url": "https://en.wikipedia.org/wiki/Resurrection_Pass_Trail"
             }
           ]
         }
@@ -2654,34 +2617,12 @@
           ],
           "note": "Dogs are NOT allowed on the park buses, which makes every deep-park trip dog-free by definition."
         },
-        "Horseshoe Lake Trail & Mount Healy Overlook": {
-          "entity": "Horseshoe Lake Trail",
-          "links": [
-            {
-              "label": "Wikipedia — Horseshoe Lake Trail",
-              "url": "https://en.wikipedia.org/wiki/Horseshoe_Lake_Trail"
-            }
-          ]
-        },
-        "Savage River Loop / Savage Alpine Trail": {
-          "entity": "Savage River (Alaska)",
-          "links": [
-            {
-              "label": "Wikipedia — Savage River",
-              "url": "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29"
-            }
-          ]
-        },
         "Denali Visitor Center, sled-dog kennels, Savage River, and Teklanika-area bus stops.": {
           "entity": "Denali National Park and Preserve",
           "links": [
             {
               "label": "Wikipedia — Denali National Park and Preserve",
               "url": "https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve"
-            },
-            {
-              "label": "Wikipedia — Savage River",
-              "url": "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29"
             }
           ]
         }
@@ -2744,15 +2685,6 @@
       ],
       "note": "\"Moose Flats Loop provides an easier outing.\" was prose; no listing surfaced under that name.",
       "activities": {
-        "Hike K'esugi Ridge Trail (Little Coal Creek access)": {
-          "entity": "Kesugi Ridge",
-          "links": [
-            {
-              "label": "Wikipedia — Kesugi Ridge",
-              "url": "https://en.wikipedia.org/wiki/Kesugi_Ridge"
-            }
-          ]
-        },
         "Curry Ridge Trail from K'esugi Ken Campground": {
           "entity": "Denali State Park",
           "links": [
@@ -2841,15 +2773,6 @@
           ],
           "auto": true,
           "auto_km": 59
-        },
-        "Solomon Gulch Trail & fish hatchery": {
-          "entity": "Solomon Gulch Hatchery",
-          "links": [
-            {
-              "label": "Wikipedia — Solomon Gulch Hatchery",
-              "url": "https://en.wikipedia.org/wiki/Solomon_Gulch_Hatchery"
-            }
-          ]
         }
       }
     },
@@ -2900,24 +2823,6 @@
           ],
           "auto": true,
           "auto_km": 10
-        },
-        "Root Glacier Trail": {
-          "entity": "Root Glacier",
-          "links": [
-            {
-              "label": "Wikipedia — Root Glacier",
-              "url": "https://en.wikipedia.org/wiki/Root_Glacier"
-            }
-          ]
-        },
-        "Bonanza Mine Trail": {
-          "entity": "Bonanza Mine",
-          "links": [
-            {
-              "label": "Wikipedia — Bonanza Mine",
-              "url": "https://en.wikipedia.org/wiki/Bonanza_Mine"
-            }
-          ]
         },
         "McCarthy village, Kennicott historic mining district, and guided mill tour.": {
           "entity": "Kennecott, Alaska",
@@ -3294,15 +3199,6 @@
           ],
           "auto": true,
           "auto_km": 21
-        },
-        "Bear Glacier roadside viewpoint": {
-          "entity": "Bear Glacier (British Columbia)",
-          "links": [
-            {
-              "label": "Wikipedia — Bear Glacier",
-              "url": "https://en.wikipedia.org/wiki/Bear_Glacier_%28British_Columbia%29"
-            }
-          ]
         },
         "Hyder, Alaska border-town stop": {
           "entity": "Hyder, Alaska",
@@ -3951,15 +3847,6 @@
           "auto": true,
           "auto_km": 18
         },
-        "Hidden Valley & Barker Dam": {
-          "entity": "Barker Dam",
-          "links": [
-            {
-              "label": "Wikipedia — Barker Dam",
-              "url": "https://en.wikipedia.org/wiki/Barker_Dam"
-            }
-          ]
-        },
         "Noah Purifoy Outdoor Desert Art Museum": {
           "entity": "Noah Purifoy",
           "links": [
@@ -4039,15 +3926,6 @@
           ],
           "auto": true,
           "auto_km": 80
-        },
-        "Artists Drive and Artists Palette scenic drive": {
-          "entity": "Artist's Drive",
-          "links": [
-            {
-              "label": "Wikipedia — Artist's Drive",
-              "url": "https://en.wikipedia.org/wiki/Artist%27s_Drive"
-            }
-          ]
         },
         "Mesquite Flat Sand Dunes": {
           "entity": "Mesquite Flat Sand Dunes",
@@ -4382,24 +4260,6 @@
           ],
           "auto": true,
           "auto_km": 0
-        },
-        "Simulated aurora show, Northern Lights Space & Science Centre": {
-          "entity": "Northern Lights Centre",
-          "links": [
-            {
-              "label": "Wikipedia — Northern Lights Centre",
-              "url": "https://en.wikipedia.org/wiki/Northern_Lights_Centre"
-            }
-          ]
-        },
-        "Northern Lights Centre if the schedule fits.": {
-          "entity": "Northern Lights Centre",
-          "links": [
-            {
-              "label": "Wikipedia — Northern Lights Centre",
-              "url": "https://en.wikipedia.org/wiki/Northern_Lights_Centre"
-            }
-          ]
         }
       },
       "not_a_trail": [
@@ -4500,10 +4360,6 @@
             {
               "label": "Wikipedia — Santa Claus House",
               "url": "https://en.wikipedia.org/wiki/Santa_Claus_House"
-            },
-            {
-              "label": "Wikipedia — Gold Dredge 8",
-              "url": "https://en.wikipedia.org/wiki/Gold_Dredge_8"
             }
           ]
         },
@@ -4513,14 +4369,6 @@
             {
               "label": "Wikipedia — University of Alaska Museum of the North",
               "url": "https://en.wikipedia.org/wiki/University_of_Alaska_Museum_of_the_North"
-            },
-            {
-              "label": "Wikipedia — Morris Thompson Cultural and Visitors Center",
-              "url": "https://en.wikipedia.org/wiki/Morris_Thompson_Cultural_and_Visitors_Center"
-            },
-            {
-              "label": "Wikipedia — Fountainhead Antique Auto Museum",
-              "url": "https://en.wikipedia.org/wiki/Fountainhead_Antique_Auto_Museum"
             },
             {
               "label": "Wikipedia — Creamer's Field Migratory Waterfowl Refuge",
@@ -4534,15 +4382,6 @@
             {
               "label": "Wikipedia — Chena Hot Springs, Alaska",
               "url": "https://en.wikipedia.org/wiki/Chena_Hot_Springs%2C_Alaska"
-            }
-          ]
-        },
-        "Pioneer Park is optional; downtown and the riverfront are better for local character.": {
-          "entity": "Pioneer Park (Fairbanks)",
-          "links": [
-            {
-              "label": "Wikipedia — Pioneer Park",
-              "url": "https://en.wikipedia.org/wiki/Pioneer_Park_%28Fairbanks%29"
             }
           ]
         }
@@ -4709,15 +4548,6 @@
             {
               "label": "Wikipedia — Coldfoot, Alaska",
               "url": "https://en.wikipedia.org/wiki/Coldfoot%2C_Alaska"
-            }
-          ]
-        },
-        "Large Animal Research Station tours and local farmers markets are worthwhile.": {
-          "entity": "Large Animal Research Station",
-          "links": [
-            {
-              "label": "Wikipedia — Large Animal Research Station",
-              "url": "https://en.wikipedia.org/wiki/Large_Animal_Research_Station"
             }
           ]
         }
@@ -5115,15 +4945,6 @@
             }
           ]
         },
-        "Coldwater Lake": {
-          "entity": "Coldwater Lake",
-          "links": [
-            {
-              "label": "Wikipedia — Coldwater Lake",
-              "url": "https://en.wikipedia.org/wiki/Coldwater_Lake"
-            }
-          ]
-        },
         "Castle Rock riverfront and murals": {
           "entity": "Castle Rock, Washington",
           "links": [
@@ -5475,15 +5296,6 @@
           "auto": true,
           "auto_km": 2
         },
-        "Dog Mountain Trail (permit hike)": {
-          "entity": "Dog Mountain (Washington)",
-          "links": [
-            {
-              "label": "Wikipedia — Dog Mountain",
-              "url": "https://en.wikipedia.org/wiki/Dog_Mountain_%28Washington%29"
-            }
-          ]
-        },
         "Hood River waterfront & windsurfing/kiteboarding": {
           "entity": "Hood River, Oregon",
           "links": [
@@ -5585,15 +5397,6 @@
             {
               "label": "Wikipedia — Trillium Lake",
               "url": "https://en.wikipedia.org/wiki/Trillium_Lake"
-            }
-          ]
-        },
-        "Ramona Falls Loop": {
-          "entity": "Ramona Falls",
-          "links": [
-            {
-              "label": "Wikipedia — Ramona Falls",
-              "url": "https://en.wikipedia.org/wiki/Ramona_Falls"
             }
           ]
         },
@@ -5808,15 +5611,6 @@
             {
               "label": "Wikipedia — Oregon Coast Aquarium",
               "url": "https://en.wikipedia.org/wiki/Oregon_Coast_Aquarium"
-            }
-          ]
-        },
-        "Devil's Punchbowl State Natural Area": {
-          "entity": "Devil's Punchbowl State Natural Area",
-          "links": [
-            {
-              "label": "Wikipedia — Devil's Punchbowl State Natural Area",
-              "url": "https://en.wikipedia.org/wiki/Devil%27s_Punchbowl_State_Natural_Area"
             }
           ]
         }
@@ -6569,15 +6363,6 @@
             }
           ]
         },
-        "Colossal Cave Mountain Park": {
-          "entity": "Colossal Cave",
-          "links": [
-            {
-              "label": "Wikipedia — Colossal Cave",
-              "url": "https://en.wikipedia.org/wiki/Colossal_Cave"
-            }
-          ]
-        },
         "Day trips to Tubac, Bisbee, and Sonoita wine country": {
           "entity": "Tubac, Arizona",
           "links": [
@@ -6841,15 +6626,6 @@
           ],
           "auto": true,
           "auto_km": 65
-        },
-        "Navajo Loop & Queen's Garden combo": {
-          "entity": "Queen's Garden Trail",
-          "links": [
-            {
-              "label": "Wikipedia — Queen's Garden Trail",
-              "url": "https://en.wikipedia.org/wiki/Queen%27s_Garden_Trail"
-            }
-          ]
         }
       },
       "trails": [
@@ -6931,15 +6707,6 @@
             {
               "label": "Wikipedia — Fruita, Utah",
               "url": "https://en.wikipedia.org/wiki/Fruita%2C_Utah"
-            }
-          ]
-        },
-        "Cathedral Valley 4x4 loop (towed truck only)": {
-          "entity": "Cathedral Valley",
-          "links": [
-            {
-              "label": "Wikipedia — Cathedral Valley",
-              "url": "https://en.wikipedia.org/wiki/Cathedral_Valley"
             }
           ]
         }
@@ -10252,22 +10019,48 @@
       }
     },
     "patagonia-sonoita": {
-      "activities": {
-        "Patagonia-Sonoita Creek Preserve": {
-          "entity": "Patagonia-Sonoita Creek Preserve",
-          "links": [
-            {
-              "label": "Wikipedia — Patagonia-Sonoita Creek Preserve",
-              "url": "https://en.wikipedia.org/wiki/Patagonia-Sonoita_Creek_Preserve"
-            }
-          ]
-        }
-      }
+      "activities": {}
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",
   "_activities": "Per-stop overrides for the highlights list. Each entry maps an activity's name to a verified entity: its real Wikipedia article, its direct AllTrails listing where it IS a trail, and the official page. Activities with an entry render real links and pills; activities without one keep the generic name-derived search links, which is the honest fallback until they are researched. `drop: true` removes a duplicate restatement of another activity.",
   "_url_provenance": "EVERY url here must be COPIED from a search result that returned it. Never construct a slug from a trail's name — alltrails slugs are unpredictable (--2, --3 suffixes, reworded titles) and a fabricated one looks exactly like a real one until it 404s in front of you at a trailhead. This rule exists because four urls were built from names in this file; three happened to be right and one was not, which is luck, not verification.",
   "_auto": "Entries marked auto:true were resolved by resolve_highlights.py — the headline reduced to candidate entity names and checked against Wikipedia's real article index. Exact hits only; a fuzzy match is treated as no match. Hand-written entries are richer and are never overwritten.",
-  "_search_note": "Searching with allowed_domains=alltrails.com returns FEWER alltrails results than an open web search does. Warner Point, Horse Gulch and Piedra River were all recorded as 'no listing found' from a restricted search and all three have listings — found by searching the open web instead. Search open, then take the alltrails url from the results."
+  "_search_note": "Searching with allowed_domains=alltrails.com returns FEWER alltrails results than an open web search does. Warner Point, Horse Gulch and Piedra River were all recorded as 'no listing found' from a restricted search and all three have listings — found by searching the open web instead. Search open, then take the alltrails url from the results.",
+  "_verification_incident": "32 Wikipedia links were written from a batch verifier that reported non-existent articles as valid. MediaWiki numbers every missing title -1, -2, -3...; the script tested only for '-1', so all but the first missing title in each 40-title chunk passed. The identical bug had already been found and fixed in resolve_highlights.py and was never ported to wiki_batch.py — one fix, two copies. Both now test the `missing` key, and wiki_batch.py also rejects disambiguation pages. Controls proved it: 'Qqxzptl Museum of Nonexistence' passed as valid before the fix.",
+  "dead_links": [
+    "https://en.wikipedia.org/wiki/Artist%27s_Drive",
+    "https://en.wikipedia.org/wiki/Barker_Dam",
+    "https://en.wikipedia.org/wiki/Bear_Glacier_%28British_Columbia%29",
+    "https://en.wikipedia.org/wiki/Bonanza_Mine",
+    "https://en.wikipedia.org/wiki/Cathedral_Valley",
+    "https://en.wikipedia.org/wiki/Coldwater_Lake",
+    "https://en.wikipedia.org/wiki/Colossal_Cave",
+    "https://en.wikipedia.org/wiki/Dawson_City_Museum",
+    "https://en.wikipedia.org/wiki/Devil%27s_Punchbowl_State_Natural_Area",
+    "https://en.wikipedia.org/wiki/Dog_Mountain_%28Washington%29",
+    "https://en.wikipedia.org/wiki/Fort_Nelson_Heritage_Museum",
+    "https://en.wikipedia.org/wiki/Fountainhead_Antique_Auto_Museum",
+    "https://en.wikipedia.org/wiki/Gold_Dredge_8",
+    "https://en.wikipedia.org/wiki/Horseshoe_Lake_Trail",
+    "https://en.wikipedia.org/wiki/Kesugi_Ridge",
+    "https://en.wikipedia.org/wiki/Large_Animal_Research_Station",
+    "https://en.wikipedia.org/wiki/Miles_Canyon_%28Yukon%29",
+    "https://en.wikipedia.org/wiki/Morris_Thompson_Cultural_and_Visitors_Center",
+    "https://en.wikipedia.org/wiki/Museum_of_Western_Film_History",
+    "https://en.wikipedia.org/wiki/Musk_Ox_Farm",
+    "https://en.wikipedia.org/wiki/Northern_Lights_Centre",
+    "https://en.wikipedia.org/wiki/Patagonia-Sonoita_Creek_Preserve",
+    "https://en.wikipedia.org/wiki/Pioneer_Park_%28Fairbanks%29",
+    "https://en.wikipedia.org/wiki/Queen%27s_Garden_Trail",
+    "https://en.wikipedia.org/wiki/Ramona_Falls",
+    "https://en.wikipedia.org/wiki/Resurrection_Pass_Trail",
+    "https://en.wikipedia.org/wiki/Root_Glacier",
+    "https://en.wikipedia.org/wiki/Russian_River_%28Kenai_Peninsula%29",
+    "https://en.wikipedia.org/wiki/Salmon_River_%28Oregon%29",
+    "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29",
+    "https://en.wikipedia.org/wiki/Solomon_Gulch_Hatchery",
+    "https://en.wikipedia.org/wiki/Yukon_Wildlife_Preserve"
+  ],
+  "_dead_links": "URLs proven NOT to exist. build_links.py strips any of these from a highlight's links on every run, so a bad link cannot survive in the built page just because it was written there once. Removing an entry from this db is not enough — the page is merged into, not rebuilt."
 }

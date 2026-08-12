@@ -76,6 +76,8 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **307-367-4326** — The Forest publishes no mileage, difficulty or open date for the road — the Pinedale Ranger District (307-367-4326) and the MVUM are the authority for what is open.
   <sub>offroad.3</sub>
+- **(307) 367-4326** — Phone the Pinedale Ranger District, (307) 367-4326, before committing a day to it.
+  <sub>scenicDrives_patch.0</sub>
 
 ## 2028-06-09 — Badlands/Wall, SD  `badlands-sd`
 
@@ -101,9 +103,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
-  <sub>offroad.0</sub>
 - **613-264-7329** — 239; road emergency 613-264-7329.
+  <sub>offroad.0</sub>
+- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

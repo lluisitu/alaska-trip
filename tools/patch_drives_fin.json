@@ -1,0 +1,450 @@
+{
+  "_meta": {
+    "pass": "Close-out of the last open scenicDrives, offroad and trails items",
+    "worklist": "tools/open_items.py scenicDrives offroad trails — 25 scenic drives, 13 offroad, 2 trails",
+    "rule": "Every URL below was copied from a search result or a page actually opened. None was constructed from a name. Where a fetch was blocked (403/429) the listing is recorded as confirmed from the search result's own title and snippet, and the entry says so.",
+    "rig": "All scenicDrives and offroad entries are truck-only by standing decision; no rig field researched or written.",
+    "search_method": "lite.duckduckgo.com/lite result pages read via WebFetch; official domains fetched directly."
+  },
+  "stops": {
+    "boone-nc": {
+      "scenicDrives_patch": [
+        {
+          "name": "NC-105 (Boone toward Foscoe/Grandfather Mountain entrance)",
+          "url": "https://grandfather.com/directions/",
+          "distance": "19 miles Boone to the Grandfather Mountain entrance",
+          "note": "Grandfather Mountain's own directions page: \"Take NC 105 South to Linville. Turn left at the stoplight and take US 221 North 2 miles to the entrance of Grandfather Mountain.\" Worth carrying: the entrance is on US 221, not on NC 105 — NC 105 is the Boone-Foscoe-Linville leg and you turn off it at Linville. No published winter closure for the approach; the page carries no seasonal statement at all, so ice on the 4,000 ft section is an unsourced unknown rather than a documented closure.",
+          "tier": "official",
+          "source": "https://grandfather.com/directions/"
+        },
+        {
+          "name": "US-321 (Boone to Blowing Rock)",
+          "url": "https://www.highcountrync.com/play/grandfather_mountain/high-country-scenic-drives-stun-in-the-fall/article_323c6d96-8185-411d-9657-1673da61b050.html",
+          "note": "High Country Press's scenic-drives roundup lists \"Blowing Rock to Boone via US 321 & US 221 — Connecting two of the High Country's most popular towns, this route passes Glen Burney Trail\". Listing confirmed from the search result's own title and snippet; the page itself answered HTTP 429 when fetched, so nothing beyond the snippet is recorded. Explore Boone's own five-scenic-drives article does NOT list US-321 or NC-105 — its five are the Blue Ridge Parkway, Doc & Merle Watson Highway (8 mi), Mission Crossing (17 mi), Little Parkway (18 mi), New River Valley Byway (32 mi) and the High Country Road Trip Loop (50 mi), which is the better menu if a designated route is wanted.",
+          "tier": "community",
+          "source": "https://lite.duckduckgo.com/lite/?q=NCDOT+North+Carolina+Scenic+Byways+Boone+Blowing+Rock+NC-105+US-321+Grandfather+Mountain"
+        }
+      ]
+    },
+    "chattanooga-tn": {
+      "scenicDrives_patch": [
+        {
+          "name": "Lookout Mountain Scenic Highway / Ochs Highway (up to Point Park)",
+          "url": "https://tennesseerivervalleygeotourism.org/entries/lookout-mountain-scenic-parkway/6b75ead8-4087-494a-ab05-4a6efcf2e0f6",
+          "note": "Tennessee River Valley Geotourism lists this under \"Scenic Byways or Routes, Scenic Route\" as the Lookout Mountain Scenic Parkway, with directions \"take S. Broad Street from downtown Chattanooga to community of St. Elmo, following the signs to Rock City; take Ochs Hwy. up Lookout Mountain\". The entry page loaded but rendered only navigation and its category labels, so the route text is recorded from the search result snippet. At the top, Point Park is the NPS unit — admission $10 per adult, ages 16 and over (nps.gov/chch). The NPS page's Directions and Hours & Seasons sections did not populate on fetch, so no winter hours are recorded.",
+          "tier": "community",
+          "source": "https://www.nps.gov/chch/learn/lookout-mountain.htm"
+        },
+        {
+          "name": "Suck Creek Road / TN-27 along the Tennessee River Gorge",
+          "url": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html",
+          "distance": "Prentice Cooper State Forest is 26,945 acres, roughly 10 miles west of Chattanooga",
+          "season": "SEASON CONFLICT — the forest's interior roads are closed annually Dec. 20 to March 15; the stop arrives 6 Jan 2029, inside that window.",
+          "note": "Tennessee Division of Forestry, the managing authority: \"State Highway 27 (Suck Creek Road)\" divides Prentice Cooper State Forest. TN-27 itself is a state highway and stays open, but the drive-out-to-the-overlooks part does not — \"The following roads are closed annually from Dec. 20 to March 15...Tower Drive past Pot Point Gate, All side roads, Haley Road\". Separately, during scheduled big game hunts \"the area west of State Highway 27 (Suck Creek Road) is closed to all visitors except licensed hunters\", with the area east (Edwards Point) staying open. Turkey-nesting closures through July 14 affect Persimmon Road, all roads past Pot Point Gate on Tower Drive, Inman Point, Long Point and Elder Point Roads. On a 6 Jan arrival this is a highway drive along the gorge plus Edwards Point, not a forest-road day.",
+          "tier": "official",
+          "source": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html"
+        }
+      ]
+    },
+    "harpers-ferry-wv": {
+      "scenicDrives_patch": [
+        {
+          "name": "US-340 through the Potomac/Shenandoah Water Gap",
+          "url": "https://www.nps.gov/hafe/planyourvisit/directions.htm",
+          "note": "NPS: \"Harpers Ferry NHP's Visitor Center is located along US Route 340 in West Virginia\", 8 miles east of Charles Town, WV and 20 miles southwest of Frederick, MD. The park's own directions run US 340 in from three sides — north from Charles Town, south from Frederick, and north from Front Royal via Shenandoah NP. The directions page carries no description of the gap itself, no distances for the scenic stretch and no seasonal conditions; the park's separate Scenic Vistas page (home.nps.gov/hafe/learn/nature/scenicvistas.htm) is where the water-gap view is described. Nothing published on either page about winter driving, so no season field is claimed.",
+          "tier": "official",
+          "source": "https://www.nps.gov/hafe/planyourvisit/directions.htm"
+        }
+      ]
+    },
+    "hudson-valley-ny": {
+      "scenicDrives_patch": [
+        {
+          "name": "Route 9W along the Hudson",
+          "url": "https://www.chronogram.com/hv-towns/take-a-drive-route-9w-road-trip-19086258/",
+          "note": "Chronogram's Route 9W road trip: the route runs the Hudson's west bank through Rockland, Orange, Ulster and Greene counties, passing Nyack, Bear Mountain, West Point, Newburgh, Highland, Kingston, Saugerties and Catskill, and \"was the primary route for car travel between New York City and Albany west of the Hudson River\" before the Thruway. No total mileage is published for the drive on that page. Note that the Palisades Scenic Byway, which comes up alongside 9W in searches, is a different road — it is the Palisades Interstate Parkway and Henry Hudson Drive, not 9W.",
+          "tier": "community",
+          "source": "https://www.chronogram.com/hv-towns/take-a-drive-route-9w-road-trip-19086258/"
+        },
+        {
+          "name": "Storm King Highway (NY-218)",
+          "url": "https://www.governor.ny.gov/news/governor-hochul-announces-reopening-scenic-state-route-218-orange-county",
+          "distance": "3-mile scenic segment of NY-218; a 5.5-mile stretch was the closure length",
+          "note": "New York State's own release on the September 13, 2024 reopening. This road has a demonstrated habit of going away: more than eight inches of rain on July 9-10, 2023 \"caused a portion of State Route 218 to collapse down the mountainside\", taking out a nearly 300-foot-wide swath and closing it for about fourteen months; the rebuild added an oversized box culvert and an armored embankment rated for a 500-year event. Rockfall has closed it in other years too. No weight or vehicle restriction is stated in the release, and no winter-maintenance policy is published — worth a same-week check of NYSDOT status before driving out, rather than a season field this entry cannot source.",
+          "tier": "official",
+          "source": "https://www.governor.ny.gov/news/governor-hochul-announces-reopening-scenic-state-route-218-orange-county"
+        }
+      ]
+    },
+    "buena-vista-co": {
+      "scenicDrives_patch": [
+        {
+          "name": "Mount Princeton Road (CR 162) to Chalk Cliffs",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/chalk-creek-canyon",
+          "distance": "From Buena Vista, 7 miles south on US-285 then 6 miles west on County Road 162 to the Forest Service information kiosk",
+          "note": "Pike-San Isabel NF, Chalk Creek Canyon: \"From Buena Vista, Colorado, travel south for about 7 miles on Highway 285. Turn right onto County Road 162, and travel west for 6 miles.\" The kiosk sits opposite the Colorado Trail (#1776) trailhead. Restriction the authority does publish: \"No camping or campfires, except in developed campgrounds\" outside the four designated campgrounds, with exceptions near St. Elmo and Hancock. The Forest Service page states no seasonal closure for CR 162 and describes the canyon as \"a popular visitor attraction during the summer months\". Chaffee County Road & Bridge plows CR 162 through to St. Elmo, so a 7 May arrival should find the graded county road open — the 4x4 passes above St. Elmo are a different question and are not this entry.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/chalk-creek-canyon"
+        }
+      ]
+    },
+    "salida-co": {
+      "scenicDrives_patch": [
+        {
+          "name": "US Highway 50 over Monarch Pass",
+          "url": "https://en.wikipedia.org/wiki/Monarch_Pass",
+          "distance": "Summit 11,312 ft, about 25 miles west of Salida on US-50",
+          "season": "Kept open year-round, but \"prone to heavy winter snowfall, often resulting in temporary closures during severe winter storms\". Colorado State Patrol: winter driving conditions in the high country run \"as early as September and as late as May\" — the stop arrives 30 Apr 2028, still inside that band.",
+          "note": "No CDOT page dedicated to Monarch Pass exists; repeated searching returned only CDOT's general winter-driving and traction-law pages (codot.gov/travel/winter-driving, codot.gov/travel/winter-driving/tractionlaw) plus third-party cameras. This Wikipedia article was a real search result and was fetched to confirm it resolves. It crosses the Continental Divide between the upper Gunnison basin and the South Arkansas; runaway-truck ramps on both sides and much of the highway three-laned for winter maintenance. A late-April crossing can fall under Colorado's tiered traction law with little notice.",
+          "tier": "community",
+          "source": "https://en.wikipedia.org/wiki/Monarch_Pass"
+        }
+      ]
+    },
+    "wind-river-ext": {
+      "scenicDrives_patch": [
+        {
+          "name": "Green River Lakes Road (FR-091)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/green-river-lake-campground",
+          "distance": "15.6 miles of unpaved road from the Union Pass Road fork to Green River Lake Campground",
+          "season": "SEASON CONFLICT — the campground at the end of the road opens July 1 and runs to September 15; the stop arrives 21 May 2028, six weeks early.",
+          "note": "Bridger-Teton NF, Pinedale Ranger District. Two things worth carrying. First, the road number: the Forest Service calls it Green River Lakes Road / FS-370650 (NFSR 650), reached by following WY-352 out of Cora until it becomes Union Pass Road / FS-370600, then bearing right after about 3 miles. The card's \"FR-091\" is not the number the authority uses. Second, \"The access road to the campground is not paved\" and the destination is shut on the stop's dates — at 8,000 ft in late May this is snow and mud, not a drive. Also live: the Forest began major reconstruction of the road on 6 July 2026 — grading, drainage, culverts and aggregate surfacing — \"with potential for additional work in 2027\", and phase-2 windows allowed work between August 1 and October 14 or during summer 2027. Phone the Pinedale Ranger District, (307) 367-4326, before committing a day to it.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates"
+        }
+      ]
+    },
+    "camden-me": {
+      "scenicDrives_patch": [
+        {
+          "name": "US Route 1 Midcoast Maine (Rockland-Camden-Belfast)",
+          "url": "https://visitmaine.com/places-to-go/maines-midcoast-islands/",
+          "note": "Maine Office of Tourism's regional page, fetched and confirmed to exist, covering Belfast, Camden and Rockland. It is a destination page, not a route page — it publishes no Route 1 mileage, no drive description and no seasonal notes, so none is recorded here. No stretch of US-1 through the Midcoast carries a Maine Scenic Byway designation; searching returned only commercial roundups for this corridor. Maine's MidCoast & Islands regional DMO also runs a route planner at mainesmidcoast.com/route-planner/ if a stop-by-stop itinerary is wanted.",
+          "tier": "official",
+          "source": "https://visitmaine.com/places-to-go/maines-midcoast-islands/"
+        }
+      ]
+    },
+    "litchfield-hills-ct": {
+      "scenicDrives_patch": [
+        {
+          "name": "South Litchfield Hills Scenic Drive",
+          "url": "https://geodata.ct.gov/datasets/CTDOT::scenic-roads-interactive-map",
+          "note": "No route by this name exists. Connecticut designates scenic roads formally — \"Connecticut has over the past several years designated several sections of its rural two-lane highways as Scenic Roads\" — and CTDOT publishes the designated segments on this interactive map, which is the authority for which Litchfield-area roads actually carry the designation. Searching the byway and tourism listings returned a \"Litchfield Hills Scenic Byway\", a \"Litchfield Hills Loop Drive\" and a \"Litchfield Hills Scenic Loop\" from third-party sites, but nothing under the card's name and no official route bearing it. Recorded as unlisted rather than matched to a differently-named loop.",
+          "tier": "unlisted",
+          "source": "https://lite.duckduckgo.com/lite/?q=Connecticut+DOT+state+scenic+roads+designated+list+portal.ct.gov+scenic+road+program"
+        }
+      ]
+    },
+    "south-hero-vt": {
+      "scenicDrives_patch": [
+        {
+          "name": "Sandbar Causeway (US-2, Milton to South Hero)",
+          "url": "https://www.vtstateparks.com/parks/sand-bar",
+          "note": "Vermont State Parks' Sand Bar page — \"Sand Bar State Park takes its name from a natural sandbar between South Hero Island\" and the town of Milton on the mainland; the park address is 1215 US Route 2, Milton. The causeway carrying US-2 across it was built in the 1950s on top of an 1850s bridge, over a sandbar formed by Lamoille River sediment. Fetching vtstateparks.com returned HTTP 403 (bot detection), so the listing is confirmed from the search result's own title and snippet and no season dates are recorded. Sand Bar is a day-use beach park with a short summer season, so a 28 Sep arrival will likely find the park itself closed while US-2 across the causeway stays open — check the park's season before planning a stop rather than a drive-through.",
+          "tier": "official",
+          "source": "https://lite.duckduckgo.com/lite/?q=Sand+Bar+causeway+US+Route+2+Milton+South+Hero+Vermont+Lake+Champlain+Islands+byway"
+        }
+      ]
+    },
+    "munising-mi": {
+      "scenicDrives_patch": [
+        {
+          "name": "County Road H-58",
+          "url": "https://www.nps.gov/piro/planyourvisit/directions.htm",
+          "season": "Open and fully plowed only in the warm season. NPS: in winter \"H-58 is only plowed from Munising heading east to Adams Trail\", and inside the park \"Sand Point Road is the only park road plowed in winter\" (roughly December 1 to March 31). The stop arrives 25 Jul 2028 — no conflict.",
+          "note": "Pictured Rocks National Lakeshore: H-58 is \"the main road that travels through the national lakeshore\", running Munising to Grand Marais, and is \"suitable for vehicles of all sizes\". The warnings the NPS does publish are about sharing it, not driving it: it is a \"curvy road\", \"long sections of H-58 have very little shoulder or no shoulder at all\", and it is \"used by large logging trucks and many types of ORVs\". No length is published on the NPS page, so none is recorded.",
+          "tier": "official",
+          "source": "https://www.nps.gov/piro/planyourvisit/directions.htm"
+        }
+      ]
+    },
+    "porcupine-mountains-mi": {
+      "scenicDrives_patch": [
+        {
+          "name": "M-64 Lake Superior shore, Silver City to Ontonagon",
+          "url": "https://theporcupinemountains.com/road-tours/",
+          "distance": "Silver City to Ontonagon is about 13 miles on M-64; the Ontonagon - Lake Superior Route road tour that contains this stretch is roughly 125 miles",
+          "note": "The Porcupine Mountains & Ontonagon Area visitor bureau's road-tours page. Six tours are listed: Porcupine Mountains - Lake Gogebic Loop (~120 mi), Ontonagon - Lake Superior Route (~125 mi), Ontonagon - Victoria Dam Loop (~55 mi), Waterfalls and the Paulding Light (~100 mi), Keweenaw Cruisin' Tour (~200 mi) and the Lake Superior Circle Tour (1,300 mi). The M-64 segment is described only as offering \"breathtaking Lake Superior vistas\" — no pavement type or seasonal guidance is given for it, so none is recorded. The whole corridor is on the Lake Superior Circle Tour route.",
+          "tier": "community",
+          "source": "https://theporcupinemountains.com/road-tours/"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Shore-road spurs off M-64 east toward Ontonagon",
+          "url": "https://www.fs.usda.gov/r09/ottawa/multimedia/publications/motor-vehicle-use-maps",
+          "note": "No spur road here is listed by any authority or database. The Ontonagon Ranger District of the Ottawa National Forest is the land manager for the forest ground behind this shore and it carries 416.8 miles of routes designated on the Motor Vehicle Use Map, which is the legal authority for what is open to a vehicle; the MVUM sheets themselves are the only way to tell a designated spur from a private two-track. The Ontonagon-area road-tour authority describes only the paved M-64 corridor and names no spur. Recorded as unlisted rather than guessed at — take the district MVUM before turning off M-64.",
+          "tier": "unlisted",
+          "source": "https://lite.duckduckgo.com/lite/?q=Ottawa+National+Forest+motor+vehicle+use+map+Ontonagon+Ranger+District+fs.usda.gov+maps"
+        }
+      ]
+    },
+    "tahquamenon-falls-mi": {
+      "scenicDrives_patch": [
+        {
+          "name": "M-123 loop: Rivermouth to Lower Falls to Upper Falls",
+          "url": "https://www.michigan.gov/recsearch/parks/tahquamenonfalls",
+          "distance": "The park covers nearly 50,000 acres and stretches 13-plus miles; the byway that strings its three units together is 63 miles end to end",
+          "note": "Michigan DNR. The park's own General Management Plan states \"M-123 is a federally designated scenic byway, which provides access to the three main areas of the park\" — Upper Falls, Lower Falls and Rivermouth are all on M-123, which is what makes this a drive rather than three separate outings. Rivermouth sits where the Tahquamenon River meets Whitefish Bay, south of Paradise; Lower Falls is inland west of Paradise. No official mileage between the individual units is published, so none is recorded. Arrival 31 Jul 2028 is mid-season with no closure in play.",
+          "tier": "official",
+          "source": "https://lite.duckduckgo.com/lite/?q=Michigan+DNR+Tahquamenon+Falls+State+Park+Upper+Falls+Lower+Falls+Rivermouth+units+M-123+miles+apart"
+        },
+        {
+          "name": "M-123 west to Newberry",
+          "url": "https://explorem123.com/",
+          "distance": "63 miles",
+          "note": "The Tahquamenon Scenic Byway, a Pure Michigan Byway: \"a 63-mile journey through Michigan's Eastern Upper Peninsula\", following M-123 to \"experience the thunder of Tahquamenon Falls and the northern hospitality of villages like Newberry and Paradise, Michigan\". Originally designated a Michigan Scenic Heritage Route in 1997 from Galloway Creek to County Road 500; all of M-123 north of M-28 carries the designation. MDOT's own byways index is at michigan.gov/mdot/travel/tourists/byways. The byway site promotes winter recreation but publishes no statement on winter road access, so no season field is claimed.",
+          "tier": "community",
+          "source": "https://explorem123.com/"
+        }
+      ]
+    },
+    "sequoia-kings-canyon": {
+      "scenicDrives_patch": [
+        {
+          "name": "Moro Rock/Crescent Meadow Road spur off Generals Highway",
+          "url": "https://www.nps.gov/seki/planyourvisit/moro.htm",
+          "season": "SEASON CONFLICT — NPS: \"In winter, Moro Rock / Crescent Meadow Road closes with snow.\" The stop arrives 23 Dec 2027, which is the closure season. The Moro Rock stairway also closes in winter because the steps become hazardous.",
+          "note": "Sequoia & Kings Canyon, the managing authority. Two separate restrictions live on this road and only one of them is the winter one. In summer, on weekends \"the road closes to private vehicles and shuttles are the only way to reach Moro Rock and Crescent Meadow\"; on summer weekdays the road stays open but \"the small parking area may fill\". So there is no season in which this is simply a drive-up. On the trip's actual dates it is a ski or snowshoe approach — \"ski trails lead to the parking area\" — not a drive. The NPS page publishes no road length and no vehicle-length limit, so neither is recorded.",
+          "tier": "official",
+          "source": "https://www.nps.gov/seki/planyourvisit/moro.htm"
+        }
+      ]
+    },
+    "tucson": {
+      "scenicDrives_patch": [
+        {
+          "name": "Sabino Canyon Road",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/shuttle-stop-9-trailhead",
+          "distance": "3.8 miles of paved road through the canyon",
+          "note": "NOT DRIVABLE, in any vehicle. Coronado National Forest, the managing authority: \"The canyon itself has been closed to private vehicles since 1978. However, you can still visit Sabino Canyon in an emission-free, open-air Sabino Canyon Crawler or Bear Canyon shuttle.\" The only motorised traffic on the 3.8-mile road is the Sabino Canyon and Bear Canyon shuttles and agency vehicles. This belongs on the card as a shuttle-and-walk outing, not as a scenic drive — the truck goes no further than the Sabino Canyon Recreation Area lot at 5700 N. Sabino Canyon Road. Recreation area page: fs.usda.gov/r03/coronado/recreation/groups/sabino-canyon-recreation-area. February arrival is peak season for it, so expect the lot to fill.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r03/coronado/recreation/shuttle-stop-9-trailhead"
+        }
+      ]
+    },
+    "eureka-springs-ar-v3": {
+      "scenicDrives_patch": [
+        {
+          "name": "Beaver Lake Scenic Loop (AR-187)",
+          "url": "https://en.wikipedia.org/wiki/Arkansas_Highway_187",
+          "distance": "16.57 miles, running from AR-23 north of Eureka Springs to US-62 near Eureka Springs, all within Carroll County",
+          "note": "The whole point of this loop is the Beaver Bridge — a one-lane 1949 suspension bridge over the White River, the last of its kind still open to vehicles in Arkansas, 554 ft long and 11 ft wide, on the National Register. The published limit is what to check before driving it: the standing restriction is one-lane traffic with a 20,000 lb (10 ton) weight limit, but recent coverage of the bridge's reopening reports \"the structure's weight limit was also reduced from 10 tons to five\" and further closures planned. Five tons is 10,000 lb — still above a 4x4 pickup, but it is now a number worth confirming with ArDOT rather than assuming, and the bridge has been closed outright for repairs more than once. Cars take turns; only one direction crosses at a time.",
+          "tier": "community",
+          "source": "https://en.wikipedia.org/wiki/Arkansas_Highway_187"
+        },
+        {
+          "name": "US-62 Historic Corridor",
+          "url": "https://www.visiteurekasprings.com/four-scenic-drives-near-eureka-springs-thatll-take-your-breath-away/",
+          "distance": "26 miles Pea Ridge National Military Park to Eureka Springs on US-62",
+          "note": "The Eureka Springs CVB's own scenic-drives article, titled \"Four Scenic Drives Near Eureka Springs That'll Take Your Breath Away\" and describing \"a curvaceous road with rolling hills and plenty of dense foliage\" with mountain vistas. The page answered HTTP 403 when fetched, so the listing is confirmed from its title and snippet only and the four drives are not enumerated here. The westbound stretch is the historically loaded one: US-62 runs 26 miles from Pea Ridge National Military Park east to Eureka Springs through rolling northwest-Arkansas terrain, past historic White River bridges. No seasonal restriction found for US-62 itself.",
+          "tier": "official",
+          "source": "https://lite.duckduckgo.com/lite/?q=US+62+Eureka+Springs+Arkansas+historic+corridor+scenic+drive+Pea+Ridge+Rogers"
+        }
+      ]
+    },
+    "mountain-view-ar": {
+      "scenicDrives_patch": [
+        {
+          "name": "Arkansas Scenic 9 (Mountain View to Clinton)",
+          "url": "https://en.wikipedia.org/wiki/Arkansas_Highway_9",
+          "distance": "AR-9 runs 94.41 miles in total; the Clinton-to-Mountain View leg crosses Van Buren and Stone counties",
+          "note": "Worth correcting on the card: AR-9 is NOT an Arkansas Scenic Byway. ArDOT's Beautification Section administers the state's scenic byway program and publishes the designated list at ardot.gov/divisions/right-of-way/row_sections/beautification-section/scenic-byways/ (fetch returned HTTP 403; the page was confirmed from its search-result title and a snippet describing the Highway 88 designation of 1998). AR-9 appears on no byway list and holds no independent scenic designation — near Clinton it merely intersects the genuinely designated Arkansas Scenic 7 Byway. What AR-9 does carry: \"Pieces of all three routes are designated as Arkansas Heritage Trails for use during the Civil War and the Trail of Tears.\" The drive itself is real and pretty — it climbs and winds through classic Ozark foothill terrain northeast from Clinton through Shirley into Stone County — it just is not a byway, and the name on the card implies it is.",
+          "tier": "community",
+          "source": "https://en.wikipedia.org/wiki/Arkansas_Highway_9"
+        }
+      ]
+    },
+    "perth-on": {
+      "scenicDrives_patch": [
+        {
+          "name": "Tay Canal / Perth heritage loop",
+          "url": "https://rideau-info.com/canal/driving/heritage-central.html",
+          "note": "The Rideau Canal Heritage Tour, central section — a driving loop that starts and ends in Perth, \"originally laid out as a military settlement in 1816 to help protect the inland water route connecting Lake Ontario with the Ottawa River\". Roads used are County Roads 43, 17, 16, 29 and 14 plus Highways 8, 42 and 15; stops are Smiths Falls (Railway Museum, Detached Lock, Visitor Centre), Kilmarnock Lock, Toledo, Forfar and Narrows Lock, where one of the four blockhouses built by Colonel By in 1830-31 still stands. Two caveats: no total distance is published for the loop, and it does NOT include Merrickville, which sits on a different section of the tour (rideau-info.com/canal/driving/). For the Tay itself, Parks Canada is the authority — \"The Tay Canal branch of the Rideau Canal extends from Beveridges Lockstation to the town of Perth. The canal ends in the middle of the town at a large turning basin lined with timber crib wharves\" (parks.canada.ca/docs/r/on/rideau/whl-lhm/chap2/chap2a1/chap2a1q). Lockstation operating season is not stated on the driving-tour page; an 18 Sep arrival is near the end of the Rideau navigation season, so boats locking through is a check-first, not a given.",
+          "tier": "community",
+          "source": "https://rideau-info.com/canal/driving/heritage-central.html"
+        }
+      ]
+    },
+    "stratford-on": {
+      "scenicDrives_patch": [
+        {
+          "name": "Grand Trunk backroads to West Montrose",
+          "url": "https://explorewaterloo.ca/west-montrose-covered-bridge/",
+          "distance": "198-foot span across the Grand River",
+          "note": "The destination is sourced; the backroads themselves are not. Explore Waterloo Region: \"The West Montrose Covered Bridge is Ontario's last remaining covered bridge. Located in Woolwich Township, the bridge has a 198-foot span across the Grand River. Built in 1881.\" THE NUMBER THAT MATTERS: the bridge carries a legal posted load limit of 3 tonnes and \"should not be crossed by trucks, buses, tractors or other heavy vehicles\", and the Region of Waterloo has confirmed \"The legal posted load limit of 3 tonnes will be maintained after the proposed bridge rehabilitation. The Region and Township do not wish to attract more and heavier vehicles.\" Three tonnes is about 6,600 lb — a half-ton pickup clears it, a loaded three-quarter-ton diesel may not. Weigh or check the door-jamb GVW before driving across rather than after. No named \"Grand Trunk backroads\" route is published by any authority; the approach roads are ordinary township roads.",
+          "tier": "community",
+          "source": "https://explorewaterloo.ca/west-montrose-covered-bridge/"
+        },
+        {
+          "name": "Perth County rural loop to St. Marys",
+          "url": "https://visitstratford.ca/roadtrips/",
+          "distance": "St. Marys is about a 20-minute drive from Stratford (roughly 17.5 km straight-line)",
+          "note": "Destination Stratford's own Road Trips page — \"Only a 20-minute drive from Stratford, St. Marys is home to museums\". No single named rural loop is published; Perth County's tourism arm covers the countryside generically (perthcounty.ca/discover/travel-inspirations/, \"Agritourism is thriving in Perth County\"). If a defined route is wanted, the best-mapped option in this county is the collaborative cycling map built by Perth County, Destination Stratford and St. Marys — 13 City, Rural and Gravel Signature Routes from short rides up to 230 km — which is drivable as well as rideable and is indexed at ontariobybike.ca/perth-county-st-marys-stratford/.",
+          "tier": "official",
+          "source": "https://visitstratford.ca/roadtrips/"
+        }
+      ]
+    },
+    "lexington-va": {
+      "offroad": [
+        {
+          "name": "George Washington & Jefferson NF gravel roads, North Mountain west of Lexington",
+          "url": "https://www.fs.usda.gov/r08/gwj/maps-guides",
+          "season": "GWJNF seasonal roads: \"Many seasonal roads are closed during the freeze-thaw of winter to protect roads surfaces from damage, typically closing on January 10 and reopening April 1.\" The stop arrives 2 Dec 2028 for 4 nights, so it clears the gate date by about five weeks — but only just, and the Forest states opening and closing dates vary by road, with some roads separately gated for wildlife.",
+          "note": "No individual North Mountain forest road is listed by the Forest Service or by any offroad database; the GWJNF maps-and-guides page is the authority for which roads exist and which are gated. Confirm the specific road on the current forest map and check the alerts page before driving — the Forest gates roads individually and posts them as they close.",
+          "tier": "unlisted",
+          "source": "https://www.alleghenymountainradio.org/usfs-closing-seasonal-recreation-sites-and-roads-for-winter/"
+        },
+        {
+          "name": "George Washington National Forest roads (near Natural Bridge, off Rt. 812)",
+          "url": "https://www.fs.usda.gov/r08/gwj/recreation/cave-mountain-lake-recreation-area",
+          "season": "Same GWJNF winter policy — seasonal roads typically close January 10 and reopen April 1, dates varying by road. A 2 Dec arrival is ahead of it.",
+          "note": "Rt. 812 is the Natural Bridge Station approach to Cave Mountain Lake Recreation Area, which is the Forest Service destination at the end of this road network — \"Nestled in the Blue Ridge Mountains of Virginia, the Cave Mountain Lake Recreation Area welcomes generations of families who enjoy the rustic beauty\". Panther Knob Nature Trail (half a mile) and Wildcat Mountain Trail (4-mile loop) leave from it. The forest roads beyond the recreation area carry no individual listing anywhere; the recreation-area page is the authority that they exist and lead somewhere, and the forest map (fs.usda.gov/r08/gwj/maps-guides) is what shows which are open.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/gwj/recreation/cave-mountain-lake-recreation-area"
+        }
+      ]
+    },
+    "chitina": {
+      "offroad": [
+        {
+          "name": "O'Brien Creek Road (4x4)",
+          "url": "https://www.alaska.org/detail/wood-canyon-adventure",
+          "distance": "About 2.8 miles from Chitina to the parking area on the gravel fan at the Copper River",
+          "difficulty": "AWD or high-clearance recommended for the full length; \"The final descent to the creek is harrowing and very steep\"",
+          "season": "Accessible year-round but busiest during dipnetting season, June through early August. The stop arrives 15 Aug 2027, just after the crowd.",
+          "note": "One-lane road hugging a cliff down to where O'Brien Creek meets the Copper River. The line that matters: it \"is no longer maintained by the state\" and may have landslides and stray boulders. Drivers in ordinary cars are told to park in a turnaround after Mile 2 and walk the rest — in the truck that is not the constraint, but the unmaintained status and the rockfall are. The Chitina Dipnetters Association pages (chitinadipnetters.com/access-issues.html, dipnetter.com) carry the most current road reports but both refused connection from this sandbox, so nothing from them is recorded.",
+          "tier": "community",
+          "source": "https://www.alaska.org/detail/wood-canyon-adventure"
+        }
+      ]
+    },
+    "winthrop": {
+      "offroad": [
+        {
+          "name": "Slate Peak spur",
+          "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/slate-peak-trailhead",
+          "season": "SEASON CONFLICT — Okanogan-Wenatchee NF: \"Typically accessible July - September\". The stop arrives 3 Oct 2027, immediately past the window, and Winthrop is a hard-anchored date that cannot move to meet it.",
+          "note": "Forest Road 5400 climbs to Harts Pass and a spur continues uphill to the Slate Peak trailhead at 7,170 feet — the highest road in Washington. The Forest Service page carries an active \"Harts Pass Road Restriction on the Methow Valley Ranger District\" alert. Early October at 7,170 ft in the North Cascades is the first-snow window, and the Forest closes this one on weather rather than a calendar date, so it is a phone call to the Methow Valley Ranger District, (509) 996-4000, on the morning rather than a plan. No road length or vehicle restriction is published on the Forest Service page, so neither is recorded.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/slate-peak-trailhead"
+        }
+      ]
+    },
+    "camp-verde": {
+      "offroad": [
+        {
+          "name": "Dry Creek Road (FR 152)",
+          "url": "https://www.fs.usda.gov/r03/coconino/recreation/trails/dry-creek-trail-no-52",
+          "difficulty": "Coconino National Forest: \"The road to Dry Creek Trail is very primitive and suitable for high-clearance vehicles only.\"",
+          "note": "The Forest Service has no page for FR 152 itself; the authority's statement about the road lives on the Dry Creek Trail No. 52 page, which is what is linked. FR 152 runs from the paved Dry Creek Road northeast into the Red Rock-Secret Mountain country and serves the trailheads for Dry Creek No. 52, HS Canyon No. 50 and others. Community listings put the drivable length at roughly 4.5 miles to the end, but no official figure is published, so that is carried as a note rather than a distance field. A 4 Mar 2028 arrival is fine seasonally — no gate on this one — but it is a mud road after rain and the Forest publishes no closure schedule to check against.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r03/coconino/recreation/trails/dry-creek-trail-no-52"
+        }
+      ]
+    },
+    "jasper-ponca-ar": {
+      "offroad": [
+        {
+          "name": "Cave Mountain / Fallsville forest roads",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/maps-guides",
+          "note": "No individual road in the Fallsville area carries a listing on any database or Forest Service page — this is the ordinary case for numbered Ozark forest roads. The Ozark-St. Francis National Forests' Motor Vehicle Use Maps are the legal authority for which roads are open to a vehicle; the Fallsville roads fall in the Big Piney Ranger District, whose MVUM is published here in PDF and through Avenza. The 2026 MVUMs for the Ouachita and Ozark-St. Francis forests are the current edition. Recorded as unlisted with the authority rather than guessed at.",
+          "tier": "unlisted",
+          "source": "https://lite.duckduckgo.com/lite/?q=fs.usda.gov+Ozark-St.+Francis+National+Forests+motor+vehicle+use+map+maps-guides"
+        },
+        {
+          "name": "Cave Mountain Road (to Hawksbill Crag trailhead)",
+          "url": "https://www.nps.gov/buff/learn/news/cave-mountain-road-temporary-closure.htm",
+          "note": "Buffalo National River (NPS) is the authority on this road's identity and status: Cave Mountain Road is Newton County Road 5, leaving Highway 21 in Boxley Valley, and it is one of two ways to the Whitaker Point / Hawksbill Crag trailhead, which sits on Forest Service Road 1271 on Ozark National Forest land. The alternative approach is via gravel roads from Highway 16, west of Boxley Valley. The linked NPS notice documents a past multi-phase improvement closure — a 2-mile section shut 8:00 am to 4:00 pm Mondays through Thursdays with the road \"fully open to all traffic on Fridays, Saturdays, and Sundays\" — which is over, but it establishes the pattern: this road gets worked on and gated in sections, so check current status. Separately, the Forest Service closed the Whitaker Point trailhead itself on FSR 1271 from January 20, 2026 for parking-lot reconstruction. Arrival 27 Jan 2029 is deep winter on an unpaved Ozark ridge road — ice, not snow, is the hazard.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/learn/news/cave-mountain-road-temporary-closure.htm"
+        }
+      ]
+    },
+    "mena-ar": {
+      "offroad": [
+        {
+          "name": "Caney Creek Wilderness access roads (Shady Lake / Forest Service network)",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/caney-creek-wilderness",
+          "distance": "Forest Road 38 runs 6 miles north off AR-246 to the east trailhead",
+          "note": "Ouachita National Forest, the managing authority. The named access road is Forest Road 38: \"Drive 19 miles south of Mena, AR, on U.S. 59 and 71, turn left (east) on Arkansas Hwy. 246 for 17 miles, turn left (north) on Forest Road 38 for 6 miles to east trailhead.\" The wilderness is 14,460 acres of secluded forest, scenic overlooks and flowing streams; the Caney Creek Trail begins in Shady Lake Recreation Area but \"can also be accessed from Forest Service Road 38\" — look for large granite rocks about 1.8 miles north of the Shady Lake entrance. Buckeye and Caney Creek Trails plus FR 38 make a 9.5-mile loop. No road-surface description, vehicle recommendation or seasonal closure is published by the Forest for FR 38, so none is recorded. Mena-Oden Ranger District, (479) 394-2382, weekdays 8:00-4:30.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/caney-creek-wilderness"
+        },
+        {
+          "name": "Ouachita National Forest roads (FR 106, FR 25 and others)",
+          "url": "https://www.fs.usda.gov/r08/ouachita/maps-guides",
+          "note": "Neither FR 106 nor FR 25 returns a listing — a targeted search on the exact road numbers returned zero results, which for numbered Ouachita forest roads is the expected answer rather than a failure. The Ouachita National Forest's Motor Vehicle Use Maps are the legal authority for what is open: the Mena Ranger District alone carries 232 miles of MVUM-designated motorized routes. The 2026 MVUMs are the current edition and are downloadable in PDF from this page. Recorded as unlisted with the authority. Note for the same stop that Highway 88 west of Mena over Rich Mountain IS an ArDOT-designated scenic byway (designated 1998, climbing to 2,681 ft) if a sourced paved alternative is wanted.",
+          "tier": "unlisted",
+          "source": "https://lite.duckduckgo.com/lite/?q=Ouachita+National+Forest+motor+vehicle+use+map+Mena+Oden+Ranger+District+fs.usda.gov"
+        }
+      ]
+    },
+    "mount-magazine-ar": {
+      "offroad": [
+        {
+          "name": "Ozark National Forest gravel forest roads (Cove Lake / Magazine vicinity)",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/cove-lake-recreation-area",
+          "distance": "The Magazine Mountain Ranger District carries 274.9 miles of MVUM-designated motorized routes — 245.5 miles of roads and 29.4 miles of trails",
+          "note": "Cove Lake is the Forest Service destination on this side: \"A 160-acre mountain lake near Magazine Mountain - the highest point in Arkansas with an elevation of 2,753 feet\", in the Magazine Mountain Ranger District. No individual gravel road here has its own page, but the district's road network is quantified on the MVUM, which is the authority for which of them a vehicle may legally use; the mileage above comes from an MVUM-derived index (ohvtrailfinder.com/ar/ozark-st-francis/magazine-mountain/). Take the Ozark-St. Francis MVUM (fs.usda.gov/r08/ozark-stfrancis/maps-guides) before turning off pavement. Arrival 23 Jan 2029 — no published seasonal gate on these roads, but winter ice on Ozark gravel is the real limit.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/cove-lake-recreation-area"
+        },
+        {
+          "name": "Ozark National Forest roads on the north flank of Magazine",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/huckleberry-mountain",
+          "distance": "37.3 miles of trail in three loops — Huckleberry Mountain Trail 18.8 mi, Apple Loop 12.2 mi, Bell Springs Loop 6.6 mi",
+          "difficulty": "Not published by the Forest Service; Trails Offroad and onX both paywall their grades",
+          "season": "The Forest publishes no seasonal closure. A third-party MVUM-derived index lists the Huckleberry Mountain route as seasonal June-March, which would put a 23 Jan 2029 arrival inside the open window — worth confirming against the current MVUM, which prints seasons of use per route.",
+          "note": "This is the sourced road network on the north flank. Established 1989 as a horse trail, the system now takes horses, hikers, OHVs and mountain bikes, and the Forest Service names the roads that serve it: Forest Road 1604, Forest Road 1613 (Eikleberry Road), Sorghum Hollow Road (gravel, 4.7 miles in to the horse camp), and Highway 309 for Quarry Camp. LIVE CLOSURE on the Forest's own conditions note: \"A portion of FS Road 1604 (Shoal Creek Rd) has been permanently closed due to a landslide\" — permanently, not seasonally, so any route planned through FR 1604 needs re-planning.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/huckleberry-mountain"
+        }
+      ]
+    },
+    "custer-sd": {
+      "offroad": [
+        {
+          "name": "Black Hills National Forest Forest Road 307 (FR307) area",
+          "url": "https://www.fs.usda.gov/r02/blackhills/maps-guides/motor-vehicle-use-map",
+          "note": "CONFIRMED UNLISTED. A targeted search on the exact road number — \"FR 307\" and \"Forest Road 307\" with Black Hills — returned zero results across every offroad database. The Black Hills National Forest Motor Vehicle Use Map is the authority: it \"is a legal product required under the 2005 Final Travel Management Rule\" and is the only document that establishes whether FR307 is open to a vehicle. Context from the Forest: the Black Hills carry over 3,800 miles of roads and trails open to motorized vehicles, of which over 700 miles are system trails designated for OHVs, and cross-country travel is prohibited except on what the MVUM shows. A trail permit is required for anything the map labels a trail; roads open to all vehicles can be used with a road licence plate instead. Arrival 3 Jun 2028 is past the spring thaw with no published gate.",
+          "tier": "unlisted",
+          "source": "https://lite.duckduckgo.com/lite/?q=Black+Hills+National+Forest+Forest+Road+307+Custer+motorized+trail+MVUM"
+        }
+      ]
+    },
+    "talkeetna": {
+      "trails": [
+        {
+          "name": "Lake Loop Trail",
+          "distance": "3.4 mi loop",
+          "difficulty": "Easy",
+          "reviews": "959",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/alaska/talkeetna-lake-trail--2",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "note": "The card's name is generic and the park has several similarly-named loops — Talkeetna Lakes Park contains X Lake Loop, Z Lake Loop and the lake circuit itself, so \"Lake Loop Trail\" does not map one-to-one onto any listing. The best match is AllTrails' \"Talkeetna Lake Trail\", confirmed in search results at 959 reviews, which circles the lake through old-growth forest and is described as \"great for hiking, running, canoeing, fishing, or wildlife watching\". Match recorded as contains, not exact. The managing authority is the Matanuska-Susitna Borough (matsu.gov/trails/talkeetna-lakes-trails): \"Talkeetna Lakes Park includes a network of wide skate/classic trails throughout the woods surrounding the lake system\", with summer use for hiking, biking and jogging. The full system is about eight miles. A 3 Jul 2027 arrival is peak season and peak mosquito — reviewers are consistent about bugs and mud."
+        }
+      ]
+    },
+    "vegas-area": {
+      "trails": [
+        {
+          "name": "White Domes Loop",
+          "reviews": "3,427",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/white-domes-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "note": "Nevada State Parks uses the card's exact name — \"White Domes Loop\" appears verbatim on the Valley of Fire park page's closure list — so the name is right; AllTrails indexes it as \"White Domes Trail\", hence match: contains. Review count 3,427 from the AllTrails search result; AllTrails currently flags the listing [CLOSED], which reflects the park's seasonal closure and not a permanent one. SEASON, and it is good news: the park closes this trail annually May 15 - September 30 along with Fire Wave, Seven Wonders Loop, Pastel Canyon/Pink Canyon, Pinnacles Loop, Prospect Trail, Arrowhead Trail, Natural Arch Trail and Charlie's Spring, because of \"a history of frequent medical calls, search and rescue missions, and fatalities during this time of year\". The stop arrives 1 Jan 2028, well inside the open window. Nevada State Parks publishes no distance or difficulty for it and directs visitors to the visitor centre or the park brochure, so neither is recorded here — community listings put it around 1.1-1.25 miles but no authority confirms that.",
+          "authority": "https://parks.nv.gov/parks/valley-of-fire"
+        }
+      ]
+    }
+  }
+}

@@ -589,8 +589,45 @@ def global_pass(stops, log):
                f"names off their descriptions and set rig=truck on all of them")
 
 
+def check_no_duplicate_claims(db):
+    """Two db entries claiming the same trail make the build oscillate forever.
+
+    The shape: an earlier pass renames "White Domes Loop" to the listing's title
+    "White Domes Trail" and records was_name. A later pass, researching from
+    scratch, adds "White Domes Loop" again with the same url. On every build the
+    renamed entry matches by name and replaces, the re-added one matches nothing
+    and is APPENDED, and global_pass then dedupes the append away — so the file
+    flips between two md5s and never converges. It has happened twice: nine
+    entries the first time, one the second, and both times the symptom was a
+    stable-looking build that would not settle.
+
+    Neither state is wrong on the page, which is why this needs to fail loudly
+    rather than be noticed by eye.
+    """
+    bad = []
+    for sid, entry in (db.get('stops') or {}).items():
+        trails = entry.get('trails') or []
+        by_name = {norm(t.get('name')): t for t in trails}
+        for t in trails:
+            was = norm(t.get('was_name'))
+            if was and was in by_name and by_name[was] is not t:
+                bad.append(f"{sid}: {t['name']!r} renames {t['was_name']!r}, "
+                           f"but a second entry still claims {t['was_name']!r}")
+        seen = {}
+        for t in trails:
+            u = (t.get('alltrails') or {}).get('url')
+            if u:
+                if u in seen:
+                    bad.append(f"{sid}: {t['name']!r} and {seen[u]!r} share the url {u}")
+                seen[u] = t['name']
+    if bad:
+        sys.exit('!! links_db.json has entries claiming the same trail — the build '
+                 'would oscillate and never converge:\n  ' + '\n  '.join(bad))
+
+
 def main():
     db = json.loads(DB.read_text())
+    check_no_duplicate_claims(db)
     h = SRC.read_text()
 
     stops_raw = ex(h, 'const STOPS =')

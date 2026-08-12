@@ -1,0 +1,248 @@
+{
+  "stops": {
+    "delaware-water-gap-pa": {
+      "dogs": "Leashed dogs are fine on most DEWA trails including Mount Minsi, and on Mount Tammany (NJ) and privately-run Bushkill Falls — but they are banned outright at the Raymondskill Falls and Dingmans Falls recreation sites.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/dewa/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are allowed almost everywhere in the park. Delaware Water Gap National Recreation Area encompasses more than 70,000 acres and has over 150 miles of trails, most of which are pet-friendly.",
+      "trail_dogs": {
+        "Raymondskill Falls Trail": false,
+        "Bushkill Falls Trail": true,
+        "Dingmans Falls Trail": false,
+        "Mount Minsi via Appalachian Trail": true,
+        "Mount Tammany via Red Dot and Blue Dot Loop Trail": true
+      }
+    },
+    "gettysburg-pa": {
+      "dogs": "Gettysburg NMP welcomes leashed dogs everywhere on the battlefield grounds and trails; only park buildings, the visitor center and the National Cemetery are closed to them.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/gett/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets must be restrained on a leash at all times while in the park.",
+      "trail_dogs": {
+        "Big Round Top Trail": true,
+        "Bridle Trail Loop": true,
+        "Johnny Reb Trail": true,
+        "Little Round Top": true,
+        "Billy Yank Trail": true
+      }
+    },
+    "harpers-ferry-wv": {
+      "dogs": "Leashed dogs are permitted throughout Harpers Ferry NHP including the Maryland Heights climb, and on the C&O Canal towpath and the Appalachian Trail up to Weverton Cliffs.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/hafe/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets must be kept on a six-foot leash at all times while visiting any area of the park.",
+      "trail_dogs": {
+        "Weverton Cliffs (Appalachian Trail)": true,
+        "C&O Canal Trail: Shepherdstown to Harpers Ferry": true,
+        "Harpers Ferry to Chesapeake and Ohio Canal Trail": true,
+        "Maryland Heights Loop": true,
+        "Maryland Heights via Overlook Cliffs and Combined Trail": true
+      }
+    },
+    "staunton-va": {
+      "dogs": "Shenandoah allows leashed dogs on most of its trails, but both trails on this card — Stony Man and every Old Rag route — are on the park's short prohibited list.",
+      "dogs_verdict": "prohibited",
+      "dogs_source": "https://www.nps.gov/shen/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are prohibited on the following trails:",
+      "trail_dogs": {
+        "Stony Man Trail": false,
+        "Old Rag Mountain Loop Trail": false
+      }
+    },
+    "lexington-va": {
+      "dogs": "Natural Bridge State Park is a Virginia state park, and leashed dogs are allowed on all of its trails including Cedar Creek under the arch.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.dcr.virginia.gov/state-parks/pets",
+      "dogs_source_quote": "Pets are allowed in all Virginia State Parks. State regulations require pets to be confined or kept on a leash no longer than 6 feet and kept under supervision while in the park.",
+      "trail_dogs": {
+        "Cedar Creek Trail": true,
+        "Skyline Trail": true,
+        "Blue Ridge Trail (Natural Bridge State Park)": true,
+        "Buck Hill Trail": true
+      }
+    },
+    "floyd-va": {
+      "dogs": "Leashed dogs are allowed on all the Blue Ridge Parkway trails here; Buffalo Mountain Natural Area Preserve publishes no pet rule at all, so treat it as unknown until DCR Natural Heritage is phoned.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/blri/planyourvisit/trail-safety.htm",
+      "dogs_source_quote": "Dogs are allowed on trails, but must be on a leash.",
+      "trail_dogs": {
+        "Black Ridge Trail (Rocky Knob, MP 169.0)": true,
+        "Buffalo Mountain Natural Area Preserve": null,
+        "Rocky Knob Picnic Loop Trail (MP 169.0)": true,
+        "Smart View Trail (Blue Ridge Parkway MP 154.5)": true,
+        "Rock Castle Gorge Trail (Rocky Knob, Blue Ridge Parkway MP 167.1)": true
+      }
+    },
+    "new-river-gorge-wv": {
+      "dogs": "New River Gorge is one of the most dog-open parks on the whole route — the NPS states plainly that leashed pets are allowed on every trail in the park.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/neri/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are allowed on all trails at New River Gorge National Park and Preserve.",
+      "trail_dogs": {
+        "Long Point Trail": true,
+        "Endless Wall Trail": true,
+        "Grandview Main Overlook": true,
+        "Grandview Rim Trail to Turkey Spur Rock": true,
+        "Kaymoor Miners Trail": true
+      }
+    },
+    "boone-nc": {
+      "dogs": "Leashed dogs are allowed on the Blue Ridge Parkway trails at Moses Cone, Julian Price and Beacon Heights, and Grandfather Mountain State Park permits them too — though the park itself warns the Grandfather Trail's ladders and cables are not suitable for animals.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/blri/planyourvisit/trail-safety.htm",
+      "dogs_source_quote": "Dogs are allowed on trails, but must be on a leash.",
+      "trail_dogs": {
+        "Grandfather Trail (to Calloway Peak)": true,
+        "Bass Lake Loop Trail (Moses Cone Memorial Park)": true,
+        "Beacon Heights Trail": true,
+        "Price Lake Loop Trail (Julian Price Park)": true,
+        "Tanawha Trail (Julian Price Park to Beacon Heights, passing Rough Ridge & Linn Cove Viaduct)": true
+      }
+    },
+    "asheville-nc-v3": {
+      "dogs": "All four are dog-legal on a leash — Triple Falls and Hooker Falls under the NC Forest Service in DuPont, Bearwallow under Conserving Carolina, and Mount Pisgah under the Blue Ridge Parkway.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.ncagr.gov/divisions/nc-forest-service/state-forests/dupont-state-recreational-forest",
+      "dogs_source_quote": "Your dog may be friendly, but other dogs may not be. Protect your dog by keeping it on a leash.",
+      "trail_dogs": {
+        "Triple Falls Trail": true,
+        "Bearwallow Mountain Trail": true,
+        "Hooker Falls Trail": true,
+        "Mount Pisgah Trail": true
+      }
+    },
+    "bryson-city-nc": {
+      "dogs": "Great Smoky Mountains bans dogs on every trail except the Gatlinburg Trail and the Oconaluftee River Trail — none of the Deep Creek trails on this card qualify, so the dog stays at camp or walks the Oconaluftee River Trail instead.",
+      "dogs_verdict": "prohibited",
+      "dogs_source": "https://www.nps.gov/grsm/planyourvisit/pets.htm",
+      "dogs_source_quote": "Only two trails permit leashed pets: the Gatlinburg Trail and the Oconaluftee River Trail.",
+      "trail_dogs": {
+        "Deep Creek Loop Trail (Tom Branch, Indian Creek & Juney Whank Falls)": false,
+        "Juney Whank Falls Trail": false,
+        "Noland Divide Trail": false
+      }
+    },
+    "chattanooga-tn": {
+      "dogs": "Leashed dogs are welcome on all five — the NPS battlefield units at Signal Point and Sunset Rock (Point Park itself is the one closure), Georgia State Parks at Cloudland Canyon, and the City of Chattanooga on the Riverwalk.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/chch/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are more than welcome in the park. However, please remember to keep them leashed at all times.",
+      "trail_dogs": {
+        "Cloudland Canyon — West Rim Loop Trail": true,
+        "Cloudland Canyon — Waterfalls Trail (Cherokee Falls & Hemlock Falls)": true,
+        "Signal Point / Julia Falls Overlook (Cumberland Trail)": true,
+        "Sunset Rock (Lookout Mountain, via West Brow Rd spur)": true,
+        "Tennessee Riverwalk": true
+      }
+    },
+    "hot-springs-ar-v3": {
+      "dogs": "Hot Springs NP welcomes leashed dogs on all 26 miles of its trails — only the federal buildings on Bathhouse Row are closed to them.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/hosp/planyourvisit/pets.htm",
+      "dogs_source_quote": "Dogs are welcome on all 26 miles of the Hot Springs National Park trails.",
+      "trail_dogs": {
+        "Sunset Trail (West Mountain / Hot Springs Mountain)": true,
+        "Balanced Rock / Goat Rock Trail": true,
+        "Hot Springs Mountain Trail & Tower": true
+      }
+    },
+    "petit-jean-ar": {
+      "dogs": "Arkansas State Parks allow leashed pets throughout the park, so all three trails including Cedar Falls are open to the dog; only public buildings and swimming areas are closed.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or other animals brought into state parks will be appropriately leashed, caged, or otherwise restrained so as to be under the direct physical (not verbal) control of the owner.",
+      "trail_dogs": {
+        "Cedar Falls Trail": true,
+        "Seven Hollows Trail": true,
+        "Rock House Cave / Bear Cave Trail": true
+      }
+    },
+    "mount-magazine-ar": {
+      "dogs": "Arkansas State Parks allow leashed pets on park trails, so Signal Hill and Cameron Bluff are both walkable with the dog; the lodge building itself is not.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or animals other than service animals for individuals with disabilities will not be permitted in public buildings or at swimming beaches or pools at any time.",
+      "trail_dogs": {
+        "Signal Hill Trail (Arkansas's highest point)": true,
+        "Signal Hill Trail": true,
+        "Cameron Bluff Trail": true
+      }
+    },
+    "jasper-ponca-ar": {
+      "dogs": "Buffalo National River bans pets on most of its trails — Lost Valley is out — but names the Ponca-to-Steel Creek section of the Buffalo River Trail as one of the few where they are allowed; Hawksbill Crag is Ozark National Forest land, where dogs are permitted under restraint.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/buff/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are not allowed in any government buildings, caves, or on most park trails.",
+      "trail_dogs": {
+        "Whitaker Point Trail (Hawksbill Crag)": true,
+        "Lost Valley Trail": false,
+        "Hawksbill Crag (Whitaker Point) Trail": true,
+        "Buffalo River Trail (Ponca to Steel Creek segment)": true
+      }
+    },
+    "mountain-view-ar": {
+      "dogs": "Dogs are fine on the North Sylamore Creek Trail and on the Ozark Folk Center grounds, but they are barred from Blanchard Springs Caverns and its visitor centre, so the Dripstone tour means leaving the dog in the coach.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/tours/blanchard-springs-caverns",
+      "dogs_source_quote": "Pets are not allowed in the Visitor Center or Caverns: seeing-eye dogs and service dogs are an exception.",
+      "trail_dogs": {
+        "Blanchard Springs Caverns — Dripstone Trail": false,
+        "North Sylamore Creek Trail": true,
+        "Ozark Folk Center State Park grounds trail": true
+      }
+    },
+    "devils-den-ar": {
+      "dogs": "Arkansas State Parks permit leashed pets on park trails, and the Butterfield's national-forest miles are dog-legal too, so all three work with the dog.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or other animals brought into state parks will be appropriately leashed, caged, or otherwise restrained so as to be under the direct physical (not verbal) control of the owner.",
+      "trail_dogs": {
+        "Yellow Rock Trail": true,
+        "Devil's Den Trail": true,
+        "Butterfield Hiking Trail (Ozark Highlands Trail segment)": true
+      }
+    },
+    "mena-ar": {
+      "dogs": "The Ouachita National Forest allows dogs under restraint on its trails and Queen Wilhelmina is an Arkansas state park, so Rich Mountain works both ways; the City of Mena publishes no rule for Janssen Park, so that one is unknown.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fs.usda.gov/r08/ouachita/about-area/faqs",
+      "dogs_source_quote": "On trails, dogs must be under verbal or physical restraint at all times.",
+      "trail_dogs": {
+        "Lover's Leap / Rich Mountain Trail (Queen Wilhelmina SP)": true,
+        "Janssen Park Trails (Mena)": null,
+        "Ouachita National Recreation Trail (Rich Mountain segment)": true
+      }
+    }
+  },
+  "_researched_no_rule": {
+    "eureka-springs-ar-v3": {
+      "trails": [
+        "Lake Leatherwood City Park Trails",
+        "Historic District Walking Trail",
+        "Passion Play Trails / Magnetic Mountain"
+      ],
+      "authority": "Eureka Springs Parks and Recreation Commission (City of Eureka Springs), which manages Lake Leatherwood City Park and the city trail network; the Passion Play trails sit on land of the privately owned Great Passion Play",
+      "checked": [
+        "https://www.eurekaparks.com/parks/lake-leatherwood — official Lake Leatherwood park page. Describes the lake, campground and trail mileage. No pet, dog or leash rule anywhere on the page.",
+        "https://www.eurekaparks.com — Eureka Springs Parks and Recreation home page. The only dog reference is the Bark Park at Harmon Park, a separate fenced facility; nothing about dogs on trails.",
+        "https://lite.duckduckgo.com/lite/?q=Lake+Leatherwood+City+Park+Eureka+Springs+dogs+leash+rules+official+city+park — search returned no eurekaparks.com or City of Eureka Springs page carrying a trail dog rule; every 'dog friendly' claim came from BringFido, DogPack or Zoomies Zone, which are not authorities.",
+        "https://lite.duckduckgo.com/lite/?q=eurekaparks.com+Lake+Leatherwood+park+rules+regulations+dogs+leash+trails — same result: no official park-rules page indexed."
+      ],
+      "action": "Phone Eureka Springs Parks and Recreation / Lake Leatherwood at 479-253-7921 (or leatherwood@eurekaparks.com) and ask two things: are leashed dogs allowed on the Lake Leatherwood trail network, and is there a leash-length rule. Then ask the Great Passion Play separately about the Magnetic Mountain trails, since that is private land under a different owner."
+    },
+    "bentonville-ar": {
+      "trails": [
+        "Crystal Bridges Art Trail"
+      ],
+      "authority": "Crystal Bridges Museum of American Art, which owns and manages the 134-acre trail network including the Art Trail. The City of Bentonville does not manage this trail.",
+      "checked": [
+        "https://crystalbridges.org/policies — the museum's own policies page. Covers photography, bags and drones ('drones are not permitted on the museum's trails and grounds') but says nothing about pets, dogs or service animals.",
+        "https://crystalbridges.org/visit/nature-trails — the official trails page, which names the Art Trail and seven other trails. No pet, dog or leash rule.",
+        "https://crystalbridges.org/visit/ — the main visit page. No mention of dogs, pets, animals or service animals.",
+        "https://lite.duckduckgo.com/lite/?q=Crystal+Bridges+Museum+trails+dogs+leashed+pets+policy+crystalbridges.org — the 'leashed pets are welcome on the museum trails' claim traces only to BringFido and similar aggregators, not to the museum."
+      ],
+      "action": "Phone Crystal Bridges Guest Services on 479-657-2335 and ask whether leashed dogs are allowed on the Art Trail and the wider museum trail network, and whether the rule differs on the paved North Forest / Orchard sections. One call settles the whole stop, since the Art Trail is the only trail on the card."
+    }
+  }
+}

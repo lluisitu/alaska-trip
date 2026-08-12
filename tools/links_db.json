@@ -12747,6 +12747,32 @@
           ],
           "auto": true,
           "auto_km": 28
+        },
+        "Cave Point County Park": {
+          "entity": "Cave Point County Park, the limestone-shelf shoreline park on the Lake Michigan side of the Door Peninsula. It has no article of its own; Whitefish Dunes State Park's text documents it as an enclave inside the state park reached by the shoreline trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Whitefish Dunes State Park",
+              "url": "https://en.wikipedia.org/wiki/Whitefish_Dunes_State_Park"
+            },
+            {
+              "label": "Wikipedia — Door County, Wisconsin",
+              "url": "https://en.wikipedia.org/wiki/Door_County%2C_Wisconsin"
+            }
+          ]
+        },
+        "Washington Island ferry from Northport": {
+          "entity": "The car ferry across Death's Door from Northport Pier at the north tip of the Door Peninsula to Washington Island. The ferry operator has no article; the Washington Island article's Transportation section documents this exact route and the Northport Pier terminus.",
+          "links": [
+            {
+              "label": "Wikipedia — Washington Island (Wisconsin)",
+              "url": "https://en.wikipedia.org/wiki/Washington_Island_%28Wisconsin%29"
+            },
+            {
+              "label": "Wikipedia — Door County, Wisconsin",
+              "url": "https://en.wikipedia.org/wiki/Door_County%2C_Wisconsin"
+            }
+          ]
         }
       },
       "trails": [
@@ -12796,6 +12822,85 @@
           ],
           "auto": true,
           "auto_km": 5
+        },
+        "South Shore Line to Chicago": {
+          "entity": "The South Shore Line interurban, which runs from the Indiana Dunes stations into Chicago.",
+          "links": [
+            {
+              "label": "Wikipedia — South Shore Line",
+              "url": "https://en.wikipedia.org/wiki/South_Shore_Line"
+            },
+            {
+              "label": "Wikipedia — Chicago",
+              "url": "https://en.wikipedia.org/wiki/Chicago"
+            }
+          ]
+        },
+        "The 3 Dune Challenge (state park Trail 8)": {
+          "entity": "The state park's marked route over its three highest dunes. The branded 'challenge' name has no article, but the Indiana Dunes State Park article documents Trail 8 as the trail that 'goes up and over all three of the high dunes'.",
+          "links": [
+            {
+              "label": "Wikipedia — Indiana Dunes State Park",
+              "url": "https://en.wikipedia.org/wiki/Indiana_Dunes_State_Park"
+            }
+          ]
+        },
+        "Mount Baldy": {
+          "entity": "The 126 ft wandering sand dune in Indiana Dunes National Park on the Lake Michigan shore near Michigan City — not the several other Mount Baldys; the article resolves to the sand-dune title.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Baldy (sand dune)",
+              "url": "https://en.wikipedia.org/wiki/Mount_Baldy_%28sand_dune%29"
+            },
+            {
+              "label": "Wikipedia — Indiana Dunes National Park",
+              "url": "https://en.wikipedia.org/wiki/Indiana_Dunes_National_Park"
+            }
+          ]
+        },
+        "Cowles Bog Trail": {
+          "entity": "The trail through Cowles Bog, the 4,000-year-old wetland complex in Indiana Dunes National Park named for ecologist Henry Chandler Cowles.",
+          "links": [
+            {
+              "label": "Wikipedia — Cowles Bog",
+              "url": "https://en.wikipedia.org/wiki/Cowles_Bog"
+            }
+          ]
+        },
+        "State park Trail 10": {
+          "entity": "Trail 10 in Indiana Dunes State Park, documented in the park article as the longest trail, with the bird observation tower over the marsh.",
+          "links": [
+            {
+              "label": "Wikipedia — Indiana Dunes State Park",
+              "url": "https://en.wikipedia.org/wiki/Indiana_Dunes_State_Park"
+            }
+          ]
+        },
+        "Beach day on Lake Michigan": {
+          "entity": "The Lake Michigan shoreline at the Indiana Dunes.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Michigan",
+              "url": "https://en.wikipedia.org/wiki/Lake_Michigan"
+            },
+            {
+              "label": "Wikipedia — Indiana Dunes State Park",
+              "url": "https://en.wikipedia.org/wiki/Indiana_Dunes_State_Park"
+            }
+          ]
+        },
+        "South Shore Line into Chicago": {
+          "entity": "The same South Shore Line commuter run into Chicago.",
+          "links": [
+            {
+              "label": "Wikipedia — South Shore Line",
+              "url": "https://en.wikipedia.org/wiki/South_Shore_Line"
+            },
+            {
+              "label": "Wikipedia — Chicago",
+              "url": "https://en.wikipedia.org/wiki/Chicago"
+            }
+          ]
         }
       },
       "trails": [
@@ -12841,6 +12946,59 @@
           ],
           "auto": true,
           "auto_km": 19
+        },
+        "Stratford Festival Theatre": {
+          "entity": "The Festival Theatre, the Stratford Festival's main thrust-stage house. The building has no separate article; the Stratford Festival article covers the company and its theatres.",
+          "links": [
+            {
+              "label": "Wikipedia — Stratford Festival",
+              "url": "https://en.wikipedia.org/wiki/Stratford_Festival"
+            }
+          ]
+        },
+        "Stratford riverside parks": {
+          "entity": "The parkland along the Avon River through Stratford, Ontario.",
+          "links": [
+            {
+              "label": "Wikipedia — Stratford, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Stratford%2C_Ontario"
+            },
+            {
+              "label": "Wikipedia — Avon River (Ontario)",
+              "url": "https://en.wikipedia.org/wiki/Avon_River_%28Ontario%29"
+            }
+          ]
+        },
+        "St. Marys day trip": {
+          "entity": "St. Marys, Ontario, the limestone town downstream on the North Thames.",
+          "links": [
+            {
+              "label": "Wikipedia — St. Marys, Ontario",
+              "url": "https://en.wikipedia.org/wiki/St._Marys%2C_Ontario"
+            }
+          ]
+        },
+        "St. Marys Quarry": {
+          "entity": "The former limestone quarry at St. Marys rehabilitated as an outdoor swimming pool. No article of its own; the St. Marys article documents the Quarries and the swimming pool directly.",
+          "links": [
+            {
+              "label": "Wikipedia — St. Marys, Ontario",
+              "url": "https://en.wikipedia.org/wiki/St._Marys%2C_Ontario"
+            }
+          ]
+        },
+        "Stratford limestone downtown and the Avon": {
+          "entity": "Stratford, Ontario's heritage downtown and the Avon River it sits on.",
+          "links": [
+            {
+              "label": "Wikipedia — Stratford, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Stratford%2C_Ontario"
+            },
+            {
+              "label": "Wikipedia — Avon River (Ontario)",
+              "url": "https://en.wikipedia.org/wiki/Avon_River_%28Ontario%29"
+            }
+          ]
         }
       }
     },
@@ -12911,6 +13069,41 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Elora & Fergus historic downtowns": {
+          "entity": "The two neighbouring Centre Wellington villages.",
+          "links": [
+            {
+              "label": "Wikipedia — Elora, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Elora%2C_Ontario"
+            },
+            {
+              "label": "Wikipedia — Fergus, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Fergus%2C_Ontario"
+            }
+          ]
+        },
+        "Tubing the Grand through the gorge": {
+          "entity": "Tubing the Grand River through the Elora Gorge.",
+          "links": [
+            {
+              "label": "Wikipedia — Elora Gorge",
+              "url": "https://en.wikipedia.org/wiki/Elora_Gorge"
+            },
+            {
+              "label": "Wikipedia — Grand River (Ontario)",
+              "url": "https://en.wikipedia.org/wiki/Grand_River_%28Ontario%29"
+            }
+          ]
+        },
+        "Rockwood Conservation Area": {
+          "entity": "The Grand River Conservation Authority park at Rockwood, Ontario.",
+          "links": [
+            {
+              "label": "Wikipedia — Rockwood Conservation Area",
+              "url": "https://en.wikipedia.org/wiki/Rockwood_Conservation_Area"
+            }
+          ]
         }
       },
       "trails": [
@@ -12955,6 +13148,41 @@
           ],
           "auto": true,
           "auto_km": 8
+        },
+        "Muskoka villages": {
+          "entity": "The cottage-country villages of the Muskoka district — Port Carling, Bala, Windermere and the rest.",
+          "links": [
+            {
+              "label": "Wikipedia — District Municipality of Muskoka",
+              "url": "https://en.wikipedia.org/wiki/District_Municipality_of_Muskoka"
+            },
+            {
+              "label": "Wikipedia — Muskoka Lakes",
+              "url": "https://en.wikipedia.org/wiki/Muskoka_Lakes"
+            }
+          ]
+        },
+        "Highway 60 corridor drive in the truck": {
+          "entity": "Ontario Highway 60, the road that crosses Algonquin Provincial Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Ontario Highway 60",
+              "url": "https://en.wikipedia.org/wiki/Ontario_Highway_60"
+            },
+            {
+              "label": "Wikipedia — Algonquin Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Algonquin_Provincial_Park"
+            }
+          ]
+        },
+        "Dorset Lookout Tower": {
+          "entity": "The Dorset Scenic Lookout Tower above Lake of Bays. No article of its own; the Dorset, Ontario article documents the tower, its 1967 construction on the old fire-tower site, and its seasonal opening.",
+          "links": [
+            {
+              "label": "Wikipedia — Dorset, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Dorset%2C_Ontario"
+            }
+          ]
         }
       },
       "trails": [
@@ -13035,6 +13263,82 @@
           ],
           "auto": true,
           "auto_km": 10
+        },
+        "Picton & Bloomfield villages": {
+          "entity": "The two Prince Edward County villages.",
+          "links": [
+            {
+              "label": "Wikipedia — Picton, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Picton%2C_Ontario"
+            },
+            {
+              "label": "Wikipedia — Bloomfield, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Bloomfield%2C_Ontario"
+            }
+          ]
+        },
+        "Sandbanks Dunes Trail": {
+          "entity": "The Dunes Trail in Sandbanks Provincial Park, which the park article documents as holding the world's largest bay-mouth barrier dune formation.",
+          "links": [
+            {
+              "label": "Wikipedia — Sandbanks Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Sandbanks_Provincial_Park"
+            }
+          ]
+        },
+        "The rest of the Sandbanks trail set": {
+          "entity": "The remaining marked trails in Sandbanks Provincial Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Sandbanks Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Sandbanks_Provincial_Park"
+            }
+          ]
+        },
+        "The three beaches": {
+          "entity": "Sandbanks Provincial Park's three beaches — Outlet, Sandbanks and Dunes.",
+          "links": [
+            {
+              "label": "Wikipedia — Sandbanks Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Sandbanks_Provincial_Park"
+            }
+          ]
+        },
+        "County wine route by truck": {
+          "entity": "The Prince Edward County wine route; the county article documents it as a wine-country destination with many small wineries.",
+          "links": [
+            {
+              "label": "Wikipedia — Prince Edward County, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Prince_Edward_County%2C_Ontario"
+            }
+          ]
+        },
+        "Lake on the Mountain": {
+          "entity": "Lake on the Mountain, the lake perched ~62 m above the Bay of Quinte, and its provincial park.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake on the Mountain Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Lake_on_the_Mountain_Provincial_Park"
+            }
+          ]
+        },
+        "Glenora Ferry": {
+          "entity": "The free Bay of Quinte ferry east of Picton. It has no article; the Ontario Highway 33 article documents the Glenora Ferry as the link between the highway's two sections.",
+          "links": [
+            {
+              "label": "Wikipedia — Ontario Highway 33",
+              "url": "https://en.wikipedia.org/wiki/Ontario_Highway_33"
+            }
+          ]
+        },
+        "North Beach Provincial Park": {
+          "entity": "North Beach Provincial Park on the county's north shore. No article of its own; the Prince Edward County article names it alongside Sandbanks as one of the county's larger beaches.",
+          "links": [
+            {
+              "label": "Wikipedia — Prince Edward County, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Prince_Edward_County%2C_Ontario"
+            }
+          ]
         }
       },
       "trails": [
@@ -13158,6 +13462,68 @@
           ],
           "auto": true,
           "auto_km": 22
+        },
+        "Landon Bay — Donevan Trail and the Lookout": {
+          "entity": "The Landon Bay mainland unit of Thousand Islands National Park. The individual trails have no articles; the park article documents the mainland trail systems at Landon Bay.",
+          "links": [
+            {
+              "label": "Wikipedia — Thousand Islands National Park",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands_National_Park"
+            }
+          ]
+        },
+        "Jones Creek trail network": {
+          "entity": "The Jones Creek mainland trail system, documented in the Thousand Islands National Park article alongside Mallorytown Landing and Landon Bay.",
+          "links": [
+            {
+              "label": "Wikipedia — Thousand Islands National Park",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands_National_Park"
+            }
+          ]
+        },
+        "1000 Islands cruise from Gananoque": {
+          "entity": "Boat cruises through the Thousand Islands archipelago departing Gananoque.",
+          "links": [
+            {
+              "label": "Wikipedia — Thousand Islands",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands"
+            },
+            {
+              "label": "Wikipedia — Gananoque",
+              "url": "https://en.wikipedia.org/wiki/Gananoque"
+            }
+          ]
+        },
+        "1000 Islands Tower, Hill Island": {
+          "entity": "The 1965 concrete observation tower on Hill Island, Ontario.",
+          "links": [
+            {
+              "label": "Wikipedia — 1000 Islands Tower",
+              "url": "https://en.wikipedia.org/wiki/1000_Islands_Tower"
+            },
+            {
+              "label": "Wikipedia — Hill Island (Ontario)",
+              "url": "https://en.wikipedia.org/wiki/Hill_Island_%28Ontario%29"
+            }
+          ]
+        },
+        "Thousand Islands Parkway": {
+          "entity": "The scenic parkway along the St. Lawrence from Gananoque to Butternut Bay.",
+          "links": [
+            {
+              "label": "Wikipedia — Thousand Islands Parkway",
+              "url": "https://en.wikipedia.org/wiki/Thousand_Islands_Parkway"
+            }
+          ]
+        },
+        "Kingston": {
+          "entity": "Kingston, Ontario.",
+          "links": [
+            {
+              "label": "Wikipedia — Kingston, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Kingston%2C_Ontario"
+            }
+          ]
         }
       }
     },
@@ -13195,6 +13561,59 @@
           ],
           "auto": true,
           "auto_km": 26
+        },
+        "Perth & Merrickville historic downtowns": {
+          "entity": "Perth, Ontario and the village of Merrickville (now Merrickville-Wolford).",
+          "links": [
+            {
+              "label": "Wikipedia — Perth, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Perth%2C_Ontario"
+            },
+            {
+              "label": "Wikipedia — Merrickville–Wolford",
+              "url": "https://en.wikipedia.org/wiki/Merrickville%E2%80%93Wolford"
+            }
+          ]
+        },
+        "Silver Queen Mine": {
+          "entity": "The restored early-20th-century 'Silver Queen' mica mine. No article of its own; the Murphys Point Provincial Park article documents the mine, and the mica, feldspar and apatite worked there.",
+          "links": [
+            {
+              "label": "Wikipedia — Murphys Point Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Murphys_Point_Provincial_Park"
+            }
+          ]
+        },
+        "Rideau Trail through the park": {
+          "entity": "The Rideau Trail, whose Kingston section ends at the Lally Homestead inside Murphys Point Provincial Park and which passes through Perth.",
+          "links": [
+            {
+              "label": "Wikipedia — Rideau Trail",
+              "url": "https://en.wikipedia.org/wiki/Rideau_Trail"
+            },
+            {
+              "label": "Wikipedia — Murphys Point Provincial Park",
+              "url": "https://en.wikipedia.org/wiki/Murphys_Point_Provincial_Park"
+            }
+          ]
+        },
+        "Perth heritage walk": {
+          "entity": "The stone heritage core of Perth, Ontario.",
+          "links": [
+            {
+              "label": "Wikipedia — Perth, Ontario",
+              "url": "https://en.wikipedia.org/wiki/Perth%2C_Ontario"
+            }
+          ]
+        },
+        "Merrickville village": {
+          "entity": "Merrickville, Ontario, now part of Merrickville-Wolford.",
+          "links": [
+            {
+              "label": "Wikipedia — Merrickville–Wolford",
+              "url": "https://en.wikipedia.org/wiki/Merrickville%E2%80%93Wolford"
+            }
+          ]
         }
       },
       "trails": [
@@ -13311,6 +13730,51 @@
           ],
           "auto": true,
           "auto_km": 19
+        },
+        "Mirror Lake walk": {
+          "entity": "Mirror Lake, the 124-acre lake in the centre of Lake Placid village — the article confirms the village of Lake Placid, town of North Elba, not another New York Mirror Lake.",
+          "links": [
+            {
+              "label": "Wikipedia — Mirror Lake (New York)",
+              "url": "https://en.wikipedia.org/wiki/Mirror_Lake_%28New_York%29"
+            }
+          ]
+        },
+        "High Peaks Wilderness day hikes": {
+          "entity": "The High Peaks Wilderness Area, the largest Forest Preserve wilderness in the Adirondack Park.",
+          "links": [
+            {
+              "label": "Wikipedia — High Peaks Wilderness Area",
+              "url": "https://en.wikipedia.org/wiki/High_Peaks_Wilderness_Area"
+            }
+          ]
+        },
+        "Drive the Whiteface Veterans' Memorial Highway in the pickup": {
+          "entity": "The Whiteface Veterans Memorial Highway (NY 431) to the summit parking area. No separate article; the Whiteface Mountain article documents the highway by name, its 1929 construction and the summit tunnel and elevator.",
+          "links": [
+            {
+              "label": "Wikipedia — Whiteface Mountain",
+              "url": "https://en.wikipedia.org/wiki/Whiteface_Mountain"
+            }
+          ]
+        },
+        "Walk the gorge at High Falls Gorge": {
+          "entity": "The privately run gorge walk on the Ausable River. No article of its own; the Wilmington, New York article lists High Falls Gorge as a location on NY 86 south of Wilmington village.",
+          "links": [
+            {
+              "label": "Wikipedia — Wilmington, New York",
+              "url": "https://en.wikipedia.org/wiki/Wilmington%2C_New_York"
+            }
+          ]
+        },
+        "Day-run into Saranac Lake": {
+          "entity": "Saranac Lake, New York, the village west of Lake Placid.",
+          "links": [
+            {
+              "label": "Wikipedia — Saranac Lake, New York",
+              "url": "https://en.wikipedia.org/wiki/Saranac_Lake%2C_New_York"
+            }
+          ]
         }
       },
       "offroad": [
@@ -13449,6 +13913,55 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Stowe village and foliage drives": {
+          "entity": "Stowe, Vermont and the roads around it.",
+          "links": [
+            {
+              "label": "Wikipedia — Stowe, Vermont",
+              "url": "https://en.wikipedia.org/wiki/Stowe%2C_Vermont"
+            }
+          ]
+        },
+        "Covered bridges": {
+          "entity": "Stowe's covered bridges, chiefly the 1844 Gold Brook Covered Bridge (Emily's Bridge), the state's only 19th-century covered bridge on wooden Howe trusses carrying a public road.",
+          "links": [
+            {
+              "label": "Wikipedia — Gold Brook Covered Bridge",
+              "url": "https://en.wikipedia.org/wiki/Gold_Brook_Covered_Bridge"
+            },
+            {
+              "label": "Wikipedia — List of covered bridges in Vermont",
+              "url": "https://en.wikipedia.org/wiki/List_of_covered_bridges_in_Vermont"
+            }
+          ]
+        },
+        "Drive the Mount Mansfield Toll Road in the pickup": {
+          "entity": "The toll road up Mount Mansfield, Vermont's highest peak.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Mansfield",
+              "url": "https://en.wikipedia.org/wiki/Mount_Mansfield"
+            }
+          ]
+        },
+        "Climb Camel's Hump": {
+          "entity": "Camel's Hump, the 4,083 ft Green Mountains peak.",
+          "links": [
+            {
+              "label": "Wikipedia — Camel's Hump",
+              "url": "https://en.wikipedia.org/wiki/Camel%27s_Hump"
+            }
+          ]
+        },
+        "Walk the Stowe Recreation Path": {
+          "entity": "The 5.3-mile Stowe Recreation Path greenway.",
+          "links": [
+            {
+              "label": "Wikipedia — Stowe Recreation Path",
+              "url": "https://en.wikipedia.org/wiki/Stowe_Recreation_Path"
+            }
+          ]
         }
       },
       "trails": [
@@ -13583,6 +14096,59 @@
           ],
           "auto": true,
           "auto_km": 41
+        },
+        "Sutton's Mont Sutton area": {
+          "entity": "Mont Sutton and the town of Sutton, Quebec in the Eastern Townships.",
+          "links": [
+            {
+              "label": "Wikipedia — Mont Sutton",
+              "url": "https://en.wikipedia.org/wiki/Mont_Sutton"
+            },
+            {
+              "label": "Wikipedia — Sutton, Quebec",
+              "url": "https://en.wikipedia.org/wiki/Sutton%2C_Quebec"
+            }
+          ]
+        },
+        "Settle into the Lac-Stukely campground": {
+          "entity": "The Lac-Stukely camping sector of Mont-Orford National Park. The campground has no article; Lake Stukely's article confirms the lake borders a large part of the park, and the park article documents camping.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Stukely",
+              "url": "https://en.wikipedia.org/wiki/Lake_Stukely"
+            },
+            {
+              "label": "Wikipedia — Mont-Orford National Park",
+              "url": "https://en.wikipedia.org/wiki/Mont-Orford_National_Park"
+            }
+          ]
+        },
+        "Visit the Abbaye Saint-Benoit-du-Lac": {
+          "entity": "The Benedictine abbey on Lake Memphremagog. English Wikipedia has no separate abbey article — the community article Saint-Benoit-du-Lac is the abbey and its cheese-making facility, and nothing else.",
+          "links": [
+            {
+              "label": "Wikipedia — Saint-Benoît-du-Lac",
+              "url": "https://en.wikipedia.org/wiki/Saint-Beno%C3%AEt-du-Lac"
+            }
+          ]
+        },
+        "Spend a morning in Magog": {
+          "entity": "Magog, Quebec.",
+          "links": [
+            {
+              "label": "Wikipedia — Magog, Quebec",
+              "url": "https://en.wikipedia.org/wiki/Magog%2C_Quebec"
+            }
+          ]
+        },
+        "Make one run into Sherbrooke": {
+          "entity": "Sherbrooke, the Eastern Townships' main city.",
+          "links": [
+            {
+              "label": "Wikipedia — Sherbrooke",
+              "url": "https://en.wikipedia.org/wiki/Sherbrooke"
+            }
+          ]
         }
       }
     },
@@ -13620,6 +14186,51 @@
           ],
           "auto": true,
           "auto_km": 29
+        },
+        "Kancamagus Highway": {
+          "entity": "The Kancamagus Highway, the eastern 32 miles of New Hampshire Route 112 from Lincoln to Conway. It redirects to the route article.",
+          "links": [
+            {
+              "label": "Wikipedia — New Hampshire Route 112 (Kancamagus Highway)",
+              "url": "https://en.wikipedia.org/wiki/New_Hampshire_Route_112"
+            }
+          ]
+        },
+        "North Conway's walkable village": {
+          "entity": "North Conway, New Hampshire.",
+          "links": [
+            {
+              "label": "Wikipedia — North Conway, New Hampshire",
+              "url": "https://en.wikipedia.org/wiki/North_Conway%2C_New_Hampshire"
+            }
+          ]
+        },
+        "Run the Kancamagus Highway end to end": {
+          "entity": "The same Kancamagus Highway, driven Conway to Lincoln.",
+          "links": [
+            {
+              "label": "Wikipedia — New Hampshire Route 112 (Kancamagus Highway)",
+              "url": "https://en.wikipedia.org/wiki/New_Hampshire_Route_112"
+            }
+          ]
+        },
+        "Get up to Cathedral Ledge": {
+          "entity": "Cathedral Ledge above Echo Lake. No article of its own; the Echo Lake State Park article documents Cathedral Ledge and the mile-long auto road to its top.",
+          "links": [
+            {
+              "label": "Wikipedia — Echo Lake State Park",
+              "url": "https://en.wikipedia.org/wiki/Echo_Lake_State_Park"
+            }
+          ]
+        },
+        "Climb Mount Chocorua": {
+          "entity": "Mount Chocorua, the 3,490 ft easternmost Sandwich Range peak.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Chocorua",
+              "url": "https://en.wikipedia.org/wiki/Mount_Chocorua"
+            }
+          ]
         }
       },
       "offroad": [
@@ -13709,6 +14320,72 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Bar Harbor's walkable village": {
+          "entity": "Bar Harbor, Maine.",
+          "links": [
+            {
+              "label": "Wikipedia — Bar Harbor, Maine",
+              "url": "https://en.wikipedia.org/wiki/Bar_Harbor%2C_Maine"
+            }
+          ]
+        },
+        "Drive the Cadillac Summit Road in the pickup": {
+          "entity": "The summit road up Cadillac Mountain in Acadia National Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Cadillac Mountain",
+              "url": "https://en.wikipedia.org/wiki/Cadillac_Mountain"
+            },
+            {
+              "label": "Wikipedia — Acadia National Park",
+              "url": "https://en.wikipedia.org/wiki/Acadia_National_Park"
+            }
+          ]
+        },
+        "Do the Park Loop Road properly": {
+          "entity": "The 27-mile Park Loop Road around eastern Mount Desert Island.",
+          "links": [
+            {
+              "label": "Wikipedia — Park Loop Road",
+              "url": "https://en.wikipedia.org/wiki/Park_Loop_Road"
+            }
+          ]
+        },
+        "Walk or ride the carriage roads": {
+          "entity": "Acadia's Rockefeller-financed carriage road system. It has no separate article; the Acadia National Park article documents the historic carriage roads and the ban on motor vehicles.",
+          "links": [
+            {
+              "label": "Wikipedia — Acadia National Park",
+              "url": "https://en.wikipedia.org/wiki/Acadia_National_Park"
+            }
+          ]
+        },
+        "Circle Jordan Pond and have the popovers": {
+          "entity": "Jordan Pond in Acadia, its shore path, and the popovers served at the Jordan Pond House.",
+          "links": [
+            {
+              "label": "Wikipedia — Jordan Pond",
+              "url": "https://en.wikipedia.org/wiki/Jordan_Pond"
+            },
+            {
+              "label": "Wikipedia — Jordan Pond House",
+              "url": "https://en.wikipedia.org/wiki/Jordan_Pond_House"
+            },
+            {
+              "label": "Wikipedia — Popover",
+              "url": "https://en.wikipedia.org/wiki/Popover"
+            }
+          ]
+        },
+        "Photograph Bass Harbor Head Light": {
+          "entity": "Bass Harbor Head Light on the southwest side of Mount Desert Island.",
+          "links": [
+            {
+              "label": "Wikipedia — Bass Harbor Head Light",
+              "url": "https://en.wikipedia.org/wiki/Bass_Harbor_Head_Light"
+            }
+          ]
         }
       },
       "authority": "National Park Service — Acadia",
@@ -13872,6 +14549,68 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Camden & Rockland harbor towns": {
+          "entity": "Camden and Rockland, the two mid-coast harbour towns.",
+          "links": [
+            {
+              "label": "Wikipedia — Camden, Maine",
+              "url": "https://en.wikipedia.org/wiki/Camden%2C_Maine"
+            },
+            {
+              "label": "Wikipedia — Rockland, Maine",
+              "url": "https://en.wikipedia.org/wiki/Rockland%2C_Maine"
+            }
+          ]
+        },
+        "Drive the Mount Battie Auto Road": {
+          "entity": "The Mount Battie Auto Road in Camden Hills State Park. It has no article; the park article documents Mount Battie and records the auto road's completion in 1965.",
+          "links": [
+            {
+              "label": "Wikipedia — Camden Hills State Park",
+              "url": "https://en.wikipedia.org/wiki/Camden_Hills_State_Park"
+            }
+          ]
+        },
+        "Hike to Maiden Cliff": {
+          "entity": "The Maiden Cliff Trail in Camden Hills State Park, documented in the park article along with the monument to Elenora French.",
+          "links": [
+            {
+              "label": "Wikipedia — Camden Hills State Park",
+              "url": "https://en.wikipedia.org/wiki/Camden_Hills_State_Park"
+            }
+          ]
+        },
+        "Walk the Rockland Breakwater": {
+          "entity": "The Rockland Harbor breakwater and the 1902 light at its end.",
+          "links": [
+            {
+              "label": "Wikipedia — Rockland Harbor Breakwater Light",
+              "url": "https://en.wikipedia.org/wiki/Rockland_Harbor_Breakwater_Light"
+            }
+          ]
+        },
+        "Spend a day between Camden and Rockland": {
+          "entity": "The two towns again.",
+          "links": [
+            {
+              "label": "Wikipedia — Camden, Maine",
+              "url": "https://en.wikipedia.org/wiki/Camden%2C_Maine"
+            },
+            {
+              "label": "Wikipedia — Rockland, Maine",
+              "url": "https://en.wikipedia.org/wiki/Rockland%2C_Maine"
+            }
+          ]
+        },
+        "Use Lake St. George itself": {
+          "entity": "Lake St. George State Park in Liberty, Maine, where the coach is parked.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake St. George State Park",
+              "url": "https://en.wikipedia.org/wiki/Lake_St._George_State_Park"
+            }
+          ]
         }
       },
       "offroad": [
@@ -13940,6 +14679,67 @@
           ],
           "auto": true,
           "auto_km": 38
+        },
+        "Stockbridge & Lenox villages": {
+          "entity": "The two Berkshire villages.",
+          "links": [
+            {
+              "label": "Wikipedia — Stockbridge, Massachusetts",
+              "url": "https://en.wikipedia.org/wiki/Stockbridge%2C_Massachusetts"
+            },
+            {
+              "label": "Wikipedia — Lenox, Massachusetts",
+              "url": "https://en.wikipedia.org/wiki/Lenox%2C_Massachusetts"
+            }
+          ]
+        },
+        "Climb Monument Mountain": {
+          "entity": "The quartzite ridge at Great Barrington and Stockbridge, and the Trustees reservation on it. The bare title 'Monument Mountain' is a set-index page covering several summits including one in Indiana, so the disambiguated Berkshire County article is used.",
+          "links": [
+            {
+              "label": "Wikipedia — Monument Mountain (Berkshire County, Massachusetts)",
+              "url": "https://en.wikipedia.org/wiki/Monument_Mountain_%28Berkshire_County%2C_Massachusetts%29"
+            },
+            {
+              "label": "Wikipedia — Monument Mountain (reservation)",
+              "url": "https://en.wikipedia.org/wiki/Monument_Mountain_%28reservation%29"
+            }
+          ]
+        },
+        "Do the Lenox and Stockbridge run": {
+          "entity": "The same two villages.",
+          "links": [
+            {
+              "label": "Wikipedia — Lenox, Massachusetts",
+              "url": "https://en.wikipedia.org/wiki/Lenox%2C_Massachusetts"
+            },
+            {
+              "label": "Wikipedia — Stockbridge, Massachusetts",
+              "url": "https://en.wikipedia.org/wiki/Stockbridge%2C_Massachusetts"
+            }
+          ]
+        },
+        "Go north to North Adams and the Mohawk Trail": {
+          "entity": "North Adams and the Mohawk Trail across northern Massachusetts.",
+          "links": [
+            {
+              "label": "Wikipedia — North Adams, Massachusetts",
+              "url": "https://en.wikipedia.org/wiki/North_Adams%2C_Massachusetts"
+            },
+            {
+              "label": "Wikipedia — Mohawk Trail",
+              "url": "https://en.wikipedia.org/wiki/Mohawk_Trail"
+            }
+          ]
+        },
+        "Use October Mountain State Forest as a walking base": {
+          "entity": "October Mountain State Forest, the largest state forest in Massachusetts.",
+          "links": [
+            {
+              "label": "Wikipedia — October Mountain State Forest",
+              "url": "https://en.wikipedia.org/wiki/October_Mountain_State_Forest"
+            }
+          ]
         }
       },
       "offroad": [
@@ -14040,6 +14840,50 @@
           ],
           "auto": true,
           "auto_km": 20
+        },
+        "Litchfield's historic green": {
+          "entity": "The green at the core of the Litchfield Historic District, a National Historic Landmark district in Litchfield, Connecticut.",
+          "links": [
+            {
+              "label": "Wikipedia — Litchfield Historic District",
+              "url": "https://en.wikipedia.org/wiki/Litchfield_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Litchfield, Connecticut",
+              "url": "https://en.wikipedia.org/wiki/Litchfield%2C_Connecticut"
+            }
+          ]
+        },
+        "Walk the trails at White Memorial": {
+          "entity": "The White Memorial Foundation's ~4,000 acres of trails at Litchfield, Connecticut.",
+          "links": [
+            {
+              "label": "Wikipedia — White Memorial Foundation",
+              "url": "https://en.wikipedia.org/wiki/White_Memorial_Foundation"
+            }
+          ]
+        },
+        "Circle Lake Waramaug": {
+          "entity": "Lake Waramaug in Kent, Warren and Washington, Litchfield County, Connecticut.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Waramaug",
+              "url": "https://en.wikipedia.org/wiki/Lake_Waramaug"
+            }
+          ]
+        },
+        "Spend an afternoon on the Litchfield green": {
+          "entity": "The same Litchfield green and historic district.",
+          "links": [
+            {
+              "label": "Wikipedia — Litchfield Historic District",
+              "url": "https://en.wikipedia.org/wiki/Litchfield_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Litchfield, Connecticut",
+              "url": "https://en.wikipedia.org/wiki/Litchfield%2C_Connecticut"
+            }
+          ]
         }
       },
       "offroad": [
@@ -14119,6 +14963,85 @@
           ],
           "auto": true,
           "auto_km": 32
+        },
+        "Rhinebeck's historic village": {
+          "entity": "The village of Rhinebeck, New York.",
+          "links": [
+            {
+              "label": "Wikipedia — Rhinebeck (village), New York",
+              "url": "https://en.wikipedia.org/wiki/Rhinebeck_%28village%29%2C_New_York"
+            }
+          ]
+        },
+        "Catskill foothills color drives": {
+          "entity": "The Catskill Mountains west of the river.",
+          "links": [
+            {
+              "label": "Wikipedia — Catskill Mountains",
+              "url": "https://en.wikipedia.org/wiki/Catskill_Mountains"
+            }
+          ]
+        },
+        "FDR's Springwood and the first presidential library": {
+          "entity": "Springwood, FDR's birthplace at Hyde Park, and the FDR Presidential Library — the first presidential library.",
+          "links": [
+            {
+              "label": "Wikipedia — Home of Franklin D. Roosevelt National Historic Site",
+              "url": "https://en.wikipedia.org/wiki/Home_of_Franklin_D._Roosevelt_National_Historic_Site"
+            },
+            {
+              "label": "Wikipedia — Franklin D. Roosevelt Presidential Library and Museum",
+              "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt_Presidential_Library_and_Museum"
+            }
+          ]
+        },
+        "Walk the Walkway Over the Hudson": {
+          "entity": "The Walkway over the Hudson state historic park on the old Poughkeepsie railroad bridge.",
+          "links": [
+            {
+              "label": "Wikipedia — Walkway over the Hudson",
+              "url": "https://en.wikipedia.org/wiki/Walkway_over_the_Hudson"
+            }
+          ]
+        },
+        "Olana — Frederic Church's Persian villa": {
+          "entity": "Olana, Frederic Edwin Church's Persian-influenced house above the Hudson at Greenport.",
+          "links": [
+            {
+              "label": "Wikipedia — Olana State Historic Site",
+              "url": "https://en.wikipedia.org/wiki/Olana_State_Historic_Site"
+            },
+            {
+              "label": "Wikipedia — Frederic Edwin Church",
+              "url": "https://en.wikipedia.org/wiki/Frederic_Edwin_Church"
+            }
+          ]
+        },
+        "Minnewaska carriage roads on the Shawangunk ridge": {
+          "entity": "The carriage roads in Minnewaska State Park Preserve on the Shawangunk Ridge.",
+          "links": [
+            {
+              "label": "Wikipedia — Minnewaska State Park Preserve",
+              "url": "https://en.wikipedia.org/wiki/Minnewaska_State_Park_Preserve"
+            },
+            {
+              "label": "Wikipedia — Shawangunk Ridge",
+              "url": "https://en.wikipedia.org/wiki/Shawangunk_Ridge"
+            }
+          ]
+        },
+        "Riverside walking at Mills Norrie, six miles from camp": {
+          "entity": "Mills-Norrie State Park at Hyde Park — the collective name for Margaret Lewis Norrie State Park and the adjoining Ogden Mills & Ruth Livingston Mills State Park, as the Norrie article states.",
+          "links": [
+            {
+              "label": "Wikipedia — Margaret Lewis Norrie State Park",
+              "url": "https://en.wikipedia.org/wiki/Margaret_Lewis_Norrie_State_Park"
+            },
+            {
+              "label": "Wikipedia — Ogden Mills & Ruth Livingston Mills State Park",
+              "url": "https://en.wikipedia.org/wiki/Ogden_Mills_%26_Ruth_Livingston_Mills_State_Park"
+            }
+          ]
         }
       }
     },
@@ -14167,6 +15090,55 @@
           ],
           "auto": true,
           "auto_km": 15
+        },
+        "Jim Thorpe's historic downtown": {
+          "entity": "Jim Thorpe, Pennsylvania.",
+          "links": [
+            {
+              "label": "Wikipedia — Jim Thorpe, Pennsylvania",
+              "url": "https://en.wikipedia.org/wiki/Jim_Thorpe%2C_Pennsylvania"
+            }
+          ]
+        },
+        "Climb Mount Tammany from Dunnfield Creek": {
+          "entity": "Mount Tammany, the 1,526 ft Kittatinny peak forming the New Jersey side of the Gap. Dunnfield Creek, the trailhead, has no article and is not documented in the Tammany article, so only the mountain is linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Tammany",
+              "url": "https://en.wikipedia.org/wiki/Mount_Tammany"
+            },
+            {
+              "label": "Wikipedia — Delaware Water Gap National Recreation Area",
+              "url": "https://en.wikipedia.org/wiki/Delaware_Water_Gap_National_Recreation_Area"
+            }
+          ]
+        },
+        "Dingmans Falls boardwalk": {
+          "entity": "Dingmans Falls, the 130 ft fall at the north end of the recreation area; its title redirects to the Delaware Water Gap waterfalls list, which describes it.",
+          "links": [
+            {
+              "label": "Wikipedia — List of waterfalls in the Delaware Water Gap",
+              "url": "https://en.wikipedia.org/wiki/List_of_waterfalls_in_the_Delaware_Water_Gap"
+            }
+          ]
+        },
+        "Raymondskill Falls": {
+          "entity": "Raymondskill Falls on Raymondskill Creek, Pike County — the tallest in Pennsylvania; same redirect target, described in the list.",
+          "links": [
+            {
+              "label": "Wikipedia — List of waterfalls in the Delaware Water Gap",
+              "url": "https://en.wikipedia.org/wiki/List_of_waterfalls_in_the_Delaware_Water_Gap"
+            }
+          ]
+        },
+        "Day run to Jim Thorpe": {
+          "entity": "Jim Thorpe, Pennsylvania again.",
+          "links": [
+            {
+              "label": "Wikipedia — Jim Thorpe, Pennsylvania",
+              "url": "https://en.wikipedia.org/wiki/Jim_Thorpe%2C_Pennsylvania"
+            }
+          ]
         }
       },
       "offroad": [
@@ -14265,7 +15237,18 @@
           ],
           "stats_note": "0.5 mi / 114 ft is AllTrails' GPS loop; NPS publishes 0.3 mi for the same walk. Difficulty is the NPS grade, not AllTrails'."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are fine on most DEWA trails including Mount Minsi, and on Mount Tammany (NJ) and privately-run Bushkill Falls — but they are banned outright at the Raymondskill Falls and Dingmans Falls recreation sites.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/dewa/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are allowed almost everywhere in the park. Delaware Water Gap National Recreation Area encompasses more than 70,000 acres and has over 150 miles of trails, most of which are pet-friendly.",
+      "trail_dogs": {
+        "Raymondskill Falls Trail": false,
+        "Bushkill Falls Trail": true,
+        "Dingmans Falls Trail": false,
+        "Mount Minsi via Appalachian Trail": true,
+        "Mount Tammany via Red Dot and Blue Dot Loop Trail": true
+      }
     },
     "gettysburg-pa": {
       "activities": {
@@ -14301,6 +15284,72 @@
           ],
           "auto": true,
           "auto_km": 30
+        },
+        "Historic downtown Gettysburg": {
+          "entity": "Gettysburg, Pennsylvania.",
+          "links": [
+            {
+              "label": "Wikipedia — Gettysburg, Pennsylvania",
+              "url": "https://en.wikipedia.org/wiki/Gettysburg%2C_Pennsylvania"
+            }
+          ]
+        },
+        "Drive the battlefield auto tour in the truck": {
+          "entity": "The auto tour through Gettysburg National Military Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Gettysburg National Military Park",
+              "url": "https://en.wikipedia.org/wiki/Gettysburg_National_Military_Park"
+            }
+          ]
+        },
+        "Little Round Top and Devil's Den on foot": {
+          "entity": "The two second-day positions on the Union left. 'Devil's Den' resolves to the Gettysburg boulder field on Houck's Ridge, confirmed by the article's own text.",
+          "links": [
+            {
+              "label": "Wikipedia — Little Round Top",
+              "url": "https://en.wikipedia.org/wiki/Little_Round_Top"
+            },
+            {
+              "label": "Wikipedia — Devil's Den",
+              "url": "https://en.wikipedia.org/wiki/Devil%27s_Den"
+            }
+          ]
+        },
+        "Caledonia's iron furnace, on your doorstep": {
+          "entity": "The Caledonia Furnace, Thaddeus Stevens' ironworks. No separate article; Caledonia State Park is named for the furnace and documents Stevens' 1837 ownership.",
+          "links": [
+            {
+              "label": "Wikipedia — Caledonia State Park",
+              "url": "https://en.wikipedia.org/wiki/Caledonia_State_Park"
+            }
+          ]
+        },
+        "Pine Grove Furnace and the Appalachian Trail Museum": {
+          "entity": "Pine Grove Furnace State Park and the Appalachian Trail Museum inside it.",
+          "links": [
+            {
+              "label": "Wikipedia — Pine Grove Furnace State Park",
+              "url": "https://en.wikipedia.org/wiki/Pine_Grove_Furnace_State_Park"
+            },
+            {
+              "label": "Wikipedia — Appalachian Trail Museum",
+              "url": "https://en.wikipedia.org/wiki/Appalachian_Trail_Museum"
+            }
+          ]
+        },
+        "Gettysburg town and the Lincoln connection": {
+          "entity": "Gettysburg and Lincoln's Gettysburg Address, delivered there in November 1863.",
+          "links": [
+            {
+              "label": "Wikipedia — Gettysburg, Pennsylvania",
+              "url": "https://en.wikipedia.org/wiki/Gettysburg%2C_Pennsylvania"
+            },
+            {
+              "label": "Wikipedia — Gettysburg Address",
+              "url": "https://en.wikipedia.org/wiki/Gettysburg_Address"
+            }
+          ]
         }
       },
       "offroad": [
@@ -14426,7 +15475,18 @@
           ],
           "stats_note": "AllTrails has a point-of-interest page for Little Round Top and says two trails reach it, but no trail listing carries the name. NPS publishes no single length for the summit paths. Confirmed to exist by the National Park Service; recorded unlisted rather than linked to a route that is not the same walk."
         }
-      ]
+      ],
+      "dogs": "Gettysburg NMP welcomes leashed dogs everywhere on the battlefield grounds and trails; only park buildings, the visitor center and the National Cemetery are closed to them.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/gett/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets must be restrained on a leash at all times while in the park.",
+      "trail_dogs": {
+        "Big Round Top Trail": true,
+        "Bridle Trail Loop": true,
+        "Johnny Reb Trail": true,
+        "Little Round Top": true,
+        "Billy Yank Trail": true
+      }
     },
     "harpers-ferry-wv": {
       "activities": {
@@ -14498,7 +15558,18 @@
           ],
           "stats_note": "1.7 mi / 570 ft / 4.8 from 5,765 reviews are AllTrails' own figures via its Weverton Cliffs point-of-interest page; the trail listing title showed 5,817 reviews in a later crawl, so the count is still climbing. Average 1–1.5 hr. The slug carries a --3 suffix — it is not derivable from the name."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are permitted throughout Harpers Ferry NHP including the Maryland Heights climb, and on the C&O Canal towpath and the Appalachian Trail up to Weverton Cliffs.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/hafe/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets must be kept on a six-foot leash at all times while visiting any area of the park.",
+      "trail_dogs": {
+        "Weverton Cliffs (Appalachian Trail)": true,
+        "C&O Canal Trail: Shepherdstown to Harpers Ferry": true,
+        "Harpers Ferry to Chesapeake and Ohio Canal Trail": true,
+        "Maryland Heights Loop": true,
+        "Maryland Heights via Overlook Cliffs and Combined Trail": true
+      }
     },
     "staunton-va": {
       "activities": {
@@ -14526,7 +15597,7 @@
         }
       },
       "authority": "National Park Service — Shenandoah",
-      "dogs_verdict": "allowed",
+      "dogs_verdict": "prohibited",
       "official_links": [
         {
           "label": "Pets in Shenandoah",
@@ -14534,7 +15605,7 @@
           "tier": "official"
         }
       ],
-      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery.",
+      "dogs": "Shenandoah allows leashed dogs on most of its trails, but both trails on this card — Stony Man and every Old Rag route — are on the park's short prohibited list.",
       "trail_dogs": {
         "Stony Man Trail": false,
         "Old Rag Mountain Loop Trail": false
@@ -14589,7 +15660,9 @@
           ],
           "stats_note": "Important: AllTrails indexes the Appalachian Trail approach, not the Stony Man Trail itself — its own description says the AT route 'runs parallel to the Stony Man Trail and may become overgrown in the warmer months'. 1.5 mi / 318 ft is AllTrails for the AT route; 1.6 mi round trip is the NPS figure for the walk to the summit. 9,311 reviews on the AllTrails listing; no star rating in the indexed snippet."
         }
-      ]
+      ],
+      "dogs_source": "https://www.nps.gov/shen/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are prohibited on the following trails:"
     },
     "lexington-va": {
       "activities": {
@@ -14625,7 +15698,7 @@
           "tier": "official"
         }
       ],
-      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery.",
+      "dogs": "Natural Bridge State Park is a Virginia state park, and leashed dogs are allowed on all of its trails including Cedar Creek under the arch.",
       "offroad": [
         {
           "name": "George Washington & Jefferson NF gravel roads, North Mountain west of Lexington",
@@ -14723,7 +15796,15 @@
           ],
           "stats_note": "No distance surfaced from AllTrails in any indexed snippet, and neither Natural Bridge State Park nor the tourism board publishes one — recorded absent rather than guessed. The --2 suffix on the slug means there is more than one Skyline Trail Loop in Virginia; this is the Natural Bridge one, confirmed by the park page that ranks it."
         }
-      ]
+      ],
+      "dogs_source": "https://www.dcr.virginia.gov/state-parks/pets",
+      "dogs_source_quote": "Pets are allowed in all Virginia State Parks. State regulations require pets to be confined or kept on a leash no longer than 6 feet and kept under supervision while in the park.",
+      "trail_dogs": {
+        "Cedar Creek Trail": true,
+        "Skyline Trail": true,
+        "Blue Ridge Trail (Natural Bridge State Park)": true,
+        "Buck Hill Trail": true
+      }
     },
     "new-river-gorge-wv": {
       "activities": {
@@ -14773,7 +15854,18 @@
           "tier": "official",
           "source": "https://www.nps.gov/neri/planyourvisit/directions.htm"
         }
-      ]
+      ],
+      "dogs": "New River Gorge is one of the most dog-open parks on the whole route — the NPS states plainly that leashed pets are allowed on every trail in the park.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/neri/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are allowed on all trails at New River Gorge National Park and Preserve.",
+      "trail_dogs": {
+        "Long Point Trail": true,
+        "Endless Wall Trail": true,
+        "Grandview Main Overlook": true,
+        "Grandview Rim Trail to Turkey Spur Rock": true,
+        "Kaymoor Miners Trail": true
+      }
     },
     "floyd-va": {
       "activities": {
@@ -14842,7 +15934,18 @@
           ],
           "stats_note": "Our entry is the preserve, not a trail. The walk itself is the Buffalo Mountain Trail, which AllTrails describes as following the Oak and Barrens Loop Trail to the highest point in Floyd County; 409 reviews, no star rating or distance in any indexed snippet. Summit elevation 3,971 ft per third-party guides. No length published by Virginia DCR that could be sourced this pass."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are allowed on all the Blue Ridge Parkway trails here; Buffalo Mountain Natural Area Preserve publishes no pet rule at all, so treat it as unknown until DCR Natural Heritage is phoned.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/blri/planyourvisit/trail-safety.htm",
+      "dogs_source_quote": "Dogs are allowed on trails, but must be on a leash.",
+      "trail_dogs": {
+        "Black Ridge Trail (Rocky Knob, MP 169.0)": true,
+        "Buffalo Mountain Natural Area Preserve": null,
+        "Rocky Knob Picnic Loop Trail (MP 169.0)": true,
+        "Smart View Trail (Blue Ridge Parkway MP 154.5)": true,
+        "Rock Castle Gorge Trail (Rocky Knob, Blue Ridge Parkway MP 167.1)": true
+      }
     },
     "boone-nc": {
       "activities": {
@@ -14991,7 +16094,18 @@
           ],
           "stats_note": "2.7 mi is the NPS published length; National Park Planner quotes 2.3 mi for the same loop. AllTrails carries 1,550 reviews and grades it easy but surfaced neither a distance nor a star rating. Slug has a -2 suffix."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are allowed on the Blue Ridge Parkway trails at Moses Cone, Julian Price and Beacon Heights, and Grandfather Mountain State Park permits them too — though the park itself warns the Grandfather Trail's ladders and cables are not suitable for animals.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/blri/planyourvisit/trail-safety.htm",
+      "dogs_source_quote": "Dogs are allowed on trails, but must be on a leash.",
+      "trail_dogs": {
+        "Grandfather Trail (to Calloway Peak)": true,
+        "Bass Lake Loop Trail (Moses Cone Memorial Park)": true,
+        "Beacon Heights Trail": true,
+        "Price Lake Loop Trail (Julian Price Park)": true,
+        "Tanawha Trail (Julian Price Park to Beacon Heights, passing Rough Ridge & Linn Cove Viaduct)": true
+      }
     },
     "asheville-nc-v3": {
       "activities": {
@@ -15059,7 +16173,17 @@
           "tier": "official",
           "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene"
         }
-      ]
+      ],
+      "dogs": "All four are dog-legal on a leash — Triple Falls and Hooker Falls under the NC Forest Service in DuPont, Bearwallow under Conserving Carolina, and Mount Pisgah under the Blue Ridge Parkway.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.ncagr.gov/divisions/nc-forest-service/state-forests/dupont-state-recreational-forest",
+      "dogs_source_quote": "Your dog may be friendly, but other dogs may not be. Protect your dog by keeping it on a leash.",
+      "trail_dogs": {
+        "Triple Falls Trail": true,
+        "Bearwallow Mountain Trail": true,
+        "Hooker Falls Trail": true,
+        "Mount Pisgah Trail": true
+      }
     },
     "bryson-city-nc": {
       "activities": {
@@ -15128,7 +16252,7 @@
           "tier": "official"
         }
       ],
-      "dogs": "PROHIBITED on trails, with exactly two exceptions: the Gatlinburg Trail and the Oconaluftee River Trail. Leash 6 ft on those. NPS actively discourages bringing pets because most trails are off-limits.",
+      "dogs": "PROHIBITED on trails, with exactly two exceptions: the Gatlinburg Trail and the Oconaluftee River Trail. Leash 6 ft on those. None of the Deep Creek trails on this card qualify, so the dog stays at camp or walks the Oconaluftee River Trail, which starts on the Cherokee side. NPS actively discourages bringing pets because most trails are off limits to them.",
       "dogs_exception": "Gatlinburg Trail and Oconaluftee River Trail only.",
       "dogs_note": "Oconaluftee is the accessible one from this side — the Bryson City stop already names the Oconaluftee Visitor Center in its highlights, so the dog-legal walk is the one you were going to anyway.",
       "offroad": [
@@ -15200,7 +16324,14 @@
           ],
           "stats_note": "Distance and gain are from third-party trail guides (11.3–11.6 mi one-way, 4,689–4,750 ft), not from AllTrails, which surfaced no figures for the base listing — only for the much longer 18.3 mi and 34.9 mi loops built on top of it. As a one-way ridge climb this is a shuttle or a turnaround, not a loop."
         }
-      ]
+      ],
+      "dogs_source": "https://www.nps.gov/grsm/planyourvisit/pets.htm",
+      "dogs_source_quote": "Only two trails permit leashed pets: the Gatlinburg Trail and the Oconaluftee River Trail.",
+      "trail_dogs": {
+        "Deep Creek Loop Trail (Tom Branch, Indian Creek & Juney Whank Falls)": false,
+        "Juney Whank Falls Trail": false,
+        "Noland Divide Trail": false
+      }
     },
     "chattanooga-tn": {
       "activities": {
@@ -15412,7 +16543,18 @@
           ],
           "stats_note": "0.2 mi / 98 ft is the West Brow Road spur only — effectively a car-park viewpoint walk, which matches our entry. The Cravens House approach is a genuine climb and a different day. Parking on West Brow is about eight spaces. 434 reviews, no star rating surfaced."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are welcome on all five — the NPS battlefield units at Signal Point and Sunset Rock (Point Park itself is the one closure), Georgia State Parks at Cloudland Canyon, and the City of Chattanooga on the Riverwalk.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/chch/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are more than welcome in the park. However, please remember to keep them leashed at all times.",
+      "trail_dogs": {
+        "Cloudland Canyon — West Rim Loop Trail": true,
+        "Cloudland Canyon — Waterfalls Trail (Cherokee Falls & Hemlock Falls)": true,
+        "Signal Point / Julia Falls Overlook (Cumberland Trail)": true,
+        "Sunset Rock (Lookout Mountain, via West Brow Rd spur)": true,
+        "Tennessee Riverwalk": true
+      }
     },
     "hot-springs-ar-v3": {
       "activities": {
@@ -15542,7 +16684,16 @@
           ],
           "stats_note": "Watch the mismatch: our entry is the easy 1.7 mi summit stroll to the observation tower (NPS figure), but the AllTrails listing that sits at the /hot-springs-mountain-trail slug is titled 'Hot Spring Mountain Loop via Gulpha Gorge Trail' and starts with a steep climb out of Gulpha Gorge. AllTrails surfaced no distance, gain or rating for it. Use the NPS length. The Mountain Tower itself is a paid, separately-operated observation tower at the top."
         }
-      ]
+      ],
+      "dogs": "Hot Springs NP welcomes leashed dogs on all 26 miles of its trails — only the federal buildings on Bathhouse Row are closed to them.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/hosp/planyourvisit/pets.htm",
+      "dogs_source_quote": "Dogs are welcome on all 26 miles of the Hot Springs National Park trails.",
+      "trail_dogs": {
+        "Sunset Trail (West Mountain / Hot Springs Mountain)": true,
+        "Balanced Rock / Goat Rock Trail": true,
+        "Hot Springs Mountain Trail & Tower": true
+      }
     },
     "petit-jean-ar": {
       "activities": {
@@ -15617,7 +16768,16 @@
           ],
           "stats_note": "Our entry bundles two separate trails that AllTrails lists apart. The stats given are Bear Cave Trail's (1.2 mi / 127 ft, 0.5–1 hr, 1,110 reviews; no star rating surfaced). Bear Cave is a maze under and between giant sandstone boulders — good with a dog on a lead, awkward with anything wide."
         }
-      ]
+      ],
+      "dogs": "Arkansas State Parks allow leashed pets throughout the park, so all three trails including Cedar Falls are open to the dog; only public buildings and swimming areas are closed.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or other animals brought into state parks will be appropriately leashed, caged, or otherwise restrained so as to be under the direct physical (not verbal) control of the owner.",
+      "trail_dogs": {
+        "Cedar Falls Trail": true,
+        "Seven Hollows Trail": true,
+        "Rock House Cave / Bear Cave Trail": true
+      }
     },
     "mount-magazine-ar": {
       "activities": {
@@ -15692,7 +16852,16 @@
           "tier": "unlisted",
           "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/offices/mt-magazine-ranger-district"
         }
-      ]
+      ],
+      "dogs": "Arkansas State Parks allow leashed pets on park trails, so Signal Hill and Cameron Bluff are both walkable with the dog; the lodge building itself is not.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or animals other than service animals for individuals with disabilities will not be permitted in public buildings or at swimming beaches or pools at any time.",
+      "trail_dogs": {
+        "Signal Hill Trail (Arkansas's highest point)": true,
+        "Signal Hill Trail": true,
+        "Cameron Bluff Trail": true
+      }
     },
     "jasper-ponca-ar": {
       "activities": {
@@ -15845,7 +17014,17 @@
           "tier": "official",
           "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
         }
-      ]
+      ],
+      "dogs": "Buffalo National River bans pets on most of its trails — Lost Valley is out — but names the Ponca-to-Steel Creek section of the Buffalo River Trail as one of the few where they are allowed; Hawksbill Crag is Ozark National Forest land, where dogs are permitted under restraint.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/buff/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are not allowed in any government buildings, caves, or on most park trails.",
+      "trail_dogs": {
+        "Whitaker Point Trail (Hawksbill Crag)": true,
+        "Lost Valley Trail": false,
+        "Hawksbill Crag (Whitaker Point) Trail": true,
+        "Buffalo River Trail (Ponca to Steel Creek segment)": true
+      }
     },
     "mountain-view-ar": {
       "activities": {
@@ -15924,7 +17103,16 @@
           ],
           "stats_note": "Recorded as unlisted, not as a failure: Arkansas State Parks confirms the park but does not publish a named grounds trail, and no trail database indexes one. The grounds paths are craft-village walkways rather than a trail. Nothing invented."
         }
-      ]
+      ],
+      "dogs": "Dogs are fine on the North Sylamore Creek Trail and on the Ozark Folk Center grounds, but they are barred from Blanchard Springs Caverns and its visitor centre, so the Dripstone tour means leaving the dog in the coach.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/tours/blanchard-springs-caverns",
+      "dogs_source_quote": "Pets are not allowed in the Visitor Center or Caverns: seeing-eye dogs and service dogs are an exception.",
+      "trail_dogs": {
+        "Blanchard Springs Caverns — Dripstone Trail": false,
+        "North Sylamore Creek Trail": true,
+        "Ozark Folk Center State Park grounds trail": true
+      }
     },
     "eureka-springs-ar-v3": {
       "activities": {
@@ -16030,7 +17218,22 @@
           ],
           "stats_note": "No AllTrails listing and no published length from the city for a route by this name. Confirmed only as the Eureka Springs Downtown Historic District walk by the city tourism authority. Third-party sources describe a 3.5-mile 'Historic Loop' past 300+ pre-1910 Victorian homes, but nothing official carries that figure, so it is not recorded as the length."
         }
-      ]
+      ],
+      "dogs_unpublished": {
+        "trails": [
+          "Lake Leatherwood City Park Trails",
+          "Historic District Walking Trail",
+          "Passion Play Trails / Magnetic Mountain"
+        ],
+        "authority": "Eureka Springs Parks and Recreation Commission (City of Eureka Springs), which manages Lake Leatherwood City Park and the city trail network; the Passion Play trails sit on land of the privately owned Great Passion Play",
+        "checked": [
+          "https://www.eurekaparks.com/parks/lake-leatherwood — official Lake Leatherwood park page. Describes the lake, campground and trail mileage. No pet, dog or leash rule anywhere on the page.",
+          "https://www.eurekaparks.com — Eureka Springs Parks and Recreation home page. The only dog reference is the Bark Park at Harmon Park, a separate fenced facility; nothing about dogs on trails.",
+          "https://lite.duckduckgo.com/lite/?q=Lake+Leatherwood+City+Park+Eureka+Springs+dogs+leash+rules+official+city+park — search returned no eurekaparks.com or City of Eureka Springs page carrying a trail dog rule; every 'dog friendly' claim came from BringFido, DogPack or Zoomies Zone, which are not authorities.",
+          "https://lite.duckduckgo.com/lite/?q=eurekaparks.com+Lake+Leatherwood+park+rules+regulations+dogs+leash+trails — same result: no official park-rules page indexed."
+        ],
+        "action": "Phone Eureka Springs Parks and Recreation / Lake Leatherwood at 479-253-7921 (or leatherwood@eurekaparks.com) and ask two things: are leashed dogs allowed on the Lake Leatherwood trail network, and is there a leash-length rule. Then ask the Great Passion Play separately about the Magnetic Mountain trails, since that is private land under a different owner."
+      }
     },
     "bentonville-ar": {
       "activities": {
@@ -16100,7 +17303,20 @@
           "entry": "Slaughter Pen Trail System",
           "problem": "A trail SYSTEM, not a trail — the City of Bentonville calls it 'This 23+ mile mountain bike system' and an IMBA Silver Level Ride Center (https://www.bentonville.ar.gov/1071/Slaughter-Pen-Trails); OZ Trails puts it at 30+ miles (https://www.oztrails.com/trail/slaughter-pen/) and Trailforks maps 150 individual trails (https://www.trailforks.com/region/slaughter-pen-trails/). Multi-use — TripAdvisor lists it as 'Slaughter Pen Hollow Multi-Use Trail System' and Trailforks tags hiking and trail running alongside mountain and e-bike — so walkers are legal, but every trail is built and graded for bikes. The one AllTrails route that covers it, https://www.alltrails.com/trail/us/arkansas/slaughter-pen-hollow-trail (All American, Seed Tick, Medusa, Tatamagouche), is described by AllTrails itself as 'This mountain bike-focused route'. Reclassify to biking."
         }
-      ]
+      ],
+      "dogs_unpublished": {
+        "trails": [
+          "Crystal Bridges Art Trail"
+        ],
+        "authority": "Crystal Bridges Museum of American Art, which owns and manages the 134-acre trail network including the Art Trail. The City of Bentonville does not manage this trail.",
+        "checked": [
+          "https://crystalbridges.org/policies — the museum's own policies page. Covers photography, bags and drones ('drones are not permitted on the museum's trails and grounds') but says nothing about pets, dogs or service animals.",
+          "https://crystalbridges.org/visit/nature-trails — the official trails page, which names the Art Trail and seven other trails. No pet, dog or leash rule.",
+          "https://crystalbridges.org/visit/ — the main visit page. No mention of dogs, pets, animals or service animals.",
+          "https://lite.duckduckgo.com/lite/?q=Crystal+Bridges+Museum+trails+dogs+leashed+pets+policy+crystalbridges.org — the 'leashed pets are welcome on the museum trails' claim traces only to BringFido and similar aggregators, not to the museum."
+        ],
+        "action": "Phone Crystal Bridges Guest Services on 479-657-2335 and ask whether leashed dogs are allowed on the Art Trail and the wider museum trail network, and whether the rule differs on the paved North Forest / Orchard sections. One call settles the whole stop, since the Art Trail is the only trail on the card."
+      }
     },
     "devils-den-ar": {
       "activities": {
@@ -16218,7 +17434,16 @@
           ],
           "stats_note": "Correction worth carrying: this is NOT an Ozark Highlands Trail segment. It is its own 15-mile loop that begins and ends in Devil's Den State Park, with about 10 miles running through the Ozark National Forest. Length and difficulty are the state park / Arklahoma Hiker figures — AllTrails surfaced no distance or gain in any indexed snippet. It is the most popular trail in Devil's Den State Park at 4.4 from 1,165 reviews, but at 15 miles and 9 hours it is an overnight or a very long day, not an afternoon."
         }
-      ]
+      ],
+      "dogs": "Arkansas State Parks permit leashed pets on park trails, and the Butterfield's national-forest miles are dog-legal too, so all three work with the dog.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://codeofarrules.arkansas.gov/Rules/Rule?levelType=section&titleID=22&chapterID=195&subChapterID=240&partID=813&subPartID=6651&sectionID=43248",
+      "dogs_source_quote": "Pets or other animals brought into state parks will be appropriately leashed, caged, or otherwise restrained so as to be under the direct physical (not verbal) control of the owner.",
+      "trail_dogs": {
+        "Yellow Rock Trail": true,
+        "Devil's Den Trail": true,
+        "Butterfield Hiking Trail (Ozark Highlands Trail segment)": true
+      }
     },
     "mena-ar": {
       "activities": {
@@ -16369,7 +17594,16 @@
           ],
           "stats_note": "Confirmed to exist by the City of Mena; no trail database lists it and no authority publishes a length. Realistically a municipal park with radiating walkways and a log cabin, not a hiking trail — a twenty-minute leg-stretch with the dog rather than a walk to plan a morning around. AllTrails has only an empty 'explore/parks' stub for Janssen Park, which is not a listing and has not been linked."
         }
-      ]
+      ],
+      "dogs": "The Ouachita National Forest allows dogs under restraint on its trails and Queen Wilhelmina is an Arkansas state park, so Rich Mountain works both ways; the City of Mena publishes no rule for Janssen Park, so that one is unknown.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fs.usda.gov/r08/ouachita/about-area/faqs",
+      "dogs_source_quote": "On trails, dogs must be under verbal or physical restraint at all times.",
+      "trail_dogs": {
+        "Lover's Leap / Rich Mountain Trail (Queen Wilhelmina SP)": true,
+        "Janssen Park Trails (Mena)": null,
+        "Ouachita National Recreation Trail (Rich Mountain segment)": true
+      }
     },
     "lone-pine": {
       "trails": [

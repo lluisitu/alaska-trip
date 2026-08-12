@@ -10192,6 +10192,50 @@
           ],
           "auto": true,
           "auto_km": 26
+        },
+        "Walkable historic downtown": {
+          "entity": "Salida's downtown core — the Salida Downtown Historic District, on the National Register since 1984. It has no article of its own; the Salida, Colorado article names and dates the district.",
+          "links": [
+            {
+              "label": "Wikipedia — Salida, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Salida%2C_Colorado"
+            }
+          ]
+        },
+        "Walk the Colorado Trail out of Angel of Shavano": {
+          "entity": "The Colorado Trail where it passes the Angel of Shavano trailhead/campground on the north side of Mount Shavano. 'Angel of Shavano' has no article; the Mount Shavano article documents the Angel of Shavano snow formation the place is named for.",
+          "links": [
+            {
+              "label": "Wikipedia — Colorado Trail",
+              "url": "https://en.wikipedia.org/wiki/Colorado_Trail"
+            },
+            {
+              "label": "Wikipedia — Mount Shavano",
+              "url": "https://en.wikipedia.org/wiki/Mount_Shavano"
+            }
+          ]
+        },
+        "Soak at the Salida Hot Springs Aquatic Center": {
+          "entity": "Salida's indoor geothermal pool. The pool itself has no article and the Salida, Colorado article does not mention it (a 'Salida Hot Springs' redirect points there but the text is silent — not used). Its water is piped in from the Poncha Springs hot springs, and the Poncha Springs article documents those springs and the City of Salida's ownership of them.",
+          "links": [
+            {
+              "label": "Wikipedia — Poncha Springs, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Poncha_Springs%2C_Colorado"
+            }
+          ]
+        },
+        "Pre-runoff wade fishing on the Arkansas": {
+          "entity": "Wading the Arkansas River near Salida before spring runoff. The Arkansas Headwaters Recreation Area is the state park that manages the fishing easements on this reach and is headquartered in Salida.",
+          "links": [
+            {
+              "label": "Wikipedia — Arkansas River",
+              "url": "https://en.wikipedia.org/wiki/Arkansas_River"
+            },
+            {
+              "label": "Wikipedia — Arkansas Headwaters Recreation Area",
+              "url": "https://en.wikipedia.org/wiki/Arkansas_Headwaters_Recreation_Area"
+            }
+          ]
         }
       },
       "offroad": [
@@ -10343,6 +10387,48 @@
           ],
           "auto": true,
           "auto_km": 26
+        },
+        "South Main riverwalk": {
+          "entity": "South Main, the new-urbanist riverfront district on the Arkansas in Buena Vista. No article, and the Buena Vista, Colorado article does not mention it. No link."
+        },
+        "Cottonwood Hot Springs": {
+          "entity": "Cottonwood Hot Springs Inn & Spa on County Road 306 west of Buena Vista. No article; the Cottonwood Pass article covers the pass road but says nothing about the springs. No link."
+        },
+        "Small towns: Nathrop, Granite, Twin Lakes, St. Elmo": {
+          "entity": "Four settlements up and down the upper Arkansas valley. All four have articles; Twin Lakes needs the Lake County disambiguator, and St. Elmo's article title is spelled 'Saint Elmo'.",
+          "links": [
+            {
+              "label": "Wikipedia — Nathrop, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Nathrop%2C_Colorado"
+            },
+            {
+              "label": "Wikipedia — Granite, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Granite%2C_Colorado"
+            },
+            {
+              "label": "Wikipedia — Twin Lakes, Lake County, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Twin_Lakes%2C_Lake_County%2C_Colorado"
+            },
+            {
+              "label": "Wikipedia — Saint Elmo, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Saint_Elmo%2C_Colorado"
+            }
+          ]
+        },
+        "Soak at Mount Princeton Hot Springs Resort": {
+          "entity": "The resort at the foot of the Chalk Cliffs in Nathrop. It has no article; the Mount Princeton article is about the 14er only and never mentions hot springs, so linking it would send the reader to a peak, not a resort. No link."
+        },
+        "Denny Creek trailhead walk": {
+          "entity": "The Denny Creek trailhead on CR 306 into the Collegiate Peaks Wilderness. No article, and the Collegiate Peaks Wilderness article does not name it. No link."
+        },
+        "Barbara Whipple trail system straight out of town": {
+          "entity": "A town trail network on the east bank of the Arkansas at Buena Vista. No article anywhere. No link."
+        },
+        "Ride or walk the Midland Bike Trail": {
+          "entity": "The trail on the old Colorado Midland railroad grade east of Buena Vista. No article; the Colorado Midland Railway article covers the railroad and its grade becoming US 24 but never mentions a rail-trail, so it would not answer the reader's question. No link."
+        },
+        "Cottonwood Lake": {
+          "entity": "The small reservoir on Cottonwood Creek south of the CR 306 pass road. No article, and no parent article documents it. No link."
         }
       },
       "offroad": [
@@ -10479,6 +10565,42 @@
           ],
           "auto": true,
           "auto_km": 75
+        },
+        "Mineral Belt Trail": {
+          "entity": "The 11.6-mile paved loop around Leadville, which has its own article under its full name, Mineral Belt National Recreation Trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Mineral Belt National Recreation Trail",
+              "url": "https://en.wikipedia.org/wiki/Mineral_Belt_National_Recreation_Trail"
+            }
+          ]
+        },
+        "Leadville historic district": {
+          "entity": "The Leadville Historic District, a National Historic Landmark district covering the town core and 67 mines east of it.",
+          "links": [
+            {
+              "label": "Wikipedia — Leadville Historic District",
+              "url": "https://en.wikipedia.org/wiki/Leadville_Historic_District"
+            }
+          ]
+        },
+        "Twin Lakes and the Interlaken ruins": {
+          "entity": "Two things. Twin Lakes, the glacier-carved pair south of Leadville, has an article. The Interlaken resort ruins on the south shore do not, and the Twin Lakes article does not mention them, so only Twin Lakes is linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Twin Lakes, Lake County, Colorado",
+              "url": "https://en.wikipedia.org/wiki/Twin_Lakes%2C_Lake_County%2C_Colorado"
+            }
+          ]
+        },
+        "Halfmoon Road in the truck": {
+          "entity": "The Halfmoon Creek road southwest of Leadville that serves the Mount Elbert and Mount Massive trailheads. The road has no article; the Mount Elbert article documents the Halfmoon Creek trailheads it exists to reach.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Elbert",
+              "url": "https://en.wikipedia.org/wiki/Mount_Elbert"
+            }
+          ]
         }
       },
       "offroad": [
@@ -10573,6 +10695,62 @@
           ],
           "auto": true,
           "auto_km": 1
+        },
+        "Green River Lakes day trip": {
+          "entity": "The two headwater lakes of the Green River at the north end of the Wind River Range. They have no article of their own. The Squaretop Mountain article documents them directly ('the iconic view of Squaretop and Green River Lakes'), and the Green River article documents the river's headwaters in northern Sublette County in the Wind Rivers.",
+          "links": [
+            {
+              "label": "Wikipedia — Squaretop Mountain",
+              "url": "https://en.wikipedia.org/wiki/Squaretop_Mountain"
+            },
+            {
+              "label": "Wikipedia — Green River (Colorado River tributary)",
+              "url": "https://en.wikipedia.org/wiki/Green_River_%28Colorado_River_tributary%29"
+            }
+          ]
+        },
+        "Scout the alpine trailheads": {
+          "entity": "Advice for the stay rather than a named place — no entity to link. No link."
+        },
+        "Skyline Drive up to Elkhart Park": {
+          "entity": "The Pinedale road up to the Elkhart Park trailhead. Neither the road nor the park has an article; the Wind River Range article documents the Elkhart Park Trailhead as the main access to Titcomb Basin.",
+          "links": [
+            {
+              "label": "Wikipedia — Wind River Range",
+              "url": "https://en.wikipedia.org/wiki/Wind_River_Range"
+            }
+          ]
+        },
+        "Photographer's Point via the Pole Creek Trail": {
+          "entity": "The overlook about 4.5 miles up the Pole Creek Trail from Elkhart Park. Neither it nor the trail has an article, and neither the Bridger Wilderness nor the Wind River Range article names either. No link."
+        },
+        "Green River Lakes and Squaretop Mountain": {
+          "entity": "Squaretop Mountain, the flat-topped peak above the Green River Lakes, has its own article and it documents the pairing with the lakes. The lakes themselves are covered via the Green River's headwaters.",
+          "links": [
+            {
+              "label": "Wikipedia — Squaretop Mountain",
+              "url": "https://en.wikipedia.org/wiki/Squaretop_Mountain"
+            },
+            {
+              "label": "Wikipedia — Green River (Colorado River tributary)",
+              "url": "https://en.wikipedia.org/wiki/Green_River_%28Colorado_River_tributary%29"
+            }
+          ]
+        },
+        "CCC Ponds wildlife walk": {
+          "entity": "The Wyoming Game and Fish ponds just outside Pinedale. No article, and the Pinedale article does not mention them. No link."
+        },
+        "Fremont Lake and Half Moon Lake": {
+          "entity": "Two lakes northeast of Pinedale. Fremont Lake — Wyoming's second-largest natural lake, in the Wind River foothills — has an article. Half Moon Lake does not, and the Pinedale article does not mention it, so only Fremont Lake is linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Fremont Lake",
+              "url": "https://en.wikipedia.org/wiki/Fremont_Lake"
+            }
+          ]
+        },
+        "Soda Lake Wildlife Habitat Management Area": {
+          "entity": "A Wyoming Game and Fish WHMA north of Pinedale. No article under that or any nearby title, and no parent article documents it. No link."
         }
       },
       "offroad": [
@@ -10727,6 +10905,15 @@
           ],
           "auto": true,
           "auto_km": 5
+        },
+        "Climb the Lake Minatare lighthouse": {
+          "entity": "The 55-foot WPA-era mock lighthouse on Lake Minatare northeast of Scottsbluff, which has its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Minatare Lighthouse",
+              "url": "https://en.wikipedia.org/wiki/Lake_Minatare_Lighthouse"
+            }
+          ]
         }
       },
       "offroad": [
@@ -10835,6 +11022,77 @@
           ],
           "auto": true,
           "auto_km": 25
+        },
+        "Needles Highway (truck only)": {
+          "entity": "The Needles Highway through Custer State Park. It has no separate article; it is the northern 14 miles of South Dakota Highway 87, whose article names it.",
+          "links": [
+            {
+              "label": "Wikipedia — South Dakota Highway 87",
+              "url": "https://en.wikipedia.org/wiki/South_Dakota_Highway_87"
+            }
+          ]
+        },
+        "Hill City and Deadwood": {
+          "entity": "Two Black Hills towns, each with its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — Hill City, South Dakota",
+              "url": "https://en.wikipedia.org/wiki/Hill_City%2C_South_Dakota"
+            },
+            {
+              "label": "Wikipedia — Deadwood, South Dakota",
+              "url": "https://en.wikipedia.org/wiki/Deadwood%2C_South_Dakota"
+            }
+          ]
+        },
+        "Wildlife Loop Road at first light": {
+          "entity": "The 18-mile wildlife loop through Custer State Park's bison range. The road has no article; the Custer State Park article documents 'the wildlife loop' and the 1,400-head bison herd it exists for.",
+          "links": [
+            {
+              "label": "Wikipedia — Custer State Park",
+              "url": "https://en.wikipedia.org/wiki/Custer_State_Park"
+            }
+          ]
+        },
+        "Needles Highway (SD-87) in the truck": {
+          "entity": "Same road, named with its route number — South Dakota Highway 87.",
+          "links": [
+            {
+              "label": "Wikipedia — South Dakota Highway 87",
+              "url": "https://en.wikipedia.org/wiki/South_Dakota_Highway_87"
+            }
+          ]
+        },
+        "Iron Mountain Road (US-16A) and the pigtail bridges": {
+          "entity": "Iron Mountain Road is a signed portion of U.S. Route 16A, whose article names both the road and its pigtail bridges. The Spiral bridge article has a section on the Black Hills pigtail bridge and credits Cecil Gideon's design for Iron Mountain Road.",
+          "links": [
+            {
+              "label": "Wikipedia — U.S. Route 16A",
+              "url": "https://en.wikipedia.org/wiki/U.S._Route_16A"
+            },
+            {
+              "label": "Wikipedia — Spiral bridge",
+              "url": "https://en.wikipedia.org/wiki/Spiral_bridge"
+            }
+          ]
+        },
+        "Sunday Gulch Trail": {
+          "entity": "The loop that drops out of Sylvan Lake into Sunday Gulch. The trail has no article; the Sylvan Lake (South Dakota) article documents the lake it starts from and the Sunday Gulch Creek the gulch is named for.",
+          "links": [
+            {
+              "label": "Wikipedia — Sylvan Lake (South Dakota)",
+              "url": "https://en.wikipedia.org/wiki/Sylvan_Lake_%28South_Dakota%29"
+            }
+          ]
+        },
+        "Jewel Cave National Monument Scenic Tour": {
+          "entity": "The Scenic Tour, the standard half-mile loop tour at Jewel Cave. The monument's article documents the Scenic Tour by name and its 1972 opening.",
+          "links": [
+            {
+              "label": "Wikipedia — Jewel Cave National Monument",
+              "url": "https://en.wikipedia.org/wiki/Jewel_Cave_National_Monument"
+            }
+          ]
         }
       },
       "offroad": [
@@ -10942,6 +11200,45 @@
           ],
           "auto": true,
           "auto_km": 1
+        },
+        "Medora's historic downtown": {
+          "entity": "The town of Medora itself, at the South Unit gate.",
+          "links": [
+            {
+              "label": "Wikipedia — Medora, North Dakota",
+              "url": "https://en.wikipedia.org/wiki/Medora%2C_North_Dakota"
+            }
+          ]
+        },
+        "Drive the full South Unit Scenic Loop": {
+          "entity": "The scenic loop drive in the South Unit of Theodore Roosevelt National Park. The loop has no article; the park's article documents the South Unit and its scenic drive.",
+          "links": [
+            {
+              "label": "Wikipedia — Theodore Roosevelt National Park",
+              "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_National_Park"
+            }
+          ]
+        },
+        "Wind Canyon Trail": {
+          "entity": "A short overlook trail on the South Unit loop. No article, and the Theodore Roosevelt National Park article does not name it. No link."
+        },
+        "Ridgeline Nature Trail": {
+          "entity": "A self-guided nature trail on the South Unit loop. No article, and not named in the park article. No link."
+        },
+        "Coal Vein Trail": {
+          "entity": "The interpretive trail at the burned lignite seam on the South Unit. No article, and not named in the park article. No link."
+        },
+        "Painted Canyon Nature Trail": {
+          "entity": "The trail below the Painted Canyon visitor centre on I-94. No article, and 'Painted Canyon' is not mentioned anywhere in the Theodore Roosevelt National Park article. No link."
+        },
+        "Chateau de Morès State Historic Site": {
+          "entity": "The Marquis de Morès's 1883 hunting lodge above Medora. The article is titled without the accent, 'Chateau de Mores', and its text documents the surrounding 128-acre state historic site.",
+          "links": [
+            {
+              "label": "Wikipedia — Chateau de Mores",
+              "url": "https://en.wikipedia.org/wiki/Chateau_de_Mores"
+            }
+          ]
         }
       },
       "offroad": [
@@ -11031,6 +11328,42 @@
           ],
           "auto": true,
           "auto_km": 47
+        },
+        "Missouri River walking paths": {
+          "entity": "The riverside paths in Bismarck–Mandan. The paths have no article; the entity they follow is the Missouri River.",
+          "links": [
+            {
+              "label": "Wikipedia — Missouri River",
+              "url": "https://en.wikipedia.org/wiki/Missouri_River"
+            }
+          ]
+        },
+        "On-A-Slant Indian Village, in camp": {
+          "entity": "The reconstructed Mandan earth-lodge village inside Fort Abraham Lincoln State Park, where the coach is parked. The village has no article; the park's article (titled 'Fort Abraham Lincoln') documents the replica On-A-Slant Indian Village by name.",
+          "links": [
+            {
+              "label": "Wikipedia — Fort Abraham Lincoln",
+              "url": "https://en.wikipedia.org/wiki/Fort_Abraham_Lincoln"
+            }
+          ]
+        },
+        "Custer House and the Commissary": {
+          "entity": "Two reconstructed post buildings at Fort Abraham Lincoln State Park. Neither has an article; the park article names the Custer House and the re-constructed commissary storehouse.",
+          "links": [
+            {
+              "label": "Wikipedia — Fort Abraham Lincoln",
+              "url": "https://en.wikipedia.org/wiki/Fort_Abraham_Lincoln"
+            }
+          ]
+        },
+        "Walk the park's trail network": {
+          "entity": "'The park' here is Fort Abraham Lincoln State Park, the campground for this stop. The trail network itself is not described in the article, so the link is to the park.",
+          "links": [
+            {
+              "label": "Wikipedia — Fort Abraham Lincoln",
+              "url": "https://en.wikipedia.org/wiki/Fort_Abraham_Lincoln"
+            }
+          ]
         }
       },
       "trails": [
@@ -11222,6 +11555,73 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Itasca's old-growth pine trails": {
+          "entity": "Itasca State Park's remnant old-growth red and white pine. The park article has a section on them ('the Itasca area's old-growth pine forests are almost as famous as the Mississippi headwaters').",
+          "links": [
+            {
+              "label": "Wikipedia — Itasca State Park",
+              "url": "https://en.wikipedia.org/wiki/Itasca_State_Park"
+            }
+          ]
+        },
+        "Walk across the Mississippi at the headwaters": {
+          "entity": "The stepping stones where the Mississippi leaves Lake Itasca. Both the lake and the river have articles, and the lake's article is the headwaters itself.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Itasca",
+              "url": "https://en.wikipedia.org/wiki/Lake_Itasca"
+            },
+            {
+              "label": "Wikipedia — Mississippi River",
+              "url": "https://en.wikipedia.org/wiki/Mississippi_River"
+            }
+          ]
+        },
+        "Wilderness Drive (in the pickup)": {
+          "entity": "The one-way loop through the park's Wilderness Sanctuary. It has no article; the Itasca State Park article refers to Wilderness Drive by name.",
+          "links": [
+            {
+              "label": "Wikipedia — Itasca State Park",
+              "url": "https://en.wikipedia.org/wiki/Itasca_State_Park"
+            }
+          ]
+        },
+        "Aiton Heights Fire Tower": {
+          "entity": "The 100-foot lookout tower in the park. No article of its own; the Itasca State Park article documents 'the historic Aiton Heights Fire Tower' and its 100-foot climb.",
+          "links": [
+            {
+              "label": "Wikipedia — Itasca State Park",
+              "url": "https://en.wikipedia.org/wiki/Itasca_State_Park"
+            }
+          ]
+        },
+        "Bike the paved trail to the headwaters": {
+          "entity": "The park's paved bike path from the campgrounds up to the Mississippi headwaters. The trail itself is not named in any article; the Itasca State Park article documents biking in the park and the headwaters it leads to.",
+          "links": [
+            {
+              "label": "Wikipedia — Itasca State Park",
+              "url": "https://en.wikipedia.org/wiki/Itasca_State_Park"
+            }
+          ]
+        },
+        "Douglas Lodge and the CCC-era buildings": {
+          "entity": "Douglas Lodge (1905) and the Rustic Style buildings the CCC added. Neither has a separate article; the Itasca State Park article documents Douglas Lodge as the park's oldest surviving building and the Rustic Style group around it.",
+          "links": [
+            {
+              "label": "Wikipedia — Itasca State Park",
+              "url": "https://en.wikipedia.org/wiki/Itasca_State_Park"
+            }
+          ]
+        },
+        "Hike a piece of the North Country National Scenic Trail": {
+          "entity": "The North Country Trail, whose article documents the 9.6-mile section through Itasca State Park's southern tier.",
+          "links": [
+            {
+              "label": "Wikipedia — North Country Trail",
+              "url": "https://en.wikipedia.org/wiki/North_Country_Trail"
+            }
+          ]
         }
       },
       "trails": [
@@ -11382,6 +11782,55 @@
           ],
           "auto": true,
           "auto_km": 1
+        },
+        "Lakewalk": {
+          "entity": "Duluth's waterfront Lakewalk. It has no article; the Duluth, Minnesota article documents its construction along the new Lake Superior beach.",
+          "links": [
+            {
+              "label": "Wikipedia — Duluth, Minnesota",
+              "url": "https://en.wikipedia.org/wiki/Duluth%2C_Minnesota"
+            }
+          ]
+        },
+        "Cross the Jay Cooke swinging bridge": {
+          "entity": "The 1930s CCC suspension footbridge over the St. Louis River. It has no article; the Jay Cooke State Park article documents it at length as the park's most famous landmark.",
+          "links": [
+            {
+              "label": "Wikipedia — Jay Cooke State Park",
+              "url": "https://en.wikipedia.org/wiki/Jay_Cooke_State_Park"
+            }
+          ]
+        },
+        "Enger Tower and Skyline Parkway (in the pickup)": {
+          "entity": "Two named things, each with its own article — the stone observation tower on Enger Hill and the 28-mile scenic byway along the Glacial Lake Duluth shoreline.",
+          "links": [
+            {
+              "label": "Wikipedia — Enger Tower",
+              "url": "https://en.wikipedia.org/wiki/Enger_Tower"
+            },
+            {
+              "label": "Wikipedia — Skyline Parkway",
+              "url": "https://en.wikipedia.org/wiki/Skyline_Parkway"
+            }
+          ]
+        },
+        "Hike Jay Cooke's trail network": {
+          "entity": "The trails in Jay Cooke State Park, whose article covers the park and its NRHP-listed Grand Portage trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Jay Cooke State Park",
+              "url": "https://en.wikipedia.org/wiki/Jay_Cooke_State_Park"
+            }
+          ]
+        },
+        "Hawk Ridge": {
+          "entity": "Hawk Ridge, the raptor-migration reserve above Duluth. Its article is titled 'Hawk Ridge, Duluth' (the bare title is not an article).",
+          "links": [
+            {
+              "label": "Wikipedia — Hawk Ridge, Duluth",
+              "url": "https://en.wikipedia.org/wiki/Hawk_Ridge%2C_Duluth"
+            }
+          ]
         }
       },
       "trails": [
@@ -11590,6 +12039,42 @@
           ],
           "auto": true,
           "auto_km": 15
+        },
+        "Grand Marais harbor and downtown": {
+          "entity": "The town and its double-bay harbour on Lake Superior — both documented in the Grand Marais, Minnesota article.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Marais, Minnesota",
+              "url": "https://en.wikipedia.org/wiki/Grand_Marais%2C_Minnesota"
+            }
+          ]
+        },
+        "Drive the Gunflint Trail": {
+          "entity": "The Gunflint Trail, the 57-mile scenic byway from Grand Marais to Saganaga Lake. Its article is filed under its route designation, County State-Aid Highway 12 (Cook County, Minnesota).",
+          "links": [
+            {
+              "label": "Wikipedia — County State-Aid Highway 12 (Cook County, Minnesota)",
+              "url": "https://en.wikipedia.org/wiki/County_State-Aid_Highway_12_%28Cook_County%2C_Minnesota%29"
+            }
+          ]
+        },
+        "Eagle Mountain, Minnesota's high point": {
+          "entity": "Eagle Mountain in the Misquah Hills, at 2,301 ft the highest point in Minnesota. The disambiguated title is needed — a second Eagle Mountain in northern Minnesota is a Lutsen ski hill.",
+          "links": [
+            {
+              "label": "Wikipedia — Eagle Mountain (Minnesota)",
+              "url": "https://en.wikipedia.org/wiki/Eagle_Mountain_%28Minnesota%29"
+            }
+          ]
+        },
+        "Artist's Point and the breakwater light": {
+          "entity": "Two things. The breakwater light is the Grand Marais Light, first lit 1922, in Cook County, Minnesota — not the Grand Marais light in Michigan. Artist's Point, the rock point beside it, has no article and is not named in the town's article, so only the light is linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Marais Light",
+              "url": "https://en.wikipedia.org/wiki/Grand_Marais_Light"
+            }
+          ]
         }
       },
       "offroad": [
@@ -11799,6 +12284,33 @@
           ],
           "auto": true,
           "auto_km": 7
+        },
+        "Bayfield's walkable downtown": {
+          "entity": "The town of Bayfield, Wisconsin.",
+          "links": [
+            {
+              "label": "Wikipedia — Bayfield, Wisconsin",
+              "url": "https://en.wikipedia.org/wiki/Bayfield%2C_Wisconsin"
+            }
+          ]
+        },
+        "Hike to the mainland sea caves from Meyers Beach": {
+          "entity": "The mainland sandstone sea caves on the Lakeshore's 12-mile mainland strip. Meyers Beach has no article and is not named in the park's; the Apostle Islands National Lakeshore article documents both the sandstone sea caves and the mainland unit.",
+          "links": [
+            {
+              "label": "Wikipedia — Apostle Islands National Lakeshore",
+              "url": "https://en.wikipedia.org/wiki/Apostle_Islands_National_Lakeshore"
+            }
+          ]
+        },
+        "Walk Bayfield itself": {
+          "entity": "The town of Bayfield, Wisconsin.",
+          "links": [
+            {
+              "label": "Wikipedia — Bayfield, Wisconsin",
+              "url": "https://en.wikipedia.org/wiki/Bayfield%2C_Wisconsin"
+            }
+          ]
         }
       },
       "trails": [
@@ -11947,6 +12459,62 @@
           ],
           "auto": true,
           "auto_km": 60
+        },
+        "Presque Isle Scenic Area and the three falls": {
+          "entity": "The Presque Isle unit at the park's western end and its three waterfalls. The scenic area has no article; the Presque Isle River article names Manabezho, Manido and Nawadaha Falls — those three — and places the river inside Porcupine Mountains Wilderness State Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Presque Isle River",
+              "url": "https://en.wikipedia.org/wiki/Presque_Isle_River"
+            },
+            {
+              "label": "Wikipedia — Porcupine Mountains",
+              "url": "https://en.wikipedia.org/wiki/Porcupine_Mountains"
+            }
+          ]
+        },
+        "Porcupine Mountains Visitor Center": {
+          "entity": "The park's visitor centre on South Boundary Road. It has no article, and the Porcupine Mountains article — which is where the state park's own title redirects — never mentions a visitor centre. No link."
+        },
+        "Superior beach at Union Bay": {
+          "entity": "The cobble beach at the Union Bay campground. Union Bay has no article and is not named in the Porcupine Mountains article; the water it fronts is Lake Superior.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Superior",
+              "url": "https://en.wikipedia.org/wiki/Lake_Superior"
+            }
+          ]
+        },
+        "Copper mining history": {
+          "entity": "Nineteenth-century copper mining in the Porcupine Mountains. The Porcupine Mountains article documents the Nonesuch Mine and the park's status as a cooperating unit of Keweenaw National Historical Park; Copper mining in Michigan is the general article.",
+          "links": [
+            {
+              "label": "Wikipedia — Copper mining in Michigan",
+              "url": "https://en.wikipedia.org/wiki/Copper_mining_in_Michigan"
+            },
+            {
+              "label": "Wikipedia — Porcupine Mountains",
+              "url": "https://en.wikipedia.org/wiki/Porcupine_Mountains"
+            }
+          ]
+        },
+        "Summit Peak observation tower": {
+          "entity": "The tower on Summit Peak, at 1,958 ft the highest point in the Porcupine Mountains. The bare title 'Summit Peak' is a Colorado 13er in the San Juans and is not used; the Porcupine Mountains article documents this Summit Peak.",
+          "links": [
+            {
+              "label": "Wikipedia — Porcupine Mountains",
+              "url": "https://en.wikipedia.org/wiki/Porcupine_Mountains"
+            }
+          ]
+        },
+        "Swim and beachcomb at Union Bay": {
+          "entity": "Union Bay on Lake Superior. As above, Union Bay itself is not documented; Lake Superior is.",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Superior",
+              "url": "https://en.wikipedia.org/wiki/Lake_Superior"
+            }
+          ]
         }
       },
       "offroad": [
@@ -12187,6 +12755,43 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Downtown Marquette": {
+          "entity": "The city of Marquette, Michigan.",
+          "links": [
+            {
+              "label": "Wikipedia — Marquette, Michigan",
+              "url": "https://en.wikipedia.org/wiki/Marquette%2C_Michigan"
+            }
+          ]
+        },
+        "Climb Sugarloaf Mountain": {
+          "entity": "The 470-ft quartzite knob on CR-550 north of Marquette. It has no article — the bare title 'Sugarloaf Mountain' is the peak in Rio de Janeiro, and no Michigan-disambiguated title exists. The Marquette article does not mention it either. No link."
+        },
+        "Watch an ore boat load at the Upper Harbour ore dock": {
+          "entity": "The LS&I ore dock in Marquette's Upper Harbor. The dock has no article; the Marquette, Michigan article documents it by name loading iron ore pellets onto lake freighters, and 'ore boat' is the Lake freighter article.",
+          "links": [
+            {
+              "label": "Wikipedia — Marquette, Michigan",
+              "url": "https://en.wikipedia.org/wiki/Marquette%2C_Michigan"
+            },
+            {
+              "label": "Wikipedia — Lake freighter",
+              "url": "https://en.wikipedia.org/wiki/Lake_freighter"
+            }
+          ]
+        },
+        "Ride or walk the Iron Ore Heritage Trail": {
+          "entity": "The Iron Ore Heritage Trail across the Marquette Iron Range, which has its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — Iron Ore Heritage Trail",
+              "url": "https://en.wikipedia.org/wiki/Iron_Ore_Heritage_Trail"
+            }
+          ]
+        },
+        "Little Presque Isle and the CR-550 shore": {
+          "entity": "Little Presque Isle, the state-forest shore 7 miles north of town on CR-550. It has no article. Presque Isle Park is a different place — the city park peninsula inside Marquette — so linking it would be the wrong location. No link."
         }
       },
       "offroad": [
@@ -12373,6 +12978,24 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Chapel Loop to Chapel Rock and Beach": {
+          "entity": "The Chapel Basin loop in Pictured Rocks National Lakeshore. Chapel Rock, Chapel Beach and the loop have no articles of their own; the Pictured Rocks National Lakeshore article documents the Chapel area (Chapel Falls and Chapel Lake) and the cliffs the loop runs along.",
+          "links": [
+            {
+              "label": "Wikipedia — Pictured Rocks National Lakeshore",
+              "url": "https://en.wikipedia.org/wiki/Pictured_Rocks_National_Lakeshore"
+            }
+          ]
+        },
+        "Grand Island": {
+          "entity": "Grand Island offshore from Munising — administered as the Grand Island National Recreation Area within Hiawatha National Forest, which is the article that documents the island, its ferry and its shoreline.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Island National Recreation Area",
+              "url": "https://en.wikipedia.org/wiki/Grand_Island_National_Recreation_Area"
+            }
+          ]
         }
       },
       "offroad": [
@@ -12484,6 +13107,73 @@
           ],
           "auto": true,
           "auto_km": 17
+        },
+        "Upper Falls and the accessible boardwalk": {
+          "entity": "The Upper Falls, the 48-foot single drop. The Tahquamenon Falls article documents the Upper Falls; the boardwalk itself is not described in any article.",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon Falls",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_Falls"
+            }
+          ]
+        },
+        "Lower Falls and the rowboat crossing": {
+          "entity": "The Lower Falls and the island in the middle of them. The Tahquamenon Falls article documents both, including that the island is reached by rowboat from the basin below (or the 2022 footbridge).",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon Falls",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_Falls"
+            }
+          ]
+        },
+        "River Trail between the falls": {
+          "entity": "The four-mile trail linking Upper and Lower Falls. It has no article and is not named in either the Tahquamenon Falls or the state park article, which mention only the North Country Trail. No link."
+        },
+        "Tahquamenon Falls Brewery & Pub at Camp 33": {
+          "entity": "The brewpub at the Upper Falls. No article, and neither 'Camp 33' nor the brewery appears in the state park article. No link."
+        },
+        "Paddling the lower Tahquamenon": {
+          "entity": "The Tahquamenon River below the falls. Its article documents canoeing on the river.",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon River",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_River"
+            }
+          ]
+        },
+        "Upper Falls": {
+          "entity": "The Upper Falls, documented in the Tahquamenon Falls article.",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon Falls",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_Falls"
+            }
+          ]
+        },
+        "Lower Falls, four miles downstream": {
+          "entity": "The Lower Falls. The Tahquamenon Falls article gives the same distance — about 4 miles downstream — and the five smaller falls around the island.",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon Falls",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_Falls"
+            }
+          ]
+        },
+        "Camp at the river mouth": {
+          "entity": "The Rivermouth campground unit at the Tahquamenon's mouth. The unit has no article; the Tahquamenon River article documents the mouth at Whitefish Bay and the state park article documents the park's campgrounds.",
+          "links": [
+            {
+              "label": "Wikipedia — Tahquamenon River",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_River"
+            },
+            {
+              "label": "Wikipedia — Tahquamenon Falls State Park",
+              "url": "https://en.wikipedia.org/wiki/Tahquamenon_Falls_State_Park"
+            }
+          ]
+        },
+        "Tahquamenon Falls Brewery and Pub": {
+          "entity": "Same brewpub as above, second wording. No article, not documented in any parent. No link."
         }
       },
       "offroad": [
@@ -12711,6 +13401,15 @@
           ],
           "auto": true,
           "auto_km": 25
+        },
+        "Castle Rock": {
+          "entity": "The limestone stack and climb-the-stairs tourist stop 3 miles north of St. Ignace on I-75, which has its own article under the Michigan disambiguator.",
+          "links": [
+            {
+              "label": "Wikipedia — Castle Rock (Michigan)",
+              "url": "https://en.wikipedia.org/wiki/Castle_Rock_%28Michigan%29"
+            }
+          ]
         }
       },
       "offroad": [
@@ -12867,6 +13566,60 @@
           ],
           "auto": true,
           "auto_km": 6
+        },
+        "Traverse City's walkable downtown": {
+          "entity": "The city of Traverse City, Michigan.",
+          "links": [
+            {
+              "label": "Wikipedia — Traverse City, Michigan",
+              "url": "https://en.wikipedia.org/wiki/Traverse_City%2C_Michigan"
+            }
+          ]
+        },
+        "Pierce Stocking Scenic Drive (pickup only)": {
+          "entity": "The 7.4-mile one-way drive inside Sleeping Bear Dunes National Lakeshore, which has its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — Pierce Stocking Scenic Drive",
+              "url": "https://en.wikipedia.org/wiki/Pierce_Stocking_Scenic_Drive"
+            }
+          ]
+        },
+        "Empire Bluff Trail": {
+          "entity": "The bluff-top trail south of Empire. The trail has no article; the Sleeping Bear Dunes National Lakeshore article names Empire Bluff as one of its Leelanau County features.",
+          "links": [
+            {
+              "label": "Wikipedia — Sleeping Bear Dunes National Lakeshore",
+              "url": "https://en.wikipedia.org/wiki/Sleeping_Bear_Dunes_National_Lakeshore"
+            }
+          ]
+        },
+        "The Dune Climb": {
+          "entity": "The Dune Climb on M-109. No article; named in the Sleeping Bear Dunes National Lakeshore article.",
+          "links": [
+            {
+              "label": "Wikipedia — Sleeping Bear Dunes National Lakeshore",
+              "url": "https://en.wikipedia.org/wiki/Sleeping_Bear_Dunes_National_Lakeshore"
+            }
+          ]
+        },
+        "Leland's Fishtown": {
+          "entity": "The surviving commercial fishing shanties on the Leland River. Fishtown has no standalone article; the Leland Historic District (Leland, Michigan) article documents it explicitly as one of the district's two contiguous areas.",
+          "links": [
+            {
+              "label": "Wikipedia — Leland Historic District (Leland, Michigan)",
+              "url": "https://en.wikipedia.org/wiki/Leland_Historic_District_%28Leland%2C_Michigan%29"
+            }
+          ]
+        },
+        "Ride the TART Trail from the campground": {
+          "entity": "The TART Trails network around Traverse City, which has its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — TART Trails",
+              "url": "https://en.wikipedia.org/wiki/TART_Trails"
+            }
+          ]
         }
       },
       "trails": [
@@ -20099,6 +20852,68 @@
         "Cliff Shelf Nature Trail": false,
         "Castle Trail": false,
         "Window Trail": false
+      },
+      "activities": {
+        "Badlands Loop Road": {
+          "entity": "The park's main scenic road, which is South Dakota Highway 240 — its article opens by noting it is 'also signed as the Badlands Loop'.",
+          "links": [
+            {
+              "label": "Wikipedia — South Dakota Highway 240",
+              "url": "https://en.wikipedia.org/wiki/South_Dakota_Highway_240"
+            }
+          ]
+        },
+        "Notch Trail / Door Trail": {
+          "entity": "Two short trails off the Door/Window parking area. Neither has an article; the Badlands National Park article lists both by name among its established hiking trails.",
+          "links": [
+            {
+              "label": "Wikipedia — Badlands National Park",
+              "url": "https://en.wikipedia.org/wiki/Badlands_National_Park"
+            }
+          ]
+        },
+        "Badlands Loop Road (SD-240) end to end in the truck": {
+          "entity": "Same road, named with its route number.",
+          "links": [
+            {
+              "label": "Wikipedia — South Dakota Highway 240",
+              "url": "https://en.wikipedia.org/wiki/South_Dakota_Highway_240"
+            }
+          ]
+        },
+        "Notch Trail": {
+          "entity": "The ladder-and-ledge trail to the Notch. No article of its own; named in the Badlands National Park article's trail list.",
+          "links": [
+            {
+              "label": "Wikipedia — Badlands National Park",
+              "url": "https://en.wikipedia.org/wiki/Badlands_National_Park"
+            }
+          ]
+        },
+        "Door and Window trails": {
+          "entity": "Two short boardwalk trails at the Door/Window area. Neither has an article; the Badlands National Park article names Door Trail and Window Trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Badlands National Park",
+              "url": "https://en.wikipedia.org/wiki/Badlands_National_Park"
+            }
+          ]
+        },
+        "Castle Trail and Medicine Root Loop": {
+          "entity": "The park's two longest maintained trails. Neither has an article and neither is named anywhere in the Badlands National Park article's text. No link."
+        },
+        "Sage Creek Rim Road wildlife run": {
+          "entity": "The gravel rim road along the Badlands Wilderness on the park's west side. It has no article, and the Badlands National Park article mentions only Sage Creek Campground, not the road. No link."
+        },
+        "Fossil Exhibit Trail and Wall Drug": {
+          "entity": "Two things. Wall Drug, the roadside store in Wall, has its own article. The Fossil Exhibit Trail does not, and the Badlands National Park article does not name it, so only Wall Drug is linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Wall Drug",
+              "url": "https://en.wikipedia.org/wiki/Wall_Drug"
+            }
+          ]
+        }
       }
     }
   },

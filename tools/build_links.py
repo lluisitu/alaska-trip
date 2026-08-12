@@ -261,6 +261,21 @@ def apply_stop(stop, entry, log):
         stop['alltrails'] = existing
         log.append(f"  {sid}: {replaced} replaced, {len(real) - replaced} added, "
                    f"{len(existing)} in the box")
+    # Scenic drives, same merge-by-name rule.
+    for r in entry.get('scenicDrives_patch') or []:
+        box = stop.setdefault('scenicDrives', [])
+        keys = {norm(r['name'])}
+        if r.get('was_name'):
+            keys.add(norm(r['was_name']))
+        item = {k: v for k, v in r.items()
+                if k in ('name', 'url', 'note', 'season', 'distance') and v}
+        item['rig'] = 'truck'
+        hit = next((i for i, x in enumerate(box) if norm(x.get('name')) in keys), None)
+        if hit is None:
+            box.append(item)
+        else:
+            box[hit] = item
+
     # Offroad routes, same merge rule as trails: replace by name or was_name,
     # never append blindly.
     for r in entry.get('offroad') or []:

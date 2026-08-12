@@ -796,6 +796,17 @@
           "entry": "Loaded camper: graded, dry roads only.",
           "problem": "A standing rig constraint filed as a list item, and one that no longer applies: every offroad route on this trip is driven in the towed 4x4, never the coach. Nothing to research and nothing to link."
         }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "US-50 through Bighorn Sheep Canyon",
+          "was_name": "Highway 50 through Bighorn Sheep Canyon.",
+          "url": "https://royalgorgeregion.com/bighorn-sheep-canyon/",
+          "tier": "community",
+          "note": "The Arkansas River canyon on US-50 between Salida and Parkdale (12 mi west of Canon City). Over 400 bighorn sheep use the cliffs; the pullouts along the river are the viewing. No designated-byway page exists for this stretch, so the Royal Gorge Region tourism board page is the best available source. Truck day-trip, as with every drive.",
+          "season": "US-50 is a year-round primary route; no seasonal gate. Arrive 3 Apr 2027 — open, but early-April ice and rockfall are normal in the canyon.",
+          "note_source": "royalgorgeregion.com; visitcos.com directory"
+        }
       ]
     },
     "estes-rmnp": {
@@ -1491,6 +1502,42 @@
           ],
           "auto": true,
           "auto_km": 11
+        },
+        "Fishhook Creek Trail": {
+          "entity": "Sawtooth National Recreation Area",
+          "links": [
+            {
+              "label": "Wikipedia — Sawtooth NRA",
+              "url": "https://en.wikipedia.org/wiki/Sawtooth_National_Recreation_Area"
+            }
+          ]
+        },
+        "Stanley town + Sawtooth Fish Hatchery": {
+          "entity": "Stanley, Idaho",
+          "links": [
+            {
+              "label": "Wikipedia — Stanley, Idaho",
+              "url": "https://en.wikipedia.org/wiki/Stanley%2C_Idaho"
+            }
+          ]
+        },
+        "Galena Summit Overlook": {
+          "entity": "Galena Summit",
+          "links": [
+            {
+              "label": "Wikipedia — Galena Summit",
+              "url": "https://en.wikipedia.org/wiki/Galena_Summit"
+            }
+          ]
+        },
+        "Stanley town and the Sawtooth Fish Hatchery.": {
+          "entity": "Stanley, Idaho",
+          "links": [
+            {
+              "label": "Wikipedia — Stanley, Idaho",
+              "url": "https://en.wikipedia.org/wiki/Stanley%2C_Idaho"
+            }
+          ]
         }
       }
     },
@@ -1530,7 +1577,55 @@
       ],
       "dogs_verdict": "prohibited",
       "dogs": "NPS: \"Pets are not allowed on any trails or in the visitor center even if they are carried.\" Leashed pets \"may walk on the road, in the campground, and in parking areas\" (leash max six feet). Lava surfaces exceed 150F in summer.",
-      "dogs_exception": "Loop Road, campground and parking areas only — every named trail on this card is closed to the dog."
+      "dogs_exception": "Loop Road, campground and parking areas only — every named trail on this card is closed to the dog.",
+      "activities": {
+        "Loop Drive (7 miles, paved)": {
+          "entity": "Craters of the Moon National Monument and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Craters of the Moon",
+              "url": "https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve"
+            }
+          ]
+        },
+        "Inferno Cone Overlook": {
+          "entity": "Craters of the Moon National Monument and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Craters of the Moon",
+              "url": "https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve"
+            }
+          ]
+        },
+        "Cave Area / Indian Tunnel": {
+          "entity": "Craters of the Moon National Monument and Preserve; Lava tube",
+          "links": [
+            {
+              "label": "Wikipedia — Craters of the Moon",
+              "url": "https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve"
+            },
+            {
+              "label": "Wikipedia — Lava tube",
+              "url": "https://en.wikipedia.org/wiki/Lava_tube"
+            }
+          ]
+        },
+        "Devils Orchard Trail": {
+          "entity": "Craters of the Moon National Monument and Preserve",
+          "links": [
+            {
+              "label": "Wikipedia — Craters of the Moon",
+              "url": "https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve"
+            }
+          ]
+        }
+      },
+      "not_a_trail": [
+        {
+          "entry": "Inferno Cone Trail",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
+        }
+      ]
     },
     "yellowstone": {
       "authority": "National Park Service",
@@ -1706,6 +1801,32 @@
           ],
           "auto": true,
           "auto_km": 9
+        },
+        "Avalanche Lake & Trail of the Cedars": {
+          "entity": "Trail of the Cedars; Glacier National Park (U.S.)",
+          "links": [
+            {
+              "label": "Wikipedia — Trail of the Cedars",
+              "url": "https://en.wikipedia.org/wiki/Trail_of_the_Cedars"
+            },
+            {
+              "label": "Wikipedia — Glacier NP",
+              "url": "https://en.wikipedia.org/wiki/Glacier_National_Park_%28U.S.%29"
+            }
+          ]
+        },
+        "Polebridge and the North Fork make the best small-community day trip.": {
+          "entity": "Polebridge, Montana; North Fork Flathead River",
+          "links": [
+            {
+              "label": "Wikipedia — Polebridge, MT",
+              "url": "https://en.wikipedia.org/wiki/Polebridge%2C_Montana"
+            },
+            {
+              "label": "Wikipedia — North Fork Flathead River",
+              "url": "https://en.wikipedia.org/wiki/North_Fork_Flathead_River"
+            }
+          ]
         }
       }
     },
@@ -1788,6 +1909,37 @@
           ],
           "auto": true,
           "auto_km": 6
+        },
+        "Bear's Hump & Red Rock Canyon": {
+          "entity": "Waterton Lakes National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Waterton Lakes NP",
+              "url": "https://en.wikipedia.org/wiki/Waterton_Lakes_National_Park"
+            }
+          ]
+        },
+        "Waterton village, Cameron Falls, the lakefront, and the Prince of Wales viewpoint.": {
+          "entity": "Waterton Park; Prince of Wales Hotel",
+          "links": [
+            {
+              "label": "Wikipedia — Waterton Park village",
+              "url": "https://en.wikipedia.org/wiki/Waterton_Park"
+            },
+            {
+              "label": "Wikipedia — Prince of Wales Hotel",
+              "url": "https://en.wikipedia.org/wiki/Prince_of_Wales_Hotel"
+            }
+          ]
+        },
+        "Red Rock Canyon and Cameron Lake roads only if open.": {
+          "entity": "Cameron Lake (Alberta)",
+          "links": [
+            {
+              "label": "Wikipedia — Cameron Lake",
+              "url": "https://en.wikipedia.org/wiki/Cameron_Lake_%28Alberta%29"
+            }
+          ]
         }
       }
     },
@@ -1950,6 +2102,15 @@
           ],
           "auto": true,
           "auto_km": 46
+        },
+        "Lake Louise requires careful transport planning; use the official shuttle system when required.": {
+          "entity": "Lake Louise (Alberta)",
+          "links": [
+            {
+              "label": "Wikipedia — Lake Louise",
+              "url": "https://en.wikipedia.org/wiki/Lake_Louise_%28Alberta%29"
+            }
+          ]
         }
       }
     },
@@ -2064,8 +2225,36 @@
           ],
           "auto": true,
           "auto_km": 7
+        },
+        "Jasper SkyTram (Whistlers Mountain)": {
+          "entity": "The Whistlers (Alberta)",
+          "links": [
+            {
+              "label": "Wikipedia — The Whistlers",
+              "url": "https://en.wikipedia.org/wiki/The_Whistlers_%28Alberta%29"
+            }
+          ]
+        },
+        "Make the Banff-to-Jasper transfer itself a full scenic day on the Icefields Parkway.": {
+          "entity": "Alberta Highway 93",
+          "links": [
+            {
+              "label": "Wikipedia — Icefields Parkway (Hwy 93)",
+              "url": "https://en.wikipedia.org/wiki/Alberta_Highway_93"
+            }
+          ]
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "Maligne Lake Road",
+          "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/depliants-brochures/malignelake",
+          "tier": "official",
+          "note": "46–47 km from the Highway 16 turnoff (1.9 km east of Jasper) to the lake at road's end; about an hour each way without stops. Mostly paved. No fuel and no cell service on the road. Parks Canada discourages stopping for wildlife.",
+          "season": "OPEN, with one thing shut. Maligne Lake Road reopened after the 2024 wildfire and Medicine Lake and the Maligne Lake area are accessible. Maligne Canyon — the marquee stop partway along the road — remained CLOSED through 2026 pending wildfire/geotechnical work, as did Edith Cavell Road. Arrive 4 Jun 2027: assume the drive works and check Maligne Canyon specifically.",
+          "note_source": "Parks Canada Jasper recovery page; CTV/CBC 2026 what's-open reporting"
+        }
+      ]
     },
     "muncho-lake": {
       "authority": "BC Parks — Muncho Lake Park",
@@ -3155,6 +3344,15 @@
               "url": "https://en.wikipedia.org/wiki/Dawson_City"
             }
           ]
+        },
+        "Dawson City Museum, Dänojà Zho Cultural Centre, historic buildings, riverfront, and Midnight Dome.": {
+          "entity": "Dawson City",
+          "links": [
+            {
+              "label": "Wikipedia — Dawson City",
+              "url": "https://en.wikipedia.org/wiki/Dawson_City"
+            }
+          ]
         }
       },
       "offroad": [
@@ -3214,8 +3412,35 @@
               "url": "https://en.wikipedia.org/wiki/Sign_Post_Forest"
             }
           ]
+        },
+        "Simulated aurora show, Northern Lights Space & Science Centre": {
+          "entity": "Watson Lake, Yukon",
+          "links": [
+            {
+              "label": "Wikipedia — Watson Lake, YT",
+              "url": "https://en.wikipedia.org/wiki/Watson_Lake%2C_Yukon"
+            }
+          ]
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "Alaska Highway (Yukon Highway 1) through Watson Lake",
+          "was_name": "Alaska Highway through Watson Lake, past the Sign Post Forest into the Southern Lakes region.",
+          "url": "https://www.travelyukon.com/en/see-and-do/activities/iconic-drives-alaska-highway",
+          "tier": "official",
+          "note": "Dawson Creek BC to Delta Junction AK, 2,232 km today. Watson Lake sits at Mile 635, at the Alaska Highway / Robert Campbell Highway junction; the Sign Post Forest is free and open year-round. Road conditions for the territory: 511yukon.ca.",
+          "season": "Highway open year-round. The Watson Lake Visitor Information Centre — where you can make a sign — runs mid-May to mid-September, 8am–8pm. Arrive 12 Sep 2027: just inside that window, but only just.",
+          "note_source": "Travel Yukon (official Yukon tourism); Sign Post Forest listings",
+          "other_links": [
+            {
+              "label": "Sign Post Forest (Travel Yukon)",
+              "url": "https://www.travelyukon.com/en/get-inspired/take-trip-around-world-sign-post-forest",
+              "tier": "official"
+            }
+          ]
+        }
+      ]
     },
     "boya-lake": {
       "authority": "BC Parks — Tā Ch'ilā Provincial Park",
@@ -3277,6 +3502,64 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "Hike the Lakeshore Trail": {
+          "entity": "Ta Ch'ila Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Tā Ch'ilā PP (Boya Lake)",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ]
+        },
+        "Hike the Beaver Lodge Trail": {
+          "entity": "Ta Ch'ila Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Tā Ch'ilā PP (Boya Lake)",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ]
+        },
+        "Scenic drive/wildlife watch along the Cassiar Highway (Hwy 37)": {
+          "entity": "Stewart-Cassiar Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Stewart–Cassiar Highway",
+              "url": "https://en.wikipedia.org/wiki/Stewart%E2%80%93Cassiar_Highway"
+            }
+          ]
+        },
+        "Resupply and explore Dease Lake": {
+          "entity": "Dease Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Dease Lake, BC",
+              "url": "https://en.wikipedia.org/wiki/Dease_Lake"
+            }
+          ]
+        },
+        "Fish for lake char, whitefish, or burbot": {
+          "entity": "Lake trout; Burbot",
+          "links": [
+            {
+              "label": "Wikipedia — Lake trout (lake char)",
+              "url": "https://en.wikipedia.org/wiki/Lake_trout"
+            },
+            {
+              "label": "Wikipedia — Burbot",
+              "url": "https://en.wikipedia.org/wiki/Burbot"
+            }
+          ]
+        },
+        "The exceptionally clear turquoise lake, islands, and quiet shoreline are the attraction.": {
+          "entity": "Ta Ch'ila Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — Tā Ch'ilā PP (Boya Lake)",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -3327,6 +3610,19 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Telegraph Creek Road is dramatic but steep, narrow, and consequential. Do not take the coach.": {
+          "entity": "Telegraph Creek; Grand Canyon of the Stikine",
+          "links": [
+            {
+              "label": "Wikipedia — Telegraph Creek",
+              "url": "https://en.wikipedia.org/wiki/Telegraph_Creek"
+            },
+            {
+              "label": "Wikipedia — Grand Canyon of the Stikine",
+              "url": "https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Stikine"
+            }
+          ]
         }
       },
       "not_a_trail": [
@@ -3375,6 +3671,28 @@
             {
               "label": "Wikipedia — Stewart, British Columbia",
               "url": "https://en.wikipedia.org/wiki/Stewart%2C_British_Columbia"
+            }
+          ]
+        },
+        "Fish Creek Wildlife Observation Site — bear viewing": {
+          "entity": "Hyder, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Hyder, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Hyder%2C_Alaska"
+            }
+          ]
+        },
+        "Stewart’s historic center, estuary boardwalk, and the short international crossing to Hyder, Alaska.": {
+          "entity": "Stewart, British Columbia; Hyder, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Stewart, BC",
+              "url": "https://en.wikipedia.org/wiki/Stewart%2C_British_Columbia"
+            },
+            {
+              "label": "Wikipedia — Hyder, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Hyder%2C_Alaska"
             }
           ]
         }
@@ -3436,6 +3754,10 @@
         {
           "entry": "Ancient Forest Universal Access Trail",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        },
+        {
+          "entry": "Ancient Forest Boardwalk Trail",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ],
       "activities": {
@@ -3445,6 +3767,33 @@
             {
               "label": "Wikipedia — Ancient Forest/Chun T'oh Whudujut Provincial Park and Protected Area",
               "url": "https://en.wikipedia.org/wiki/Ancient_Forest/Chun_T%27oh_Whudujut_Provincial_Park_and_Protected_Area"
+            }
+          ]
+        },
+        "Ancient Forest / Chun T'oh Whudujut Provincial Park": {
+          "entity": "Ancient Forest/Chun T'oh Whudujut PP",
+          "links": [
+            {
+              "label": "Wikipedia — Ancient Forest/Chun T'oh Whudujut PP",
+              "url": "https://en.wikipedia.org/wiki/Ancient_Forest/Chun_T%27oh_Whudujut_Provincial_Park_and_Protected_Area"
+            }
+          ]
+        },
+        "Central British Columbia Railway and Forestry Museum.": {
+          "entity": "Central BC Railway and Forestry Museum",
+          "links": [
+            {
+              "label": "Wikipedia — Central BC Railway & Forestry Museum",
+              "url": "https://en.wikipedia.org/wiki/Central_BC_Railway_and_Forestry_Museum"
+            }
+          ]
+        },
+        "Lheidli T’enneh Memorial Park, Cottonwood Island Nature Park, and Two Rivers Gallery.": {
+          "entity": "Prince George, British Columbia",
+          "links": [
+            {
+              "label": "Wikipedia — Prince George, BC",
+              "url": "https://en.wikipedia.org/wiki/Prince_George%2C_British_Columbia"
             }
           ]
         }
@@ -3574,6 +3923,37 @@
             {
               "label": "Wikipedia — Wells Gray Provincial Park",
               "url": "https://en.wikipedia.org/wiki/Wells_Gray_Provincial_Park"
+            }
+          ]
+        },
+        "Dutch Lake swimming and paddling": {
+          "entity": "Clearwater, British Columbia",
+          "links": [
+            {
+              "label": "Wikipedia — Clearwater, BC",
+              "url": "https://en.wikipedia.org/wiki/Clearwater%2C_British_Columbia"
+            }
+          ]
+        },
+        "Clearwater River Valley 4x4/scenic backroad drive": {
+          "entity": "Clearwater River (British Columbia)",
+          "links": [
+            {
+              "label": "Wikipedia — Clearwater River, BC",
+              "url": "https://en.wikipedia.org/wiki/Clearwater_River_%28British_Columbia%29"
+            }
+          ]
+        },
+        "Clearwater is a small practical gateway; the waterfalls are the destination.": {
+          "entity": "Wells Gray Provincial Park; Helmcken Falls",
+          "links": [
+            {
+              "label": "Wikipedia — Wells Gray PP",
+              "url": "https://en.wikipedia.org/wiki/Wells_Gray_Provincial_Park"
+            },
+            {
+              "label": "Wikipedia — Helmcken Falls",
+              "url": "https://en.wikipedia.org/wiki/Helmcken_Falls"
             }
           ]
         }
@@ -3839,6 +4219,16 @@
         {
           "entry": "Olympic road conditions",
           "problem": "A road-status link, not a trail. Belongs with the stop notes."
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Sol Duc Road to Sol Duc Hot Springs",
+          "url": "https://www.nps.gov/olym/planyourvisit/visiting-the-sol-duc-valley.htm",
+          "tier": "official",
+          "note": "Turns south off US-101 west of Lake Crescent, about 40 minutes from Port Angeles, and runs up the Sol Duc valley to the hot springs resort and the Sol Duc Falls trailhead at road's end.",
+          "season": "OPEN, JUST. The road is open year-round as far as Sol Duc Falls, but the upper section is seasonal and closes in winter storms; the hot springs resort runs roughly 20–25 March to the LAST WEEKEND IN OCTOBER. Arrive 19 Oct 2027 — the resort is open, with about a week to spare. Recorded road & weather line: 360-565-3131.",
+          "note_source": "NPS Olympic Sol Duc valley page; NPS current road conditions"
         }
       ]
     },
@@ -4188,6 +4578,16 @@
           "entry": "Death Valley conditions",
           "problem": "A status check, not a route. Nothing to link. Death Valley's road-status page is worth carrying on the stop, but as a note, not as a list item pretending to be a drive."
         }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Titus Canyon Road",
+          "problem": "Not a trail — a 27-mile ONE-WAY backcountry driving route, east to west, starting from NV-374 two miles east of the park boundary; only the last 3 miles at the west end are two-way. NPS calls it the most popular back-country road in the park and requires two-wheel-drive high clearance as a minimum, with 4WD needed after weather. It belongs in offroad (or scenic drives), not the trails box. 2–3 hours to drive.",
+          "url": "https://www.nps.gov/deva/planyourvisit/titus-canyon.htm",
+          "tier": "official",
+          "season": "SEASONAL — VERIFY BEFORE THE STOP. NPS scheduled a FULL CLOSURE of Titus Canyon Road from 1 October 2026 through at least 30 April 2027 for repairs. Arrive 28 Dec 2027 is after that published window, but the road is also routinely closed by snow, mud and washouts and is prone to flash flooding — never enter with rain threatening. Check park road status on the day.",
+          "note_source": "NPS Death Valley Titus Canyon page; Pahrump Valley Times and 8NewsNow reopening/closure reporting"
+        }
       ]
     },
     "grand-teton": {
@@ -4245,6 +4645,36 @@
           ],
           "auto": true,
           "auto_km": 27
+        },
+        "Cascade Canyon toward Lake Solitude": {
+          "entity": "Cascade Canyon; Lakes of Grand Teton National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Cascade Canyon",
+              "url": "https://en.wikipedia.org/wiki/Cascade_Canyon"
+            },
+            {
+              "label": "Wikipedia — Lakes of Grand Teton NP",
+              "url": "https://en.wikipedia.org/wiki/Lakes_of_Grand_Teton_National_Park"
+            }
+          ]
+        },
+        "Jackson Lake shoreline, Oxbow Bend, Willow Flats, and the Snake River overlooks.": {
+          "entity": "Jackson Lake (Wyoming); Snake River; Grand Teton National Park",
+          "links": [
+            {
+              "label": "Wikipedia — Jackson Lake",
+              "url": "https://en.wikipedia.org/wiki/Jackson_Lake_%28Wyoming%29"
+            },
+            {
+              "label": "Wikipedia — Snake River",
+              "url": "https://en.wikipedia.org/wiki/Snake_River"
+            },
+            {
+              "label": "Wikipedia — Grand Teton NP",
+              "url": "https://en.wikipedia.org/wiki/Grand_Teton_National_Park"
+            }
+          ]
         }
       }
     },
@@ -4313,7 +4743,33 @@
             }
           ]
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "Moro Rock/Crescent Meadow Road spur off Generals Highway",
+          "tier": "official",
+          "note": "The spur from Giant Forest Museum past Tunnel Log to Moro Rock and Crescent Meadow. Even in summer NPS prohibits single vehicles over 22 ft and ANY vehicle towing — so this was never a coach road, and it is a truck day with the pickup unhitched. In summer it is shuttle-only at weekends and holidays.",
+          "season": "SEASONAL CONFLICT ON A HARD-ANCHORED STOP. The Moro Rock/Crescent Meadow Road CLOSES TO VEHICLES as soon as snow accumulates and is not plowed, typically staying shut until around Memorial Day weekend. Arrive 23 Dec 2027 — the Christmas anchor cannot move, so plan on the road being closed to driving. It becomes a marked winter trail for walking, snowshoeing and cross-country skiing from Giant Forest Museum, which is the realistic version of this outing. The Moro Rock stairway is also closed when snow and ice make the exposed granite steps unsafe. Generals Highway between Ash Mountain and Giant Forest is the winter access road and is usually open but closes in storms.",
+          "note_source": "NPS SEKI vehicle length limits page; NPS 'Crescent Meadow Road winter trail'; SEKI winter trip planners",
+          "other_links": [
+            {
+              "label": "NPS — Crescent Meadow Road winter trail",
+              "url": "https://www.nps.gov/thingstodo/crescent-meadow-road-winter-trail.htm",
+              "tier": "official"
+            },
+            {
+              "label": "NPS — visiting with an oversized vehicle",
+              "url": "https://home.nps.gov/seki/planyourvisit/oversized-vehicle.htm",
+              "tier": "official"
+            },
+            {
+              "label": "SEKI winter trip planner 2025-26 (PDF)",
+              "url": "https://www.nps.gov/seki/learn/news/upload/Trip_Planner_2025-2026_Winter_2025-12-09_for_web.pdf",
+              "tier": "official"
+            }
+          ]
+        }
+      ]
     },
     "kluane-1": {
       "authority": "Parks Canada",
@@ -4369,7 +4825,53 @@
     "kluane-2": {
       "authority": "Parks Canada",
       "dogs_verdict": "allowed",
-      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards."
+      "dogs": "Allowed on trails, leash 3 m or less — Parks Canada. Local bulletins can close individual trails to dogs; check the trailhead boards.",
+      "activities": {
+        "Kluane NP Visitor Centre (Da Kų Cultural Centre)": {
+          "entity": "Kluane National Park and Reserve",
+          "links": [
+            {
+              "label": "Wikipedia — Kluane NP and Reserve",
+              "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+            }
+          ]
+        },
+        "King's Throne Trail": {
+          "entity": "Kathleen Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Kathleen Lake",
+              "url": "https://en.wikipedia.org/wiki/Kathleen_Lake"
+            }
+          ]
+        },
+        "Sheep Mountain & Soldier's Summit": {
+          "entity": "Sheep Mountain (Yukon); Alaska Highway",
+          "links": [
+            {
+              "label": "Wikipedia — Sheep Mountain, YT",
+              "url": "https://en.wikipedia.org/wiki/Sheep_Mountain_%28Yukon%29"
+            },
+            {
+              "label": "Wikipedia — Alaska Highway",
+              "url": "https://en.wikipedia.org/wiki/Alaska_Highway"
+            }
+          ]
+        },
+        "Revisit Kathleen Lake, Rock Glacier, and roadside Kluane viewpoints in autumn color.": {
+          "entity": "Kathleen Lake; Kluane National Park and Reserve",
+          "links": [
+            {
+              "label": "Wikipedia — Kathleen Lake",
+              "url": "https://en.wikipedia.org/wiki/Kathleen_Lake"
+            },
+            {
+              "label": "Wikipedia — Kluane NP and Reserve",
+              "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+            }
+          ]
+        }
+      }
     },
     "west-yellowstone": {
       "activities": {
@@ -4394,6 +4896,45 @@
           ],
           "auto": true,
           "auto_km": 31
+        },
+        "Yellowstone West Entrance & Firehole Canyon Drive": {
+          "entity": "Yellowstone National Park; Firehole River",
+          "links": [
+            {
+              "label": "Wikipedia — Yellowstone NP",
+              "url": "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
+            },
+            {
+              "label": "Wikipedia — Firehole River",
+              "url": "https://en.wikipedia.org/wiki/Firehole_River"
+            }
+          ]
+        },
+        "Walk West Yellowstone and visit the Grizzly & Wolf Discovery Center.": {
+          "entity": "West Yellowstone, Montana; Grizzly & Wolf Discovery Center",
+          "links": [
+            {
+              "label": "Wikipedia — West Yellowstone",
+              "url": "https://en.wikipedia.org/wiki/West_Yellowstone%2C_Montana"
+            },
+            {
+              "label": "Wikipedia — Grizzly & Wolf Discovery Center",
+              "url": "https://en.wikipedia.org/wiki/Grizzly_%26_Wolf_Discovery_Center"
+            }
+          ]
+        },
+        "Drive to Hebgen Lake and the Earthquake Lake visitor area if seasonal facilities are open.": {
+          "entity": "Hebgen Lake; Quake Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Hebgen Lake",
+              "url": "https://en.wikipedia.org/wiki/Hebgen_Lake"
+            },
+            {
+              "label": "Wikipedia — Quake Lake (Earthquake Lake)",
+              "url": "https://en.wikipedia.org/wiki/Quake_Lake"
+            }
+          ]
         }
       },
       "offroad": [
@@ -4437,6 +4978,24 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "The 'M' Trail / Drinking Horse Mountain": {
+          "entity": "Bridger Range",
+          "links": [
+            {
+              "label": "Wikipedia — Bridger Range",
+              "url": "https://en.wikipedia.org/wiki/Bridger_Range"
+            }
+          ]
+        },
+        "Livingston is a worthwhile small-town side trip if energy permits.": {
+          "entity": "Livingston, Montana",
+          "links": [
+            {
+              "label": "Wikipedia — Livingston, MT",
+              "url": "https://en.wikipedia.org/wiki/Livingston%2C_Montana"
+            }
+          ]
         }
       }
     },
@@ -4674,7 +5233,24 @@
             }
           ]
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "Steese Highway National Scenic Byway",
+          "url": "https://dot.alaska.gov/dmio/scenic/byways-steese.shtml",
+          "tier": "official",
+          "note": "Fairbanks to Circle, 161 mi. First 81 mi paved, the rest gravel. Eagle Summit at 3,685 ft is one of the highest road passes in Alaska and is the midnight-sun viewpoint. BLM's Cripple Creek campground at mile 60. Truck only — this is a day out, not a coach transfer.",
+          "season": "Open year-round; the gravel section is the constraint, not a gate. Arrive 26 Jun 2027 — solstice window, which is the whole point of Eagle Summit.",
+          "note_source": "Alaska DOT&PF scenic byways; BLM Steese/Elliott brochure",
+          "other_links": [
+            {
+              "label": "BLM Steese & Elliott Highways brochure (PDF)",
+              "url": "https://www.blm.gov/sites/default/files/docs/2021-09/Alaska_SteeseElliottHwys_Brochure.pdf",
+              "tier": "official"
+            }
+          ]
+        }
+      ]
     },
     "anchorage": {
       "activities": {
@@ -4909,6 +5485,15 @@
           ],
           "auto": true,
           "auto_km": 2
+        },
+        "Tok Mainstreet Visitor Center": {
+          "entity": "Tok, Alaska",
+          "links": [
+            {
+              "label": "Wikipedia — Tok, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Tok%2C_Alaska"
+            }
+          ]
         }
       },
       "offroad": [
@@ -4934,6 +5519,33 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "SS Klondike National Historic Site": {
+          "entity": "SS Klondike",
+          "links": [
+            {
+              "label": "Wikipedia — SS Klondike",
+              "url": "https://en.wikipedia.org/wiki/SS_Klondike"
+            }
+          ]
+        },
+        "Miles Canyon & Yukon Suspension Footbridge": {
+          "entity": "Miles Canyon Basalts",
+          "links": [
+            {
+              "label": "Wikipedia — Miles Canyon Basalts",
+              "url": "https://en.wikipedia.org/wiki/Miles_Canyon_Basalts"
+            }
+          ]
+        },
+        "Yukon Wildlife Preserve + Fish Ladder": {
+          "entity": "White Horse Rapids",
+          "links": [
+            {
+              "label": "Wikipedia — White Horse Rapids",
+              "url": "https://en.wikipedia.org/wiki/White_Horse_Rapids"
+            }
+          ]
         }
       }
     },
@@ -4949,6 +5561,33 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "SS Klondike National Historic Site": {
+          "entity": "SS Klondike",
+          "links": [
+            {
+              "label": "Wikipedia — SS Klondike",
+              "url": "https://en.wikipedia.org/wiki/SS_Klondike"
+            }
+          ]
+        },
+        "Miles Canyon & Yukon Suspension Footbridge": {
+          "entity": "Miles Canyon Basalts",
+          "links": [
+            {
+              "label": "Wikipedia — Miles Canyon Basalts",
+              "url": "https://en.wikipedia.org/wiki/Miles_Canyon_Basalts"
+            }
+          ]
+        },
+        "Yukon Wildlife Preserve + Fish Ladder": {
+          "entity": "White Horse Rapids",
+          "links": [
+            {
+              "label": "Wikipedia — White Horse Rapids",
+              "url": "https://en.wikipedia.org/wiki/White_Horse_Rapids"
+            }
+          ]
         }
       }
     },
@@ -4982,6 +5621,15 @@
             {
               "label": "Wikipedia — Witset",
               "url": "https://en.wikipedia.org/wiki/Witset"
+            }
+          ]
+        },
+        "Twin Falls / Glacier Gulch trail": {
+          "entity": "Hudson Bay Mountain",
+          "links": [
+            {
+              "label": "Wikipedia — Hudson Bay Mountain",
+              "url": "https://en.wikipedia.org/wiki/Hudson_Bay_Mountain"
             }
           ]
         }
@@ -5238,6 +5886,60 @@
           "label": "Wilderness — Okanogan-Wenatchee NF (USFS)",
           "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/wilderness",
           "tier": "official"
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "North Cascades Highway (SR-20) over Washington Pass",
+          "url": "https://wsdot.com/travel/real-time/mountainpasses/north-cascade-hwy",
+          "tier": "official",
+          "note": "The through-drive west from Winthrop over Washington Pass and Rainy Pass, with the paved fully-accessible Washington Pass Observation Site looking at Liberty Bell and the Early Winters Spires. WSDOT's own pass page is the live status.",
+          "season": "OPEN ON THE DATE, closes soon after. WSDOT shuts SR-20 for the winter between Ross Dam and Early Winters every year — 4 Dec in 2025, typically Nov–Dec, reopening April/May. Arrive 3 Oct 2027: open, and this is the larch-gold week at Washington Pass. Note SR-20 opened LATER than usual in 2026 while repairs continued, so the spring date is not a fixed thing.",
+          "note_source": "WSDOT pass page; WSDOT 2025 closure release; WSDOT blog Apr 2026"
+        },
+        {
+          "name": "Goat Creek Road (FR 52) to the Goat Peak trailhead",
+          "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/goat-peak-trailhead",
+          "tier": "official",
+          "note": "From Winthrop, 9 mi west on SR-20, right before Weeman Bridge onto Goat Creek Road (CR 1163), 3.3 mi, right onto FR 52 for 2.7 mi, then left onto FR 5225. Goat Peak carries a 1923 fire lookout at 7,000 ft, the most visible landmark in the Methow. The walk from the trailhead is 3.6 mi / 1,446 ft, rated hard.",
+          "season": "Okanogan-Wenatchee forest roads are seasonally gated and snow-closed in winter. Arrive 3 Oct 2027 — normally still open, but this is the tail of the season at that elevation. Check the forest's current conditions page before driving up.",
+          "note_source": "USFS Goat Peak Trailhead and Trail #457 pages; WTA",
+          "other_links": [
+            {
+              "label": "Forest current conditions",
+              "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/conditions",
+              "tier": "official"
+            },
+            {
+              "label": "WTA — Goat Peak Lookout",
+              "url": "https://www.wta.org/go-hiking/hikes/goat-peak",
+              "tier": "community"
+            }
+          ]
+        },
+        {
+          "name": "Harts Pass and Slate Peak",
+          "was_name": "Harts Pass and Slate Peak (truck only)",
+          "url": "https://www.fs.usda.gov/alerts/okawen/alerts-notices/?aid=75109",
+          "tier": "official",
+          "note": "Highest road you can drive in Washington. Narrow shelf road with no guardrail; trailers prohibited and it is a truck-only day in any year. Removed '(truck only)' from the name because every drive on this trip is the truck — that belongs in the note, not the title.",
+          "season": "THE BIG ONE ON THIS LEG. Two separate problems. (1) Annual: FR 5400 closes for winter, usually 1 Dec. (2) Standing: as of 26 Mar 2026 the road was closed INDEFINITELY from FR 5400-015 (Monument Creek TH) to Harts Pass, from December 2025 rain-and-flood damage plus saturated soils. That closure takes out six trailheads — Robinson, Rattlesnake, Harts Pass, Brown Bear, Slate Pass and Slate Peak — and four campgrounds (Ballard, Riverbend, Harts Pass, Meadows). The Forest Service intended to contract repairs and reopen 'in early summer' 2026, with no date given. Arrive 3 Oct 2027: date is fine, ACCESS IS NOT CONFIRMED. Methow Valley District, 509-996-4000.",
+          "note_source": "USFS Okanogan-Wenatchee alerts; Methow Valley News, 26 Mar 2026, 'Harts Pass, other Forest Service roads closed indefinitely'",
+          "other_links": [
+            {
+              "label": "Methow Valley News — closure report",
+              "url": "https://methowvalleynews.com/2026/03/26/harts-pass-other-forest-service-roads-closed-indefinitely/",
+              "tier": "community"
+            }
+          ]
+        },
+        {
+          "name": "Methow Valley to Twisp and Sun Mountain",
+          "url": "https://www.scenicwa.com/story/a-visit-to-sun-mountain-lodge",
+          "tier": "community",
+          "note": "Not a designated byway and there is no official route page — it is the valley run south from Winthrop to Twisp plus the climb up to Sun Mountain Lodge, which sits about 1,000 ft above the valley floor and holds the best Cascade view in the Methow. Linked to the state tourism site because nothing more official exists for it; the designated routes in this valley are SR-20 and the wider Cascade Loop, both listed separately.",
+          "season": "Valley roads, open year-round. Arrive 3 Oct 2027 — larch and cottonwood colour.",
+          "note_source": "scenicwa.com (State of Washington Tourism); Sun Mountain Lodge"
         }
       ]
     },
@@ -5572,6 +6274,17 @@
           "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
           "tier": "official"
         }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "La Push Road (SR-110) to Third Beach and La Push",
+          "was_name": "La Push Road (SR-110) out to Third Beach/La Push",
+          "url": "https://www.nps.gov/olym/planyourvisit/visiting-mora-and-rialto.htm",
+          "tier": "official",
+          "note": "SR-110 leaves US-101 1.5 mi north of Forks and runs 14 mi west along the Quileute and Sol Duc rivers to La Push. Third Beach parking is on the left at about mile 13; the beach itself is a 1.5 mi walk in through hemlock and spruce to Strawberry Bay. Mora Road branches off it and runs about 5 mi to Rialto Beach.",
+          "season": "No seasonal gate — but VERIFY THE MORA BRANCH. In 2026 the park closed Mora Road past Mora Campground to the Rialto Beach parking area from mid-July for storm-damage repairs, expected back 15 Oct 2026. That is a 2026 project, not a 2027 one, and should be clear well before the 25 Oct 2027 arrival; confirm rather than assume. Expect rain in any month — this coast takes over 100 in a year.",
+          "note_source": "NPS Visiting Mora and Rialto Beach; 2026 Mora Road closure reporting"
+        }
       ]
     },
     "long-beach": {
@@ -5826,16 +6539,36 @@
           "note_source": "Permit required on spring weekends for the wildflower season; the stop is late October, outside that."
         },
         {
-          "name": "Catherine Creek",
+          "name": "Catherine Creek Arch Loop",
+          "was_name": "Catherine Creek",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/washington/catherine-creek-arch-loop",
+            "match": "exact",
+            "tier": "indexed"
           },
+          "distance": "1.9 mi loop",
+          "elevation_gain": "383 ft",
+          "time": "~57 min",
+          "difficulty": "Easy",
+          "reviews": "4.6 (1,324)",
           "uses": [
             "hike"
           ],
-          "was": "Catherine Creek — no url",
-          "note_source": "The arch and oak-savanna bench. No direct listing url surfaced; the WTA trailhead coordinate is in the shot-list correction for this stop."
+          "season": "OPEN, BUT OFF ITS BEST. Low-elevation Gorge oak grassland, walkable year-round. The reason people come is the wildflowers, which peak mid-April through May. Arrive 6 Nov 2027 — bare oak, brown grass, big Gorge views, no flowers.",
+          "note": "'Catherine Creek' as written was the recreation area, not a route — it holds several trails. This is the signature one, past a waterfall and up through rocks and oaks to the natural arch. No fee or permit. Dogs allowed on leash; BIKES ARE NOT. Heavy poison oak — long trousers. The paved 1 mi Universal Access Loop is the flat alternative on the other side of Old Highway 8.",
+          "note_source": "USFS Columbia River Gorge NSA Catherine Creek page; Friends of the Columbia Gorge; AllTrails indexed snippet",
+          "other_links": [
+            {
+              "label": "USFS — Catherine Creek Recreation Area",
+              "url": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-recreation-area",
+              "tier": "official"
+            },
+            {
+              "label": "Catherine Creek Universal Access Trail (1 mi paved, 236 reviews)",
+              "url": "https://www.alltrails.com/trail/us/washington/catherine-creek-universal-access-trail",
+              "tier": "indexed"
+            }
+          ]
         }
       ],
       "authority": "USDA Forest Service — Columbia River Gorge National Scenic Area",
@@ -5852,6 +6585,12 @@
           "label": "Catherine Creek Trailhead — Columbia River Gorge NSA (USFS)",
           "url": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-trailhead",
           "tier": "official"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Catherine Creek",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ]
     },
@@ -5952,6 +6691,12 @@
           "url": "https://www.fs.usda.gov/r06/mthood/safety-ethics",
           "tier": "official"
         }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Mirror Lake Trail #664",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
+        }
       ]
     },
     "bend": {
@@ -6043,28 +6788,68 @@
       },
       "trails": [
         {
-          "name": "Smith Rock State Park",
+          "name": "Misery Ridge and River Trail",
+          "was_name": "Smith Rock State Park",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/oregon/misery-ridge-and-river-trail--2",
+            "match": "exact",
+            "tier": "indexed"
           },
+          "distance": "3.6 mi loop",
+          "elevation_gain": "915 ft",
+          "time": "2–2.5 hr",
+          "difficulty": "Hard",
+          "reviews": "(10,693) — star rating not published in the indexed snippet",
+          "needs": "star rating",
           "uses": [
             "hike"
           ],
-          "was": "Smith Rock State Park — a park, not a trail",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "season": "Open year-round. Arrive 15 Nov 2027 — cold and clear is the good version; the Misery Trail is loose gravel and steps with no shade, and ice on the steps is the November hazard.",
+          "note": "'Smith Rock State Park' as written was a park, not a route — replaced by the park's signature loop, up Misery Ridge and back along the Crooked River. Terrebonne, 26 mi north of Bend. Day-use parking 2026: $10 Oregon resident, $12 non-resident. The shorter, flat River Trail alone is the easy alternative if the ridge is out.",
+          "note_source": "smithrock.com; Oregon State Parks fee schedule as reported; AllTrails indexed snippets",
+          "other_links": [
+            {
+              "label": "Misery Ridge Trail alone (2.5 mi, 1,154 ft, 1,653 reviews)",
+              "url": "https://www.alltrails.com/trail/us/oregon/misery-ridge-trail",
+              "tier": "indexed"
+            },
+            {
+              "label": "SmithRock.com trail page",
+              "url": "https://www.smithrock.com/trails/misery-ridge-trail",
+              "tier": "community"
+            }
+          ]
         },
         {
-          "name": "Todd Lake",
+          "name": "Todd Lake Loop",
+          "was_name": "Todd Lake",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/oregon/todd-lake-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
+          "distance": "1.7–1.8 mi loop",
+          "time": "~35 min",
+          "difficulty": "Easy",
+          "reviews": "4.7 (1,096)",
           "uses": [
             "hike"
           ],
-          "was": "Todd Lake — no url",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "season": "SEASONAL CONFLICT — LIKELY GATED SHUT. Todd Lake sits about 2.5 mi west of Mount Bachelor, INSIDE the winter closure of the Cascade Lakes Highway. Deschutes County gates the highway between Dutchman Flat and Deschutes Bridge every winter, typically between late October and mid-November — recent published dates are 12, 15, 19 and 21 November. Arrive 15 Nov 2027 sits exactly on that range. The highway does not reopen until mid-May or early June. Assume no vehicle access and check Deschutes County road closures (541-388-6581) before planning a day around it.",
+          "note": "Easy level loop around an alpine lake with Broken Top and Mount Bachelor above it. If the gate is shut it becomes a snowshoe from the Mt Bachelor Nordic Center.",
+          "note_source": "Deschutes County road closure notices; USFS Deschutes Todd Lake Day Use Area; AllTrails indexed snippet",
+          "other_links": [
+            {
+              "label": "USFS — Todd Lake Day Use Area/Trailhead",
+              "url": "https://www.fs.usda.gov/r06/deschutes/recreation/todd-lake-day-use-areatrailhead",
+              "tier": "official"
+            },
+            {
+              "label": "Deschutes County — seasonal closures",
+              "url": "https://www.deschutescounty.gov/road/page/road-department-plans-seasonal-closures-cascade-lakes-highway-and-paulina-lake-road",
+              "tier": "official"
+            }
+          ]
         }
       ],
       "authority": "Oregon State Parks (Smith Rock SP) and USDA Forest Service — Deschutes National Forest (Todd Lake)",
@@ -6086,6 +6871,16 @@
           "label": "Dog Restrictions — Deschutes NF (USFS)",
           "url": "https://www.fs.usda.gov/r06/deschutes/safety-ethics/dog-restrictions",
           "tier": "official"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Smith Rock State Park",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
+        },
+        {
+          "entry": "Todd Lake",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ]
     },
@@ -6147,16 +6942,40 @@
       },
       "trails": [
         {
-          "name": "Cobble Beach / Quarry Cove tide pools",
+          "name": "Yaquina Head Lighthouse and Cobble Beach Loop",
+          "was_name": "Cobble Beach / Quarry Cove tide pools",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/oregon/yaquina-head-lighthouse-and-cobble-beach-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
+          "distance": "0.3 mi loop",
+          "time": "~6 min",
+          "difficulty": "Easy",
+          "reviews": "4.6 (442)",
           "uses": [
             "hike"
           ],
-          "was": "Cobble Beach / Quarry Cove Tide Pools — no url",
-          "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+          "season": "TIDE-DEPENDENT, not seasonal. The tidepools are only there at low tide — check the tide chart against the day. Arrive 21 Nov 2027. Harbor seals haul out on the near-shore rocks off both Cobble Beach and Quarry Cove, best seen when the tide is out.",
+          "note": "BLM's Yaquina Head Outstanding Natural Area, 5 mi north of Newport; entrance fee. A long stairway drops from the observation deck to a beach of smooth black basalt cobbles laid down by Columbia River lava 14 million years ago. DOGS: permitted on the trails and walkways EXCEPT near the lighthouse and IN THE COBBLE BEACH TIDE POOLS. The other tidepool access named in the original entry is the paved, wheelchair-accessible Quarry Cove Trail (1.2 mi, 206 ft — the longest trail in the ONA); no individual AllTrails URL for it was returned by search, so none is recorded.",
+          "note_source": "BLM Yaquina Head ONA pages; AllTrails indexed snippet",
+          "other_links": [
+            {
+              "label": "BLM — Yaquina Head ONA",
+              "url": "https://www.blm.gov/visit/yaquina-head-outstanding-natural-area",
+              "tier": "official"
+            },
+            {
+              "label": "BLM — Yaquina Head learn and explore",
+              "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/yaquina-head-ona/explore",
+              "tier": "official"
+            },
+            {
+              "label": "AllTrails park page",
+              "url": "https://www.alltrails.com/parks/us/oregon/yaquina-head-outstanding-natural-area",
+              "tier": "indexed"
+            }
+          ]
         }
       ],
       "authority": "Bureau of Land Management — Yaquina Head Outstanding Natural Area",
@@ -6176,6 +6995,23 @@
           "label": "Yaquina Head Outstanding Natural Area (BLM)",
           "url": "https://www.blm.gov/visit/yaquina-head-outstanding-natural-area",
           "tier": "official"
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Otter Crest Loop",
+          "was_name": "Otter Crest Loop, a short paved detour off Hwy 101 near Depoe Bay with pullouts at Cape Foulweather and Devil's Punchbowl — check current status, as landslide repairs have periodically restricted the loop.",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=162",
+          "tier": "official",
+          "note": "Short paved detour off US-101 between Depoe Bay and Otter Rock. Otter Crest State Scenic Viewpoint sits 500 ft above the Pacific on Cape Foulweather, named by Cook in 1778, with the 1937 Cape Foulweather gift shop (on the National Register) and a view down to Devil's Punchbowl. Whale watching, and brown pelicans and eagles working the updrafts.",
+          "season": "No seasonal gate, but the road's history is the caveat the original entry was pointing at: two landslides in the 1990s destroyed part of the roadway — one dropped a van down the slope — and the stretch was foot-traffic-only behind a concrete barrier for years before reopening in the early 2000s as a ONE-WAY lane with a bike lane. Arrive 21 Nov 2027; confirm current status, storm season is exactly when this road has trouble.",
+          "note_source": "Oregon Parks and Recreation Department park profile; beachconnection.net Otter Crest Loop history"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Cobble Beach / Quarry Cove tide pools",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ]
     },
@@ -6407,6 +7243,16 @@
           "label": "Pets — Redwood National and State Parks (NPS)",
           "url": "https://www.nps.gov/redw/planyourvisit/pets.htm",
           "tier": "official"
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Howland Hill Road through Jedediah Smith Redwoods",
+          "url": "https://www.nps.gov/thingstodo/drivehowlandhillrd.htm",
+          "tier": "official",
+          "note": "Hard-packed gravel former stage road, roughly 6 mi of old-growth redwood, about an hour end to end, with the Stout Grove trailhead on it. RVs, trucks and vehicles with trailers are TOO WIDE — the NPS says so outright, and the wider park restricts motorhomes to 25 ft and trailers to 21 ft. This is the towed pickup, unhitched, or it is nothing.",
+          "season": "No gate, but the surface varies with season and with how recently it was graded; it can be soft or rutted after rain, which on this coast is most of the winter. Arrive 3 Dec 2027 — expect wet, and check with the park.",
+          "note_source": "NPS Redwood 'Drive Howland Hill Road'"
         }
       ]
     },
@@ -6778,6 +7624,10 @@
         {
           "entry": "Fire Wave and White Domes trails (Valley of Fire).",
           "problem": "Duplicate — both are separate entries now."
+        },
+        {
+          "entry": "Fire Wave Trail",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ],
       "authority": "Bureau of Land Management (Red Rock Canyon NCA) and Nevada State Parks (Valley of Fire SP)",
@@ -6848,7 +7698,25 @@
             }
           ]
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "S-22 Borrego–Salton Seaway (Erosion Road), with the Font's Point spur",
+          "was_name": "Erosion Road / Font's Point wash",
+          "url": "https://www.visitcalifornia.com/experience/borrego-badlands-fonts-point/",
+          "tier": "community",
+          "note": "TWO DIFFERENT ROADS, and the original entry ran them together. S-22 is the PAVED highway east out of Borrego Springs, nicknamed Erosion Road for the weathered country it crosses — a 21-mile driving tour through the Borrego Badlands with viewpoints, climbing into the Santa Rosa foothills at the east end. Font's Point is the famous overlook, and it is reached by a separate 4-MILE SANDY WASH off S-22: soft, rutted, high-clearance 4WD only, and a standard vehicle will not make it. Pavement in the coach's world, sand in the truck's.",
+          "season": "Desert season is roughly October to April; the badlands are unusable in summer heat. Arrive 8 Jan 2028 — ideal. The wash is the hazard, not the calendar: it softens further after rain and this is flash-flood country.",
+          "note_source": "Visit California Borrego Badlands/Font's Point; DesertUSA Anza-Borrego badlands region; americansouthwest.net",
+          "other_links": [
+            {
+              "label": "Fonts Point (AllTrails, 616 reviews)",
+              "url": "https://www.alltrails.com/trail/us/california/fonts-point",
+              "tier": "indexed"
+            }
+          ]
+        }
+      ]
     },
     "imperial-dam": {
       "activities": {
@@ -6906,6 +7774,31 @@
           "entry": "Tumco (Hedges) ghost town, off Ogilby Road",
           "problem": "A destination, not a route. Tumco is reached by a short dirt track off Ogilby Road onto BLM Route 668, roughly 8 miles north of the I-8 exit — a few minutes of easy driving, not a 4x4 route. It should move to the points-of-interest box, where the mine history (Hedges, peak ~3,200 residents 1893–1899, renamed Tumco in 1910, abandoned 1911) and the BLM interpretive signage at the parking area are the content. Keeping it in offroad implies a drive that is not there."
         }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Imperial Dam and Laguna Dam river road",
+          "url": "https://www.blm.gov/visit/imperial-dam-long-term-visitor-area",
+          "tier": "official",
+          "note": "The BLM river country north of Yuma on the California side — Imperial Dam, Senator Wash reservoir and dam, Squaw Lake, and the run down to Laguna Dam with Mittry Lake Wildlife Area between the two dams. Access from I-8 via S-24 north about 22 mi, then Senator Wash Road. There is a check-in station at Senator Wash.",
+          "season": "LTVA permit season runs 15 SEPTEMBER to 15 APRIL — that is when this area exists as a destination and when the winter-visitor population is here. Arrive 14 Jan 2028 — peak of the season, so expect the LTVA busy. Permits: $180 long-term (the full seven months) or $40 for any 14 consecutive days.",
+          "note_source": "BLM Imperial Dam LTVA page; Visit Yuma river access map",
+          "other_links": [
+            {
+              "label": "Yuma river access points and map",
+              "url": "https://www.visityuma.com/things-to-do/colorado-river/access-points-and-map/",
+              "tier": "official"
+            }
+          ]
+        },
+        {
+          "name": "Ogilby Road and the Cargo Muchacho mining district",
+          "url": "https://www.blm.gov/visit/tumco-historic-mine",
+          "tier": "official",
+          "note": "Exit I-8 about 15 mi west of Yuma at Ogilby Road and run north roughly 8 mi; Tumco is signed by BLM. Gold town founded as Hedges, at least 500 people in the 1890s, abandoned 1905, renamed Tumco in 1910 after The United Mines Company. Now BLM land in the Cargo Muchacho Mountains with interpretive signage and a designated parking area. No entry fee. THE TOWNSITE IS CLOSED TO DRIVING — foot travel only past the parking area.",
+          "season": "No gate; year-round, but this is open desert with no shade and summer is genuinely dangerous. Arrive 14 Jan 2028 — the right season for it.",
+          "note_source": "BLM Tumco Historic Mine page; Imperial Valley Press feature; mindat district records"
+        }
       ]
     },
     "yuma-az": {
@@ -6932,7 +7825,17 @@
           "auto": true,
           "auto_km": 8
         }
-      }
+      },
+      "scenicDrives_patch": [
+        {
+          "name": "US-95 north toward Castle Dome and Kofa",
+          "url": "https://www.fws.gov/refuge/kofa/visit-us",
+          "tier": "official",
+          "note": "US-95 runs north from Yuma between the Yuma Desert and the Kofa refuge, which begins about 40 mi out on the east side of the highway and covers 665,000 acres. Six entrance roads lead east off the highway — Crystal Hill, Palm Canyon, King Valley, Castle Dome among them; the southernmost, about 40 mi north of Yuma, goes to the southern Castle Dome Mountains. Palm Canyon Road is at MILEPOST 85, then 7 mi of dirt east to the trailhead — Arizona's only native palms, fewer than a hundred left, plus desert bighorn. The refuge was established in 1939 for the bighorn.",
+          "season": "No gate. Best season is the cool half of the year; the entrance roads are unmaintained dirt and washboard, and washouts after storms are the constraint. Arrive 18 Jan 2028 — ideal.",
+          "note_source": "USFWS Kofa NWR visit page; Arizona Highways; Wilderness.net Kofa Wilderness"
+        }
+      ]
     },
     "kofa-nwr": {
       "activities": {
@@ -7075,6 +7978,15 @@
           "label": "Hiking and Camping with Dogs — Coronado NF (USFS)",
           "url": "https://www.fs.usda.gov/r03/coronado/about-area/faqs/hiking-and-camping-dogs",
           "tier": "official"
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Sabino Canyon Road",
+          "problem": "Not a drive — SABINO CANYON HAS BEEN CLOSED TO PRIVATE VEHICLES SINCE 1978. The 7.4 mi road up the canyon is served by the Sabino Canyon Crawler shuttle, and is otherwise walked, ridden on horseback or cycled. Road cycling on it is further restricted to before 9am and after 5pm because of the trams. It cannot be a truck day-trip; it is a shuttle ride, a walk or an early-morning bike. Move it out of scenicDrives — as a bike outing it is a strong one: paved, no traffic, stroller- and wheelchair-usable.",
+          "tier": "official",
+          "season": "Open year-round. Arrive 4 Feb 2028 — the good season in the Catalinas.",
+          "note_source": "USFS Coronado Sabino Canyon Recreation Area; americansouthwest.net; RPC shuttle operator"
         }
       ]
     },
@@ -7637,6 +8549,12 @@
           "label": "Pets — Canyonlands NP (NPS)",
           "url": "https://www.nps.gov/cany/planyourvisit/pets.htm",
           "tier": "official"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Double Arch — Windows Section",
+          "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ]
     },
@@ -10666,6 +11584,40 @@
           "difficulty": "not published as a grade. Graded dirt, no low range needed in dry conditions; the spurs off it get rougher",
           "season": "NO CONFLICT. Open year-round at about 4,500 ft. The stop arrives 27 Dec 2027 — snow is uncommon this low, but a winter storm turns the graded dirt greasy and the spurs soft, so pick the day.",
           "note": "Renamed from a vague plural to the one named route. BLM restricts vehicle and mountain-bike use to existing roads and trails — no cross-country driving in the Scenic Area, and the boulder fields are exactly where people are tempted. A free permit is needed to camp, not to drive; get it online, at the Eastern Sierra Interagency Visitor Center on US-395, or at the kiosks on Movie Road itself. BLM publishes a downloadable Movie Road brochure identifying the film locations, which is the point of the drive."
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Movie Road, Alabama Hills",
+          "url": "https://www.blm.gov/visit/alabama-hills",
+          "tier": "official",
+          "note": "From the centre of Lone Pine, 2.7 mi west on Whitney Portal Road, then right onto Movie Road where the pavement ends. Graded gravel, about 6 mi through the rock maze past the western film locations before rejoining US-395; sources also describe a fuller 12 mi loop. BLM publishes a downloadable Movie Road brochure identifying the film sites. Congress designated the Alabama Hills a National Scenic Area in March 2019. Camping at designated sites needs the free Alabama Hills permit.",
+          "season": "No gate; usable year-round. Arrive 27 Dec 2027 — cold, low sun, which is the good light here. Graded gravel can wash after storms.",
+          "note_source": "BLM Alabama Hills pages; BLM Alabama Hills National Scenic Area program page",
+          "other_links": [
+            {
+              "label": "BLM — Alabama Hills National Scenic Area",
+              "url": "https://www.blm.gov/programs/national-conservation-lands/california/alabama-hills-national-scenic-area",
+              "tier": "official"
+            }
+          ]
+        },
+        {
+          "name": "US-395 north through the Owens Valley",
+          "was_name": "US-395 north toward the Owens Valley",
+          "url": "https://bishopvisitor.com/itinerary/accessible-eastern-sierra-scenic-drives/",
+          "tier": "community",
+          "note": "The run up the middle of the Owens Valley with the Sierra crest on the left and the Inyo and White Mountains on the right. Caltrans has officially designated US-395 a state scenic highway from Fort Independence to Fort Springs Road in Inyo County, and again from the Inyo–Mono county line to south of Walker — the whole 200 mi is not uniformly designated. No single official byway page exists, so the Bishop visitor bureau's scenic-drives itinerary is the best available link.",
+          "season": "Open year-round as a primary route. Arrive 27 Dec 2027 — winter storms bring chain controls and closures on 395; check Caltrans before a long day north.",
+          "note_source": "Caltrans scenic-highway designation as reported on Wikipedia's US Route 395 in California; bishopvisitor.com"
+        }
+      ],
+      "not_a_trail": [
+        {
+          "entry": "Alabama Hills Movie Road",
+          "problem": "A graded gravel ROAD, not a trail — and a duplicate of the scenicDrives entry 'Movie Road, Alabama Hills' on this same stop. AllTrails does index it as 'Movie Road Trail' (251 reviews), but LINKS_STRATEGY §3 rejects roads from the trails box and §6 says to deduplicate across boxes before adding. Drop it here; the drive already carries the BLM link.",
+          "same_as": "Movie Road, Alabama Hills (scenicDrives)",
+          "url_if_wanted": "https://www.alltrails.com/trail/us/california/movie-road-trail"
         }
       ]
     },

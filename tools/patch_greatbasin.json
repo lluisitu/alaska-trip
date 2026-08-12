@@ -1,0 +1,294 @@
+{
+  "_note": "great-basin, arrives 21 Mar 2028 / departs 24 Mar 2028. Researched against the NPS winter-and-spring pages, BLM Bristlecone Field Office and Nevada Trail Finder. The governing fact for the whole stop: the Wheeler Peak Scenic Drive is gated to vehicles at Upper Lehman Creek Campground (mile 3, 7,750 ft) all winter and well into spring, and NPS states the Bristlecone Trailhead at the top 'opens in late May, around Memorial Day' after a typical winter. Baker Creek, Snake Creek and Strawberry Creek roads are all closed in winter as well. Every offroad and trail entry below is judged against 21-24 Mar specifically. The two trails already on the card are both above the gate. rig is 'truck' throughout: nothing here is ever driven in the coach.",
+  "stops": {
+    "great-basin": {
+      "offroad": [
+        {
+          "name": "Lexington Creek Road (Lexington Arch access)",
+          "url": "https://www.nps.gov/grba/planyourvisit/lexington-arch-trails.htm",
+          "difficulty": "NPS: \"4WD is recommended on this road, and high clearance is absolutely necessary.\"",
+          "season": "The one 4x4 road here that is not gated on 21 Mar. BLM manages it, and NPS notes the park \"may not close the road even if conditions are hazardous\" — so it stays driveable-in-principle year round, but late March is exactly when it is worst: NPS says \"washouts and running water are common\" in spring, and \"travel with caution after heavy rain\" because wet conditions can render it impassable.",
+          "note": "Leaves Utah SH-21 south of Garrison, signed near Pruess Lake, and runs almost entirely on gravel and dirt to a trailhead at 7,050 ft. NPS road conditions currently rate it severely washed out with parking required about a mile short of the trailhead — assume the last mile is walked. Carry vehicle recovery gear; NPS asks for it by name on this road. A burn has taken out most of the shade along the old roadbed. This is also the approach to the only trail in Great Basin that permits dogs.",
+          "rig": "truck",
+          "tier": "official",
+          "source": "https://www.nps.gov/grba/planyourvisit/lexington-arch-trails.htm and https://www.nps.gov/thingstodo/hike-to-lexington-arch.htm"
+        },
+        {
+          "name": "Sacramento Pass two-track and NF 453, BLM Sacramento Pass Recreation Area",
+          "url": "https://www.nvtrailfinder.com/trails/trail/sacramento-pass-recreation-area",
+          "distance": "15 mi network; the first 4.5 mi of the OHV route are passable in a full-size 4x4",
+          "difficulty": "Nevada Trail Finder: \"steep switchbacks and loose rock\"; \"the first 4.5 miles are passable in a Full size 4x4\", after which \"trail width grows limited\"",
+          "season": "Low end is the most likely thing to be driveable on 21 Mar of anything on this card apart from Lexington Creek Road — the trailhead sits on US-50 at Sacramento Pass, 7,154 ft, on a highway kept clear year round, reached by \"a well-maintained gravel road\" off the highway. But the two-track climbs south straight into the Snake Range and holds snow and mud into spring at those elevations; treat the upper switchbacks as unverified rather than open.",
+          "note": "15 miles west of the Utah line and about 15 miles from Baker on US-50 — the shortest offroad day of the stop. Two things to get right: BLM's three signed trail loops here (6.5 miles total) are CLOSED to motorized use, so the driving is on the designated two-track roads and NF 453 only; and OHV use is not permitted once you cross into the National Park boundary. There is free BLM camping and an equestrian trailhead at the pass. No agency publishes an elevation profile for the road itself.",
+          "rig": "truck",
+          "tier": "community",
+          "source": "https://www.nvtrailfinder.com/trails/trail/sacramento-pass-recreation-area — motorized detail; https://www.blm.gov/visit/sacramento-pass-recreation-area — managing agency, loop mileage and the closed-to-motorized rule; pass elevation 7,154 ft per AARoads and Pass Bagger"
+        },
+        {
+          "name": "Blue Mass Scenic Area approach, Kern Mountains",
+          "url": "https://www.blm.gov/visit/blue-mass-scenic-area",
+          "season": "Valley-floor dirt for most of its length, so it is a dry-weather road rather than a snow question. BLM puts the scenic area itself at 7,000 ft. In late March the approach is driveable when dry and impassable clay when it is not; nothing published gives a closure date because there is no gate.",
+          "note": "BLM: \"Scenic wonderland of streams and springs, old cabins, granite cliffs and pinnacles and lush vegetation\" — spires and rounded outcrops of bluish-grey granite in the Kern Mountains near the Utah line, between Mt Moriah and the Deep Creek Mountains. This is the long day of the stop, not a half-day: one published route runs 18 miles northwest from Baker on US 6-50 to Eight Mile Ranch Road and then a long way north on dirt. No agency page gives a mileage, a road number or a vehicle requirement, so treat the routing as unverified and check it against the BLM Kern Mountains surface-management map before committing.",
+          "rig": "truck",
+          "tier": "official",
+          "source": "https://www.blm.gov/visit/blue-mass-scenic-area for the area and its 7,000 ft elevation; routing from newdescents.com/locations/blue-mass-scenic-area, which is not an agency source"
+        },
+        {
+          "name": "Baker Creek Road",
+          "url": "https://www.nps.gov/grba/planyourvisit/conditions.htm",
+          "difficulty": "Gravel, no published clearance requirement",
+          "season": "Gated somewhere below the top from first snow through Mar; NPS says park roads generally open ~May, around Memorial Day, and that this one specifically \"can close intermittently in the winter and spring\". Where the gate sits on any given day in late March is a phone call, not a lookup — the NPS spring page tells visitors to \"Hike past the closure on Baker Creek Road to the trails beyond\".",
+          "note": "Leaves NV-488 near the Lehman Caves Visitor Center and climbs to the Baker Creek Trailhead at 8,020 ft at its end. This is the access for Pole Canyon, Grey Cliffs and Timber Creek, so whether it is open decides three trails on this card. NPS lists it as gravel and closed in winter. Even when the gate is up, the Pole Canyon trailhead can need \"a short snowshoe from the Baker Creek pit toilet\".",
+          "rig": "truck",
+          "tier": "official",
+          "source": "https://www.nps.gov/grba/planyourvisit/conditions.htm, https://www.nps.gov/grba/planyourvisit/visiting-in-spring.htm, https://www.nps.gov/thingstodo/hike-the-timber-creek-trail.htm"
+        },
+        {
+          "name": "Snake Creek Road",
+          "url": "https://www.nps.gov/grba/planyourvisit/conditions.htm",
+          "difficulty": "Dirt, no published clearance requirement",
+          "season": "Gated at the park boundary Nov through Mar; park-wide, NPS says most roads open ~May, around Memorial Day, and this one reopens earlier \"when conditions allow in the spring\" with no date ever published. Assume shut on 21 Mar and treat an open gate as a bonus.",
+          "note": "The park's south-side dirt road, running west from the Snake Valley floor into the range. NPS posts it and Strawberry Creek Road together each autumn: \"Snake Creek Road and Strawberry Creek Road are now closed for the winter season at the park boundary. They will reopen when conditions allow in the spring.\" No mileage or elevation profile is published by the park.",
+          "rig": "truck",
+          "tier": "official",
+          "source": "https://www.nps.gov/grba/planyourvisit/conditions.htm; closure wording from the park's own seasonal road-closure notice"
+        },
+        {
+          "name": "Strawberry Creek Road",
+          "url": "https://www.nps.gov/grba/planyourvisit/conditions.htm",
+          "difficulty": "Dirt, no published clearance requirement",
+          "season": "Gated at the park boundary Nov through Mar; park-wide, NPS says most roads open ~May, around Memorial Day, and this one reopens \"when conditions allow in the spring\" with no date published. Assume shut on 21 Mar.",
+          "note": "North-side dirt road into the Strawberry Creek drainage, and the western trailhead for the Osceola Ditch trail — which is why its closure matters twice on this card. Closed in the same seasonal notice as Snake Creek Road. No published mileage or elevation.",
+          "rig": "truck",
+          "tier": "official",
+          "source": "https://www.nps.gov/grba/planyourvisit/conditions.htm"
+        },
+        {
+          "name": "Osceola townsite and mining district road",
+          "url": "https://unitedstatesghosttowns.com/plan-your-ghost-town-road-trip-osceola-nevada/",
+          "difficulty": "Unpaved; \"a high-clearance vehicle is wise\" — no agency has published a grade or a vehicle requirement",
+          "season": "Unverified for 21 Mar, and recorded as unverified deliberately. The road is not gated by anyone, but Osceola is a west-slope Snake Range mining district rather than valley floor, and no source found publishes the townsite elevation, the road number or a mileage — so there is no basis for calling it open or shut. Sun-exposed and south-facing for much of the climb, which argues for driveable in a normal late March, but that is inference, not a source.",
+          "note": "Nevada's biggest placer gold camp, worked from 1872 and largely gone: a cemetery, a crumbling brick storefront and the diggings. Reached by unpaved road off US-50 about three miles west of the park, in White Pine County. The Osceola Ditch — the 18-mile hand-dug 1889 flume that fed these mines from Lehman Creek — is the same story from the other end, and its trail is on the trails box. Carry water and a full tank; nothing out here is signed. Worth a call to the BLM Bristlecone Field Office for current road condition before driving it, since no page publishes one.",
+          "rig": "truck",
+          "tier": "community",
+          "source": "unitedstatesghosttowns.com and osceolagoldinc.com/history/osceola-ghost-town/ — no BLM or Forest Service page for this road was found"
+        },
+        {
+          "name": "Mount Washington Road",
+          "url": "https://www.dangerousroads.org/north-america/usa/7192-mount-washington.html",
+          "difficulty": "Totally unpaved; high clearance and 4WD essential; \"extremely rough\" with steep switchbacks that need three-point turns",
+          "season": "Shut, and not marginally. The summit is 11,459 ft — one of the highest roads in Nevada — and it is deep in snow in March; its eastern approach runs from Pole Canyon and Snake Creek, both of which are behind their own winter gates. Recorded because knowing it is out is worth as much as knowing it is in: this road opens ~Jul in most years, not spring.",
+          "note": "Built in 1948 up the west side of the South Snake Range to the Mount Washington bristlecone grove, a genuinely remote corner of the park with an experienced-driver-only reputation. It is the alternative bristlecone grove to the one behind the Wheeler Peak gate, and on this stop's dates neither is reachable. This is a July-or-later route on some future trip, not a March one.",
+          "rig": "truck",
+          "tier": "community",
+          "source": "dangerousroads.org 7192 for the 11,459 ft summit and the 4WD requirement; desertsurvivor.blogspot.com for the road-surface reports. No NPS page publishes a mileage or an opening date for it."
+        }
+      ],
+      "trails": [
+        {
+          "name": "Mountain View Nature Trail",
+          "distance": "0.3 mi loop",
+          "difficulty": "Easy",
+          "elevation_gain": "80 ft",
+          "reviews": "423 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "Open on 21-24 Mar — it starts at the Rhodes Cabin beside the Lehman Caves Visitor Center at 6,825 ft, below every closure in the park, and the visitor center is open year round.",
+          "needs": [
+            "time",
+            "star rating"
+          ],
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail. NPS ranger tip: \"a common route for those wanting to get on dirt who may not be able to go the distances of Great Basin's more involved trails.\" Interpretive; a trail guide is loaned at the front desk. Passes the original Lehman Cave entrance.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/mountain-view-nature-trail-3",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Mountain View Nature Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-mountain-view-nature-trail.htm"
+            }
+          ]
+        },
+        {
+          "name": "Lexington Arch Trail",
+          "distance": "5.6 mi",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,220 ft",
+          "time": "3-5 hr",
+          "reviews": "241 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": "allowed",
+          "season": "Reachable on 21-24 Mar — trailhead is 7,050 ft and BLM's Lexington Creek Road is not gated, unlike every park road. The catch is spring: NPS says washouts and running water are common, and the road is currently severely washed out with parking about a mile short of the trailhead, so budget an extra two miles on foot.",
+          "note_source": "THE ONE THAT MATTERS FOR THE DOG. NPS: \"Lexington Arch is the one and only trail within Great Basin National Park that permits pets\" — six-foot leash. A six-storey limestone arch, rare among western arches which are almost all sandstone. Reached from Utah SH-21 south of Garrison, not from Baker's side of the range. A burn took out much of the shade along the old roadbed. NPS asks visitors to carry vehicle recovery gear.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/lexington-arch",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike to Lexington Arch",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-to-lexington-arch.htm"
+            }
+          ]
+        },
+        {
+          "name": "Pole Canyon Trail",
+          "distance": "6.6 mi",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,600 ft",
+          "time": "3-6 hr",
+          "reviews": "244 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "NPS lists it as \"year round\", and at a 6,880 ft trailhead it is the lowest of the park's real hikes — but it hangs off Baker Creek Road, which closes intermittently through winter and spring, and NPS warns of \"a short snowshoe from the Baker Creek pit toilet to the trailhead\". The NPS spring page suggests hiking \"the first ½ mile of Pole Canyon\" when snow is deep, which is the realistic version on 21 Mar.",
+          "needs": [
+            "star rating"
+          ],
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail. Trailhead is off Baker Creek Road about 1.5 miles in, near Grey Cliffs Campground; the trail crosses Baker Creek then climbs under aspen and conifer with views out over Snake Valley. NPS also lists a Pole Canyon/Timber Creek loop of 7.5 miles round trip as a novice-to-intermediate ski and snowshoe route in winter.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/pole-canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike Pole Canyon",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-pole-canyon.htm"
+            }
+          ]
+        },
+        {
+          "name": "Lehman Creek Trail",
+          "distance": "6.4 mi",
+          "difficulty": "Hard",
+          "elevation_gain": "2,040 ft",
+          "time": "3-6 hr",
+          "reviews": "561 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "The only route on this card that starts exactly AT the closure rather than behind it — the trailhead is Upper Lehman Creek Campground, three miles up the Scenic Drive at 7,750 ft, which is where the gate sits. NPS: \"During winter, this is the best route to snowshoe or crosscountry ski to reach the upper trails when the Scenic Drive is closed.\" On 21-24 Mar expect snow within the first mile; NPS's own spring advice is to walk \"the first mile of the Lehman Creek Trail or until the snow deepens\". The full 8-mile round trip to the Wheeler Peak parking lot is graded Advanced to Expert in winter conditions.",
+          "needs": [
+            "star rating"
+          ],
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail. NPS grades the trail itself Moderate/Strenuous; AllTrails calls it challenging and gives an average of 4 h 1 min. In winter, park at the pullout across from the campground rather than at the summer trailhead. AllTrails gives 10.6 km against the NPS figure of 6.4 mi / 10.3 km; the NPS figure is the authority's.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/lehman-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Lehman Creek Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-lehman-creek.htm"
+            }
+          ]
+        },
+        {
+          "name": "Timber Creek Trail",
+          "distance": "5.1 mi",
+          "difficulty": "Strenuous",
+          "elevation_gain": "1,610 ft",
+          "time": "3-6 hr",
+          "reviews": "273 reviews",
+          "official_length": "5.1 mi",
+          "uses": [
+            "hike"
+          ],
+          "season": "Behind a closure on 21-24 Mar in most years. The trailhead is at the END of Baker Creek Road at 8,020 ft, and NPS says that road \"is gravel and can close intermittently in the winter and spring\" — so this is either a drive-up or a long walk-in depending on the day, and NPS tells spring visitors to bring snowshoes. NPS lists a Pole Canyon/Timber Creek loop, 7.5 mi round trip, as a novice-to-intermediate winter ski and snowshoe route from lower down.",
+          "needs": [
+            "star rating"
+          ],
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail. Steep climb through pine forest opening onto large meadows. The AllTrails listing is the longer user-assembled South Fork Baker Creek and Timber Creek loop, which contains the official NPS Timber Creek Trail rather than matching it — the 5.1 mi and 1,610 ft figures above are the NPS ones.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/south-fork-baker-creek-and-timber-creek-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Timber Creek Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-the-timber-creek-trail.htm"
+            }
+          ]
+        },
+        {
+          "name": "Osceola Ditch Trail to Mill Creek",
+          "distance": "~2 mi round trip to Mill Creek; 9.2 mi round trip for the full ditch trail",
+          "reviews": "280 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "CORRECTION TO THE OBVIOUS ASSUMPTION: this is not a drive-up spring hike. Both of its trailheads are behind winter closures. The main one is 4.5 miles up the Wheeler Peak Scenic Drive at 8,400 ft — a mile and a half ABOVE the Upper Lehman Creek gate at mile 3 — and the western one is on Strawberry Creek Road, which NPS closes at the park boundary for the winter. On 21-24 Mar it is a ski or snowshoe of roughly three miles each way from the gate before the trail even starts. Park roads generally open ~May, around Memorial Day.",
+          "needs": [
+            "difficulty",
+            "time",
+            "star rating"
+          ],
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail. NPS calls the full trail \"a relatively flat 9.2-mile round trip trail that leads to the Strawberry Creek area of the park\"; the short version goes \"roughly one mile in to Mill Creek and then return\". Mill Creek holds a remnant population of native Bonneville cutthroat trout. The ditch is the 1889 hand-dug 18-mile flume that carried Lehman Creek water to the Osceola mines — the same story as the Osceola townsite road in the offroad box, from the receiving end. Pieces of the original wooden flume survive along it. AllTrails also carries a separate shorter Osceola Ditch Interpretive Trail listing (242 reviews) covering the same ground; only one is listed here.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/osceola-ditch-trail-to-mill-creek",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Osceola Ditch",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/osceola-ditch.htm"
+            },
+            {
+              "label": "NPS — Osceola Ditch Trailhead",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/osceola-ditch-trailhead.htm"
+            }
+          ]
+        },
+        {
+          "name": "Alpine Lakes, Bristlecone, and Glacier Loop",
+          "reviews": "1,542",
+          "uses": [
+            "hike"
+          ],
+          "season": "Above the winter gate — the Scenic Drive is closed to vehicles at Upper Lehman Creek Dec through Mar, and NPS says the Bristlecone Trailhead at the top opens ~May, around Memorial Day, after a typical winter. On 21-24 Mar this is a 20-mile round-trip ski or snowshoe with 2,500 ft of gain just to reach the trailhead, and NPS states it is \"not recommended to hike these trails unless you have significant backcountry and winter experience and equipment\". North-facing slopes hold significant snowpack and ice well past the road opening.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/bristlecone-and-alpine-lakes-loop",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Bristlecone Pine and Glacier Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/nevada/bristlecone-pine-glacier-trail--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.9 mi",
+          "time": "2-2.5 hr",
+          "difficulty": "Hard",
+          "elevation_gain": "797 ft",
+          "reviews": "1,404",
+          "uses": [
+            "hike"
+          ],
+          "was": "Bristlecone Pine / Alpine Lakes Loop — two separate routes in one entry",
+          "season": "Above the winter gate — the Scenic Drive is closed to vehicles at Upper Lehman Creek Dec through Mar, and NPS says the Bristlecone Trailhead at the top opens ~May, around Memorial Day. On 21-24 Mar the drive itself is a 20-mile round-trip ski or snowshoe with 2,500 ft of gain before this trail's first step; NPS lists the Glacier/Bristlecone/Alpine Lake cirque area as a 5-mile Intermediate-to-Expert winter route on top of that, and says do not attempt it without significant backcountry winter experience and equipment.",
+          "note_source": "Dogs prohibited — Great Basin permits them only on Lexington Arch and the Baker-to-visitor-centre trail."
+        }
+      ]
+    }
+  }
+}

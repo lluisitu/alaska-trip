@@ -103,9 +103,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-264-7329** — 239; road emergency 613-264-7329.
-  <sub>offroad.0</sub>
 - **613-259-2398** — Manager of Public Works 613-259-2398 ext.
+  <sub>offroad.0</sub>
+- **613-264-7329** — 239; road emergency 613-264-7329.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

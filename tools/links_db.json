@@ -13,7 +13,7 @@
   },
   "_uses": "From the managing authority, not inferred. hike | bike | horse.",
   "_cruise": "true only where reviews support riding it at cruising pace on gravel tyres: rail-grade or packed surface, no walk sections, no puncture-hazard reports. Bike-legal is not sufficient. Technical singletrack is bike-legal nearly everywhere and is not what this flags.",
-  "_dogs": "Stop-level dog rule where the managing authority publishes one. This trip carries a dog for 405 nights; a stop where dogs are banned from every trail needs to say so on the card.",
+  "_dogs": "Dog rules per stop, each fetched from the managing authority and quoted. NOT generalised across authorities: the same agency gives opposite answers at neighbouring stops — Mesa Verde allows dogs on Wetherill Mesa and bans them on Chapin Mesa; Point Lobos will not let a dog stay in a parked car while Fort Ord, the other half of the same stop, has marked off-leash segments. 17 main-loop stops are deliberately still empty: the authority publishes no rule and inferring one would be the same error as a constructed URL.",
   "stops": {
     "caprock-canyons": {
       "authority": "Texas Parks & Wildlife Department",
@@ -938,7 +938,7 @@
       "activities_note": "Every highlight here carries the red no-dogs pill. NPS bans pets from ALL RMNP trails, tundra and meadows, so four of these five are things the dog cannot come on — the exception being Trail Ridge Road, which is a drive."
     },
     "flaming-gorge": {
-      "authority": "USDA Forest Service — Ashley National Forest",
+      "authority": "USDA Forest Service — Ashley National Forest (Flaming Gorge NRA)",
       "reclassify": [
         {
           "name": "Sheep Creek Loop Scenic Byway",
@@ -1071,7 +1071,17 @@
           "auto_km": 27
         }
       },
-      "activities_note": "Sheep Creek Geological Loop has no Wikipedia article, so it links to Daggett County's own scenic-drives page and the AllTrails listing rather than a guessed one."
+      "activities_note": "Sheep Creek Geological Loop has no Wikipedia article, so it links to Daggett County's own scenic-drives page and the AllTrails listing rather than a guessed one.",
+      "dogs_verdict": "allowed",
+      "dogs": "Ashley NF: \"Dogs and other pets must be leashed or under direct control at all times.\" Campgrounds are stricter — leashed at all times inside the campground.",
+      "dogs_exception": "The forest notes that some areas do close to pets outright; nothing on this card was found to be one of them, but check the trailhead sign.",
+      "official_links": [
+        {
+          "label": "Safety and Outdoor Ethics — Ashley NF (USFS)",
+          "url": "https://www.fs.usda.gov/r04/ashley/safety-ethics",
+          "tier": "official"
+        }
+      ]
     },
     "wind-river": {
       "authority": "USDA Forest Service — Bridger-Teton National Forest",
@@ -1485,11 +1495,16 @@
       }
     },
     "craters-of-the-moon": {
-      "authority": "National Park Service",
+      "authority": "National Park Service — Craters of the Moon NM & Preserve",
       "official_links": [
         {
           "label": "Craters of the Moon NM",
           "url": "https://www.nps.gov/crmo/index.htm",
+          "tier": "official"
+        },
+        {
+          "label": "Pets — Craters of the Moon NM (NPS)",
+          "url": "https://www.nps.gov/crmo/planyourvisit/pets.htm",
           "tier": "official"
         }
       ],
@@ -1512,7 +1527,10 @@
           "note_source": "Steep and short — 360-degree views over the Great Rift, the Snake River Plain and the Pioneers. Best-rated walking trail in the monument.",
           "was_name": "Inferno Cone Trail"
         }
-      ]
+      ],
+      "dogs_verdict": "prohibited",
+      "dogs": "NPS: \"Pets are not allowed on any trails or in the visitor center even if they are carried.\" Leashed pets \"may walk on the road, in the campground, and in parking areas\" (leash max six feet). Lava surfaces exceed 150F in summer.",
+      "dogs_exception": "Loop Road, campground and parking areas only — every named trail on this card is closed to the dog."
     },
     "yellowstone": {
       "authority": "National Park Service",
@@ -2050,7 +2068,7 @@
       }
     },
     "muncho-lake": {
-      "authority": "BC Parks",
+      "authority": "BC Parks — Muncho Lake Park",
       "trails": [
         {
           "name": "Stone's Sheep Trail",
@@ -2172,6 +2190,16 @@
         {
           "entry": "Loaded camper: maintained public roads only.",
           "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
+        }
+      ],
+      "dogs_verdict": "allowed",
+      "dogs": "BC Parks: \"Dogs and other domestic animals must be leashed and are not allowed in beach areas or park buildings. You must always be in control of your pets and dispose of their waste appropriately.\"",
+      "dogs_exception": "BC Parks adds that backcountry areas are not suitable for dogs because of bears — relevant to the alpine routes here, less so to the roadside lakeshore walks.",
+      "official_links": [
+        {
+          "label": "Muncho Lake Park (BC Parks)",
+          "url": "https://bcparks.ca/muncho-lake-park/",
+          "tier": "official"
         }
       ]
     },
@@ -2364,7 +2392,7 @@
       ]
     },
     "cooper-landing": {
-      "authority": "USDA Forest Service — Chugach National Forest",
+      "authority": "USDA Forest Service — Chugach National Forest (Russian River area forest order)",
       "trails": [
         {
           "name": "Russian River Falls",
@@ -2468,10 +2496,30 @@
             }
           ]
         }
-      }
+      },
+      "dogs_verdict": "partial",
+      "dogs": "Chugach NF, Russian River forest order: \"Keep all dogs on a 6-foot leash.\" The order exists because the Russian River confluence sees roughly 150,000 visitors a summer and has a very high potential for human-bear conflict.",
+      "trail_dogs": {
+        "Russian River Falls": true,
+        "Russian Lakes Trail": null,
+        "Resurrection Falls Trail": null
+      },
+      "dogs_exception": "The 6 ft leash in the Russian River area is a bear-safety order, not a courtesy — this is a salmon river with bears on it in season. No forest-wide pets page was found for the Chugach, so the other two entries are unresearched.",
+      "official_links": [
+        {
+          "label": "Russian River fishery forest order — Chugach NF (USFS)",
+          "url": "https://www.fs.usda.gov/r10/chugach/newsroom/releases/russian-river-fishery-opens-june-11-forest-order-place-protect",
+          "tier": "official"
+        },
+        {
+          "label": "Russian River Recreation Site — Chugach NF (USFS)",
+          "url": "https://www.fs.usda.gov/r10/chugach/recreation/russian-river",
+          "tier": "official"
+        }
+      ]
     },
     "seward": {
-      "authority": "National Park Service — Kenai Fjords",
+      "authority": "National Park Service — Kenai Fjords National Park (Exit Glacier area); other trails on this card are outside the park",
       "trails": [
         {
           "name": "Exit Glacier View and Overlook Loop",
@@ -2549,7 +2597,26 @@
             }
           ]
         }
-      }
+      },
+      "dogs_verdict": "partial",
+      "dogs": "Kenai Fjords: pets are not allowed \"on trails, such as the trails of the Exit Glacier area or the Harding Icefield Trail\", nor \"in the park campground or public-use cabins\" or \"in the coastal backcountry\". Pets are allowed only \"on the road to Exit Glacier (the Herman Leirer Road)\" and \"in the parking lot of the Exit Glacier Nature Center\", leashed or physically restrained at all times.",
+      "trail_dogs": {
+        "Exit Glacier Overlook Trail": false,
+        "Exit Glacier View Loop": false,
+        "Exit Glacier View and Overlook Loop": false,
+        "Harding Icefield Trail": false,
+        "Tonsina Trail": null,
+        "Two Lakes Trail": null,
+        "Ptarmigan Lake": null
+      },
+      "dogs_exception": "Every Exit Glacier trail is closed to the dog. Tonsina, Two Lakes and Ptarmigan Lake are not on NPS land and no rule was found for them — unresearched, not a green light.",
+      "official_links": [
+        {
+          "label": "Pets — Kenai Fjords NP (NPS)",
+          "url": "https://www.nps.gov/kefj/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ]
     },
     "homer": {
       "authority": "City of Homer / Kachemak Bay",
@@ -2756,7 +2823,22 @@
             }
           ]
         }
-      }
+      },
+      "dogs_verdict": "allowed",
+      "dogs": "Alaska State Parks: \"a person may not have a dog or other pet in a developed facility of a state park unless the dog or other pet is on a leash not exceeding nine feet in length, and is under control by a person at all times.\" In the backcountry unleashed dogs are permitted provided they remain within voice command. Owners must clean up after their animals.",
+      "dogs_exception": "Individual parks may post stricter rules than the statewide regulation, and the Denali State Park page publishes none — read the trailhead board. Note the Alaska leash limit is nine feet, not six.",
+      "official_links": [
+        {
+          "label": "Alaska State Parks FAQ (Alaska DNR)",
+          "url": "https://dnr.alaska.gov/parks/faq.htm",
+          "tier": "official"
+        },
+        {
+          "label": "Denali State Park (Alaska DNR)",
+          "url": "https://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm",
+          "tier": "official"
+        }
+      ]
     },
     "valdez": {
       "authority": "City of Valdez / Chugach NF",
@@ -2830,7 +2912,7 @@
       }
     },
     "mccarthy": {
-      "authority": "National Park Service — Wrangell-St. Elias",
+      "authority": "National Park Service — Wrangell-St. Elias National Park & Preserve",
       "trails": [
         {
           "name": "Root Glacier Trail",
@@ -2886,7 +2968,16 @@
             }
           ]
         }
-      }
+      },
+      "dogs_verdict": "allowed",
+      "dogs": "NPS: \"Dogs are allowed on trails within the park and in the backcountry.\" \"Pets must be physically restrained at all times, on a leash which does not exceed six feet in length.\"",
+      "official_links": [
+        {
+          "label": "Pets — Wrangell-St. Elias NP&P (NPS)",
+          "url": "https://www.nps.gov/wrst/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ]
     },
     "austin-depart": {
       "activities": {
@@ -3297,6 +3388,22 @@
           "difficulty": "not published as a grade. Active mining road — sharp switchbacks, steep drop-offs, no guardrails, loose gravel; high clearance and durable tyres recommended",
           "season": "TIGHT AGAINST THE STOP DATES. The road is not open year-round; the usable window is roughly mid-June to September, and snowbanks can persist even mid-summer. The stop arrives 19 Sep 2027, at the very tail of that window — an early storm can shut the upper road with no notice. Verify locally in Stewart before driving up rather than assuming.",
           "note": "The route crosses back into British Columbia above Hyder, so carry passports for the return through the Canadian border post at Stewart. Fish Creek Wildlife Observation Site is six miles up the same road, with brown and black bears on the salmon from late July into September — that part of the drive is short, paved-adjacent and worth doing even if the upper road is closed. Land-manager coverage is thin: this is a private mining road, so state tourism is the best source found and there is no BLM/USFS/BC Parks page for it."
+        }
+      ],
+      "authority": "BC Parks — Meziadin Lake Park; the Hyder-side trails are USDA Forest Service (Tongass NF) and the Town of Stewart",
+      "dogs_verdict": "partial",
+      "dogs": "Meziadin Lake Park: \"Pets/domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement.\"",
+      "trail_dogs": {
+        "Meziadin Lake Island Paddle": true,
+        "Ore Mountain via American Creek Trail": null,
+        "Rainey Creek Nature Walk": null
+      },
+      "dogs_exception": "No pets page was found for the Tongass NF around Hyder or for the Town of Stewart, so those two are unknown. Separately, the Fish Creek bear-viewing site is a place to leave the dog behind regardless of what the rule turns out to be.",
+      "official_links": [
+        {
+          "label": "Meziadin Lake Park (BC Parks)",
+          "url": "https://bcparks.ca/meziadin-lake-park/",
+          "tier": "official"
         }
       ]
     },
@@ -4305,6 +4412,17 @@
           "entry": "Loaded camper: paved and good maintained gravel only.",
           "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
         }
+      ],
+      "authority": "National Park Service — Yellowstone National Park",
+      "dogs_verdict": "prohibited",
+      "dogs": "NPS: \"Pets are not allowed on boardwalks, hiking trails, in the backcountry, or in thermal areas.\" Pets are allowed only \"in developed areas and must stay within 100 feet (30.5 meters) of roads, parking areas, and campgrounds\", in a car, crate, or on a leash no longer than six feet.",
+      "dogs_exception": "Every trail on this card is a geyser-basin boardwalk or a hiking trail — none of them is walkable with the dog. The 100 ft strip beside the roads and parking areas is all that is open.",
+      "official_links": [
+        {
+          "label": "Pets — Yellowstone NP (NPS)",
+          "url": "https://www.nps.gov/yell/planyourvisit/pets.htm",
+          "tier": "official"
+        }
       ]
     },
     "bozeman": {
@@ -4335,7 +4453,26 @@
           "auto": true,
           "auto_km": 111
         }
-      }
+      },
+      "authority": "BC Parks — Stone Mountain Park (Flower Springs, Summit Lake); the town trails are Northern Rockies Regional Municipality",
+      "dogs_verdict": "partial",
+      "dogs": "Stone Mountain Park: \"Pets must be leashed and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement. Backcountry areas are not suitable for dogs or any pets due to the potential for problems with bears and other wildlife.\"",
+      "trail_dogs": {
+        "Flower Springs Lake Trail": true,
+        "Summit Lake Lookout": true,
+        "Fort Nelson Demonstration Forest Full Loop": null,
+        "Tetsa River Trail": null,
+        "Fort Nelson Community Trail": null,
+        "Parker Lake (Ecological Reserve)": null
+      },
+      "dogs_exception": "Parker Lake is an ecological reserve, a different designation from a provincial park with its own access rules — treat the silence there as a real unknown and check before taking the dog.",
+      "official_links": [
+        {
+          "label": "Stone Mountain Park (BC Parks)",
+          "url": "https://bcparks.ca/stone-mountain-park/",
+          "tier": "official"
+        }
+      ]
     },
     "liard": {
       "activities": {
@@ -4377,7 +4514,18 @@
             }
           ]
         }
-      }
+      },
+      "authority": "BC Parks — Liard River Hot Springs Park",
+      "dogs_verdict": "allowed",
+      "dogs": "BC Parks: \"Pets and domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings.\" \"Backcountry areas are not suitable for dogs or other pets due to wildlife issues and the potential for problems with bears.\"",
+      "dogs_exception": "BC Parks does not say whether pets may go onto the boardwalk or the pool deck at the springs — the published rule names beach areas and buildings only. Worth asking at the gate rather than assuming; and the dog cannot be left in the coach here in summer heat.",
+      "official_links": [
+        {
+          "label": "Liard River Hot Springs Park (BC Parks)",
+          "url": "https://bcparks.ca/liard-river-hot-springs-park/",
+          "tier": "official"
+        }
+      ]
     },
     "watson-lake-1": {
       "activities": {
@@ -4575,6 +4723,28 @@
           "difficulty": "not published. Wide graded gravel with switchbacks — no low range needed, but it is exposed",
           "season": "Open in summer; the ski area itself runs mid-November to late March. The stop arrives 7 Jul 2027, which is the good season — alpine tundra, and late-summer berry picking a little later.",
           "note": "Split out of a combined entry. The other half, Eklutna Lake Road, is fully paved for all ten miles from the Glenn Highway to the lake — narrow and winding for the last seven, with no shoulders, but tarmac throughout. It is a scenic drive, not an offroad route, and should move to the scenic-drives box rather than stay here. Arctic Valley Road is the one that actually leaves the pavement."
+        }
+      ],
+      "authority": "Alaska State Parks — Chugach State Park (Rabbit Lake); the other three trails are Municipality of Anchorage",
+      "dogs_verdict": "partial",
+      "dogs": "Chugach State Park: \"Pets must be under control whether on or off leash. 11 AAC 12.130 (e).\" Statewide, Alaska State Parks require a leash \"not exceeding nine feet in length\" in developed facilities — campgrounds, picnic areas, trailheads, swim beaches and boat ramps — and voice control in the backcountry.",
+      "trail_dogs": {
+        "Rabbit Lake Trail": true,
+        "Tony Knowles Coastal Path": null,
+        "Margaret Eagan Sullivan to Earthquake Park": null,
+        "Elderberry Park to Westchester Lagoon": null
+      },
+      "dogs_exception": "The three city-trail entries are Municipality of Anchorage, not state park — no municipal rule was sourced, so they are unknown. Chugach State Park also warns that trapping is legal in parts of the park, which is a separate reason to keep the dog close.",
+      "official_links": [
+        {
+          "label": "Chugach State Park (Alaska DNR)",
+          "url": "https://dnr.alaska.gov/parks/aspunits/chugach/chugachindex.htm",
+          "tier": "official"
+        },
+        {
+          "label": "Alaska State Parks FAQ (Alaska DNR)",
+          "url": "https://dnr.alaska.gov/parks/faq.htm",
+          "tier": "official"
         }
       ]
     },
@@ -4901,6 +5071,17 @@
           "entry": "Mount Baldy hiking / scenic drive",
           "problem": "Two things, neither of them an offroad route. Mount Baldy Road (Baldy Ski Hill Road) is the all-weather public access road to Baldy Mountain Resort — partly paved, partly hard-packed dirt, ordinary two-wheel-drive in summer, reached via McKinney Road from Oliver or Canyon Road off Hwy 3 from Osoyoos. That is a scenic drive. The hiking at the resort is trails. Nothing here needs 4x4 and nothing here is a named 4x4 route."
         }
+      ],
+      "authority": "BC Parks — E.C. Manning Park",
+      "dogs_verdict": "allowed",
+      "dogs": "E.C. Manning Park: \"Dogs and other domestic animals must be leashed and are not allowed in most beach areas or park buildings.\" There is a designated pet area east of the restaurant at Manning Park Resort.",
+      "dogs_exception": "Frosty Mountain is a long subalpine day out in bear country — legal with the dog on a leash, but BC Parks' general advice against taking pets into the backcountry applies to the upper half of it.",
+      "official_links": [
+        {
+          "label": "E.C. Manning Park (BC Parks)",
+          "url": "https://bcparks.ca/ec-manning-park/",
+          "tier": "official"
+        }
       ]
     },
     "winthrop": {
@@ -5042,6 +5223,22 @@
           "season": "Governed entirely by FR 5400 below it — closed 1 Dec to 31 Mar by the same Forest Order, and snow-blocked well outside those dates most years. The stop arrives 3 Oct 2027; if Harts Pass is open the spur normally is too, but it goes higher and holds snow longer.",
           "note": "No listing found. No separate land-manager page exists for the spur — the Forest Service documents it only as part of the FR 5400 order, and the detailed write-ups are on hiking blogs. Recorded with no URL rather than pointing at something that is not about this road. Ask the Methow Valley Ranger District at 509-996-4003 for the gate position; the final stretch to the lookout is walk-only in some years."
         }
+      ],
+      "authority": "USDA Forest Service — Okanogan-Wenatchee National Forest",
+      "dogs_verdict": "allowed",
+      "dogs": "Okanogan-Wenatchee NF: dogs are allowed on most wilderness trails provided they are under control at all times, and the forest recommends leashing. The Blue Lake trailhead page states: \"Please keep pets on leash to protect wildlife and pets.\"",
+      "dogs_exception": "One hard closure on this forest, well away from Winthrop: \"Dogs and all pets are prohibited within the Enchantments Permit Area\", service animals excepted.",
+      "official_links": [
+        {
+          "label": "Blue Lake Trailhead — Okanogan-Wenatchee NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/blue-lake-trailhead",
+          "tier": "official"
+        },
+        {
+          "label": "Wilderness — Okanogan-Wenatchee NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/wilderness",
+          "tier": "official"
+        }
       ]
     },
     "packwood": {
@@ -5128,6 +5325,17 @@
           "entry": "Snowgrass Flats day hike, Goat Rocks Wilderness",
           "problem": "A hike, and one inside designated wilderness where motor vehicles are prohibited outright. Belongs in the trails box. The offroad-relevant part is the forest road to the Berry Patch trailhead, which is a separate entry if it is wanted."
         }
+      ],
+      "authority": "USDA Forest Service — Gifford Pinchot National Forest",
+      "dogs_verdict": "allowed",
+      "dogs": "Gifford Pinchot NF: dogs must be \"on a six-foot leash at all times when in developed recreation areas and on interpretive trails\". \"There are no leash requirements for most of the forest\", though the forest recommends a leash for safety, and \"Dogs are NOT allowed to chase game animals.\"",
+      "dogs_exception": "Individual trailheads can carry their own leash requirement — the forest posts it on the trailhead page, so check the specific trail before assuming the off-leash default.",
+      "official_links": [
+        {
+          "label": "Dogs in the National Forest — Gifford Pinchot NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/safety-ethics/dogs-national-forest",
+          "tier": "official"
+        }
       ]
     },
     "silver-lake": {
@@ -5205,6 +5413,31 @@
           "elevation_gain": "249 ft",
           "difficulty": "Easy",
           "reviews": "4.6 (1,683)"
+        }
+      ],
+      "authority": "USDA Forest Service — Gifford Pinchot National Forest / Mount St. Helens National Volcanic Monument",
+      "dogs_verdict": "partial",
+      "dogs": "Gifford Pinchot NF: dogs must be \"on a six-foot leash at all times when in developed recreation areas and on interpretive trails\"; \"There are no leash requirements for most of the forest\", and \"Dogs are NOT allowed to chase game animals.\" Pets are listed among the items prohibited inside Ape Cave, and the site advises \"Please leave your pets safely at home.\"",
+      "trail_dogs": {
+        "Hummocks Trail": true,
+        "Ape Cave Trail": false
+      },
+      "dogs_exception": "The lava tube is closed to pets and there is nowhere safe to leave a dog while you are underground — Ape Cave is a day out without the dog, or not at all. The monument order also bars pets at the Johnston Ridge Observatory building, amphitheatre, plaza deck and Eruption Trail; leashed dogs are exempted everywhere else in that area.",
+      "official_links": [
+        {
+          "label": "Dogs in the National Forest — Gifford Pinchot NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/safety-ethics/dogs-national-forest",
+          "tier": "official"
+        },
+        {
+          "label": "Ape Cave Interpretive Site (USFS)",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/ape-cave-interpretive-site",
+          "tier": "official"
+        },
+        {
+          "label": "Mount St. Helens Volcanic Monument Restrictions (USFS)",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/alerts/mount-st-helens-volcanic-monument-restrictions",
+          "tier": "official"
         }
       ]
     },
@@ -5322,6 +5555,22 @@
           ],
           "was": "Rialto Beach — no url",
           "note_source": "No formal trail — you walk the beach itself to Split Rock and Hole-in-the-Wall. Tide-dependent, and this is one of the six Olympic trails where DOGS ARE PERMITTED (Rialto to Ellen Creek)."
+        }
+      ],
+      "authority": "National Park Service — Olympic National Park",
+      "dogs_verdict": "partial",
+      "dogs": "Olympic names its pet-friendly routes and closes the rest: \"Pets are not permitted on any trails not listed above.\" The listed trails are Peabody Creek, Madison Falls, Spruce Railroad and July Creek Loop; the listed beaches are \"Rialto Beach parking lot to Ellen Creek (1/2 mile)\" and the Kalaloch beaches between the Hoh and Quinault Reservations. Leash no longer than 6 feet.",
+      "trail_dogs": {
+        "Hall of Mosses Trail": false,
+        "Sol Duc Falls Trail": false,
+        "Rialto Beach to Hole-in-the-Wall": false
+      },
+      "dogs_exception": "Rialto is half open: leashed pets may walk from the parking lot to Ellen Creek, about half a mile. Hole-in-the-Wall is a further mile north, past the closure. Hall of Mosses and Sol Duc Falls are closed outright. The nearest pet-legal trail is the Spruce Railroad on Lake Crescent.",
+      "official_links": [
+        {
+          "label": "Pets — Olympic NP (NPS)",
+          "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+          "tier": "official"
         }
       ]
     },
@@ -5466,7 +5715,23 @@
           "auto": true,
           "auto_km": 34
         }
-      }
+      },
+      "authority": "Oregon State Parks — Ecola State Park",
+      "dogs_verdict": "allowed",
+      "dogs": "Ecola State Park, asked whether pets are allowed: \"Yes. Pets must be on a leash not more than six feet long, and kept under physical control at all times.\" Statewide, pets are allowed in all Oregon state parks except Dabney SRA, Shore Acres SP and named trails at Silver Falls.",
+      "dogs_exception": "Snowy-plover beach closures (15 Mar–15 Sep) can shut a beach to pets even on a leash; this stop is outside that window.",
+      "official_links": [
+        {
+          "label": "Ecola State Park (Oregon State Parks)",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=136",
+          "tier": "official"
+        },
+        {
+          "label": "Pets in Oregon State Parks",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+          "tier": "official"
+        }
+      ]
     },
     "white-salmon": {
       "activities": {
@@ -5572,6 +5837,22 @@
           "was": "Catherine Creek — no url",
           "note_source": "The arch and oak-savanna bench. No direct listing url surfaced; the WTA trailhead coordinate is in the shot-list correction for this stop."
         }
+      ],
+      "authority": "USDA Forest Service — Columbia River Gorge National Scenic Area",
+      "dogs_verdict": "partial",
+      "dogs": "Catherine Creek trailhead: \"Dogs on leash in Catherine Creek planning area year round. Dogs on leash in Coyote/Burdoin planning areas December 1st through June 30th.\" Leash requirements in the Gorge are set site by site rather than area-wide.",
+      "trail_dogs": {
+        "Catherine Creek": true,
+        "Dog Mountain Trail": null,
+        "Wahclella Falls Trail": null
+      },
+      "dogs_exception": "The Gorge publishes its dog rule per recreation site, not per forest, so silence on Dog Mountain and Wahclella here means unresearched, not permitted. Dog Mountain also needs a timed-entry permit on spring weekends.",
+      "official_links": [
+        {
+          "label": "Catherine Creek Trailhead — Columbia River Gorge NSA (USFS)",
+          "url": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-trailhead",
+          "tier": "official"
+        }
       ]
     },
     "welches": {
@@ -5660,6 +5941,16 @@
           "note_source": "The most popular trail in Oregon by review count. About 2 miles to the lake; continues to Tom, Dick and Harry Mountain.",
           "reviews": "4.7 (9,204)",
           "was_name": "Mirror Lake Trail #664"
+        }
+      ],
+      "authority": "USDA Forest Service — Mt. Hood National Forest",
+      "dogs_verdict": "allowed",
+      "dogs": "Mt. Hood NF: \"Make sure pets are kept on leashes no longer than 6 feet in designated recreation areas.\" The forest asks that dogs be kept on a leash generally, noting that every year dogs run off and are permanently lost in the forest.",
+      "official_links": [
+        {
+          "label": "Safety and Outdoor Ethics — Mt. Hood NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/mthood/safety-ethics",
+          "tier": "official"
         }
       ]
     },
@@ -5775,6 +6066,27 @@
           "was": "Todd Lake — no url",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
+      ],
+      "authority": "Oregon State Parks (Smith Rock SP) and USDA Forest Service — Deschutes National Forest (Todd Lake)",
+      "dogs_verdict": "allowed",
+      "dogs": "Oregon State Parks: \"Your pet needs to be physically restrained, meaning you must have them on a leash no longer than six feet\"; pets are permitted in every state park except Dabney SRA, Shore Acres SP and the Trail of Ten Falls at Silver Falls — Smith Rock is not on that list. Deschutes NF: \"Over 95% of the Deschutes National Forest trails are open to dogs off-leash in the summer\", but leashes are required on the Three Sisters Wilderness trails \"including Todd Lake and Crater Ditch trails\" from July 15 to September 15, and at all trailheads and developed recreation sites year-round.",
+      "dogs_exception": "Deschutes NF closes a few places to dogs entirely: the Bend Municipal Watershed year-round, the Beach and Sunset View day-use areas at Elk Lake, and Scout Lake day-use. Smith Rock rangers enforce the leash law strictly and ask everyone to stay on trail.",
+      "official_links": [
+        {
+          "label": "Pets in Oregon State Parks",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+          "tier": "official"
+        },
+        {
+          "label": "Smith Rock State Park (Oregon State Parks)",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=36",
+          "tier": "official"
+        },
+        {
+          "label": "Dog Restrictions — Deschutes NF (USFS)",
+          "url": "https://www.fs.usda.gov/r06/deschutes/safety-ethics/dog-restrictions",
+          "tier": "official"
+        }
       ]
     },
     "newport": {
@@ -5845,6 +6157,25 @@
           ],
           "was": "Cobble Beach / Quarry Cove Tide Pools — no url",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
+        }
+      ],
+      "authority": "Bureau of Land Management — Yaquina Head Outstanding Natural Area",
+      "dogs_verdict": "partial",
+      "dogs": "BLM: \"Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools\", and \"must remain on a 6-foot leash at all times\". Therapy animals and pets are not allowed inside buildings.",
+      "trail_dogs": {
+        "Cobble Beach / Quarry Cove tide pools": false
+      },
+      "dogs_exception": "The tide pools themselves are the one thing at Yaquina Head the dog cannot do — that and the ground near the lighthouse. The rest of the headland's trails and walkways are open on a 6 ft leash.",
+      "official_links": [
+        {
+          "label": "Yaquina Head — Safety and Access (BLM)",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/yaquina-head-ona/safety",
+          "tier": "official"
+        },
+        {
+          "label": "Yaquina Head Outstanding Natural Area (BLM)",
+          "url": "https://www.blm.gov/visit/yaquina-head-outstanding-natural-area",
+          "tier": "official"
         }
       ]
     },
@@ -5930,6 +6261,22 @@
           "time": "0.5-1 hr",
           "elevation_gain": "229 ft",
           "reviews": "24"
+        }
+      ],
+      "authority": "Oregon State Parks — Cape Blanco State Park",
+      "dogs_verdict": "allowed",
+      "dogs": "Oregon State Parks: pets are allowed in all parks except Dabney SRA, Shore Acres SP and named trails at Silver Falls — Cape Blanco is not among them. \"Your pet needs to be physically restrained, meaning you must have them on a leash no longer than six feet.\"",
+      "dogs_exception": "One seasonal trap on this coast: \"Pets and service animals are not permitted on some beaches or at certain times of the year (even on a leash) to protect wildlife, such as western snowy plovers\" — the plover closures run 15 Mar to 15 Sep. This stop falls outside that window, but check the posted signs at the beach access.",
+      "official_links": [
+        {
+          "label": "Pets in Oregon State Parks",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+          "tier": "official"
+        },
+        {
+          "label": "Cape Blanco State Park (Oregon State Parks)",
+          "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=44",
+          "tier": "official"
         }
       ]
     },
@@ -6050,6 +6397,17 @@
           "season": "NO PERMIT CONFLICT — the opposite. Permits are required for the Gold Bluffs Beach day-use area including the Fern Canyon trailhead only from 15 May to 15 September. The stop arrives 3 Dec 2027, outside the permit season, so no reservation is needed. The trade is weather: December is storm season on this coast and Davison Road has been closed outright for storm damage before. Check status with Redwood National and State Parks before driving out.",
           "note": "The size limit is the whole story for this rig: maximum single vehicle length 24 ft, maximum width 8 ft, and no trailers of any kind on Davison Road. The truck goes; the coach never could, and could not turn around if it tried. Renamed to the road, since the road is the constraint and the canyon is the destination. Expect to wade in December — the seasonal footbridges in the canyon are a summer installation."
         }
+      ],
+      "authority": "National Park Service / California State Parks — Redwood National and State Parks",
+      "dogs_verdict": "prohibited",
+      "dogs": "\"No Pets on Park Trails\" — pets on leashes up to 6 feet are allowed only in \"developed campgrounds, on beaches, in picnic areas, and on roads\", and are excluded from ranger-led activities.",
+      "dogs_exception": "Fern Canyon, Stout Grove and Damnation Creek are all closed to the dog — you may park at the Fern Canyon and Stout Grove lots but not walk the trails. What is open: Crescent Beach, Gold Bluffs Beach, Freshwater Beach, the Klamath River and Redwood Creek overlooks, and two gravel roads under big trees — Cal Barrel Road (Prairie Creek) and Walker Road (Jedediah Smith).",
+      "official_links": [
+        {
+          "label": "Pets — Redwood National and State Parks (NPS)",
+          "url": "https://www.nps.gov/redw/planyourvisit/pets.htm",
+          "tier": "official"
+        }
       ]
     },
     "fort-bragg": {
@@ -6156,6 +6514,26 @@
           "difficulty": "Moderately challenging",
           "reviews": "1,829",
           "was_name": "Russian Gulch Falls Trail"
+        }
+      ],
+      "authority": "California State Parks — Jug Handle State Natural Reserve and Russian Gulch State Park",
+      "dogs_verdict": "partial",
+      "dogs": "Jug Handle SNR: \"Dogs allowed on beach and headland trails west of Highway 1. Dogs not allowed on Staircase Trail or areas east of Highway 1.\" Russian Gulch SP: \"Dogs not allowed on Fern Canyon Trail or trails east of Highway 1\" — \"Pets must be on a leash no longer than six feet. They are allowed at the picnic area, beach, in the campground, and on paved park roads and the Headlands Trail. Except for service animals, dogs are not allowed on any other trails in the park.\"",
+      "trail_dogs": {
+        "Jug Handle Beach and Ecological Staircase Trail": false,
+        "Russian Gulch Waterfall Loop": false
+      },
+      "dogs_exception": "Both card walks cross to the inland, dog-free side of Highway 1 — the Ecological Staircase and the Fern Canyon route to the waterfall. West of the highway the dog is welcome on a 6 ft leash: Jug Handle's beach and headland trails, and Russian Gulch's Headlands Trail, beach and paved roads.",
+      "official_links": [
+        {
+          "label": "Jug Handle State Natural Reserve (California State Parks)",
+          "url": "https://www.parks.ca.gov/?page_id=441",
+          "tier": "official"
+        },
+        {
+          "label": "Russian Gulch State Park (California State Parks)",
+          "url": "https://www.parks.ca.gov/?page_id=432",
+          "tier": "official"
         }
       ]
     },
@@ -6275,6 +6653,31 @@
           "entry": "Fort Ord National Monument",
           "problem": "A whole BLM monument, and a non-motorized one. BLM restricts use to non-motorized travel on authorized trails only — 86+ miles of them, for hiking, biking and horses; non-street-legal vehicles are never allowed, and going off the marked trails runs into unexploded-ordnance areas. There is no 4x4 route here at all. It belongs in trails or biking, not offroad. https://www.blm.gov/programs/national-conservation-lands/california/fort-ord/know-before-you-go"
         }
+      ],
+      "authority": "California State Parks (Point Lobos SNR) and Bureau of Land Management (Fort Ord National Monument) — two authorities, opposite answers",
+      "dogs_verdict": "partial",
+      "dogs": "Point Lobos State Natural Reserve: \"No Dogs\" — \"Dogs are not allowed anywhere within the reserve and cannot be left inside parked vehicles.\" Fort Ord National Monument: \"Dogs and stock must be on a leash/lead rope that is no more than six feet long\", leashed in parking lots, at trailheads and along driveways; BLM's 2019 supplementary rules also designate marked off-leash segments and bar dogs from the Inland Range Planning Unit.",
+      "trail_dogs": {
+        "Point Lobos Loop Trail": false,
+        "Badger Hills Trail, Fort Ord": true
+      },
+      "dogs_exception": "Point Lobos will not even let the dog stay in the parked car, so it is a day out that needs the dog left at camp. Fort Ord is the opposite — leashed everywhere, with marked off-leash segments on Guidotti, Skyline and Oilwell Roads near Badger Hills.",
+      "official_links": [
+        {
+          "label": "Point Lobos State Natural Reserve (California State Parks)",
+          "url": "https://www.parks.ca.gov/pointlobos",
+          "tier": "official"
+        },
+        {
+          "label": "Fort Ord National Monument — Know Before You Go (BLM)",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/california/fort-ord/know-before-you-go",
+          "tier": "official"
+        },
+        {
+          "label": "Final Supplementary Rules for Fort Ord National Monument (Federal Register)",
+          "url": "https://www.federalregister.gov/documents/2019/07/10/2019-14717/notice-of-final-supplementary-rules-for-fort-ord-national-monument-california",
+          "tier": "official"
+        }
       ]
     },
     "vegas-area": {
@@ -6375,6 +6778,22 @@
         {
           "entry": "Fire Wave and White Domes trails (Valley of Fire).",
           "problem": "Duplicate — both are separate entries now."
+        }
+      ],
+      "authority": "Bureau of Land Management (Red Rock Canyon NCA) and Nevada State Parks (Valley of Fire SP)",
+      "dogs_verdict": "allowed",
+      "dogs": "Red Rock Canyon NCA: pets are welcome on all trails — \"The only places in Red Rock Canyon you can go but your pet can't are the visitor center and associated outdoor exhibits (for the protection of our tortoises).\" \"Pets should be kept on a leash no longer than 6 feet (2 m).\" Valley of Fire SP: \"Pets are welcome, but they must be kept on a leash of not more than six feet in length\"; \"Pets are not allowed in the Visitor Center.\"",
+      "dogs_exception": "Both authorities allow dogs on trail. The constraint here is heat, not law — slickrock and sand, and no shade on the Fire Wave or Calico Tanks.",
+      "official_links": [
+        {
+          "label": "Red Rock Canyon NCA — Planning Your Visit (BLM)",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon-national-conservation-area/planning-your-visit",
+          "tier": "official"
+        },
+        {
+          "label": "Valley of Fire State Park (Nevada State Parks)",
+          "url": "https://parks.nv.gov/parks/valley-of-fire",
+          "tier": "official"
         }
       ]
     },
@@ -6643,7 +7062,21 @@
           "note_source": "Sabino Canyon's best-rated route. No direct listing url surfaced; the area page is on the box heading."
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/sabino-canyon-recreation-area"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/sabino-canyon-recreation-area",
+      "authority": "USDA Forest Service — Coronado National Forest",
+      "dogs_verdict": "partial",
+      "dogs": "Coronado NF: \"Dogs are allowed anywhere in the forest except the Pusch Ridge Wilderness Big Horn Sheep closure area and the Sabino Canyon Recreation Area.\" The forest notes the bighorn closure \"is only a portion of the Pusch Ridge Wilderness\".",
+      "trail_dogs": {
+        "Hutch's Pool via West Fork Sabino Trail FS #24": false
+      },
+      "dogs_exception": "The one trail on this card starts inside the Sabino Canyon Recreation Area, which is the single place in the whole forest where dogs are banned — trails, tram road, picnic areas, shuttle and all. Everywhere else in the Coronado is open; this stop needs a different trailhead if the dog is coming.",
+      "official_links": [
+        {
+          "label": "Hiking and Camping with Dogs — Coronado NF (USFS)",
+          "url": "https://www.fs.usda.gov/r03/coronado/about-area/faqs/hiking-and-camping-dogs",
+          "tier": "official"
+        }
+      ]
     },
     "catalina-state-park": {
       "activities": {
@@ -6876,6 +7309,22 @@
           "entry": "Devil's Bridge Trail",
           "problem": "A hike, not an offroad route — 32,000+ reviews on AllTrails as a trail. It belongs in the trails box. What is offroad about it is the access, Dry Creek Road / FR 152, which is now listed separately above."
         }
+      ],
+      "authority": "USDA Forest Service — Coconino National Forest (Red Rock Ranger District)",
+      "dogs_verdict": "allowed",
+      "dogs": "Coconino NF: \"Pets are typically allowed in most areas of the Coconino National Forest.\" \"Dogs must be leashed and controlled at all times.\" \"Owners must pick up after their pets\" and \"Do not leave pet waste (bagged or unbagged) along the trail or trailhead.\"",
+      "dogs_exception": "Pets are not permitted at the Red Rock District heritage sites — Palatki, Honanki and Grasshopper Point. Cathedral Rock and Devil's Bridge are not among them.",
+      "official_links": [
+        {
+          "label": "FAQs — Coconino National Forest (USFS)",
+          "url": "https://www.fs.usda.gov/r03/coconino/about-area/faqs",
+          "tier": "official"
+        },
+        {
+          "label": "Safety and Outdoor Ethics — Coconino NF (USFS)",
+          "url": "https://www.fs.usda.gov/r03/coconino/safety-ethics",
+          "tier": "official"
+        }
       ]
     },
     "bryce": {
@@ -6952,7 +7401,18 @@
           "was": "Fairyland Point — a viewpoint, not a trail"
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/bryce-canyon-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/bryce-canyon-national-park",
+      "authority": "National Park Service — Bryce Canyon National Park",
+      "dogs_verdict": "prohibited",
+      "dogs": "NPS: \"Pets are not permitted on trails or unpaved viewpoints (Piracy Point), in public buildings or on public transportation vehicles (shuttle bus).\" Pets are \"only permitted on paved surfaces in the park\". Leash no longer than 6 feet; citations carry a minimum $75 fine.",
+      "dogs_exception": "Two paved exceptions the park names explicitly: the Rim Trail between Sunset Point and Sunrise Point, and the paved Shared Use Path between the park entrance and Inspiration Point. Fairyland Loop, Navajo Loop and Mossy Cave are all closed to pets.",
+      "official_links": [
+        {
+          "label": "Pets — Bryce Canyon NP (NPS)",
+          "url": "https://www.nps.gov/brca/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ]
     },
     "torrey": {
       "activities": {
@@ -7029,6 +7489,17 @@
           "difficulty": "not graded by NPS, which says high-clearance vehicles can usually manage it without four-wheel drive. That holds only when it is dry — rain or snow can make it impassable to the best high-clearance 4WD",
           "season": "THE FORD IS THE CONFLICT, NOT A GATE. The south end of Hartnet Road fords the Fremont River with no bridge; normally under a foot of water on a rocky bottom, impassable in high water, and NPS says plainly not to attempt it in flood. The stop arrives 28 Mar 2028 — spring runoff and spring storms, the worst combination for that ford, and winter snow can still leave the high sections muddy. There is no seasonal closure to check, only conditions, so this must be phoned in the day before: Capitol Reef visitor center 435-425-3791 (press #1, then #4).",
           "note": "If the ford is up, the loop is not lost — drive Cathedral Road in from the Caineville end as an out-and-back and skip the crossing entirely. That reaches the Cathedrals themselves, which is what people come for. Cell reception is poor to nonexistent on the whole loop, and there is no water; carry recovery gear and tell someone the plan. Rig advice removed from the name per the settled truck-only policy."
+        }
+      ],
+      "authority": "National Park Service — Capitol Reef National Park",
+      "dogs_verdict": "prohibited",
+      "dogs": "NPS: \"Pets are not permitted on other hiking trails, in public buildings, or in the backcountry.\" Leash 6 feet or shorter at all times. Pets are allowed \"within 50 feet of center line of roads (paved and dirt) open to public vehicle travel\", in parking areas, campgrounds, the Chestnut and Doc Inglesby picnic areas and unfenced orchards.",
+      "dogs_exception": "Two walkable exceptions the park names: the trail from the visitor center to the Fruita Campground, and the Fremont River Trail from the campground to the south end of Hattie's Field. Hickman Bridge and Cassidy Arch are both closed to pets.",
+      "official_links": [
+        {
+          "label": "Pets — Capitol Reef NP (NPS)",
+          "url": "https://www.nps.gov/care/planyourvisit/pets.htm",
+          "tier": "official"
         }
       ]
     },
@@ -7151,7 +7622,23 @@
           "was_name": "Double Arch — Windows Section"
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/arches-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/arches-national-park",
+      "authority": "National Park Service — Arches NP and Canyonlands NP",
+      "dogs_verdict": "prohibited",
+      "dogs": "Arches: pets \"are not allowed: on any hiking trails, or anywhere off-trail, even while in a carrier\" — leashed pets may go \"along established roads or in parking areas\" and \"in established campgrounds and picnic areas\". Canyonlands is stricter still: pets are prohibited \"on any hiking trails, or anywhere off-trail, even while in a carrier\" and \"at any overlooks\". Leash 6 feet or less in both parks.",
+      "dogs_exception": "Mesa Arch is in Canyonlands, where even the overlooks are closed to pets. Arches names Cache Valley Road and Willow Springs Road as places to walk a dog; Delicate Arch, Double Arch and the Windows are not among them.",
+      "official_links": [
+        {
+          "label": "Pets — Arches NP (NPS)",
+          "url": "https://www.nps.gov/arch/planyourvisit/pets.htm",
+          "tier": "official"
+        },
+        {
+          "label": "Pets — Canyonlands NP (NPS)",
+          "url": "https://www.nps.gov/cany/planyourvisit/pets.htm",
+          "tier": "official"
+        }
+      ]
     },
     "ouray": {
       "activities": {
@@ -7216,6 +7703,21 @@
           ],
           "was": "Blue Lakes Trail — no url",
           "note_source": "Real and well known, but no direct listing url surfaced. Arrival is 10-15 April, when the Blue Lakes basin is still deep in snow — check before planning around it."
+        }
+      ],
+      "authority": "USDA Forest Service — Grand Mesa, Uncompahgre and Gunnison NFs (Mount Sneffels Wilderness); the Perimeter Trail is City of Ouray",
+      "dogs_verdict": "partial",
+      "dogs": "Mount Sneffels Wilderness order: dogs are prohibited if \"(i) off leash; (ii) not under the direct verbal control of the dog's owner or handler at all times; or (iii) disturbing or damaging wildlife, other animals, people or property\". On leash or under verbal control the dog is legal.",
+      "trail_dogs": {
+        "Blue Lakes Trail": true,
+        "Ouray Perimeter Trail": null
+      },
+      "dogs_exception": "The Perimeter Trail is a City of Ouray trail, not Forest Service — no municipal rule was sourced, so it is unknown rather than allowed.",
+      "official_links": [
+        {
+          "label": "Blue Lakes #201 (USFS GMUG)",
+          "url": "https://www.fs.usda.gov/r02/gmug/recreation/blue-lakes-201",
+          "tier": "official"
         }
       ]
     },
@@ -7286,6 +7788,20 @@
           ],
           "was": "Petroglyph Point Trailhead — a trailhead, not a trail",
           "note_source": "Mesa Verde. Register at the trailhead; the loop passes a large petroglyph panel."
+        }
+      ],
+      "authority": "National Park Service — Mesa Verde National Park",
+      "dogs_verdict": "partial",
+      "dogs": "NPS: \"Leashed pets are allowed on roads, parking lots, and paved areas on Mesa Top Loop and Park Point but not on trails, in ancestral sites or buildings.\" Leash 6 ft/1.8 m or shorter; pets may not be tethered or left unattended.",
+      "trail_dogs": {
+        "Petroglyph Point Trail": false
+      },
+      "dogs_exception": "Mesa Verde is one of the few parks that opens real trails to dogs, but not on Chapin Mesa: \"At Wetherill Mesa, pets are permitted on all trails except for the trails leading into Step House and Long House.\" Petroglyph Point is a Chapin Mesa trail and is closed to the dog.",
+      "official_links": [
+        {
+          "label": "Pets — Mesa Verde NP (NPS)",
+          "url": "https://www.nps.gov/meve/planyourvisit/pets.htm",
+          "tier": "official"
         }
       ]
     },
@@ -7444,6 +7960,16 @@
           "difficulty": "Moderate",
           "elevation_gain": "856 ft",
           "reviews": "1,874"
+        }
+      ],
+      "authority": "USDA Forest Service — San Juan National Forest",
+      "dogs_verdict": "allowed",
+      "dogs": "San Juan NF: \"Keep dogs on a leash 6' or shorter\" in campgrounds and recreation areas; on wilderness trails dogs must be \"under strict leash or voice control\". Store dog food in bear-resistant lockers, pack out waste, and keep the dog in the tent or vehicle at night.",
+      "official_links": [
+        {
+          "label": "Hiking and Camping with Dogs — San Juan NF (USFS)",
+          "url": "https://www.fs.usda.gov/r02/sanjuan/safety-ethics/hiking-and-camping-dogs",
+          "tier": "official"
         }
       ]
     },

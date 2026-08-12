@@ -178,7 +178,14 @@ def main():
             for y in (s.get('alltrails') or []):
                 t_t += 1
                 if y.get('url'): t_h += 1
-                elif y['name'] in noted: t_b += 1
+                # `pending` marks an entry build_links identified as prose or a
+                # trailhead rather than a trail — "Choose signed, well-used
+                # routes and carry bear spray." There is no listing to find for
+                # a sentence, so counting it as an unfilled trail forever means
+                # the cell can never reach 100% for a reason that is not
+                # research. It is kept in the denominator and counted BLOCKED,
+                # which is exactly what blocked means here.
+                elif y.get('pending') or y['name'] in noted: t_b += 1
         row.append(cell(t_h, t_b, t_t)); raw_cells.append((t_h, t_b, t_t)); acc('tr', t_h, t_b, t_t)
 
         # dogs: blocked where the authority is verdict-partial and silent on this trail
@@ -190,6 +197,9 @@ def main():
             for y in (s.get('alltrails') or []):
                 d_t += 1
                 if 'dogs' in y: d_h += 1
+                # Same reasoning as trails: an authority has no dog rule for a
+                # sentence of advice.
+                elif y.get('pending'): d_b += 1
                 elif partial and named.get(y['name'], 'x') is None: d_b += 1
                 elif partial: d_b += 1
         row.append(cell(d_h, d_b, d_t)); raw_cells.append((d_h, d_b, d_t)); acc('dg', d_h, d_b, d_t)

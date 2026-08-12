@@ -506,7 +506,17 @@
           ]
         }
       },
-      "activities_note": "Museum Hill has no single Wikipedia article — it is a campus of four museums — so it keeps a search link rather than being pointed at one of them arbitrarily."
+      "activities_note": "Museum Hill has no single Wikipedia article — it is a campus of four museums — so it keeps a search link rather than being pointed at one of them arbitrarily.",
+      "offroad": [
+        {
+          "name": "Forest Road 604",
+          "url": "https://www.trailsoffroad.com/trails/3275-forest-road-604",
+          "distance": "not published on the free listing",
+          "difficulty": "not published — Trails Offroad paywalls its difficulty scale",
+          "season": "No published gate date found. FR 604 runs through the Jemez National Recreation Area at roughly 8,000 ft; late March is mud and residual snow season on Jemez forest roads. Stop arrives 24 Mar 2027 — treat access as unverified, not assured.",
+          "note": "Not a Santa Fe day trip in the usual sense — FR 604 is in the western Jemez, an hour and a half out via Los Alamos, not on the Santa Fe side of the forest. Ponderosa and aspen, gentle grade, spur roads off it. One of only two roads in that area signed for dispersed camping. Santa Fe NF has repeatedly issued prescribed-burn advisories asking people to stay off FR 604 and FR 607 during burn windows — spring is burn season, so check before driving out."
+        }
+      ]
     },
     "great-sand-dunes": {
       "authority": "National Park Service",
@@ -776,7 +786,17 @@
           "drop": true,
           "why": "Restates the Browns Canyon rafting entry."
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "Beginner off-road trails near the Arkansas Valley",
+          "problem": "A trail system, not a route. The concrete thing behind it is the Fourmile Travel Management Area north of Buena Vista — ~100,000 acres of USFS and BLM land with roughly 200 miles of roads and trails open to OHV: https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area . Worth noting the best-known named route there, Chinaman Gulch / Carnage Canyon, is the opposite of beginner — it is rated challenging. If a beginner route is wanted here it needs to be picked by name from the Fourmile map, not from this phrase."
+        },
+        {
+          "entry": "Loaded camper: graded, dry roads only.",
+          "problem": "A standing rig constraint filed as a list item, and one that no longer applies: every offroad route on this trip is driven in the towed 4x4, never the coach. Nothing to research and nothing to link."
+        }
+      ]
     },
     "estes-rmnp": {
       "authority": "National Park Service",
@@ -1210,7 +1230,18 @@
           "auto": true,
           "auto_km": 41
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Big Sandy Road (CR 118) to Big Sandy Trailhead",
+          "was_name": "Drive/hike toward Big Sandy Trailhead",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/big-sandy-campground",
+          "distance": "roughly 60 miles from Pinedale — US-191 south ~12 mi, WY-353 ~15.5 mi, then Big Sandy–Elkhorn Road / CR 118 gravel to the trailhead",
+          "difficulty": "graded gravel, not technical — the obstacle is snow and mud, not terrain",
+          "season": "CONFLICTS WITH THE STOP DATES. Bridger-Teton opens Big Sandy Campground and trailhead access only once the snowpack lets the gravel road through — usually somewhere between June and July, closing early September. The stop arrives 24 Apr 2027, six to ten weeks before the road is normally driveable. Plan on the gate or the drifts stopping the truck well short of the trailhead.",
+          "note": "Renamed from a verb phrase to the road it actually is. The Big Sandy Opening is the standard gateway to the Bridger Wilderness, which is why it is on the card, but late April is the wrong end of the year for it. Exact opening date varies every year with snow load — the Pinedale Ranger District is the only source that will know."
+        }
+      ]
     },
     "twin-falls": {
       "authority": "City of Twin Falls / NPS (City of Rocks) / Idaho",
@@ -2136,7 +2167,13 @@
             }
           ]
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "Loaded camper: maintained public roads only.",
+          "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
+        }
+      ]
     },
     "whitehorse-1": {
       "authority": "City of Whitehorse / Yukon",
@@ -2235,7 +2272,13 @@
             }
           ]
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "Loaded camper: paved day trips and good public gravel.",
+          "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
+        }
+      ]
     },
     "talkeetna": {
       "authority": "Talkeetna Lakes Park / Mat-Su Borough",
@@ -2308,7 +2351,17 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Petersville Road",
+          "url": "https://dnr.alaska.gov/mlw/cdn/pdf/factsheets/petersville-recreational-mining-area.pdf",
+          "distance": "first 9.4 miles paved; maintained gravel a further ~8.9 miles to the old Forks Roadhouse site at the Collinsville Road junction; primitive road for roughly 14.9 miles beyond that",
+          "difficulty": "not published as a grade. 4WD recommended but not mandatory on the primitive section; the maintained portion is ordinary gravel",
+          "season": "No formal closure, but conditions are only reliably good July through August — June and September are described as iffy, and snow lingers on the road beyond about mile 14 because of the Alaska Range. The stop arrives 3 Jul 2027, right at the front edge of the usable window. The paved and maintained gravel will be fine; the primitive section past the Forks may still be soft or snow-blocked.",
+          "note": "Alaska DNR fact sheet used as the source because onX, which is the fullest listing, is paywalled. Collinsville Road, which branches at the Forks, is only maintained as far as the Peters Creek bridge and becomes a four-wheeler trail shortly after — that is an ATV route, not a truck route. This is Denali-view country on a clear day and mining-claim country the rest of the time; claims are active, so stay on the road."
+        }
+      ]
     },
     "cooper-landing": {
       "authority": "USDA Forest Service — Chugach National Forest",
@@ -2940,7 +2993,13 @@
           "auto": true,
           "auto_km": 92
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "Loaded camper: maintained gravel only when dry.",
+          "problem": "A standing rig constraint, not a route, and superseded by the settled decision that offroad is always the truck. Saratoga's offroad box is now empty — that is an honest empty, not a gap."
+        }
+      ]
     },
     "dawson-city": {
       "activities": {
@@ -3006,7 +3065,17 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Dempster Highway to Tombstone Territorial Park",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/parks-and-protected-areas/tombstone-territorial-park",
+          "distance": "the Dempster leaves the Klondike Highway 40 km east of Dawson City. Park southern boundary at km 50.5; Tombstone Interpretive Centre and the road-accessible campground at km 71.5 — about a 110 km drive from Dawson, gravel from km 0",
+          "difficulty": "not graded. Gravel throughout, surface swinging between dusty-firm and slick mud with the weather",
+          "season": "NO CONFLICT, and the timing is deliberate. The Tombstone Interpretive Centre runs daily 9am–5pm from mid-May to about 20 September (2026 season was 16 May – 20 Sep). The stop arrives 30 Aug 2027, inside that window and inside the 25 Aug – 5 Sep tundra colour peak this stop is anchored to. The centre closes roughly three weeks after arrival, so the whole stay is covered.",
+          "note": "Only Canadian road that crosses the Arctic Circle, though the Circle is at km 406, far past Tombstone. For the Tombstone day trip you need no ferries and no Eagle Plains fuel stop — those matter only if the drive continues north. Still: carry at least one full-size spare, extra fuel and emergency kit, and expect no cell service, no food and no services past the highway junction. Yukon 511 carries current Dempster road conditions."
+        }
+      ]
     },
     "watson-lake-2": {
       "authority": "Town of Watson Lake, Yukon",
@@ -3218,7 +3287,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Salmon Glacier Road (Granduc Road)",
+          "was_name": "Salmon Glacier Road",
+          "url": "https://www.travelalaska.com/destinations/cities-towns/hyder",
+          "distance": "about 25 miles from Hyder at sea level to the Salmon Glacier summit viewpoint, climbing roughly 4,300 ft",
+          "difficulty": "not published as a grade. Active mining road — sharp switchbacks, steep drop-offs, no guardrails, loose gravel; high clearance and durable tyres recommended",
+          "season": "TIGHT AGAINST THE STOP DATES. The road is not open year-round; the usable window is roughly mid-June to September, and snowbanks can persist even mid-summer. The stop arrives 19 Sep 2027, at the very tail of that window — an early storm can shut the upper road with no notice. Verify locally in Stewart before driving up rather than assuming.",
+          "note": "The route crosses back into British Columbia above Hyder, so carry passports for the return through the Canadian border post at Stewart. Fish Creek Wildlife Observation Site is six miles up the same road, with brown and black bears on the salmon from late July into September — that part of the drive is short, paved-adjacent and worth doing even if the upper road is closed. Land-manager coverage is thin: this is a private mining road, so state tourism is the best source found and there is no BLM/USFS/BC Parks page for it."
+        }
+      ]
     },
     "prince-george": {
       "authority": "BC Parks — Ancient Forest / Chun T'oh Whudujut",
@@ -3390,7 +3470,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Trophy Mountain Forest Service Road",
+          "was_name": "Clearwater River Valley 4x4/scenic backroad drive",
+          "url": "https://bcparks.ca/wells-gray-park/trophy-mountain/",
+          "distance": "about 11 km of gravel logging road (the Bear Creek road) branching off Clearwater Valley Road near Spahats Creek Park, up to the Trophy Mountain meadows trailhead",
+          "difficulty": "not published as a grade. Rough with loose rock, potholes and washboard, but BC Parks describes it as manageable for most cars — the truck is comfortably over-equipped",
+          "season": "BORDERLINE. Wells Gray forest service roads are not plowed in winter and the Trophy meadows sit high enough to take snow early. The stop arrives 26 Sep 2027 — the alpine flower show is long over and the first snow of the season is plausible at that elevation. Check the BC Parks Wells Gray trail-and-road status report before driving up.",
+          "note": "Replaced a vague entry with the concrete road behind it. The other half of the original phrase, Clearwater Valley Road itself, is paved for the first 42 km to the Helmcken Falls turnoff and graded gravel after — that is a scenic drive, not an offroad route, and belongs in the scenic-drives box. Trophy Mountain is the road that genuinely wants the truck."
+        }
+      ]
     },
     "grand-canyon": {
       "authority": "National Park Service",
@@ -3973,6 +4064,23 @@
           "was": "Titus Canyon Road (west exit) — a road, not a trail",
           "note_source": "Kept because dogs ARE permitted on it — Death Valley allows pets wherever a car can go, so this is the stop's dog-legal option."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Titus Canyon Road",
+          "was_name": "Titus Canyon Road (towed 4x4 truck only)",
+          "url": "https://www.nps.gov/deva/planyourvisit/titus-canyon.htm",
+          "distance": "27 miles, one way westbound, entered from Nevada Highway 374 about two miles east of the park boundary; the last 3 miles at the west end are two-way",
+          "difficulty": "not graded by NPS. High-clearance two-wheel drive recommended; 4WD may be needed after storms. Rough, steep and narrow, with the canyon narrows the tightest section. Allow 2–3 hours",
+          "season": "RE-VERIFY BEFORE COUNTING ON IT. NPS scheduled a full closure of Titus Canyon Road from 1 October 2026 through at least 30 April 2027 for repairs, after an earlier repair-and-reopen cycle. The stop arrives 28 Dec 2027, eight months past the earliest stated reopening — so on the face of it there is no conflict, but 'at least' is doing real work in that sentence and this road has a recent history of extended closures. Beyond that, NPS says it is often closed for snow, mud or washouts, and December storms are exactly the cause.",
+          "note": "Winter is the right season for it — summer travel is not advised and the canyon floods flash. One-way means committing: once past the entrance there is no turning back for 24 miles, the road is infrequently patrolled and there is no cell service. If the through route is closed, the two-way western three miles into the narrows is still driveable in a standard-clearance vehicle and is the best part of the canyon anyway."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Death Valley conditions",
+          "problem": "A status check, not a route. Nothing to link. Death Valley's road-status page is worth carrying on the stop, but as a note, not as a list item pretending to be a drive."
+        }
       ]
     },
     "grand-teton": {
@@ -4143,7 +4251,13 @@
             }
           ]
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "Loaded camper: paved travel and firm maintained access.",
+          "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
+        }
+      ]
     },
     "kluane-2": {
       "authority": "Parks Canada",
@@ -4174,7 +4288,24 @@
           "auto": true,
           "auto_km": 31
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Two Top Loop Snowmobile Trail",
+          "was_name": "Two Top Trail",
+          "url": "https://www.visitmt.com/listings/general/national-forest-trail/two-top-loop-snowmobile-trail",
+          "distance": "about 30 miles groomed, ~2,000 ft of climb, straddling the Continental Divide",
+          "difficulty": "not published as a wheeled-vehicle grade — it is graded as a groomed snowmobile route",
+          "season": "CONFLICTS WITH THE STOP DATES. Two Top is a groomed winter route: open 1 Dec to 31 Mar per the Custer Gallatin NF, with some listings running the season to 15 Apr. The stop arrives 12 May 2027 — the grooming season has been over for a month at minimum. No summer wheeled-vehicle opening date could be sourced for the Two Top road at ~8,700 ft, and mid-May at that elevation near the Divide is normally still snow.",
+          "note": "This is the famous 'snow ghosts' ride out of West Yellowstone, and it is a genuinely good reason to be here — in February, not in May. Filed as a route rather than deleted so the card says what is being missed. If a May 4x4 day out of West Yellowstone is wanted, it needs a different, lower road picked by name."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Loaded camper: paved and good maintained gravel only.",
+          "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
+        }
+      ]
     },
     "bozeman": {
       "activities": {
@@ -4302,7 +4433,17 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Nabesna Road",
+          "url": "https://www.nps.gov/wrst/planyourvisit/nabesna-road.htm",
+          "distance": "42 miles one way, gravel the whole length, from mile 60 of the Tok Cutoff at Slana",
+          "difficulty": "not graded by NPS. Most 2WD vehicles manage the first 29 miles; beyond mile 29 the unbridged stream crossings need high clearance and sometimes 4WD",
+          "season": "No gate and no published closure, but the crossings are the season. NPS warns that spring run-off and heavy rain can make the streams beyond mile 29 impassable. The stop arrives 25 Jun 2027, which is still late run-off in that valley — the first 29 miles should be fine, the last stretch is a day-of decision.",
+          "note": "One of only two roads into Wrangell-St. Elias. Flat tires and washouts are common along the whole length; carry a full-size spare and the means to fit it. The maintained road ends at a private hunting lodge at mile 42, and NPS does not recommend driving the last four miles — deeply rutted and wet. Stop at the Slana Ranger Station at mile 0.5 for current crossing conditions and the free Nabesna Road Guide before committing."
+        }
+      ]
     },
     "fairbanks-1": {
       "activities": {
@@ -4424,7 +4565,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Arctic Valley Road",
+          "was_name": "Eklutna Lake / Arctic Valley Road",
+          "url": "https://dnr.alaska.gov/parks/aspunits/chugach/arcticvalleyalpenglow.htm",
+          "distance": "about 7 miles from the Glenn Highway to the Alpenglow ski area; the pavement ends as the road starts climbing and the rest is wide gravel",
+          "difficulty": "not published. Wide graded gravel with switchbacks — no low range needed, but it is exposed",
+          "season": "Open in summer; the ski area itself runs mid-November to late March. The stop arrives 7 Jul 2027, which is the good season — alpine tundra, and late-summer berry picking a little later.",
+          "note": "Split out of a combined entry. The other half, Eklutna Lake Road, is fully paved for all ten miles from the Glenn Highway to the lake — narrow and winding for the last seven, with no shoulders, but tarmac throughout. It is a scenic drive, not an offroad route, and should move to the scenic-drives box rather than stay here. Arctic Valley Road is the one that actually leaves the pavement."
+        }
+      ]
     },
     "ninilchik": {
       "activities": {
@@ -4551,7 +4703,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Dalton Highway — Arctic Circle and Coldfoot",
+          "was_name": "Dalton Highway detour to the Arctic Circle / Coldfoot",
+          "url": "https://www.blm.gov/visit/dalton-highway",
+          "distance": "the Dalton runs 414 miles from Livengood (84 miles north of Fairbanks) to Deadhorse. Arctic Circle BLM Wayside is at Dalton mile 115.5; Coldfoot at mile 174.8 — call it a 500-mile round trip from Fairbanks to Coldfoot and back",
+          "difficulty": "not graded. Mostly gravel, open to ordinary vehicles, but with heavy truck traffic, no shoulders, and long stretches with no fuel or cell coverage",
+          "season": "Open year-round — this is a working pipeline haul road, not a seasonal one. The stop arrives 23 Aug 2027, which is fine: the tundra is turning and the worst of the dust season is past, though early snow on Atigun is possible by then (Atigun is well north of Coldfoot and not on this detour).",
+          "note": "BLM publishes a free 24-page Dalton Highway Visitor Guide and runs the Arctic Interagency Visitor Center at Coldfoot — pick both up. Carry two full-size spares; windshield damage from passing trucks is routine. This is a two-day out-and-back at minimum if Coldfoot is the turnaround, and a long single day if the Arctic Circle sign is enough."
+        }
+      ]
     },
     "tok-2": {
       "activities": {
@@ -4577,7 +4740,17 @@
           "auto": true,
           "auto_km": 2
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Nabesna Road",
+          "url": "https://www.nps.gov/wrst/planyourvisit/nabesna-road.htm",
+          "distance": "42 miles one way, gravel the whole length, from mile 60 of the Tok Cutoff at Slana",
+          "difficulty": "not graded by NPS. Most 2WD vehicles manage the first 29 miles; beyond mile 29 the unbridged stream crossings need high clearance and sometimes 4WD",
+          "season": "No gate and no published closure. The stop arrives 27 Aug 2027 — the best time of the three Alaska windows for this road: run-off is long past, so the stream crossings beyond mile 29 are at their lowest and the far end is most likely to go. No conflict.",
+          "note": "Second bite at Nabesna, and the better one — if the crossings were up in late June on the tok-1 stop, this is the visit to push past mile 29. Flat tires and washouts are still common the whole length. The maintained road ends at a private lodge at mile 42; NPS does not recommend the last four miles, which are deeply rutted and wet. Slana Ranger Station at mile 0.5 has current conditions."
+        }
+      ]
     },
     "whitehorse-2": {
       "activities": {
@@ -4722,6 +4895,12 @@
           "was": "Frosty Mountain Trail (Manning Park) — no url",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Mount Baldy hiking / scenic drive",
+          "problem": "Two things, neither of them an offroad route. Mount Baldy Road (Baldy Ski Hill Road) is the all-weather public access road to Baldy Mountain Resort — partly paved, partly hard-packed dirt, ordinary two-wheel-drive in summer, reached via McKinney Road from Oliver or Canyon Road off Hwy 3 from Osoyoos. That is a scenic drive. The hiking at the resort is trails. Nothing here needs 4x4 and nothing here is a named 4x4 route."
+        }
       ]
     },
     "winthrop": {
@@ -4845,6 +5024,24 @@
           "entry": "Cutthroat Pass via PCT",
           "problem": "The same route as the entry above, under a second name."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Harts Pass Road (FR 5400)",
+          "was_name": "Harts Pass road (FR 5400)",
+          "url": "https://fs.usda.gov/r06/okanogan-wenatchee/alerts/harts-pass-road-restriction-methow-valley-ranger-district",
+          "distance": "climbs from Mazama in the Methow Valley to Harts Pass at 6,198 ft — the highest maintained road in Washington",
+          "difficulty": "not published as an offroad grade. The Forest Service describes it as narrow and steep with only intermittent turnouts; the exposure, not the surface, is the difficulty",
+          "season": "NO CONFLICT, BUT NARROW. The standing Forest Order closes FR 5400 to all motorized wheeled vehicles 1 December to 31 March every year, and snow in practice takes it from late October through to June or early July most years. The stop arrives 3 Oct 2027 — inside the open window, but within weeks of the usual first closing snow. A second, current problem: as of March 2026 Harts Pass Road is closed indefinitely from the Monument Creek Trailhead to the pass after December 2025 flood damage, with the Forest Service aiming to reopen after contractor repairs 'in early summer'. That is 2026 news, not a 2027 forecast, but it needs re-verifying before the trip.",
+          "note": "Trailers of any type are prohibited on FR 5400 year-round under a Forest Order in effect since April 2014, with a narrow exemption for snowmobile trailers of 20 ft or less in two spring/autumn windows. Irrelevant here — the truck goes up alone — but it tells you what the road is like. The 3 Oct arrival is set by the larch anchor, and larch and Harts Pass are the same week, so this is the right stop for it if the road is open."
+        },
+        {
+          "name": "Slate Peak spur",
+          "distance": "about 3 miles beyond Harts Pass, ending at the Slate Peak lookout — the highest point a vehicle reaches in Washington",
+          "difficulty": "not published",
+          "season": "Governed entirely by FR 5400 below it — closed 1 Dec to 31 Mar by the same Forest Order, and snow-blocked well outside those dates most years. The stop arrives 3 Oct 2027; if Harts Pass is open the spur normally is too, but it goes higher and holds snow longer.",
+          "note": "No listing found. No separate land-manager page exists for the spur — the Forest Service documents it only as part of the FR 5400 order, and the detailed write-ups are on hiking blogs. Recorded with no URL rather than pointing at something that is not about this road. Ask the Methow Valley Ranger District at 509-996-4003 for the gate position; the final stretch to the lookout is walk-only in some years."
+        }
       ]
     },
     "packwood": {
@@ -4909,6 +5106,27 @@
           "difficulty": "Challenging",
           "reviews": "1,593",
           "was_name": "Snowgrass Flat Trail"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Skate Creek Road (FR 52)",
+          "was_name": "Skate Creek Road scenic drive (FR 52)",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-52-skate-creek-road",
+          "distance": "23 miles east–west between Packwood and Ashford, joining Hwy 12 to Hwy 706",
+          "difficulty": "not published as an offroad grade. Nominally paved, but low-maintenance for years — slumps, potholes and broken edges rather than technical terrain",
+          "season": "NO CONFLICT, BUT CLOSE TO THE EDGE. Gifford Pinchot gates FR 52 in winter once snow gets too deep to drive safely, roughly November through April. The stop arrives 9 Oct 2027 — open, with about three to four weeks of margin before the usual gating.",
+          "note": "This is the back way to the Nisqually entrance of Mount Rainier and cuts a long detour off the highway route. Being paved it sits on the line between scenic drive and offroad; it is kept here because the surface condition makes it a truck road in practice, and Trails Offroad carries it as a scout route (https://www.trailsoffroad.com/US/washington/scout-routes/670-fs-52-skate-creek). It has been closed outright by landslide in the recent past — check status with Gifford Pinchot rather than assuming it is through."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Mount Rainier road status",
+          "problem": "A thing to check, not a route. There is nothing to link and nothing to drive — it belongs as a note on the stop, or as a reminder attached to the routes it affects."
+        },
+        {
+          "entry": "Snowgrass Flats day hike, Goat Rocks Wilderness",
+          "problem": "A hike, and one inside designated wilderness where motor vehicles are prohibited outright. Belongs in the trails box. The offroad-relevant part is the forest road to the Berry Patch trailhead, which is a separate entry if it is wanted."
         }
       ]
     },
@@ -5821,6 +6039,17 @@
           "elevation_gain": "124 ft",
           "reviews": "6,479"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Davison Road to Gold Bluffs Beach and Fern Canyon",
+          "was_name": "Fern Canyon (Prairie Creek Redwoods, via Davison Road)",
+          "url": "https://www.nps.gov/places/gbbdayuse.htm",
+          "distance": "unpaved road running west off US-101 to Gold Bluffs Beach and on to the Fern Canyon trailhead",
+          "difficulty": "not published as a grade. Graded dirt with a creek crossing near the beach end — the restriction that bites is size, not terrain",
+          "season": "NO PERMIT CONFLICT — the opposite. Permits are required for the Gold Bluffs Beach day-use area including the Fern Canyon trailhead only from 15 May to 15 September. The stop arrives 3 Dec 2027, outside the permit season, so no reservation is needed. The trade is weather: December is storm season on this coast and Davison Road has been closed outright for storm damage before. Check status with Redwood National and State Parks before driving out.",
+          "note": "The size limit is the whole story for this rig: maximum single vehicle length 24 ft, maximum width 8 ft, and no trailers of any kind on Davison Road. The truck goes; the coach never could, and could not turn around if it tried. Renamed to the road, since the road is the constraint and the canyon is the destination. Expect to wade in December — the seasonal footbridges in the canyon are a summer installation."
+        }
       ]
     },
     "fort-bragg": {
@@ -6040,6 +6269,12 @@
           "was": "Fort Ord National Monument (Badger Hills Trailhead) — a trailhead",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Fort Ord National Monument",
+          "problem": "A whole BLM monument, and a non-motorized one. BLM restricts use to non-motorized travel on authorized trails only — 86+ miles of them, for hiking, biking and horses; non-street-legal vehicles are never allowed, and going off the marked trails runs into unexploded-ordnance areas. There is no 4x4 route here at all. It belongs in trails or biking, not offroad. https://www.blm.gov/programs/national-conservation-lands/california/fort-ord/know-before-you-go"
+        }
       ]
     },
     "vegas-area": {
@@ -6235,6 +6470,22 @@
           "was": "Painted Desert Trail, Imperial NWR — no url",
           "note_source": "US Fish & Wildlife: a 1.3 mi loop from a trailhead about 3 miles north of the visitor centre via Red Cloud Mine Road, through 30,000-year-old volcanic ash formations. Official page verified: fws.gov/refuge/imperial/visit-us/trails",
           "distance": "1.3 mi loop"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Indian Pass Road",
+          "url": "https://www.blm.gov/visit/indian-pass-wilderness",
+          "distance": "runs north-east from Ogilby Road (County S-34) toward Picacho State Recreation Area, along the south side of the Indian Pass Wilderness",
+          "difficulty": "not published as a grade. Graded desert road with sandy wash sections; the far end toward Picacho is rougher",
+          "season": "NO CONFLICT — this is the right season for it. The hazard in this corner of the Colorado Desert is summer heat, not winter closure; nothing gates the road. The stop arrives 14 Jan 2028, which is prime desert-driving weather.",
+          "note": "The Indian Pass Wilderness lies along the north side of the road, and vehicles are prohibited inside wilderness — stay on the designated route, which is the road itself. No BLM page exists for the road on its own; the wilderness page is the land manager's coverage of the area and is the honest link. Dispersed camping is widespread along it. Carry water and recovery gear: this is remote, sandy and effectively unpatrolled."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Tumco (Hedges) ghost town, off Ogilby Road",
+          "problem": "A destination, not a route. Tumco is reached by a short dirt track off Ogilby Road onto BLM Route 668, roughly 8 miles north of the I-8 exit — a few minutes of easy driving, not a 4x4 route. It should move to the points-of-interest box, where the mine history (Hedges, peak ~3,200 residents 1893–1899, renamed Tumco in 1910, abandoned 1911) and the BLM interpretive signage at the parking area are the content. Keeping it in offroad implies a drive that is not there."
         }
       ]
     },
@@ -6601,6 +6852,30 @@
           ],
           "was": "Devil's Bridge Trailhead — a trailhead, not a trail"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Broken Arrow Trail",
+          "was_name": "Broken Arrow 4x4 trail (towed truck)",
+          "url": "https://www.fs.usda.gov/r03/coconino/recreation/trails/broken-arrow-trail-no-125",
+          "distance": "about 3.5 miles round trip, Sedona, Red Rock Ranger District, Coconino National Forest",
+          "difficulty": "sources genuinely disagree and both are recorded. The Forest Service trail page presents it as moderate with spectacular views; the off-road community rates it hard — slickrock, rock ledges and 'the Steps', with high-clearance 4WD, low range, skid plates and a short wheelbase wanted. Treat it as the harder reading and scout the Steps on foot before committing.",
+          "season": "NO CONFLICT. Open year-round; spring is the best of it. The stop arrives 4 Mar 2028 — good weather, but also the start of the busy season on a route already saturated with commercial jeep tours. Go early in the day.",
+          "note": "No permit is needed to drive the route, but a Red Rock Pass or an equivalent federal lands pass is required to park at the trailhead. Chicken Point, a wide slickrock overlook, is the usual turnaround and the highlight; Submarine Rock is on the way. Short enough to be a half-day from Camp Verde with the drive up."
+        },
+        {
+          "name": "Dry Creek Road (FR 152)",
+          "distance": "roughly 1.1 to 1.3 miles of unpaved road from the paved lot to the upper Devil's Bridge trailhead",
+          "difficulty": "not published by the Forest Service. Community reports are consistent: high-clearance 4WD required, several large rocks to clear just to get onto the road, extremely rocky and rough throughout",
+          "season": "No seasonal closure found. The stop arrives 4 Mar 2028 — no conflict.",
+          "note": "No listing found. Coconino NF publishes nothing specific to FR 152 that a search returned, and the detailed accounts are all on hiking blogs and paywalled offroad databases, so this is recorded with no URL rather than a link to something that is really about the hike. Its value is that it cuts the Devil's Bridge hike to about 2 miles round trip instead of the long approach — the road is a way to shorten a walk, not a destination drive. FR 152 is not recommended for pedestrians because of vehicle traffic and dust."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "Devil's Bridge Trail",
+          "problem": "A hike, not an offroad route — 32,000+ reviews on AllTrails as a trail. It belongs in the trails box. What is offroad about it is the access, Dry Creek Road / FR 152, which is now listed separately above."
+        }
       ]
     },
     "bryce": {
@@ -6744,7 +7019,18 @@
           "was": "Cassidy Arch Trailhead — a trailhead, not a trail"
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/capitol-reef-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/capitol-reef-national-park",
+      "offroad": [
+        {
+          "name": "Cathedral Valley Loop",
+          "was_name": "Cathedral Valley 4x4 loop (towed truck only)",
+          "url": "https://www.nps.gov/places/cathedral-valley.htm",
+          "distance": "57.6 miles, 6 to 8 hours of slow driving. Most drive it clockwise: Hartnet Road from the Fremont River ford 11.7 miles east of the visitor center, 27.8 miles to Hartnet Junction, then Cathedral Road 29.9 miles back to Highway 24",
+          "difficulty": "not graded by NPS, which says high-clearance vehicles can usually manage it without four-wheel drive. That holds only when it is dry — rain or snow can make it impassable to the best high-clearance 4WD",
+          "season": "THE FORD IS THE CONFLICT, NOT A GATE. The south end of Hartnet Road fords the Fremont River with no bridge; normally under a foot of water on a rocky bottom, impassable in high water, and NPS says plainly not to attempt it in flood. The stop arrives 28 Mar 2028 — spring runoff and spring storms, the worst combination for that ford, and winter snow can still leave the high sections muddy. There is no seasonal closure to check, only conditions, so this must be phoned in the day before: Capitol Reef visitor center 435-425-3791 (press #1, then #4).",
+          "note": "If the ford is up, the loop is not lost — drive Cathedral Road in from the Caineville end as an out-and-back and skip the crossing entirely. That reaches the Cathedrals themselves, which is what people come for. Cell reception is poor to nonexistent on the whole loop, and there is no water; carry recovery gear and tell someone the plan. Rig advice removed from the name per the settled truck-only policy."
+        }
+      ]
     },
     "moab": {
       "activities": {
@@ -9844,7 +10130,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Movie Road (Alabama Hills)",
+          "was_name": "Alabama Hills BLM roads",
+          "url": "https://www.blm.gov/visit/alabama-hills",
+          "distance": "about 6 miles of graded gravel looping off US-395 through the rock formations and back",
+          "difficulty": "not published as a grade. Graded dirt, no low range needed in dry conditions; the spurs off it get rougher",
+          "season": "NO CONFLICT. Open year-round at about 4,500 ft. The stop arrives 27 Dec 2027 — snow is uncommon this low, but a winter storm turns the graded dirt greasy and the spurs soft, so pick the day.",
+          "note": "Renamed from a vague plural to the one named route. BLM restricts vehicle and mountain-bike use to existing roads and trails — no cross-country driving in the Scenic Area, and the boulder fields are exactly where people are tempted. A free permit is needed to camp, not to drive; get it online, at the Eastern Sierra Interagency Visitor Center on US-395, or at the kiosks on Movie Road itself. BLM publishes a downloadable Movie Road brochure identifying the film locations, which is the point of the drive."
+        }
+      ]
     },
     "dawson-creek": {
       "activities": {
@@ -9879,7 +10176,13 @@
             }
           ]
         }
-      }
+      },
+      "not_a_route": [
+        {
+          "entry": "The coach is appropriate for the main Alaska Highway.",
+          "problem": "A statement about the coach on a paved highway. Not an offroad route by any reading — it belongs in the leg notes, if anywhere."
+        }
+      ]
     },
     "chitina": {
       "activities": {
@@ -9945,7 +10248,37 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "McCarthy Road",
+          "was_name": "Drive the McCarthy Road to McCarthy & Kennecott (in the towed 4x4, not the motorhome)",
+          "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-road-guide.htm",
+          "distance": "59.4 miles one way, Chitina State Wayside to the McCarthy footbridge over the Kennicott River",
+          "difficulty": "not graded by NPS. Usually driveable in 2WD, but soft shoulders, limited visibility and poor surface mean it is a slow, attentive drive rather than an easy one",
+          "season": "Best late June through early September, when the road is clear of ice and snow. The stop arrives 15 Aug 2027 — squarely inside the good window, no conflict.",
+          "note": "Pack-dirt and gravel on an old railbed. The state has spent heavily on it in recent years and it is well maintained in summer, but potholes and washboard hold you to 35 mph or below. NPS suggests two hours; allow three each way, and remember there is no vehicle bridge at the far end — you park at the Kennicott River and walk the footbridge into McCarthy. This is the entry the box was really about; the rig advice in the old name is now settled policy and has moved to the note."
+        },
+        {
+          "name": "O'Brien Creek Road",
+          "was_name": "O'Brien Creek (4x4)",
+          "url": "https://dot.alaska.gov/nreg/copper-river-access/",
+          "distance": "about 3 miles from Chitina to the O'Brien Creek parking area — and that is where driveable road ends",
+          "difficulty": "not a technical route. The short spur is ordinary rough gravel",
+          "season": "The road is there year-round, but its whole character depends on the Copper River personal-use dipnet fishery, which runs periodically between about 7 June and 30 September. The stop arrives 15 Aug 2027, inside that window — expect the parking area busy with dipnetters and charter operators.",
+          "note": "Worth correcting an expectation: this is not a 4x4 route, it is a three-mile spur. Beyond O'Brien Creek the old roadbed through Wood Canyon is extremely rough and undriveable — the bridge over the creek takes ATVs only, and the trail past it is an ATV route and a dangerous one. The DOT road project beyond O'Brien Creek has stalled. Also worth knowing before going: the local tribe has petitioned to close the road, which overlies a burial ground, so treat the area as sensitive."
+        }
+      ],
+      "not_a_route": [
+        {
+          "entry": "4x4 explore O'Brien Creek Road",
+          "problem": "Duplicate — the same road is listed twice in this box, once as a verb phrase and once as 'O'Brien Creek Road (4x4)'. Folded into a single entry."
+        },
+        {
+          "entry": "Stop at the Wrangell-St. Elias NPS ranger station in Chitina",
+          "problem": "A building, and a good idea, but not a route. Belongs in activities or points of interest. It is also where you would ask about McCarthy Road conditions, so it is worth keeping somewhere on the card."
+        }
+      ]
     },
     "organ-pipe-ajo": {
       "activities": {
@@ -10062,5 +10395,6 @@
     "https://en.wikipedia.org/wiki/Solomon_Gulch_Hatchery",
     "https://en.wikipedia.org/wiki/Yukon_Wildlife_Preserve"
   ],
-  "_dead_links": "URLs proven NOT to exist. build_links.py strips any of these from a highlight's links on every run, so a bad link cannot survive in the built page just because it was written there once. Removing an entry from this db is not enough — the page is merged into, not rebuilt."
+  "_dead_links": "URLs proven NOT to exist. build_links.py strips any of these from a highlight's links on every run, so a bad link cannot survive in the built page just because it was written there once. Removing an entry from this db is not enough — the page is merged into, not rebuilt.",
+  "_offroad": "Offroad routes researched per stop. Every url was copied from a search result and re-verified to resolve before merging. rig is truck everywhere by standing decision. `not_a_route` records entries that were never routes: rig constraints filed as list items, road-status links, non-motorised areas, and duplicates of the scenic-drives box."
 }

@@ -261,6 +261,28 @@ def apply_stop(stop, entry, log):
         stop['alltrails'] = existing
         log.append(f"  {sid}: {replaced} replaced, {len(real) - replaced} added, "
                    f"{len(existing)} in the box")
+    # Offroad routes, same merge rule as trails: replace by name or was_name,
+    # never append blindly.
+    for r in entry.get('offroad') or []:
+        box = stop.setdefault('offroad', [])
+        keys = {norm(r['name'])}
+        if r.get('was_name'):
+            keys.add(norm(r['was_name']))
+        item = {k: v for k, v in r.items()
+                if k in ('name', 'url', 'distance', 'difficulty', 'note', 'season') and v}
+        item['rig'] = 'truck'
+        hit = next((i for i, x in enumerate(box) if norm(x.get('name')) in keys), None)
+        if hit is None:
+            box.append(item)
+        else:
+            box[hit] = item
+    for x in entry.get('not_a_route') or []:
+        box = stop.get('offroad') or []
+        before = len(box)
+        stop['offroad'] = [y for y in box if norm(y.get('name')) != norm(x['entry'])]
+        if len(stop['offroad']) != before:
+            log.append(f"  {sid}: dropped {x['entry'][:40]!r} from offroad — {x['problem'][:50]}")
+
     # Prose and trailheads that are not trails at all come out by name.
     drop = {norm(x['entry']) for x in (entry.get('not_a_trail') or [])}
     un = entry.get('unresolved')

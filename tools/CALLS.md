@@ -15,8 +15,8 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-07-03 — Talkeetna, AK  `talkeetna`
 
-- **—** — Phone MSB Parks, Recreation, Trails & Library Services. Do not rely on the draft ordinance.
-  <sub>dogs_unpublished</sub>
+- **(907) 861-7801** — Phone the Matanuska-Susitna Borough on (907) 861-7801 and ask for Land & Resource Management (which matsu.gov/trails names as the trails contact) or Parks, Recreation, Trails & Library Services.
+  <sub>dogs_unpublished.action</sub>
 
 ## 2027-07-10 — Cooper Landing, AK  `cooper-landing`
 
@@ -30,8 +30,8 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-07-23 — Homer, AK  `homer`
 
-- **—** — The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Homer City Clerk, or Kachemak Heritage Land Trust for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here.
-  <sub>dogs_unpublished</sub>
+- **(907) 235-3130** — Phone the Homer City Clerk on (907) 235-3130 (clerk@cityofhomer-ak.gov) and ask for the trail dog rule in Homer City Code Title 20 — one call covers the Spit trail and Diamond Creek, since both are city-managed.
+  <sub>dogs_unpublished.action</sub>
 
 ## 2027-08-10 — Valdez, AK  `valdez`
 
@@ -84,11 +84,6 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 - **605-433-5361** — Phone 605-433-5361 for status.
   <sub>offroad.1</sub>
 
-## 2028-06-20 — Bismarck/Mandan, ND  `bismarck-nd`
-
-- **701-667-6340** — Call Fort Abraham Lincoln State Park on 701-667-6340 and ask whether leashed dogs may use the park's hiking trails, and specifically the Scouts trail system and the Young Hawk interpretive loop.
-  <sub>dogs_unpublished.action</sub>
-
 ## 2028-07-17 — Porcupine Mountains, MI  `porcupine-mountains-mi`
 
 - **906-885-5275** — Park office 906-885-5275.
@@ -106,9 +101,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-264-7329** — 239; road emergency 613-264-7329.
-  <sub>offroad.0</sub>
 - **613-259-2398** — Manager of Public Works 613-259-2398 ext.
+  <sub>offroad.0</sub>
+- **613-264-7329** — 239; road emergency 613-264-7329.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

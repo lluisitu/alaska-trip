@@ -2740,9 +2740,14 @@
         "checked": [
           "https://matsu.gov/trails/talkeetna-lakes-trails — no pet or leash rule",
           "https://matsu.gov/trails — no pet or leash rule",
-          "https://matsugov.us/docs/meetings/24561/February-24,-2025-PACKET-PRTAB.pdf — contains 'Mat-Su Park and Rec Ordinances - 2024 DRAFT WORKING COPY', which would make it unlawful to 'Walk a dog without a leash, said leash to be no longer than six feet' in a borough park. It is a DRAFT in an advisory-board packet and the minutes record 'Code of Ordinances for Parks and Recreation - No report', so it is not adopted law and is NOT used as a verdict."
+          "https://matsugov.us/docs/meetings/24561/February-24,-2025-PACKET-PRTAB.pdf — contains 'Mat-Su Park and Rec Ordinances - 2024 DRAFT WORKING COPY', which would make it unlawful to 'Walk a dog without a leash, said leash to be no longer than six feet' in a borough park. It is a DRAFT in an advisory-board packet and the minutes record 'Code of Ordinances for Parks and Recreation - No report', so it is not adopted law and is NOT used as a verdict.",
+          "Aug 2026 pass — went after the ADOPTED borough code, to settle whether the 2024 draft ever became law. https://matsu.gov/code-and-legislation loads and names https://www.codepublishing.com/AK/MatanuskaSusitnaBorough/ as the only browsable full code.",
+          "https://www.codepublishing.com/AK/MatanuskaSusitnaBorough/ — returns HTTP 200 but the body is a Cloudflare bot-challenge stub (1.2 KB, /errors/error.css, a cdn-cgi challenge link), not the code. Confirmed by direct curl with a browser user agent. So the adopted MSB code text could not be read.",
+          "https://library.municode.com/ak/matanuska-susitna_borough/codes/code_of_ordinances — 403; the Municode mirror is closed too.",
+          "https://lite.duckduckgo.com/lite/?q=Matanuska-Susitna+Borough+ordinance+adopted+parks+recreation+%22leash%22+dog+2025+MSB+23.05+OR+ordinance+serial+no — zero results. No adopted parks ordinance with a leash clause is indexed anywhere, which is consistent with the 2024 draft still being a draft, but is not proof either way.",
+          "https://matsu.gov/trails re-read for contacts — no pet rule, and it routes trail questions to the borough's Land & Resource Management Department."
         ],
-        "action": "Phone MSB Parks, Recreation, Trails & Library Services. Do not rely on the draft ordinance."
+        "action": "Phone the Matanuska-Susitna Borough on (907) 861-7801 and ask for Land & Resource Management (which matsu.gov/trails names as the trails contact) or Parks, Recreation, Trails & Library Services. Ask one question: is there an ADOPTED borough ordinance requiring dogs to be leashed in borough parks, or are dogs simply permitted at Talkeetna Lakes Park with no published rule. Do not rely on the 2024 draft ordinance."
       }
     },
     "cooper-landing": {
@@ -3141,9 +3146,12 @@
           "https://www.cityofhomer-ak.gov/publicworks/lend-leash-program — the only leash rule the city quotes is Homer City Code 20.08.030, and it covers the small boat harbor floats only: 'No person may bring, keep, or maintain an animal on the floats on the City of Homer's small boat harbor, unless the animal is kept under physical confinement by leash or chain at all times.' The page places borrowable leashes at 'the beach, parks and trails' but states no requirement there.",
           "https://www.cityofhomer-ak.gov/police/animal-shelter — no rule text",
           "https://www.cityofhomer-ak.gov/recreation/homer-trails-park-map — 403 to fetching and 'Access Denied / User log in' in a real browser; not public",
-          "Homer City Code (Title 20) is hosted on codepublishing.com, which answers a bot challenge that was not bypassed"
+          "Homer City Code (Title 20) is hosted on codepublishing.com, which answers a bot challenge that was not bypassed",
+          "Aug 2026 pass — https://www.cityofhomer-ak.gov/publicworks/diamond-creek-trail — the city's own Diamond Creek Trail page, which confirms the CITY is the manager for the trail as listed on this card (there is a separate Alaska State Parks 'Diamond Creek State Recreation Site' adjacent, so the caller should say which one they mean). The page covers access, switchbacks and the blue-clay surface. No pet, dog or leash rule.",
+          "Aug 2026 pass — https://www.kachemaklandtrust.org/homestead-trail — 404. The land trust publishes no reachable Homestead Trail page, so its dog rule remains unsourced.",
+          "Aug 2026 pass — https://dnr.alaska.gov/parks/aspunits/kenai/ — 403, so the Alaska State Parks route to a Kenai-area pet regulation is closed too. https://dnr.alaska.gov/parks/asprules.htm — 404."
         ],
-        "action": "The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Homer City Clerk, or Kachemak Heritage Land Trust for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here."
+        "action": "The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Phone the Homer City Clerk on (907) 235-3130 (clerk@cityofhomer-ak.gov) and ask for the trail dog rule in Homer City Code Title 20 — one call covers the Spit trail and Diamond Creek, since both are city-managed. Ask Kachemak Heritage Land Trust separately for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here."
       }
     },
     "denali": {
@@ -11523,24 +11531,16 @@
           "stats_note": "No AllTrails listing; ND Parks & Recreation confirms it with length and uses."
         }
       ],
-      "dogs_unpublished": {
-        "trails": [
-          "Mato-tope Trail",
-          "Bloody Knife Trail",
-          "Little Soldier Loop",
-          "Scouts Trail System",
-          "Young Hawk Interpretive Trail"
-        ],
-        "authority": "North Dakota Parks and Recreation Department (Fort Abraham Lincoln State Park)",
-        "checked": [
-          "https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park — the only pet sentence on the whole page sits inside the Camping Information block: 'Pets are welcome but must stay on a leash. Most parks have off-leash areas or dog parks for your four-legged friends.' It says nothing about trails, and the cabin block adds 'Pets are not allowed in cabins.'",
-          "https://www.parkrec.nd.gov/stay/camping — identical camping boilerplate, same single leash sentence, no trail rule",
-          "https://www.parkrec.nd.gov/hiking — the department's statewide hiking page; no mention of pets, dogs or leashes anywhere on it",
-          "https://www.parkrec.nd.gov/faq — FAQ covers reservations, permits and check-in times only; no pet question",
-          "https://www.parkrec.nd.gov/entry — entry permit page, no pet rule",
-          "https://www.parkrec.nd.gov/sitemap.xml — enumerated every page on the site; there is no pets page, no park-rules page, and no fort-abraham-lincoln-state-park-trails page (other parks in the sitemap do have -trails pages, this one does not)"
-        ],
-        "action": "Call Fort Abraham Lincoln State Park on 701-667-6340 and ask whether leashed dogs may use the park's hiking trails, and specifically the Scouts trail system and the Young Hawk interpretive loop. ND Parks publishes a leash rule for campgrounds only, so the trail answer has to be spoken rather than read. Do not assume from the camping rule."
+      "dogs": "North Dakota's adopted park use rules allow pets on all Fort Abraham Lincoln trails on a leash of six feet or less, personally attended; only buildings, playgrounds, swimming areas and posted areas are closed to them — so the On-a-Slant earthlodges and the blockhouses mean leaving the dog outside.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.parkrec.nd.gov/business/sites/www/files/documents/Resources/58-02-08%281%29%20Admin%20Code%2007.01.2019.pdf",
+      "dogs_source_quote": "Pets shall be personally attended at all times and shall be effectively restrained by a portable enclosure or a leash not exceeding six feet [1.83 meters] in length.",
+      "trail_dogs": {
+        "Mato-tope Trail": true,
+        "Bloody Knife Trail": true,
+        "Little Soldier Loop": true,
+        "Scouts Trail System": true,
+        "Young Hawk Interpretive Trail": true
       }
     },
     "itasca-mn": {
@@ -15179,6 +15179,16 @@
           "auto": true,
           "auto_km": 3
         }
+      },
+      "dogs": "Split stop: the two Missisquoi NWR trails take a leashed dog under the refuge's own rule, but Vermont publishes nothing reachable for Mount Philo or Niquette Bay, so treat both state parks as unknown until Vermont State Parks is phoned.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fws.gov/refuge/missisquoi/visit-us/rules-policies",
+      "dogs_source_quote": "Pets must be leashed and under the control of the owner while on the refuge.",
+      "trail_dogs": {
+        "Black Creek & Maquam Creek Trails, Missisquoi NWR": true,
+        "Stephen J. Young Marsh Trail, Missisquoi NWR": true,
+        "Mount Philo State Park summit trail": null,
+        "Niquette Bay State Park — Allen Trail and connecting loops": null
       }
     },
     "stowe-vt": {
@@ -15459,7 +15469,14 @@
           "https://www.greenmountainclub.org/hiking-with-dogs/ — loads, but publishes only general guidance, not a per-trail rule: 'Please observe all posted signage about dogs at the trailheads; note some areas such as the alpine zone will require your dog to be on a leash while other areas may not allow dogs'. It names Stowe Pinnacle in passing as a dog hike but states no permission.",
           "https://stowelandtrust.org/ — no dog policy published on the site's front matter",
           "https://www.uvm.edu/femc/natural_areas/mount-mansfield — 404",
-          "Search index for vtstateparks.com and fpr.vermont.gov pet pages returned only third-party guides (dogtrailrules, petfriendlytravel, Burlington Free Press), never an official sentence"
+          "Search index for vtstateparks.com and fpr.vermont.gov pet pages returned only third-party guides (dogtrailrules, petfriendlytravel, Burlington Free Press), never an official sentence",
+          "Aug 2026 pass — tried the rule as LAW rather than as a park page, since the park pages are the part that 403s. The adopted rule is Code of Vermont Rules 12 020 009, 'VISITOR CONDUCT AND FEES AND CHARGES FOR STATE PARK SERVICES AND COMMERCIAL ACTIVITIES ON DEPARTMENT LANDS'. Every route to its text failed, listed below.",
+          "https://secure.vermont.gov/SOS/rules/ — LOADS (so the Vermont 403 is not domain-wide, it is specific to the parks sites). But it carries PROPOSED rules only, and points to LexisNexis for adopted ones.",
+          "http://www.lexisnexis.com/hottopics/codeofvtrules/ — the Secretary of State's designated publisher of the Code of Vermont Rules. 301-redirects into advance.lexis.com, a JavaScript container that returns no rule text.",
+          "https://sos.vermont.gov/rules/ — 403",
+          "https://regulations.justia.com/states/vermont/agency-12/sub-agency-020/chapter-009/section-12-020-009/ — 403. This is the one page a search actually surfaced with the right citation, and it refused.",
+          "https://www.law.cornell.edu/regulations/vermont/12-020-009 — loads, but only as an agency index; Cornell LII carries no Vermont rule text at this citation (it does carry North Dakota's, which is how Bismarck was settled).",
+          "https://lite.duckduckgo.com/lite/?q=%22Vermont+State+Parks%22+rules+%22pets%22+leash+rabies+certificate+official+PDF — returned Burlington Free Press, Hipcamp and a vtstateparks.com tag page. No official rule text anywhere in the index."
         ],
         "action": "Phone Vermont State Parks on 1-888-409-7579 (or parks@vermont.gov) and ask two things: are dogs permitted on Mount Mansfield's Sunset Ridge and the Long Trail over the summit ridge, given the alpine zone, and is there any dog restriction on the Putnam State Forest trails at Stowe Pinnacle and Moss Glen Falls. One call settles all six. Worth doing before arrival — this is a 4-night hard-anchored stop on 1 Oct 2028 and the trails are most of what the stop is for."
       }
@@ -19875,7 +19892,8 @@
           "https://www.eurekaparks.com/parks/lake-leatherwood — official Lake Leatherwood park page. Describes the lake, campground and trail mileage. No pet, dog or leash rule anywhere on the page.",
           "https://www.eurekaparks.com — Eureka Springs Parks and Recreation home page. The only dog reference is the Bark Park at Harmon Park, a separate fenced facility; nothing about dogs on trails.",
           "https://lite.duckduckgo.com/lite/?q=Lake+Leatherwood+City+Park+Eureka+Springs+dogs+leash+rules+official+city+park — search returned no eurekaparks.com or City of Eureka Springs page carrying a trail dog rule; every 'dog friendly' claim came from BringFido, DogPack or Zoomies Zone, which are not authorities.",
-          "https://lite.duckduckgo.com/lite/?q=eurekaparks.com+Lake+Leatherwood+park+rules+regulations+dogs+leash+trails — same result: no official park-rules page indexed."
+          "https://lite.duckduckgo.com/lite/?q=eurekaparks.com+Lake+Leatherwood+park+rules+regulations+dogs+leash+trails — same result: no official park-rules page indexed.",
+          "Aug 2026 pass — tried the municipal code rather than the park page: https://lite.duckduckgo.com/lite/?q=Eureka+Springs+Arkansas+municipal+code+ordinance+parks+%22dogs%22+leash+Lake+Leatherwood returned a Facebook hiking post, the STATE enabling statute (Ark. Code 14-54-1102, which only grants municipalities the POWER to prevent dogs running at large — it is not itself a Eureka Springs rule), and a dog-beach aggregator. No City of Eureka Springs ordinance text is indexed."
         ],
         "action": "Phone Eureka Springs Parks and Recreation / Lake Leatherwood at 479-253-7921 (or leatherwood@eurekaparks.com) and ask two things: are leashed dogs allowed on the Lake Leatherwood trail network, and is there a leash-length rule. Then ask the Great Passion Play separately about the Magnetic Mountain trails, since that is private land under a different owner."
       }
@@ -19971,7 +19989,8 @@
           "https://crystalbridges.org/policies — the museum's own policies page. Covers photography, bags and drones ('drones are not permitted on the museum's trails and grounds') but says nothing about pets, dogs or service animals.",
           "https://crystalbridges.org/visit/nature-trails — the official trails page, which names the Art Trail and seven other trails. No pet, dog or leash rule.",
           "https://crystalbridges.org/visit/ — the main visit page. No mention of dogs, pets, animals or service animals.",
-          "https://lite.duckduckgo.com/lite/?q=Crystal+Bridges+Museum+trails+dogs+leashed+pets+policy+crystalbridges.org — the 'leashed pets are welcome on the museum trails' claim traces only to BringFido and similar aggregators, not to the museum."
+          "https://lite.duckduckgo.com/lite/?q=Crystal+Bridges+Museum+trails+dogs+leashed+pets+policy+crystalbridges.org — the 'leashed pets are welcome on the museum trails' claim traces only to BringFido and similar aggregators, not to the museum.",
+          "Aug 2026 pass — no new sources attempted. The three museum pages above are the museum's complete published policy surface and a private landowner has no code, statute or administrative rule to fall back on, which is the route that settled Bismarck. This one only a phone call can close."
         ],
         "action": "Phone Crystal Bridges Guest Services on 479-657-2335 and ask whether leashed dogs are allowed on the Art Trail and the wider museum trail network, and whether the rule differs on the paved North Forest / Orchard sections. One call settles the whole stop, since the Art Trail is the only trail on the card."
       }

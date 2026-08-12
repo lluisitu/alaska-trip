@@ -412,6 +412,21 @@ def apply_stop(stop, entry, log):
     # search links, which stays honest until they are researched.
     acts = entry.get('activities') or {}
     if acts:
+        # A db key that matches no highlight silently does nothing — the same
+        # failure that made a shots_db correction a no-op for three commits.
+        # An entry may only introduce a NEW highlight if it says so with
+        # `add: true`; anything else naming an unknown headline is a typo and
+        # is reported rather than swallowed.
+        have = {a.get('name') for a in (stop.get('activities') or [])}
+        for name, spec in acts.items():
+            if name in have:
+                continue
+            if spec.get('add'):
+                stop.setdefault('activities', []).append({'name': name})
+                log.append(f'  {sid}: added highlight {name[:48]!r}')
+            else:
+                log.append(f'  !! {sid}: activities key matches no highlight and is not '
+                           f'marked add — {name[:60]!r}')
         kept, dropped = [], 0
         for a in (stop.get('activities') or []):
             spec = acts.get(a.get('name'))

@@ -312,9 +312,21 @@ desktop/index.html trailPillsHtml() renders difficulty/time/distance/rating
 
 Rules the injector follows, each of which exists because it broke once:
 
-- **Merge, never replace.** The db carries only what was researched this pass. An
-  early version assigned the trail list wholesale and deleted Santa Fe's five good
-  trails and six of Estes Park's eight.
+- **Merge, never replace — at the LIST level and at the FIELD level.** The db
+  carries only what was researched this pass. An early version assigned the trail
+  list wholesale and deleted Santa Fe's five good trails and six of Estes Park's
+  eight. The same bug then reappeared one level down: matching an entry by name
+  and assigning `box[hit] = item` deleted every field the injector does not know
+  about, which wiped 95 `tag` notes across the east extension's offroad boxes.
+  Those tags carry trip-specific judgement — "the most realistic early-May 4x4
+  day of the stop" — and they live ONLY in `desktop/index.html`. **No db holds
+  them, so there was nothing to rebuild from; they came back out of git history.**
+  `merge_keep(old, new, owned)` now replaces only the keys each box's builder
+  owns and carries everything else across. Owned keys are still cleared when
+  absent, because that is how a stale `label: "search AllTrails"` gets removed
+  once a trail gains a real url.
+- **Anything in a card that no db can regenerate is one careless assignment from
+  gone.** Before adding a field to a box, decide which side of that line it is on.
 - **Dedupe on append.** Appending unconditionally grew the file by one Trailway per
   run and the md5 never settled.
 - **Idempotent.** `md5` must be identical across three consecutive runs.

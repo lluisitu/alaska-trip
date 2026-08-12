@@ -128,6 +128,11 @@ shift several days. A change that crosses a hard anchor should fail loudly, not 
 - **Patching HTML by shape.** A regex that matched a block's *shape* terminated at the first blank
   line after a closing brace, left half the old copy and appended a second. Delimit injected CSS/JS
   with explicit start/end marker comments and verify the md5 is stable across three runs.
+- **Not every field in a card is generated.** The offroad and scenic-drive `tag` notes live *only*
+  in `desktop/index.html` — no db holds them. `build_links.py` matched an entry by name and assigned
+  over it, which deleted 95 of them silently; the cards still looked fine and read worse, and they
+  had to be recovered from git history. It now merges field by field via `merge_keep()`. Before
+  putting anything in a card, know whether a rebuild can reproduce it.
 - **`indent=1`.** `build_parks.py` writes `EXT_DATA` with `indent=1`; any other script touching it
   must match or the two reformat each other forever.
 - **Applying an override twice.** Would shift eighteen months of dates twice and look plausible.

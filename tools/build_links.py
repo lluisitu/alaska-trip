@@ -155,6 +155,33 @@ def norm(s):
     return ' '.join(str(s or '').lower().split()).rstrip('.')
 
 
+# The keys each box's builder owns. Anything outside these sets is hand-written
+# prose that lives only in desktop/index.html and must survive a rebuild.
+OFFROAD_KEYS = ('name', 'url', 'distance', 'difficulty', 'note', 'season', 'rig')
+DRIVE_KEYS = ('name', 'url', 'note', 'season', 'distance', 'rig')
+TRAIL_KEYS = ('name', 'url', 'label', 'difficulty', 'time', 'distance', 'rating',
+              'uses', 'dogs', 'cruise', 'cruiseWhy', 'note')
+
+
+def merge_keep(old, new, owned):
+    """Replace the keys this script owns; carry everything else across.
+
+    The three boxes used to assign `box[hit] = item`, which silently deleted
+    any field the builder does not know about. That cost the east extension's
+    offroad `tag` prose — trip-specific judgement like "the most realistic
+    early-May 4x4 day of the stop" — which lives ONLY in desktop/index.html.
+    No db holds it, so a wholesale replace destroyed it with nothing to
+    rebuild from.
+
+    Owned keys are cleared even when the new item omits them, because that is
+    how a stale value gets removed: a trail that gains a real url must lose
+    its old label 'search AllTrails'. Unowned keys are never touched.
+    """
+    kept = {k: v for k, v in old.items() if k not in owned}
+    kept.update(new)
+    return kept
+
+
 # Ordering, in the order the rules apply:
 #
 #   1. Easy and moderate are ONE band, not two. Inside it, review count decides.
@@ -256,7 +283,7 @@ def apply_stop(stop, entry, log):
             if hit is None:
                 existing.append(item)
             else:
-                existing[hit] = item
+                existing[hit] = merge_keep(existing[hit], item, TRAIL_KEYS)
                 replaced += 1
         stop['alltrails'] = existing
         log.append(f"  {sid}: {replaced} replaced, {len(real) - replaced} added, "
@@ -268,13 +295,13 @@ def apply_stop(stop, entry, log):
         if r.get('was_name'):
             keys.add(norm(r['was_name']))
         item = {k: v for k, v in r.items()
-                if k in ('name', 'url', 'note', 'season', 'distance') and v}
+                if k in DRIVE_KEYS and v}
         item['rig'] = 'truck'
         hit = next((i for i, x in enumerate(box) if norm(x.get('name')) in keys), None)
         if hit is None:
             box.append(item)
         else:
-            box[hit] = item
+            box[hit] = merge_keep(box[hit], item, DRIVE_KEYS)
 
     # Offroad routes, same merge rule as trails: replace by name or was_name,
     # never append blindly.
@@ -284,13 +311,13 @@ def apply_stop(stop, entry, log):
         if r.get('was_name'):
             keys.add(norm(r['was_name']))
         item = {k: v for k, v in r.items()
-                if k in ('name', 'url', 'distance', 'difficulty', 'note', 'season') and v}
+                if k in OFFROAD_KEYS and v}
         item['rig'] = 'truck'
         hit = next((i for i, x in enumerate(box) if norm(x.get('name')) in keys), None)
         if hit is None:
             box.append(item)
         else:
-            box[hit] = item
+            box[hit] = merge_keep(box[hit], item, OFFROAD_KEYS)
     for x in entry.get('not_a_route') or []:
         box = stop.get('offroad') or []
         before = len(box)

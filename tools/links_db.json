@@ -10808,7 +10808,25 @@
           "auto": true,
           "auto_km": 15
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Forest roads inland from the Caribou Trail (Cook County Rd 4) toward the Sawtooths",
+          "url": "https://www.fs.usda.gov/r09/superior/recreation/groups/sawtooth-mountains-fall-color-tour",
+          "note": "The Forest Service treats this ground as four linked signed routes: Beaver Dam, Moose, Maple Leaf and Mountain View Drives. The route-name signs go up only for the fall colour season, so navigation is by map the rest of the year. USFS publishes no mileage, surface or difficulty for any of the four.",
+          "season": "Cook County puts spring load restrictions on gravel roads at 5 tons/axle for a minimum of eight weeks, and notes they not uncommonly run past the MnDOT North Frost Zone dates — a useful proxy for when this gravel is soft. Lifted 26 Jun in 2026.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r09/superior/recreation/groups/sawtooth-mountains-fall-color-tour"
+        },
+        {
+          "name": "Superior National Forest gravel spurs off the Gunflint Trail",
+          "url": "https://www.fs.usda.gov/r09/superior/recreation/gunflint-trail-scenic-byway",
+          "distance": "57 miles Grand Marais to Trail's End Campground (the byway itself; the spurs are unmeasured)",
+          "note": "The Gunflint Trail is paved — the gravel is all in the spurs off it, and USFS publishes no inventory of them. Forest Service wording for this road network generally: single lane with occasional wide turnouts, you may have to back up for oncoming traffic, and logging trucks use them. Gunflint Ranger District office runs 1 May to 30 Sep. Check the forest alerts page before committing to a day out.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r09/superior/recreation/gunflint-trail-scenic-byway"
+        }
+      ]
     },
     "bayfield-wi": {
       "activities": {
@@ -10915,7 +10933,37 @@
           "auto": true,
           "auto_km": 60
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "No 4x4 routes inside the park",
+          "url": "https://www.michigan.gov/recsearch/parks/porkies",
+          "note": "Confirmed by omission rather than by a quoted ban: the DNR park page lists the park's activities in full — snowmobiling, cross-country skiing, dog sledding, hiking, hunting, metal detecting, paddling — and ORV/ATV riding is absent. The DNR does name ORV riding explicitly at sites that have it, so the omission carries weight, but the actual prohibition text lives in the Land Use Orders of the Director Chapter V, which could not be opened. Treat as an absence of listing, not a quoted rule.",
+          "tier": "unlisted",
+          "source": "https://www.michigan.gov/recsearch/parks/porkies"
+        },
+        {
+          "name": "Ottawa National Forest roads toward Bond Falls and Agate Falls",
+          "url": "https://www.michigan.gov/recsearch/parks/bondfalls",
+          "season": "Bond Falls: vehicle access typically mid-May through mid-October, weather depending; the hiking-trail access is open year-round. Ottawa NF routes designated 'Seasonal' are open 16 May through 14 Mar annually.",
+          "note": "Bond Falls and Agate Falls are Michigan DNR scenic sites, not Forest Service ones, so their gate dates come from DNR and the road designations from the Ottawa. Watch the Ottawa's 65-inch OHV width rule — it excludes a full-size pickup from the designated OHV trails, but not from Forest Service roads open to highway-legal vehicles on the MVUM. Agate Falls was closed through late 2026 for trestle bridge repairs; long finished by 2028 but worth one re-check.",
+          "tier": "official",
+          "source": "https://www.michigan.gov/recsearch/parks/bondfalls"
+        },
+        {
+          "name": "Shore-road spurs off M-64 east toward Ontonagon",
+          "note": "No listing of any kind exists for these spurs — no Forest Service page, no route database, no club page. The road authority is the Ontonagon County Road Commission, which maintains every local shore spur off M-64 and is also the body the DNR names as deciding when South Boundary Road reopens each spring; its site returned 403 and is deliberately not linked here. M-64 itself is fully paved, so all the gravel is in the spurs, and no published inventory names them individually.",
+          "tier": "unlisted"
+        },
+        {
+          "name": "South Boundary Road, Union Bay end to Presque Isle end",
+          "url": "https://www.michigan.gov/recsearch/parks/porkies",
+          "season": "DNR wording: park roads, including County Road M-107 at the Whitetail parking area and South Boundary Road from Headquarters Road south to the Pinkerton Trailhead, close Dec. 1 through late spring for visitor safety.",
+          "note": "There is no fixed reopening date — the roads become designated snowmobile trails over winter and reopen to vehicles only when the Ontonagon County Road Commission deems them safe, so the Union Bay to Presque Isle through-drive is not guaranteed until they say so. The DNR publishes a workaround: the Presque Isle end stays reachable via County Road 519 just east of Wakefield. Park office 906-885-5275.",
+          "tier": "official",
+          "source": "https://www.michigan.gov/recsearch/parks/porkies"
+        }
+      ]
     },
     "marquette-mi": {
       "activities": {
@@ -10952,7 +11000,34 @@
           "auto": true,
           "auto_km": 2
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Co. Rd. AAA (Triple A Road), Yellow Dog Plains",
+          "url": "https://theridrs.com/routes/triple-a-road/",
+          "distance": "11.9 mi, Big Bay to Yellow Dog Plains, +1,060 ft",
+          "difficulty": "Moderate (the site's own scale)",
+          "note": "Only the eastern half is suitable for standard vehicles — at the western edge of Yellow Dog Plains the road deteriorates into large puddles, big rocks and steep inclines that challenge even high-clearance vehicles, so plan to turn around there and run it as an out-and-back from Big Bay. There is no signage marking the turn off County Road 510; navigate by odometer. Naming trap: the same road is Co. Rd. AAA in Champion Township but Co. Rd. KAA in Powell Township, so signs and maps will disagree along its length. This source is a driving-route site, not a land manager — the turn-around advice is uncorroborated by any authority.",
+          "tier": "community",
+          "source": "https://theridrs.com/routes/triple-a-road/"
+        },
+        {
+          "name": "County Road 510",
+          "url": "https://www.co.marquette.mi.us/departments/road_commission/weight_restrictions.php",
+          "season": "Marquette County seasonal weight restrictions historically go on mid-March and come off mid-May — in 2026, on 5 Mar and lifted 8:00 a.m. 18 May. Loads cut to 65% of normal legal load; the pickup is nowhere near the limit, but the dates mark when the dirt section is soft.",
+          "note": "No route database lists this road. The Road Commission publishes an All Season Roads list by township and a status line on 906-486-4491 opt. 2.",
+          "tier": "official",
+          "source": "https://www.co.marquette.mi.us/departments/road_commission/weight_restrictions.php"
+        },
+        {
+          "name": "Old CR-510 steel bridge over the Dead River",
+          "url": "https://historicbridges.org/bridges/browser/?bridgebrowser=truss/cr510/",
+          "distance": "271.0 ft structure, 265.0 ft main span, 19 ft roadway width",
+          "note": "The fact that changes the plan: the bridge is CLOSED to vehicles — open to traffic 1921, closed 2010 — so you cannot drive it. Marquette County left it standing for its historic value and it remains open to pedestrians, with a walkway approaching it on an even grade; signs read 'MCRC Property Enter At Own Risk'. It is the longest pin-connected highway truss span in Michigan and the type is extremely rare in the state. Reach it from the old CR 510 approaches, now County Road JWW and County Road JHH, or view it east of the new crossing. Park and walk, not a drive.",
+          "tier": "community",
+          "source": "https://historicbridges.org/bridges/browser/?bridgebrowser=truss/cr510/"
+        }
+      ]
     },
     "munising-mi": {
       "activities": {
@@ -11033,7 +11108,33 @@
           "auto": true,
           "auto_km": 3
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Chapel Road (H-58 to Chapel Basin trailhead)",
+          "url": "https://www.nps.gov/places/chapel-falls.htm",
+          "distance": "5 miles north off Alger County Road H-58, about 15 miles east of Munising; 17.8 mi from Munising, 34.2 mi from Grand Marais",
+          "difficulty": "\"a rough, backcountry road\" — NPS wording; NPS publishes no rated scale",
+          "note": "Heavy congestion in summer and early fall, and the trailhead lot often fills by 9 am — an early start matters more than the road does. Seasonal vault toilet, no drinking water. NPS publishes no winter gate date for this road; the park's conditions page carries only weather and ski grooming and has no road section at all.",
+          "tier": "official",
+          "source": "https://www.nps.gov/places/chapel-falls.htm"
+        },
+        {
+          "name": "H-58 spurs to Miners Beach, Little Beaver Lake and Hurricane River",
+          "url": "https://www.nps.gov/piro/planyourvisit/roadmileage.htm",
+          "note": "NPS publishes distances to each spur but not the length of the spurs themselves: Miners Castle Road 5.2 mi from Munising, Little Beaver Lake Road 22.8, Hurricane River lower entrance 40.8 and upper 41.1. No difficulty or seasonal gate dates are published for any of them.",
+          "tier": "official",
+          "source": "https://www.nps.gov/piro/planyourvisit/roadmileage.htm"
+        },
+        {
+          "name": "Hiawatha National Forest roads south of H-58",
+          "url": "https://www.fs.usda.gov/r09/hiawatha/recreation/opportunities/highway-vehicles-ohv",
+          "distance": "over 2,000 miles of Forest Road open to motorized use, forest-wide",
+          "note": "The MVUM classifies by permission, not difficulty — 'Roads Open to All Vehicles' versus 'Roads Open to Highway Legal Vehicles Only', and the pickup is the latter. Hard rule, verbatim: motor vehicle use off designated routes, including for game retrieval, is prohibited, with penalties up to $5,000 or 6 months regardless of the presence or absence of signs. Seasonal routes are flagged per-road on the sheet's Seasonal and Special Designation Table, not by one forest-wide date. MVUMs are reissued annually — pull a fresh one before the trip.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r09/hiawatha/recreation/opportunities/highway-vehicles-ohv"
+        }
+      ]
     },
     "tahquamenon-falls-mi": {
       "activities": {
@@ -11081,7 +11182,35 @@
           "auto": true,
           "auto_km": 17
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Crisp Point Light access roads (Luce County / forest roads west of Whitefish Point)",
+          "url": "https://lucecountyroads.com/wp-content/uploads/2024/05/LCRC-Seasonal-Roads-Not-maintd-in-winter.pdf",
+          "distance": "CR 412 Crisp Point Rd, CR 423 to Singleton's Driveway and CR 502 to Crisp Point — 11.60 miles; approach CR 414 Pike Lake Rd, CR 407 to just west of Pike Lake — 11.27 miles",
+          "season": "Luce County Road Commission seasonal roads list, Rev. 03/07/2023: not maintained for public travel from November 1 to April 30. The lighthouse society adds that the last 7 miles of CR 412 are usually open by the end of May, and that snow can make the road impassable even in spring.",
+          "note": "This is the road authority's own seasonal-roads list, so it is the harder source than the lighthouse society's directions page the sibling entry links. Worth knowing the winter status: the road becomes Snowmobile Trail 8, and the society's own warning is not to drive it when there is snow. Watch for ATVs on the dirt.",
+          "tier": "official",
+          "source": "https://lucecountyroads.com/wp-content/uploads/2024/05/LCRC-Seasonal-Roads-Not-maintd-in-winter.pdf"
+        },
+        {
+          "name": "Lake Superior State Forest two-tracks toward the Two-Hearted River mouth",
+          "url": "https://www.crisppointlighthouse.org/drive2.html",
+          "distance": "CR 423, CR 414 to the Mouth of the Two Hearted — 4.34 miles (Luce County Road Commission)",
+          "season": "The county-road spine in is not maintained for public travel November 1 to April 30.",
+          "note": "Honest limit: the graded county roads that get you in are fully documented, but no authority page describes the individual named two-tracks off them — treat the spine as listed and the two-tracks themselves as unlisted. This Newberry-approach directions page is the distinct source (the sibling entry carries the Paradise approach): roughly 37 miles, about 1 hour 10 minutes, and once off M-123 the roads are all dirt or sand, narrow and curvy. The society's own line is that they cannot guarantee you won't get stuck.",
+          "tier": "community",
+          "source": "https://www.crisppointlighthouse.org/drive2.html"
+        },
+        {
+          "name": "Vermilion Road toward the old Coast Guard station",
+          "url": "https://landtrust.org/explore/vermilion-point-nature-preserve/",
+          "distance": "roughly 13 miles: from Paradise north on N. Whitefish Rd 5.2 mi, left on Vermilion Rd, 0.6 mi keeping right, then 6.1 mi on the straightest road, then 1.3 mi to the preserve",
+          "note": "This is not a drive-through. Motorized vehicles, including ATVs and snowmobiles, are prohibited on the Vermilion Point preserve itself, so you drive the road to the boundary and walk to the old life-saving station — if the card implies driving to the station, that is wrong. Dogs are NOT allowed at the preserve 1 May to 15 August; leashed only the rest of the year. 175 acres, 9,240 ft of Lake Superior frontage, station first built 1876. Vermilion Road is in Chippewa County and is absent from the Luce County seasonal list; whether it carries its own seasonal designation is unknown.",
+          "tier": "official",
+          "source": "https://landtrust.org/explore/vermilion-point-nature-preserve/"
+        }
+      ]
     },
     "st-ignace-mi": {
       "activities": {
@@ -11151,7 +11280,26 @@
           "auto": true,
           "auto_km": 25
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Emmet County shore roads west of Mackinaw City toward Cross Village",
+          "url": "https://www.emmetcrc.org/seasonalroads",
+          "difficulty": "Road Commission's own wording: seasonal roads \"are not typical road beds and are often narrow, swampy, and can often be difficult to navigate\"",
+          "season": "A seasonal road will not be maintained November through April, and will not be open to public traffic during that time — though the Road Commission states plainly that it does not enforce any closure. Grading happens once or twice a year, typically late spring through early fall. No winter plowing.",
+          "note": "No listing exists for this as a named 4x4 route; this is the road authority confirming the roads and how they are managed. Live caution as of mid-2026: four separate M-119 segments were closed after April 2026 flooding, plus Lower Shore Dr — the corridor was still under FEMA disaster recovery. Check MDOT's MiDrive before relying on the through-route.",
+          "tier": "official",
+          "source": "https://www.emmetcrc.org/seasonalroads"
+        },
+        {
+          "name": "Wilderness State Park two-tracks (Sturgeon Bay / Waugoshance Point)",
+          "url": "https://www.michigan.gov/recsearch/parks/wilderness",
+          "season": "The plover closure is in state law, not just park signage: Land Use Orders of the Director 5.7(1)(b) closes the posted lands April 15 through August 31, and 5.7(1)(c) separately bars possessing or allowing a dog on them at Waugoshance Point and Sturgeon Bay over the same April 15 to August 31 window. The park page adds that the shoreline outside pet-friendly areas is closed to pets April through August.",
+          "note": "DNR names Nebo Trail, South Boundary Trail, Swamp Line Trail and Sturgeon Bay Trail as two-tracks, and notes many visitors ride Waugoshance Point Road. Park is 11 miles west of Mackinaw City, 26 miles of Lake Michigan shoreline. The dog is the binding constraint here, not the truck — check the arrival date against April 15 to August 31 before planning this one. Recreation Passport required for vehicle entry.",
+          "tier": "official",
+          "source": "https://www.michigan.gov/recsearch/parks/wilderness"
+        }
+      ]
     },
     "traverse-city-mi": {
       "activities": {
@@ -11604,6 +11752,17 @@
           ],
           "stats_note": "Name collision worth guarding against on merge: Murphys Point Provincial Park (stop perth-on) also has a 'Beaver Pond Trail', 1 km and Easy. These figures are Algonquin's."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Rock Lake Road (Hwy 60 km 40.3 to Rock Lake)",
+          "url": "https://www.algonquinpark.on.ca/visit/camping/rock-lake-access-point.php",
+          "distance": "8 km of gravel south from Highway 60 to the Rock Lake Campground, then 150 m to the access point on the Madawaska River",
+          "season": "Rock Lake Campground open mid-May to October; Ontario Parks gave the 2026 window as May 8 to October 18.",
+          "note": "The two authorities differ slightly on the turn — the Friends of Algonquin say km 40.3, Ontario Parks say km 40. Neither publishes a gate date for the road distinct from the campground season, and the Friends page defers to Algonquin Park Advisories for road conditions. Access point at 45.525077, -78.413210.",
+          "tier": "official",
+          "source": "https://www.algonquinpark.on.ca/visit/camping/rock-lake-access-point.php"
+        }
       ]
     },
     "pec-on": {
@@ -11683,6 +11842,16 @@
               "note": "Managing authority. Interpretive trail; Ontario Parks publishes no difficulty grade for this one."
             }
           ]
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Point Petre / Ostrander Crown Land Block access roads",
+          "url": "https://www.ontarioparks.ca/cr/monarchpointconservationreserve",
+          "season": "Ontario Parks states conservation reserves do not have operating dates.",
+          "note": "Material change the existing note predates: this land was re-designated in 2023. Point Petre Provincial Wildlife Area and the Ostrander Point Crown Land Block are now the Monarch Point Conservation Reserve, 1,607 ha, regulated under the Provincial Parks and Conservation Reserves Act, 2006 — so any framing of it as MNRF Crown land is out of date. The regulation notice says vehicle use \"will be permitted to continue on trails, or off trail to retrieve game, as long as the values the conservation reserve was created to protect are not adversely impacted,\" and warns that timing restrictions or trail closures could be added later. No management plan with a road inventory exists yet, so no authority publishes mileage, ratings or gate dates. Sandbanks Provincial Park (613) 393-3319 is the only way to get a current answer.",
+          "tier": "official",
+          "source": "https://www.ontarioparks.ca/cr/monarchpointconservationreserve"
         }
       ]
     },
@@ -11837,6 +12006,17 @@
             }
           ]
         }
+      ],
+      "offroad": [
+        {
+          "name": "Lanark Highlands gravel township roads (Perth north toward Lanark, Flower Station and Ompah)",
+          "url": "https://www.lanarkhighlands.ca/services-payments/public-works/roads-and-sidewalks",
+          "distance": "approximately 350 km of gravel roads in the township, many of them seasonal, across 1,048 km²",
+          "season": "Two separate restrictions, and the second is the one that bites. Reduced loads are usually in effect from March 1st to mid-May. Seasonal Roads — Class 6B and Class 6C — are CLOSED between November 15 and April 15. That is an outright closure of the seasonal gravel, not a weight limit.",
+          "note": "Manager of Public Works 613-259-2398 ext. 239; road emergency 613-264-7329.",
+          "tier": "official",
+          "source": "https://www.lanarkhighlands.ca/services-payments/public-works/roads-and-sidewalks"
+        }
       ]
     },
     "lake-placid-ny": {
@@ -11874,7 +12054,49 @@
           "auto": true,
           "auto_km": 19
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Upper Works Road (CR 25A)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/upper-works-road-25a-g8zlrpxx7z1w",
+          "distance": "3.3 mi",
+          "difficulty": "1 (Easy) — onX rates it 1/10 for smooth, well-maintained gravel and dirt with no significant obstacles",
+          "season": "Best spring, summer, fall. Neither the Town of Newcomb nor DEC publishes a winter plowing status or gate date for this road.",
+          "note": "Ends at a large parking area with a pit toilet, and passes the historic McIntyre Blast Furnace of the Tahawus ghost town — you can drive to the gate, the rest of the ghost town is on foot. The road follows the Hudson close to its source, past marshes and ponds. Naming caveat worth carrying: the Town of Newcomb and DEC call the county route CR 25 (Tahawus Road), not CR 25A, and the Town states the old parking lot at the terminus of Upper Works Road is closed, with parking moved to a 60-car lot by the MacNaughton Cottage and unauthorised vehicles towed. The draw is history and trailhead access rather than the driving.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/upper-works-road-25a-g8zlrpxx7z1w"
+        },
+        {
+          "name": "Deer Pond Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/deer-pond-road-g8zlrpxm7z1w",
+          "distance": "2.2 mi",
+          "difficulty": "2 (Easy) — rated 2/10, mostly easy dirt with minor potholes and muddy puddles after rain",
+          "season": "DEC requires parking reservations from Memorial Day weekend until the gates close for winter in late November or early December.",
+          "note": "Resolved to the Essex Chain Lakes Complex in Newcomb, where DEC calls it the Cornell/Deer Pond Road — not Moose River Plains. Ends at a large parking area on the edge of the Essex Chain Lakes Primitive Area with a pit toilet and a gate; you continue on foot to the water. Several roadside dispersed camp spots along it. DEC's own wording for the roads here: pickup trucks, SUVs and other high axle vehicles are recommended, four wheel drive will serve even better. Beavers occasionally flood portions of the road.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/deer-pond-road-g8zlrpxm7z1w"
+        },
+        {
+          "name": "Otter Brook Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/otter-brook-road-7062l73kmz8e",
+          "distance": "2.9 mi, out-and-back",
+          "difficulty": "2 (Easy) — not very difficult, but one vehicle wide and needing some higher clearance toward the end",
+          "season": "Best spring, summer, fall. DEC publishes no fixed gate dates for Otter Brook Road itself; the parent access, the Limekiln Lake–Cedar River Road, is a seasonal road that opens mid-May.",
+          "note": "DEC-maintained, in the Moose River Plains Complex, and it sees very little traffic. Surface alternates sandy two-track and well-maintained gravel; it ends at a bog where a small snowmobile bridge crosses the South Branch of the Grass River. Live closure to check before going: a bridge failure at Payne Brook has forced all Moose River Plains access to the Limekiln Lake/Inlet entrance, with the Cedar River Headquarters gate closed — approach from the west. DEC Region 5 Northville 518-863-4545.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/otter-brook-road-7062l73kmz8e"
+        },
+        {
+          "name": "Lake Glen Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/lake-glen-road-nyo657lr9q0v",
+          "distance": "6.6 mi",
+          "difficulty": "2 (Easy) — an established forest access road with a stable base, no deep waterholes or large rocks",
+          "season": "Best summer and fall; no gate dates published by anyone.",
+          "note": "Runs around the southern flank of 3,550 ft Saddleback Mountain through the Adirondack Forest Preserve. Side-trail access at the western end is blocked by a forest products company that owns most of the surrounding land. Honest limit: this is the one Adirondack route no authority confirms — no DEC page, unit management plan or roads-open-to-motor-vehicle-use listing names it, and because it runs between Forest Preserve and private industrial timberland its legal access basis is genuinely unestablished. Recent reports include downed trees needing recovery boards in Dec 2025.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/lake-glen-road-nyo657lr9q0v"
+        }
+      ]
     },
     "south-hero-vt": {
       "activities": {
@@ -12025,6 +12247,48 @@
           "was": "Mount Mansfield via Sunset Ridge / — no url",
           "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Patterson Brook Road (Fire Service 50)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/vermont/patterson-brook-road-fire-service-50-5m3qxn0n3z09",
+          "distance": "5.2 mi, out-and-back",
+          "difficulty": "2 (Easy) — easy driving, but care is needed because active logging changes road conditions; a chainsaw for blowdowns helps",
+          "season": "Green Mountain National Forest, official: most GMNF roads are closed during the winter months from December 15 to May 1, with some exceptions. FR 50 Patterson Brook, Rochester district, currently listed Open.",
+          "note": "The one route in this set with a real land-manager behind it. Borders the Bread Loaf Wilderness, climbing from 1,043 ft near Granville to 1,868 ft. Dispersed off-grid campsites along FR 50, no permit, 14-day limit, and no cell service. Stream crossings are on good bridges.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r09/gmfl/conditions"
+        },
+        {
+          "name": "Symonds Mill Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/vermont/symonds-mill-road-98yzyrnre614",
+          "distance": "4.1 mi",
+          "difficulty": "2 (Easy) — \"country dirt roads\"",
+          "season": "Best fall, summer, spring. No town or state mud-season restriction found for this road.",
+          "note": "The one Vermont route in this set that is genuinely local to the stop — Wolcott/Elmore, about 20 minutes from Stowe. Mostly packed gravel with some muddy sections; these are working farm roads, so watch for farm equipment and livestock. Pairs with Woodbury Mountain Road if you want a longer day.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/vermont/symonds-mill-road-98yzyrnre614"
+        },
+        {
+          "name": "Big Hollow Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/vermont/big-hollow-road-g8zlpjvjeq1w",
+          "distance": "6.2 mi",
+          "difficulty": "3 (Easy) — varied surface from packed gravel to dirt to mud",
+          "season": "Best fall and summer. A status report of 14 Apr 2026 has it Temporarily Closed for a posted seasonal closure, with no stated opening day — consistent with a Vermont Class 4 mud-season closure. Best avoided during spring sugaring season.",
+          "note": "Location flag worth resolving before the trip: this listing sits at 44.227, -73.056, which is Starksboro in Addison County — west of the Green Mountain spine and about 35 miles from Stowe, not the Fayston Big Hollow Road. Fayston's town roads page and its 2020 Town Plan both fetch clean with no mention of a Big Hollow Road, so no listing for the Fayston one could be sourced. Starts as farm gravel, becomes a standard Class 4 road with small obstacles, past abandoned homes and maple sugaring equipment; narrows at a log landing halfway, then an older, less-used trail out into a field with horses.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/vermont/big-hollow-road-g8zlpjvjeq1w"
+        },
+        {
+          "name": "Top of the World",
+          "url": "https://www.onxmaps.com/offroad/trails/us/vermont/top-of-the-world-3l6om4x2vzw4",
+          "distance": "3.8 mi",
+          "difficulty": "3 (Easy) — maintained gravel that washes out on the steeper climbs, with water bars that can catch a low bumper",
+          "season": "Best time listed as summer only.",
+          "note": "Same location flag as Big Hollow: this runs the powerlines on the Vermont side of Moore Reservoir, near Waterford in Caledonia County — roughly 50 miles east of Stowe, a long day trip rather than a local run. No Roxbury or Northfield 'Top of the World Road' could be sourced anywhere. The payoff at the top is a view over Moore Reservoir toward New Hampshire. Many offshoots from mild to wild; the final climb is where 4WD matters if it has washed out. Expect ATV and side-by-side groups on a fine day. Reports through 2026 say a washout has been repaired and the route rebuilt into an easy dirt road.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/vermont/top-of-the-world-3l6om4x2vzw4"
+        }
       ]
     },
     "eastern-townships-qc": {
@@ -12099,7 +12363,59 @@
           "auto": true,
           "auto_km": 29
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Jefferson Notch Road",
+          "url": "https://trailsnh.com/roads/status/19/jefferson-notch-road",
+          "distance": "8.4 mi",
+          "difficulty": "2 (Easy) — wide enough for vehicles to pass almost anywhere, though storms leave ruts and washouts",
+          "season": "Gate dates, from 11 opening and 10 closing reports 2016–2026: opens usually around June 12, as late as June 24; closes usually around November 29, as early as November 3. The Forest Service itself publishes only status plus a last-updated date and the note \"Not maintained for winter travel, Snowmobile trail system\" — these dated figures are crowdsourced, not a WMNF publication.",
+          "note": "Highest elevation reached by a public road in New Hampshire, and one of the last WMNF roads to open each spring — an early-autumn stop is well inside the window, a spring one would not be. Many dispersed campsites, mostly on the north side toward Valley Road, 14-day max and you must occupy the first night. Mostly a car and a half wide.",
+          "tier": "community",
+          "source": "https://trailsnh.com/roads/status/19/jefferson-notch-road"
+        },
+        {
+          "name": "Sandwich Notch Road",
+          "url": "https://trailsnh.com/roads/status/FR-98/sandwich-notch-road",
+          "distance": "7.9 mi",
+          "difficulty": "1 (Easy) — the easiest of the local set; well-maintained forest road",
+          "season": "Opens usually around May 12, as late as June 3; closes usually around October 28, from 14 opening and 8 closing reports 2013–2026. Note the late-October closing average — this is the one road in the set that can shut before the others. WMNF lists it as maintained by the town of Sandwich and NOT maintained for winter travel.",
+          "note": "FR 98. Established 1801 and laid out as a route from the Pemigewasset valley to the seacoast; cellar holes still line it. Points of interest along the way: Upper and Lower Hall Ponds, Kiah Pond, Gillman Hall Cemetery and Beede Falls.",
+          "tier": "community",
+          "source": "https://trailsnh.com/roads/status/FR-98/sandwich-notch-road"
+        },
+        {
+          "name": "Tripoli Road",
+          "url": "https://trailsnh.com/roads/status/FR-30/tripoli-road",
+          "distance": "8.2 mi",
+          "difficulty": "1 (Easy) — very well maintained and mostly gravel; the hardest parts are the few stretches of unmaintained, badly deteriorated pavement",
+          "season": "Opens usually around May 21, as late as May 31; closes usually around November 19, as early as November 1, from 12 opening and 10 closing reports 2015–2026.",
+          "note": "FR 30. Built by the Forest Service in 1934 with CCC help and named for the Tripoli Mill; runs the pass between Mt Tecumseh and Mt Osceola. Popular for trailhead and campsite access. Bear and moose activity especially at night, and no cell service in the middle section.",
+          "tier": "community",
+          "source": "https://trailsnh.com/roads/status/FR-30/tripoli-road"
+        },
+        {
+          "name": "Slippery Brook",
+          "url": "https://trailsnh.com/roads/status/FR-17/slippery-brook-road",
+          "distance": "4.6 mi. WMNF describes FR 17 and FR 38 together as a 7-mile road system commonly known as Town Hall Road.",
+          "difficulty": "2 (Easy) — gravel, well maintained in the summer months",
+          "season": "Opens usually around May 24, as late as June 26; closes usually around November 29, as early as November 14, from 12 opening and 10 closing reports 2014–2026. Multiple gates close depending on snow levels and it is not maintained in winter.",
+          "note": "This is National Forest System Road 17, in Jackson and Chatham. Camping and fire restrictions are in force 1 June 2026 to 1 June 2031: no camping within a quarter mile of the road except at designated sites marked with a tent symbol, and no wood or charcoal fires in the same band except at those sites — pressurised-fuel stoves are permitted. Worth knowing before planning a fire.",
+          "tier": "community",
+          "source": "https://trailsnh.com/roads/status/FR-17/slippery-brook-road"
+        },
+        {
+          "name": "East Branch Saco River",
+          "url": "https://trailsnh.com/roads/status/FR-38/east-branch-road",
+          "distance": "3.3 mi",
+          "difficulty": "2 (Easy) — dirt road, not plowed in winter, with one rough spot near the end by the beaver bog",
+          "season": "Opens usually around May 26, as late as June 24; closes usually around November 24, as early as November 9, from 10 opening and 10 closing reports 2016–2026.",
+          "note": "Resolved: this is East Branch Road, FR 38 — the East Branch of the Saco, in Jackson and Chatham, not the East Branch Pemigewasset — and it is the companion to Slippery Brook FR 17 in the Town Hall Road system. Well-maintained dirt and gravel hugging the river, with pull-offs for camping and trailheads and a bridge crossing; dead-ends at a hiking trail. The same quarter-mile camping and fire restrictions as FR 17 apply through 2031.",
+          "tier": "community",
+          "source": "https://trailsnh.com/roads/status/FR-38/east-branch-road"
+        }
+      ]
     },
     "bar-harbor-me": {
       "activities": {
@@ -12221,6 +12537,58 @@
           "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
           "dogs": true
         }
+      ],
+      "offroad": [
+        {
+          "name": "Seal Cove Road",
+          "url": "https://www.nps.gov/acad/learn/news/seal-cove-road-western-mountain-road-and-lurvey-spring-road-have-delayed-openings.htm",
+          "distance": "NPS gives 2.17 miles, from the park boundary in Southwest Harbor to State Route 102; onX measures its own track at 2.7 mi, probably including connectors. Use the NPS figure.",
+          "difficulty": "NPS publishes no scale; it described spring conditions as \"Deep ruts, exposed culverts, and downed wood.\" onX rates it 2 (Easy).",
+          "season": "Acadia's gravel roads close to motor vehicles around November 15 and reopen by May 15, weather and conditions permitting.",
+          "note": "NPS opens this one first of the three west-side fire roads each spring, so it is the safest bet at the shoulders. Runs from Tremont Road at the west end to Main Street at the east, giving access to several trailheads plus Western Mountain Road. Recent reports call it washboarded with no significant views — the quiet is the point, not the scenery.",
+          "tier": "official",
+          "source": "https://www.nps.gov/acad/learn/news/seal-cove-road-western-mountain-road-and-lurvey-spring-road-have-delayed-openings.htm"
+        },
+        {
+          "name": "Western Mountain Road",
+          "url": "https://www.nps.gov/acad/learn/news/seal-cove-road-western-mountain-road-and-lurvey-spring-road-have-delayed-openings.htm",
+          "distance": "NPS: 3.32 miles including connecting unpaved roads (onX independently measures 3.3 mi)",
+          "difficulty": "onX rates it 2 (Easy) — non-technical unless after heavy rain or in winter",
+          "season": "Closes around November 15, reopens by May 15 weather permitting. NPS has published delayed spring openings for this road specifically after winter freeze-thaw damage, opening it only after Seal Cove Road.",
+          "note": "NPS extent is from the park boundary west of the Worcester landfill to Seal Cove Pond. These are multi-purpose roads with walkers and cyclists as well as cars, so drive them accordingly. A loop from the Bald Mountain parking area via Western Mountain Road to Seal Cove Road runs roughly 3.2 miles. Gravel forestry surface with soft sand spots that turn to mud after heavy rain, and not always wide enough for two vehicles to pass.",
+          "tier": "official",
+          "source": "https://www.nps.gov/acad/learn/news/seal-cove-road-western-mountain-road-and-lurvey-spring-road-have-delayed-openings.htm"
+        },
+        {
+          "name": "Long Pond Fire Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/long-pond-fire-road-j064jy5w7615",
+          "distance": "4.2 mi",
+          "difficulty": "2 (Easy) — non-technical unless after heavy rain or during winter",
+          "season": "NPS: on November 15, gravel roads in the park close to motor vehicle traffic, including Seal Cove Road, Western Mountain Roads and the Long Pond Fire Road. Reopened by May 15, weather and conditions permitting.",
+          "note": "One of the few dirt roads in Acadia where you get away from the crowds. Starts at Tremont Road and reaches several trailheads plus a good swimming spot on Long Pond, Hodgdon Pond and Seal Cove Pond. Gravel forestry road with soft sand that turns muddy after rain; not always wide enough for two vehicles. Park entrance pass required. On the winter snowmobile question, the park's unplowed fire roads are generally open to snowmobiles, but no authority page names this road specifically — 36 CFR 7.56 designates the Long Pond TRUCK Road, which is a different road.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maine/long-pond-fire-road-j064jy5w7615"
+        },
+        {
+          "name": "Donnell Pond",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/donnell-pond-wrezk4n7l6lk",
+          "distance": "3.3 mi",
+          "difficulty": "2 (Easy) — a gravel road with some rough washed-out areas, getting progressively rougher",
+          "season": "Best spring, summer, fall. Maine Bureau of Parks and Lands publishes no gate dates but warns that many access roads are not plowed in winter unless timber harvesting is under way.",
+          "note": "Mostly wide open, though some spur roads narrow considerably, and sections double as snowmobile trail in winter. Camping is allowed but campfires are prohibited outside established sites. A damaged bridge has turned people around partway, with the road continuing beyond it. The state authority for the unit is Maine BPL's Donnell Pond Public Reserved Land page, which names Black Mountain Road and Dynamite Brook Rd but publishes no road condition detail — Eastern Public Lands Office (207) 941-4412. Caveat: the listing's start point sits toward the Tunk Lake end, so which of the unit's gravel roads this actually is cannot be confirmed.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maine/donnell-pond-wrezk4n7l6lk"
+        },
+        {
+          "name": "Narraguagus Lake",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/narraguagus-lake-5x36wxy75zyk",
+          "distance": "11.3 mi",
+          "difficulty": "2 (Easy) — mostly gravel with a few muddy spots, easily driven in 2WD or 4WD",
+          "season": "Best spring, summer, fall. No gate dates published, and probably none exist to find.",
+          "note": "This is the start of a much larger northward system signed as Trail 501, reaching genuinely remote country and ending below a large group of wind turbines before continuing to South Spectacle Pond Road — so it is as long as you want it to be. Recent reports mention construction vehicles and heavy traffic near the turbines. Honest limit: no authority — Maine BPL, IF&W, land trust or town — confirms a road here by name, and it is most likely private timberland under permissive access, which is why no published gate dates exist.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maine/narraguagus-lake-5x36wxy75zyk"
+        }
       ]
     },
     "camden-me": {
@@ -12247,7 +12615,38 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Frye Mountain - High Ridge to Getchell",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/frye-mountain-high-ridge-to-getchell-1k36n3v1dz9j",
+          "distance": "6.3 mi listed; just over 8 miles as driven, including a 3-mile out-and-back spur to a second cemetery",
+          "difficulty": "2 (Easy) — gravel roads, mostly wide enough for two vehicles to pass",
+          "season": "Best spring, summer, fall. Maine IF&W closes WMA roads seasonally after the firearm deer season ends, to protect the road infrastructure — but publishes no calendar date for it, tying the closure to the end of the season instead. Do not assume a date; this one needs a call.",
+          "note": "A west-to-east crossing of the Frye Mountain State Game Management Area, passing Carter Cemetery. A few sections at lower elevations can flood. The WMA is about 5,200 acres across Knox, Montville and Morrill in Waldo County; IF&W has no dedicated page for it, so the Lands Management Program page is the best official source available.",
+          "tier": "community",
+          "source": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/lands-management-program.html"
+        },
+        {
+          "name": "Bald Mountain Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/bald-mountain-trail-4j0647wn7615",
+          "distance": "1.3 mi",
+          "difficulty": "3 (Easy) — one vehicle wide and entirely uphill, with sections around 25-degree incline, washouts, loose rock, and ledges near the summit",
+          "season": "Best spring, summer, fall; no gate dates published.",
+          "note": "Location flag: this listing sits at 44.831, -68.482, in inland Hancock County — 50-odd miles northeast of Camden and much closer to the Bar Harbor/Ellsworth stop, so it may be filed under the wrong stop. It is genuinely a driving route, not a hiking listing. The Camden-area Bald Mountain is a Coastal Mountains Land Trust preserve on Barnestown Road whose published activities are hiking, birding and snowshoeing, with no evidence of a drivable summit road — so if the Camden mountain was meant, there is nothing to link. Summit is shared with a hiking trail; a few snowmobile side trails off it are not 4x4 friendly.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maine/bald-mountain-trail-4j0647wn7615"
+        },
+        {
+          "name": "Quarry Road Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maine/quarry-road-trail-3g8zlp5kgq1w",
+          "distance": "2.4 mi",
+          "difficulty": "3 (Easy) — two steep inclines and some rocky terrain",
+          "note": "Three problems, any one of which is disqualifying. It is in Waterville — the trailhead is behind the Home Depot — roughly 45 miles inland from Camden, so it is on the wrong stop. It is reported Permanently Closed with an official closed sign, by three separate people between Oct 2024 and Aug 2025. And its access classes are single track, 50-inch and 60-inch only, with no full-width class, so it is an ATV/UTV trail the pickup does not fit. Recommend dropping it rather than linking it.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maine/quarry-road-trail-3g8zlp5kgq1w"
+        }
+      ]
     },
     "berkshires-ma": {
       "activities": {
@@ -12284,7 +12683,59 @@
           "auto": true,
           "auto_km": 38
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Country Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/massachusetts/country-road-x06p74v9w6ko",
+          "distance": "1.8 mi",
+          "difficulty": "1 (Easy) — well-maintained gravel road",
+          "season": "Not maintained in winter. October Mountain State Forest is open sunrise to one half-hour after sunset.",
+          "note": "This is the main entrance road into October Mountain State Forest, the largest state forest in Massachusetts at 16,500 acres, and it gives access to several areas of the park with views over the wetlands to the west. Worth knowing the forest's other reputation: DCR states the OHV trails at October Mountain are challenging and only suitable for the intermediate to expert rider — that is a different trail set from this road.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/country-road-x06p74v9w6ko"
+        },
+        {
+          "name": "Beartown Mountain Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/massachusetts/beartown-mountain-road-m3qxp7jmj609",
+          "distance": "3.2 mi",
+          "difficulty": "2 (Easy) — unmaintained, with mildly stepped sections where the gravel thins and plenty of holes and ruts that fill with runoff",
+          "season": "DCR: Beartown State Forest OHV season is open May 1st to the last Sunday in November, weather permitting; park hours sunrise to sunset. A late-October visit is inside that window.",
+          "note": "Begins at Route 102 at an unlocked gate and runs south into the park, with remnants of old pavement still showing before the gravel starts about 2 miles in. Crosses the Appalachian Trail 0.2 mi from the end and finishes in a residential dirt lot.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/beartown-mountain-road-m3qxp7jmj609"
+        },
+        {
+          "name": "Mount Wilcox Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/massachusetts/mount-wilcox-road-3l6or484e6w4",
+          "distance": "4 mi listed; the full loop is 4.3 miles",
+          "difficulty": "2 (Easy) — two cars wide in places, soft shoulders, steeper climbs on loose gravel; unmaintained after snow",
+          "season": "Same DCR Beartown window: OHV season May 1st to the last Sunday in November, weather permitting.",
+          "note": "The main loop through Beartown State Forest, starting and ending off Benedict Pond Road and climbing from 1,600 to 2,100 ft. A short spur breaks off halfway to the summit, but the fire tower there is gated with no public access.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/mount-wilcox-road-3l6or484e6w4"
+        },
+        {
+          "name": "Ashley Lake Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/massachusetts/ashley-lake-road-2eqrdrr9560w",
+          "distance": "2.3 mi",
+          "difficulty": "3 (Easy) — a very bumpy road with occasional mud holes and small ledges that deepen in wet seasons",
+          "season": "Best spring, summer, fall.",
+          "note": "Currently obstructed, and this is the live problem: a report of 26 Jul 2026 describes a massive downed tree about 500 feet in from the south that ATVs and dirt bikes can pass but full-size vehicles cannot, and 2025 reports describe another tree plus heavy overgrowth that will stripe a full-size truck. Part of the route is a corduroy road — logs laid across the direction of travel — which is very rough. It runs through October Mountain State Forest past Ashley Lake, Sandwash Reservoir, Clapp Pond and Mud Pond, and the north end exits at a gate on Washington Mountain Road that has turned people around. No Pittsfield water-department access restriction could be sourced either way.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/ashley-lake-road-2eqrdrr9560w"
+        },
+        {
+          "name": "Greylock Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/massachusetts/greylock-road-rezkjp90n6lk",
+          "distance": "2.9 mi",
+          "difficulty": "1 (Easy) — no harder than many dirt roads, but not frequently maintained, so fallen trees often block it",
+          "season": "onX: open June through October only. For context, DCR's separate Mount Greylock Auto Roads ran May 16 to October 30 in 2026 — so a 27 October arrival clears both, but only by about three days and only weather permitting.",
+          "note": "Resolved: this is a separate gravel road, NOT one of DCR's paved Notch/Rockwell/Summit auto roads — it is a quieter alternative ascent that eventually meets the paved main road and continues to the peak. Two status reports describe downed trees worth turning back for, so the gate date is not the only thing that can stop you. Note DCR's new rule that vehicles over 22 feet are prohibited on the Greylock Auto Roads and to the summit; the pickup is unaffected.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/greylock-road-rezkjp90n6lk"
+        }
+      ]
     },
     "litchfield-hills-ct": {
       "activities": {
@@ -12332,7 +12783,49 @@
           "auto": true,
           "auto_km": 20
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Del Reeves & North Mulford Roads",
+          "url": "https://www.onxmaps.com/offroad/trails/us/connecticut/del-reeves-north-mulford-roads-3l6o0od4l6w4",
+          "distance": "5 mi",
+          "difficulty": "1 (Easy) — nothing technical, a few bumps and the occasional mud hole after rain",
+          "season": "Best time listed as spring, summer, fall AND winter — the only route in this set rated for all four, with a December snow run reported Open.",
+          "note": "Forest correction that matters for planning: this is Meshomasic State Forest in Portland, not Naugatuck — roughly 35 to 45 miles east, across the Connecticut River, so it cannot be run from the same base as Cold Springs Road. Unmaintained, mostly dirt with some gravel. Numerous pull-offs, and one highlight is an old Nike missile site. The best-evidenced of the four, with status reports running through Aug 2026 and all reporting Open.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/connecticut/del-reeves-north-mulford-roads-3l6o0od4l6w4"
+        },
+        {
+          "name": "Del Reeves Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/connecticut/del-reeves-road-edq0jm9py6ov",
+          "distance": "3.2 mi",
+          "difficulty": "2 (Easy) — a simple forest road, straightforward to navigate",
+          "season": "Best spring, summer, fall. Graded state forest road, closed at sunset.",
+          "note": "Also Meshomasic State Forest in Portland, not Naugatuck — same 35-to-45-mile eastward correction as the linked version above. Mostly dirt with a few gravel sections; doable in nearly any vehicle, but the ruts deepen and it turns muddy after rain. Several good pull-offs along it. Land owner of record is Connecticut DEEP.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/connecticut/del-reeves-road-edq0jm9py6ov"
+        },
+        {
+          "name": "Cold Springs Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/connecticut/cold-springs-road-e7qeegmrpq1y",
+          "distance": "0.8 mi",
+          "difficulty": "2 (Easy) — unmaintained, weather-sensitive, mostly one vehicle wide with multiple deep ruts and small off-camber sections",
+          "season": "Best summer and fall.",
+          "note": "The only one of the four that really is in Naugatuck State Forest. Runs directly alongside an active railroad, and ends at the Spruce Brook Trail parking area. A minimum of 12 inches of ground clearance is recommended for the ruts and mud holes. Worth a call to CT DEEP Forestry first: the DEEP West Block map carries the notice that the roads and trails in that block are multi-use non-motorized except snowmobiles, and since this road ends at a West Block trailhead the likeliest reading is that it is an approach road with the non-motorized rule applying beyond the parking area — but DEEP does not say so, and none of these four road names appears on either Naugatuck map.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/connecticut/cold-springs-road-e7qeegmrpq1y"
+        },
+        {
+          "name": "Filley Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/connecticut/filley-road-j06472gxr615",
+          "distance": "1.8 mi",
+          "difficulty": "1 (Easy) — very simple dirt and gravel; proper throttle control needed to avoid slipping in 2WD",
+          "season": "Best spring, summer, fall and winter.",
+          "note": "Third forest, third correction: this is Cockaponset State Forest, not Naugatuck. It serves as an entrance to the Cockaponset trail system and opens onto further trails in the forest — worth taking as a way in rather than as a destination in itself.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/connecticut/filley-road-j06472gxr615"
+        }
+      ]
     },
     "hudson-valley-ny": {
       "activities": {

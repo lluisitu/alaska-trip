@@ -31,6 +31,34 @@ import json, pathlib, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 DB = HERE / 'links_db.json'
+SRC = HERE.parent / 'desktop' / 'index.html'
+
+
+def ex(hh, decl, o='[', c=']'):
+    i = hh.index(decl); s = hh.index(o, i); d = 0; ins = False; esc = False
+    for j in range(s, len(hh)):
+        ch = hh[j]
+        if ins:
+            if esc: esc = False
+            elif ch == '\\': esc = True
+            elif ch == '"': ins = False
+        else:
+            if ch == '"': ins = True
+            elif ch == o: d += 1
+            elif ch == c:
+                d -= 1
+                if d == 0: return hh[s:j + 1]
+    raise ValueError('unterminated: ' + decl)
+
+
+def itinerary_ids():
+    h = SRC.read_text()
+    main = json.loads(ex(h, 'const STOPS ='))
+    east = json.loads(ex(h, 'const EXT_DATA =', '{', '}'))['STOPS']
+    return {s['id'] for s in main} | {s['id'] for s in east}
+
+
+ITINERARY = itinerary_ids()
 
 # Lists inside a stop entry that are keyed by 'name'.
 NAMED_LISTS = ('trails', 'offroad', 'scenicDrives_patch', 'not_a_trail', 'not_a_route')
@@ -43,11 +71,17 @@ def merge_stop(cur, new, sid, log, force):
         if key in MERGE_DICTS and isinstance(val, dict):
             dst = cur.setdefault(key, {})
             for k, v in val.items():
-                if k in dst and dst[k] != v and key not in force:
-                    log.append(f'  CONFLICT {sid}.{key}[{k[:40]!r}] already set, skipped')
+                # null is not "already set". In trail_dogs it means the exact
+                # opposite: researched, and the authority said nothing. A later
+                # pass that DOES find the rule supersedes it. Only a real value
+                # disagreeing with a real value is a conflict worth stopping on.
+                if k in dst and dst[k] is not None and dst[k] != v and key not in force:
+                    log.append(f'  CONFLICT {sid}.{key}[{k[:40]!r}] = {dst[k]!r}, patch says {v!r} — skipped')
                     continue
                 if k not in dst:
                     log.append(f'  + {sid}.{key}[{k[:40]!r}]')
+                elif dst[k] is None and v is not None:
+                    log.append(f'  RESOLVED {sid}.{key}[{k[:40]!r}] was silent, now {v!r}')
                 dst[k] = v
         elif key in NAMED_LISTS and isinstance(val, list):
             dst = cur.setdefault(key, [])
@@ -77,12 +111,15 @@ def merge_stop(cur, new, sid, log, force):
 
 
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith('--')]
     write = '--write' in sys.argv
-    force = set()
-    for i, a in enumerate(sys.argv):
-        if a == '--force-field' and i + 1 < len(sys.argv):
-            force.add(sys.argv[i + 1])
+    force, args, skip = set(), [], False
+    for i, a in enumerate(sys.argv[1:]):
+        if skip:                       # the value of --force-field is not a path
+            force.add(a); skip = False
+        elif a == '--force-field':
+            skip = True
+        elif not a.startswith('--'):
+            args.append(a)
     if not args:
         sys.exit('usage: merge_patch.py PATCH.json [more.json ...] [--write] [--force-field F]')
 
@@ -95,9 +132,16 @@ def main():
         for sid, entry in stops.items():
             if not isinstance(entry, dict):
                 continue
-            if sid not in db['stops']:
-                log.append(f'  UNKNOWN STOP {sid!r} — skipped, id matches nothing')
+            # The guard is "is this a real stop on the itinerary", NOT "does
+            # links_db already carry it". Most east-extension stops have only
+            # an `activities` key so far and several have no entry at all;
+            # checking against links_db threw away a whole stop's research.
+            if sid not in ITINERARY:
+                log.append(f'  UNKNOWN STOP {sid!r} — skipped, matches no stop in STOPS or EXT_DATA')
                 continue
+            if sid not in db['stops']:
+                log.append(f'  NEW STOP {sid!r} — first research for this stop')
+                db['stops'][sid] = {}
             merge_stop(db['stops'][sid], entry, sid, log, force)
 
     for line in log:

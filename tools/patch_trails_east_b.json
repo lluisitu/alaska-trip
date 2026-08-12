@@ -1,0 +1,321 @@
+{
+  "_meta": {
+    "status": "PARTIAL — 18 of 49 trails resolved. Do not treat the other 31 as researched.",
+    "blocker": "The WebSearch budget for this session was already exhausted (200/200 used) before this task issued its first query. Every search returned 'web search was not performed'. All data below therefore comes from authority pages fetched directly with WebFetch and read in full.",
+    "why_no_alltrails_field": "AllTrails could not be checked for ANY trail. alltrails.com answers 403 to automated fetching (LINKS_STRATEGY.md §2), so the only route to an AllTrails URL, rating or elevation gain is a web search snippet — and search was unavailable. Absence of an `alltrails` key below means NOT CHECKED. It does NOT mean no listing exists, and none of these should be recorded as match:'none'/tier:'unlisted' — that is a positive claim of absence this session could not test.",
+    "missing_fields": "elevation_gain and reviews are absent throughout. Land managers publish neither; both are AllTrails metrics. Per §1 they are left out rather than estimated.",
+    "to_finish": "Re-run with CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION raised. The 31 unresolved trails are listed in _unresolved."
+  },
+  "stops": {
+    "pec-on": {
+      "trails": [
+        {
+          "name": "Sandbanks Dunes Trail",
+          "distance": "2.5 km loop (plus a 1 km loop at the beginning)",
+          "difficulty": "Easy to moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority. Confirms name, length, grade; notes a barrier-free section."
+            }
+          ]
+        },
+        {
+          "name": "Woodlands Trail",
+          "distance": "3.5 km linear (7 km out and back)",
+          "difficulty": "Easy",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority."
+            }
+          ]
+        },
+        {
+          "name": "Lakeview Trail",
+          "distance": "2.4 km one way, linear",
+          "difficulty": "Easy",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority."
+            }
+          ]
+        },
+        {
+          "name": "Cedar Sands Nature Trail",
+          "distance": "2 km loop",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority. Interpretive trail; Ontario Parks publishes no difficulty grade for this one."
+            }
+          ]
+        }
+      ]
+    },
+    "perth-on": {
+      "trails": [
+        {
+          "name": "Silver Queen Mine Trail (Murphys Point Provincial Park)",
+          "distance": "2 km partial loop",
+          "difficulty": "Easy",
+          "uses": ["hike", "bike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Bikes permitted on the gravel roadbed portion only — the bike use is partial, not whole-trail."
+            }
+          ]
+        },
+        {
+          "name": "Sylvan Trail (Murphys Point Provincial Park)",
+          "distance": "2.5 km loop",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Hiking only."
+            }
+          ]
+        },
+        {
+          "name": "Rideau Trail (Murphys Point / Perth section)",
+          "distance": "6 km inside the park (part of the ~300 km Rideau Trail)",
+          "difficulty": "Easy",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority for the in-park section. The wider Rideau Trail is managed by the Rideau Trail Association, not verified this session."
+            }
+          ],
+          "stats_note": "The 6 km and Easy grade describe only the segment inside Murphys Point. The full Rideau Trail is roughly 300 km and is not graded here."
+        },
+        {
+          "name": "Point Trail (Murphys Point Provincial Park)",
+          "distance": "5.5 km loop",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Hiking only."
+            }
+          ]
+        }
+      ]
+    },
+    "algonquin-on": {
+      "trails": [
+        {
+          "name": "Spruce Bog Boardwalk",
+          "distance": "1.5 km",
+          "time": "1 hour",
+          "difficulty": "Easy",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 42.5. Accessible boardwalk through black spruce bog."
+            }
+          ]
+        },
+        {
+          "name": "Whiskey Rapids Trail",
+          "distance": "2.1 km",
+          "time": "1.5 hours",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 7.2. Follows the Oxtongue River to the rapids."
+            }
+          ]
+        },
+        {
+          "name": "Beaver Pond Trail",
+          "distance": "2 km",
+          "time": "1.5 hours",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 45.2."
+            }
+          ],
+          "stats_note": "Name collision worth guarding against on merge: Murphys Point Provincial Park (stop perth-on) also has a 'Beaver Pond Trail', 1 km and Easy. These figures are Algonquin's."
+        }
+      ]
+    },
+    "elora-on": {
+      "trails": [
+        {
+          "name": "Elora Quarry Conservation Area Trail",
+          "distance": "1 km loop",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Grand River Conservation Authority — Elora Quarry",
+              "url": "https://www.grandriver.ca/en/outdoor-recreation/Elora-Quarry.aspx",
+              "tier": "official",
+              "note": "Managing authority confirms the trail exists: a one-kilometre loop through cedar forest, in places overlooking the Grand River. GRCA gives it no formal proper name and publishes no difficulty grade."
+            }
+          ],
+          "stats_note": "GRCA describes this as 'a one kilometre loop trail', not as a named trail — our card name is a descriptive label, not the authority's."
+        }
+      ]
+    },
+    "traverse-city-mi": {
+      "trails": [
+        {
+          "name": "Empire Bluff Trail",
+          "distance": "1.5 mi",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. A park pass is required for all trails."
+            }
+          ]
+        },
+        {
+          "name": "Pyramid Point Trail",
+          "distance": "1.2–2.7 mi",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. Distance is a range because of the loop/spur options."
+            }
+          ]
+        },
+        {
+          "name": "Dune Climb / Cottonwood Trail loop",
+          "distance": "1.5 mi (Cottonwood Trail)",
+          "difficulty": "Moderate",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. Lists Cottonwood Trail at 1.5 mi, Moderate."
+            }
+          ],
+          "stats_note": "Our card name pairs two things NPS treats differently. NPS lists no 'Dune Climb' as a standalone trail — it is a trailhead, and the trail leaving it is the Dunes Hiking Trail (3.5 mi, Strenuous), which is NOT the Cottonwood Trail. The 1.5 mi / Moderate figures are the Cottonwood Trail alone. Worth splitting this into two entries, or renaming to 'Cottonwood Trail'."
+        }
+      ]
+    },
+    "door-county-wi": {
+      "trails": [
+        {
+          "name": "Sentinel Trail, Peninsula State Park",
+          "distance": "2.0 mi loop",
+          "difficulty": "Easiest",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Wisconsin DNR — Peninsula State Park hiking",
+              "url": "https://dnr.wisconsin.gov/topic/parks/peninsula/hiking",
+              "tier": "official",
+              "note": "Managing authority. A 0.6-mile portion is graveled for universal access — the flattest option on this stop."
+            }
+          ]
+        },
+        {
+          "name": "Eagle Trail, Peninsula State Park",
+          "distance": "2.0 mi loop",
+          "difficulty": "More difficult",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Wisconsin DNR — Peninsula State Park hiking",
+              "url": "https://dnr.wisconsin.gov/topic/parks/peninsula/hiking",
+              "tier": "official",
+              "note": "Managing authority. Runs below 150-foot cliffs past springs and forested terraces. 'More difficult' is the DNR's own three-step scale (Easiest / Moderate / More difficult), not an AllTrails grade."
+            }
+          ]
+        }
+      ]
+    },
+    "indiana-dunes-in": {
+      "trails": [
+        {
+          "name": "3 Dune Challenge, Indiana Dunes State Park",
+          "distance": "1.5 mi",
+          "difficulty": "Rugged",
+          "uses": ["hike"],
+          "other_links": [
+            {
+              "label": "Indiana DNR — Indiana Dunes State Park",
+              "url": "https://www.in.gov/dnr/state-parks/parks-lakes/indiana-dunes-state-park/",
+              "tier": "official",
+              "note": "Managing authority. The route is the park's Trail 8, 1.5 miles, graded RUGGED, which 'covers the three highest dunes'. DNR lists the 3 Dune Hiking Challenge as an activity but publishes no separate spec for it."
+            }
+          ],
+          "stats_note": "Figures are Indiana DNR's for Trail 8, the trail the challenge follows. 'Rugged' is the DNR's own top grade (Easy / Moderate / Rugged)."
+        }
+      ]
+    }
+  },
+  "_unresolved": {
+    "_note": "Not researched — search was unavailable and no authority page could be located without it. These are untouched, not negative findings.",
+    "traverse-city-mi": ["Old Mission Point Park / Lighthouse Trail — Peninsula Township land, separate authority from NPS"],
+    "door-county-wi": ["Red Trail, Whitefish Dunes State Park — WI DNR page not locatable without search", "Cave Point County Park shoreline trail — Door County Parks"],
+    "st-ignace-mi": ["Cut River Gorge Trail", "M-185 Lakeshore Loop, Mackinac Island", "Mackinac Island — Arch Rock & Fort Holmes trails"],
+    "stratford-on": ["Avon River Parklands Loop (Tom Patterson Island / Confederation Park)"],
+    "gananoque-on": ["Jones Creek Trail System", "Landon Bay Trails", "Mallorytown Landing Trails"],
+    "stowe-vt": ["Stowe Pinnacle Trail", "Moss Glen Falls Trail", "Mount Mansfield via Sunset Ridge", "Mount Mansfield via Sunset Ridge / Long Trail", "Sterling Pond Trail"],
+    "eastern-townships-qc": ["L'Étang-Fer-de-Lance (Parc national du Mont-Orford)", "Le Mont-Chauve (Parc national du Mont-Orford)", "Le Pékan (Parc national du Mont-Orford)", "Panorama Trail, Owl's Head (Mansonville)"],
+    "north-conway-nh": ["Arethusa Falls", "Boulder Loop Trail", "Diana's Baths", "Mount Willard", "Sabbaday Falls"],
+    "bar-harbor-me": ["Beehive Trail", "Gorham Mountain Trail", "Jordan Pond Path", "Ocean Path"],
+    "camden-me": ["Mount Battie Trail / Nature Trail"],
+    "berkshires-ma": ["Summit / Bascom Lodge area walk (Mount Greylock)"],
+    "hudson-valley-ny": ["Storm King Mountain via Stillman Trail"]
+  },
+  "_blocked_sources": {
+    "alltrails.com": "403 to all automated fetching, as documented. Needs search snippets or a real browser.",
+    "sepaq.com": "403 Forbidden — blocks the four Mont-Orford trails (eastern-townships-qc).",
+    "nps.gov/acad trail category pages": "Pages load their trail lists via JavaScript; WebFetch sees only 'Loading results...'. Blocks all four Acadia trails (bar-harbor-me).",
+    "mass.gov": "403 Forbidden — blocks Mount Greylock (berkshires-ma).",
+    "vtstateparks.com": "403 Forbidden — blocks Stowe (stowe-vt).",
+    "greenmountainclub.org": "TLS certificate does not match hostname (cert is *.wpengine.com) — fetch aborts.",
+    "algonquinpark.on.ca": "Reachable, but the Friends of Algonquin site exposes no hiking trail index to a fetch. Ontario Parks covered these instead."
+  }
+}

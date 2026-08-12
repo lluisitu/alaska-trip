@@ -1,0 +1,407 @@
+{
+  "_meta": {
+    "pass": "offroad route links, east extension, Appalachian + Ozark/Ouachita block",
+    "rule": "Every url below was copied from a search result or from a page opened in this session, and every one was fetched and confirmed to resolve. No url was assembled from a route name. Where no listing exists the entry is tier 'unlisted' with the managing authority in 'source' and no 'url' key.",
+    "not_verified_and_therefore_omitted": [
+      "Cherokee NF Ocoee MVUM and its seasonal-designations sheet resolve (real PDFs, confirmed 200) but are image PDFs that could not be read as text here, so no gate dates were transcribed from them.",
+      "Brown Mountain OHV Forest Service PDF likewise resolves but is not machine-readable; the widely repeated claim that full-size 4WD is limited to Trail 8 and part of Trail 1 could not be confirmed on any Forest Service page and is NOT recorded as fact.",
+      "Buffalo National River campground map PDFs: the Erbie map resolves, both Kyles Landing URLs 404.",
+      "Web search budget ran out partway through Arkansas; the last Arkansas entries were resolved by fetching Forest Service / State Parks index pages and following links read off them."
+    ]
+  },
+  "stops": {
+    "delaware-water-gap-pa": {
+      "offroad": [
+        {
+          "name": "Big Pocono State Park summit road",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-pocono-state-park",
+          "season": "Park closed early December, reopens the first week of April; sunrise to sunset when open",
+          "note": "DCNR warns of steep grades and says not to attempt the drive with a trailer in tow. It also states municipal road maintenance is not provided on the access roadway and that seasonal closures of it will occur, so the April reopening is a target rather than a promise. DCNR publishes no length for the summit loop; the 1.4-mile figure that circulates is not on the official page and is not recorded here.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-pocono-state-park"
+        },
+        {
+          "name": "Old Mine Road, NJ side north of Millbrook Village",
+          "url": "https://www.nps.gov/dewa/learn/historyculture/touring-old-mine-road.htm",
+          "note": "NPS treats this as a windshield tour of a roughly 250-year-old route and notes the original unpaved roadbed survives on foot at spots such as the Van Campen Inn and Hamilton Ridge near Millbrook. The park publishes no mileage, no surface breakdown and no seasonal closure for the drive itself; the page directs road-condition questions to the park at the number it lists.",
+          "tier": "official",
+          "source": "https://www.nps.gov/dewa/learn/historyculture/touring-old-mine-road.htm"
+        }
+      ]
+    },
+    "gettysburg-pa": {
+      "offroad": [
+        {
+          "name": "Caledonia to Pine Grove Furnace forest roads",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps",
+          "note": "DCNR's Michaux map index carries the two documents that actually answer which of these roads can be driven: the Michaux State Forest Public Use Map and a self-guided 'Auto Tour of Michaux State Forest', both PDFs. The index itself publishes no mileage for the auto tour, and the PDFs were not read here. The separate ATV trail map on the same page is a different system and is not the drivable road network.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps"
+        },
+        {
+          "name": "Michaux State Forest gravel road network, South Mountain",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux",
+          "note": "DCNR's forest page confirms the authority and links a Michaux State Forest Recreation Guide PDF, but publishes nothing about which roads are open, gated or seasonally closed. Pennsylvania does not run an MVUM system like the national forests, so the Public Use Map on the maps page is the only thing that distinguishes drivable forest roads from gated administrative ones.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux"
+        }
+      ]
+    },
+    "staunton-va": {
+      "offroad": [
+        {
+          "name": "George Washington NF gravel roads, North River / Todd Lake district",
+          "url": "https://www.fs.usda.gov/r08/gwj/recreation/todd-lake-recreation-area",
+          "season": "Todd Lake Recreation Area open mid-May to late October",
+          "note": "Forest Service directions run 1.1 miles on SR 718 (Stokesville Road) to the FR 95 / FR 101 junction, then 3.1 miles on FR 95 (North River Road) to Todd Lake. The page does not state whether FR 95 is gravel or paved and publishes no vehicle restriction. FR 95 is also the lower end of the North River Trail, which climbs to FR 85 (Shenandoah Mountain Road) — the same road as the Reddish Knob route below, so the two can be linked.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/gwj/recreation/todd-lake-recreation-area"
+        },
+        {
+          "name": "Reddish Knob road (FR 85 from Briery Branch, west of Harrisonburg)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/virginia/reddish-knob",
+          "distance": "19.3 mi",
+          "difficulty": "onX rating 2 (Easy) — \"easy dirt and gravel trail with just a few rutted and rocky spots\"",
+          "season": "onX lists spring, summer, fall and winter",
+          "note": "onX rates this for high-clearance, full-width vehicles and puts the observation point at 4,397 ft. The adjoining Flagpole Knob route meets it at Briery Branch Gap and has its own onX listing at 12.8 miles, also difficulty 2 — the pair make one long day if the weather holds. Note the two are not equivalent: Flagpole's FR 85 approach is reported as much rougher than the Reddish Knob asphalt spur.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/virginia/reddish-knob"
+        }
+      ]
+    },
+    "lexington-va": {
+      "offroad": [
+        {
+          "name": "George Washington & Jefferson NF gravel roads, North Mountain west of Lexington",
+          "note": "Unlisted. No Forest Service page and no off-road database covers this road network as a named route. The forest's Motor Vehicle Use Map is the only authority on which of these roads are open and to which vehicle class, and GWJNF publishes one forest-wide MVUM rather than per-district ones — so plan from the MVUM, not from a route listing.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map"
+        },
+        {
+          "name": "George Washington National Forest roads (near Natural Bridge, off Rt. 812)",
+          "note": "Unlisted, same situation as North Mountain: the Forest Service publishes district topographic maps and a single forest-wide MVUM, but no page for this road network and no named route in any off-road database. The MVUM carries the vehicle-class and seasonal designations for each road.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map"
+        },
+        {
+          "name": "James River Face Wilderness access roads (Belfast Trail / Petites Gap)",
+          "url": "https://www.fs.usda.gov/r08/gwj/recreation/trails/belfast-trail-forest-trail-9",
+          "season": "Forest Service lists the trail open year round",
+          "note": "Forest Service directions take the left fork onto VA 781 (Petites Gap Road) and run about 1.0 mile to the parking area. The page grades the Belfast Trail itself Moderate to Difficult over 2.3 miles — that is the walk to the Devil's Marbleyard boulder field, not the drive. The Forest Service says nothing about the road's surface or its FS 35 designation, so no surface claim is recorded.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/gwj/recreation/trails/belfast-trail-forest-trail-9"
+        }
+      ]
+    },
+    "new-river-gorge-wv": {
+      "offroad": [
+        {
+          "name": "Cunard river access road",
+          "url": "https://www.nps.gov/neri/planyourvisit/road-and-trail-closures.htm",
+          "season": "Closed every November through March, from the Brooklyn Mine Trail parking lot down to the river; open April to October. NPS says this pattern continues through 2027.",
+          "note": "This is the annual winter closure for road and drainage work, not weather. When open, NPS reports the lower sections are gravel and there are one-lane stretches that cause delays. The closure takes out vehicle, bike and pedestrian access to the Cunard river access, the angler's access and Brooklyn campground together. The park's closures page was last updated 6 Aug 2026 — check it again before the stop.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/road-and-trail-closures.htm"
+        },
+        {
+          "name": "Fayette Station Road (CR 82)",
+          "url": "https://www.nps.gov/neri/planyourvisit/fayette-station-road.htm",
+          "distance": "8 mi",
+          "season": "No seasonal closure published",
+          "note": "One-way, and the binding restriction is height not length: NPS states vehicles over 12 ft tall cannot complete the route because of the clearance under a railroad bridge, and does not recommend large vehicles, RVs or trailers on the hairpins. Allow 30–45 minutes without stops. The road passes under the New River Gorge Bridge three times.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/fayette-station-road.htm"
+        },
+        {
+          "name": "Keeneys Creek Road down to Nuttallburg",
+          "url": "https://www.nps.gov/places/nuttallburg.htm",
+          "distance": "about 4 mi — NPS gives ~3.5 mi to the wayside exhibit and 0.5 mi more to the Nuttallburg parking area",
+          "note": "NPS calls it narrow, winding and steep, part paved and part gravel, with much of it single lane so drivers have to pull off to let others by. Trailers, RVs and motorhomes are specifically advised against — limited parking and difficult to turn around at the bottom. Separate from the road, the Keeney's Creek Rail Trail is closed above the Conveyor Trail junction for flood damage.",
+          "tier": "official",
+          "source": "https://www.nps.gov/places/nuttallburg.htm"
+        },
+        {
+          "name": "WV 25 to Thurmond",
+          "url": "https://www.nps.gov/neri/planyourvisit/directions.htm",
+          "distance": "7 mi from the Glen Jean exit off US 19",
+          "note": "The NPS directions page gives the seven miles but publishes no surface or vehicle guidance for WV 25 — the 'narrow, winding, not recommended for RVs or trailers' description that circulates is not on an NPS page that could be opened here, so it is not recorded as fact. Worth knowing separately: the Rend Trail, which starts at Thurmond, is closed from both trailheads until roughly December 2027 per the park's road and trail closures page.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/directions.htm"
+        }
+      ]
+    },
+    "boone-nc": {
+      "offroad": [
+        {
+          "name": "Brown Mountain OHV Trail System, Pisgah NF",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/opportunities/highway-vehicles-ohv",
+          "distance": "34 mi of designated trails",
+          "season": "Closed 1 January to the first weekend in April, along with Curtis Creek Campground, on the Grandfather Ranger District seasonal closure list (https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures)",
+          "note": "This is a ticketed OHV trail system, not a forest-road drive — passes go through Recreation.gov. Before counting on it: the Forest Service page defines the ATV class here as under 60 inches wide and does not state anywhere that full-size 4WD trucks may use the system. The commonly repeated claim that Jeeps and 4WDs are limited to Trail 8 and part of Trail 1 is not on any Forest Service page that could be opened, so it is unverified. Call the Grandfather Ranger District before driving out.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/opportunities/highway-vehicles-ohv"
+        },
+        {
+          "name": "Pisgah NF gravel roads around Edgemont and Mortimer",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/mortimer-campground",
+          "season": "Mortimer Campground open 31 March to 31 October; the Grandfather Ranger District closure list gates the Mortimer area 1 November to the first weekend in April",
+          "note": "The Forest Service confirms the campground and its position in the Wilson Creek Wild & Scenic corridor south of Grandfather Mountain, but publishes no road numbers, mileage or surface for the Edgemont loop. Neither Roseboro Road (FSR 981) nor Edgemont-Pinola Road (FSR 464) has a Forest Service page, so their condition is unsourced. Note this stop's route and the Wilson Creek entry below share the same road corridor from opposite ends.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/mortimer-campground"
+        },
+        {
+          "name": "Wilson Creek Gorge / Brown Mountain Beach Road, Pisgah NF",
+          "url": "https://www.trailsoffroad.com/US/north-carolina/scout-routes/1720-brown-mountain-beach-road",
+          "distance": "not published on the free listing",
+          "difficulty": "not published on the free listing",
+          "note": "Trails Offroad classes it a Scout Route and shows 4/5 from 3 reviews; distance, difficulty and waypoints are behind the paywall. The listing places it in Adako, Caldwell County, running through the Wilson Creek Gorge past the Mortimer ghost town. The Forest Service's Wilson Creek Wild and Scenic River Area page confirms the area is open all year but says nothing at all about the road.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/north-carolina/scout-routes/1720-brown-mountain-beach-road"
+        }
+      ]
+    },
+    "asheville-nc-v3": {
+      "offroad": [
+        {
+          "name": "Bent Creek gravel road network, from camp",
+          "url": "https://research.fs.usda.gov/srs/forestsandranges/locations/bent-creek",
+          "note": "Worth checking before planning a drive here. The Forest Service research station — this is an experimental forest, roughly 6,000 acres, the oldest federal one east of the Mississippi — permits hiking, biking and horseback riding on designated trails, and describes the gravel roads themselves as open to bicycles, horses and hikers. It nowhere says the road network is open to private motor vehicles, and it asks that research study sites not be disturbed. Treat this as a bike-and-walk network from camp unless the Pisgah Ranger District says otherwise.",
+          "tier": "official",
+          "source": "https://research.fs.usda.gov/srs/forestsandranges/locations/bent-creek"
+        },
+        {
+          "name": "Curtis Creek Road (FR 482), Old Fort",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures",
+          "season": "Closed 1 January to the first weekend in April (Grandfather Ranger District), together with Curtis Creek Campground",
+          "note": "The Forest Service closure list writes this road as FR 428, not FR 482 as the card has it. One of the two numbers is wrong and it is worth settling with the Grandfather Ranger District rather than discovering it at a junction. No Forest Service page publishes the road's length or surface. Separately, this whole district was closed after Hurricane Helene and has been reopening in stages, so confirm current status close to the date.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures"
+        },
+        {
+          "name": "FR 475 past the Davidson River fish hatchery toward Gloucester Gap",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene",
+          "note": "The forest's live Helene status page is the right authority here, but FS 475 is not named on it — only Yellow Gap Road is. Forest Service news coverage that could not be opened directly reports FS 475 open from US 276 to Cove Creek Group Campground and closed from there to the Daniel Ridge trailhead for a bridge replacement; that is not recorded as fact. This road is the one that reaches Gloucester Gap at the FS 471 junction, so a closed middle section breaks the through route. Call the Pisgah Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene"
+        },
+        {
+          "name": "Yellow Gap Road (FR 1206), Pisgah Ranger District",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene",
+          "note": "Currently not a through route. The Forest Service Helene status page has FR 1206 open from US 276 near the Cradle of Forestry as far as Wolf Ford Horse Camp, and closed from Wolf Ford Horse Camp to North Mills River Campground — so it is an out-and-back from the 276 end, not the Brevard-to-Mills River link. No length is published by the Forest Service.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene"
+        }
+      ]
+    },
+    "bryson-city-nc": {
+      "offroad": [
+        {
+          "name": "Cove Creek Road / Old NC 284 into Cataloochee",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "The park's seasonal road schedule lists Cataloochee Road as open year round, two-lane gravel, subject to weather closures. Old NC 284 has no fixed dates — the park closes it in severe weather or heavy rain.",
+          "note": "NPS describes Cove Creek as a winding gravel road with steep drop-offs and no guardrails, narrow enough that drivers may have to stop or back up to pass. Old NC 284, the back way in from Big Creek, is also winding gravel. Post-Helene the Cataloochee entrance road was open to vehicles only as far as Beech Grove School with the upper section closed — from the park's reopening release, https://www.nps.gov/grsm/learn/news/great-smoky-mountains-national-park-to-reopen-portions-of-cataloochee-on-april-4.htm. Confirm before the drive.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Heintooga Ridge Road / Heintooga Round Bottom Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "Heintooga Ridge Road 15 May – 31 Oct. Heintooga Round Bottom Road: opening date TBD, as is Straight Fork Road, both still recovering from Hurricane Helene.",
+          "note": "Two different roads under one name and only the first half is confirmed. Heintooga Ridge Road is paved and two-way, and motorhomes, buses and vans longer than 25 ft are prohibited — the towed pickup is fine. The Round Bottom (Balsam Mountain) half, the one-way gravel descent toward Cherokee that makes this a through route rather than a dead end, had no published opening date when checked. Do not plan the loop until the park posts a date.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Parson Branch Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "distance": "8 mi",
+          "season": "1 May – 9 Nov",
+          "note": "One-way gravel leaving Cades Cove — you exit at US 129 and cannot come back the way you came. NPS recommends high clearance and restricts large vehicles. It reopened in 2022 after a six-year closure for hazard trees, and the park still closes it for high water, so it is the least dependable of the four here.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Rich Mountain Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "10 Apr – 9 Nov",
+          "note": "One-way out of Cades Cove toward Townsend, with the park's standard restriction on these roads — no motorhomes, buses, or vans longer than 25 ft, and no passenger vehicles towing trailers. The schedule publishes no length. Same one-way trap as Parson Branch: it is a way out of the cove, not a there-and-back.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        }
+      ]
+    },
+    "chattanooga-tn": {
+      "offroad": [
+        {
+          "name": "Cherokee National Forest gravel roads above the Ocoee (US 64 corridor)",
+          "url": "https://www.fs.usda.gov/r08/cherokee/maps-guides",
+          "note": "The authority is the 2024 Ocoee Ranger District Motor Vehicle Use Map (https://www.fs.usda.gov/media/233244) plus a companion sheet of seasonal and special vehicle designations (https://www.fs.usda.gov/media/233242) — both linked from this page and both confirmed to resolve. They are scanned PDFs and could not be read as text here, so the actual gate dates are not transcribed; the seasonal sheet is the one to open on a phone before driving. Paper copies are free at the Forest Service offices in Benton and Cleveland.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/cherokee/maps-guides"
+        },
+        {
+          "name": "Prentice Cooper State Forest road network, above the Tennessee River Gorge",
+          "url": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html",
+          "season": "Tower Drive past Pot Point Gate closed 20 Dec – 15 Mar. Tower Drive south of Pot Point Road, plus Elder Point, Long Point and Inman Point, closed to motorized use from late April to early July for turkey nesting.",
+          "note": "Two things beyond the gates. Motorized vehicles must stay on designated roads and the forest speed limit is 25 mph. And during managed hunts everything west of SR 27 (Suck Creek Road) is closed to all visitors except licensed hunters — the hunt dates are set by TWRA each year and are the thing most likely to shut this stop's day out, so check the WMA calendar rather than assuming the gate dates cover it.",
+          "tier": "official",
+          "source": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html"
+        }
+      ]
+    },
+    "hot-springs-ar-v3": {
+      "offroad": [
+        {
+          "name": "Ouachita National Forest gravel roads, Lake Ouachita north shore",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/jessieville-winona-fourche-ranger-district",
+          "note": "The managing authority for the whole north shore — about 406,000 acres. The page names a Winona Scenic Drive but publishes no mileage, road numbers or surface for it, and no individual road pages exist. One live alert on the page has Henderson Hill Road (FSR 689) partially closed. Which roads are open, and to what vehicle class, lives only on the forest's MVUM.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/jessieville-winona-fourche-ranger-district"
+        }
+      ]
+    },
+    "mount-magazine-ar": {
+      "offroad": [
+        {
+          "name": "Ozark National Forest gravel forest roads (Cove Lake / Magazine vicinity)",
+          "note": "Unlisted. The Mt. Magazine Ranger District is the managing authority and its office page confirms the district, but the Forest Service publishes no page for Cove Lake or for the district's forest-road network, and no off-road database carries a named route here. The district's only current road alert is Morgan Mtn Rd, partially closed for road repair. Plan from the Ozark-St. Francis MVUM.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/offices/mt-magazine-ranger-district"
+        },
+        {
+          "name": "Ozark National Forest roads on the north flank of Magazine",
+          "note": "Unlisted, same as the Cove Lake network above — the district page is the only authority that confirms these roads are Forest Service, and nothing publishes their numbers, surface or gate dates. Note this stop carries two offroad entries for what may be the same road network; worth folding into one with `same_as` if the tags agree.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/offices/mt-magazine-ranger-district"
+        }
+      ]
+    },
+    "jasper-ponca-ar": {
+      "offroad": [
+        {
+          "name": "AR-43/74 Ponca-Boxley Valley Loop (truck-only)",
+          "url": "https://www.nps.gov/buff/planyourvisit/directions.htm",
+          "note": "These are paved state highways, not forest roads — NPS routes visitors to the Jasper/Ponca upper district via Highway 7 or Highway 43 south from Harrison. The park publishes no loop mileage. One genuine warning from the park: GPS is unreliable in this area and has sent numerous visitors the wrong way onto dirt roads, which matters more here than the pavement does.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/directions.htm"
+        },
+        {
+          "name": "Cave Mountain / Fallsville forest roads",
+          "note": "Unlisted. Neither the National Park Service nor the Forest Service publishes a page naming these roads, and no off-road database carries them as a route. The nearest sourced statement is the park's blanket warning that access roads in this area may be unpaved, in some cases extremely rocky, and may require four-wheel drive and/or high clearance. Fallsville sits on the Ozark NF Big Piney district, so its MVUM is the authority for that half.",
+          "tier": "unlisted",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Cave Mountain Road (to Hawksbill Crag trailhead)",
+          "note": "Unlisted, and this is the weakest-sourced route in this batch. It is a Newton County road running to the Upper Buffalo Wilderness trailhead, so it belongs to neither the park nor the Forest Service, and neither publishes anything on it. Every description of it as rough, rocky and steep, and every 'about four miles to the parking area' figure, is user-generated. The park's general warning about unpaved, extremely rocky access roads needing 4WD or high clearance is the only sourced statement that applies.",
+          "tier": "unlisted",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Erbie Road",
+          "url": "https://www.nps.gov/buff/planyourvisit/getting-around.htm",
+          "note": "The park has no page for Erbie Road itself; what it does publish is the general rule that access roads here may be unpaved, in some cases extremely rocky, and may require four-wheel drive and/or high clearance. An Erbie campground map PDF exists and resolves at https://www.nps.gov/buff/planyourvisit/upload/Erbie-Campground-Map-Final-Edit-2017.pdf (confirmed 200; contents not readable as text here) and would be the thing to open on a phone.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Kyles Landing entrance road",
+          "url": "https://www.nps.gov/buff/planyourvisit/getting-around.htm",
+          "note": "Same position as Erbie — the only sourced statement is the park's warning that access roads may be unpaved, extremely rocky and may require 4WD and/or high clearance. The widely repeated figures of roughly 2.8 to 3 miles of steep gravel off AR 74 are not on any NPS page that could be opened, so they are not recorded. Both Kyles Landing campground map URLs that surfaced return 404, so there is no PDF to fall back on.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        }
+      ]
+    },
+    "mountain-view-ar": {
+      "offroad": [
+        {
+          "name": "Push Mountain Road & Sylamore Ranger District forest roads",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/sylamore-district-flood-and-tornado-closures",
+          "season": "Alert opened 7 April 2025 after the 2025 storms and stands until further notice",
+          "note": "Push Mountain Road itself is a state highway, not a forest road, and the Forest Service publishes nothing on it. What this alert does settle is the district's gravel network after the 2025 floods and tornado: Cole Fork Road is still closed, and the Syllamo mountain-bike system including the Jack's Branch and Bad Branch loops and its trailhead is still closed for tornado damage. Barkshed, Gunner Pool and Blanchard Springs campgrounds and day-use area have all reopened.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/sylamore-district-flood-and-tornado-closures"
+        },
+        {
+          "name": "Sylamore District forest roads to Gunner Pool and Barkshed",
+          "url": "https://fs.usda.gov/r08/ozark-stfrancis/recreation/gunner-pool-recreation-area",
+          "season": "Both sites open all year; water at Gunner Pool is seasonal, April to November",
+          "note": "The Forest Service gives the road numbers for both. Gunner Pool is FSR 1102, gravel, and the Forest Service calls the approach a steep, winding dirt road not recommended for large recreation vehicles. Barkshed is AR 14 west from Mountain View 17.3 miles, then FSR 1115 (gravel) 2.1 miles, then FSR 1112 1.4 miles — https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/barkshed-recreation-area — also not recommended for large trailers or RVs. Both reopened after the 2025 storms.",
+          "tier": "official",
+          "source": "https://fs.usda.gov/r08/ozark-stfrancis/recreation/gunner-pool-recreation-area"
+        }
+      ]
+    },
+    "devils-den-ar": {
+      "offroad": [
+        {
+          "name": "Shores Lake / Salt Fork forest roads",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/shores-lake-road-fs1501-under-construction",
+          "distance": "about 10 mi of FSR 1501 under reconstruction",
+          "season": "Work began autumn 2025, expected to finish summer 2027; the Forest Service expects the road to stay open to traffic through most of it",
+          "note": "FSR 1501 runs from AR 23 on the east to AR 215 on the west near Shores Lake — culverts, reshaping, fresh gravel and overlook parking. Hurricane Road (FSR 1003) work is already complete. This lands squarely in the trip's window, so expect active construction rather than a closure. No Forest Service page names a 'Salt Fork' road, so that half of the entry is unsourced.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/shores-lake-road-fs1501-under-construction"
+        },
+        {
+          "name": "White Rock Mountain Road",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area",
+          "distance": "FSR 1505 for 8 mi (first 0.5 mi paved, then gravel), then FSR 1003 west for 2.5 mi of gravel, from AR 215 north of Mulberry",
+          "season": "Recreation area open all year",
+          "note": "Part of FSR 1003 is still out. Per the Forest Service alert last updated 22 May 2026 (https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/fsr-1003-white-rock-road-closure-partially-lifted), the stretch between Bliss Ridge Road (FSR 1505-1) and Wood's Gap is repaired and open, but the eastern slide near Spirits Creek Bridge remains closed with no estimate of when or if it will be repaired. Approach from the west via Hurricane Road or from the north via Boles Gap Road (FSR 1505-2). Summit is 2,289 ft with CCC stone cabins and lodge.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area"
+        },
+        {
+          "name": "White Rock Mountain Road (Ozark National Forest)",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area",
+          "distance": "FSR 1505 for 8 mi (first 0.5 mi paved, then gravel), then FSR 1003 west for 2.5 mi of gravel, from AR 215 north of Mulberry",
+          "season": "Recreation area open all year",
+          "note": "Duplicate — this is the same road as the 'White Rock Mountain Road' entry on this stop, listed twice under two names. Worth folding into one with `same_as` rather than shipping both. Same caveat applies: FSR 1003's eastern slide near Spirits Creek Bridge is still closed with no repair estimate, so come in from the west or the north.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area"
+        }
+      ]
+    },
+    "mena-ar": {
+      "offroad": [
+        {
+          "name": "Caney Creek Wilderness access roads (Shady Lake / Forest Service network)",
+          "note": "Unlisted. The Mena-Oden Ranger District is the managing authority and its office page confirms it, but the Forest Service publishes no page for Shady Lake, for Caney Creek Wilderness access, or for the surrounding road network, and no off-road database lists a named route. The Ouachita MVUM is the only authority on which of these roads are open and to what vehicle class.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ouachita/offices/mena-oden-ranger-district"
+        },
+        {
+          "name": "Cossatot Falls access road",
+          "url": "https://www.arkansas.com/state-parks/explore/parks/cossatot-river-state-park-natural-area",
+          "note": "Arkansas State Parks is the managing authority and its park page is the right link, but it publishes nothing about the access road — no surface, no mileage, no clearance requirement and no flood closure policy, despite the falls area being the part of the park most likely to be cut off by high water. Everything about the road's condition is currently unsourced; the park visitor centre is the place to settle it.",
+          "tier": "official",
+          "source": "https://www.arkansas.com/state-parks/explore/parks/cossatot-river-state-park-natural-area"
+        },
+        {
+          "name": "Ouachita National Forest roads (FR 106, FR 25 and others)",
+          "note": "Unlisted. Neither FR 106 nor FR 25 has a Forest Service page on the Mena-Oden district, and no off-road database lists them. Be careful with the numbers: FR 106 is also a road number on the Grandfather district in North Carolina (Dobson Knob), so a search on the bare number returns the wrong state. The Ouachita MVUM is the authority.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ouachita/offices/mena-oden-ranger-district"
+        },
+        {
+          "name": "Rich Mountain fire-tower spur",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway",
+          "distance": "the byway itself is 54 mi",
+          "season": "Byway open year round",
+          "note": "The Forest Service page covers the byway that runs the spine of Rich Mountain and Winding Stair Mountain, but says nothing about a fire tower or about any spur road off it — so the spur itself is effectively unlisted and only the parent byway is sourced. The byway is paved; whatever spur the card means is not described anywhere the Forest Service publishes.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway"
+        },
+        {
+          "name": "Wolf Pen Gap OHV Trail System",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/opportunities/highway-vehicles-ohv",
+          "note": "A permitted OHV trail system on the Mena-Oden district, not a forest-road drive. The Forest Service lists Mena-Oden among its OHV districts but publishes no mileage, fee, permitted vehicle class or season for Wolf Pen Gap specifically. The same page carries a notice dated 1 June 2026 that USDA and the Forest Service are reviewing OHV policy, so the permit rules may not be what they are now by the time of the stop — confirm with the district before buying anything.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/opportunities/highway-vehicles-ohv"
+        }
+      ]
+    }
+  }
+}

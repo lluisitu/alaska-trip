@@ -350,6 +350,28 @@
               "url": "https://en.wikipedia.org/wiki/Quitaque%2C_Texas"
             }
           ]
+        },
+        "Scenic drive/short hikes around Lake Theo and the Eagle Point/Wild Horse area": {
+          "entity": "Lake Theo (Caprock Canyons SP)",
+          "links": [
+            {
+              "label": "Wikipedia — Caprock Canyons SP",
+              "url": "https://en.wikipedia.org/wiki/Caprock_Canyons_State_Park_and_Trailway"
+            }
+          ]
+        },
+        "Caprock Canyons Trailway and Clarity Tunnel are worthwhile, but the tunnel is a 9-mile round trip from Monk's Crossing and requires remote-travel preparation.": {
+          "entity": "Clarity Tunnel; Caprock Canyons Trailway",
+          "links": [
+            {
+              "label": "Wikipedia — Clarity Tunnel",
+              "url": "https://en.wikipedia.org/wiki/Quitaque_Railway_Tunnel"
+            },
+            {
+              "label": "Wikipedia — Caprock Canyons SP & Trailway",
+              "url": "https://en.wikipedia.org/wiki/Caprock_Canyons_State_Park_and_Trailway"
+            }
+          ]
         }
       }
     },
@@ -408,10 +430,6 @@
             {
               "label": "Cathedral Basilica",
               "url": "https://en.wikipedia.org/wiki/Cathedral_Basilica_of_St._Francis_of_Assisi_%28Santa_Fe%29"
-            },
-            {
-              "label": "Canyon Road",
-              "url": "https://en.wikipedia.org/wiki/Canyon_Road_%28Santa_Fe%29"
             },
             {
               "label": "O'Keeffe Museum",
@@ -639,6 +657,15 @@
         "Zapata Falls, checking the access-road condition before taking the loaded camper.": {
           "drop": true,
           "why": "Restates the Zapata Falls entry; the road caution belongs on that one."
+        },
+        "Sandboarding / sand sledding": {
+          "entity": "Sandboarding",
+          "links": [
+            {
+              "label": "Wikipedia — Sandboarding",
+              "url": "https://en.wikipedia.org/wiki/Sandboarding"
+            }
+          ]
         }
       }
     },
@@ -865,7 +892,7 @@
           "links": [
             {
               "label": "Wikipedia",
-              "url": "https://en.wikipedia.org/wiki/Sprague_Lake"
+              "url": "https://en.wikipedia.org/wiki/Sprague_Lake_%28Colorado%29"
             },
             {
               "label": "AllTrails",
@@ -920,10 +947,6 @@
         "Alberta Falls / Sky Pond": {
           "entity": "Alberta Falls",
           "links": [
-            {
-              "label": "Wikipedia",
-              "url": "https://en.wikipedia.org/wiki/Alberta_Falls"
-            },
             {
               "label": "NPS — hiking",
               "url": "https://www.nps.gov/romo/planyourvisit/hiking.htm"
@@ -1080,6 +1103,19 @@
           ],
           "auto": true,
           "auto_km": 27
+        },
+        "Fly fishing the Green River 'A' section": {
+          "entity": "Green River; fly fishing",
+          "links": [
+            {
+              "label": "Wikipedia — Green River",
+              "url": "https://en.wikipedia.org/wiki/Green_River_%28Colorado_River_tributary%29"
+            },
+            {
+              "label": "Wikipedia — Fly fishing",
+              "url": "https://en.wikipedia.org/wiki/Fly_fishing"
+            }
+          ]
         }
       },
       "activities_note": "Sheep Creek Geological Loop has no Wikipedia article, so it links to Daggett County's own scenic-drives page and the AllTrails listing rather than a guessed one.",
@@ -1183,7 +1219,7 @@
           "links": [
             {
               "label": "Wikipedia",
-              "url": "https://en.wikipedia.org/wiki/Fremont_Lake_%28Wyoming%29"
+              "url": "https://en.wikipedia.org/wiki/Fremont_Lake"
             }
           ]
         },
@@ -1218,12 +1254,7 @@
         },
         "Green River Lakes is spectacular, but its long gravel approach is seasonal and may remain snowbound or soft in early May.": {
           "entity": "Green River Lakes",
-          "links": [
-            {
-              "label": "Wikipedia",
-              "url": "https://en.wikipedia.org/wiki/Green_River_Lakes"
-            }
-          ]
+          "links": []
         },
         "Pinedale's Museum of the Mountain Man, compact downtown, and Fremont Lake.": {
           "drop": true,
@@ -1250,6 +1281,41 @@
           ],
           "auto": true,
           "auto_km": 41
+        },
+        "Boulder Lake day trip": {
+          "entity": "Boulder, WY (Boulder Lake)",
+          "links": [
+            {
+              "label": "Wikipedia — Boulder, WY",
+              "url": "https://en.wikipedia.org/wiki/Boulder%2C_Wyoming"
+            }
+          ]
+        },
+        "Wildlife viewing for moose, pronghorn, and elk along the Green River / Boulder area": {
+          "entity": "Moose, pronghorn, elk",
+          "links": [
+            {
+              "label": "Wikipedia — Moose",
+              "url": "https://en.wikipedia.org/wiki/Moose"
+            },
+            {
+              "label": "Wikipedia — Pronghorn",
+              "url": "https://en.wikipedia.org/wiki/Pronghorn"
+            },
+            {
+              "label": "Wikipedia — Elk",
+              "url": "https://en.wikipedia.org/wiki/Elk"
+            }
+          ]
+        },
+        "CCC Ponds and the New Fork River corridor for lower-elevation wildlife walks.": {
+          "entity": "New Fork River",
+          "links": [
+            {
+              "label": "Wikipedia — New Fork River",
+              "url": "https://en.wikipedia.org/wiki/New_Fork_River"
+            }
+          ]
         }
       },
       "offroad": [
@@ -2513,7 +2579,20 @@
           "entry": "Loaded camper: paved day trips and good public gravel.",
           "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
         }
-      ]
+      ],
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53 — Canine Bluffs is the only designated off-leash area), and that covers Miles Canyon and the Chadburn Lake trails because they sit inside the City's Chadburn Lake Park; Wolf Creek is a Yukon Parks campground, where the territorial rule is also on-leash.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout": null,
+        "Whitehorse Millennium Trail": true,
+        "Wolf Creek Trail": true,
+        "Miles Canyon South Loop": true,
+        "Chadburn and Canyon City Ski": true,
+        "Miles Canyon Loop": true,
+        "Chadburn Lake Trails: South Blue Route": true
+      }
     },
     "talkeetna": {
       "authority": "Talkeetna Lakes Park / Mat-Su Borough",
@@ -2627,7 +2706,21 @@
           "season": "No formal closure, but conditions are only reliably good July through August — June and September are described as iffy, and snow lingers on the road beyond about mile 14 because of the Alaska Range. The stop arrives 3 Jul 2027, right at the front edge of the usable window. The paved and maintained gravel will be fine; the primitive section past the Forks may still be soft or snow-blocked.",
           "note": "Alaska DNR fact sheet used as the source because onX, which is the fullest listing, is paywalled. Collinsville Road, which branches at the Forks, is only maintained as far as the Peters Creek bridge and becomes a four-wheeler trail shortly after — that is an ATV route, not a truck route. This is Denali-view country on a clear day and mining-claim country the rest of the time; claims are active, so stay on the road."
         }
-      ]
+      ],
+      "dogs_unpublished": {
+        "trails": [
+          "Talkeetna Lake Trail",
+          "Lake Loop Trail",
+          "Talkeetna Lakes Ski Loop"
+        ],
+        "authority": "Matanuska-Susitna Borough — Talkeetna Lakes Park",
+        "checked": [
+          "https://matsu.gov/trails/talkeetna-lakes-trails — no pet or leash rule",
+          "https://matsu.gov/trails — no pet or leash rule",
+          "https://matsugov.us/docs/meetings/24561/February-24,-2025-PACKET-PRTAB.pdf — contains 'Mat-Su Park and Rec Ordinances - 2024 DRAFT WORKING COPY', which would make it unlawful to 'Walk a dog without a leash, said leash to be no longer than six feet' in a borough park. It is a DRAFT in an advisory-board packet and the minutes record 'Code of Ordinances for Parks and Recreation - No report', so it is not adopted law and is NOT used as a verdict."
+        ],
+        "action": "Phone MSB Parks, Recreation, Trails & Library Services. Do not rely on the draft ordinance."
+      }
     },
     "cooper-landing": {
       "authority": "USDA Forest Service — Chugach National Forest (Russian River area forest order)",
@@ -2772,7 +2865,21 @@
           "url": "https://www.fs.usda.gov/r10/chugach/recreation/russian-river",
           "tier": "official"
         }
-      ]
+      ],
+      "dogs_unpublished": {
+        "trails": [
+          "Russian Lakes Trail",
+          "Resurrection Falls Trail"
+        ],
+        "authority": "USDA Forest Service — Chugach National Forest",
+        "checked": [
+          "https://www.fs.usda.gov/r10/chugach/recreation/trails/russian-lakes-trail-upper-lower — lists stock and motorized closures, no pet rule",
+          "https://www.fs.usda.gov/r10/chugach/recreation/trails/resurrection-pass-trail-north — no pet rule",
+          "https://www.fs.usda.gov/r10/chugach/recreation/russian-river — no pet rule",
+          "https://www.fs.usda.gov/r10/chugach/newsroom/releases/russian-river-fishery-opens-june-11-forest-order-place-protect — carries the 6-foot leash requirement but does not delineate the area or name any trail, so it cannot be stretched over a 21-mile trail that merely starts at Russian River Campground"
+        ],
+        "action": "No change. Both trails stay null in links_db.json, which is already correct. Seward Ranger District, (907) 288-3178."
+      }
     },
     "seward": {
       "authority": "National Park Service — Kenai Fjords National Park (Exit Glacier area); other trails on this card are outside the park",
@@ -2870,7 +2977,7 @@
         "Exit Glacier View Loop": false,
         "Exit Glacier View and Overlook Loop": false,
         "Harding Icefield Trail": false,
-        "Tonsina Trail": null,
+        "Tonsina Trail": true,
         "Two Lakes Trail": null,
         "Ptarmigan Lake": null
       },
@@ -2881,6 +2988,19 @@
           "url": "https://www.nps.gov/kefj/planyourvisit/pets.htm",
           "tier": "official"
         }
+      ],
+      "trail_dogs_source": {
+        "Tonsina Trail": {
+          "url": "https://dnr.alaska.gov/parks/faq.htm",
+          "quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+          "why": "Tonsina Point is on the Caines Head Trail, inside Caines Head State Recreation Area and reached from Lowell Point State Recreation Site — both Alaska State Parks units, per the official trail guide at https://dnr.alaska.gov/parks/maps/cainesheadtrail.pdf. The Caines Head unit page publishes no pet rule of its own, so the statewide state-parks rule governs.",
+          "tier": "official"
+        }
+      },
+      "dogs_exception_add": "Tonsina is the one Seward trail on this card the dog can walk: it is Alaska State Parks land, not Kenai Fjords, and state parks allow leashed pets. Two Lakes is a City of Seward park — the city's own Parks, Trails & Facilities page lists the trail and says nothing about dogs, and no Seward city code text could be reached (the code host answers a bot challenge), so it stays unknown. Ptarmigan Lake is Chugach National Forest and the forest publishes no pet rule for it. Every Exit Glacier trail remains closed to the dog.",
+      "dogs_needs_check": [
+        "Two Lakes Trail — City of Seward Parks & Recreation. Phone before relying on it.",
+        "Ptarmigan Lake — Chugach NF, Seward Ranger District, (907) 288-3178."
       ]
     },
     "homer": {
@@ -2985,6 +3105,22 @@
             }
           ]
         }
+      },
+      "dogs_unpublished": {
+        "trails": [
+          "Homer Spit Trail",
+          "Diamond Creek Trail",
+          "Homestead Trail Loop"
+        ],
+        "authority": "City of Homer / Kachemak Heritage Land Trust",
+        "checked": [
+          "https://www.cityofhomer-ak.gov/recreation/homer-spit — describes the Homer Spit Trail, says nothing about dogs",
+          "https://www.cityofhomer-ak.gov/publicworks/lend-leash-program — the only leash rule the city quotes is Homer City Code 20.08.030, and it covers the small boat harbor floats only: 'No person may bring, keep, or maintain an animal on the floats on the City of Homer's small boat harbor, unless the animal is kept under physical confinement by leash or chain at all times.' The page places borrowable leashes at 'the beach, parks and trails' but states no requirement there.",
+          "https://www.cityofhomer-ak.gov/police/animal-shelter — no rule text",
+          "https://www.cityofhomer-ak.gov/recreation/homer-trails-park-map — 403 to fetching and 'Access Denied / User log in' in a real browser; not public",
+          "Homer City Code (Title 20) is hosted on codepublishing.com, which answers a bot challenge that was not bypassed"
+        ],
+        "action": "The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Homer City Clerk, or Kachemak Heritage Land Trust for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here."
       }
     },
     "denali": {
@@ -3280,7 +3416,27 @@
             }
           ]
         }
-      }
+      },
+      "dogs": "Dock Point is a City of Valdez park and the city requires animals to be restrained everywhere except four named off-leash areas, none of which is Dock Point; nothing is published for either Solomon trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.valdezak.gov/906/Municipal-Code-Title-6",
+      "dogs_source_quote": "Owners must keep their animals restrained to prevent them from running loose.",
+      "trail_dogs": {
+        "Dock Point Trail": true,
+        "Solomon Gulch Viewpoint": null,
+        "Solomon Lake Trail": null
+      },
+      "dogs_exception": "Dock Point Trail is listed by the city as one of its own facilities (https://www.valdezak.gov/facilities/facility/details/Dock-Point-Trail-23), so the city restraint rule reaches it — on lead, not off. The city's four designated off-leash areas are Dump Haul Road, the Old Town area, behind the Gold Fields and Mineral Creek (https://www.valdezak.gov/905/Off-Leash-Areas); Dock Point is not among them. Solomon Gulch and Solomon Lake are outside the city facility list and no land manager publishes a rule for them, so they are unknown, not open.",
+      "trail_dogs_source": {
+        "Dock Point Trail": {
+          "url": "https://www.valdezak.gov/905/Off-Leash-Areas",
+          "quote": "Dogs can run freely under control in designated off-leash areas",
+          "tier": "official"
+        }
+      },
+      "dogs_needs_check": [
+        "Solomon Gulch Viewpoint and Solomon Lake Trail — land manager not established (city trail guide is a 10 MB+ PDF that would not load). Valdez Parks & Rec, 907-835-4526."
+      ]
     },
     "mccarthy": {
       "authority": "National Park Service — Wrangell-St. Elias National Park & Preserve",
@@ -3481,6 +3637,15 @@
           ],
           "auto": true,
           "auto_km": 92
+        },
+        "Visit the Saratoga Museum and make a half-day trip to Encampment and its excellent local museum.": {
+          "entity": "Encampment, WY and the Grand Encampment Museum",
+          "links": [
+            {
+              "label": "Wikipedia — Encampment, WY",
+              "url": "https://en.wikipedia.org/wiki/Encampment%2C_Wyoming"
+            }
+          ]
         }
       },
       "not_a_route": [
@@ -3562,6 +3727,15 @@
               "url": "https://en.wikipedia.org/wiki/Dawson_City"
             }
           ]
+        },
+        "Walk town early and late, when the boardwalks and historic streets are quietest.": {
+          "entity": "Dawson City",
+          "links": [
+            {
+              "label": "Wikipedia — Dawson City",
+              "url": "https://en.wikipedia.org/wiki/Dawson_City"
+            }
+          ]
         }
       },
       "offroad": [
@@ -3573,7 +3747,18 @@
           "season": "NO CONFLICT, and the timing is deliberate. The Tombstone Interpretive Centre runs daily 9am–5pm from mid-May to about 20 September (2026 season was 16 May – 20 Sep). The stop arrives 30 Aug 2027, inside that window and inside the 25 Aug – 5 Sep tundra colour peak this stop is anchored to. The centre closes roughly three weeks after arrival, so the whole stay is covered.",
           "note": "Only Canadian road that crosses the Arctic Circle, though the Circle is at km 406, far past Tombstone. For the Tombstone day trip you need no ferries and no Eagle Plains fuel stop — those matter only if the drive continues north. Still: carry at least one full-size spare, extra fuel and emergency kit, and expect no cell service, no food and no services past the highway junction. Yukon 511 carries current Dempster road conditions."
         }
-      ]
+      ],
+      "dogs": "On leash (max 1 m) anywhere in the City of Dawson outside the north-end dog park, so the 9th Ave Trail and the dike are fine; the City names Crocus Bluff Park as a dog-free area but does not say whether the Crocus Bluff trails are inside it, so treat those two as unresolved until the trailhead signs say otherwise; Tombstone's trails on the Dempster are Yukon Parks and allow dogs under physical control.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.cityofdawson.ca/p/responsible-pet-ownership",
+      "dogs_source_quote": "The soccer field, Minto Park, and Crocus Bluff Park are dog free areas.",
+      "trail_dogs": {
+        "Crocus Bluff Loop": null,
+        "North Klondike River and Edge of the Artic Trail": true,
+        "9th Ave Trail": true,
+        "Dawson City Dike": true,
+        "Crocus Bluff Nature Trail": null
+      }
     },
     "watson-lake-2": {
       "authority": "Town of Watson Lake, Yukon",
@@ -3624,6 +3809,15 @@
         },
         "Simulated aurora show, Northern Lights Space & Science Centre": {
           "entity": "Watson Lake, Yukon",
+          "links": [
+            {
+              "label": "Wikipedia — Watson Lake, YT",
+              "url": "https://en.wikipedia.org/wiki/Watson_Lake%2C_Yukon"
+            }
+          ]
+        },
+        "Wye Lake Park boardwalk loop": {
+          "entity": "Wye Lake Park, Watson Lake",
           "links": [
             {
               "label": "Wikipedia — Watson Lake, YT",
@@ -3769,6 +3963,15 @@
               "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
             }
           ]
+        },
+        "Lakeshore Trail and Beaver Lodge Trail are each short and approachable.": {
+          "entity": "Boya Lake / Ta Ch'ila Provincial Park trails",
+          "links": [
+            {
+              "label": "Wikipedia — Tā Chʼilā (Boya Lake) PP",
+              "url": "https://en.wikipedia.org/wiki/T%C4%81_Ch%27il%C4%81_Provincial_Park"
+            }
+          ]
         }
       }
     },
@@ -3904,6 +4107,24 @@
               "url": "https://en.wikipedia.org/wiki/Hyder%2C_Alaska"
             }
           ]
+        },
+        "Bear Glacier roadside viewpoint": {
+          "entity": "Bear Glacier",
+          "links": [
+            {
+              "label": "Wikipedia — Bear Glacier PP",
+              "url": "https://en.wikipedia.org/wiki/Bear_Glacier_Provincial_Park"
+            }
+          ]
+        },
+        "Fish Creek wildlife viewing may be past peak and may have reduced hours; check before planning around it.": {
+          "entity": "Fish Creek Wildlife Observation Site, Hyder",
+          "links": [
+            {
+              "label": "Wikipedia — Hyder, Alaska",
+              "url": "https://en.wikipedia.org/wiki/Hyder%2C_Alaska"
+            }
+          ]
         }
       },
       "offroad": [
@@ -3919,11 +4140,11 @@
       ],
       "authority": "BC Parks — Meziadin Lake Park; the Hyder-side trails are USDA Forest Service (Tongass NF) and the Town of Stewart",
       "dogs_verdict": "partial",
-      "dogs": "Meziadin Lake Park: \"Pets/domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement.\"",
+      "dogs": "District of Stewart requires dogs on leash in public, so the Rainey Creek trail and municipal park are fine; BC Parks' Meziadin Lake Park: \"Pets/domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement.\" The Ore Mountain trail starts at a Forest Service recreation site and no manager publishes a dog rule for it.",
       "trail_dogs": {
         "Meziadin Lake Island Paddle": true,
         "Ore Mountain via American Creek Trail": null,
-        "Rainey Creek Nature Walk": null
+        "Rainey Creek Nature Walk": true
       },
       "dogs_exception": "No pets page was found for the Tongass NF around Hyder or for the Town of Stewart, so those two are unknown. Separately, the Fish Creek bear-viewing site is a place to leave the dog behind regardless of what the rule turns out to be.",
       "official_links": [
@@ -3932,7 +4153,9 @@
           "url": "https://bcparks.ca/meziadin-lake-park/",
           "tier": "official"
         }
-      ]
+      ],
+      "dogs_source": "https://districtofstewart.com/citizen-services/pets-animals/leash-your-dog",
+      "dogs_source_quote": "It is the law! Plain and simple."
     },
     "prince-george": {
       "authority": "BC Parks — Ancient Forest / Chun T'oh Whudujut",
@@ -3999,6 +4222,15 @@
         },
         "Lheidli T’enneh Memorial Park, Cottonwood Island Nature Park, and Two Rivers Gallery.": {
           "entity": "Prince George, British Columbia",
+          "links": [
+            {
+              "label": "Wikipedia — Prince George, BC",
+              "url": "https://en.wikipedia.org/wiki/Prince_George%2C_British_Columbia"
+            }
+          ]
+        },
+        "Cottonwood Island Nature Park riverside walk": {
+          "entity": "Cottonwood Island Nature Park",
           "links": [
             {
               "label": "Wikipedia — Prince George, BC",
@@ -4229,6 +4461,15 @@
           ],
           "auto": true,
           "auto_km": 5
+        },
+        "Rim Trail — strings together a dozen viewpoints along the canyon's edge, easy enough to walk with the dog on a leash.": {
+          "entity": "Rim Trail, Grand Canyon South Rim",
+          "links": [
+            {
+              "label": "Wikipedia — Rim Trail",
+              "url": "https://en.wikipedia.org/wiki/Rim_Trail"
+            }
+          ]
         }
       },
       "trails": [
@@ -4302,6 +4543,24 @@
           ],
           "auto": true,
           "auto_km": 20
+        },
+        "The Narrows (bottom-up)": {
+          "entity": "The Narrows, Zion",
+          "links": [
+            {
+              "label": "Wikipedia — The Narrows",
+              "url": "https://en.wikipedia.org/wiki/The_Narrows_%28Zion_National_Park%29"
+            }
+          ]
+        },
+        "Watchman Trail": {
+          "entity": "The Watchman, Zion",
+          "links": [
+            {
+              "label": "Wikipedia — The Watchman",
+              "url": "https://en.wikipedia.org/wiki/The_Watchman_%28Utah%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -4476,6 +4735,15 @@
               "url": "https://en.wikipedia.org/wiki/Yosemite_Falls"
             }
           ]
+        },
+        "Valley Loop Trail (partial)": {
+          "entity": "Yosemite Valley",
+          "links": [
+            {
+              "label": "Wikipedia — Yosemite Valley",
+              "url": "https://en.wikipedia.org/wiki/Yosemite_Valley"
+            }
+          ]
         }
       },
       "trails": [
@@ -4619,7 +4887,31 @@
           "elevation_gain": "426 ft",
           "reviews": "2,603"
         }
-      ]
+      ],
+      "activities": {
+        "Gunnison Point overlook and visitor center — the South Rim's overlooks drop straight down to the Gunnison River nearly 2,000 ft below, one of the steepest, narrowest canyons in North America.": {
+          "entity": "Gunnison River",
+          "links": [
+            {
+              "label": "Wikipedia — Gunnison River",
+              "url": "https://en.wikipedia.org/wiki/Gunnison_River"
+            }
+          ]
+        },
+        "Only a ~15-minute detour off the Moab→Ouray drive, so it's an easy add without reworking the route.": {
+          "entity": "Moab, UT; Ouray, CO",
+          "links": [
+            {
+              "label": "Wikipedia — Moab, UT",
+              "url": "https://en.wikipedia.org/wiki/Moab%2C_Utah"
+            },
+            {
+              "label": "Wikipedia — Ouray, CO",
+              "url": "https://en.wikipedia.org/wiki/Ouray%2C_Colorado"
+            }
+          ]
+        }
+      }
     },
     "joshua-tree": {
       "authority": "National Park Service",
@@ -4659,6 +4951,19 @@
             {
               "label": "Wikipedia — Pioneertown, California",
               "url": "https://en.wikipedia.org/wiki/Pioneertown%2C_California"
+            }
+          ]
+        },
+        "Hidden Valley & Barker Dam": {
+          "entity": "Hidden Valley; Barker Dam",
+          "links": [
+            {
+              "label": "Wikipedia — Hidden Valley",
+              "url": "https://en.wikipedia.org/wiki/Hidden_Valley_%28Joshua_Tree_National_Park%29"
+            },
+            {
+              "label": "Wikipedia — Barker Dam",
+              "url": "https://en.wikipedia.org/wiki/Barker_Dam_%28California%29"
             }
           ]
         }
@@ -4739,6 +5044,24 @@
             {
               "label": "Wikipedia — Places of interest in the Death Valley area",
               "url": "https://en.wikipedia.org/wiki/Places_of_interest_in_the_Death_Valley_area"
+            }
+          ]
+        },
+        "Titus Canyon Road (towed 4x4 truck only)": {
+          "entity": "Titus Canyon",
+          "links": [
+            {
+              "label": "Wikipedia — Titus Canyon",
+              "url": "https://en.wikipedia.org/wiki/Titus_Canyon"
+            }
+          ]
+        },
+        "Furnace Creek Visitor Center": {
+          "entity": "Furnace Creek, Death Valley",
+          "links": [
+            {
+              "label": "Wikipedia — Furnace Creek",
+              "url": "https://en.wikipedia.org/wiki/Furnace_Creek%2C_California"
             }
           ]
         }
@@ -5251,13 +5574,13 @@
       },
       "authority": "BC Parks — Stone Mountain Park (Flower Springs, Summit Lake); the town trails are Northern Rockies Regional Municipality",
       "dogs_verdict": "partial",
-      "dogs": "Stone Mountain Park: \"Pets must be leashed and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement. Backcountry areas are not suitable for dogs or any pets due to the potential for problems with bears and other wildlife.\"",
+      "dogs": "Northern Rockies Regional Municipality requires dogs leashed in public, which covers the Community Trail, the Demonstration Forest and Tetsa River Regional Park; BC Parks' Stone Mountain Park: \"Pets must be leashed and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement. Backcountry areas are not suitable for dogs or any pets due to the potential for problems with bears and other wildlife.\" Parker Lake Ecological Reserve publishes no pet rule at all.",
       "trail_dogs": {
         "Flower Springs Lake Trail": true,
         "Summit Lake Lookout": true,
-        "Fort Nelson Demonstration Forest Full Loop": null,
-        "Tetsa River Trail": null,
-        "Fort Nelson Community Trail": null,
+        "Fort Nelson Demonstration Forest Full Loop": true,
+        "Tetsa River Trail": true,
+        "Fort Nelson Community Trail": true,
         "Parker Lake (Ecological Reserve)": null
       },
       "dogs_exception": "Parker Lake is an ecological reserve, a different designation from a provincial park with its own access rules — treat the silence there as a real unknown and check before taking the dog.",
@@ -5267,7 +5590,9 @@
           "url": "https://bcparks.ca/stone-mountain-park/",
           "tier": "official"
         }
-      ]
+      ],
+      "dogs_source": "https://www.northernrockies.ca/resident-services/dog-licences-animal-control",
+      "dogs_source_quote": "Dogs must be leashed when in public"
     },
     "liard": {
       "activities": {
@@ -5404,7 +5729,15 @@
           "season": "No gate and no published closure, but the crossings are the season. NPS warns that spring run-off and heavy rain can make the streams beyond mile 29 impassable. The stop arrives 25 Jun 2027, which is still late run-off in that valley — the first 29 miles should be fine, the last stretch is a day-of decision.",
           "note": "One of only two roads into Wrangell-St. Elias. Flat tires and washouts are common along the whole length; carry a full-size spare and the means to fit it. The maintained road ends at a private hunting lodge at mile 42, and NPS does not recommend driving the last four miles — deeply rutted and wet. Stop at the Slana Ranger Station at mile 0.5 for current crossing conditions and the free Nabesna Road Guide before committing."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are fine — the overlook trail is in Eagle Trail State Recreation Site, and Alaska State Parks allow pets throughout on a leash of nine feet or less in developed areas, voice control in the backcountry.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "dogs_source_quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+      "trail_dogs": {
+        "Tok River Valley Overlook Trail": true
+      },
+      "dogs_note": "Eagle Trail State Recreation Site, Mile 109.5 Tok Cut-Off, is an Alaska State Parks unit; its own page describes 'the 2.5-mile hiking trail with an overview of the Tok River Valley' (https://dnr.alaska.gov/parks/aspunits/northern/eagletrailsrs.htm) but publishes no pet rule of its own, so the statewide rule is what applies."
     },
     "fairbanks-1": {
       "activities": {
@@ -5539,6 +5872,31 @@
             }
           ]
         }
+      ],
+      "dogs": "Leashed on Birch Hill, which is a Fairbanks North Star Borough facility; the borough's other four trails on this card have no published dog rule at all, so treat them as unknown rather than open.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://fnsb.gov/DocumentCenter/View/4228/Parks-and-Recreation-General-Rules-and-Regulations-PDF",
+      "dogs_source_quote": "Except in designated off-leash areas, all pets must be on-leash and under the owner's control at all times. Pet waste must be picked up and disposed of in provided trash receptacles.",
+      "trail_dogs": {
+        "Birch Hill White Bear Loop": true,
+        "Ester Dome Inner Loop": null,
+        "Chena River Nature Trail": null,
+        "Wander Lake Trail": null,
+        "Boreal Forest and Seasonal Wetland Trail": null
+      },
+      "dogs_exception": "The borough rules apply to 'any Parks and Recreation controlled and borough-owned or leased amenity including facilities, parks, trails and landscaped areas', which covers Birch Hill Recreation Area. Ester Dome sits on Tanana Valley State Forest land administered by DNR, which publishes no dog rule for it. Wander Lake is inside the privately owned Fountainhead Wedgewood Wildlife Sanctuary and the owner publishes nothing. Creamer's Field is Alaska Dept. of Fish & Game; three ADF&G refuge pages were read and none mentions pets. No managing authority could be established for the Chena River Nature Trail — it is not on the borough's trail-map list and not on the Chena River SRA page.",
+      "trail_dogs_source": {
+        "Birch Hill White Bear Loop": {
+          "url": "https://fnsb.gov/DocumentCenter/View/4228/Parks-and-Recreation-General-Rules-and-Regulations-PDF",
+          "quote": "Except in designated off-leash areas, all pets must be on-leash and under the owner's control at all times.",
+          "tier": "official"
+        }
+      },
+      "dogs_needs_check": [
+        "Ester Dome Inner Loop — DNR Fairbanks / Division of Forestry, Tanana Valley State Forest. Phone the Fairbanks DNR office.",
+        "Chena River Nature Trail — authority not established; it is neither on the FNSB trail-map list nor on the Chena River SRA page. Identify the landowner before assuming either the borough or state-park leash rule applies.",
+        "Wander Lake Trail — private, Fountainhead Wedgewood Wildlife Sanctuary. Ask the resort.",
+        "Boreal Forest and Seasonal Wetland Trail — ADF&G Creamer's Field, (907) 459-7307. The ADF&G access page also lists the Boreal Forest Trail as closed; worth confirming before the visit."
       ]
     },
     "anchorage": {
@@ -5604,9 +5962,9 @@
       "dogs": "Chugach State Park: \"Pets must be under control whether on or off leash. 11 AAC 12.130 (e).\" Statewide, Alaska State Parks require a leash \"not exceeding nine feet in length\" in developed facilities — campgrounds, picnic areas, trailheads, swim beaches and boat ramps — and voice control in the backcountry.",
       "trail_dogs": {
         "Rabbit Lake Trail": true,
-        "Tony Knowles Coastal Path": null,
-        "Margaret Eagan Sullivan to Earthquake Park": null,
-        "Elderberry Park to Westchester Lagoon": null
+        "Tony Knowles Coastal Path": true,
+        "Margaret Eagan Sullivan to Earthquake Park": true,
+        "Elderberry Park to Westchester Lagoon": true
       },
       "dogs_exception": "The three city-trail entries are Municipality of Anchorage, not state park — no municipal rule was sourced, so they are unknown. Chugach State Park also warns that trapping is legal in parts of the park, which is a separate reason to keep the dog close.",
       "official_links": [
@@ -5620,7 +5978,26 @@
           "url": "https://dnr.alaska.gov/parks/faq.htm",
           "tier": "official"
         }
-      ]
+      ],
+      "trail_dogs_source": {
+        "Tony Knowles Coastal Path": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "code": "Anchorage Municipal Code 17.10.010(A): \"It is unlawful for any animal to be in a public place unless it is controlled by a leash, and in the control of a person competent to restrain the animal\", read at http://anchorage-ak.elaws.us/code/coor_title17_ch17.10_sec17.10.010",
+          "tier": "official"
+        },
+        "Margaret Eagan Sullivan to Earthquake Park": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "tier": "official"
+        },
+        "Elderberry Park to Westchester Lagoon": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "tier": "official"
+        }
+      },
+      "dogs_exception_add": "The three city-trail entries are resolved: the Municipality of Anchorage permits dogs in public places on a leash, so all three are walkable with the dog on lead. Off-leash is only lawful in sanctioned off-leash areas, and the Muni states plainly that off-leash walking, skiing and biking are not among the exceptions. Rabbit Lake remains Chugach State Park and keeps its existing rule."
     },
     "ninilchik": {
       "activities": {
@@ -5839,7 +6216,15 @@
           "season": "No gate and no published closure. The stop arrives 27 Aug 2027 — the best time of the three Alaska windows for this road: run-off is long past, so the stream crossings beyond mile 29 are at their lowest and the far end is most likely to go. No conflict.",
           "note": "Second bite at Nabesna, and the better one — if the crossings were up in late June on the tok-1 stop, this is the visit to push past mile 29. Flat tires and washouts are still common the whole length. The maintained road ends at a private lodge at mile 42; NPS does not recommend the last four miles, which are deeply rutted and wet. Slana Ranger Station at mile 0.5 has current conditions."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are fine — the overlook trail is in Eagle Trail State Recreation Site, and Alaska State Parks allow pets throughout on a leash of nine feet or less in developed areas, voice control in the backcountry.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "dogs_source_quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+      "trail_dogs": {
+        "Tok River Valley Overlook Trail": true
+      },
+      "dogs_note": "Same trail as tok-1. Eagle Trail State Recreation Site, Mile 109.5 Tok Cut-Off, is an Alaska State Parks unit."
     },
     "whitehorse-2": {
       "activities": {
@@ -5880,7 +6265,34 @@
               "url": "https://en.wikipedia.org/wiki/White_Horse_Rapids"
             }
           ]
+        },
+        "Revisit only the Whitehorse attractions missed in June.": {
+          "entity": "Whitehorse, YT",
+          "links": [
+            {
+              "label": "Wikipedia — Whitehorse",
+              "url": "https://en.wikipedia.org/wiki/Whitehorse"
+            }
+          ]
+        },
+        "Darker nights improve aurora opportunities when skies are clear.": {
+          "entity": "Aurora (northern lights)",
+          "links": [
+            {
+              "label": "Wikipedia — Aurora",
+              "url": "https://en.wikipedia.org/wiki/Aurora"
+            }
+          ]
         }
+      },
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53), which covers the Miles Canyon and Yukon River riverfront trails; Fish Lake is outside city limits on Kwanlin Dun settlement and Yukon Crown land, and no authority publishes a dog rule for that trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout Trail": null,
+        "Miles Canyon Loop": true,
+        "Yukon River Trail": true
       }
     },
     "whitehorse-3": {
@@ -5923,6 +6335,15 @@
             }
           ]
         }
+      },
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53), which covers the Miles Canyon and Yukon River riverfront trails; Fish Lake is outside city limits on Kwanlin Dun settlement and Yukon Crown land, and no authority publishes a dog rule for that trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout Trail": null,
+        "Miles Canyon Loop": true,
+        "Yukon River Trail": true
       }
     },
     "smithers": {
@@ -5967,6 +6388,17 @@
             }
           ]
         }
+      },
+      "dogs": "Town of Smithers Animal Control and Licencing Bylaw No. 1780 requires leashing in public, which covers the Perimeter Trail and Riverside Park; BC Parks allows leashed pets at Call Lake and in Babine Mountains Park, where dogs are also discouraged from the alpine because of mountain goats; nobody publishes a rule for Crater Lake or Seymour Ridge.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.smithers.ca/bylaw-enforcement-animal-control/dog-licensing-control",
+      "dogs_source_quote": "Leashing when in public and maintaining control of the dog at all times;",
+      "trail_dogs": {
+        "Crater Lake Trail": null,
+        "Seymour Ridge Trail": null,
+        "Perimeter Trail": true,
+        "Riverside Park Short Loop": true,
+        "Call Lake Trail": true
       }
     },
     "osoyoos": {
@@ -6032,6 +6464,42 @@
               "url": "https://en.wikipedia.org/wiki/Osoyoos"
             }
           ]
+        },
+        "District Wine Village & Okanagan wine touring": {
+          "entity": "Okanagan wine region",
+          "links": [
+            {
+              "label": "Wikipedia — Okanagan wine region",
+              "url": "https://en.wikipedia.org/wiki/Okanagan_Valley_%28wine_region%29"
+            }
+          ]
+        },
+        "Mount Baldy hiking / scenic drive": {
+          "entity": "Mount Baldy / Baldy Mountain Resort, BC",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Baldy Ski Area",
+              "url": "https://en.wikipedia.org/wiki/Mount_Baldy_Ski_Area"
+            }
+          ]
+        },
+        "Explore Oliver and nearby wineries selectively; verify autumn hours and arrange a designated driver.": {
+          "entity": "Oliver, BC",
+          "links": [
+            {
+              "label": "Wikipedia — Oliver, BC",
+              "url": "https://en.wikipedia.org/wiki/Oliver%2C_British_Columbia"
+            }
+          ]
+        },
+        "Haynes Point/s■i■s Provincial Park is a pleasant low-effort walk.": {
+          "entity": "sw̓iw̓s (Haynes Point) Provincial Park",
+          "links": [
+            {
+              "label": "Wikipedia — sw̓iw̓s Park",
+              "url": "https://en.wikipedia.org/wiki/Sw%CC%93iw%CC%93s_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -6094,6 +6562,28 @@
             {
               "label": "Wikipedia — North Cascades National Park",
               "url": "https://en.wikipedia.org/wiki/North_Cascades_National_Park"
+            }
+          ]
+        },
+        "Cutthroat Pass": {
+          "entity": "Cutthroat Pass / Cutthroat Peak",
+          "links": [
+            {
+              "label": "Wikipedia — Cutthroat Peak",
+              "url": "https://en.wikipedia.org/wiki/Cutthroat_Peak"
+            }
+          ]
+        },
+        "Winthrop and Twisp": {
+          "entity": "Winthrop and Twisp, WA",
+          "links": [
+            {
+              "label": "Wikipedia — Winthrop, WA",
+              "url": "https://en.wikipedia.org/wiki/Winthrop%2C_Washington"
+            },
+            {
+              "label": "Wikipedia — Twisp, WA",
+              "url": "https://en.wikipedia.org/wiki/Twisp%2C_Washington"
             }
           ]
         }
@@ -6307,6 +6797,37 @@
               "url": "https://en.wikipedia.org/wiki/White_Pass_%28Washington%29"
             }
           ]
+        },
+        "Skate Creek Road scenic drive (FR 52)": {
+          "entity": "Skate Creek Road (FR 52), Gifford Pinchot NF",
+          "links": [
+            {
+              "label": "Wikipedia — Gifford Pinchot NF",
+              "url": "https://en.wikipedia.org/wiki/Gifford_Pinchot_National_Forest"
+            }
+          ]
+        },
+        "Packwood Lake Trail": {
+          "entity": "Packwood Lake",
+          "links": [
+            {
+              "label": "Wikipedia — Packwood Lake",
+              "url": "https://en.wikipedia.org/wiki/Packwood_Lake"
+            }
+          ]
+        },
+        "Elk viewing in the Cowlitz Valley": {
+          "entity": "Elk; Cowlitz River valley",
+          "links": [
+            {
+              "label": "Wikipedia — Elk",
+              "url": "https://en.wikipedia.org/wiki/Elk"
+            },
+            {
+              "label": "Wikipedia — Cowlitz River",
+              "url": "https://en.wikipedia.org/wiki/Cowlitz_River"
+            }
+          ]
         }
       },
       "trails": [
@@ -6413,6 +6934,24 @@
             {
               "label": "Wikipedia — Castle Rock, Washington",
               "url": "https://en.wikipedia.org/wiki/Castle_Rock%2C_Washington"
+            }
+          ]
+        },
+        "Hummocks Trail": {
+          "entity": "Hummocks Trail, Mount St. Helens NVM",
+          "links": [
+            {
+              "label": "Wikipedia — Mount St. Helens NVM",
+              "url": "https://en.wikipedia.org/wiki/Mount_St._Helens_National_Volcanic_Monument"
+            }
+          ]
+        },
+        "Coldwater Lake": {
+          "entity": "Coldwater Lake, WA",
+          "links": [
+            {
+              "label": "Wikipedia — Coldwater Lake",
+              "url": "https://en.wikipedia.org/wiki/Coldwater_Lake_%28Washington%29"
             }
           ]
         }
@@ -6677,6 +7216,24 @@
               "url": "https://en.wikipedia.org/wiki/Willapa_Bay"
             }
           ]
+        },
+        "Walk or bike the Discovery Trail": {
+          "entity": "Discovery Trail, Long Beach WA",
+          "links": [
+            {
+              "label": "Wikipedia — Long Beach, WA",
+              "url": "https://en.wikipedia.org/wiki/Long_Beach%2C_Washington"
+            }
+          ]
+        },
+        "Stroll the Long Beach Boardwalk": {
+          "entity": "Long Beach Boardwalk",
+          "links": [
+            {
+              "label": "Wikipedia — Long Beach, WA",
+              "url": "https://en.wikipedia.org/wiki/Long_Beach%2C_Washington"
+            }
+          ]
         }
       },
       "trails": [
@@ -6834,6 +7391,28 @@
               "url": "https://en.wikipedia.org/wiki/Hood_River%2C_Oregon"
             }
           ]
+        },
+        "Dog Mountain Trail (permit hike)": {
+          "entity": "Dog Mountain, WA",
+          "links": [
+            {
+              "label": "Wikipedia — Dog Mountain",
+              "url": "https://en.wikipedia.org/wiki/Dog_Mountain"
+            }
+          ]
+        },
+        "Hood River waterfront & windsurfing/kiteboarding viewing": {
+          "entity": "Hood River, OR; windsurfing",
+          "links": [
+            {
+              "label": "Wikipedia — Hood River, OR",
+              "url": "https://en.wikipedia.org/wiki/Hood_River%2C_Oregon"
+            },
+            {
+              "label": "Wikipedia — Windsurfing",
+              "url": "https://en.wikipedia.org/wiki/Windsurfing"
+            }
+          ]
         }
       },
       "trails": [
@@ -6977,7 +7556,25 @@
           "links": [
             {
               "label": "Wikipedia — Salmon River",
-              "url": "https://en.wikipedia.org/wiki/Salmon_River"
+              "url": "https://en.wikipedia.org/wiki/Salmon_River_%28Clackamas_County%2C_Oregon%29"
+            }
+          ]
+        },
+        "Ramona Falls Loop": {
+          "entity": "Ramona Falls, OR",
+          "links": [
+            {
+              "label": "Wikipedia — Ramona Falls",
+              "url": "https://en.wikipedia.org/wiki/Ramona_Falls_%28Oregon%29"
+            }
+          ]
+        },
+        "Mirror Lake Trail": {
+          "entity": "Mirror Lake, Clackamas County OR",
+          "links": [
+            {
+              "label": "Wikipedia — Mirror Lake",
+              "url": "https://en.wikipedia.org/wiki/Mirror_Lake_%28Clackamas_County%2C_Oregon%29"
             }
           ]
         }
@@ -7272,6 +7869,28 @@
               "url": "https://en.wikipedia.org/wiki/Oregon_Coast_Aquarium"
             }
           ]
+        },
+        "Historic Bayfront & sea lion docks": {
+          "entity": "Yaquina Bay bayfront; California sea lions",
+          "links": [
+            {
+              "label": "Wikipedia — Yaquina Bay",
+              "url": "https://en.wikipedia.org/wiki/Yaquina_Bay"
+            },
+            {
+              "label": "Wikipedia — California sea lion",
+              "url": "https://en.wikipedia.org/wiki/California_sea_lion"
+            }
+          ]
+        },
+        "Devil's Punchbowl State Natural Area": {
+          "entity": "Devils Punch Bowl State Natural Area",
+          "links": [
+            {
+              "label": "Wikipedia — Devils Punch Bowl SNA",
+              "url": "https://en.wikipedia.org/wiki/Devils_Punch_Bowl_State_Natural_Area"
+            }
+          ]
         }
       },
       "trails": [
@@ -7412,6 +8031,24 @@
               "url": "https://en.wikipedia.org/wiki/Cape_Blanco_Light"
             }
           ]
+        },
+        "Cape Blanco Historic Heritage Site (Hughes House)": {
+          "entity": "Cape Blanco and the Hughes House",
+          "links": [
+            {
+              "label": "Wikipedia — Cape Blanco, OR",
+              "url": "https://en.wikipedia.org/wiki/Cape_Blanco_%28Oregon%29"
+            }
+          ]
+        },
+        "Cranberry bog viewing / Bandon Cranberry Festival area": {
+          "entity": "Cranberry bogs",
+          "links": [
+            {
+              "label": "Wikipedia — Cranberry",
+              "url": "https://en.wikipedia.org/wiki/Cranberry"
+            }
+          ]
         }
       },
       "trails": [
@@ -7500,6 +8137,32 @@
             {
               "label": "Wikipedia — Del Norte Coast Redwoods State Park",
               "url": "https://en.wikipedia.org/wiki/Del_Norte_Coast_Redwoods_State_Park"
+            }
+          ]
+        },
+        "Crescent Beach Overlook & Enderts Beach (Coastal Trail)": {
+          "entity": "Crescent Beach / Enderts Beach, Redwood NSP; Coastal Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Redwood National and State Parks",
+              "url": "https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks"
+            },
+            {
+              "label": "Wikipedia — California Coastal Trail",
+              "url": "https://en.wikipedia.org/wiki/California_Coastal_Trail"
+            }
+          ]
+        },
+        "Scenic drive: Howland Hill Road / Newton B. Drury Scenic Parkway": {
+          "entity": "Howland Hill Road; Newton B. Drury Scenic Parkway",
+          "links": [
+            {
+              "label": "Wikipedia — Jedediah Smith Redwoods SP",
+              "url": "https://en.wikipedia.org/wiki/Jedediah_Smith_Redwoods_State_Park"
+            },
+            {
+              "label": "Wikipedia — Prairie Creek Redwoods SP",
+              "url": "https://en.wikipedia.org/wiki/Prairie_Creek_Redwoods_State_Park"
             }
           ]
         }
@@ -7653,6 +8316,15 @@
             {
               "label": "Wikipedia — Glass Beach",
               "url": "https://en.wikipedia.org/wiki/Glass_Beach_%28Fort_Bragg%2C_California%29"
+            }
+          ]
+        },
+        "Russian Gulch Waterfall Loop": {
+          "entity": "Russian Gulch State Park",
+          "links": [
+            {
+              "label": "Wikipedia — Russian Gulch SP",
+              "url": "https://en.wikipedia.org/wiki/Russian_Gulch_State_Park"
             }
           ]
         }
@@ -8064,6 +8736,24 @@
           ],
           "auto": true,
           "auto_km": 9
+        },
+        "Painted Desert Trail and Meers Point, Imperial NWR": {
+          "entity": "Imperial National Wildlife Refuge",
+          "links": [
+            {
+              "label": "Wikipedia — Imperial NWR",
+              "url": "https://en.wikipedia.org/wiki/Imperial_National_Wildlife_Refuge"
+            }
+          ]
+        },
+        "Senator Wash Reservoir and Squaw Lake": {
+          "entity": "Senator Wash Reservoir",
+          "links": [
+            {
+              "label": "Wikipedia — Senator Wash Reservoir",
+              "url": "https://en.wikipedia.org/wiki/Senator_Wash_Reservoir"
+            }
+          ]
         }
       },
       "trails": [
@@ -8158,6 +8848,15 @@
           ],
           "auto": true,
           "auto_km": 8
+        },
+        "Castle Dome Mines Museum, on the way out": {
+          "entity": "Castle Dome City (Castle Dome Landing), AZ",
+          "links": [
+            {
+              "label": "Wikipedia — Castle Dome Landing",
+              "url": "https://en.wikipedia.org/wiki/Castle_Dome_Landing%2C_Arizona"
+            }
+          ]
         }
       },
       "scenicDrives_patch": [
@@ -8282,6 +8981,15 @@
               "url": "https://en.wikipedia.org/wiki/Bisbee%2C_Arizona"
             }
           ]
+        },
+        "Colossal Cave Mountain Park": {
+          "entity": "Colossal Cave, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Colossal Cave",
+              "url": "https://en.wikipedia.org/wiki/Colossal_Cave_%28Arizona%29"
+            }
+          ]
         }
       },
       "trails": [
@@ -8398,6 +9106,32 @@
             {
               "label": "Wikipedia — Bisbee, Arizona",
               "url": "https://en.wikipedia.org/wiki/Bisbee%2C_Arizona"
+            }
+          ]
+        },
+        "Bisbee Mining & Historical Museum": {
+          "entity": "Bisbee Mining and Historical Museum",
+          "links": [
+            {
+              "label": "Wikipedia — Bisbee Mining & Historical Museum",
+              "url": "https://en.wikipedia.org/wiki/Phelps_Dodge_General_Office_Building"
+            }
+          ]
+        },
+        "Ghost Town Trail (truck)": {
+          "entity": "Gleeson, Courtland and Pearce, AZ",
+          "links": [
+            {
+              "label": "Wikipedia — Gleeson",
+              "url": "https://en.wikipedia.org/wiki/Gleeson%2C_Arizona"
+            },
+            {
+              "label": "Wikipedia — Courtland",
+              "url": "https://en.wikipedia.org/wiki/Courtland%2C_Arizona"
+            },
+            {
+              "label": "Wikipedia — Pearce",
+              "url": "https://en.wikipedia.org/wiki/Pearce%2C_Arizona"
             }
           ]
         }
@@ -8596,6 +9330,24 @@
           ],
           "auto": true,
           "auto_km": 65
+        },
+        "Navajo Loop & Queen's Garden combo": {
+          "entity": "Navajo Loop and Queen's Garden trails",
+          "links": [
+            {
+              "label": "Wikipedia — Bryce Canyon Scenic Trails",
+              "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park_Scenic_Trails_Historic_District"
+            }
+          ]
+        },
+        "Fairyland Loop Trail": {
+          "entity": "Fairyland Trail",
+          "links": [
+            {
+              "label": "Wikipedia — Bryce Canyon Scenic Trails",
+              "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park_Scenic_Trails_Historic_District"
+            }
+          ]
         }
       },
       "trails": [
@@ -8688,6 +9440,37 @@
             {
               "label": "Wikipedia — Fruita, Utah",
               "url": "https://en.wikipedia.org/wiki/Fruita%2C_Utah"
+            }
+          ]
+        },
+        "Hickman Bridge Trail": {
+          "entity": "Hickman Natural Bridge",
+          "links": [
+            {
+              "label": "Wikipedia — Hickman Natural Bridge",
+              "url": "https://en.wikipedia.org/wiki/Hickman_Natural_Bridge"
+            }
+          ]
+        },
+        "Cassidy Arch Trail": {
+          "entity": "Cassidy Arch",
+          "links": [
+            {
+              "label": "Wikipedia — Cassidy Arch",
+              "url": "https://en.wikipedia.org/wiki/Cassidy_Arch"
+            }
+          ]
+        },
+        "Cathedral Valley 4x4 loop (towed truck only)": {
+          "entity": "Temple of the Sun and Temple of the Moon",
+          "links": [
+            {
+              "label": "Wikipedia — Temple of the Sun",
+              "url": "https://en.wikipedia.org/wiki/Temple_of_the_Sun_%28Utah%29"
+            },
+            {
+              "label": "Wikipedia — Temple of the Moon",
+              "url": "https://en.wikipedia.org/wiki/Temple_of_the_Moon_%28Utah%29"
             }
           ]
         }
@@ -8810,6 +9593,15 @@
             {
               "label": "Wikipedia — Corona Arch",
               "url": "https://en.wikipedia.org/wiki/Corona_Arch"
+            }
+          ]
+        },
+        "Hurrah Pass 4x4 trail": {
+          "entity": "Hurrah Pass",
+          "links": [
+            {
+              "label": "Wikipedia — Hurrah Pass",
+              "url": "https://en.wikipedia.org/wiki/Hurrah_Pass"
             }
           ]
         }
@@ -9089,6 +9881,15 @@
               "url": "https://en.wikipedia.org/wiki/Durango_and_Silverton_Narrow_Gauge_Railroad"
             }
           ]
+        },
+        "Durango & Silverton Narrow Gauge Railroad fall-foliage run": {
+          "entity": "Durango and Silverton Narrow Gauge Railroad",
+          "links": [
+            {
+              "label": "Wikipedia — Durango & Silverton Narrow Gauge Railroad",
+              "url": "https://en.wikipedia.org/wiki/Durango_and_Silverton_Narrow_Gauge_Railroad"
+            }
+          ]
         }
       },
       "trails": [
@@ -9179,6 +9980,37 @@
             {
               "label": "Wikipedia — Cumbres and Toltec Scenic Railroad",
               "url": "https://en.wikipedia.org/wiki/Cumbres_and_Toltec_Scenic_Railroad"
+            }
+          ]
+        },
+        "Treasure Falls Trail": {
+          "entity": "Treasure Falls",
+          "links": [
+            {
+              "label": "Wikipedia — Treasure Falls",
+              "url": "https://en.wikipedia.org/wiki/Treasure_Falls"
+            }
+          ]
+        },
+        "Piedra River Trail": {
+          "entity": "Piedra River",
+          "links": [
+            {
+              "label": "Wikipedia — Piedra River",
+              "url": "https://en.wikipedia.org/wiki/Piedra_River_%28Colorado%29"
+            }
+          ]
+        },
+        "Cumbres & Toltec Scenic Railroad day trip (Chama, NM)": {
+          "entity": "Cumbres and Toltec Scenic Railroad; Chama, NM",
+          "links": [
+            {
+              "label": "Wikipedia — Cumbres & Toltec Scenic Railroad",
+              "url": "https://en.wikipedia.org/wiki/Cumbres_and_Toltec_Scenic_Railroad"
+            },
+            {
+              "label": "Wikipedia — Chama, NM",
+              "url": "https://en.wikipedia.org/wiki/Chama%2C_New_Mexico"
             }
           ]
         }
@@ -9293,7 +10125,63 @@
           "auto": true,
           "auto_km": 26
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Aspen Ridge Road (FS 185), east boundary of Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "difficulty": "BLM: \"High clearance 4x4 vehicles recommended\"",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "BLM adds a parking rule that is easy to break by accident: vehicles must remain within one vehicle length of the road when parking. Trails Offroad's listing for the same road (official name \"185\") gives a high point of 10,301 ft and a typical open window of 30 Apr – 1 Dec, which agrees with the gate dates.",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        },
+        {
+          "name": "CR 240 above Angel of Shavano to North Fork Reservoir",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/north-fork-campground",
+          "distance": "3 mi on CR 240 from US 50 to Angel of Shavano, then 6 mi west to the reservoir",
+          "difficulty": "Forest Service: road \"is very rough and not recommended for vehicles towing trailers. High clearance vehicles are a requirement\"",
+          "season": "Campground at the top operates June–September, opening and closing dependent on weather",
+          "note": "North Fork is the highest-elevation campground on the Salida Ranger District at 11,000 ft, first come first served, and there is no trash service. Salida Ranger District 719-539-3591 will say how far up CR 240 has melted out.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/north-fork-campground"
+        },
+        {
+          "name": "Fourmile Road / Aspen Ridge",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area",
+          "season": "Forest Service: \"Seasonal gates are closed December 1 and opened April 30\"",
+          "note": "The Fourmile Travel Management Area is 100,000 acres of joint Forest Service and BLM land; southern access is from CR 371/375, 304-308, 311, 315, 300-301 and 185. Note the two gate calendars do not match — the Browns Canyon monument roads reopen 15 Apr, the wider Fourmile gates 30 Apr — so an early-May visit is inside both windows but late April is not. The Forest Service publishes no difficulty or vehicle rating for these routes and refers visitors to the Fourmile area map or the Salida Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area"
+        },
+        {
+          "name": "FS Road 1434A, north boundary of Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "Worth checking before driving out there: the Friends of Browns Canyon access page states that 1434 is \"an ATV trail for machines with a maximum width of 50 inches\", which a full-size pickup exceeds. BLM's own page calls 1434A an ATV route without giving a width. If the 50-inch limit applies to 1434A as well as 1434, this route is not legally driveable in the truck at all — phone the Salida Ranger District (719-539-3591) rather than assume. Second source: https://brownscanyon.org/plan-your-visit/access-seasonal-closures/",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        },
+        {
+          "name": "Old Monarch Pass (FS 237)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/colorado/old-monarch-pass",
+          "distance": "52.4 mi",
+          "difficulty": "onX rates it 3 — Easy",
+          "season": "onX lists spring, summer and fall",
+          "note": "The 52.4 miles is the whole onX route, not the pass crossing — it drops off the west side, crosses Waunita Park and runs north to Pitkin, and onX warns the northern part of that descent is very rocky and rough. The pass itself is 11,375 ft, about 0.6 mi northwest of the US 50 summit, and the graded eastern side is the easy half. Recent status reports on the listing mention downed trees.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/colorado/old-monarch-pass"
+        },
+        {
+          "name": "Turret Road (FS 184) into Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "difficulty": "BLM: \"a rugged 4x4 experience into the heart of the Monument\"; Friends of Browns Canyon add that \"only skilled motorists looking for an extreme 4x4 experience should attempt\" it",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "Turret Road ends at a small parking area at the Browns Canyon Wilderness Study Area boundary, where it becomes Turret Trail and mechanised travel stops — so this is an out-and-back, not a through route to the river. The corridor is bighorn sheep, mule deer, lynx and Mexican spotted owl habitat, which is what the winter gate protects. Neither BLM nor the Friends group publishes a mileage. Second source: https://brownscanyon.org/turret-road/",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        }
+      ]
     },
     "buena-vista-co": {
       "activities": {
@@ -9319,7 +10207,75 @@
           "auto": true,
           "auto_km": 26
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Aspen Ridge",
+          "url": "https://www.trailsoffroad.com/trails/618-aspen-ridge",
+          "distance": "not published on the free listing",
+          "difficulty": "Beginner",
+          "season": "Typically open 30 Apr – 1 Dec",
+          "note": "Listed under its official road number, 185, and managed by the Salida Ranger District. Rated 4.4 from 47 reviews; high point 10,301 ft. Reviewers report loose rock, washout on the rock climbs and deep ruts, and that the middle section turns to mud after rain or snow — the melt-out date and the driveable date are not the same thing here.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/trails/618-aspen-ridge"
+        },
+        {
+          "name": "Chinaman Gulch and Carnage Canyon, BLM Fourmile Travel Management Area",
+          "url": "https://funtreks.com/off-road-trails/chinaman-gulch-carnage-canyon/",
+          "distance": "7.1 mi",
+          "difficulty": "Difficult",
+          "season": "May through October",
+          "note": "FunTreks puts the round trip at about 4 hours with a high point of 8,900 ft, and names the obstacles — Rock Garden, Whale Rock, Double Whammy — most of which have bypasses on the Chinaman side. Carnage Canyon has none of that forgiveness: minimum 35-inch tires, lockers front and rear, and FunTreks tells drivers to carry and use a spill kit. It is one of the most heavily used motorised areas in Colorado, so expect company.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/chinaman-gulch-carnage-canyon/"
+        },
+        {
+          "name": "CR 306 west of Collegiate Peaks Campground toward Cottonwood Pass",
+          "url": "https://www.chaffeecounty.org/departments/road_bridge/index.php",
+          "season": "County: \"From November 1st until June 15th this road is not maintained beyond Denny Creek Trailhead\"",
+          "note": "The road, not the Forest Service, is Chaffee County's — Road and Bridge, 719-539-4591, is who to phone for the plough line. Their published non-maintenance window ends 15 June, later than the tag's \"late May\"; they aim to open the pass before Memorial Day but only as snowpack allows, and both the Chaffee and Gunnison sides gate independently. Denny Creek Trailhead is the realistic turnaround in mid-May.",
+          "tier": "official",
+          "source": "https://www.chaffeecounty.org/departments/road_bridge/index.php"
+        },
+        {
+          "name": "Fourmile Area — Natural Bridge",
+          "url": "https://www.trailsoffroad.com/US/colorado/trails/2235-fourmile-area-natural-bridge",
+          "distance": "not published on the free listing",
+          "difficulty": "Beginner",
+          "season": "Year round",
+          "note": "Rated 4.7 from 42 reviews, high point 9,218 ft. The loop runs FS 373 and part of FS 311; surface is mostly sand and smooth dirt with a few mild climbs and only small rocks, which is why it holds a year-round rating while everything above it is gated. The return leg faces the Collegiate Peaks.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/colorado/trails/2235-fourmile-area-natural-bridge"
+        },
+        {
+          "name": "Fourmile Travel Management Area general routes",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area",
+          "season": "Forest Service: \"Seasonal gates are closed December 1 and opened April 30\"",
+          "note": "100,000 acres of joint Forest Service and BLM ground. The Forest Service publishes no per-route difficulty and points visitors at the Fourmile area map or the Salida Ranger District instead; the listed uses are hiking, mountain biking, OHV trail and road riding, and ski/snowshoe. Access from the north is via CR 371/375 and CR 304-308.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area"
+        },
+        {
+          "name": "Mount Antero road (FS 277), off Chalk Creek",
+          "url": "https://funtreks.com/off-road-trails/mt-antero-browns-lake/",
+          "distance": "14.1 mi",
+          "difficulty": "Difficult",
+          "season": "July–September",
+          "note": "FunTreks budgets 6 hours and puts the high point at 13,750 ft. The specific warning is about vehicle size rather than capability: \"extremely narrow shelf road with tight switchbacks\", and oversize vehicles will have a hard time at the switchbacks — a full-size pickup is the wrong shape for the top of this road even in August. Small SUVs with low range get all but the last half mile. The same road accesses Browns Lake for quiet camping.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/mt-antero-browns-lake/"
+        },
+        {
+          "name": "Tincup Pass (FS 267) from St. Elmo",
+          "url": "https://funtreks.com/off-road-trails/tincup-pass-st-elmo/",
+          "distance": "13 mi",
+          "difficulty": "Difficult",
+          "season": "July–October",
+          "note": "About 2 hours one way, summit 12,154 ft. The blocker is specific and late: one short section of narrow shelf road at 12,000 ft holds snow into early July. Sharp rock near the top is reported to cut tires. Once clear it wants low-range gearing, skid plates and good rubber.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/tincup-pass-st-elmo/"
+        }
+      ]
     },
     "leadville-co": {
       "activities": {
@@ -9378,7 +10334,65 @@
           "auto": true,
           "auto_km": 75
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "FS Road 125.B, South Mount Elbert trailhead extension",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/trails/south-mount-elbert-trail-1481",
+          "distance": "1.8 mi",
+          "difficulty": "Forest Service: four-wheel drive only, summer season; impassable to vehicles in winter",
+          "season": "Summer only",
+          "note": "The trail it serves, South Mount Elbert #1481, is 5.8 mi with 4,800 ft of gain from the lower trailhead. The road starts just beyond the lower parking lot; there is a ford about 1.5 mi up, and informal dispersed sites line the first mile if you would rather park and walk. Access is from Leadville: 15 mi south on US 24, west 3.75 mi on CO 82, then right on Lake CR 24 for 1.5 mi.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/trails/south-mount-elbert-trail-1481"
+        },
+        {
+          "name": "Hagerman Pass (FS 105), 11,925 ft",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass",
+          "distance": "5 mi west from Leadville on Lake CR 4, then 5.5 mi on FS 105 to the summit",
+          "difficulty": "Forest Service: road is \"very rough\"; \"high-clearance, four-wheel drive vehicles are recommended\"",
+          "note": "The Forest Service page publishes no open or close dates at all for this pass — the seasonal timing in the tag is not theirs and should be checked with the Leadville Ranger District. The 1880s railroad history is the reason the grade exists; west of the summit it continues through White River National Forest past Ruedi Reservoir to CO 82 at Basalt.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass"
+        },
+        {
+          "name": "Hagerman Pass Road (Road 105)",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass",
+          "distance": "5 mi west from Leadville on Lake CR 4, then 5.5 mi on FS 105 to the summit",
+          "difficulty": "Forest Service: road is \"very rough\"; \"high-clearance, four-wheel drive vehicles are recommended\"",
+          "note": "Same road as the Hagerman Pass entry above — one route, listed twice in this box. The Forest Service publishes no seasonal dates for it.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass"
+        },
+        {
+          "name": "Halfmoon Road (FS 110) to Elbert Creek and the Mount Massive trailhead",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/halfmoon-recreation-area",
+          "difficulty": "not rated by the Forest Service on this page",
+          "note": "The authority page confirms the road and what it reaches — FS 110 follows the southern border of the Mount Massive Wilderness and serves several campgrounds plus the Mount Massive and North Elbert trailheads — but publishes no surface, mileage or vehicle guidance. The Forest's own trail pages add that the road is not maintained in winter and that the last half mile to the trailhead needs high clearance and 4WD. Very busy in summer.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/halfmoon-recreation-area"
+        },
+        {
+          "name": "Mosquito Pass (FS 438)",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour",
+          "distance": "9.5 mi",
+          "difficulty": "Forest Service: \"moderate to difficult, steep and very rocky\"",
+          "season": "Forest Service: \"usually only open for six to eight weeks after the snow melts in July\"",
+          "note": "The Forest Service signs and numbers this as County Road 12, not 438 — worth knowing at the junction. The tour starts from Fairplay: north on CO 9 for about 4.2 mi, then left onto CR 12, and the interpretive stops begin almost immediately. The brochure is a download from this page as well as a paper copy at the South Park Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour"
+        },
+        {
+          "name": "Mosquito Pass Road",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour",
+          "distance": "9.5 mi",
+          "difficulty": "Forest Service: \"moderate to difficult, steep and very rocky\"",
+          "season": "Forest Service: \"usually only open for six to eight weeks after the snow melts in July\"",
+          "note": "Same road as the Mosquito Pass (FS 438) entry above — one route, listed twice in this box. Signed as County Road 12 from the Fairplay side.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour"
+        }
+      ]
     },
     "wind-river-ext": {
       "activities": {
@@ -9404,7 +10418,41 @@
           "auto": true,
           "auto_km": 1
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Boulder Lake Road (CR 125 to FS 370780)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/boulder-lake-campground",
+          "distance": "about 24 mi from Pinedale, roughly 10 mi of it dirt and gravel",
+          "note": "The Forest's own directions match the tag turn for turn, and add that the dirt and gravel section is simply bumpy rather than technical — no 4WD language anywhere on the page, which is what makes this the sane shakedown day. The campground at the end has 15 sites on the east end of the lake near Boulder Creek.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/recreation/boulder-lake-campground"
+        },
+        {
+          "name": "Green River Lakes Road (FS 370650)",
+          "url": "https://www.recreation.gov/camping/campgrounds/233874",
+          "distance": "25 mi paved on WY 352 to the forest boundary, then 18 mi of dirt — about 50 mi from Pinedale",
+          "difficulty": "\"While the dirt road to the campground is suitable for 2 wheel drive vehicles, weather can make this road impassable to all but 4 wheel drive vehicles\"",
+          "note": "One thing to check before the trip rather than at the junction: the Bridger-Teton began a major reconstruction of this road in July 2026 — grading, drainage, culverts and new aggregate — with Phase 2 from the Union Pass Y to Green River Lakes scheduled for Aug–Oct 2026 or summer 2027. It should be finished and in better shape by 2028, but the Forest's conditions page is where any carryover work would be posted: https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates . Lower Green River Lake sits at 8,000 ft; drinking water at the campground only 1 Jul – 15 Sep.",
+          "tier": "official",
+          "source": "https://www.recreation.gov/camping/campgrounds/233874"
+        },
+        {
+          "name": "New Fork Lake access (FS 370730 / 370735)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/new-fork-lake-group-campground",
+          "distance": "about 24 mi from Pinedale — 6 mi US 191, 14.4 mi WY 352, 3 mi CR 162, then under a mile on FS 370730",
+          "note": "Shorter and less committing than the tag implies — the forest road portion is under a mile, with the 3 mi of county road before it. The Forest publishes no road-surface warning, no high-clearance requirement and no seasonal date for this approach; the only figures on the page are the distances above. Third-party sites describe the last stretch as rocky, but that is not the Forest's wording and is not sourced here.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/recreation/new-fork-lake-group-campground"
+        },
+        {
+          "name": "Union Pass Road (FS 370600)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates",
+          "note": "This is the Forest's own road-conditions page and it is the only official page that names NFSR 600 by number: Union Pass Road runs from the forest boundary to the Green River Lakes Road (NFSR 650) junction, the \"Union Pass Y\". Phase 1 reconstruction covered exactly that segment in July 2026 with 30-minute delays and one full closure day; work may carry into 2027, so check this page before driving it. The Forest publishes no mileage, difficulty or open date for the road — the Pinedale Ranger District (307-367-4326) and the MVUM are the authority for what is open. The 70-plus-mile Dubois-to-Pinedale figure that circulates online is not a Forest Service number and should not be relied on.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates"
+        }
+      ]
     },
     "scottsbluff-ne": {
       "activities": {
@@ -9441,7 +10489,17 @@
           "auto": true,
           "auto_km": 5
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Robidoux Pass / Carter Canyon gravel loop",
+          "url": "https://visitscottsbluff.com/directory/listing/robidoux-pass-national-historic-landmark-and-trading-post/",
+          "distance": "23 mi as a loop — out on Carter Canyon Road, back on Robidoux Road",
+          "note": "No land-management agency publishes this route: the pass is a National Historic Landmark on private and county ground, and the reconstructed 1851 Robidoux trading post in Carter Canyon is run by the Friends of Robidoux Trading Post, not a park service. That means no road-condition page, no seasonal gate and nobody to phone about surface after rain. Access is two miles south of Gering on Hwy 71 then eight miles west. Pioneer graves and wagon ruts are visible along the route; self-guided, no facilities. The Nebraska State Historical Society publishes the history of the pass but nothing about the road, and its page would not load for verification, so it is not linked here.",
+          "tier": "community",
+          "source": "https://visitscottsbluff.com/directory/listing/robidoux-pass-national-historic-landmark-and-trading-post/"
+        }
+      ]
     },
     "custer-sd": {
       "activities": {
@@ -9478,7 +10536,53 @@
           "auto": true,
           "auto_km": 25
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Black Hills National Forest Forest Road 307 (FR307) area",
+          "note": "No route listing exists for FR 307 — not on Trails Offroad, not on onX, and no Forest Service page names the road. It shows up only as a dispersed-camping area in third-party campsite directories. The Forest's Motor Vehicle Use Map is the only authority for whether FR 307 is open and to what, and it is the document to carry: motorised travel off a designated road is limited to 300 ft for dispersed camping, camp 100 ft from any creek and half a mile from developed sites, 14 days in any 60-day period, and open campfires are prohibited in the South Dakota portion of the forest. The MVUM itself is obtained from the Forest's maps and guides page, free from district offices or online: https://www.fs.usda.gov/r02/blackhills/maps-guides",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r02/blackhills/recreation/dispersed-camping"
+        },
+        {
+          "name": "Captain Crunch (Johnson Siding, near Rapid City)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/5054-captain-crunch",
+          "distance": "not published on the free listing",
+          "difficulty": "10 out of 10 — Trails Offroad calls it possibly \"the most difficult, rock-crawling trail in South Dakota\"",
+          "note": "Filed as a scout route rather than a full trail guide, and rated 5/5 from a single review, so the listing is thin. It is in the \"Cereal Bowl\" area off Bogus Jim Road and starts where the Got Milk? trail starts, which means you can walk in down the smoother north section to spectate without committing the truck. Sedan-sized boulders, v-notches and steep climbs; purpose-built buggies only. Trailer parking at the Cereal Bowl entrance, no camping on the trail.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/5054-captain-crunch"
+        },
+        {
+          "name": "China Gulch Road, Black Hills NF (Hill City)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/trails/3790-china-gulch-road",
+          "distance": "12.75 mi",
+          "difficulty": "Beginner",
+          "season": "Typically open 15 May – 15 Dec",
+          "note": "Official road number is 249, Mystic Ranger District; rated 4.2 from 14 reviews, high point 5,743 ft, and it is a through route rather than a loop. It starts in China Gulch and runs into the rougher Nugget Gulch area, with the creek crossings concentrated near the northern end — so the easy rating applies to most but not all of the 12.75 miles.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/trails/3790-china-gulch-road"
+        },
+        {
+          "name": "Lightning Creek Road, Black Hills NF (Custer)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/trails/4574-lightning-creek-road",
+          "distance": "not published on the free listing",
+          "difficulty": "Moderate",
+          "season": "Year round",
+          "note": "Official road number is 288, Hell Canyon Ranger District; rated 3.7 from 4 reviews, high point 6,579 ft, through route. Crazy Horse Memorial is visible from the northern section. Note the grade is Moderate, not easy as the tag suggests — the free listing gives no reason for that, so it is worth reading the full guide or asking the district before committing.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/trails/4574-lightning-creek-road"
+        },
+        {
+          "name": "Moses Hill (between Sturgis and Nemo)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/4423-moses-hill",
+          "distance": "0.81 mi",
+          "difficulty": "not published on the free listing — Trails Offroad describes it as manageable for beginners in the right vehicle but intimidating to look at",
+          "note": "Under a mile long, which makes it an add-on rather than a day. It runs off Vanocker Canyon in Lawrence County, is single-vehicle width the whole way over loose rock, and gets slick and genuinely risky in the wet. Short-wheelbase high-clearance with low range is the recommendation; long-wheelbase vehicles need extra clearance for the rock ledges and low-clearance vehicles will hang up. Rated 5/5 from 6 reviews. No camping on the trail itself; dispersed camping on the roads nearby.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/4423-moses-hill"
+        }
+      ]
     },
     "medora-nd": {
       "activities": {
@@ -9504,7 +10608,26 @@
           "auto": true,
           "auto_km": 1
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Bell Lake Road / FH2 to the Elkhorn Ranch Unit",
+          "url": "https://www.nps.gov/thro/planyourvisit/elkhorn-ranch-unit.htm",
+          "distance": "from the South Unit: 8.8 mi gravel on CR 11, 6.5 mi Westerheim Road, 11.7 mi Bell Lake Road, then 3 mi on FH 2 to the parking area. From the North Unit it is Black Tail Road/FH 2 for 12.2 mi gravel, then Bell Lake Road for 3 mi and FH 2 for 3 mi.",
+          "difficulty": "NPS: the last 3 miles \"sometimes needing 4-wheel drive or high-clearance vehicles\", particularly in winter or during and after rain showers",
+          "note": "Two things NPS flags that matter more than the road itself: there is no cell signal anywhere on the route, and there are no visitor centres or facilities at the unit. Check conditions at a visitor centre before setting out — that is the park's own instruction, not a suggestion. From the parking area a 0.7 mi mowed path leads to the cabin site.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thro/planyourvisit/elkhorn-ranch-unit.htm"
+        },
+        {
+          "name": "Little Missouri National Grassland section roads",
+          "url": "https://www.fs.usda.gov/r01/dpg/recreation/little-missouri-national-grassland",
+          "distance": "1,033,271 acres — the largest national grassland in the country",
+          "note": "The official acreage is 1,033,271, slightly above the 1.025 million in the tag. Two districts split it: McKenzie Ranger District in the north, Medora Ranger District in the south — Medora is the one to phone from this stop. The Forest Service publishes no surface guidance, no 2WD/4WD rating and no gumbo warning on this page, so which section roads are open and to what is a Motor Vehicle Use Map question, not something to infer from the map lattice. The 144-mile Maah Daah Hey Trail crosses the same ground, and the page lists 11 campgrounds and 11 OHV road-riding sites.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r01/dpg/recreation/little-missouri-national-grassland"
+        }
+      ]
     },
     "bismarck-nd": {
       "activities": {
@@ -10076,7 +11199,58 @@
           "auto": true,
           "auto_km": 6
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Empire Bluff Trail",
+          "distance": "1.5 mi",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. A park pass is required for all trails."
+            }
+          ]
+        },
+        {
+          "name": "Pyramid Point Trail",
+          "distance": "1.2–2.7 mi",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. Distance is a range because of the loop/spur options."
+            }
+          ]
+        },
+        {
+          "name": "Dune Climb / Cottonwood Trail loop",
+          "distance": "1.5 mi (Cottonwood Trail)",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "NPS — Sleeping Bear Dunes trails",
+              "url": "https://www.nps.gov/slbe/planyourvisit/trails.htm",
+              "tier": "official",
+              "note": "Managing authority. Lists Cottonwood Trail at 1.5 mi, Moderate."
+            }
+          ],
+          "stats_note": "Our card name pairs two things NPS treats differently. NPS lists no 'Dune Climb' as a standalone trail — it is a trailhead, and the trail leaving it is the Dunes Hiking Trail (3.5 mi, Strenuous), which is NOT the Cottonwood Trail. The 1.5 mi / Moderate figures are the Cottonwood Trail alone. Worth splitting this into two entries, or renaming to 'Cottonwood Trail'."
+        }
+      ]
     },
     "door-county-wi": {
       "activities": {
@@ -10168,7 +11342,41 @@
           "auto": true,
           "auto_km": 28
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Sentinel Trail, Peninsula State Park",
+          "distance": "2.0 mi loop",
+          "difficulty": "Easiest",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Wisconsin DNR — Peninsula State Park hiking",
+              "url": "https://dnr.wisconsin.gov/topic/parks/peninsula/hiking",
+              "tier": "official",
+              "note": "Managing authority. A 0.6-mile portion is graveled for universal access — the flattest option on this stop."
+            }
+          ]
+        },
+        {
+          "name": "Eagle Trail, Peninsula State Park",
+          "distance": "2.0 mi loop",
+          "difficulty": "More difficult",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Wisconsin DNR — Peninsula State Park hiking",
+              "url": "https://dnr.wisconsin.gov/topic/parks/peninsula/hiking",
+              "tier": "official",
+              "note": "Managing authority. Runs below 150-foot cliffs past springs and forested terraces. 'More difficult' is the DNR's own three-step scale (Easiest / Moderate / More difficult), not an AllTrails grade."
+            }
+          ]
+        }
+      ]
     },
     "indiana-dunes-in": {
       "activities": {
@@ -10183,7 +11391,26 @@
           "auto": true,
           "auto_km": 5
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "3 Dune Challenge, Indiana Dunes State Park",
+          "distance": "1.5 mi",
+          "difficulty": "Rugged",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Indiana DNR — Indiana Dunes State Park",
+              "url": "https://www.in.gov/dnr/state-parks/parks-lakes/indiana-dunes-state-park/",
+              "tier": "official",
+              "note": "Managing authority. The route is the park's Trail 8, 1.5 miles, graded RUGGED, which 'covers the three highest dunes'. DNR lists the 3 Dune Hiking Challenge as an activity but publishes no separate spec for it."
+            }
+          ],
+          "stats_note": "Figures are Indiana DNR's for Trail 8, the trail the challenge follows. 'Rugged' is the DNR's own top grade (Easy / Moderate / Rugged)."
+        }
+      ]
     },
     "stratford-on": {
       "activities": {
@@ -10279,7 +11506,25 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Elora Quarry Conservation Area Trail",
+          "distance": "1 km loop",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Grand River Conservation Authority — Elora Quarry",
+              "url": "https://www.grandriver.ca/en/outdoor-recreation/Elora-Quarry.aspx",
+              "tier": "official",
+              "note": "Managing authority confirms the trail exists: a one-kilometre loop through cedar forest, in places overlooking the Grand River. GRCA gives it no formal proper name and publishes no difficulty grade."
+            }
+          ],
+          "stats_note": "GRCA describes this as 'a one kilometre loop trail', not as a named trail — our card name is a descriptive label, not the authority's."
+        }
+      ]
     },
     "algonquin-on": {
       "activities": {
@@ -10305,7 +11550,61 @@
           "auto": true,
           "auto_km": 8
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Spruce Bog Boardwalk",
+          "distance": "1.5 km",
+          "time": "1 hour",
+          "difficulty": "Easy",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 42.5. Accessible boardwalk through black spruce bog."
+            }
+          ]
+        },
+        {
+          "name": "Whiskey Rapids Trail",
+          "distance": "2.1 km",
+          "time": "1.5 hours",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 7.2. Follows the Oxtongue River to the rapids."
+            }
+          ]
+        },
+        {
+          "name": "Beaver Pond Trail",
+          "distance": "2 km",
+          "time": "1.5 hours",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Algonquin activities",
+              "url": "https://www.ontarioparks.ca/park/algonquin/activities",
+              "tier": "official",
+              "note": "Managing authority. Highway 60 km 45.2."
+            }
+          ],
+          "stats_note": "Name collision worth guarding against on merge: Murphys Point Provincial Park (stop perth-on) also has a 'Beaver Pond Trail', 1 km and Easy. These figures are Algonquin's."
+        }
+      ]
     },
     "pec-on": {
       "activities": {
@@ -10320,7 +11619,72 @@
           "auto": true,
           "auto_km": 10
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Sandbanks Dunes Trail",
+          "distance": "2.5 km loop (plus a 1 km loop at the beginning)",
+          "difficulty": "Easy to moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority. Confirms name, length, grade; notes a barrier-free section."
+            }
+          ]
+        },
+        {
+          "name": "Woodlands Trail",
+          "distance": "3.5 km linear (7 km out and back)",
+          "difficulty": "Easy",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority."
+            }
+          ]
+        },
+        {
+          "name": "Lakeview Trail",
+          "distance": "2.4 km one way, linear",
+          "difficulty": "Easy",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority."
+            }
+          ]
+        },
+        {
+          "name": "Cedar Sands Nature Trail",
+          "distance": "2 km loop",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Sandbanks activities",
+              "url": "https://www.ontarioparks.ca/park/sandbanks/activities",
+              "tier": "official",
+              "note": "Managing authority. Interpretive trail; Ontario Parks publishes no difficulty grade for this one."
+            }
+          ]
+        }
+      ]
     },
     "gananoque-on": {
       "activities": {
@@ -10405,7 +11769,75 @@
           "auto": true,
           "auto_km": 26
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Silver Queen Mine Trail (Murphys Point Provincial Park)",
+          "distance": "2 km partial loop",
+          "difficulty": "Easy",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Bikes permitted on the gravel roadbed portion only — the bike use is partial, not whole-trail."
+            }
+          ]
+        },
+        {
+          "name": "Sylvan Trail (Murphys Point Provincial Park)",
+          "distance": "2.5 km loop",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Hiking only."
+            }
+          ]
+        },
+        {
+          "name": "Rideau Trail (Murphys Point / Perth section)",
+          "distance": "6 km inside the park (part of the ~300 km Rideau Trail)",
+          "difficulty": "Easy",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority for the in-park section. The wider Rideau Trail is managed by the Rideau Trail Association, not verified this session."
+            }
+          ],
+          "stats_note": "The 6 km and Easy grade describe only the segment inside Murphys Point. The full Rideau Trail is roughly 300 km and is not graded here."
+        },
+        {
+          "name": "Point Trail (Murphys Point Provincial Park)",
+          "distance": "5.5 km loop",
+          "difficulty": "Moderate",
+          "uses": [
+            "hike"
+          ],
+          "other_links": [
+            {
+              "label": "Ontario Parks — Murphys Point activities",
+              "url": "https://www.ontarioparks.ca/park/murphyspoint/activities",
+              "tier": "official",
+              "note": "Managing authority. Hiking only."
+            }
+          ]
+        }
+      ]
     },
     "lake-placid-ny": {
       "activities": {
@@ -10985,7 +12417,24 @@
           "auto": true,
           "auto_km": 15
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Big Pocono State Park summit road",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-pocono-state-park",
+          "season": "Park closed early December, reopens the first week of April; sunrise to sunset when open",
+          "note": "DCNR warns of steep grades and says not to attempt the drive with a trailer in tow. It also states municipal road maintenance is not provided on the access roadway and that seasonal closures of it will occur, so the April reopening is a target rather than a promise. DCNR publishes no length for the summit loop; the 1.4-mile figure that circulates is not on the official page and is not recorded here.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-pocono-state-park"
+        },
+        {
+          "name": "Old Mine Road, NJ side north of Millbrook Village",
+          "url": "https://www.nps.gov/dewa/learn/historyculture/touring-old-mine-road.htm",
+          "note": "NPS treats this as a windshield tour of a roughly 250-year-old route and notes the original unpaved roadbed survives on foot at spots such as the Van Campen Inn and Hamilton Ridge near Millbrook. The park publishes no mileage, no surface breakdown and no seasonal closure for the drive itself; the page directs road-condition questions to the park at the number it lists.",
+          "tier": "official",
+          "source": "https://www.nps.gov/dewa/learn/historyculture/touring-old-mine-road.htm"
+        }
+      ]
     },
     "gettysburg-pa": {
       "activities": {
@@ -11022,7 +12471,23 @@
           "auto": true,
           "auto_km": 30
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Caledonia to Pine Grove Furnace forest roads",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps",
+          "note": "DCNR's Michaux map index carries the two documents that actually answer which of these roads can be driven: the Michaux State Forest Public Use Map and a self-guided 'Auto Tour of Michaux State Forest', both PDFs. The index itself publishes no mileage for the auto tour, and the PDFs were not read here. The separate ATV trail map on the same page is a different system and is not the drivable road network.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps"
+        },
+        {
+          "name": "Michaux State Forest gravel road network, South Mountain",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux",
+          "note": "DCNR's forest page confirms the authority and links a Michaux State Forest Recreation Guide PDF, but publishes nothing about which roads are open, gated or seasonally closed. Pennsylvania does not run an MVUM system like the national forests, so the Public Use Map on the maps page is the only thing that distinguishes drivable forest roads from gated administrative ones.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux"
+        }
+      ]
     },
     "harpers-ferry-wv": {
       "activities": {
@@ -11111,7 +12576,27 @@
         "Stony Man Trail": false,
         "Old Rag Mountain Loop Trail": false
       },
-      "dogs_note": "Two of this stop's trails are on Shenandoah's short prohibited list — Stony Man's blue-blazed summit portion and the Old Rag trails (Ridge Access, Ridge, Saddle). Everything ELSE in the park is open to the dog, which still makes this one of the best stops on the trip for walking together; it is just that both trails currently named here happen to be exceptions. Worth adding dog-legal Shenandoah trails to this card."
+      "dogs_note": "Two of this stop's trails are on Shenandoah's short prohibited list — Stony Man's blue-blazed summit portion and the Old Rag trails (Ridge Access, Ridge, Saddle). Everything ELSE in the park is open to the dog, which still makes this one of the best stops on the trip for walking together; it is just that both trails currently named here happen to be exceptions. Worth adding dog-legal Shenandoah trails to this card.",
+      "offroad": [
+        {
+          "name": "George Washington NF gravel roads, North River / Todd Lake district",
+          "url": "https://www.fs.usda.gov/r08/gwj/recreation/todd-lake-recreation-area",
+          "season": "Todd Lake Recreation Area open mid-May to late October",
+          "note": "Forest Service directions run 1.1 miles on SR 718 (Stokesville Road) to the FR 95 / FR 101 junction, then 3.1 miles on FR 95 (North River Road) to Todd Lake. The page does not state whether FR 95 is gravel or paved and publishes no vehicle restriction. FR 95 is also the lower end of the North River Trail, which climbs to FR 85 (Shenandoah Mountain Road) — the same road as the Reddish Knob route below, so the two can be linked.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/gwj/recreation/todd-lake-recreation-area"
+        },
+        {
+          "name": "Reddish Knob road (FR 85 from Briery Branch, west of Harrisonburg)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/virginia/reddish-knob",
+          "distance": "19.3 mi",
+          "difficulty": "onX rating 2 (Easy) — \"easy dirt and gravel trail with just a few rutted and rocky spots\"",
+          "season": "onX lists spring, summer, fall and winter",
+          "note": "onX rates this for high-clearance, full-width vehicles and puts the observation point at 4,397 ft. The adjoining Flagpole Knob route meets it at Briery Branch Gap and has its own onX listing at 12.8 miles, also difficulty 2 — the pair make one long day if the weather holds. Note the two are not equivalent: Flagpole's FR 85 approach is reported as much rougher than the Reddish Knob asphalt spur.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/virginia/reddish-knob"
+        }
+      ]
     },
     "lexington-va": {
       "activities": {
@@ -11147,7 +12632,29 @@
           "tier": "official"
         }
       ],
-      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery."
+      "dogs": "ALLOWED on most trails — Shenandoah is one of the few national parks that permits dogs on trails, with fewer than 20 of 500+ trail miles off-limits. Leash 6 ft, physical leash. Prohibited: Fox Hollow, STONY MAN (blue-blazed portion to the summit), Limberlost, the Old Rag trails, Post Office Junction to Old Rag Shelter, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery.",
+      "offroad": [
+        {
+          "name": "George Washington & Jefferson NF gravel roads, North Mountain west of Lexington",
+          "note": "Unlisted. No Forest Service page and no off-road database covers this road network as a named route. The forest's Motor Vehicle Use Map is the only authority on which of these roads are open and to which vehicle class, and GWJNF publishes one forest-wide MVUM rather than per-district ones — so plan from the MVUM, not from a route listing.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map"
+        },
+        {
+          "name": "George Washington National Forest roads (near Natural Bridge, off Rt. 812)",
+          "note": "Unlisted, same situation as North Mountain: the Forest Service publishes district topographic maps and a single forest-wide MVUM, but no page for this road network and no named route in any off-road database. The MVUM carries the vehicle-class and seasonal designations for each road.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map"
+        },
+        {
+          "name": "James River Face Wilderness access roads (Belfast Trail / Petites Gap)",
+          "url": "https://www.fs.usda.gov/r08/gwj/recreation/trails/belfast-trail-forest-trail-9",
+          "season": "Forest Service lists the trail open year round",
+          "note": "Forest Service directions take the left fork onto VA 781 (Petites Gap Road) and run about 1.0 mile to the parking area. The page grades the Belfast Trail itself Moderate to Difficult over 2.3 miles — that is the walk to the Devil's Marbleyard boulder field, not the drive. The Forest Service says nothing about the road's surface or its FS 35 designation, so no surface claim is recorded.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/gwj/recreation/trails/belfast-trail-forest-trail-9"
+        }
+      ]
     },
     "new-river-gorge-wv": {
       "activities": {
@@ -11162,7 +12669,42 @@
           "auto": true,
           "auto_km": 15
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Cunard river access road",
+          "url": "https://www.nps.gov/neri/planyourvisit/road-and-trail-closures.htm",
+          "season": "Closed every November through March, from the Brooklyn Mine Trail parking lot down to the river; open April to October. NPS says this pattern continues through 2027.",
+          "note": "This is the annual winter closure for road and drainage work, not weather. When open, NPS reports the lower sections are gravel and there are one-lane stretches that cause delays. The closure takes out vehicle, bike and pedestrian access to the Cunard river access, the angler's access and Brooklyn campground together. The park's closures page was last updated 6 Aug 2026 — check it again before the stop.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/road-and-trail-closures.htm"
+        },
+        {
+          "name": "Fayette Station Road (CR 82)",
+          "url": "https://www.nps.gov/neri/planyourvisit/fayette-station-road.htm",
+          "distance": "8 mi",
+          "season": "No seasonal closure published",
+          "note": "One-way, and the binding restriction is height not length: NPS states vehicles over 12 ft tall cannot complete the route because of the clearance under a railroad bridge, and does not recommend large vehicles, RVs or trailers on the hairpins. Allow 30–45 minutes without stops. The road passes under the New River Gorge Bridge three times.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/fayette-station-road.htm"
+        },
+        {
+          "name": "Keeneys Creek Road down to Nuttallburg",
+          "url": "https://www.nps.gov/places/nuttallburg.htm",
+          "distance": "about 4 mi — NPS gives ~3.5 mi to the wayside exhibit and 0.5 mi more to the Nuttallburg parking area",
+          "note": "NPS calls it narrow, winding and steep, part paved and part gravel, with much of it single lane so drivers have to pull off to let others by. Trailers, RVs and motorhomes are specifically advised against — limited parking and difficult to turn around at the bottom. Separate from the road, the Keeney's Creek Rail Trail is closed above the Conveyor Trail junction for flood damage.",
+          "tier": "official",
+          "source": "https://www.nps.gov/places/nuttallburg.htm"
+        },
+        {
+          "name": "WV 25 to Thurmond",
+          "url": "https://www.nps.gov/neri/planyourvisit/directions.htm",
+          "distance": "7 mi from the Glen Jean exit off US 19",
+          "note": "The NPS directions page gives the seven miles but publishes no surface or vehicle guidance for WV 25 — the 'narrow, winding, not recommended for RVs or trailers' description that circulates is not on an NPS page that could be opened here, so it is not recorded as fact. Worth knowing separately: the Rend Trail, which starts at Thurmond, is closed from both trailheads until roughly December 2027 per the park's road and trail closures page.",
+          "tier": "official",
+          "source": "https://www.nps.gov/neri/planyourvisit/directions.htm"
+        }
+      ]
     },
     "floyd-va": {
       "activities": {
@@ -11258,7 +12800,35 @@
           "auto": true,
           "auto_km": 13
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Brown Mountain OHV Trail System, Pisgah NF",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/opportunities/highway-vehicles-ohv",
+          "distance": "34 mi of designated trails",
+          "season": "Closed 1 January to the first weekend in April, along with Curtis Creek Campground, on the Grandfather Ranger District seasonal closure list (https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures)",
+          "note": "This is a ticketed OHV trail system, not a forest-road drive — passes go through Recreation.gov. Before counting on it: the Forest Service page defines the ATV class here as under 60 inches wide and does not state anywhere that full-size 4WD trucks may use the system. The commonly repeated claim that Jeeps and 4WDs are limited to Trail 8 and part of Trail 1 is not on any Forest Service page that could be opened, so it is unverified. Call the Grandfather Ranger District before driving out.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/opportunities/highway-vehicles-ohv"
+        },
+        {
+          "name": "Pisgah NF gravel roads around Edgemont and Mortimer",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/mortimer-campground",
+          "season": "Mortimer Campground open 31 March to 31 October; the Grandfather Ranger District closure list gates the Mortimer area 1 November to the first weekend in April",
+          "note": "The Forest Service confirms the campground and its position in the Wilson Creek Wild & Scenic corridor south of Grandfather Mountain, but publishes no road numbers, mileage or surface for the Edgemont loop. Neither Roseboro Road (FSR 981) nor Edgemont-Pinola Road (FSR 464) has a Forest Service page, so their condition is unsourced. Note this stop's route and the Wilson Creek entry below share the same road corridor from opposite ends.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/mortimer-campground"
+        },
+        {
+          "name": "Wilson Creek Gorge / Brown Mountain Beach Road, Pisgah NF",
+          "url": "https://www.trailsoffroad.com/US/north-carolina/scout-routes/1720-brown-mountain-beach-road",
+          "distance": "not published on the free listing",
+          "difficulty": "not published on the free listing",
+          "note": "Trails Offroad classes it a Scout Route and shows 4/5 from 3 reviews; distance, difficulty and waypoints are behind the paywall. The listing places it in Adako, Caldwell County, running through the Wilson Creek Gorge past the Mortimer ghost town. The Forest Service's Wilson Creek Wild and Scenic River Area page confirms the area is open all year but says nothing at all about the road.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/north-carolina/scout-routes/1720-brown-mountain-beach-road"
+        }
+      ]
     },
     "asheville-nc-v3": {
       "activities": {
@@ -11295,7 +12865,38 @@
           "auto": true,
           "auto_km": 44
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Bent Creek gravel road network, from camp",
+          "url": "https://research.fs.usda.gov/srs/forestsandranges/locations/bent-creek",
+          "note": "Worth checking before planning a drive here. The Forest Service research station — this is an experimental forest, roughly 6,000 acres, the oldest federal one east of the Mississippi — permits hiking, biking and horseback riding on designated trails, and describes the gravel roads themselves as open to bicycles, horses and hikers. It nowhere says the road network is open to private motor vehicles, and it asks that research study sites not be disturbed. Treat this as a bike-and-walk network from camp unless the Pisgah Ranger District says otherwise.",
+          "tier": "official",
+          "source": "https://research.fs.usda.gov/srs/forestsandranges/locations/bent-creek"
+        },
+        {
+          "name": "Curtis Creek Road (FR 482), Old Fort",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures",
+          "season": "Closed 1 January to the first weekend in April (Grandfather Ranger District), together with Curtis Creek Campground",
+          "note": "The Forest Service closure list writes this road as FR 428, not FR 482 as the card has it. One of the two numbers is wrong and it is worth settling with the Grandfather Ranger District rather than discovering it at a junction. No Forest Service page publishes the road's length or surface. Separately, this whole district was closed after Hurricane Helene and has been reopening in stages, so confirm current status close to the date.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/faqs/seasonal-closures"
+        },
+        {
+          "name": "FR 475 past the Davidson River fish hatchery toward Gloucester Gap",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene",
+          "note": "The forest's live Helene status page is the right authority here, but FS 475 is not named on it — only Yellow Gap Road is. Forest Service news coverage that could not be opened directly reports FS 475 open from US 276 to Cove Creek Group Campground and closed from there to the Daniel Ridge trailhead for a bridge replacement; that is not recorded as fact. This road is the one that reaches Gloucester Gap at the FS 471 junction, so a closed middle section breaks the through route. Call the Pisgah Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene"
+        },
+        {
+          "name": "Yellow Gap Road (FR 1206), Pisgah Ranger District",
+          "url": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene",
+          "note": "Currently not a through route. The Forest Service Helene status page has FR 1206 open from US 276 near the Cradle of Forestry as far as Wolf Ford Horse Camp, and closed from Wolf Ford Horse Camp to North Mills River Campground — so it is an out-and-back from the 276 end, not the Brevard-to-Mills River link. No length is published by the Forest Service.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/about-area/helene"
+        }
+      ]
     },
     "bryson-city-nc": {
       "activities": {
@@ -11366,7 +12967,42 @@
       ],
       "dogs": "PROHIBITED on trails, with exactly two exceptions: the Gatlinburg Trail and the Oconaluftee River Trail. Leash 6 ft on those. NPS actively discourages bringing pets because most trails are off-limits.",
       "dogs_exception": "Gatlinburg Trail and Oconaluftee River Trail only.",
-      "dogs_note": "Oconaluftee is the accessible one from this side — the Bryson City stop already names the Oconaluftee Visitor Center in its highlights, so the dog-legal walk is the one you were going to anyway."
+      "dogs_note": "Oconaluftee is the accessible one from this side — the Bryson City stop already names the Oconaluftee Visitor Center in its highlights, so the dog-legal walk is the one you were going to anyway.",
+      "offroad": [
+        {
+          "name": "Cove Creek Road / Old NC 284 into Cataloochee",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "The park's seasonal road schedule lists Cataloochee Road as open year round, two-lane gravel, subject to weather closures. Old NC 284 has no fixed dates — the park closes it in severe weather or heavy rain.",
+          "note": "NPS describes Cove Creek as a winding gravel road with steep drop-offs and no guardrails, narrow enough that drivers may have to stop or back up to pass. Old NC 284, the back way in from Big Creek, is also winding gravel. Post-Helene the Cataloochee entrance road was open to vehicles only as far as Beech Grove School with the upper section closed — from the park's reopening release, https://www.nps.gov/grsm/learn/news/great-smoky-mountains-national-park-to-reopen-portions-of-cataloochee-on-april-4.htm. Confirm before the drive.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Heintooga Ridge Road / Heintooga Round Bottom Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "Heintooga Ridge Road 15 May – 31 Oct. Heintooga Round Bottom Road: opening date TBD, as is Straight Fork Road, both still recovering from Hurricane Helene.",
+          "note": "Two different roads under one name and only the first half is confirmed. Heintooga Ridge Road is paved and two-way, and motorhomes, buses and vans longer than 25 ft are prohibited — the towed pickup is fine. The Round Bottom (Balsam Mountain) half, the one-way gravel descent toward Cherokee that makes this a through route rather than a dead end, had no published opening date when checked. Do not plan the loop until the park posts a date.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Parson Branch Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "distance": "8 mi",
+          "season": "1 May – 9 Nov",
+          "note": "One-way gravel leaving Cades Cove — you exit at US 129 and cannot come back the way you came. NPS recommends high clearance and restricts large vehicles. It reopened in 2022 after a six-year closure for hazard trees, and the park still closes it for high water, so it is the least dependable of the four here.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        },
+        {
+          "name": "Rich Mountain Road",
+          "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "season": "10 Apr – 9 Nov",
+          "note": "One-way out of Cades Cove toward Townsend, with the park's standard restriction on these roads — no motorhomes, buses, or vans longer than 25 ft, and no passenger vehicles towing trailers. The schedule publishes no length. Same one-way trap as Parson Branch: it is a way out of the cove, not a there-and-back.",
+          "tier": "official",
+          "source": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm"
+        }
+      ]
     },
     "chattanooga-tn": {
       "activities": {
@@ -11414,7 +13050,24 @@
           "auto": true,
           "auto_km": 9
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Cherokee National Forest gravel roads above the Ocoee (US 64 corridor)",
+          "url": "https://www.fs.usda.gov/r08/cherokee/maps-guides",
+          "note": "The authority is the 2024 Ocoee Ranger District Motor Vehicle Use Map (https://www.fs.usda.gov/media/233244) plus a companion sheet of seasonal and special vehicle designations (https://www.fs.usda.gov/media/233242) — both linked from this page and both confirmed to resolve. They are scanned PDFs and could not be read as text here, so the actual gate dates are not transcribed; the seasonal sheet is the one to open on a phone before driving. Paper copies are free at the Forest Service offices in Benton and Cleveland.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/cherokee/maps-guides"
+        },
+        {
+          "name": "Prentice Cooper State Forest road network, above the Tennessee River Gorge",
+          "url": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html",
+          "season": "Tower Drive past Pot Point Gate closed 20 Dec – 15 Mar. Tower Drive south of Pot Point Road, plus Elder Point, Long Point and Inman Point, closed to motorized use from late April to early July for turkey nesting.",
+          "note": "Two things beyond the gates. Motorized vehicles must stay on designated roads and the forest speed limit is 25 mph. And during managed hunts everything west of SR 27 (Suck Creek Road) is closed to all visitors except licensed hunters — the hunt dates are set by TWRA each year and are the thing most likely to shut this stop's day out, so check the WMA calendar rather than assuming the gate dates cover it.",
+          "tier": "official",
+          "source": "https://www.tn.gov/agriculture/forests/state-forests/prentice-cooper.html"
+        }
+      ]
     },
     "hot-springs-ar-v3": {
       "activities": {
@@ -11495,7 +13148,16 @@
           "auto": true,
           "auto_km": 6
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Ouachita National Forest gravel roads, Lake Ouachita north shore",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/jessieville-winona-fourche-ranger-district",
+          "note": "The managing authority for the whole north shore — about 406,000 acres. The page names a Winona Scenic Drive but publishes no mileage, road numbers or surface for it, and no individual road pages exist. One live alert on the page has Henderson Hill Road (FSR 689) partially closed. Which roads are open, and to what vehicle class, lives only on the forest's MVUM.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/jessieville-winona-fourche-ranger-district"
+        }
+      ]
     },
     "petit-jean-ar": {
       "activities": {
@@ -11564,6 +13226,20 @@
           "was": "Bear Hollow Trail — a different trail",
           "note_source": "To the highest point in Arkansas at 2,753 ft. No direct listing url surfaced in search. Name kept; no constructed slug."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Ozark National Forest gravel forest roads (Cove Lake / Magazine vicinity)",
+          "note": "Unlisted. The Mt. Magazine Ranger District is the managing authority and its office page confirms the district, but the Forest Service publishes no page for Cove Lake or for the district's forest-road network, and no off-road database carries a named route here. The district's only current road alert is Morgan Mtn Rd, partially closed for road repair. Plan from the Ozark-St. Francis MVUM.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/offices/mt-magazine-ranger-district"
+        },
+        {
+          "name": "Ozark National Forest roads on the north flank of Magazine",
+          "note": "Unlisted, same as the Cove Lake network above — the district page is the only authority that confirms these roads are Forest Service, and nothing publishes their numbers, surface or gate dates. Note this stop carries two offroad entries for what may be the same road network; worth folding into one with `same_as` if the tags agree.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/offices/mt-magazine-ranger-district"
+        }
       ]
     },
     "jasper-ponca-ar": {
@@ -11631,6 +13307,41 @@
           ],
           "note_source": "Along Clark Creek past natural bridges to Eden Falls and Cobb Cave. Crushed rock to natural surface. No direct listing url surfaced in search. Name kept; no constructed slug."
         }
+      ],
+      "offroad": [
+        {
+          "name": "AR-43/74 Ponca-Boxley Valley Loop (truck-only)",
+          "url": "https://www.nps.gov/buff/planyourvisit/directions.htm",
+          "note": "These are paved state highways, not forest roads — NPS routes visitors to the Jasper/Ponca upper district via Highway 7 or Highway 43 south from Harrison. The park publishes no loop mileage. One genuine warning from the park: GPS is unreliable in this area and has sent numerous visitors the wrong way onto dirt roads, which matters more here than the pavement does.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/directions.htm"
+        },
+        {
+          "name": "Cave Mountain / Fallsville forest roads",
+          "note": "Unlisted. Neither the National Park Service nor the Forest Service publishes a page naming these roads, and no off-road database carries them as a route. The nearest sourced statement is the park's blanket warning that access roads in this area may be unpaved, in some cases extremely rocky, and may require four-wheel drive and/or high clearance. Fallsville sits on the Ozark NF Big Piney district, so its MVUM is the authority for that half.",
+          "tier": "unlisted",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Cave Mountain Road (to Hawksbill Crag trailhead)",
+          "note": "Unlisted, and this is the weakest-sourced route in this batch. It is a Newton County road running to the Upper Buffalo Wilderness trailhead, so it belongs to neither the park nor the Forest Service, and neither publishes anything on it. Every description of it as rough, rocky and steep, and every 'about four miles to the parking area' figure, is user-generated. The park's general warning about unpaved, extremely rocky access roads needing 4WD or high clearance is the only sourced statement that applies.",
+          "tier": "unlisted",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Erbie Road",
+          "url": "https://www.nps.gov/buff/planyourvisit/getting-around.htm",
+          "note": "The park has no page for Erbie Road itself; what it does publish is the general rule that access roads here may be unpaved, in some cases extremely rocky, and may require four-wheel drive and/or high clearance. An Erbie campground map PDF exists and resolves at https://www.nps.gov/buff/planyourvisit/upload/Erbie-Campground-Map-Final-Edit-2017.pdf (confirmed 200; contents not readable as text here) and would be the thing to open on a phone.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        },
+        {
+          "name": "Kyles Landing entrance road",
+          "url": "https://www.nps.gov/buff/planyourvisit/getting-around.htm",
+          "note": "Same position as Erbie — the only sourced statement is the park's warning that access roads may be unpaved, extremely rocky and may require 4WD and/or high clearance. The widely repeated figures of roughly 2.8 to 3 miles of steep gravel off AR 74 are not on any NPS page that could be opened, so they are not recorded. Both Kyles Landing campground map URLs that surfaced return 404, so there is no PDF to fall back on.",
+          "tier": "official",
+          "source": "https://www.nps.gov/buff/planyourvisit/getting-around.htm"
+        }
       ]
     },
     "mountain-view-ar": {
@@ -11668,7 +13379,25 @@
           "auto": true,
           "auto_km": 223
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Push Mountain Road & Sylamore Ranger District forest roads",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/sylamore-district-flood-and-tornado-closures",
+          "season": "Alert opened 7 April 2025 after the 2025 storms and stands until further notice",
+          "note": "Push Mountain Road itself is a state highway, not a forest road, and the Forest Service publishes nothing on it. What this alert does settle is the district's gravel network after the 2025 floods and tornado: Cole Fork Road is still closed, and the Syllamo mountain-bike system including the Jack's Branch and Bad Branch loops and its trailhead is still closed for tornado damage. Barkshed, Gunner Pool and Blanchard Springs campgrounds and day-use area have all reopened.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/sylamore-district-flood-and-tornado-closures"
+        },
+        {
+          "name": "Sylamore District forest roads to Gunner Pool and Barkshed",
+          "url": "https://fs.usda.gov/r08/ozark-stfrancis/recreation/gunner-pool-recreation-area",
+          "season": "Both sites open all year; water at Gunner Pool is seasonal, April to November",
+          "note": "The Forest Service gives the road numbers for both. Gunner Pool is FSR 1102, gravel, and the Forest Service calls the approach a steep, winding dirt road not recommended for large recreation vehicles. Barkshed is AR 14 west from Mountain View 17.3 miles, then FSR 1115 (gravel) 2.1 miles, then FSR 1112 1.4 miles — https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/barkshed-recreation-area — also not recommended for large trailers or RVs. Both reopened after the 2025 storms.",
+          "tier": "official",
+          "source": "https://fs.usda.gov/r08/ozark-stfrancis/recreation/gunner-pool-recreation-area"
+        }
+      ]
     },
     "eureka-springs-ar-v3": {
       "activities": {
@@ -11812,7 +13541,36 @@
           "auto": true,
           "auto_km": 24
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Shores Lake / Salt Fork forest roads",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/shores-lake-road-fs1501-under-construction",
+          "distance": "about 10 mi of FSR 1501 under reconstruction",
+          "season": "Work began autumn 2025, expected to finish summer 2027; the Forest Service expects the road to stay open to traffic through most of it",
+          "note": "FSR 1501 runs from AR 23 on the east to AR 215 on the west near Shores Lake — culverts, reshaping, fresh gravel and overlook parking. Hurricane Road (FSR 1003) work is already complete. This lands squarely in the trip's window, so expect active construction rather than a closure. No Forest Service page names a 'Salt Fork' road, so that half of the entry is unsourced.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/shores-lake-road-fs1501-under-construction"
+        },
+        {
+          "name": "White Rock Mountain Road",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area",
+          "distance": "FSR 1505 for 8 mi (first 0.5 mi paved, then gravel), then FSR 1003 west for 2.5 mi of gravel, from AR 215 north of Mulberry",
+          "season": "Recreation area open all year",
+          "note": "Part of FSR 1003 is still out. Per the Forest Service alert last updated 22 May 2026 (https://www.fs.usda.gov/r08/ozark-stfrancis/alerts/fsr-1003-white-rock-road-closure-partially-lifted), the stretch between Bliss Ridge Road (FSR 1505-1) and Wood's Gap is repaired and open, but the eastern slide near Spirits Creek Bridge remains closed with no estimate of when or if it will be repaired. Approach from the west via Hurricane Road or from the north via Boles Gap Road (FSR 1505-2). Summit is 2,289 ft with CCC stone cabins and lodge.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area"
+        },
+        {
+          "name": "White Rock Mountain Road (Ozark National Forest)",
+          "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area",
+          "distance": "FSR 1505 for 8 mi (first 0.5 mi paved, then gravel), then FSR 1003 west for 2.5 mi of gravel, from AR 215 north of Mulberry",
+          "season": "Recreation area open all year",
+          "note": "Duplicate — this is the same road as the 'White Rock Mountain Road' entry on this stop, listed twice under two names. Worth folding into one with `same_as` rather than shipping both. Same caveat applies: FSR 1003's eastern slide near Spirits Creek Bridge is still closed with no repair estimate, so come in from the west or the north.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/white-rock-mountain-recreation-area"
+        }
+      ]
     },
     "mena-ar": {
       "activities": {
@@ -11860,7 +13618,44 @@
           "auto": true,
           "auto_km": 32
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Caney Creek Wilderness access roads (Shady Lake / Forest Service network)",
+          "note": "Unlisted. The Mena-Oden Ranger District is the managing authority and its office page confirms it, but the Forest Service publishes no page for Shady Lake, for Caney Creek Wilderness access, or for the surrounding road network, and no off-road database lists a named route. The Ouachita MVUM is the only authority on which of these roads are open and to what vehicle class.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ouachita/offices/mena-oden-ranger-district"
+        },
+        {
+          "name": "Cossatot Falls access road",
+          "url": "https://www.arkansas.com/state-parks/explore/parks/cossatot-river-state-park-natural-area",
+          "note": "Arkansas State Parks is the managing authority and its park page is the right link, but it publishes nothing about the access road — no surface, no mileage, no clearance requirement and no flood closure policy, despite the falls area being the part of the park most likely to be cut off by high water. Everything about the road's condition is currently unsourced; the park visitor centre is the place to settle it.",
+          "tier": "official",
+          "source": "https://www.arkansas.com/state-parks/explore/parks/cossatot-river-state-park-natural-area"
+        },
+        {
+          "name": "Ouachita National Forest roads (FR 106, FR 25 and others)",
+          "note": "Unlisted. Neither FR 106 nor FR 25 has a Forest Service page on the Mena-Oden district, and no off-road database lists them. Be careful with the numbers: FR 106 is also a road number on the Grandfather district in North Carolina (Dobson Knob), so a search on the bare number returns the wrong state. The Ouachita MVUM is the authority.",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r08/ouachita/offices/mena-oden-ranger-district"
+        },
+        {
+          "name": "Rich Mountain fire-tower spur",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway",
+          "distance": "the byway itself is 54 mi",
+          "season": "Byway open year round",
+          "note": "The Forest Service page covers the byway that runs the spine of Rich Mountain and Winding Stair Mountain, but says nothing about a fire tower or about any spur road off it — so the spur itself is effectively unlisted and only the parent byway is sourced. The byway is paved; whatever spur the card means is not described anywhere the Forest Service publishes.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway"
+        },
+        {
+          "name": "Wolf Pen Gap OHV Trail System",
+          "url": "https://www.fs.usda.gov/r08/ouachita/recreation/opportunities/highway-vehicles-ohv",
+          "note": "A permitted OHV trail system on the Mena-Oden district, not a forest-road drive. The Forest Service lists Mena-Oden among its OHV districts but publishes no mileage, fee, permitted vehicle class or season for Wolf Pen Gap specifically. The same page carries a notice dated 1 June 2026 that USDA and the Forest Service are reviewing OHV policy, so the permit rules may not be what they are now by the time of the stop — confirm with the district before buying anything.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r08/ouachita/recreation/opportunities/highway-vehicles-ohv"
+        }
+      ]
     },
     "lone-pine": {
       "trails": [
@@ -11905,6 +13700,15 @@
             {
               "label": "Wikipedia — Whitney Portal, California",
               "url": "https://en.wikipedia.org/wiki/Whitney_Portal%2C_California"
+            }
+          ]
+        },
+        "Museum of Western Film History": {
+          "entity": "Museum of Western Film History, Lone Pine",
+          "links": [
+            {
+              "label": "Wikipedia — Lone Pine, CA",
+              "url": "https://en.wikipedia.org/wiki/Lone_Pine%2C_California"
             }
           ]
         }
@@ -11994,7 +13798,18 @@
           "entry": "The coach is appropriate for the main Alaska Highway.",
           "problem": "A statement about the coach on a paved highway. Not an offroad route by any reading — it belongs in the leg notes, if anywhere."
         }
-      ]
+      ],
+      "dogs": "On leash in every City of Dawson Creek park (Animal Responsibility Bylaw 4420 — Barbaree Park is the only off-leash area), which covers Chamberlain Nature Park and Leoppky Park; Radar Lake, the Rim Rocks wind-park paths and McQueen Slough are all outside the city and none of their managers publishes a dog rule.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://dawsoncreek.civicweb.net/document/112100/",
+      "dogs_source_quote": "No owner will permit the owner's animal to be at large in the City.",
+      "trail_dogs": {
+        "Chamberlain Heritage Park Short Loop": true,
+        "Radar Lake": null,
+        "Mcqueen Slough Trail": null,
+        "Leoppky Park": true,
+        "Rim Rocks Wind Park Trail": null
+      }
     },
     "chitina": {
       "activities": {
@@ -12129,6 +13944,15 @@
               "url": "https://en.wikipedia.org/wiki/Ajo%2C_Arizona"
             }
           ]
+        },
+        "Puerto Blanco Drive (truck)": {
+          "entity": "Quitobaquito Springs",
+          "links": [
+            {
+              "label": "Wikipedia — Quitobaquito Springs",
+              "url": "https://en.wikipedia.org/wiki/Quitobaquito_Springs"
+            }
+          ]
         }
       }
     },
@@ -12169,11 +13993,92 @@
               "url": "https://en.wikipedia.org/wiki/Willcox%2C_Arizona"
             }
           ]
+        },
+        "Sandhill crane spectacle": {
+          "entity": "Sandhill crane",
+          "links": [
+            {
+              "label": "Wikipedia — Sandhill crane",
+              "url": "https://en.wikipedia.org/wiki/Sandhill_crane"
+            }
+          ]
+        },
+        "Pinery Canyon Road to Portal (truck)": {
+          "entity": "Portal, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Portal, AZ",
+              "url": "https://en.wikipedia.org/wiki/Portal%2C_Arizona"
+            }
+          ]
         }
       }
     },
     "patagonia-sonoita": {
-      "activities": {}
+      "activities": {
+        "Patagonia-Sonoita Creek Preserve": {
+          "entity": "Sonoita Creek",
+          "links": [
+            {
+              "label": "Wikipedia — Sonoita Creek",
+              "url": "https://en.wikipedia.org/wiki/Sonoita_Creek"
+            }
+          ]
+        },
+        "Sonoita & Elgin wine tasting": {
+          "entity": "Sonoita AVA; Elgin, AZ",
+          "links": [
+            {
+              "label": "Wikipedia — Sonoita AVA",
+              "url": "https://en.wikipedia.org/wiki/Sonoita_AVA"
+            },
+            {
+              "label": "Wikipedia — Elgin, AZ",
+              "url": "https://en.wikipedia.org/wiki/Elgin%2C_Arizona"
+            }
+          ]
+        },
+        "Harshaw / Mowry ghost-town loop (truck)": {
+          "entity": "Harshaw, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Harshaw",
+              "url": "https://en.wikipedia.org/wiki/Harshaw%2C_Arizona"
+            }
+          ]
+        },
+        "Ruby Road (FR 39) (truck)": {
+          "entity": "Ruby, Arizona",
+          "links": [
+            {
+              "label": "Wikipedia — Ruby, AZ",
+              "url": "https://en.wikipedia.org/wiki/Ruby%2C_Arizona"
+            }
+          ]
+        }
+      }
+    },
+    "badlands-sd": {
+      "offroad": [
+        {
+          "name": "Sage Creek Rim Road",
+          "url": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm",
+          "difficulty": "NPS: \"a dirt/gravel road\" that \"can be rough during or after storms\"",
+          "season": "NPS: \"may be temporarily closed during or after heavy rain or snow\" and \"may be closed in the winter due to weather conditions\"",
+          "note": "NPS allows 1–2 hours to drive it and publishes no mileage. It connects SD 44 near Scenic with the Badlands Loop Road (SD 240) north of Pinnacles Overlook, so it can be run as a leg rather than an out-and-back. Along it: Hay Butte and Badlands Wilderness overlooks, Roberts Prairie Dog Town, Sage Creek Basin and Sage Creek Campground. Road status by phone: 605-433-5361.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm"
+        },
+        {
+          "name": "Sage Creek Rim Road (SD-590)",
+          "url": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm",
+          "difficulty": "NPS: \"a dirt/gravel road\" that \"can be rough during or after storms\"",
+          "season": "NPS: \"may be temporarily closed during or after heavy rain or snow\" and \"may be closed in the winter due to weather conditions\"",
+          "note": "Same road as the entry above — one route, listed twice in this box. NPS confirms the SD 590 designation and gives no mileage. Phone 605-433-5361 for status.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm"
+        }
+      ]
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",
@@ -12181,12 +14086,14 @@
   "_url_provenance": "EVERY url here must be COPIED from a search result that returned it. Never construct a slug from a trail's name — alltrails slugs are unpredictable (--2, --3 suffixes, reworded titles) and a fabricated one looks exactly like a real one until it 404s in front of you at a trailhead. This rule exists because four urls were built from names in this file; three happened to be right and one was not, which is luck, not verification.",
   "_auto": "Entries marked auto:true were resolved by resolve_highlights.py — the headline reduced to candidate entity names and checked against Wikipedia's real article index. Exact hits only; a fuzzy match is treated as no match. Hand-written entries are richer and are never overwritten.",
   "_search_note": "Searching with allowed_domains=alltrails.com returns FEWER alltrails results than an open web search does. Warner Point, Horse Gulch and Piedra River were all recorded as 'no listing found' from a restricted search and all three have listings — found by searching the open web instead. Search open, then take the alltrails url from the results.",
-  "_verification_incident": "32 Wikipedia links were written from a batch verifier that reported non-existent articles as valid. MediaWiki numbers every missing title -1, -2, -3...; the script tested only for '-1', so all but the first missing title in each 40-title chunk passed. The identical bug had already been found and fixed in resolve_highlights.py and was never ported to wiki_batch.py — one fix, two copies. Both now test the `missing` key, and wiki_batch.py also rejects disambiguation pages. Controls proved it: 'Qqxzptl Museum of Nonexistence' passed as valid before the fix.",
+  "_verification_incident": "32 Wikipedia links were written from a batch verifier that reported non-existent articles as valid. MediaWiki numbers every missing title -1, -2, -3...; the script tested only for '-1', so all but the first missing title in each 40-title chunk passed. The identical bug had already been found and fixed in resolve_highlights.py and was never ported to wiki_batch.py — one fix, two copies. Both now test the `missing` key, and wiki_batch.py also rejects disambiguation pages. Controls proved it: 'Qqxzptl Museum of Nonexistence' passed as valid before the fix. | Third residue, found by sweeping the BUILT page rather than the db: six wikipedia links were live on the page. Four titles did not exist (Alberta Falls, Canyon Road (Santa Fe), Fremont Lake (Wyoming), Green River Lakes) and two were DISAMBIGUATION pages (Salmon River, Sprague Lake) — a class the earlier sweeps did not test for at all. Three had a correct target confirmed by coordinates; three had none and were dropped. Sweep the built page, not the db: the db still holds stripped urls by design.",
   "dead_links": [
+    "https://en.wikipedia.org/wiki/Alberta_Falls",
     "https://en.wikipedia.org/wiki/Artist%27s_Drive",
     "https://en.wikipedia.org/wiki/Barker_Dam",
     "https://en.wikipedia.org/wiki/Bear_Glacier_%28British_Columbia%29",
     "https://en.wikipedia.org/wiki/Bonanza_Mine",
+    "https://en.wikipedia.org/wiki/Canyon_Road_%28Santa_Fe%29",
     "https://en.wikipedia.org/wiki/Cathedral_Valley",
     "https://en.wikipedia.org/wiki/Coldwater_Lake",
     "https://en.wikipedia.org/wiki/Colossal_Cave",
@@ -12195,7 +14102,9 @@
     "https://en.wikipedia.org/wiki/Dog_Mountain_%28Washington%29",
     "https://en.wikipedia.org/wiki/Fort_Nelson_Heritage_Museum",
     "https://en.wikipedia.org/wiki/Fountainhead_Antique_Auto_Museum",
+    "https://en.wikipedia.org/wiki/Fremont_Lake_%28Wyoming%29",
     "https://en.wikipedia.org/wiki/Gold_Dredge_8",
+    "https://en.wikipedia.org/wiki/Green_River_Lakes",
     "https://en.wikipedia.org/wiki/Horseshoe_Lake_Trail",
     "https://en.wikipedia.org/wiki/Kesugi_Ridge",
     "https://en.wikipedia.org/wiki/Large_Animal_Research_Station",
@@ -12211,11 +14120,14 @@
     "https://en.wikipedia.org/wiki/Resurrection_Pass_Trail",
     "https://en.wikipedia.org/wiki/Root_Glacier",
     "https://en.wikipedia.org/wiki/Russian_River_%28Kenai_Peninsula%29",
+    "https://en.wikipedia.org/wiki/Salmon_River",
     "https://en.wikipedia.org/wiki/Salmon_River_%28Oregon%29",
     "https://en.wikipedia.org/wiki/Savage_River_%28Alaska%29",
     "https://en.wikipedia.org/wiki/Solomon_Gulch_Hatchery",
+    "https://en.wikipedia.org/wiki/Sprague_Lake",
     "https://en.wikipedia.org/wiki/Yukon_Wildlife_Preserve"
   ],
   "_dead_links": "URLs proven NOT to exist. build_links.py strips any of these from a highlight's links on every run, so a bad link cannot survive in the built page just because it was written there once. Removing an entry from this db is not enough — the page is merged into, not rebuilt.",
-  "_offroad": "Offroad routes researched per stop. Every url was copied from a search result and re-verified to resolve before merging. rig is truck everywhere by standing decision. `not_a_route` records entries that were never routes: rig constraints filed as list items, road-status links, non-motorised areas, and duplicates of the scenic-drives box."
+  "_offroad": "Offroad routes researched per stop. Every url was copied from a search result and re-verified to resolve before merging. rig is truck everywhere by standing decision. `not_a_route` records entries that were never routes: rig constraints filed as list items, road-status links, non-motorised areas, and duplicates of the scenic-drives box.",
+  "_dogs_unpublished": "Stops carrying `dogs_unpublished` were researched and the managing authority publishes NO dog rule at all. They deliberately have no dogs_verdict: a 'partial' badge with every trail null renders as a green light on the card, which is the one thing this field exists to prevent. The record names every page already checked so a later pass does not re-spend on them, and names the phone call that would actually settle it."
 }

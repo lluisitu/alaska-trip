@@ -1,0 +1,174 @@
+{
+  "_what": "Dog access rules for the remaining unanswered Alaska trails, one authority per trail. Merge into links_db.json; nothing here was built from a name or inferred from a neighbouring stop.",
+  "_rule": "true / false only where the MANAGING AUTHORITY publishes it. null where the authority is silent about that trail — including where the authority itself could not be established. No AllTrails, no blogs, no tourism boards were used for any verdict.",
+  "_extra_fields": "trail_dogs_source is documentation only, not part of the requested schema. It carries the per-trail URL and quote for stops whose stop-level dogs/dogs_source must NOT be overwritten (anchorage, seward), and for trails whose authority differs from the stop-level one. A build script that ignores it loses nothing.",
+  "_do_not_overwrite": "anchorage and seward entries deliberately omit dogs / dogs_source / dogs_source_quote so an incautious merge cannot replace the Chugach State Park and Kenai Fjords research already in links_db.json. Their existing trail_dogs entries are restated verbatim for the same reason.",
+
+  "stops": {
+
+    "tok-1": {
+      "dogs": "Leashed dogs are fine — the overlook trail is in Eagle Trail State Recreation Site, and Alaska State Parks allow pets throughout on a leash of nine feet or less in developed areas, voice control in the backcountry.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "dogs_source_quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+      "trail_dogs": {
+        "Tok River Valley Overlook Trail": true
+      },
+      "dogs_note": "Eagle Trail State Recreation Site, Mile 109.5 Tok Cut-Off, is an Alaska State Parks unit; its own page describes 'the 2.5-mile hiking trail with an overview of the Tok River Valley' (https://dnr.alaska.gov/parks/aspunits/northern/eagletrailsrs.htm) but publishes no pet rule of its own, so the statewide rule is what applies."
+    },
+
+    "tok-2": {
+      "dogs": "Leashed dogs are fine — the overlook trail is in Eagle Trail State Recreation Site, and Alaska State Parks allow pets throughout on a leash of nine feet or less in developed areas, voice control in the backcountry.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "dogs_source_quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+      "trail_dogs": {
+        "Tok River Valley Overlook Trail": true
+      },
+      "dogs_note": "Same trail as tok-1. Eagle Trail State Recreation Site, Mile 109.5 Tok Cut-Off, is an Alaska State Parks unit."
+    },
+
+    "fairbanks-1": {
+      "dogs": "Leashed on Birch Hill, which is a Fairbanks North Star Borough facility; the borough's other four trails on this card have no published dog rule at all, so treat them as unknown rather than open.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://fnsb.gov/DocumentCenter/View/4228/Parks-and-Recreation-General-Rules-and-Regulations-PDF",
+      "dogs_source_quote": "Except in designated off-leash areas, all pets must be on-leash and under the owner's control at all times. Pet waste must be picked up and disposed of in provided trash receptacles.",
+      "trail_dogs": {
+        "Birch Hill White Bear Loop": true,
+        "Ester Dome Inner Loop": null,
+        "Chena River Nature Trail": null,
+        "Wander Lake Trail": null,
+        "Boreal Forest and Seasonal Wetland Trail": null
+      },
+      "dogs_exception": "The borough rules apply to 'any Parks and Recreation controlled and borough-owned or leased amenity including facilities, parks, trails and landscaped areas', which covers Birch Hill Recreation Area. Ester Dome sits on Tanana Valley State Forest land administered by DNR, which publishes no dog rule for it. Wander Lake is inside the privately owned Fountainhead Wedgewood Wildlife Sanctuary and the owner publishes nothing. Creamer's Field is Alaska Dept. of Fish & Game; three ADF&G refuge pages were read and none mentions pets. No managing authority could be established for the Chena River Nature Trail — it is not on the borough's trail-map list and not on the Chena River SRA page.",
+      "trail_dogs_source": {
+        "Birch Hill White Bear Loop": {
+          "url": "https://fnsb.gov/DocumentCenter/View/4228/Parks-and-Recreation-General-Rules-and-Regulations-PDF",
+          "quote": "Except in designated off-leash areas, all pets must be on-leash and under the owner's control at all times.",
+          "tier": "official"
+        }
+      },
+      "dogs_needs_check": [
+        "Ester Dome Inner Loop — DNR Fairbanks / Division of Forestry, Tanana Valley State Forest. Phone the Fairbanks DNR office.",
+        "Chena River Nature Trail — authority not established; it is neither on the FNSB trail-map list nor on the Chena River SRA page. Identify the landowner before assuming either the borough or state-park leash rule applies.",
+        "Wander Lake Trail — private, Fountainhead Wedgewood Wildlife Sanctuary. Ask the resort.",
+        "Boreal Forest and Seasonal Wetland Trail — ADF&G Creamer's Field, (907) 459-7307. The ADF&G access page also lists the Boreal Forest Trail as closed; worth confirming before the visit."
+      ]
+    },
+
+    "anchorage": {
+      "dogs_verdict": "partial",
+      "trail_dogs": {
+        "Rabbit Lake Trail": true,
+        "Tony Knowles Coastal Path": true,
+        "Margaret Eagan Sullivan to Earthquake Park": true,
+        "Elderberry Park to Westchester Lagoon": true
+      },
+      "trail_dogs_source": {
+        "Tony Knowles Coastal Path": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "code": "Anchorage Municipal Code 17.10.010(A): \"It is unlawful for any animal to be in a public place unless it is controlled by a leash, and in the control of a person competent to restrain the animal\", read at http://anchorage-ak.elaws.us/code/coor_title17_ch17.10_sec17.10.010",
+          "tier": "official"
+        },
+        "Margaret Eagan Sullivan to Earthquake Park": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "tier": "official"
+        },
+        "Elderberry Park to Westchester Lagoon": {
+          "url": "https://www.muni.org/Departments/health/Admin/animal_control/Pages/leash.aspx",
+          "quote": "A person who owns a domestic animal, shall control it at all times. In a public place, with some exceptions, the municipal ordinance requires that an owner shall have his/her animal under control and shall not allow it to roam neighborhoods or have access to other people's property.",
+          "tier": "official"
+        }
+      },
+      "dogs_exception_add": "The three city-trail entries are resolved: the Municipality of Anchorage permits dogs in public places on a leash, so all three are walkable with the dog on lead. Off-leash is only lawful in sanctioned off-leash areas, and the Muni states plainly that off-leash walking, skiing and biking are not among the exceptions. Rabbit Lake remains Chugach State Park and keeps its existing rule."
+    },
+
+    "seward": {
+      "dogs_verdict": "partial",
+      "trail_dogs": {
+        "Exit Glacier Overlook Trail": false,
+        "Exit Glacier View Loop": false,
+        "Exit Glacier View and Overlook Loop": false,
+        "Harding Icefield Trail": false,
+        "Tonsina Trail": true,
+        "Two Lakes Trail": null,
+        "Ptarmigan Lake": null
+      },
+      "trail_dogs_source": {
+        "Tonsina Trail": {
+          "url": "https://dnr.alaska.gov/parks/faq.htm",
+          "quote": "Yes, Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.",
+          "why": "Tonsina Point is on the Caines Head Trail, inside Caines Head State Recreation Area and reached from Lowell Point State Recreation Site — both Alaska State Parks units, per the official trail guide at https://dnr.alaska.gov/parks/maps/cainesheadtrail.pdf. The Caines Head unit page publishes no pet rule of its own, so the statewide state-parks rule governs.",
+          "tier": "official"
+        }
+      },
+      "dogs_exception_add": "Tonsina is the one Seward trail on this card the dog can walk: it is Alaska State Parks land, not Kenai Fjords, and state parks allow leashed pets. Two Lakes is a City of Seward park — the city's own Parks, Trails & Facilities page lists the trail and says nothing about dogs, and no Seward city code text could be reached (the code host answers a bot challenge), so it stays unknown. Ptarmigan Lake is Chugach National Forest and the forest publishes no pet rule for it. Every Exit Glacier trail remains closed to the dog.",
+      "dogs_needs_check": [
+        "Two Lakes Trail — City of Seward Parks & Recreation. Phone before relying on it.",
+        "Ptarmigan Lake — Chugach NF, Seward Ranger District, (907) 288-3178."
+      ]
+    },
+
+    "valdez": {
+      "dogs": "Dock Point is a City of Valdez park and the city requires animals to be restrained everywhere except four named off-leash areas, none of which is Dock Point; nothing is published for either Solomon trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.valdezak.gov/906/Municipal-Code-Title-6",
+      "dogs_source_quote": "Owners must keep their animals restrained to prevent them from running loose.",
+      "trail_dogs": {
+        "Dock Point Trail": true,
+        "Solomon Gulch Viewpoint": null,
+        "Solomon Lake Trail": null
+      },
+      "dogs_exception": "Dock Point Trail is listed by the city as one of its own facilities (https://www.valdezak.gov/facilities/facility/details/Dock-Point-Trail-23), so the city restraint rule reaches it — on lead, not off. The city's four designated off-leash areas are Dump Haul Road, the Old Town area, behind the Gold Fields and Mineral Creek (https://www.valdezak.gov/905/Off-Leash-Areas); Dock Point is not among them. Solomon Gulch and Solomon Lake are outside the city facility list and no land manager publishes a rule for them, so they are unknown, not open.",
+      "trail_dogs_source": {
+        "Dock Point Trail": {
+          "url": "https://www.valdezak.gov/905/Off-Leash-Areas",
+          "quote": "Dogs can run freely under control in designated off-leash areas",
+          "tier": "official"
+        }
+      },
+      "dogs_needs_check": [
+        "Solomon Gulch Viewpoint and Solomon Lake Trail — land manager not established (city trail guide is a 10 MB+ PDF that would not load). Valdez Parks & Rec, 907-835-4526."
+      ]
+    }
+  },
+
+  "_researched_no_rule": {
+    "_why": "These stops were researched this pass and deliberately carry NO dogs_verdict. The authority publishes nothing, and an empty field is the honest record — a 'partial' badge with every trail null would read as a green light on the card.",
+    "talkeetna": {
+      "trails": ["Talkeetna Lake Trail", "Lake Loop Trail", "Talkeetna Lakes Ski Loop"],
+      "authority": "Matanuska-Susitna Borough — Talkeetna Lakes Park",
+      "checked": [
+        "https://matsu.gov/trails/talkeetna-lakes-trails — no pet or leash rule",
+        "https://matsu.gov/trails — no pet or leash rule",
+        "https://matsugov.us/docs/meetings/24561/February-24,-2025-PACKET-PRTAB.pdf — contains 'Mat-Su Park and Rec Ordinances - 2024 DRAFT WORKING COPY', which would make it unlawful to 'Walk a dog without a leash, said leash to be no longer than six feet' in a borough park. It is a DRAFT in an advisory-board packet and the minutes record 'Code of Ordinances for Parks and Recreation - No report', so it is not adopted law and is NOT used as a verdict."
+      ],
+      "action": "Phone MSB Parks, Recreation, Trails & Library Services. Do not rely on the draft ordinance."
+    },
+    "homer": {
+      "trails": ["Homer Spit Trail", "Diamond Creek Trail", "Homestead Trail Loop"],
+      "authority": "City of Homer / Kachemak Heritage Land Trust",
+      "checked": [
+        "https://www.cityofhomer-ak.gov/recreation/homer-spit — describes the Homer Spit Trail, says nothing about dogs",
+        "https://www.cityofhomer-ak.gov/publicworks/lend-leash-program — the only leash rule the city quotes is Homer City Code 20.08.030, and it covers the small boat harbor floats only: 'No person may bring, keep, or maintain an animal on the floats on the City of Homer's small boat harbor, unless the animal is kept under physical confinement by leash or chain at all times.' The page places borrowable leashes at 'the beach, parks and trails' but states no requirement there.",
+        "https://www.cityofhomer-ak.gov/police/animal-shelter — no rule text",
+        "https://www.cityofhomer-ak.gov/recreation/homer-trails-park-map — 403 to fetching and 'Access Denied / User log in' in a real browser; not public",
+        "Homer City Code (Title 20) is hosted on codepublishing.com, which answers a bot challenge that was not bypassed"
+      ],
+      "action": "The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Homer City Clerk, or Kachemak Heritage Land Trust for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here."
+    },
+    "cooper-landing": {
+      "trails": ["Russian Lakes Trail", "Resurrection Falls Trail"],
+      "authority": "USDA Forest Service — Chugach National Forest",
+      "checked": [
+        "https://www.fs.usda.gov/r10/chugach/recreation/trails/russian-lakes-trail-upper-lower — lists stock and motorized closures, no pet rule",
+        "https://www.fs.usda.gov/r10/chugach/recreation/trails/resurrection-pass-trail-north — no pet rule",
+        "https://www.fs.usda.gov/r10/chugach/recreation/russian-river — no pet rule",
+        "https://www.fs.usda.gov/r10/chugach/newsroom/releases/russian-river-fishery-opens-june-11-forest-order-place-protect — carries the 6-foot leash requirement but does not delineate the area or name any trail, so it cannot be stretched over a 21-mile trail that merely starts at Russian River Campground"
+      ],
+      "action": "No change. Both trails stay null in links_db.json, which is already correct. Seward Ranger District, (907) 288-3178."
+    }
+  }
+}

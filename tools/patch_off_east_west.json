@@ -1,0 +1,331 @@
+{
+  "stops": {
+    "salida-co": {
+      "offroad": [
+        {
+          "name": "Aspen Ridge Road (FS 185), east boundary of Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "difficulty": "BLM: \"High clearance 4x4 vehicles recommended\"",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "BLM adds a parking rule that is easy to break by accident: vehicles must remain within one vehicle length of the road when parking. Trails Offroad's listing for the same road (official name \"185\") gives a high point of 10,301 ft and a typical open window of 30 Apr – 1 Dec, which agrees with the gate dates.",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        },
+        {
+          "name": "CR 240 above Angel of Shavano to North Fork Reservoir",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/north-fork-campground",
+          "distance": "3 mi on CR 240 from US 50 to Angel of Shavano, then 6 mi west to the reservoir",
+          "difficulty": "Forest Service: road \"is very rough and not recommended for vehicles towing trailers. High clearance vehicles are a requirement\"",
+          "season": "Campground at the top operates June–September, opening and closing dependent on weather",
+          "note": "North Fork is the highest-elevation campground on the Salida Ranger District at 11,000 ft, first come first served, and there is no trash service. Salida Ranger District 719-539-3591 will say how far up CR 240 has melted out.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/north-fork-campground"
+        },
+        {
+          "name": "Fourmile Road / Aspen Ridge",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area",
+          "season": "Forest Service: \"Seasonal gates are closed December 1 and opened April 30\"",
+          "note": "The Fourmile Travel Management Area is 100,000 acres of joint Forest Service and BLM land; southern access is from CR 371/375, 304-308, 311, 315, 300-301 and 185. Note the two gate calendars do not match — the Browns Canyon monument roads reopen 15 Apr, the wider Fourmile gates 30 Apr — so an early-May visit is inside both windows but late April is not. The Forest Service publishes no difficulty or vehicle rating for these routes and refers visitors to the Fourmile area map or the Salida Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area"
+        },
+        {
+          "name": "FS Road 1434A, north boundary of Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "Worth checking before driving out there: the Friends of Browns Canyon access page states that 1434 is \"an ATV trail for machines with a maximum width of 50 inches\", which a full-size pickup exceeds. BLM's own page calls 1434A an ATV route without giving a width. If the 50-inch limit applies to 1434A as well as 1434, this route is not legally driveable in the truck at all — phone the Salida Ranger District (719-539-3591) rather than assume. Second source: https://brownscanyon.org/plan-your-visit/access-seasonal-closures/",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        },
+        {
+          "name": "Old Monarch Pass (FS 237)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/colorado/old-monarch-pass",
+          "distance": "52.4 mi",
+          "difficulty": "onX rates it 3 — Easy",
+          "season": "onX lists spring, summer and fall",
+          "note": "The 52.4 miles is the whole onX route, not the pass crossing — it drops off the west side, crosses Waunita Park and runs north to Pitkin, and onX warns the northern part of that descent is very rocky and rough. The pass itself is 11,375 ft, about 0.6 mi northwest of the US 50 summit, and the graded eastern side is the easy half. Recent status reports on the listing mention downed trees.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/colorado/old-monarch-pass"
+        },
+        {
+          "name": "Turret Road (FS 184) into Browns Canyon",
+          "url": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon",
+          "difficulty": "BLM: \"a rugged 4x4 experience into the heart of the Monument\"; Friends of Browns Canyon add that \"only skilled motorists looking for an extreme 4x4 experience should attempt\" it",
+          "season": "Seasonal gate closure 1 Dec – 15 Apr",
+          "note": "Turret Road ends at a small parking area at the Browns Canyon Wilderness Study Area boundary, where it becomes Turret Trail and mechanised travel stops — so this is an out-and-back, not a through route to the river. The corridor is bighorn sheep, mule deer, lynx and Mexican spotted owl habitat, which is what the winter gate protects. Neither BLM nor the Friends group publishes a mileage. Second source: https://brownscanyon.org/turret-road/",
+          "tier": "official",
+          "source": "https://www.blm.gov/programs/national-conservation-lands/colorado/browns-canyon"
+        }
+      ]
+    },
+    "buena-vista-co": {
+      "offroad": [
+        {
+          "name": "Aspen Ridge",
+          "url": "https://www.trailsoffroad.com/trails/618-aspen-ridge",
+          "distance": "not published on the free listing",
+          "difficulty": "Beginner",
+          "season": "Typically open 30 Apr – 1 Dec",
+          "note": "Listed under its official road number, 185, and managed by the Salida Ranger District. Rated 4.4 from 47 reviews; high point 10,301 ft. Reviewers report loose rock, washout on the rock climbs and deep ruts, and that the middle section turns to mud after rain or snow — the melt-out date and the driveable date are not the same thing here.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/trails/618-aspen-ridge"
+        },
+        {
+          "name": "Chinaman Gulch and Carnage Canyon, BLM Fourmile Travel Management Area",
+          "url": "https://funtreks.com/off-road-trails/chinaman-gulch-carnage-canyon/",
+          "distance": "7.1 mi",
+          "difficulty": "Difficult",
+          "season": "May through October",
+          "note": "FunTreks puts the round trip at about 4 hours with a high point of 8,900 ft, and names the obstacles — Rock Garden, Whale Rock, Double Whammy — most of which have bypasses on the Chinaman side. Carnage Canyon has none of that forgiveness: minimum 35-inch tires, lockers front and rear, and FunTreks tells drivers to carry and use a spill kit. It is one of the most heavily used motorised areas in Colorado, so expect company.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/chinaman-gulch-carnage-canyon/"
+        },
+        {
+          "name": "CR 306 west of Collegiate Peaks Campground toward Cottonwood Pass",
+          "url": "https://www.chaffeecounty.org/departments/road_bridge/index.php",
+          "season": "County: \"From November 1st until June 15th this road is not maintained beyond Denny Creek Trailhead\"",
+          "note": "The road, not the Forest Service, is Chaffee County's — Road and Bridge, 719-539-4591, is who to phone for the plough line. Their published non-maintenance window ends 15 June, later than the tag's \"late May\"; they aim to open the pass before Memorial Day but only as snowpack allows, and both the Chaffee and Gunnison sides gate independently. Denny Creek Trailhead is the realistic turnaround in mid-May.",
+          "tier": "official",
+          "source": "https://www.chaffeecounty.org/departments/road_bridge/index.php"
+        },
+        {
+          "name": "Fourmile Area — Natural Bridge",
+          "url": "https://www.trailsoffroad.com/US/colorado/trails/2235-fourmile-area-natural-bridge",
+          "distance": "not published on the free listing",
+          "difficulty": "Beginner",
+          "season": "Year round",
+          "note": "Rated 4.7 from 42 reviews, high point 9,218 ft. The loop runs FS 373 and part of FS 311; surface is mostly sand and smooth dirt with a few mild climbs and only small rocks, which is why it holds a year-round rating while everything above it is gated. The return leg faces the Collegiate Peaks.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/colorado/trails/2235-fourmile-area-natural-bridge"
+        },
+        {
+          "name": "Fourmile Travel Management Area general routes",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area",
+          "season": "Forest Service: \"Seasonal gates are closed December 1 and opened April 30\"",
+          "note": "100,000 acres of joint Forest Service and BLM ground. The Forest Service publishes no per-route difficulty and points visitors at the Fourmile area map or the Salida Ranger District instead; the listed uses are hiking, mountain biking, OHV trail and road riding, and ski/snowshoe. Access from the north is via CR 371/375 and CR 304-308.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/fourmile-travel-management-area"
+        },
+        {
+          "name": "Mount Antero road (FS 277), off Chalk Creek",
+          "url": "https://funtreks.com/off-road-trails/mt-antero-browns-lake/",
+          "distance": "14.1 mi",
+          "difficulty": "Difficult",
+          "season": "July–September",
+          "note": "FunTreks budgets 6 hours and puts the high point at 13,750 ft. The specific warning is about vehicle size rather than capability: \"extremely narrow shelf road with tight switchbacks\", and oversize vehicles will have a hard time at the switchbacks — a full-size pickup is the wrong shape for the top of this road even in August. Small SUVs with low range get all but the last half mile. The same road accesses Browns Lake for quiet camping.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/mt-antero-browns-lake/"
+        },
+        {
+          "name": "Tincup Pass (FS 267) from St. Elmo",
+          "url": "https://funtreks.com/off-road-trails/tincup-pass-st-elmo/",
+          "distance": "13 mi",
+          "difficulty": "Difficult",
+          "season": "July–October",
+          "note": "About 2 hours one way, summit 12,154 ft. The blocker is specific and late: one short section of narrow shelf road at 12,000 ft holds snow into early July. Sharp rock near the top is reported to cut tires. Once clear it wants low-range gearing, skid plates and good rubber.",
+          "tier": "community",
+          "source": "https://funtreks.com/off-road-trails/tincup-pass-st-elmo/"
+        }
+      ]
+    },
+    "leadville-co": {
+      "offroad": [
+        {
+          "name": "FS Road 125.B, South Mount Elbert trailhead extension",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/trails/south-mount-elbert-trail-1481",
+          "distance": "1.8 mi",
+          "difficulty": "Forest Service: four-wheel drive only, summer season; impassable to vehicles in winter",
+          "season": "Summer only",
+          "note": "The trail it serves, South Mount Elbert #1481, is 5.8 mi with 4,800 ft of gain from the lower trailhead. The road starts just beyond the lower parking lot; there is a ford about 1.5 mi up, and informal dispersed sites line the first mile if you would rather park and walk. Access is from Leadville: 15 mi south on US 24, west 3.75 mi on CO 82, then right on Lake CR 24 for 1.5 mi.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/trails/south-mount-elbert-trail-1481"
+        },
+        {
+          "name": "Hagerman Pass (FS 105), 11,925 ft",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass",
+          "distance": "5 mi west from Leadville on Lake CR 4, then 5.5 mi on FS 105 to the summit",
+          "difficulty": "Forest Service: road is \"very rough\"; \"high-clearance, four-wheel drive vehicles are recommended\"",
+          "note": "The Forest Service page publishes no open or close dates at all for this pass — the seasonal timing in the tag is not theirs and should be checked with the Leadville Ranger District. The 1880s railroad history is the reason the grade exists; west of the summit it continues through White River National Forest past Ruedi Reservoir to CO 82 at Basalt.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass"
+        },
+        {
+          "name": "Hagerman Pass Road (Road 105)",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass",
+          "distance": "5 mi west from Leadville on Lake CR 4, then 5.5 mi on FS 105 to the summit",
+          "difficulty": "Forest Service: road is \"very rough\"; \"high-clearance, four-wheel drive vehicles are recommended\"",
+          "note": "Same road as the Hagerman Pass entry above — one route, listed twice in this box. The Forest Service publishes no seasonal dates for it.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/hagerman-pass"
+        },
+        {
+          "name": "Halfmoon Road (FS 110) to Elbert Creek and the Mount Massive trailhead",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/halfmoon-recreation-area",
+          "difficulty": "not rated by the Forest Service on this page",
+          "note": "The authority page confirms the road and what it reaches — FS 110 follows the southern border of the Mount Massive Wilderness and serves several campgrounds plus the Mount Massive and North Elbert trailheads — but publishes no surface, mileage or vehicle guidance. The Forest's own trail pages add that the road is not maintained in winter and that the last half mile to the trailhead needs high clearance and 4WD. Very busy in summer.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/halfmoon-recreation-area"
+        },
+        {
+          "name": "Mosquito Pass (FS 438)",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour",
+          "distance": "9.5 mi",
+          "difficulty": "Forest Service: \"moderate to difficult, steep and very rocky\"",
+          "season": "Forest Service: \"usually only open for six to eight weeks after the snow melts in July\"",
+          "note": "The Forest Service signs and numbers this as County Road 12, not 438 — worth knowing at the junction. The tour starts from Fairplay: north on CO 9 for about 4.2 mi, then left onto CR 12, and the interpretive stops begin almost immediately. The brochure is a download from this page as well as a paper copy at the South Park Ranger District.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour"
+        },
+        {
+          "name": "Mosquito Pass Road",
+          "url": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour",
+          "distance": "9.5 mi",
+          "difficulty": "Forest Service: \"moderate to difficult, steep and very rocky\"",
+          "season": "Forest Service: \"usually only open for six to eight weeks after the snow melts in July\"",
+          "note": "Same road as the Mosquito Pass (FS 438) entry above — one route, listed twice in this box. Signed as County Road 12 from the Fairplay side.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r02/psicc/recreation/mosquito-pass-auto-tour"
+        }
+      ]
+    },
+    "wind-river-ext": {
+      "offroad": [
+        {
+          "name": "Boulder Lake Road (CR 125 to FS 370780)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/boulder-lake-campground",
+          "distance": "about 24 mi from Pinedale, roughly 10 mi of it dirt and gravel",
+          "note": "The Forest's own directions match the tag turn for turn, and add that the dirt and gravel section is simply bumpy rather than technical — no 4WD language anywhere on the page, which is what makes this the sane shakedown day. The campground at the end has 15 sites on the east end of the lake near Boulder Creek.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/recreation/boulder-lake-campground"
+        },
+        {
+          "name": "Green River Lakes Road (FS 370650)",
+          "url": "https://www.recreation.gov/camping/campgrounds/233874",
+          "distance": "25 mi paved on WY 352 to the forest boundary, then 18 mi of dirt — about 50 mi from Pinedale",
+          "difficulty": "\"While the dirt road to the campground is suitable for 2 wheel drive vehicles, weather can make this road impassable to all but 4 wheel drive vehicles\"",
+          "note": "One thing to check before the trip rather than at the junction: the Bridger-Teton began a major reconstruction of this road in July 2026 — grading, drainage, culverts and new aggregate — with Phase 2 from the Union Pass Y to Green River Lakes scheduled for Aug–Oct 2026 or summer 2027. It should be finished and in better shape by 2028, but the Forest's conditions page is where any carryover work would be posted: https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates . Lower Green River Lake sits at 8,000 ft; drinking water at the campground only 1 Jul – 15 Sep.",
+          "tier": "official",
+          "source": "https://www.recreation.gov/camping/campgrounds/233874"
+        },
+        {
+          "name": "New Fork Lake access (FS 370730 / 370735)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/recreation/new-fork-lake-group-campground",
+          "distance": "about 24 mi from Pinedale — 6 mi US 191, 14.4 mi WY 352, 3 mi CR 162, then under a mile on FS 370730",
+          "note": "Shorter and less committing than the tag implies — the forest road portion is under a mile, with the 3 mi of county road before it. The Forest publishes no road-surface warning, no high-clearance requirement and no seasonal date for this approach; the only figures on the page are the distances above. Third-party sites describe the last stretch as rocky, but that is not the Forest's wording and is not sourced here.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/recreation/new-fork-lake-group-campground"
+        },
+        {
+          "name": "Union Pass Road (FS 370600)",
+          "url": "https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates",
+          "note": "This is the Forest's own road-conditions page and it is the only official page that names NFSR 600 by number: Union Pass Road runs from the forest boundary to the Green River Lakes Road (NFSR 650) junction, the \"Union Pass Y\". Phase 1 reconstruction covered exactly that segment in July 2026 with 30-minute delays and one full closure day; work may carry into 2027, so check this page before driving it. The Forest publishes no mileage, difficulty or open date for the road — the Pinedale Ranger District (307-367-4326) and the MVUM are the authority for what is open. The 70-plus-mile Dubois-to-Pinedale figure that circulates online is not a Forest Service number and should not be relied on.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r04/bridger-teton/conditions/green-river-lakes-road-construction-updates"
+        }
+      ]
+    },
+    "scottsbluff-ne": {
+      "offroad": [
+        {
+          "name": "Robidoux Pass / Carter Canyon gravel loop",
+          "url": "https://visitscottsbluff.com/directory/listing/robidoux-pass-national-historic-landmark-and-trading-post/",
+          "distance": "23 mi as a loop — out on Carter Canyon Road, back on Robidoux Road",
+          "note": "No land-management agency publishes this route: the pass is a National Historic Landmark on private and county ground, and the reconstructed 1851 Robidoux trading post in Carter Canyon is run by the Friends of Robidoux Trading Post, not a park service. That means no road-condition page, no seasonal gate and nobody to phone about surface after rain. Access is two miles south of Gering on Hwy 71 then eight miles west. Pioneer graves and wagon ruts are visible along the route; self-guided, no facilities. The Nebraska State Historical Society publishes the history of the pass but nothing about the road, and its page would not load for verification, so it is not linked here.",
+          "tier": "community",
+          "source": "https://visitscottsbluff.com/directory/listing/robidoux-pass-national-historic-landmark-and-trading-post/"
+        }
+      ]
+    },
+    "custer-sd": {
+      "offroad": [
+        {
+          "name": "Black Hills National Forest Forest Road 307 (FR307) area",
+          "note": "No route listing exists for FR 307 — not on Trails Offroad, not on onX, and no Forest Service page names the road. It shows up only as a dispersed-camping area in third-party campsite directories. The Forest's Motor Vehicle Use Map is the only authority for whether FR 307 is open and to what, and it is the document to carry: motorised travel off a designated road is limited to 300 ft for dispersed camping, camp 100 ft from any creek and half a mile from developed sites, 14 days in any 60-day period, and open campfires are prohibited in the South Dakota portion of the forest. The MVUM itself is obtained from the Forest's maps and guides page, free from district offices or online: https://www.fs.usda.gov/r02/blackhills/maps-guides",
+          "tier": "unlisted",
+          "source": "https://www.fs.usda.gov/r02/blackhills/recreation/dispersed-camping"
+        },
+        {
+          "name": "Captain Crunch (Johnson Siding, near Rapid City)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/5054-captain-crunch",
+          "distance": "not published on the free listing",
+          "difficulty": "10 out of 10 — Trails Offroad calls it possibly \"the most difficult, rock-crawling trail in South Dakota\"",
+          "note": "Filed as a scout route rather than a full trail guide, and rated 5/5 from a single review, so the listing is thin. It is in the \"Cereal Bowl\" area off Bogus Jim Road and starts where the Got Milk? trail starts, which means you can walk in down the smoother north section to spectate without committing the truck. Sedan-sized boulders, v-notches and steep climbs; purpose-built buggies only. Trailer parking at the Cereal Bowl entrance, no camping on the trail.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/5054-captain-crunch"
+        },
+        {
+          "name": "China Gulch Road, Black Hills NF (Hill City)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/trails/3790-china-gulch-road",
+          "distance": "12.75 mi",
+          "difficulty": "Beginner",
+          "season": "Typically open 15 May – 15 Dec",
+          "note": "Official road number is 249, Mystic Ranger District; rated 4.2 from 14 reviews, high point 5,743 ft, and it is a through route rather than a loop. It starts in China Gulch and runs into the rougher Nugget Gulch area, with the creek crossings concentrated near the northern end — so the easy rating applies to most but not all of the 12.75 miles.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/trails/3790-china-gulch-road"
+        },
+        {
+          "name": "Lightning Creek Road, Black Hills NF (Custer)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/trails/4574-lightning-creek-road",
+          "distance": "not published on the free listing",
+          "difficulty": "Moderate",
+          "season": "Year round",
+          "note": "Official road number is 288, Hell Canyon Ranger District; rated 3.7 from 4 reviews, high point 6,579 ft, through route. Crazy Horse Memorial is visible from the northern section. Note the grade is Moderate, not easy as the tag suggests — the free listing gives no reason for that, so it is worth reading the full guide or asking the district before committing.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/trails/4574-lightning-creek-road"
+        },
+        {
+          "name": "Moses Hill (between Sturgis and Nemo)",
+          "url": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/4423-moses-hill",
+          "distance": "0.81 mi",
+          "difficulty": "not published on the free listing — Trails Offroad describes it as manageable for beginners in the right vehicle but intimidating to look at",
+          "note": "Under a mile long, which makes it an add-on rather than a day. It runs off Vanocker Canyon in Lawrence County, is single-vehicle width the whole way over loose rock, and gets slick and genuinely risky in the wet. Short-wheelbase high-clearance with low range is the recommendation; long-wheelbase vehicles need extra clearance for the rock ledges and low-clearance vehicles will hang up. Rated 5/5 from 6 reviews. No camping on the trail itself; dispersed camping on the roads nearby.",
+          "tier": "community",
+          "source": "https://www.trailsoffroad.com/US/south-dakota/scout-routes/4423-moses-hill"
+        }
+      ]
+    },
+    "badlands-sd": {
+      "offroad": [
+        {
+          "name": "Sage Creek Rim Road",
+          "url": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm",
+          "difficulty": "NPS: \"a dirt/gravel road\" that \"can be rough during or after storms\"",
+          "season": "NPS: \"may be temporarily closed during or after heavy rain or snow\" and \"may be closed in the winter due to weather conditions\"",
+          "note": "NPS allows 1–2 hours to drive it and publishes no mileage. It connects SD 44 near Scenic with the Badlands Loop Road (SD 240) north of Pinnacles Overlook, so it can be run as a leg rather than an out-and-back. Along it: Hay Butte and Badlands Wilderness overlooks, Roberts Prairie Dog Town, Sage Creek Basin and Sage Creek Campground. Road status by phone: 605-433-5361.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm"
+        },
+        {
+          "name": "Sage Creek Rim Road (SD-590)",
+          "url": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm",
+          "difficulty": "NPS: \"a dirt/gravel road\" that \"can be rough during or after storms\"",
+          "season": "NPS: \"may be temporarily closed during or after heavy rain or snow\" and \"may be closed in the winter due to weather conditions\"",
+          "note": "Same road as the entry above — one route, listed twice in this box. NPS confirms the SD 590 designation and gives no mileage. Phone 605-433-5361 for status.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thingstodo/sage-creek-rim-road.htm"
+        }
+      ]
+    },
+    "medora-nd": {
+      "offroad": [
+        {
+          "name": "Bell Lake Road / FH2 to the Elkhorn Ranch Unit",
+          "url": "https://www.nps.gov/thro/planyourvisit/elkhorn-ranch-unit.htm",
+          "distance": "from the South Unit: 8.8 mi gravel on CR 11, 6.5 mi Westerheim Road, 11.7 mi Bell Lake Road, then 3 mi on FH 2 to the parking area. From the North Unit it is Black Tail Road/FH 2 for 12.2 mi gravel, then Bell Lake Road for 3 mi and FH 2 for 3 mi.",
+          "difficulty": "NPS: the last 3 miles \"sometimes needing 4-wheel drive or high-clearance vehicles\", particularly in winter or during and after rain showers",
+          "note": "Two things NPS flags that matter more than the road itself: there is no cell signal anywhere on the route, and there are no visitor centres or facilities at the unit. Check conditions at a visitor centre before setting out — that is the park's own instruction, not a suggestion. From the parking area a 0.7 mi mowed path leads to the cabin site.",
+          "tier": "official",
+          "source": "https://www.nps.gov/thro/planyourvisit/elkhorn-ranch-unit.htm"
+        },
+        {
+          "name": "Little Missouri National Grassland section roads",
+          "url": "https://www.fs.usda.gov/r01/dpg/recreation/little-missouri-national-grassland",
+          "distance": "1,033,271 acres — the largest national grassland in the country",
+          "note": "The official acreage is 1,033,271, slightly above the 1.025 million in the tag. Two districts split it: McKenzie Ranger District in the north, Medora Ranger District in the south — Medora is the one to phone from this stop. The Forest Service publishes no surface guidance, no 2WD/4WD rating and no gumbo warning on this page, so which section roads are open and to what is a Motor Vehicle Use Map question, not something to infer from the map lattice. The 144-mile Maah Daah Hey Trail crosses the same ground, and the page lists 11 campgrounds and 11 OHV road-riding sites.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r01/dpg/recreation/little-missouri-national-grassland"
+        }
+      ]
+    }
+  }
+}

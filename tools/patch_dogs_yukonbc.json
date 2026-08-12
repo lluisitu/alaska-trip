@@ -1,0 +1,102 @@
+{
+  "stops": {
+    "whitehorse-1": {
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53 — Canine Bluffs is the only designated off-leash area), and that covers Miles Canyon and the Chadburn Lake trails because they sit inside the City's Chadburn Lake Park; Wolf Creek is a Yukon Parks campground, where the territorial rule is also on-leash.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout": null,
+        "Whitehorse Millennium Trail": true,
+        "Wolf Creek Trail": true,
+        "Miles Canyon South Loop": true,
+        "Chadburn and Canyon City Ski": true,
+        "Miles Canyon Loop": true,
+        "Chadburn Lake Trails: South Blue Route": true
+      }
+    },
+    "whitehorse-2": {
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53), which covers the Miles Canyon and Yukon River riverfront trails; Fish Lake is outside city limits on Kwanlin Dun settlement and Yukon Crown land, and no authority publishes a dog rule for that trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout Trail": null,
+        "Miles Canyon Loop": true,
+        "Yukon River Trail": true
+      }
+    },
+    "whitehorse-3": {
+      "dogs": "On leash everywhere inside Whitehorse city boundaries (Animal Control Bylaw s.53), which covers the Miles Canyon and Yukon River riverfront trails; Fish Lake is outside city limits on Kwanlin Dun settlement and Yukon Crown land, and no authority publishes a dog rule for that trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.whitehorse.ca/wp-content/uploads/2022/04/AnimalControlPamphletupdat.pdf",
+      "dogs_source_quote": "Under Section 53 of the Animal Control Bylaw, except in a designated off-leash area, no owner of a dog shall permit such dog to run at large, and where such animal is found running at large, it shall be deemed to be doing so with the consent of the owner.",
+      "trail_dogs": {
+        "Fish Lake Lookout Trail": null,
+        "Miles Canyon Loop": true,
+        "Yukon River Trail": true
+      }
+    },
+    "dawson-city": {
+      "dogs": "On leash (max 1 m) anywhere in the City of Dawson outside the north-end dog park, so the 9th Ave Trail and the dike are fine; the City names Crocus Bluff Park as a dog-free area but does not say whether the Crocus Bluff trails are inside it, so treat those two as unresolved until the trailhead signs say otherwise; Tombstone's trails on the Dempster are Yukon Parks and allow dogs under physical control.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.cityofdawson.ca/p/responsible-pet-ownership",
+      "dogs_source_quote": "The soccer field, Minto Park, and Crocus Bluff Park are dog free areas.",
+      "trail_dogs": {
+        "Crocus Bluff Loop": null,
+        "North Klondike River and Edge of the Artic Trail": true,
+        "9th Ave Trail": true,
+        "Dawson City Dike": true,
+        "Crocus Bluff Nature Trail": null
+      }
+    },
+    "dawson-creek": {
+      "dogs": "On leash in every City of Dawson Creek park (Animal Responsibility Bylaw 4420 — Barbaree Park is the only off-leash area), which covers Chamberlain Nature Park and Leoppky Park; Radar Lake, the Rim Rocks wind-park paths and McQueen Slough are all outside the city and none of their managers publishes a dog rule.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://dawsoncreek.civicweb.net/document/112100/",
+      "dogs_source_quote": "No owner will permit the owner's animal to be at large in the City.",
+      "trail_dogs": {
+        "Chamberlain Heritage Park Short Loop": true,
+        "Radar Lake": null,
+        "Mcqueen Slough Trail": null,
+        "Leoppky Park": true,
+        "Rim Rocks Wind Park Trail": null
+      }
+    },
+    "fort-nelson": {
+      "dogs": "Northern Rockies Regional Municipality requires dogs leashed in public, which covers the Community Trail, the Demonstration Forest and Tetsa River Regional Park; BC Parks' Stone Mountain Park: \"Pets must be leashed and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement. Backcountry areas are not suitable for dogs or any pets due to the potential for problems with bears and other wildlife.\" Parker Lake Ecological Reserve publishes no pet rule at all.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.northernrockies.ca/resident-services/dog-licences-animal-control",
+      "dogs_source_quote": "Dogs must be leashed when in public",
+      "trail_dogs": {
+        "Fort Nelson Demonstration Forest Full Loop": true,
+        "Tetsa River Trail": true,
+        "Fort Nelson Community Trail": true,
+        "Parker Lake (Ecological Reserve)": null
+      }
+    },
+    "smithers": {
+      "dogs": "Town of Smithers Animal Control and Licencing Bylaw No. 1780 requires leashing in public, which covers the Perimeter Trail and Riverside Park; BC Parks allows leashed pets at Call Lake and in Babine Mountains Park, where dogs are also discouraged from the alpine because of mountain goats; nobody publishes a rule for Crater Lake or Seymour Ridge.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.smithers.ca/bylaw-enforcement-animal-control/dog-licensing-control",
+      "dogs_source_quote": "Leashing when in public and maintaining control of the dog at all times;",
+      "trail_dogs": {
+        "Crater Lake Trail": null,
+        "Seymour Ridge Trail": null,
+        "Perimeter Trail": true,
+        "Riverside Park Short Loop": true,
+        "Call Lake Trail": true
+      }
+    },
+    "stewart-hyder": {
+      "dogs": "District of Stewart requires dogs on leash in public, so the Rainey Creek trail and municipal park are fine; BC Parks' Meziadin Lake Park: \"Pets/domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings. You are responsible for their behaviour and must dispose of their excrement.\" The Ore Mountain trail starts at a Forest Service recreation site and no manager publishes a dog rule for it.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://districtofstewart.com/citizen-services/pets-animals/leash-your-dog",
+      "dogs_source_quote": "It is the law! Plain and simple.",
+      "trail_dogs": {
+        "Ore Mountain via American Creek Trail": null,
+        "Rainey Creek Nature Walk": true
+      }
+    }
+  }
+}

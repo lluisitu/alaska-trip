@@ -1,0 +1,223 @@
+{
+  "stops": {
+    "salida-co": {
+      "dogs": "Dogs are fine on the Browns Canyon NM trails (BLM) and on San Isabel NF trails under control; no leash policy is published for the monument and the City of Salida publishes nothing readable for Tenderfoot.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.blm.gov/programs/recreation/hiking",
+      "dogs_source_quote": "Dogs are welcome on most BLM-managed trails. Please check the trail website or call the local BLM field office for specific leash policies.",
+      "trail_dogs": {
+        "Waterdog Lakes Trail": true,
+        "Turret Trail (#6045), Browns Canyon NM": true,
+        "Tenderfoot Mountain (S Mountain)": null,
+        "River Bench Trail (#6045A), Browns Canyon NM": true
+      }
+    },
+    "buena-vista-co": {
+      "dogs": "All three are San Isabel NF (Salida Ranger District); the forest permits dogs on its trails and in Collegiate Peaks Wilderness provided they are under control at all times.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.fs.usda.gov/r02/psicc/wilderness",
+      "dogs_source_quote": "Pets must be under control at all times. Pets can harass, stress, injure or kill wildlife; introduce disease and disturb fellow hikers. Some wilderness areas require dogs to be leashed at all times.",
+      "trail_dogs": {
+        "Agnes Vaille Falls Trail": true,
+        "Collegiate Peaks Campground Loop": true,
+        "Mount Yale via Browns Pass and Mount Yale Trail": true
+      }
+    },
+    "leadville-co": {
+      "dogs": "All four are San Isabel NF (Leadville Ranger District); dogs are permitted on forest trails and in Mount Massive Wilderness under control, with a 6-ft leash in developed sites such as the Turquoise Lake campgrounds.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.fs.usda.gov/r02/psicc/wilderness",
+      "dogs_source_quote": "Pets must be under control at all times. Pets can harass, stress, injure or kill wildlife; introduce disease and disturb fellow hikers. Some wilderness areas require dogs to be leashed at all times.",
+      "trail_dogs": {
+        "Hagerman Tunnel Trail (via Colorado Midland Centennial Trail)": true,
+        "Turquoise Lake Trail": true,
+        "North Mount Elbert Trail": true,
+        "Mount Massive Trail (Southwest Slopes standard route)": true
+      }
+    },
+    "wind-river-ext": {
+      "dogs": "Dogs are welcome on all three: Sinks Canyon State Park requires a leash of 10 ft or less, and the only dog order Bridger-Teton publishes is a winter leash rule on the Jackson district, which does not touch Pinedale or these late-May dates.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.fs.usda.gov/r04/bridger-teton/alerts/dog-leash-order-jackson-ranger-district",
+      "dogs_source_quote": "The Forest Order requires all dogs to be leashed with a tether no longer than six feet, from Dec. 1 to May 1, on designated trails and parking areas on the Jackson Ranger District of the Bridger‑Teton National Forest.",
+      "trail_dogs": {
+        "Sinks Canyon (Popo Agie Falls)": true,
+        "Elkhart Park — Photographer's Point": true,
+        "Green River Lakes / Highline Trail": true
+      }
+    },
+    "scottsbluff-ne": {
+      "dogs": "Unusually for an NPS unit, Scotts Bluff allows leashed dogs on every hiking trail in the monument — only the visitor center is off limits.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/scbl/planyourvisit/pets.htm",
+      "dogs_source_quote": "Leashed pets are permitted on all hiking trails in the monument.",
+      "trail_dogs": {
+        "Prairie View Trail": true,
+        "North Overlook Trail": true,
+        "Oregon Trail Pathway": true,
+        "Saddle Rock Trail": true
+      }
+    },
+    "custer-sd": {
+      "dogs": "Custer State Park allows dogs on its trails on a leash of 10 ft or less, and the Black Elk Wilderness beyond the park boundary allows them leashed or under strict voice control — buildings and swim beaches only are closed.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://gfp.sd.gov/parks/detail/custer-state-park/",
+      "dogs_source_quote": "Pets must be on a leash no longer than 10 feet and are not allowed in any park buildings or on designated swim beaches.",
+      "trail_dogs": {
+        "Lover's Leap Trail": true,
+        "Sylvan Lake Shore Trail": true,
+        "Black Elk Peak via Cathedral Spires Trail": true,
+        "Cathedral Spires Trail": true,
+        "Sunday Gulch Trail": true
+      }
+    },
+    "badlands-sd": {
+      "dogs": "No dog walks any trail here — Badlands NP bars pets from every hiking trail, the nature trails and all backcountry; they are confined to roads, parking areas, campgrounds and picnic areas.",
+      "dogs_verdict": "prohibited",
+      "dogs_source": "https://www.nps.gov/badl/planyourvisit/basicinfo.htm",
+      "dogs_source_quote": "Pets are prohibited from hiking trails, public buildings (i.e. visitor centers), and backcountry areas, including the Badlands Wilderness Area, and areas with prairie dog colonies.",
+      "trail_dogs": {
+        "Notch Trail": false,
+        "The Door Trail": false,
+        "Cliff Shelf Nature Trail": false,
+        "Castle Trail": false,
+        "Window Trail": false
+      }
+    },
+    "medora-nd": {
+      "dogs": "All five are inside Theodore Roosevelt NP, which bars dogs from every trail in both units; leashed dogs are limited to roads, road shoulders, parking areas, campgrounds and picnic areas.",
+      "dogs_verdict": "prohibited",
+      "dogs_source": "https://www.nps.gov/thro/planyourvisit/pets.htm",
+      "dogs_source_quote": "While dogs are not permitted on trails within the park, there are nearby trails where you can take your dogs for some exercise.",
+      "trail_dogs": {
+        "Caprock Coulee Trail": false,
+        "Wind Canyon Trail": false,
+        "Petrified Forest Loop Trail": false,
+        "Buck Hill Trail": false,
+        "Buckhorn Trail": false
+      }
+    },
+    "itasca-mn": {
+      "dogs": "Minnesota state parks welcome leashed dogs, and Itasca posts no trail exception — only buildings, lodging and beach areas are closed to them.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.dnr.state.mn.us/state_parks/rules.html",
+      "dogs_source_quote": "Pets are welcome in Minnesota's state parks, as long as they are kept on a leash six feet or shorter or effectively restrained by a portable enclosure.",
+      "trail_dogs": {
+        "Aiton Heights Fire Tower Trail": true,
+        "Mississippi Headwaters Trail": true,
+        "Dr. Roberts Trail": true,
+        "Bohall Trail": true
+      }
+    },
+    "duluth-mn": {
+      "dogs": "Every one of these is open to a leashed dog — city ordinance allows dogs on a 6-ft leash in Duluth parks, Hawk Ridge asks for 4 ft or shorter, and the two state parks follow the statewide DNR rule.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://duluthmn.gov/media/ky1fw122/selected-city-ordinances-2026.pdf",
+      "dogs_source_quote": "No dogs, cats or other domestic pets shall be allowed to run at large upon any park. Dogs, cats and other domestic pets shall be considered to be at large if they are not under control of the owner or other responsible person by means of a leash of suitable strength not exceeding six feet in length",
+      "trail_dogs": {
+        "Duluth Lakewalk": true,
+        "Enger Park / Enger Tower Trail": true,
+        "Gooseberry Falls State Park trails": true,
+        "Hawk Ridge Nature Reserve Trails": true,
+        "Jay Cooke State Park — Swinging Bridge & river gorge trails": true
+      }
+    },
+    "grand-marais-mn": {
+      "dogs": "The two state parks and the Superior Hiking Trail all take leashed dogs; the City of Grand Marais publishes no rule for Artist's Point, so that one is unanswered.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.dnr.state.mn.us/state_parks/rules.html",
+      "dogs_source_quote": "Pets are welcome in Minnesota's state parks, as long as they are kept on a leash six feet or shorter or effectively restrained by a portable enclosure.",
+      "trail_dogs": {
+        "Shovel Point & Palisade Head, Tettegouche State Park": true,
+        "Devil's Kettle, Judge C.R. Magney State Park": true,
+        "Artist's Point": null,
+        "High Falls of the Baptism River, Tettegouche State Park": true,
+        "Superior Hiking Trail — Pincushion Mountain segment": true
+      }
+    },
+    "bayfield-wi": {
+      "dogs": "Apostle Islands takes leashed dogs on trails and beaches, and Wisconsin state parks permit them on trails but not on beaches; Houghton Falls is owned by the Town of Bayview, which publishes no rule at all.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/apis/planyourvisit/pets.htm",
+      "dogs_source_quote": "Leashed pets are welcome on trails, beaches, and in campgrounds in the Apostle Islands National Lakeshore.",
+      "trail_dogs": {
+        "Mainland Sea Caves near Meyers Beach": true,
+        "Houghton Falls State Natural Area": null,
+        "Big Bay State Park trails, Madeline Island": true
+      }
+    },
+    "porcupine-mountains-mi": {
+      "dogs": "Michigan DNR welcomes leashed dogs on state park trails, and the Porkies post no trail exception — the park's own backcountry cabins are pet-friendly and most are reached only on foot.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.michigan.gov/dnr/places/state-parks/rules",
+      "dogs_source_quote": "Pets, such as dogs, are welcome in state parks and campgrounds, some overnight lodging facilities, state forest campgrounds, state-managed harbors, state-designated trails and boating access sites (with the exception of 33 locations with seasonal dog restrictions).",
+      "trail_dogs": {
+        "Escarpment Trail": true,
+        "Union Mine Interpretive Trail": true,
+        "Summit Peak observation tower": true,
+        "Lake of the Clouds overlook walkway": true,
+        "Presque Isle River waterfall loop (East + West River Trails)": true,
+        "Visitor Center Nature Trail": true
+      }
+    },
+    "marquette-mi": {
+      "dogs": "Presque Isle Park is closed to animals outright — the dog cannot leave the truck there; Sugarloaf is Michigan DNR land and takes a leashed dog, and no authority could be identified for Hogback.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.marquettemi.gov/departments/community-services/parks-recreation/presque-isle-park/",
+      "dogs_source_quote": "Animals are prohibited at the City’s Presque Isle Park, unless confined to a motor vehicle, at all public bathing beaches, at Park Cemetery, and at any special events where signs are posted specifically prohibiting animals with the exception of service animals under the Americans with Disabilities Act (ADA).",
+      "trail_dogs": {
+        "Sugarloaf Mountain Trail": true,
+        "Presque Isle Park loop trails (Black Rocks)": false,
+        "Hogback Mountain Trail": null
+      }
+    },
+    "munising-mi": {
+      "dogs": "Pictured Rocks names its pet trails one by one: Miners Castle is open, Chapel, Mosquito and Log Slide are explicitly closed, and Munising Falls appears on neither list.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/piro/planyourvisit/pets.htm",
+      "dogs_source_quote": "Your leashed pet is welcome in these areas: … Miners Castle - Paved Trails, Overlook Platforms … These areas are CLOSED to pets: … Chapel Trails and Chapel Beach … Mosquito Trails and Mosquito Beach … Log Slide and Nearby Dunes",
+      "trail_dogs": {
+        "Chapel Loop (with Mosquito Falls)": false,
+        "Log Slide Overlook Trail": false,
+        "Miners Castle Overlook": true,
+        "Mosquito Falls Trail": false,
+        "Munising Falls Trail": null
+      }
+    },
+    "tahquamenon-falls-mi": {
+      "dogs": "Tahquamenon Falls says it outright — leashed dogs on all trails and viewing platforms; Whitefish Point is a USFWS refuge unit that also allows them on lead, except inside the piping plover nesting closure at the tip.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.michigan.gov/tahquamenonfalls",
+      "dogs_source_quote": "Leashed pets are allowed on all trails, including viewing platforms.",
+      "trail_dogs": {
+        "Giant Pines Loop": true,
+        "Clark Lake Loop": true,
+        "Lower Falls island loop": true,
+        "Tahquamenon Falls Wilderness Loop": true,
+        "Tahquamenon River Trail (Lower Falls to Upper Falls)": true,
+        "Tip of the Point boardwalk, Whitefish Point": true
+      }
+    }
+  },
+  "_researched_no_rule": {
+    "bismarck-nd": {
+      "trails": [
+        "Mato-tope Trail",
+        "Bloody Knife Trail",
+        "Little Soldier Loop",
+        "Scouts Trail System",
+        "Young Hawk Interpretive Trail"
+      ],
+      "authority": "North Dakota Parks and Recreation Department (Fort Abraham Lincoln State Park)",
+      "checked": [
+        "https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park — the only pet sentence on the whole page sits inside the Camping Information block: 'Pets are welcome but must stay on a leash. Most parks have off-leash areas or dog parks for your four-legged friends.' It says nothing about trails, and the cabin block adds 'Pets are not allowed in cabins.'",
+        "https://www.parkrec.nd.gov/stay/camping — identical camping boilerplate, same single leash sentence, no trail rule",
+        "https://www.parkrec.nd.gov/hiking — the department's statewide hiking page; no mention of pets, dogs or leashes anywhere on it",
+        "https://www.parkrec.nd.gov/faq — FAQ covers reservations, permits and check-in times only; no pet question",
+        "https://www.parkrec.nd.gov/entry — entry permit page, no pet rule",
+        "https://www.parkrec.nd.gov/sitemap.xml — enumerated every page on the site; there is no pets page, no park-rules page, and no fort-abraham-lincoln-state-park-trails page (other parks in the sitemap do have -trails pages, this one does not)"
+      ],
+      "action": "Call Fort Abraham Lincoln State Park on 701-667-6340 and ask whether leashed dogs may use the park's hiking trails, and specifically the Scouts trail system and the Young Hawk interpretive loop. ND Parks publishes a leash rule for campgrounds only, so the trail answer has to be spoken rather than read. Do not assume from the camping rule."
+    }
+  }
+}

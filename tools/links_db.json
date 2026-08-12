@@ -16535,6 +16535,59 @@
           ],
           "auto": true,
           "auto_km": 16
+        },
+        "Appalachian Trail access": {
+          "entity": "The Appalachian Trail itself, which runs straight through Harpers Ferry; the AT article's West Virginia section covers this stretch.",
+          "links": [
+            {
+              "label": "Wikipedia — Appalachian Trail",
+              "url": "https://en.wikipedia.org/wiki/Appalachian_Trail"
+            }
+          ]
+        },
+        "Lower Town, the Stone Steps and Jefferson Rock": {
+          "entity": "Harpers Ferry's Lower Town Historic District and the Jefferson Rock outcrop above it. The park article documents the Lower Town district and lists Jefferson Rock; Jefferson Rock has its own article. The Stone Steps (the cut-rock stair up to the rock) have no article and are not named in either.",
+          "links": [
+            {
+              "label": "Wikipedia — Harpers Ferry National Historical Park",
+              "url": "https://en.wikipedia.org/wiki/Harpers_Ferry_National_Historical_Park"
+            },
+            {
+              "label": "Wikipedia — Jefferson Rock",
+              "url": "https://en.wikipedia.org/wiki/Jefferson_Rock"
+            }
+          ]
+        },
+        "Maryland Heights": {
+          "entity": "The cliff across the Potomac in Maryland, not Maryland Heights, Missouri (which is what the bare title resolves to). The Elk Ridge article states the ridge's southern end, part of Harpers Ferry NHP, is known as Maryland Heights; the park article documents the Maryland Heights section.",
+          "links": [
+            {
+              "label": "Wikipedia — Elk Ridge (Maryland)",
+              "url": "https://en.wikipedia.org/wiki/Elk_Ridge_(Maryland)"
+            },
+            {
+              "label": "Wikipedia — Harpers Ferry National Historical Park",
+              "url": "https://en.wikipedia.org/wiki/Harpers_Ferry_National_Historical_Park"
+            }
+          ]
+        },
+        "Appalachian Trail Conservancy headquarters": {
+          "entity": "The ATC, whose headquarters the article places in Harpers Ferry, West Virginia.",
+          "links": [
+            {
+              "label": "Wikipedia — Appalachian Trail Conservancy",
+              "url": "https://en.wikipedia.org/wiki/Appalachian_Trail_Conservancy"
+            }
+          ]
+        },
+        "C&O Canal towpath": {
+          "entity": "The Chesapeake and Ohio Canal towpath opposite Harpers Ferry; the park article covers the towpath trail and its Harpers Ferry section.",
+          "links": [
+            {
+              "label": "Wikipedia — Chesapeake and Ohio Canal National Historical Park",
+              "url": "https://en.wikipedia.org/wiki/Chesapeake_and_Ohio_Canal_National_Historical_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -16596,6 +16649,81 @@
           ],
           "auto": true,
           "auto_km": 3
+        },
+        "Skyline Drive": {
+          "entity": "The 105-mile parkway through Shenandoah National Park in Virginia — verified as the Virginia road, not another Skyline Drive.",
+          "links": [
+            {
+              "label": "Wikipedia — Skyline Drive",
+              "url": "https://en.wikipedia.org/wiki/Skyline_Drive"
+            }
+          ]
+        },
+        "Staunton's historic downtown": {
+          "entity": "Downtown Staunton, listed as the Beverley Historic District (131 contributing buildings in downtown Staunton).",
+          "links": [
+            {
+              "label": "Wikipedia — Beverley Historic District",
+              "url": "https://en.wikipedia.org/wiki/Beverley_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Staunton, Virginia",
+              "url": "https://en.wikipedia.org/wiki/Staunton,_Virginia"
+            }
+          ]
+        },
+        "Walk the Blue Ridge Tunnel": {
+          "entity": "Claudius Crozet's Blue Ridge (Crozet) Tunnel at Rockfish Gap, reopened in 2020 as a walking trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Blue Ridge Tunnel",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Tunnel"
+            }
+          ]
+        },
+        "Humpback Rocks": {
+          "entity": "The greenstone outcrop on Humpback Mountain at Blue Ridge Parkway milepost 5.8 in Augusta/Nelson County, Virginia. NOTE: the title 'Humpback Rocks' resolves to rocks off South Georgia in the South Atlantic; the Virginia formation is at 'Humpback Rock'.",
+          "links": [
+            {
+              "label": "Wikipedia — Humpback Rock",
+              "url": "https://en.wikipedia.org/wiki/Humpback_Rock"
+            }
+          ]
+        },
+        "Downtown Staunton and the Blackfriars Playhouse": {
+          "entity": "Downtown Staunton (Beverley Historic District) and the Blackfriars Playhouse, which redirects to its operator, the American Shakespeare Center.",
+          "links": [
+            {
+              "label": "Wikipedia — Beverley Historic District",
+              "url": "https://en.wikipedia.org/wiki/Beverley_Historic_District"
+            },
+            {
+              "label": "Wikipedia — American Shakespeare Center",
+              "url": "https://en.wikipedia.org/wiki/American_Shakespeare_Center"
+            }
+          ]
+        },
+        "Woodrow Wilson Presidential Library and Birthplace": {
+          "entity": "The Woodrow Wilson Presidential Library and Museum in Staunton, which contains the birthplace Manse.",
+          "links": [
+            {
+              "label": "Wikipedia — Woodrow Wilson Presidential Library",
+              "url": "https://en.wikipedia.org/wiki/Woodrow_Wilson_Presidential_Library"
+            }
+          ]
+        },
+        "Sherando Lake and Grand Caverns as weather alternatives": {
+          "entity": "Grand Caverns at Grottoes, Virginia, and Sherando Lake. Sherando Lake has no article; the Blue Ridge Parkway article documents it by name at milepost 16 as a recreation area in George Washington National Forest 4.5 miles from the parkway.",
+          "links": [
+            {
+              "label": "Wikipedia — Grand Caverns",
+              "url": "https://en.wikipedia.org/wiki/Grand_Caverns"
+            },
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            }
+          ]
         }
       },
       "authority": "National Park Service — Shenandoah",
@@ -16689,6 +16817,77 @@
           ],
           "auto": true,
           "auto_km": 35
+        },
+        "Natural Bridge State Park": {
+          "entity": "Natural Bridge, Virginia — the article covers the arch and states it has been managed as Natural Bridge State Park since 2016.",
+          "links": [
+            {
+              "label": "Wikipedia — Natural Bridge (Virginia)",
+              "url": "https://en.wikipedia.org/wiki/Natural_Bridge_(Virginia)"
+            }
+          ]
+        },
+        "Historic downtown Lexington": {
+          "entity": "The Lexington Historic District, the NRHP district covering the town's historic core.",
+          "links": [
+            {
+              "label": "Wikipedia — Lexington Historic District (Lexington, Virginia)",
+              "url": "https://en.wikipedia.org/wiki/Lexington_Historic_District_(Lexington,_Virginia)"
+            }
+          ]
+        },
+        "Natural Bridge": {
+          "entity": "The 215-ft natural limestone arch in Rockbridge County, Virginia.",
+          "links": [
+            {
+              "label": "Wikipedia — Natural Bridge (Virginia)",
+              "url": "https://en.wikipedia.org/wiki/Natural_Bridge_(Virginia)"
+            }
+          ]
+        },
+        "Devils Marbleyard": {
+          "entity": "The boulder field on Bluff Mountain. It has no article of its own; the James River Face Wilderness article names 'the Devils Marbleyard' as a rock outcrop within the wilderness.",
+          "links": [
+            {
+              "label": "Wikipedia — James River Face Wilderness",
+              "url": "https://en.wikipedia.org/wiki/James_River_Face_Wilderness"
+            }
+          ]
+        },
+        "Lexington's historic core on foot": {
+          "entity": "Same Lexington Historic District, walked rather than driven.",
+          "links": [
+            {
+              "label": "Wikipedia — Lexington Historic District (Lexington, Virginia)",
+              "url": "https://en.wikipedia.org/wiki/Lexington_Historic_District_(Lexington,_Virginia)"
+            }
+          ]
+        },
+        "Blue Ridge Parkway from the James River": {
+          "entity": "The Parkway's northern Virginia section and the James River it crosses at milepost 63.8, both documented in the Parkway article.",
+          "links": [
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            },
+            {
+              "label": "Wikipedia — James River",
+              "url": "https://en.wikipedia.org/wiki/James_River"
+            }
+          ]
+        },
+        "Buena Vista and the Maury River valley": {
+          "entity": "The city of Buena Vista, Virginia and the Maury River, which the river article traces past Lexington and Buena Vista in Rockbridge County.",
+          "links": [
+            {
+              "label": "Wikipedia — Buena Vista, Virginia",
+              "url": "https://en.wikipedia.org/wiki/Buena_Vista,_Virginia"
+            },
+            {
+              "label": "Wikipedia — Maury River",
+              "url": "https://en.wikipedia.org/wiki/Maury_River"
+            }
+          ]
         }
       },
       "authority": "National Park Service — Shenandoah / Blue Ridge Parkway",
@@ -16820,6 +17019,98 @@
           ],
           "auto": true,
           "auto_km": 15
+        },
+        "Canyon Rim Visitor Center overlook": {
+          "entity": "The Canyon Rim Visitor Center, named in the park article as one of two year-round visitor centres and a viewpoint for the bridge. No standalone article.",
+          "links": [
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Fayette Station Road (truck only)": {
+          "entity": "Fayette Station Road (CR 82) down into the gorge. No article of its own; the Tunney Hunsaker (Fayette Station) Bridge article states it carries Fayette Station Road over the New River, and the park article names Fayette Station as a park feature.",
+          "links": [
+            {
+              "label": "Wikipedia — Tunney Hunsaker Bridge",
+              "url": "https://en.wikipedia.org/wiki/Tunney_Hunsaker_Bridge"
+            },
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Fayetteville's small downtown": {
+          "entity": "The town of Fayetteville, West Virginia, adjacent to the park.",
+          "links": [
+            {
+              "label": "Wikipedia — Fayetteville, West Virginia",
+              "url": "https://en.wikipedia.org/wiki/Fayetteville,_West_Virginia"
+            }
+          ]
+        },
+        "Long Point Trail": {
+          "entity": "The Long Point trail, named in the park article as a viewpoint for the New River Gorge Bridge. No standalone article.",
+          "links": [
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Endless Wall Trail": {
+          "entity": "The Endless Wall climbing cliff and its trail. No Wikipedia article exists, and the park article never names Endless Wall — only climbing in general. Left bare rather than pointed at a park page that does not document it.",
+          "links": []
+        },
+        "Drive Fayette Station Road in the truck": {
+          "entity": "Same Fayette Station Road, driven in the towed pickup.",
+          "links": [
+            {
+              "label": "Wikipedia — Tunney Hunsaker Bridge",
+              "url": "https://en.wikipedia.org/wiki/Tunney_Hunsaker_Bridge"
+            },
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Grandview Rim Trail": {
+          "entity": "The Grandview unit of the park, where the Rim Trail runs. The park article lists Grandview as a major feature with a seasonal visitor centre; the Rim Trail itself is not named anywhere. NOTE: 'Grandview, Raleigh County, West Virginia' is a separate unincorporated-community stub that says nothing about the gorge or its overlooks — rejected.",
+          "links": [
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Kaymoor Miner's Trail": {
+          "entity": "The Kaymoor Miners Trail down to the abandoned Kay Moor mine; the Kay Moor article names the trail and its stairs and switchbacks explicitly.",
+          "links": [
+            {
+              "label": "Wikipedia — Kay Moor, West Virginia",
+              "url": "https://en.wikipedia.org/wiki/Kay_Moor,_West_Virginia"
+            },
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
+        },
+        "Nuttallburg": {
+          "entity": "The abandoned coal town of Nuttallburg on the New River, with Henry Ford's conveyor.",
+          "links": [
+            {
+              "label": "Wikipedia — Nuttallburg, West Virginia",
+              "url": "https://en.wikipedia.org/wiki/Nuttallburg,_West_Virginia"
+            },
+            {
+              "label": "Wikipedia — New River Gorge National Park and Preserve",
+              "url": "https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve"
+            }
+          ]
         }
       },
       "offroad": [
@@ -16903,6 +17194,64 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "Floyd Country Store Jamboree": {
+          "entity": "The Floyd Country Store's Friday Night Jamboree. The store has no article; the Floyd, Virginia article documents the Jamboree by name in its Arts and culture section.",
+          "links": [
+            {
+              "label": "Wikipedia — Floyd, Virginia",
+              "url": "https://en.wikipedia.org/wiki/Floyd,_Virginia"
+            }
+          ]
+        },
+        "Blue Ridge Parkway access (truck touring)": {
+          "entity": "The Blue Ridge Parkway, which passes just south of Floyd.",
+          "links": [
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            }
+          ]
+        },
+        "Friday Night Jamboree at the Floyd Country Store": {
+          "entity": "Same Friday Night Jamboree, documented by name in the Floyd, Virginia article.",
+          "links": [
+            {
+              "label": "Wikipedia — Floyd, Virginia",
+              "url": "https://en.wikipedia.org/wiki/Floyd,_Virginia"
+            }
+          ]
+        },
+        "Rock Castle Gorge at Rocky Knob": {
+          "entity": "Rock Castle Gorge in the Rocky Knob Recreation Area at Parkway mileposts 167–174; the recreation-area article names the gorge and its National Recreation Trail.",
+          "links": [
+            {
+              "label": "Wikipedia — Rocky Knob Recreation Area",
+              "url": "https://en.wikipedia.org/wiki/Rocky_Knob_Recreation_Area"
+            },
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            }
+          ]
+        },
+        "Winery run along the Parkway": {
+          "entity": "The Blue Ridge Parkway itself, as the touring route. Linked for the road that is named; the Parkway article does not document wineries, so this is a link to the Parkway, not to the wineries.",
+          "links": [
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            }
+          ]
+        },
+        "Day trip to Roanoke": {
+          "entity": "The city of Roanoke, Virginia, the largest city on the Parkway.",
+          "links": [
+            {
+              "label": "Wikipedia — Roanoke, Virginia",
+              "url": "https://en.wikipedia.org/wiki/Roanoke,_Virginia"
+            }
+          ]
         }
       },
       "trails": [
@@ -17005,6 +17354,50 @@
           ],
           "auto": true,
           "auto_km": 13
+        },
+        "Blowing Rock village": {
+          "entity": "The town of Blowing Rock, North Carolina.",
+          "links": [
+            {
+              "label": "Wikipedia — Blowing Rock, North Carolina",
+              "url": "https://en.wikipedia.org/wiki/Blowing_Rock,_North_Carolina"
+            }
+          ]
+        },
+        "Moses Cone Manor carriage roads — but check the gate": {
+          "entity": "Flat Top Manor and its carriage trails in Moses H. Cone Memorial Park; the park article names the manor and its 25 miles of carriage trails.",
+          "links": [
+            {
+              "label": "Wikipedia — Moses H. Cone Memorial Park",
+              "url": "https://en.wikipedia.org/wiki/Moses_H._Cone_Memorial_Park"
+            }
+          ]
+        },
+        "Ski at Beech or Sugar Mountain": {
+          "entity": "Beech Mountain (skiing and Beech Mountain Resort documented in the mountain article) and the village of Sugar Mountain, whose article places it next to Sugar Mountain Ski Area. Neither resort has its own article.",
+          "links": [
+            {
+              "label": "Wikipedia — Beech Mountain (North Carolina)",
+              "url": "https://en.wikipedia.org/wiki/Beech_Mountain_(North_Carolina)"
+            },
+            {
+              "label": "Wikipedia — Sugar Mountain, North Carolina",
+              "url": "https://en.wikipedia.org/wiki/Sugar_Mountain,_North_Carolina"
+            }
+          ]
+        },
+        "Blowing Rock and Tweetsie at Christmas": {
+          "entity": "The town of Blowing Rock and the Tweetsie Railroad theme park, which the town article names as a local attraction.",
+          "links": [
+            {
+              "label": "Wikipedia — Blowing Rock, North Carolina",
+              "url": "https://en.wikipedia.org/wiki/Blowing_Rock,_North_Carolina"
+            },
+            {
+              "label": "Wikipedia — Tweetsie Railroad",
+              "url": "https://en.wikipedia.org/wiki/Tweetsie_Railroad"
+            }
+          ]
         }
       },
       "offroad": [
@@ -17143,6 +17536,76 @@
           ],
           "auto": true,
           "auto_km": 44
+        },
+        "Downtown Asheville": {
+          "entity": "Downtown Asheville, listed as the Downtown Asheville Historic District.",
+          "links": [
+            {
+              "label": "Wikipedia — Downtown Asheville Historic District",
+              "url": "https://en.wikipedia.org/wiki/Downtown_Asheville_Historic_District"
+            }
+          ]
+        },
+        "Biltmore at Christmas": {
+          "entity": "The Biltmore Estate in Asheville.",
+          "links": [
+            {
+              "label": "Wikipedia — Biltmore Estate",
+              "url": "https://en.wikipedia.org/wiki/Biltmore_Estate"
+            }
+          ]
+        },
+        "Walk out of camp into Bent Creek": {
+          "entity": "Bent Creek and its Lake Powhatan recreation area south of Asheville — the campground the stop uses. Lake Powhatan and Bent Creek Experimental Forest have no articles; the Bent Creek article documents both.",
+          "links": [
+            {
+              "label": "Wikipedia — Bent Creek (North Carolina)",
+              "url": "https://en.wikipedia.org/wiki/Bent_Creek_(North_Carolina)"
+            }
+          ]
+        },
+        "Craggy Gardens and Craggy Pinnacle": {
+          "entity": "Craggy Gardens and the Craggy Pinnacle overlook trail on the Parkway. Neither has a standalone article; the Great Craggy Mountains article documents both by name with the milepost.",
+          "links": [
+            {
+              "label": "Wikipedia — Great Craggy Mountains",
+              "url": "https://en.wikipedia.org/wiki/Great_Craggy_Mountains"
+            },
+            {
+              "label": "Wikipedia — Blue Ridge Parkway",
+              "url": "https://en.wikipedia.org/wiki/Blue_Ridge_Parkway"
+            }
+          ]
+        },
+        "Pisgah Ranger District waterfalls on US 276": {
+          "entity": "The waterfalls along US 276 in the Pisgah Ranger District — Looking Glass Falls being the best known. The ranger district has no article; the forest article has a Waterfalls section and the US 276 article covers the Brevard–Waynesville run through Pisgah.",
+          "links": [
+            {
+              "label": "Wikipedia — Pisgah National Forest",
+              "url": "https://en.wikipedia.org/wiki/Pisgah_National_Forest"
+            },
+            {
+              "label": "Wikipedia — U.S. Route 276",
+              "url": "https://en.wikipedia.org/wiki/U.S._Route_276"
+            },
+            {
+              "label": "Wikipedia — Looking Glass Falls",
+              "url": "https://en.wikipedia.org/wiki/Looking_Glass_Falls"
+            }
+          ]
+        },
+        "Downtown Asheville and the Grove Park gingerbread houses": {
+          "entity": "Downtown Asheville and the Omni Grove Park Inn, whose article documents the National Gingerbread House Competition held there each November–December.",
+          "links": [
+            {
+              "label": "Wikipedia — Downtown Asheville Historic District",
+              "url": "https://en.wikipedia.org/wiki/Downtown_Asheville_Historic_District"
+            },
+            {
+              "label": "Wikipedia — The Omni Grove Park Inn",
+              "url": "https://en.wikipedia.org/wiki/The_Omni_Grove_Park_Inn"
+            }
+          ]
         }
       },
       "offroad": [
@@ -17243,6 +17706,46 @@
           ],
           "auto": true,
           "auto_km": 32
+        },
+        "Deep Creek trails": {
+          "entity": "The Deep Creek area of Great Smoky Mountains National Park. Deep Creek has no article of its own; the park article names it as one of the park's major valleys and most accessible areas.",
+          "links": [
+            {
+              "label": "Wikipedia — Great Smoky Mountains National Park",
+              "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park"
+            }
+          ]
+        },
+        "Deep Creek waterfalls, two miles from town": {
+          "entity": "The Deep Creek falls (Tom Branch, Indian Creek, Juney Whank) just outside Bryson City. None have articles; the park article covers the Deep Creek valley and its streams and waterfalls, and names Bryson City as an adjacent town.",
+          "links": [
+            {
+              "label": "Wikipedia — Great Smoky Mountains National Park",
+              "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park"
+            },
+            {
+              "label": "Wikipedia — Bryson City, North Carolina",
+              "url": "https://en.wikipedia.org/wiki/Bryson_City,_North_Carolina"
+            }
+          ]
+        },
+        "Kuwohi road is gated — walk it instead": {
+          "entity": "Kuwohi, the peak formerly named Clingmans Dome, and its paved summit road off Newfound Gap Road (the article documents the road; the winter gate closure is not in it).",
+          "links": [
+            {
+              "label": "Wikipedia — Kuwohi",
+              "url": "https://en.wikipedia.org/wiki/Kuwohi"
+            }
+          ]
+        },
+        "The Road to Nowhere": {
+          "entity": "Lakeview Drive, the unfinished North Shore Road out of Bryson City. The article's first line gives 'Road to Nowhere' as its alternative name. NOTE: the bare title 'Road to Nowhere' resolves to the Talking Heads song — rejected.",
+          "links": [
+            {
+              "label": "Wikipedia — Lakeview Drive",
+              "url": "https://en.wikipedia.org/wiki/Lakeview_Drive"
+            }
+          ]
         }
       },
       "authority": "National Park Service — Great Smoky Mountains",
@@ -17380,6 +17883,76 @@
           ],
           "auto": true,
           "auto_km": 9
+        },
+        "West Rim Loop Trail, straight from camp": {
+          "entity": "The 4.8-mile West Rim Loop Trail at Cloudland Canyon State Park, named and described in the park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Cloudland Canyon State Park",
+              "url": "https://en.wikipedia.org/wiki/Cloudland_Canyon_State_Park"
+            }
+          ]
+        },
+        "Waterfalls Trail down into the canyon": {
+          "entity": "The Waterfalls Trail and its 600-step staircase into Cloudland Canyon, named in the park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Cloudland Canyon State Park",
+              "url": "https://en.wikipedia.org/wiki/Cloudland_Canyon_State_Park"
+            }
+          ]
+        },
+        "Point Park and the Battle Above the Clouds": {
+          "entity": "Point Park on Lookout Mountain, and the 1863 Battle of Lookout Mountain it commemorates. Point Park has no article; the military-park article lists 'Lookout Mountain Battlefield and Point Park' as one of its four areas, and the battle article opens with 'also known as the Battle Above the Clouds'.",
+          "links": [
+            {
+              "label": "Wikipedia — Chickamauga and Chattanooga National Military Park",
+              "url": "https://en.wikipedia.org/wiki/Chickamauga_and_Chattanooga_National_Military_Park"
+            },
+            {
+              "label": "Wikipedia — Battle of Lookout Mountain",
+              "url": "https://en.wikipedia.org/wiki/Battle_of_Lookout_Mountain"
+            }
+          ]
+        },
+        "Chickamauga Battlefield": {
+          "entity": "Chickamauga Battlefield, listed in the military-park article as one of its four main areas, and the September 1863 battle fought there.",
+          "links": [
+            {
+              "label": "Wikipedia — Chickamauga and Chattanooga National Military Park",
+              "url": "https://en.wikipedia.org/wiki/Chickamauga_and_Chattanooga_National_Military_Park"
+            },
+            {
+              "label": "Wikipedia — Battle of Chickamauga",
+              "url": "https://en.wikipedia.org/wiki/Battle_of_Chickamauga"
+            }
+          ]
+        },
+        "Chattanooga riverfront in the truck": {
+          "entity": "Chattanooga's Tennessee River waterfront — the Riverwalk, Riverpark and Coolidge Park, documented in the city article — and the Walnut Street Bridge pedestrian crossing.",
+          "links": [
+            {
+              "label": "Wikipedia — Chattanooga, Tennessee",
+              "url": "https://en.wikipedia.org/wiki/Chattanooga,_Tennessee"
+            },
+            {
+              "label": "Wikipedia — Walnut Street Bridge (Chattanooga)",
+              "url": "https://en.wikipedia.org/wiki/Walnut_Street_Bridge_(Chattanooga)"
+            }
+          ]
+        },
+        "Foster Falls and Fiery Gizzard": {
+          "entity": "Foster Falls and the Fiery Gizzard Trail, both units of South Cumberland State Park. Foster Falls has no article; the state-park article names it as the park's tallest waterfall and a distinct area, and the trail article runs from Tracy City to Foster Falls.",
+          "links": [
+            {
+              "label": "Wikipedia — South Cumberland State Park",
+              "url": "https://en.wikipedia.org/wiki/South_Cumberland_State_Park"
+            },
+            {
+              "label": "Wikipedia — Fiery Gizzard Trail",
+              "url": "https://en.wikipedia.org/wiki/Fiery_Gizzard_Trail"
+            }
+          ]
         }
       },
       "offroad": [
@@ -17636,6 +18209,23 @@
           ],
           "auto": true,
           "auto_km": 6
+        },
+        "Sunset Trail": {
+          "entity": "The park's 10-mile Sunset Trail. No Wikipedia article, and the Hot Springs National Park article never uses the word 'Sunset' — it says only that there are 'numerous hiking trails'. Left bare rather than linked to a park page that does not document it.",
+          "links": []
+        },
+        "Hot Springs Mountain Drive and the Tower": {
+          "entity": "Hot Springs Mountain Tower atop Hot Springs Mountain in the national park, reached by Hot Springs Mountain Drive. The road has no article. IMPORTANT: the title 'Hot Springs Mountain' is a peak in San Diego County, California — rejected; the tower article confirms the Arkansas mountain.",
+          "links": [
+            {
+              "label": "Wikipedia — Hot Springs Mountain Tower",
+              "url": "https://en.wikipedia.org/wiki/Hot_Springs_Mountain_Tower"
+            },
+            {
+              "label": "Wikipedia — Hot Springs National Park",
+              "url": "https://en.wikipedia.org/wiki/Hot_Springs_National_Park"
+            }
+          ]
         }
       },
       "offroad": [
@@ -17709,6 +18299,59 @@
           ],
           "auto": true,
           "auto_km": 1
+        },
+        "Cedar Falls Trail": {
+          "entity": "The CCC-built Cedar Falls Trail from Mather Lodge into the canyon, named and described in the park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Petit Jean State Park",
+              "url": "https://en.wikipedia.org/wiki/Petit_Jean_State_Park"
+            }
+          ]
+        },
+        "Seven Hollows Trail": {
+          "entity": "The Seven Hollows Trail at Petit Jean. No article, and the state-park article never uses the word 'Hollows'. Left bare.",
+          "links": []
+        },
+        "Rock House Cave Trail": {
+          "entity": "Rock House Cave, listed in the park article among Petit Jean's geological and archaeological features.",
+          "links": [
+            {
+              "label": "Wikipedia — Petit Jean State Park",
+              "url": "https://en.wikipedia.org/wiki/Petit_Jean_State_Park"
+            }
+          ]
+        },
+        "Bear Cave Trail": {
+          "entity": "Bear Cave, listed in the park article alongside Rock House Cave, the Grotto and Turtle Rocks.",
+          "links": [
+            {
+              "label": "Wikipedia — Petit Jean State Park",
+              "url": "https://en.wikipedia.org/wiki/Petit_Jean_State_Park"
+            }
+          ]
+        },
+        "Museum of Automobiles": {
+          "entity": "The Museum of Automobiles at Winrock, adjacent to Petit Jean State Park.",
+          "links": [
+            {
+              "label": "Wikipedia — Museum of Automobiles",
+              "url": "https://en.wikipedia.org/wiki/Museum_of_Automobiles"
+            },
+            {
+              "label": "Wikipedia — Petit Jean State Park",
+              "url": "https://en.wikipedia.org/wiki/Petit_Jean_State_Park"
+            }
+          ]
+        },
+        "Mount Nebo day trip in the truck": {
+          "entity": "Mount Nebo near Dardanelle and the state park atop it, both covered in the mountain article.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Nebo (Arkansas)",
+              "url": "https://en.wikipedia.org/wiki/Mount_Nebo_(Arkansas)"
+            }
+          ]
         }
       },
       "trails": [
@@ -17804,6 +18447,80 @@
           ],
           "auto": true,
           "auto_km": 42
+        },
+        "Signal Hill summit trail": {
+          "entity": "Signal Hill, the 2,753-ft summit of Mount Magazine and the highest point in Arkansas, named in the mountain article.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine"
+            },
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            }
+          ]
+        },
+        "Cameron Bluff overlooks": {
+          "entity": "The Cameron Bluff overlooks and campground, named in the state-park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            }
+          ]
+        },
+        "Signal Hill Trail": {
+          "entity": "Same Signal Hill summit, the state highpoint.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine"
+            },
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            }
+          ]
+        },
+        "North Rim Trail": {
+          "entity": "The North Rim Trail at Mount Magazine. No article, and neither the mountain nor the state-park article names it. Left bare.",
+          "links": []
+        },
+        "Mossback Ridge Trail": {
+          "entity": "Mossback Ridge, the mountain's 2,700-ft second summit, named in both the mountain and state-park articles.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine"
+            },
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            }
+          ]
+        },
+        "Cameron Bluff Overlook Drive": {
+          "entity": "The Cameron Bluff overlook road; the state-park article names Cameron Bluff and documents the CCC-built mountain road that became the Mount Magazine Scenic Byway.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            }
+          ]
+        },
+        "Cove Lake": {
+          "entity": "Cove Lake below the mountain, created by one of the two CCC dams named in the state-park article; the AR 309 article also places it on the Mount Magazine Scenic Byway. NOTE: 'Cove Lake State Park' is in Tennessee — not linked.",
+          "links": [
+            {
+              "label": "Wikipedia — Mount Magazine State Park",
+              "url": "https://en.wikipedia.org/wiki/Mount_Magazine_State_Park"
+            },
+            {
+              "label": "Wikipedia — Arkansas Highway 309",
+              "url": "https://en.wikipedia.org/wiki/Arkansas_Highway_309"
+            }
+          ]
         }
       },
       "trails": [
@@ -17899,6 +18616,68 @@
           ],
           "auto": true,
           "auto_km": 22
+        },
+        "Boxley Valley elk viewing": {
+          "entity": "Boxley Valley, listed on the NRHP as the Big Buffalo Valley Historic District, and the Buffalo National River elk herd — the park article states the park is home to the state's only elk herd.",
+          "links": [
+            {
+              "label": "Wikipedia — Big Buffalo Valley Historic District",
+              "url": "https://en.wikipedia.org/wiki/Big_Buffalo_Valley_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Buffalo National River",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ]
+        },
+        "Boxley Valley elk": {
+          "entity": "Same Boxley Valley cultural landscape and the same elk herd.",
+          "links": [
+            {
+              "label": "Wikipedia — Big Buffalo Valley Historic District",
+              "url": "https://en.wikipedia.org/wiki/Big_Buffalo_Valley_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Buffalo National River",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ]
+        },
+        "Lost Valley Trail": {
+          "entity": "Lost Valley, named in the Buffalo National River article as an access point on Arkansas Highway 43 between AR 21 and Ponca. The trail itself has no article.",
+          "links": [
+            {
+              "label": "Wikipedia — Buffalo National River",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ]
+        },
+        "Steel Creek and the Roark Bluff river bend": {
+          "entity": "Steel Creek access on the Ponca section, named in the Buffalo National River article. Roark Bluff, the bluff above it, is not named in any article and has none of its own.",
+          "links": [
+            {
+              "label": "Wikipedia — Buffalo National River",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ]
+        },
+        "AR-7 Scenic Byway run": {
+          "entity": "Arkansas Highway 7, designated an Arkansas Scenic Byway and National Forest Scenic Byway, running through Jasper.",
+          "links": [
+            {
+              "label": "Wikipedia — Arkansas Highway 7",
+              "url": "https://en.wikipedia.org/wiki/Arkansas_Highway_7"
+            }
+          ]
+        },
+        "Erbie and the old homesteads": {
+          "entity": "Erbie, described in the Buffalo National River article as the historic community where the river reaches the Springfield Plateau. It has no article of its own.",
+          "links": [
+            {
+              "label": "Wikipedia — Buffalo National River",
+              "url": "https://en.wikipedia.org/wiki/Buffalo_National_River"
+            }
+          ]
         }
       },
       "trails": [
@@ -18062,6 +18841,55 @@
           ],
           "auto": true,
           "auto_km": 223
+        },
+        "Ozark Folk Center State Park": {
+          "entity": "The Ozark Folk Center, the Arkansas living-history state park at Mountain View.",
+          "links": [
+            {
+              "label": "Wikipedia — Ozark Folk Center",
+              "url": "https://en.wikipedia.org/wiki/Ozark_Folk_Center"
+            }
+          ]
+        },
+        "Mountain View courthouse square": {
+          "entity": "Courthouse Square at Mountain View and the 1922 Stone County Courthouse on it; the city article describes the impromptu folk jam sessions around the square.",
+          "links": [
+            {
+              "label": "Wikipedia — Stone County Courthouse (Arkansas)",
+              "url": "https://en.wikipedia.org/wiki/Stone_County_Courthouse_(Arkansas)"
+            },
+            {
+              "label": "Wikipedia — Mountain View, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Mountain_View,_Arkansas"
+            }
+          ]
+        },
+        "Blanchard Springs Recreation Area": {
+          "entity": "Blanchard Springs, whose caverns article covers the site in Ozark–St. Francis National Forest north of Mountain View. The recreation area as such has no separate article.",
+          "links": [
+            {
+              "label": "Wikipedia — Blanchard Springs Caverns",
+              "url": "https://en.wikipedia.org/wiki/Blanchard_Springs_Caverns"
+            }
+          ]
+        },
+        "Sylamore Scenic Byway": {
+          "entity": "The Sylamore Scenic Byway through the Sylamore Ranger District of the Ozark National Forest in Stone County, Arkansas.",
+          "links": [
+            {
+              "label": "Wikipedia — Sylamore Scenic Byway",
+              "url": "https://en.wikipedia.org/wiki/Sylamore_Scenic_Byway"
+            }
+          ]
+        },
+        "White River winter trout": {
+          "entity": "The White River of Arkansas and Missouri; the article's Angling section documents the trout fishery from the Beaver Lake tailwaters down to Guion.",
+          "links": [
+            {
+              "label": "Wikipedia — White River (Arkansas–Missouri)",
+              "url": "https://en.wikipedia.org/wiki/White_River_(Arkansas%E2%80%93Missouri)"
+            }
+          ]
         }
       },
       "offroad": [
@@ -18150,6 +18978,68 @@
           ],
           "auto": true,
           "auto_km": 27
+        },
+        "Beaver Lake day trip": {
+          "entity": "Beaver Lake, the White River reservoir whose dam the article places 9 miles northwest of Eureka Springs.",
+          "links": [
+            {
+              "label": "Wikipedia — Beaver Lake (Arkansas)",
+              "url": "https://en.wikipedia.org/wiki/Beaver_Lake_(Arkansas)"
+            }
+          ]
+        },
+        "Walk the historic downtown": {
+          "entity": "The Eureka Springs Historic District, which as listed in 1970 covers the whole city.",
+          "links": [
+            {
+              "label": "Wikipedia — Eureka Springs Historic District",
+              "url": "https://en.wikipedia.org/wiki/Eureka_Springs_Historic_District"
+            },
+            {
+              "label": "Wikipedia — Eureka Springs, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Eureka_Springs,_Arkansas"
+            }
+          ]
+        },
+        "The spring circuit": {
+          "entity": "The town's cold-water springs (Basin Spring and the rest) that the resort was built on; documented at length in the city article.",
+          "links": [
+            {
+              "label": "Wikipedia — Eureka Springs, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Eureka_Springs,_Arkansas"
+            }
+          ]
+        },
+        "Lake Leatherwood City Park": {
+          "entity": "Lake Leatherwood Park, listed by name under Points of interest in the Eureka Springs article. No article of its own.",
+          "links": [
+            {
+              "label": "Wikipedia — Eureka Springs, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Eureka_Springs,_Arkansas"
+            }
+          ]
+        },
+        "Beaver Bridge": {
+          "entity": "The 1949 one-lane suspension bridge at Beaver, Arkansas carrying AR 187 over the White River — the 'Little Golden Gate', the only suspension bridge open to traffic in Arkansas, about 8 miles from Eureka Springs.",
+          "links": [
+            {
+              "label": "Wikipedia — Beaver Bridge (Arkansas)",
+              "url": "https://en.wikipedia.org/wiki/Beaver_Bridge_(Arkansas)"
+            }
+          ]
+        },
+        "Berryville and the Carroll County square": {
+          "entity": "Berryville, the larger of Carroll County's two county seats, and Carroll County itself.",
+          "links": [
+            {
+              "label": "Wikipedia — Berryville, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Berryville,_Arkansas"
+            },
+            {
+              "label": "Wikipedia — Carroll County, Arkansas",
+              "url": "https://en.wikipedia.org/wiki/Carroll_County,_Arkansas"
+            }
+          ]
         }
       },
       "trails": [
@@ -18293,6 +19183,19 @@
           ],
           "auto": true,
           "auto_km": 27
+        },
+        "Coler Mountain Bike Preserve and Slaughter Pen": {
+          "entity": "Bentonville's two city mountain-bike systems. Neither has a Wikipedia article, and the Bentonville article names neither — it refers only to 'long mountain bike trails' in general. NOTE: the bare title 'Slaughter Pen' resolves to the Gettysburg Battlefield article — rejected. Left bare.",
+          "links": []
+        },
+        "Downtown Rogers": {
+          "entity": "The Rogers Commercial Historic District, whose article opens 'known informally as Historic Downtown Rogers'.",
+          "links": [
+            {
+              "label": "Wikipedia — Rogers Commercial Historic District",
+              "url": "https://en.wikipedia.org/wiki/Rogers_Commercial_Historic_District"
+            }
+          ]
         }
       },
       "trails": [],
@@ -18365,6 +19268,41 @@
           ],
           "auto": true,
           "auto_km": 24
+        },
+        "Yellow Rock Trail": {
+          "entity": "The 3-mile Yellow Rock Trail to the Yellow Rock Bluff overlook, both named in the state-park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Devil's Den State Park",
+              "url": "https://en.wikipedia.org/wiki/Devil's_Den_State_Park"
+            }
+          ]
+        },
+        "Devil's Den's CCC landscape": {
+          "entity": "The Civilian Conservation Corps work that built the park from 1933 — cabins, the dam and lake, the overlooks — documented throughout the park article.",
+          "links": [
+            {
+              "label": "Wikipedia — Devil's Den State Park",
+              "url": "https://en.wikipedia.org/wiki/Devil's_Den_State_Park"
+            },
+            {
+              "label": "Wikipedia — Civilian Conservation Corps",
+              "url": "https://en.wikipedia.org/wiki/Civilian_Conservation_Corps"
+            }
+          ]
+        },
+        "Butterfield Hiking Trail": {
+          "entity": "The Butterfield Hiking Trail, named in the park article (it passes the remnants of the drowned town of Anna near Junction Camp) and taking its name from the Butterfield stage route through the Boston Mountains.",
+          "links": [
+            {
+              "label": "Wikipedia — Devil's Den State Park",
+              "url": "https://en.wikipedia.org/wiki/Devil's_Den_State_Park"
+            }
+          ]
+        },
+        "Artist Point": {
+          "entity": "The Artist Point roadside overlook on US 71 north of the park. IMPORTANT: the Wikipedia article 'Artist Point' is an overlook in Yellowstone National Park, Wyoming — rejected on identity. The Arkansas viewpoint has no article and the Devil's Den article never names it. Left bare.",
+          "links": []
         }
       },
       "offroad": [
@@ -18492,6 +19430,41 @@
           ],
           "auto": true,
           "auto_km": 32
+        },
+        "Talimena Scenic Byway": {
+          "entity": "The Talimena Scenic Drive, the 54-mile National Scenic Byway from Talihina, Oklahoma to Mena, Arkansas.",
+          "links": [
+            {
+              "label": "Wikipedia — Talimena Scenic Drive",
+              "url": "https://en.wikipedia.org/wiki/Talimena_Scenic_Drive"
+            }
+          ]
+        },
+        "Talimena National Scenic Byway": {
+          "entity": "The same Talimena Scenic Drive — the article confirms the National Scenic Byway designation.",
+          "links": [
+            {
+              "label": "Wikipedia — Talimena Scenic Drive",
+              "url": "https://en.wikipedia.org/wiki/Talimena_Scenic_Drive"
+            }
+          ]
+        },
+        "Queen Wilhelmina Lodge": {
+          "entity": "The 'Castle in the Sky' lodge on Rich Mountain; the state-park article documents the lodge, its 40 guest rooms and its 1898 origin. The lodge has no separate article.",
+          "links": [
+            {
+              "label": "Wikipedia — Queen Wilhelmina State Park",
+              "url": "https://en.wikipedia.org/wiki/Queen_Wilhelmina_State_Park"
+            }
+          ]
+        },
+        "Lovers' Leap Trail": {
+          "entity": "The Lovers' Leap Trail at Queen Wilhelmina State Park. No article, and the park article never mentions it. NOTE: 'Lovers Leap' resolves to a general article on the folklore place-name — rejected. Left bare.",
+          "links": []
+        },
+        "Spring Trail": {
+          "entity": "The Spring Trail at Queen Wilhelmina State Park. No article, and the park article does not name it. Left bare.",
+          "links": []
         }
       },
       "offroad": [

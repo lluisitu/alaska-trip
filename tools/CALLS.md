@@ -116,6 +116,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 - **518-863-4545** — DEC Region 5 Northville 518-863-4545.
   <sub>offroad.2</sub>
 
+## 2028-10-01 — Stowe/Waterbury, VT  `stowe-vt`
+
+- **1-888-409-7579** — Phone Vermont State Parks on 1-888-409-7579 (or parks@vermont.gov) and ask two things: are dogs permitted on Mount Mansfield's Sunset Ridge and the Long Trail over the summit ridge, given the alpine zone, and is there any dog restriction on the Putnam State Forest trails at Stowe Pinnacle and Moss Glen Falls.
+  <sub>dogs_unpublished.action</sub>
+
 ## 2028-10-16 — Bar Harbor/Ellsworth, ME  `bar-harbor-me`
 
 - **(207) 941-4412** — The state authority for the unit is Maine BPL's Donnell Pond Public Reserved Land page, which names Black Mountain Road and Dynamite Brook Rd but publishes no road condition detail — Eastern Public Lands Office (207) 941-4412.

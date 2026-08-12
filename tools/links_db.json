@@ -12811,7 +12811,16 @@
           ],
           "stats_note": "The card entry names two destinations. AllTrails carries them as two listings — Fort Holmes Loop (3.2 mi, mixed paved and dirt) and Arch Rock (easy stroll) — not as one route."
         }
-      ]
+      ],
+      "dogs": "Mackinac Island State Park allows dogs anywhere on commission land as long as they are under immediate control, so Arch Rock, Fort Holmes and the M-185 shore loop all work; dogs are barred from bathing beaches and from historic building interiors. Nobody publishes a dog rule for the Cut River gorge trails — the roadside park is described as MDOT's by some sources and DNR's by others, and neither agency names the trail.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.mackinacparks.com/wp-content/uploads/2025/10/General-Rules-Amended-2023.pdf",
+      "dogs_source_quote": "An individual shall not possess a dog on land under the jurisdiction of the commission unless it is under the individual's immediate control, or have a dog within any area used as a bathing beach.",
+      "trail_dogs": {
+        "Cut River Gorge Trail": null,
+        "M-185 Lakeshore Loop, Mackinac Island": true,
+        "Mackinac Island — Arch Rock & Fort Holmes trails": true
+      }
     },
     "traverse-city-mi": {
       "activities": {
@@ -12937,7 +12946,17 @@
           ],
           "stats_note": "The 6.2 mi figure is the full park loop, averaging 2 h. The lighthouse itself is a short walk from the lot — see the second link."
         }
-      ]
+      ],
+      "dogs": "Sleeping Bear Dunes names its pet-open and pet-closed areas trail by trail: Empire Bluff and Pyramid Point are open to leashed pets year round and so is the Cottonwood Trail — but the face of the Dune Climb is closed to pets year round, and that is the only way up to the Cottonwood trailhead, so the Dune Climb/Cottonwood loop is off with the dog. Peninsula Township publishes no pet rule for Old Mission Point Park.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/slbe/planyourvisit/pets.htm",
+      "dogs_source_quote": "The face of the Dune Climb",
+      "trail_dogs": {
+        "Dune Climb / Cottonwood Trail loop": false,
+        "Empire Bluff Trail": true,
+        "Old Mission Point Park / Lighthouse Trail": null,
+        "Pyramid Point Trail": true
+      }
     },
     "door-county-wi": {
       "activities": {
@@ -13143,7 +13162,17 @@
           ],
           "stats_note": "AllTrails has no standalone Red Trail listing — it only indexes combination loops. The 1.2 mi is the DNR's figure for the Red Trail alone; the AllTrails Yellow-and-Red loop linked here is 3.3 mi, easy, about an hour."
         }
-      ]
+      ],
+      "dogs": "Leashed dogs are fine on all four: Wisconsin DNR permits pets on state park trails unless a trail is signed closed to pets, and none at Peninsula or Whitefish Dunes are. Door County's own rule for Cave Point is \"Dogs must be leashed at all times.\" Beaches are the exception — Whitefish Dunes bars pets from the beach between the nature center and the third beach access from 1 April to 1 November, which covers this stay.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.wisconsin.gov/topic/parks/rules/pets",
+      "dogs_source_quote": "Pets are permitted in most campgrounds, trails, roads and outlying areas of properties.",
+      "trail_dogs": {
+        "Cave Point County Park shoreline trail": true,
+        "Eagle Trail, Peninsula State Park": true,
+        "Red Trail, Whitefish Dunes State Park": true,
+        "Sentinel Trail, Peninsula State Park": true
+      }
     },
     "indiana-dunes-in": {
       "activities": {
@@ -13256,7 +13285,18 @@
           ],
           "stats_note": "Figures are Indiana DNR's for Trail 8, the trail the challenge follows. 'Rugged' is the DNR's own top grade (Easy / Moderate / Rugged)."
         }
-      ]
+      ],
+      "dogs": "All five work on a six-foot leash. The only trails Indiana Dunes National Park closes to pets are the Pinhook Bog Trail and the equestrian leg of Glenwood Dunes — neither is on this card — and pets are allowed year round on all park beaches. Two catches: the lifeguarded swimming area at West Beach is closed to pets through Labor Day, which covers this stay, and the state park (where the 3 Dune Challenge is) bans dogs from its own beach.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/indu/planyourvisit/pets.htm",
+      "dogs_source_quote": "Pets are not allowed on the Pinhook Bog Trail",
+      "trail_dogs": {
+        "3 Dune Challenge, Indiana Dunes State Park": true,
+        "Cowles Bog Trail": true,
+        "Mount Baldy Beach Trail": true,
+        "West Beach 3-Loop Hike": true,
+        "West Beach Dunes Succession Trail": true
+      }
     },
     "stratford-on": {
       "activities": {
@@ -13355,7 +13395,17 @@
           ],
           "stats_note": "The AllTrails listing is confirmed as Stratford's — its description names the dammed Avon, North Shore Park, the Stratford Festival grounds and Lower Queen's Park — but it published no distance or difficulty in the search result, so only the community figure above is recorded."
         }
-      ]
+      ],
+      "dogs": "All four are dog-walkable on lead. The Avon Trail Association's own trail-users code is \"Keep dogs on a leash at all times\", which covers the main trail and the Stratford Side Trail; the City of Stratford's animal control rule requires a leash on any dog off its own property, and publishes no ban for the Avon River parklands or T.J. Dolan.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://avontrail.ca/before-you-hike/",
+      "dogs_source_quote": "Keep dogs on a leash at all times.",
+      "trail_dogs": {
+        "Avon River Parklands Loop (Tom Patterson Island / Confederation Park)": true,
+        "Avon Trail – Stratford to Wildwood Lake": true,
+        "Stratford Side Trail": true,
+        "T.J. Dolan Trail (T.J. Dolan Natural Area)": true
+      }
     },
     "elora-on": {
       "activities": {
@@ -13478,7 +13528,16 @@
           ],
           "stats_note": "GRCA describes this as 'a one kilometre loop trail', not as a named trail — our card name is a descriptive label, not the authority's."
         }
-      ]
+      ],
+      "dogs": "Elora Quarry is a flat no — the Grand River Conservation Authority bars dogs from that conservation area entirely, service animals excepted. Elora Gorge and the Trailway are fine on a lead under two metres, provided the dog stays on the marked trail; the Gorge's only closed spot is the splash pad.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.grandriver.ca/en/outdoor-recreation/Elora-Quarry.aspx",
+      "dogs_source_quote": "Dogs are not permitted in the conservation area. Service animals are allowed.",
+      "trail_dogs": {
+        "Elora Cataract Trailway (Elora section)": true,
+        "Elora Gorge Trails": true,
+        "Elora Quarry Conservation Area Trail": false
+      }
     },
     "algonquin-on": {
       "activities": {
@@ -13604,7 +13663,18 @@
           "tier": "official",
           "source": "https://www.algonquinpark.on.ca/visit/camping/rock-lake-access-point.php"
         }
-      ]
+      ],
+      "dogs": "All five are fine on a two-metre lead. Mizzy Lake is the one Algonquin trail Ontario Parks closes to dogs and it is not on this card; the rest of the restriction list is campsites and yurts. Dogs stay off beaches and swimming areas unless it is one of the park's four designated dog beaches.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.ontarioparks.ca/dogsatparks",
+      "dogs_source_quote": "In addition to the Mizzy Lake Trail, pet free zones in Algonquin Park Campgrounds are: Achray Campground - campsites 20 to 39 and Canisbay Lake Campground - campsites 53 to 101.",
+      "trail_dogs": {
+        "Algonquin Lookout Trail": true,
+        "Beaver Pond Trail": true,
+        "Spruce Bog Boardwalk": true,
+        "Track and Tower Trail": true,
+        "Whiskey Rapids Trail": true
+      }
     },
     "pec-on": {
       "activities": {
@@ -13770,7 +13840,17 @@
           "tier": "official",
           "source": "https://www.ontarioparks.ca/cr/monarchpointconservationreserve"
         }
-      ]
+      ],
+      "dogs": "All four trails are open to leashed dogs — Ontario Parks lists no trail restriction at Sandbanks, only the standard one. The standard one matters here: the swimming beaches are closed to dogs, and Sandbanks has two designated dog beaches instead. Two-metre lead.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.ontarioparks.ca/dogsatparks",
+      "dogs_source_quote": "beaches and swimming areas (unless a designated dog beach)",
+      "trail_dogs": {
+        "Cedar Sands Nature Trail": true,
+        "Lakeview Trail": true,
+        "Sandbanks Dunes Trail": true,
+        "Woodlands Trail": true
+      }
     },
     "gananoque-on": {
       "activities": {
@@ -13955,7 +14035,16 @@
           ],
           "stats_note": "AllTrails files this under the nearby township, Front of Yonge, not Mallorytown. About 40 min."
         }
-      ]
+      ],
+      "dogs": "Parks Canada allows dogs throughout its protected places on a lead of three metres or less, and Thousand Islands National Park publishes no trail closure — its own hiking page carries \"Dogs on leash\" as a listed activity for Jones Creek, Landon Bay and Mallorytown Landing.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+      "dogs_source_quote": "dogs must be on a leash that measures 3 metres or less, and under control at all times",
+      "trail_dogs": {
+        "Jones Creek Trail System": true,
+        "Landon Bay Trails": true,
+        "Mallorytown Landing Trails": true
+      }
     },
     "perth-on": {
       "activities": {
@@ -14124,7 +14213,17 @@
           "tier": "official",
           "source": "https://www.lanarkhighlands.ca/services-payments/public-works/roads-and-sidewalks"
         }
-      ]
+      ],
+      "dogs": "The three trails inside Murphys Point are fine on a two-metre lead — Ontario Parks lists no park-specific restriction there. The Rideau Trail is the open question: the Rideau Trail Association says dogs are barred from many portions and does not say which, so the Perth section cannot be called either way without asking them.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.rideautrail.org/hiking/preparation-and-trail-etiquette/",
+      "dogs_source_quote": "In many portions of the trail dogs are not permitted! (dogs are not permitted on official Rideau Trail Association hikes). Where dogs are permitted, keep them on a leash.",
+      "trail_dogs": {
+        "Point Trail (Murphys Point Provincial Park)": true,
+        "Rideau Trail (Murphys Point / Perth section)": null,
+        "Silver Queen Mine Trail (Murphys Point Provincial Park)": true,
+        "Sylvan Trail (Murphys Point Provincial Park)": true
+      }
     },
     "lake-placid-ny": {
       "activities": {
@@ -14248,7 +14347,16 @@
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/new-york/lake-glen-road-nyo657lr9q0v"
         }
-      ]
+      ],
+      "dogs": "Cascade and Porter are DEC Forest Preserve and take dogs, but the leash is compulsory the whole way — they sit in the zone where DEC requires a leash at all times, not just above 4,000 ft. Mount Jo is on the Adirondack Mountain Club's Heart Lake property and ADK publishes no pet policy for it; the managing authority for the Owl's Head trail could not be established, so both are blank rather than assumed.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://dec.ny.gov/places/high-peaks-wilderness-complex",
+      "dogs_source_quote": "Dogs must be leashed at all times in the Eastern Zone of the High Peaks Wilderness",
+      "trail_dogs": {
+        "Mount Jo Loop Trail": null,
+        "Owl's Head Mountain Trail": null,
+        "Cascade Mountain and Porter Mountain via Cascade Mountain Trail": true
+      }
     },
     "south-hero-vt": {
       "activities": {
@@ -14577,7 +14685,31 @@
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/vermont/top-of-the-world-3l6om4x2vzw4"
         }
-      ]
+      ],
+      "dogs_unpublished": {
+        "trails": [
+          "Stowe Pinnacle Trail",
+          "Moss Glen Falls Trail",
+          "Mount Mansfield via Sunset Ridge",
+          "Mount Mansfield via Sunset Ridge / Long Trail",
+          "Sterling Pond Trail",
+          "Bingham Falls Trail"
+        ],
+        "authority": "Vermont Dept. of Forests, Parks and Recreation / Vermont State Parks (C.C. Putnam State Forest, Mount Mansfield State Forest, Underhill State Park, Smugglers' Notch State Park), with the Green Mountain Club maintaining the Long Trail sections",
+        "checked": [
+          "https://fpr.vermont.gov/hiking-pets — 403 to automated fetching; the whole fpr.vermont.gov domain refuses",
+          "https://fpr.vermont.gov/recreation/activities/hiking — 403",
+          "https://vtstateparks.com/pets.html — 403",
+          "https://vtstateparks.com/underhill.html — 403",
+          "https://www.vtstateparks.com/sites/stateparks/files/documents/rules_current.pdf — 403 (this is the official rules PDF and could not be opened)",
+          "https://anr.vermont.gov/ — 403",
+          "https://www.greenmountainclub.org/hiking-with-dogs/ — loads, but publishes only general guidance, not a per-trail rule: 'Please observe all posted signage about dogs at the trailheads; note some areas such as the alpine zone will require your dog to be on a leash while other areas may not allow dogs'. It names Stowe Pinnacle in passing as a dog hike but states no permission.",
+          "https://stowelandtrust.org/ — no dog policy published on the site's front matter",
+          "https://www.uvm.edu/femc/natural_areas/mount-mansfield — 404",
+          "Search index for vtstateparks.com and fpr.vermont.gov pet pages returned only third-party guides (dogtrailrules, petfriendlytravel, Burlington Free Press), never an official sentence"
+        ],
+        "action": "Phone Vermont State Parks on 1-888-409-7579 (or parks@vermont.gov) and ask two things: are dogs permitted on Mount Mansfield's Sunset Ridge and the Long Trail over the summit ridge, given the alpine zone, and is there any dog restriction on the Putnam State Forest trails at Stowe Pinnacle and Moss Glen Falls. One call settles all six. Worth doing before arrival — this is a 4-night hard-anchored stop on 1 Oct 2028 and the trails are most of what the stop is for."
+      }
     },
     "eastern-townships-qc": {
       "activities": {
@@ -14760,7 +14892,17 @@
           ],
           "stats_note": "Distance is published two ways — Trailforks 4 km one way as black-diamond singletrack, Plein air À la carte 5.2 km as a loop — so no single figure is recorded. It is steep either way."
         }
-      ]
+      ],
+      "dogs": "Sépaq publishes a dog map for Mont-Orford that draws every trail either \"Chien autorisé\" or \"Chien interdit\", and only a short list is green: l'Étang-Fer-de-Lance and the Mont-Chauve loop are among them. Le Pékan is not — the whole Mont-Orford massif network it runs through, including the summit routes, is drawn in red. Owl's Head is a private resort and takes leashed dogs on all its trails including Panorama.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.sepaq.com/resources/docs/pq/mor/mor-carte-chiens.pdf",
+      "dogs_source_quote": "Chien autorisé",
+      "trail_dogs": {
+        "L'Étang-Fer-de-Lance (Parc national du Mont-Orford)": true,
+        "Le Mont-Chauve (Parc national du Mont-Orford)": true,
+        "Le Pékan (Parc national du Mont-Orford)": false,
+        "Panorama Trail, Owl's Head (Mansonville)": true
+      }
     },
     "north-conway-nh": {
       "activities": {
@@ -14979,7 +15121,18 @@
           },
           "stats_note": "About 18 min, off the Kancamagus Highway; AllTrails files it under Bartlett."
         }
-      ]
+      ],
+      "dogs": "All five take dogs. The White Mountain National Forest welcomes them and names Diana's Baths itself as a developed trail where the leash is required; Arethusa Falls and Mount Willard sit in Crawford Notch State Park, where NH State Parks permits pets \"on hiking trails and designated dog walk area only\", six-foot leash.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.fs.usda.gov/r09/whitemountain/about-area/faqs",
+      "dogs_source_quote": "Yes. Dogs are welcome in the White Mountain National Forest; however, they must be leashed when in developed recreation areas such as campgrounds, picnic areas, trailhead parking lots, and on developed trails (Diana's Baths, for instance).",
+      "trail_dogs": {
+        "Arethusa Falls": true,
+        "Boulder Loop Trail": true,
+        "Diana's Baths": true,
+        "Mount Willard": true,
+        "Sabbaday Falls": true
+      }
     },
     "bar-harbor-me": {
       "activities": {
@@ -15084,7 +15237,7 @@
         }
       },
       "authority": "National Park Service — Acadia",
-      "dogs_verdict": "allowed",
+      "dogs_verdict": "partial",
       "official_links": [
         {
           "label": "Pets in Acadia",
@@ -15094,7 +15247,11 @@
       ],
       "dogs": "ALLOWED on most trails — 100 miles of trail and 45 miles of carriage road, leash 6 ft. Acadia is one of the most dog-friendly national parks on this entire trip. Six trails are closed to pets outright: Precipice, BEEHIVE, Ladder Trail to Dorr Mountain, Beech Cliffs, Perpendicular (Mansell Mountain), and Jordan Cliffs between Penobscot East Trail and the carriage road. Nine more are \"not recommended\".",
       "trail_dogs": {
-        "Beehive Trail": false
+        "Beehive Trail": false,
+        "Gorham Mountain Trail": true,
+        "Jordan Pond Path": true,
+        "Ocean Path": true,
+        "Cadillac Mountain South Ridge Trail": true
       },
       "dogs_note": "The Beehive is named on this card AND is one of the six trails Acadia closes to dogs — the iron-rung climb. Everything else here is open to the dog, including Cadillac South Ridge and Gorham Mountain.",
       "trails": [
@@ -15269,7 +15426,9 @@
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/maine/narraguagus-lake-5x36wxy75zyk"
         }
-      ]
+      ],
+      "dogs_source": "https://www.nps.gov/acad/planyourvisit/pets.htm",
+      "dogs_source_quote": "There are 100 miles (161 km) of hiking trails and 45 miles (72 km) of carriage roads in the park where pets are permitted."
     },
     "camden-me": {
       "activities": {
@@ -15412,7 +15571,17 @@
           "stats_note": "The card entry names two ways up and AllTrails lists them separately. The direct Mount Battie Trail is short and steep — 1.2 mi and rated challenging; the Nature Trail approach is 2.8 mi at an easier grade."
         }
       ],
-      "not_a_trail": []
+      "not_a_trail": [],
+      "dogs": "All four are fine. Maine's Bureau of Parks and Lands allows leashed pets throughout its parks and publishes no trail closure at Camden Hills; the only blanket ban is on state park beaches from 1 April to 30 September, which this late-October stay clears anyway.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www1.maine.gov/dacf/parks/park_passes_fees_rules/pets.shtml",
+      "dogs_source_quote": "Pets must be on a leash under the physical control of the pet handler and must not be left unattended.",
+      "trail_dogs": {
+        "Bald Rock Mountain Trail": true,
+        "Maiden Cliff Trail": true,
+        "Mount Battie Trail / Nature Trail": true,
+        "Mount Megunticook Trail": true
+      }
     },
     "berkshires-ma": {
       "activities": {
@@ -15569,7 +15738,16 @@
           "entry": "Summit / Bascom Lodge area walk (Mount Greylock)",
           "problem": "Not a trail — it is the summit plateau of Mount Greylock, reached by Notch Road or Rockwell Road, with Bascom Lodge and the Veterans War Memorial Tower on it. No named short walk exists at the summit itself. The nearest named path is the Overlook Trail, which AllTrails describes as a connector between the Hopper Trail and the summit and which other sources give as 3.2 mi around the south and west sides — a different and much longer outing than an area stroll."
         }
-      ]
+      ],
+      "dogs": "All four take leashed dogs. DCR's rule for Mount Greylock State Reservation is \"Pets must be on a leash and attended at all times\" with no trail closures, and the Trustees of Reservations require the same at Monument Mountain. mass.gov refuses automated fetching, so the DCR wording was read from the search index entry for its own page rather than the page itself.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.mass.gov/locations/mount-greylock-state-reservation",
+      "dogs_source_quote": "Pets must be on a leash and attended at all times.",
+      "trail_dogs": {
+        "Monument Mountain Summit": true,
+        "Mount Greylock and Saddle Ball Mountain": true,
+        "Gould Trail to Mount Greylock": true
+      }
     },
     "litchfield-hills-ct": {
       "activities": {
@@ -15703,7 +15881,17 @@
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/connecticut/filley-road-j06472gxr615"
         }
-      ]
+      ],
+      "dogs": "All four take leashed dogs. CT DEEP permits pets on a leash across state parks and forests — Kent Falls and Macedonia Brook both list \"Yes, on leash\" for picnic areas and hiking trails, and Mohawk the same. White Memorial is private land trust ground and its rule is a leash at all times.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://ctparks.com/park-policies",
+      "dogs_source_quote": "Pets on a leash are permitted in most state parks and forests, but not allowed in buildings, swimming areas, or state park campgrounds.",
+      "trail_dogs": {
+        "Kent Falls Red and Yellow Loop Trail": true,
+        "Mohawk Mountain via Mohawk Trail": true,
+        "White Memorial Boardwalk": true,
+        "Macedonia Brook Loop": true
+      }
     },
     "hudson-valley-ny": {
       "activities": {
@@ -15846,7 +16034,18 @@
           ],
           "stats_note": "The popular route is the loop above — it parks at the Route 9W picnic area and climbs the Stillman over the summit. AllTrails published no stats in search; an independent GPS track gives the loop as 2.4 mi with 541 ft of gain. The Stillman Trail is also indexed separately, but with only 60 reviews."
         }
-      ]
+      ],
+      "dogs": "The two NPS sites are explicitly open to pets on their trails — that covers the FDR loops, the Hyde Trail out to Bard Rock and the Vanderbilt grounds — and the Walkway takes leashed dogs on the deck, though only service animals in the elevator. Storm King is the gap: NY State Parks publishes no pet policy on its Storm King page, and its own FAQ says the policy lives on the individual park page.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.nps.gov/hofr/planyourvisit/pets.htm",
+      "dogs_source_quote": "Much of the Home of Franklin D. Roosevelt National Historic Site is accessible to pets—the developed areas, some of the gardens, and our trails.",
+      "trail_dogs": {
+        "FDR Cove and Forest Loop": true,
+        "Roosevelt Home to Bard Rock via Hyde Trail": true,
+        "Storm King Mountain via Stillman Trail": null,
+        "Vanderbilt Mansion Trail": true,
+        "Walkway Over the Hudson": true
+      }
     },
     "delaware-water-gap-pa": {
       "activities": {

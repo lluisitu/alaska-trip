@@ -563,7 +563,7 @@
         "Mosca Pass Trail": true,
         "Dunes Overlook Trail": true,
         "High Dune Loop": false,
-        "Montville Nature Trail": null,
+        "Montville Nature Trail": true,
         "Wellington Ditch Trail": null
       },
       "trail_dogs_why": "NPS names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited, which rules out High Dune. It says nothing either way about Montville or Wellington Ditch, so those stay null and show no icon rather than a guess.",
@@ -667,7 +667,9 @@
             }
           ]
         }
-      }
+      },
+      "dogs_source": "https://www.nps.gov/thingstodo/hike-montville-and-mosca-pass-trails.htm",
+      "dogs_source_quote": "Pets are permitted on leash on Montville Trail and Mosca Pass Trail. Please be sure to clean up after your pet."
     },
     "salida-buenavista": {
       "authority": "USFS / City of Salida / Chaffee County",
@@ -834,7 +836,18 @@
           "season": "US-50 is a year-round primary route; no seasonal gate. Arrive 3 Apr 2027 — open, but early-April ice and rockfall are normal in the canyon.",
           "note_source": "royalgorgeregion.com; visitcos.com directory"
         }
-      ]
+      ],
+      "dogs": "Only one of these has a published rule: Hecla Junction sits in the Arkansas Headwaters Recreation Area, where Colorado Parks and Wildlife lists leashed dogs as permitted — the Forest Service publishes nothing for Waterdog Lakes or Old Monarch Pass, and Salida's code is contradictory (7-5-250 allows a leashed dog in any public space, 7-5-220 calls a dog in an undesignated part of a park a nuisance), so the town and Tenderfoot trails stay unknown.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area",
+      "dogs_source_quote": "Animals Permitted: Leashed Dogs",
+      "trail_dogs": {
+        "Waterdog Lakes": null,
+        "Arkansas River Trail From Hecla Junction": true,
+        "Front Side Tenderfoot Little Rattler and Spiral Trail": null,
+        "Old Monarch Pass Loop": null,
+        "Salida River Trail": null
+      }
     },
     "estes-rmnp": {
       "authority": "National Park Service",
@@ -1328,7 +1341,17 @@
           "season": "CONFLICTS WITH THE STOP DATES. Bridger-Teton opens Big Sandy Campground and trailhead access only once the snowpack lets the gravel road through — usually somewhere between June and July, closing early September. The stop arrives 24 Apr 2027, six to ten weeks before the road is normally driveable. Plan on the gate or the drifts stopping the truck well short of the trailhead.",
           "note": "Renamed from a verb phrase to the road it actually is. The Big Sandy Opening is the standard gateway to the Bridger Wilderness, which is why it is on the card, but late April is the wrong end of the year for it. Exact opening date varies every year with snow load — the Pinedale Ranger District is the only source that will know."
         }
-      ]
+      ],
+      "dogs": "Bridger-Teton's only dog order is somewhere else entirely — named Jackson Ranger District trails, 1 Dec to 1 May — and neither the Greater Yellowstone wilderness order (GYCC-7) nor any Pinedale Ranger District page says anything about dogs, so all four Wind River routes are unstated rather than confirmed.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fs.usda.gov/r04/bridger-teton/alerts/dog-leash-order-jackson-ranger-district",
+      "dogs_source_quote": "Possessing a dog in or on the Described Areas and Described Trails unless it is tethered by a leash not longer than six feet.",
+      "trail_dogs": {
+        "Big Sandy Lake via Big Sandy Trail": null,
+        "Elkhart Park Trailhead Loop: Cook and Seneca Lakes": null,
+        "Photographers Point via Pole Creek Trail": null,
+        "Cirque of Towers, Bears Ears Trail, and Hailey Pass": null
+      }
     },
     "twin-falls": {
       "authority": "City of Twin Falls / NPS (City of Rocks) / Idaho",
@@ -4426,7 +4449,8 @@
         "Rim Trail, Yavapai Point to Mather Point.": true,
         "Grand Canyon Rim Mules to Mather Point": true,
         "South Kaibab Trail to Ooh Aah Point": false,
-        "15 Mile Resthouse via Bright Angel Trail": false
+        "15 Mile Resthouse via Bright Angel Trail": false,
+        "Rim Trail": true
       },
       "activities": {
         "Rim Trail — Yavapai Point to Mather Point": {
@@ -4485,7 +4509,9 @@
           "was": "Rim Trail, Yavapai Point to Mather Point. — prose entry",
           "note_source": "The dog-legal walk here: NPS allows leashed pets on trails ABOVE the rim. No single listing matched the Yavapai-to-Mather section cleanly."
         }
-      ]
+      ],
+      "dogs_source": "https://www.nps.gov/grca/planyourvisit/pets.htm",
+      "dogs_source_quote": "Leashed pets are allowed on trails above the rim, Mather Campground, Desert View Campground, Trailer Village, and throughout developed areas."
     },
     "zion": {
       "authority": "National Park Service",
@@ -5547,6 +5573,17 @@
             }
           ]
         }
+      },
+      "dogs": "Gallatin Valley Land Trust publishes a dog rule on each Main Street to the Mountains trail page: off-leash on Drinking Horse Mountain and the College M, on-leash on Triple Tree and the Gallagator — only Grotto Falls, which is Custer Gallatin NF in Hyalite, has no published rule.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.gvlt.org/featured-trails/drinking-horse-mountain-trail",
+      "dogs_source_quote": "DOGS Allowed off-leash",
+      "trail_dogs": {
+        "Grotto Falls Trail": null,
+        "Drinking Horse Mountain Trail": true,
+        "College M and Bridger Foothills Trail": true,
+        "Triple Tree Trail": true,
+        "Gallagator Linear Trail": true
       }
     },
     "fort-nelson": {
@@ -7249,7 +7286,14 @@
           "was": "Discovery Trail (Long Beach trailhead) — a trailhead",
           "note_source": "No direct listing url surfaced in search. Name and stop kept; no constructed slug — the fabricated-URL episode is why."
         }
-      ]
+      ],
+      "dogs": "The Discovery Trail runs into Cape Disappointment State Park, and Washington State Parks lists the park's rule as dogs allowed on leash; the City of Long Beach publishes nothing extra for its half of the trail.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+      "dogs_source_quote": "Dogs Allowed on Leash",
+      "trail_dogs": {
+        "Discovery Trail": true
+      }
     },
     "cannon-beach": {
       "activities": {
@@ -7490,7 +7534,8 @@
       "trail_dogs": {
         "Catherine Creek": true,
         "Dog Mountain Trail": null,
-        "Wahclella Falls Trail": null
+        "Wahclella Falls Trail": null,
+        "Catherine Creek Arch Loop": true
       },
       "dogs_exception": "The Gorge publishes its dog rule per recreation site, not per forest, so silence on Dog Mountain and Wahclella here means unresearched, not permitted. Dog Mountain also needs a timed-entry permit on spring weekends.",
       "official_links": [
@@ -7505,7 +7550,9 @@
           "entry": "Catherine Creek",
           "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
-      ]
+      ],
+      "dogs_source": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-loop",
+      "dogs_source_quote": "Do not cross the fencing near the natural arch, as the area is closed to protect sensitive resources. Bikes are prohibited on this trail. Horses prohibited on this trail. Dogs must be on leash year round."
     },
     "welches": {
       "activities": {
@@ -7935,7 +7982,8 @@
       "dogs_verdict": "partial",
       "dogs": "BLM: \"Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools\", and \"must remain on a 6-foot leash at all times\". Therapy animals and pets are not allowed inside buildings.",
       "trail_dogs": {
-        "Cobble Beach / Quarry Cove tide pools": false
+        "Cobble Beach / Quarry Cove tide pools": false,
+        "Yaquina Head Lighthouse and Cobble Beach Loop": false
       },
       "dogs_exception": "The tide pools themselves are the one thing at Yaquina Head the dog cannot do — that and the ground near the lighthouse. The rest of the headland's trails and walkways are open on a 6 ft leash.",
       "official_links": [
@@ -7966,7 +8014,9 @@
           "entry": "Cobble Beach / Quarry Cove tide pools",
           "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
-      ]
+      ],
+      "dogs_source": "https://www.blm.gov/visit/yaquina-head-outstanding-natural-area",
+      "dogs_source_quote": "Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools."
     },
     "bandon": {
       "activities": {
@@ -8823,7 +8873,15 @@
           "season": "No gate; year-round, but this is open desert with no shade and summer is genuinely dangerous. Arrive 14 Jan 2028 — the right season for it.",
           "note_source": "BLM Tumco Historic Mine page; Imperial Valley Press feature; mindat district records"
         }
-      ]
+      ],
+      "dogs": "Imperial National Wildlife Refuge allows pets on leash, which covers the Painted Desert Trail; BLM's Betty's Kitchen page addresses only service dogs, so a pet dog there is unstated.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.fws.gov/refuge/imperial/visit-us/rules-policies",
+      "dogs_source_quote": "Pets must be on a leash, unless being actively used for lawful hunting purposes.",
+      "trail_dogs": {
+        "Betty's Kitchen National Recreation Trail": null,
+        "Painted Desert Trail, Imperial NWR": true
+      }
     },
     "yuma-az": {
       "activities": {
@@ -9763,7 +9821,9 @@
           "url": "https://www.fs.usda.gov/r02/gmug/recreation/blue-lakes-201",
           "tier": "official"
         }
-      ]
+      ],
+      "dogs_source": "https://ouray.municipal.codes/Code/10-5",
+      "dogs_source_quote": null
     },
     "mancos": {
       "activities": {
@@ -9928,7 +9988,15 @@
           "note_source": "Meadow Loop via Horse Gulch Trail is the listed route inside the system. Durango Trails publishes the wider network at durangotrails.org; Horse Gulch Road itself is a 4.1 mi easy non-motorized access route.",
           "reviews": "586"
         }
-      ]
+      ],
+      "dogs": "Leashed on both — the City of Durango says leashed dogs are welcome throughout its parks, open space and trails, and a leash is the law inside city limits; voice control applies only on the federal land outside town, not on Horse Gulch.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.durangoco.gov/1619/Enjoying-Durango-With-Your-Dog",
+      "dogs_source_quote": "Leashed dogs are welcome throughout Durango's parks, open space and trails",
+      "trail_dogs": {
+        "Animas River Trail": true,
+        "Horse Gulch Trail System": true
+      }
     },
     "pagosa-springs": {
       "activities": {
@@ -14250,7 +14318,14 @@
           "same_as": "Movie Road, Alabama Hills (scenicDrives)",
           "url_if_wanted": "https://www.alltrails.com/trail/us/california/movie-road-trail"
         }
-      ]
+      ],
+      "dogs": "BLM Bishop Field Office publishes no pet rule for the Alabama Hills at all — not on the scenic-area page, not on the Mobius Arch trail page, not in the 2022 brochure or the map and guide — so this is unknown, not permitted.",
+      "dogs_verdict": "partial",
+      "dogs_source": "https://www.blm.gov/visit/mobius-arch-loop-trail",
+      "dogs_source_quote": null,
+      "trail_dogs": {
+        "Mobius Arch Loop": null
+      }
     },
     "dawson-creek": {
       "activities": {

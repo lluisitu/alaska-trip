@@ -2595,6 +2595,15 @@
               "url": "https://en.wikipedia.org/wiki/Whitehorse"
             }
           ]
+        },
+        "Yukon Wildlife Preserve + Fish Ladder": {
+          "entity": "Two things in one headline. The Yukon Wildlife Preserve has no article under that name or as Yukon Game Farm, and the Whitehorse article never mentions it. The fish ladder IS documented -- Schwatka Lake, the reservoir behind the Whitehorse Rapids dam, states a fish ladder was built around the dam for Chinook salmon. Linked as Schwatka Lake, which is the article actually used; it covers the fish ladder only, not the preserve.",
+          "links": [
+            {
+              "label": "Wikipedia — Schwatka Lake (the fish ladder)",
+              "url": "https://en.wikipedia.org/wiki/Schwatka_Lake"
+            }
+          ]
         }
       },
       "not_a_route": [
@@ -2872,6 +2881,12 @@
               "url": "https://en.wikipedia.org/wiki/Cooper_Landing%2C_Alaska"
             }
           ]
+        },
+        "Day-hike the north end of Resurrection Pass Trail": {
+          "entity": "The 39-mile Chugach National Forest national recreation trail. No article under any title tried; the full text of both Cooper Landing, Alaska and Chugach National Forest never mentions Resurrection Pass."
+        },
+        "Sunrise or late-evening stops along the lake provide quieter scenery than midday pullouts.": {
+          "entity": "Prose advice about light and crowds on Kenai Lake. No entity to link."
         }
       },
       "dogs_verdict": "partial",
@@ -3446,6 +3461,15 @@
               "url": "https://en.wikipedia.org/wiki/Pacific_halibut"
             }
           ]
+        },
+        "Dock Point Trail": {
+          "entity": "Short loop on the Valdez waterfront. No article, and the full text of Valdez, Alaska never mentions Dock Point."
+        },
+        "Drive Mineral Creek Road in the truck only to the maintained public endpoint and current conditions.": {
+          "entity": "The truck-only road up Mineral Creek out of Valdez. No article; Valdez, Alaska never mentions Mineral Creek."
+        },
+        "Solomon Gulch Trail & fish hatchery": {
+          "entity": "Solomon Gulch Trail and the Valdez Fisheries Development Association hatchery. No article under Solomon Gulch, Solomon Gulch Hatchery or Solomon Gulch Dam, and Valdez, Alaska mentions neither the gulch nor a hatchery."
         }
       },
       "dogs": "Dock Point is a City of Valdez park and the city requires animals to be restrained everywhere except four named off-leash areas, none of which is Dock Point; nothing is published for either Solomon trail.",
@@ -4839,6 +4863,9 @@
               "url": "https://en.wikipedia.org/wiki/Wheeler_Peak_%28Nevada%29"
             }
           ]
+        },
+        "Dark sky stargazing": {
+          "entity": "Great Basin NP is a certified dark-sky park, but this is the Salida Hot Springs trap: the Great Basin National Park article's full 10k of text contains no occurrence of 'dark sky', 'stargazing' or 'astronomy'. Linking the park would be a working link to an article that does not document the thing."
         }
       },
       "trails": [
@@ -4944,6 +4971,15 @@
               "url": "https://en.wikipedia.org/wiki/Ouray%2C_Colorado"
             }
           ]
+        },
+        "Gunnison Point / Visitor Center overlooks": {
+          "entity": "South Rim overlooks at the visitor center. No article. The Black Canyon of the Gunnison National Park full text never names Gunnison Point; its one 'visitor center' mention is Curecanti NRA's, a different place."
+        },
+        "Oak Flat Trail": {
+          "entity": "South Rim below-the-rim loop. No article -- and note Oak Flat is otherwise an Arizona place name (the Resolution Copper site), so a title match there would be the wrong state entirely. The park article never mentions Oak Flat."
+        },
+        "Warner Point Nature Trail": {
+          "entity": "Trail at the end of South Rim Road. No article, and the park article never mentions Warner Point."
         }
       }
     },
@@ -5000,6 +5036,9 @@
               "url": "https://en.wikipedia.org/wiki/Barker_Dam_%28California%29"
             }
           ]
+        },
+        "Geology Tour Road (truck)": {
+          "entity": "The backcountry road in Joshua Tree. No article, and the Joshua Tree National Park full text never names it -- its two 'Geology' hits are a section heading and a cited book title."
         }
       }
     },
@@ -5096,6 +5135,24 @@
             {
               "label": "Wikipedia — Furnace Creek",
               "url": "https://en.wikipedia.org/wiki/Furnace_Creek%2C_California"
+            }
+          ]
+        },
+        "Artists Drive and Artists Palette scenic drive": {
+          "entity": "Artist's Drive and Artist's Palette. Neither has its own article and the Death Valley National Park article never mentions them. Places of interest in the Death Valley area carries a dedicated section, \"Artist's Drive and Palette\", describing the drive up the alluvial fan and the coloured rock face.",
+          "links": [
+            {
+              "label": "Wikipedia — Artist's Drive and Palette",
+              "url": "https://en.wikipedia.org/wiki/Places_of_interest_in_the_Death_Valley_area#Artist's_Drive_and_Palette"
+            }
+          ]
+        },
+        "Golden Canyon to Red Cathedral hike": {
+          "entity": "Same article. Red Cathedral has its own section there ('a geological formation located between highways 178 and 190'), and the Golden Canyon trail is named in the text. The Death Valley National Park article mentions neither.",
+          "links": [
+            {
+              "label": "Wikipedia — Red Cathedral and Golden Canyon",
+              "url": "https://en.wikipedia.org/wiki/Places_of_interest_in_the_Death_Valley_area#Red_Cathedral"
             }
           ]
         }
@@ -5615,6 +5672,9 @@
               "url": "https://en.wikipedia.org/wiki/Fort_Nelson%2C_British_Columbia"
             }
           ]
+        },
+        "Parker Lake": {
+          "entity": "The lake west of Fort Nelson, BC. No article. Fort Nelson, British Columbia names Parker Lake once, but only as the origin of the May 2024 wildfire that evacuated the town -- it documents the fire, not the lake, so it is not a parent for a things-to-do highlight."
         }
       },
       "authority": "BC Parks — Stone Mountain Park (Flower Springs, Summit Lake); the town trails are Northern Rockies Regional Municipality",
@@ -5713,6 +5773,18 @@
               "url": "https://en.wikipedia.org/wiki/Aurora"
             }
           ]
+        },
+        "Northern Lights Centre if the schedule fits.": {
+          "entity": "The aurora science centre in Watson Lake. It has no article of its own, but the town article documents it by name as one of the town's two tourist attractions: 'Tourist attractions in Watson Lake include the Northern Lights Centre and the much-imitated original Sign Post Forest.'",
+          "links": [
+            {
+              "label": "Wikipedia — Watson Lake, YT",
+              "url": "https://en.wikipedia.org/wiki/Watson_Lake,_Yukon"
+            }
+          ]
+        },
+        "Wye Lake Park boardwalk loop": {
+          "entity": "Town boardwalk park in Watson Lake. No article, and the Watson Lake, Yukon full text never mentions Wye Lake."
         }
       },
       "not_a_trail": [
@@ -8761,6 +8833,15 @@
               "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
             }
           ]
+        },
+        "Fish Creek Wash & Sandstone Canyon (truck)": {
+          "entity": "The truck route up Fish Creek Wash into Sandstone Canyon, inside Anza-Borrego Desert SP. Neither has its own article. The park article's geology section does document this drainage in its own text -- the Fish Creek Badlands, and the oyster and pecten coquina forming the 'Elephant Knees' along Fish Creek, which is the landmark this drive passes. Sandstone Canyon is not named in it.",
+          "links": [
+            {
+              "label": "Wikipedia — Anza-Borrego Desert SP",
+              "url": "https://en.wikipedia.org/wiki/Anza-Borrego_Desert_State_Park"
+            }
+          ]
         }
       },
       "scenicDrives_patch": [
@@ -8812,6 +8893,12 @@
               "url": "https://en.wikipedia.org/wiki/Senator_Wash_Reservoir"
             }
           ]
+        },
+        "Betty's Kitchen National Recreation Trail": {
+          "entity": "National recreation trail on the lower Colorado near Yuma. No article. Checked both plausible parents: Imperial Dam and Mittry Lake mention neither Betty's Kitchen nor any trail."
+        },
+        "Rest and reset before the service days": {
+          "entity": "A rest day, not a place. No entity to link."
         }
       },
       "trails": [
@@ -8923,6 +9010,15 @@
               "url": "https://en.wikipedia.org/wiki/Castle_Dome_Landing%2C_Arizona"
             }
           ]
+        },
+        "Coach service — book Tue 18 to Fri 21": {
+          "entity": "A booking window for RV service, not a place."
+        },
+        "Mobile techs, solar and lithium": {
+          "entity": "A category of service to arrange, not an entity."
+        },
+        "Tyres and alignment": {
+          "entity": "A service task, not an entity."
         }
       },
       "scenicDrives_patch": [
@@ -8966,6 +9062,9 @@
               "url": "https://en.wikipedia.org/wiki/Castle_Dome_Landing%2C_Arizona"
             }
           ]
+        },
+        "Astronomy night": {
+          "entity": "A generic activity, not a named entity. The Kofa National Wildlife Refuge article has no astronomy or dark-sky content either."
         }
       }
     },
@@ -9130,6 +9229,9 @@
               "url": "https://en.wikipedia.org/wiki/Catalina_State_Park"
             }
           ]
+        },
+        "Charouleau Gap (truck)": {
+          "entity": "4x4 route over the Santa Catalina foothills. No article, and the Catalina State Park full text never mentions it."
         }
       }
     },
@@ -9297,6 +9399,12 @@
               "url": "https://en.wikipedia.org/wiki/Jerome%2C_Arizona"
             }
           ]
+        },
+        "Broken Arrow 4x4 trail (towed truck)": {
+          "entity": "The Sedona 4x4 trail. No article. Sedona, Arizona's only 'Broken Arrow' mention is the 1950 film shot there, not the trail, and Coconino National Forest never mentions it."
+        },
+        "Devil's Bridge Trail": {
+          "entity": "The Sedona sandstone arch. Rejected on identity: 'Devils Bridge' redirects to Devil's Bridge, an article about dozens of ancient European masonry arch bridges. It lists the Sedona arch in one line that explicitly excludes it from the subject -- 'this is a naturally formed bridge, not a man-made stone bridge'. Coconino NF does not mention it either."
         }
       },
       "trails": [
@@ -9412,6 +9520,24 @@
             {
               "label": "Wikipedia — Bryce Canyon Scenic Trails",
               "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park_Scenic_Trails_Historic_District"
+            }
+          ]
+        },
+        "Mossy Cave Trail": {
+          "entity": "No article of its own. Bryce Canyon National Park's own text lists it among the park's hikes with its length and access: 'Mossy Cave (one hour, State Route 12 northwest of Tropic)'.",
+          "links": [
+            {
+              "label": "Wikipedia — Bryce Canyon NP",
+              "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park"
+            }
+          ]
+        },
+        "Sunrise Point & Sunset Point": {
+          "entity": "The two main Bryce Amphitheater viewpoints. Neither has an article -- and bare 'Sunrise Point' does not resolve at all. The park article names both in its own text as the trailheads for Queens Garden (Sunrise Point) and Navajo Loop (Sunset Point).",
+          "links": [
+            {
+              "label": "Wikipedia — Bryce Canyon NP",
+              "url": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park"
             }
           ]
         }
@@ -9885,6 +10011,15 @@
               "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
             }
           ]
+        },
+        "Petroglyph Point Trail": {
+          "entity": "Mesa Verde's below-the-rim loop to its petroglyph panel. Rejected on identity: 'Petroglyph Point' resolves to Petroglyph Point Archeological Site, which is in Lava Beds National Monument, California -- wrong state, wrong park. Mesa Verde National Park's own text does document this one by name: 'Modern Hopi have interpreted the petroglyphs at Mesa Verde's Petroglyph Point as depictions of various clans of people.'",
+          "links": [
+            {
+              "label": "Wikipedia — Mesa Verde NP",
+              "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+            }
+          ]
         }
       },
       "trails": [
@@ -10089,6 +10224,9 @@
               "url": "https://en.wikipedia.org/wiki/Chama%2C_New_Mexico"
             }
           ]
+        },
+        "Reservoir Hill Trail system": {
+          "entity": "The town trail network above Pagosa Springs. Rejected on identity: bare 'Reservoir Hill' resolves to Reservoir Hill, Baltimore, a Maryland neighbourhood. Pagosa Springs, Colorado never mentions Reservoir Hill."
         }
       },
       "trails": [
@@ -20585,6 +20723,9 @@
               "url": "https://en.wikipedia.org/wiki/Edgerton_Highway"
             }
           ]
+        },
+        "4x4 explore O'Brien Creek Road": {
+          "entity": "The 4x4 spur out of Chitina toward the Copper River. No article; the Chitina, Alaska article's full text never mentions O'Brien Creek Road, so there is no parent that documents it."
         }
       },
       "offroad": [
@@ -20655,6 +20796,12 @@
               "url": "https://en.wikipedia.org/wiki/Quitobaquito_Springs"
             }
           ]
+        },
+        "Ranger star party": {
+          "entity": "A scheduled ranger programme, not an entity. The Organ Pipe Cactus National Monument article has no star-party or dark-sky content."
+        },
+        "Victoria Mine Trail": {
+          "entity": "Trail to the monument's old Victoria Mine. No article; the monument article never mentions it, and the NRHP listings for Organ Pipe Cactus National Monument do not include it either."
         }
       }
     },
@@ -20757,6 +20904,9 @@
               "url": "https://en.wikipedia.org/wiki/Ruby%2C_Arizona"
             }
           ]
+        },
+        "Paton Center for Hummingbirds": {
+          "entity": "Tucson Audubon's hummingbird site in Patagonia. No article, and Tucson Audubon Society has no article to serve as a parent."
         }
       }
     },

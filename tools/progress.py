@@ -204,13 +204,22 @@ def main():
                 elif partial: d_b += 1
         row.append(cell(d_h, d_b, d_t)); raw_cells.append((d_h, d_b, d_t)); acc('dg', d_h, d_b, d_t)
 
-        # highlights: blocked when the headline contains no entity at all
+        # highlights: blocked when the headline contains no entity at all, and
+        # blocked when the db carries a researched decision NOT to link it —
+        # a db entry with an `entity` note and no links means someone looked,
+        # found the named thing has no article and no parent that documents it,
+        # and wrote down what was searched. Resurrection Pass Trail is a 39-mile
+        # national recreation trail with no article under any title; Great Basin
+        # is a certified dark-sky park whose article never uses the words "dark
+        # sky", "stargazing" or "astronomy". Those are finished, not pending.
         h_h = h_b = h_t = 0
         for s in L:
+            decided = (db.get(s['id'], {}).get('activities') or {})
             for a in (s.get('activities') or []):
                 h_t += 1
                 if a.get('links'): h_h += 1
                 elif not has_entity(a.get('name')): h_b += 1
+                elif a['name'] in decided: h_b += 1
         row.append(cell(h_h, h_b, h_t)); raw_cells.append((h_h, h_b, h_t)); acc('hl', h_h, h_b, h_t)
 
         for key, field in (('sc', 'scenicDrives'), ('of', 'offroad')):

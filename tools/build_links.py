@@ -132,8 +132,12 @@ def build_item(t):
     if dist:
         item['distance'] = dist
     if t.get('reviews'):
-        r = t['reviews']
-        item['rating'] = r if '(' in r else r + ' reviews'
+        # "4.8 (1,307)" is the normal shape. A bare count arrives when the star
+        # could not be sourced — DuckDuckGo's AllTrails titles carry the review
+        # count and never the star — and that count is worth showing on its own.
+        # Test for the word too, or "285 reviews" becomes "285 reviews reviews".
+        r = t['reviews'].strip()
+        item['rating'] = r if ('(' in r or 'review' in r.lower()) else r + ' reviews'
     if t.get('uses'):
         item['uses'] = t['uses']
     if t.get('dogs') is not None:

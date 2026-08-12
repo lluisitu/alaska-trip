@@ -12557,6 +12557,86 @@
           "tier": "official",
           "source": "https://www.michigan.gov/recsearch/parks/wilderness"
         }
+      ],
+      "trails": [
+        {
+          "name": "Cut River Gorge Trail",
+          "elevation_gain": "203 ft",
+          "reviews": "285 reviews",
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "name": "Cut River Nature Trail",
+            "url": "https://www.alltrails.com/trail/us/michigan/cut-river-bridge-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Cut River Bridge Roadside Park",
+              "url": "https://www.alltrails.com/parks/us/michigan/cut-river-bridge-roadside-park",
+              "tier": "indexed",
+              "note": "Park-level browse page; source of the 203 ft elevation-gain figure."
+            },
+            {
+              "label": "Discover St. Ignace",
+              "url": "https://stignace.com/hiking-walking/cut-river-nature-trail/",
+              "tier": "community",
+              "note": "Local visitor bureau page; confirms the trail descends from the US-2 roadside park to the Cut River and the Lake Michigan shoreline."
+            }
+          ],
+          "stats_note": "AllTrails indexes this under the name 'Cut River Nature Trail' at a slug built on 'cut-river-bridge-trail'; neither the search title nor snippet published a distance, so none is recorded."
+        },
+        {
+          "name": "M-185 Lakeshore Loop, Mackinac Island",
+          "distance": "8.3 mi loop",
+          "difficulty": "Easy",
+          "uses": [
+            "hike",
+            "bike",
+            "horse"
+          ],
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "TrailLink — Mackinac Island Loop (State Highway 185)",
+              "url": "https://www.traillink.com/trail/mackinac-island-loop-(state-highway-185)/",
+              "tier": "community",
+              "note": "Fetched directly: 8.3 mi, asphalt, easy, wheelchair accessible; permitted uses walking, biking, horseback, inline skating, cross-country skiing. Motor vehicles have been banned since 1901 — the only state highway in the country where that is true. It is a paved car-free shared-use loop, not a footpath."
+            },
+            {
+              "label": "Michigan Trails — Mackinac Island Lake Shore Trail",
+              "url": "https://mitrails.org/trail/mackinac-island-lake-shore-trail/",
+              "tier": "community",
+              "note": "Gives the loop as 8.2 mi paved on Lake Shore Boulevard."
+            }
+          ],
+          "stats_note": "TrailLink says 8.3 mi and mitrails.org says 8.2 mi for the same perimeter loop; the difference is where each starts measuring in the village."
+        },
+        {
+          "name": "Mackinac Island — Arch Rock & Fort Holmes trails",
+          "distance": "3.2 mi loop",
+          "reviews": "226 reviews",
+          "alltrails": {
+            "name": "Fort Holmes Loop",
+            "url": "https://www.alltrails.com/trail/us/michigan/fort-holmes-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Arch Rock",
+              "url": "https://www.alltrails.com/trail/us/michigan/arch-rock--2",
+              "tier": "indexed",
+              "note": "The Arch Rock half of this entry, listed separately: easy short walk to the viewing platform over the arch, 468 reviews."
+            }
+          ],
+          "stats_note": "The card entry names two destinations. AllTrails carries them as two listings — Fort Holmes Loop (3.2 mi, mixed paved and dirt) and Arch Rock (easy stroll) — not as one route."
+        }
       ]
     },
     "traverse-city-mi": {
@@ -12655,6 +12735,33 @@
             }
           ],
           "stats_note": "Our card name pairs two things NPS treats differently. NPS lists no 'Dune Climb' as a standalone trail — it is a trailhead, and the trail leaving it is the Dunes Hiking Trail (3.5 mi, Strenuous), which is NOT the Cottonwood Trail. The 1.5 mi / Moderate figures are the Cottonwood Trail alone. Worth splitting this into two entries, or renaming to 'Cottonwood Trail'."
+        },
+        {
+          "name": "Old Mission Point Park / Lighthouse Trail",
+          "distance": "6.2 mi loop",
+          "difficulty": "Moderately challenging",
+          "reviews": "1,215 reviews",
+          "alltrails": {
+            "name": "Old Mission Point Park",
+            "url": "https://www.alltrails.com/trail/us/michigan/old-mission-point-park",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Old Mission Peninsula Lighthouse Park",
+              "url": "https://www.alltrails.com/trail/us/michigan/old-mission-peninsula-lighthouse-park",
+              "tier": "indexed",
+              "note": "The short lighthouse-and-beach walk rather than the full park loop, 198 reviews — the better option for an hour rather than a morning."
+            },
+            {
+              "label": "AllTrails — Old Mission Point Park browse",
+              "url": "https://www.alltrails.com/parks/us/michigan/old-mission-point-park",
+              "tier": "indexed",
+              "note": "Park-level page for the whole trail network at the north end of the peninsula."
+            }
+          ],
+          "stats_note": "The 6.2 mi figure is the full park loop, averaging 2 h. The lighthouse itself is a short walk from the lot — see the second link."
         }
       ]
     },
@@ -12807,6 +12914,60 @@
               "note": "Managing authority. Runs below 150-foot cliffs past springs and forested terraces. 'More difficult' is the DNR's own three-step scale (Easiest / Moderate / More difficult), not an AllTrails grade."
             }
           ]
+        },
+        {
+          "name": "Cave Point County Park shoreline trail",
+          "distance": "2.3 mi loop",
+          "difficulty": "Easy",
+          "reviews": "51 reviews",
+          "alltrails": {
+            "name": "Cave Point Loop",
+            "url": "https://www.alltrails.com/trail/us/wisconsin/cave-point-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Cave Point County Park browse",
+              "url": "https://www.alltrails.com/parks/us/wisconsin/cave-point-county-park",
+              "tier": "indexed",
+              "note": "Two easy trails in the park, 11–12 m of elevation gain between them."
+            }
+          ]
+        },
+        {
+          "name": "Red Trail, Whitefish Dunes State Park",
+          "distance": "1.2 mi out-and-back",
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "name": "Whitefish Dunes Yellow and Red Loop",
+            "url": "https://www.alltrails.com/trail/us/wisconsin/whitefish-dunes-yellow-and-red-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Wisconsin DNR — Whitefish Dunes hiking",
+              "url": "https://dnr.wisconsin.gov/topic/parks/whitefish/recreation/hiking",
+              "tier": "official",
+              "note": "Fetched directly. The authority's own words: 'The Red Trail is a 1.2-mile long out and back trail with connections to other property trails. The trail takes hikers to Old Baldy, the tallest dune in the park, which rises 93 feet above lake level.' Listed as hiking; the DNR publishes no difficulty grade for any trail in this park."
+            },
+            {
+              "label": "AllTrails — Old Baldy Loop Trail",
+              "url": "https://www.alltrails.com/trail/us/wisconsin/old-baldy-loop-trail",
+              "tier": "indexed",
+              "note": "The best-reviewed way onto Old Baldy, 721 reviews — beaches, forest, Lake Michigan views and boardwalks from the Clark Lake Road lot."
+            },
+            {
+              "label": "AllTrails — Whitefish Dunes Red, Yellow and Green Loop",
+              "url": "https://www.alltrails.com/trail/us/wisconsin/whitefish-dunes-red-yellow-and-green-loop",
+              "tier": "indexed",
+              "note": "Longer combination through the forested beech and sugar-maple dunes."
+            }
+          ],
+          "stats_note": "AllTrails has no standalone Red Trail listing — it only indexes combination loops. The 1.2 mi is the DNR's figure for the Red Trail alone; the AllTrails Yellow-and-Red loop linked here is 3.3 mi, easy, about an hour."
         }
       ]
     },
@@ -13000,7 +13161,27 @@
             }
           ]
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Avon River Parklands Loop (Tom Patterson Island / Confederation Park)",
+          "alltrails": {
+            "name": "Avon River Loop",
+            "url": "https://www.alltrails.com/trail/canada/ontario/avon-river-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Pacer — Avon River Stratford Loop",
+              "url": "https://www.mypacer.com/routes/103333/avon-river-stratford-loop-run-trail-ontario-canada",
+              "tier": "community",
+              "note": "Puts the loop at 1.9 mi with about 26 ft of elevation gain, rated easy."
+            }
+          ],
+          "stats_note": "The AllTrails listing is confirmed as Stratford's — its description names the dammed Avon, North Shore Park, the Stratford Festival grounds and Lower Queen's Park — but it published no distance or difficulty in the search result, so only the community figure above is recorded."
+        }
+      ]
     },
     "elora-on": {
       "activities": {
@@ -13525,7 +13706,82 @@
             }
           ]
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Jones Creek Trail System",
+          "distance": "4.3 mi loop",
+          "difficulty": "Moderately challenging",
+          "alltrails": {
+            "name": "Jones Creek Trail",
+            "url": "https://www.alltrails.com/trail/canada/ontario/jones-creek-trail--2",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Hiking, Thousand Islands National Park",
+              "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+              "tier": "official",
+              "note": "The managing authority for the Jones Creek trails; trail maps and brochures are at the trailheads."
+            },
+            {
+              "label": "AllTrails — Jones Creek Loop",
+              "url": "https://www.alltrails.com/trail/canada/ontario/jones-creek-loop",
+              "tier": "indexed",
+              "note": "The shorter, easier circuit in the same network — described as suiting all skill levels."
+            }
+          ],
+          "stats_note": "Jones Creek is a network, not one path. AllTrails indexes several routes through it; the 4.3 mi figure is the loop linked above, about 1 h 27 min."
+        },
+        {
+          "name": "Landon Bay Trails",
+          "distance": "2.6 km loop",
+          "difficulty": "Moderately challenging",
+          "reviews": "407 reviews",
+          "alltrails": {
+            "name": "Donevan and Bay Trail",
+            "url": "https://www.alltrails.com/trail/canada/ontario/donevan-and-bay-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Donevan Trail",
+              "url": "https://www.alltrails.com/en-gb/trail/canada/ontario/donevan-trail",
+              "tier": "indexed",
+              "note": "The Donevan on its own, 588 reviews — forest, wetland and rocky outcrop; the lookout is on this one. Only the en-gb URL was returned by search."
+            },
+            {
+              "label": "Parks Canada — Hiking, Thousand Islands National Park",
+              "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike",
+              "tier": "official",
+              "note": "Landon Bay is a Parks Canada mainland site; five trails leave the same parking area."
+            }
+          ],
+          "stats_note": "AllTrails carries no entry called 'Landon Bay Trails'. The Donevan and Bay Trail is the loop that entry describes; the terrain is mostly flat — dirt, rock slab and boardwalk."
+        },
+        {
+          "name": "Mallorytown Landing Trails",
+          "distance": "3.1 km circular",
+          "difficulty": "Easy",
+          "reviews": "68 reviews",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/canada/ontario/mallorytown-landing-trails--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Mallorytown Landing day-use area",
+              "url": "https://parks.canada.ca/pn-np/on/1000/activ/mallorytown",
+              "tier": "official",
+              "note": "1121 Thousand Islands Parkway; riverside walks and interactive exhibits at the park's mainland visitor hub."
+            }
+          ],
+          "stats_note": "AllTrails files this under the nearby township, Front of Yonge, not Mallorytown. About 40 min."
+        }
+      ]
     },
     "perth-on": {
       "activities": {
@@ -13968,15 +14224,34 @@
         {
           "name": "Stowe Pinnacle Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/vermont/stowe-pinnacle-trail",
+            "match": "exact",
+            "tier": "indexed"
           },
           "reviews": "4.8 (3,237)",
           "uses": [
             "hike"
           ],
           "was": "Stowe Pinnacle Trail — no url",
-          "note_source": "Stowe's most popular and hardest trail. No direct listing url surfaced in search. Name kept; no constructed slug."
+          "note_source": "Stowe's most popular and hardest trail. No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "distance": "3.3 mi out-and-back",
+          "elevation_gain": "1,562 ft",
+          "difficulty": "Challenging",
+          "other_links": [
+            {
+              "label": "Vermont Trail Finder — Stowe Pinnacle",
+              "url": "https://www.trailfinder.info/trails/trail/stowe-pinnacle",
+              "tier": "community",
+              "note": "Half a mile of false flat, then a staircase-like climb; an overlook spur partway up faces Mount Mansfield. Puts the round trip at just under 5 mi from either trailhead."
+            },
+            {
+              "label": "Go Stowe — Stowe Pinnacle",
+              "url": "https://gostowe.com/things-to-do/outdoor-activities/stowe-pinnacle",
+              "tier": "community",
+              "note": "Two trailheads: Upper Hollow Road is 3.6 mi round trip, the Pinnacle Meadows lot cuts it to about 2.6 mi."
+            }
+          ],
+          "stats_note": "The elevation gain is AllTrails' own 476 m converted. Published distances vary a lot with which of the two trailheads you use — 2.6 to 5 mi round trip — so check the lot before setting out."
         },
         {
           "name": "Bingham Falls Trail",
@@ -13997,26 +14272,94 @@
         {
           "name": "Moss Glen Falls Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "name": "Moss Glen Falls Trail and VAST 100 Trail",
+            "url": "https://www.alltrails.com/trail/us/vermont/moss-glen-falls-trail--3",
+            "match": "contains",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Moss Glen Falls (Stowe) — no url",
-          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "distance": "5.2 mi out-and-back",
+          "elevation_gain": "941 ft",
+          "other_links": [
+            {
+              "label": "Go Stowe — Moss Glen Falls",
+              "url": "https://gostowe.com/things-to-do/outdoor-activities/moss-glen-falls",
+              "tier": "community",
+              "note": "Five minutes' drive from Stowe village; the falls themselves are about a quarter-mile from the trailhead."
+            },
+            {
+              "label": "Vermont Trail Finder — Moss Glen Falls",
+              "url": "https://www.trailfinder.info/trails/trail/moss-glen-falls",
+              "tier": "community",
+              "note": "Directions: VT-100 north 3 mi, right on Randolph Road, right on Moss Glen Falls Road, lot on the right after 0.5 mi. Plowed in winter as a bus turnaround."
+            }
+          ],
+          "stats_note": "Two very different walks share this name. The 5.2 mi / 941 ft figure is the full trail continuing onto the VAST 100 corridor — this is the listing AllTrails confirms as 'near Stowe'. The waterfall itself is a quarter-mile from the parking area, so most visits are under a mile. A separate short AllTrails entry with 1,133 reviews exists but its town could not be confirmed, and a third, 0.1 mi with 161 reviews, is the unrelated Moss Glen Falls at Granville."
         },
         {
           "name": "Mount Mansfield via Sunset Ridge",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "name": "The Chin (Mount Mansfield) via Sunset Ridge Trail",
+            "url": "https://www.alltrails.com/trail/us/vermont/the-chin-via-sunset-ridge-trail",
+            "match": "contains",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Mount Mansfield via Sunset Ridge / — no url",
-          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug."
+          "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
+          "distance": "5.4 mi out-and-back",
+          "elevation_gain": "2,545 ft",
+          "stats_note": "AllTrails gives 4.5–5 hr. Other sources put the same route at 6.0–6.6 mi and rate it Hard; the ridge above treeline is exposed alpine tundra and there is no shelter on it."
+        },
+        {
+          "name": "Mount Mansfield via Sunset Ridge / Long Trail",
+          "alltrails": {
+            "name": "Sunset Ridge and Long Trail Loop",
+            "url": "https://www.alltrails.com/trail/us/vermont/sunset-ridge-and-long-trail-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Mount Mansfield Loop Trail",
+              "url": "https://www.alltrails.com/trail/us/vermont/mount-mansfield-loop-trail",
+              "tier": "indexed",
+              "note": "Maple Ridge, Long Trail and Sunset Ridge combined, 2,970 reviews — the bigger version of the same day."
+            }
+          ],
+          "stats_note": "AllTrails describes this as one of the most popular routes in Underhill State Park — up Sunset Ridge, back along the Long Trail on the ridge — but published no distance, gain or difficulty in any search result, so none is recorded here."
+        },
+        {
+          "name": "Sterling Pond Trail",
+          "distance": "2.2 mi out-and-back",
+          "difficulty": "Moderately challenging",
+          "reviews": "3,747 reviews",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/vermont/sterling-pond-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Go Stowe — Sterling Pond",
+              "url": "https://gostowe.com/things-to-do/outdoor-activities/sterling-pond",
+              "tier": "community",
+              "note": "Trailhead is in Smugglers' Notch, which closes to through traffic in winter; the pond is Vermont's highest trout pond."
+            },
+            {
+              "label": "AllTrails — Spruce Peak via Sterling Pond Trail",
+              "url": "https://www.alltrails.com/trail/us/vermont/spruce-peak-via-sterling-pond-trail",
+              "tier": "indexed",
+              "note": "Continuation past the pond to Spruce Peak; parks at the Smugglers' Notch visitor centre."
+            }
+          ],
+          "stats_note": "AllTrails says 1 h 37 min for 2.2 mi. Published gain ranges from ~950 to ~1,320 ft across sources — it is short and steep either way, rocky with exposed roots."
         }
       ],
       "offroad": [
@@ -14150,7 +14493,100 @@
             }
           ]
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "L'Étang-Fer-de-Lance (Parc national du Mont-Orford)",
+          "distance": "1.7 mi loop",
+          "difficulty": "Easy",
+          "alltrails": {
+            "name": "Fer-de-Lance Pond and Campeur Hill (Étang Fer-de-Lance et colline du Campeur)",
+            "url": "https://www.alltrails.com/trail/canada/quebec/etang-fer-de-lance-et-colline-du-campeur",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Hiking Project — Sentier de l'Étang-Fer-de-Lance",
+              "url": "https://www.hikingproject.com/trail/7102637/sentier-de-letang-fer-de-lance",
+              "tier": "community",
+              "note": "Short walk to a viewpoint over the marsh and the mountains behind it."
+            }
+          ],
+          "stats_note": "AllTrails' listing bundles the pond loop with the Colline du Campeur; about 42 min. Its own trailhead page for the sentier is a POI, not a route."
+        },
+        {
+          "name": "Le Mont-Chauve (Parc national du Mont-Orford)",
+          "reviews": "170 reviews",
+          "alltrails": {
+            "name": "Mont-Chauve via Étang aux Cerises",
+            "url": "https://www.alltrails.com/en/trail/canada/quebec/mont-chauve-via-etang-aux-cerises",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Mont-Chauve via Sentier du Pékan",
+              "url": "https://www.alltrails.com/trail/canada/quebec/mont-chauve-via-sentier-du-pekan",
+              "tier": "indexed",
+              "note": "The long way in off the Pékan: 10.3 mi, challenging, about 4 h 56 min, 54 reviews."
+            },
+            {
+              "label": "AllTrails — Mont Chauve via le Castor et des Loutres",
+              "url": "https://www.alltrails.com/trail/canada/quebec/mont-chauve-via-le-castor-et-des-loutres",
+              "tier": "indexed",
+              "note": "Third approach; the summit is 599 m."
+            }
+          ],
+          "stats_note": "Étang aux Cerises is the Mont-Orford sector this trail leaves from, which is how the listing was confirmed as the right Mont Chauve — there is another of the same name at Saint-Zénon. Reviewers call it technical, heavy on roots and rock, with a steady climb from about the 5th km. AllTrails published no distance for this variant; only the en-locale URL was returned."
+        },
+        {
+          "name": "Le Pékan (Parc national du Mont-Orford)",
+          "distance": "5.2 mi loop",
+          "difficulty": "Moderately challenging",
+          "reviews": "1,267 reviews",
+          "alltrails": {
+            "name": "Pékan Trail",
+            "url": "https://www.alltrails.com/trail/canada/quebec/pekan",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "stats_note": "About 2 h 16 min, near Orford. Forest trail running along a lake."
+        },
+        {
+          "name": "Panorama Trail, Owl's Head (Mansonville)",
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "name": "Owls Head via Panorama Trail and Abénakis-Maçonique Trail",
+            "url": "https://www.alltrails.com/trail/canada/quebec/owls-head-via-sentier-panoramique-et-sentier-abenakis-maconique",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Municipalité de Potton — Owl's Head hiking trails",
+              "url": "https://potton.ca/en/hiking-trails-at-owls-head-are-now-all-open/",
+              "tier": "official",
+              "note": "The municipality manages the three hiking trails on Owl's Head Mountain — Panorama, Abénaquis-Maçonnique and Anaconda — and all leave from the same parking lot. This is the authority confirming Panorama is a summer hiking trail and not a ski run."
+            },
+            {
+              "label": "Owl's Head — hiking",
+              "url": "https://owlshead.com/en/hiking/",
+              "tier": "official",
+              "note": "Resort's own page; all trails lead to the summit, average elevation 540 m."
+            },
+            {
+              "label": "Trailforks — Sentier Panorama",
+              "url": "https://www.trailforks.com/trails/sentier-panorama-470054/",
+              "tier": "community",
+              "note": "4 km singletrack, graded black diamond."
+            }
+          ],
+          "stats_note": "Distance is published two ways — Trailforks 4 km one way as black-diamond singletrack, Plein air À la carte 5.2 km as a loop — so no single figure is recorded. It is steep either way."
+        }
+      ]
     },
     "north-conway-nh": {
       "activities": {
@@ -14283,6 +14719,91 @@
           "note": "Resolved: this is East Branch Road, FR 38 — the East Branch of the Saco, in Jackson and Chatham, not the East Branch Pemigewasset — and it is the companion to Slippery Brook FR 17 in the Town Hall Road system. Well-maintained dirt and gravel hugging the river, with pull-offs for camping and trailheads and a bridge crossing; dead-ends at a hiking trail. The same quarter-mile camping and fire restrictions as FR 17 apply through 2031.",
           "tier": "community",
           "source": "https://trailsnh.com/roads/status/FR-38/east-branch-road"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Arethusa Falls",
+          "distance": "2.9 mi out-and-back",
+          "difficulty": "Moderately challenging",
+          "alltrails": {
+            "name": "Arethusa Falls via Bemis Brook and Arethusa Falls Trails",
+            "url": "https://www.alltrails.com/trail/us/new-hampshire/arethusa-falls-via-bemis-brook-and-arethusa-falls-trails",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Arethusa Falls (all routes)",
+              "url": "https://www.alltrails.com/poi/us/new-hampshire/arethusa-falls-2",
+              "tier": "indexed",
+              "note": "Four trails reach the falls; this page lists them."
+            },
+            {
+              "label": "Waterfalls Guide — Arethusa Falls",
+              "url": "https://waterfallsguide.com/falls/arethusa-falls/",
+              "tier": "community",
+              "note": "140 ft horsetail on Bemis Brook in Crawford Notch State Park; puts the direct route at 2.6 mi round trip with about 900 ft of climbing."
+            }
+          ],
+          "stats_note": "AllTrails indexes the Bemis Brook variant, which adds the lower cascades. The direct Arethusa Falls Trail is shorter — 2.6 to 3.1 mi depending on source."
+        },
+        {
+          "name": "Boulder Loop Trail",
+          "distance": "3.5 mi loop",
+          "difficulty": "Moderately challenging",
+          "reviews": "2,956 reviews",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/new-hampshire/boulder-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "stats_note": "AllTrails' 3.5 mi includes the ledge spur; NH Family Hikes gives the loop itself as 3.1 mi with 920 ft of gain. The trail climbs a series of ledges to open views over the Swift River valley."
+        },
+        {
+          "name": "Diana's Baths",
+          "distance": "1.2 mi out-and-back",
+          "difficulty": "Easy",
+          "reviews": "4,889 reviews",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/new-hampshire/dianas-baths",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Vermont/NH Trail Finder — Diana's Baths",
+              "url": "https://www.trailfinder.info/trails/trail/dianas-baths",
+              "tier": "community",
+              "note": "Scenic waterfall and swimming area on Lucy Brook in the White Mountain National Forest."
+            }
+          ],
+          "stats_note": "About 24 min. AllTrails files it under Intervale; it is in Bartlett, just west of North Conway, and is one of the most heavily used short walks in the valley."
+        },
+        {
+          "name": "Mount Willard",
+          "distance": "3.2 mi out-and-back",
+          "difficulty": "Moderately challenging",
+          "reviews": "12,456 reviews",
+          "alltrails": {
+            "name": "Mount Willard Trail",
+            "url": "https://www.alltrails.com/trail/us/new-hampshire/mount-willard",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "stats_note": "About 1 h 52 min, from the Crawford Notch depot. The slug is 'mount-willard', not 'mount-willard-trail'."
+        },
+        {
+          "name": "Sabbaday Falls",
+          "distance": "0.7 mi out-and-back",
+          "difficulty": "Easy",
+          "reviews": "2,345 reviews",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/new-hampshire/sabbaday-falls",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "stats_note": "About 18 min, off the Kancamagus Highway; AllTrails files it under Bartlett."
         }
       ]
     },
@@ -14423,54 +14944,104 @@
         {
           "name": "Beehive Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "name": "The Beehive Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/maine/the-beehive-loop-trail",
+            "match": "contains",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Beehive Trail — no url",
           "note_source": "The iron-rung climb from Sand Beach. One of only six Acadia trails CLOSED to dogs. AllTrails indexes it as a point of interest and inside a combined Precipice loop that is itself marked CLOSED; no clean standalone listing surfaced.",
-          "dogs": false
+          "dogs": false,
+          "distance": "1.4 mi loop",
+          "elevation_gain": "450 ft",
+          "difficulty": "Strenuous",
+          "reviews": "17,782 reviews",
+          "other_links": [
+            {
+              "label": "Earth Trekkers — The Beehive Trail guide",
+              "url": "https://www.earthtrekkers.com/beehive-trail-acadia/",
+              "tier": "community",
+              "note": "Source of the distance, gain and difficulty here: 1.4 mi loop, 450 ft, strenuous."
+            },
+            {
+              "label": "Your NP Guide — Beehive Trail",
+              "url": "https://yournpguide.com/trails/beehive-trail/",
+              "tier": "community",
+              "note": "450–520 ft of gain over 1.4–1.9 mi, with hands-on scrambling on iron rungs."
+            }
+          ],
+          "stats_note": "The stats here are from trail guides, not AllTrails — the AllTrails result published only its review count. This is an iron-rung climb with steep cliff drop-offs beside the trail; not a dog route and not a route to reverse in a queue."
         },
         {
           "name": "Gorham Mountain Trail",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "name": "Gorham Mountain",
+            "url": "https://www.alltrails.com/trail/us/maine/gorham-mountain",
+            "match": "contains",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Gorham Mountain Trail — no url",
           "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
-          "dogs": true
+          "dogs": true,
+          "reviews": "3,030 reviews",
+          "other_links": [
+            {
+              "label": "AllTrails — Gorham Mountain Loop",
+              "url": "https://www.alltrails.com/trail/us/maine/gorham-mountain-loop",
+              "tier": "indexed",
+              "note": "The far busier listing at 9,826 reviews — the loop version off the Park Loop Road."
+            }
+          ],
+          "stats_note": "AllTrails published no distance or grade for either listing in search. Secondary sources put the round trip at about 3.5 mi with roughly 525 ft of gain, moderate. The Cadillac Cliffs variant on the way up is harder than the main line."
         },
         {
           "name": "Jordan Pond Path",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "url": "https://www.alltrails.com/trail/us/maine/jordan-pond-path",
+            "match": "exact",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Jordan Pond Path — no url",
           "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
-          "dogs": true
+          "dogs": true,
+          "distance": "3.3 mi loop",
+          "difficulty": "Easy",
+          "reviews": "12,949 reviews",
+          "other_links": [
+            {
+              "label": "AllTrails — Jordan Pond Path and South Bubble",
+              "url": "https://www.alltrails.com/trail/us/maine/jordan-pond-path-and-south-bubble",
+              "tier": "indexed",
+              "note": "3.6 mi loop rated challenging, 3,983 reviews — the pond circuit plus the climb up South Bubble."
+            }
+          ],
+          "stats_note": "The 3.3 mi comes from several independent guides that agree; AllTrails' own snippet gave only the review count. Flat on the east side, rough plank-and-rock on the west."
         },
         {
           "name": "Ocean Path",
           "alltrails": {
-            "match": "none",
-            "tier": "unlisted"
+            "name": "Ocean Path Trail",
+            "url": "https://www.alltrails.com/trail/us/maine/ocean-path-trail--2",
+            "match": "contains",
+            "tier": "indexed"
           },
           "uses": [
             "hike"
           ],
           "was": "Ocean Path (Ocean Trail) — no url",
           "note_source": "No direct listing url surfaced in search. Name kept; no constructed slug.",
-          "dogs": true
+          "dogs": true,
+          "reviews": "7,052 reviews",
+          "stats_note": "AllTrails published no distance in search; independent GPS tracks give 4.2–4.5 mi round trip with 499–577 ft of cumulative gain along the shore between Sand Beach and Otter Point. The southern end opens onto exposed rock above the sea stacks. The slug carries a '--2' suffix."
         }
       ],
       "offroad": [
@@ -14643,7 +15214,31 @@
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/maine/quarry-road-trail-3g8zlp5kgq1w"
         }
-      ]
+      ],
+      "trails": [
+        {
+          "name": "Mount Battie Trail / Nature Trail",
+          "distance": "1.2 mi out-and-back",
+          "difficulty": "Challenging",
+          "reviews": "1,667 reviews",
+          "alltrails": {
+            "name": "Mount Battie Trail",
+            "url": "https://www.alltrails.com/trail/us/maine/mount-battie-trail",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Mount Battie via Nature Trail Trailhead",
+              "url": "https://www.alltrails.com/trail/us/maine/mount-battie-via-nature-trail-trailhead",
+              "tier": "indexed",
+              "note": "The Nature Trail half of this entry: 2.8 mi out-and-back with 639 ft of gain — longer but far gentler than the direct Mount Battie Trail."
+            }
+          ],
+          "stats_note": "The card entry names two ways up and AllTrails lists them separately. The direct Mount Battie Trail is short and steep — 1.2 mi and rated challenging; the Nature Trail approach is 2.8 mi at an easier grade."
+        }
+      ],
+      "not_a_trail": []
     },
     "berkshires-ma": {
       "activities": {
@@ -14792,6 +15387,13 @@
           "note": "Resolved: this is a separate gravel road, NOT one of DCR's paved Notch/Rockwell/Summit auto roads — it is a quieter alternative ascent that eventually meets the paved main road and continues to the peak. Two status reports describe downed trees worth turning back for, so the gate date is not the only thing that can stop you. Note DCR's new rule that vehicles over 22 feet are prohibited on the Greylock Auto Roads and to the summit; the pickup is unaffected.",
           "tier": "community",
           "source": "https://www.onxmaps.com/offroad/trails/us/massachusetts/greylock-road-rezkjp90n6lk"
+        }
+      ],
+      "trails": [],
+      "not_a_trail": [
+        {
+          "entry": "Summit / Bascom Lodge area walk (Mount Greylock)",
+          "problem": "Not a trail — it is the summit plateau of Mount Greylock, reached by Notch Road or Rockwell Road, with Bascom Lodge and the Veterans War Memorial Tower on it. No named short walk exists at the summit itself. The nearest named path is the Overlook Trail, which AllTrails describes as a connector between the Hopper Trail and the summit and which other sources give as 3.2 mi around the south and west sides — a different and much longer outing than an area stroll."
         }
       ]
     },
@@ -15043,7 +15645,34 @@
             }
           ]
         }
-      }
+      },
+      "trails": [
+        {
+          "name": "Storm King Mountain via Stillman Trail",
+          "reviews": "2,302 reviews",
+          "alltrails": {
+            "name": "Storm King Mountain Loop",
+            "url": "https://www.alltrails.com/trail/us/new-york/storm-king-mountain-loop",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Stillman Trail",
+              "url": "https://www.alltrails.com/trail/us/new-york/stillman-trail--2",
+              "tier": "indexed",
+              "note": "The Stillman on its own, 60 reviews — from a small trailhead on Mountain Road, wide at first then singletrack, over the tops of Storm King and Butter Hill."
+            },
+            {
+              "label": "AllTrails — Storm King Mountain via Storm King Highway",
+              "url": "https://www.alltrails.com/trail/us/new-york/storm-king-mountain-via-storm-king-highway",
+              "tier": "indexed",
+              "note": "Alternative start from the Route 218 pull-off, 105 reviews."
+            }
+          ],
+          "stats_note": "The popular route is the loop above — it parks at the Route 9W picnic area and climbs the Stillman over the summit. AllTrails published no stats in search; an independent GPS track gives the loop as 2.4 mi with 541 ft of gain. The Stillman Trail is also indexed separately, but with only 60 reviews."
+        }
+      ]
     },
     "delaware-water-gap-pa": {
       "activities": {

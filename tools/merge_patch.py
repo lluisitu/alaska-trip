@@ -103,9 +103,17 @@ def merge_stop(cur, new, sid, log, force):
                 dst[k] = v
         elif key in NAMED_LISTS and isinstance(val, list):
             dst = cur.setdefault(key, [])
-            index = {i.get('name'): i for i in dst if isinstance(i, dict)}
+            # not_a_trail / not_a_route are keyed by `entry`, everything else by
+            # `name`. Assuming `name` crashed on a None slice rather than saying so.
+            def keyof(i):
+                return i.get('name') or i.get('entry')
+            index = {keyof(i): i for i in dst if isinstance(i, dict)}
             for item in val:
-                name = item.get('name')
+                name = keyof(item)
+                if name is None:
+                    log.append(f'  SKIPPED {sid}.{key} item with neither name nor entry: '
+                               f'{json.dumps(item, ensure_ascii=False)[:90]}')
+                    continue
                 if name in index:
                     tgt = index[name]
                     for f, v in item.items():

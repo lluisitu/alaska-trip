@@ -78,9 +78,13 @@ def ex(hh, decl, o='[', c=']'):
 
 
 # Phrases that mean "the dog may NOT use this one".
+# Every one of these was learned from a real sentence in this db. "are not
+# permitted" missed "NOT permitted off the Dunes Overlook Trail … or on Sand
+# Ramp Trail", and that single missing word inverted the answer for a trail the
+# authority bans.
 NEGATIVE = re.compile(
-    r"(closed to pets|closes to pets|not allowed|no dogs|are not permitted|"
-    r"prohibited on|trails? (?:are )?closed|except for service)", re.I)
+    r"(closed to pets|closes to pets|not allowed|no dogs|not permitted|"
+    r"prohibited on|barred|banned|trails? (?:are )?closed|except for service)", re.I)
 # ...and the word that flips a prohibition into a permission for whatever follows.
 EXCEPT = re.compile(r"\b(except|exception|exceptions|other than|apart from)\b", re.I)
 # A name ending in "Trail" that is really a place: "Eagle Trail State Recreation

@@ -552,7 +552,8 @@
         "Dunes Overlook Trail": true,
         "High Dune Loop": false,
         "Montville Nature Trail": true,
-        "Wellington Ditch Trail": null
+        "Wellington Ditch Trail": null,
+        "Sand Ramp Trail": false
       },
       "trail_dogs_why": "NPS names Mosca Pass and Dunes Overlook as permitted and the dunefield beyond the first high ridge as prohibited, which rules out High Dune. It says nothing either way about Montville or Wellington Ditch, so those stay null and show no icon rather than a guess.",
       "activities": {
@@ -645,7 +646,16 @@
         }
       },
       "dogs_source": "https://www.nps.gov/thingstodo/hike-montville-and-mosca-pass-trails.htm",
-      "dogs_source_quote": "Pets are permitted on leash on Montville Trail and Mosca Pass Trail. Please be sure to clean up after your pet."
+      "dogs_source_quote": "Pets are permitted on leash on Montville Trail and Mosca Pass Trail. Please be sure to clean up after your pet.",
+      "_verdict": "SAND RAMP TRAIL IS NOT DOG-LEGAL. No trail was added to this stop. NPS names it in the prohibition, not the permission: pets are not allowed \"North of Point of No Return, including Sand Ramp Trail\". The stop's existing `dogs` text in links_db already says this and is correct. The dog is well served here regardless — Mosca Pass Trail, Dunes Overlook Trail and Montville Nature Trail are all on the card already, all three dogs:true, and the 30 Mar-3 Apr 2027 dates block none of them.",
+      "not_a_trail": [
+        {
+          "entry": "Sand Ramp Trail",
+          "problem": "IT IS A REAL TRAIL — it is not a dog trail, which is the opposite of what this pass went looking for. NPS Great Sand Dunes pets page, fetched, lists where pets are NOT allowed and includes verbatim \"North of Point of No Return, including Sand Ramp Trail\", alongside \"North of Castle Creek Picnic Area, except along Medano Pass Primitive Road\", \"Off of the Dunes Overlook Trail\", and \"In the backcountry of the dunefield, beyond the first high ridge of dunes\". The permitted list on the same page is \"the Preserve (including Mosca Pass Trail) and main use areas of the Park (including Piñon Flats Campground, Dunes Overlook Trail, and along the Medano Pass Primitive Road)\", leash 6 feet (2 m) or less. The trail itself is an 11-mile route (NPS) starting in Loop 2 of Piñon Flats Campground and running along the foothills to Sand Creek; NPS calls it \"most commonly used as an access to various backpacking sites along the foothills, rather than as a destination trail for scenery\" and says that after the first two miles \"much of this trail is sandy soil or pure sand\". Reaching the usual trailhead does NOT need 4x4 — NPS states \"Point of No Return Trailhead provides standard 2WD access to the Sand Ramp Trail\" — but that trailhead is precisely the point north of which the dog may not go. ON THE SOUTHERN SECTION: the first stretch out of Piñon Flats, before Castle Creek Picnic Area, is where the Dunes Overlook spur leaves, and NPS explicitly permits pets on the Dunes Overlook Trail, so the dog can plainly walk that far. But NPS never publishes it as \"Sand Ramp Trail south of X is permitted\" — it publishes a permitted list of named places and a prohibition naming this trail. That walk is already on the card as Dunes Overlook Trail (2.8 mi, Moderate, 4.6 (1,159), dogs:true), which is the honest way to carry it. Recorded here so a later pass does not add Sand Ramp Trail to the trails box on the strength of a pet rule that in fact bans it.",
+          "source": "https://www.nps.gov/grsa/planyourvisit/pets.htm",
+          "source_2": "https://www.nps.gov/grsa/planyourvisit/hiking.htm"
+        }
+      ]
     },
     "salida-buenavista": {
       "authority": "USFS / City of Salida / Chaffee County",
@@ -5496,6 +5506,66 @@
           "difficulty": "Moderate",
           "elevation_gain": "426 ft",
           "reviews": "2,603"
+        },
+        {
+          "name": "Rim Rock Trail",
+          "distance": "0.9 mi point to point",
+          "official_length": "0.8 mi (Colorado Trail Explorer, manager: Black Canyon of the Gunnison NP); 0.9 mi (Hiking Project)",
+          "difficulty": "Easy/Intermediate",
+          "elevation_gain": "195 ft",
+          "reviews": "813 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "season": "DOG-LEGAL ON THESE DATES — dogs are permitted on this trail 11 Aug-31 May and barred 1 Jun-10 Aug; the 8-10 Apr 2028 stay is inside the permitted window",
+          "note": "THE ONLY TRAIL ON THE SOUTH RIM THE DOG MAY WALK, and on this stop's dates it is walkable. NPS: \"Leashed pets are only permitted on the Rim Rock Trail and on the North Rim Chasm View Nature Trail\", leash six feet (1.8 m) maximum; pets are prohibited on all other hiking trails, inner canyon routes, in the wilderness and on snowshoe/cross-country ski trails. Three things decide whether this actually works on 8-10 April, and all three come out yes. (1) The summer dog closure does not bite — dogs are shut out 1 Jun-10 Aug, which is nowhere near these dates. (2) The road reaches it. The South Rim Road is usually open to vehicles only from late April, but NPS states that in winter it is open as far as Gunnison Point at the visitor center, and this trail runs between the visitor center and the South Rim Campground — i.e. entirely inside the stretch that stays open. Warner Point and the rest of the rim drive are the part that is still shut in early April, and the dog could not use those anyway. (3) It is open after the 2025 South Rim Fire — but it burned. NPS current conditions, verbatim: \"Open. Trail is dry. Trail passes through heavily burned area; beware of uneven surfaces and blowing ash.\" Take water and expect ash on a windy day; a dog through burned ground comes back filthy. Rocky, with stairs and steep unfenced drop-offs to the canyon — six-foot leash, not a flexi. The other named exception, the North Rim Chasm View Nature Trail, is on the far side of the canyon: a long drive round via Crawford on a road that is itself seasonal, and not a realistic outing from a Montrose base for two nights.",
+          "note_source": "NPS Black Canyon pets page (nps.gov/blca/planyourvisit/pets2.htm), fetched, verbatim: \"Leashed pets are permitted in picnic areas, campgrounds, and parking lots, on paths to overlooks, and along roads currently open to vehicles\"; \"Leashed pets are only permitted on the Rim Rock Trail and on the North Rim Chasm View Nature Trail\"; \"Leashes must be a maximum of six feet (1.8 m) in length\"; \"Pets are prohibited on all other hiking trails, inner canyon routes, within the wilderness, or on snowshoe/cross country skiing trails.\" Seasonal dog window from Colorado Trail Explorer's Rim Rock record (trails.colorado.gov/trails/rim-rock-6042), fetched, which names Black Canyon of the Gunnison National Park as manager and publishes \"Dogs 08/11-05/31\", total length 0.8 mi, elevation 8,152-8,357 ft, delta 205 ft, dirt surface, hiking and snowshoeing permitted, bikes/horses/motor vehicles prohibited. Distance, gain and difficulty from Hiking Project (hikingproject.com/trail/7014561/rim-rock-nature-trail), fetched: 0.9 mi, 195 ft gain / 6 ft loss, high 8,343 ft, low 8,154 ft, Easy/Intermediate, \"begins at the South Rim Visitor Center's southeast parking area\" and \"passes the Uplands Trail at around 0.75 miles before ending at the Campground Loop C\". Road season from NPS operating hours (nps.gov/blca/planyourvisit/hours.htm), fetched, verbatim: \"The South Rim Road is usually open to vehicles from late-April to mid-November. In winter, the South Rim Road is open to Gunnison Point at the visitor center.\" Fire condition from NPS current conditions (nps.gov/blca/planyourvisit/conditions.htm), fetched, last updated 5/29/2026. Review count 813 from the AllTrails result title; no star for this trail surfaced in any snippet — the 4.6 (1,099) figure that AllTrails publishes on its Black Canyon park page belongs to the composite \"Oak Flat, Uplands, and Rim Rock Nature Trail Loop\", which is a different listing and is not recorded here.",
+          "name_note": "NPS calls it the \"Rim Rock Trail\"; AllTrails, Hiking Project and Colorado Trail Explorer all title the same trail \"Rim Rock Nature Trail\". Same trail, same endpoints. The authority's name is used as the entry name.",
+          "stats_note": "The published figure is point-to-point, visitor center to South Rim Campground Loop C. Walked as an out-and-back from either end it is roughly double that. Colorado Trail Explorer's odd \"Dogs 08/11-05/31 0.6mi\" field appears to describe the dog-permitted mileage of the 0.8 mi record; no authority explains the discrepancy and none is asserted here.",
+          "alltrails": {
+            "name": "Rim Rock Nature Trail",
+            "url": "https://www.alltrails.com/trail/us/colorado/rim-rock-nature-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Pets in Black Canyon",
+              "tier": "official",
+              "url": "https://www.nps.gov/blca/planyourvisit/pets2.htm",
+              "note": "The rule that makes this trail legal, and the only two trails in the park it names."
+            },
+            {
+              "label": "NPS — Current conditions",
+              "tier": "official",
+              "url": "https://www.nps.gov/blca/planyourvisit/conditions.htm",
+              "note": "Trail-by-trail status. Carries the post-fire warning for this trail — check it again before arriving."
+            },
+            {
+              "label": "NPS — Operating hours & seasons",
+              "tier": "official",
+              "url": "https://www.nps.gov/blca/planyourvisit/hours.htm",
+              "note": "The South Rim Road season, and the winter exception that keeps the visitor center — and therefore this trail — reachable in early April."
+            },
+            {
+              "label": "Colorado Trail Explorer — Rim Rock",
+              "tier": "community",
+              "url": "https://trails.colorado.gov/trails/rim-rock-6042",
+              "note": "State trail database, manager listed as the national park. The only source found that publishes the dog window as dates: 08/11-05/31."
+            },
+            {
+              "label": "Hiking Project — Rim Rock Nature Trail",
+              "tier": "community",
+              "url": "https://www.hikingproject.com/trail/7014561/rim-rock-nature-trail",
+              "note": "Distance, gain, high/low elevation, difficulty and the endpoint description."
+            }
+          ],
+          "needs": [
+            "time",
+            "star rating"
+          ],
+          "call": "Black Canyon of the Gunnison visitor center, 970-641-2337 ext. 205 — the stop's own forum note already says to phone before arrival about South Rim Road status and 2025 fire damage. Add one question to it: is the Rim Rock Trail open and is the dog closure still 11 Aug-31 May? NPS's own pets page publishes no dates for that closure at all; the only dated source found is the state trail database, and this is the dog's single walk at the stop."
         }
       ],
       "activities": {
@@ -5530,7 +5600,13 @@
         "Warner Point Nature Trail": {
           "entity": "Trail at the end of South Rim Road. No article, and the park article never mentions Warner Point."
         }
-      }
+      },
+      "trail_dogs": {
+        "Rim Rock Trail": true,
+        "Oak Flat Loop Trail": false,
+        "Warner Point Nature Trail": false
+      },
+      "dogs_note": "The dog is NOT stranded at Black Canyon on 8-10 Apr 2028. The Rim Rock Trail is inside the summer-closure-free window, inside the stretch of South Rim Road that stays open before the late-April opening, and open (though burned) after the 2025 fire. It is 0.9 mi and it is the whole of it — everything else on this card is closed to pets."
     },
     "joshua-tree": {
       "authority": "National Park Service",
@@ -7806,6 +7882,41 @@
           ],
           "was": "Rialto Beach — no url",
           "note_source": "No formal trail — you walk the beach itself to Split Rock and Hole-in-the-Wall. Tide-dependent, and this is one of the six Olympic trails where DOGS ARE PERMITTED (Rialto to Ellen Creek)."
+        },
+        {
+          "name": "July Creek Loop Trail",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "season": "Reachable in late October — US 101 and the Lake Quinault North Shore Road are low-elevation and open year-round; the 25-29 Oct 2027 stay carries no seasonal block, only the drive",
+          "note": "PET-LEGAL, named in the NPS list, leash 6 ft. On the north shore of Lake Quinault, branching from the July Creek Picnic Area trail. NO PUBLISHED LENGTH — NPS names the trail and describes it only as \"A loop branching from the July Creek Picnic Area trail\", and it appears in no trail database. Recorded as unknown rather than guessed; this is the same recorded absence the olympic stop already carries for the same trail, and nothing here contradicts it. Worth knowing before driving: from Forks it is about 68 miles / 1 hour 20 minutes each way south on US 101, plus the run in along the North Shore Road — a half day, not an evening walk. The nearer dog-legal ground from a Forks base, named in the same NPS rule, is the Kalaloch stretch of beach between the Hoh and Quinault Reservations, which is on the way south and needs no detour.",
+          "note_source": "NPS Olympic pets page (nps.gov/olym/planyourvisit/pets.htm) names \"July Creek Loop Trail (North shore of Lake Quinault)\" among the permitted trails and states \"Pets are not permitted on any trails not listed above\", leash no longer than 6 feet — this stop's own `dogs` field already quotes it. NPS place page (nps.gov/places/000/july-creek-loop-trail-trailhead.htm), fetched: carries only \"A loop branching from the July Creek Picnic Area trail\" and no length, surface or difficulty. NPS day-hiking page lists the trail by the same name. A further search under the exact name returned only the NPS day-hiking page and two third-party dog-travel guides, none of which publishes a length — no AllTrails, WTA, Komoot or TrailLink listing exists. Length, difficulty and time are unknown and are left blank deliberately. Forks-to-Quinault driving distance is not published by any authority; three independent route calculators agree at 68 miles / 1 h 16-23 min (trippy.com, distancesfrom.com, fromto.travel), which is why it is given as a rounded figure rather than a precise one.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — July Creek Loop Trail Trailhead",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/000/july-creek-loop-trail-trailhead.htm",
+              "note": "The only page the authority publishes for it. No length given."
+            },
+            {
+              "label": "NPS — Pets in Olympic",
+              "tier": "official",
+              "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+              "note": "The rule that makes it legal, and the closing sentence that shuts every trail it does not name."
+            }
+          ],
+          "needs": [
+            "distance",
+            "difficulty",
+            "time",
+            "reviews"
+          ],
+          "call": "Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop. No authority publishes it, and it is one of only six pet-legal trails in the park. Already logged against the olympic stop; the same call answers both."
         }
       ],
       "authority": "National Park Service — Olympic National Park",
@@ -7814,7 +7925,8 @@
       "trail_dogs": {
         "Hall of Mosses Trail": false,
         "Sol Duc Falls Trail": false,
-        "Rialto Beach to Hole-in-the-Wall": false
+        "Rialto Beach to Hole-in-the-Wall": false,
+        "July Creek Loop Trail": true
       },
       "dogs_exception": "Rialto is half open: leashed pets may walk from the parking lot to Ellen Creek, about half a mile. Hole-in-the-Wall is a further mile north, past the closure. Hall of Mosses and Sol Duc Falls are closed outright. The nearest pet-legal trail is the Spruce Railroad on Lake Crescent.",
       "official_links": [
@@ -7834,7 +7946,8 @@
           "season": "No seasonal gate — but VERIFY THE MORA BRANCH. In 2026 the park closed Mora Road past Mora Campground to the Rialto Beach parking area from mid-July for storm-damage repairs, expected back 15 Oct 2026. That is a 2026 project, not a 2027 one, and should be clear well before the 25 Oct 2027 arrival; confirm rather than assume. Expect rain in any month — this coast takes over 100 in a year.",
           "note_source": "NPS Visiting Mora and Rialto Beach; 2026 Mora Road closure reporting"
         }
-      ]
+      ],
+      "dogs_note": "Forks and olympic are two bases on the same park and share the same six pet-legal trails. This entry is deliberately identical to the one on the olympic card, down to the missing length, so the two do not disagree at a trailhead. What differs is the drive: from Port Angeles July Creek is roughly two hours, from Forks about 68 miles / 1 h 20."
     },
     "long-beach": {
       "activities": {
@@ -19682,6 +19795,105 @@
             }
           ],
           "stats_note": "Distance and gain are from third-party trail guides (11.3–11.6 mi one-way, 4,689–4,750 ft), not from AllTrails, which surfaced no figures for the base listing — only for the much longer 18.3 mi and 34.9 mi loops built on top of it. As a one-way ridge climb this is a shuttle or a turnaround, not a loop."
+        },
+        {
+          "name": "Oconaluftee River Trail",
+          "distance": "3 mi round trip",
+          "official_length": "3 miles (4.8 km) roundtrip (NPS); 1.5 mi one way (TrailLink)",
+          "difficulty": "Easy",
+          "time": "57 min",
+          "reviews": "2,917 reviews",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "dogs": true,
+          "cruise": true,
+          "cruise_reason": "NPS describes it as \"relatively flat, wide, and graveled\" and calls it bicycle friendly and wheelchair friendly; TrailLink lists bike and walking as the permitted uses and calls it \"mostly flat and easy\" with \"a few small hills\". Rail-flat river-grade gravel, bike-legal per the authority, no walk-your-bike section and no puncture-hazard reports found. The one caveat, in NPS's own words, is \"occasional obstacles of roots and rocks\" — texture, not dismount zones. At 1.5 mi one way it is a short spin rather than a ride, but it is a legal one with the dog in the carrier, which is rare.",
+          "season": "Low elevation near the Cherokee entrance and open year-round — the walk that survives a 30 Dec 2028-6 Jan 2029 winter stay",
+          "note": "ONE OF ONLY TWO TRAILS IN THE ENTIRE GREAT SMOKY MOUNTAINS THAT PERMIT PETS, and the practical one from this stop. NPS: \"The Gatlinburg Trail and Oconaluftee River Trail are the only two park trails where pets are permitted\"; leash no longer than 6 feet at all times, pets also allowed in campgrounds, picnic areas and on roads. THIS IS THE DOG'S WALK FOR THE WHOLE WEEK — every Deep Creek trail on this card is closed to it. It starts on the Cherokee side, which is this side: park at the Oconaluftee Visitor Center and walk past the Mountain Farm Museum to the trailhead. That is the visitor center the stop already names in its highlights, and the Cherokee/Great Smokies KOA is on the same side of the park, so this needs no crossing of the mountain and no dependence on Newfound Gap Road staying open. Follows the Oconaluftee River through elk habitat to the outskirts of Cherokee — expect elk, and keep the leash short around them. Gravel, flat, wide, and NPS lists it as wheelchair and bicycle friendly.",
+          "note_source": "NPS Great Smoky Mountains pets page (nps.gov/grsm/planyourvisit/pets.htm), fetched: the two permitted trails are \"the Gatlinburg Trail and the Oconaluftee River Trail\", pets \"must be kept on a leash no longer than 6 feet at all times\", \"Pets are welcome in campgrounds, picnic areas, and along roads\", never left unattended in vehicles or RVs. NPS trail page (nps.gov/thingstodo/hike-the-oconaluftee-river-trail.htm), fetched: \"3 miles (4.8 km) roundtrip\", \"relatively flat, wide, and graveled\", \"occasional obstacles of roots and rocks\", bicycle friendly and wheelchair friendly, \"Pets are allowed on this trail but must be on a leash\", \"Park at the Oconaluftee Visitor Center and walk from the visitor center parking to the Mountain Farm Museum to find the Oconaluftee River Trailhead.\" TrailLink (traillink.com/trail/oconaluftee-river-trail/), fetched: 1.5 miles, dirt, bike and walking, \"one of two in the Smokey Mountains National Park that allows bicycles and dogs\", endpoints \"Oconaluftee Visitor Center and outskirts of the city of Cherokee, NC\", elk and deer. AllTrails result snippet, verbatim: \"5.1-km out-and-back trail near Cherokee, North Carolina. Generally considered an easy route, it takes an average of 57 min to complete\", 2,917 reviews from the result title; no star and no elevation gain surfaced in any snippet.",
+          "stats_note": "NPS 3 mi roundtrip, AllTrails 5.1 km (3.2 mi) out-and-back and TrailLink 1.5 mi one way are all the same trail measured from the same visitor-center end. The authority's 3 mi roundtrip is the primary figure.",
+          "url_note": "Two AllTrails hits, one carrying a ?sh= tracking parameter and one an /en-gb/ locale segment. Only the tracking parameter and the locale segment were removed, to match the form every other url in this db uses; the slug itself is the one the search returned and was not assembled from the trail's name.",
+          "alltrails": {
+            "name": "Oconaluftee River Trail",
+            "url": "https://www.alltrails.com/trail/us/north-carolina/oconaluftee-river-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Oconaluftee River Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-the-oconaluftee-river-trail.htm",
+              "note": "Authority. Length, surface, the trailhead directions and the pet sentence."
+            },
+            {
+              "label": "NPS — Pets in Great Smoky Mountains",
+              "tier": "official",
+              "url": "https://www.nps.gov/grsm/planyourvisit/pets.htm",
+              "note": "The rule. Names the only two trails in the park where pets are permitted."
+            },
+            {
+              "label": "TrailLink — Oconaluftee River Trail",
+              "tier": "community",
+              "url": "https://www.traillink.com/trail/oconaluftee-river-trail/",
+              "note": "1.5 mi one way, endpoints, and independent confirmation that bikes and dogs are both allowed."
+            }
+          ],
+          "needs": [
+            "elevation gain",
+            "star rating"
+          ]
+        },
+        {
+          "name": "Gatlinburg Trail",
+          "distance": "3.9 mi out-and-back",
+          "official_length": "approximately 4 miles (6.4 km) roundtrip (NPS); 1.9 mi one way",
+          "difficulty": "Easy",
+          "elevation_gain": "180 ft",
+          "time": "1-1.5 hr",
+          "reviews": "6,695 reviews",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "dogs": true,
+          "cruise": false,
+          "cruise_reason": "Bike-legal per NPS, but the surface is mixed rather than rail-grade — NPS lists \"sections of paved road, crushed stone, roots, and uneven dirt\" and \"a few steep sections plus occasional roots and rocks\". That is not gravel cruising with a dog in a carrier. The Oconaluftee, on this side of the mountain, is the one that is.",
+          "season": "REACHING IT IS THE PROBLEM ON THESE DATES — it is on the Tennessee side and the only way there from Bryson City is Newfound Gap Road (US 441) over the crest of the Smokies. NPS: primary roads including Newfound Gap Road are \"open year-round, weather permitting\", and weather is exactly what a 30 Dec 2028-6 Jan 2029 stay is betting against; the road is routinely shut for snow and ice in late December and January",
+          "note": "THE OTHER OF THE PARK'S TWO PET-LEGAL TRAILS — and not a realistic day from this stop. Same rule, same six-foot leash: NPS names only the Gatlinburg Trail and the Oconaluftee River Trail. It runs from behind the Sugarlands Visitor Center to River Road in Gatlinburg, along the Little Pigeon River. THE DISTANCE IS THE POINT: Sugarlands is on the Tennessee side, and NPS's own mileposts put roughly 30 road miles between the two visitor centers (Deep Creek Valley Overlook is \"almost 14 miles north from Oconaluftee Visitor Center or almost 16 miles south from Sugarlands Visitor Center\") — with the run from Bryson City out to the Oconaluftee entrance on top of that, and the whole of it over Newfound Gap at 5,046 ft. Call it an hour each way in good conditions and a road that may simply be closed in the first week of January. Listed so the card carries both of the park's pet-legal trails and says which is which, not as a suggestion: the Oconaluftee is the walk, this is the one you would do if you were spending the day in Gatlinburg anyway.",
+          "note_source": "NPS Gatlinburg Trail page (nps.gov/thingstodo/hike-the-gatlinburg-trail.htm), fetched: \"Approximately 4 miles (6.4 km) roundtrip\", \"a leisurely path that is mostly flat and wide\" with \"a few steep sections plus occasional roots and rocks\", surface \"sections of paved road, crushed stone, roots, and uneven dirt\", \"Park at the Sugarlands Visitor Center and walk behind the building, past the restrooms, and past the brick headquarters building to the Gatlinburg Trailhead\", and verbatim: \"The Gatlinburg Trail and Oconaluftee River Trail are the only two park trails where pets are permitted.\" AllTrails result snippet: 3.9 mi out-and-back, 180 ft gain, 1-1.5 hr, 6,695 reviews from the result title; no star surfaced. Difficulty \"Easy\" is gatlinburg.com's published grade (which also lists \"Dogs on Leash\" and \"Biking\" among the trail's features, 1.9 mi one way, 164 ft gain); NPS publishes no difficulty word. Visitor-center-to-visitor-center mileage derived from the NPS Deep Creek Valley Overlook place page (nps.gov/places/deep-creek-valley-overlook.htm), fetched, verbatim: \"Travel almost 14 miles north from Oconaluftee Visitor Center or almost 16 miles south from Sugarlands Visitor Center.\" Road season from NPS seasonal road closures (nps.gov/grsm/planyourvisit/seasonalroads.htm), fetched, verbatim: \"Primary roads such as Newfound Gap Road (US 441), Little River Road, and the Cades Cove Loop Road are open year-round, weather permitting.\" Winter closures of that road are frequent and well documented in local reporting (WVLT 2 Dec 2025: Newfound Gap Road slated to close for winter weather; Knox News 23 Jan 2026: most park roads closed in an ice storm) — no specific 2028-29 closure is asserted, only that the risk is real on these dates.",
+          "stats_note": "AllTrails 3.9 mi and NPS ~4 mi roundtrip are the same walk; gatlinburg.com's 1.9 mi one way is the same figure halved. Gain is published as 180 ft by AllTrails and 164 ft by gatlinburg.com; the AllTrails figure is recorded, the difference is noise.",
+          "alltrails": {
+            "name": "Gatlinburg Trail",
+            "url": "https://www.alltrails.com/trail/us/tennessee/gatlinburg-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike the Gatlinburg Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-the-gatlinburg-trail.htm",
+              "note": "Authority. Length, surface, trailhead, and the sentence naming the park's only two pet-legal trails."
+            },
+            {
+              "label": "NPS — Seasonal road closures",
+              "tier": "official",
+              "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+              "note": "Newfound Gap Road is open year-round \"weather permitting\" — the caveat that decides whether this trail is reachable in the first week of January."
+            },
+            {
+              "label": "NPS — Deep Creek Valley Overlook",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/deep-creek-valley-overlook.htm",
+              "note": "The only NPS page found that gives mileposts from both visitor centers: 14 miles from Oconaluftee, 16 from Sugarlands."
+            }
+          ],
+          "needs": [
+            "star rating"
+          ]
         }
       ],
       "dogs_source": "https://www.nps.gov/grsm/planyourvisit/pets.htm",
@@ -19689,7 +19901,9 @@
       "trail_dogs": {
         "Deep Creek Loop Trail (Tom Branch, Indian Creek & Juney Whank Falls)": false,
         "Juney Whank Falls Trail": false,
-        "Noland Divide Trail": false
+        "Noland Divide Trail": false,
+        "Oconaluftee River Trail": true,
+        "Gatlinburg Trail": true
       }
     },
     "chattanooga-tn": {

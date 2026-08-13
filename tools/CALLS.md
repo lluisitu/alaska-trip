@@ -49,6 +49,13 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **360-565-3131** — Recorded road & weather line: 360-565-3131.
   <sub>scenicDrives_patch.0</sub>
+- **360-565-3100** — Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop.
+  <sub>trails.3</sub>
+
+## 2027-10-25 — Forks, WA  `forks`
+
+- **360-565-3100** — Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop.
+  <sub>trails.3</sub>
 
 ## 2027-11-15 — Bend, OR  `bend`
 
@@ -59,6 +66,16 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **435-425-3791** — There is no seasonal closure to check, only conditions, so this must be phoned in the day before: Capitol Reef visitor center 435-425-3791 (press #1, then #4).
   <sub>offroad.0</sub>
+
+## 2028-04-08 — Black Canyon of the Gunnison NP, CO  `black-canyon-gunnison`
+
+- **970-641-2337** — Black Canyon of the Gunnison visitor center, 970-641-2337 ext.
+  <sub>trails.2</sub>
+
+## 2028-04-15 — Mancos, CO (Mesa Verde)  `mancos`
+
+- **970-529-4465** — Mesa Verde NP, 970-529-4465 — confirm the Mesa Top Loop Road is open by 15 April.
+  <sub>scenicDrives_patch.0</sub>
 
 ## 2028-04-30 — Salida, CO  `salida-co`
 
@@ -103,9 +120,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
-  <sub>offroad.0</sub>
 - **613-264-7329** — 239; road emergency 613-264-7329.
+  <sub>offroad.0</sub>
+- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

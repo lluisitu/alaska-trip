@@ -2427,6 +2427,18 @@
           "url": "https://bcparks.ca/muncho-lake-park/",
           "tier": "official"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Churchill (Magnum) Mine Road, up the Racing River",
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/24603.pdf/",
+          "distance": "27 km south up the Racing River, then west along Delano and Magnum Creeks",
+          "difficulty": "not published by any recreation authority",
+          "season": "unknown",
+          "note": "DO NOT PLAN A DAY AROUND THIS. It is the only named side road in the Muncho Lake area and it is very likely not drivable. BC's own filed exploration report (Equity Engineering, Explore B.C. Program, Oct 1994) states: \"The Churchill Mine road leaves the Alaska Highway near Mile 401, extends 27 kilometres south up the Racing River, then climbs westward along Delano Creek and Magnum Creek to the former camp and portal. Although the road remains in reasonably good shape, bridges have washed out near the Alaska Highway, preventing road access.\" That was thirty years ago and nothing has been published since. Recorded here so the road is not discovered on a map and driven at.",
+          "tier": "unlisted",
+          "source": "https://apps.nrs.gov.bc.ca/pub/aris/Report/24603.pdf/"
+        }
       ]
     },
     "whitehorse-1": {
@@ -2572,7 +2584,28 @@
         "Chadburn and Canyon City Ski": true,
         "Miles Canyon Loop": true,
         "Chadburn Lake Trails: South Blue Route": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Grey Mountain Road",
+          "url": "https://yukonhiking.ca/grey.html",
+          "distance": "6.3 km to the viewpoint parking area, 4 km more to the communication towers",
+          "difficulty": "\"easily driveable in a vehicle with good clearance\" to the viewpoint; the upper 4 km \"becomes unmaintained and rougher with narrow sections towards the top\"",
+          "season": "\"the unmaintained part of the road after the Grey Mountain Viewpoint parking area is not always passable in the winter and late into the spring\"",
+          "note": "The closest thing Whitehorse has to a mountain road - paved to the cemetery, maintained gravel above that, unmaintained for the last 4 km to the towers where the ridge trail starts. Late June is well inside the passable window. If the top is blocked it is about 1.5 hours on foot from the viewpoint lot.",
+          "tier": "community",
+          "source": "https://yukonhiking.ca/grey.html"
+        },
+        {
+          "name": "Fish Lake Road (Lu Zil Man)",
+          "url": "https://yukonhiking.ca/fish_lake.html",
+          "distance": "about 15 km to Fish Lake, then 600 m more on a narrower road to the trailhead",
+          "season": "no seasonal dates published",
+          "note": "\"From the intersection of the Alaska Highway and Hamilton Boulevard/Two-Mile Hill in Whitehorse, drive 3 km north on the Alaska Highway and turn left on to Fish Lake Road. Follow this road until you reach Fish Lake (about 15 km).\" Parking is available at the lake, or the last 600 m runs along the berm at the lake outlet on a narrower road. Reports describe it as rutted in spring and one lane when slippery; surface and grade are not published by any authority.",
+          "tier": "community",
+          "source": "https://yukonhiking.ca/fish_lake.html"
+        }
+      ]
     },
     "talkeetna": {
       "authority": "Talkeetna Lakes Park / Mat-Su Borough",
@@ -2872,7 +2905,37 @@
           "https://www.fs.usda.gov/r10/chugach/newsroom/releases/russian-river-fishery-opens-june-11-forest-order-place-protect — carries the 6-foot leash requirement but does not delineate the area or name any trail, so it cannot be stretched over a 21-mile trail that merely starts at Russian River Campground"
         ],
         "action": "No change. Both trails stay null in links_db.json, which is already correct. Seward Ranger District, (907) 288-3178."
-      }
+      },
+      "offroad": [
+        {
+          "name": "Skilak Lake Road",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.skilaklakeroad",
+          "distance": "19 miles, entrances at Sterling Highway mileposts 58 and 75.2",
+          "season": "no seasonal closure published; the Kenai NWR Visitor Contact Station at Sterling MP 57.8 is open 10 June - 15 August, 10am-4pm daily",
+          "note": "The best wildlife-viewing drive on the Kenai and the obvious first day out of this stop - the east entrance is a few miles west of Cooper Landing. ADF&G's advice is to \"Drive the road slowly at 10 to 15 mph early in the day (before boaters start driving) or late in the evening\". Access to Quartz/Crescent and the Lower and Upper Skilak Lake campgrounds. Surface is gravel; no vehicle restriction is published.",
+          "tier": "official",
+          "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.skilaklakeroad"
+        },
+        {
+          "name": "Snug Harbor Road / Cooper Lake Road",
+          "url": "https://www.fs.usda.gov/r10/chugach/recreation/trails/rainbow-lake-trail",
+          "distance": "9 miles on Snug Harbor Road, then 2.5 miles more on Cooper Lake Road to the Rainbow Lake trailhead",
+          "season": "Forest Service recommended season for the trail at the end: May-October",
+          "note": "Forest Service: \"At Mile 48 Sterling Highway in Cooper Landing turn south onto Snug Harbor Road. This turns into Cooper Lake Road after 9 miles. It is 2.5 miles further to the trailhead parking area.\" It starts in the middle of this stop, runs along the south shore of Kenai Lake and ends at Cooper Lake. Surface and vehicle requirements are not published by the Forest Service.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r10/chugach/recreation/trails/rainbow-lake-trail"
+        },
+        {
+          "name": "Palmer Creek Road, Hope",
+          "url": "https://www.fs.usda.gov/r10/chugach/recreation/palmer-creek-road",
+          "distance": "Forest Service: \"A 12 mile gravel road climbing from the Hope area to a high valley containing past and present mining activity\"",
+          "difficulty": "ADF&G: \"Don't attempt to drive beyond the campground at milepost 6 without a high clearance vehicle and possibly four-wheel-drive\"; beyond that it is \"a much narrower and more rugged jeep trail\" for another five miles",
+          "season": "ADF&G: \"This road is not maintained in winter; snow may be present on the road from mid-September to mid-May\"",
+          "note": "The real 4x4 day of the Kenai and the one that ends in alpine tundra. From Hope Highway MP 16.2, south on Resurrection Creek Road for half a mile, then left onto Palmer Creek Road six miles to Coeur d'Alene Campground; the road narrows there. \"The roads are narrow and loose gravel may be present\" and the campground \"is not recommended for large RVs or trailers\" - which is fine, the truck goes alone. Black bear, caribou, wolves, and all three ptarmigan species along it. Seward Ranger District 907-288-3178 for the state of the top five miles. Mid-July is dead centre of the window.",
+          "tier": "official",
+          "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.palmercreekroad"
+        }
+      ]
     },
     "seward": {
       "authority": "National Park Service — Kenai Fjords National Park (Exit Glacier area); other trails on this card are outside the park",
@@ -2994,6 +3057,27 @@
       "dogs_needs_check": [
         "Two Lakes Trail — City of Seward Parks & Recreation. Phone before relying on it.",
         "Ptarmigan Lake — Chugach NF, Seward Ranger District, (907) 288-3178."
+      ],
+      "offroad": [
+        {
+          "name": "Palmer Creek Road, Hope",
+          "url": "https://www.fs.usda.gov/r10/chugach/recreation/palmer-creek-road",
+          "distance": "12 miles of gravel; drivable to the campground at mile 6, then five more miles of jeep trail",
+          "difficulty": "ADF&G: \"Don't attempt to drive beyond the campground at milepost 6 without a high clearance vehicle and possibly four-wheel-drive\"",
+          "season": "ADF&G: \"snow may be present on the road from mid-September to mid-May\"",
+          "note": "Seward's own back roads are short and graded; the nearest route that is genuinely offroad is this one, about two hours north at Hope. Worth one of the six nights. Forest Service: \"A 12 mile gravel road climbing from the Hope area to a high valley containing past and present mining activity.\" Seward Ranger District 907-288-3178 covers it.",
+          "tier": "official",
+          "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.palmercreekroad"
+        },
+        {
+          "name": "Lowell Point Road",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.lowellpointrec",
+          "distance": "3.5 miles",
+          "season": "no seasonal closure published",
+          "note": "Short and graded rather than difficult, and it is the only unpaved road out of town: ADF&G's directions are \"Take the Seward Highway - which becomes Third Avenue - through Seward until it ends (facing the Alaska SeaLife Center). Turn right on Lowell Point Road, drive 3.5 miles.\" It ends at Lowell Point SRS and the Caines Head trailhead; the 4.5-mile coastal trail from there can only be walked around low tide, so check tables before setting out. Surface and condition are not published.",
+          "tier": "official",
+          "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.lowellpointrec"
+        }
       ]
     },
     "homer": {
@@ -3117,7 +3201,18 @@
           "Aug 2026 pass — https://dnr.alaska.gov/parks/aspunits/kenai/ — 403, so the Alaska State Parks route to a Kenai-area pet regulation is closed too. https://dnr.alaska.gov/parks/asprules.htm — 404."
         ],
         "action": "The Spit trail almost certainly takes a leashed dog, but the city does not say so and this project does not publish a rule it cannot source. Phone the Homer City Clerk on (907) 235-3130 (clerk@cityofhomer-ak.gov) and ask for the trail dog rule in Homer City Code Title 20 — one call covers the Spit trail and Diamond Creek, since both are city-managed. Ask Kachemak Heritage Land Trust separately for the Homestead Trail. NOTE: the reported 'voice control on the Homestead Trail' in the task brief came from a blog, not the land trust — it is not recorded here."
-      }
+      },
+      "offroad": [
+        {
+          "name": "East End Road to the head of Kachemak Bay",
+          "url": "https://www.dangerousroads.org/north-america/usa/4309-east-end-road.html",
+          "distance": "25.2 miles / 40.55 km, Sterling Highway to the Fox River",
+          "season": "no seasonal closure published",
+          "note": "\"The road is 40.55km (25.2 miles) long, stretching from Sterling Highway (in Homer) to Fox River\", and it is \"fully paved except for the last few miles, which are unpaved\" - so the offroad part is the final run out onto the Fox River flats at the head of the bay, past where the tour traffic turns round. Eveline SRS is at mile 13.8 and the McNeil Canyon trailhead at mile 12 if the day wants a walk in it. No authority publishes the surface or condition of the unpaved section; the City of Homer is the body to ask.",
+          "tier": "community",
+          "source": "https://www.dangerousroads.org/north-america/usa/4309-east-end-road.html"
+        }
+      ]
     },
     "denali": {
       "authority": "National Park Service",
@@ -3275,7 +3370,29 @@
       },
       "trail_aliases": {
         "Roadside Hiking Trail": "Roadside Trail"
-      }
+      },
+      "offroad": [
+        {
+          "name": "Denali Highway (Alaska Route 8), Cantwell to Paxson",
+          "url": "https://www.alaska.org/guide/denali-highway",
+          "distance": "135 miles Paxson to Cantwell, \"mostly gravel\"",
+          "difficulty": "\"max speed varies from 35-55 mph depending on surface conditions\"; Alaska DOT designates it a No Winter Maintenance route",
+          "season": "\"winter conditions close the road every year from October through mid-May\"",
+          "note": "The big one of this leg, and the west end is at Cantwell, about 27 miles south of the park entrance - so it is a day trip out of this stop rather than a re-route. \"You can drive the highway in a day, but we recommend at least one over night.\" BLM manages much of the corridor: Tangle Lakes Campground at MP 21.5 from the Paxson end, inside the Delta Wild and Scenic River corridor and the 226,660-acre Tangle Lakes Archaeological District between MP 15 and MP 32. Late July is dead centre of the open season. Alaska's own DOT site cannot be fetched from here - it fails TLS verification - so the closure wording is a travel guide's, not the department's.",
+          "tier": "community",
+          "source": "https://www.alaska.org/guide/denali-highway"
+        },
+        {
+          "name": "Stampede Road, Healy",
+          "url": "https://www.nps.gov/dena/planyourvisit/unit61-62-63.htm",
+          "distance": "paved to mile 4; most cars to about mile 5; high clearance and/or 4WD beyond",
+          "difficulty": "NPS: \"Stampede is paved to mile 4 and then it is drivable in most cars to about Mile 5. High clearance and/or four wheel drive is necessary to go farther.\"",
+          "season": "NPS: \"There is heavy ORV use along the portions of the roadbed outside the National Park, especially during moose hunting season (August to September). Wear bright colors during this time\"",
+          "note": "Leaves Highway 3 a few miles north of Healy - about 15 miles from Riley Creek - and is the major access route to the Stampede country on the park's north boundary. The roadbed is roughly 50 years old and \"boggy or overgrown in many areas\" with no bridges; on foot westward it crosses the Savage and then the Teklanika, and NPS says \"The Teklanika crossing cannot be made dependably on foot. A pack raft is recommended for mid-summer.\" This is a drive-in-and-turn-round, not a through route. SEASON NOTE THAT LANDS INSIDE THIS STAY: the hunting-season ORV traffic NPS warns about starts in August and the stay runs to 5 Aug.",
+          "tier": "official",
+          "source": "https://www.nps.gov/dena/planyourvisit/unit61-62-63.htm"
+        }
+      ]
     },
     "trapper-creek": {
       "authority": "Alaska State Parks — Denali State Park",
@@ -3411,6 +3528,18 @@
           "url": "https://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm",
           "tier": "official"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Petersville Road",
+          "url": "https://dnr.alaska.gov/parks/sdenali/includes/pvcorridormp.pdf",
+          "distance": "40 miles from George Parks Highway milepost 114.9; first 3 miles paved, remaining 37 unpaved",
+          "difficulty": "no vehicle rating published; \"The gravel surface requires regular maintenance in order to avoid deterioration of the traveled surface\"",
+          "season": "Alaska DNR: \"There is no winter maintenance beyond mile 14.\"",
+          "note": "The reason this stop exists for the truck. Alaska DNR's own corridor management plan: \"Petersville Road connects the Trapper Creek and Petersville communities. It starts at milepost 114.9 of the George Parks Highway, and leads west and north 40 miles. The first three miles of the road are paved and the remaining 37 miles are unpaved.\" It is maintained by Alaska DOT&PF, carries about 200 vehicles a day, and runs through gold mining country, homesteads and the Peters Creek recreational mining corridor to the Forks Roadhouse - which is listed as eligible for the National Register. The Alaska Range, including Denali, is visible along it. In August the gravel is at its dustiest; DNR notes dry spells plus fishing traffic \"quickly reduces the driving quality\".",
+          "tier": "official",
+          "source": "https://dnr.alaska.gov/parks/sdenali/includes/pvcorridormp.pdf"
+        }
       ]
     },
     "valdez": {
@@ -3524,6 +3653,27 @@
       },
       "dogs_needs_check": [
         "Solomon Gulch Viewpoint and Solomon Lake Trail — land manager not established (city trail guide is a 10 MB+ PDF that would not load). Valdez Parks & Rec, 907-835-4526."
+      ],
+      "offroad": [
+        {
+          "name": "Mineral Creek Road",
+          "url": "https://www.valdezalaska.org/discover/explore-the-region/hiking-trails/mineral-creek/",
+          "distance": "1.5 miles of rough gravel road to the Horsetail Creek washout, then about four more miles of gravel to a gate",
+          "difficulty": "City of Valdez: \"Four-wheel drive vehicles are recommend for those traveling over the washout at Horsetail Creek.\" Rated Moderate.",
+          "season": "no seasonal dates published",
+          "note": "The classic Valdez 4x4 day and it starts in town. \"The trail is a rough gravel road that begins on Mineral Creek Drive that crosses a bridge over the creek and continues for a 1.5 miles to a washout at Horsetail Creek Falls\"; past the washout the gravel runs about four more miles up a steep-sided glacial valley of waterfalls to a gate, beyond which it is foot only to the W.L. Smith Stamp Mill, built 1913. The washout is the decision point - the truck crosses it, nothing else should. Landslides are a known recurring problem in the canyon.",
+          "tier": "official",
+          "source": "https://www.valdezalaska.org/discover/explore-the-region/hiking-trails/mineral-creek/"
+        },
+        {
+          "name": "Valdez Glacier Lake road (Airport Road)",
+          "url": "https://www.alaska.org/detail/valdez-glacier-lake",
+          "distance": "about 15 minutes from town; \"About 3/4 miles before the lake the road turns to gravel\"",
+          "season": "icebergs on the lake \"from roughly June through September\"",
+          "note": "\"Turn off the Richardson Highway and onto the Valdez Airport Road, where you'll follow it all the way to the end.\" Short, and only the last three-quarters of a mile is gravel, ending at the open sandpits along the lake shore - but it is the one place on the road system where you can park beside floating icebergs, and mid-August is inside the season for them.",
+          "tier": "community",
+          "source": "https://www.alaska.org/detail/valdez-glacier-lake"
+        }
       ]
     },
     "mccarthy": {
@@ -3618,6 +3768,18 @@
           "label": "Pets — Wrangell-St. Elias NP&P (NPS)",
           "url": "https://www.nps.gov/wrst/planyourvisit/pets.htm",
           "tier": "official"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Nabesna Road",
+          "url": "https://www.nps.gov/wrst/planyourvisit/nabesna-road-guide.htm",
+          "distance": "42 miles from Slana to Devil's Mountain Lodge, where the maintained road ends",
+          "difficulty": "NPS: \"High clearance and 4-wheel drive is recommended.\" Conditions deteriorate beyond Mile 28.1.",
+          "season": "NPS on the fords: \"Generally, these creek beds are dry, but during spring run off or following prolonged rain, high-clearance and/or four-wheel drive may be necessary.\"",
+          "note": "The other road into Wrangell-St. Elias and the one the truck was brought for - but understand the distance: it starts at Slana on the north side of the park, a long way round from McCarthy, so it is a full day out of a six-night stay rather than an afternoon. Three creeks cross the roadbed and may be flowing over it: Trail Creek at Mile 29.8, Lost Creek at 31.2, Boyden Creek at 34.3. Stop at the Slana Ranger Station at Mile 0.2 for current road conditions, or call the park on 907-822-5234 first. One thing to know before hoping to go further: NPS's ORV rules for the Nabesna District PROHIBIT street-legal vehicles and custom 4x4s on the permitted ORV trails, so the pickup stops where the road does.",
+          "tier": "official",
+          "source": "https://www.nps.gov/wrst/planyourvisit/nabesna-road-guide.htm"
         }
       ]
     },
@@ -3908,6 +4070,27 @@
             }
           ]
         }
+      ],
+      "offroad": [
+        {
+          "name": "Robert Campbell Highway (Yukon Highway 4)",
+          "url": "https://explorenorth.com/library/roads/campbell_highway.html",
+          "distance": "583 km / 362 mi Watson Lake to Carmacks, about 60% gravel",
+          "difficulty": "\"the road condition can vary dramatically according to recent weather and maintenance\"",
+          "season": "maintained year-round; no gate dates published",
+          "note": "Two nights here on the way south, and the Campbell leaves the Alaska Highway right at Watson Lake - so an out-and-back up the first gravel is the natural day. \"There are few services along the highway\", fuel at Ross River and Faro only, and mid-September is when to carry more of it than the distance suggests. Yukon's own road pages return 403 from here; 511Yukon in the morning.",
+          "tier": "community",
+          "source": "https://explorenorth.com/library/roads/campbell_highway.html"
+        },
+        {
+          "name": "Nahanni Range Road (Yukon Highway 10)",
+          "url": "https://en.wikipedia.org/wiki/Nahanni_Range_Road",
+          "difficulty": "\"The Nahanni Range Road proper is entirely gravel, and is not recommended for general public use\"",
+          "season": "unknown",
+          "note": "Listed so it is recognised and left alone. It branches off the Campbell and serves the Cantung mine at Tungsten, NWT; the road \"has been restored for the use of the mining company\" but \"general public travel is still not advised\", and Yukon lists it among roads carrying weight restrictions. In mid-September, with no published maintenance calendar and no services, this is not the one.",
+          "tier": "community",
+          "source": "https://en.wikipedia.org/wiki/Nahanni_Range_Road"
+        }
       ]
     },
     "boya-lake": {
@@ -4047,7 +4230,18 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Cassiar townsite road (10 km west off Highway 37)",
+          "url": "https://stewartcassiarhighway.com/attractions/jade-city-cassiar/",
+          "distance": "\"A 10-km drive west off the highway leads to the ghost town of Cassiar\"",
+          "season": "n/a - closed",
+          "note": "CLOSED, and worth knowing before driving out there. The old asbestos-mining town of Cassiar is the obvious curiosity from this stop, a few km north at Jade City, and the road to it exists - but \"there are no public facilities in the old Cassiar town-site, and it is closed to visitors.\" The same source notes \"Old mining trails into the mountains can be travelled on foot or with 4x4 vehicles or ATVs\" in the surrounding country, but names none of them and no managing authority publishes a route, a length or a condition. Ta Ch'ila (Boya Lake) itself is a paved-access park; this is a stop with essentially nothing driveable published.",
+          "tier": "community",
+          "source": "https://stewartcassiarhighway.com/attractions/jade-city-cassiar/"
+        }
+      ]
     },
     "dease-lake": {
       "authority": "BC Parks",
@@ -4118,6 +4312,18 @@
         {
           "entry": "Boya Lake trails (Tā Ch'ilā PP)",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Telegraph Creek Road",
+          "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/points-of-interest",
+          "distance": "BC Ministry of Transportation: \"115 kilometres (71 miles) southwest from Dease Lake\", \"2.5 to three hours each way\"",
+          "difficulty": "BC MoTI: \"very steep grades, up to 20 per cent, and a gravel surface\"; \"RV trailers are not recommended for this trip\"",
+          "season": "no gate dates published; BC advises \"Check in Dease Lake for the current road conditions to Telegraph Creek\"",
+          "note": "The single best offroad day of the whole Cassiar and it starts in this town. Sharp-angled switchbacks and narrow passages along the canyon walls with no guardrails, dropping into the Stikine to the most remote road-accessible town in BC. British Columbia's tourism authority adds the practical line: \"The road is not suitable for trailers, which can be left in Dease Lake.\" Six hours of driving plus stops - it wants a whole day of a two-night stop, and mid-September is late enough that the morning conditions check is not a formality.",
+          "tier": "official",
+          "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/points-of-interest"
         }
       ]
     },
@@ -4297,7 +4503,29 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Hungary Creek Forest Road (Sugarbowl-Grizzly Den)",
+          "url": "https://bcparks.ca/sugarbowl-grizzly-den-park/",
+          "distance": "about 13 km south on the Hungary Creek Forest Road to the Grizzly Den trailhead, 2.6 km further to Raven Lake",
+          "difficulty": "no 2WD/4WD statement published",
+          "season": "BC Parks notes \"the Hungary Creek Road was no longer plowed in the winter\" after harvesting ended",
+          "note": "The closest alpine country to Prince George, about 80-95 km southeast on Highway 16 - \"turn right on to the Hungary Creek Forest Road and drive south keeping on the main road\". Sugarbowl trailhead at 80 km from Prince George, Viking Ridge at 85 km, the Hungary Creek access at about 88 km from the east end of the Yellowhead Bridge. Late September is inside the drivable season but the road is not maintained for snow, so an early storm is the thing that ends it.",
+          "tier": "official",
+          "source": "https://bcparks.ca/sugarbowl-grizzly-den-park/"
+        },
+        {
+          "name": "Tabor Mountain trail system",
+          "url": "https://www.sitesandtrailsbc.ca/resource/REC162814",
+          "distance": "\"extensive 407km multi-use trail system interlinking 27 staging areas\"",
+          "difficulty": "not published per route",
+          "season": "no seasonal dates published",
+          "note": "Recreation Sites and Trails BC manages this as a motorized and non-motorized network about 20 minutes east of the city, reached off Highway 16 via Stewart Road / Tabor Lake East Road and Giscome Road. 27 staging areas means the truck can be parked in and the day chosen on the spot. The RST BC pages are a JavaScript app that returns an empty document to a plain fetch, so the figures here are the indexed record of the authority's own listing; individual route difficulty and surface are not published.",
+          "tier": "official",
+          "source": "https://www.sitesandtrailsbc.ca/resource/REC162814"
+        }
+      ]
     },
     "clearwater": {
       "authority": "BC Parks — Wells Gray Provincial Park",
@@ -6220,6 +6448,38 @@
           "entry": "Loaded camper: paved travel and firm maintained access.",
           "problem": "Standing rig constraint, not a route. Superseded — offroad is always the truck."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Mush Lake Road",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking",
+          "distance": "52 km, 30 m elevation change",
+          "difficulty": "Parks Canada: \"A four wheel drive road. Two-wheel drive vehicles with good clearance can drive the first 5 km to Alder Creek when conditions are good.\" Graded Moderate.",
+          "season": "no gate dates published",
+          "note": "The only road INSIDE Kluane that Parks Canada states is drivable - most of the park is reached on foot, by raft or by ski, and the only other vehicle access is Kathleen Lake and Thechal Dhal. Parks Canada also calls it a \"Good mountain biking trail\", so the far end is rideable if the road turns. Trailhead is off the Kathleen Lake area south of Haines Junction.",
+          "tier": "official",
+          "source": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
+        },
+        {
+          "name": "Alsek Valley (old mining road)",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking",
+          "distance": "52.8 km total; \"The first 15 km may be drivable with 4-wheel drive/high clearance vehicles\"",
+          "difficulty": "Parks Canada grades the route Easy; \"Trail is in the valley bottom with some variable creeks to cross (no bridges)\"",
+          "season": "no gate dates published",
+          "note": "\"Follows an old mining road.\" The creeks are the variable - Parks Canada says no bridges, and how far the 15 km actually goes depends on what they are running. Late June is high-water season off the icefields, so this is a turn-back-early day rather than a distance target. The Haines Junction visitor centre will have the current state.",
+          "tier": "official",
+          "source": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
+        },
+        {
+          "name": "Aishihik Road",
+          "url": "https://explorenorthblog.com/exploring-aishihik-road-and-otter-falls/",
+          "distance": "about 120 km to Aishihik village; Aishihik Lake Campground at km 43",
+          "difficulty": "\"gravel/dirt\", \"mostly a clay-dirt that's very slippery when it's wet\"; \"mudholes are common, some surprisingly deep\"",
+          "season": "Yukon Parks services Aishihik Lake Campground 22 May - 1 Oct; the road beyond km 43 \"is not maintained\" at normal levels",
+          "note": "Runs north from Historic Mile 995 on the Alaska Highway - the Otter Falls Cutoff, about 34 km east of Haines Junction - past Otter Falls (the falls on the 1954 five dollar bill) and Canyon Lake to the campground at km 43, then on to Aishihik village. The clay is the whole story: dry it is an easy gravel run, wet it is the reason to turn round. Several bridges have had major rebuilds after flood damage.",
+          "tier": "community",
+          "source": "https://explorenorthblog.com/exploring-aishihik-road-and-otter-falls/"
+        }
       ]
     },
     "kluane-2": {
@@ -6271,7 +6531,29 @@
             }
           ]
         }
-      }
+      },
+      "offroad": [
+        {
+          "name": "Mush Lake Road",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking",
+          "distance": "52 km, 30 m elevation change",
+          "difficulty": "Parks Canada: \"A four wheel drive road. Two-wheel drive vehicles with good clearance can drive the first 5 km to Alder Creek when conditions are good.\"",
+          "season": "no gate dates published",
+          "note": "One night here, so this is the one to pick: the first 5 km to Alder Creek is a short evening out and the only road access into Kluane other than Kathleen Lake and Thechal Dhal. Late August is past the meltwater peak, which is when the road is at its best.",
+          "tier": "official",
+          "source": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
+        },
+        {
+          "name": "Alsek Valley (old mining road)",
+          "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking",
+          "distance": "\"The first 15 km may be drivable with 4-wheel drive/high clearance vehicles\"",
+          "difficulty": "\"some variable creeks to cross (no bridges)\"",
+          "season": "no gate dates published",
+          "note": "Late August is the better half of the year for the unbridged creeks than the June visit was, but it is still a road whose usable length is decided on the day by the water. Ask at Haines Junction before setting out.",
+          "tier": "official",
+          "source": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
+        }
+      ]
     },
     "west-yellowstone": {
       "activities": {
@@ -6456,7 +6738,37 @@
         }
       ],
       "dogs_source": "https://www.northernrockies.ca/resident-services/dog-licences-animal-control",
-      "dogs_source_quote": "Dogs must be leashed when in public"
+      "dogs_source_quote": "Dogs must be leashed when in public",
+      "offroad": [
+        {
+          "name": "Andy Bailey Lake access road",
+          "url": "https://www.tourismnorthernrockies.ca/planning/interactive-travel-guide/andy-bailey-lake",
+          "distance": "12 km of gravel off the Alaska Highway",
+          "season": "no seasonal dates published",
+          "note": "Tourism Northern Rockies: \"Access the lake and campground by following 12 kms of road located just off the Alaska Highway\", at Mile 265 / km 427. The shortest real gravel outing from Fort Nelson - campground, day-use area and a long gravel boat launch (non-motorized boats only) in boreal forest. No vehicle restriction is published.",
+          "tier": "official",
+          "source": "https://www.tourismnorthernrockies.ca/planning/interactive-travel-guide/andy-bailey-lake"
+        },
+        {
+          "name": "Sikanni Chief Falls access road",
+          "url": "https://bcparks.ca/sikanni-chief-falls-protected-area/",
+          "distance": "15 km west of the Alaska Highway",
+          "difficulty": "BC Parks: \"Access is via a 4x4 gravel/dirt petroleum road. Watch for industrial traffic.\"",
+          "season": "no seasonal dates published",
+          "note": "The one genuine 4x4 route on this stretch of the Alcan, and BC Parks says so in as many words. A 1.5 km hiking trail leads from the parking area to a viewpoint beside the 30 m falls; \"No ATVs are allowed on the trail\" and \"ORVs are prohibited in this park\", so the 4x4 gets you to the trailhead and no further. Distance is the catch: BC Parks places it \"approximately 200 km northwest of Fort St. John\", which is roughly 140 km south of Fort Nelson - a half-day each way out of a two-night stop.",
+          "tier": "official",
+          "source": "https://bcparks.ca/sikanni-chief-falls-protected-area/"
+        },
+        {
+          "name": "Liard Highway (BC 77 / NWT 7, the Liard Trail)",
+          "url": "https://www.inf.gov.nt.ca/en/transportation",
+          "distance": "254 km of gravel on the NWT side",
+          "season": "no seasonal closure published; NWT Infrastructure maintains it year-round",
+          "note": "NWT Infrastructure: \"Highway 7, also known as the Liard Trail, is a gravel highway that begins at the BC border and continues north for 254 kilometres\", following the Liard River to the Highway 1 junction. Fort Liard is 5 km off the highway, 38 km north of the BC border. The junction with the Alaska Highway is 28 km north of Fort Nelson (DriveBC camera 485), so the BC 77 approach plus the first gravel out of the border is a full day. NWT adds \"Travellers are very likely to encounter wood bison along this route. Drive with caution.\"",
+          "tier": "official",
+          "source": "https://www.inf.gov.nt.ca/en/transportation"
+        }
+      ]
     },
     "liard": {
       "activities": {
@@ -6509,6 +6821,27 @@
           "url": "https://bcparks.ca/liard-river-hot-springs-park/",
           "tier": "official"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Smith River Falls access road",
+          "url": "https://bcparks.ca/smith-river-falls-fort-halkett-park/",
+          "distance": "about 2.4-2.6 km of gravel off the Alaska Highway",
+          "difficulty": "BC Parks: \"The road is very narrow and may not be suitable for larger vehicles\" and \"Passing oncoming traffic can be extremely difficult\"",
+          "season": "BC Parks: the viewpoint is \"reachable by vehicle, except in winter\"",
+          "note": "Smith River Falls - Fort Halkett Park sits at the confluence of the Smith and Liard rivers, \"near kilometre 820 of the Alaska Highway, and 30 km west of Liard River Hot Springs Park\" - the closest real side road to this stop. From the parking lot a short trail drops to the base of the 35 m falls; BC Parks warns \"Sections of the trail are very steep and can be treacherous.\" Exactly the outing the truck exists for, and exactly the road the coach must not follow.",
+          "tier": "official",
+          "source": "https://bcparks.ca/smith-river-falls-fort-halkett-park/"
+        },
+        {
+          "name": "Whirlpool Canyon access road",
+          "url": "https://www.tourismnorthernrockies.ca/planning/interactive-travel-guide/whirlpool-canyon",
+          "distance": "short unpaved spur off the Alaska Highway",
+          "season": "no seasonal dates published",
+          "note": "Tourism Northern Rockies: \"This area is accessed by a short unpaved road off the Alaska Highway; please note that the parking area has limited space for turning around.\" Overlooks the Liard River where rock and timber debris is thrown up by the water; a short walking trail leads downriver from the left of the parking area to more canyon features. Coordinates given as 59.6348, -126.9833, which puts it a short run east of the hot springs.",
+          "tier": "official",
+          "source": "https://www.tourismnorthernrockies.ca/planning/interactive-travel-guide/whirlpool-canyon"
+        }
       ]
     },
     "watson-lake-1": {
@@ -6550,6 +6883,27 @@
         {
           "entry": "Wye Lake Park",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Robert Campbell Highway (Yukon Highway 4)",
+          "url": "https://explorenorth.com/library/roads/campbell_highway.html",
+          "distance": "583 km / 362 mi Watson Lake to Carmacks, about 60% gravel",
+          "difficulty": "no published rating; \"the road condition can vary dramatically according to recent weather and maintenance\"",
+          "season": "maintained year-round; no gate dates published",
+          "note": "Leaves the Alaska Highway at Watson Lake, so the first hours of it are a day trip straight out of camp rather than a commitment to the whole 583 km. \"There are few services along the highway\" - fuel only at Ross River and Faro. Yukon's own road pages (yukon.ca and 511Yukon) refuse every fetch from here with a 403, so this is a travel-guide description rather than the territory's; 511Yukon is the number to check on the morning.",
+          "tier": "community",
+          "source": "https://explorenorth.com/library/roads/campbell_highway.html"
+        },
+        {
+          "name": "Nahanni Range Road (Yukon Highway 10)",
+          "url": "https://en.wikipedia.org/wiki/Nahanni_Range_Road",
+          "difficulty": "\"The Nahanni Range Road proper is entirely gravel, and is not recommended for general public use\"",
+          "season": "unknown",
+          "note": "Recorded as a route to KNOW ABOUT AND NOT TAKE. It branches off the Campbell Highway and runs to the Cantung mine at Tungsten, NWT; since the mine reopened the road \"has been restored for the use of the mining company\" but \"general public travel is still not advised\". Yukon's 511 page lists it among roads carrying weight restrictions. If it is ever wanted, 511Yukon is the authority - and yukon.ca is unreachable from here, so it is a phone call, not a fetch.",
+          "tier": "community",
+          "source": "https://en.wikipedia.org/wiki/Nahanni_Range_Road"
         }
       ]
     },
@@ -6929,6 +7283,26 @@
           "entry": "Ninilchik River mouth",
           "problem": "Superseded by the researched entry for this stop, or belongs to another stop / is not a trail."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Skilak Lake Road",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.skilaklakeroad",
+          "distance": "19 miles, entrances at Sterling Highway mileposts 58 and 75.2",
+          "season": "no seasonal closure published",
+          "note": "About an hour north up the Sterling and the best gravel drive within reach of this stop. ADF&G: \"Drive the road slowly at 10 to 15 mph early in the day (before boaters start driving) or late in the evening.\" Campgrounds and boat launches at Quartz/Crescent and Lower and Upper Skilak Lake.",
+          "tier": "official",
+          "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.skilaklakeroad"
+        },
+        {
+          "name": "Oilwell Road into the Caribou Hills",
+          "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+          "difficulty": "not published",
+          "season": "not published for summer",
+          "note": "NOT SOURCED, and that is the finding. Oilwell Road leaves Ninilchik east into the Caribou Hills, the big off-road area of the southern Kenai, but the only thing Alaska State Parks publishes for it is a pair of GROOMED SNOWMACHINE trail maps - Caribou Hills North and Caribou Hills South. No summer road description, no length, no surface, no statement of where a full-size truck can get to in July. The network beyond the road end is ATV and snowmachine country, not necessarily truck country. Kenai Peninsula Borough road maintenance would settle how far the maintained gravel runs; until then this is recorded as unknown rather than driven at.",
+          "tier": "unlisted",
+          "source": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm"
+        }
       ]
     },
     "palmer": {
@@ -7159,7 +7533,19 @@
         "Fish Lake Lookout Trail": null,
         "Miles Canyon Loop": true,
         "Yukon River Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Grey Mountain Road",
+          "url": "https://yukonhiking.ca/grey.html",
+          "distance": "6.3 km to the viewpoint parking area, 4 km more to the communication towers",
+          "difficulty": "\"easily driveable in a vehicle with good clearance\" to the viewpoint; the upper 4 km \"becomes unmaintained and rougher with narrow sections towards the top\"",
+          "season": "\"the unmaintained part of the road after the Grey Mountain Viewpoint parking area is not always passable in the winter and late into the spring\"",
+          "note": "The one that fits a single overnight - it starts inside the city (Lewes Boulevard, Alsek Road, Grey Mountain Road) and the viewpoint is 6.3 km up. Late August is dry season on the upper 4 km.",
+          "tier": "community",
+          "source": "https://yukonhiking.ca/grey.html"
+        }
+      ]
     },
     "whitehorse-3": {
       "activities": {
@@ -7210,7 +7596,28 @@
         "Fish Lake Lookout Trail": null,
         "Miles Canyon Loop": true,
         "Yukon River Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Grey Mountain Road",
+          "url": "https://yukonhiking.ca/grey.html",
+          "distance": "6.3 km to the viewpoint parking area, 4 km more to the communication towers",
+          "difficulty": "\"easily driveable in a vehicle with good clearance\" to the viewpoint; the upper 4 km \"becomes unmaintained and rougher with narrow sections towards the top\"",
+          "season": "\"the unmaintained part of the road after the Grey Mountain Viewpoint parking area is not always passable in the winter and late into the spring\"",
+          "note": "Mid-September is the last comfortable window for the unmaintained top section - the source's warning is about winter and late spring, but the first snow on that ridge is a September event most years and there is no gate and no published date. Judge it at the viewpoint lot.",
+          "tier": "community",
+          "source": "https://yukonhiking.ca/grey.html"
+        },
+        {
+          "name": "Fish Lake Road (Lu Zil Man)",
+          "url": "https://yukonhiking.ca/fish_lake.html",
+          "distance": "about 15 km to Fish Lake, then 600 m more on a narrower road to the trailhead",
+          "season": "no seasonal dates published",
+          "note": "\"From the intersection of the Alaska Highway and Hamilton Boulevard/Two-Mile Hill in Whitehorse, drive 3 km north on the Alaska Highway and turn left on to Fish Lake Road. Follow this road until you reach Fish Lake (about 15 km).\" Reports describe the last stretch as rutted after rain; on a September visit that is the thing to look at before committing the truck to the berm road.",
+          "tier": "community",
+          "source": "https://yukonhiking.ca/fish_lake.html"
+        }
+      ]
     },
     "smithers": {
       "activities": {
@@ -7265,7 +7672,29 @@
         "Perimeter Trail": true,
         "Riverside Park Short Loop": true,
         "Call Lake Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Hudson Bay Mountain Road",
+          "url": "https://trails.xploresmithers.com/public/trails/46",
+          "distance": "about 19 km from downtown Smithers to the ski area parking lot",
+          "difficulty": "\"The road to the trailhead is steep and gravel; a reliable vehicle with good brakes is recommended for the descent.\"",
+          "season": "no gate dates published",
+          "note": "\"From downtown Smithers, drive west on Main Street toward Hudson Bay Mountain. Main Street turns into Hudson Bay Mountain Road - follow it all the way up toward the ski hill.\" Nineteen km of steep gravel straight out of town to sub-alpine, and the Crater Lake trail (2.81 km, moderate, roughly 11 km return to the lake itself) leaves the parking area. The warning here is the brakes on the way down, not the climb.",
+          "tier": "community",
+          "source": "https://trails.xploresmithers.com/public/trails/46"
+        },
+        {
+          "name": "Babine Lake Road and Upper Fulton (3000) Forest Service Road",
+          "url": "https://bcparks.ca/babine-mountains-park/",
+          "distance": "BC Parks: 38.4 km on Babine Lake Road, 12 km on the Upper Fulton (3000) FSR, then 800 m up the 312 road to the Cronin Creek trailhead",
+          "difficulty": "BC Parks: the Upper Fulton (3000) is \"narrow with poor sight lines in certain corners\"",
+          "season": "no gate dates published",
+          "note": "The full directions from BC Parks: \"From Smithers, head South-East on Highway BC-16E for 6.3 km. Turn left onto Babine Lake Road and continue North for 38.4 km. Take a slight left onto Upper Fulton (3000) Forest Service Road, continuing 12 km before turning left onto the 312 road, marked by blue BC Parks directional signage.\" The Little Joe Creek and Cronin Creek trailheads sit at 30.5 km and 32.5 km. The hazard is industrial, not technical: \"Expect active log hauling Monday to Saturday, and large industrial vehicles at any time\" - so a Sunday is the quiet day for it. The west end of the park is reached off Old Babine Lake Road past Driftwood Canyon, and the road there ends at a summer parking area beyond which \"the road is not passable to vehicle traffic\".",
+          "tier": "official",
+          "source": "https://bcparks.ca/babine-mountains-park/"
+        }
+      ]
     },
     "osoyoos": {
       "activities": {
@@ -22700,7 +23129,18 @@
         "Mcqueen Slough Trail": null,
         "Leoppky Park": true,
         "Rim Rocks Wind Park Trail": null
-      }
+      },
+      "offroad": [
+        {
+          "name": "223 Road / Bear Mountain Wind Park Road",
+          "url": "https://www.sitesandtrailsbc.ca/resource/REC5989",
+          "distance": "4 km up the 223 Road to the trailhead",
+          "season": "no seasonal dates published",
+          "note": "Recreation Sites and Trails BC records the Bear Mtn Community Forest site as \"The trailhead is located 4km up the 223 Road / Bear Mountain Wind Park Road\", with Radar Lake and the Interpretive Trails used for day-use picnicking, hiking and wildlife viewing. This is the only gravel route near Dawson Creek that any managing authority publishes - the RST BC page is a JavaScript app that returns an empty document to a plain fetch, so this text is the indexed record of the authority's own page rather than a page that could be read directly. Surface and vehicle requirements are not published.",
+          "tier": "official",
+          "source": "https://www.sitesandtrailsbc.ca/resource/REC5989"
+        }
+      ]
     },
     "chitina": {
       "activities": {

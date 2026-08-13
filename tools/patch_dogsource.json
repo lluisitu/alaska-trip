@@ -1,0 +1,256 @@
+{
+ "stops": {
+  "estes-rmnp": {
+   "dogs_source": "https://www.nps.gov/romo/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are prohibited on ALL Rocky Mountain National Park trails, tundra, and meadows."
+  },
+  "craters-of-the-moon": {
+   "dogs_source": "https://www.nps.gov/crmo/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not allowed on any trails or in the visitor center even if they are carried."
+  },
+  "yellowstone": {
+   "dogs_source": "https://www.nps.gov/yell/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are only allowed in developed areas and must stay within 100 feet (30.5 meters) of roads, parking areas, and campgrounds."
+  },
+  "west-yellowstone": {
+   "dogs_source": "https://www.nps.gov/yell/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not allowed on boardwalks, hiking trails, in the backcountry, or in thermal areas."
+  },
+  "glacier": {
+   "dogs_source": "https://www.nps.gov/glac/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted on trails, along lake shores outside of developed locations, in the backcountry, or in any building.",
+   "dogs_source_note": "Bike-path wording confirmed but conditional: the page says \"When the bike path between Apgar and West Glacier is free of snow dogs are allowed on leash.\" Our card's \"when snow-free\" matches."
+  },
+  "seward": {
+   "dogs_source": "https://www.nps.gov/kefj/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not allowed on trails, such as the trails of the Exit Glacier area or the Harding Icefield Trail.",
+   "dogs_source_note": "Page carries one restriction our card omits: the coastal ban is dated — \"Pets are not allowed along the coast in an area extending from the mean high tide line to 1/4 mile inland from 5/30 - 11/1.\" It also bans pets \"in any park building\", which our card does not mention."
+  },
+  "denali": {
+   "dogs_source": "https://www.nps.gov/dena/planyourvisit/pets.htm",
+   "dogs_source_quote": "In general, pets are not permitted on park trails, nor off-trail in the wilderness.",
+   "dogs_source_note": "Confirms our card's naming note: this page calls it the \"Roadside Hiking Trail\", alongside \"the Roadside Bike Trail\". Leash rule reads \"Pets must be leashed (6' or shorter leash) at all times.\""
+  },
+  "mccarthy": {
+   "dogs_source": "https://www.nps.gov/wrst/planyourvisit/pets.htm",
+   "dogs_source_quote": "Dogs are allowed on trails within the park and in the backcountry."
+  },
+  "zion": {
+   "dogs_source": "https://www.nps.gov/zion/planyourvisit/pets.htm",
+   "dogs_source_quote": "The only trail that allows pets is the Pa'rus Trail, which begins at the Zion Canyon Visitor Center.",
+   "dogs_source_note": "Exclusion wording on the page is \"Pets are not permitted on any other trails, wilderness areas, on shuttle buses, or in public buildings in Zion.\" Cyanobacteria advice confirmed: \"Keep dogs out of the water and on a leash while in Zion.\""
+  },
+  "olympic": {
+   "dogs_source": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted - on any trails not listed above, in public buildings, on interpretive walks, or in the wilderness.",
+   "dogs_source_note": "All six permitted routes on our card are confirmed verbatim on the page. Leash rule reads \"Pets must be restrained on a leash no longer than 6 feet.\""
+  },
+  "yosemite": {
+   "dogs_source": "https://www.nps.gov/yose/planyourvisit/pets.htm",
+   "dogs_source_quote": "On trails, including the trail to Vernal Fall, even if carried (however, pets are allowed on the Wawona Meadow Loop)",
+   "dogs_source_note": "DRIFT (small, in our favour to fix): our card says pets are allowed on \"the paved road to Mirror Lake\" — the page is explicit that this is \"the paved road to Mirror Lake (but not the unpaved trail around Mirror Lake)\". The page also names two paved paths our card lists (Bridalveil Fall trail, Lower Yosemite Fall trail, \"paved trail through Cook's Meadow (including boardwalks)\") plus \"Chowchilla Mountain Road, and Four Mile and Eleven Mile fire roads\", \"Carlon Road from the trailhead to Hodgdon Meadow (but not to Carlon Falls)\", and \"Old Big Oak Flat Road from Hodgdon Meadow to Tuolumne Grove parking lot\"."
+  },
+  "black-canyon-gunnison": {
+   "dogs_source": "https://www.nps.gov/blca/planyourvisit/pets2.htm",
+   "dogs_source_quote": "Leashed pets are only permitted on the Rim Rock Trail and on the North Rim Chasm View Nature Trail.",
+   "dogs_source_note": "DRIFT — TWO PROBLEMS. (1) Our card says there is ONE exception, the Rim Rock Trail. The page names TWO: \"Leashed pets are only permitted on the Rim Rock Trail and on the North Rim Chasm View Nature Trail.\" (2) Our card says the Rim Rock exception \"is itself closed to dogs in summer because of deer defending fawns\" — the current page carries NO seasonal closure, no mention of deer or fawns, and no summer restriction of any kind. That claim is unsupported by the authority as of this check and should be re-verified or dropped. Note also the page lives at /pets2.htm; /pets.htm returns 404."
+  },
+  "joshua-tree": {
+   "dogs_source": "https://www.nps.gov/jotr/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not allowed on hiking trails, in the backcountry, or in park buildings.",
+   "dogs_source_note": "Paved exceptions confirmed: \"Pets are also permitted on the paved Oasis of Mara and Keys View trails.\" Distance rule reads \"Pets must remain within 100 feet (30.5 m) of roads, parking areas, and campgrounds.\""
+  },
+  "death-valley": {
+   "dogs_source": "https://www.nps.gov/deva/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted on trails, in designated wilderness areas, or inside of federal buildings, even when carried in backpacks, purses, or strollers."
+  },
+  "grand-teton": {
+   "dogs_source": "https://www.nps.gov/grte/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are prohibited on trails, pathways, beaches, in buildings, and swimming in any park waters.",
+   "dogs_source_note": "30 ft rule confirmed as \"Pets must stay within 30 feet of any roadway.\" The page adds a winter allowance our card omits: designated pet walking lanes on closed portions of Teton Park Road, 1 Nov - 30 Apr — relevant only if dates move."
+  },
+  "sequoia-kings-canyon": {
+   "dogs_source": "https://www.nps.gov/seki/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are prohibited on all trails. This includes paved trails, such as the General Sherman Tree Trail, Big Trees Trail, Grant Tree Trail, and others."
+  },
+  "bryce": {
+   "dogs_source": "https://www.nps.gov/brca/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted on trails or unpaved viewpoints (Piracy Point), in public buildings or on public transportation vehicles (shuttle bus).",
+   "dogs_source_note": "$75 figure confirmed: \"Pet owners not adhering to regulations may be cited (minimum fine is $75).\""
+  },
+  "torrey": {
+   "dogs_source": "https://www.nps.gov/care/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted on other hiking trails, in public buildings, or in the backcountry.",
+   "dogs_source_note": "Spelling: the page writes \"Chesnut\" (no first T) in \"in the Chesnut and Doc Inglesby picnic areas\"; our card writes \"Chestnut\". The page also permits pets on two trails our card does not name — \"on the trail from the visitor center to the Fruita Campground\" and \"on the Fremont River Trail from the campground to the south end of Hattie's Field\" — which is what makes the quoted sentence say \"other hiking trails\"."
+  },
+  "moab": {
+   "dogs_source": "https://www.nps.gov/arch/planyourvisit/pets.htm",
+   "dogs_source_quote": "on any hiking trails, or anywhere off-trail, even while in a carrier",
+   "dogs_source_note": "Two authorities on this card. Canyonlands verified separately at https://www.nps.gov/cany/planyourvisit/pets.htm, which carries the same \"on any hiking trails, or anywhere off-trail, even while in a carrier\" plus \"at any overlooks\" — and two further bans our card omits: \"in the visitor center or any building\" and \"in the backcountry (including vehicles on backcountry roads, and on any river trips)\". Both parks state \"Leashes must be 6 feet (1.8 meters) long or less.\""
+  },
+  "mancos": {
+   "dogs_source": "https://www.nps.gov/meve/planyourvisit/pets.htm",
+   "dogs_source_quote": "Leashed pets are allowed on roads, parking lots, and paved areas on Mesa Top Loop and Park Point but not on trails, in ancestral sites or buildings.",
+   "dogs_source_note": "DRIFT by omission — the card is stricter than the park. The quoted sentence is verbatim, but the very next bullet on the page is one our prose drops entirely: \"At Wetherill Mesa, pets are permitted on all trails except for the trails leading into Step House and Long House.\" As written, the card reads as a blanket trail ban and hides a real dog walk at this stop. Tethering rule confirmed: \"Do not leave pets tethered or unattended.\""
+  },
+  "crescent-city": {
+   "dogs_source": "https://www.nps.gov/redw/planyourvisit/pets.htm",
+   "dogs_source_quote": "Your pet must be kept on a leash no longer than 6 feet (1.8 meters).",
+   "dogs_source_note": "\"No Pets on Park Trails\" is confirmed as a heading on the page, and \"Pets are not allowed during ranger-led activities\" is confirmed. Our card's list of where pets ARE allowed is broader on the page than \"developed campgrounds, on beaches, in picnic areas, and on roads\" — it names specific campgrounds (Elk Prairie, Gold Bluffs Beach, Mill Creek, Jedediah Smith), specific beaches (Freshwater, Gold Bluffs, Crescent Beach) and specific gravel roads (Cal Barrel Road, Walker Road), so the general phrasing on our card is safe but less precise than the source."
+  },
+  "twin-falls": {
+   "dogs_source": "https://www.nps.gov/ciro/planyourvisit/pets.htm",
+   "dogs_source_quote": "Dogs and other domestic animals are welcome in campsites and on trails.",
+   "dogs_source_note": "DRIFT — our card hedges where the authority does not. It says City of Rocks' \"trail-by-trail policy not separately verified\"; the NPS page in fact states plainly that dogs are welcome on trails, leashed to 6 ft (\"All pets must be restrained on a leash no longer than 6 feet.\"), with the Visitor Center the only exclusion. The hedge can be dropped. SEPARATELY UNSOURCED: the card's first sentence — Snake River Canyon Rim Trail and the Shoshone Falls observation trail \"both reported dog-friendly\" — is NOT covered by this page. Those are City of Twin Falls facilities, not NPS, and \"reported\" is not an authority. That half of the card remains unsourced. Also note the page does not mention Idaho State Parks co-management."
+  },
+  "forks": {
+   "dogs_source": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+   "dogs_source_quote": "Pets are not permitted - on any trails not listed above, in public buildings, on interpretive walks, or in the wilderness.",
+   "dogs_source_note": "DRIFT (truncation, ours not theirs): our card quotes the closing sentence as \"Pets are not permitted on any trails not listed above.\" The page's actual sentence continues \"...in public buildings, on interpretive walks, or in the wilderness.\" Everything else on the card checks out verbatim, including \"Rialto Beach parking lot to Ellen Creek (1/2 mile)\" and the 6 ft leash."
+  },
+  "flaming-gorge": {
+   "dogs_source": "https://www.fs.usda.gov/r04/ashley/safety-ethics",
+   "dogs_source_quote": "Dogs and other pets must be leashed or under direct control at all times.",
+   "dogs_source_note": "DRIFT — the second half of our card is not the authority's. \"Campgrounds are stricter — leashed at all times inside the campground\" appears nowhere on the Ashley NF page, which states one forest-wide rule and no separate campground rule. The page's own follow-on is \"Letting them run free can haras wildlife, endanger your pet, or annoy other visitors, and some areas ban pets entirely (like certain trails or backcountry zones).\" (sic — \"haras\" is the page's typo). The campground sentence should be re-sourced or dropped."
+  },
+  "muncho-lake": {
+   "dogs_source": "https://bcparks.ca/muncho-lake-park/",
+   "dogs_source_quote": "Dogs and other domestic animals must be leashed and are not allowed in beach areas or park buildings."
+  },
+  "liard": {
+   "dogs_source": "https://bcparks.ca/liard-river-hot-springs-park/",
+   "dogs_source_quote": "Pets and domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings.",
+   "dogs_source_note": "Both sentences on the card are verbatim from this page. Note the URL slug is \"liard-river-hot-springs-park\" (hot springs, two words), not \"hotsprings\"."
+  },
+  "osoyoos": {
+   "dogs_source": "https://bcparks.ca/ec-manning-park/",
+   "dogs_source_quote": "Dogs and other domestic animals must be leashed and are not allowed in most beach areas or park buildings.",
+   "dogs_source_note": "The pet-area sentence is on the same page and reads \"There is a designated pet area to the east side of the restaurant at Manning Park Resort.\" — our card drops the \"to\", which is paraphrase, not drift."
+  },
+  "boya-lake": {
+   "dogs_source": "https://bcparks.ca/ta-chila-park-aka-boya-lake-park/",
+   "dogs_source_quote": "Pets and domestic animals must be on a leash at all times and are not allowed in beach areas or park buildings.",
+   "dogs_source_note": "DRIFT, two things. (1) THE PARK HAS BEEN RENAMED: BC Parks now publishes it as \"Tā Ch'ilā Park [a.k.a. Boya Lake Park]\" — worth carrying on the card, since signage and reservations use the new name. (2) Our card's sentence (\"Parks Canada and BC Parks both permit dogs on trails\") is OUR generalisation, not a quotation from anyone, and Parks Canada has no jurisdiction here — this is a BC provincial park. The page also adds a restriction we omit: \"Backcountry areas are not suitable for dogs or other pets due to the potential for problems with bears and other wildlife.\""
+  },
+  "prince-george": {
+   "dogs_source": "https://bcparks.ca/ancient-forest-chun-toh-whudujut-park/",
+   "dogs_source_quote": "Pets must be on leash on the Ancient Forest boardwalk trails.",
+   "dogs_source_note": "DRIFT — our card's sentence is a generalisation naming Parks Canada, which has no jurisdiction at this stop. The relevant authority is BC Parks at Ancient Forest / Chun T'oh Whudujut, and its rule is boardwalk-specific. It also states \"Backcountry areas are not suitable for dogs or other pets due to wildlife issues and the potential for problems with bears.\" The stop's other walks — Cottonwood Island Nature Park and Lheidli T'enneh Memorial Park — are CITY of Prince George parks and are NOT covered by this citation; they remain unsourced."
+  },
+  "clearwater": {
+   "dogs_source": "https://bcparks.ca/wells-gray-park/",
+   "dogs_source_quote": "Dogs and other pets are welcome in Wells Gray Park, but they must be kept under control.",
+   "dogs_source_note": "DRIFT, and it cuts both ways. Our card says simply \"allowed on leash\" and credits Parks Canada, which has no jurisdiction — Wells Gray is a BC provincial park. BC Parks' actual rule is zoned: leashed in the frontcountry (within 1 km of a highway or park road) and dogs MAY be off leash in the backcountry. So our card is stricter than the authority in the backcountry and, because it does not mention them, silent on the beach and park-building exclusions (\"Pets are not allowed in beach areas or most park buildings.\") where the authority is stricter than us."
+  },
+  "waterton": {
+   "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+   "dogs_source_quote": "Dogs must be on a leash of 3 metres or less, and under control at all times – it is the law.",
+   "dogs_source_note": "The 3 m figure and the \"it is the law\" phrasing are national Parks Canada wording, carried on this page; the individual park pages state a leash requirement but do not publish the 3 m length. Our card's \"local bulletins close specific trails to dogs\" is supported only indirectly — the national page says \"Check for area closures, trail restrictions, and for updates on wildlife activity by visiting the park website or a Parks Canada Visitor Centre.\", which is a general closure warning rather than a dog-specific trail-closure statement."
+  },
+  "banff": {
+   "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+   "dogs_source_quote": "Dogs must be on a leash of 3 metres or less, and under control at all times – it is the law.",
+   "dogs_source_note": "Same national Parks Canada page as Waterton/Jasper/Kluane — no individual park page publishes the 3 m length. See the waterton note on the trail-closure clause."
+  },
+  "jasper": {
+   "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+   "dogs_source_quote": "Dogs must be on a leash of 3 metres or less, and under control at all times – it is the law.",
+   "dogs_source_note": "Same national Parks Canada page. Jasper has no park-level pets page, so the national rule is the only citable source for the 3 m figure at this stop."
+  },
+  "kluane-1": {
+   "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+   "dogs_source_quote": "Dogs must be on a leash of 3 metres or less, and under control at all times – it is the law.",
+   "dogs_source_note": "Same national Parks Canada page; Kluane's own pages state a leash requirement without the 3 m length. Our card's \"local bulletins can close individual trails to dogs\" is not stated on any Kluane page — treat it as prudent advice rather than a published Kluane rule."
+  },
+  "kluane-2": {
+   "dogs_source": "https://parks.canada.ca/voyage-travel/regles-rules/chien-dog",
+   "dogs_source_quote": "Dogs must be on a leash of 3 metres or less, and under control at all times – it is the law.",
+   "dogs_source_note": "As kluane-1 — national page carries the 3 m rule; the trail-bulletin clause is not published by Kluane itself."
+  },
+  "trapper-creek": {
+   "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+   "dogs_source_quote": "a person may not have a dog or other pet in a developed facility of a state park unless the dog or other pet is on a leash not exceeding nine feet in length, and is under control by a person at all times.",
+   "dogs_source_note": "The page attributes this to 11 AAC 12.130(a). Backcountry voice-command allowance and the clean-up duty are both on the page."
+  },
+  "anchorage": {
+   "dogs_source": "https://dnr.alaska.gov/parks/aspunits/chugach/chugachindex.htm",
+   "dogs_source_quote": "Pets must be under control whether on or off leash. 11 AAC 12.130 (e)",
+   "dogs_source_note": "DRIFT — the statewide half of our card is our own gloss. The nine-foot leash rule is real and sourced (https://dnr.alaska.gov/parks/faq.htm, 11 AAC 12.130(a)), but neither that page nor the Chugach page enumerates \"developed facility\" as \"campgrounds, picnic areas, trailheads, swim beaches and boat ramps\". That list needs the 11 AAC 12 definitions section behind it or it should be cut. Access note: dnr.alaska.gov returns Access Denied on some paths (/parks/units/chugach/) while serving others fine — a 403 there does not mean the page is gone."
+  },
+  "pagosa-springs": {
+   "dogs_source": "https://www.fs.usda.gov/r02/sanjuan/safety-ethics/hiking-and-camping-dogs",
+   "dogs_source_quote": "Dogs must always be under strict leash or voice control.",
+   "dogs_source_note": "All four elements of the card verify on this page: \"Keep dogs on a leash 6' or shorter.\" and \"Store dog food in bear resistant food lockers.\" and \"Pick up and trash your dog's waste.\" and \"Keep your dog in your tent or vehicle at night.\" The page splits its advice into a campground/recreation-area list and a wilderness list; the quoted sentence is from the wilderness list."
+  },
+  "tucson": {
+   "dogs_source": "https://www.fs.usda.gov/r03/coronado/about-area/faqs/hiking-and-camping-dogs",
+   "dogs_source_quote": "Yes, dogs are allowed anywhere in the forest except the Pusch Ridge Wilderness Big Horn Sheep closure area and the Sabino Canyon Recreation Area.",
+   "dogs_source_note": "Our card drops the leading \"Yes,\" (the page is an FAQ answer) — otherwise verbatim. The qualifier is confirmed on the same page: \"The Pusch Ridge Wilderness Big Horn Sheep closure area is only a portion of the Pusch Ridge Wilderness.\""
+  },
+  "bandon": {
+   "dogs_source": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+   "dogs_source_quote": "Your pet needs to be physically restrained, meaning you must have them on a leash no longer than six feet.",
+   "dogs_source_note": "The three statewide exceptions are confirmed on this page — Dabney State Recreation Area, Shore Acres State Park, and the Trail of Ten Falls at Silver Falls. Cape Blanco is not among them, so the card's inference holds."
+  },
+  "winthrop": {
+   "dogs_source": "https://www.fs.usda.gov/r06/okanogan-wenatchee/wilderness",
+   "dogs_source_quote": "Dogs are allowed on most other wilderness trails, providing that they are under control at all times.",
+   "dogs_source_note": "DRIFT, and one quote could not be found at all. (1) NOT FOUND: our card attributes to the Blue Lake trailhead page the sentence \"Please keep pets on leash to protect wildlife and pets.\" No current Okanogan-Wenatchee page carrying that sentence could be located. Treat it as unsourced. (2) Our card says \"the forest recommends leashing\"; the page is firmer — \"Certain trails require them to be leashed.\" (3) The page carries a prohibition our card omits entirely: \"Dogs and all pets are prohibited in the Enchantment Permit Area and Ingalls Lake area of Alpine Lakes Wilderness except for Service Dogs.\""
+  },
+  "packwood": {
+   "dogs_source": "https://www.fs.usda.gov/r06/giffordpinchot/safety-ethics/dogs-national-forest",
+   "dogs_source_quote": "National Forest guidelines require that dogs be on a six-foot leash at all times when in developed recreation areas (means an area which has been improved for recreation) and on interpretive trails.",
+   "dogs_source_note": "Minor drift: the page now carries a parenthetical definition our card omits — \"(means an area which has been improved for recreation)\". The other two quotes are exact: \"There are no leash requirements for most of the forest.\" and \"Dogs are NOT allowed to chase game animals.\""
+  },
+  "silver-lake": {
+   "dogs_source": "https://www.fs.usda.gov/r06/giffordpinchot/safety-ethics/dogs-national-forest",
+   "dogs_source_quote": "There are no leash requirements for most of the forest.",
+   "dogs_source_note": "DRIFT — the Ape Cave half of our card merges two separate statements. Both are real and both are on https://www.fs.usda.gov/r06/giffordpinchot/recreation/ape-cave-interpretive-site, but they are different rules: \"Pets\" is the first item in the list introduced by \"In order to protect the fragile cave environment, the following are prohibited inside Ape Cave:\", whereas \"Please leave your pets safely at home.\" belongs to a hot-car warning — \"Please be advised the inside of cars get very hot during summer months. Please leave your pets safely at home.\" Our card reads the second as part of the cave prohibition; it is advice about leaving a dog in the vehicle while you tour the cave, which is the practical problem at this stop."
+  },
+  "welches": {
+   "dogs_source": "https://www.fs.usda.gov/r06/mthood/safety-ethics",
+   "dogs_source_quote": "Make sure pets are kept on leashes no longer than 6 feet in designated recreation areas.",
+   "dogs_source_note": "DRIFT — the second half of our card is not on the page. \"every year dogs run off and are permanently lost in the forest\" could not be found on this page or any other Mt. Hood NF page. The page's actual supporting sentence is \"Pets can spook horses or other pack animals, impact others' camping experiences, and more.\" The leash sentence itself is verbatim."
+  },
+  "bend": {
+   "dogs_source": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+   "dogs_source_quote": "Your pet needs to be physically restrained, meaning you must have them on a leash no longer than six feet.",
+   "dogs_source_note": "Two authorities. Oregon State Parks half is clean — the three exceptions are Dabney SRA, Shore Acres SP and the Trail of Ten Falls at Silver Falls, and Smith Rock is genuinely not among them. Deschutes NF half verified at https://www.fs.usda.gov/r06/deschutes/safety-ethics/dog-restrictions: \"Over 95% of the Deschutes National Forest trails are open to dogs off-leash in the summer and there are 1,200 miles of summer trails on the forest.\" is verbatim. TWO DRIFTS THERE: (1) our card says the Three Sisters leash rule covers those trails \"including Todd Lake and Crater Ditch trails\", implying an open list — the page gives a CLOSED list of six: Green Lakes, Moraine Lakes, South Sister, Soda Creek, Todd Lake and Crater Ditch, 15 Jul to 15 Sep. (2) our card's \"at all trailheads and developed recreation sites year-round\" is only partly right: the central dog-restrictions page states \"All campgrounds and day-use areas require dogs to be on-leash unless they are exiting or entering the water\", and it is the individual Deschutes recreation-site pages (e.g. Benham Falls East/West, Meadow Day Use) that carry \"Dogs must be on leash at all trailheads throughout the year\". Also omitted from our card: a year-round ban — \"Dogs or any domestic animal are not allowed on national forest lands within the Bend Municipal Watershed at any time\" — dogs banned at Beach & Sunset View (Elk Lake) and Scout Lake day-use areas, and the Deschutes River Trail leash season being 15 May to 15 Sep, not the wilderness dates."
+  },
+  "cannon-beach": {
+   "dogs_source": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=136",
+   "dogs_source_quote": "Yes. Pets must be on a leash not more than six feet long, and kept under physical control at all times.",
+   "dogs_source_note": "Confirmed as the Ecola State Park profile page, and the sentence is verbatim as our card has it. The statewide exception list (Dabney SRA, Shore Acres SP, Trail of Ten Falls at Silver Falls) is confirmed separately at https://stateparks.oregon.gov/index.cfm?do=v.page&id=79."
+  },
+  "caprock-canyons": {
+   "dogs_source": "https://tpwd.texas.gov/state-parks/caprock-canyons/trails-info",
+   "dogs_source_quote": "Do not approach bison. Bison are wild. Stay at least 50 yards away.",
+   "dogs_source_note": "DRIFT — TPWD publishes a NUMBER where our card says \"substantial distance\". The page states \"Stay at least 50 yards away. Never surround, crowd, approach or follow bison or any other park wildlife.\" The card should carry 50 yards; a vague phrase is not actionable at a trailhead. Two further points: the leash rule on this page is only \"Keep pets on leashes\" (the 6 ft maximum comes from TPWD's statewide park rules, not this page), and \"in the campground\" COULD NOT BE SOURCED — TPWD describes free-roaming bison on the prairie and park roads but no TPWD page states they range through the campground. Note also TPWD ties the 50-yard distance to people, not specifically to dogs."
+  },
+  "camp-verde": {
+   "dogs_source": "https://www.fs.usda.gov/r03/coconino/about-area/faqs",
+   "dogs_source_quote": "Pets are typically allowed in most areas of the Coconino National Forest.",
+   "dogs_source_note": "All four of our card's quotes verify on this page, including \"Do not leave pet waste (bagged or unbagged) along the trail or trailhead.\" The page adds bans our card omits: pets are prohibited at the Palatki and Honanki Heritage Sites and at Grasshopper Point Swimming/Picnic Area (Red Rock District), and allowed at Elden Pueblo except during scheduled school programs."
+  },
+  "fort-bragg": {
+   "dogs_source": "https://www.parks.ca.gov/?page_id=441",
+   "dogs_source_quote": "Yes: Dogs allowed on beach and headland trails west of Highway 1. Dogs not allowed on Staircase Trail or areas east of Highway 1.",
+   "dogs_source_note": "Jug Handle SNR quote is verbatim. Russian Gulch SP verified separately at https://www.parks.ca.gov/?page_id=432 and there our card DRIFTS by omission: the live field leads with a permission we drop — \"Yes: Dogs allowed in campground, beach, and trails west of Highway 1. Dogs not allowed on Fern Canyon Trail or trails east of Highway 1.\" The longer rule is verbatim as we have it, and adds one sentence we omit that matters with a dog in the coach: \"At night, pets must be in a tent or vehicle.\""
+  },
+  "marina": {
+   "dogs_source": "https://www.parks.ca.gov/?page_id=571",
+   "dogs_source_quote": "Dogs are not allowed anywhere within the reserve and cannot be left inside parked vehicles.",
+   "dogs_source_note": "Point Lobos confirmed verbatim, including the \"No Dogs\" field. Fort Ord National Monument verified separately at https://www.blm.gov/programs/national-conservation-lands/california/fort-ord-national-monument, which carries our quoted string verbatim in context: \"All animals must be on a leash and under the owner/handler's physical control within developed recreation sites at all times: Dogs and stock must be on a leash/lead rope that is no more than six feet long and is held or otherwise attached to the owner/handler while in parking lots, at trailheads, along driveways, or anywhere else that signing indicates that pets must be leashed.\" NOT SOURCED: the rest of our Fort Ord sentence — the 2019 supplementary rules designating marked off-leash segments, and the ban on dogs in the Inland Range Planning Unit — is on neither that page nor blm.gov/visit/fort-ord-national-monument (which carries no pet text at all). The BLM dog flyer PDF linked from the programs page 404s at its published address. Treat the off-leash-segment and Inland Range clauses as unverified."
+  },
+  "vegas-area": {
+   "dogs_source": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon-national-conservation-area/planning-your-visit",
+   "dogs_source_quote": "The only places in Red Rock Canyon you can go but your pet can't are the visitor center and associated outdoor exhibits (for the protection of our tortoises).",
+   "dogs_source_note": "Both authorities verified, both verbatim. Red Rock's leash sentence is fuller than ours: \"Pets should be kept on a leash no longer than 6 feet (2 m) to minimize conflicts with other people, other pets, and native wildlife.\" Valley of Fire SP confirmed at https://parks.nv.gov/parks/valley-of-fire — \"Pets are welcome, but they must be kept on a leash of not more than six feet in length.\" and \"Pets are not allowed in the Visitor Center.\" Red Rock also warns that rattlesnake bites can be fatal to pets and that pets may not be left unattended in vehicles or tied outside."
+  },
+  "watson-lake-2": {
+   "dogs_source": "https://yukon.ca/en/parks-rules",
+   "dogs_source_quote": "Pets must be on leash; on trails; within 50m of trails; and in all other areas where a sign says they must be leashed.",
+   "dogs_source_note": "DRIFT — OUR CARD NAMES THE WRONG AUTHORITIES. It says \"Parks Canada and BC Parks both permit dogs on trails\"; neither has jurisdiction in Watson Lake, Yukon. The governing authority is Yukon Parks under the Parks General Regulation, and its rule is STRICTER than ours: leashed on trails AND within 50 m of trails, with \"active control\" elsewhere — \"In all other areas of a park, pets must be under active control at all times.\" CAVEAT ON SCOPE: this regulation covers Yukon territorial parks, campgrounds and recreation sites. This stop's actual walks — the Sign Post Forest and the Wye Lake Park boardwalk — are Town of Watson Lake municipal facilities and are NOT covered by this citation; no municipal dog bylaw for them was found, so those remain unsourced. ACCESS NOTE: yukon.ca answers 403 to WebFetch but loads normally in the browser pane — the CLAUDE.md note calling it unreachable is too pessimistic."
+  }
+ }
+}

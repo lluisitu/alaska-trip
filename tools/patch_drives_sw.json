@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "pass": "Empty SCENIC DRIVES boxes on five southern-Arizona desert stops (Jan-Mar 2028)",
+    "stops": "bisbee-tombstone, catalina-state-park, chiricahua-willcox, kofa-nwr, patagonia-sonoita",
+    "rule": "Every URL below was copied from a search result or from a page actually opened and read. None was constructed from a name. Every distance, hour and closure date is quoted from the page it is attributed to; where an authority publishes no figure, no figure is recorded.",
+    "rig": "All scenicDrives entries are truck-only by standing decision (LINKS_STRATEGY.md §6). No rig field researched or written.",
+    "search_method": "lite.duckduckgo.com/lite result pages read via WebFetch; official domains (fs.usda.gov, nps.gov, blm.gov, fws.gov, pima.gov, apps.azdot.gov) fetched and read directly. azgfd.com answers HTTP 403 from this sandbox, so Arizona Game and Fish sites are carried at community tier via arizonabirdingtrail.com and the entry says so.",
+    "offroad_boundary": "Nothing here duplicates an offroad entry. Checked against: Kofa (Castle Dome Mine Road, King Road, Palm Canyon Road), Catalina (Charouleau Gap Road #736, Control Road #38), Chiricahua (Cave Creek Road #42/42B, Cochise Stronghold approach roads, Pinery Canyon Road #42), Bisbee (Carr Canyon Road #368, Middlemarch Road #345, Montezuma Pass via FR 48 / Border Road #61), Patagonia (Box Canyon Road #62, Canelo Hills Loops #799/58/49, Ruby Road #289/39)."
+  },
+  "stops": {
+    "kofa-nwr": {
+      "scenicDrives_patch": [
+        {
+          "name": "Martinez Lake Road and Red Cloud Mine Road into Imperial NWR",
+          "url": "https://www.fws.gov/refuge/imperial/visit-us",
+          "distance": "US-95 between mileposts 46 and 47, then about 10 miles west on Martinez Lake Road, then north on Red Cloud Mine Road and three miles of brown signs to the visitor center",
+          "season": "Visitor center open November 1 - March 31 only, Friday-Sunday 10:00 a.m. - 4:00 p.m. The 22-27 Jan stay is inside that window, and Sat 22 and Sun 23 Jan are the two staffed days that fall in it. Refuge lands, roads and trails are open dawn to dusk daily year-round.",
+          "note": "Fish and Wildlife's own visit page. The mile figures come from the refuge's Locations page: \"From Yuma/Quartzite: Take Highway 95 (north from Yuma or south from Quartzite) and turn west onto Martinez Lake Road located between mile markers 46 and 47.\" Camp is on Palm Canyon Road further north on the same highway, so this is a straight run south on US-95 and back. At the end: an observation platform by the headquarters, and two gravel walking trails off the road - Painted Desert Trail 1.3 miles and Meers Point Trail 0.8 miles. FWS publishes no signed auto-tour loop for Imperial, only these access roads and trailheads, which is why no loop mileage is recorded here. Headquarters office Mon-Thu 8:00-4:30, Fri 8:00-3:30.",
+          "tier": "official",
+          "source": "https://www.fws.gov/refuge/imperial/visit-us"
+        },
+        {
+          "name": "Goose Loop Auto Tour, Cibola NWR",
+          "url": "https://www.fws.gov/refuge/cibola/visit-us/activities/auto-tour",
+          "distance": "3-mile drive at 25 mph",
+          "season": "Open half an hour before sunrise to half an hour after sunset. The refuge's own leaflet: \"Winter viewing of geese, cranes, and ducks is particularly good along this drive\" - a late-January stay is the middle of it.",
+          "note": "Figures are from the Service's own Goose Loop Auto Tour leaflet (PDF, Jan 2025), not from a travel site. Two things off that leaflet worth carrying: \"Please stay in your vehicle except to walk the Nature Trail and use the restroom\", and \"Pets not allowed out of your vehicle on the loop or the Nature Trail\" - which decides how the dog's day works. The loop runs the edge of the refuge alfalfa and corn fields past marked burrowing-owl burrows; there is a 1-mile Nature Trail loop to a wildlife observation deck over a 40-acre pond, with a photography blind nearby, and Cibola Lake Overlook is a further 11 miles on. This is the longest of the three - north to Quartzsite, west toward Blythe, then south - so it is a whole day, not an afternoon.",
+          "tier": "official",
+          "source": "https://www.fws.gov/sites/default/files/documents/2025-01/goose-loop-auto-tour-cibola-nwr.pdf"
+        },
+        {
+          "name": "Avenue 7E to Mittry Lake and Betty's Kitchen",
+          "url": "https://www.blm.gov/visit/mittry-lake-wildlife-area",
+          "distance": "AZ-95 east 7 miles from Yuma, then north on Avenue 7E 9.5 miles to the end of the pavement, then about half a mile unpaved to the lake; Betty's Kitchen is signed off the same avenue about 9 miles north, past Laguna Dam",
+          "note": "Two BLM pages, both read. Mittry Lake Wildlife Area is about 3,000 acres with a three-lane boat launch; BLM lists mule deer, javelina, bobcat and desert bighorn alongside the birds. Betty's Kitchen sits between Mittry Lake, Laguna Dam and the Colorado River and carries a 0.5-mile interpretive trail, a National Recreation Trail since 1993, with about ten parking spaces on dirt, two picnic tables and a fishing pier - no grills, no fire pits, day use only. BLM says the site is \"best visited during the spring, winter, and fall\", which puts a January visit in the good half of the year. Yuma Field Office 928-317-3200 for road condition.",
+          "tier": "official",
+          "source": "https://www.blm.gov/visit/bettys-kitchen-watchable-wildlife-viewing-area-and-national-recreation-trail"
+        }
+      ]
+    },
+    "catalina-state-park": {
+      "scenicDrives_patch": [
+        {
+          "name": "Catalina Highway (Sky Island Parkway) to Mount Lemmon",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/catalina-highway-scenic-drive",
+          "distance": "27 miles, climbing to about 9,000 ft. The Forest Service's own Mt Lemmon recreation guide gives the figure as \"This paved, 24-mile route ... climbs nearly 6,000 ft. from Sonoran Desert to pine forest\" - the two FS pages disagree by three miles and both are recorded rather than picking one.",
+          "season": "No scheduled seasonal gate: the Forest Service lists this drive as year-round. But it is snow-liable in February and the Forest Service says so plainly - \"Following snowstorms, the road may be closed temporarily; snow tires, chains, or 4WD may be required.\" That is a storm-by-storm risk, not a dated closure, so it does not conflict with the 14-18 Feb stay; call the Pima County Sheriff's 24-hour Road Condition Hotline, 520-351-3351, on the morning you go.",
+          "note": "ADOT designates F.S. 833 / F.S. 10 / F.S. 11 as the Sky Island Parkway, a state Parkway, dated 17 Aug 2001 - one of only a handful of Parkway designations in Arizona. This is the only paved road to the upper Santa Catalinas, and for this stop it is the way up: the unpaved alternative, Control Road #38 (Old Mt Lemmon Road), is already in the offroad box and is gated 15 Dec - 28 Feb, which covers this entire stay.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r03/coronado/recreation/mount-lemmon-ski-valley"
+        },
+        {
+          "name": "Cactus Forest Loop Drive, Saguaro NP East",
+          "url": "https://www.nps.gov/sagu/planyourvisit/gettingaround.htm",
+          "distance": "8 miles (12.9 km), paved loop",
+          "season": "\"Open from 5 am to dusk every day of the year\" - no seasonal gate.",
+          "note": "NPS Getting Around page. The restriction is stated as a combined length, which matters here: \"vehicles in excess of 102 inches (8.5 feet) wide and/or towing a vehicle, trailer, semitrailer, etc. for a combined total length of 40 feet or longer are prohibited\". The towed truck on its own is fine; nothing about this drive is available to the coach, and there is no RV parking at the district. Several trailheads, scenic vistas and pullouts along it, and bicycles are permitted on the loop.",
+          "tier": "official",
+          "source": "https://www.nps.gov/sagu/planyourvisit/gettingaround.htm"
+        },
+        {
+          "name": "Bajada Loop Drive, Saguaro NP West",
+          "url": "https://www.nps.gov/sagu/planyourvisit/gettingaround.htm",
+          "distance": "6 miles (9.7 km) on the NPS Getting Around page, 5 miles on the NPS Accessibility page - two Park Service pages disagree by a mile and both are recorded. Unpaved graded dirt.",
+          "season": "\"Open from dawn to dusk every day of the year\" - no seasonal gate.",
+          "note": "NPS says high clearance and 4WD are not required, and the accessibility page calls the route \"unpaved but passable for all vehicles\" - so this is a graded touring road, not a 4x4 route, which is why it sits here and not in the offroad box. Same 102-inch-wide / 40-ft-combined prohibition as the east district. Pullouts, picnic areas and trailheads throughout, accessible parking at the picnic areas; bicycles permitted.",
+          "tier": "official",
+          "source": "https://www.nps.gov/sagu/planyourvisit/accessibility.htm"
+        },
+        {
+          "name": "Gates Pass Road, Tucson Mountain Park",
+          "url": "https://www.pima.gov/1328/Gates-Pass-Trailhead",
+          "note": "Pima County manages this one and publishes no length for the road, so none is recorded - the 4.8-mile figure that circulates on travel sites has no authority behind it and is left out. What the county does publish: a paved staging area at the Gates Pass Overlook with space for 50 vehicles, gates open 6 a.m. to 8 p.m., and - the line that decides the day with the dog - \"Dogs are not permitted on trails.\" The county's campground policy page adds \"Weight restrictions apply to Gates Pass Road. RVs longer than 25ft should enter Tucson Mountain Park from Ajo Highway to Kinney Road\", which is academic for a truck but confirms the road is not a coach route in any circumstance. Sunset viewpoint over Avra Valley; pairs naturally with the Bajada Loop on the same side of town.",
+          "tier": "official",
+          "source": "https://www.pima.gov/3548/Campground-Policies"
+        }
+      ]
+    },
+    "chiricahua-willcox": {
+      "scenicDrives_patch": [
+        {
+          "name": "Bonita Canyon Scenic Drive to Massai Point",
+          "url": "https://www.nps.gov/chir/planyourvisit/scenic-drive.htm",
+          "distance": "8 miles, paved, park entrance to Massai Point",
+          "note": "NPS states two separate limits and they are not the same number: \"no vehicles over 29 feet or day use trailers beyond Faraway Ranch\", and \"Only standard size vehicles beyond the campground (24 foot maximum)\". The truck clears both; nothing longer does. The road narrows and starts winding just past the campground, half a mile in. Stops along it: Erickson Cemetery, Bonita Creek (NPS calls it \"often the best place for birding\"), the Faraway Ranch Historic District, the visitor centre museum, the Organ Pipe Formation, and Natural Bridge Trailhead - which has only three small parking spaces for a 4.8-mile hike. No entrance fee; the booth is often unmanned, so read the window.",
+          "tier": "official",
+          "source": "https://www.nps.gov/chir/planyourvisit/scenic-drive.htm"
+        },
+        {
+          "name": "Sulphur Springs Valley birding roads - Kansas Settlement, Arzberger, Kimzey",
+          "url": "https://arizonabirdingtrail.com/site/sulphur-springs-valley/",
+          "distance": "No mileage published for the loop; the site says the valley is large enough that \"at least a half-day should be allotted for a visit\"",
+          "season": "\"Winter (November-March) is best\" - the 18-23 Feb stay sits inside the good window, which is also when the wintering cranes are still in the valley.",
+          "note": "Agricultural fields, ponds and desert scrub running from north of Willcox all the way to the Mexican border. Access from the Willcox exits off I-10, or from the south via Douglas (SR 191) or Tombstone (Davis Road). The named eBird hotspots are Kansas Settlement Road, Arzberger Road and Kimzey Road; the driving is on dirt farm roads and the warning is explicit - they \"can be very slippery after rain or snow has fallen\". Park on the road edge so farm vehicles can pass. No fee, open 24 hours. Recorded at community tier: the managing authority here is Arizona Game and Fish, whose own site answers HTTP 403 from this sandbox, so the Arizona Birding Trail page is what was actually read.",
+          "tier": "community",
+          "source": "https://arizonabirdingtrail.com/site/sulphur-springs-valley/"
+        },
+        {
+          "name": "Apache Pass Road to the Fort Bowie trailhead",
+          "url": "https://www.nps.gov/fobo/planyourvisit/directions.htm",
+          "distance": "13 miles south from the town of Bowie, the last mile unpaved; Bowie is 23 miles east of Willcox on I-10",
+          "note": "The Park Service publishes only this one approach: I-10 to the first Bowie exit, through the town, south on Apache Pass Road, 13 miles to the Fort Bowie Trailhead. It is a drive to a trailhead, not to the ruins - NPS is clear that reaching the visitor centre and the fort is a 3-mile round-trip walk from where the car stops. The continuation west from the trailhead on graded gravel for 9 miles to SR 186, which would make this a loop back toward Chiricahua, is described by Visit Arizona and not by NPS, so it is recorded here as unverified rather than as a route. Different road from the offroad box's Pinery Canyon Road #42 and Cave Creek Road #42/42B.",
+          "tier": "official",
+          "source": "https://www.nps.gov/fobo/planyourvisit/directions.htm"
+        },
+        {
+          "name": "Swift Trail Parkway (SR 366), Mount Graham",
+          "url": "https://www.fs.usda.gov/r03/coronado/newsroom/releases/mount-graham-winter-closure-goes-effect-wednesday-november-15-2023",
+          "distance": "ADOT designates SR 366 milepost 116.0 to 142.0 as the Swift Trail Parkway - 26 miles - dated 15 Jan 1993. The gate sits well below the top.",
+          "season": "CLOSED FOR THIS STOP. The upper Swift Trail is gated every year from 15 November to 15 April \"approximately one-half mile beyond Shannon Campground at the end of the pavement\", and the Forest Service notes the reopening can be pushed later if weather holds. The 18-23 Feb window is four months deep inside that closure. The paved miles below the gate stay open; the high country, Riggs Lake and the top do not, and non-motorized use is the only thing permitted past the locked gate.",
+          "note": "Kept on the card rather than dropped, because it is the one designated Parkway within reach of this stop and it is worth knowing why it is not available: this is a summer road, and a summer road that is also a long day - roughly 80 miles from Willcox north on US-191 to the SR 366 junction about five miles south of Safford. Nothing to phone about; the closure is annual and published.",
+          "tier": "official",
+          "source": "https://apps.azdot.gov/files/roadway-engineering/roadside-dev/arizona-parkways-44-historic-and-scenic-roads-(ars-title-41-44-chapter-3-44-article-1-3)-list-and-statute.pdf"
+        }
+      ]
+    },
+    "bisbee-tombstone": {
+      "scenicDrives_patch": [
+        {
+          "name": "Ghost Town Trail - Gleeson, Courtland, Pearce",
+          "url": "https://www.arizonahighways.com/ghost-town-trail",
+          "distance": "34 miles one way from Tombstone",
+          "note": "Arizona Highways gives the turns: east from Tombstone on SR 80 to Camino San Rafael, left for 1 mile, right onto Gleeson Road for about 14 miles to Gleeson, then left at Ghost Town Trail / Gleeson-Pearce Road for Courtland and Pearce, in the shadow of the Dragoons. Dirt for most of its length but a graded county road, not a 4x4 route - which is why it is here and not in the offroad box, even though Trails Offroad also indexes it (as a scout route). No published vehicle restriction. The magazine's standing back-road caution applies: carry plenty of water, do not go alone, tell someone when you expect to be back, and check weather and road condition first. No seasonal closure is published; the hazard is wet weather, not the calendar.",
+          "tier": "community",
+          "source": "https://www.arizonahighways.com/ghost-town-trail"
+        },
+        {
+          "name": "Geronimo Trail to Slaughter Ranch and San Bernardino NWR",
+          "url": "https://www.arizonahighways.com/classroom/slaughter-ranch",
+          "distance": "16 miles east from Douglas, then 0.6 mile on San Bernardino Road",
+          "season": "Slaughter Ranch Museum is open 9:30 a.m. - 3:30 p.m. Wednesday to Sunday. The stay arrives Wed 23 Feb and leaves Mon 28 Feb, so Wed 23 through Sun 27 are all open days - there is no day of this stop on which the museum is shut.",
+          "note": "From Douglas, east on 15th Street, which becomes the Geronimo Trail; Arizona Highways calls the final San Bernardino Road stretch \"a well-maintained dirt road\". $5 requested from adults, children free. Next door, San Bernardino National Wildlife Refuge - 2,369 acres established in 1982 on the international border, protecting what is left of the San Bernardino cienega, historically the largest wetland in the region - and FWS says outright that the rare birds are what draw most visitors. FWS publishes no road or auto-route detail for the refuge itself, so none is recorded.",
+          "tier": "community",
+          "source": "https://www.fws.gov/refuge/san-bernardino"
+        },
+        {
+          "name": "Davis Road and Coffman Road to Whitewater Draw",
+          "url": "https://arizonabirdingtrail.com/site/whitewater-draw-wildlife-area/",
+          "distance": "Entrance is about 2.5 miles off Davis Road on Coffman Road, past the farmhouse",
+          "season": "\"December through March\" is given as the best window and the stay is inside it - this is the wintering ground for tens of thousands of sandhill cranes, and late February still holds them.",
+          "note": "Arizona Game and Fish land, open 24 hours a day year-round, no fee, with restrooms, viewing platforms and short trails. The road caution is the one that matters after a storm: \"Coffman Rd. and the dirt paths become quite muddy and slick\" once rain has fallen. Nearest gas and food are Tombstone and Elfrida - there is nothing at the draw. Recorded at community tier because azgfd.com answers HTTP 403 from this sandbox; the Arizona Birding Trail page is the one actually read. Closer to this stop than to Willcox, which is why it is filed here rather than with the Sulphur Springs Valley birding roads at Chiricahua.",
+          "tier": "community",
+          "source": "https://arizonabirdingtrail.com/site/whitewater-draw-wildlife-area/"
+        },
+        {
+          "name": "AZ-82 to Fairbank Historic Townsite, San Pedro Riparian NCA",
+          "url": "https://www.blm.gov/visit/fairbank-historic-townsite",
+          "distance": "Parking area is on the north side of AZ-82, half a mile east of the San Pedro River",
+          "season": "The Schoolhouse Museum is staffed by the Friends of the San Pedro River and is open Friday, Saturday and Sunday plus Monday holidays, 9:30 a.m. - 4:30 p.m. Fri 25, Sat 26 and Sun 27 Feb all fall inside the stay. The parking area itself is open sunrise to sunset every day.",
+          "note": "BLM says \"a standard vehicle is sufficient\" and the trailhead lot is packed gravel with room for cars and trailer vehicles. A self-guided walk round a genuine Wild West boomtown: several historic buildings along Railroad Avenue including the Mercantile, and a 1.25-mile hardened compacted-gravel trail at under 2 percent grade running north to the old mill. Vault toilet, picnic tables, interpretive signs; water is not available on site, bring it. Fairbank sits inside the San Pedro Riparian National Conservation Area, which protects 40 miles of the upper San Pedro.",
+          "tier": "official",
+          "source": "https://www.blm.gov/visit/san-pedro"
+        }
+      ]
+    },
+    "patagonia-sonoita": {
+      "scenicDrives_patch": [
+        {
+          "name": "Patagonia-Sonoita Scenic Road (SR 82 and SR 83)",
+          "url": "https://nsbfoundation.com/sb/patagonia-sonoita-scenic-road/",
+          "distance": "ADOT's designation covers SR 82 milepost 4.5 to 32.0 and SR 83 milepost 33.0 to 58.0 - 52.5 miles of designated road. The byway programme quotes 57 miles end to end; both figures are recorded rather than choosing between them.",
+          "note": "A state-designated Scenic Road, dated 20 Sep 1985 in ADOT's own parkways, historic and scenic roads list - one of nineteen scenic roads in Arizona and the only designated route this stop actually sits on. Paved throughout, running Nogales north through Patagonia and Sonoita, then north on SR 83 toward I-10, through the semi-arid valleys and narrow canyons of the Santa Cruz River Basin. The byway programme names Patagonia Lake State Park, Kentucky Camp Historic Site, the Patagonia-Sonoita Creek Preserve visitor centre and Las Cienegas NCA as the things strung along it - three of which have their own entries elsewhere on this card. On a three-night stop this is the spine, and the other three drives hang off it.",
+          "tier": "official",
+          "source": "https://apps.azdot.gov/files/roadway-engineering/roadside-dev/arizona-parkways-44-historic-and-scenic-roads-(ars-title-41-44-chapter-3-44-article-1-3)-list-and-statute.pdf"
+        },
+        {
+          "name": "Sonoita/Elgin Wine Loop - Elgin Road, Upper Elgin Road, Lower Elgin Road",
+          "url": "https://www.visitskyislands.com/wp-content/uploads/2024/02/February-2024-SITA-Winery-Map.pdf",
+          "distance": "No mileage is published for the loop. The Sky Islands Tourism Association's own map gives only drive times off it - Patagonia 20 minutes, Tucson 50 minutes.",
+          "note": "Read off the association's own loop map rather than a blog: 21 numbered stops, 19 wineries plus Copper Brothel Brewery and Copper Hop Ranch, strung along Highway 82 and Highway 83 with the dense cluster on Elgin Road, Upper Elgin Road and Lower Elgin Road, which close the loop between the two highways. The Sonoita-Elgin AVA is Arizona's original wine region. The two highways are paved; the association publishes no surface for the Elgin roads, so none is recorded.",
+          "tier": "community",
+          "source": "https://www.visitskyislands.com/wp-content/uploads/2024/02/February-2024-SITA-Winery-Map.pdf"
+        },
+        {
+          "name": "Empire Ranch Road (LC 900) into Las Cienegas NCA",
+          "url": "https://www.blm.gov/visit/historic-empire-ranch",
+          "distance": "3 miles east off AZ-83 to the ranch house; the turn is signed between mileposts 39 and 40, which BLM puts 6.6 miles north of the AZ-82 junction coming up from Sonoita",
+          "note": "BLM: open daily sunrise to sunset, free, no permit unless you are running a commercial event. The ranch house is a 22-room adobe and wood-frame building dating to 1870, still surrounded by a working cattle operation of 140-plus years, and there is a half-mile packed-gravel Heritage Discovery Trail loop past the Hired Man's House and the New Ranch House with accessible parking. BLM does not publish a surface for LC 900 itself, so none is recorded here. Roughly ten minutes off the Patagonia-Sonoita Scenic Road, so this is an add-on to that drive rather than a separate day.",
+          "tier": "official",
+          "source": "https://www.blm.gov/visit/historic-empire-ranch"
+        },
+        {
+          "name": "Gardner Canyon Road (FR 92) and FR 163 to Kentucky Camp",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/kentucky-camp",
+          "distance": "From AZ-83, a quarter of a mile west on Gardner Canyon Road to FR 163, then about 5 miles to the Kentucky Camp entrance. The Forest Service gives Gardner Canyon Road itself as 8.7 miles one way, but only the first quarter mile is used to reach FR 163.",
+          "season": "Forest Service lists Kentucky Camp as operating year-round.",
+          "note": "Five adobe buildings left from a 1902-1906 hydraulic gold operation and the cattle ranch that followed, on the eastern flank of the Santa Ritas. The Forest Service describes access as being by dirt roads and standard vehicles reaching the site; separately, its page for Gardner Canyon Road (FR 92) says \"High-clearance required to reach trailheads\" - that applies to the far western end of FR 92, not to the quarter mile used here, and both statements are recorded rather than reconciled. Graded forest road rather than a 4x4 route, which is why it sits here; note the Forest Service bars OHV riding inside the Kentucky Camp boundary itself. The cabin sleeps five at $75 a night and the headquarters building is a day-use rental, so expect the site to be occupied at times.",
+          "tier": "official",
+          "source": "https://www.fs.usda.gov/r03/coronado/recreation/groups/gardner-canyon-road-forest-service-road-92"
+        }
+      ]
+    }
+  }
+}

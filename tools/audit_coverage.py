@@ -192,9 +192,15 @@ def main():
                 and not e.get('area_browse_finding'):
             found['browse'].append((sid, name, 'park stop, but the trail heading falls back to the state'))
 
+        # Thin has to scale with the stay. A flat "2 or fewer" passed Moab —
+        # SEVEN nights in Arches and Canyonlands carrying three trails — and
+        # Bryce with three for four nights. Roughly one walk per night up to a
+        # sensible ceiling is the test that would have caught them.
         n = len(s.get('alltrails') or [])
-        if 0 < n <= 2 and nights >= 3 and not e.get('trails_finding'):
-            found['thin'].append((sid, name, f'{n} trail(s) for a {nights}-night stay'))
+        want = min(6, max(3, nights))
+        if 0 < n < want and nights >= 2 and not e.get('trails_finding'):
+            found['thin'].append(
+                (sid, name, f'{n} trail(s) for a {nights}-night stay — expected about {want}'))
 
         for box in ('alltrails', 'offroad', 'scenicDrives'):
             for y in (s.get(box) or []):
@@ -271,7 +277,25 @@ def main():
             found['dogflat'].append(
                 (sid, name, f"one flat '{e['dogs_verdict']}' verdict for {len(s['alltrails'])} trails"))
 
-    order = ['dogmissing', 'dogsource', 'dogexcluded', 'empty', 'browse', 'thin', 'dogflat', 'season']
+    # A review COUNT repeated across two different trails is a copied figure,
+    # not a coincidence — Bryce's Fairyland Loop and Moab's Mesa Arch both read
+    # 12,704, and two Bisbee trails on the SAME card both read 397. Bare star
+    # ratings ("4.6") repeat legitimately and are ignored.
+    seen_rating = defaultdict(list)
+    for s in stops:
+        for y in (s.get('alltrails') or []):
+            r = (y.get('rating') or '').strip()
+            if r and re.search(r'\d[\d,]{2,}', r):
+                seen_rating[r].append((s['id'], y.get('name', '')))
+    for r, rows in seen_rating.items():
+        if len(rows) > 1:
+            for sid_, nm in rows:
+                found['dupstat'].append(
+                    (sid_, next(x['name'] for x in stops if x['id'] == sid_),
+                     f'{nm[:34]!r} rating {r!r} also appears on '
+                     f'{", ".join(f"{a}/{b[:24]}" for a, b in rows if (a, b) != (sid_, nm))}'))
+
+    order = ['dogmissing', 'dupstat', 'dogsource', 'dogexcluded', 'empty', 'browse', 'thin', 'dogflat', 'season']
     # `season` is not a worklist: every hit is a conflict the card already
     # renders with a warning marker. Counting it as outstanding work made the
     # total jump from 8 to 35 the moment the flag started working, which is

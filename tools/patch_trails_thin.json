@@ -1,0 +1,1160 @@
+{
+  "_what": "Extra trails for 21 stops whose trails box carried only one or two entries for a stay of three nights or more. Additive only: nothing already on a card is repeated here, and no near-duplicate of an existing entry under a different name has been added.",
+  "_why": "A three-to-ten night stay with one trail on the card is not a plan, it is a placeholder. Selection follows LINKS_STRATEGY.md §3 - easy and moderate first, hard only where the reviews are outstanding - because this is a 53-year-old driver with a dog aboard, not a peak-bagging trip.",
+  "_search_note": "WebSearch quota is exhausted and lite.duckduckgo.com CAPTCHAd repeatedly under WebFetch; Brave answered 429. The results below were read from duckduckgo.com in the real browser pane, which returns a richer snippet than the lite endpoint - it carries the star rating, the review count, the permitted uses, the trail's usable-months window and the AllTrails dog line. alltrails.com itself still 403s / blanks every automated fetch, including through the browser, so every AllTrails figure here is the indexed snippet and is tiered `indexed`, never `official`. Every alltrails url was COPIED from a search result - either the anchor href or the displayed URL breadcrumb - and none was assembled from a trail name.",
+  "_reviews_format": "Where the rich snippet gave a star and the result title gave a review count, both are recorded as `star (count)` using the title's count, which is AllTrails' own review total. Where the two disagreed the difference is called out in stats_note. Where only a count surfaced it is recorded as `N reviews` with no star.",
+  "_dogs_rule": "`dogs` is set ONLY where the managing authority says so. The AllTrails snippet line 'Dogs are welcome, but must be on a leash' is crowd data and was NOT used to set the field - at Mount Rainier it is actively wrong. Where a stop's dogs_verdict in links_db.json is `prohibited` or `partial`, build_links.py forces dogs:false on every trail not named in `trail_dogs`, so `trail_dogs` is set alongside the per-trail flag at those stops.",
+
+  "stops": {
+
+    "bandon": {
+      "area_browse_alltrails": "https://www.alltrails.com/us/oregon/bandon",
+      "trails": [
+        {
+          "name": "Coquille Point Trail",
+          "distance": "0.4 mi",
+          "time": "8 min",
+          "difficulty": "Easy",
+          "reviews": "96 reviews",
+          "uses": ["hike"],
+          "note": "Paved loop out onto the headland above Face Rock, looking down on the Oregon Islands NWR sea stacks, with stairs to the beach. Five minutes from town and short enough to take in any gap between the late-November storms.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Coquille Point Trail", "url": "https://www.alltrails.com/trail/us/oregon/coquille-point-trail--2", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Bullards Beach",
+          "distance": "1.0 mi",
+          "time": "20 min",
+          "difficulty": "Easy",
+          "reviews": "50 reviews",
+          "uses": ["hike"],
+          "note": "The short walk out to the Coquille River Lighthouse at the river mouth, inside Bullards Beach State Park. Flat sand and jetty, and the one that works when the wind is up.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Bullards Beach", "url": "https://www.alltrails.com/trail/us/oregon/bullards-beach", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Bullards Beach and North Loop Trail",
+          "distance": "3.7 mi",
+          "time": "1 h 4 min",
+          "difficulty": "Moderately challenging",
+          "reviews": null,
+          "uses": ["hike"],
+          "note": "The longer beach-and-dune circuit out of the same state park - the half-day version of the lighthouse walk.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Bullards Beach and North Loop Trail", "url": "https://www.alltrails.com/trail/us/oregon/bullards-beach-and-north-loop-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Lost Lake Trail",
+          "distance": "1.7 mi",
+          "time": "33 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "83 reviews",
+          "uses": ["hike"],
+          "note": "Inland forest walk for a day when the headlands are unwalkable - the rain option rather than the view option.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Lost Lake Trail", "url": "https://www.alltrails.com/trail/us/oregon/lost-lake-trail--2", "match": "exact", "tier": "indexed"}
+        }
+      ]
+    },
+
+    "bend": {
+      "trails": [
+        {
+          "name": "Shevlin Loop Trail",
+          "distance": "4.6 mi",
+          "time": "1 h 38 min",
+          "difficulty": "Easy",
+          "reviews": "1,986 reviews",
+          "uses": ["hike"],
+          "note": "Bend's own park loop along Tumalo Creek - the reliable mid-November walk once Cascade Lakes Highway is shut and Todd Lake, already on this card, is unreachable.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Shevlin Loop Trail", "url": "https://www.alltrails.com/trail/us/oregon/shevlin-loop-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Tumalo Falls and Double Falls",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "reviews": "2,723 reviews",
+          "uses": ["hike"],
+          "season": "Winter access is the whole question. Tumalo Falls Road (FR 4603) is not plowed to the falls and the snow gate position in mid-November has to be confirmed with Deschutes National Forest before driving out; if it is down, the falls become a walk or ski in from the gate rather than a 2-mile stroll.",
+          "note": "AllTrails' own summary of this listing describes it as a dog-friendly waterfall hike, which is crowd data, not the Forest Service - treat the dog answer as unconfirmed until Deschutes NF is asked.",
+          "needs": ["distance", "time", "difficulty", "star rating", "elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Tumalo Falls and Double Falls", "url": "https://www.alltrails.com/trail/us/oregon/tumalo-falls-and-double-falls", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Pilot Butte",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "reviews": "2,928 reviews",
+          "uses": ["hike"],
+          "note": "Cinder cone inside the city limits with a summit road as well as trails - the most-reviewed walk in Bend and snow-free most of the winter. Oregon State Parks describes it as an urban park with more than seven miles of trails and two ways to the 480-foot summit.",
+          "needs": ["distance", "time", "difficulty", "star rating", "elevation gain"],
+          "alltrails": {"name": "Pilot Butte", "url": "https://www.alltrails.com/trail/us/oregon/pilot-butte", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "Oregon State Parks — Pilot Butte State Scenic Viewpoint", "tier": "official", "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=33", "note": "Managing authority. 'Hike up and around on one of three trails.'"}]
+        },
+        {
+          "name": "Deschutes River Trail: Old Mill Reach",
+          "distance": "4.4 mi",
+          "time": "1 h 24 min",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "note": "Flat riverside loop through the Old Mill District, paved and packed in sections. The zero-effort option straight from town on a short November afternoon.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Deschutes River Trail: Old Mill Reach", "url": "https://www.alltrails.com/trail/us/oregon/deschutes-river-trail-old-mill-reach", "match": "exact", "tier": "indexed"}
+        }
+      ]
+    },
+
+    "bentonville-ar": {
+      "trails": [
+        {
+          "name": "Bashore Ridge Loop Trail",
+          "distance": "4.4 mi",
+          "time": "1 h 40 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "1,467 reviews",
+          "uses": ["hike"],
+          "note": "Hobbs State Park-Conservation Area east of Rogers - the best-reviewed real hike within reach of this stop, and a woodland walk rather than a greenway. February is bare-tree season, which is when the ridge actually has a view.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Bashore Ridge Loop Trail", "url": "https://www.alltrails.com/trail/us/arkansas/bashore-ridge-loop-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Lake Atalanta Loop",
+          "distance": "2.0 mi",
+          "time": "41 min",
+          "difficulty": "Easy",
+          "reviews": "897 reviews",
+          "uses": ["hike"],
+          "note": "Rogers' lake circuit - flat, short, close in, and the easy hour on a cold day.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Lake Atalanta Loop", "url": "https://www.alltrails.com/trail/us/arkansas/lake-atalanta-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "North Bentonville Trail",
+          "distance": "4.1 mi",
+          "time": "1 h 17 min",
+          "difficulty": "Easy",
+          "reviews": "824 reviews",
+          "uses": ["hike", "bike"],
+          "note": "Paved greenway running north out of town, part of the Razorback Regional Greenway. The obvious candidate on this stop for a ride with the dog in the carrier rather than a hike - surface is asphalt, so no puncture question.",
+          "needs": ["star rating", "elevation gain", "cruise verdict from the authority"],
+          "alltrails": {"name": "North Bentonville Trail", "url": "https://www.alltrails.com/trail/us/arkansas/n-bentonville-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Rim Rock Nature Loop",
+          "distance": "0.9 mi",
+          "time": "24 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "212 reviews",
+          "uses": ["hike"],
+          "note": "Short bluff-line nature loop near Rogers - twenty minutes, and the shortest thing on this card.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Rim Rock Nature Loop", "url": "https://www.alltrails.com/trail/us/arkansas/rim-rock-nature-loop", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "Crystal Bridges Art Trail was the only entry on this card and it is a museum grounds path. The four above are the walking options an in-town base actually has: one state-park ridge, one lake loop, one paved greenway and one short nature loop."
+    },
+
+    "boya-lake": {
+      "trails": [],
+      "finding": "NOTHING TO ADD, and that is the answer rather than a failure. BC Parks' own page for Tā Ch'ilā Park (a.k.a. Boya Lake Park) says the park 'offers two short hiking trails, a mountain bike trail' and names exactly two: Lakeshore Trail, 1.5 km, and Beaver Lodge Trail, 1.5 km. Both are already on the card. AllTrails' park page likewise indexes 2 trails and no more. The mountain bike trail is neither named nor measured by the authority, so it cannot be listed as an entity. The nearest alternative walking of any size is 200+ km away down Highway 37. Three nights here is a canoe-and-sit stop, not a hiking stop, and the card should say so rather than be padded.",
+      "dogs_note": "BC Parks, quoted: pets 'must be on a leash at all times and are not allowed in beach areas or park buildings', and 'Backcountry areas are not suitable for dogs or other pets due to the potential for problems with bears and other wildlife.' Both listed trails are front-country and legal on a leash; the beach at the end of them is not.",
+      "other_links": [{"label": "BC Parks — Tā Ch'ilā Park (a.k.a. Boya Lake Park)", "tier": "official", "url": "https://bcparks.ca/ta-chila-park-aka-boya-lake-park/", "note": "Authority. Source of the two trail names, the 1.5 km lengths and the pet rule."}]
+    },
+
+    "camp-verde": {
+      "trails": [
+        {
+          "name": "Sedona Airport Loop Trail",
+          "distance": "3.3 mi",
+          "time": "1 h 23 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "10,192 reviews",
+          "uses": ["hike"],
+          "note": "Circuit right around Airport Mesa with red rock on every side the whole way - the most-reviewed trail in Sedona and the one that works in any March weather.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Sedona Airport Loop Trail", "url": "https://www.alltrails.com/trail/us/arizona/sedona-airport-loop-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "No star surfaced in any snippet for this listing; the 10,192 count is from the result title."
+        },
+        {
+          "name": "Fay Canyon Trail",
+          "distance": "2.1 mi",
+          "difficulty": "Moderately challenging",
+          "reviews": "13,366 reviews",
+          "uses": ["hike"],
+          "note": "Short flat-floored box canyon off Boynton Pass Road - shade, an arch high on the right-hand wall, and a fraction of the crowd that Devil's Bridge carries.",
+          "needs": ["time", "star rating", "elevation gain"],
+          "alltrails": {"name": "Fay Canyon Trail", "url": "https://www.alltrails.com/trail/us/arizona/fay-canyon-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Bell Rock - HT Trail",
+          "distance": "2.6 mi",
+          "time": "56 min",
+          "difficulty": "Easy",
+          "reviews": "317 reviews",
+          "uses": ["hike"],
+          "note": "The easy way at Bell Rock - the trail around the base rather than the scramble up it, from the Village of Oak Creek end, which is the Sedona trailhead closest to Camp Verde.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Bell Rock - HT Trail", "url": "https://www.alltrails.com/trail/us/arizona/bell-rock-ht-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "Not the same listing as 'Bell Rock Loop Trail' (4,870 reviews, moderately challenging, 47 min), which is a separate and harder route on the same formation."
+        },
+        {
+          "name": "Doe Mountain Loop",
+          "distance": "2.7 mi",
+          "difficulty": "Moderately challenging",
+          "reviews": "2,194 reviews",
+          "uses": ["hike"],
+          "note": "Short steep switchback up onto a flat mesa top and then a level walk right round the rim - a great deal of view for under three miles, which is the ratio that matters on an eight-night stay.",
+          "needs": ["time", "star rating", "elevation gain"],
+          "alltrails": {"name": "Doe Mountain Loop", "url": "https://www.alltrails.com/trail/us/arizona/doe-mountain-loop-trail", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "Dogs left absent throughout. The Red Rock Ranger District's own pet rule for these trails was not sourced this pass and Coconino NF was not fetched; the card should not imply an answer that was not read off the authority."
+    },
+
+    "death-valley": {
+      "trails": [
+        {
+          "name": "Devil's Golf Course",
+          "distance": "2.5 mi",
+          "time": "47 min",
+          "difficulty": "Easy",
+          "reviews": "363 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "A DOG WALK, and there are almost none here. NPS's pet page names Devil's Golf Course Road among the short list of places leashed pets are permitted, and this listing is that road out to the salt pinnacles. With every trail in the park closed to pets, the unpaved roads are the whole of the dog's four days.",
+          "note_source": "NPS Death Valley pets page, fetched: 'Leashed pets are permitted in developed areas, such as paved roads, unpaved roads, parking lots, campgrounds, and outside of federal buildings', with Devil's Golf Course Road named explicitly alongside West Side Road, 20 Mule Team Canyon, Mustard Canyon, Racetrack Road, Greenwater Valley Road, Upper Wildrose Road, Cottonwood-Marble Access Road and Father Crowley Vista. 'Pets are not permitted on trails, in designated wilderness areas, or inside of federal buildings, even when carried in backpacks, purses, or strollers.' Leash 6 ft.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Devil's Golf Course", "url": "https://www.alltrails.com/trail/us/california/devils-golf-course--2", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "NPS — Pets in Death Valley", "tier": "official", "url": "https://www.nps.gov/deva/planyourvisit/pets.htm", "note": "Authority for the dog rule and for the named list of pet-legal roads."}]
+        },
+        {
+          "name": "Mesquite Flat Sand Dunes Trail",
+          "distance": "2.2 mi",
+          "time": "47 min",
+          "difficulty": "Moderately challenging",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "Open dune field near Stovepipe Wells with no fixed path - walk out as far as suits and turn round. Low winter sun is what makes it, which is exactly what the 28 Dec - 1 Jan window gives.",
+          "note_source": "NPS names 'Mesquite Flat Sand Dunes beyond the parking lot' among the places pets may not go.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Mesquite Flat Sand Dunes Trail", "url": "https://www.alltrails.com/trail/us/california/mesquite-flat-sand-dunes-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Natural Bridge Canyon Trail",
+          "distance": "1.5 mi",
+          "difficulty": "Moderately challenging",
+          "reviews": "2,621 reviews",
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "Gravel canyon walk to a natural rock span, off Badwater Road. Short enough to pair with Badwater and Artists Drive in a single outing.",
+          "needs": ["time", "star rating", "elevation gain"],
+          "alltrails": {"name": "Natural Bridge Canyon Trail", "url": "https://www.alltrails.com/trail/us/california/death-valley-natural-bridge-road", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Artists Palette",
+          "distance": "0.3 mi",
+          "time": "12 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "1,397 reviews",
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "The short scramble up into the mineral-stained hills at the Artists Drive pullout. Twelve minutes for the best colour in the park, and best in late afternoon.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Artists Palette", "url": "https://www.alltrails.com/trail/us/california/artists-palette-overlook", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Zabriskie Point",
+          "distance": "0.3 mi",
+          "time": "8 min",
+          "difficulty": "Easy",
+          "reviews": "1,781 reviews",
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "The paved ramp to the overlook - eight minutes, and the classic badlands view. NPS names the Zabriskie Point paved trail specifically among the places closed to pets, so this is a walk taken without the dog even though it is a car park away.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Zabriskie Point", "url": "https://www.alltrails.com/trail/us/california/death-valley-national-park-zabriskie-point", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "trail_dogs": {
+        "Devil's Golf Course": true,
+        "Mesquite Flat Sand Dunes Trail": false,
+        "Natural Bridge Canyon Trail": false,
+        "Artists Palette": false,
+        "Zabriskie Point": false
+      }
+    },
+
+    "durango": {
+      "trails": [
+        {
+          "name": "Spur Line Trail",
+          "distance": "4.6 mi",
+          "time": "1 h 37 min",
+          "difficulty": "Easy",
+          "reviews": "4.5 (599)",
+          "uses": ["hike", "bike"],
+          "season": "AllTrails gives the usable window as March through October, so the 22-27 Apr stay is inside it.",
+          "note": "Old rail alignment turned loop on the north side of town - easy, in town, and bike-legal, which makes it the gravel-cruise candidate at this stop.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Spur Line Trail", "url": "https://www.alltrails.com/trail/us/colorado/spur-line-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "Result title gives 599 Reviews; the rich snippet's star line reads 4.5/5 (493). The two counts differ - title figure used."
+        },
+        {
+          "name": "Animas Overlook Trail",
+          "distance": "0.7 mi",
+          "time": "17 min",
+          "difficulty": "Easy",
+          "reviews": "4.4 (155)",
+          "uses": ["hike"],
+          "season": "AllTrails gives May through October; late April is a week or two early and the Junction Creek Road up to it can still be soft. Worth a call to the San Juan NF office before driving up.",
+          "note": "Short accessible loop on the rim above the Animas valley with interpretive signs - the biggest view for the least effort anywhere near Durango.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Animas Overlook Trail", "url": "https://www.alltrails.com/trail/us/colorado/animas-overlook-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "Title gives 155 Reviews; star line reads 4.4/5 (134)."
+        },
+        {
+          "name": "Falls Creek Waterfall via Church Camp Trail",
+          "distance": "0.9 mi",
+          "time": "23 min",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "season": "Listed as open year-round, which at this elevation makes it one of the few certainties in the third week of April.",
+          "note": "Twenty minutes to a waterfall just north of town. The short walk for an arrival day.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Falls Creek Waterfall via Church Camp Trail", "url": "https://www.alltrails.com/trail/us/colorado/falls-creek-waterfall-via-church-camp-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Animas River Trail: South Durango Section",
+          "distance": "6.7 mi",
+          "time": "2 h 6 min",
+          "difficulty": "Easy",
+          "reviews": "4.6 (267)",
+          "uses": ["hike"],
+          "season": "March through October per AllTrails - inside the stay.",
+          "note": "The southern continuation of the river path, away from the busy downtown stretch. Listed separately because it is a different section rather than a second name for the trail already on the card, and it doubles the available flat riverside mileage.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Animas River Trail: South Durango Section", "url": "https://www.alltrails.com/trail/us/colorado/animas-river-trail--2", "match": "exact", "tier": "indexed"},
+          "stats_note": "Distinct AllTrails listing from the 'Animas River Trail' (6.2 mi, 1,078 reviews) already on the card - different slug, different length, different section. Kept because it is a genuinely different piece of path, but the two overlap at the north end."
+        }
+      ],
+      "stats_note": "Late April rules out most of what Durango is known for: Goulding Creek, Missionary Ridge, Silver Mountain and Hermosa Creek all carry May-or-June starts in their AllTrails windows. The four above are the low, in-town or near-town options that are actually walkable in the stay."
+    },
+
+    "imperial-dam": {
+      "trails": [
+        {
+          "name": "Horse Tanks",
+          "distance": "6.3 mi",
+          "time": "2 h 8 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "64 reviews",
+          "uses": ["hike"],
+          "season": "AllTrails gives January through March - the 14-18 Jan stay is at the very start of the best window for it.",
+          "note": "Kofa NWR desert wash walk to natural rock tanks. The one real half-day hike within driving range of the LTVA, and January is exactly when the desert is worth walking.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Horse Tanks", "url": "https://www.alltrails.com/trail/us/arizona/horse-tanks", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Meers Point Trail",
+          "distance": "0.8 mi",
+          "difficulty": "Moderate",
+          "reviews": null,
+          "uses": ["hike"],
+          "note": "Imperial National Wildlife Refuge's own short trail on the Colorado, and the refuge allows pets on a leash. Pairs with the Painted Desert Trail already on the card without a second long drive.",
+          "note_source": "US Fish & Wildlife Service, Imperial NWR trails page, fetched: Meers Point Trail, 0.8 miles, Moderate. The same table lists Painted Desert Trail at 1.3 miles, Desert Garden Trail and Pupfish Pond Trail.",
+          "needs": ["time", "reviews", "elevation gain"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "USFWS — Imperial NWR trails", "tier": "official", "url": "https://www.fws.gov/refuge/imperial/visit-us/trails", "note": "Managing authority. Publishes the trail list with lengths and difficulty."}]
+        },
+        {
+          "name": "Long Telegraph Pass Loop",
+          "distance": "5.8 mi",
+          "difficulty": "Challenging",
+          "reviews": "4.5 (167)",
+          "uses": ["hike"],
+          "season": "Listed as open year-round; in January that is genuinely true rather than a formality.",
+          "note": "Gila Mountains climb south-east of Yuma. Graded Challenging, and kept on the card only because 167 reviews at 4.5 is a strong enough signal to be worth the drive on a cool day - not a walk to start at midday even in January.",
+          "needs": ["time", "elevation gain"],
+          "alltrails": {"name": "Long Telegraph Pass Loop", "url": "https://www.alltrails.com/trail/us/arizona/long-telegraph-pass-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Laguna Mountains-Yuma Trail",
+          "distance": "10.2 mi",
+          "time": "3 h 42 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "25 reviews",
+          "uses": ["hike", "bike"],
+          "note": "The long desert loop in the Lagunas, closest of these to the LTVA. Ten miles with no shade - a whole-day-or-nothing option, listed so the card shows the full range rather than only short walks.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Laguna Mountains-Yuma Trail", "url": "https://www.alltrails.com/trail/us/arizona/laguna-mountains-yuma-trail", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "Several strong Yuma-area AllTrails listings are OHV routes rather than trails - McPherson Pass OHV Trail and Route of Butterfield Stage OHV Trail both surfaced and both were left out of this box; they belong in offroad if anywhere."
+    },
+
+    "long-beach": {
+      "trails": [
+        {
+          "name": "Coastal Forest Loop Trail",
+          "distance": "1.3 mi",
+          "time": "37 min",
+          "difficulty": "Easy",
+          "reviews": "200 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "AllTrails gives March through October; the 29 Oct - 2 Nov stay catches the last days of it, and this is forest rather than exposed headland, so it is the sheltered option if the razor-clam week turns wet.",
+          "note": "Old-growth spruce loop inside Cape Disappointment State Park, a mile from the Discovery Trail already on the card.",
+          "note_source": "Washington State Parks lists Cape Disappointment State Park's rule as 'Dogs Allowed on Leash'.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Coastal Forest Loop Trail", "url": "https://www.alltrails.com/trail/us/washington/coastal-forest-loop-trail", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "Washington State Parks — Cape Disappointment", "tier": "official", "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park", "note": "Managing authority; source of the leashed-dogs rule."}]
+        },
+        {
+          "name": "Lighthouse Keepers Trail",
+          "distance": "0.5 mi",
+          "time": "13 min",
+          "difficulty": "Easy",
+          "reviews": "4.6 (35)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Open year-round.",
+          "note": "Thirteen minutes out to the lighthouse keepers' quarters above the Columbia bar - the short evening walk on a clam-dig day, and the highest-rated trail in the park.",
+          "note_source": "Washington State Parks: Cape Disappointment State Park, 'Dogs Allowed on Leash'.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Lighthouse Keepers Trail", "url": "https://www.alltrails.com/trail/us/washington/lighthouse-keepers-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Black Lake",
+          "distance": "1.9 mi",
+          "time": "46 min",
+          "difficulty": "Easy",
+          "reviews": "3.7 (101)",
+          "uses": ["hike"],
+          "season": "January through October per AllTrails - the stay is right at the edge, and the note that matters is that this is a lake loop that gets soft in wet weather.",
+          "note": "Freshwater lake loop behind Ilwaco. The flat inland alternative when the surf is too much.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Black Lake", "url": "https://www.alltrails.com/trail/us/washington/black-lake", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Benson Beach Trail",
+          "distance": "0.9 mi",
+          "time": "16 min",
+          "difficulty": "Easy",
+          "reviews": "15 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "Short link from the Cape Disappointment campground out onto Benson Beach - the walk from the door if the coach ends up in that park rather than in town.",
+          "note_source": "Washington State Parks: Cape Disappointment State Park, 'Dogs Allowed on Leash'.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Benson Beach Trail", "url": "https://www.alltrails.com/trail/us/washington/benson-beach-trail-2", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "trail_dogs": {
+        "Coastal Forest Loop Trail": true,
+        "Lighthouse Keepers Trail": true,
+        "Benson Beach Trail": true
+      },
+      "stats_note": "Greenhead Slough Trail (1.1 mi, easy, 10 reviews) also surfaced near Ilwaco and was left off: its AllTrails listing states dogs are not allowed, and it adds nothing the four above do not."
+    },
+
+    "marina": {
+      "trails": [
+        {
+          "name": "Marina State Beach",
+          "distance": "1.8 mi",
+          "time": "38 min",
+          "difficulty": "Easy",
+          "reviews": "4.7 (42)",
+          "uses": ["hike"],
+          "season": "Open year-round - which for a three-night stop over 16-19 Dec is the whole point.",
+          "note": "The walk from the door: dune boardwalk and open sand at the end of Reservation Road, minutes from camp, and the best-rated short walk in Marina itself.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Marina State Beach", "url": "https://www.alltrails.com/trail/us/california/marina-state-beach", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Garrison Loop",
+          "distance": "3.4 mi",
+          "time": "1 h 16 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "3.9 (78)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Fort Ord National Monument loop, same BLM ground as the Badger Hills trail already on the card - and BLM's rule there is leashed everywhere, with marked off-leash segments nearby. The dog day out at this stop, because Point Lobos is closed to dogs entirely.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Garrison Loop", "url": "https://www.alltrails.com/trail/us/california/garrison-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Jerry Smith Cooridor",
+          "distance": "1.7 mi",
+          "time": "39 min",
+          "difficulty": "Easy",
+          "reviews": "4.2 (134)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Flat corridor path on the Marina side - short, level, and the one to use when the December weather is against a longer day. Listed under AllTrails' own spelling, which misspells 'Corridor'.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Jerry Smith Cooridor", "url": "https://www.alltrails.com/trail/us/california/jerry-smith-cooridor", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Marina Dunes",
+          "distance": "2.3 mi",
+          "time": "44 min",
+          "difficulty": "Easy",
+          "reviews": "4.2 (59)",
+          "uses": ["hike"],
+          "dogs": false,
+          "season": "Open year-round.",
+          "note": "Dune preserve walk immediately north of the state beach. NO DOG: California State Parks' rule for Fort Ord Dunes State Park is that dogs are allowed on the north/south recreation trail but 'are not allowed on spur trails to the beach OR on the beach due to endangered bird species and sensitive habitat areas', and the AllTrails listing for this dune route likewise states dogs are not allowed.",
+          "note_source": "California State Parks, Fort Ord Dunes State Park page, fetched, quoted above.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Marina Dunes", "url": "https://www.alltrails.com/trail/us/california/marina-dunes", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "California State Parks — Fort Ord Dunes SP", "tier": "official", "url": "https://www.parks.ca.gov/?page_id=580", "note": "Authority for the dune/beach dog restriction."}]
+        }
+      ],
+      "trail_dogs": {"Garrison Loop": true, "Marina Dunes": false},
+      "stats_note": "Point Lobos, already on this card, bars dogs from the entire reserve and will not even let one wait in a parked car - California State Parks, quoted: 'Dogs are not allowed anywhere within the reserve and cannot be left inside parked vehicles.' Garrison Loop is the substitute day out on a Point Lobos day."
+    },
+
+    "mccarthy": {
+      "trails": [
+        {
+          "name": "Crystalline Hills Trail",
+          "distance": "2.5 mi loop",
+          "difficulty": "Easy to Moderate",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "The only trail on the McCarthy Road for which the park publishes a measured length - a loop up into open hills off the road in, with the Wrangells across the valley. Dogs are legal: NPS says plainly that 'Dogs are allowed on trails within the park and in the backcountry', leashed to six feet.",
+          "note_source": "NPS Wrangell-St Elias 'McCarthy Road and Kennecott' trails page, fetched: 'Crystalline Hills - 2.5 mile loop, Easy to Moderate'. Pet rule from the park's own pets page, which also requires leashing inside the Kennecott Mines National Historic Landmark area.",
+          "needs": ["time", "elevation gain", "reviews"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [
+            {"label": "NPS — McCarthy Road and Kennecott trails", "tier": "official", "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm", "note": "Authority for the trail list and the 2.5-mile loop figure."},
+            {"label": "NPS — Pets at Wrangell-St Elias", "tier": "official", "url": "https://www.nps.gov/wrst/planyourvisit/pets.htm", "note": "'Dogs are allowed on trails within the park and in the backcountry.' Leash 6 ft."}
+          ]
+        },
+        {
+          "name": "Wagon Road and Toe of Kennicott Glacier",
+          "distance": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "NPS grades it an easy day hike from Kennecott down to the glacier's toe. This is the low-effort alternative to the Root Glacier trail already on the card - no crampons, no guide, and it works on a wet day. The park publishes no distance for it.",
+          "note_source": "NPS 'McCarthy Road and Kennecott' trails page, fetched: listed as an 'Easy day hike'; no distance published there, the figures are on downloadable PDF maps.",
+          "needs": ["distance", "time", "elevation gain", "reviews"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — McCarthy Road and Kennecott trails", "tier": "official", "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm", "note": "Authority; lists it as an easy day hike."}]
+        },
+        {
+          "name": "Jumbo Mine Trail",
+          "distance": null,
+          "difficulty": "Strenuous",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "The second mine climb out of Kennecott alongside Bonanza, which is already on the card, and graded Strenuous by the park just as Bonanza is. Listed so the card shows both; on a six-night August stay one of the two is enough.",
+          "note_source": "NPS 'McCarthy Road and Kennecott' trails page, fetched: listed as a 'Strenuous day hike'; no distance published.",
+          "needs": ["distance", "time", "elevation gain", "reviews"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — McCarthy Road and Kennecott trails", "tier": "official", "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm", "note": "Authority for the difficulty grade."}]
+        }
+      ],
+      "stats_note": "Wrangell-St Elias publishes trail names and difficulty words for the Kennecott area but a distance for only one of them. The missing figures are recorded as needed rather than filled from a third party. `unlisted` here means no AllTrails search was run for these three, not that no listing exists."
+    },
+
+    "newport": {
+      "trails": [
+        {
+          "name": "Nye Beach to Agate Beach",
+          "distance": "4.9 mi",
+          "time": "1 h 25 min",
+          "difficulty": "Easy",
+          "reviews": "66 reviews",
+          "uses": ["hike"],
+          "season": "AllTrails gives the best window as March through May, so a 21-27 Nov stay is well outside it - which for a beach walk means wind, rain and short daylight rather than closure. Walkable, but check the tide before setting out; it is a sand route.",
+          "note": "The long beach walk north out of Newport, from Nye Beach up to Agate Beach under the Yaquina Head headland. Five miles of flat sand, and the biggest single walk this stop has.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Nye Beach to Agate Beach", "url": "https://www.alltrails.com/trail/us/oregon/nye-beach-to-agate-beach", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Beverly Beach State Park Campground",
+          "distance": "1.5 mi",
+          "time": "28 min",
+          "difficulty": "Easy",
+          "reviews": "4.2 (138)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Loop through the creek-side forest at Beverly Beach, seven miles north of town, with a tunnel under 101 to the sand. The sheltered option on a November storm day.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Beverly Beach State Park Campground", "url": "https://www.alltrails.com/trail/us/oregon/beverly-beach-state-park-campground", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Hatfield Marine Science Center Estuary Trail",
+          "distance": "1.0 mi",
+          "time": "17 min",
+          "difficulty": "Easy",
+          "reviews": "4.3 (91)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Flat estuary path on the south side of Yaquina Bay by the science centre - birds, mud, and a walk that takes twenty minutes when the weather gives you twenty minutes.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Hatfield Marine Science Center Estuary Trail", "url": "https://www.alltrails.com/trail/us/oregon/hatfield-marine-science-center-estuary-trail", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "'Yaquina Head Lighthouse Trail' (0.9 mi, easy, 19 min) also surfaced and was deliberately left out as a near-duplicate of the Yaquina Head Lighthouse and Cobble Beach Loop already on the card. BLM's rule at Yaquina Head, already recorded on this stop, is worth repeating: 'Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools.'"
+    },
+
+    "osoyoos": {
+      "trails": [
+        {
+          "name": "Canal Walkway",
+          "distance": "3.2 mi (5.1 km)",
+          "time": "1 h 9 min",
+          "difficulty": "Easy",
+          "reviews": "4.2 (293)",
+          "uses": ["hike", "bike"],
+          "season": "Open year-round.",
+          "note": "Flat loop along the Okanagan River channel - the best-reviewed easy walk in town and, being level and rideable, the gravel-cruise candidate here. Frosty Mountain, the only trail previously on this card, is a long subalpine day two hours' drive away; this is the one you can do on an arrival evening.",
+          "needs": ["elevation gain", "authority dog rule", "surface for cruise verdict"],
+          "alltrails": {"name": "Canal Walkway", "url": "https://www.alltrails.com/trail/canada/british-columbia/canal-walkway--3", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Osoyoos and Haynes Point",
+          "distance": "5.0 mi (8.0 km)",
+          "time": "1 h 42 min",
+          "difficulty": "Easy",
+          "reviews": "3.7 (96)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Lakeshore route out to the s̓wi̓ws (Haynes Point) spit, the sand bar that runs most of the way across Osoyoos Lake. Five flat miles at the hottest, driest place in Canada, walked at the start of October when that is finally pleasant.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Osoyoos and Haynes Point", "url": "https://www.alltrails.com/trail/canada/british-columbia/osoyoos-haynes-point", "match": "exact", "tier": "indexed"},
+          "stats_note": "Title gives 96 Reviews; the star line reads 3.7/5 (75)."
+        },
+        {
+          "name": "Nk'Mip Desert Loop",
+          "distance": "1.2 mi",
+          "time": "30 min",
+          "difficulty": "Easy",
+          "reviews": "3.6 (40)",
+          "uses": ["hike"],
+          "season": "AllTrails gives March through July; the 30 Sep - 3 Oct stay falls outside that window. Kept on the card because the reason for the window is wildflowers and interpretation season, not closure - but check the Nk'Mip Desert Cultural Centre's autumn hours before driving over, since the boardwalk is reached through it.",
+          "note": "Boardwalk through the antelope-brush desert on Osoyoos Indian Band land - the short walk that explains what this landscape actually is.",
+          "needs": ["elevation gain", "authority dog rule", "autumn opening hours"],
+          "alltrails": {"name": "Nk'Mip Desert Loop", "url": "https://www.alltrails.com/trail/canada/british-columbia/nk-mip-desert-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Gyro Beach and Desert Sunrise Marina from Downtown Osoyoos",
+          "distance": "2.3 mi",
+          "time": "45 min",
+          "difficulty": "Easy",
+          "reviews": "3.7 (79)",
+          "uses": ["hike", "bike"],
+          "season": "April through October per AllTrails - the stay is at the very end of the window.",
+          "note": "Lakefront walk from downtown out to the marina. Short, flat and paved for most of its length; the town stroll rather than a hike.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Gyro Beach and Desert Sunrise Marina from Downtown Osoyoos", "url": "https://www.alltrails.com/trail/canada/british-columbia/gyro-beach-and-desert-sunrise-marina-from-downtown-osoyoos", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "BC Parks' page for s̓wi̓ws Park was fetched and names no trails and no lengths - it mentions only 'the marsh area and self-guided interpretive trail'. The Haynes Point figures above are therefore AllTrails', not the authority's. South Okanagan Grasslands Lookout (8.5 km, challenging, 3 h 19 min, 3.9/5 from 85) also surfaced but no direct URL did, so it is recorded here rather than as an entry."
+    },
+
+    "ouray": {
+      "trails": [
+        {
+          "name": "Uncompahgre River Walk Loop",
+          "distance": "2.4 mi",
+          "time": "47 min",
+          "difficulty": "Easy",
+          "reviews": "4.4 (count not published)",
+          "uses": ["hike"],
+          "season": "April through October per AllTrails - the 10-15 Apr stay is right at the opening of the window, which is exactly why this one earns its place. Blue Lakes, already on the card, starts at 9,300 ft and does not.",
+          "note": "Flat river loop on the valley floor at Ouray - the only trail found here that is reliably walkable in the second week of April.",
+          "needs": ["review count", "elevation gain"],
+          "alltrails": {"name": "Uncompahgre River Walk Loop", "url": "https://www.alltrails.com/trail/us/colorado/uncompahgre-river-walk-loop", "match": "exact", "tier": "indexed"},
+          "stats_note": "Star 4.4/5 surfaced with no count beside it and the result title carried no 'N Reviews' either."
+        },
+        {
+          "name": "Portland Trail and Chief Ouray Trail Loop",
+          "distance": "6.8 mi",
+          "time": "4 h 23 min",
+          "difficulty": "Challenging",
+          "reviews": "4.6 (353)",
+          "uses": ["hike"],
+          "season": "May through October per AllTrails - a mid-April attempt will meet snow on the upper half. Kept and flagged rather than dropped, because it is what a later-season Ouray stay would be built around.",
+          "note": "The big loop above town off the Perimeter Trail. Graded Challenging and kept on the card on the strength of 4.6 from 353 reviews.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Portland Trail and Chief Ouray Trail Loop", "url": "https://www.alltrails.com/trail/us/colorado/portland-trail-and-chief-ouray-trail-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Twin Peaks via Oak Creek Trail",
+          "distance": "6.9 mi",
+          "time": "5 h 12 min",
+          "difficulty": "Challenging",
+          "reviews": "4.7 (162)",
+          "uses": ["hike"],
+          "season": "April through October per AllTrails - the earliest-opening of the three real climbs here, so the one to ask the Ouray Trail Group about if the snow line is high.",
+          "note": "Steep climb straight out of town to the Twin Peaks overlook. 4.7 from 162 reviews is outstanding enough to keep a Challenging route on a card built for easy and moderate.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Twin Peaks via Oak Creek Trail", "url": "https://www.alltrails.com/trail/us/colorado/twin-peaks-via-oak-creek-twin-peaks-trailhead", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "The Ouray Trail Group's own site was fetched: it names Sutton/Neosho, Oak Creek, Bear Creek and Full Moon as well as the Perimeter and Blue Lakes trails, but publishes no lengths, gains or grades - those are in its printed map and guide, which is sold rather than posted. Baby Bathtubs and Cascade Falls, both short and both low enough for April, could not be matched to an AllTrails URL this pass and are recorded here rather than guessed at."
+    },
+
+    "packwood": {
+      "trails": [
+        {
+          "name": "Naches Peak Loop Trail",
+          "distance": "3.5 mi",
+          "time": "1 h 42 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.8 (9,199)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "June through October per AllTrails, so the 9-16 Oct stay is at the very end of the window. The real constraint is SR 410 over Chinook Pass, which WSDOT closes for the winter once the snow comes - check it is still open before driving round.",
+          "note": "PARTIAL DOG ACCESS, AND THE ONLY DOG ACCESS AT MOUNT RAINIER. NPS prohibits pets on ALL Mount Rainier trails with one exception, the Pacific Crest Trail - and the eastern half of this loop IS the PCT. NPS states dogs 'are NOT allowed on the non-PCT sections of the Naches Peak Loop Trail within the park', so the dog can walk the PCT half from Chinook Pass and must turn back rather than complete the circuit. The most-reviewed trail on this card by a wide margin.",
+          "note_source": "NPS Mount Rainier pets page, fetched: 'Pets are prohibited on ALL Mount Rainier National Park trails and wilderness areas'; 'Dogs on a leash no longer than 6 feet are permitted on the Pacific Crest Trail'; and the explicit Naches Peak Loop carve-out quoted above.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Naches Peak Loop Trail", "url": "https://www.alltrails.com/trail/us/washington/naches-peak-loop-trail", "match": "exact", "tier": "indexed"},
+          "other_links": [
+            {"label": "NPS — Pets at Mount Rainier", "tier": "official", "url": "https://www.nps.gov/mora/planyourvisit/pets.htm", "note": "Authority. The PCT is the single exception to a park-wide trail ban."},
+            {"label": "NPS — Naches Peak Loop Trail", "tier": "official", "url": "https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm", "note": "Park page for the loop, showing which half lies outside the park boundary on the PCT."}
+          ],
+          "stats_note": "AllTrails files this listing under 'near Goose Prairie, Washington' rather than Packwood; it is the Tipsoo Lake / Chinook Pass loop on Rainier's eastern boundary, about an hour from Packwood by road."
+        },
+        {
+          "name": "Silver Falls Loop",
+          "distance": "about 3 mi",
+          "difficulty": null,
+          "reviews": "4.8 (4,482)",
+          "uses": ["hike"],
+          "dogs": false,
+          "season": "Ohanapecosh is low - around 2,000 ft - so this is one of the few Rainier trails still reliably open in the second week of October.",
+          "note": "NO DOG, AND THE CARD MUST SAY SO. AllTrails' own summary of this listing calls it 'a dog-friendly trail' and says reviewers mention hiking it with dogs. That is wrong and it is the dangerous direction of wrong: the trail is inside Mount Rainier National Park, where NPS prohibits pets on every trail without exception but the PCT. The walk itself is the Ohanapecosh River loop to Silver Falls, eleven miles from Packwood and the closest good hike to the stop.",
+          "note_source": "NPS Mount Rainier pets page, fetched: 'Pets are prohibited on ALL Mount Rainier National Park trails and wilderness areas.' Distance 'all in just three miles' is Washington Trails Association's figure, not AllTrails' - AllTrails' own mileage did not surface in the snippet.",
+          "needs": ["exact distance", "time", "difficulty", "elevation gain"],
+          "alltrails": {"name": "Silver Falls Loop", "url": "https://www.alltrails.com/trail/us/washington/silver-falls-trail", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "Washington Trails Association — Silver Falls Loop", "tier": "community", "url": "https://www.wta.org/go-hiking/hikes/silver-falls-loop", "note": "Source of the three-mile figure and the description of the Ohanapecosh River section."}]
+        },
+        {
+          "name": "Ohanapecosh and Stafford Falls Trail",
+          "distance": "6.7 mi",
+          "time": "2 h 59 min",
+          "difficulty": "Moderately challenging",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "The longer river walk out of the same Ohanapecosh corner of the park, past Stafford Falls. Low, forested and shoulder-season-proof. Pets prohibited, as everywhere in the park off the PCT.",
+          "note_source": "NPS Mount Rainier pets page, fetched, as above.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Ohanapecosh and Stafford Falls Trail", "url": "https://www.alltrails.com/trail/us/washington/ohanapecosh-and-stafford-falls-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "This listing surfaced on the plp.alltrails.com mirror; the path is copied verbatim from that result and only the host normalised to www."
+        },
+        {
+          "name": "Dry Creek Trail",
+          "distance": "7.1 mi",
+          "time": "4 h 56 min",
+          "difficulty": "Challenging",
+          "reviews": "156 reviews",
+          "uses": ["hike", "bike", "horse"],
+          "dogs": true,
+          "season": "March through November per AllTrails - a longer window than anything inside the park, which is the point of it.",
+          "note": "Gifford Pinchot National Forest, not the park - which is what makes it dog-legal. Graded Challenging, but on a seven-night stay it is the long walk the dog can actually come on.",
+          "note_source": "Gifford Pinchot NF, already recorded on this stop: dogs must be 'on a six-foot leash at all times when in developed recreation areas and on interpretive trails'; 'There are no leash requirements for most of the forest.' Individual trailheads can post their own rule, so check the trailhead sign.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Dry Creek Trail", "url": "https://www.alltrails.com/trail/us/washington/dry-creek-trail--10", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "trail_dogs": {
+        "Naches Peak Loop Trail": true,
+        "Silver Falls Loop": false,
+        "Ohanapecosh and Stafford Falls Trail": false,
+        "Dry Creek Trail": true
+      },
+      "stats_note": "'Packwood Lake Trail and Pipeline Road Loop' (7.8 mi, moderately challenging, 4.7 from 213) surfaced and was deliberately NOT added: it is the same lake by a second route and would read as a duplicate of the Packwood Lake Trail already on the card."
+    },
+
+    "pagosa-springs": {
+      "trails": [
+        {
+          "name": "Skyrocket, Highline, Wapiti and Terri Smith Loop",
+          "distance": "2.9 mi",
+          "time": "1 h 28 min",
+          "difficulty": "Moderately challenging",
+          "reviews": null,
+          "uses": ["hike", "bike"],
+          "note": "Reservoir Hill, straight above town - the network you can walk to from the hot springs. Low enough to be open in the last days of April, which most of the San Juan is not.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Skyrocket, Highline, Wapiti and Terri Smith Loop", "url": "https://www.alltrails.com/trail/us/colorado/skyrocket-highline-wapiti-and-terri-smith-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Observation Deck via Skyrocket Trail",
+          "distance": "1.5 mi",
+          "time": "47 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "15 reviews",
+          "uses": ["hike"],
+          "note": "The short version of the same Reservoir Hill climb, up to the observation deck over the San Juan valley. Under an hour, and the walk for an afternoon that is mostly about the springs.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Observation Deck via Skyrocket Trail", "url": "https://www.alltrails.com/trail/us/colorado/observation-deck-via-skyrocket-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "Surfaced on the plp.alltrails.com mirror; slug copied verbatim, host normalised to www."
+        },
+        {
+          "name": "Festival Meadow via Thunderfoot Trail",
+          "distance": "1.1 mi",
+          "time": "30 min",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike", "bike"],
+          "note": "The easy leg-stretch on Reservoir Hill - half an hour, flat by the standards of this town, and the one to do on an arrival evening.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Festival Meadow via Thunderfoot Trail", "url": "https://www.alltrails.com/trail/us/colorado/festival-meadow-via-thunderfoot-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Eightmile Mesa",
+          "distance": "8.5 mi",
+          "time": "3 h 39 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "85 reviews",
+          "uses": ["hike", "bike"],
+          "season": "March through August per AllTrails - one of very few trails here whose window is already open on 27-30 Apr. That is why it is on the card ahead of better-known San Juan routes.",
+          "note": "Long mesa walk south-west of town on the low side of the divide. The full-day option at a stop where almost everything higher is still under snow.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Eightmile Mesa", "url": "https://www.alltrails.com/trail/us/colorado/eightmile-mesa", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "The Pagosa trails with the strongest reviews - Pagosa Peak (11.5 mi, 4.4 from 197), Quartz Lake (9.3 mi, 283 reviews) and Four Mile Creek (13.2 mi) - are all challenging AND all carry May-or-June season starts, so none is usable on a 27-30 Apr stay. Piedra Falls (1.0 mi, easy, 24 min) would fit the stop perfectly but the only source that surfaced for it was a Facebook post quoting the AllTrails text, with no AllTrails URL, so it is recorded here rather than linked."
+    },
+
+    "silver-lake": {
+      "trails": [
+        {
+          "name": "Sediment Dam Loop",
+          "distance": "1.9 mi",
+          "time": "1 h 3 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "131 reviews",
+          "uses": ["hike"],
+          "note": "Loop at the Toutle River sediment retention structure - the engineering answer to the 1980 lahar, and a short walk at low elevation that works in the third week of October.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Sediment Dam Loop", "url": "https://www.alltrails.com/trail/us/washington/sediment-dam-loop", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Mt St Helens Forest Learning Trail",
+          "distance": "1.2 mi",
+          "time": "41 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.3 (11)",
+          "uses": ["hike"],
+          "note": "Short interpretive loop off SR 504 at the Forest Learning Center, well below the road closure and well below the snow. Forty minutes, and it explains the blast zone better than the drive does.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Mt St Helens Forest Learning Trail", "url": "https://www.alltrails.com/trail/us/washington/mt-st-helens-forest-learning-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Goat Marsh Lake via Toutle Trail",
+          "distance": "9.0 mi",
+          "time": "3 h 45 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.7 (14)",
+          "uses": ["hike"],
+          "note": "The long option on the mountain's quiet south-west side, out to Goat Marsh Lake through old growth the blast never touched. Nine miles, so a whole day out of a three-night stop - but it is the only substantial moderate walk here that does not depend on the SR 504 corridor.",
+          "needs": ["elevation gain"],
+          "alltrails": {"name": "Goat Marsh Lake via Toutle Trail", "url": "https://www.alltrails.com/trail/us/washington/goat-marsh-lake-via-toutle-trail", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "stats_note": "Ape Cave, already on this card, is closed to pets and there is nowhere to leave a dog while you are underground - that is recorded on the stop already and none of the three above changes it. All three are dog-legal in principle under Gifford Pinchot's general rule, but the monument order carries its own restrictions around the Johnston Ridge facilities, so `dogs` is left absent rather than asserted."
+    },
+
+    "staunton-va": {
+      "trails": [
+        {
+          "name": "Lewis Spring Falls Trail",
+          "distance": "2.9 mi",
+          "time": "1 h 43 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "2,211 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Listed as open year-round, but Skyline Drive is the only way to the trailhead and NPS closes it in ice and snow. In the 25 Nov - 2 Dec window, check the Drive's status before setting out.",
+          "note": "DOG-LEGAL, WHICH NEITHER TRAIL PREVIOUSLY ON THIS CARD IS. Shenandoah allows leashed dogs on most of its 500+ miles of trail and publishes a short, closed list of the exceptions; Lewis Spring Falls is not on it, while Stony Man and every Old Rag route are. A waterfall loop from Big Meadows with an 81-foot fall at the turn.",
+          "note_source": "NPS Shenandoah pets page, fetched: 'Pets are allowed, if leashed, on most trails', leash 6 ft, with pets prohibited only on Fox Hollow, Stony Man, Limberlost, Post Office Junction to Old Rag Shelter, Old Rag Ridge, Old Rag Saddle, Ridge Access, Dark Hollow Falls, Story of the Forest, Bearfence Mountain and Frazier Discovery - 'fewer than 20 miles of the 500+ miles of trails'. This trail appears on no part of that list.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Lewis Spring Falls Trail", "url": "https://www.alltrails.com/trail/us/virginia/lewis-spring-falls-trail", "match": "exact", "tier": "indexed"},
+          "other_links": [{"label": "NPS — Pets in Shenandoah", "tier": "official", "url": "https://www.nps.gov/shen/planyourvisit/pets.htm", "note": "Authority. Publishes the complete list of pet-prohibited trails, which is what makes a dogs:true here defensible rather than inferred."}]
+        },
+        {
+          "name": "Blackrock Trail",
+          "distance": "0.5 mi",
+          "time": "13 min",
+          "difficulty": "Easy",
+          "reviews": "513 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "April through October per AllTrails; the stay is outside that window, which for a half-mile talus walk means cold and possible ice rather than closure. Skyline Drive access is again the real question.",
+          "note": "DOG-LEGAL. Thirteen minutes from the Drive out to the Blackrock talus field and one of the widest views in the southern district for the least effort in the park. Not on Shenandoah's prohibited list.",
+          "note_source": "NPS Shenandoah pets page, fetched - see Lewis Spring Falls entry for the full quotation and the prohibited list.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Blackrock Trail", "url": "https://www.alltrails.com/trail/us/virginia/blackrock-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Appalachian Trail to Tanner Ridge Road",
+          "distance": "2.1 mi",
+          "time": "43 min",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "April through October per AllTrails.",
+          "note": "DOG-LEGAL. An easy out-and-back on the AT itself - forty minutes, gentle, and the walk to take when the weather is closing in. The AT through Shenandoah is not on the pet-prohibited list.",
+          "note_source": "NPS Shenandoah pets page, fetched - see Lewis Spring Falls entry.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Appalachian Trail to Tanner Ridge Road", "url": "https://www.alltrails.com/trail/us/virginia/appalachian-trail-to-tanner-ridge-road", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Hazeltop Summit via Appalachian Trail",
+          "distance": "2.1 mi",
+          "time": "1 h 14 min",
+          "difficulty": "Moderately challenging",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "April through November per AllTrails - of the four here, the window that stretches closest to the stay.",
+          "note": "DOG-LEGAL. Short AT climb to the third-highest summit in the park through red spruce. Two miles, and the dog comes.",
+          "note_source": "NPS Shenandoah pets page, fetched - see Lewis Spring Falls entry.",
+          "needs": ["reviews", "star rating", "elevation gain"],
+          "alltrails": {"name": "Hazeltop Summit via Appalachian Trail", "url": "https://www.alltrails.com/trail/us/virginia/hazeltop-summit-via-appalachian-trail", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "trail_dogs": {
+        "Lewis Spring Falls Trail": true,
+        "Blackrock Trail": true,
+        "Appalachian Trail to Tanner Ridge Road": true,
+        "Hazeltop Summit via Appalachian Trail": true
+      },
+      "stats_note": "This stop's dogs_verdict was 'prohibited' because BOTH trails on the card - Stony Man and Old Rag - happen to be on Shenandoah's short prohibited list, which made a park that is one of the most dog-friendly in the system read as closed to the dog. The four above correct that: all are dog-legal, and the verdict for the stop is better described as partial. Story of the Forest Trail (1.8 mi, easy, 768 reviews) surfaced and was left off precisely because it IS on the prohibited list."
+    },
+
+    "torrey": {
+      "trails": [
+        {
+          "name": "Fremont River Trail",
+          "distance": "3.4 km (2.1 mi) round trip",
+          "difficulty": "Moderate",
+          "elevation_gain": "146 m (479 ft)",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "THE DOG WALK AT CAPITOL REEF, and one of only two the park allows. NPS permits pets on the Fremont River Trail only as far as the south end of Hattie's Field - the flat orchard-and-river section out of the Fruita Campground. Past Hattie's Field the trail climbs hard to a bench above the river and the dog may not follow. Hickman Bridge and Cassidy Arch, the two trails already on this card, are both closed to pets outright.",
+          "note_source": "NPS Capitol Reef pets page, fetched: pets are allowed on 'The trail from the visitor center to Fruita Campground' and the 'Fremont River Trail (from campground to south end of Hattie's Field)', in unfenced orchards, the Chestnut and Doc Inglesby picnic areas, campgrounds, parking areas and 'within 50 feet of road center lines'. 'Pets are not permitted on other hiking trails, in public buildings, or in the backcountry.' Leash 6 ft. Distance, elevation change and difficulty from the NPS Fruita trail-guide table.",
+          "needs": ["reviews", "time"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [
+            {"label": "NPS — Capitol Reef trail guide", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm", "note": "Authority for distance, elevation change and difficulty on all fifteen Fruita-area trails."},
+            {"label": "NPS — Pets at Capitol Reef", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/pets.htm", "note": "Authority for the two pet-legal walks and the extent of each."}
+          ]
+        },
+        {
+          "name": "Grand Wash",
+          "distance": "7.2 km (4.5 mi) round trip",
+          "difficulty": "Easy",
+          "elevation_gain": "61 m (200 ft)",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "Flat gravel wash between walls that close to the Narrows - the easiest long walk in the park and the one that suits a warm late-March afternoon. It is a flash-flood route: do not enter it with storms in the forecast.",
+          "note_source": "NPS Capitol Reef trail-guide table: Grand Wash, 7.2 km round trip, 61 m elevation change, Easy.",
+          "needs": ["reviews", "time"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Capitol Reef trail guide", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm", "note": "Authority for the figures."}]
+        },
+        {
+          "name": "Capitol Gorge",
+          "distance": "3.2 km (2.0 mi) round trip",
+          "difficulty": "Easy",
+          "elevation_gain": "24 m (79 ft)",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "The old wagon route through the reef, past the pioneer register and up to the Tanks. Almost level, and reached by the dirt end of the Scenic Drive - truck, not coach.",
+          "note_source": "NPS Capitol Reef trail-guide table: Capitol Gorge, 3.2 km round trip, 24 m elevation change, Easy.",
+          "needs": ["reviews", "time"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Capitol Reef trail guide", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm", "note": "Authority for the figures."}]
+        },
+        {
+          "name": "Cohab Canyon",
+          "distance": "5.4 km (3.4 mi) round trip",
+          "difficulty": "Moderate",
+          "elevation_gain": "134 m (440 ft)",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "Switchbacks up out of Fruita into a hidden slot with honeycombed walls, plus two overlook spurs. It starts across the road from the campground, so it needs no drive at all - which on a four-night stay is worth a lot.",
+          "note_source": "NPS Capitol Reef trail-guide table: Cohab Canyon, 5.4 km round trip, 134 m elevation change, Moderate.",
+          "needs": ["reviews", "time"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Capitol Reef trail guide", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm", "note": "Authority for the figures."}]
+        },
+        {
+          "name": "Sunset Point",
+          "distance": "1.2 km (0.7 mi) round trip",
+          "difficulty": "Easy",
+          "elevation_gain": "under 15 m (50 ft)",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": false,
+          "note": "Ten minutes each way to the rim viewpoint off the Goosenecks spur - the evening walk on a day that has otherwise been spent driving.",
+          "note_source": "NPS Capitol Reef trail-guide table: Sunset Point, 1.2 km round trip, under 15 m elevation change, Easy.",
+          "needs": ["reviews", "time"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Capitol Reef trail guide", "tier": "official", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm", "note": "Authority for the figures."}]
+        }
+      ],
+      "trail_dogs": {
+        "Fremont River Trail": true,
+        "Grand Wash": false,
+        "Capitol Gorge": false,
+        "Cohab Canyon": false,
+        "Sunset Point": false
+      },
+      "stats_note": "Every figure here is the National Park Service's own Fruita trail-guide table, which publishes metric round-trip distances and elevation change but no times and no ratings; the mile and foot values are arithmetic on the published metric figures. No AllTrails search was run for these five, so `unlisted` means 'not searched this pass', NOT 'no listing exists' - the negative must not be allowed to harden."
+    },
+
+    "tucson": {
+      "trails": [
+        {
+          "name": "Desert Discovery Nature Trail",
+          "distance": "0.5 mi",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "DOG-LEGAL, AND THIS STOP NEEDED ONE. Saguaro West, paved half-mile interpretive loop. It matters because the only trail previously on this card, Hutch's Pool, starts inside the Sabino Canyon Recreation Area - the single place in the whole Coronado National Forest where dogs are banned outright. Ten nights in Tucson with an animal aboard needed a legal walk on the card.",
+          "note_source": "NPS Saguaro pets page, fetched. West District (Tucson Mountain): Desert Discovery Trail, 0.5 mile paved loop; Bajada Loop Drive; Golden Gate Road. East District (Rincon Mountain): Mica View Trail, 0.7 miles; Mica View dirt road, 1.5 miles; Desert Ecology Trail, 1/4 mile paved; Cactus Forest Loop Road. 'Pets prohibited on all other trails.' Leash 6 ft.",
+          "needs": ["time", "reviews", "elevation gain"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Pets at Saguaro", "tier": "official", "url": "https://www.nps.gov/sagu/planyourvisit/pets.htm", "note": "Authority; names every dog-legal trail and road in both districts, with lengths."}]
+        },
+        {
+          "name": "Mica View Trail",
+          "distance": "0.7 mi",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "DOG-LEGAL. Saguaro East, off the Cactus Forest Loop Road - flat desert-floor walking through dense saguaro forest, and it joins the 1.5-mile Mica View dirt road, which is also open to dogs. February is the right month to be doing it.",
+          "note_source": "NPS Saguaro pets page, fetched - see the Desert Discovery entry for the full list.",
+          "needs": ["time", "reviews", "elevation gain"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Pets at Saguaro", "tier": "official", "url": "https://www.nps.gov/sagu/planyourvisit/pets.htm", "note": "Authority; names Mica View Trail (0.7 miles) and the Mica View dirt road (1.5 miles)."}]
+        },
+        {
+          "name": "Desert Ecology Trail",
+          "distance": "0.25 mi",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "DOG-LEGAL. Quarter-mile paved loop on the Cactus Forest Loop Road in Saguaro East, about how desert plants find water. Wheelchair-flat, and the shortest legal leg-stretch with the dog anywhere in the park.",
+          "note_source": "NPS Saguaro pets page, fetched - see the Desert Discovery entry.",
+          "needs": ["time", "reviews", "elevation gain"],
+          "alltrails": {"match": "none", "tier": "unlisted"},
+          "other_links": [{"label": "NPS — Pets at Saguaro", "tier": "official", "url": "https://www.nps.gov/sagu/planyourvisit/pets.htm", "note": "Authority; names the Desert Ecology Trail (1/4 mile paved)."}]
+        },
+        {
+          "name": "Dripping Spring via the Sutherland Trail",
+          "distance": "4.0 mi",
+          "time": "1 h 37 min",
+          "difficulty": "Easy",
+          "reviews": null,
+          "uses": ["hike"],
+          "season": "November through April per AllTrails - a 4-14 Feb stay sits in the middle of the best window it has.",
+          "note": "Catalina State Park, north of the city: four easy miles up a wash to a seasonal spring, with the Santa Catalina front range above. The best-fitting real hike found for this stop's dates.",
+          "needs": ["reviews", "star rating", "elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Dripping Spring via the Sutherland Trail", "url": "https://www.alltrails.com/trail/us/arizona/dripping-spring-via-the-sutherland-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Sentinel Peak Road Loop",
+          "distance": "1.7 mi",
+          "time": "46 min",
+          "difficulty": "Easy",
+          "reviews": "4.4 (1,069)",
+          "uses": ["hike", "bike"],
+          "season": "Open year-round.",
+          "note": "'A Mountain' - the loop up Sentinel Peak right beside downtown, with the whole city laid out below. Under two miles, paved road for most of it, and the most-reviewed easy walk in Tucson.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Sentinel Peak Road Loop", "url": "https://www.alltrails.com/trail/us/arizona/a-mountain", "match": "exact", "tier": "indexed"}
+        }
+      ],
+      "trail_dogs": {
+        "Desert Discovery Nature Trail": true,
+        "Mica View Trail": true,
+        "Desert Ecology Trail": true
+      },
+      "stats_note": "The three NPS trails carry no AllTrails link because none was searched for this pass - `unlisted` here is 'not searched', not 'not listed'. Their distances and their dog status come straight from the National Park Service, which is the better tier for both."
+    },
+
+    "welches": {
+      "trails": [
+        {
+          "name": "Old Salmon River Trail",
+          "distance": "2.8 mi",
+          "time": "1 h 0 min",
+          "difficulty": "Easy",
+          "reviews": "4.7 (2,412)",
+          "uses": ["hike", "horse"],
+          "season": "Open year-round - and at roughly 1,500 ft this is the one that is genuinely true for. Mirror Lake, already on this card, sits above 4,000 ft and can be under snow by 11-15 Nov.",
+          "note": "Old-growth river trail along the Salmon a few minutes from Welches - moss, big Douglas fir, the river the whole way, and flat. The single best fit on this card for the stop's dates, and the highest-rated trail found at any of these 21 stops.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Old Salmon River Trail", "url": "https://www.alltrails.com/trail/us/oregon/old-salmon-river-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Cascade Streamwatch Trail",
+          "distance": "0.7 mi",
+          "time": "14 min",
+          "difficulty": "Easy",
+          "reviews": "4.5 (271)",
+          "uses": ["hike"],
+          "season": "Open year-round.",
+          "note": "Barrier-free interpretive loop at the Wildwood Recreation Site with an underwater window onto a salmon stream. Fifteen minutes, paved, and open in the wet.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Cascade Streamwatch Trail", "url": "https://www.alltrails.com/trail/us/oregon/cascade-streamwatch-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Wetlands Boardwalk Trail",
+          "distance": "0.7 mi",
+          "time": "14 min",
+          "difficulty": "Easy",
+          "reviews": "4.5 (296)",
+          "uses": ["hike"],
+          "season": "March through October per AllTrails; the 11-15 Nov stay is outside it. Boardwalk over wetland, so the window is about water level and standing water rather than closure - worth a look at conditions rather than a drive out on faith.",
+          "note": "The second loop at Wildwood Recreation Site, on boardwalk across the wetland. Pairs with Cascade Streamwatch into one short outing.",
+          "needs": ["elevation gain", "authority dog rule"],
+          "alltrails": {"name": "Wetlands Boardwalk Trail", "url": "https://www.alltrails.com/trail/us/oregon/wetlands-boardwalk-trail", "match": "exact", "tier": "indexed"}
+        },
+        {
+          "name": "Feather Trail",
+          "distance": "3.0 mi",
+          "time": "1 h 24 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "23 reviews",
+          "uses": ["hike"],
+          "note": "Quiet three-mile option near Welches for a day that wants more than the interpretive loops but not a mountain.",
+          "needs": ["star rating", "elevation gain"],
+          "alltrails": {"name": "Feather Trail", "url": "https://www.alltrails.com/trail/us/oregon/feather-trail", "match": "exact", "tier": "indexed"},
+          "stats_note": "Surfaced on the plp.alltrails.com mirror; slug copied verbatim, host normalised to www."
+        }
+      ],
+      "stats_note": "Mid-November is the constraint that shaped this list. High Rock (1.1 mi, 4.7 from 49) is a superb short trail and was left off the front of the card because its window is June through October and it sits near 4,900 ft; Salmon Butte, Bonanza and Lake Lenore are all challenging AND all May-or-June starts. Everything above is under 2,000 ft."
+    }
+
+  }
+}

@@ -471,9 +471,19 @@ def apply_stop(stop, entry, log):
     # the same on a card read at a trailhead.
     verdict = entry.get('dogs_verdict')
     per_trail = entry.get('trail_dogs') or {}
+    # A trail whose own db entry states `dogs` was researched INDIVIDUALLY, and
+    # that beats a stop-wide verdict, which is a generalisation. Without this the
+    # verdict silently overwrote it: Joshua Tree is 'prohibited' park-wide and
+    # NPS permits pets on exactly two paved trails, so the two researched
+    # exceptions were being flipped back to false and the dog lost the only two
+    # walks it had there.
+    researched = {t['name'] for t in (entry.get('trails') or [])
+                  if isinstance(t.get('dogs'), bool)}
     if verdict or per_trail:
         for it in (stop.get('alltrails') or []):
             name = it.get('name')
+            if name in researched and name not in per_trail:
+                continue                          # keep the per-trail finding
             if name in per_trail:                 # the authority named this trail
                 val = per_trail[name]
                 if val is None:

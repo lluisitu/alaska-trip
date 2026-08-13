@@ -396,7 +396,6 @@
             "hike"
           ],
           "cruise": false,
-          "dogs": "Allowed on leash (per AllTrails reviews).",
           "alltrails": {
             "name": "Atalaya Mountain Trail",
             "url": "https://www.alltrails.com/trail/us/new-mexico/atalaya-mountain-trail",
@@ -5665,6 +5664,130 @@
         "Geology Tour Road (truck)": {
           "entity": "The backcountry road in Joshua Tree. No article, and the Joshua Tree National Park full text never names it -- its two 'Geology' hits are a section heading and a cited book title."
         }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/joshua-tree-national-park",
+      "dogs_note": "NPS: \"pets are not allowed on hiking trails, in the backcountry, or in park buildings\"; leashed pets may go no further than 100 ft from roads, picnic areas and campgrounds. The ONLY named exceptions are the paved Oasis of Mara and Keys View trails. Every other trail on this card is a walk the dog does not get.",
+      "trails": [
+        {
+          "name": "Hidden Valley",
+          "distance": "1 mi loop",
+          "time": "1 hour",
+          "difficulty": "Easy",
+          "reviews": "10,602 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Rock-enclosed valley loop, the classic first walk of the park. Distance, time and difficulty are NPS figures.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/hidden-valley--3",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Barker Dam",
+          "distance": "1.1 mi loop",
+          "time": "1 hour",
+          "difficulty": "Easy",
+          "reviews": "9,333 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Flat loop past the cattlemen's dam and a petroglyph panel; water behind the dam is seasonal and often absent.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/barker-dam--2",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Cholla Cactus Garden",
+          "distance": "0.25 mi loop",
+          "time": "15–30 minutes",
+          "difficulty": "Easy",
+          "reviews": "2,898 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "AllTrails warns the segments of \"jumping\" cholla break off onto people and animals — stay on the boardwalk-width path, closed-toe shoes. Best at first light.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/cholla-cactus-garden",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Ryan Mountain",
+          "distance": "3 mi out and back (NPS); AllTrails logs 2.9 mi",
+          "time": "1.5–2.5 hours (NPS); AllTrails average 1 h 57 min",
+          "difficulty": "Strenuous (NPS); AllTrails calls it challenging",
+          "reviews": "11,474 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "AllTrails gives the good window as October–May; the 3–8 Jan stay is inside it.",
+          "note": "The one hard trail kept on this card, and it earns it on 11,474 reviews — the highest-reviewed trail in the park. Steady stair-stepped climb to the best 360° in Joshua Tree. Already named in the stop's activities.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/ryan-mountain-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Oasis of Mara",
+          "distance": "0.5 mi paved loop",
+          "time": "30–45 minutes",
+          "difficulty": "Easy",
+          "reviews": "516 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "ONE OF ONLY TWO DOG-LEGAL WALKS IN THE PARK. Flat paved loop at park HQ in Twentynine Palms — NPS names it explicitly in the pet policy, and AllTrails calls it \"the only officially designated dog-friendly trail in Joshua Tree\". Leash 6 ft or shorter. Wheelchair and stroller passable.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/oasis-of-mara",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Keys View",
+          "distance": "0.25 mi paved",
+          "time": "30 minutes",
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "THE OTHER DOG-LEGAL WALK. NPS pet policy names \"Oasis of Mara and Keys View trails\" as the paved exceptions. Paved rim path over the Coachella Valley and the San Andreas fault; 5,185 ft, so it is cold and windy in January. Distance, time and difficulty are NPS; no AllTrails listing surfaced in search, so it carries no trail link."
+        },
+        {
+          "name": "Skull Rock",
+          "distance": "1.7 mi",
+          "time": "1–2 hours",
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Figures are NPS. The named rock is a roadside stop; the trail is the loop behind it through the boulder field. No AllTrails URL surfaced in search — search returned only third-party guides — so no trail link rather than a constructed one."
+        }
+      ],
+      "trail_dogs": {
+        "Oasis of Mara": true,
+        "Keys View": true
       }
     },
     "death-valley": {
@@ -9564,6 +9687,161 @@
             }
           ]
         }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/anza-borrego-desert-state-park",
+      "dogs_note": "California State Parks for Anza-Borrego: \"Dogs allowed in the campgrounds, on designated park roads, and the Visitor Center/Campground Trail.\" That is the whole permission — this is NOT a dog-permissive stop, despite being a state park. Leash under 6 ft, and dogs may not be left outside at night.",
+      "trails": [
+        {
+          "name": "Borrego Palm Canyon Trail",
+          "distance": "3 mi round trip (State Parks); 3.25 mi as a loop with the alternate return",
+          "time": "approx. 1 h 45 min",
+          "difficulty": null,
+          "needs": [
+            "difficulty"
+          ],
+          "elevation_gain": "450 ft of elevation change",
+          "reviews": "3,841 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "The stream through the canyon is seasonal and heaviest in early spring; expect it low or dry in the 8–14 Jan window.",
+          "note": "Named in the stop's activities. Distance from parks.ca.gov, time and gain from Hikespeak; neither the authority nor the indexed snippet published a difficulty grade, so none is recorded. Trailhead is at the Borrego Palm Canyon campground — walkable from camp. Hikespeak: \"Dogs and bikes are allowed in the campground but not on the hiking trails\".",
+          "alltrails": {
+            "url": "https://www.alltrails.com/en/trail/us/california/borrego-palm-canyon--5",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Borrego Palm Canyon Loop"
+          }
+        },
+        {
+          "name": "The Slot",
+          "distance": "1–2.2 mi depending on whether the wash loop is closed",
+          "time": "1–2 hours",
+          "difficulty": "Easy",
+          "elevation_gain": "330 ft for the full loop",
+          "reviews": "3,714 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "FLASH FLOOD: do not enter with rain or thunderstorms anywhere in the area. Access is Buttes Pass Road, 2 miles of gravel described as suitable for standard vehicles — this one does NOT need the truck, unlike most of the Borrego washes.",
+          "note": "Named in the stop's activities. Distance/time/difficulty/gain from Earth Trekkers; the state park charges to park at The Slot as well as at the visitor centre and the campgrounds.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/the-slot",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Maidenhair Falls via Hellhole Canyon Trail",
+          "distance": "5.5 mi out and back",
+          "time": "approx. 3 hours",
+          "difficulty": null,
+          "needs": [
+            "difficulty",
+            "reviews"
+          ],
+          "elevation_gain": "1,000 ft of elevation change",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "The 20 ft fall is seasonal — Hikespeak says early spring or after rain. In a dry January expect the palms and the canyon, not the waterfall.",
+          "note": "Distance, time and gain from Hikespeak; no review count surfaced in the indexed snippet and neither source published a difficulty grade. The state park charges to park at Hellhole Canyon. Hikespeak: \"dogs are likely not allowed on Hellhole Canyon Trail\", consistent with the park's own rule.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/maidenhair-falls-via-hellhole-canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Pictograph Trail",
+          "distance": "1.8 mi out and back",
+          "time": null,
+          "needs": [
+            "time",
+            "difficulty"
+          ],
+          "elevation_gain": "190 ft over the first 0.55 mi",
+          "reviews": "466 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "TRUCK: AllTrails states the road to the trailhead is sandy and 4-wheel drive is recommended. Blair Valley access, not a coach or a 2WD errand.",
+          "note": "Kumeyaay painted boulders, then an overlook down Smugglers Canyon. Never touch the pigment. Distance and gain from Hikespeak; the indexed snippet published no time or grade.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/pictograph-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Marshal South Home / Ghost Mountain",
+          "distance": "1.4 mi loop (AllTrails); 1.3 mi round trip (Hikespeak)",
+          "time": "59 min average",
+          "difficulty": "Moderately challenging",
+          "reviews": "26 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "AllTrails gives the good window as October–May; the 8–14 Jan stay is inside it. Same Blair Valley dirt access as the Pictograph Trail.",
+          "note": "Short steep climb to the adobe ruins of the South family's 16-year desert homestead. Thinly reviewed at 26 — the count is real, the confidence in the 26 is not the same as in The Slot's 3,714. AllTrails states dogs are not allowed.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/california/marshal-south-cabin-trail",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Marshal South Cabin Trail"
+          }
+        },
+        {
+          "name": "Wind Caves Trail",
+          "distance": "1.25 mi out and back",
+          "time": "approx. 45 minutes",
+          "difficulty": null,
+          "needs": [
+            "difficulty",
+            "reviews"
+          ],
+          "elevation_gain": "250 ft of elevation change",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "TRUCK: high-clearance strongly recommended for the rough rocky dirt road in. This is off Fish Creek Wash, the route the stop already plans to drive.",
+          "note": "Wind-pocketed sandstone above Fish Creek — pairs with the Fish Creek Wash and Sandstone Canyon drive already in the stop's activities, so it costs no extra day. Stats from Hikespeak, which also states dogs are not allowed. Appears on AllTrails only inside a longer combined route (West Butte / Wind Caves / Slot loop), so no standalone listing is linked."
+        },
+        {
+          "name": "Visitor Center / Campground Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "dogs": true,
+          "note": "THE ONLY DOG-LEGAL TRAIL IN ANZA-BORREGO. California State Parks names it by name as the single trail dogs may use, alongside the campgrounds and the paved park roads. No published length, time or grade could be sourced and no trail database lists it — recorded as an absence rather than guessed. Worth a call to the visitor centre (760-767-4205) to confirm the length before planning round it."
+        },
+        {
+          "name": "Calcite Mine Trail and the Narrows",
+          "distance": "4 mi loop",
+          "time": "approx. 2 hours",
+          "difficulty": null,
+          "needs": [
+            "difficulty",
+            "reviews"
+          ],
+          "elevation_gain": "600 ft of elevation change",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "TRUCK: the route follows an old 4x4 mining road and Hikespeak warns of occasional vehicle traffic on it.",
+          "note": "Slot narrows plus the WWII optical-calcite workings above S-22. Stats from Hikespeak, which also states dogs are not allowed. No AllTrails listing surfaced in search, so no trail link."
+        }
       ]
     },
     "imperial-dam": {
@@ -9733,6 +10011,105 @@
           "season": "No gate. Best season is the cool half of the year; the entrance roads are unmaintained dirt and washboard, and washouts after storms are the constraint. Arrive 18 Jan 2028 — ideal.",
           "note_source": "USFWS Kofa NWR visit page; Arizona Highways; Wilderness.net Kofa Wilderness"
         }
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/us/arizona/yuma",
+      "dogs_note": "No managing-authority pet rule was found for the Gila Mountains (BLM) or the Yuma East Wetlands. AllTrails' crowd flag says leashed dogs are welcome on Long Telegraph Pass Loop and Bettys Kitchen, but that is not the authority, so no dogs value is recorded. This is the safe state, not a finding.",
+      "trails": [
+        {
+          "name": "East Wetlands Interpretive Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "451 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "Flat interpretive loop through the 400-acre restored wetland below the Territorial Prison, with a side trail connecting to the prison itself — which is already in the stop's activities. Cottonwood, willow, mesquite and cattail; the best birding within walking distance of town. The indexed snippet described the trail but published no distance, grade or time.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/east-wetlands-interpretive-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Bettys Kitchen Interpretive Trail",
+          "distance": "0.5 mi loop",
+          "time": "8 min average",
+          "difficulty": "Easy",
+          "reviews": "42 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "Open year-round.",
+          "note": "Short shaded birding loop on the Colorado backwater north of town, off the Mittry Lake road. A twenty-minute stop, not a day — good for the gaps while the coach is in the shop.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/bettys-kitchen-interpretive-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Mittry Lake Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "105 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "Leaves the Mittry Lake Wildlife Area parking and runs south through low hills. AllTrails' snippet warns it is almost entirely exposed to the sun — fine in January, not in the shoulder seasons. Boat launches at the trailhead.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/mittry-lake-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Telegraph Pass Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "2,795 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "The most-reviewed trail anywhere near Yuma by a wide margin. Gila Mountains east of town, off the I-8 north frontage road. AllTrails' snippet is unusually blunt: the path is not well marked, download the offline map, the ground is loose and rocky, and there is a steep paved section near the top. NOT the same Telegraph Pass as the South Mountain one in Phoenix — the Yuma listing is the one whose summary views Yuma and Wellton.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/telegraph-pass-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Long Telegraph Pass Loop",
+          "distance": "5.8 mi loop",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Challenging",
+          "reviews": "167 reviews",
+          "uses": [
+            "hike"
+          ],
+          "season": "Open year-round; the 18–22 Jan window is the only sane season for it.",
+          "note": "The full loop version of the pass, quiet by AllTrails' own account. Kept below the easy/moderate band because it is graded challenging and carries only 167 reviews."
+        }
       ]
     },
     "kofa-nwr": {
@@ -9769,7 +10146,76 @@
         "Astronomy night": {
           "entity": "A generic activity, not a named entity. The Kofa National Wildlife Refuge article has no astronomy or dark-sky content either."
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/kofa-national-wildlife-refuge",
+      "dogs_note": "US Fish & Wildlife Service for Kofa NWR: \"Pets are permitted if they are confined or on a leash. Dogs may only be off-leash when they are participating in quail and cottontail hunting.\" That is a refuge-wide permission with no trail exceptions published — so this is a stop where the dog walks everything on the card. Rare on this leg.",
+      "box_note": "Kofa is deliberately short, and that is the finding rather than a gap. Komoot's refuge guide states that most hiking here is \"unmaintained social trails requiring good route-finding skills\"; AllTrails indexes 14 routes for a 665,000-acre refuge. Palm Canyon is the one built, signed trail. The rest of the stay is the Kofa Queen Canyon and Castle Dome driving already in the activities.",
+      "trails": [
+        {
+          "name": "Palm Canyon Trail",
+          "distance": "0.45 mi (USFWS); described elsewhere as a half-mile",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Moderately easy (American Trails); Komoot calls it short but strenuous",
+          "reviews": "474 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "Named in the stop's activities and the reason the stop exists. Steady rocky incline to the sign below the side canyon holding Arizona's only native California fan palms — the palms are up and to the left of the sign, and AllTrails warns the sign is NOT the way to continue on the trail. Best light on the palms is around midday; they are in shade otherwise. Two authorities give slightly different lengths and grades, both recorded rather than averaged.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/palm-canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Signal Peak Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "147 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "The high point of the Kofa Mountains at 4,877 ft. AllTrails describes it as a desert summit climb through rugged terrain in a remote corner of the state; no distance, grade or time surfaced in the indexed snippet, and the refuge publishes nothing. Treat as a full committing day and settle the figures before setting out.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/signal-peak-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Big Eye Mine",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "20 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "Remote route into the Castle Dome Mountains ending at the preserved Big Eye Mine — the same range as the Castle Dome City ghost town already in the activities. AZOffroad rates the approach 5.5/10 as a 4x4 route, so this is a truck day with a walk at the end rather than a trailhead you drive to. Twenty reviews: real, but thin.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/big-eye-mine--2",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        }
+      ]
     },
     "tucson": {
       "activities": {
@@ -9946,7 +10392,122 @@
         "Charouleau Gap (truck)": {
           "entity": "4x4 route over the Santa Catalina foothills. No article, and the Catalina State Park full text never mentions it."
         }
-      }
+      },
+      "dogs_note": "Arizona State Parks for Catalina: \"Dogs are welcome on all park trails and in the washes but must be kept on a leash with a maximum length of 6 ft/1.8 m at all times.\" That permission STOPS at the Coronado National Forest boundary — the park's own trail pages state \"Dogs and bicycles are not allowed\" on the Romero Canyon Trail beyond the Forest Service gate, on the wilderness section of the Sutherland Trail, and on the Trail Link, all of which enter the Pusch Ridge Wilderness bighorn closure. So the dog walks the park freely and stops at the gate.",
+      "trails": [
+        {
+          "name": "Canyon Loop Trail",
+          "distance": "2.3 mi loop",
+          "time": "52 min average",
+          "difficulty": "Moderate (Arizona State Parks); AllTrails calls it easy and 80% of reviewers agree",
+          "reviews": "5,315 reviews",
+          "uses": [
+            "hike",
+            "horse"
+          ],
+          "dogs": true,
+          "note": "Named in the stop's activities and the obvious first walk — it starts at the main trailhead car park, a few minutes from the campground. Both grades are recorded because the authority and the trail database disagree; the authority is not overruled.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/catalina-canyon-loop-trail",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Sutherland and Canyon Loop Trail"
+          }
+        },
+        {
+          "name": "Birding Trail",
+          "distance": "1.0 mi (Arizona State Parks); AllTrails logs the loop at 1.2 mi",
+          "time": "26 min average",
+          "difficulty": "Moderate (Arizona State Parks); AllTrails calls it easy",
+          "reviews": "746 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "Horses are not allowed, per the park. Branches right off the Romero Pools / Canyon Loop start and drops straight into the shadiest, greenest ground in the park — the best cool-hour walk of the stay.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/catalina-birding-trail-loop",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Catalina Birding Trail Loop"
+          }
+        },
+        {
+          "name": "Romero Ruins Interpretive Trail",
+          "distance": "0.8 mi (Arizona State Parks)",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Easy",
+          "reviews": "571 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "Horses and bicycles are not allowed, per the park. A 1,200-year-old Hohokam village site with interpretive boards, on a rise with the full sweep of the Catalinas behind it. Its own car park on Catalina State Park Road.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/romero-ruins",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Romero Canyon Trail to Romero Pools",
+          "distance": "7.2 mi for the full Romero Canyon Trail (Arizona State Parks); 6.2 mi round trip to the pools",
+          "time": "approx. 3 h 10 min to the pools",
+          "difficulty": "Difficult (Arizona State Parks, for the full trail); moderately challenging to the pools",
+          "elevation_gain": "1,296 ft to the pools",
+          "reviews": "5,803 reviews",
+          "uses": [
+            "hike",
+            "horse"
+          ],
+          "dogs": false,
+          "note": "Named in the stop's activities and the biggest day of the stay. NO DOG — the park states dogs and bicycles are not allowed beyond the Forest Service gate, which is well below the pools, so this is a walk that has to happen without her. 5,803 reviews is the second-highest count on this whole leg.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/romero-canyon-trail-to-romero-pools",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Bridle Trail",
+          "distance": "1.4 mi",
+          "time": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike",
+            "bike",
+            "horse"
+          ],
+          "dogs": true,
+          "note": "Easy, bike-legal per the park, dog-legal, and inside the park boundary the whole way — the connector between the equestrian centre and the main trailhead. Length, grade and permitted uses are Arizona State Parks; no AllTrails listing surfaced, so no trail link."
+        },
+        {
+          "name": "50 Year Trail",
+          "distance": "8.6 mi",
+          "time": null,
+          "difficulty": "Moderate",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike",
+            "bike",
+            "horse"
+          ],
+          "dogs": true,
+          "note": "The park's long multiuse line, described by Arizona State Parks as popular with equestrians and mountain bikers. Bike-legal and dog-legal, but no surface description could be sourced, so nothing is claimed about whether it would ride as a gravel cruise. Figures are Arizona State Parks."
+        }
+      ]
     },
     "bisbee-tombstone": {
       "activities": {
@@ -10016,7 +10577,168 @@
             }
           ]
         }
-      }
+      },
+      "dogs_note": "Three different authorities, three different answers, and none of them is 'yes' by default. The Nature Conservancy bans pets at Ramsey Canyon Preserve outright (service animals excepted), \"in consideration of canyon wildlife\". NPS Coronado National Memorial: \"With the exception of the Crest Trail, pets are not allowed on trails in the park and must be leashed at all times.\" Arizona State Parks publishes no pet rule on the Kartchner trail pages that loaded, so nothing is recorded for Kartchner. The Crest Trail is the only dog-legal walk found for this stop.",
+      "trails": [
+        {
+          "name": "Foothills Loop Trail, Kartchner Caverns State Park",
+          "distance": "approximately 2.5 mi; 3.2 mi for the full loop including the 1.7 mi Ocotillo Trail addition",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Moderate to difficult (Arizona State Parks)",
+          "reviews": "1,063 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "Best-reviewed trail in reach of this stop and it pairs with the Kartchner Caverns tour already in the activities — the trail climbs the limestone hill above the cave and drops into the wash on the fault between the Whetstone and San Pedro blocks. No bicycles or motorised vehicles. Figures Arizona State Parks.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/foothills-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Ramsey Canyon Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "627 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "The Nature Conservancy preserve is CLOSED TUESDAY AND WEDNESDAY, and from 1 Nov to 28 Feb opens 9 a.m.–4 p.m. The 23–28 Feb stay falls inside the winter hours, so plan round the two closed days. $8 per person, $5 for Cochise County residents. Only 27 parking spaces, first come first served — arrive early.",
+          "note": "Named in the stop's activities. World-famous birding canyon. NO DOG: TNC prohibits pets, along with smoking, camping, fires, radios, bicycles and drones.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/ramsey-canyon-trail--2",
+            "match": "contains",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Ramsey Canyon and Hamburg Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "406 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "Same preserve closures, hours, fee and 27-space car park as above. The Forest Service notes a permit is required for the Hamburg Trail where it starts at the preserve.",
+          "note": "The longer version — TNC describes the Hamburg Trail as paralleling Ramsey Creek through the preserve, then climbing 500 ft in a half-mile of steep switchbacks to an overlook in the Coronado National Forest a mile above the headquarters. No dog.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/ramsey-canyon-and-hamburg-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Coronado Cave Trail",
+          "distance": "1 mi round trip",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Moderate",
+          "elevation_gain": "500 ft",
+          "reviews": "397 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Trailhead about 0.25 mi past the Coronado National Memorial visitor centre. Short steep climb to an undeveloped 600 ft cave with 20 ft ceilings — no lighting and no rangers inside, so it needs proper torches. Figures NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/coronado-cave-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Coronado Peak Trail",
+          "distance": "0.8 mi round trip",
+          "time": null,
+          "difficulty": "Easy",
+          "elevation_gain": "300 ft",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Short paved-and-stepped climb from Montezuma Pass to the interpretive summit looking straight down into Mexico and the San Pedro Valley — the best view-per-effort of the stop, and it fits alongside the Coronado Memorial visit already in the activities. Figures NPS. No AllTrails listing surfaced, so no trail link."
+        },
+        {
+          "name": "Crest Trail, Coronado National Memorial",
+          "distance": "4 mi round trip to the park boundary; 5.3 mi one way to Miller Peak",
+          "time": null,
+          "difficulty": "Difficult",
+          "elevation_gain": "approximately 4,000 ft to Miller Peak",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "THE ONLY DOG-LEGAL TRAIL FOUND FOR THIS STOP — NPS names it as the single exception to the memorial's pet ban, leashed. It is also the hardest thing on the card, so the dog's only option here is a serious climb; going as far as the park boundary and turning round is the realistic version. Figures NPS."
+        },
+        {
+          "name": "Guindani Trail #398",
+          "distance": "4.2 mi loop",
+          "time": null,
+          "difficulty": "Arizona State Parks: the first mile easy, the next two-thirds moderate, the last leg strenuous",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike",
+            "bike",
+            "horse"
+          ],
+          "note": "Starts inside Kartchner Caverns State Park and spends almost all of its length on the east flank of the Whetstone Mountains in the Coronado National Forest. Described by Arizona State Parks as a shared-use, non-motorised trail. No AllTrails listing surfaced; the Forest Service page for it is the source of record."
+        },
+        {
+          "name": "Carr Peak Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "397 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "Huachuca Mountains above Sierra Vista, in the Miller Peak Wilderness. AllTrails describes it as well maintained with a steady and challenging climb. Listed last: the grade could not be sourced and the count does not clear the outstanding bar, so it sits below everything rated above.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/carr-peak-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        }
+      ]
     },
     "superior-globe": {
       "activities": {
@@ -10060,7 +10782,119 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/boyce-thompson-arboretum",
+      "dogs_note": "Boyce Thompson Arboretum: \"Leashed and well-behaved pets are welcome! Pets must be on a leash no longer than six feet and under the physical control of the owner.\" So the arboretum trails are the dog's day here — unusual for a botanical garden and worth knowing. No pet rule was found for the Tonto National Forest Picketpost trails, so nothing is recorded for those.",
+      "trails": [
+        {
+          "name": "Boyce Thompson Arboretum Main Trail",
+          "distance": "1.5 mi loop (Southwestern USA Hiking); Hiiker logs 1.2 mi",
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "elevation_gain": "151 ft",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "season": "October–March hours are 8 a.m.–5 p.m. daily, last admission one hour before closing. The 2–4 Mar 2028 stay is inside that. Adult admission $24.95.",
+          "note": "Named in the stop's activities and the anchor of a two-night stop. Starts at the visitor centre, crosses the suspension bridge, runs through the cactus gardens, the eucalyptus stand, the Chihuahuan and Australian collections. Dog-legal, leashed. AllTrails lists the trail but published no distance, grade, time or count in the indexed snippet, so the figures come from community sources and are labelled as such.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/boyce-thompson-arboretum-main-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Boyce Arboretum Gentle Route",
+          "distance": "2.3 km (1.4 mi) out and back",
+          "time": "0.5–1 hr",
+          "difficulty": null,
+          "needs": [
+            "difficulty"
+          ],
+          "elevation_gain": "16 m (about 52 ft)",
+          "reviews": "75 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "The flat version, for a hot afternoon or a slow one. Figures are AllTrails' own, given in metric in the indexed snippet and recorded as returned.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/en-gb/trail/us/arizona/boyce-arboretum-gentle-route",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Boyce Thompson Arboretum Main Trail to High Trail Loop",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "Main Trail out over the suspension bridge, High Trail back via the Australian desert garden. AllTrails quotes the arboretum calling the High Trail the strenuous option — the same walk with the climb added. No figures published in the snippet.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/boyce-thompson-arboretum-main-trail-to-high-trail-loop",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Picketpost Mountain Trail",
+          "distance": "about 4.2 mi round trip",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Strenuous — AllTrails calls it a short, intense scramble demanding exceptional fitness and a high tolerance for exposure",
+          "elevation_gain": "nearly 2,000 ft",
+          "reviews": "3,501 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "Named in the stop's activities, and kept on the card only because 3,501 reviews clears the outstanding bar. READ THE GRADE BEFORE COMMITTING: AllTrails states the final section \"is not a hike but a difficult ascent up a steep, exposed chute\", and multiple guides warn that people routinely lose the route. On a two-night stop with a dog and a coach to move the next morning, the arboretum is the better use of the day and this is the one to walk away from. Distance and gain from community sources; the trail is in the Tonto National Forest above the arboretum.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/picketpost-mountain-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Picketpost Loop via Arizona Trail and L.O.S.T Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "season": "AllTrails notes stream crossings in spring — the 2–4 Mar date is at the start of that.",
+          "note": "The sane alternative to the summit: from the Picketpost trailhead along the Arizona Trail and the Legends of Superior Trail, circling the mountain instead of climbing it, with the desert views and none of the chute. No figures surfaced in the indexed snippet.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/picket-post-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        }
+      ]
     },
     "camp-verde": {
       "activities": {
@@ -22030,7 +22864,171 @@
         "Victoria Mine Trail": {
           "entity": "Trail to the monument's old Victoria Mine. No article; the monument article never mentions it, and the NRHP listings for Organ Pipe Cactus National Monument do not include it either."
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/organ-pipe-cactus-national-monument",
+      "dogs_note": "NPS Organ Pipe opens with \"Pets are always welcome at Organ Pipe Cactus National Monument!\" and then names exactly three trails: the Palo Verde Trail, the Campground Perimeter Trail and the Visitor Center Nature Trail, plus all roads and paved campground areas. Everything else is closed to pets — the monument cites cholla, venomous animals, coyotes and sharp rock. Leash 6 ft or shorter. Eight nights, and those three trails are the dog's entire itinerary; all three start at or beside the Twin Peaks campground, so they are walkable from the coach.",
+      "trails": [
+        {
+          "name": "Estes Canyon–Bull Pasture Loop",
+          "distance": "3.6 mi round trip including the Bull Pasture spur",
+          "time": "1–3 hours",
+          "difficulty": "Moderate loop; NPS calls the Bull Pasture spur itself strenuous with steep switchbacks",
+          "elevation_gain": "865 ft",
+          "reviews": "517 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "Winter, spring and autumn are the stated seasons; NPS warns summer and autumn reach 110°F. The 27 Jan–4 Feb stay is the best window of the year.",
+          "note": "Named in the stop's activities and the best hike in the monument. Climbs off Ajo Mountain Drive into the Ajo Range for a 20-mile view. Distance, time, grade and gain are all NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/en/trail/us/arizona/bull-pasture-trail--2",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Bull Pasture Trail"
+          }
+        },
+        {
+          "name": "Victoria Mine Trail",
+          "distance": "4.4 mi round trip",
+          "time": "3–4 hours round trip",
+          "difficulty": "Easy–Moderate",
+          "reviews": "720 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "Year-round; NPS notes summer and autumn temperatures to 110°F, which does not touch this stay.",
+          "note": "Named in the stop's activities. Leaves from the far side of the campground — no drive needed — and runs out to the monument's oldest gold and silver workings. Not signposted from the highway. All figures NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/victoria-mine-trail--2",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Alamo Canyon Trail",
+          "distance": "1.8 mi round trip",
+          "time": "1–2 hours",
+          "difficulty": "Easy–Moderate",
+          "elevation_gain": "100 ft to the corral",
+          "reviews": "224 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "NPS lists it as a birding trail; historic ranch and canyon views. Trailhead is at the east end of Alamo Campground off Highway 85 between mile markers 66 and 67, so it is a short drive north of Twin Peaks rather than a walk from camp. Uneven, rocky, some steep sections. All figures NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/alamo-canyon",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Desert View Trail",
+          "distance": "1.2 mi loop",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Easy",
+          "reviews": "371 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Loop with benches climbing to a low ridge from the Twin Peaks campground — the sunset walk of the stay, and it starts at the coach. Distance and grade are NPS; NPS publishes no estimated time for it.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/desert-view-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Arch Canyon Trail",
+          "distance": "1.2 mi",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Easy",
+          "reviews": "467 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Off Ajo Mountain Drive, which the stop already plans to drive — a double natural arch high on the canyon wall. AllTrails' snippet says the best view of the arch is in the first 0.3 mi, including from the car park, so the walk in is optional. Distance and grade are NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/arch-canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Palo Verde Trail",
+          "distance": "2.6 mi (NPS trail list); the pet page gives it as 1.3 mi one way",
+          "time": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "THE DOG'S BEST WALK AT ORGAN PIPE — the longest of the three trails NPS names as pet-friendly, and by some distance. Runs between the visitor centre and the campground, so it is walkable from the coach in either direction. No AllTrails listing surfaced in search; it is carried on NPS authority alone."
+        },
+        {
+          "name": "Campground Perimeter Trail",
+          "distance": "1 mi",
+          "time": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "DOG-LEGAL, and it literally circles Twin Peaks campground — the first-light and last-light walk for eight mornings. Partially ADA accessible. NPS authority only; no trail database lists it."
+        },
+        {
+          "name": "Visitor Center Nature Trail",
+          "distance": "0.1 mi",
+          "time": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "DOG-LEGAL and ADA accessible. A ten-minute interpretive loop at the Kris Eggle visitor centre — worth knowing about only because it is one of three places in the monument the dog may set foot on a trail."
+        },
+        {
+          "name": "Red Tanks Tinaja",
+          "distance": "1.6 mi",
+          "time": null,
+          "difficulty": "Easy",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Off Ajo Mountain Drive to a set of tinajas — the natural rock basins that hold the desert's only standing water. Distance and grade are NPS; no AllTrails listing surfaced, so no trail link."
+        }
+      ]
     },
     "chiricahua-willcox": {
       "activities": {
@@ -22088,7 +23086,147 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/chiricahua-national-monument",
+      "dogs_note": "NPS Chiricahua permits leashed pets in the campground, on paved car parks, and on the \"Lower trails between the Campground and Entrance (Bonita Creek, Silver Spur Meadow, Faraway Ranch area)\" — and bans them \"on any trails above 5,500 feet (including Massai Point Nature, Echo Canyon, Heart of the Rocks, Natural Bridge, and Sugarloaf Trails)\". Carrying a pet on a closed trail is also prohibited. Every hoodoo trail is therefore dog-free; the two lower trails below are the entire dog itinerary and they both start at the campground.",
+      "trails": [
+        {
+          "name": "Echo Canyon Loop (Echo Canyon–Hailstone–Ed Riggs)",
+          "distance": "3.4 mi loop",
+          "time": "2 hours possible, but NPS says most people prefer 3 or 4",
+          "difficulty": "Moderate — NPS notes steep drop-offs and loose, rocky, uneven surfaces, 1–25% grade with cross-slope to 50%",
+          "elevation_gain": "560 ft total",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "reviews": null,
+          "needs": [
+            "reviews"
+          ],
+          "note": "Named in the stop's activities as the Echo Canyon Grottoes Loop, and the best short hike in the monument — CCC-built trail through the densest hoodoos. All figures NPS. The AllTrails listing that matches is the shorter Grottoes out-and-back below, not this full loop, so the loop carries no trail link."
+        },
+        {
+          "name": "Echo Canyon Grottoes",
+          "distance": "about 0.5 mi each way from the Echo Canyon car park (the full loop it sits on is 3.3 mi)",
+          "time": "30–60 minutes",
+          "difficulty": null,
+          "needs": [
+            "difficulty"
+          ],
+          "elevation_gain": "about 200 ft of descent",
+          "reviews": "628 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "The short version: down into the grottoes and back, when there is not a whole morning for the loop. NPS states it is not wheelchair or stroller friendly, is steep and rocky, and has sections that are poor for anyone uneasy with height. Figures NPS.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/echo-canyon-grottoes",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "The Big Loop",
+          "distance": "8+ mi (NPS); AllTrails lists 8.2 mi and reviewers report logging more",
+          "time": null,
+          "needs": [
+            "time"
+          ],
+          "difficulty": "Difficult",
+          "reviews": "2,166 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Named in the stop's activities. The full circuit of the Wonderland of Rocks — Echo Canyon, Upper Rhyolite, Sarah Deming, Big Balanced Rock, Mushroom Rock, Ed Riggs, with the Heart of Rocks and Inspiration Point spurs. Kept on the card despite being difficult because 2,166 reviews clears the outstanding bar comfortably. One reviewer measured 11.2 mi without leaving the trail, so budget the whole day and use the hiker shuttle rather than doubling back.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/the-big-loop--2",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Heart of Rocks from Massai Point",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "550 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "The Heart of Rocks balanced-rock cluster taken from the Massai Point end instead of round the Big Loop. NPS gives the Heart of Rocks Loop as 8+ miles from the visitor centre; no figures were published for this shorter variant, so none are recorded.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/heart-of-rocks-loop-from-echo-canyon-trailhead",
+            "match": "contains",
+            "tier": "indexed",
+            "listed_as": "Heart of Rocks from Massai Point"
+          }
+        },
+        {
+          "name": "Natural Bridge Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty"
+          ],
+          "reviews": "356 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "note": "Its own small pull-out about 1.4 mi past the visitor centre on the Massai Point road, room for roughly five vehicles. Crosses the usually dry Bonita Creek bed then climbs to the rock span. The quietest of the monument's named trails. No length or grade was published by NPS on any page that loaded, so none is recorded.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/chiricahua-natural-bridge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Silver Spur Meadow Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "needs": [
+            "distance",
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "ONE OF ONLY TWO DOG-LEGAL TRAILS AT CHIRICAHUA. Leaves from across the road from the visitor centre and runs to Faraway Ranch through the settlement history of Bonita Canyon — and it is below 5,500 ft, which is the line the pet closure is drawn on. NPS's own trail description page for it was still marked in progress when checked, so no length or grade could be sourced; recorded as absent rather than guessed."
+        },
+        {
+          "name": "Bonita Creek Trail",
+          "distance": null,
+          "time": null,
+          "difficulty": "described as short and easy (HikeArizona)",
+          "reviews": null,
+          "needs": [
+            "distance",
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "note": "THE OTHER DOG-LEGAL TRAIL. At the west end of the monument, through grassy meadow and creekside woodland at the mouth of Bonita Canyon, connecting to the Silver Spur Meadow Trail at Faraway Ranch — so the two chain into one longer dog walk from the campground. Grade from HikeArizona; NPS publishes no figures on any page that loaded."
+        }
+      ]
     },
     "patagonia-sonoita": {
       "activities": {
@@ -22135,7 +23273,83 @@
         "Paton Center for Hummingbirds": {
           "entity": "Tucson Audubon's hummingbird site in Patagonia. No article, and Tucson Audubon Society has no article to serve as a parent."
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/patagonia-sonoita-creek-preserve",
+      "dogs_note": "AllTrails states dogs are not allowed on the Patagonia-Sonoita Creek Nature Trail, which is consistent with The Nature Conservancy's practice at its other Arizona preserve. No pet rule was found on the Arizona State Parks pages for Patagonia Lake or the Sonoita Creek State Natural Area that loaded, so nothing is recorded for those — absence, not permission.",
+      "box_note": "Three nights and the stop is built around birding rather than mileage. The preserve and the two state units between them publish very little in the way of trail figures — twenty miles of trail at Sonoita Creek and one published length among them.",
+      "trails": [
+        {
+          "name": "Patagonia-Sonoita Creek Nature Trail",
+          "distance": "1.9 mi loop",
+          "time": "37 min average",
+          "difficulty": "Easy",
+          "reviews": "150 reviews",
+          "uses": [
+            "hike"
+          ],
+          "dogs": false,
+          "season": "Open year-round.",
+          "note": "Named in the stop's activities. The loop through The Nature Conservancy's preserve along the first two miles of Sonoita Creek's permanent flow — one of the last perennial streams in southern Arizona and the reason the birding here is what it is. AllTrails notes it is unlikely to be busy. Small entrance fee collected at the visitor centre.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/patagonia-sonoita-creek-nature-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Sonoita Creek Trail, Patagonia Lake State Park",
+          "distance": null,
+          "time": null,
+          "needs": [
+            "distance",
+            "time"
+          ],
+          "difficulty": "Easy — AllTrails records 88% of reviewers calling it easy",
+          "reviews": "304 reviews",
+          "uses": [
+            "hike"
+          ],
+          "note": "The lake park's own creek-side birding walk. Two Arizona State Parks pages give conflicting lengths — the Patagonia Lake page describes a half-mile trail to the creek, the Sonoita Creek natural-area page says the shortest round trip to the creek is three miles on the Sonoita Creek Trail — so no distance is recorded rather than picking one. Worth settling at the entrance station.",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arizona/sonoita-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          }
+        },
+        {
+          "name": "Overlook Trail, Sonoita Creek State Natural Area",
+          "distance": "1.5 mi",
+          "time": null,
+          "difficulty": "Moderate",
+          "reviews": null,
+          "needs": [
+            "time",
+            "reviews"
+          ],
+          "uses": [
+            "hike"
+          ],
+          "note": "Arizona State Parks calls it \"a great way to see 360 degrees of spectacular scenery\" and it is the only trail in the natural area for which they publish a length. Close to Patagonia Lake State Park. No AllTrails listing surfaced, so no trail link."
+        },
+        {
+          "name": "Sonoita Creek State Natural Area trail system",
+          "distance": "twenty miles of trail in total, eight of them shared with horses",
+          "time": null,
+          "difficulty": null,
+          "reviews": null,
+          "needs": [
+            "per-trail distance",
+            "time",
+            "difficulty",
+            "reviews"
+          ],
+          "uses": [
+            "hike",
+            "horse"
+          ],
+          "note": "Recorded as a system, not a trail, because that is all the authority publishes. Arizona State Parks names Vista, Sonoita Creek, New Mexico and Arizona Railroad, Overlook, Horse Corral, Foothills, Cat Cave and Blackhawk trails and gives a length for exactly one of them. If more than the Overlook is wanted, the figures have to come from the entrance station — the natural area is day-use and gated, so it is a conversation that happens anyway."
+        }
+      ]
     },
     "badlands-sd": {
       "offroad": [

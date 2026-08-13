@@ -17230,7 +17230,39 @@
         "Little Soldier Loop": true,
         "Scouts Trail System": true,
         "Young Hawk Interpretive Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Oliver III Wind Farm route",
+          "url": "https://www.onxmaps.com/offroad/trails/us/north-dakota/oliver-iii-wind-farm-90697wnmdzew",
+          "distance": "19.7 mi · about 20 km northwest of the stop",
+          "difficulty": "onX technical rating 1 (Easy); accessible by 50 in, 60 in, high-clearance and full-width vehicles",
+          "season": "onX lists all four seasons; no managing authority publishes a gate date for these prairie section roads",
+          "note": "Prairie section-line gravel running up among the Oliver III turbines: \"Get close and personal with the Oliver III Wind Farm. Experience the loneliness and exposure of the land.\" Twenty miles of it with good cell coverage. This is the longest easy gravel outing that starts within half an hour of Bismarck, and it is the sort of driving North Dakota actually offers — open section roads, not forest two-track. No land manager publishes it as a route; the record is the community one.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/north-dakota/oliver-iii-wind-farm-90697wnmdzew"
+        },
+        {
+          "name": "AMS \"Around the World\"",
+          "url": "https://www.onxmaps.com/offroad/trails/us/north-dakota/ams-around-the-world-ndzd10mnvzkv",
+          "distance": "21.2 mi · about 29 km northwest of the stop",
+          "difficulty": "onX technical rating 1 (Easy); single track, 50 in, 60 in, high clearance and full width all listed",
+          "season": "onX lists all four seasons",
+          "note": "The longest of the Bismarck-area gravel runs, following the Missouri river bottoms: \"This is one of the most beautiful drives along the river bottoms. Keep an eye open for all the wildlife that North Dakota has to offer.\" Cell coverage is hit and miss and there are no facilities on it, unlike the Sweet Briar routes.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/north-dakota/ams-around-the-world-ndzd10mnvzkv"
+        },
+        {
+          "name": "Sweet Briar East",
+          "url": "https://www.onxmaps.com/offroad/trails/us/north-dakota/sweet-briar-east-8yzyr17pg614",
+          "distance": "13.1 mi · about 24 km west of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"an easy road without any difficult obstacles\"; full width listed",
+          "season": "onX lists all four seasons",
+          "note": "Gravel around the Sweet Briar Lake recreation area west of Mandan, with camping, picnic shelters, public toilets and good cell coverage — the easiest of the group to do as a half-day with the dog. Two companion routes, Sweet Briar South (12.5 mi) and Sweet Briar West (20.1 mi), sit on the same network but both are about 38 km out. IMPORTANT, and the reason this box is short: the one route the state itself publishes near Bismarck, the 22-mile Roughrider OHV Trail from Fort Abraham Lincoln State Park to Fort Rice Campground along Highway 1806, is NOT open to the truck — onX records it as accessible by 50-inch and 60-inch machines only, with no full-width category, and ND Parks and Recreation lists it under off-highway vehicle trails. Kimball Bottoms, 8 miles south of Bismarck, is a 400-acre OHV play area, not a road.",
+          "tier": "community",
+          "source": "https://www.parkrec.nd.gov/business/recreation-programs/highway-vehicles-ohv/ohv-trails"
+        }
+      ]
     },
     "itasca-mn": {
       "activities": {
@@ -17425,7 +17457,59 @@
         "Dr. Roberts Trail": true,
         "Bohall Trail": true
       },
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/minnesota/itasca-state-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/minnesota/itasca-state-park",
+      "offroad": [
+        {
+          "name": "Heart Lake Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/heart-lake-trail-n2qvrop8rz95",
+          "distance": "3.6 mi · about 9 km from the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"Easy to Navigate Forestry Road\"; full width listed",
+          "season": "\"Closed December 1 - Mar 31.\" The stop is 24-29 Jun 2028, so it is open",
+          "note": "The closest unpaved route to Itasca of any found — a narrow state forestry road right beside the park. \"The trail is very narrow in spots with overgrown vegetation. The fall colors and Wildlife along this trail are definitely worth the travel... The trail has lots of private drives, so keep to the marked trail.\" Spring thaw leaves ruts, which by late June should be gone.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/heart-lake-trail-n2qvrop8rz95"
+        },
+        {
+          "name": "Anchor Mattson Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/anchor-mattson-road-y3688rd4d6gm",
+          "distance": "10.9 mi · about 14 km south of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"easy-to-travel Forestry Road\"; full width listed",
+          "season": "\"Closed December 1 - March 31.\" Open for this stop",
+          "note": "The longest of the Itasca-area forestry roads and the one to do if only one is done — nearly eleven miles of easy gravel and dirt south of the park. \"Wildlife is abundant, with lots of Deer, Grouse, Turkey, and the occasional bear and wolf.\" Narrow in places with encroaching vegetation, so expect pinstriping on a wide truck.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/anchor-mattson-road-y3688rd4d6gm"
+        },
+        {
+          "name": "Waptus Forest Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/waptus-forest-road-dwz7xm8406l5",
+          "distance": "4.9 mi · about 16 km west of the stop",
+          "difficulty": "onX technical rating 1 (Easy); full width listed",
+          "season": "\"Closed December 1 to March 31.\" Open for this stop",
+          "note": "\"Mostly wide open with some narrow sections with low overhead clearance\" — the low branches are the thing to watch with anything on the roof. Connects to the rest of the White Earth / Two Inlets forest road network, so it pairs with Waptus-McKenzie for a longer loop.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/waptus-forest-road-dwz7xm8406l5"
+        },
+        {
+          "name": "Waptus-McKenzie Lake Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/waptus-mckenzie-lake-road-3l6ok79yvqw4",
+          "distance": "8.4 mi · about 21 km southwest of the stop",
+          "difficulty": "onX technical rating 1 (Easy); full width listed",
+          "season": "\"Closed December 1st to March 31st.\" Open for this stop",
+          "note": "Runs the west edge of Itasca State Park — the closest thing here to a park-boundary drive that is not the paved Wilderness Drive. \"Narrow in spots and some washouts depending on the time of year... many great camping opportunities.\"",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/waptus-mckenzie-lake-road-3l6ok79yvqw4"
+        },
+        {
+          "name": "Old Many Point Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/old-many-point-trail-90693vp2w6ew",
+          "distance": "3.6 mi · about 28 km southwest of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"narrow but passable for full-width vehicles\"",
+          "season": "\"Closed annually from December 1 to March 31.\" Open for this stop",
+          "note": "The original route to Many Point Scout Camp, past ponds and wetlands. Explicitly rated for full-width vehicles, with \"occasional mud spots and shallow water crossings when pond levels are high\" — one section crosses a creek that can run over 12 inches deep in spring; by late June that should have dropped. The governing rule for this whole set: Minnesota DNR classes White Earth, Two Inlets, Paul Bunyan and Smoky Hills as Limited state forests, where \"Highway licensed vehicles are allowed on signed forest roads, unless posted closed\" — so the truck belongs on the signed roads and nowhere else.",
+          "tier": "community",
+          "source": "https://www.dnr.state.mn.us/regulations/ohv/stateforests_limited.html"
+        }
+      ]
     },
     "duluth-mn": {
       "activities": {
@@ -17671,7 +17755,59 @@
         "Gooseberry Falls State Park trails": true,
         "Hawk Ridge Nature Reserve Trails": true,
         "Jay Cooke State Park — Swinging Bridge & river gorge trails": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Hulligan Lake Forest Management Road & Carol Truck Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/hulligan-lake-carol-truck-trail-1mzjyg8n7zd7",
+          "distance": "13.9 mi · about 36 km north of the stop",
+          "difficulty": "onX technical rating 3 (Easy) — \"Loggers and the USFS maintain the road as needed. Some muddy ruts and slick areas. Single vehicle width in most places.\"",
+          "season": "onX lists Spring, Summer, Fall. The gate is the check, not the calendar",
+          "note": "The best full day out of Duluth: fourteen miles up the Cloquet River. \"Hulligan Lake Forest Management Road and Carol Truck Trail are seasonally accessible with most 4x4 vehicles. The gate at the entrance to Corol is visible from the highway to determine if the route is open.\" That gate check from the highway is the whole trip-planning question — look before committing. Canoe launch and campsites along the Cloquet River at a signed cutoff. Watch for logging trucks and give way.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/hulligan-lake-carol-truck-trail-1mzjyg8n7zd7"
+        },
+        {
+          "name": "Net Lake Forest Road, Nemadji State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/net-lake-forest-road-edq0pnmjy6ov",
+          "distance": "7.4 mi · about 46 km south of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"a relatively gentle forest road with a couple of spots that get rough or off camber slightly\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"Net Lake Forest Road is the main east/west road through Nemadji. There are tons of dispersed campsites along it and many trail crossings. Be mindful of OHV traffic as it's used as one of the busiest connecting routes in the forest.\" The warning matters on a July weekend — blind corners with off-camber sections where riders cut the line. \"By mid-summer, braking bumps and some ruts may form.\"",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/net-lake-forest-road-edq0pnmjy6ov"
+        },
+        {
+          "name": "South Extension, Nemadji State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/south-extension-e7qeeygynq1y",
+          "distance": "3 mi · about 49 km south of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"about as safe and flat as a forest road gets especially if its been dragged recently\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"South Extension is the main north/south forest road through Nemadji. It's a simple gravel road with gentle grades throughout, with several dispersed campsites all along the road.\" Crossed with Net Lake Forest Road this makes a straightforward half-day grid of the forest without anything technical.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/south-extension-e7qeeygynq1y"
+        },
+        {
+          "name": "Grouse Forest Road, Nemadji State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/grouse-forest-road-8yzyy9mmvz14",
+          "distance": "3.1 mi · about 52 km south of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — one corduroy section and \"a shallow water crossing/mud hole\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"Grouse Forest Road is a minimum maintenance road lined by thick brushy forest habitat favored by grouse. You will likely see some standing in the middle of the trail at dawn and dusk.\" Sand and dirt with loose rock, an eroded corduroy section, and one spot that holds shallow clear water. \"4x4 and SXS access ends at the Y in the trail\" — turn there.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/minnesota/grouse-forest-road-8yzyy9mmvz14"
+        },
+        {
+          "name": "Pequaywan/Brimson Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/minnesota/pequaywan-brimson-trail-1mzjdv027zd7",
+          "distance": "2.7 mi · about 53 km north of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"not regularly maintained, but it appears to be used by other off-roaders, which helps keep the forest from encroaching\"",
+          "season": "onX lists all four seasons",
+          "note": "North of Duluth in the Pequaywan lakes country, and it links directly to Destination Road (1 mi, onX rating 1, \"wide and clear of debris, with established tread and minimal overgrowth\"). Short, but it is the only thing on this side that is not the Hulligan Lake gate run. Minnesota's rule for the Nemadji and Cloquet Valley forests: on a Limited state forest \"Highway licensed vehicles are allowed on signed forest roads, unless posted closed\", and travel off the signed roads is prohibited.",
+          "tier": "community",
+          "source": "https://www.dnr.state.mn.us/regulations/ohv/stateforests_limited.html"
+        }
+      ]
     },
     "grand-marais-mn": {
       "activities": {
@@ -18102,7 +18238,39 @@
         "Mainland Sea Caves near Meyers Beach": true,
         "Houghton Falls State Natural Area": null,
         "Big Bay State Park trails, Madeline Island": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Bayfield County Forest road network",
+          "url": "https://www.bayfieldcounty.wi.gov/326/ATV-UTV",
+          "distance": "\"hundreds of miles of Forest Roads\" across the county; nearest tracts begin within 15-25 km of Bayfield",
+          "difficulty": "not published by the county — surface and grade vary tract by tract",
+          "season": "The county's published seasonal rule is for the trails, not the roads: \"Generally, ATV/UTV trails are open year 'round EXCEPT for during spring thaw (approx. mid-March to early May).\" The stop is 11-17 Jul 2028, well clear of it",
+          "note": "This is the honest headline for Bayfield: the network exists and is large — the county states \"Over 180 miles of ATV trails (PLUS hundreds of miles of Forest Roads) provide year 'round fun\" — but the county publishes the ATV/UTV trail map, not a road map, and nowhere states whether an ordinary licensed vehicle may drive the forest roads. The county forestry department is the number to call before planning a day on them, and that call is worth making from camp. Note also that the Bayfield Peninsula itself (Bayfield, Washburn, Cornucopia, Red Cliff) returned no published unpaved driving route from any source checked — everything found is inland or south, in the county forest and the Chequamegon.",
+          "tier": "official",
+          "source": "https://www.bayfieldcounty.wi.gov/326/ATV-UTV"
+        },
+        {
+          "name": "GG to Highbridge forest road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/wisconsin/gg-to-highbridge-5m3qx7243609",
+          "distance": "11.3 mi · about 57 km southeast of the stop, near Mellen",
+          "difficulty": "onX technical rating 1 (Easy) — \"a nice easy forest road\"; full width listed",
+          "season": "onX lists Summer and Fall only. \"I could see this road getting muddy in spots during spring or after heavy rainfall\"",
+          "note": "\"This is a gravel forest road starting on State Highway GG, right outside of Mellen, and ending on County Highway C in Highbridge. These forest roads have some nice scenic views as you make your way through the tall pine trees, past rivers and creeks, and along a few farm fields.\" Eleven miles of it, and the longest continuous verified gravel run within an hour of Bayfield. Mellen is about 50 minutes by road, so this is a day out rather than an afternoon.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/wisconsin/gg-to-highbridge-5m3qx7243609"
+        },
+        {
+          "name": "Berkshire Tower Ruins / Mount Whittlesey",
+          "url": "https://www.onxmaps.com/offroad/trails/us/wisconsin/berkshire-tower-ruins-k36n3v8rmz9j",
+          "distance": "2.4 mi · about 60 km southeast of the stop",
+          "difficulty": "onX technical rating 3 (Easy) but \"primarily one-vehicle width, with several rock gardens, large boulders, ruts, and loose rocks\" — the hardest route in this box",
+          "season": "onX lists Fall, Summer, Spring",
+          "note": "Climbs to the Mellen lookout tower on Mount Whittlesey with the old Berkshire mine ruins on the way. \"The trail offered a few steep hill climbs, rutted-out and rock-filled sections, and a few rock gardens. The bugs were annoying, and cell service was minimal. A chainsaw or similar would be good to have, too.\" That last is the tell — deadfall is expected, and a mid-July run with the dog aboard on a one-vehicle-wide climb with no cell service is a different proposition from the Highbridge road. Pair it with GG to Highbridge on the same day out to Mellen or leave it.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/wisconsin/berkshire-tower-ruins-k36n3v8rmz9j"
+        }
+      ]
     },
     "porcupine-mountains-mi": {
       "activities": {
@@ -19439,7 +19607,79 @@
         "Empire Bluff Trail": true,
         "Old Mission Point Park / Lighthouse Trail": null,
         "Pyramid Point Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Luhr's Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/luhrs-trail-8yzyml195z14",
+          "distance": "2.5 mi · about 11 km from the stop — the closest of the set",
+          "difficulty": "onX technical rating 2 (Easy) — \"some small dips and sandy patches that could impede two-wheel drive cars\"; full width listed",
+          "season": "onX lists Spring, Summer, Fall. No published gate date",
+          "note": "\"This trail provides an excellent shortcut between Bass Lake Road and Bass Lake Trail. The trail is a single vehicle wide and meanders through a wooded area with occasional clearings. The surface is sandy - can get dusty quickly. Private property is posted along each side of the trail.\" Stay on the two-track; the posting on both sides is the point.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/luhrs-trail-8yzyml195z14"
+        },
+        {
+          "name": "Davis Lake seasonal road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/davis-lake-x06poyexwqko",
+          "distance": "1.5 mi · about 15 km west of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"a single vehicle wide without any technical sections\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"This is a seasonal road connecting South Cedar Creek Valley Road to Lake Ann Road... packed dirt and sand. The trail transverses both state land and private property-keep an eye open for no-trespassing signs. At the west end of the trail there is an access point for Cook Lake, which looks nice for shoreline fishing or launching a canoe/kayak.\" A short, easy, dog-friendly one on a hot August afternoon.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/davis-lake-x06poyexwqko"
+        },
+        {
+          "name": "Strombolis",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/strombolis-47zmoy5op6rj",
+          "distance": "1.8 mi · about 16 km southeast of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"Two vehicles wide with plenty of passing room. All rigs can travel this route\"",
+          "season": "onX lists all four seasons",
+          "note": "\"Strombolis is a classic Michigan dirt road that provides great views of the surrounding timbered forest... well maintained. Be aware of other trail riders as this is a busy area.\" The widest and most relaxed of the Traverse City two-tracks, and the one to use as the spine of a loop with Lake Dubonnet and Ransom Lake.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/strombolis-47zmoy5op6rj"
+        },
+        {
+          "name": "Lake Dubonnet Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/lake-dubonnet-trail-8yzy9334e614",
+          "distance": "1.4 mi · about 16 km west of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"a few areas where the trail terrain can be a bit tight with surrounding trees and small obstacles\"; obstacles listed as tree roots, washouts and mudholes",
+          "season": "onX lists all four seasons",
+          "note": "\"A great drive just 15 minutes outside Traverse City\" — mostly dirt with some sand, through dense forest, with kayak launch points onto Lake Dubonnet and dispersed campsites along it. Decent cell coverage, unusually for these.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/lake-dubonnet-trail-8yzy9334e614"
+        },
+        {
+          "name": "Ransom Lake Trail",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/ransom-lake-trail-2eqrj0kw460w",
+          "distance": "3 mi · about 18 km west of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"one vehicle wide... occasional sections with significantly exposed roots that would be difficult to cross without 4-wheel drive\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"A fun trail crossing state land north of Lake Dubonnet... mostly sandy two tracks easily passable by most vehicles. There are sections, however, with tight turns in wooded areas and some relatively steep climbs with exposed roots. Longer vehicles and those with ground clearance less than a stock 4x4 may have difficulty crossing these sections.\" Read \"longer vehicles\" as a warning for a full-size crew-cab pickup on the tight turns.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/ransom-lake-trail-2eqrj0kw460w"
+        },
+        {
+          "name": "Rogers Road — Trail 58421",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/rogers-road-trail-58421-jx06pjwmw6ko",
+          "distance": "2 mi · about 15 km southwest of the stop",
+          "difficulty": "onX technical rating 2 (Easy); high clearance and full width only, no narrower categories",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"Rogers Road - Trail 58421 starts out as a single-lane trail. Brush line a good portion of the trail. Some of the Trail is also wide enough for vehicles to pass. This trail ends at Long Lake Road. The trail is mostly sand and dirt. This trail is managed by the Traverse City Forest Management Unit.\" Brush on both sides for most of its length — expect pinstriping.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/michigan/rogers-road-trail-58421-jx06pjwmw6ko"
+        },
+        {
+          "name": "LP510 / Shore To Shore seasonal road (Perla Road to Hoosier Valley Road)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/michigan/lp510-shore-to-shore-trail-9e7qer0m261y",
+          "distance": "9.4 mi · about 16 km south of the stop, near Mayfield",
+          "difficulty": "onX technical rating 2 (Easy) — \"some parts are sandy with small ruts and mud\"; high clearance and full width",
+          "season": "onX lists Summer only",
+          "note": "The longest continuous run near Traverse City at nine and a half miles: \"The drive is a seasonal Road... The road is generally 2 lane traffic and will connect with multiple trails... mostly dirt but some parts are sandy and we did run across some ruts and some mud.\" Two cautions. It shares its corridor with the Shore-to-Shore equestrian route, so expect horses and give way. And the legal check for all seven of these is the Michigan DNR forest road map, which distinguishes roads \"Closed to ORVs\" from roads \"closed to all conventional vehicles and ORVs\" — the truck is a conventional licensed vehicle, so it is the second category that would shut a road to it. The DNR publishes both an interactive and a printable map and updates them effective 1 April each year.",
+          "tier": "community",
+          "source": "https://www.michigan.gov/dnr/things-to-do/orv-riding/state-forest-roads/maps-and-status"
+        }
+      ]
     },
     "door-county-wi": {
       "activities": {
@@ -19655,7 +19895,8 @@
         "Eagle Trail, Peninsula State Park": true,
         "Red Trail, Whitefish Dunes State Park": true,
         "Sentinel Trail, Peninsula State Park": true
-      }
+      },
+      "offroad_finding": "Nothing, and the geography is the reason. Door County is a farmed limestone peninsula — orchards, villages and state parks, with paved park drives at Peninsula, Newport and Whitefish Dunes and no public forest road network anywhere on it. Checked: Wisconsin DNR state park roads for the four parks on this card; the Wisconsin DNR off-highway motorcycle and ATV trail listings; and onX Offroad's index for Sturgeon Bay, which returns nothing at all on the peninsula. The nearest full-width unpaved routes it does return are Cedar River Run in Michigan's Escanaba Forest Management Unit and the Oconto County ATV road routes at Pete de Foure Road and Nauke Road — 54, 73 and 82 km away as the crow flies, but all of them on the far side of Green Bay, which means 150-200 km of driving each way around the head of the bay. That is not a day trip from Egg Harbor and none of it belongs on this card. If a gravel afternoon is wanted here, it is the town roads through the Mink River and Europe Lake side of the northern peninsula, and no authority publishes those as a route."
     },
     "indiana-dunes-in": {
       "activities": {
@@ -19779,7 +20020,8 @@
         "Mount Baldy Beach Trail": true,
         "West Beach 3-Loop Hike": true,
         "West Beach Dunes Succession Trail": true
-      }
+      },
+      "offroad_finding": "Nothing within reach, and Indiana makes this unusually easy to state. The Indiana DNR names exactly two state off-road riding areas in the whole state — Interlake Off-Road State Recreation Area (3,500 acres) at Lynnville and Redbird Off-Road State Recreation Area (1,400+ acres) at Linton — plus three private parks, Badlands at Attica, Haspin Acres at Laurel and Lawrence County Recreation Park at Springville. Every one of them is in southern or west-central Indiana, 250-350 km from the Dunes; the nearest, Badlands at Attica, is still about 190 km. Indiana Dunes National Park and Indiana Dunes State Park have paved park roads only and no unpaved public driving route. onX Offroad's index for Chesterton returns zero trails — not a thin list, zero, which is the clearest negative result of any stop in this pass. This stop is beaches, the 3 Dune Challenge and the Chicago skyline; there is no truck day here and nobody should look again."
     },
     "stratford-on": {
       "activities": {
@@ -19915,7 +20157,8 @@
           "tier": "official",
           "source": "https://visitstratford.ca/roadtrips/"
         }
-      ]
+      ],
+      "offroad_finding": "Nothing. Stratford sits in the middle of Perth County, which is among the most completely farmed landscapes in Ontario — the public land is river parkland and conservation tracts, not forest. Checked: the Upper Thames River Conservation Authority, which manages the conservation land around Stratford and states plainly that \"All-terrain and off-road vehicles are prohibited from all UTRCA property\"; the Avon Trail (a footpath, and its own users' code is written for walkers); the City of Stratford parklands, which are municipal parks; and Ontario's Crown Land Use Policy Atlas, which covers \"a large part of central and mid-northern Ontario\" and does not extend to Perth County, because there is effectively no Crown land here. There are hundreds of kilometres of gravel concession roads through the surrounding farmland, drivable by anything, but they are field-access roads with no viewpoint, no destination and no publishing authority behind them, and putting one on a card would be padding. Note also that neither onX Offroad nor Trails Offroad covers Canada at all, so the usual community backstop does not exist for any of the three Ontario stops."
     },
     "elora-on": {
       "activities": {
@@ -20047,7 +20290,8 @@
         "Elora Cataract Trailway (Elora section)": true,
         "Elora Gorge Trails": true,
         "Elora Quarry Conservation Area Trail": false
-      }
+      },
+      "offroad_finding": "Nothing, and two authorities say so explicitly. The Grand River Conservation Authority holds the land that makes this stop — Elora Gorge, Elora Quarry, the Elora Cataract Trailway — and none of it is open to motor vehicles; the Trailway is a rail-trail. The nearest large public woodland is the Dufferin County Forest, about 45 km northeast, and the county's rule is a flat prohibition: \"No motorized vehicles are permitted in the Forest, except snowmobiles on designated Ontario Federation of Snowmobile Clubs trails\", carried in the County Forest consolidated by-law. Also checked: Wellington County, whose only relevant instrument is an \"Off Road Vehicles on County Roads By-law\" governing ORVs on public roads rather than opening any route; Ontario's Crown Land Use Policy Atlas, which does not reach Wellington County; and the fact that onX Offroad and Trails Offroad have no Canadian coverage. Elora and Fergus are a gorge, two mill towns and a quarry. There is no legal unpaved driving route within reach and there is no point looking a fourth time."
     },
     "algonquin-on": {
       "activities": {
@@ -20570,7 +20814,19 @@
         "Jones Creek Trail System": true,
         "Landon Bay Trails": true,
         "Mallorytown Landing Trails": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Limerick Forest main access roads",
+          "url": "https://www.leedsgrenville.com/explore/limerick-forest/plan-your-visit/motorized-vehicle-agreement/",
+          "distance": "roughly 180 km of trails and access roads in the forest; the forest is about 75 km northeast of the stop, near Oxford Mills",
+          "difficulty": "not graded by the counties; the network runs \"from 'single track' to emergency access roads suitable for full-sized vehicles\"",
+          "season": "No fixed dates are published. The counties close the whole network to motorized use during spring thaw — the 2026 closure ran from late March with reopening expected mid-May — and the truck's permission is conditional: driving the main access roads is allowed \"as long as the trails are open\". The stop is 14-18 Sep 2028, comfortably outside thaw",
+          "note": "The only place within reach of Gananoque where a land manager has written down that a truck may drive. The United Counties of Leeds and Grenville state that if a visitor wants to drive through Limerick \"on one of the main access roads in their car or truck and can do so safely and without causing damage to themselves or the forest, then that is permitted as long as the trails are open.\" That permission is for the MAIN ACCESS ROADS ONLY — the trails themselves are for ATVs and motorcycles whose riders must belong to the OFATV or OFTR and a local club, and \"Mud Trucks\" are named as not permitted anywhere. So: the wide roads, gently, and nothing else. Everything nearer was checked and came up empty — Thousand Islands National Park is paved roads and footpaths, Frontenac Provincial Park is non-motorized, and Ontario's Crown Land Use Policy Atlas covers central and mid-northern Ontario, not Leeds and Grenville. Frontenac County north of Kingston does carry a real gravel road network, used by the long-distance gravel cycling routes, but no authority publishes any of it as a driving route.",
+          "tier": "official",
+          "source": "https://www.leedsgrenville.com/explore/limerick-forest/plan-your-visit/motorized-vehicle-agreement/"
+        }
+      ]
     },
     "perth-on": {
       "activities": {
@@ -21044,6 +21300,18 @@
           "note": "Vermont State Parks' Sand Bar page — \"Sand Bar State Park takes its name from a natural sandbar between South Hero Island\" and the town of Milton on the mainland; the park address is 1215 US Route 2, Milton. The causeway carrying US-2 across it was built in the 1950s on top of an 1850s bridge, over a sandbar formed by Lamoille River sediment. Fetching vtstateparks.com returned HTTP 403 (bot detection), so the listing is confirmed from the search result's own title and snippet and no season dates are recorded. Sand Bar is a day-use beach park with a short summer season, so a 28 Sep arrival will likely find the park itself closed while US-2 across the causeway stays open — check the park's season before planning a stop rather than a drive-through.",
           "tier": "official",
           "source": "https://lite.duckduckgo.com/lite/?q=Sand+Bar+causeway+US+Route+2+Milton+South+Hero+Vermont+Lake+Champlain+Islands+byway"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Big Hollow Road (Class 4 town highway)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/vermont/big-hollow-road-g8zlpjvjeq1w",
+          "distance": "6.2 mi · about 49 km southeast of the stop, in the Green Mountains behind Starksboro and Fayston",
+          "difficulty": "onX technical rating 3 (Easy) — \"Expect a varied road surface from packed gravel to dirt to mud\"; high clearance and full width",
+          "season": "onX lists Fall and Summer, and warns \"best to avoid this trail during the spring sugaring season\". The stop is 28 Sep - 1 Oct 2028, which is the right end of the year for it — Vermont's mud season is spring, not autumn",
+          "note": "Read the distance before planning on it. The Champlain Islands themselves — South Hero, Grand Isle, North Hero, Isle La Motte — have no unpaved public driving route that any authority or database publishes: the islands are farmland, orchards and lakeshore on paved town roads, and the two state parks and the Missisquoi refuge are walking. This is the nearest thing found, and it is off the island, over the causeway and an hour away in the mountains. What it is: \"Starts as a Vermont Farm gravel road, then transitions to a standard class 4 road with some small obstacles. You will pass some abandoned homes and a lot of maple sugaring equipment. At the halfway point, the road will narrow, and you will come to a log landing. Past the log landing is a narrow, much older, and less-used trail that will exit into a field with horses.\" Class 4 town highways are Vermont's unmaintained public rights of way — legal to drive, but the town has no duty to keep them passable, so condition is whatever the last logging job and the last storm left. On a three-night stop this is a whole day; it is honest to say it may not be worth it.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/vermont/big-hollow-road-g8zlpjvjeq1w"
         }
       ]
     },
@@ -21534,7 +21802,29 @@
         "Le Mont-Chauve (Parc national du Mont-Orford)": true,
         "Le Pékan (Parc national du Mont-Orford)": false,
         "Panorama Trail, Owl's Head (Mansonville)": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "La traverse des Townships (Sutton - Lac-Brome gravel circuit)",
+          "url": "https://www.cantonsdelest.com/velo/circuit/6/la-traverse-des-townships",
+          "distance": "47 km loop · starts essentially at the stop, Sutton to Lac-Brome",
+          "difficulty": "not graded for vehicles — these are public municipal gravel roads, drivable by any vehicle; the grading published is for bicycles",
+          "season": "No gate and no closure: these are ordinary public roads, maintained through the year. Quebec's mud season is spring; the stop is 5-11 Oct 2028, which is peak foliage in the Townships",
+          "note": "Be clear what this is before it goes on the plan. The Eastern Townships are almost entirely private land — there is no ZEC, no significant public forest and no chemin forestier network within reach of Sutton, so there is no forest-road day here of the kind the Ozarks or Michigan offer. What Tourisme Cantons-de-l'Est does publish is a set of gravel-road circuits, laid out for gravel cyclists, on public municipal roads that are perfectly legal and pleasant to drive: this one crosses from Sutton to Lac-Brome, \"essentiellement sur chemins de gravelle\". In October it is the single best colour drive available here and the truck is the right vehicle for it. Expect cyclists on it, because that is who it was drawn for.",
+          "tier": "community",
+          "source": "https://www.cantonsdelest.com/article/1265/gravel-bike-des-parcours-a-essayer-dans-les-cantons"
+        },
+        {
+          "name": "Hot Garnotte (Bromont gravel circuit, listed as Circuit 100 à B7)",
+          "url": "https://www.cantonsdelest.com/velo/circuit/4/circuit-100-a-b7",
+          "distance": "64 km loop · based on Bromont, about 25 km north of the stop",
+          "difficulty": "not graded for vehicles; public gravel roads",
+          "season": "Year-round public roads; no closure published",
+          "note": "The longer of the two gravel circuits within reach, out of Bromont. Same caveat as the Sutton loop — it is published by the regional tourism authority for cyclists, not as a 4x4 route, and its value here is that it is a vetted 64 km line through the back gravel of Brome-Missisquoi rather than a guess at which concession road goes somewhere. Four other circuits in the same series (Coaticook, Danville, Saint-Camille, Val-Racine) are 60-130 km further east and were left off deliberately.",
+          "tier": "community",
+          "source": "https://www.cantonsdelest.com/article/1265/gravel-bike-des-parcours-a-essayer-dans-les-cantons"
+        }
+      ]
     },
     "north-conway-nh": {
       "activities": {
@@ -22712,6 +23002,58 @@
           "tier": "official",
           "source": "https://www.governor.ny.gov/news/governor-hochul-announces-reopening-scenic-state-route-218-orange-county"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Lundy Road, Sundown Wild Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/lundy-road-47zmo05xw6rj",
+          "distance": "5.9 mi · about 40 km west of the stop, in the Catskills above Claryville",
+          "difficulty": "onX technical rating 2 (Easy) for the first four miles, then harder — \"the last 2-miles turns into a 2 with deep mud holes and loose rock climbs, limited pull-overs, and small rock shelf\"",
+          "season": "onX lists Spring, Fall, Summer. No published gate date, but this is unmaintained road at 600 m in the Catskills in November",
+          "note": "The longest of the Catskill gravel roads within reach and the one with a payoff at the end. \"This started out as a loose gravel, non-maintained 2-lane road... This follows a river where there are plenty of pull-offs to walk down to the river... At about 4 miles in, this changes to a much more technical route. The last 2 miles became more technical with mud holes, washed out sections, some climbs with loose rocks, and a 2-4\\\" climb on a small rock shelf. At the end, you do have to turn around.\" Easy option: drive the first four miles, walk the dog to the river, turn round before the rough section.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/lundy-road-47zmo05xw6rj"
+        },
+        {
+          "name": "Rogue Harbor Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/rogue-harbor-road-edq0mg7276ov",
+          "distance": "2.2 mi · about 42 km west of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"Nothing technical, loose gravel 2 vehicles wide\"",
+          "season": "onX lists all four seasons",
+          "note": "\"A nice, easy drive, with views of the streams and a small bridge. There are areas to pull over and park, and to go hiking.\" Two vehicles wide throughout, which after Lundy Road is the point — this is the version of the same country that needs nothing of the truck. Cutler Road (0.5 mi, onX rating 1, \"loose gravel, 2 lanes\") branches off Lundy nearby and adds a short bridge crossing and a climb.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/rogue-harbor-road-edq0mg7276ov"
+        },
+        {
+          "name": "Cutler Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/cutler-road-gd6gdjd7d6o9",
+          "distance": "0.5 mi · about 42 km west of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"Nothing technical, loose gravel, 2 lanes\"",
+          "season": "onX lists all four seasons",
+          "note": "\"A loose gravel road off of Lundy Road. Cross over a bridge and start climbing up a small hill. At the end turn around and head back to Lundy Road. There are sections to pull over and park to go hiking.\" Half a mile, so it is an add-on rather than an outing — worth it only because it is on the way.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/cutler-road-gd6gdjd7d6o9"
+        },
+        {
+          "name": "Moore Hill Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/moore-hill-road-2eqrjgm1j60w",
+          "distance": "1.8 mi · about 52 km west of the stop, near Denning",
+          "difficulty": "onX technical rating 2 (Easy) — \"Mostly packed and loose gravel, limited pull overs and when it rains will be slick\"",
+          "season": "onX lists Fall, Summer, Spring",
+          "note": "\"This trail is a public road that is not maintained. It is a mix of packed and loose gravel with a few sections of puddles and rocks... it is a one-lane trail with several spots to pull over. On rainy days, it will be a little slick.\" One-lane and slick when wet is the combination to weigh in November. Barnes Road (1.1 mi, onX rating 1) is the same kind of unmaintained public road a couple of kilometres away, and Townsend Hollow Road (1.8 mi, onX rating 1, \"nice stone walls on some of the sections and an old car sitting in the woods\") is 54 km out on the northern side.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/moore-hill-road-2eqrjgm1j60w"
+        },
+        {
+          "name": "Townsend Hollow Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/new-york/townsend-hollow-road-yo65rlo09z0v",
+          "distance": "1.8 mi · about 54 km northwest of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"Loose gravel road, nothing technical\"",
+          "season": "onX lists all four seasons — the only one of the five with winter listed",
+          "note": "\"A non-maintained loose gravel road... Some sections are one lane with room to pull over if needed. As you drive through, there are nice stone walls on some of the sections and an old car sitting in the woods.\" All five of these are town roads the town has stopped maintaining rather than forest roads, so nobody gates them and nobody plows them; late-autumn condition is whatever the weather left, and the stop is 5-11 Nov 2028, with big-game season active in the Catskills through the second half of November. Wear orange if walking the dog off the road.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/new-york/townsend-hollow-road-yo65rlo09z0v"
+        }
       ]
     },
     "delaware-water-gap-pa": {
@@ -23299,6 +23641,68 @@
           "note": "NPS: \"Harpers Ferry NHP's Visitor Center is located along US Route 340 in West Virginia\", 8 miles east of Charles Town, WV and 20 miles southwest of Frederick, MD. The park's own directions run US 340 in from three sides — north from Charles Town, south from Frederick, and north from Front Royal via Shenandoah NP. The directions page carries no description of the gap itself, no distances for the scenic stretch and no seasonal conditions; the park's separate Scenic Vistas page (home.nps.gov/hafe/learn/nature/scenicvistas.htm) is where the water-gap view is described. Nothing published on either page about winter driving, so no season field is claimed.",
           "tier": "official",
           "source": "https://www.nps.gov/hafe/planyourvisit/directions.htm"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Frederick Watershed loop (Frederick Municipal Forest)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/maryland/frederick-watershed-n2qv3g47rz95",
+          "distance": "9.4 mi · about 33 km east of the stop — much the closest",
+          "difficulty": "onX technical rating 1 (Easy) — \"can be done in just about any vehicle however I recommend an off-road oriented vehicle due to persistent bumps and ruts\"",
+          "season": "onX lists Fall only. The City of Frederick gates the watershed roads and has closed Fishing Creek Road at its junctions with Gambrill Park Road and Hamburg Road in the past, and runs prescribed burns in the second half of November that close Gambrill Park Road in sections",
+          "note": "The one to do from Harpers Ferry: nine and a half miles of unmaintained gravel in the city watershed above Frederick, an easy hour away. \"The route is a loop with one spur which is Fishing Creek. There is only one way in and out of the watershed and all other access points are blocked. There are also no other places in the watershed that have 4x4 access. I included a picture of one of the gates because as you approach it looks like a dead end, however the intent is to go to the side.\" Two things to check before driving out, both because the stop is 21-25 Nov 2028: the City of Frederick posts gate closures and prescribed-burn closures for exactly this window (a burn was scheduled 17-21 November in a recent year, closing Gambrill Park Road between Fishing Creek Road and Gate R6), and there is only one way in, so a closed gate means the day is over.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/maryland/frederick-watershed-n2qv3g47rz95"
+        },
+        {
+          "name": "Rattlesnake Run, Michaux State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/rattlesnake-run-3l6ok994mqw4",
+          "distance": "4.3 mi · about 57 km north of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"During the winter months, four-wheel drive is suggested but not required\"",
+          "season": "onX lists Fall, Summer, Spring. Pennsylvania's firearms deer season opens in the days after Thanksgiving and Michaux is heavily hunted; the stop ends 25 Nov 2028",
+          "note": "\"One of the first trails you'll hit if you enter Michaux from the south end. It is an unmaintained gravel road with multiple inclines and declines. There are many hiking trail options surrounding this trail, with Appalachian Trail access points.\" Michaux is the real answer for this stop — a Pennsylvania state forest laced with drivable gravel, an hour north, and DCNR publishes both a Public Use Map and a formal \"Auto Tour of Michaux State Forest\" on its maps page, which is the thing to download before going.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/rattlesnake-run-3l6ok994mqw4"
+        },
+        {
+          "name": "Wirt Road, Michaux State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/wirt-road-g8zl55n0l61w",
+          "distance": "4.6 mi · about 59 km north of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"generally passable in good weather and safe for most 4WD and high-clearance 2WD vehicles. Winter maintenance is not provided\"",
+          "season": "onX lists all four seasons, with the winter-maintenance warning above",
+          "note": "\"Wirt Road is a scenic gravel route running from Staley Road to Old Forge Road, cutting through the quiet woodlands of Michaux State Forest. Along the way, it crosses Biesecker Run and Vineyard Run, which offer peaceful streamside views. The road also passes several trailheads popular with hikers, mountain bikers, and horseback riders.\" The natural pair with Staley Road (5.3 mi, onX rating 1, \"an unmaintained forest road running through Michaux State Forest... A few inclines and declines that get slick with snow or ice present\") for a half-day loop off Route 233.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/wirt-road-g8zl55n0l61w"
+        },
+        {
+          "name": "Oak Road, Michaux State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/oak-road-x06popko0qko",
+          "distance": "2.4 mi · about 57 km north of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"generally pretty well maintained\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"This forest road in the southwest corner of Michaux State Forest is notable for the Valley View Vista that offers a good view towards the town of Mont Alto to the west... the vista is a worthwhile stop while in the southern part of the forest. Where the pipeline crosses south of the vista offers a bit of a view to the west as well.\" Short, easy and it has the view — the one to pick if there is only an afternoon.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/oak-road-x06popko0qko"
+        },
+        {
+          "name": "High Rock Road, Michaux State Forest",
+          "url": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/high-rock-road-3l6o0v74l6w4",
+          "distance": "4.6 mi · about 62 km north of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"generally in good condition with some potholes. It is usually passable by any road-legal vehicle\"",
+          "season": "onX lists Spring, Summer, Fall",
+          "note": "\"A largely gravel/shale state forest road that meanders along the west side of the ridge of the South Mountain. It's notable for having three rustic, dispersed camp sites in a forest that does not have that many... Section 5 of the Mid-Atlantic BDR uses this road, so look out for\" motorcycles on it. One correction worth carrying: \"the Pennsylvania DCNR map shows a vista, but they've not cleared the vegetation there for some time, so there is no clear view down to the valley\" as of August 2025. District Road (4.3 mi, onX rating 2, gravel between Route 233 and Newman Road with access to Carbaugh Reservoir) is the fifth Michaux option and the only one onX lists as a winter route.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/pennsylvania/high-rock-road-3l6o0v74l6w4"
+        },
+        {
+          "name": "Auto Tour of Michaux State Forest",
+          "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps",
+          "distance": "not published on the maps index; the tour is a signed driving route through the forest, about an hour north of the stop",
+          "difficulty": "not published",
+          "season": "not published — DCNR does not post gate dates on the maps page, and the district office (717-352-2211) is the number that would settle it",
+          "note": "Recorded because it is the authority's own answer to \"where do I drive here\", and because it is the map to have in hand rather than a community track: DCNR's Michaux maps page publishes \"Auto Tour of Michaux State Forest (PDF)\" alongside the Michaux State Forest Public Use Map. Its length, route and surface could not be read from the sandbox — the DCNR elibrary link returns a document viewer rather than the PDF itself — so nothing about the tour is asserted here beyond its existence. Download both from the maps page before the drive.",
+          "tier": "official",
+          "source": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/michaux/maps"
         }
       ]
     },
@@ -24087,7 +24491,39 @@
         "Rocky Knob Picnic Loop Trail (MP 169.0)": true,
         "Smart View Trail (Blue Ridge Parkway MP 154.5)": true,
         "Rock Castle Gorge Trail (Rocky Knob, Blue Ridge Parkway MP 167.1)": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Buffalo Mountain Natural Area Preserve access road (Moles Road, VA 727)",
+          "url": "https://www.virginia.org/listing/buffalo-mountain-natural-area-preserve/7662/",
+          "distance": "0.9 mi of gravel · about 15 km southwest of the stop, at Willis",
+          "difficulty": "\"The narrow 0.9-mile gravel road to the parking area has multiple pull-offs to facilitate passing cars\"",
+          "season": "No closure published by DCR. It climbs to about 1,100 m on an exposed mountain and the stop is 12-17 Dec 2028, so ice is the real question, not a gate",
+          "note": "Short, but it is the only unpaved route within half an hour of Floyd and it goes somewhere — up to the trailhead for the Buffalo Mountain summit, which is already on this stop's trails card. Turn onto Moles Road (VA 727) and follow the gravel access road to the parking area. Virginia DCR's own preserve page is the authority for the site but says nothing about the road surface; the surface description above is from Virginia Tourism's listing. DCR publishes no pet rule for the preserve either, which is already recorded on this stop as unknown.",
+          "tier": "community",
+          "source": "https://www.dcr.virginia.gov/natural_heritage/natural_area_preserves/buffalo"
+        },
+        {
+          "name": "Pond Lick Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/virginia/pond-lick-road-98yzy9e7x614",
+          "distance": "2.6 mi · about 52 km northwest of the stop, above Gatewood Reservoir near Pulaski",
+          "difficulty": "onX technical rating 3 (Easy) — \"A few holes that might require a careful line and a couple of decent mud holes\"; high clearance and full width",
+          "season": "onX lists Fall only. The stop is mid-December, which is past the window onX gives it — not a published closure, but the mud holes it warns about are exactly what a wet December makes worse",
+          "note": "\"This dirt track travels just north of Gatewood Reservoir. At just under 3 miles, it's a great quick run, or you can add to a route that includes some of the other local forest roads... unless there was a lot of rain, it shouldn't be an issue for any moderately four-wheel drive.\" Worth knowing why this box is thin: Floyd County has almost no public forest land. The Blue Ridge Parkway runs along the top of it and is paved; Rocky Knob is Parkway land; and the nearest Jefferson National Forest tracts are 50-70 km away in Pulaski, Montgomery and Giles counties. What Floyd does have is a dense network of VDOT-maintained unpaved secondary roads through farmland, mapped in VDOT's own Unpaved Roads layer, but no authority publishes any of them as a route.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/virginia/pond-lick-road-98yzy9e7x614"
+        },
+        {
+          "name": "Bailey Gap and Butt Mountain",
+          "url": "https://www.onxmaps.com/offroad/trails/us/virginia/bailey-gap-to-butte-mountain-xdwz7nyyoql5",
+          "distance": "13.6 mi · about 58 km north of the stop, in Giles County near Mountain Lake",
+          "difficulty": "onX technical rating 3 (Easy) — \"Bailey Gap has several mud holes, some of which have soft bottoms. When in doubt, use the bypasses. Butt Mountain is simple and is almost totally gravel and dirt\"",
+          "season": "onX lists Winter as the best time — the only route found near Floyd for which December is the recommended season",
+          "note": "The one real half-day drive from Floyd: thirteen and a half miles of Jefferson National Forest road behind Mountain Lake Lodge. \"Both trails are beginner-friendly, with Butt Mountain being the easier of the two... Bailey Gap varies from gravel to rock, with several areas of water and mud. Most water pits have rocky bottoms and can easily be forded by a stock SUV. Some of them are mud though, and the mud is very soft.\" Take the bypasses rather than the mud. One thing that could not be sourced: the Forest Service publishes no gate dates for these roads anywhere reachable, and many Virginia national forest roads do close over winter — the Eastern Divide Ranger District is the call to make before driving an hour to a locked gate. Recorded as unknown rather than guessed.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/virginia/bailey-gap-to-butte-mountain-xdwz7nyyoql5"
+        }
+      ]
     },
     "boone-nc": {
       "activities": {
@@ -25349,7 +25785,69 @@
         "Cedar Falls Trail": true,
         "Seven Hollows Trail": true,
         "Rock House Cave / Bear Cave Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Wallace Bridge Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/wallace-bridge-road-edq0myr5p6ov",
+          "distance": "10.2 mi · about 21 km southwest of the stop — the closest and the easiest",
+          "difficulty": "onX technical rating 1 (Easy) — \"an easy dirt road, gentle grades, and is safe for most 2WD vehicles\"",
+          "season": "onX lists Fall, Spring, Summer — winter is not listed, and the stop is 18-23 Jan 2029. Nothing is gated; read it as a warning about a wet January rather than a closure",
+          "note": "\"Wallace Bridge Road is a beautiful gravel road that is woven through the Ouachita National Forest. This is a very well-maintained gravel road that passes through farmland in Deberrie, Arkansas, and runs along the Fourche LaFave River. This road is suitable for most vehicles as there are limited obstacles along the way.\" The bridge itself \"was constructed in 1908 by the Southwestern Bridge Company\". Ten miles, twenty minutes from camp, nothing asked of the truck — the default outing for this stop.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/wallace-bridge-road-edq0myr5p6ov"
+        },
+        {
+          "name": "Brown Creek Road 805",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/brown-creek-road-805-9e7qegjegz1y",
+          "distance": "7.9 mi · about 29 km south of the stop",
+          "difficulty": "onX technical rating 3 (Easy) — \"lots of creek crossings which isn't conducive to low-clearance vehicles. The west end of the trail has a steep gradient with big rocks\"",
+          "season": "onX lists all four seasons including Winter",
+          "note": "\"Brown Creek winds you through the forest with beautiful views, lots of creek crossings, and campsites. This trail will also lead you to the Ouachita National Recreation trail which is a 223-mile trail, there are two entrance points along this route to access this trail... Brown Creek Trail Shelter can be accessed off the first NRT crossing on the east end of this route.\" A January run means cold water at the crossings but none of the snake and tick warnings that dominate the summer notes.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/brown-creek-road-805-9e7qegjegz1y"
+        },
+        {
+          "name": "Lake Sylvia to Lake Winona and Highway 9",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/lake-sylvia-to-winona-lake-and-hwy9-nyo658vg760v",
+          "distance": "18.5 mi · about 30 km south of the stop",
+          "difficulty": "onX technical rating 2 (Easy); high clearance and full width",
+          "season": "onX lists Spring, Fall and Winter — winter is explicitly in scope",
+          "note": "The longest single line in this box and a proper day out. \"This trail starts at Lake Sylvia State Park where camping, swimming and water/electric sites are available if needed... After leaving Lake Sylvia this route takes you to LAKE WINONA (you will see the intersection where you can pick up a rule pamphlet and turn right to Winona) but this route goes straight to hwy 9 where you can go back to Lake Sylvia or head elsewhere.\" Pick up that pamphlet at the intersection.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/lake-sylvia-to-winona-lake-and-hwy9-nyo658vg760v"
+        },
+        {
+          "name": "Winona Auto Tour Scenic Drive (Forest Road 132)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/winona-scenic-drive-mgd6g27k3zo9",
+          "distance": "26 mi end to end · about 41 km south of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"The entire route is a maintained gravel road\"",
+          "season": "onX lists all four seasons including Winter",
+          "note": "The set-piece gravel drive of the Ouachitas and the best single day of this stop. \"The Winona Auto Tour Scenic Drive is a 26-mile trail located in the Ouachita National Forest. The route travels along with Forest Road #132 between AR Highway 7 north of Jessieville and AR Highway 9 south of Perryville. There are several vistas along the route; Oak Mountain Vista, Forked Mountain Vista, Crystal Mountain, Lake Winona Vista, and North Fork Pinnacle. The route is generally traveled in a west-to-east direction.\" The spur up Crystal Mountain is rougher, rated 3. Note the Forest Service's own Ouachita scenic-drives page lists Buffalo Gap, Scenic 7 Byway and the Talimena Byway and does NOT mention this drive at all, so the official page is not the place to look for it.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/winona-scenic-drive-mgd6g27k3zo9"
+        },
+        {
+          "name": "Long Caney 849 to the South Fourche LaFave River",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/long-caney-849-to-south-fourche-lafave-river-endzd3oxl6kv",
+          "distance": "2.8 mi · about 23 km southwest of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"The depth of the mudholes is why I chose this rating. Some of them are pretty deep. You might need a rear differential breather\"",
+          "season": "onX lists Spring, Fall, Winter",
+          "note": "\"The Northern entrance into the Ouachita National Forest leads to a beautiful large quiet campsite on the South Fourche LaFave River. The road leading to this location is gravel when coming from the north. Once you turn right on Long Caney, it turns into a mud hole road all the way to camp... The campsite even features a boat ramp to the river.\" Short and close, but the mud is real — in January this is the one to look at before committing to.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/long-caney-849-to-south-fourche-lafave-river-endzd3oxl6kv"
+        },
+        {
+          "name": "Rock Creek 1319",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/rock-creek-1319-1edq0mo8j6ov",
+          "distance": "5 mi · about 37 km north of the stop, in the Ozark National Forest",
+          "difficulty": "onX technical rating 3 (Easy) — \"an easy gravel road with rolling hills and creek crossings which can overflow their banks during heavy rain\"",
+          "season": "onX lists Spring, Fall, Winter",
+          "note": "The one route here that goes north into the Ozarks rather than south into the Ouachitas, which makes it the change of scenery. \"Rock Creek is an easy gravel road with creeks, campsites, and views for miles. It has eight spur trails for SxSs, ATVs, and 4x4 rigs. Griffin Mountain peaks at an elevation of 1004 feet.\" Tackett Mountain 1337 (2.4 mi, onX rating 1, \"primarily well-maintained gravel\") loops off it and connects back to Rock Creek Road. TWO ROUTES IN THIS AREA WERE CHECKED AND REJECTED for this rig: North Fork Pinnacle Road 132C, whose own description says \"No full-size vehicles, or vehicles with rooftop tents\" and \"just barely a Tacoma width wide\", and Link Mountain Road 210, which onX lists as accessible by single track, 50-inch, 60-inch and high-clearance vehicles with no full-width category at all.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/rock-creek-1319-1edq0mo8j6ov"
+        }
+      ]
     },
     "mount-magazine-ar": {
       "activities": {
@@ -26089,6 +26587,58 @@
           "tier": "official",
           "source": "https://lite.duckduckgo.com/lite/?q=US+62+Eureka+Springs+Arkansas+historic+corridor+scenic+drive+Pea+Ridge+Rogers"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Butler Hollow",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/butler-hollow-l9069r9lx6ew",
+          "distance": "9.4 mi · about 12 km northwest of the stop — the closest unpaved route of any stop in this pass",
+          "difficulty": "onX technical rating 1 (Easy); high clearance and full width",
+          "season": "onX lists all four seasons. \"This is an easy-going fun cruise crossing state lines that could prove difficult after heavy rains since the road crosses the creek\"",
+          "note": "\"Butler Hollow connects Beaver, Arkansas, and Seligman, Missouri via a retired Arkansas & Ozarks rail line along Butler Creek. Most of the road is well-graded gravel with scattered potholes and dry water crossings. The north end of the road through the National Forest is packed dirt with scattered potholes in the shadows. This passes through protected Ozark glade bottoms where road runners, prickly pear cacti, and other desert animals can be found.\" Nine miles on an old rail grade, twelve kilometres from camp, and it crosses into Missouri — the obvious first afternoon.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/butler-hollow-l9069r9lx6ew"
+        },
+        {
+          "name": "Mark Twain National Forest Scenic Drive",
+          "url": "https://www.onxmaps.com/offroad/trails/us/missouri/mark-twain-national-forest-scenic-drive-wrezkl0jkqlk",
+          "distance": "7.3 mi · about 15 km north of the stop, over the Missouri line",
+          "difficulty": "onX technical rating 1 (Easy) — \"a well-maintained gravel road that can be traveled by any vehicle\"",
+          "season": "onX lists Winter first of all four seasons, which for a 8-14 Feb 2029 stop is the answer wanted",
+          "note": "Seven miles of graded Mark Twain National Forest gravel, close enough to be an afternoon. One caution carried straight from the source: \"There are many spur roads that offer a more technical experience and is almost guaranteed to cause pinstriping\" — stay on the main line in a truck that has to look respectable for another month of the trip.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/missouri/mark-twain-national-forest-scenic-drive-wrezkl0jkqlk"
+        },
+        {
+          "name": "Mary Cole Ridge 1011",
+          "url": "https://www.onxmaps.com/offroad/trails/us/missouri/mary-cole-ridge-jx06ponlwqko",
+          "distance": "3.4 mi · about 22 km north of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"well maintained gravel with large pieces of rock and gravel hidden under the leaves. The only difficulty is when it starts to narrow\"",
+          "season": "onX lists all four seasons; the overlooks are explicitly a fall and winter thing",
+          "note": "\"Mary Cole Ridge 1011 is a scenic ridge road in Mark Twain National Forest with distant overlooks through the hardwoods seen in the fall and wintertime.\" February is exactly when the leaves are off and the views are open. \"The road eventually becomes narrower and has one last turn around point intersecting other trails before it becomes even more narrow\" — turn at that point; past it the spurs are for side-by-sides and motorcycles. There is a large staging car park at the trailhead off Highway 86.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/missouri/mary-cole-ridge-jx06ponlwqko"
+        },
+        {
+          "name": "WMA Road 1245",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/wma-road-1245-dwz7xnvw06l5",
+          "distance": "2.5 mi · about 23 km south of the stop",
+          "difficulty": "onX technical rating 2 (Easy) — \"a gravel road with two small water crossings and minimal obstacles\"",
+          "season": "onX lists all four seasons",
+          "note": "\"After the entrance, the road opens into a well-maintained gravel drive with plenty of tree coverage and few obstacles in the first half. Beyond the turnoff for WMA Road 9, the terrain becomes slightly more challenging, featuring two small water crossings and a few steeper grades. Cell service is intermittent... Clearly marked campsites are scattered along the route, and visitors should be aware of active hunting and shooting sports in the area.\" That last line matters in February with a dog aboard — this is a wildlife management area and it is in use.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/wma-road-1245-dwz7xnvw06l5"
+        },
+        {
+          "name": "WMA Road 9",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/wma-road-9-edq0j7nyw6ov",
+          "distance": "2.2 mi · about 21 km south of the stop",
+          "difficulty": "onX technical rating 3 (Easy) — \"some steep climbs and narrow sections between trees. In several areas, large ruts can be found along the sides of the main route\"",
+          "season": "onX lists all four seasons",
+          "note": "The steeper branch off WMA Road 1245 and the one with the payoff: \"Great views overlooking a valley. Smaller cars would struggle on some portions of this trail, but a stock 4Runner or similar vehicle would have no problem... Pay attention to the property lines, as this trail runs adjacent to private property.\" Do the two as one outing, easy road first.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/wma-road-9-edq0j7nyw6ov"
+        }
       ]
     },
     "bentonville-ar": {
@@ -26274,7 +26824,39 @@
         ],
         "action": "Phone Crystal Bridges Guest Services on 479-657-2335 and ask whether leashed dogs are allowed on the Art Trail and the wider museum trail network, and whether the rule differs on the paved North Forest / Orchard sections. One call settles the whole stop, since the Art Trail is the only trail on the card."
       },
-      "stats_note": "Crystal Bridges Art Trail was the only entry on this card and it is a museum grounds path. The four above are the walking options an in-town base actually has: one state-park ridge, one lake loop, one paved greenway and one short nature loop."
+      "stats_note": "Crystal Bridges Art Trail was the only entry on this card and it is a museum grounds path. The four above are the walking options an in-town base actually has: one state-park ridge, one lake loop, one paved greenway and one short nature loop.",
+      "offroad": [
+        {
+          "name": "North Old Wire Road (Pea Ridge)",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/north-old-wire-road-rezk4l44n6lk",
+          "distance": "2.3 mi · about 21 km northeast of the stop",
+          "difficulty": "onX technical rating 1 (Easy) — \"easy, well-maintained gravel roads\"",
+          "season": "onX lists all four seasons",
+          "note": "The closest gravel to Bentonville and the one with the history attached: it \"travels north to south along the far east side of the Pea Ridge National Military Park and can be driven in either direction. If you are traveling south to north. It begins at N. Old Wire Rd and Alvin Seamster Rd. If you are traveling North to South, it starts at the intersection of N. Old Wire Rd and Limekiln Rd. With heavy rain, you will see multiple creeks through the rolling hills. There is also one small concrete low water crossing towards the north side of the trail.\" Old Wire Road is the historic Butterfield route past the battlefield — a short drive that pairs with a battlefield afternoon rather than standing alone.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/north-old-wire-road-rezk4l44n6lk"
+        },
+        {
+          "name": "Flag Springs Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/missouri/flag-springs-road-e7qey1xo0z1y",
+          "distance": "10.9 mi · about 31 km north of the stop, over the Missouri line",
+          "difficulty": "onX technical rating 2 (Easy) — \"mostly easy-going dirt with a few areas that could become difficult after heavy rains. Several creek crossings may become deep after heavy rains\"",
+          "season": "onX lists all four seasons, and names winter as one of the two best times for the views",
+          "note": "The real drive for this stop: nearly eleven miles. \"Flag Springs Road is a combination of gravel, dirt, and hard-packed red clay. It passes through Flag Springs Conservation Area and a public shooting range. Meandering along Brush Creek, the road crosses multiple dry creek crossings opening up to private ranches when turning left at County Road SE E60. The road then follows along Mikes Creek with some incredible views in the winter and spring seasons of the crystal-clear creek water below.\" A public shooting range on the route is worth knowing about before the dog is out of the truck.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/missouri/flag-springs-road-e7qey1xo0z1y"
+        },
+        {
+          "name": "Butler Hollow",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arkansas/butler-hollow-l9069r9lx6ew",
+          "distance": "9.4 mi · about 37 km east of the stop",
+          "difficulty": "onX technical rating 1 (Easy); high clearance and full width",
+          "season": "onX lists all four seasons",
+          "note": "Carried here as well as on Eureka Springs because it sits between the two and this stop follows straight on from that one — if it was not driven from Eureka Springs it is still an easy morning from Bentonville. Retired Arkansas & Ozarks rail grade along Butler Creek from Beaver, AR to Seligman, MO, well-graded gravel with the creek crossing being the only thing weather affects. The Mark Twain National Forest Scenic Drive (7.3 mi, onX rating 1, \"can be traveled by any vehicle\") is the other carry-over, 44 km east of Bentonville. Nothing closer than North Old Wire Road was found on the Arkansas side: Benton County around Bentonville is town, greenway and mountain-bike singletrack, and the mountain-bike trails are not driveable.",
+          "tier": "community",
+          "source": "https://www.onxmaps.com/offroad/trails/us/arkansas/butler-hollow-l9069r9lx6ew"
+        }
+      ]
     },
     "devils-den-ar": {
       "activities": {
@@ -27914,6 +28496,9 @@
           ]
         }
       }
+    },
+    "austin-home-v3": {
+      "offroad_finding": "Not researched, and deliberately so: Austin, TX — home is the base, arrive and depart both 1 Mar 2029, a single-day turnaround at the end of the East Extension rather than a touring stop. There is no day to spend on a road, and the truck is being unhitched at home, not driven out. Nothing was checked and nothing should be; if this stop ever grows nights, the Texas options to look at first are the LCRA and Balcones Canyonlands roads west of the city, none of which has been researched here."
     }
   },
   "_dogs_verdict": "Per stop: 'allowed' | 'prohibited' | 'partial' | absent. Absent means NOT RESEARCHED and renders no icon at all — a missing dog rule must never look like a green light. 'partial' means the authority names some trails and not others, so the verdict lives on the trail, not the stop.",

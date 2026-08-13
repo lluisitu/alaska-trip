@@ -1,0 +1,490 @@
+{
+  "_what": "The trails a dog may legally walk at stops whose own dogs prose says PROHIBITED or PARTIAL, but whose trails box never listed the exception. Every entry here was read out of the stop's existing `dogs` text in links_db.json and then re-confirmed against the managing authority's own page before being written down.",
+  "_why": "At a prohibited stop the named exception is not one more option on the card — it is the ONLY walk the dog gets there. Zion's card carried Angels Landing, the Watchman and the Riverside Walk, all three closed to the dog, and did not carry Pa'rus. Six stops, 405 nights, an animal aboard.",
+  "_rule": "dogs:true here means the authority NAMES this trail as permitted. Not 'dogs allowed in the park', not inferred from a neighbouring trail. Every `note` quotes or paraphrases the rule that permits it.",
+  "_two_gaps_in_the_renderer": [
+    "build_links.py note_for() BUILDS the card's `note` from elevation_gain / match / season and IGNORES a db `note`. The `note` fields below therefore will NOT reach the card until note_for() passes an explicit note through. Without that the rule that makes each trail legal is invisible.",
+    "desktop/index.html renders no dog pill at all — trailPillsHtml() shows difficulty, time, distance, rating, uses and cruise, and nothing reads `it.dogs`. The value is stored by build_links.py and displayed nowhere. Until one of these two is fixed, adding the trails puts the walk on the card but not the reason it is legal.",
+    "Consequence for this patch: `trail_dogs` is set as well as per-trail `dogs`, because at a stop whose dogs_verdict is 'prohibited' (zion, denali) build_links.py's per-trail loop forces dogs:false on every trail NOT named in trail_dogs. Omitting trail_dogs would have silently flipped these to false."
+  ],
+  "_search_note": "WebSearch quota exhausted; results read out of lite.duckduckgo.com HTML. alltrails.com 403s all automated fetching, so AllTrails figures come from the indexed snippet and are tiered `indexed`, never `official`. Every alltrails url below was copied from a search result, never assembled from a trail name.",
+
+  "stops": {
+
+    "zion": {
+      "trails": [
+        {
+          "name": "Pa'rus Trail",
+          "distance": "3.5 mi",
+          "difficulty": "Easy",
+          "elevation_gain": "152 ft",
+          "time": "30-120 min",
+          "reviews": "7,978 reviews",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "cruise": true,
+          "cruise_reason": "Paved end to end (NPS: 93.6% asphalt, 6.4% hard wood decking), 2.6% typical grade, bicycles explicitly permitted by the authority, wheelchair accessible, no walk-your-bike section and no puncture-hazard reports. The one place on this trip where the bike, the dog carrier and a legal dog trail are the same 3.5 miles.",
+          "note": "THE ONLY TRAIL IN ZION THAT PERMITS PETS. NPS: \"The only trail that allows pets is the Pa'rus Trail, which begins at the Zion Canyon Visitor Center.\" Leash 6 ft or shorter. Two things that matter on the 15 Mar 2028 arrival: it starts at the Visitor Center, where you can park, so it does NOT need the shuttle — and dogs are barred from the shuttle anyway, which is the only way up Zion Canyon in March. Keep the dog out of the Virgin River (harmful cyanobacteria). The unpaved connector spur to the Human History Museum is NOT approved for pets or bikes — stay on the paved trail.",
+          "note_source": "NPS Zion pet regulations and NPS 'Hike Pa'rus Trail' (nps.gov/thingstodo/hike-pa-rus-trail.htm), fetched: length 3.5 mi (5.6 km) total / 1.6 mi one way, gain 151.7 ft, 30-120 minutes, typical grade 2.6%, max 11.4%, hiking/bicycles/wheelchairs/pets all Yes, \"Pets must be restrained on a leash no longer than 6 feet.\" Difficulty 'Easy' is Visit Utah's published grade (visitutah.com Pa'rus Trail: \"Difficulty: Easy 3.5 miles out-and-back\"); NPS publishes grade percentages rather than a word. Review count 7,978 from the AllTrails result title; no star surfaced in any snippet.",
+          "alltrails": {
+            "name": "Pa'rus Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/parus-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hike Pa'rus Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm",
+              "note": "Authority. Publishes the length, grade, surface and the pets-Yes permitted-use table."
+            },
+            {
+              "label": "TrailLink — Pa'rus Trail",
+              "tier": "community",
+              "url": "https://www.traillink.com/trail/parus-trail/",
+              "note": "Rail-trail database listing; gives it as 1.6 mi from Watchman Campground to Floor of the Valley Road."
+            }
+          ],
+          "needs": ["star rating"]
+        }
+      ],
+      "trail_dogs": {
+        "Pa'rus Trail": true
+      }
+    },
+
+    "denali": {
+      "trails": [
+        {
+          "name": "Roadside Trail",
+          "distance": "1.8 mi one way",
+          "official_length": "1.8 mi (2.9 km) one way",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "400 ft",
+          "time": "2 h 07 min",
+          "reviews": "343 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "ONE OF ONLY TWO TRAILS IN DENALI THE DOG MAY WALK. NPS pet page names the exceptions as the \"Roadside Hiking Trail\" and the \"Roadside Bike Trail\"; everywhere else — every park trail, all off-trail wilderness, and every park bus — is closed to pets. Leash 6 ft or shorter. READ THIS BEFORE THE TRAILHEAD: the AllTrails listing for this trail states dogs are NOT allowed. That is AllTrails applying Denali's blanket park rule to a listing; the authority names this trail as an exception and the authority is right. Runs from the Denali Visitor Center via the Taiga Trail up to Park Headquarters and the sled dog kennels — but the dog cannot come into the kennels demonstration, so this is a walk to the door, not a walk to the show.",
+          "note_source": "NPS Denali pets page (nps.gov/dena/planyourvisit/pets.htm), fetched: \"Pets must be leashed (6' or shorter leash) at all times... Pets may be walked on the park road, in parking lots, or on campground roads\", pets not permitted on park trails or off-trail, with the Roadside Hiking Trail and Roadside Bike Trail named as the two exceptions; \"Pets are not permitted on any buses in Denali.\" NPS Roadside Trail page (nps.gov/dena/planyourvisit/roadside.htm), fetched: 1.8 miles (2.9 km), \"moderately strenuous\", ~400 ft total gain east to west, up to 15 percent grade, 36-inch compacted gravel surface. NPS's own trail page titles it \"Roadside Trail\"; the pets page calls the same trail the \"Roadside Hiking Trail\" to distinguish it from the bike trail. Time 2 h 07 min and difficulty 'Moderately challenging' are the AllTrails figures for the 4.4 mi round trip; NPS's own text has been published as both one hour and two hours one-way, so the round-trip figure is the safer one to plan on.",
+          "stats_note": "NPS 1.8 mi is one way. The AllTrails listing measures the same trail as a 4.4 mi out-and-back, which is the round trip plus the Taiga Trail connector at the visitor-center end.",
+          "alltrails": {
+            "name": "Roadside Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/roadside-trail--2",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Roadside Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/dena/planyourvisit/roadside.htm",
+              "note": "Authority. Length, grade, surface and the moderately-strenuous grading."
+            },
+            {
+              "label": "NPS — Pets in Denali",
+              "tier": "official",
+              "url": "https://www.nps.gov/dena/planyourvisit/pets.htm",
+              "note": "The rule that makes this trail legal. Names the Roadside Hiking Trail and Roadside Bike Trail as the only two trail exceptions."
+            }
+          ],
+          "needs": ["star rating"]
+        },
+        {
+          "name": "Roadside Bike Trail",
+          "distance": "1.7 mi one way",
+          "official_length": "1.7 mi (2.7 km) one way",
+          "elevation_gain": "150 ft loss westbound",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "cruise": true,
+          "cruise_reason": "NPS: paved, 1.7 mi one way, losing 150 ft — a dedicated bike trail rather than a shared road, with a flat spur to the Riley Creek Day Use Area at the south end of Riley Creek Campground, which is where the coach is parked. No technical section and no puncture-hazard reports. NPS says to expect pedestrians, so it is a shared-use path, not a road ride.",
+          "note": "THE SECOND OF DENALI'S TWO PET-LEGAL TRAILS, and the one that starts at camp — its Riley Creek spur reaches the day-use area at the south end of Riley Creek Campground. Paved, running out to the Nenana River Canyon commercial strip. NPS names it in the pet rule alongside the Roadside Hiking Trail; leash 6 ft or shorter. No AllTrails listing exists for it — that is a recorded absence, not a doubt about the trail.",
+          "note_source": "NPS Denali cycling page (nps.gov/dena/planyourvisit/cycling.htm), fetched: \"The Roadside Bike Trail is paved, 1.7 miles (2.7 km) one-way, and loses 150 feet (45 m) of elevation\"; \"The Roadside Bike Trail includes a spur to the Riley Creek Day Use Area that is relatively flat and connects to a day use parking and picnic at the south end of Riley Creek Campground\"; \"Be prepared to encounter pedestrians.\" Named as a pet exception on the NPS pets page. Searched for an AllTrails listing under the exact name and found none — TrailLink and Gaia GPS have it, AllTrails does not.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Cycling in Denali",
+              "tier": "official",
+              "url": "https://www.nps.gov/dena/planyourvisit/cycling.htm",
+              "note": "Authority. Publishes the length, the paving, the elevation loss and the Riley Creek spur."
+            },
+            {
+              "label": "TrailLink — Roadside Bike Trail",
+              "tier": "community",
+              "url": "https://www.traillink.com/trail/roadside-bike-trail/",
+              "note": "\"Roadside Bike Trail spans 1.7 from AK 3 to Denali Visitor Center.\" Corroborates the NPS length."
+            },
+            {
+              "label": "Gaia GPS — Roadside Bike Trail",
+              "tier": "community",
+              "url": "https://www.gaiagps.com/hike/trail/united-states/alaska/denali-national-park/roadside-bike-trail/",
+              "note": "Records it as a bicycle trail through Denali National Park."
+            }
+          ],
+          "needs": ["difficulty", "time", "reviews"]
+        }
+      ],
+      "trail_dogs": {
+        "Roadside Trail": true,
+        "Roadside Bike Trail": true
+      }
+    },
+
+    "olympic": {
+      "trails": [
+        {
+          "name": "Peabody Creek Trail",
+          "distance": "5.6 mi round trip",
+          "difficulty": "Moderate",
+          "elevation_gain": "800 ft",
+          "reviews": "842 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "PET-LEGAL, and the closest one to camp — it starts at the Olympic National Park Visitor Center in Port Angeles. NPS names it first in the short list of trails where leashed pets are allowed; leash 6 ft. Follows Peabody Creek through a wooded ravine. This is the dog's default walk on a Port Angeles base.",
+          "note_source": "NPS Olympic pets page (nps.gov/olym/planyourvisit/pets.htm), fetched: pets allowed on \"Peabody Creek Trail (Olympic National Park Visitor Center in Port Angeles)\", Rialto Beach parking lot to Ellen Creek, the beaches between the Hoh and Quinault Reservations, Madison Falls Trail, Spruce Railroad Trail and July Creek Loop Trail; \"Pets must be restrained on a leash no longer than 6 feet.\" Stats from Washington Trails Association (wta.org/go-hiking/hikes/peabody-creek-trail), fetched: \"5.6 miles, roundtrip\", 800 ft gain, highest point 1,100 ft, difficulty \"Moderate\", \"Dogs allowed on leash\". WTA's own description says the trail follows the creek \"for 2.8 miles\" one way, which is the same figure halved. Review count 842 from the AllTrails result title; no star and no AllTrails distance surfaced in any snippet.",
+          "alltrails": {
+            "name": "Peabody Creek Trail",
+            "url": "https://www.alltrails.com/trail/us/washington/peabody-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "WTA — Peabody Creek Trail",
+              "tier": "community",
+              "url": "https://www.wta.org/go-hiking/hikes/peabody-creek-trail",
+              "note": "Length, gain, high point, difficulty, and its own confirmation that dogs are allowed on leash."
+            },
+            {
+              "label": "NPS — Pets in Olympic",
+              "tier": "official",
+              "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+              "note": "The rule. The complete list of pet-legal trails in the park."
+            }
+          ],
+          "needs": ["time", "star rating"]
+        },
+        {
+          "name": "Madison Falls Trail",
+          "distance": "0.2 mi",
+          "difficulty": "Easy",
+          "elevation_gain": "49 ft",
+          "time": "0.5-1 hr",
+          "reviews": "3,379 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "PET-LEGAL, named in the NPS list, leash 6 ft. Paved and gently sloping from the parking area to a 60 ft waterfall, at the Elwha entrance — a five-minute walk rather than an outing, but it is one of only six places in Olympic the dog may legally stand on a trail.",
+          "note_source": "NPS Olympic pets page names \"Madison Falls Trail (Elwha)\". AllTrails result snippet, verbatim: \"Madison Falls Trail is an out-and-back trail that covers 0.2 mi, with an elevation gain of 49 ft. It takes about 0.5-1 hr to complete\", 3,379 reviews from the result title; no star surfaced. NPS 'See Madison Falls' describes \"a 0.1-mile, paved, gently sloping trail\" — that is the one-way figure against AllTrails' 0.2 mi out-and-back. Difficulty 'Easy' is Komoot's published grade for the same trail (\"Madison Falls Trail is an easy hike\"); neither NPS nor the AllTrails snippet published a difficulty word.",
+          "alltrails": {
+            "name": "Madison Falls Trail",
+            "url": "https://www.alltrails.com/trail/us/washington/madison-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — See Madison Falls",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/madisonfalls.htm",
+              "note": "Authority: \"Continue beyond the parking lot on a 0.1-mile, paved, gently sloping trail leading to Madison Falls.\""
+            },
+            {
+              "label": "Komoot — Madison Falls Trail",
+              "tier": "community",
+              "url": "https://www.komoot.com/smarttour/e1319851018/madison-falls-trail",
+              "note": "Grades it easy; 0.3 km, ~3 ft gain."
+            }
+          ],
+          "needs": ["star rating"]
+        },
+        {
+          "name": "Spruce Railroad Trail",
+          "distance": "4 mi one way",
+          "official_length": "4 mi (6.4 km)",
+          "reviews": "1,932 reviews",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "cruise": true,
+          "cruise_reason": "A 1918 railroad grade, now paved end to end as a section of the Olympic Discovery Trail, with both original tunnels (McFee and Daley-Rankin) restored and reopened by 2020. NPS states plainly that bicycles AND pets are permitted. Rail grade means no walk-your-bike section; paved means no puncture hazard. This is the single best gravel-cruise-with-the-dog candidate on the whole west coast run.",
+          "note": "PET-LEGAL AND BIKE-LEGAL — NPS: \"As a continuation of the Olympic Discovery Trail, bicycles and pets are permitted on this trail.\" Named in the park pet rule; leash 6 ft. Hugs the north shore of Lake Crescent for 4 miles on the old railroad grade. The card already carries \"Devils Punchbowl via Spruce Railroad Trail\" (2.4 mi) — that is the popular short out-and-back to the punchbowl bridge off the east end. This entry is the full trail, which is the one the bike and the dog carrier want.",
+          "note_source": "NPS Olympic pets page names \"Spruce Railroad Trail (North shore of Lake Crescent)\". NPS trailhead pages (nps.gov/places/000/spruce-railroad-trailhead-east.htm and .../spruce-railroad-trailhead-camp-david-jr-road.htm), verbatim: \"Accessed from either the East Beach Road or Camp David Junior Road, the Spruce Railroad Trail hugs the shore of Lake Crescent for 4 miles (6.4 km) along an old railroad route. As a continuation of the Olympic Discovery Trail, bicycles and pets are permitted on this trail.\" Paving and tunnel restoration from olympicdiscoverytrail.org (\"the incredible McFee tunnel was opened in 2017. In 2020 the Daley-Rankin tunnel was restored, and the trail between the tunnels was completed\") and the Olympic Discovery Trail's own notice (\"The Spruce Railroad Trail is paved and 4 miles long one way\"). Review count 1,932 from the AllTrails result title; no star, distance or difficulty surfaced in any snippet.",
+          "url_note": "Both AllTrails hits for this trail carried a locale segment — /en/trail/... and /en-gb/trail/... . Only the locale segment was removed to match the form every other url in this db uses; the slug itself is the one the search returned and was not assembled from the trail's name. AllTrails titles the listing \"Spruce Railroad Trail: Lake Crescent\".",
+          "alltrails": {
+            "name": "Spruce Railroad Trail: Lake Crescent",
+            "url": "https://www.alltrails.com/trail/us/washington/spruce-railroad-trail-lake-crescent",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Spruce Railroad Trailhead (East)",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/000/spruce-railroad-trailhead-east.htm",
+              "note": "Authority: 4 miles along the old railroad route; bicycles and pets permitted."
+            },
+            {
+              "label": "Olympic Discovery Trail — the ODT",
+              "tier": "community",
+              "url": "https://olympicdiscoverytrail.org/explore/the-odt/",
+              "note": "The tunnel restorations and the completion of the paved section between them."
+            }
+          ],
+          "needs": ["difficulty", "time", "star rating"]
+        },
+        {
+          "name": "July Creek Loop Trail",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "PET-LEGAL, named in the NPS list, leash 6 ft. On the north shore of Lake Quinault, branching from the July Creek Picnic Area trail. NO PUBLISHED LENGTH — NPS names the trail and describes it only as \"A loop branching from the July Creek Picnic Area trail\", and it appears in no trail database. Recorded as unknown rather than guessed. Worth knowing before driving: Lake Quinault is the far south-west corner of the park, roughly two hours each way from a Port Angeles base, so this is a whole day, not an evening walk.",
+          "note_source": "NPS Olympic pets page names \"July Creek Loop Trail (North shore of Lake Quinault)\"; NPS day-hiking page lists it. NPS place page (nps.gov/places/000/july-creek-loop-trail-trailhead.htm), fetched, carries only the one-line description and no length, surface or difficulty. Three separate searches found no AllTrails, WTA, Komoot or TrailLink listing under this name. Length, difficulty and time are unknown and are left blank deliberately.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — July Creek Loop Trail Trailhead",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/000/july-creek-loop-trail-trailhead.htm",
+              "note": "The only page the authority publishes for it. No length given."
+            },
+            {
+              "label": "NPS — Pets in Olympic",
+              "tier": "official",
+              "url": "https://www.nps.gov/olym/planyourvisit/pets.htm",
+              "note": "The rule that makes it legal."
+            }
+          ],
+          "needs": ["distance", "difficulty", "time", "reviews"],
+          "call": "Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop. No authority publishes it, and it is one of only six pet-legal trails in the park."
+        }
+      ],
+      "trail_dogs": {
+        "Peabody Creek Trail": true,
+        "Madison Falls Trail": true,
+        "Spruce Railroad Trail": true,
+        "July Creek Loop Trail": true
+      }
+    },
+
+    "yosemite": {
+      "trails": [
+        {
+          "name": "Bridalveil Fall Trail",
+          "distance": "0.5 mi round trip",
+          "difficulty": "Easy",
+          "elevation_gain": "80 ft",
+          "time": "20 min",
+          "reviews": "2,107 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "PET-LEGAL — NPS states on the trail's own page: \"Leashed pets are allowed on this trail.\" Paved, part of it wheelchair accessible, at the west end of Yosemite Valley on the Wawona Road junction, which is the side of the valley the Hwy 140 base arrives from. Leash six feet or shorter. One of only a handful of paved paths in Yosemite the dog may use; NPS is explicit that pets are barred from trails \"even if carried\", with no exception for carried pets.",
+          "note_source": "NPS Yosemite pets page (nps.gov/yose/planyourvisit/pets.htm), fetched: leashed pets permitted on the \"Bridalveil Fall trail\", \"Lower Yosemite Fall trail\", the \"paved trail through Cook's Meadow (including boardwalks)\", the \"paved road to Mirror Lake (but not the unpaved trail around Mirror Lake)\" and the \"Wawona Meadow Loop\"; \"pets must be restrained on a leash not more than six feet long or otherwise physically restrained\". NPS Bridalveil Fall Trail page (nps.gov/yose/planyourvisit/bridalveilfalltrail.htm), fetched: \"Distance: 0.5 mi (0.8 km) round trip\", \"Elevation gain: Approximately 80 ft (24 m)\", \"Difficulty: Easy\", \"Time: 20 minutes\", paved, \"Leashed pets are allowed on this trail.\" Review count 2,107 from the AllTrails result title; no star surfaced.",
+          "alltrails": {
+            "name": "Bridalveil Fall Trail",
+            "url": "https://www.alltrails.com/trail/us/california/bridalveil-fall-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Bridalveil Fall Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/yose/planyourvisit/bridalveilfalltrail.htm",
+              "note": "Authority. Distance, gain, difficulty, time and the pet sentence."
+            },
+            {
+              "label": "NPS — Pets in Yosemite",
+              "tier": "official",
+              "url": "https://www.nps.gov/yose/planyourvisit/pets.htm",
+              "note": "The complete list of paths in Yosemite where leashed pets are allowed."
+            }
+          ],
+          "needs": ["star rating"]
+        },
+        {
+          "name": "Lower Yosemite Fall Trail",
+          "distance": "1 mi loop",
+          "difficulty": "Easy",
+          "elevation_gain": "50 ft",
+          "time": "30 min",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "PET-LEGAL — NPS: \"Leashed pets and strollers are allowed.\" Paved loop with exhibits; the eastern half, 0.6 mi one way from the Yosemite Falls shuttle stop to the viewing area, is wheelchair accessible. Already on the card without figures; these are the authority's own. Still no AllTrails trail listing — AllTrails has only a point-of-interest page for Lower Yosemite Fall, not a listing for this trail, so no url is claimed.",
+          "note_source": "NPS Yosemite pets page names the \"Lower Yosemite Fall trail\". NPS Lower Yosemite Fall Trail page (nps.gov/yose/planyourvisit/lowerfalltrail.htm), fetched: \"1 mile (1.6 km) loop\", \"Approximately 50 ft (15 m)\" gain, \"Easy\", \"30 minutes\", \"paved loop trail\", \"Leashed pets and strollers are allowed.\" NPS trailhead page adds \"The eastern part of the loop (0.6 mile one-way from the Yosemite Falls shuttle stop to the viewing area) is accessible to wheelchairs.\" Searched again for an AllTrails listing: only a /poi/ page returned, which is not a trail listing. The existing 'unlisted' verdict stands.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Lower Yosemite Fall Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/yose/planyourvisit/lowerfalltrail.htm",
+              "note": "Authority. Distance, gain, difficulty, time and the pet sentence."
+            }
+          ],
+          "needs": ["reviews"]
+        },
+        {
+          "name": "Wawona Meadow Loop",
+          "distance": "3.7 mi loop",
+          "elevation_gain": "249 ft",
+          "time": "1-1.5 hr",
+          "reviews": "1,699 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "CHECK BEFORE DRIVING — Wawona is at the far south of the park and the 19 Dec 2027 arrival is mid-winter",
+          "note": "PET-LEGAL — named in the NPS pet rule; leash six feet or shorter. An old dirt road circling the meadow behind the Wawona Hotel, and the longest legal dog walk in Yosemite by a wide margin: the other pet-legal paths are all under a mile. The catch is where it is. Wawona is about 27 miles south of the valley on the Wawona Road, well over an hour from a Midpines/Hwy 140 base, and the arrival is 19 December — check Yosemite's road-conditions line for the Wawona Road before committing the day. No closure is asserted here; the season is a reason to check, not a finding.",
+          "note_source": "NPS Yosemite pets page (fetched) names \"Wawona Meadow Loop\" among the paths where leashed pets are allowed. AllTrails result snippet, verbatim: \"Wawona Meadow Loop Trail is a loop trail that covers 3.7 mi, with an elevation gain of 249 ft. It takes about 1-1.5 hr to complete\", 1,699 reviews from the result title; no star and no difficulty word surfaced. Third-party guides describe it as easy/flat (yosemite.com \"relatively easy\", yosemite.travel \"a flat, easy walk on an old dirt road\") and give the loop as ~3.5 mi, but no authority or trail database published a difficulty grade, so none is recorded.",
+          "alltrails": {
+            "name": "Wawona Meadow Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/california/wawona-meadow-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Pets in Yosemite",
+              "tier": "official",
+              "url": "https://www.nps.gov/yose/planyourvisit/pets.htm",
+              "note": "The rule that makes it legal, and the only authority page that names it."
+            }
+          ],
+          "needs": ["difficulty", "star rating"]
+        }
+      ],
+      "trail_dogs": {
+        "Bridalveil Fall Trail": true,
+        "Lower Yosemite Fall Trail": true,
+        "Wawona Meadow Loop": true
+      }
+    },
+
+    "fort-bragg": {
+      "trails": [
+        {
+          "name": "Headlands Trail",
+          "distance": "0.5 mi loop",
+          "difficulty": "Easy",
+          "elevation_gain": "16 ft",
+          "time": "0.5-1 hr",
+          "reviews": "4.7 (590)",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "THE ONLY TRAIL IN RUSSIAN GULCH STATE PARK THE DOG MAY WALK. California State Parks: pets \"are allowed at the picnic area, beach, in the campground, and on paved park roads and the Headlands Trail. Except for service animals, dogs are not allowed on any other trails in the park.\" Leash no longer than six feet. Short bluff loop west of Highway 1 out to the Devil's Punch Bowl, a 100 ft wide, 60 ft deep collapsed sea cave, with the Russian Gulch bridge in view. Both walks already on this card — the Ecological Staircase and the Russian Gulch waterfall loop — cross to the inland, dog-free side of Highway 1, so this is the dog's walk at this stop.",
+          "note_source": "California State Parks Russian Gulch SP pet rule, already quoted in this stop's `dogs` field in links_db. AllTrails result snippets, verbatim: \"Try this 0.5-mile loop trail near Mendocino, California. Generally considered an easy route, it takes an average of 9 min to complete\" and \"Headlands Trail (Devil's Punchbowl) is a loop trail that covers 0.5 mi, with an elevation gain of 16 ft. It takes about 0.5-1 hr to complete.\" Star and count from AllTrails' own Blowhole point-of-interest page, verbatim: \"the best place to hike near Blowhole is Headlands Trail (Devil's Punchbowl), which has a 4.7 star rating from 590 reviews.\" AllTrails files the listing under Russian Gulch State Park, which confirms it is the same trail the state park rule names. Komoot corroborates: \"Hike the easy 0.5-mile Headlands Trail in Russian Gulch State Park for ocean views, sea arches, and the Devil's Punchbowl.\"",
+          "stats_note": "AllTrails publishes two times for this trail — an average of 9 min and a 0.5-1 hr band. The 0.5-1 hr band is recorded because that is the figure on the listing card; 9 minutes is the recorded moving average and does not include standing at the punchbowl.",
+          "alltrails": {
+            "name": "Headlands Trail (Devil's Punchbowl)",
+            "url": "https://www.alltrails.com/trail/us/california/headlands-trail-devils-punchbowl",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Komoot — Headlands Trail",
+              "tier": "community",
+              "url": "https://www.komoot.com/smarttour/e1318206391/headlands-trail",
+              "note": "Confirms the 0.5 mi easy loop in Russian Gulch State Park to the Devil's Punchbowl."
+            }
+          ]
+        }
+      ],
+      "trail_dogs": {
+        "Headlands Trail": true
+      }
+    },
+
+    "mancos": {
+      "_verdict": "Mesa Top Loop is a ROAD, not a trail — it does not go in the trails box. See scenicDrives_patch below. The real dog-legal TRAILS at Mesa Verde are all on Wetherill Mesa, and Wetherill Mesa is shut on this stop's dates.",
+      "trails": [
+        {
+          "name": "Long House Loop",
+          "distance": "5-6 mi round trip",
+          "official_length": "5-6 mi (paved loop trail, NPS)",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "season": "CLOSED ON THESE DATES — Wetherill Mesa opens late May and shuts late October (NPS published 22 May-21 Oct for 2026). Arrive 15 Apr 2028, depart ~22 Apr 2028: the road is shut, the trail is unreachable",
+          "season_conflict": true,
+          "note": "PET-LEGAL BUT OUT OF SEASON. NPS Wetherill Mesa: \"Hike any trail with your pet except the trails into Step House and Long House. Please keep your pet on a leash and do not leave them unattended.\" Leash 6 ft or shorter. The paved 5-6 mile loop itself is open to the dog and to bikes; only the spur descending into the Long House dwelling is not — the two are easy to confuse at the junction, and the sign matters. Kept on the card flagged rather than dropped, because it is the answer to \"where can the dog walk at Mesa Verde\" and the answer for a mid-April stop is nowhere: Wetherill Mesa does not open until late May.",
+          "note_source": "NPS Wetherill Mesa page (nps.gov/meve/planyourvisit/wetherill-mesa.htm), fetched: trails listed as Badger House 2.25 mi round trip, Step House 1 mi round trip, Nordenskiold Site #16 0.9 mi one way, Long House Overlook 2 mi round trip, paved loop trail 5-6 mi round trip; pet rule quoted verbatim above; \"Wetherill Mesa operates daily from May 22 to October 21, 2026.\" NPS operating-hours page (nps.gov/meve/planyourvisit/hours.htm) gives the same window. No AllTrails url is attached: AllTrails carries a \"Long House Trail\" listing, and the trail INTO Long House is precisely the one the dog may not use, so linking it would point at the exclusion rather than the permission.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Wetherill Mesa",
+              "tier": "official",
+              "url": "https://www.nps.gov/meve/planyourvisit/wetherill-mesa.htm",
+              "note": "Authority. The trail list, the lengths, the pet rule and the season."
+            },
+            {
+              "label": "NPS — Mesa Verde operating hours & seasons",
+              "tier": "official",
+              "url": "https://www.nps.gov/meve/planyourvisit/hours.htm",
+              "note": "Publishes the Wetherill Mesa season, which is what closes this trail for the 15-22 Apr 2028 stay."
+            }
+          ],
+          "needs": ["difficulty", "time", "reviews"]
+        },
+        {
+          "name": "Badger House Community Trail",
+          "distance": "2.25 mi round trip",
+          "official_length": "2.25 mi round trip (NPS)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "CLOSED ON THESE DATES — Wetherill Mesa opens late May (NPS published 22 May-21 Oct for 2026); the 15 Apr 2028 arrival is five weeks early",
+          "season_conflict": true,
+          "note": "PET-LEGAL BUT OUT OF SEASON. Covered by the same Wetherill Mesa rule — \"Hike any trail with your pet except the trails into Step House and Long House\" — and Badger House is neither. Leash 6 ft. Listed so the card shows what the April dates cost the dog, not to suggest it can be walked.",
+          "note_source": "NPS Wetherill Mesa page, fetched: \"Badger House: 2.25 miles round-trip\" and the pet rule quoted above; season 22 May-21 Oct. No trail-database listing was searched for, because the trail is unreachable on these dates.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Wetherill Mesa",
+              "tier": "official",
+              "url": "https://www.nps.gov/meve/planyourvisit/wetherill-mesa.htm",
+              "note": "Authority. Length, pet rule and season."
+            }
+          ],
+          "needs": ["difficulty", "time", "reviews"]
+        }
+      ],
+      "trail_dogs": {
+        "Long House Loop": true,
+        "Badger House Community Trail": true,
+        "Petroglyph Point Trail": false
+      },
+      "not_a_trail": [
+        {
+          "entry": "Mesa Top Loop",
+          "problem": "A 6-mile paved DRIVING loop, not a hiking trail. NPS's own name for it is the \"Mesa Top Loop Road\" and its self-guided-tours page describes it as \"a 6-mile (10 km) drive that is a tour through time. Along the road, you'll find short, paved trails to view twelve ancestral sites\". The pet rule allows the dog on the road, the parking lots and those short paved areas — which is a series of car-park walks, not a walk. Moved to scenicDrives, merged into the Mesa Verde road entry that box already carries so it is not duplicated."
+        },
+        {
+          "entry": "Park Point",
+          "problem": "Named in the same pet sentence as Mesa Top Loop, and equally not a trail — it is the park's high point, reached by a spur road, with a short paved path to the fire lookout viewpoint. Leashed dogs are allowed on the paved area. Recorded here so a later pass does not add it to the trails box on the strength of the pet rule naming it."
+        }
+      ],
+      "scenicDrives_patch": [
+        {
+          "name": "Mesa Top Loop Road and Cliff Palace Loop Road",
+          "was_name": "Mesa Verde's Mesa Top Loop/Cliff Palace Loop park roads to the cliff-dwelling overlooks — NPS explicitly prohibits trailers and towed vehicles beyond Morefield Campground, so the 40ft coach cannot bring the towed truck in; drop the trailer/truck combo at Morefield and do the loops in the truck alone.",
+          "url": "https://www.nps.gov/meve/planyourvisit/gettingaround.htm",
+          "distance": "6 mi (Mesa Top Loop Road)",
+          "note": "NPS prohibits trailers and towed vehicles beyond Morefield Campground, so the coach cannot bring the truck in — drop the combo at Morefield and drive the loops in the truck alone. THE DOG CAN COME ON THIS ONE. NPS: \"Leashed pets are allowed on roads, parking lots, and paved areas on Mesa Top Loop and Park Point but not on trails, in ancestral sites or buildings.\" Leash 6 ft/1.8 m; pets may not be tethered or left unattended. On a 15-22 Apr 2028 stay this and the paved area at Park Point are the ONLY places at Mesa Verde the dog may set foot outside the campground — the park's real dog-legal trails are all on Wetherill Mesa, which does not open until late May. Twelve archaeological stops along a 6-mile paved loop, each a short paved walk from the car: the dog is legal on those paved stretches but not on any trail leading off them, and not inside any ancestral site.",
+          "note_source": "NPS self-guided tours page: \"The Mesa Top Loop Road is a 6-mile (10 km) drive that is a tour through time. Along the road, you'll find short, paved trails to view twelve ancestral sites, including surface sites and overlooks of cliff dwellings\". NPS 'Explore the Mesa Top Loop Road' gives the same 6-mile figure. Pet sentence is the one already quoted in this stop's `dogs` field. Merged onto the entry the scenicDrives box already carried rather than added as a second one — that box's existing entry is the same two roads written as a sentence.",
+          "call": "Mesa Verde NP, 970-529-4465 — confirm the Mesa Top Loop Road is open by 15 April. NPS publishes a hard season for Wetherill Mesa (22 May-21 Oct) but no opening date for the Mesa Top Loop Road, and if that road is also still shut in mid-April the dog has nowhere legal at Mesa Verde beyond the campground and the parking lots."
+        }
+      ]
+    }
+  }
+}

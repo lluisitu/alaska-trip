@@ -97,6 +97,14 @@ def note_for(t):
         bits.append('no AllTrails listing — official source')
     if t.get('season'):
         bits.append(t['season'])
+    # An explicit note from the db. This used to be dropped entirely: note_for()
+    # only ever assembled a note out of gain / match / season, so a researched
+    # sentence went into links_db and never reached the card. That silently ate
+    # the point of the dog-trail pass — "the only trail in Zion that permits
+    # pets" is precisely the kind of thing that has to be readable at the
+    # trailhead. It goes last so the numbers still lead.
+    if t.get('note'):
+        bits.append(t['note'])
     return ' · '.join(bits) or None
 
 

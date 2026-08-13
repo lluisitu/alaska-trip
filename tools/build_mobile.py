@@ -206,6 +206,7 @@ main{padding:0 12px 20px;}
 .sec.verdict .sec-t{background:rgba(126,196,136,.11);color:#9ed4a8;}
 .iname{font-weight:600;}
 .idet{font-size:.79rem;color:var(--muted);margin-top:3px;line-height:1.5;}
+.dogok{color:#7ec488;} .dogno{color:#e0384d;}
 /* Road ahead + off-grid. Both exist on the phone precisely because the phone
    is what you have when there is no signal to look anything up. */
 .dchip{display:inline-block;font-size:.68rem;font-weight:700;padding:0 6px;border-radius:99px;
@@ -371,7 +372,14 @@ function listBlock(kind, icon, title, arr, nameKey, detKey){
     n++;
     const det = typeof it==='string' ? '' : (it[detKey]||it.detail||it.tag||'');
     const url = typeof it==='object' && it.url ? ' <a href="'+esc(it.url)+'" target="_blank" rel="noopener">↗</a>' : '';
-    out += '<li><div class="iname">'+esc(nm)+url+'</div>'+(det?'<div class="idet">'+esc(det)+'</div>':'')+'</li>';
+    /* The phone build is the one read AT the trailhead, with no signal, so the
+       dog answer matters more here than on the desktop card. It renders no
+       pills at all, so this is a bare marker rather than a badge. Absence stays
+       absent: an item with no researched rule shows nothing, because "we did
+       not check" must not look like "dogs are welcome". */
+    const dog = (typeof it==='object' && it.dogs===true) ? ' <span class="dogok">🐕</span>'
+              : (typeof it==='object' && it.dogs===false) ? ' <span class="dogno">🚫</span>' : '';
+    out += '<li><div class="iname">'+esc(nm)+dog+url+'</div>'+(det?'<div class="idet">'+esc(det)+'</div>':'')+'</li>';
   });
   return n ? sec(kind, icon, title, out+'</ul>') : '';
 }

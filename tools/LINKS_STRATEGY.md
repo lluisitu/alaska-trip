@@ -221,6 +221,27 @@ as `needs_check`. Do not generalise from "dogs allowed in the park".
 
 ---
 
+### The failure mode this section did not protect against
+
+Every rule above was followed and the whole column was still invisible. `dogs`
+was researched for 85% of trails, stored on each item by `build_links.py`, and
+**never rendered** — `trailPillsHtml()` drew difficulty, time, distance, rating,
+uses and cruise, and no dog pill existed in any commit in the repo's history.
+The research was correct, auditable, and unreadable.
+
+Two rules follow, and they generalise past dogs:
+
+* **A field is not done when it is in the db. It is done when it is on the
+  card.** Before recording a field as researched, open the page and find it.
+* **The phone build is a separate renderer, not a copy.** `build_mobile.py`
+  builds its own trail rows from `name` and `tag` and draws no pills at all, so
+  a desktop pill reaches nobody at a trailhead. The dog answer matters MORE
+  there — read with no signal, standing at the sign — so it now carries a bare
+  🐕/🚫 marker of its own.
+
+Absence stays absent in both: an item with no researched rule renders nothing,
+because "we did not check" must never look like "dogs are welcome".
+
 ## 6. The other boxes
 
 Same hierarchy, same refusal to invent. Current state from the full audit:

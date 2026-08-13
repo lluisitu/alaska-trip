@@ -188,12 +188,38 @@ def main():
                         break
 
         prose = e.get('dogs') or ''
-        if prose and re.search(r'\bonly\b|\bexcept\b|\ballow', prose, re.I):
+        # \bexcept\b does NOT match "exception", and "with one exception, the
+        # Rim Rock Trail" is exactly how these rules are written — that typo
+        # hid Black Canyon's only dog-legal trail. No trailing boundary.
+        if prose and re.search(r'\bonly\b|\bexcept|\ballow|\bpermit', prose, re.I):
             # `box` and `n` are used above for the box name and the trail count;
             # shadowing them here worked only because of statement order.
-            in_box = {y['name'].lower() for y in (s.get('alltrails') or [])}
+            # Check EVERY box, not just trails: Mesa Top Loop is correctly filed
+            # as a scenic drive, and flagging it as a missing trail was noise.
+            in_box = {y['name'].lower()
+                      for b in ('alltrails', 'scenicDrives', 'offroad')
+                      for y in (s.get(b) or [])}
+            # ...and allow the authority's current name to differ from the one
+            # quoted in the rule: NPS's pets page says "Roadside Hiking Trail"
+            # and its trail page says "Roadside Trail". Match on the distinctive
+            # words rather than the whole string.
+            # An authority can call the same trail two things on two of its own
+            # pages — NPS's pets page says "Roadside Hiking Trail" and its trail
+            # page says "Roadside Trail". `trail_aliases` in links_db records
+            # that explicitly rather than leaving a permanent false positive or
+            # loosening the matcher until it starts hiding real gaps.
+            aliases = {k.lower(): v.lower() for k, v in (e.get('trail_aliases') or {}).items()}
+
+            def covered(nm):
+                low = aliases.get(nm.lower(), nm.lower())
+                if any(low in b or b in low for b in in_box):
+                    return True
+                words = [w for w in re.findall(r"[a-z']+", low)
+                         if w not in ('trail', 'path', 'loop', 'walk', 'pathway', 'the')]
+                return bool(words) and any(
+                    all(w in b for w in words) for b in in_box)
             for named in set(TRAILNAME.findall(prose)):
-                if any(named.lower() in b or b in named.lower() for b in in_box):
+                if covered(named):
                     continue
                 if is_place_not_trail(prose, named):
                     continue          # a park whose name ends in "Trail"

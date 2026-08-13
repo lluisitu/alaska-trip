@@ -3119,7 +3119,7 @@
           "tier": "official"
         }
       ],
-      "dogs": "PROHIBITED on park trails and off-trail in the wilderness, and not allowed on the park buses. NPS: pets are permitted on park roads, parking lots and campground roads, plus two exceptions — the Roadside Hiking Trail and the Roadside Bike Trail, on a leash of 6 ft or shorter.",
+      "dogs": "PROHIBITED on park trails and off-trail in the wilderness, and not allowed on the park buses. NPS: pets are permitted on park roads, parking lots and campground roads, plus two exceptions — the Roadside Trail (NPS’s pets page calls it the Roadside Hiking Trail; its own trail page titles it Roadside Trail) and the Roadside Bike Trail, on a leash of 6 ft or shorter.",
       "dogs_impact": "Seven nights at Riley Creek. The two roadside trails are the whole of what the dog can walk, and the bus ban means the deep-park day trips are dog-free by definition.",
       "dogs_verdict": "prohibited",
       "dogs_exception": "Roadside Hiking Trail and Roadside Bike Trail only, leash 6 ft or shorter.",
@@ -3263,6 +3263,9 @@
       "trail_dogs": {
         "Roadside Trail": true,
         "Roadside Bike Trail": true
+      },
+      "trail_aliases": {
+        "Roadside Hiking Trail": "Roadside Trail"
       }
     },
     "trapper-creek": {

@@ -41,8 +41,26 @@ for p in 1 2; do for s in build_strategy build_frozen build_light build_phonecra
   build_passes build_legs build_costs build_petlog build_staynotes build_rigfit build_campfacts \
   build_swaps build_bookings build_parks build_askbox build_links build_shots; do python3 $s.py; done; done
 python3 build_routes.py && python3 build_mobile.py && python3 build_vendor.py
+python3 build_calls.py --write                # regenerates tools/CALLS.md from the db
 cd .. && node tools/test_alaska_ext_v3.js     # must print "Page errors: 0"
 ```
+
+**Never drop the error guard on that loop.** Run each step as
+`python3 $s.py || echo "FAILED $s"` — with `>/dev/null 2>&1` and no guard,
+`build_links.py` died on a `KeyError` for a whole session while the merges
+reported success, the data sat correctly in `links_db.json` and the page never
+changed. It looked exactly like research that had not helped.
+
+### Tools that answer questions about the data
+
+| | |
+|---|---|
+| `progress.py` | how far along each box is, per leg. `--html <path>` writes the shareable page |
+| `open_items.py` | what is left to DO — excludes what is deliberately unfillable |
+| `audit_coverage.py` | whether the right research EXISTS at all. The other two cannot see a missing thing: an empty box is 0 of 0, which renders as 100% |
+| `merge_patch.py` | merges a research patch into `links_db.json`. Merge, never replace — at list level AND field level |
+| `repair_activity_keys.py` | re-attaches activity keys orphaned when a headline was reworded |
+| `build_calls.py` | collects every "the authority publishes nothing and this number would settle it" into `CALLS.md`, in arrival order |
 
 **Twice is not paranoia.** Some steps read what earlier steps wrote — `build_bookings` rebuilds its
 cards from stops `build_swaps` has just rewritten — so one pass leaves the file a step behind itself.

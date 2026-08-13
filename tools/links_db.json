@@ -654,7 +654,8 @@
           "source": "https://www.nps.gov/grsa/planyourvisit/pets.htm",
           "source_2": "https://www.nps.gov/grsa/planyourvisit/hiking.htm"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/colorado/great-sand-dunes-national-park-and-preserve"
     },
     "salida-buenavista": {
       "authority": "USFS / City of Salida / Chaffee County",
@@ -1092,7 +1093,8 @@
           "url": "https://www.fs.usda.gov/r04/ashley/safety-ethics",
           "tier": "official"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/flaming-gorge-national-recreation-area"
     },
     "wind-river": {
       "authority": "USDA Forest Service — Bridger-Teton National Forest",
@@ -1567,7 +1569,8 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/idaho/sawtooth-national-recreation-area"
     },
     "craters-of-the-moon": {
       "authority": "National Park Service — Craters of the Moon NM & Preserve",
@@ -1723,7 +1726,8 @@
           "auto": true,
           "auto_km": 11
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/wyoming/yellowstone-national-park"
     },
     "glacier": {
       "authority": "National Park Service",
@@ -1856,7 +1860,8 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/montana/glacier-national-park"
     },
     "waterton": {
       "authority": "Parks Canada",
@@ -1978,7 +1983,8 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/alberta/waterton-lakes-national-park"
     },
     "banff": {
       "authority": "Parks Canada",
@@ -2149,7 +2155,8 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/alberta/banff-national-park"
     },
     "jasper": {
       "authority": "Parks Canada",
@@ -2291,7 +2298,8 @@
           "season": "OPEN, with one thing shut. Maligne Lake Road reopened after the 2024 wildfire and Medicine Lake and the Maligne Lake area are accessible. Maligne Canyon — the marquee stop partway along the road — remained CLOSED through 2026 pending wildfire/geotechnical work, as did Edith Cavell Road. Arrive 4 Jun 2027: assume the drive works and check Maligne Canyon specifically.",
           "note_source": "Parks Canada Jasper recovery page; CTV/CBC 2026 what's-open reporting"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/alberta/jasper-national-park"
     },
     "muncho-lake": {
       "authority": "BC Parks — Muncho Lake Park",
@@ -3392,7 +3400,8 @@
           "tier": "official",
           "source": "https://www.nps.gov/dena/planyourvisit/unit61-62-63.htm"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/alaska/denali-national-park"
     },
     "trapper-creek": {
       "authority": "Alaska State Parks — Denali State Park",
@@ -3877,6 +3886,106 @@
           "entry": "Loaded camper: maintained gravel only when dry.",
           "problem": "A standing rig constraint, not a route, and superseded by the settled decision that offroad is always the truck. Saratoga's offroad box is now empty — that is an honest empty, not a gap."
         }
+      ],
+      "authority": "BLM Rawlins Field Office (Encampment River Canyon WSA); USFS Medicine Bow-Routt National Forests (Six Mile / Platte River Wilderness); Town of Saratoga / Carbon County (Veterans Island Park)",
+      "trails_note": "Saratoga is genuinely thin, and mid-April makes it thinner. AllTrails indexes 4 trails for the whole Saratoga area. Everything with real elevation — the Snowy Range off WY-130, Huston Park, the Sierra Madre — sits at 8,000-10,000 ft and the stop's own activity text already says to assume the high byway is closed. What is left is the North Platte valley floor in town and the Encampment River canyon 22 miles south-west. The Medicine Bow Rail Trail turns up under 'Saratoga' on TrailLink but its trailheads are Pelton Creek Rd and Dry Park Rd near the Colorado line in Albany County, roughly 75 road miles away and at rail-trail elevation in the Snowies — it is not a Saratoga trail and is deliberately not listed.",
+      "trails": [
+        {
+          "name": "Encampment River Trail (#470), Encampment River Canyon WSA",
+          "distance": "15.8 mi point-to-point end to end; the canyon section from the BLM campground reads 6.3 mi out-and-back",
+          "time": "6-7 h end to end; about 2 h 50 min for the canyon section",
+          "difficulty": "Moderate",
+          "elevation_gain": "1,984 ft end to end; 609 ft on the canyon section",
+          "reviews": "4.5 (90)",
+          "uses": [
+            "hike",
+            "bike",
+            "horse"
+          ],
+          "dogs": null,
+          "alltrails": {
+            "name": "Encampment River Trail from Odd Fellows",
+            "url": "https://www.alltrails.com/trail/us/wyoming/encampment-river-trail-from-odd-fellows",
+            "match": "contains",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "BLM — Encampment River Canyon",
+              "tier": "official",
+              "url": "https://www.blm.gov/visit/encampment-river-canyon",
+              "note": "Managing authority, Rawlins Field Office, 307-328-4200. 'The trail, which traverses the WSA and enters Colorado to the south, follows the scenic Encampment River. Located two miles south of Encampment and easily accessible from BLM's Encampment River Campground.' Listed activities include BIKING, HIKING and HORSEBACK RIDING — that is where `uses` comes from, not from inference. No fee. BLM publishes no length and no seasonal closure for this trail."
+            },
+            {
+              "label": "BLM — Encampment River Campground (trailhead)",
+              "tier": "official",
+              "url": "https://www.blm.gov/visit/encampment-river-campground",
+              "note": "The trailhead. BLM's directions: from Encampment follow WY-70, County Road 353 is a quarter mile west of town, one mile south to BLM Road 3407, campground about three quarters of a mile. Park at the back of the campground by the kiosk."
+            },
+            {
+              "label": "Komoot — Encampment River Trail",
+              "tier": "community",
+              "url": "https://www.komoot.com/smarttour/e1369893743/encampment-river-trail",
+              "note": "The short version out of the BLM campground: 6.3 mi (10.1 km), 2 h 48 min, 609 ft (186 m) gain, graded Moderate. This is the figure to plan a day around."
+            }
+          ],
+          "stats_note": "Two different things share one name. BLM's trail runs the length of the river into Colorado; AllTrails indexes the full 15.8 mi point-to-point as 'Encampment River Trail from Odd Fellows' (Odd Fellows is the Encampment River Campground area — AllTrails' own POI page for the campground carries the same 15.8 mi / 1,984 ft figures and the 4.5-from-90 rating). Komoot's 6.3 mi is the canyon section from the campground and back. The 4.5 (90) rating belongs to the full route.",
+          "season": "BLM publishes no seasonal closure and the trailhead sits at roughly 7,300 ft, which is why this is the one Saratoga-area trail worth planning on in mid-April. The access is unpaved BLM road; snow and mud on the road, not the trail, is the thing that would stop the day.",
+          "needs": "No published dog rule. BLM's page for the WSA says nothing about pets either way; recorded as unknown rather than guessed. Rawlins Field Office 307-328-4200 would settle it."
+        },
+        {
+          "name": "Veterans Island Park Trail, Saratoga",
+          "distance": "0.7 mi loop",
+          "time": "about 12 min",
+          "difficulty": "Easy",
+          "elevation_gain": "7 ft (2 m)",
+          "reviews": "(7)",
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "name": "Veterans Island Park Trail",
+            "url": "https://www.alltrails.com/trail/us/wyoming/veterans-island-park-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Carbon County Visitors Council — Veterans Island Park",
+              "tier": "official",
+              "url": "https://www.wyomingcarboncounty.com/things-to-do/parks-outdoors/veterans-island-park",
+              "note": "County tourism authority confirms the park: 'Located south of Pick Pike Road on the way to the Saratoga Inn.' A 6.9-acre island park on the North Platte in town."
+            }
+          ],
+          "stats_note": "AllTrails' listing carries 7 reviews and publishes no star average at that count. Distance, route type, time and the 2 m gain are all from the indexed snippet.",
+          "needs": "star rating — AllTrails publishes a count but no average for this listing. No published dog rule for the park.",
+          "tag": "The only flat, in-town, shoulder-season walk at this stop. Riverside, ten minutes, and it works on an arrival evening."
+        },
+        {
+          "name": "Platte River Trail, Six Mile Gap (Platte River Wilderness)",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "USFS Medicine Bow-Routt — Six Mile Trailhead",
+              "tier": "official",
+              "url": "https://www.fs.usda.gov/r02/mbrtb/recreation/six-mile-trailhead",
+              "note": "Managing authority. 'The Six Mile Trailhead is located at the Six Mile Gap Campground, approximately 2 miles off Highway 230 and provides access to the North Platte River and Platte River Wilderness.' Recreation opportunities listed as Day Hikes and Backpacking. Trailhead at 41.0445, -106.3969. $5 per vehicle per day. Directions: from Encampment, 22 miles south on Hwy 230 to Forest Road 492, then 2 miles."
+            }
+          ],
+          "season": "USFS operational hours for the site are 'May - October weather permitting'.",
+          "season_conflict": "Stop arrives 16 Apr 2027 and leaves 20 Apr — the whole stay falls before the Forest Service opens this site. Listed so the card says what is being missed and why, not because it is walkable on these dates.",
+          "needs": "Length, time and difficulty are all unpublished by the Forest Service, which describes the trailhead rather than the trail. AllTrails has a 1.5 mi 'Platte River Trail' listing (26 reviews) but its nearest-town label is Centennial, on the far side of the Snowy Range, and it could not be confirmed as this trail — so it carries no link here rather than a plausible wrong one. Brush Creek/Hayden Ranger District would settle both the length and whether the FR 492 access is drivable in April.",
+          "stats_note": "It is roughly 44 road miles from Saratoga: down to Encampment, then 22 miles south on WY-230, then 2 miles of forest road."
+        }
       ]
     },
     "dawson-city": {
@@ -4324,6 +4433,58 @@
           "note": "The single best offroad day of the whole Cassiar and it starts in this town. Sharp-angled switchbacks and narrow passages along the canyon walls with no guardrails, dropping into the Stikine to the most remote road-accessible town in BC. British Columbia's tourism authority adds the practical line: \"The road is not suitable for trailers, which can be left in Dease Lake.\" Six hours of driving plus stops - it wants a whole day of a two-night stop, and mid-September is late enough that the morning conditions check is not a formality.",
           "tier": "official",
           "source": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/highway-37-stewart-cassiar/points-of-interest"
+        }
+      ],
+      "trails_note": "Dease Lake has essentially no published trail, and that is a researched finding rather than a gap. Recreation Sites and Trails BC lists exactly three assets whose closest community is Dease Lake — French Creek (REC0564), Morchuea Lake (REC0598) and Sawmill Point (REC0886) — all of them recreation SITES, none of them a recreation trail, and none listing hiking among its activities. A search of the RSTBC register for Tanzilla, Stikine, Telegraph, Iskut, Gnat, Tuya and Edziza returns nothing in this district. AllTrails has no Dease Lake area page at all; the only thing it indexes nearby is a point-of-interest entry for Allan Lake. Mount Edziza Park is the real hiking ground here and it is float-plane and multi-day expedition country — BC Parks' own page is about bear caches, aircraft Letters of Authorization and not walking on the lava — so it is not listed, because the stop text does not name it and nothing in a two-night September stop reaches it.",
+      "trails_warning": "A trail called the 'Dease Lake Alpine Trail' turns up all over the web and IS NOT AT DEASE LAKE. Ten near-identical listings (veronikasadventure, happytovisit, jtgtravel, powertraveller, evendo, peek, travelersuniverse and others) syndicate the same guided-tour copy, and the Tripadvisor version places it on 'Sea to Sky Highway, Highway 99' — Squamish, about 1,200 km south. It is a content-farm product with a misleading name. Do not book it, and do not let it back into this box.",
+      "trails": [
+        {
+          "name": "Tuya River Valley viewpoint trail, Stikine River Park",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "dogs_note": "BC Parks, Stikine River Park: 'Pets and domestic animals must always be on a leash and are not permitted on beach areas or in park buildings.' Leashed on the trail is fine.",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "BC Parks — Stikine River Park",
+              "tier": "official",
+              "url": "https://bcparks.ca/stikine-river-park/",
+              "note": "Managing authority. Under Things to do → Hiking: 'As you enter the park (approximately 60 km west of Dease Lake), you will notice a pullout parking area on the right. From here, a short trail leads to a viewpoint overlooking the Tuya River Valley.' Safety: 'Sharp drop-offs border the entire Grand Canyon. These, combined with broken rock prevalent in the area, make it extremely dangerous to approach the canyon rim.' Off-road vehicles, including ATVs, are prohibited in the park."
+            }
+          ],
+          "stats_note": "BC Parks publishes no length, no time and no grade — only 'a short trail' from a signed pullout. Recorded as unknown rather than estimated. 60 km west of Dease Lake on Telegraph Creek Road, which this stop already plans to drive in the truck.",
+          "needs": "distance, time, difficulty. BC Parks Stikine Area 250-771-4591 is the number that would settle all three, and is worth the call anyway to ask whether Telegraph Creek Road is in shape in mid-September."
+        },
+        {
+          "name": "Grand Canyon of the Stikine viewpoint hike",
+          "distance": "about 4 km (2.5 mi) to the canyon rim",
+          "time": null,
+          "difficulty": null,
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Edziza Trails — Day Tours",
+              "tier": "community",
+              "url": "https://www.edzizatrails.com/day-tours.html",
+              "note": "The only published description of this walk, from a Tahltan-run guiding company in Dease Lake: 'After a one hour drive west of Dease Lake on the Telegraph Creek Road you'll enjoy a four kilometer hike to the Grand Canyon of the Stikine River. There you will have lunch on the hilltop taking in the spectacular view of the Stikine River Grand Canyon.' $100 per person plus fuel, maximum group of 5, roughly a 6-7 hour day."
+            }
+          ],
+          "stats_note": "This is on the card because it is the one real hike anybody publishes for this stop, and it is flagged because it is sold as a guided outing rather than signed as a public trail. BC Parks names no trailhead for it and Recreation Sites and Trails BC has no record of it, so the parking spot cannot be sourced from a map. Do not drive out looking for a trail sign.",
+          "needs": "Whether it can be walked unguided, and from where. Two numbers settle it: Edziza Trails direct, and BC Parks Stikine Area 250-771-4591. Recorded as unknown rather than treated as a public trailhead."
         }
       ]
     },
@@ -4775,7 +4936,8 @@
         }
       ],
       "dogs_source": "https://www.nps.gov/grca/planyourvisit/pets.htm",
-      "dogs_source_quote": "Leashed pets are allowed on trails above the rim, Mather Campground, Desert View Campground, Trailer Village, and throughout developed areas."
+      "dogs_source_quote": "Leashed pets are allowed on trails above the rim, Mather Campground, Desert View Campground, Trailer Village, and throughout developed areas.",
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/grand-canyon-national-park"
     },
     "zion": {
       "authority": "National Park Service",
@@ -5186,7 +5348,8 @@
           ],
           "call": "Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop. No authority publishes it, and it is one of only six pet-legal trails in the park."
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/washington/olympic-national-park"
     },
     "yosemite": {
       "authority": "National Park Service",
@@ -5347,7 +5510,8 @@
             "star rating"
           ]
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/yosemite-national-park"
     },
     "great-basin": {
       "authority": "National Park Service",
@@ -5833,7 +5997,8 @@
         "Oak Flat Loop Trail": false,
         "Warner Point Nature Trail": false
       },
-      "dogs_note": "The dog is NOT stranded at Black Canyon on 8-10 Apr 2028. The Rim Rock Trail is inside the summer-closure-free window, inside the stretch of South Rim Road that stays open before the late-April opening, and open (though burned) after the 2025 fire. It is 0.9 mi and it is the whole of it — everything else on this card is closed to pets."
+      "dogs_note": "The dog is NOT stranded at Black Canyon on 8-10 Apr 2028. The Rim Rock Trail is inside the summer-closure-free window, inside the stretch of South Rim Road that stays open before the late-April opening, and open (though burned) after the 2025 fire. It is 0.9 mi and it is the whole of it — everything else on this card is closed to pets.",
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/colorado/black-canyon-of-the-gunnison-national-park"
     },
     "joshua-tree": {
       "authority": "National Park Service",
@@ -6187,7 +6352,8 @@
           "season": "SEASONAL — VERIFY BEFORE THE STOP. NPS scheduled a FULL CLOSURE of Titus Canyon Road from 1 October 2026 through at least 30 April 2027 for repairs. Arrive 28 Dec 2027 is after that published window, but the road is also routinely closed by snow, mud and washouts and is prone to flash flooding — never enter with rain threatening. Check park road status on the day.",
           "note_source": "NPS Death Valley Titus Canyon page; Pahrump Valley Times and 8NewsNow reopening/closure reporting"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/death-valley-national-park"
     },
     "grand-teton": {
       "authority": "National Park Service",
@@ -6284,7 +6450,8 @@
             }
           ]
         }
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/wyoming/grand-teton-national-park"
     },
     "sequoia-kings-canyon": {
       "authority": "National Park Service",
@@ -6379,7 +6546,8 @@
           "url": "https://www.nps.gov/seki/planyourvisit/moro.htm",
           "source": "https://www.nps.gov/seki/planyourvisit/moro.htm"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/sequoia-national-park"
     },
     "kluane-1": {
       "authority": "Parks Canada",
@@ -6480,7 +6648,8 @@
           "tier": "community",
           "source": "https://explorenorthblog.com/exploring-aishihik-road-and-otter-falls/"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/yukon/kluane-national-park-and-reserve"
     },
     "kluane-2": {
       "authority": "Parks Canada",
@@ -6553,7 +6722,8 @@
           "tier": "official",
           "source": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
         }
-      ]
+      ],
+      "area_browse_alltrails": "https://www.alltrails.com/parks/canada/yukon/kluane-national-park-and-reserve"
     },
     "west-yellowstone": {
       "activities": {
@@ -7277,7 +7447,90 @@
           ]
         }
       },
-      "trails": [],
+      "trails": [
+        {
+          "name": "Ninilchik Beach Trail",
+          "distance": "2.8 mi out-and-back",
+          "time": "about 1 h 1 min",
+          "difficulty": "Easy",
+          "elevation_gain": "200 ft",
+          "reviews": "4.1 (22)",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "name": "Ninilchik Beach Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/ninilchik-river-overlook-and-beach-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Ninilchik State Recreation Area",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilsragen.htm",
+              "note": "Managing authority. Lists Hiking among the unit's activities and covers Ninilchik Beach Campground, Ninilchik River Campground, Ninilchik Scenic Overlook and Ninilchik View Campground. 'While you are in Ninilchik, be sure to see the historical Ninilchik Village and the Russian Orthodox Church.'"
+            },
+            {
+              "label": "Alaska State Parks — Ninilchik View Campground",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilvwcamp.htm",
+              "note": "'This campground is located on a bluff above Ninilchik Beach. A stairway leads down the bluff.' Milepost 135.7 Sterling Highway. The bluff stairway is the beach access this walk uses."
+            }
+          ],
+          "stats_note": "AllTrails' slug reads `ninilchik-river-overlook-and-beach-trail` while the page title is 'Ninilchik Beach Trail' — a good example of why these are copied and never built. The route starts at the Ninilchik Overlook campground near the river and runs down to the beach, then along the sand toward Deep Creek. The 4.1 star average was published against 17 reviews on AllTrails' Deep Creek POI page; the trail-page title now reads 22 reviews.",
+          "tag": "This is the walk the stop is actually for: the old village, the Russian Orthodox church on the hill, and the beach below it in one loop out of camp. Minimal shade."
+        },
+        {
+          "name": "Ninilchik River Campground river trail",
+          "distance": null,
+          "time": null,
+          "difficulty": null,
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Ninilchik River Campground",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilrvcamp.htm",
+              "note": "Managing authority. 'Ninilchik River Campground is in a beautiful spruce and birch forest with developed campsites, one group picnic shelter and a hiking trail to the river.' Facilities list wheelchair-accessible Trails; activities list Camping, Day Use, Fishing and Hiking. Milepost 134.5 Sterling Highway, 93 acres, first come first served."
+            }
+          ],
+          "stats_note": "Alaska State Parks confirms a maintained, wheelchair-accessible hiking trail here and gives it no name and no length. Recorded as it is published rather than measured off a map.",
+          "needs": "name, distance, difficulty. Alaska State Parks Kenai Region is the source; the campground is managed on the ground and the length would come off a sign at the trailhead."
+        },
+        {
+          "name": "Ninilchik Scenic Overlook trails",
+          "distance": null,
+          "time": null,
+          "difficulty": "Wheelchair accessible per Alaska State Parks",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Ninilchik Scenic Overlook",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilnoscov.htm",
+              "note": "Managing authority. 'Ninilchik Scenic Overlook is a great place to view the Ninilchik River and watch the eagles soar. Trails provide access to fishing along the Ninilchik River.' Facilities list wheelchair-accessible Trails, toilets, picnic sites and shelter. 93 acres, 9 campsites, milepost 135 Sterling Highway, 35 ft RV size limit."
+            }
+          ],
+          "stats_note": "A separate state park unit from the river campground above, with its own trails, and the trailhead for the Ninilchik Beach Trail. Short river-access paths rather than a hike.",
+          "needs": "name and distance — Alaska State Parks publishes neither."
+        }
+      ],
       "not_a_trail": [
         {
           "entry": "Ninilchik River mouth",
@@ -7303,7 +7556,12 @@
           "tier": "unlisted",
           "source": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm"
         }
-      ]
+      ],
+      "authority": "Alaska State Parks, Kenai Region — Ninilchik State Recreation Area (Ninilchik River Campground, Ninilchik View Campground, Ninilchik Scenic Overlook) and Deep Creek State Recreation Area",
+      "dogs": "Alaska State Parks: 'Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times.' The regulation is a leash not exceeding nine feet in developed facilities. That covers every trail below, all of which are inside state park units.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "trails_note": "Ninilchik is a fishing, clamming and Russian-village stop, not a hiking stop, and the trails box should say so rather than pretend otherwise. Alaska State Parks lists Hiking as an activity at Ninilchik SRA and Anchor River SRA but names no trail at either; Deep Creek SRA lists ATV riding, camping, clam digging, fishing and picnicking and no hiking at all. AllTrails' own Ninilchik State Recreation Area park page is useless as a heading link — its top result is 'Sterling Highway: Homer to Tern Lake', a 132.6-mile drive — so no area browse is set for this stop. The real Kenai hiking is 40 miles south at Homer, which is the next stop and gets six nights; Diamond Creek, the Homestead Trail and Bishop's Beach are deliberately filed there, not here."
     },
     "palmer": {
       "activities": {
@@ -7398,6 +7656,165 @@
           "difficulty": "not graded. Mostly gravel, open to ordinary vehicles, but with heavy truck traffic, no shoulders, and long stretches with no fuel or cell coverage",
           "season": "Open year-round — this is a working pipeline haul road, not a seasonal one. The stop arrives 23 Aug 2027, which is fine: the tundra is turning and the worst of the dust season is past, though early snow on Atigun is possible by then (Atigun is well north of Coldfoot and not on this detour).",
           "note": "BLM publishes a free 24-page Dalton Highway Visitor Guide and runs the Arctic Interagency Visitor Center at Coldfoot — pick both up. Carry two full-size spares; windshield damage from passing trucks is routine. This is a two-day out-and-back at minimum if Coldfoot is the turnaround, and a long single day if the Arctic Circle sign is enough."
+        }
+      ],
+      "authority": "Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)",
+      "dogs": "Alaska State Parks: 'Pets are welcome at state parks and campgrounds if leashed and accompanied by the owner at all times; unleashed dogs are allowed in the backcountry but must be within voice command.' The regulation is a leash not exceeding nine feet in developed facilities. That covers the Chena River SRA trails below.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://dnr.alaska.gov/parks/faq.htm",
+      "trails_note": "Four nights, 23-27 Aug, and the stop's real job is the Dalton Highway run and Chena Hot Springs. These are chosen to fit around that: one short evening loop, one half-day, one that ends in the hot spring pool, one that is the best fall-colour ridge within an hour of town, and one flat in-town dog walk. Late August is the good half of the season here — tundra colour is turning, the mosquitoes are past, and Alaska State Parks warns that trapping runs fall through spring, so the dog is fine now and would not be in October.",
+      "trails": [
+        {
+          "name": "Angel Rocks Trail, Chena River SRA",
+          "distance": "3.5 mi loop",
+          "time": "2-3 hours",
+          "difficulty": "Moderate / Strenuous",
+          "elevation_gain": "approx. 900 ft",
+          "reviews": "4.7 (1,343)",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "name": "Angel Rocks Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/angel-rocks-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Angel Rocks trail handout (PDF)",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/units/chena/angelrocktrl.pdf",
+              "note": "Managing authority. 'Difficulty: Moderate / Strenuous. Total Elevation Gain: Approx. 900 ft. A 3.5 mile loop trail leads to large granite outcroppings near the north boundary of the recreation area. It is an easy day hike for most people, as the top of the rocks is less than two miles from the trailhead.' Access mile 48.9 Chena Hot Springs Road; trailhead 1,000 ft, high point 1,750 ft; hiking time 2-3 hours. Rules: 'Vehicles including mountain bikes are prohibited' — that is where uses = hike only comes from."
+            },
+            {
+              "label": "AllTrails — Chena River State Recreation Area",
+              "tier": "indexed",
+              "url": "https://www.alltrails.com/parks/us/alaska/chena-river-state-recreation-area--2",
+              "note": "Park browse page and the source of the 4.7 star figure: 'the best place to hike in Chena River State Recreation Area is Angel Rocks Trail, which has a 4.7 star rating from 1,306 reviews.' Note the `--2` on the slug; it is not the slug you would have guessed."
+            }
+          ],
+          "stats_note": "The star average of 4.7 was published against 1,306 reviews on the park browse page; AllTrails' own trail-page title now reads '1,343 Reviews'. The count moved, the average has not been republished against it.",
+          "tag": "The best half-day at this stop and the one everybody does. Steep and rocky in places — Alaska State Parks says to wear suitable footgear."
+        },
+        {
+          "name": "Granite Tors Two Mile Loop, Chena River SRA",
+          "distance": "2.1 mi loop",
+          "time": "about 50 min",
+          "difficulty": "Easy",
+          "reviews": "(81)",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "name": "Granite Tors Two Mile Loop",
+            "url": "https://www.alltrails.com/trail/us/alaska/granite-toors-two-mile-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "url_check": "Tap this one before relying on it. Two search passes rendered the slug as `granite-toors-two-mile-loop` (a character-by-character read-back confirmed t-o-o-r-s) and a third rendered it `granite-dtoors-...`. The typo is AllTrails' own, which is exactly why it cannot be reconstructed from the name. The trail itself is not in doubt — Alaska State Parks documents it — only the link.",
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Guide to Granite Tors Trail (PDF)",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/units/chena/granitetorsho.pdf",
+              "note": "Managing authority. 'Trail Access: the trail begins at the Granite Tors Campground Day-Use Area at milepost 39.5 Chena Hot Springs Road. Allowable Uses: Hiking. Distance: 15 mile loop or optional 2 mile loop. Elevation Gain: 2900 feet. Difficulty: Moderate/strenuous.' The two-mile option: 'In less than a mile, you'll encounter a boardwalk heading to your right. This connects with the West Trail, giving the option of a two mile loop hike.' Park rules: 'Vehicles including mountain bikes are prohibited.'"
+            }
+          ],
+          "stats_note": "The full Granite Tors Loop is a different day entirely — AllTrails records it as a 14.7 mi loop, challenging, average 7 h 47 min, 4.6 from 250 reviews (https://www.alltrails.com/trail/us/alaska/granite-tors-loop-trail), and Alaska State Parks calls it 15 miles with 2,900 ft of gain and a first-come shelter cabin at about mile 7. It does not fit a four-night stop built around the Dalton. The two-mile boardwalk loop off the same trailhead does, and reaches the bog and river section rather than the tors.",
+          "needs": "star rating for the two-mile loop — AllTrails publishes the 81-review count but no average alongside it. The 2,900 ft gain figure belongs to the 15-mile loop, not this one; no gain is published for the short loop."
+        },
+        {
+          "name": "Angel Rocks to Chena Hot Springs Trail",
+          "distance": "8.3 mi one way",
+          "time": null,
+          "difficulty": null,
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "name": "Chena Hot Springs via Angel Rocks Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/angel-rocks-to-chena-hot-springs",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Chena River SRA brochure (PDF)",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/brochures/chenariverbrochure.pdf",
+              "note": "Managing authority, trail descriptions section. 'Angel Rocks to Chena Hot Springs Trail. Access: milepost 48.9 (shares with Angel Rocks Trail). Travel means: foot. Distance: 8.3 miles one way. From the Angel Rocks loop, this trail travels through mixed spruce and birch forests, and along a ridge above tree line to reach Chena Hot Springs. Eye-catching views include the Chena River, Alaska Range, granite tors, Chena Dome, and Far Mountain.'"
+            }
+          ],
+          "stats_note": "Point to point, ending at the hot springs resort — which this stop is already driving to. It needs two vehicles or a lift back the 4.5 miles of road, and that is the thing to arrange, not the walking.",
+          "needs": "time, difficulty and reviews. Alaska State Parks publishes the distance and the travel means and nothing else; AllTrails' indexed snippet for this listing carries no stats either. Northern Area Office 907-451-2695."
+        },
+        {
+          "name": "Summit Trail to Wickersham Dome, White Mountains NRA",
+          "distance": "6.9 mi out-and-back",
+          "time": "about 3.5-4 hours",
+          "elevation_gain": "1,568 ft",
+          "reviews": "4.4 (294)",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "alltrails": {
+            "name": "Summit Trail to Wickersham Dome",
+            "url": "https://www.alltrails.com/trail/us/alaska/summit-trail-to-wickersham-dome",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "BLM — Summit Trail, Alaska",
+              "tier": "official",
+              "url": "https://www.blm.gov/visit/summit-trail",
+              "note": "Managing authority, Eastern Interior Field Office, 907-474-2200. 'After leaving the trailhead, the trail climbs over a small dome then drops into the trees before the junction with the Ski Loop Trail. The trail continues to climb past Wickersham Dome then to the Summit Trail Shelter at mile 8 and to its highest point at 3,100 feet near mile 10. The trail then descends through the spruce forest to Beaver Creek Wild and Scenic River and Borealis-LeFevre Cabin.' Listed activities: BIKING, HIKING, WINTER SPORTS. No fee. Trailhead at 65.27236874, -147.9685796 — the Wickersham Dome parking lot, milepost 28 Elliott Highway, north of Fairbanks."
+            }
+          ],
+          "stats_note": "Two different lengths for one trail and both are right. BLM describes the whole Summit Trail, which runs about 20 miles to Beaver Creek with a shelter at mile 8; AllTrails' 6.9 mi is the out-and-back to the dome, which is the day hike people actually do. The 4.4 star average was published alongside 280 reviews on AllTrails' Wickersham Dome POI page while the trail-page title reads 294.",
+          "season": "BLM publishes no seasonal closure — it is open ground, not a gated site. Late August is when the White Mountains tundra turns.",
+          "needs": "No published dog rule. BLM's page says nothing about pets on this trail, and it is not covered by the Alaska State Parks rule above; recorded as unknown. 907-474-2200 would settle it. BLM also warns 'crossing Beaver Creek Wild and Scenic River in the summer can be very dangerous at high water' — that is well past the dome and not on the 6.9 mi version.",
+          "cruise": false,
+          "cruise_reason": "BLM lists BIKING as a permitted activity, so it is bike-legal, but 1,568 ft of climbing in 3.5 miles on an alpine tundra trail is not rail-grade and no surface description is published. Not a dog-in-the-carrier gravel cruise."
+        },
+        {
+          "name": "Boreal Forest and Seasonal Wetland Trail, Creamer's Field",
+          "distance": "1.9 mi (3.0 km)",
+          "time": null,
+          "difficulty": "Easy",
+          "elevation_gain": "10 ft",
+          "reviews": "4.2",
+          "uses": [
+            "hike"
+          ],
+          "alltrails": {
+            "name": "Boreal Forest and Seasonal Wetland Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/boreal-forest-and-seasonal-wetland-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "ADF&G — Creamer's Field Visitor Information",
+              "tier": "official",
+              "url": "https://www.adfg.alaska.gov/index.cfm?adfg=creamersfield.access",
+              "note": "Managing authority. Names three nature trails: 'Boreal Forest Trail — Wander through forest typical of Interior Alaska. Highlights include wildlife viewing from the observation tower and a self-guiding brochure', 'Seasonal Wetland Trail — This trail borders a wetland where water level and wildlife vary seasonally. Interpretive signs and observation platforms are along the path. It is wheelchair accessible during snow-free months', and 'Farm Road Trail — Stroll past open fields and patches of woods.' ADF&G's separate wildlife-viewing page describes 'a three-mile-long network of nature trails' across the 2,000-acre refuge."
+            },
+            {
+              "label": "Komoot — Boreal Forest and Seasonal Wetland Trail",
+              "tier": "community",
+              "url": "https://www.komoot.com/smarttour/e2813414427/boreal-forest-and-seasonal-wetland-trail/",
+              "note": "Source of the 1.9 mi / 10 ft figures: 'an exceptionally easy 1.9-mile (3.0 km) hike with only 10 feet of elevation.'"
+            }
+          ],
+          "season_conflict": "ADF&G currently marks the Boreal Forest Trail '[Currently Closed]'. The Seasonal Wetland Trail and Farm Road Trail carry no closure. The AllTrails route above combines the closed trail with an open one, so half of it may not be walkable. No reopening date is published.",
+          "needs": "Whether the Boreal Forest Trail is open by 23 Aug 2027 — Farmhouse Visitor Center 907-459-7307. Also the dog rule: ADF&G's own trail page says only 'Pets - Keep them under strict control', which is guidance rather than a stated permission, so this is recorded as unknown rather than as a yes. Review count for the 4.2 average is not published alongside it (the figure comes from AllTrails' Creamers Field State Game Refuge browse page: 'the most popular is Boreal Forest and Seasonal Wetland Trail with an average 4.2 star rating').",
+          "tag": "Flat, in town on College Road, two miles, and the only one of these that works as an evening walk between a Dalton day and an aurora night."
         }
       ]
     },
@@ -13958,7 +14375,8 @@
         "Mississippi Headwaters Trail": true,
         "Dr. Roberts Trail": true,
         "Bohall Trail": true
-      }
+      },
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/minnesota/itasca-state-park"
     },
     "duluth-mn": {
       "activities": {
@@ -23257,6 +23675,116 @@
         {
           "entry": "Stop at the Wrangell-St. Elias NPS ranger station in Chitina",
           "problem": "A building, and a good idea, but not a route. Belongs in activities or points of interest. It is also where you would ask about McCarthy Road conditions, so it is worth keeping somewhere on the card."
+        }
+      ],
+      "authority": "National Park Service, Wrangell-St. Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)",
+      "dogs": "Wrangell-St. Elias is one of the very few national parks where the dog can walk the trails. NPS: 'Dogs are allowed on trails within the park and in the backcountry' — leashed, six feet maximum, and not inside visitor centres or ranger stations. Dogs must also be leashed inside the Kennecott Mines National Historic Landmark. NPS additionally warns that trapping is legal in Alaska from fall through spring and that unleashed pets get caught in snares.",
+      "dogs_verdict": "allowed",
+      "dogs_source": "https://www.nps.gov/wrst/planyourvisit/pets.htm",
+      "trails_note": "Chitina is a two-night stop at the mouth of the McCarthy Road and the next stop is McCarthy/Kennecott for six nights. Root Glacier, Bonanza Mine and Jumbo Mine are Kennecott trails and are deliberately filed there, not here. What is left is genuinely local: three trails within ten road miles of Chitina, plus Crystalline Hills, which is the one worthwhile stop on the McCarthy Road drive. Note that the Chitina Ranger Station is only open Fridays and Saturdays from 24 May to 31 Aug, staffing dependent — 15-17 Aug is inside that window, but the days are not.",
+      "trails": [
+        {
+          "name": "Liberty Falls Trail",
+          "distance": "approximately 2 mi round trip",
+          "time": "allow 1 hour",
+          "difficulty": "Moderate, some steep areas and rock scrambling",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS Wrangell-St. Elias — Trails Near the Visitor Center (PDF, includes Liberty Falls)",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/upload/Trails-Near-Wrangell-St-Elias-VC.pdf",
+              "note": "'This is a Bureau of Land Management maintained trail. It is not managed by the National Park Service.' Access: Mile 23.3 Edgerton Hwy, east of Kenny Lake, on the south side of the road 100 yards before the Liberty Falls State Recreation Site campground; a trail register marks the start. 'This trail ventures up through spruce forest to a rocky ridge with spectacular views of mountains and the Copper River.' Hazards: 'Bears are frequently seen in this area.'"
+            }
+          ],
+          "stats_note": "The trail does NOT go to the waterfall — NPS is explicit: 'This is not the trail to the waterfall. To view the falls, go to the Liberty Falls campground.' The stop's activity list already carries 'Liberty Falls State Recreation Site short walk', which is the falls, not this ridge climb. Two different outings from the same pullout.",
+          "needs": "No AllTrails listing found. Reviews unknown. BLM Glennallen Field Office (907-822-3217) holds the map and trail details per NPS.",
+          "tag": "Ten road miles west of Chitina on the Edgerton — an hour up to a Copper River overlook, and the shortest real hike of the stop."
+        },
+        {
+          "name": "O'Brien to Haley Creek Trail",
+          "distance": "approximately 10 mi round trip from O'Brien Creek to Haley Creek",
+          "time": "about 3-5 hours round trip",
+          "difficulty": "Easy to moderate, with easy stream crossings",
+          "uses": [
+            "hike",
+            "bike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS Wrangell-St. Elias — Chitina Area Trails (PDF)",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/upload/Chitina-Area-Trails.pdf",
+              "note": "'This is a privately maintained trail. It is not managed by the National Park Service.' Trailhead: drive through Chitina, take the O'Brien Creek road about 2.5 miles to parking at O'Brien Creek. 'This trail follows the old right of way of the historic Copper River and Northwestern Railway which operated from 1911 to 1938... The majority of the trail is flat with a few hills and easy stream crossings. Old railroad trestles are visible in some places. The trail passes through a historic railroad tunnel.' NPS: 'This is also a nice route for mountain biking.'"
+            }
+          ],
+          "cruise": false,
+          "cruise_reason": "Bike-legal and rail-grade, which is the shape of a cruise, but NPS records it as 'heavily used by ATVs', the access road past mile 1 carries a DOT 'Road Closed' sign with maintenance withdrawn, and private property borders the trail in many places. No published surface description, and no reviews describing riding it. Not enough to call it a dog-in-the-carrier gravel cruise.",
+          "stats_note": "The trailhead is the same O'Brien Creek Road already in this stop's offroad box — the 4x4 drive and this walk start from the same parking area, so they are one day out, not two.",
+          "needs": "No AllTrails listing found; no reviews. Surface (packed rail bed vs loose) is not published anywhere sourceable and decides whether this is bikeable with the dog."
+        },
+        {
+          "name": "5 Mile Trail",
+          "distance": "approximately 16 mi round trip",
+          "time": "allow 4-5 hours to reach the top and more time for exploring",
+          "difficulty": "Strenuous but straightforward",
+          "elevation_gain": "3,500 ft",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS Wrangell-St. Elias — Chitina Area Trails (PDF)",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/upload/Chitina-Area-Trails.pdf",
+              "note": "'This is a privately maintained trail. It is not managed by the National Park Service.' Trailhead five miles from Chitina at Mile 27.8 Edgerton Highway, near the Chitina airport. 'This is an ATV trail that is very easy to walk. The first four miles are through trees with some nice views of the Copper River below. Once above treeline there are endless opportunities for venturing off the trail.' Hazards: 'Bears are frequently sighted in this area.'"
+            }
+          ],
+          "season": "NPS: 'This trail is closed to ATVs and pack animals from July 26th through September 30th, due to the hunting season.'",
+          "season_note": "The stop is 15-17 Aug, inside that closure — which means the ATV trail is quiet and walkable. NPS also records that in late summer and early fall 'the berries are abundant along the trail. Blueberries are a bonus for making it above tree line.' The dates are the good ones for this trail, not a problem for it.",
+          "stats_note": "Sixteen miles round trip with 3,500 ft of gain is a full day and does not fit a two-night stop with a travel day either side. It is here because the first four miles to treeline are a real and much shorter outing, and because the card should say what the trail actually is rather than imply the whole thing.",
+          "needs": "No AllTrails listing found; no reviews."
+        },
+        {
+          "name": "Crystalline Hills Trail",
+          "distance": "2.5 mi loop",
+          "time": "2-3 hours",
+          "difficulty": "Easy to Moderate",
+          "uses": [
+            "hike"
+          ],
+          "dogs": true,
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "other_links": [
+            {
+              "label": "NPS Wrangell-St. Elias — McCarthy Road & Kennecott Trails",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm",
+              "note": "Inside the park, and the only maintained day hike on the McCarthy Road itself. 'Crystalline Hills Trailhead is located along the north side of the McCarthy Road, at Mile 34.8. Distance: 2.5 mile loop. Time: 2-3 hours. Difficulty: Easy to Moderate. Highlights: Road access, beautiful views.' Route: 'After hiking 1/2 mile, a short side trail leads to a nice view. The main trail continues to climb gradually through the dense forest, loops back along the base of the steep Crystalline Hills.' NPS note: 'The trail passes through shady forest and bug spray is highly recommended in summer.'"
+            }
+          ],
+          "stats_note": "Mile 34.8 of the McCarthy Road, about 35 miles from Chitina — too far to be a Chitina day out on its own, but it is directly on the transfer to McCarthy on 17 Aug. Listed here because it is the one thing on that drive worth stopping the truck for; the Kennecott trails belong to the McCarthy stop.",
+          "needs": "No AllTrails listing found; no reviews."
         }
       ]
     },

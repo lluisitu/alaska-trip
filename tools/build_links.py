@@ -470,6 +470,17 @@ def apply_stop(stop, entry, log):
     # at all, because "we did not check" and "dogs are welcome" must never look
     # the same on a card read at a trailhead.
     verdict = entry.get('dogs_verdict')
+    # Stop-level `dogs` is PROSE for the card; `dogs_verdict` is one of three
+    # words; per-trail `dogs` is a boolean. A patch arrived with the first two
+    # swapped — dogs:true and a paragraph in dogs_verdict — which merged
+    # cleanly and then crashed the audit. Three different shapes with similar
+    # names is exactly where that happens, so say which field is wrong.
+    if verdict is not None and verdict not in ('allowed', 'prohibited', 'partial'):
+        sys.exit(f"!! links_db.json: {sid}.dogs_verdict must be allowed/prohibited/partial, "
+                 f"got {str(verdict)[:70]!r}. Stop-level prose belongs in `dogs`.")
+    if entry.get('dogs') is not None and not isinstance(entry['dogs'], str):
+        sys.exit(f"!! links_db.json: {sid}.dogs is the card's prose and must be a string, "
+                 f"got {type(entry['dogs']).__name__}. Per-trail booleans go in `trail_dogs`.")
     per_trail = entry.get('trail_dogs') or {}
     # A trail whose own db entry states `dogs` was researched INDIVIDUALLY, and
     # that beats a stop-wide verdict, which is a generalisation. Without this the

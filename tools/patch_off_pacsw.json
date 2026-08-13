@@ -613,7 +613,34 @@
         }
       ]
     },
-    "cannon-beach": {},
+    "cannon-beach": {
+      "offroad": [
+        {
+          "name": "Ocean shore, Peter Iredale Road to the Gearhart beach ramp",
+          "url": "https://oregon.public.law/rules/oar_736-024-0005",
+          "season": "Open to motor vehicles \"at any time\" — the only dated Clatsop County restriction is a 12:01 p.m.–midnight closure from 1 May through 15 Sep, which does not touch 2–6 Nov 2027. No conflict.",
+          "note": "Hard sand beach driving between the Peter Iredale Road approach in Fort Stevens State Park and the beach ramp at Gearhart. Everything south of the Gearhart ramp to the Tillamook County line — all of Gearhart, Seaside and Cannon Beach itself — is closed to vehicles year-round except vehicles towing dory boats between Sunset Drive and Warren Way, with access from Warren Way only.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0005 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Ocean shore, Columbia River south jetty to Peter Iredale Road",
+          "url": "https://oregon.public.law/rules/oar_736-024-0005",
+          "season": "Closed to vehicles between 12:01 p.m. and midnight from 1 May through 15 Sep only. On 2–6 Nov 2027 the segment carries no time restriction.",
+          "note": "The northern half of the Fort Stevens beach, running up to the Columbia south jetty. The same rule sets a Clatsop County beach speed limit (OAR 736-024-0010); the Director of State Parks can issue special permits for otherwise restricted areas.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0005 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Nicolai Mountain OHV Area, Clatsop State Forest",
+          "url": "https://www.oregon.gov/ODF/Recreation/Pages/MotorizedTrails.aspx",
+          "season": "ODF publishes no seasonal gate date for Nicolai Mountain on its motorized-trails page. Unverified for 2–6 Nov 2027.",
+          "note": "ODF describes it as carrying \"four-wheel drive trails\" and says side-by-side riders will enjoy \"the bulk of the trail network in the Nicolai Mountain OHV Area\". ODF does NOT publish whether a full-size street-legal 4x4 pickup may use the trails, nor a trail mileage, nor a difficulty grade — one call settles all three. Area contact Reid Brown, 503-536-3879. It sits inland near Clatskanie, a long way east of Cannon Beach.",
+          "tier": "official",
+          "source": "Oregon Department of Forestry"
+        }
+      ]
+    },
     "white-salmon": {
       "offroad": [
         {
@@ -716,6 +743,187 @@
           "note": "The long way round Lake County's volcanic country from the Black Hills Interpretive Site — sand dunes, the remains of an eroded volcano, the Lost Forest. Crack-in-the-Ground is off it, reached by \"Crack-in-the-Ground Road for about 7 miles\" of gravel. Roughly 90 minutes southeast of Bend before the loop even starts, so it is a whole day. BLM's own advice: \"Check weather and road conditions ahead of time\" and carry area-specific maps, water, fuel and emergency equipment — there are no services on it.",
           "tier": "official",
           "source": "BLM Oregon — Christmas Valley Back Country Byway"
+        }
+      ]
+    },
+    "newport": {
+      "offroad": [
+        {
+          "name": "Oregon Dunes NRA — South Jetty beach, Florence",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "difficulty": "Beach open to OHV, 25 mph maximum",
+          "season": "SPLITS THE STAY. The Forest Service OHV map states \"BEACH OPEN TO STREET LEGAL VEHICLES Oct. 1 – April 30, Sunrise to sunset weekdays only\" and \"BEACH CLOSED TO ALL VEHICLES: May 1 – September 30, All weekends & holidays\". The stay runs Sun 21 – Sat 27 Nov 2027, so it is driveable Mon 22 through Fri 26 only; Sunday the 21st and Saturday the 27th are out. Thanksgiving falls on Thu 25 Nov 2027 and the map attaches its \"holidays\" wording to the summer closure line, not this one — worth confirming with the Siuslaw NF before planning that day around it.",
+          "note": "Riding curfew for Siltcoos to South Jetty is 6 a.m. to 10 p.m.; all staging areas open 6 a.m. to 10 p.m.; 93 dB sound limit. The beach south of Siltcoos is marked \"CLOSED TO OHV YEAR-ROUND\". Roughly 50 miles south of Newport.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        },
+        {
+          "name": "Sand Lake Recreation Area",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/sand-lake-recreation-area",
+          "season": "Campgrounds \"open year round\". The only dated restriction the Forest Service publishes is a camping-reservation or vehicle-ticket requirement over the Fourth of July holiday. No winter closure published — no conflict with 21–27 Nov 2027.",
+          "note": "\"1,076 acres of open sand dunes, surrounded by forests and adjacent to the Pacific Ocean\". A fee is required at all campgrounds, the day-use lot and the open sand, and Oregon administers the OHV permit. The Forest Service page does not state which vehicle classes may ride or whether a full-size street-legal 4x4 is permitted on the open sand — that is unresolved. Roughly 55 miles north of Newport, near Pacific City.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest"
+        },
+        {
+          "name": "Ocean shore, Tillamook County open segments (Sand Lake and Cape Kiwanda)",
+          "url": "https://oregon.public.law/rules/oar_736-024-0015",
+          "season": "The three open segments carry no dated restriction. The rule's one dated provision covers the stretch south of Oswald West State Park to the Nehalem Bay State Park north boundary, 1 Oct – 30 Apr, 7 a.m. to noon — read the rule text before relying on that one, the wording is easy to invert.",
+          "note": "Three segments are open to motor vehicles year-round: the Boy Scout property south boundary to the Galloway Road beach access (the Sand Lake / Tierra del Mar stretch), the Cape Kiwanda State Park north boundary to the base of the headland, and Pacific Avenue at Pacific City to Porter Point. The rest of the county's ocean shore is closed. Pairs naturally with a Sand Lake day. Note there is NO legal beach driving at Newport itself — Lincoln County's ocean shore is closed to motor vehicles from the Tillamook line to the Lane line under OAR 736-024-0025.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0015 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Marys Peak Road",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/conditions",
+          "season": "Siuslaw NF: \"Most forest roads are not maintained for winter travel and do not receive snow removal. This includes the road to Marys Peak.\" No gate date is published, so this is a conditions call on the day rather than a closure — late November can be either.",
+          "note": "Highest point in the Oregon Coast Range, east of Newport off Highway 34. The Forest Service pages do not publish the road's number, length or surface, so those are recorded as unknown rather than guessed. Siuslaw NF also lists Cascade Head Road (FSR 1861) as closed to motor vehicle traffic.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — Current Conditions"
+        }
+      ]
+    },
+    "bandon": {
+      "offroad": [
+        {
+          "name": "Oregon Dunes NRA — Spinreel to Horsfall, open sand riding and beach",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "difficulty": "Open riding on sand; beach 25 mph maximum",
+          "season": "OPEN FOR THE WHOLE STAY. The Forest Service OHV map states \"BEACH OPEN TO OHV: Oct. 1 – April 30\" and \"BEACH CLOSED TO ALL VEHICLES May 1 – Sept. 30\" for the Horsfall/Bull Run end — so 27 Nov – 3 Dec 2027 is inside the open season. Snowy plover beach restrictions run 15 Mar – 15 Sep, also clear. Riding curfew Horsfall to Spinreel is 6 a.m. to midnight; staging areas 6 a.m. to 10 p.m.",
+          "note": "The northern part of this beach panel is marked \"BEACH CLOSED TO OHV YEAR-ROUND\" — the open beach section is at the Horsfall / Bull Run end, reached from Horsfall Beach Road. 93 dB sound limit. Bull Run OHV Staging Area has paved parking and quick beach access via the Bull Run OHV Trail. About 25 miles north of Bandon via Coos Bay.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        },
+        {
+          "name": "Ten Mile OHV Trail (Spinreel)",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/oregon-dunes-national-recreation-area-south",
+          "distance": "2.8 mi",
+          "difficulty": "Loose sand; the Forest Service lists it open to all off-road vehicle classes",
+          "season": "No seasonal closure published for the trail itself. It ends at the beach, and the beach it reaches is under the 1 Oct – 30 Apr OHV season, which covers the stay.",
+          "note": "USFS: \"The Ten Mile OHV Trail is 2.8 miles long and is loose sand. It begins at Spinreel OHV Staging Area and ends at the beach.\" The Oregon Dunes NRA south unit is a 31,500-acre portion of the Siuslaw National Forest. Whether a full-size street-legal 4x4 counts as an admitted class on the sand trails is not stated on this page.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — Oregon Dunes NRA South"
+        },
+        {
+          "name": "Ocean shore, Five Mile Point to Bullards Beach State Park",
+          "url": "https://oregon.public.law/rules/oar_736-024-0040",
+          "season": "Open, with no dated restriction. The only seasonal Coos County closure is the stretch 500 feet north of the Horsfall Beach access south to the Dunes NRA boundary, 1 May – 30 Sep. No conflict with 27 Nov – 3 Dec 2027.",
+          "note": "The beach immediately north of the Coquille River — the Whiskey Run / Seven Devils stretch — is open to motor vehicles year-round. Bandon's own town beaches are NOT: the rule closes the shore from the northerly beach access at Bullards Beach State Park south to north of China Creek. A second open stretch runs from north of China Creek south to about a mile north of the Twomile Creek mouth, which is the New River end of Bandon State Natural Area.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0040 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Umpqua Dunes, Winchester Bay",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "season": "Umpqua Dunes is the one Oregon Dunes riding area listed \"Open 24-hours\"; the gate at the Umpqua Beach staging areas is \"Closed 10 p.m. to 6 a.m.\". No seasonal closure — open on 27 Nov – 3 Dec 2027.",
+          "note": "Sand riding only. The map marks the Umpqua beach itself \"BEACH CLOSED TO OHV YEAR-ROUND\", so this is dunes, not beach driving, and the southern end of the panel is \"CLOSED TO MOTORIZED USE\". Staged from Umpqua Beach #2 and #3 parking areas. Roughly 55 miles north of Bandon — the furthest of the three dune areas.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        }
+      ]
+    },
+    "fort-bragg": {
+      "offroad": [
+        {
+          "name": "Jackson Demonstration State Forest winter-open roads — Road 200, 250, 350, 500, 700, 810, 900",
+          "url": "https://34c031f8-c9fd-4018-8c5a-4159cdff6b0d-cdn-endpoint.azureedge.net/-/media/calfire-website/what-we-do/natural-resource-management/demostration-forests/jackson/recreation-maps-and-permits/public-notice-wet-season-road-closure.pdf",
+          "season": "CONFLICTS WITH THE STOP DATES, PARTLY. CAL FIRE's Public Notice — Seasonal Road & Campground Closure closes all JDSF campgrounds and seasonal roads for the wet season, effective 1 October in the notice read here (signed 18 Sep 2025), reopening \"in the spring\". 10–16 Dec 2027 is squarely inside that closure, so only the exception roads below will be driveable — and CAL FIRE says even those \"may be closed periodically without further notice depending on road and/or weather conditions or timing of forest management activities\".",
+          "note": "The roads that generally stay open through winter are: Road 200; Road 250 (up to Road 1000 only); Road 350 (access to Camp 1 Day Use Area); Road 500; Road 700 (to Mendocino Woodlands State Park); Road 810; Road 900 (only to Road 810/920). Two hard rules on the same notice: \"It is always unlawful to operate unlicensed vehicles (including off-road vehicles with or without green stickers) on State Forest roads\" and \"Off-road travel with motorized vehicles is not permitted on the State Forest\" — a licensed truck on these numbered roads is the only legal shape this takes. Closed roads stay open to hiking, biking and horseback. JDSF office 707-964-5674; the forest starts on the eastern edge of Fort Bragg. No mileages are published in the notice.",
+          "tier": "official",
+          "source": "CAL FIRE — Jackson Demonstration State Forest"
+        },
+        {
+          "name": "Usal Beach road, Sinkyone Wilderness State Park",
+          "url": "https://www.parks.ca.gov/?page_id=429",
+          "distance": "approximately 6 mi north from Highway 1",
+          "difficulty": "California State Parks: \"unpaved, steep, narrow road\"",
+          "season": "State Parks publishes no gate dates, but warns in capitals: \"ROADS MAY BE IMPASSABLE IN WET WEATHER.\" 10–16 Dec is mid wet season on the Mendocino coast, so this is a conditions call on the morning, not a plan — and there is no cell signal and nowhere to turn around once committed.",
+          "note": "Access to the south end of the Lost Coast. State Parks gives the turn as mile marker 90.88 on Highway 1, \"Approximately one hour north of Ft Bragg\", then north about 6 miles. \"RV'S & TRAILERS NOT RECOMMENDED.\" Note that the State Parks page does not use the names \"Usal Road\" or \"County Road 431\" — those names are not sourced from the authority, only the route description is. The park's north end (Needle Rock) is reached from Briceland Road / Mendocino County Road 435 out of Redway, last 3.5 miles unpaved, steep and narrow — roughly a three-hour drive from Fort Bragg, not a day trip.",
+          "tier": "official",
+          "source": "California State Parks — Sinkyone Wilderness State Park"
+        }
+      ]
+    },
+    "marina": {
+      "offroad": [
+        {
+          "name": "Old Coast Road",
+          "url": "https://en.wikipedia.org/wiki/Old_Coast_Road_(Big_Sur)",
+          "distance": "10.2 mi",
+          "difficulty": "\"severe switchbacks, blind curves and few pullouts or places to turn around\"; a high-clearance all-wheel or four-wheel drive vehicle is recommended",
+          "season": "No published gate dates. The source says the dirt road \"may be impassable and closed during wet weather\", and 16–19 Dec is inside the wet season, so it is a conditions call. No Monterey County, Caltrans or State Parks page for this road could be found — the seasonal status is genuinely unpublished rather than merely unfound. Worth a call to Monterey County Public Works before driving it.",
+          "note": "Leaves Highway 1 at Bixby Bridge and rejoins it near Andrew Molera State Park — the inland original alignment of the coast road. \"When passable, the drive takes about one hour.\" Declared a public road by Monterey County in 1855; most land either side is now private, so there is nowhere to stop. Tiered community deliberately: no authority publishes this road, which is itself the finding.",
+          "tier": "community",
+          "source": "Wikipedia — no official county or state page located"
+        },
+        {
+          "name": "Nacimiento-Fergusson Road (Forest Road 22S01)",
+          "url": "https://www.fs.usda.gov/r05/lospadres/alerts/roadside-camping-prohibited-nacimiento-fergusson-road",
+          "season": "UNRESOLVED, AND WORTH RE-CHECKING. No seasonal gate is published. The status history is the problem: a Forest Service release of 5 June 2024 reported the road \"remains closed to motorized vehicles until late summer\" for storm repairs, while a forest order effective 5 Sep 2025 through 5 Sep 2027 restricts roadside camping along it, which reads as a road that was open when the order was written. Re-check before the 16–19 Dec 2027 stay — Monterey Ranger District 831-385-5434.",
+          "note": "The only road crossing the Santa Lucia Range between Big Sur and the Salinas Valley. The forest order covers the road \"from its intersection with State Highway 1 then east for 12 miles\" and bans camping within 300 feet of it. The Forest Service pages do not publish the road's surface or full length, so neither is recorded here.",
+          "tier": "official",
+          "source": "USFS Los Padres National Forest"
+        },
+        {
+          "name": "Central Coast Ridge Road (Cone Peak Road)",
+          "url": "https://www.fs.usda.gov/r05/lospadres/conditions",
+          "season": "CLOSED, and not seasonally. Los Padres National Forest lists Central Coast Ridge Road, aka Cone Peak Road, under roads with long-term closure to vehicular traffic. That is open-ended, not a winter gate — assume shut on 16–19 Dec 2027 unless the forest says otherwise.",
+          "note": "The ridge road running north off Nacimiento-Fergusson Road toward Cone Peak. Recorded here so it is not researched again from scratch: the answer is no, and it has been no for years. Length and surface are not published. Note also that Fort Ord National Monument, the obvious BLM land next to this stop, is not a driving option at all — BLM states \"Use is non-motorized on authorized trails only\" (https://www.blm.gov/programs/national-conservation-lands/california/fort-ord/know-before-you-go).",
+          "tier": "official",
+          "source": "USFS Los Padres National Forest — Current Conditions"
+        }
+      ]
+    },
+    "yosemite": {
+      "offroad": [
+        {
+          "name": "Merced River Road (Briceburg, the old Yosemite Valley Railroad grade)",
+          "url": "https://www.blm.gov/visit/merced-river",
+          "distance": "4.5 mi to Railroad Flat; 7 mi to the North Fork primitive camp",
+          "difficulty": "Unpaved. BLM: \"It is NOT recommended for trailers over 18 feet or large RV's to cross over the suspension bridge.\"",
+          "season": "OPEN — and it is the only one. BLM publishes no seasonal closure. Briceburg sits at low elevation on Highway 140, twelve miles north-east of Mariposa, so this is the one driveable dirt road within reach of this stop that is not behind a snow gate on 19–23 Dec 2027.",
+          "note": "Follows the old Yosemite Valley Railroad grade downstream along the Wild & Scenic Merced from the Briceburg suspension bridge. Distances from the visitor center: McCabe Flat 2.3 mi, Willow Placer 3.6 mi, Railroad Flat 4.5 mi, with the North Fork primitive camp 2.5 miles beyond Railroad Flat. BLM Mother Lode Field Office. The Merced River Trail continues downstream from the road end but has rock and mud slide damage. This is on the Hwy 140 corridor the stop already sits on, which is what makes it work.",
+          "tier": "official",
+          "source": "BLM Merced River Recreation Management Area"
+        },
+        {
+          "name": "Yosemite winter road status — what is open, and why none of it is dirt",
+          "url": "https://www.nps.gov/yose/planyourvisit/wroads.htm",
+          "season": "NPS Winter Road Closures lists as open all year: \"Wawona Road (Highway 41), El Portal Road (Highway 140), Big Oak Flat Road (Highway 120 from the west), and Hetch Hetchy Road\". Closed across 19–23 Dec 2027: Tioga Road and Glacier Point Road, both \"usually from sometime in November through late May or early June\" (the first five miles of Glacier Point Road open mid-December to March for Badger Pass only), and Mariposa Grove Road, which closes \"on or about November 30\" and reopens no earlier than 15 April. Tire chains may be required on any of them.",
+          "note": "Recorded as the answer to the question rather than as a route: every Yosemite road NPS lists as open in winter is paved, and its winter road page names no unpaved public road as open. Hetch Hetchy Road is a genuine dead-end backcountry drive with a gate and daylight-only hours, but it is pavement. There is no legal off-pavement driving inside Yosemite for this stop — the Briceburg road above is the substitute.",
+          "tier": "official",
+          "source": "NPS Yosemite National Park — Winter Road Closures"
+        }
+      ]
+    },
+    "sequoia-kings-canyon": {
+      "offroad": [
+        {
+          "name": "South Fork Road",
+          "url": "https://www.nps.gov/seki/planyourvisit/road-conditions.htm",
+          "difficulty": "NPS: \"High clearance vehicles recommended\"",
+          "season": "OPEN — and it is the only unpaved road in either park that is not seasonally closed across 23–27 Dec 2027. NPS says it is \"typically open year-round\", with the caveat that it becomes slippery during rain or snow.",
+          "note": "Unpaved beyond the park entrance, running from Three Rivers up the South Fork of the Kaweah to South Fork Campground. NPS's road-conditions page currently carries an active alert that it is accessible but not all the way to the original trailhead parking. Its length is not published.",
+          "tier": "official",
+          "source": "NPS Sequoia & Kings Canyon National Parks"
+        },
+        {
+          "name": "Mineral King Road",
+          "url": "https://www.nps.gov/seki/planyourvisit/road-information.htm",
+          "distance": "30 mi from Three Rivers, a 1 hour 30 minute drive",
+          "difficulty": "NPS: \"extremely narrow, steep, winding, and unpaved in some areas\"",
+          "season": "CONFLICTS WITH THE STOP DATES — shut, with no negotiating it. NPS: \"generally open from the Wednesday before Memorial Day to the last Wednesday in October\", then it \"closes at the park boundary to general vehicle traffic for the winter season\". 23–27 Dec 2027 is deep inside the closure.",
+          "note": "The classic Sequoia backcountry drive and the reason people come to Three Rivers with a capable vehicle; it simply does not exist as an option in December. Kept on the card flagged rather than deleted, so the reason is visible. NPS adds that RVs and trailers are not advised and not permitted in the area's campgrounds — irrelevant here since it would be the truck, but it is the published restriction.",
+          "tier": "official",
+          "source": "NPS Sequoia & Kings Canyon National Parks"
+        },
+        {
+          "name": "Sequoia NF / Giant Sequoia NM — Western Divide and Kern River winter road closure order",
+          "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/alerts/Order%200513-25-12%20WD%20KR%202025-26%20Winter%20Road%20Closure%20Order.pdf",
+          "season": "CONFLICTS WITH THE STOP DATES. The 2025–26 order, Forest Order No. 0513-25-12, ran 4 December 2025 through 15 June 2026 and closed 76 named Forest Roads to \"any type of motorized wheeled vehicle\". An equivalent order is issued every year and starts late November or early December — the 2024–25 order ran 23 Nov 2024 – 15 Jun 2025 — so the whole Western Divide network south of the park should be assumed gated across 23–27 Dec 2027.",
+          "note": "The only exemptions are a Forest Service permit FS-7700-48, officials on duty, and tracked over-snow vehicles where there is at least twelve inches of snow on the road. Roads named in the order include Dennison Peak 19S05, Mountain Home North 20S87, the Balch Park area roads, Quaking Aspen 21S61 and Dome Rock 21S69. Recorded so the December answer is on the card: the forest roads behind Three Rivers are shut, and the Kings Canyon Scenic Byway to Cedar Grove is separately closed from mid-November to late April.",
+          "tier": "official",
+          "source": "USFS Sequoia National Forest — Forest Order 0513-25-12"
         }
       ]
     }

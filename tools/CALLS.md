@@ -8,6 +8,23 @@ Each line is a question the managing authority does not publish. They are not
 blockers: every one of them is recorded on the dashboard as unknown rather than
 guessed, which is the safe state. Making the call turns a blank into an answer.
 
+## 2027-04-16 — Saratoga, WY  `saratoga`
+
+- **307-328-4200** — Managing authority, Rawlins Field Office, 307-328-4200.
+  <sub>trails.0</sub>
+- **307-328-4200** — Rawlins Field Office 307-328-4200 would settle it.
+  <sub>trails.0</sub>
+
+## 2027-05-01 — Twin Falls, ID  `twin-falls`
+
+- **208-677-6600** — No road name, length, surface or difficulty is published; the Burley Field Office, 208-677-6600, would settle it.
+  <sub>offroad.2</sub>
+
+## 2027-05-03 — Stanley / Sawtooth NRA, ID  `sawtooth-nra`
+
+- **208-423-7500** — A call to the Sawtooth NF Supervisor's Office, 208-423-7500, would settle whether it is driveable in early May.
+  <sub>offroad.2</sub>
+
 ## 2027-06-26 — Fairbanks / North Pole, AK  `fairbanks-1`
 
 - **(907) 459-7307** — Boreal Forest and Seasonal Wetland Trail — ADF&G Creamer's Field, (907) 459-7307.
@@ -22,11 +39,15 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **(907) 288-3178** — Seward Ranger District, (907) 288-3178.
   <sub>dogs_unpublished.action</sub>
+- **907-288-3178** — Seward Ranger District 907-288-3178 for the state of the top five miles.
+  <sub>offroad.2</sub>
 
 ## 2027-07-14 — Seward, AK  `seward`
 
 - **(907) 288-3178** — Ptarmigan Lake — Chugach NF, Seward Ranger District, (907) 288-3178.
   <sub>dogs_needs_check.1</sub>
+- **907-288-3178** — Forest Service: "A 12 mile gravel road climbing from the Hope area to a high valley containing past and present mining activity." Seward Ranger District 907-288-3178 covers it.
+  <sub>offroad.0</sub>
 
 ## 2027-07-23 — Homer, AK  `homer`
 
@@ -37,6 +58,46 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **907-835-4526** — Valdez Parks & Rec, 907-835-4526.
   <sub>dogs_needs_check.0</sub>
+
+## 2027-08-15 — Chitina, AK  `chitina`
+
+- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-822-5234** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-822-3217** — BLM Glennallen Field Office (907-822-3217) holds the map and trail details per NPS.
+  <sub>trails.0</sub>
+
+## 2027-08-17 — McCarthy / Kennecott, AK  `mccarthy`
+
+- **907-822-5234** — Stop at the Slana Ranger Station at Mile 0.2 for current road conditions, or call the park on 907-822-5234 first.
+  <sub>offroad.0</sub>
+
+## 2027-08-23 — Fairbanks, AK (Dalton Hwy / Arctic Circle base)  `fairbanks-2`
+
+- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+  <sub>authority</sub>
+- **907-459-7307** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+  <sub>authority</sub>
+- **907-474-2200** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+  <sub>authority</sub>
+- **907-451-2695** — Northern Area Office 907-451-2695.
+  <sub>trails.2</sub>
+- **907-474-2200** — Managing authority, Eastern Interior Field Office, 907-474-2200.
+  <sub>trails.3</sub>
+- **907-474-2200** — 907-474-2200 would settle it.
+  <sub>trails.3</sub>
+- **907-459-7307** — Whether the Boreal Forest Trail is open by 23 Aug 2027 — Farmhouse Visitor Center 907-459-7307.
+  <sub>trails.4</sub>
+
+## 2027-09-17 — Dease Lake, BC  `dease-lake`
+
+- **250-771-4591** — BC Parks Stikine Area 250-771-4591 is the number that would settle all three, and is worth the call anyway to ask whether Telegraph Creek Road is in shape in mid-September.
+  <sub>trails.0</sub>
+- **250-771-4591** — Two numbers settle it: Edziza Trails direct, and BC Parks Stikine Area 250-771-4591.
+  <sub>trails.1</sub>
 
 ## 2027-10-03 — Winthrop, WA (North Cascades)  `winthrop`
 
@@ -51,16 +112,85 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
   <sub>scenicDrives_patch.0</sub>
 - **360-565-3100** — Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop.
   <sub>trails.3</sub>
+- **(360) 565-3131** — Phone the recorded road line, (360) 565-3131, updated daily, before driving up.
+  <sub>offroad.0</sub>
 
 ## 2027-10-25 — Forks, WA  `forks`
 
 - **360-565-3100** — Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop.
   <sub>trails.3</sub>
 
+## 2027-11-02 — Cannon Beach / Astoria, OR (N. Oregon Coast)  `cannon-beach`
+
+- **736-024-0005** — https://oregon.public.law/rules/oar_736-024-0005
+  <sub>offroad.0</sub>
+- **736-024-0005** — Oregon Parks & Recreation Dept — OAR 736-024-0005 (rule text via oregon.public.law)
+  <sub>offroad.0</sub>
+- **736-024-0010** — The same rule sets a Clatsop County beach speed limit (OAR 736-024-0010); the Director of State Parks can issue special permits for otherwise restricted areas.
+  <sub>offroad.1</sub>
+- **503-536-3879** — Area contact Reid Brown, 503-536-3879.
+  <sub>offroad.2</sub>
+
+## 2027-11-06 — White Salmon, WA (Columbia Gorge)  `white-salmon`
+
+- **(509) 395-3402** — Recorded with its blanks left blank — Gifford Pinchot publishes no length, surface or vehicle requirement for it, and the Mt Adams Ranger District, (509) 395-3402, is the only source that will know.
+  <sub>offroad.1</sub>
+
 ## 2027-11-15 — Bend, OR  `bend`
 
 - **541-388-6581** — Assume no vehicle access and check Deschutes County road closures (541-388-6581) before planning a day around it.
   <sub>trails.1</sub>
+
+## 2027-11-21 — Newport, OR  `newport`
+
+- **736-024-0015** — https://oregon.public.law/rules/oar_736-024-0015
+  <sub>offroad.2</sub>
+- **736-024-0025** — Note there is NO legal beach driving at Newport itself — Lincoln County's ocean shore is closed to motor vehicles from the Tillamook line to the Lane line under OAR 736-024-0025.
+  <sub>offroad.2</sub>
+- **736-024-0015** — Oregon Parks & Recreation Dept — OAR 736-024-0015 (rule text via oregon.public.law)
+  <sub>offroad.2</sub>
+
+## 2027-11-27 — Bandon, OR  `bandon`
+
+- **736-024-0040** — https://oregon.public.law/rules/oar_736-024-0040
+  <sub>offroad.2</sub>
+- **736-024-0040** — Oregon Parks & Recreation Dept — OAR 736-024-0040 (rule text via oregon.public.law)
+  <sub>offroad.2</sub>
+
+## 2027-12-10 — Fort Bragg, CA  `fort-bragg`
+
+- **707-964-5674** — JDSF office 707-964-5674; the forest starts on the eastern edge of Fort Bragg.
+  <sub>offroad.0</sub>
+
+## 2027-12-16 — Marina, CA (Monterey)  `marina`
+
+- **831-385-5434** — Re-check before the 16–19 Dec 2027 stay — Monterey Ranger District 831-385-5434.
+  <sub>offroad.1</sub>
+
+## 2028-01-08 — Borrego Springs / Anza-Borrego Desert SP, CA  `borrego-springs`
+
+- **760-767-4205** — Worth a call to the visitor centre (760-767-4205) to confirm the length before planning round it.
+  <sub>trails.6</sub>
+
+## 2028-01-22 — Kofa NWR (Palm Canyon Road), AZ  `kofa-nwr`
+
+- **(928) 928-6873** — The stop's 22-27 Jan 2028 dates are prime desert season; the hazard here is a washed-out road after rain, and FWS asks you to phone (928) 928-6873 for current conditions.
+  <sub>offroad.0</sub>
+
+## 2028-02-04 — Tucson, AZ  `tucson`
+
+- **(520) 749-8700** — Santa Catalina Ranger District, (520) 749-8700, if a late-February reopening is worth asking about.
+  <sub>offroad.2</sub>
+
+## 2028-02-18 — Chiricahua NM / Willcox, AZ  `chiricahua-willcox`
+
+- **(520) 364-3468** — Douglas Ranger District, (520) 364-3468, for current conditions.
+  <sub>offroad.0</sub>
+
+## 2028-02-23 — Bisbee / Tombstone, AZ  `bisbee-tombstone`
+
+- **(520) 378-0311** — Ranger station (520) 378-0311 to check whether it has opened early.
+  <sub>offroad.1</sub>
 
 ## 2028-03-28 — Torrey, UT (Capitol Reef)  `torrey`
 

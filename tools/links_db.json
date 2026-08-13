@@ -373,7 +373,8 @@
             }
           ]
         }
-      }
+      },
+      "offroad": []
     },
     "santafe": {
       "authority": "Santa Fe National Forest / City of Santa Fe",
@@ -956,7 +957,49 @@
           "dogs": false
         }
       },
-      "activities_note": "Every highlight here carries the red no-dogs pill. NPS bans pets from ALL RMNP trails, tundra and meadows, so four of these five are things the dog cannot come on — the exception being Trail Ridge Road, which is a drive."
+      "activities_note": "Every highlight here carries the red no-dogs pill. NPS bans pets from ALL RMNP trails, tundra and meadows, so four of these five are things the dog cannot come on — the exception being Trail Ridge Road, which is a drive.",
+      "offroad": [
+        {
+          "name": "Old Fall River Road",
+          "url": "https://www.nps.gov/romo/planyourvisit/old_fall_river_road.htm",
+          "distance": "11 mi",
+          "difficulty": "one-way uphill, primarily gravel",
+          "season": "CLOSED FOR THIS STOP, WITHOUT AMBIGUITY. NPS's own opening/closing record for 1921-2009 shows the earliest opening ever recorded as 6 June (1935), with most years opening late June to 4 July. The stop is 11-16 Apr 2027 — the road has never in its recorded history been open that early. The dates table is at https://www.nps.gov/romo/learn/photosmultimedia/opening_closing_trr_ofr.htm",
+          "note": "The first auto route into the park's high country, opened 1920, ending at the Alpine Visitor Center. NPS states 11 miles; recent news coverage of openings says 9.4 miles — the discrepancy is unresolved and the NPS figure is used here. Note also that pets are prohibited on all RMNP trails, tundra and meadows, so this is a drive-only outing even when it is open.",
+          "tier": "official",
+          "source": "NPS Rocky Mountain National Park"
+        },
+        {
+          "name": "Pole Hill Road (FSR 122 / FSR 247)",
+          "url": "https://www.fs.usda.gov/r02/arp/recreation/pole-hill-road-122",
+          "distance": "3.30 mi (#122) plus 3.24 mi (#247)",
+          "difficulty": "rated Easy 4 on the 4x4Explore scale; the Forest Service says only that the road is rough",
+          "season": "CLOSED FOR THIS STOP. The seasonal motorized period is 15 Jun to 30 Nov; the stop is 11-16 Apr 2027. The Forest Service page itself publishes no dates — the 15 Jun-30 Nov window comes from 4x4Explore's transcription of the Canyon Lakes Ranger District MVUM (https://www.4x4explore.com/rds/p_rds/pole_hl.html), which gives the same window for every 4x4 road in this district.",
+          "note": "Loop road three miles east of Estes Park off Highway 36, including the Panorama Peak loop. Starts on private land; the National Forest boundary is 0.9 miles from the highway. USFS: \"Dispersed camping with trailers along #122 is not recommended due to the roughness of the road\" and \"there is no access from Larimer County Road 18E to the east side of Pole Hill Road.\"",
+          "tier": "official",
+          "source": "USFS Arapaho and Roosevelt NF (Canyon Lakes RD)"
+        },
+        {
+          "name": "Johnny Park Road (FSR 118)",
+          "url": "https://www.fs.usda.gov/r02/arp/recreation/johnny-park-road-118",
+          "distance": "5.5 mi",
+          "difficulty": "rated Easy 4 on the 4x4Explore scale; the Forest Service describes the road as rough",
+          "season": "CLOSED FOR THIS STOP. COTREX, the state's official trail register, records 15 Jun-30 Nov seasonal motorized access for 4.9 of the 5.5 miles, with 0.6 miles open year-round (https://trails.colorado.gov/roads/johnny-park-7505). The stop is 11-16 Apr 2027.",
+          "note": "Reached 9.5 miles east of Estes Park on Highway 36 — a forest access sign directs you west on a gravel road toward the Big Elk Meadows subdivision, and Johnny Park Road is six miles along it. Also reachable from Big Owl or Cabin Creek Road north of Meeker Park. USFS: \"Dispersed camping with a trailer is very limited on #118 due to the roughness of the road.\"",
+          "tier": "official",
+          "source": "USFS Arapaho and Roosevelt NF (Canyon Lakes RD)"
+        },
+        {
+          "name": "Pierson Park Road (FSR 119)",
+          "url": "https://www.fs.usda.gov/r02/arp/recreation/pierson-park-road-119",
+          "distance": "9.75 mi per COTREX; 13.61 mi including both segments per 4x4Explore",
+          "difficulty": "rated Easy 4 on the 4x4Explore scale; the Forest Service publishes no grade",
+          "season": "CLOSED FOR THIS STOP. COTREX records 15 Jun-30 Nov seasonal access for 4WD vehicles, ATVs and motorcycles alike (https://trails.colorado.gov/roads/pierson-park-14192). The stop is 11-16 Apr 2027.",
+          "note": "USFS: \"High-clearance vehicles are recommended on this popular road south of Estes Park\" and \"Be aware of private property in the area.\" A Forest Service closure order has at times shut the southern portion of FSR 119 at its junction with County Road 82, so check the forest's alerts page before relying on a through route. The blunt summary for this stop: there is no driveable dirt near Estes Park in mid-April — every 4x4 road here sits behind a 15 June gate, and Old Fall River Road behind a June-at-the-earliest one.",
+          "tier": "official",
+          "source": "USFS Arapaho and Roosevelt NF (Canyon Lakes RD)"
+        }
+      ]
     },
     "flaming-gorge": {
       "authority": "USDA Forest Service — Ashley National Forest (Flaming Gorge NRA)",
@@ -1459,7 +1502,37 @@
         }
       },
       "drop_note": true,
-      "drop_note_why": "It explained why the stop moved from mid-May to 1 May — reasoning that mattered while the date was being decided and is now history sitting above the things you act on. Its own conclusion is that you cannot know until about two weeks out anyway, since Shoshone Falls depends on federal releases from the Upper Snake reservoirs rather than the calendar. Removed from the card; the Idaho Power and USGS reasoning is preserved here and in git history if the date is ever revisited."
+      "drop_note_why": "It explained why the stop moved from mid-May to 1 May — reasoning that mattered while the date was being decided and is now history sitting above the things you act on. Its own conclusion is that you cannot know until about two weeks out anyway, since Shoshone Falls depends on federal releases from the Upper Snake reservoirs rather than the calendar. Removed from the card; the Idaho Power and USGS reasoning is preserved here and in git history if the date is ever revisited.",
+      "offroad": [
+        {
+          "name": "Devil's Corral / Snake River Rim Recreation Area",
+          "url": "https://www.riderplanet-usa.com/atv/trails/info/idaho_14841/ride_8773.htm",
+          "distance": "20 mi of routes across roughly 206 acres",
+          "difficulty": "mostly beginner terrain with some intermediate and no expert; mostly hard-packed dirt with sandy patches and scattered rocks",
+          "season": "OPEN ON THESE DATES. Published as year-round, daylight hours only (5am to 10pm). The stop is 1-3 May 2027 — no conflict.",
+          "note": "On the Snake River canyon rim immediately north of Twin Falls; the hill Evel Knievel launched from in 1974 is visible from it. Managed by the BLM Twin Falls District and Jerome County, and registered 4x4 vehicles are permitted alongside motorcycles, ATVs and UTVs. Camping and overnight parking prohibited. Access: US-93 north about 5 miles, right onto Shoshone Falls Road just after the Perrine Bridge, parking about 100 yards on the right. No BLM page for this area could be found, so the mileage and difficulty are community-sourced and unverified against the land manager.",
+          "tier": "community",
+          "source": "RiderPlanet USA (area managed by BLM Twin Falls District / Jerome County)"
+        },
+        {
+          "name": "City of Rocks Back Country Byway",
+          "url": "https://www.nps.gov/ciro/planyourvisit/auto-touring.htm",
+          "distance": "49 mi",
+          "difficulty": "not published by NPS; the page describes only a \"narrow, winding road\" at Circle Creek Overlook",
+          "season": "CONFLICTS — likely still impassable in places. NPS states \"Many roads are not maintained during the winter and may become impassable from late November through May\" (https://www.nps.gov/ciro/planyourvisit/basicinfo.htm). The stop is 1-3 May 2027, inside that window. The reserve is open 24/7 year-round but its roads are not maintained. Phone reserve headquarters before planning a day around it.",
+          "note": "A 49-mile loop beginning in Albion, forming a half-circle around the Albion Mountain Range and passing through City of Rocks National Reserve. Roughly 65-75 miles from Twin Falls, so a full day out. NPS does not state which sections are gravel and which are paved — the surface breakdown could not be sourced.",
+          "tier": "official",
+          "source": "NPS City of Rocks National Reserve"
+        },
+        {
+          "name": "Milner Historic Recreation Area roads",
+          "url": "https://www.blm.gov/visit/milner-historic-recreation-area",
+          "season": "UNKNOWN. No seasonal closure is published for this site, and an absence of dates is not confirmation that it is open — recorded as genuinely unknown.",
+          "note": "BLM site on the south side of the Snake River about 9 miles west of Burley, roughly 2,050 acres with four miles of river shoreline — the largest accessible stretch of public land on the river in the Magic Valley. Oregon Trail ruts cross the loop road in a couple of places. The only vehicle guidance BLM publishes is that \"RV's and large trailers are recommended to use the west entrance into the historic recreation area due to low clearance on the east end\" — irrelevant for the truck, but it is the only road note there is. No road name, length, surface or difficulty is published; the Burley Field Office, 208-677-6600, would settle it.",
+          "tier": "official",
+          "source": "BLM Burley Field Office"
+        }
+      ]
     },
     "sawtooth-nra": {
       "authority": "USDA Forest Service — Sawtooth National Recreation Area",
@@ -1570,7 +1643,37 @@
           ]
         }
       },
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/idaho/sawtooth-national-recreation-area"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/idaho/sawtooth-national-recreation-area",
+      "offroad": [
+        {
+          "name": "Yankee Fork Road (FR 070)",
+          "url": "https://ordealist.com/guides/yankee-fork-road",
+          "distance": "25 mi",
+          "difficulty": "Easy; graded gravel with potholes after rain. \"Standard high-clearance vehicle in dry conditions.\"",
+          "season": "PARTIAL CONFLICT. \"Snow closes the upper road from late November through April most years\" — so the lower road may be driveable on 3-6 May 2027, but the upper section is marginal and everything worth stopping for is shut until Memorial Day weekend. No Forest Service opening date is published for this road.",
+          "note": "Begins at Sunbeam on Highway 75 between Stanley and Challis and runs north up the Yankee Fork tributary of the Salmon River past the dredge tailings toward Bonanza and Custer. The lower few miles are the most likely thing to be driveable in early May of anything researched for this stop.",
+          "tier": "community",
+          "source": "Ordealist (road managed by USFS Salmon-Challis National Forest)"
+        },
+        {
+          "name": "Custer Motorway (FR 013 / FR 070)",
+          "url": "https://ordealist.com/guides/custer-motorway",
+          "distance": "46 mi",
+          "difficulty": "Moderate; graded gravel for most of the route, deteriorating to rougher dirt on the climbs near the divide. \"High-clearance vehicle. Not recommended for low-clearance vehicles or trailers.\"",
+          "season": "CLOSED FOR THIS STOP. \"Snow closure. The route closes from approximately November through May.\" The destination is shut too: the Custer townsite opens Memorial Day weekend through Labor Day, and the Yankee Fork Gold Dredge runs tours from the Saturday before Memorial Day. The stop is 3-6 May 2027, three to four weeks before any of that opens.",
+          "note": "The historic 1879 freight road from Challis to the Custer and Bonanza ghost towns, about 21 miles northeast of Stanley. FR 013 is the southern access, FR 070 the northern. The Salmon-Challis National Forest's own Custer Ghost Town page publishes no road number, mileage, surface or season, so the figures here are community-sourced and could not be verified against the Forest Service. One consolation for these dates: Bayhorse ghost town, in Land of the Yankee Fork State Park near Challis, opens for the season on 1 May, which does fall inside this stay.",
+          "tier": "community",
+          "source": "Ordealist (route managed by USFS Salmon-Challis National Forest)"
+        },
+        {
+          "name": "Fourth of July Creek Road (FSR 209)",
+          "url": "https://www.fs.usda.gov/r04/sawtooth/recreation/fourth-july-creek-trailhead",
+          "season": "UNKNOWN — no opening date is published. The Sawtooth National Forest trailhead page gives no road name, length, surface, vehicle recommendation or season, and the forest's current-conditions page carries no road status list for the Stanley area. The trailhead sits well above 7,000 ft in the White Clouds so early May is very unlikely, but that is inference, not a sourced date.",
+          "note": "Recorded deliberately as an absence rather than dropped. The Forest Service confirms the trailhead exists and that it serves hikers, backpackers and pack animals, but publishes nothing about the access road. A call to the Sawtooth NF Supervisor's Office, 208-423-7500, would settle whether it is driveable in early May.",
+          "tier": "unlisted",
+          "source": "USFS Sawtooth National Forest"
+        }
+      ]
     },
     "craters-of-the-moon": {
       "authority": "National Park Service — Craters of the Moon NM & Preserve",
@@ -1655,6 +1758,35 @@
         {
           "entry": "Inferno Cone Trail",
           "problem": "Superseded by a researched entry for the same trail under its real listing title."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "BLM backcountry primitive road network (Arco-Minidoka Road, Laidlaw Road and connections)",
+          "url": "https://www.nps.gov/crmo/planyourvisit/safety.htm",
+          "difficulty": "NPS: \"Backcountry roads on the BLM portion of the monument are unpaved and can present challenging driving conditions any time of year\", naming wash-outs, large sharp rocks, soft mud and no shoulder. BLM: \"A network of primitive roads in the BLM backcountry offer driving and exploration opportunities for motorists with high-clearance, 4-wheel-drive vehicles\" (https://www.blm.gov/visit/craters-moon-national-monument).",
+          "season": "No seasonal gate is published for the BLM roads — NPS says conditions are challenging \"any time of year\", which is a warning rather than a closure. Early May is the mud end of that. The stop is 6-7 May 2027; treat as open but conditions-dependent, not as confirmed passable.",
+          "note": "The park requires rather than recommends specific kit for these roads: \"a high clearance, 4-wheel drive vehicle, a fire extinguisher, and a good map\", and directs visitors to download the BLM travel map first (https://www.blm.gov/sites/blm.gov/files/Craters-of-the-moon_map.pdf). That map classifies roads only as improved or unimproved and names Arco-Minidoka Road, Laidlaw Road, North Laidlaw Road, Turnbull Road, Moran Road, Split Top Road, Wood Road, Wapi Road, Bear Trap Ice Caves Road, Arco-Caves Road, Kimama Road and Carey-Kimama Road, publishing no individual mileages. On the off-road prohibition, a BLM travel-tips PDF states that cross-country motorized travel is not allowed within the monument except immediately adjacent to roads — that wording came from a search snippet because the PDF itself returned 502 twice, so treat the exact phrasing as indexed rather than confirmed.",
+          "tier": "official",
+          "source": "NPS Craters of the Moon NM & Preserve / BLM Idaho"
+        },
+        {
+          "name": "Craters of the Moon Loop Road",
+          "url": "https://www.nps.gov/crmo/planyourvisit/hours.htm",
+          "distance": "7 mi",
+          "difficulty": "paved — listed for its season, not its difficulty",
+          "season": "PROBABLY OPEN, AND THIS IS THE DATE THAT MATTERS. NPS: \"The Loop Road is typically open from mid April through late November as conditions allow.\" It is closed to motor vehicles \"each year, generally from the late fall to late spring, when snow and ice accumulations create hazardous conditions\". The stop is 6-7 May 2027, past the mid-April typical opening — but recent years have seen it reopen in stages, one segment at a time, so a partial opening is possible.",
+          "note": "Paved, not an off-road route; included because it is the only maintained road in the NPS half of the monument and because its reopening is the one genuinely date-sensitive fact for this one-night stop. Reaches the cinder cones, the lava flow trails and Lava Flow Campground.",
+          "tier": "official",
+          "source": "NPS Craters of the Moon NM & Preserve"
+        },
+        {
+          "name": "Laidlaw Park Kipuka driving tour",
+          "url": "https://data.amerigeoss.org/dataset/blm-idaho-craters-laidlaw-driving-tour-map",
+          "season": "No seasonal dates published. Same conditions caveat as the rest of the BLM backcountry network — unpaved, challenging any time of year, and early May is mud season.",
+          "note": "BLM-Idaho's Shoshone Field Office publishes a georeferenced driving-tour map \"to assist adventurous folks with 4WD vehicles interested in exploring the Laidlaw Park Kipuka of the Craters of the Moon Monument and Preserve.\" A companion brochure, 'Laidlaw Park: Sagebrush Oasis', is referenced. No route mileage or difficulty is published. Laidlaw Park is the large kipuka — an island of older ground surrounded by lava — in the southern, BLM-managed half of the monument.",
+          "tier": "community",
+          "source": "BLM Idaho Shoshone Field Office (via AmeriGEOSS dataset listing)"
         }
       ]
     },
@@ -4082,6 +4214,37 @@
           "needs": "Length, time and difficulty are all unpublished by the Forest Service, which describes the trailhead rather than the trail. AllTrails has a 1.5 mi 'Platte River Trail' listing (26 reviews) but its nearest-town label is Centennial, on the far side of the Snowy Range, and it could not be confirmed as this trail — so it carries no link here rather than a plausible wrong one. Brush Creek/Hayden Ranger District would settle both the length and whether the FR 492 access is drivable in April.",
           "stats_note": "It is roughly 44 road miles from Saratoga: down to Encampment, then 22 miles south on WY-230, then 2 miles of forest road."
         }
+      ],
+      "offroad": [
+        {
+          "name": "WYO 130 — Snowy Range Scenic Byway seasonal gate section",
+          "url": "https://www.dot.state.wy.us/news/wy130-seasonal-closure",
+          "distance": "the closed section spans mile markers 36-48",
+          "difficulty": "paved two-lane highway — listed only because it is the gate",
+          "season": "CLOSED FOR THIS STOP. WYDOT: \"The closure spans mile markers 36-48, from the Green Rock trailhead in the east to just above Ryan Park in the west.\" In a recent year it closed 26 Nov and reopened 7 May the following spring (https://www.dot.state.wy.us/news/wyo-130-through-the-snowy-range-opens-for-the-season). The Saratoga chamber puts it more loosely at \"usually opens by Memorial Day weekend\". Either way 16-20 Apr 2027 is inside the closure.",
+          "note": "Not an off-road route, and listed here only because it is the gate controlling access to the whole Snowy Range unpaved road network from Saratoga. Tops out at 10,800 ft. With WYO 130 and WYO 70 both shut, there is effectively no high-country backcountry driving available from this stop on these dates — which is the finding, and it is better on the card than a blank box.",
+          "tier": "official",
+          "source": "Wyoming Department of Transportation"
+        },
+        {
+          "name": "Bennett Peak Road (BLM Road 3404) via County Road 660",
+          "url": "https://www.blm.gov/visit/bennett-peak-campground",
+          "distance": "7 mi on BLM Road 3404, after 12 mi of gravel County Road 660",
+          "difficulty": "not published; BLM describes CR 660 only as a \"graveled road\"",
+          "season": "CLOSED FOR THIS STOP. BLM publishes: \"Use season predominately from June 1st through November 15th depending on winter conditions.\" The stop is 16-20 Apr 2027, six weeks before the season opens.",
+          "note": "BLM's directions verbatim: \"From I-80, take Wyo 130 and Wyo 230 south aprox 38 miles to Riverside, take Wyo 230 east for 4 miles. Turn left onto County Rd 660 for 12 miles on graveled road to Bennett Peak Rd (BLM Road 3404) and follow it 7 miles to the campground.\" Ends at a BLM campground and boat ramp on the North Platte. This is the lowest-elevation unpaved route found near Saratoga and it still does not open until June.",
+          "tier": "official",
+          "source": "BLM Rawlins Field Office"
+        },
+        {
+          "name": "Deep Creek Road (FR 801) to Aspen Alley",
+          "url": "https://www.saratogachamber.info/play/scenic-byways",
+          "difficulty": "not published by any authority",
+          "season": "CLOSED FOR THIS STOP, indirectly. The road leaves WYO 70 about 25 miles west of Encampment, inside the Battle Pass seasonal closure (mile markers 27-50). WYDOT closed that stretch on 5 Dec in a recent year and crews only begin plowing the 23-mile section in mid-April to early May; one early year reopened 1 May and was described as almost three weeks ahead of normal (https://www.dot.state.wy.us/news/wyo-70-over-battle-pass-opens-for-the-season-4). The stop is 16-20 Apr 2027, so the access highway is very unlikely to be open.",
+          "note": "From Encampment travel west about 25 miles on Highway 70 to Deep Creek Road (FR 801), then north 0.8 miles — \"a half mile stretch of dirt road\" overarched by tall aspens. Medicine Bow-Routt National Forest publishes no mileage, grade or surface rating for FR 801, so this entry is chamber-of-commerce sourced.",
+          "tier": "community",
+          "source": "Saratoga/Platte Valley Chamber of Commerce"
+        }
       ]
     },
     "dawson-city": {
@@ -5043,7 +5206,29 @@
       ],
       "dogs_source": "https://www.nps.gov/grca/planyourvisit/pets.htm",
       "dogs_source_quote": "Leashed pets are allowed on trails above the rim, Mather Campground, Desert View Campground, Trailer Village, and throughout developed areas.",
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/grand-canyon-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arizona/grand-canyon-national-park",
+      "offroad": [
+        {
+          "name": "Forest Road 302 to Grandview Lookout Tower (Coconino Rim Road / FR 310)",
+          "url": "https://www.fs.usda.gov/r03/kaibab/recreation/trails/vishnu-trail-125",
+          "distance": "about 16.9 miles from the Tusayan Ranger District — FR 302 for approximately 15 miles, then FR 310 for approximately 1.4 miles. From inside the park it is about 18 miles: US-64 east, then \"Coconino Rim Road/Forest Road 310 and follow for approximately 1.3 miles\"",
+          "difficulty": "NOT PUBLISHED. Kaibab National Forest gives the route and the mileages and says nothing about surface, high clearance or 4WD — recorded as unknown rather than guessed.",
+          "season": "No gate date published. About 7,000 ft on the Coconino Rim and the stop arrives 12 Mar 2028, so late-season snow and spring mud are both live. The Forest publishes no winter status for these roads.",
+          "note": "The straightforward version of the Grandview country: graded forest road from Tusayan out to the 1936 Grandview Lookout Tower, with a paved return into the park on SR 64 if the dirt turns bad. FR 310 leaves Desert View Drive within minutes of the park boundary. This is the answer to \"where can the truck go off pavement at the South Rim\" — because inside Grand Canyon National Park it cannot; the park has no unpaved road open to visitor driving on this rim, and Tuweep's rough roads are on the far side of the canyon, a five-hour drive, not a day trip.",
+          "tier": "official",
+          "source": "USFS Kaibab National Forest — Vishnu Trail #125 (driving directions)"
+        },
+        {
+          "name": "Grandview Loop — Forest Roads 302, 310, 2718 and 2719",
+          "url": "https://www.arizonahighways.com/grandview-loop",
+          "distance": "30.4-mile loop — FR 302 for 14.3 miles east from Tusayan, FR 310 (Coconino Rim Road) for 2.1, FR 2718 for 1.5, FR 2719 for 6, then FR 302 for 6.5 back",
+          "difficulty": "\"A high-clearance vehicle is required for forest roads 2718 and 2719, and four-wheel-drive is recommended.\" FR 302 and 310 are ordinary graded forest road.",
+          "season": "No published gate. This is Kaibab NF at about 7,000 ft on the Coconino Rim and the stop arrives 12 Mar 2028 — late-season snow and spring mud are both live possibilities on FR 2718/2719. The paved bail-out is stated on the source: passenger cars can enter the park and return on SR 64 instead.",
+          "note": "This is the answer to \"where can the truck actually go off pavement at the South Rim\", because inside the park it cannot. Kaibab National Forest wraps the park's south boundary and FR 310 (Coconino Rim Road) leaves Desert View Drive within minutes of the park line, running to the 1936 Grandview Lookout Tower. Recorded from Arizona Highways — the Kaibab NF pages found do not describe this route.",
+          "tier": "community",
+          "source": "Arizona Highways — Grandview Loop"
+        }
+      ]
     },
     "zion": {
       "authority": "National Park Service",
@@ -5217,7 +5402,28 @@
       "area_browse_alltrails": "https://www.alltrails.com/parks/us/utah/zion-national-park",
       "trail_dogs": {
         "Pa'rus Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Smithsonian Butte National Back Country Byway",
+          "url": "https://www.blm.gov/visit/smithsonian-butte-national-back-country-byway",
+          "distance": "9.25 miles",
+          "difficulty": "BLM publishes no surface grade or vehicle requirement for it — an absence worth knowing, since the byway designation makes it sound easier than the warning below implies",
+          "season": "BLM: \"This route often becomes impassable during heavy rain and periods of inclement winter weather.\" The stop is 15-21 Mar 2028 — late enough that winter weather is unlikely but spring rain is not. No gate; the surface is the gate.",
+          "note": "The stop's own road. It runs between Rockville and Apple Valley, just south of Zion and a couple of miles from the Virgin base, climbing to the mesa top under Smithsonian Butte with the Zion cliffs behind. \"No services are available along the Byway.\" The Grafton ghost town road branches off the Rockville end.",
+          "tier": "official",
+          "source": "BLM Utah — Smithsonian Butte National Back Country Byway"
+        },
+        {
+          "name": "Gooseberry Mesa Road",
+          "url": "https://www.blm.gov/sites/default/files/documents/files/BLMUtahGooseberryMesa_0.pdf",
+          "difficulty": "not published as a driving grade. BLM's mesa map is written for mountain bikers — \"Slickrock portions of trail are marked with white dots\" — and it is the authority on which routes are open to vehicles, so read it before driving anything beyond the main mesa road",
+          "season": "No gate published. Same wet-weather caveat as Smithsonian Butte; the mesa clay is the problem.",
+          "note": "The mesa immediately south of Smithsonian Butte, reached off the byway, with a rim view straight into Zion. Included with a caution: the published material here is bike material, and BLM's map — not a trail database — decides which routes a vehicle may use.",
+          "tier": "official",
+          "source": "BLM Utah — Gooseberry Mesa map (PDF)"
+        }
+      ]
     },
     "olympic": {
       "authority": "National Park Service",
@@ -5455,7 +5661,29 @@
           "call": "Olympic NP Wilderness Information Center, 360-565-3100 — ask the length of the July Creek Loop. No authority publishes it, and it is one of only six pet-legal trails in the park."
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/washington/olympic-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/washington/olympic-national-park",
+      "offroad": [
+        {
+          "name": "Obstruction Point Road",
+          "url": "https://www.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+          "distance": "7.8 miles from Hurricane Ridge",
+          "difficulty": "NPS: \"Gravel, narrow, winding mountain road\". Trailers are not recommended on it.",
+          "season": "RIGHT AT THE EDGE OF THE STOP DATES. NPS publishes status rather than dates and gives no closing date; a local conditions aggregator describes it as open July-October only, weather permitting. The stop is 19-25 Oct 2027 at around 6,000 ft on the Olympic crest — this road can be shut by the first real snow of the season, and that snow routinely falls in October. Phone the recorded road line, (360) 565-3131, updated daily, before driving up.",
+          "note": "The highest road in Olympic National Park and the only unpaved one that goes anywhere. It runs the ridge from Hurricane Ridge out to the Obstruction Point trailhead with the Bailey Range across the valley. If it is open during this stay it is the single best drive of the stop; if it is shut, Hurricane Ridge Road (17 miles, paved) still gets most of the view.",
+          "tier": "official",
+          "source": "NPS Olympic NP — Current Road Conditions"
+        },
+        {
+          "name": "Deer Park Road",
+          "url": "https://www.nps.gov/olym/planyourvisit/deer-park-area-brochure.htm",
+          "distance": "18 miles total, of which NPS says \"The last nine miles are gravel\"",
+          "difficulty": "NPS: \"narrow, windy mountain road with numerous blind corners\", and the gravel section is \"not suitable for RVs or trailers\"",
+          "season": "SAME RISK AS OBSTRUCTION POINT. NPS: \"From late fall until late spring when snow melts, the road is closed.\" No date is published. The stop is 19-25 Oct 2027, which is the ragged front edge of 'late fall' at 5,400 ft.",
+          "note": "The eastern equivalent of Obstruction Point, climbing from near Sequim to the Deer Park campground and the Blue Mountain summit. Steeper and narrower than Obstruction Point and with a longer gravel section. The two are connected on foot by a ridge trail but not by road.",
+          "tier": "official",
+          "source": "NPS Olympic NP — Deer Park Area Brochure"
+        }
+      ]
     },
     "yosemite": {
       "authority": "National Park Service",
@@ -5617,7 +5845,27 @@
           ]
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/yosemite-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/yosemite-national-park",
+      "offroad": [
+        {
+          "name": "Merced River Road (Briceburg, the old Yosemite Valley Railroad grade)",
+          "url": "https://www.blm.gov/visit/merced-river",
+          "distance": "4.5 mi to Railroad Flat; 7 mi to the North Fork primitive camp",
+          "difficulty": "Unpaved. BLM: \"It is NOT recommended for trailers over 18 feet or large RV's to cross over the suspension bridge.\"",
+          "season": "OPEN — and it is the only one. BLM publishes no seasonal closure. Briceburg sits at low elevation on Highway 140, twelve miles north-east of Mariposa, so this is the one driveable dirt road within reach of this stop that is not behind a snow gate on 19–23 Dec 2027.",
+          "note": "Follows the old Yosemite Valley Railroad grade downstream along the Wild & Scenic Merced from the Briceburg suspension bridge. Distances from the visitor center: McCabe Flat 2.3 mi, Willow Placer 3.6 mi, Railroad Flat 4.5 mi, with the North Fork primitive camp 2.5 miles beyond Railroad Flat. BLM Mother Lode Field Office. The Merced River Trail continues downstream from the road end but has rock and mud slide damage. This is on the Hwy 140 corridor the stop already sits on, which is what makes it work.",
+          "tier": "official",
+          "source": "BLM Merced River Recreation Management Area"
+        },
+        {
+          "name": "Yosemite winter road status — what is open, and why none of it is dirt",
+          "url": "https://www.nps.gov/yose/planyourvisit/wroads.htm",
+          "season": "NPS Winter Road Closures lists as open all year: \"Wawona Road (Highway 41), El Portal Road (Highway 140), Big Oak Flat Road (Highway 120 from the west), and Hetch Hetchy Road\". Closed across 19–23 Dec 2027: Tioga Road and Glacier Point Road, both \"usually from sometime in November through late May or early June\" (the first five miles of Glacier Point Road open mid-December to March for Badger Pass only), and Mariposa Grove Road, which closes \"on or about November 30\" and reopens no earlier than 15 April. Tire chains may be required on any of them.",
+          "note": "Recorded as the answer to the question rather than as a route: every Yosemite road NPS lists as open in winter is paved, and its winter road page names no unpaved public road as open. Hetch Hetchy Road is a genuine dead-end backcountry drive with a gate and daylight-only hours, but it is pavement. There is no legal off-pavement driving inside Yosemite for this stop — the Briceburg road above is the substitute.",
+          "tier": "official",
+          "source": "NPS Yosemite National Park — Winter Road Closures"
+        }
+      ]
     },
     "great-basin": {
       "authority": "National Park Service",
@@ -6104,7 +6352,28 @@
         "Warner Point Nature Trail": false
       },
       "dogs_note": "The dog is NOT stranded at Black Canyon on 8-10 Apr 2028. The Rim Rock Trail is inside the summer-closure-free window, inside the stretch of South Rim Road that stays open before the late-April opening, and open (though burned) after the 2025 fire. It is 0.9 mi and it is the whole of it — everything else on this card is closed to pets.",
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/colorado/black-canyon-of-the-gunnison-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/colorado/black-canyon-of-the-gunnison-national-park",
+      "offroad": [
+        {
+          "name": "North Rim Road",
+          "url": "https://www.nps.gov/blca/planyourvisit/northrim.htm",
+          "distance": "NPS publishes no length, only that \"The last 7 miles of the park access road and the entire North Rim Drive road are unpaved gravel\"",
+          "difficulty": "not graded by NPS; no vehicle requirement or length limit published",
+          "season": "LIKELY CONFLICTS WITH THE STOP DATES. NPS: \"The North Rim is closed to vehicles in the winter and early spring\" and \"In winter and early spring, these roads are unplowed and the North Rim is closed to vehicles.\" The stop is 8-10 Apr 2028 — squarely in what NPS calls early spring. No exact opening date is published, which makes this a phone call rather than a plan.",
+          "note": "The quiet rim. Gravel the whole way in, five overlooks reachable by car, and a fraction of the South Rim's traffic. Reached from CO-92: \"turn west on Black Canyon Road approximately 3 miles south of Crawford\" — which from a South Rim base is a long way round the canyon, roughly two hours. If it is open on these dates it is the best thing at this stop; if it is gated, the stop has essentially no unpaved driving.",
+          "tier": "official",
+          "source": "NPS Black Canyon of the Gunnison — North Rim"
+        },
+        {
+          "name": "East Portal Road",
+          "url": "https://www.nps.gov/blca/planyourvisit/eastportal.htm",
+          "difficulty": "paved, but a \"winding, steep road down the canyon\" at a 16% grade with tight curves; vehicles longer than 22 feet are prohibited",
+          "season": "Closes seasonally for winter; the stop's 8-10 Apr 2028 dates sit near the reopening, and there is a further complication — the road was closed after the July 2025 South Rim Fire because of unstable slopes. Check https://www.nps.gov/blca/planyourvisit/conditions.htm before counting on it.",
+          "note": "Not dirt, so it is only half an offroad entry — but it is the only way to drive to the river inside the park, it drops 2,000 ft in a couple of miles, and the 22 ft limit makes it a truck-only trip in exactly the way the dirt roads are. Included for that reason, flagged for what it is.",
+          "tier": "official",
+          "source": "NPS Black Canyon of the Gunnison — East Portal"
+        }
+      ]
     },
     "joshua-tree": {
       "authority": "National Park Service",
@@ -6287,7 +6556,49 @@
       "trail_dogs": {
         "Oasis of Mara": true,
         "Keys View": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Geology Tour Road",
+          "url": "https://www.nps.gov/jotr/planyourvisit/backcountry-roads.htm",
+          "distance": "5.4 miles down to the loop, then a 6-mile one-way loop",
+          "difficulty": "NPS requires high clearance and four-wheel drive; \"mostly downhill but bumpy and sandy\"",
+          "season": "No seasonal closure published; the stop's 3-8 Jan 2028 dates are peak season for it.",
+          "note": "The one to do first and the easiest genuine backcountry road in the park. Downhill on the way in, which means the sand is worked on the way out. Numbered interpretive stops the whole way.",
+          "tier": "official",
+          "source": "NPS Joshua Tree NP — Backcountry Roads"
+        },
+        {
+          "name": "Queen Valley Road network (with Big Horn Pass Road and O'Dell Road)",
+          "url": "https://www.nps.gov/jotr/planyourvisit/backcountry-roads.htm",
+          "distance": "13.4 miles of interconnected road",
+          "difficulty": "NPS lists it as suitable for two-wheel-drive vehicles — the only backcountry road in the park that is",
+          "season": "No seasonal closure published.",
+          "note": "A grid of easy graded roads through the densest Joshua tree stands in the park, between Hidden Valley and the Desert Queen Mine. The low-effort option on a day when nobody wants a technical drive.",
+          "tier": "official",
+          "source": "NPS Joshua Tree NP — Backcountry Roads"
+        },
+        {
+          "name": "Berdoo Canyon Road",
+          "url": "https://www.nps.gov/jotr/planyourvisit/backcountry-roads.htm",
+          "distance": "11.5 miles",
+          "difficulty": "high clearance and 4WD; NPS describes deep sand, sharp bedrock and rough boulders, and warns that pinch points \"may deny full-size trucks\"",
+          "season": "No seasonal closure published.",
+          "note": "Read the pinch-point warning before committing — this is the one road in the park NPS specifically says a full-size truck may not fit through, and it drops out of the park into Coachella Valley rather than looping back. It leaves the bottom of Geology Tour Road, so it is the natural extension of that day, not a separate one.",
+          "tier": "official",
+          "source": "NPS Joshua Tree NP — Backcountry Roads"
+        },
+        {
+          "name": "Covington Flat Roads",
+          "url": "https://www.nps.gov/jotr/planyourvisit/backcountry-roads.htm",
+          "distance": "3.8 miles one-way to Eureka Peak, plus about 6.5 miles more of connecting road",
+          "difficulty": "high clearance and 4WD; steep near the end",
+          "season": "No seasonal closure published. Highest corner of the park, so the first place to hold snow after a winter storm.",
+          "note": "The far west end of the park, reached from Yucca Valley rather than from Twentynine Palms — a longer drive out but it holds the largest Joshua trees in the park and the Eureka Peak view over Coachella Valley. Out-and-back, unlike the others.",
+          "tier": "official",
+          "source": "NPS Joshua Tree NP — Backcountry Roads"
+        }
+      ]
     },
     "death-valley": {
       "authority": "National Park Service",
@@ -6779,7 +7090,36 @@
           "source": "https://www.nps.gov/seki/planyourvisit/moro.htm"
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/sequoia-national-park"
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/california/sequoia-national-park",
+      "offroad": [
+        {
+          "name": "South Fork Road",
+          "url": "https://www.nps.gov/seki/planyourvisit/road-conditions.htm",
+          "difficulty": "NPS: \"High clearance vehicles recommended\"",
+          "season": "OPEN — and it is the only unpaved road in either park that is not seasonally closed across 23–27 Dec 2027. NPS says it is \"typically open year-round\", with the caveat that it becomes slippery during rain or snow.",
+          "note": "Unpaved beyond the park entrance, running from Three Rivers up the South Fork of the Kaweah to South Fork Campground. NPS's road-conditions page currently carries an active alert that it is accessible but not all the way to the original trailhead parking. Its length is not published.",
+          "tier": "official",
+          "source": "NPS Sequoia & Kings Canyon National Parks"
+        },
+        {
+          "name": "Mineral King Road",
+          "url": "https://www.nps.gov/seki/planyourvisit/road-information.htm",
+          "distance": "30 mi from Three Rivers, a 1 hour 30 minute drive",
+          "difficulty": "NPS: \"extremely narrow, steep, winding, and unpaved in some areas\"",
+          "season": "CONFLICTS WITH THE STOP DATES — shut, with no negotiating it. NPS: \"generally open from the Wednesday before Memorial Day to the last Wednesday in October\", then it \"closes at the park boundary to general vehicle traffic for the winter season\". 23–27 Dec 2027 is deep inside the closure.",
+          "note": "The classic Sequoia backcountry drive and the reason people come to Three Rivers with a capable vehicle; it simply does not exist as an option in December. Kept on the card flagged rather than deleted, so the reason is visible. NPS adds that RVs and trailers are not advised and not permitted in the area's campgrounds — irrelevant here since it would be the truck, but it is the published restriction.",
+          "tier": "official",
+          "source": "NPS Sequoia & Kings Canyon National Parks"
+        },
+        {
+          "name": "Sequoia NF / Giant Sequoia NM — Western Divide and Kern River winter road closure order",
+          "url": "https://www.fs.usda.gov/sites/nfs/files/r05/sequoia/publication/alerts/Order%200513-25-12%20WD%20KR%202025-26%20Winter%20Road%20Closure%20Order.pdf",
+          "season": "CONFLICTS WITH THE STOP DATES. The 2025–26 order, Forest Order No. 0513-25-12, ran 4 December 2025 through 15 June 2026 and closed 76 named Forest Roads to \"any type of motorized wheeled vehicle\". An equivalent order is issued every year and starts late November or early December — the 2024–25 order ran 23 Nov 2024 – 15 Jun 2025 — so the whole Western Divide network south of the park should be assumed gated across 23–27 Dec 2027.",
+          "note": "The only exemptions are a Forest Service permit FS-7700-48, officials on duty, and tracked over-snow vehicles where there is at least twelve inches of snow on the road. Roads named in the order include Dennison Peak 19S05, Mountain Home North 20S87, the Balch Park area roads, Quaking Aspen 21S61 and Dome Rock 21S69. Recorded so the December answer is on the card: the forest roads behind Three Rivers are shut, and the Kings Canyon Scenic Byway to Cedar Grove is separately closed from mid-November to late April.",
+          "tier": "official",
+          "source": "USFS Sequoia National Forest — Forest Order 0513-25-12"
+        }
+      ]
     },
     "kluane-1": {
       "authority": "Parks Canada",
@@ -7092,7 +7432,43 @@
         "College M and Bridger Foothills Trail": true,
         "Triple Tree Trail": true,
         "Gallagator Linear Trail": true
-      }
+      },
+      "offroad": [
+        {
+          "name": "Hyalite Canyon Road (FSR 62)",
+          "url": "https://www.fs.usda.gov/r01/custergallatin/newsroom/releases/hyalite-canyon-temporarily-close-spring-road-preservation",
+          "difficulty": "not published; the Forest Service notes only that during the spring closure the saturated roadbed \"cannot support the weight of motorized traffic\"",
+          "season": "OPEN ON THESE DATES, BUT ONLY JUST — THE TIGHTEST MARGIN ON THIS LEG. The Custer Gallatin publishes an annual spring closure of the Hyalite Canyon Recreation Corridor to all motorized vehicles \"from April 1 through May 15, with a scheduled reopening May 16.\" The stop is 20-22 May 2027, so the gate lifts four days before arrival. A late spring that pushes the reopening back takes the whole canyon out of this stop.",
+          "note": "The main recreation corridor south of Bozeman, in the Bozeman Ranger District. The closure protects the roadbed during spring break-up: \"As temperatures rise and snow melts, the ground beneath Hyalite Road becomes saturated.\" Non-motorized use is allowed throughout. No mileage or surface breakdown is published.",
+          "tier": "official",
+          "source": "USFS Custer Gallatin National Forest"
+        },
+        {
+          "name": "Storm Castle Road (FSR 132)",
+          "url": "https://outsidebozeman.com/places/national-forests/gates-dates",
+          "season": "PARTIAL CONFLICT. The lower gate opens 16 May, the upper 16 June, with a further upper section opening 16 July — so on 20-22 May 2027 the lower road should be open and both upper sections shut. Not a Forest Service source, so treat the dates as indicative; the 16 May lower-gate pattern is corroborated by the official Hyalite reopening date.",
+          "note": "Off the Gallatin Canyon south of Bozeman, giving access to the Storm Castle and Rat Lake area. The three-stage gate structure means the driveable portion in late May is the lowest section only. No mileage, surface or difficulty published.",
+          "tier": "community",
+          "source": "Outside Bozeman 'Gates & Dates' (road managed by USFS Custer Gallatin NF)"
+        },
+        {
+          "name": "Portal Creek Road (FSR 984)",
+          "url": "https://outsidebozeman.com/places/national-forests/gates-dates",
+          "difficulty": "not published by the Forest Service",
+          "season": "PARTIAL CONFLICT, AND THE TWO AVAILABLE FIGURES DISAGREE. Outside Bozeman's gate-date list records a lower gate opening 16 May and an upper gate opening 16 June, which would put the lower section open and the upper shut on 20-22 May 2027. A separate community source states the road \"is gated near Highway 191 from December 2 through June 15th\" (https://www.bozemannet.com/forest_service_cabins/windy.php), which would make the whole road shut during the stay. Neither is a Forest Service page. Worth a call to the Bozeman Ranger District rather than a guess.",
+          "note": "Runs east off US-191 in the Gallatin Canyon into the southern Gallatin Range toward Windy Pass. The Outside Bozeman list is a 2017 compilation, so its dates are indicative rather than current.",
+          "tier": "community",
+          "source": "Outside Bozeman 'Gates & Dates' (road managed by USFS Custer Gallatin NF)"
+        },
+        {
+          "name": "Fairy Lake Road (FSR 74)",
+          "url": "https://outsidebozeman.com/places/national-forests/gates-dates",
+          "season": "CLOSED FOR THIS STOP. The lower gate opens 1 June — \"Fairy Lake Rd. #74 and South Fork Bracket Rd. #631 - lower gates, June 1\". The stop is 20-22 May 2027, ten days early. Not a Forest Service source, so treat the exact date as indicative; the direction of the answer is not in doubt given the elevation.",
+          "note": "The rough road up the west side of the Bridger Range to Fairy Lake, north of Bozeman. Recorded because it is the obvious Bridger objective and it is the one nearby road that is definitely still gated during this stay — useful to know before driving out to find a locked gate.",
+          "tier": "community",
+          "source": "Outside Bozeman 'Gates & Dates' (road managed by USFS Custer Gallatin NF)"
+        }
+      ]
     },
     "fort-nelson": {
       "activities": {
@@ -8561,7 +8937,36 @@
           "tier": "official"
         }
       ],
-      "stats_note": "BC Parks' page for s̓wi̓ws Park was fetched and names no trails and no lengths - it mentions only 'the marsh area and self-guided interpretive trail'. The Haynes Point figures above are therefore AllTrails', not the authority's. South Okanagan Grasslands Lookout (8.5 km, challenging, 3 h 19 min, 3.9/5 from 85) also surfaced but no direct URL did, so it is recorded here rather than as an entry."
+      "stats_note": "BC Parks' page for s̓wi̓ws Park was fetched and names no trails and no lengths - it mentions only 'the marsh area and self-guided interpretive trail'. The Haynes Point figures above are therefore AllTrails', not the authority's. South Okanagan Grasslands Lookout (8.5 km, challenging, 3 h 19 min, 3.9/5 from 85) also surfaced but no direct URL did, so it is recorded here rather than as an entry.",
+      "offroad": [
+        {
+          "name": "Kobau Lookout Forest Service Road (Mount Kobau summit road)",
+          "url": "https://bcparks.ca/south-okanagan-grasslands-protected-area/",
+          "difficulty": "BC Parks: \"Both Kruger Mt. Rd. and the road to Mt. Kobau are gravel roads and maintained infrequently\"",
+          "season": "NO PUBLISHED SEASONAL CLOSURE FOUND. BC Parks publishes no gate or opening dates for this road and none could be sourced elsewhere. The summit is high enough that early-season snow is a real possibility around 30 Sep - 3 Oct 2027, but that is inference, not a published date, and it is recorded here as unknown rather than as open.",
+          "note": "Turn off Highway 3 10.75 km west of the Highway 97/3 junction in Osoyoos. BC Parks is explicit about what may be driven: \"The main road to the summit of Mt. Kobau is open to motor vehicles, all other roads are closed\", with a further motor vehicle restriction above 1,700 m elevation in the Mount Kobau section. Destination Osoyoos describes a 17 km forest service road; BC Parks publishes no length and a separate community account says roughly 20 km, so the length is not settled. A 5 km trail runs from the top.",
+          "tier": "official",
+          "source": "BC Parks — South Okanagan Grasslands Protected Area"
+        },
+        {
+          "name": "Kruger Mountain Road",
+          "url": "https://bcparks.ca/south-okanagan-grasslands-protected-area/",
+          "difficulty": "BC Parks: gravel road, \"maintained infrequently\"",
+          "season": "NO PUBLISHED SEASONAL CLOSURE FOUND. Lower and drier than Mount Kobau, so more likely to be usable in early October, but no authority publishes dates either way.",
+          "note": "Turn off Highway 3 6.75 km west of the Highway 97/3 junction in Osoyoos. This is the exception road in the Kilpoola area: BC Parks states \"Kilpoola is closed to motor vehicles with the exception of Kruger Mountain Road.\" The Chopaka East and Chopaka West sites of the protected area are closed to motor vehicles entirely. No length published. Note that Anarchist Mountain Lookout, often suggested here, is a paved Highway 3 viewpoint and not an off-road route at all.",
+          "tier": "official",
+          "source": "BC Parks — South Okanagan Grasslands Protected Area"
+        },
+        {
+          "name": "Strawberry Creek Access Road",
+          "url": "https://bcparks.ca/south-okanagan-grasslands-protected-area/",
+          "difficulty": "BC Parks, verbatim: \"a very rough, unmaintained dirt road. Some sections may be difficult to pass even with a 4 x 4 vehicle\"",
+          "season": "NO PUBLISHED SEASONAL CLOSURE FOUND. Given BC Parks' own warning that sections may defeat a 4x4 in normal conditions, wet early-October weather would make it worse. No dates published either way.",
+          "note": "The hardest of the three roads BC Parks names in this protected area and the only one for which the managing authority publishes an explicit difficulty warning. Treat as a turn-back-when-it-gets-bad outing rather than a through route. No length published.",
+          "tier": "official",
+          "source": "BC Parks — South Okanagan Grasslands Protected Area"
+        }
+      ]
     },
     "winthrop": {
       "activities": {
@@ -9253,7 +9658,37 @@
           "tier": "official"
         }
       ],
-      "stats_note": "Ape Cave, already on this card, is closed to pets and there is nowhere to leave a dog while you are underground - that is recorded on the stop already and none of the three above changes it. All three are dog-legal in principle under Gifford Pinchot's general rule, but the monument order carries its own restrictions around the Johnston Ridge facilities, so `dogs` is left absent rather than asserted."
+      "stats_note": "Ape Cave, already on this card, is closed to pets and there is nowhere to leave a dog while you are underground - that is recorded on the stop already and none of the three above changes it. All three are dog-legal in principle under Gifford Pinchot's general rule, but the monument order carries its own restrictions around the Johnston Ridge facilities, so `dogs` is left absent rather than asserted.",
+      "offroad": [
+        {
+          "name": "Forest Road 81",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-81",
+          "difficulty": "USFS: \"While mostly paved, be prepared for several miles of gravel (between Forest Road 830 and 8123) and a road that is sometimes very rough.\" Trailers are not advised over Red Rock Pass.",
+          "season": "No calendar gate published for FR 81 itself. Gifford Pinchot's forest-wide statement applies: \"Most forest roads are not plowed in winter and some roads may be impassable for cars without high clearance and four-wheel drive or chains.\" The stop is 16-19 Oct 2027 — normally still open, but this is the south flank of a Cascade volcano and an early storm decides it.",
+          "note": "The south-side approach to Mount St Helens from Cougar, past Kalama Horse Camp and Red Rock Pass to FR 830 and Climber's Bivouac. Closest real gravel to the Silver Lake base, roughly an hour round the mountain's west side.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 81"
+        },
+        {
+          "name": "Forest Road 83 to Lava Canyon",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-83",
+          "difficulty": "USFS: \"Paved, but rough in places\"",
+          "season": "OPEN ON THESE DATES, with the gate close behind. USFS: \"Forest Road 83 is closed and gated at Marble Mountain Sno-Park Dec. 1 - March 31 for winter recreation.\" The stop is 16-19 Oct 2027, six weeks ahead of the gate.",
+          "note": "The other south-side road, and the one that reaches the good stuff: Ape Cave via spur 8303, June Lake, the Lahar Viewpoint, and the Ape Canyon and Lava Canyon trailheads. Paved rather than dirt, so it earns its place here on the gate and the roughness rather than the surface.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 83"
+        },
+        {
+          "name": "Forest Road 99 to Windy Ridge",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-99",
+          "distance": "16 miles",
+          "difficulty": "USFS calls it narrow with rough surfaces and \"not appropriate for trailers\"; \"repairs and gravel stretches are common\". A trailer drop point exists at Wakepish Sno-Park.",
+          "season": "OPEN, but only just. USFS gives the season as \"July 1st - Nov 30th\" and the stop is 16-19 Oct 2027 — inside it, with about six weeks to spare. Snow can shut it early; Gifford Pinchot's seasonal-closures alert page is where the gate status is posted.",
+          "note": "Ten interpretive stops ending at Windy Ridge, looking straight into the crater across Spirit Lake — the best view of the 1980 blast zone that exists from a road. The catch is the approach: FR 99 is reached from Randle via FR 25, on the far side of the mountain from Silver Lake, so this is a full day of driving, not an afternoon. The Silver Lake base's own road, SR 504 to Johnston Ridge, is paved and is a different trip.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 99"
+        }
+      ]
     },
     "forks": {
       "activities": {
@@ -9434,7 +9869,19 @@
           "note_source": "NPS Visiting Mora and Rialto Beach; 2026 Mora Road closure reporting"
         }
       ],
-      "dogs_note": "Forks and olympic are two bases on the same park and share the same six pet-legal trails. This entry is deliberately identical to the one on the olympic card, down to the missing length, so the two do not disagree at a trailhead. What differs is the drive: from Port Angeles July Creek is roughly two hours, from Forks about 68 miles / 1 h 20."
+      "dogs_note": "Forks and olympic are two bases on the same park and share the same six pet-legal trails. This entry is deliberately identical to the one on the olympic card, down to the missing length, so the two do not disagree at a trailhead. What differs is the drive: from Port Angeles July Creek is roughly two hours, from Forks about 68 miles / 1 h 20.",
+      "offroad": [
+        {
+          "name": "Lake Quinault Loop — North Shore Road and South Shore Road",
+          "url": "https://www.nps.gov/olym/planyourvisit/visiting-quinault.htm",
+          "distance": "31 miles round the lake and the lower Quinault River — that figure is from local sources, not from NPS, which describes it only as \"a scenic loop drive\"",
+          "difficulty": "not published by NPS or the Forest Service. Part-gravel; the north shore is Olympic National Park, most of the south shore is Olympic National Forest.",
+          "season": "No published gate — this is low, wet rainforest rather than high country. The risk on 25-29 Oct 2027 dates is washout, not snow: Olympic National Forest warns \"Forest roads are prone to flooding and washouts. Never attempt to cross a road washout as you could easily get trapped.\"",
+          "note": "Honest framing: this is the only named, published unpaved driving loop found within reach of Forks, and it is about an hour and a half south. Olympic National Forest's Pacific Ranger District has a large road network — a third-party tally puts it at 261.5 miles of motorized routes — but the Forest publishes no named backcountry driving route for it, only maintenance levels (\"Level 2 roads require a high clearance vehicle\") and a Motor Vehicle Use Map. Nothing was invented to fill the gap. Note also that the Olympic coast beaches are National Park and closed to vehicles — the beach driving on this leg is at Long Beach, not here.",
+          "tier": "official",
+          "source": "NPS Olympic NP — Visiting Quinault (mileage from quinaultrainforest.com)"
+        }
+      ]
     },
     "long-beach": {
       "activities": {
@@ -9636,7 +10083,19 @@
         "Lighthouse Keepers Trail": true,
         "Benson Beach Trail": true
       },
-      "stats_note": "Greenhead Slough Trail (1.1 mi, easy, 10 reviews) also surfaced near Ilwaco and was left off: its AllTrails listing states dogs are not allowed, and it adds nothing the four above do not."
+      "stats_note": "Greenhead Slough Trail (1.1 mi, easy, 10 reviews) also surfaced near Ilwaco and was left off: its AllTrails listing states dogs are not allowed, and it adds nothing the four above do not.",
+      "offroad": [
+        {
+          "name": "Long Beach Peninsula beach driving — Bolstad Avenue to Oysterville Gap Road",
+          "url": "https://parks.wa.gov/sites/default/files/2026-04/Long%20Beach%20Driving%20Rules%20Map.pdf",
+          "distance": "13.5 miles, the longest open-all-year section on the peninsula",
+          "difficulty": "not graded. Washington State Parks: \"stay on hard-packed sand\" to avoid damage or getting stuck; ATVs and UTVs are prohibited outright, street-legal vehicles are not.",
+          "season": "NO CONFLICT, AND THE TIMING IS FAVOURABLE. The peninsula's seasonal bans run 15 April to the day after Labor Day; the stop is 29 Oct - 2 Nov 2027, well outside them. Better still, the two closures that apply the rest of the year are lifted \"during any recreational razor clam season\" — which is exactly what this stop is anchored to. On these dates the whole peninsula opens up: the 2.7 miles north of Oysterville Gap Road, the 1.4 miles between Bolstad and Seaview Gap Road, the 4 miles at Leadbetter Point / Willapa NWR and the 2.5 miles at the North Jetty and Benson Beach all become legally driveable during a dig.",
+          "note": "Washington beaches are legal highways and this is the real off-pavement answer at this stop — not a forest road but 13.5 miles of hard sand you can drive at 25 mph with the ocean on one side. Pedestrians always have right of way, and razor-clam diggers will be everywhere on these dates, which is the point. Do not park on the beach approaches. The state parks map is the authority on which section is which; the governing rules are WAC 352-37.",
+          "tier": "official",
+          "source": "Washington State Parks — Beach Driving Rules, Long Beach Peninsula Area (map) and Seashore Conservation Area rules"
+        }
+      ]
     },
     "cannon-beach": {
       "activities": {
@@ -9721,6 +10180,32 @@
           "label": "Pets in Oregon State Parks",
           "url": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
           "tier": "official"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Ocean shore, Peter Iredale Road to the Gearhart beach ramp",
+          "url": "https://oregon.public.law/rules/oar_736-024-0005",
+          "season": "Open to motor vehicles \"at any time\" — the only dated Clatsop County restriction is a 12:01 p.m.–midnight closure from 1 May through 15 Sep, which does not touch 2–6 Nov 2027. No conflict.",
+          "note": "Hard sand beach driving between the Peter Iredale Road approach in Fort Stevens State Park and the beach ramp at Gearhart. Everything south of the Gearhart ramp to the Tillamook County line — all of Gearhart, Seaside and Cannon Beach itself — is closed to vehicles year-round except vehicles towing dory boats between Sunset Drive and Warren Way, with access from Warren Way only.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0005 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Ocean shore, Columbia River south jetty to Peter Iredale Road",
+          "url": "https://oregon.public.law/rules/oar_736-024-0005",
+          "season": "Closed to vehicles between 12:01 p.m. and midnight from 1 May through 15 Sep only. On 2–6 Nov 2027 the segment carries no time restriction.",
+          "note": "The northern half of the Fort Stevens beach, running up to the Columbia south jetty. The same rule sets a Clatsop County beach speed limit (OAR 736-024-0010); the Director of State Parks can issue special permits for otherwise restricted areas.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0005 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Nicolai Mountain OHV Area, Clatsop State Forest",
+          "url": "https://www.oregon.gov/ODF/Recreation/Pages/MotorizedTrails.aspx",
+          "season": "ODF publishes no seasonal gate date for Nicolai Mountain on its motorized-trails page. Unverified for 2–6 Nov 2027.",
+          "note": "ODF describes it as carrying \"four-wheel drive trails\" and says side-by-side riders will enjoy \"the bulk of the trail network in the Nicolai Mountain OHV Area\". ODF does NOT publish whether a full-size street-legal 4x4 pickup may use the trails, nor a trail mileage, nor a difficulty grade — one call settles all three. Area contact Reid Brown, 503-536-3879. It sits inland near Clatskanie, a long way east of Cannon Beach.",
+          "tier": "official",
+          "source": "Oregon Department of Forestry"
         }
       ]
     },
@@ -9889,7 +10374,36 @@
         }
       ],
       "dogs_source": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/catherine-creek-loop",
-      "dogs_source_quote": "Do not cross the fencing near the natural arch, as the area is closed to protect sensitive resources. Bikes are prohibited on this trail. Horses prohibited on this trail. Dogs must be on leash year round."
+      "dogs_source_quote": "Do not cross the fencing near the natural arch, as the area is closed to protect sensitive resources. Bikes are prohibited on this trail. Horses prohibited on this trail. Dogs must be on leash year round.",
+      "offroad": [
+        {
+          "name": "Forest Road 66 along the Big Lava Bed",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-66",
+          "difficulty": "not published by the Forest — no length, surface or vehicle requirement is given for FR 66, only the route and a posted speed limit of \"35 mph or less as signed\"",
+          "season": "Status listed as Site Open, with no gate date published. Gifford Pinchot's forest-wide warning governs: \"Most forest roads are not plowed in winter and some roads may be impassable for cars without high clearance and four-wheel drive or chains.\" The stop is 6-11 Nov 2027, the start of that window rather than the middle of it.",
+          "note": "USFS: the road \"Starts at the Town of Willard and heads north ending at the intersection with Forest Road 60\" and \"follows the Big Lava Bed\" — a 20-square-mile, 8,200-year-old lava flow with no road across it, only around it. Little Huckleberry trailhead and South Prairie are on it. Closest forest road network to the White Salmon base.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 66"
+        },
+        {
+          "name": "Forest Road 24",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-24",
+          "difficulty": "not published — the Forest gives endpoints and access points for this road and nothing else",
+          "season": "Status listed as Site Open; no gate date published. Same forest-wide winter caveat.",
+          "note": "USFS: it \"starts at the end of Hwy 141 west of Trout Lake at the Forest Service Boundary and ends at the junction with the 8851 Road north of Big Mosquito Lake.\" The Ice Cave and Natural Bridges area and Peterson Prairie are in this corner. Recorded with its blanks left blank — Gifford Pinchot publishes no length, surface or vehicle requirement for it, and the Mt Adams Ranger District, (509) 395-3402, is the only source that will know.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 24"
+        },
+        {
+          "name": "Forest Road 88",
+          "url": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/forest-road-88",
+          "difficulty": "not published by the Forest",
+          "season": "Status listed as Site Open; no gate date published. Climbs toward Mount Adams, so it is the most snow-exposed of these three in early November.",
+          "note": "USFS: it \"Starts at Hwy 141 west of Trout Lake and heads north\", passing Trout Lake Creek Campground, the Sleeping Beauty trailhead, Flattop Sno-Park, the Basket Tree interpretive site and a Pacific Crest Trail access. The Sno-Park on it is the tell — this road is a winter recreation route from roughly December, which means it is a driving route only at the front end of this stay.",
+          "tier": "official",
+          "source": "USFS Gifford Pinchot NF — Forest Road 88"
+        }
+      ]
     },
     "welches": {
       "activities": {
@@ -10102,7 +10616,45 @@
           "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
       ],
-      "stats_note": "Mid-November is the constraint that shaped this list. High Rock (1.1 mi, 4.7 from 49) is a superb short trail and was left off the front of the card because its window is June through October and it sits near 4,900 ft; Salmon Butte, Bonanza and Lake Lenore are all challenging AND all May-or-June starts. Everything above is under 2,000 ft."
+      "stats_note": "Mid-November is the constraint that shaped this list. High Rock (1.1 mi, 4.7 from 49) is a superb short trail and was left off the front of the card because its window is June through October and it sits near 4,900 ft; Salmon Butte, Bonanza and Lake Lenore are all challenging AND all May-or-June starts. Everything above is under 2,000 ft.",
+      "offroad": [
+        {
+          "name": "Lolo Pass Road (FR 18 / FR 1800)",
+          "url": "https://www.fs.usda.gov/r06/mthood/conditions/national-forest-roads",
+          "difficulty": "not graded. Mt Hood NF says the Zigzag-side FR 1800 is \"NOT maintained for winter travel\" and that FR 18 on the Hood River side gets \"a lot of snow\" and is \"very treacherous\"",
+          "season": "OPEN ON THESE DATES BUT ON BORROWED TIME. No fixed gate is published for this road, unlike most of the others in the district. The stop is 11-15 Nov 2027; Mt Hood NF's general rule is that seasonal closures run \"December 1 through March 31\", so the whole network shuts about two weeks after departure — and an early-November snowfall on the pass can make the point moot sooner.",
+          "note": "The crossing from Zigzag over Lolo Pass to Hood River, round the northwest side of Mount Hood — the classic Mt Hood back road and the one that starts closest to the Welches base. Ramona Falls and the PCT are off it.",
+          "tier": "official",
+          "source": "USFS Mt. Hood National Forest — National Forest Roads"
+        },
+        {
+          "name": "Barlow Road (FR 3530)",
+          "url": "https://www.fs.usda.gov/r06/mthood/conditions/national-forest-roads",
+          "difficulty": "not graded on the Forest's road list",
+          "season": "OPEN ON THESE DATES, CLOSES SHORTLY AFTER. Mt Hood NF: \"Seasonally closed December 1 to April 1.\" The stop is 11-15 Nov 2027 — about sixteen days of margin.",
+          "note": "The original Oregon Trail wagon route around the south side of Mount Hood, the alternative to rafting the Columbia. Driving it is the point rather than the terrain. Appears on both the Barlow and Hood River district lists with the same dates.",
+          "tier": "official",
+          "source": "USFS Mt. Hood National Forest — National Forest Roads"
+        },
+        {
+          "name": "Bennett Pass Road (FR 3550)",
+          "url": "https://www.fs.usda.gov/r06/mthood/conditions/national-forest-roads",
+          "difficulty": "not graded, but the restriction says a lot: Mt Hood NF closes it \"to vehicles over 50 inches wide\" seasonally, which is a snowmobile-and-quad rule — a full-size pickup is excluded once that is in force",
+          "season": "OPEN ON THESE DATES. The 50-inch restriction runs \"December 1 to April 1\"; the stop is 11-15 Nov 2027, ahead of it. From 1 December this road is not driveable in the truck at all.",
+          "note": "The high road southeast of Mount Hood off OR-35 near Mount Hood Meadows, running the ridge toward Gunsight and Badger Lake. The most interesting driving of this stop and the one with the tightest window.",
+          "tier": "official",
+          "source": "USFS Mt. Hood National Forest — National Forest Roads"
+        },
+        {
+          "name": "Last Chance Mountain Road (FR 1828)",
+          "url": "https://www.fs.usda.gov/r06/mthood/conditions/national-forest-roads",
+          "difficulty": "not graded; Mt Hood NF describes it as \"Typically impassable during winter months\" without giving a date",
+          "season": "UNCERTAIN ON THESE DATES. No gate date published — the Forest simply says winter makes it impassable, and 11-15 Nov 2027 is the boundary. Treat as go-and-see rather than planned.",
+          "note": "Zigzag Ranger District, climbing above the Salmon River country south of Welches. Listed with its uncertainty stated rather than dropped, because it is the nearest road of its kind to camp and 'we do not know' is the honest status.",
+          "tier": "official",
+          "source": "USFS Mt. Hood National Forest — National Forest Roads"
+        }
+      ]
     },
     "bend": {
       "activities": {
@@ -10402,6 +10954,38 @@
           "entry": "Todd Lake",
           "problem": "Superseded by a researched entry for the same trail under its real listing title."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Paulina Peak Road (FR 2100-500)",
+          "url": "https://www.fs.usda.gov/r06/deschutes/recreation/paulina-peak-observation-site",
+          "distance": "4.1 miles",
+          "difficulty": "USFS: a \"steep and dusty road\" that is \"quite rough and narrow in some places\", limited to \"Vehicles less than 23' in length (passenger cars, pick-ups and vans)\"",
+          "season": "PROBABLY CLOSED ON ARRIVAL. USFS: the site \"is often inaccessible and closed due to snow until early July and will close in late October/early November depending on snow conditions.\" The stop arrives 15 Nov 2027, after that window. The access road makes it worse: Deschutes County and the Forest Service close Paulina Lake Road and Cascade Lakes Highway for winter — in 2025 that was 8 a.m. on Nov 18, with reopening \"typically... before Memorial Day\". On a comparable calendar the gate would drop on the fourth day of a six-night stay.",
+          "note": "The 7,984 ft rim of the Newberry caldera, looking down on Paulina and East lakes and out to the whole Cascade crest — the best short drive near Bend when it is open. Recorded with the conflict stated because the dates are genuinely marginal: it might be driveable on arrival and it will not be on departure.",
+          "tier": "official",
+          "source": "USFS Deschutes NF — Paulina Peak Observation Site; closure date from Deschutes County Road Department"
+        },
+        {
+          "name": "Millican Valley OHV Trail System",
+          "url": "https://www.blm.gov/visit/millican-valley-ohv-trail-system",
+          "distance": "255 miles of designated routes",
+          "difficulty": "not graded. BLM permits \"Class I, II, and III off-highway vehicles (OHVs)\" but does not define the classes on this page and does not say whether a full-size street-legal pickup qualifies — that needs the Prineville field office before driving out, not after.",
+          "season": "THE ONE THAT WORKS AT THESE DATES. BLM: \"Millican Plateau is open year round. North Millican and South Millican have seasonal closures\" — no dates given for those. Low sagebrush country east of Bend at around 4,000 ft, so it is clear when the Cascades are not.",
+          "note": "Reached from Bend via Alfalfa Market Road, or from George Millican Road. \"No fees - Oregon State ATV Permit Required\", and spark arrestors are required year-round. The honest caveat is the vehicle class: this is signed as an OHV system and the published material is written for quads and dirt bikes, so confirm a full-size truck is legal on the routes intended before committing a day to it.",
+          "tier": "official",
+          "source": "BLM Oregon — Millican Valley OHV Trail System"
+        },
+        {
+          "name": "Christmas Valley Back Country Byway",
+          "url": "https://www.blm.gov/visit/christmas-valley-back-country-byway",
+          "distance": "93 miles",
+          "difficulty": "BLM publishes no surface breakdown or vehicle requirement for the byway as a whole, noting only that some areas are \"Accessible by foot or 4WD vehicle\"",
+          "season": "No gate published, and that is the point of listing it — this is high desert at around 4,300 ft southeast of Bend, well below and east of the Cascade crest, so it is driveable on the stop's 15-21 Nov 2027 dates when Paulina Peak and Cascade Lakes Highway are shut. Short days in late November are the real limit on a 93-mile loop.",
+          "note": "The long way round Lake County's volcanic country from the Black Hills Interpretive Site — sand dunes, the remains of an eroded volcano, the Lost Forest. Crack-in-the-Ground is off it, reached by \"Crack-in-the-Ground Road for about 7 miles\" of gravel. Roughly 90 minutes southeast of Bend before the loop even starts, so it is a whole day. BLM's own advice: \"Check weather and road conditions ahead of time\" and carry area-specific maps, water, fuel and emergency equipment — there are no services on it.",
+          "tier": "official",
+          "source": "BLM Oregon — Christmas Valley Back Country Byway"
+        }
       ]
     },
     "newport": {
@@ -10625,7 +11209,42 @@
       ],
       "dogs_source": "https://www.blm.gov/visit/yaquina-head-outstanding-natural-area",
       "dogs_source_quote": "Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools.",
-      "stats_note": "'Yaquina Head Lighthouse Trail' (0.9 mi, easy, 19 min) also surfaced and was deliberately left out as a near-duplicate of the Yaquina Head Lighthouse and Cobble Beach Loop already on the card. BLM's rule at Yaquina Head, already recorded on this stop, is worth repeating: 'Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools.'"
+      "stats_note": "'Yaquina Head Lighthouse Trail' (0.9 mi, easy, 19 min) also surfaced and was deliberately left out as a near-duplicate of the Yaquina Head Lighthouse and Cobble Beach Loop already on the card. BLM's rule at Yaquina Head, already recorded on this stop, is worth repeating: 'Pets may accompany visitors on trails and walkways except near the lighthouse and in the Cobble Beach tide pools.'",
+      "offroad": [
+        {
+          "name": "Oregon Dunes NRA — South Jetty beach, Florence",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "difficulty": "Beach open to OHV, 25 mph maximum",
+          "season": "SPLITS THE STAY. The Forest Service OHV map states \"BEACH OPEN TO STREET LEGAL VEHICLES Oct. 1 – April 30, Sunrise to sunset weekdays only\" and \"BEACH CLOSED TO ALL VEHICLES: May 1 – September 30, All weekends & holidays\". The stay runs Sun 21 – Sat 27 Nov 2027, so it is driveable Mon 22 through Fri 26 only; Sunday the 21st and Saturday the 27th are out. Thanksgiving falls on Thu 25 Nov 2027 and the map attaches its \"holidays\" wording to the summer closure line, not this one — worth confirming with the Siuslaw NF before planning that day around it.",
+          "note": "Riding curfew for Siltcoos to South Jetty is 6 a.m. to 10 p.m.; all staging areas open 6 a.m. to 10 p.m.; 93 dB sound limit. The beach south of Siltcoos is marked \"CLOSED TO OHV YEAR-ROUND\". Roughly 50 miles south of Newport.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        },
+        {
+          "name": "Sand Lake Recreation Area",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/sand-lake-recreation-area",
+          "season": "Campgrounds \"open year round\". The only dated restriction the Forest Service publishes is a camping-reservation or vehicle-ticket requirement over the Fourth of July holiday. No winter closure published — no conflict with 21–27 Nov 2027.",
+          "note": "\"1,076 acres of open sand dunes, surrounded by forests and adjacent to the Pacific Ocean\". A fee is required at all campgrounds, the day-use lot and the open sand, and Oregon administers the OHV permit. The Forest Service page does not state which vehicle classes may ride or whether a full-size street-legal 4x4 is permitted on the open sand — that is unresolved. Roughly 55 miles north of Newport, near Pacific City.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest"
+        },
+        {
+          "name": "Ocean shore, Tillamook County open segments (Sand Lake and Cape Kiwanda)",
+          "url": "https://oregon.public.law/rules/oar_736-024-0015",
+          "season": "The three open segments carry no dated restriction. The rule's one dated provision covers the stretch south of Oswald West State Park to the Nehalem Bay State Park north boundary, 1 Oct – 30 Apr, 7 a.m. to noon — read the rule text before relying on that one, the wording is easy to invert.",
+          "note": "Three segments are open to motor vehicles year-round: the Boy Scout property south boundary to the Galloway Road beach access (the Sand Lake / Tierra del Mar stretch), the Cape Kiwanda State Park north boundary to the base of the headland, and Pacific Avenue at Pacific City to Porter Point. The rest of the county's ocean shore is closed. Pairs naturally with a Sand Lake day. Note there is NO legal beach driving at Newport itself — Lincoln County's ocean shore is closed to motor vehicles from the Tillamook line to the Lane line under OAR 736-024-0025.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0015 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Marys Peak Road",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/conditions",
+          "season": "Siuslaw NF: \"Most forest roads are not maintained for winter travel and do not receive snow removal. This includes the road to Marys Peak.\" No gate date is published, so this is a conditions call on the day rather than a closure — late November can be either.",
+          "note": "Highest point in the Oregon Coast Range, east of Newport off Highway 34. The Forest Service pages do not publish the road's number, length or surface, so those are recorded as unknown rather than guessed. Siuslaw NF also lists Cascade Head Road (FSR 1861) as closed to motor vehicle traffic.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — Current Conditions"
+        }
+      ]
     },
     "bandon": {
       "activities": {
@@ -10821,7 +11440,44 @@
           "tier": "official"
         }
       ],
-      "area_browse_alltrails": "https://www.alltrails.com/us/oregon/bandon"
+      "area_browse_alltrails": "https://www.alltrails.com/us/oregon/bandon",
+      "offroad": [
+        {
+          "name": "Oregon Dunes NRA — Spinreel to Horsfall, open sand riding and beach",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "difficulty": "Open riding on sand; beach 25 mph maximum",
+          "season": "OPEN FOR THE WHOLE STAY. The Forest Service OHV map states \"BEACH OPEN TO OHV: Oct. 1 – April 30\" and \"BEACH CLOSED TO ALL VEHICLES May 1 – Sept. 30\" for the Horsfall/Bull Run end — so 27 Nov – 3 Dec 2027 is inside the open season. Snowy plover beach restrictions run 15 Mar – 15 Sep, also clear. Riding curfew Horsfall to Spinreel is 6 a.m. to midnight; staging areas 6 a.m. to 10 p.m.",
+          "note": "The northern part of this beach panel is marked \"BEACH CLOSED TO OHV YEAR-ROUND\" — the open beach section is at the Horsfall / Bull Run end, reached from Horsfall Beach Road. 93 dB sound limit. Bull Run OHV Staging Area has paved parking and quick beach access via the Bull Run OHV Trail. About 25 miles north of Bandon via Coos Bay.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        },
+        {
+          "name": "Ten Mile OHV Trail (Spinreel)",
+          "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/oregon-dunes-national-recreation-area-south",
+          "distance": "2.8 mi",
+          "difficulty": "Loose sand; the Forest Service lists it open to all off-road vehicle classes",
+          "season": "No seasonal closure published for the trail itself. It ends at the beach, and the beach it reaches is under the 1 Oct – 30 Apr OHV season, which covers the stay.",
+          "note": "USFS: \"The Ten Mile OHV Trail is 2.8 miles long and is loose sand. It begins at Spinreel OHV Staging Area and ends at the beach.\" The Oregon Dunes NRA south unit is a 31,500-acre portion of the Siuslaw National Forest. Whether a full-size street-legal 4x4 counts as an admitted class on the sand trails is not stated on this page.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — Oregon Dunes NRA South"
+        },
+        {
+          "name": "Ocean shore, Five Mile Point to Bullards Beach State Park",
+          "url": "https://oregon.public.law/rules/oar_736-024-0040",
+          "season": "Open, with no dated restriction. The only seasonal Coos County closure is the stretch 500 feet north of the Horsfall Beach access south to the Dunes NRA boundary, 1 May – 30 Sep. No conflict with 27 Nov – 3 Dec 2027.",
+          "note": "The beach immediately north of the Coquille River — the Whiskey Run / Seven Devils stretch — is open to motor vehicles year-round. Bandon's own town beaches are NOT: the rule closes the shore from the northerly beach access at Bullards Beach State Park south to north of China Creek. A second open stretch runs from north of China Creek south to about a mile north of the Twomile Creek mouth, which is the New River end of Bandon State Natural Area.",
+          "tier": "official",
+          "source": "Oregon Parks & Recreation Dept — OAR 736-024-0040 (rule text via oregon.public.law)"
+        },
+        {
+          "name": "Umpqua Dunes, Winchester Bay",
+          "url": "https://www.fs.usda.gov/media/164676",
+          "season": "Umpqua Dunes is the one Oregon Dunes riding area listed \"Open 24-hours\"; the gate at the Umpqua Beach staging areas is \"Closed 10 p.m. to 6 a.m.\". No seasonal closure — open on 27 Nov – 3 Dec 2027.",
+          "note": "Sand riding only. The map marks the Umpqua beach itself \"BEACH CLOSED TO OHV YEAR-ROUND\", so this is dunes, not beach driving, and the southern end of the panel is \"CLOSED TO MOTORIZED USE\". Staged from Umpqua Beach #2 and #3 parking areas. Roughly 55 miles north of Bandon — the furthest of the three dune areas.",
+          "tier": "official",
+          "source": "USFS Siuslaw National Forest — OHV Riding at the Oregon Dunes NRA map"
+        }
+      ]
     },
     "crescent-city": {
       "activities": {
@@ -11153,6 +11809,26 @@
           "url": "https://www.parks.ca.gov/?page_id=432",
           "tier": "official"
         }
+      ],
+      "offroad": [
+        {
+          "name": "Jackson Demonstration State Forest winter-open roads — Road 200, 250, 350, 500, 700, 810, 900",
+          "url": "https://34c031f8-c9fd-4018-8c5a-4159cdff6b0d-cdn-endpoint.azureedge.net/-/media/calfire-website/what-we-do/natural-resource-management/demostration-forests/jackson/recreation-maps-and-permits/public-notice-wet-season-road-closure.pdf",
+          "season": "CONFLICTS WITH THE STOP DATES, PARTLY. CAL FIRE's Public Notice — Seasonal Road & Campground Closure closes all JDSF campgrounds and seasonal roads for the wet season, effective 1 October in the notice read here (signed 18 Sep 2025), reopening \"in the spring\". 10–16 Dec 2027 is squarely inside that closure, so only the exception roads below will be driveable — and CAL FIRE says even those \"may be closed periodically without further notice depending on road and/or weather conditions or timing of forest management activities\".",
+          "note": "The roads that generally stay open through winter are: Road 200; Road 250 (up to Road 1000 only); Road 350 (access to Camp 1 Day Use Area); Road 500; Road 700 (to Mendocino Woodlands State Park); Road 810; Road 900 (only to Road 810/920). Two hard rules on the same notice: \"It is always unlawful to operate unlicensed vehicles (including off-road vehicles with or without green stickers) on State Forest roads\" and \"Off-road travel with motorized vehicles is not permitted on the State Forest\" — a licensed truck on these numbered roads is the only legal shape this takes. Closed roads stay open to hiking, biking and horseback. JDSF office 707-964-5674; the forest starts on the eastern edge of Fort Bragg. No mileages are published in the notice.",
+          "tier": "official",
+          "source": "CAL FIRE — Jackson Demonstration State Forest"
+        },
+        {
+          "name": "Usal Beach road, Sinkyone Wilderness State Park",
+          "url": "https://www.parks.ca.gov/?page_id=429",
+          "distance": "approximately 6 mi north from Highway 1",
+          "difficulty": "California State Parks: \"unpaved, steep, narrow road\"",
+          "season": "State Parks publishes no gate dates, but warns in capitals: \"ROADS MAY BE IMPASSABLE IN WET WEATHER.\" 10–16 Dec is mid wet season on the Mendocino coast, so this is a conditions call on the morning, not a plan — and there is no cell signal and nowhere to turn around once committed.",
+          "note": "Access to the south end of the Lost Coast. State Parks gives the turn as mile marker 90.88 on Highway 1, \"Approximately one hour north of Ft Bragg\", then north about 6 miles. \"RV'S & TRAILERS NOT RECOMMENDED.\" Note that the State Parks page does not use the names \"Usal Road\" or \"County Road 431\" — those names are not sourced from the authority, only the route description is. The park's north end (Needle Rock) is reached from Briceland Road / Mendocino County Road 435 out of Redway, last 3.5 miles unpaved, steep and narrow — roughly a three-hour drive from Fort Bragg, not a day trip.",
+          "tier": "official",
+          "source": "California State Parks — Sinkyone Wilderness State Park"
+        }
       ]
     },
     "marina": {
@@ -11395,7 +12071,35 @@
           "tier": "official"
         }
       ],
-      "stats_note": "Point Lobos, already on this card, bars dogs from the entire reserve and will not even let one wait in a parked car - California State Parks, quoted: 'Dogs are not allowed anywhere within the reserve and cannot be left inside parked vehicles.' Garrison Loop is the substitute day out on a Point Lobos day."
+      "stats_note": "Point Lobos, already on this card, bars dogs from the entire reserve and will not even let one wait in a parked car - California State Parks, quoted: 'Dogs are not allowed anywhere within the reserve and cannot be left inside parked vehicles.' Garrison Loop is the substitute day out on a Point Lobos day.",
+      "offroad": [
+        {
+          "name": "Old Coast Road",
+          "url": "https://en.wikipedia.org/wiki/Old_Coast_Road_(Big_Sur)",
+          "distance": "10.2 mi",
+          "difficulty": "\"severe switchbacks, blind curves and few pullouts or places to turn around\"; a high-clearance all-wheel or four-wheel drive vehicle is recommended",
+          "season": "No published gate dates. The source says the dirt road \"may be impassable and closed during wet weather\", and 16–19 Dec is inside the wet season, so it is a conditions call. No Monterey County, Caltrans or State Parks page for this road could be found — the seasonal status is genuinely unpublished rather than merely unfound. Worth a call to Monterey County Public Works before driving it.",
+          "note": "Leaves Highway 1 at Bixby Bridge and rejoins it near Andrew Molera State Park — the inland original alignment of the coast road. \"When passable, the drive takes about one hour.\" Declared a public road by Monterey County in 1855; most land either side is now private, so there is nowhere to stop. Tiered community deliberately: no authority publishes this road, which is itself the finding.",
+          "tier": "community",
+          "source": "Wikipedia — no official county or state page located"
+        },
+        {
+          "name": "Nacimiento-Fergusson Road (Forest Road 22S01)",
+          "url": "https://www.fs.usda.gov/r05/lospadres/alerts/roadside-camping-prohibited-nacimiento-fergusson-road",
+          "season": "UNRESOLVED, AND WORTH RE-CHECKING. No seasonal gate is published. The status history is the problem: a Forest Service release of 5 June 2024 reported the road \"remains closed to motorized vehicles until late summer\" for storm repairs, while a forest order effective 5 Sep 2025 through 5 Sep 2027 restricts roadside camping along it, which reads as a road that was open when the order was written. Re-check before the 16–19 Dec 2027 stay — Monterey Ranger District 831-385-5434.",
+          "note": "The only road crossing the Santa Lucia Range between Big Sur and the Salinas Valley. The forest order covers the road \"from its intersection with State Highway 1 then east for 12 miles\" and bans camping within 300 feet of it. The Forest Service pages do not publish the road's surface or full length, so neither is recorded here.",
+          "tier": "official",
+          "source": "USFS Los Padres National Forest"
+        },
+        {
+          "name": "Central Coast Ridge Road (Cone Peak Road)",
+          "url": "https://www.fs.usda.gov/r05/lospadres/conditions",
+          "season": "CLOSED, and not seasonally. Los Padres National Forest lists Central Coast Ridge Road, aka Cone Peak Road, under roads with long-term closure to vehicular traffic. That is open-ended, not a winter gate — assume shut on 16–19 Dec 2027 unless the forest says otherwise.",
+          "note": "The ridge road running north off Nacimiento-Fergusson Road toward Cone Peak. Recorded here so it is not researched again from scratch: the answer is no, and it has been no for years. Length and surface are not published. Note also that Fort Ord National Monument, the obvious BLM land next to this stop, is not a driving option at all — BLM states \"Use is non-motorized on authorized trails only\" (https://www.blm.gov/programs/national-conservation-lands/california/fort-ord/know-before-you-go).",
+          "tier": "official",
+          "source": "USFS Los Padres National Forest — Current Conditions"
+        }
+      ]
     },
     "vegas-area": {
       "activities": {
@@ -11517,6 +12221,38 @@
           "label": "Valley of Fire State Park (Nevada State Parks)",
           "url": "https://parks.nv.gov/parks/valley-of-fire",
           "tier": "official"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Rocky Gap Road",
+          "url": "https://www.birdandhike.com/Hike/Red_Rocks/Roads_RR/RockyGapRd/_RockyGapRd.htm",
+          "distance": "8.9 miles",
+          "difficulty": "4WD required. The eastern 1.7 miles are described as \"reasonable for any 4WD vehicle\"; the western section is \"more washed out\" and \"under normal conditions, driving the entire road is suitable only for skilled drivers\"",
+          "season": "No published gate. Winter storms wash it out further; the surface is the variable, not the calendar.",
+          "note": "Willow Springs Picnic Area in Red Rock Canyon NCA over to Lovell Canyon Road in the Spring Mountains NRA — BLM land at one end, Forest Service at the other. The short out-and-back to the east is the sane version; the full crossing is a commitment with no easy turnaround in the middle. Difficulty and mileage are from birdandhike.com, a long-running local reference, not from BLM — BLM's own Red Rock pages do not describe this road.",
+          "tier": "community",
+          "source": "birdandhike.com — Backroads Around Las Vegas"
+        },
+        {
+          "name": "Mormon Well Road",
+          "url": "https://www.fws.gov/refuge/desert/visit-us/activities/auto-tour",
+          "distance": "47 miles (76 km) to the connection with US-93",
+          "difficulty": "FWS: \"A high-clearance vehicle, and four-wheel drive (4WD) is suggested.\"",
+          "season": "No calendar closure, but FWS warns \"The full route may be closed due to hazardous conditions\" — check before setting out.",
+          "note": "Corn Creek up through Desert Pass and out to US-93, across Desert National Wildlife Refuge — the largest refuge outside Alaska. Joshua tree to pinyon-juniper as it climbs. Quiet in a way Red Rock never is.",
+          "tier": "official",
+          "source": "US Fish & Wildlife Service — Desert NWR Auto Tour"
+        },
+        {
+          "name": "Alamo Road",
+          "url": "https://www.fws.gov/refuge/desert/visit-us/activities/auto-tour",
+          "distance": "over 70 miles (113 km)",
+          "difficulty": "FWS: \"A high-clearance vehicle, and four-wheel drive (4WD) is suggested.\"",
+          "season": "No calendar closure. FWS notes the Dry Lake portion is \"often impassable and closed due to hazardous conditions\".",
+          "note": "The long one — over 70 miles of rugged backcountry across the refuge, part of the 150+ miles the refuge maintains. Too much for a 2-night stop unless it is the whole day; Mormon Well is the better pick at these dates.",
+          "tier": "official",
+          "source": "US Fish & Wildlife Service — Desert NWR Auto Tour"
         }
       ]
     },
@@ -11752,6 +12488,44 @@
           "dogs": false,
           "season": "TRUCK: the route follows an old 4x4 mining road and Hikespeak warns of occasional vehicle traffic on it.",
           "note": "Slot narrows plus the WWII optical-calcite workings above S-22. Stats from Hikespeak, which also states dogs are not allowed. No AllTrails listing surfaced in search, so no trail link."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Font's Point Wash",
+          "url": "https://www.parks.ca.gov/?page_id=30308",
+          "difficulty": "State Parks grades it \"4WD only\" and rates the surface \"poor\" — deep sand with S-curves the road-conditions page calls difficult",
+          "season": "No gate. Anza-Borrego's washes are a cool-season activity and the stop's 8-14 Jan 2028 dates are the middle of the good window. The hazard is rain, not date: the whole wash system changes after a storm, which is why State Parks re-publishes this page rather than a fixed list.",
+          "note": "The classic Borrego Badlands run out to the Font's Point overlook above the Borrego Sink. Sand the whole way — momentum matters more than clearance. Check the road-conditions page the morning you go; State Parks grades every named route on it and updates as conditions change.",
+          "tier": "official",
+          "source": "California State Parks — Anza-Borrego Desert SP Road Conditions"
+        },
+        {
+          "name": "Fish Creek to Sandstone Canyon",
+          "url": "https://www.parks.ca.gov/?page_id=30308",
+          "difficulty": "State Parks lists Sandstone Canyon as \"2WD acceptable\" but condition \"poor\", with narrow sections; the Fish Creek approach to the Wind Caves trail is graded \"4WD only, poor\"",
+          "season": "No published gate. Same rain caveat as the other washes.",
+          "note": "Up Fish Creek Wash from Split Mountain into Sandstone Canyon — the narrowest walls in the park, a slot you drive rather than walk. Note the split verdict: the canyon itself is the easy part, the wash getting there is the 4WD part. North Fork Fish Creek is listed CLOSED at Mollusk Wash.",
+          "tier": "official",
+          "source": "California State Parks — Anza-Borrego Desert SP Road Conditions"
+        },
+        {
+          "name": "Buttes Pass Road to The Slot and Hawk Canyon",
+          "url": "https://www.parks.ca.gov/?page_id=30308",
+          "difficulty": "\"2WD acceptable, good condition\" to The Slot; \"4WD only, good condition\" to Hawk Canyon, with deep sand near the entrance",
+          "season": "No published gate.",
+          "note": "The gentlest of the four and the one to do first — a graded run off CA-78 to the top of The Slot, with the Hawk Canyon spur as the optional sandy bit. This is the route that works when the badlands washes are freshly cut up.",
+          "tier": "official",
+          "source": "California State Parks — Anza-Borrego Desert SP Road Conditions"
+        },
+        {
+          "name": "Arroyo Tapiado and Arroyo Seco del Diablo",
+          "url": "https://www.parks.ca.gov/?page_id=30308",
+          "difficulty": "\"4WD only, poor condition\" — and State Parks flags it \"one-way only\"",
+          "season": "No published gate. Mud-cave country; do not enter after rain.",
+          "note": "The mud caves. State Parks marks this pair as one-way travel, so it is committed once started — down Tapiado and out Diablo, not there-and-back. Furthest of the four from Borrego Springs, down at the Bow Willow end of S2.",
+          "tier": "official",
+          "source": "California State Parks — Anza-Borrego Desert SP Road Conditions"
         }
       ]
     },
@@ -12115,6 +12889,27 @@
           "season": "Open year-round; the 18–22 Jan window is the only sane season for it.",
           "note": "The full loop version of the pass, quiet by AllTrails' own account. Kept below the easy/moderate band because it is graded challenging and carries only 167 reviews."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Muggins Mountain Wilderness access roads",
+          "url": "https://www.blm.gov/visit/muggins-mountain-wilderness",
+          "distance": "the wilderness sits about 25 miles east of Yuma; BLM publishes no mileage for the approach roads themselves",
+          "difficulty": "BLM: \"Access by high-clearance and/or four-wheel drive vehicles is recommended.\"",
+          "season": "No published closure. Winter is the season for it — the stop's 18-22 Jan 2028 dates are right.",
+          "note": "The nearest genuine backcountry driving to a stop that exists for service and hookups. Roads lead to the wilderness boundary only; inside a designated wilderness no vehicle may go, so this is drive-to-the-edge-and-walk.",
+          "tier": "official",
+          "source": "BLM — Muggins Mountain Wilderness"
+        },
+        {
+          "name": "Imperial Sand Dunes Recreation Area — Gecko Road and Osborne Overlook",
+          "url": "https://www.blm.gov/visit/imperial-sand-dunes",
+          "difficulty": "not graded. The graded corridor roads are ordinary driving; the open dunes are not — soft sand riding is for sand-prepared vehicles, and BLM's rules page is the authority on where a street-legal vehicle may go",
+          "season": "Year-round, but the dunes are a winter destination and busiest on holiday weekends.",
+          "note": "About 20-25 miles west of Yuma across the California line. Worth the drive as a look rather than a drive-the-dunes day: \"A permit is required for all primary street legal vehicles\" in the fee areas, and Osborne Overlook is the place to stand and watch. Read https://www.blm.gov/visit/imperial-sand-dunes/rules-and-regulations before going — the permit and vehicle rules are specific.",
+          "tier": "official",
+          "source": "BLM — Imperial Sand Dunes"
+        }
       ]
     },
     "kofa-nwr": {
@@ -12219,6 +13014,37 @@
             "match": "exact",
             "tier": "indexed"
           }
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Palm Canyon Road",
+          "url": "https://www.fws.gov/refuge/kofa/visit-us",
+          "distance": "about 7 miles of unpaved road from US 95 — the first 3 graded and wide to the refuge boundary, the remaining 4 narrower but smoother",
+          "difficulty": "Not graded by FWS. The refuge says only that \"Most refuge roads are not maintained. Many are passable only by four-wheel drive vehicles. Some roads may be passable by two-wheel drive, high clearance vehicles.\" Palm Canyon is the maintained exception.",
+          "season": "No seasonal closure published. The stop's 22-27 Jan 2028 dates are prime desert season; the hazard here is a washed-out road after rain, and FWS asks you to phone (928) 928-6873 for current conditions.",
+          "note": "The one road at Kofa that does not need a 4x4, and the one everybody drives — it ends at the trailhead below the only native palms in Arizona. Mileage is from americansouthwest.net, not from FWS; FWS publishes no length for it.",
+          "tier": "official",
+          "source": "US Fish & Wildlife Service — Kofa NWR Visit Us (mileage from americansouthwest.net)"
+        },
+        {
+          "name": "King Road",
+          "url": "https://www.trailsoffroad.com/US/arizona/regions/kofa-wildlife-refuge",
+          "difficulty": "described as an easy drive; no official grade published",
+          "season": "No published closure. Refuge roads are unmaintained and change with weather.",
+          "note": "The main western entrance to the refuge off US 95, running east into King Valley between the Kofa and Castle Dome ranges. FWS confirms the refuge has this road network and marks junctions with numbered markers, but publishes no description of individual roads — this entry's characterisation is from Trails Offroad, not the refuge.",
+          "tier": "community",
+          "source": "Trails Offroad — Kofa Wildlife Refuge region page"
+        },
+        {
+          "name": "Castle Dome Mine Road",
+          "url": "https://www.onxmaps.com/offroad/trails/us/arizona/castle-dome-mountains-1k36nk8xe69j",
+          "distance": "pavement ends at 1.8 miles; roughly 8 miles in from Castle Dome Road, then about 12 miles down to the King Valley Road junction",
+          "difficulty": "not published on a free listing — Trails Offroad and onX both paywall their difficulty scales",
+          "season": "No published closure.",
+          "note": "The southern approach, from US 95 north of Yuma past the Castle Dome Mine Museum and up into the Castle Dome Mountains. Mileages here are from onX and a trip report, not from FWS. The refuge rule that governs all of this: \"Vehicles and bicycles are limited to designated roads which can be identified by numbered markers at junctions. Off-road driving is prohibited.\"",
+          "tier": "community",
+          "source": "onX Offroad (rule quoted from US Fish & Wildlife Service — Kofa NWR)"
         }
       ]
     },
@@ -12497,7 +13323,37 @@
           "source": "https://www.fs.usda.gov/r03/coronado/recreation/shuttle-stop-9-trailhead"
         }
       ],
-      "stats_note": "The three NPS trails carry no AllTrails link because none was searched for this pass - `unlisted` here is 'not searched', not 'not listed'. Their distances and their dog status come straight from the National Park Service, which is the better tier for both."
+      "stats_note": "The three NPS trails carry no AllTrails link because none was searched for this pass - `unlisted` here is 'not searched', not 'not listed'. Their distances and their dog status come straight from the National Park Service, which is the better tier for both.",
+      "offroad": [
+        {
+          "name": "Redington Road #371",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/redington-road-371-scenic-drive",
+          "distance": "approximately 12 miles to the community of Redington; Coronado NF budgets about three hours round trip from Tucson",
+          "difficulty": "not published by Coronado NF — the page gives no surface or vehicle requirement, which is itself worth knowing before setting out",
+          "season": "No gate published. High point about 4,500 ft, so snow is not usually the issue; the road washboards badly and grading is intermittent.",
+          "note": "Straight off the end of Tanque Verde Road at the edge of town, over the pass between the Santa Catalinas and the Rincons. The most convenient dirt from a Tucson base by a wide margin, and the closest thing to an after-lunch option. Lower Tanque Verde Falls trail is on it.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Redington Road #371 Scenic Drive"
+        },
+        {
+          "name": "Charouleau Gap Road #736",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/charouleau-gap-road-736-scenic-drive",
+          "difficulty": "Coronado NF: \"This scenic route is for 4-wheel drive vehicles only. The road up and over Samaniego Ridge is rough and rocky and requires good ground clearance as well as excellent traction.\"",
+          "season": "Coronado NF lists it as available year-round. High point about 5,400 ft.",
+          "note": "The serious one — a historic route between Oracle and Tucson over Samaniego Ridge, and the Forest is unusually blunt about the surface. No published mileage. Starts near Lago del Oro on the Oro Valley side, so it is closer to the Catalina State Park end of this cluster than to central Tucson.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Charouleau Gap Road #736 Scenic Drive"
+        },
+        {
+          "name": "Control Road #38 (Old Mt Lemmon Road)",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/control-road-38-scenic-drive",
+          "difficulty": "\"This rough, winding road that snakes up the northeastern slopes of the Santa Catalinas\" — Coronado NF publishes no vehicle requirement",
+          "season": "CONFLICTS WITH THE STOP DATES. Coronado NF: \"Seasonal gate closure is in effect yearly from December 15th to February 28th.\" The stop runs 4-14 Feb 2028, entirely inside the closure. Enforced under 36 CFR 261.13, so it is a gate and a citation, not a suggestion.",
+          "note": "The back way up Mt Lemmon from Oracle, climbing to about 8,000 ft — the first major access route ever built to the top. Shut for the whole of this stay and the whole of the Catalina State Park stay that follows. It reopens 29 Feb 2028 (2028 is a leap year), which is after both. Santa Catalina Ranger District, (520) 749-8700, if a late-February reopening is worth asking about.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Control Road #38 Scenic Drive"
+        }
+      ]
     },
     "catalina-state-park": {
       "activities": {
@@ -12649,6 +13505,26 @@
           ],
           "dogs": true,
           "note": "The park's long multiuse line, described by Arizona State Parks as popular with equestrians and mountain bikers. Bike-legal and dog-legal, but no surface description could be sourced, so nothing is claimed about whether it would ride as a gravel cruise. Figures are Arizona State Parks."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Charouleau Gap Road #736",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/charouleau-gap-road-736-scenic-drive",
+          "difficulty": "Coronado NF: \"This scenic route is for 4-wheel drive vehicles only. The road up and over Samaniego Ridge is rough and rocky and requires good ground clearance as well as excellent traction.\"",
+          "season": "Coronado NF lists it as available year-round. High point about 5,400 ft — the top can hold snow after a February storm, though no gate is published.",
+          "note": "This is the stop's own road. FR 736 leaves the dirt near Lago del Oro, minutes from the park gate, and climbs over Samaniego Ridge into the upper Cañada del Oro — the same canyon the park's trails walk up from below. No published mileage. A number of primitive spurs branch off it.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Charouleau Gap Road #736 Scenic Drive"
+        },
+        {
+          "name": "Control Road #38 (Old Mt Lemmon Road)",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/control-road-38-scenic-drive",
+          "difficulty": "\"This rough, winding road that snakes up the northeastern slopes of the Santa Catalinas\" — no vehicle requirement published",
+          "season": "CONFLICTS WITH THE STOP DATES. Coronado NF: \"Seasonal gate closure is in effect yearly from December 15th to February 28th.\" The stop runs 14-18 Feb 2028, inside the closure; the gate does not lift until 29 Feb 2028.",
+          "note": "The Oracle end of this road is close to the park, which is what makes the closure worth stating rather than omitting. Shut for this whole stay and the Tucson stay before it.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Control Road #38 Scenic Drive"
         }
       ]
     },
@@ -12881,6 +13757,37 @@
             "tier": "indexed"
           }
         }
+      ],
+      "offroad": [
+        {
+          "name": "Middlemarch Road #345",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/cochise-stronghold",
+          "distance": "20.5 miles one way; Coronado NF gives about an hour between the two Strongholds and 3-4 hours for a 100-mile loop from Benson",
+          "difficulty": "Coronado NF: \"20.5-mile (one-way) dirt road\", \"High-clearance recommended\"",
+          "season": "No gate published.",
+          "note": "The crossing of the Dragoon Mountains east of Tombstone, over Middlemarch Pass through old mining country to Pearce. The best-specified dirt road of this stop — the Forest publishes both the mileage and the clearance recommendation, which most of these pages do not.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Cochise Stronghold"
+        },
+        {
+          "name": "Carr Canyon Road #368",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/carr-canyon-road-368-scenic-drive",
+          "distance": "approximately 7 miles from the highway to the upper reaches",
+          "difficulty": "Coronado NF: \"The first mile or so is paved; the rest is dirt and rugged\", \"High-clearance recommended beyond the Clark Spring Trailhead\", and \"The switchbacks are narrow and steep with no guard rails\"",
+          "season": "CONFLICTS WITH THE STOP DATES. Coronado NF: \"Road closes seasonally (approximately December 15 to March 15) for snow, flooding, or fire danger.\" The stop is 23-28 Feb 2028, inside that window — the gate does not lift until mid-March, two weeks after departure. Ranger station (520) 378-0311 to check whether it has opened early.",
+          "note": "The switchbacks up the east face of the Huachucas above Sierra Vista to the Reef. Also carries a hard length limit worth knowing: \"Vehicles longer than 20 feet and trailers longer than 12 feet are prohibited beyond Carr Canyon Picnic Area\" — that is a truck-only road even without the closure.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Carr Canyon Road #368 Scenic Drive"
+        },
+        {
+          "name": "Montezuma Pass via FR 48 and Border Road #61",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/arizona-highway-83-montezuma-pass-scenic-drive",
+          "difficulty": "not published — Coronado NF describes the route but gives no surface grade or vehicle requirement for the FR 48 / FR 61 dirt sections",
+          "season": "Coronado NF lists the route as available year-round.",
+          "note": "Paved AZ-83 south from Sonoita to Parker Canyon Lake, then FR 48 and FR 61 angling toward the Huachucas and up to Montezuma Pass at the south end of the range, above Coronado National Memorial. The plateau it crosses sits at about 5,000 ft. FR 61 is the Border Road and runs along the international line — expect Border Patrol traffic and checkpoints.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Arizona Highway #83 to Montezuma Pass Scenic Drive"
+        }
       ]
     },
     "superior-globe": {
@@ -13036,6 +13943,27 @@
             "match": "exact",
             "tier": "indexed"
           }
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Apache Trail (SR 88) unpaved section",
+          "url": "https://azdot.gov/projects/southeast-district-projects/state-route-88-apache-trail",
+          "distance": "the unpaved section runs from Fish Creek Vista (milepost 222) to milepost 227 near Reavis Trailhead Road",
+          "difficulty": "not graded. ADOT describes the 1.5-mile section at Fish Creek Vista as \"steep and more winding and narrow than other parts of SR 88\" and asks drivers to ensure vehicles are \"appropriate for unpaved terrain\"",
+          "season": "Open, and that is not a given — this section was closed from 2019 and reopened in stages; monsoon damage shut it again in 2026 and it was repaired and reopened that July. ADOT: \"Although there are currently no vehicle restrictions,\" the status \"can change should severe weather or rockfall affect conditions.\" Check the ADOT project page before driving out.",
+          "note": "Approach it from the Globe end via Roosevelt Dam rather than from Apache Junction — the stop sits at the far end of the Trail from the tourist traffic. Fish Creek Hill is the famous bit and the reason to go. The most-changed road on this whole itinerary; verify status the week before.",
+          "tier": "official",
+          "source": "Arizona Department of Transportation — SR 88 Apache Trail project page"
+        },
+        {
+          "name": "Pinal Peak via Forest Road 651",
+          "url": "https://www.arizonahighways.com/pinal-peak",
+          "difficulty": "described as \"washboarded dirt that's deeply rutted in places\"; no Forest Service grade found",
+          "season": "NOT VERIFIED, and this matters. Pinal Peak tops out near 7,800 ft directly above Globe, and secondary sources describe the road as a May-September proposition. The stop is 2-4 Mar 2028. No Tonto National Forest page publishing a gate date for FR 651 was found — treat access as unverified rather than assured, and phone the Globe Ranger District. Do not assume it is open because the desert below is warm.",
+          "note": "Straight up out of Globe into ponderosa — an 8,000 ft climb-out from a Sonoran-desert town in a single afternoon, which is the appeal. Pinal Campground is on the way up. Recorded from Arizona Highways because no Forest Service page describing this road was found; the mileage and any restriction are unsourced.",
+          "tier": "community",
+          "source": "Arizona Highways — Pinal Peak"
         }
       ]
     },
@@ -13381,6 +14309,27 @@
           "label": "Pets — Bryce Canyon NP (NPS)",
           "url": "https://www.nps.gov/brca/planyourvisit/pets.htm",
           "tier": "official"
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Cottonwood Canyons Scenic Backway",
+          "url": "https://www.blm.gov/visit/cottonwood-canyons-scenic-backway",
+          "distance": "46 miles from Cannonville south to US-89 — \"paved for 9 miles between Cannonville and the turnoff to Kodachrome Basin State Park\", dirt for the remaining 37",
+          "difficulty": "BLM publishes no vehicle requirement for it",
+          "season": "No calendar gate — the surface is the gate. This is bentonite clay: fine when dry, undriveable within minutes of rain, and late March is not a dry month. BLM publishes a road condition report for Grand Staircase-Escalante, \"typically updated weekly, more frequently if road conditions warrant\", at https://www.blm.gov/documents/utah/public-room/data/road-report — read it the morning of, not the week before.",
+          "note": "The big day out from Bryce and one of the best dirt roads in southern Utah, running the length of the Cockscomb through Grand Staircase-Escalante. Cannonville is about 15 miles from the stop, so the road starts almost at the door. Kodachrome Basin State Park is on the paved part.",
+          "tier": "official",
+          "source": "BLM Utah — Cottonwood Canyons Scenic Backway"
+        },
+        {
+          "name": "Skutumpah Road",
+          "url": "https://www.blm.gov/documents/utah/public-room/data/road-report",
+          "difficulty": "described as a \"rough, washboarded dirt road\" whose conditions \"can change from day to day depending on weather, maintenance\" — that wording is from AllTrails, not from BLM; BLM's own report gives status rather than a grade",
+          "season": "Same as Cottonwood Canyon and for the same reason. No calendar closure; BLM's weekly road report is the source that actually answers the question on the day.",
+          "note": "The other road out of Cannonville, running southwest across the Skutumpah Terrace toward Johnson Canyon and Kanab, past the Willis Creek and Bull Valley Gorge slot trailheads. Pairs naturally with Cottonwood Canyon Road — one out, one back — but that is a long day and both need to be dry.",
+          "tier": "official",
+          "source": "BLM Utah — Grand Staircase-Escalante road condition report (description from AllTrails)"
         }
       ]
     },
@@ -14146,6 +15095,36 @@
           "note_source": "NPS self-guided tours page: \"The Mesa Top Loop Road is a 6-mile (10 km) drive that is a tour through time. Along the road, you'll find short, paved trails to view twelve ancestral sites, including surface sites and overlooks of cliff dwellings\". NPS 'Explore the Mesa Top Loop Road' gives the same 6-mile figure. Pet sentence is the one already quoted in this stop's `dogs` field. Merged onto the entry the scenicDrives box already carried rather than added as a second one — that box's existing entry is the same two roads written as a sentence.",
           "call": "Mesa Verde NP, 970-529-4465 — confirm the Mesa Top Loop Road is open by 15 April. NPS publishes a hard season for Wetherill Mesa (22 May-21 Oct) but no opening date for the Mesa Top Loop Road, and if that road is also still shut in mid-April the dog has nowhere legal at Mesa Verde beyond the campground and the parking lots."
         }
+      ],
+      "offroad": [
+        {
+          "name": "La Plata Canyon Road (FR 124) toward Kennebec Pass",
+          "url": "https://www.fs.usda.gov/r02/sanjuan/conditions",
+          "distance": "about 15 miles from Hesperus up the canyon, climbing nearly 3,000 ft toward Kennebec Pass at 11,683 ft",
+          "difficulty": "graded gravel low down; 4WD with good clearance for the last section to the pass. The mileage and the 4WD note are from theridrs.com and dangerousroads.org, not from the Forest — San Juan NF publishes the gate status but not a grade.",
+          "season": "Partly open, and the distinction is the whole answer. San Juan NF's road table lists FR 124 as \"Open\", with the gate closing \"12/15 or 4 inches standing at the gate\" — so the lower canyon should be driveable on the stop's 15-22 Apr 2028 dates. The top will not be: Kennebec Pass is above 11,600 ft and holds snow well into summer. Drive it as far as it goes, not as a pass crossing.",
+          "note": "The best dirt within reach of a Mesa Verde base, and it is not at Mesa Verde — the park's own roads are all paved and the park prohibits leaving them. La Plata Canyon is old mining country north of Hesperus, about 45 minutes east of Mancos.",
+          "tier": "official",
+          "source": "USFS San Juan National Forest — Current Conditions road table"
+        },
+        {
+          "name": "Bolam Pass Road (FR 578)",
+          "url": "https://www.fs.usda.gov/r02/sanjuan/conditions",
+          "difficulty": "not graded on the Forest's table",
+          "season": "CONFLICTS WITH THE STOP DATES. San Juan NF gives FR 578 an opening date of \"5/1\" and closing dates \"9/8-10/13, 11/30\". The stop is 15-22 Apr 2028 — the gate opens nine days after departure. This one is simply not available on these dates.",
+          "note": "The high crossing between Durango and Rico via Hermosa Park, and the reason it is listed rather than dropped is that it is the obvious thing to want at this stop and it is shut. Recorded so the card says what is being missed and why. Anything at that elevation in the San Juans is a July proposition, not an April one.",
+          "tier": "official",
+          "source": "USFS San Juan National Forest — Current Conditions road table"
+        },
+        {
+          "name": "Canyons of the Ancients — Lowry Pueblo and Painted Hand Pueblo roads",
+          "url": "https://www.blm.gov/visit/canyons-ancients-national-monument",
+          "difficulty": "not graded by BLM. A secondary description of the drive: \"trips takes you from a paved road to a dirt road which is sometimes primitive. Most vehicles with good clearance will be fine.\"",
+          "season": "No gate published. Mid-April is a good time for it — low country west of Cortez at around 6,000 ft, clear of snow, and the clay dries fast. Wet-weather caveat applies to the primitive sections.",
+          "note": "The low-elevation alternative for a stop whose mountain roads are still gated. Over 6,000 recorded sites; Lowry Pueblo has a stabilised great kiva and Painted Hand is the one that needs the dirt. Roughly 40 minutes northwest of Cortez. Mesa Verde itself contributes nothing here — every road in that park is paved and driving off them is prohibited.",
+          "tier": "official",
+          "source": "BLM — Canyons of the Ancients National Monument"
+        }
       ]
     },
     "durango": {
@@ -14530,7 +15509,27 @@
           "tier": "official"
         }
       ],
-      "stats_note": "The Pagosa trails with the strongest reviews - Pagosa Peak (11.5 mi, 4.4 from 197), Quartz Lake (9.3 mi, 283 reviews) and Four Mile Creek (13.2 mi) - are all challenging AND all carry May-or-June season starts, so none is usable on a 27-30 Apr stay. Piedra Falls (1.0 mi, easy, 24 min) would fit the stop perfectly but the only source that surfaced for it was a Facebook post quoting the AllTrails text, with no AllTrails URL, so it is recorded here rather than linked."
+      "stats_note": "The Pagosa trails with the strongest reviews - Pagosa Peak (11.5 mi, 4.4 from 197), Quartz Lake (9.3 mi, 283 reviews) and Four Mile Creek (13.2 mi) - are all challenging AND all carry May-or-June season starts, so none is usable on a 27-30 Apr stay. Piedra Falls (1.0 mi, easy, 24 min) would fit the stop perfectly but the only source that surfaced for it was a Facebook post quoting the AllTrails text, with no AllTrails URL, so it is recorded here rather than linked.",
+      "offroad": [
+        {
+          "name": "Piedra Road (FR 631)",
+          "url": "https://www.fs.usda.gov/r02/sanjuan/conditions",
+          "difficulty": "not graded on the Forest's table",
+          "season": "OPEN, and unusually so for this stop. San Juan NF's road table says FR 631 \"Remains open all year, plowed in winter\" — it is one of very few roads in the district that is. The stop is 27-30 Apr 2028, when almost everything else at altitude is still behind a 5/1 or 6/1 gate.",
+          "note": "The main road north out of Pagosa Springs into the Piedra country and toward the Weminuche — and, on these dates, effectively the only high-country road out of this stop that can be counted on. Williams Creek is off it and is also listed as open all year and plowed.",
+          "tier": "official",
+          "source": "USFS San Juan National Forest — Current Conditions road table"
+        },
+        {
+          "name": "Buckles Lake Road",
+          "url": "https://www.fs.usda.gov/r02/sanjuan/conditions",
+          "difficulty": "not graded on the Forest's table",
+          "season": "UNCERTAIN ON THESE DATES. San Juan NF lists its opening as \"Conditional\" with a 1/15 closure — meaning there is no fixed spring date and the Forest opens it when the road can take traffic. Late April in the eastern San Juans is early for that. Phone the Pagosa Ranger District rather than driving out on spec.",
+          "note": "Southeast of Pagosa toward the Continental Divide and the New Mexico line. Listed with its 'conditional' status stated plainly rather than omitted, because 'conditional' is the actual answer and a card that said nothing would read as 'open'. The broader picture for this stop: most San Juan NF gates open 5/1 or 6/1, one to five weeks after departure.",
+          "tier": "official",
+          "source": "USFS San Juan National Forest — Current Conditions road table"
+        }
+      ]
     },
     "salida-co": {
       "activities": {
@@ -25987,6 +26986,48 @@
           "dogs": false,
           "note": "Off Ajo Mountain Drive to a set of tinajas — the natural rock basins that hold the desert's only standing water. Distance and grade are NPS; no AllTrails listing surfaced, so no trail link."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Ajo Mountain Drive",
+          "url": "https://www.nps.gov/orpi/planyourvisit/driving-and-biking.htm",
+          "distance": "21 miles (34 km)",
+          "difficulty": "graded gravel and asphalt, one-way; NPS states \"vehicles over 25 feet are prohibited\"",
+          "season": "No seasonal closure published. The stop's 27 Jan - 4 Feb 2028 dates are the best time of year for it; NPS gives it 1-2 hours.",
+          "note": "The signature drive of the monument and the reason the stop is eight nights — a one-way loop under the west face of the Ajo Range through the densest organ pipe stands in the US. The 25 ft limit is the coach's problem, not the truck's.",
+          "tier": "official",
+          "source": "NPS Organ Pipe Cactus NM — Driving and Biking"
+        },
+        {
+          "name": "North and South Puerto Blanco Drive (full loop)",
+          "url": "https://www.nps.gov/orpi/planyourvisit/driving-and-biking.htm",
+          "distance": "41 miles (66 km)",
+          "difficulty": "all vehicles as far as Pinkley Peak; beyond that NPS requires high clearance and four-wheel drive",
+          "season": "No seasonal closure published. NPS budgets 4-5 hours for the loop.",
+          "note": "The committing one. NPS is explicit: \"Vehicles cannot proceed past Pinkley Peak and turn around; they must finish the entire loop.\" Past Pinkley the road runs the border fence line. The 10-mile round trip out to Pinkley Peak picnic area and back is the low-commitment version and needs no 4WD.",
+          "tier": "official",
+          "source": "NPS Organ Pipe Cactus NM — Driving and Biking"
+        },
+        {
+          "name": "Bates Well Road",
+          "url": "https://www.nps.gov/orpi/planyourvisit/driving-and-biking.htm",
+          "distance": "23 miles",
+          "difficulty": "two-way; NPS strongly recommends high clearance",
+          "season": "No seasonal closure published.",
+          "note": "Runs west off AZ-85 to the Cabeza Prieta NWR boundary, past the Bates Well ranch buildings. Two-way, so it can be turned around on — unlike the Puerto Blanco loop.",
+          "tier": "official",
+          "source": "NPS Organ Pipe Cactus NM — Driving and Biking"
+        },
+        {
+          "name": "Pozo Nuevo Road",
+          "url": "https://www.nps.gov/orpi/planyourvisit/driving-and-biking.htm",
+          "distance": "14 miles",
+          "difficulty": "two-way; NPS says high clearance and four-wheel drive are highly recommended",
+          "season": "No seasonal closure published.",
+          "note": "The quietest of the four. Camino de Dos Republicas branches off it for 2 miles, also 4WD — but NPS states \"The road beyond Gachado line camp to Dos Lomitas is closed to the public,\" so that spur dead-ends.",
+          "tier": "official",
+          "source": "NPS Organ Pipe Cactus NM — Driving and Biking"
+        }
       ]
     },
     "chiricahua-willcox": {
@@ -26185,6 +27226,37 @@
           "dogs": true,
           "note": "THE OTHER DOG-LEGAL TRAIL. At the west end of the monument, through grassy meadow and creekside woodland at the mouth of Bonita Canyon, connecting to the Silver Spur Meadow Trail at Faraway Ranch — so the two chain into one longer dog walk from the campground. Grade from HikeArizona; NPS publishes no figures on any page that loaded."
         }
+      ],
+      "offroad": [
+        {
+          "name": "Pinery Canyon Road #42",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/pinery-canyon-42-scenic-drive",
+          "distance": "12 miles from near the Chiricahua NM entrance up to Onion Saddle — about an hour one way",
+          "difficulty": "Coronado NF: \"High clearance vehicles are strongly recommended. 4WD also beneficial, if available.\"",
+          "season": "Watch this one. Coronado NF: \"Western portion, from East Turkey Creek Road to Forest Boundary can be closed due to snow in the winter.\" The stop is 18-23 Feb 2028 and the road tops out at 7,600 ft — no published gate date, but a February snow could shut exactly the section that starts at the monument. Douglas Ranger District, (520) 364-3468, for current conditions.",
+          "note": "The road out the back of Chiricahua NM and over the crest of the range to Portal — the single best day's driving of this stop when it is open. Continues from Onion Saddle to Rustler Park or drops to Portal on the New Mexico side.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Pinery Canyon #42 Scenic Drive"
+        },
+        {
+          "name": "Cave Creek Road #42/42B loop via Paradise",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/cave-creek-road-42-42b-scenic-drive",
+          "distance": "17-mile loop",
+          "difficulty": "not published by Coronado NF",
+          "season": "No gate published. High point about 6,000 ft, lower than the Pinery Canyon crest, so it is the more likely of the two to be open in February.",
+          "note": "From Portal up Cave Creek Canyon, around Silver Peak and back through the old mining town of Paradise. Coronado NF's warning is worth repeating: \"There are no gas stations in Portal or Paradise, Arizona or Rodeo, NM, so be sure to fill up before you arrive.\" Best birding in the range.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Cave Creek Road #42/42B Scenic Drive"
+        },
+        {
+          "name": "Cochise Stronghold approach roads (Ironwood Road / FR 84)",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/cochise-stronghold",
+          "difficulty": "Coronado NF says only that \"Dirt roads surround the Dragoon Mountains and are required to drive on to visit any of the sites\" — it publishes no grade or vehicle requirement for the East Stronghold approach itself",
+          "season": "No gate published.",
+          "note": "West of Willcox in the Dragoons — the granite maze where Cochise held out and is buried. Ironwood Road becomes FR 84 at the forest boundary. The Forest's own page is careful to say the roads are dirt and unavoidable but stops short of grading them, so treat the surface as unknown until seen.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Cochise Stronghold"
+        }
       ]
     },
     "patagonia-sonoita": {
@@ -26307,6 +27379,35 @@
             "horse"
           ],
           "note": "Recorded as a system, not a trail, because that is all the authority publishes. Arizona State Parks names Vista, Sonoita Creek, New Mexico and Arizona Railroad, Overlook, Horse Corral, Foothills, Cat Cave and Blackhawk trails and gives a length for exactly one of them. If more than the Overlook is wanted, the figures have to come from the entrance station — the natural area is day-use and gated, so it is a conversation that happens anyway."
+        }
+      ],
+      "offroad": [
+        {
+          "name": "Box Canyon Road #62",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/box-canyon-road-forest-service-road-62-scenic-drive",
+          "difficulty": "Coronado NF describes an \"all-weather gravel road\" that \"turns to dirt\"; no vehicle requirement published",
+          "season": "Coronado NF lists it as available year-round.",
+          "note": "East off the Madera Canyon road, through Box Canyon under the west face of the Santa Ritas, and out to AZ-83 a few miles north of Sonoita — so it can be driven as the way in or the way out of this stop rather than as a there-and-back. The all-weather designation on the first part is the useful bit: this is the route that still works after rain.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Box Canyon Road (FR 62) Scenic Drive"
+        },
+        {
+          "name": "Ruby Road #289/39",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/ruby-road-289-39-scenic-drive",
+          "difficulty": "not published by Coronado NF — the page gives no mileage, surface or vehicle requirement, only the route",
+          "season": "No gate published.",
+          "note": "West off I-19 north of Nogales at the Ruby interchange, paved to Peña Blanca Lake where it becomes FR 39, then dirt through grass savanna and past the Ruby ghost town toward Arivaca. Sycamore Canyon and Arivaca Lake are on it. Furthest afield of this stop's three and the one to give a full day.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Ruby Road #289/39 Scenic Drive"
+        },
+        {
+          "name": "Canelo Hills Loops #799/58/49",
+          "url": "https://www.fs.usda.gov/r03/coronado/recreation/canelo-hills-loops-799-58-49-scenic-drive",
+          "difficulty": "not published — Coronado NF gives the route and the country but no length, surface or vehicle requirement",
+          "season": "Coronado NF lists the route status as open; no gate published.",
+          "note": "Off AZ-83 south of Sonoita onto FR 5799 and through the Canelo Hills — \"historic ranching and mining country with broad grasslands and distant buttes\" — ending in Patagonia. Loops back to the stop itself, which is what makes it the easy pick of the three. Neither restrooms nor water anywhere on it.",
+          "tier": "official",
+          "source": "USFS Coronado National Forest — Canelo Hills Loops #799/58/49 Scenic Drive"
         }
       ]
     },

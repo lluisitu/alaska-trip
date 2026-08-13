@@ -47,6 +47,10 @@ DB = HERE / 'links_db.json'
 # Trail-like proper names, for reading a dog rule's own exceptions back out of it.
 TRAILNAME = re.compile(r"\b([A-Z][\w'’.-]+(?:\s+[A-Z][\w'’.-]+){0,3}\s+(?:Trail|Path|Loop|Walk|Pathway))\b")
 
+EXPLICIT_CONFLICT = re.compile(
+    r'\b(CLOSED FOR THIS STOP|CONFLICTS? WITH THE STOP DATES|SHUT FOR THIS STOP|'
+    r'SPLITS THE STAY|PARTIAL CONFLICT)\b')
+
 MONTHS = {m: i for i, m in enumerate(
     ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'])}
 # Stops where an empty offroad box is the correct answer, with the reason.
@@ -57,6 +61,7 @@ NO_OFFROAD_OK = {
     'waterton': 'Parks Canada prohibits off-road driving',
     'glacier': 'NPS prohibits off-road driving',
     'austin-depart': 'departure day, not a stay',
+    'caprock-canyons': 'TPWD publishes no unpaved driving route; the Trailway is hike/bike/horse only',
 }
 
 
@@ -137,6 +142,11 @@ def season_conflict(text, arrive, depart):
     """
     if not text or not arrive:
         return None
+    # Kept in step with EXPLICIT_CONFLICT in desktop/index.html. A researcher who
+    # already did the date arithmetic writes the answer in words; that is better
+    # evidence than a pattern match, not worse.
+    if EXPLICIT_CONFLICT.search(text):
+        return True
     m = re.search(r'(?:opens?|reopens?)\s*~?\s*([A-Za-z]+)', text, re.I)
     if not m:
         return None
@@ -245,7 +255,12 @@ def main():
             found['dogflat'].append(
                 (sid, name, f"one flat '{e['dogs_verdict']}' verdict for {len(s['alltrails'])} trails"))
 
-    order = ['dogmissing', 'dogexcluded', 'empty', 'browse', 'thin', 'season', 'dogflat']
+    order = ['dogmissing', 'dogexcluded', 'empty', 'browse', 'thin', 'dogflat', 'season']
+    # `season` is not a worklist: every hit is a conflict the card already
+    # renders with a warning marker. Counting it as outstanding work made the
+    # total jump from 8 to 35 the moment the flag started working, which is
+    # exactly backwards.
+    INFORMATIONAL = {'season', 'dogexcluded'}
     total = 0
     for k in order:
         if only and k not in only:
@@ -253,12 +268,15 @@ def main():
         rows = found[k]
         if not rows:
             continue
-        total += len(rows)
+        if k not in INFORMATIONAL:
+            total += len(rows)
         print(f'=== {k}: {len(rows)}')
         for sid, name, why in sorted(rows):
             print(f'   {sid:24s} {name[:32]:34s} {why}')
         print()
-    print(f'{total} things worth a look')
+    info = sum(len(found[k]) for k in INFORMATIONAL)
+    print(f'{total} things worth a look, plus {info} informational '
+          f'(seasonal conflicts the card flags, and trails correctly ruled out for dogs)')
     if not only:
         print('\nNone of these is proof of a defect — it is a worklist ordered by how likely')
         print('a look is to change something. Great Basin scored on four of the five.')

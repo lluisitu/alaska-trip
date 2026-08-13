@@ -94,7 +94,8 @@ NEGATIVE = re.compile(
 EXCEPT = re.compile(r"\b(except|exception|exceptions|other than|apart from)\b", re.I)
 # A name ending in "Trail" that is really a place: "Eagle Trail State Recreation
 # Site" is a park, not a walk, and adding it as a trail would be nonsense.
-PLACE_SUFFIX = re.compile(r"^\s*(State|National|Provincial|Recreation|Park|Campground|SRA|SP)\b")
+# ...and "Colorado Trail Explorer" is a state trail DATABASE, not a walk.
+PLACE_SUFFIX = re.compile(r"^\s*(State|National|Provincial|Recreation|Park|Campground|SRA|SP|Explorer|Register|Database)\b")
 
 
 def excluded(prose, named):
@@ -242,8 +243,8 @@ def main():
                 return bool(words) and any(
                     all(w in b for w in words) for b in in_box)
             for named in set(TRAILNAME.findall(prose)):
-                if covered(named):
-                    continue
+                if covered(named) or named in (e.get('dog_trails_noted') or {}):
+                    continue          # on the card, or a recorded deliberate omission
                 if is_place_not_trail(prose, named):
                     continue          # a park whose name ends in "Trail"
                 if excluded(prose, named):

@@ -61,9 +61,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-15 — Chitina, AK  `chitina`
 
-- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
-  <sub>authority</sub>
 - **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-5234** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
@@ -77,11 +77,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-23 — Fairbanks, AK (Dalton Hwy / Arctic Circle base)  `fairbanks-2`
 
-- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
-  <sub>authority</sub>
 - **907-459-7307** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-474-2200** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+  <sub>authority</sub>
+- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-451-2695** — Northern Area Office 907-451-2695.
   <sub>trails.2</sub>
@@ -176,11 +176,18 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **(928) 928-6873** — The stop's 22-27 Jan 2028 dates are prime desert season; the hazard here is a washed-out road after rain, and FWS asks you to phone (928) 928-6873 for current conditions.
   <sub>offroad.0</sub>
+- **928-317-3200** — Yuma Field Office 928-317-3200 for road condition.
+  <sub>scenicDrives_patch.2</sub>
 
 ## 2028-02-04 — Tucson, AZ  `tucson`
 
 - **(520) 749-8700** — Santa Catalina Ranger District, (520) 749-8700, if a late-February reopening is worth asking about.
   <sub>offroad.2</sub>
+
+## 2028-02-14 — Catalina State Park (Oro Valley), AZ  `catalina-state-park`
+
+- **520-351-3351** — But it is snow-liable in February and the Forest Service says so plainly - "Following snowstorms, the road may be closed temporarily; snow tires, chains, or 4WD may be required." That is a storm-by-storm risk, not a dated closure, so it does not conflict with the 14-18 Feb stay; call the Pima County Sheriff's 24-hour Road Condition Hotline, 520-351-3351, on the morning you go.
+  <sub>scenicDrives_patch.0</sub>
 
 ## 2028-02-18 — Chiricahua NM / Willcox, AZ  `chiricahua-willcox`
 
@@ -250,9 +257,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-264-7329** — 239; road emergency 613-264-7329.
-  <sub>offroad.0</sub>
 - **613-259-2398** — Manager of Public Works 613-259-2398 ext.
+  <sub>offroad.0</sub>
+- **613-264-7329** — 239; road emergency 613-264-7329.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

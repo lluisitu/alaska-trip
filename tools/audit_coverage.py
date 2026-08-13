@@ -179,18 +179,21 @@ def main():
         park = bool(re.search(r'\bNP\b|National Park|Provincial Park|State Park|NRA|National Monument',
                               name))
 
-        if not (s.get('offroad') or []) and sid not in NO_OFFROAD_OK:
+        # `offroad_finding` records a stop researched and found to have nothing.
+        if not (s.get('offroad') or []) and sid not in NO_OFFROAD_OK \
+                and not e.get('offroad_finding'):
             found['empty'].append((sid, name, 'offroad box is empty'))
         if not (s.get('alltrails') or []) and nights >= 2:
             found['empty'].append((sid, name, f'trails box is empty on a {nights}-night stay'))
         if not (s.get('scenicDrives') or []) and nights >= 3:
             found['empty'].append((sid, name, f'scenic-drives box is empty on a {nights}-night stay'))
 
-        if park and sid not in areas and (s.get('alltrails') or []):
+        if park and sid not in areas and (s.get('alltrails') or []) \
+                and not e.get('area_browse_finding'):
             found['browse'].append((sid, name, 'park stop, but the trail heading falls back to the state'))
 
         n = len(s.get('alltrails') or [])
-        if 0 < n <= 2 and nights >= 3:
+        if 0 < n <= 2 and nights >= 3 and not e.get('trails_finding'):
             found['thin'].append((sid, name, f'{n} trail(s) for a {nights}-night stay'))
 
         for box in ('alltrails', 'offroad', 'scenicDrives'):
@@ -250,17 +253,37 @@ def main():
                 found['dogmissing'].append(
                     (sid, name, f'dog rule names {named!r} as permitted, not in the trails box{tail}'))
 
+        # A dog rule with no source url cannot be re-checked when the authority
+        # changes it, and one sourced FROM AllTrails is forbidden outright by
+        # §5 — its dog flag has contradicted the managing authority twice on
+        # this trip. Sawtooth's rule was "Allowed on leash (per AllTrails
+        # listing)" until it was re-sourced to the USFS wilderness regulations.
+        if prose:
+            if re.search(r'alltrails|per reviews', prose, re.I):
+                found['dogsource'].append(
+                    (sid, name, 'dog rule is sourced from AllTrails — §5 forbids it'))
+            elif not e.get('dogs_source'):
+                found['dogsource'].append(
+                    (sid, name, 'dog rule has no source url to re-check it against'))
+
         if e.get('dogs_verdict') in ('allowed', 'prohibited') and not (e.get('trail_dogs') or {}) \
                 and park and len(s.get('alltrails') or []) >= 2:
             found['dogflat'].append(
                 (sid, name, f"one flat '{e['dogs_verdict']}' verdict for {len(s['alltrails'])} trails"))
 
-    order = ['dogmissing', 'dogexcluded', 'empty', 'browse', 'thin', 'dogflat', 'season']
+    order = ['dogmissing', 'dogsource', 'dogexcluded', 'empty', 'browse', 'thin', 'dogflat', 'season']
     # `season` is not a worklist: every hit is a conflict the card already
     # renders with a warning marker. Counting it as outstanding work made the
     # total jump from 8 to 35 the moment the flag started working, which is
     # exactly backwards.
-    INFORMATIONAL = {'season', 'dogexcluded'}
+    # `dogflat` is a weak signal now that `dogmissing` exists. It asks "is this
+    # park answered with one verdict and no per-trail detail", which was worth
+    # asking before anything read the exceptions back out of the prose. All 13
+    # it flagged were hand-checked and every one is correctly answered — the
+    # authority genuinely states a park-wide rule (Yellowstone, Grand Teton,
+    # Glacier, Sequoia) or a park-wide permission (Parks Canada's 3 m leash).
+    # Kept as information, not work.
+    INFORMATIONAL = {'season', 'dogexcluded', 'dogflat'}
     total = 0
     for k in order:
         if only and k not in only:

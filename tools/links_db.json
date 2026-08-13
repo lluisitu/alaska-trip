@@ -1536,7 +1536,7 @@
     },
     "sawtooth-nra": {
       "authority": "USDA Forest Service — Sawtooth National Recreation Area",
-      "dogs": "Allowed on leash (per AllTrails listing).",
+      "dogs": "Allowed. Sawtooth Wilderness Regulations: \"Dogs must be on leash while on trails from July 1 through Labor Day.\" The stay is 3–6 May 2027, OUTSIDE that window, so the leash requirement does not apply on these dates — voice control is the standard elsewhere on the forest and a leash is still the sensible choice around Redfish Lake's trailheads. One hard exclusion anywhere in the wilderness: \"Dogs are not allowed in the Goat Creek drainage (tributary of the South Fork of the Payette River).\" None of the trails on this card is in that drainage.",
       "trails": [
         {
           "name": "Fishhook Creek Trail",
@@ -1673,7 +1673,9 @@
           "tier": "unlisted",
           "source": "USFS Sawtooth National Forest"
         }
-      ]
+      ],
+      "dogs_source": "https://www.fs.usda.gov/r04/sawtooth/wilderness/sawtooth-wilderness-regulations",
+      "dogs_source_quote": "Dogs must be on leash while on trails from July 1 through Labor Day."
     },
     "craters-of-the-moon": {
       "authority": "National Park Service — Craters of the Moon NM & Preserve",
@@ -3075,7 +3077,8 @@
           "tier": "official",
           "source": "https://www.adfg.alaska.gov/index.cfm?adfg=viewinglocations.palmercreekroad"
         }
-      ]
+      ],
+      "dogs_source": "https://www.fs.usda.gov/r10/chugach/recreation/trails/russian-lakes-trail-upper"
     },
     "seward": {
       "authority": "National Park Service — Kenai Fjords National Park (Exit Glacier area); other trails on this card are outside the park",
@@ -4619,7 +4622,8 @@
           "url": "https://bcparks.ca/ta-chila-park-aka-boya-lake-park/",
           "note": "Authority. Source of the two trail names, the 1.5 km lengths and the pet rule."
         }
-      ]
+      ],
+      "trails_finding": "Cannot be thickened, and this is the answer rather than a gap. BC Parks names exactly two trails at Tā Chʼilā (Boya Lake) — Lakeshore and Beaver Lodge, 1.5 km each — and both are on the card. AllTrails indexes the same two. The only other path is an unnamed mountain-bike trail, which cannot be listed as an entity without inventing a name for it."
     },
     "dease-lake": {
       "authority": "BC Parks",
@@ -13526,7 +13530,8 @@
           "tier": "official",
           "source": "USFS Coronado National Forest — Control Road #38 Scenic Drive"
         }
-      ]
+      ],
+      "area_browse_finding": "AllTrails has no park page for Catalina State Park, so the trail-box heading falls back to Arizona. Searched and confirmed absent rather than left unchecked — the trails themselves all carry their own listings."
     },
     "bisbee-tombstone": {
       "activities": {

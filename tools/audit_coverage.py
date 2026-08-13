@@ -77,6 +77,47 @@ def ex(hh, decl, o='[', c=']'):
     raise ValueError('unterminated: ' + decl)
 
 
+# Phrases that mean "the dog may NOT use this one".
+NEGATIVE = re.compile(
+    r"(closed to pets|closes to pets|not allowed|no dogs|are not permitted|"
+    r"prohibited on|trails? (?:are )?closed|except for service)", re.I)
+# ...and the word that flips a prohibition into a permission for whatever follows.
+EXCEPT = re.compile(r"\b(except|exception|exceptions|other than|apart from)\b", re.I)
+# A name ending in "Trail" that is really a place: "Eagle Trail State Recreation
+# Site" is a park, not a walk, and adding it as a trail would be nonsense.
+PLACE_SUFFIX = re.compile(r"^\s*(State|National|Provincial|Recreation|Park|Campground|SRA|SP)\b")
+
+
+def excluded(prose, named):
+    """Is the sentence naming this trail saying the dog CANNOT use it?
+
+    Scoped to the sentence, and `except`-aware, because these rules routinely
+    state the prohibition and its exceptions in one breath. Both readings failed
+    on real data before this: "PROHIBITED on all trails except a named few:
+    Peabody Creek Trail…" called three permitted trails closed, and "PROHIBITED
+    on ALL trails … NPS names the General Sherman Tree Trail, Big Trees Trail
+    and Grant Tree Trail" called a closed one permitted.
+    """
+    i = prose.find(named)
+    if i < 0:
+        return False
+    start = prose.rfind('.', 0, i) + 1
+    end = prose.find('.', i)
+    sent = prose[start:end if end > 0 else len(prose)]
+    if not NEGATIVE.search(sent):
+        return False
+    # A negative sentence, but the name sits after an "except" — it is one of
+    # the exceptions, so it IS permitted.
+    m = EXCEPT.search(sent)
+    return not (m and (i - start) > m.end())
+
+
+def is_place_not_trail(prose, named):
+    """"Eagle Trail State Recreation Site" matches the trail-name pattern and is a park."""
+    i = prose.find(named)
+    return i >= 0 and bool(PLACE_SUFFIX.match(prose[i + len(named):i + len(named) + 24]))
+
+
 def month_of(datestr):
     try:
         return int(datestr[5:7]) - 1
@@ -152,18 +193,29 @@ def main():
             # shadowing them here worked only because of statement order.
             in_box = {y['name'].lower() for y in (s.get('alltrails') or [])}
             for named in set(TRAILNAME.findall(prose)):
-                if not any(named.lower() in b or b in named.lower() for b in in_box):
-                    tail = (' — and the verdict is prohibited, so it is the ONLY walk'
-                            if e.get('dogs_verdict') == 'prohibited' else '')
-                    found['dogmissing'].append(
-                        (sid, name, f'dog rule names {named!r}, not in the trails box{tail}'))
+                if any(named.lower() in b or b in named.lower() for b in in_box):
+                    continue
+                if is_place_not_trail(prose, named):
+                    continue          # a park whose name ends in "Trail"
+                if excluded(prose, named):
+                    # The rule names it as a trail the dog may NOT use. Adding it
+                    # as a dog walk would be exactly backwards, and 7 of the first
+                    # 16 flags were this: Acadia's Ladder Trail, Fort Bragg's Fern
+                    # Canyon, Sequoia's Grant Tree, Indiana Dunes' Pinhook Bog.
+                    found['dogexcluded'].append(
+                        (sid, name, f'dog rule names {named!r} as CLOSED to pets — do not add it'))
+                    continue
+                tail = (' — and the verdict is prohibited, so it is the ONLY walk'
+                        if e.get('dogs_verdict') == 'prohibited' else '')
+                found['dogmissing'].append(
+                    (sid, name, f'dog rule names {named!r} as permitted, not in the trails box{tail}'))
 
         if e.get('dogs_verdict') in ('allowed', 'prohibited') and not (e.get('trail_dogs') or {}) \
                 and park and len(s.get('alltrails') or []) >= 2:
             found['dogflat'].append(
                 (sid, name, f"one flat '{e['dogs_verdict']}' verdict for {len(s['alltrails'])} trails"))
 
-    order = ['dogmissing', 'empty', 'browse', 'thin', 'season', 'dogflat']
+    order = ['dogmissing', 'dogexcluded', 'empty', 'browse', 'thin', 'season', 'dogflat']
     total = 0
     for k in order:
         if only and k not in only:

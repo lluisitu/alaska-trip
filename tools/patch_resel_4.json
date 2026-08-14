@@ -296,6 +296,403 @@
           ]
         }
       ]
+    },
+    "perth-on": {
+      "trails": [
+        {
+          "name": "Foley Mountain Loop Trail (Spy Rock), Foley Mountain Conservation Area",
+          "distance": "4.1 mi loop",
+          "time": "1.5-2 hr",
+          "difficulty": "Easy to moderate",
+          "elevation_gain": "337 ft",
+          "reviews": "4.6 (686)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://www.rvca.ca/conservation-areas/foley-mountain",
+          "dogs_source_quote": "Foley Mountain offers a quiet sandy beach on the shores of Upper Rideau Lake ... Dogs are not allowed.",
+          "note": "Four of the five trails already on this card are Murphys Point or the Rideau Trail through it — one park, over and over. Foley Mountain is the other landscape of this country: a granite ridge above Upper Rideau Lake at Westport with the Spy Rock lookout, roughly 40 km from Perth. Dirt and gravel underfoot with rock outcrops, not technical.",
+          "alltrails": {
+            "name": "Foley Mountain Loop Trail",
+            "url": "https://www.alltrails.com/en-gb/trail/canada/ontario/foley-mountain-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Rideau Valley Conservation Authority — Foley Mountain",
+              "url": "https://www.rvca.ca/conservation-areas/foley-mountain",
+              "tier": "official",
+              "note": "The managing authority. 10 km of trails, open year round but unmaintained in winter. The only pet prohibition it publishes for the property is the beach."
+            },
+            {
+              "label": "AllTrails — Foley Mountain Conservation Area browse",
+              "url": "https://www.alltrails.com/parks/canada/ontario/foley-mountain-conservation-area",
+              "tier": "indexed"
+            }
+          ],
+          "stats_note": "Only the en-gb locale returned a www URL for this trail. The RVCA states a dog ban for its beaches and asks on its Foley Mountain page for dogs to be leashed on conservation-area trails; it publishes no trail ban, so `dogs: true` is recorded with the beach carved out. Separately, and worth knowing at this stop: the RVCA does bar dogs entirely from the Perth Wildlife Reserve.",
+          "needs": "star rating is from AllTrails' area page rather than the trail title; count read at 657, 675 and 686 on the same day"
+        }
+      ]
+    },
+    "lake-placid-ny": {
+      "trails": [
+        {
+          "name": "Mt. Van Hoevenberg",
+          "distance": "4.3 mi out-and-back",
+          "time": "2-2.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "898 ft",
+          "reviews": "2,388 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://dec.ny.gov/places/high-peaks-wilderness-complex",
+          "dogs_source_quote": "Dogs must be leashed at all times in the Eastern Zone of the High Peaks Wilderness and at trailheads, campsites and above 4,000 feet everywhere else.",
+          "season": "Late September is the front edge of Adirondack colour; the open summit ledges here look straight at Marcy, Colden and the MacIntyres, so this is the view walk of the stop.",
+          "note": "The card had Mount Jo, Owl's Head and Cascade-Porter — two very short ones and one Hard 4,000-footer, with nothing moderate in between. This is the gap-filler: a real summit with a real view for half a day's work, on a purpose-built graded trail rather than an Adirondack root ladder. Dog legal but must be leashed — this is inside the Eastern High Peaks zone, where rangers write about ten off-leash tickets a year.",
+          "alltrails": {
+            "name": "Mt. Van Hoevenberg",
+            "url": "https://www.alltrails.com/trail/us/new-york/mt-van-hoevenberg",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Mt. Van Hoevenberg East Trail",
+              "url": "https://www.alltrails.com/trail/us/new-york/mt-van-hoevenberg-easttrail",
+              "tier": "indexed",
+              "note": "The newer, better-liked way up, from the Olympic Sports Complex side: 3.7 mi out-and-back, 974 ft, 4.8 from 3,811 reviews — the highest-rated walk anywhere near Lake Placid. No estimated time or difficulty grade was returned for it in any result read, which is the only reason the older trail carries the entry."
+            }
+          ],
+          "needs": "star rating — no result read returned one for this listing, only the 2,388-review count from the page title"
+        },
+        {
+          "name": "Baker Mountain Loop Trail",
+          "distance": "1.8 mi loop",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderately challenging",
+          "elevation_gain": "879 ft",
+          "reviews": "1,443 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://dec.ny.gov/places/high-peaks-wilderness-complex",
+          "dogs_source_quote": "Dogs must be leashed at all times in the Eastern Zone of the High Peaks Wilderness and at trailheads, campsites and above 4,000 feet everywhere else.",
+          "note": "Half an hour's drive for Saranac Lake's steepest half hour on foot — 879 ft in under a mile up, then lookouts over Saranac Lake, Lake Flower and the whole High Peaks skyline. Part of the Saranac 6er. It is in the McKenzie Mountain Wilderness, outside the Eastern High Peaks zone, so the DEC leash rule binds at the trailhead rather than the whole way; leash her anyway on something this busy.",
+          "alltrails": {
+            "name": "Baker Mountain Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/new-york/baker-mountain-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Saranac Lake — Baker Mountain",
+              "url": "https://www.saranaclake.com/hiking/baker-mountain",
+              "tier": "community",
+              "note": "Local visitor bureau: 1.6 mi round trip, 884 ft of gain, summit 2,452 ft. Slightly shorter than the AllTrails loop, which adds the Moody Pond return."
+            }
+          ],
+          "stats_note": "A separate AllTrails listing simply named 'Baker Mountain' shows a review count of 2,454 — identical to the mountain's height in feet, which is exactly the coincidence §2 says to distrust. The loop listing was used instead. No star rating was returned for either.",
+          "needs": "star rating"
+        }
+      ]
+    },
+    "eastern-townships-qc": {
+      "trails": [
+        {
+          "name": "Coaticook Gorge Park Loop (Parc de la Gorge de Coaticook)",
+          "distance": "5.0 mi loop",
+          "time": "2.5-3 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "879 ft",
+          "reviews": "184 reviews",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://gorgedecoaticook.qc.ca/en/summer-activities/hiking-trails/",
+          "dogs_source_quote": "Dogs are also allowed inside the park, but must be kept on a leash at all times.",
+          "season": "First half of October is peak colour in the Townships and the gorge is a hardwood canyon — this is the week for it.",
+          "note": "This card was in trouble: three of its four trails are inside Parc national du Mont-Orford, where Sépaq's coloured map bans dogs from the whole massif network. Coaticook is the first entry on it the dog can actually walk. A 50 m deep canyon on the Coaticook River crossed by the longest pedestrian suspension bridge in North America, plus an observation tower, a dam and a cave. About 55 km east of the stop.",
+          "alltrails": {
+            "name": "Coaticook Gorge Park Loop",
+            "url": "https://www.alltrails.com/trail/canada/quebec/boucle-du-parc-de-la-gorge-de-coaticook",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parc de la Gorge de Coaticook — hiking trails",
+              "url": "https://gorgedecoaticook.qc.ca/en/summer-activities/hiking-trails/",
+              "tier": "official",
+              "note": "The managing authority. 19 km of marked trail across three areas; source of the dog rule and of the admission-fee structure."
+            },
+            {
+              "label": "AllTrails — Coaticook Gorge",
+              "url": "https://www.alltrails.com/trail/canada/quebec/gorge-de-coaticook",
+              "tier": "indexed",
+              "note": "A second, shorter listing for the same park under a different name, 287 reviews — the canyon-only walk rather than the full loop."
+            }
+          ],
+          "needs": "star rating — none returned in any result read"
+        },
+        {
+          "name": "Mount Pinnacle Trail, Parc Harold F. Baldwin (Mont Pinacle)",
+          "distance": "2.8 mi loop",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "633 ft",
+          "reviews": "4.7 (2,368)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://parchfbaldwin.com/faq",
+          "dogs_source_quote": "Oui, les chiens sont permis tant qu'ils sont tenus en laisse tout au long de la randonnee. Nous vous demandons de ramasser les besoins du chien et les jeter a la poubelle.",
+          "season": "Maple forest the whole way up; 5-11 Oct is the week it is worth driving for.",
+          "note": "The second dog-legal walk this stop needed, and the best-reviewed trail in the whole Coaticook area — an isolated Appalachian hill standing 194 m above Lac Lyster, with the lake and Little Lake Baldwin from the top at 665 m. Paid day access, bookable online. Peregrine falcons and owls; it is also a climbing crag, so expect ropes at the base.",
+          "alltrails": {
+            "name": "Mount Pinnacle Trail",
+            "url": "https://www.alltrails.com/trail/canada/quebec/boucle-du-mont-pinacle",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parc Harold F. Baldwin — FAQ (the dog rule)",
+              "url": "https://parchfbaldwin.com/faq",
+              "tier": "official",
+              "note": "The managing authority answers the dog question directly. Its own site gives the park as roughly 63 ha with 6 trails, 7 km round trip in total."
+            },
+            {
+              "label": "Cantons-de-l'Est — Mont Pinacle",
+              "url": "https://www.easterntownships.org/hiking/134/mont-pinacle",
+              "tier": "community",
+              "note": "Regional tourism board; gives the summit as 665 m and a 3 km climb, and also lists the trail as 'Chien admis en laisse'."
+            }
+          ],
+          "stats_note": "Considered separately and rejected: Round Top at the Parc d'environnement naturel de Sutton, the other famous Townships summit. PENS' own rules read 'PAS DE CHIEN dans la Reserve naturelle des Montagnes-Vertes ... interdits dans tous les sentiers indiques en rouge sur notre carte', and whether the Round Top summit trail is one of the red ones could not be settled from here. On a card that already carries three dog-banned Mont-Orford trails, a fourth maybe was not worth adding. Worth a phone call to PENS if Sutton is wanted.",
+          "needs": "count read at 2,211, 2,247, 2,289, 2,368 and 2,371 across indexes on the same day — ordering figure only"
+        }
+      ]
+    },
+    "camden-me": {
+      "trails": [
+        {
+          "name": "Woods Loop Trail, Beech Hill Preserve",
+          "distance": "1.9 mi loop",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "308 ft",
+          "reviews": "4.7 (715)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://www.coastalmountains.org/our-work/preserve-use-guidelines/",
+          "dogs_source_quote": "Dogs are NOT permitted at Fernalds Neck, Rockport Shore, or Hodson Preserves.",
+          "season": "Open blueberry barrens rather than canopy, so it reads well even once the leaves are down — which by 22-27 Oct they largely are on the midcoast.",
+          "note": "Every trail on this card was a Camden Hills State Park summit climb, three of them on the same ridge. Beech Hill is the other kind of day: an easy walk up organic blueberry barrens in Rockport to Beech Nut, the sod-roofed stone hut built in 1914, with Penobscot Bay, the Camden Hills and the St George peninsula laid out around it. The land trust names the three preserves where dogs are barred and this is not one of them; its maps page adds 'If not posted, dogs must be on leash.'",
+          "alltrails": {
+            "name": "Woods Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/maine/woods-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Coastal Mountains Land Trust — Beech Hill Preserve",
+              "url": "https://www.coastalmountains.org/preserves/beech-hill-preserve/",
+              "tier": "official",
+              "note": "The managing authority. Two ways up: Summit Trail 0.6 mi one-way, easy, from Beech Hill Road, which is the wheelchair-accessible one; Woods Loop 0.9 mi one-way, easy, from Rockville Street."
+            },
+            {
+              "label": "Coastal Mountains Land Trust — Preserve Use Guidelines",
+              "url": "https://www.coastalmountains.org/our-work/preserve-use-guidelines/",
+              "tier": "official",
+              "note": "Source of the dog rule. Worth reading before picking any other preserve near Camden: Fernalds Neck, on Megunticook Lake and otherwise an obvious choice for this stop, is one of the three that bar dogs."
+            }
+          ]
+        },
+        {
+          "name": "Rockland Breakwater Trail",
+          "distance": "1.9 mi out-and-back",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "19 ft",
+          "reviews": "884 reviews",
+          "uses": ["hike"],
+          "season": "Open granite with no shelter at all — a fine late-October walk on a calm day and a bad one in wind or rain, when the blocks are slick and uneven.",
+          "note": "The one flat, sea-level walk within reach of this stop: 4,300 ft of granite block straight out into Rockland Harbor to the 1902 breakwater light, with the windjammer fleet going past. Nineteen feet of elevation gain against four ridge climbs on the rest of the card.",
+          "alltrails": {
+            "name": "Rockland Breakwater Trail",
+            "url": "https://www.alltrails.com/trail/us/maine/rockland-breakwater-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "TravelMaine — Rockland Breakwater Trail",
+              "url": "https://travelmaine.com/dir/rockland-breakwater-trail/",
+              "tier": "community",
+              "note": "Gives the pier as 7/8 mile and lists pets as permitted — but this is a tourism directory, not the owner, so no `dogs` value is recorded here."
+            }
+          ],
+          "stats_note": "No managing-authority pet rule was found for the breakwater, which is federal granite with the light maintained by a friends group and the shore end in city hands, so `dogs` is deliberately absent. Uneven, gapped blocks are a real consideration for a dog regardless of the rule. No star rating was returned for the listing.",
+          "needs": "dog rule; star rating"
+        }
+      ]
+    },
+    "berkshires-ma": {
+      "trails": [
+        {
+          "name": "Bash Bish Falls from Taconic State Park",
+          "distance": "1.5 mi out-and-back",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "elevation_gain": "259 ft",
+          "reviews": "4.6 (2,148)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://parks.ny.gov/visit/state-parks/taconic-state-park-copake-falls-area",
+          "dogs_source_quote": "Pets are to be supervised at all times and must be crated or on a leash not more than 6-feet in length. ... Pets are not permitted in playgrounds, buildings, golf courses, boardwalks, pools and spray-grounds or guarded swim areas/beaches.",
+          "note": "The tallest waterfall in Massachusetts, and the obvious hole in a card that otherwise climbed Greylock twice. Approach it from the New York side, from Taconic State Park at Copake Falls: it is the gentler walk, the better-reviewed one, and the one that has stayed open. DCR has closed the Massachusetts trail from Falls Road repeatedly for erosion and drainage work — a full closure through 12 Jun 2025, and further closures on selected days since. Not a seasonal closure and not predictable two years out, so check DCR before driving to the Mount Washington lot rather than assuming either way. Swimming is prohibited on both sides.",
+          "alltrails": {
+            "name": "Bash Bish Falls from Taconic State Park",
+            "url": "https://www.alltrails.com/trail/us/new-york/bash-bish-falls-from-taconic-state-park",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "AllTrails — Bash Bish Falls Trail (the Massachusetts approach)",
+              "url": "https://www.alltrails.com/trail/us/massachusetts/bash-bish-falls-trail",
+              "tier": "indexed",
+              "note": "The short, steep way down from the Falls Road lot in Mount Washington: 538 ft of gain, 1,460 reviews. This is the side subject to the DCR closures."
+            },
+            {
+              "label": "iBerkshires — Access to Bash Bish Falls Remains Closed for Trail Work",
+              "url": "https://www.iberkshires.com/story/78959/Access-to-Bash-Bish-Falls-Remains-Closed-for-Trail-Work.html",
+              "tier": "community",
+              "note": "The 2025 closure in DCR's own words as reported locally: 21 Apr to 12 Jun 2025, Mount Washington side only, with the falls still reachable from Taconic State Park in New York."
+            }
+          ],
+          "stats_note": "`dogs` is sourced to New York State Parks because the recommended walk starts and mostly runs on their ground. Massachusetts DCR's own pet page could not be read — mass.gov answers 403 to every automated fetch from here — so the Massachusetts side is NOT covered by this verdict and would need checking separately."
+        },
+        {
+          "name": "Cobble Hill Loop, Tyringham Cobble",
+          "distance": "2.1 mi loop",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "436 ft",
+          "reviews": "4.6 (791)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://thetrustees.org/place/tyringham-cobble/",
+          "dogs_source_quote": "Dogs must be kept on leash at all times.",
+          "season": "By 27-31 Oct the Berkshire canopy has usually gone over — Berkshire colour peaks nearer 5-15 Oct — which suits this one: the point of the Cobble is the open meadow and the view down the Tyringham valley, and that only improves once the leaves are off.",
+          "note": "A short, steep quartzite knob with the Appalachian Trail over the top and Rabbit Rock on the way down, in the prettiest valley in the southern Berkshires. Same owner as Monument Mountain, which is already on this card, so the rules and the parking work the same way. The Trustees call it 'moderate hiking, strenuous in places' — the summit pitch is the strenuous part.",
+          "alltrails": {
+            "name": "Cobble Hill Loop",
+            "url": "https://www.alltrails.com/trail/us/massachusetts/tyringham-cobble-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "The Trustees — Tyringham Cobble",
+              "url": "https://thetrustees.org/place/tyringham-cobble/",
+              "tier": "official",
+              "note": "The managing authority. '2-mile loop trail. Moderate hiking, strenuous in places.' Source of the dog rule."
+            },
+            {
+              "label": "The Trustees — Dog Friendly Hiking Trails",
+              "url": "https://thetrustees.org/program/hiking-with-dogs/",
+              "tier": "official",
+              "note": "The Trustees' master list of which reservations allow dogs on leash, which allow off-leash, and which bar them. Worth consulting before adding any other Trustees property to this leg."
+            }
+          ]
+        }
+      ]
+    },
+    "litchfield-hills-ct": {
+      "trails": [
+        {
+          "name": "Steep Rock Centennial-Yellow Circle Loop, Steep Rock Preserve",
+          "distance": "4.1 mi loop",
+          "time": "1.5-2 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "505 ft",
+          "reviews": "4.7 (2,133)",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "https://steeprockassoc.org/pets-in-our-preserves/",
+          "dogs_source_quote": "Steep Rock Association's pet policy is in compliance with CT Law requiring pet owners to keep their dogs 'under control' at all times on public property. Steep Rock Association has defined 'under control' as meaning the dog is tethered to a leash.",
+          "season": "31 Oct - 5 Nov is past leaf-peak in the Litchfield hills, but the first mile is a river-level former rail bed, which holds colour later than the ridges and walks well in the wet.",
+          "note": "The four trails on this card are all state-park properties and three of them are short. Steep Rock is the region's best-loved walk and the only large private preserve on the leg — 998 acres and about 20 miles of trail on a bend of the Shepaug River, with the tunnel and the old Shepaug Valley Railroad grade. The loop begins flat on the rail bed for roughly a mile, then climbs; horses are barred above that point, which is a fair marker of where it stiffens.",
+          "alltrails": {
+            "name": "Steep Rock Centennial-Yellow Circle Loop",
+            "url": "https://www.alltrails.com/trail/us/connecticut/yellow-circle-blazes-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Steep Rock Association — Pets in Our Preserves",
+              "url": "https://steeprockassoc.org/pets-in-our-preserves/",
+              "tier": "official",
+              "note": "The managing authority's dog policy. Waste bins at most trailheads."
+            },
+            {
+              "label": "Steep Rock Association — Steep Rock Preserve",
+              "url": "https://steeprockassoc.org/preserve/steep-rock-preserve/",
+              "tier": "official",
+              "note": "998 acres, trails along the river banks and up into the hillsides above."
+            },
+            {
+              "label": "Connecticut Trail Finder — Steep Rock Preserve",
+              "url": "https://www.cttrailfinder.com/trails/trail/steep-rock-preserve",
+              "tier": "community",
+              "note": "Names the other loops if the day wants something shorter — the Clamshell Loop for the Shepaug valley view, or the 776 ft Steep Rock summit."
+            }
+          ],
+          "stats_note": "Steep Rock Association permits regulated hunting on some of its land and the stop falls inside Connecticut's autumn deer season. Nothing was found either way for this preserve specifically; check the Association's site for season notices before walking here on a weekday in early November.",
+          "needs": "hunting-season status for this preserve"
+        }
+      ]
+    },
+    "hudson-valley-ny": {
+      "trails": [
+        {
+          "name": "Awosting Falls Carriage Road, Minnewaska State Park Preserve",
+          "distance": "5.5 mi out-and-back",
+          "time": "2-2.5 hr",
+          "difficulty": "Moderate",
+          "elevation_gain": "515 ft",
+          "reviews": "4.6 (611)",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "dogs_source": "https://parks.ny.gov/visit/state-parks/minnewaska-state-park-preserve",
+          "dogs_source_quote": "Dogs only, must be on a leash not more than 6 feet. Not allowed in buildings, camping, picnic or bathing areas or on walkways. Pets are NOT permitted at beaches or on the cross-country ski trails when they are groomed and open for cross-country skiing only.",
+          "season": "5-11 Nov is past colour on the Shawangunk ridge, but this is a waterfall and a cliff-edge carriage road rather than a leaf walk, and November flow is usually better than October's.",
+          "note": "Everything on this card sat on the river — the Roosevelt and Vanderbilt estates, the Walkway, Storm King. Nothing went up onto the Shawangunks, which is the landscape people come to the Hudson Valley for. This is the gentlest way onto it: crushed-stone carriage road with no scrambling, past the 60 ft Awosting Falls and around Lake Minnewaska on the clifftop. Rideable as well as walkable, and 87% of reviewers call it easy despite the Moderate grade.",
+          "alltrails": {
+            "name": "Awosting Falls Carriage Road",
+            "url": "https://www.alltrails.com/trail/us/new-york/awosting-falls-carriage-road",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "New York State Parks — Minnewaska State Park Preserve",
+              "url": "https://parks.ny.gov/visit/state-parks/minnewaska-state-park-preserve",
+              "tier": "official",
+              "note": "The managing authority: 35 miles of carriage road and 50 miles of footpath, and the pet rule quoted above. Note the preserve's gates close early in winter and the lot fills at weekends."
+            },
+            {
+              "label": "AllTrails — Awosting Falls Connection Trail to Awosting Falls",
+              "url": "https://www.alltrails.com/trail/us/new-york/lake-minnewaska-awosting-falls",
+              "tier": "indexed",
+              "note": "The short version — roughly a mile to the falls and back from the lower lot, if 5.5 mi is more than the day wants."
+            }
+          ],
+          "stats_note": "Count read at 585 and 611 on the same day; the 4.6 star figure came with the 585 reading. Ordering figure only."
+        }
+      ]
     }
   }
 }

@@ -98,6 +98,24 @@ The two figures that WERE copied, found this way: Durango's Animas River Trail
 had taken Kartchner's 1,063 (it is 1,079) and Horse Gulch had taken Bertha
 Lake's 586 (it is 490).
 
+#### The browser pane is shared. Assert what you are reading.
+
+Two separate agents on this project found the browser tab navigated out from
+under them mid-read by concurrent work. One caught it because it checked
+`document.title` against the query it had issued before taking any figure; the
+other worked around it entirely by doing a same-origin `fetch('/html/?q=…')`
+from inside the DuckDuckGo page and parsing the response in one atomic call —
+which is immune to another session moving the tab, and returns real result text
+and real hrefs rather than a summary.
+
+Prefer the atomic fetch. If you drive the pane directly, assert the page is
+still yours before you read a number off it.
+
+One more trap, from the same pass: an AllTrails listing for "Baker Mountain"
+showed a review count of **2,454**, which is also the mountain's height in feet.
+A number that appears twice on a page for two different reasons is exactly the
+kind of thing a summariser conflates.
+
 #### Batched API calls degrade silently. Control every batch.
 
 Four separate incidents on this project, all the same shape: a call asking about

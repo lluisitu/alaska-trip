@@ -680,6 +680,107 @@
           "note": "Added as the only easy, short, paved and accessible walk in a box of six alpine climbs. One flat mile through the trees to a lake ringed by high cliffs with waterfalls coming straight down into it — twenty minutes each way, benches and a paved picnic spot at the end. It is the walk for the afternoon after Maple Pass, the walk in the rain, and the walk when the knees have had enough of larch season, and it shares a car park with a trail already on the card so it costs no extra driving."
         }
       ]
+    },
+
+    "valdez": {
+      "authority": "City of Valdez Parks & Recreation (trail guides and figures); Valdez Adventure Alliance (trail and site maintenance); Alaska State Parks / DNR Division of Parks & Outdoor Recreation (Worthington Glacier State Recreation Site)",
+      "dates_checked": "10-15 Aug 2027, 5 nights. Mid-August in Valdez is the pink and silver salmon run, the wettest month of the year, and full brush growth on every unmaintained trail.",
+      "trails_note": "The card had three walks, all of them short and all of them within a couple of miles of the harbour — Dock Point, Solomon Gulch Viewpoint and Solomon Lake. That is a good half day, not five nights. Nothing on the card touched the two things Valdez is actually famous for: Keystone Canyon, and the glacier at Thompson Pass that you drive past to get here. Three are added — the coastal trail west out of town, the historic wagon route through the canyon waterfalls, and Worthington Glacier — which takes the box to six for five nights and covers all three directions out of Valdez instead of one.",
+      "dogs_stop_level": "No managing authority read for this stop publishes a pet rule for any Valdez trail. The City of Valdez trail guides carry safety, plants and bear guidance and say nothing about dogs; Alaska State Parks' Worthington Glacier page lists facilities and no pet policy. Every `dogs` value below is therefore null. That is the safe state, not an oversight — Valdez Parks & Recreation would settle all of them in one call, and it is worth adding to CALLS.md.",
+      "trails": [
+        {
+          "name": "Shoup Bay Trail, Section A (to Gold Creek)",
+          "distance": "6.5 miles (10.5 km) round trip",
+          "time": "4 hours round trip",
+          "difficulty": "Moderate",
+          "elevation_gain": "680 ft (207 m)",
+          "reviews": "(189)",
+          "reviews_note": "Count read from the AllTrails result title for 'Shoup Bay Trail Section A' as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": null,
+          "needs": "No published pet rule from the City of Valdez or the Valdez Adventure Alliance. Recorded as unknown.",
+          "alltrails": {
+            "name": "Shoup Bay Trail Section A",
+            "url": "https://www.alltrails.com/trail/us/alaska/shoup-bay-trail-section-a",
+            "match": "exact",
+            "tier": "indexed",
+            "note": "AllTrails indexes the two sections separately, the same way the city does. 'Section A of the Shoup Bay Trail runs from the trail head to Gold Creek bridge.'"
+          },
+          "other_links": [
+            {
+              "label": "City of Valdez / Discover Valdez — Shoup Bay Trail",
+              "tier": "official",
+              "url": "https://www.valdezalaska.org/discover/explore-the-region/hiking-trails/shoup-bay/",
+              "note": "Source for every figure above, credited on the page to Valdez Parks & Recreation. Also the source for the Section B figures: Difficult, 10 hours round trip, 12.6 miles, 1,100 ft — that is the full run to Shoup Glacier and the kittiwake rookery, and it is a very long day, not a five-night-stop day."
+            }
+          ],
+          "season": "Open and at its best in August, with one real caveat the authority states plainly: 'The Gold Creek riverbed is prone to flooding and the stream channel changes often.' Mid-August is Valdez's wettest stretch. Expect mud on Section A, and treat a wet week as a reason to turn round at the meadow rather than push to Gold Creek.",
+          "note": "The walk this box was missing — the only trail on the card that gets out of town and onto the coast. It leaves from Shoup Bay Park at the very end of Egan Drive, crosses the Mineral Creek flats through alder and spruce and opens onto meadow and Port Valdez. Sea otters and harbour seals in the water, bears and mountain goats on the slopes above, and eagles, Arctic terns and peregrines along the shore. Section A to Gold Creek is the sane version at four hours; the camping area there has restrooms, food lockers and a firepit. Section B beyond it is graded Difficult, badly overgrown with Devil's Club and salmonberry, and is explicitly 'only recommended for experienced hikers' — it is recorded above but not proposed."
+        },
+        {
+          "name": "The Goat Trail, Keystone Canyon",
+          "distance": "About 2.5 miles one way — the City of Valdez states the trail 'is passable for the first 2.5 miles'. AllTrails indexes the walked route as 4.3 mi (6.8 km) out and back.",
+          "time": "About 2 hours out and back (AllTrails average 2 h 2 min)",
+          "difficulty": "Moderately challenging (AllTrails). The City of Valdez publishes no grade for this trail; recorded as the trail database's figure, not the authority's.",
+          "elevation_gain": "Not published by the City of Valdez, and no figure was read that could be attributed to the authority. Recorded as unknown rather than guessed.",
+          "reviews": "(184)",
+          "reviews_note": "Count read from the AllTrails result title as displayed; the en-gb mirror read 168 the same day. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": null,
+          "needs": "No published pet rule. Recorded as unknown.",
+          "alltrails": {
+            "name": "Goat Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/goat-trail--3",
+            "match": "exact",
+            "tier": "indexed",
+            "note": "Note the '--3' suffix — copied from a result, never derivable. There are other trails called Goat Trail in Alaska, including one in Wrangell-St. Elias; this is the Valdez one, and the AllTrails description confirms it as 'near Valdez, Alaska'."
+          },
+          "other_links": [
+            {
+              "label": "City of Valdez / Discover Valdez — The Goat Trail & Wagon Road",
+              "tier": "official",
+              "url": "https://www.valdezalaska.org/discover/explore-the-region/hiking-trails/the-goat-trail/",
+              "note": "Source for the trailhead and the passable distance: 'The trail begins at the wood sign just past Horsetail Falls in Keystone Canyon (Mile 13.5 Richardson Highway)... is passable for the first 2.5 miles.' Map credited to Valdez Parks & Recreation. Also records that the Goat Trail and the Wagon Road became two separate trails when the Snowslide Gulch bridge was destroyed in the 2006 floods — so do not expect a through route."
+            }
+          ],
+          "season": "Snow-free and open in August, and this is the right month for it: the two waterfalls at the trailhead, Horsetail and Bridal Veil, are still running on summer melt. Two plant hazards the authority names specifically — Devil's Club, which is covered in spines, and wild celery, which causes a burn-like skin reaction. Long sleeves, not shorts.",
+          "note": "The historic walk, and the reason to stop in Keystone Canyon rather than drive through it. This is the 1899 Abercrombie pack trail that became the Valdez-to-Fairbanks wagon road — the route the whole interior of Alaska was reached by before the Richardson Highway, cut into the canyon wall a few hundred feet above the Lowe River. It looks down on the new highway and across at the waterfalls. Two hours, 13.5 miles from camp, and it is a completely different kind of day from anything else on this card."
+        },
+        {
+          "name": "Worthington Glacier Lookout Trail",
+          "distance": "Short — Alaska State Parks publishes no length, describing only accessible trails within the 113-acre site. AllTrails describes it as 'an easy, paved trail [that] leads to a viewing station and right down to the glacier waters.'",
+          "time": "Under an hour including time at the viewing station",
+          "difficulty": "Easy — Alaska State Parks flags the site as an ADA facility with accessible (♿) trails and toilets.",
+          "elevation_gain": "Not published by Alaska State Parks. Recorded as unknown.",
+          "reviews": "(169)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": null,
+          "needs": "Alaska State Parks publishes no pet rule for this recreation site. The site is operated day-to-day by the Valdez Adventure Alliance, who would answer it. Recorded as unknown.",
+          "alltrails": {
+            "name": "Worthington Glacier Lookout Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/worthington-glacier",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Worthington Glacier State Recreation Site",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/worthglsrs.htm",
+              "note": "'Worthington Glacier State Recreation Site is located in spectacular Thompson Pass, 28 miles north of Valdez on the Richardson Highway.' 113 acres, ADA facility, accessible toilets and trails, pavilion with benches and interpretive panels. Milepost 28.7 Richardson Highway. 'This site is operated by Valdez Adventure Alliance.'"
+            },
+            {
+              "label": "Valdez Adventure Alliance — Worthington Glacier",
+              "tier": "official",
+              "url": "https://valdezadventurealliance.com/worthington-glacier",
+              "note": "The site operator. Two things worth knowing before driving up: there is a $5 parking fee and the operator states it receives no state funding or maintenance assistance; and the operator warns that the Worthington Glacier Ridge Trail and Worthington Loop Trail are SOCIAL trails, not maintained routes. The entry above is the maintained, accessible lookout trail only — the ridge scramble is deliberately not proposed."
+            }
+          ],
+          "season": "Open and at its best in mid-August. Thompson Pass sits at about 2,700 ft and collects some of the heaviest snowfall in Alaska; this is one of the few months the site is straightforward. It is directly on the Richardson Highway at milepost 28.7, so it is on the road IN and the road OUT — no separate day required.",
+          "note": "One of the most accessible glaciers in Alaska and the obvious thing this card was missing, given the coach drives past its car park twice. A paved, wheelchair-accessible path from the pavilion out to a viewing station and down toward the ice, with interpretive panels and benches. It costs an hour on a travel day rather than a day out of the five, which is exactly why it belongs on a card that already has three short walks near the harbour and nothing at Thompson Pass."
+        }
+      ]
     }
 
   }

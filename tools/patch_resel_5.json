@@ -626,6 +626,97 @@
           "resel": "ADDED in re-selection."
         }
       ]
+    },
+    "mountain-view-ar": {
+      "trails": [
+        {
+          "name": "White River Bluff Loop",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/white-river-bluff-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.3 mi loop",
+          "time": "1 h 46 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.5 (457)",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "season": "No published seasonal closure. Reviews warn the path is overgrown in the growing season — which makes the 3-8 Feb window the GOOD time to walk it, with the brush down and the bluff-top river views open. Rocky sections near the overlooks stay slick when wet.",
+          "note": "The card's only real half-day walk. It is the shortest of the five trails in the Syllamo system and, as Strava puts it, a snapshot of the whole thing — rolling pine, rocky sections, and bluffs above the White River. Trailhead is off Green Mountain Road a mile or two from Highway 5, with a self-pay station and a pit toilet.",
+          "note_source": "Dogs permitted on a leash. Managing authority is the US Forest Service, Ozark-St. Francis National Forests — AllTrails' own location field names the forest. No trail-specific pet rule is published, so this rests on the standing national-forest rule.",
+          "other_links": [
+            {
+              "label": "Hiking Project — White River Bluff Loop",
+              "url": "https://www.hikingproject.com/trail/7035944/white-river-bluff-loop",
+              "tier": "community",
+              "note": "Blazed green; 'doesn't have a lot of elevation gain, but some of the climbs can feel a little tough. Most of the rocky sections are by the river overlooks.'"
+            },
+            {
+              "label": "MTB Project — White River Bluff Loop",
+              "url": "https://www.mtbproject.com/trail/5134395/white-river-bluff-loop",
+              "tier": "community",
+              "note": "The same trail from the riding side: 'the climbs can be tough and technical'. Source of the bike use."
+            }
+          ],
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed. Strava gives the loop as 4.1 mi against AllTrails' 4.3.",
+          "cruise": false,
+          "cruise_reason": "Bike-legal and part of a named MTB system, but MTB Project describes technical rocky sections at the river overlooks. Not a gravel cruise with a dog in a carrier.",
+          "resel": "ADDED in re-selection. Five nights and three entries, one of which is a guided cave tour the dog cannot attend and one of which is a state-park grounds path."
+        },
+        {
+          "name": "Mirror Lake Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/mirror-lake-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.9 mi out-and-back",
+          "elevation_gain": "16 ft",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy — paved and accessible",
+          "reviews": "4.5 (439)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "No seasonal closure on the trail itself. The waterfall is rain-fed and reviewers single it out as best after heavy rain — early February in the Ozarks is the wet half of the year, so these dates favour it. Note that the Blanchard Springs RECREATION AREA campground has a winter season of its own; day access to Mirror Lake is separate from that and was not found to be restricted.",
+          "note": "Paved, flat, boardwalked and stroller-accessible, running from Mirror Lake to the point where Blanchard Springs bursts out of the hillside as a waterfall, past the old grist mill. This is the walk for the afternoon of the cave tour, and the one member of the household who cannot go into the caverns can do this one instead.",
+          "note_source": "Dogs permitted on a leash — US Forest Service, Ozark-St. Francis National Forests. The Forest Service's Blanchard Springs Recreation Area page publishes no trail-specific pet rule; this rests on the standing national-forest rule. It matters here because the dog is barred from the caverns and their visitor centre, which is already recorded at stop level.",
+          "other_links": [
+            {
+              "label": "US Forest Service — Blanchard Springs Recreation Area",
+              "url": "https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/blanchard-springs-recreation-area",
+              "tier": "official"
+            },
+            {
+              "label": "Arkansas.com — Mirror Lake Waterfall",
+              "url": "https://www.arkansas.com/experiences/discover/attraction-listings/mirror-lake-waterfall",
+              "tier": "official"
+            }
+          ],
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed.",
+          "resel": "ADDED in re-selection."
+        },
+        {
+          "name": "Blanchard Springs Caverns — Dripstone Trail",
+          "season": "CLOSED FOR THIS STOP — but the sources disagree and this needs a phone call, not a decision. Recreation.gov, which is the Forest Service's own ticketing system for this cavern, states: 'Blanchard Springs Caverns tours are available Thursday - Monday between March - October and Closed on Tuesdays and Wednesdays. The facility Closes completely From November - February and cavern tours are NOT available.' The stop is 3-8 Feb 2029, squarely inside that November-February shutdown. Against that, blanchardsprings.org says flatly 'Dripstone Trail tours are available year-round', and two visitor sites give a reduced winter schedule (Wed-Sun, or closed Mon-Tue, Nov-Mar) rather than a closure. Three different answers. Treat as CLOSED until the caverns confirm otherwise.",
+          "needs": ["Confirmation of the February tour schedule. Blanchard Springs Caverns, 870-757-2211 (the number Recreation.gov publishes for the facility). This is the whole reason the stop is here and the strongest source says it is shut on these dates."],
+          "other_links": [
+            {
+              "label": "Recreation.gov — Blanchard Springs Caverns",
+              "url": "https://www.recreation.gov/ticket/facility/233266",
+              "tier": "official",
+              "note": "The closure statement, and the 870-757-2211 number."
+            },
+            {
+              "label": "Blanchard Springs Caverns — Dripstone Trail",
+              "url": "https://www.blanchardsprings.org/dripstone-trail",
+              "tier": "official",
+              "note": "The contradicting source: 'Dripstone Trail tours are available year-round.' Also gives the tour as 4/10 of a mile in an hour, a constant 58 F at close to 100% humidity, and accessible to strollers and wheelchairs with strong assistance."
+            }
+          ],
+          "resel": "NOT a new trail — a seasonal finding merged onto the entry already on this card. The cave tour is the reason for the stop and the official ticketing system says the facility is shut for the whole of February."
+        }
+      ]
     }
   }
 }

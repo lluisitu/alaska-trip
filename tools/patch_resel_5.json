@@ -554,6 +554,78 @@
           "resel": "ADDED in re-selection."
         }
       ]
+    },
+    "mount-magazine-ar": {
+      "trails": [
+        {
+          "name": "Bear Hollow Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/bear-hollow-trail--4",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.5 mi out-and-back (Arklahoma Hiker walks it as 5 mi; the trail itself is 2.7 mi one-way)",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.4 (257)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "AllTrails records it as open year-round. No published winter closure was found for the park or for Cameron Bluff Overlook Drive — but Mount Magazine tops out at 2,753 ft, the highest ground in Arkansas, and AR-309 climbs the whole way. In the 23-27 Jan window ice on that road is the realistic risk and it is recorded as UNVERIFIED, not as clear.",
+          "note": "The park's own trail list calls out what is on it: WPA steps, Sunrise Rock, Inspiration Point, Bear Head Bluff and Shoal Creek, along the upper rim of Bear Hollow from the Benefield Picnic Area to AR-309. Named by Arklahoma Hiker as one of the three trails with the park's best views, and it was not on the card.",
+          "note_source": "Dogs permitted on a leash — Arkansas State Parks permit pets on park trails; the lodge building itself is not open to them. Already sourced at stop level.",
+          "other_links": [
+            {
+              "label": "Arkansas.com — Bear Hollow Trail",
+              "url": "https://www.arkansas.com/state-parks/explore/trails/bear-hollow-trail",
+              "tier": "official"
+            },
+            {
+              "label": "Arklahoma Hiker — Mount Magazine: Bear Hollow Trail",
+              "url": "https://arkokhiker.org/west-ark/mount-magazine-bear-hollow-trail/",
+              "tier": "community",
+              "note": "'A 2.7-mile west-pointing v-shaped trail that follows the rim at the east end of the mountain' — which is why AllTrails' out-and-back figure is roughly double."
+            }
+          ],
+          "stats_note": "Distance, grade, star and count from the AllTrails result title and snippet as displayed. No completion time published. AllTrails' own 'Dogs are welcome, but must be on a leash' line was NOT used as the dog source; the Arkansas State Parks rule is.",
+          "needs": ["time"],
+          "resel": "ADDED in re-selection. Four nights, and the card carried three entries of which TWO ARE THE SAME TRAIL — 'Signal Hill Trail (Arkansas's highest point)' and 'Signal Hill Trail' are one 1.8 mi loop listed twice. That left two real walks for four nights."
+        },
+        {
+          "name": "North Rim Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "5 mi out-and-back (2.5 mi each way); a spur to the west end of Mossback Ridge makes a 4.4 mi loop back to the visitor center",
+          "difficulty": "Easy to moderate — described by Arklahoma Hiker as 'not difficult' and by Trail Run Project as a relatively easy dirt trail",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "No published seasonal closure. This is the one trail on the card that is arguably BETTER on these dates than in summer — Trail Run Project notes the view along the north rim is at its best in winter, when the hardwoods are bare and the valley opens up. Same AR-309 ice caveat as everything else here.",
+          "note": "Runs the north rim from just west of the visitor center to Cameron Bluff Overlook Drive and on to the Brown Springs campground, through hardwood, scrub oak and cedar glade, crossing several small creeks. The third of the park's three best-view trails and the flattest of them. It also connects onward to the Cove Lake Trail off the mountain.",
+          "note_source": "Dogs permitted on a leash — Arkansas State Parks rule.",
+          "other_links": [
+            {
+              "label": "Arkansas.com — North Rim Trail",
+              "url": "https://www.arkansas.com/state-parks/explore/trails/north-rim-trail",
+              "tier": "official"
+            },
+            {
+              "label": "Arklahoma Hiker — Mount Magazine: North Rim Trail",
+              "url": "https://arkokhiker.org/west-ark/mount-magazine-sp-north-rim-trail/",
+              "tier": "community",
+              "note": "Source of the 5 mi out-and-back and of the ranking alongside Bear Hollow and Benefield East Loop."
+            },
+            {
+              "label": "Mountain Travel Guide — North Rim Trail",
+              "url": "https://www.mountaintravelguide.com/Arkansas/Logan/Hiking/NorthRimTrail.htm",
+              "tier": "community",
+              "note": "Source of the 4.4 mi loop variant via the Mossback Ridge spur."
+            }
+          ],
+          "stats_note": "NO ALLTRAILS LISTING — official source only. Repeated searches under 'North Rim Trail' with and without the park name returned Arkansas.com, Arklahoma Hiker, Secret Falls, Trail Run Project and HikeArizona but no alltrails.com result, so no trail link is carried and no slug was constructed. Length and grade are from the state's own trail page and from Arklahoma Hiker.",
+          "needs": ["reviews — no AllTrails listing found", "time"],
+          "resel": "ADDED in re-selection."
+        }
+      ]
     }
   }
 }

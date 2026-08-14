@@ -631,6 +631,55 @@
           "note": "Added as the alpine day, because after the Cavell Road closure there was no longer one. It leaves the Icefields Parkway at the Columbia Icefield and climbs quickly out of the trees onto an open shoulder looking straight across at the Athabasca Glacier and Mount Athabasca — the single best view on the whole Parkway that does not involve paying to ride onto the ice. Bighorn sheep are close to guaranteed on the lower slopes. The dog is permitted, which on a trail of this quality is unusual. Do it as a day-trip out of Jasper in the truck; the Parkway is a fine coach road but this is not a coach errand."
         }
       ]
+    },
+
+    "winthrop": {
+      "authority": "USFS Okanogan-Wenatchee National Forest, Methow Valley Ranger District; NPS North Cascades National Park Service Complex",
+      "dates_checked": "3-9 Oct 2027, 6 nights. Arrival 3 Oct is a FROZEN anchor — alpine larch prime is 29 Sep to 8 Oct.",
+      "verdict": "THIS SET WAS ALREADY LARGELY RIGHT and it is the best-chosen of the thirteen. Blue Lake, Heather-Maple Pass, Cutthroat Lake and Cutthroat Pass, and Grasshopper Pass from Harts Pass are the four canonical alpine larch hikes on the WA-20 / Harts Pass corridor, and Goat Peak Lookout is the right Methow-side addition. Whoever picked those picked for the anchor date, not from a list. Only one thing is added.",
+      "trails_note": "The gap is not a missing famous trail — it is that every single trail on the card is a moderate-to-hard climb of 4 to 11 miles with 1,000-2,000 ft of gain. Six days of that is not what a 53-year-old driver with a dog and a cat aboard will actually do, and there is no wet-day option, no short-evening option and no accessible option in the box at all. Rainy Lake fills all three at once and it is a larch-and-fall-colour walk in its own right. Two things to flag rather than change: (1) DOGS. Pets are permitted on Okanogan-Wenatchee National Forest land but the Heather-Maple Pass Loop, already on the card, runs along the boundary of NORTH CASCADES NATIONAL PARK, where NPS states 'Pets are not allowed within the national park except leashed on the Pacific Crest Trail.' Whether the loop's high traverse crosses that boundary is exactly the sort of thing AllTrails gets wrong, and no authority page read here settles it. Ring the Wilderness Information Center or the Methow Valley Ranger District on (509) 996-4000 before taking the dog up Maple Pass. (2) WA-20 over Washington and Rainy Passes is a seasonal highway that WSDOT closes for the winter — normally well after these dates, but the whole card except Goat Peak depends on it.",
+      "trails": [
+        {
+          "name": "Rainy Lake Trail #310",
+          "distance": "1 mile (1.6 km) one way — 2 mi round trip",
+          "time": "20 minutes each way (USFS); AllTrails estimates about 30 minutes for the round trip",
+          "difficulty": "Easy — USFS: 'The popular Rainy Lake Trail #310 is fully accessible. This is an easy, one-mile paved trail with no elevation gain.' Universally accessible, suitable for wheelchairs and strollers.",
+          "elevation_gain": "USFS states NO elevation gain. AllTrails reads 131 ft, which is the usual database noise on a contouring path; the authority figure is the one to plan on.",
+          "reviews": "(1,758)",
+          "reviews_note": "Count read from the AllTrails result title as displayed on duckduckgo.com. Three mirrors of the same page read 1,726, 1,758 and 1,769 within days of each other — good enough to order the trail, not good enough to quote.",
+          "uses": ["hike"],
+          "uses_source": "USFS lists the recreation opportunities for this trail as Hiking, Fishing, Outdoor Science and Learning, and Picnicking. Biking is not among them, so no bike use is claimed.",
+          "dogs": null,
+          "needs": "The USFS trail page publishes NO pet rule — its Restrictions section is empty of one. NPS states pets are 'allowed on most surrounding national forest lands', which is a description of someone else's land, not a rule for this trail. Recorded as unknown rather than assumed. Methow Valley Ranger District, 24 West Chewuch Road, Winthrop, (509) 996-4000, would settle it in one call, and it is worth making because this is the trail most likely to be walked with the dog on the whole stop.",
+          "alltrails": {
+            "name": "Rainy Lake Trail",
+            "url": "https://www.alltrails.com/trail/us/washington/rainy-lake-trail",
+            "match": "exact",
+            "tier": "indexed",
+            "note": "One AllTrails locale mirror titles this page 'Rainy Lake Trail [CLOSED]'. The managing authority does not corroborate that: the USFS page was last updated 29 June 2026 and describes the trail as open, popular, fully accessible and heavily used, with no closure notice anywhere on it. An AllTrails closure tag against an authority page that says otherwise is not evidence of a closure — but it is worth one look at the Methow Valley Ranger District page before driving 35 miles for it."
+          },
+          "other_links": [
+            {
+              "label": "USFS — Rainy Lake Trail, Okanogan-Wenatchee NF",
+              "tier": "official",
+              "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/rainy-lake-trail",
+              "note": "Source for length, surface, accessibility and time. 'From Winthrop, take Highway 20 west for about 35 miles, to Rainy Pass. Park in the south parking lot on the left side of the highway.' Same trailhead complex as Heather-Maple Pass, which is already on the card."
+            },
+            {
+              "label": "USFS — Heather Maple Pass / Rainy Pass Picnic Site (the trailhead)",
+              "tier": "official",
+              "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/heather-maple-pass-rainy-pass-picnic-site"
+            },
+            {
+              "label": "WTA — Rainy Lake",
+              "tier": "community",
+              "url": "https://www.wta.org/go-hiking/hikes/rainy-lake"
+            }
+          ],
+          "season": "In season on these exact dates, and the authority says so in its own words: 'In the fall, the golds and reds of the changing shrubs and trees are spectacular.' The trailhead is at Rainy Pass, milepost 158 on WA-20, the same lot the Heather-Maple Pass loop leaves from — so a Maple Pass day and a Rainy Lake half-hour are the same drive. The one dependency is WA-20 itself, which WSDOT closes over Washington and Rainy Passes each winter; early October is normally weeks ahead of that, but an early storm closes the highway with no notice and takes four of the six trails on this card with it.",
+          "note": "Added as the only easy, short, paved and accessible walk in a box of six alpine climbs. One flat mile through the trees to a lake ringed by high cliffs with waterfalls coming straight down into it — twenty minutes each way, benches and a paved picnic spot at the end. It is the walk for the afternoon after Maple Pass, the walk in the rain, and the walk when the knees have had enough of larch season, and it shares a car park with a trail already on the card so it costs no extra driving."
+        }
+      ]
     }
 
   }

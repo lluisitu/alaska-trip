@@ -1,0 +1,80 @@
+{
+  "stops": {
+    "bryce": {
+      "trails": [
+        {
+          "name": "Fairyland Loop Trail",
+          "reviews": "4.9 (12,734)"
+        }
+      ]
+    },
+    "moab": {
+      "trails": [
+        {
+          "name": "Mesa Arch Trail",
+          "reviews": "4.7 (12,735)"
+        }
+      ]
+    },
+    "camp-verde": {
+      "trails": [
+        {
+          "name": "Sedona Airport Loop Trail",
+          "reviews": "4.6 (10,927)"
+        }
+      ]
+    },
+    "vegas-area": {
+      "trails": [
+        {
+          "name": "Calico Tanks Trail",
+          "reviews": "4.8 (10,400)"
+        }
+      ]
+    },
+    "bisbee-tombstone": {
+      "trails": [
+        {
+          "name": "Foothills Loop Trail, Kartchner Caverns State Park",
+          "reviews": "4.5 (1,063)"
+        },
+        {
+          "name": "Carr Peak Trail",
+          "reviews": "4.6 (397)"
+        },
+        {
+          "name": "Coronado Cave Trail",
+          "reviews": "4.7 (397)"
+        }
+      ]
+    },
+    "durango": {
+      "trails": [
+        {
+          "name": "Animas River Trail",
+          "reviews": "4.5 (1,079)"
+        },
+        {
+          "name": "Horse Gulch Trail System",
+          "reviews": "4.4 (490)"
+        }
+      ]
+    },
+    "waterton": {
+      "trails": [
+        {
+          "name": "Bertha Lake Loop from Waterton Park",
+          "reviews": "4.7 (616)"
+        }
+      ]
+    },
+    "homer": {
+      "trails": [
+        {
+          "name": "Diamond Creek Trail",
+          "reviews": "4.3 (323)"
+        }
+      ]
+    }
+  }
+}

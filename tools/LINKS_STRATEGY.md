@@ -68,6 +68,36 @@ the card says which is which.
 - **Komoot, TrailLink, FATMAP, TPWD, NPS, USFS all fetch fine.** Prefer them
   whenever they can answer the question.
 
+#### A review count read through a summarising fetch is not reliable to the digit
+
+`WebFetch` against `lite.duckduckgo.com` does not hand back the page; a small
+model reads it and reports. Ask it the same question repeatedly and the digits
+move. Fairyland Loop at Bryce was asked five times across two sessions and gave
+**four different answers** — 12,734, 12,559, 12,728, and 12,740 twice. Whether
+the summariser is inventing the tail digits or DuckDuckGo is serving different
+cached crawls cannot be told from this side, and it does not matter: the figure
+is not trustworthy to the digit either way.
+
+This matters because §3 sorts on rating and count as one signal, so a wrong
+count puts a trail in the wrong place in the box.
+
+What to do:
+
+* For a review count, read the result text **yourself** — drive duckduckgo.com
+  in the browser pane and take the AllTrails title string as displayed. That is
+  a copy, not a summary.
+* Treat any count already in the db as approximate unless its entry says it was
+  read directly. It is good enough to ORDER trails and not good enough to quote.
+* Two trails sharing an exact count is worth checking and is NOT proof of a
+  copy. Bisbee's Carr Peak and Coronado Cave genuinely both sit at 397, on
+  distinct URLs with different star ratings, corroborated by the national
+  memorial's own page. `audit_coverage.py dupstat` flags the coincidence; a
+  person resolves it.
+
+The two figures that WERE copied, found this way: Durango's Animas River Trail
+had taken Kartchner's 1,063 (it is 1,079) and Horse Gulch had taken Bertha
+Lake's 586 (it is 490).
+
 #### Batched API calls degrade silently. Control every batch.
 
 Four separate incidents on this project, all the same shape: a call asking about

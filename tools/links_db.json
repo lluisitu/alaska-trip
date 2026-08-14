@@ -2060,7 +2060,7 @@
             "match": "exact",
             "tier": "indexed"
           },
-          "reviews": "586",
+          "reviews": "4.7 (616)",
           "uses": [
             "hike"
           ]
@@ -3269,7 +3269,7 @@
           "time": "2 h 08 min",
           "difficulty": "Moderate",
           "elevation_gain": "731 ft",
-          "reviews": "4.3 (272)",
+          "reviews": "4.3 (323)",
           "uses": [
             "hike"
           ],
@@ -12284,7 +12284,7 @@
             "match": "exact",
             "tier": "indexed"
           },
-          "reviews": "10,192",
+          "reviews": "4.8 (10,400)",
           "uses": [
             "hike"
           ],
@@ -13810,7 +13810,7 @@
             "time"
           ],
           "difficulty": "Moderate to difficult (Arizona State Parks)",
-          "reviews": "1,063 reviews",
+          "reviews": "4.5 (1,063)",
           "uses": [
             "hike"
           ],
@@ -13876,7 +13876,7 @@
           ],
           "difficulty": "Moderate",
           "elevation_gain": "500 ft",
-          "reviews": "397 reviews",
+          "reviews": "4.7 (397)",
           "uses": [
             "hike"
           ],
@@ -13949,7 +13949,7 @@
             "time",
             "difficulty"
           ],
-          "reviews": "397 reviews",
+          "reviews": "4.6 (397)",
           "uses": [
             "hike"
           ],
@@ -14302,7 +14302,7 @@
           "distance": "3.3 mi",
           "time": "1 h 23 min",
           "difficulty": "Moderately challenging",
-          "reviews": "10,192 reviews",
+          "reviews": "4.6 (10,927)",
           "uses": [
             "hike"
           ],
@@ -14535,7 +14535,7 @@
           "distance": "8.1 mi",
           "time": "4-4.5 hr",
           "elevation_gain": "1,555 ft",
-          "reviews": "12,704",
+          "reviews": "4.9 (12,734)",
           "uses": [
             "hike"
           ],
@@ -14967,7 +14967,7 @@
           "note_source": "Canyonlands Island in the Sky. Sunrise is the famous frame and the crowd is real — the shot list has this stop covered too.",
           "time": "14 min",
           "difficulty": "Easy",
-          "reviews": "12,704"
+          "reviews": "4.7 (12,735)"
         },
         {
           "name": "Double Arch Trail",
@@ -15427,7 +15427,7 @@
           "distance": "6.2 mi out-and-back",
           "time": "1 h 52 min",
           "difficulty": "Easy",
-          "reviews": "1,063",
+          "reviews": "4.5 (1,079)",
           "uses": [
             "hike",
             "bike"
@@ -15450,7 +15450,7 @@
           ],
           "was": "Horse Gulch Trail System — a system, not a trail",
           "note_source": "Meadow Loop via Horse Gulch Trail is the listed route inside the system. Durango Trails publishes the wider network at durangotrails.org; Horse Gulch Road itself is a 4.1 mi easy non-motorized access route.",
-          "reviews": "586"
+          "reviews": "4.4 (490)"
         },
         {
           "name": "Spur Line Trail",

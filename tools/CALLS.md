@@ -61,11 +61,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-15 — Chitina, AK  `chitina`
 
-- **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
-  <sub>authority</sub>
 - **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-5234** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-3217** — BLM Glennallen Field Office (907-822-3217) holds the map and trail details per NPS.
   <sub>trails.0</sub>
@@ -159,6 +159,8 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-12-10 — Fort Bragg, CA  `fort-bragg`
 
+- **707-964-9112** — Do not assume the dog can come on this one; the park office is 707-964-9112.
+  <sub>trails.3</sub>
 - **707-964-5674** — JDSF office 707-964-5674; the forest starts on the eastern edge of Fort Bragg.
   <sub>offroad.0</sub>
 
@@ -257,9 +259,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
-  <sub>offroad.0</sub>
 - **613-264-7329** — 239; road emergency 613-264-7329.
+  <sub>offroad.0</sub>
+- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`
@@ -276,6 +278,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 - **(207) 941-4412** — The state authority for the unit is Maine BPL's Donnell Pond Public Reserved Land page, which names Black Mountain Road and Dynamite Brook Rd but publishes no road condition detail — Eastern Public Lands Office (207) 941-4412.
   <sub>offroad.3</sub>
+
+## 2028-11-21 — Harpers Ferry, WV  `harpers-ferry-wv`
+
+- **717-352-2211** — not published — DCNR does not post gate dates on the maps page, and the district office (717-352-2211) is the number that would settle it
+  <sub>offroad.5</sub>
 
 ## 2029-02-08 — Eureka Springs, AR  `eureka-springs-ar-v3`
 

@@ -1,0 +1,687 @@
+{
+ "_what": "Trail-box RE-SELECTION for 13 stops. Not a top-up: each box was asked what it SHOULD hold for the stop's own dates and night count (roughly one walk per night, capped at six), then the gap was filled. Nothing already on a card is repeated here.",
+ "_method": "Every figure below was READ from a DuckDuckGo result rendered in a real browser, not summarised by a fetch. AllTrails review counts are the 'N Reviews' figure in the result title; where AllTrails publishes a separate parenthetical ratings count it is noted. Where a count is not published in the result, it is marked absent rather than guessed. URLs are copied from results, never constructed.",
+ "_dogs": "dogs is set ONLY from the managing authority, never from AllTrails. Where the new trail sits on the same land manager as the stop's existing dogs_source, that verdict carries; where it does not, dogs is null and the reason is in dogs_note.",
+ "stops": {
+  "buena-vista-co": {
+   "_review": "8 nights, arrive 7 May 2028 at 8,000 ft. The card held three: Agnes Vaille Falls (good), Collegiate Peaks Campground Loop (thin, 49 reviews), and Mount Yale, a 14er that will be under snow. That is not eight days of walking and it has no town-level walk at all. Added the two low-elevation Buena Vista trails that ARE open in early May, plus the area's single best-reviewed hike flagged for snow.",
+   "trails": [
+    {
+     "name": "Barbara Whipple / Midland and North Broken Boyfriend Loop",
+     "distance": "3.2 mi loop",
+     "time": "1.5-2.5 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": null,
+     "reviews": "4.7 — AllTrails publishes no review count in the result title",
+     "needs": ["review count", "elevation gain"],
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "BLM Royal Gorge Field Office / Arkansas Headwaters Recreation Area; BLM permits dogs on most trails. Same authority as the stop's existing BLM sourcing.",
+     "season": "Low trail at 7,950-8,060 ft on the east side of the Arkansas, the first thing in the valley to melt out. Open and walkable on a 7-15 May arrival.",
+     "note": "Starts from the Buena Vista River Park footbridge in town — the walk you can do from the coach without driving. AllTrails indexes it under the composite route name, not 'Barbara Whipple'; the trailhead signs say Whipple. 360-degree views to Mt Princeton and the Sawatch.",
+     "note_source": "AllTrails listing (title 'Midland, 1450.A, and North Broken Boyfriend Loop'); distance and time from Garmin Trails; elevation range from COTREX (Colorado Trail Explorer, BLM Royal Gorge Field Office as manager)",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/barbara-whipple-trail-loop",
+      "match": "contains",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "COTREX — Barbara Whipple Trail (BLM Royal Gorge FO)", "url": "https://trails.colorado.gov/trails/barbara-whipple-20920", "tier": "official"},
+      {"label": "Visit Buena Vista & Salida — Barbara Whipple Trail", "url": "https://www.colorfulcolorado.com/outdoors/hiking-backpacking/barbara-whipple-trail", "tier": "community"},
+      {"label": "Garmin Trails — Midland-North Broken Boyfriend Loop", "url": "https://connect.garmin.com/app/trails/US/colorado/midland-north-broken-boyfriend-loop", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Midland Railroad Grade (Historic)",
+     "distance": "8.8 mi point-to-point",
+     "time": "3 hr 15 min",
+     "difficulty": "Moderately challenging",
+     "reviews": "73",
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "BLM Royal Gorge Field Office; the AllTrails listing also states leashed dogs, but the verdict here is taken from BLM.",
+     "season": "AllTrails gives the window as March through October — the arrival is inside it.",
+     "note": "Former Colorado Midland railway grade above the Arkansas, so it is graded and near-flat rather than climbing. The obvious rail-grade candidate for a bike day with the dog, but the surface has not been sourced from reviews, so cruise is left unset rather than claimed.",
+     "cruise": null,
+     "note_source": "AllTrails result snippet, read in browser",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/midland-railroad-grade-historic",
+      "match": "exact",
+      "tier": "indexed"
+     }
+    },
+    {
+     "name": "Ptarmigan Lake Trail (#1444)",
+     "distance": "6.0 mi out-and-back",
+     "time": "3-4 hr",
+     "difficulty": "Moderate — climbs on moderate grades (hikingwalking.com); AllTrails' own grade is not published in the result",
+     "elevation_gain": "1,469 ft",
+     "reviews": "4.8 (2,632)",
+     "uses": ["hike"],
+     "dogs": true,
+     "dogs_note": "San Isabel National Forest, Salida Ranger District — same authority as the stop's existing dogs_source; pets permitted under control at all times.",
+     "season": "CLOSED FOR THIS STOP. The lake sits at 12,147 ft in a north-facing bowl below Jones Mountain and the Cottonwood Pass road (CR 306) that reaches the trailhead is not open that high in early May. Reviewers report snow on the trail and heavy snow near and above the lake well past melt-out at lower elevations. Best July for the wildflowers the Forest Service singles out.",
+     "note": "By a distance the best-reviewed hike in the Buena Vista area and the reason people come here — listed so the card says plainly what a May stop is missing, not because it can be walked. If the dates ever move to July, this is the day.",
+     "note_source": "AllTrails result title read in browser (2,632 reviews, 4.8/5); distance, time and gain from theoutdoorgems.com quoting the AllTrails stats; elevation and season from US Forest Service and Uncover Colorado",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/ptarmigan-lake-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "US Forest Service — Ptarmigan Lake Trail #1444", "url": "https://www.fs.usda.gov/r02/psicc/recreation/trails/ptarmigan-lake-trail-1444", "tier": "official"}
+     ]
+    }
+   ]
+  },
+  "salida-co": {
+   "_review": "7 nights, arrive 30 Apr 2028, town at 7,050 ft. The card held four, and two of them do not work on these dates: Waterdog Lakes tops out around 11,500 ft under Monarch Pass and will be snow, and River Bench carries no figures at all. That leaves Turret and Tenderfoot for a week. Salida's real asset in late April is that the valley floor is already dry — so the additions are the three trails that are open on arrival: the town rail-trail, the riverside walk, and the first Arkansas Hills trail above town.",
+   "trails": [
+    {
+     "name": "Monarch Spur Trail",
+     "distance": "4.9 mi out-and-back (2.5 mi one way)",
+     "time": "1.5-2 hr",
+     "difficulty": "Easy",
+     "elevation_gain": "167 ft",
+     "reviews": "4.4 (115) — AllTrails title count 115; the star line shows 95 ratings. TrailLink separately shows 4/5 from 2",
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "Paved concrete former rail spur, City of Salida, bike-legal per COTREX, 143 ft of range over its whole length, no walk-your-bike sections and no puncture reports. This is the gravel-cruise-with-the-dog day at this stop, and it starts in town.",
+     "dogs": true,
+     "dogs_note": "COTREX, whose manager field for this trail is the City of Salida, states 'Allows Dogs: Leashed'. Not taken from AllTrails.",
+     "season": "COTREX and AllTrails both have it open year-round; at 7,056-7,199 ft it is dry on a 30 Apr arrival.",
+     "note": "Runs from the Arkansas River near Sackett Ave out through town to the Milk Run Trail. Unremarkable as riding, which is the point — it is the flat, paved way to get about Salida on the bike with the dog in the carrier.",
+     "note_source": "AllTrails result title and stat line read in browser; TrailLink for surface and one-way length; COTREX for manager, dog rule, surface and elevation range",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/monarch-spur-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "COTREX — Monarch Spur Trail (City of Salida)", "url": "https://trails.colorado.gov/trails/monarch-spur-21032", "tier": "official"},
+      {"label": "TrailLink — Monarch Spur Trail", "url": "https://www.traillink.com/trail/monarch-spur-trail", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Salida Riverside Park Trail (Salida Riverwalk, #029)",
+     "distance": "1.1 mi out-and-back",
+     "time": "21 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "59",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "COTREX lists the managing authority as the City of Salida and the rule as 'Allows Dogs: Leashed'.",
+     "season": "AllTrails gives January through September; COTREX publishes no seasonal gate. Open on a 30 Apr arrival at 7,035-7,056 ft.",
+     "note": "The short walk along the Arkansas through Riverside Park in downtown Salida, beside the whitewater park. Reviewers report it is pram-friendly, which is the same thing as saying it is flat and smooth. This is the evening walk, not the day out.",
+     "note_source": "AllTrails result title read in browser (the en-gb mirror of the same page shows 58 — the .com figure of 59 is the one recorded); COTREX for manager, dog rule and elevation",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/salida-riverside-park-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "COTREX — Salida Riverwalk Trail #029 (City of Salida)", "url": "https://trails.colorado.gov/trails/salida-riverwalk-20907", "tier": "official"}
+     ]
+    },
+    {
+     "name": "Beasway (Salsa) Trail (#1418)",
+     "distance": "5.5 mi out-and-back (2.75 mi one way)",
+     "time": "2 hr 9 min",
+     "difficulty": "Moderately challenging",
+     "elevation_gain": null,
+     "reviews": "4.5 (140) — AllTrails title count 140; the star line shows 145 ratings",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike", "horse"],
+     "dogs": true,
+     "dogs_note": "COTREX gives the manager as USFS Salida Ranger District and 'Allows Dogs: Yes' — the same forest as the stop's existing San Isabel sourcing.",
+     "season": "The Forest Service gates this one: COTREX shows access, hiking, biking and horses all 03/16-12/14. A 30 Apr arrival is inside the open season by six weeks. Elevation 8,653-8,947 ft, low enough to be melted out; AllTrails gives best months as April through October.",
+     "note": "The named trail at the bottom of the Arkansas Hills system that the card previously referred to only as 'the trail system above Salida'. Renamed in 2017 from Salsa Trail for Brett Beasley, a Salida Ranger District trail builder. Multiuse and popular with mountain bikers — singletrack, so it is a walk rather than a cruise.",
+     "cruise": false,
+     "cruise_reason": "Mountain-bike singletrack in the Arkansas Hills, not a rail grade. Bike-legal, but not the surface the dog carrier wants.",
+     "note_source": "AllTrails result title and stat line read in browser; COTREX for trail number, manager, seasonal gate, dog rule and elevation; Trailforks for the renaming",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/beasway-salsa-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "COTREX — Beasway Trail #1418 (USFS Salida RD)", "url": "https://trails.colorado.gov/trails/beasway-17644", "tier": "official"}
+     ]
+    }
+   ]
+  },
+  "leadville-co": {
+   "_review": "6 nights, arrive 15 May 2028; Leadville sits at 10,152 ft and the day trip goes higher. Three of the four trails on the card cannot be walked on these dates — North Mount Elbert and Mount Massive are 14ers and Hagerman Tunnel is an 11,000 ft cirque that holds snow into July. That left one usable walk for six nights. Added the three Leadville-area trails that ARE open in mid-May, which is a net of three additions for three unusable existing entries rather than padding.",
+   "trails": [
+    {
+     "name": "Mineral Belt Trail",
+     "distance": "11.6 mi loop",
+     "time": "4 hr 7 min",
+     "difficulty": "Moderately challenging (AllTrails) — the grade is gentle and the whole loop is ADA-accessible; the difficulty is the 10,000 ft air, not the path",
+     "elevation_gain": null,
+     "reviews": "4.7 (1,069) — read from the AllTrails /en/ result title; the /en-gb/ mirror of the same page shows 1,090, so treat this as approximate",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "11.6 miles of asphalt on old railroad and mining grades, non-motorized, explicitly designed for bicycles, wheelchairs, strollers and skaters, with shelters after miles 3, 5, 7 and 10. No walk-your-bike sections, no surface hazards. Reviewers do warn that the elevation gain plus 10,200 ft of air makes it real work on an unassisted bike.",
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. The trail's own site, Visit Leadville Twin Lakes and the Colorado Mountain College route page all describe the trail in detail and none of them publishes a pet rule. A Lake County leash ordinance almost certainly applies, but that is an inference, not a source. Do not assume from AllTrails.",
+     "season": "The trail is the venue for the Leadville Loppet ski race, so it is under snow through the winter and the melt at 10,200 ft is late. Mid-May is the shoulder: the town-side miles are normally clear, the north and east arcs through the mining district can still hold drifts. Worth a look at the trail's own site before driving up.",
+     "note": "The single best walk or ride at this stop and it was not on the card. It loops the whole of Leadville through the historic mining district with interpretive signs, so it is the day that explains the town. Class I and II e-bikes are permitted.",
+     "note_source": "AllTrails result titles and stat line read in browser; mineralbelttrail.com and Visit Leadville Twin Lakes for surface, shelters, ADA access and e-bike rule; TrailLink for endpoints; COTREX featured route 138",
+     "alltrails": {
+      "url": "https://www.alltrails.com/en/trail/us/colorado/mineral-belt-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "Mineral Belt Trail — official", "url": "https://www.mineralbelttrail.com/thetrail", "tier": "official"},
+      {"label": "Visit Leadville Twin Lakes — Mineral Belt Trail", "url": "https://www.leadvilletwinlakes.com/trail/mineral-belt-trail", "tier": "official"},
+      {"label": "COTREX — Mineral Belt Loop featured route", "url": "https://trails.colorado.gov/routes/138", "tier": "official"},
+      {"label": "TrailLink — Mineral Belt Trail", "url": "https://www.traillink.com/trail/mineral-belt-trail", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Boulders and Giddy Up Loop",
+     "distance": "5.0 mi loop",
+     "time": "1 hr 43 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "4.4 (122) — AllTrails title count 122; the star line shows 106 ratings",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "COTREX gives the Giddy Up Trail's manager as Lake County and the rule as 'Allows Dogs: Leashed'. Not taken from AllTrails.",
+     "season": "AllTrails gives best months as May through October — the 15 May arrival is the first day of that window, so expect soft ground rather than snow. The trails double as the Leadville nordic loops in winter, which is why they are cut gently.",
+     "note": "The easy loop that actually works in mid-May: 40 ft of range on the Giddy Up section, 10,190-10,230 ft, five miles at an hour and three quarters. Shared with mountain bikers.",
+     "note_source": "AllTrails result title and stat line read in browser; COTREX for manager, dog rule, length and elevation of the Giddy Up section",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/boulders-and-giddy-up-loop",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "COTREX — Giddy Up Trail (Lake County)", "url": "https://trails.colorado.gov/trails/giddy-up-22175", "tier": "official"}
+     ]
+    },
+    {
+     "name": "Leadville Fish Hatchery Nature Trail",
+     "distance": "1.2 mi loop",
+     "time": "28 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "4.7 (405) — AllTrails title count 405; the star line shows 258 ratings",
+     "needs": ["elevation gain"],
+     "uses": ["hike"],
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. The managing authority is the US Fish and Wildlife Service (Leadville National Fish Hatchery, established 1889). Its hiking and trails pages describe the trails and publish no pet rule; Colorado Parks and Wildlife's hatchery page does not either. Recorded as unknown rather than assumed.",
+     "season": "AllTrails gives best months as June through September, so a 15 May arrival is a few weeks early — at roughly 9,600 ft on hatchery grounds the loop should be walkable but muddy, with snow possible in the shaded spruce-fir. Not a closure, a caveat.",
+     "note": "A short interpretive wooded loop on the grounds of the second-oldest federal fish hatchery in the country, with a picnic area halfway and benches looking at the Sawatch. Half an hour, right by the road — the useful one for a bad-weather afternoon. The hatchery grounds are also the trailhead for Rock Creek, Highline and Kearney Park into the Mount Massive Wilderness.",
+     "note_source": "AllTrails result title and stat line read in browser; US Fish and Wildlife Service hatchery hiking page and Visit Leadville Twin Lakes for the trail description and the wilderness trailhead access",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/leadville-fish-hatchery-nature-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "US Fish and Wildlife Service — Hiking at Leadville NFH", "url": "https://www.fws.gov/carp/fish-hatchery/leadville/visit-us/activities/hiking", "tier": "official"},
+      {"label": "Visit Leadville Twin Lakes — Fish Hatchery Nature Loop", "url": "https://www.leadvilletwinlakes.com/trail/fish-hatchery-nature-loop", "tier": "official"}
+     ]
+    }
+   ]
+  },
+  "saratoga": {
+   "_review": "4 nights, arrive 16 Apr 2027. The existing three were re-checked against the area rather than topped up, and they hold: Encampment River #470, Veterans Island in town, and Six Mile Gap on the Platte are the right three for mid-April, because everything with elevation — the Snowy Range, Huston Park, the Sierra Madre — is at 8,000-10,000 ft and shut. AllTrails indexes only four trails for the whole Saratoga area and one addition was found that the earlier pass missed, so this is a nearly-right box with one gap closed.",
+   "trails": [
+    {
+     "name": "Treasure Island Bridge (North Platte River Public Access Area)",
+     "distance": "1.8 mi out-and-back",
+     "time": "31 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "62",
+     "needs": ["elevation gain"],
+     "uses": ["hike"],
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. The managing authority is the Wyoming Game and Fish Commission, through a cooperative agreement with private landowners, and its Public Access Area listing publishes no pet rule. Recorded as unknown, not assumed — and on a cooperative PAA the landowner's signage is the rule that counts.",
+     "season": "AllTrails gives best months as May through July, so a 16 Apr arrival is outside the published window. Nothing in the Game and Fish listing indicates a closure, and this is valley-floor river bottom rather than a mountain trail — but the early date is unverified and high spring flow on the North Platte is the thing to check before driving out.",
+     "note": "Six miles south of Saratoga on WY-230, with a parking area, an outhouse, a boat ramp and foot bridges giving nearly two miles of river frontage. The valley-floor walk the mid-April dates actually allow, and the only one of the area's four AllTrails listings that the earlier pass did not carry.",
+     "note_source": "AllTrails result title and stat line read in browser; Wyoming Game and Fish Department Public Access Area page for location, management and facilities",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/wyoming/treasure-island-bridge",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "Wyoming Game & Fish — North Platte River Treasure Island PAA", "url": "https://wgfd.wyo.gov/Public-Access/Public-Access-Areas/North-Platte-River-Treasure-Island", "tier": "official"}
+     ]
+    }
+   ]
+  },
+  "wind-river": {
+   "_review": "7 nights, arrive 24 Apr 2027 at Boulder, WY. The card's four trails are all correct Wind River routes and every one of them is unreachable — Elkhart Park is at 9,500 ft with winter maintenance stopping three miles short, and AllTrails' entire Boulder index is 11-to-44-mile wilderness backpacks with June-to-October windows. The db already recorded the real gap: 'CCC Ponds and the New Fork River corridor... need a Wyoming Game & Fish / BLM source, not a trail-database one — outstanding.' That is what is closed here. Two additions rather than four, because a search of everything AllTrails indexes for Boulder and Pinedale turned up nothing else below the snow line — a short box that is true beats a full one that is not.",
+   "trails": [
+    {
+     "name": "CCC Ponds Trail",
+     "distance": "0.8 mi loop",
+     "time": "about 20 min on foot (8 min riding)",
+     "difficulty": "Easy — Trailforks grades it green; Pacer rates the walking route easy at about 6.6 ft of gain",
+     "elevation_gain": "about 7 ft",
+     "reviews": "no AllTrails listing — official source only. Tripadvisor shows 4.5 from 17 for the CCC Ponds Recreation Area as a whole; no trail database publishes a review count",
+     "needs": ["review count"],
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "BLM Pinedale Field Office land. BLM's own recreation guidance is that dogs are welcome on most BLM-managed trails and that leash policy is a local matter; the Pinedale office publishes no specific rule for CCC Ponds. Same sourcing standard used at Salida. NOT taken from AllTrails, which does not list this trail at all.",
+     "season": "The valley floor at about 7,430 ft, four miles from Pinedale, fed by Fremont Lake runoff. Part of the area is groomed for cross-country skiing in winter, which is the clearest signal that it is snow-covered rather than closed; by a 24 Apr arrival it is the first thing in the district to be walkable, and it may be wet. This is the answer to the stop's own recorded low-elevation gap.",
+     "note": "A short dirt singletrack loop around ponds the Civilian Conservation Corps built in the 1930s, at the foot of the Winds — riparian, birdy, and the one place at this stop you can walk the dog without waiting for June. Restrooms at the parking area.",
+     "note_source": "BLM Wyoming recreation page (authority); Trailforks for surface, length and green grade; Pacer for distance, gain and easy rating; Singletracks for the dirt-loop-versus-paved-path split; outdooractive/recreation.gov for elevation",
+     "alltrails": null,
+     "other_links": [
+      {"label": "BLM Wyoming — CCC Ponds / Pinedale Pathway", "url": "https://www.blm.gov/visit/ccc-pondspinedale-pathway", "tier": "official"},
+      {"label": "Trailforks — CCC Ponds Trail", "url": "https://www.trailforks.com/trails/ccc-ponds-trail", "tier": "community"},
+      {"label": "Free Roaming Hiker — CCC Ponds", "url": "https://freeroaminghiker.com/ccc-ponds", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Pinedale Pathway (CCC Ponds to town)",
+     "distance": "about 6 mi round trip (about 1.5 mi each way to the Riverside Drive trailhead)",
+     "time": null,
+     "difficulty": "Easy — paved and near-level",
+     "elevation_gain": null,
+     "reviews": "no AllTrails listing — official source only; no trail database publishes a review count",
+     "needs": ["time", "elevation gain", "review count"],
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "Paved bike path from the CCC Ponds car park down into Pinedale, BLM-managed and explicitly listed for biking, no walk-your-bike sections and no surface hazards reported. The one gravel-or-better cruise available at this stop in April.",
+     "dogs": true,
+     "dogs_note": "Same BLM Pinedale Field Office sourcing as CCC Ponds; no site-specific leash rule is published.",
+     "season": "3.5 miles of the CCC Ponds area and part of the Pathway are groomed for cross-country skiing in winter. Late April is the melt, so expect the paved sections clear and the shaded ones wet. Open, not gated.",
+     "note": "Attached to the CCC Ponds parking area, so the two make one outing: the dirt loop round the ponds and the paved path into Pinedale for coffee. Sources disagree slightly on the length — BLM's partner listing says the loop back into town is about 6 miles round trip, Singletracks measures 1.5 miles to the Riverside Drive trailhead — so both figures are carried rather than averaged.",
+     "note_source": "BLM Wyoming recreation page (authority); outdooractive/recreation.gov verified-partner listing for the 6-mile round trip and the 3.5 miles of grooming; Singletracks for the 1.5-mile figure and the paved surface",
+     "alltrails": null,
+     "other_links": [
+      {"label": "BLM Wyoming — CCC Ponds / Pinedale Pathway", "url": "https://www.blm.gov/visit/ccc-pondspinedale-pathway", "tier": "official"},
+      {"label": "outdooractive (recreation.gov verified partner) — CCC Ponds / Pinedale Pathway", "url": "https://www.outdooractive.com/en/poi/wyoming/ccc-ponds-pinedale-pathway/33757312", "tier": "community"}
+     ]
+    }
+   ]
+  },
+  "wind-river-ext": {
+   "_review": "7 nights, arrive 21 May 2028 at Pinedale. The card held three and two of them are the high Bridger Wilderness approaches — Elkhart Park at 9,500 ft and Green River Lakes — which are still snow in late May; the third, Popo Agie Falls, is 77 road miles away at Lander. So the box was one real walk plus two aspirations for a week. Added the two BLM trails at Pinedale's own elevation, which are open, plus New Fork Lake as the first of the higher ones to melt out, flagged.",
+   "trails": [
+    {
+     "name": "CCC Ponds Trail",
+     "distance": "0.8 mi loop",
+     "time": "about 20 min on foot (8 min riding)",
+     "difficulty": "Easy — Trailforks grades it green; Pacer rates the walking route easy at about 6.6 ft of gain",
+     "elevation_gain": "about 7 ft",
+     "reviews": "no AllTrails listing — official source only. Tripadvisor shows 4.5 from 17 for the CCC Ponds Recreation Area as a whole; no trail database publishes a review count",
+     "needs": ["review count"],
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "dogs_note": "BLM Pinedale Field Office land; BLM's recreation guidance is that dogs are welcome on most BLM trails with leash policy set locally, and no local rule is published. Not from AllTrails, which does not list this trail.",
+     "season": "Open and dry by late May at about 7,430 ft — four miles from town and the obvious first walk of this stop, weeks before the Bridger Wilderness trailheads are reachable.",
+     "note": "Dirt singletrack loop round the 1930s Civilian Conservation Corps ponds at the foot of the Winds. Birds, water, restrooms at the car park, and short enough to do twice a day.",
+     "note_source": "BLM Wyoming recreation page (authority); Trailforks for surface, length and grade; Pacer for distance and gain; outdooractive/recreation.gov for elevation",
+     "alltrails": null,
+     "other_links": [
+      {"label": "BLM Wyoming — CCC Ponds / Pinedale Pathway", "url": "https://www.blm.gov/visit/ccc-pondspinedale-pathway", "tier": "official"},
+      {"label": "Trailforks — CCC Ponds Trail", "url": "https://www.trailforks.com/trails/ccc-ponds-trail", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Pinedale Pathway (CCC Ponds to town)",
+     "distance": "about 6 mi round trip (about 1.5 mi each way to the Riverside Drive trailhead)",
+     "time": null,
+     "difficulty": "Easy — paved and near-level",
+     "elevation_gain": null,
+     "reviews": "no AllTrails listing — official source only; no trail database publishes a review count",
+     "needs": ["time", "elevation gain", "review count"],
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "Paved BLM bike path from the CCC Ponds car park into Pinedale, listed for biking by the managing agency, no walk-your-bike sections and no surface hazards reported.",
+     "dogs": true,
+     "dogs_note": "Same BLM Pinedale Field Office sourcing as CCC Ponds; no site-specific leash rule published.",
+     "season": "Clear by late May; the winter grooming is long gone by then.",
+     "note": "Pairs with the CCC Ponds loop off the same car park — the ride into town with the dog in the carrier, which is the one thing at this stop that does not depend on the snow line.",
+     "note_source": "BLM Wyoming recreation page (authority); outdooractive/recreation.gov verified-partner listing for the 6-mile round trip; Singletracks for the 1.5-mile figure and the paved surface",
+     "alltrails": null,
+     "other_links": [
+      {"label": "BLM Wyoming — CCC Ponds / Pinedale Pathway", "url": "https://www.blm.gov/visit/ccc-pondspinedale-pathway", "tier": "official"},
+      {"label": "outdooractive (recreation.gov verified partner) — CCC Ponds / Pinedale Pathway", "url": "https://www.outdooractive.com/en/poi/wyoming/ccc-ponds-pinedale-pathway/33757312", "tier": "community"}
+     ]
+    },
+    {
+     "name": "New Fork Lake Trail",
+     "distance": "3.0 mi out-and-back",
+     "time": "1 hr 9 min",
+     "difficulty": "Moderately challenging",
+     "elevation_gain": null,
+     "reviews": "155",
+     "needs": ["elevation gain"],
+     "uses": ["hike"],
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. Bridger-Teton National Forest, Pinedale Ranger District — and per the stop's own existing sourcing, the only dog order Bridger-Teton publishes is a winter leash rule on the Jackson district, which does not reach here. That makes it unstated rather than confirmed, which is how the neighbouring Boulder stop records the same forest.",
+     "season": "AllTrails gives best months as June through November, so a 21-28 May arrival is at the very edge. New Fork Lake sits around 7,800 ft — a thousand feet lower than Elkhart Park and the first of the Bridger front trailheads to open — so this is the one to try if the weather has been kind, and the one to abandon for CCC Ponds if it has not. Not marked closed, because the road is low enough to be plausible; marked unverified for these dates.",
+     "note": "Three miles at the mouth of New Fork Canyon, the short walk that gets you into the Winds proper without a wilderness permit or a full day. By far the best-reviewed short trail in the Pinedale index — the rest of what AllTrails holds for this area runs 10 to 44 miles.",
+     "note_source": "AllTrails result title and stat line read in browser",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/wyoming/new-fork-lake-trail",
+      "match": "exact",
+      "tier": "indexed"
+     }
+    }
+   ]
+  },
+  "scottsbluff-ne": {
+   "_review": "6 nights, arrive 28 May 2028. Four trails on the card and all four are inside Scotts Bluff National Monument, which has about four miles of trail in total — a single small NPS unit asked to fill six days. Two of the four also carried copied review counts (see below). Added the paved regional pathway that connects the monument to both towns, and a second destination ten miles south at Wildcat Hills. South Overlook Trail was looked at and deliberately not added: it is a 0.4-mile paved spur off the same summit car park as North Overlook and would be a fifth monument entry, not a fifth day.",
+   "_corrections": "Both figures flagged as suspect were wrong, and BOTH numbers in each — star and count. Saddle Rock Trail was recorded 4.5 (966); the AllTrails result title reads 'Saddle Rock Trail, Nebraska - 994 Reviews' at 4.7/5. North Overlook Trail was recorded 4.3 (272); the title reads '299 Reviews' at 4.5/5, with 220 on the star line. Read directly from rendered DuckDuckGo results, twice each, on separate queries. Correction entries follow with full fields so the card can be rebuilt from them.",
+   "trails": [
+    {
+     "name": "Saddle Rock Trail",
+     "correction": "reviews were 4.5 (966) — both numbers wrong",
+     "distance": "1.6 mi one way (3.2 mi round trip)",
+     "time": "1.5-2 hr round trip",
+     "difficulty": "Strenuous (NPS), with 435 ft of elevation change; AllTrails-derived cards have shown this as Hard",
+     "elevation_gain": "435 ft (NPS; an older NPS hiking-trails brochure gives 426 ft)",
+     "reviews": "4.7 (994)",
+     "uses": ["hike"],
+     "dogs": true,
+     "dogs_note": "Unchanged and already correctly sourced at this stop: NPS states 'Leashed pets are permitted on all hiking trails in the monument.'",
+     "season": "Open year-round; no seasonal conflict with a 28 May arrival.",
+     "note": "Asphalt the whole way from the Visitor Center to the summit, through a foot tunnel. Two trailheads — one east of the Visitor Center, one off the North Overlook Trail at the top — so it can be walked one way using the Summit Shuttle, which is the version that suits a 53-year-old with a dog on a hot day. The first third across the prairie to Scott's Spring is near-level; the switchbacks and drop-offs are all in the upper section.",
+     "note_source": "AllTrails result title read directly in the browser on two separate queries (994 Reviews, 4.7/5); NPS Saddle Rock Trail page and the NPS hiking-trails brochure for length, surface, difficulty and elevation change",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/nebraska/saddle-rock-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "NPS — Saddle Rock Trail", "url": "https://www.nps.gov/places/saddle-rock-trail.htm", "tier": "official"},
+      {"label": "NPS — Saddle Rock Trail Geology Hiking Tour", "url": "https://www.nps.gov/thingstodo/geology-waking-tour.htm", "tier": "official"}
+     ]
+    },
+    {
+     "name": "North Overlook Trail",
+     "correction": "reviews were 4.3 (272) — both numbers wrong",
+     "distance": "0.5 mi if all the loops are made (NPS)",
+     "time": "30-45 min",
+     "difficulty": "Moderate (NPS) — note the card has carried this as Easy; the paved surface is easy, the NPS grade is not",
+     "elevation_gain": null,
+     "reviews": "4.5 (299) — title count 299; the star line shows 220 ratings",
+     "needs": ["elevation gain"],
+     "uses": ["hike"],
+     "dogs": true,
+     "dogs_note": "Unchanged: NPS states 'Leashed pets are permitted on all hiking trails in the monument.'",
+     "season": "Open year-round; no seasonal conflict with a 28 May arrival.",
+     "note": "Asphalt loop from the north end of the summit car park at the end of the scenic park road, taking in the North Platte valley, the towns of Scottsbluff and Gering, the badlands breaks along the south rim, and Chimney Rock away to the east. Connects to the top of the Saddle Rock Trail, which is what makes the one-way shuttle walk work.",
+     "note_source": "AllTrails result title read directly in the browser (299 Reviews, 4.5/5, 220 ratings); NPS North Overlook Trail page for length, surface and difficulty",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/nebraska/north-overlook-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "NPS — The North Overlook Trail", "url": "https://www.nps.gov/places/north-overlook-trail.htm", "tier": "official"}
+     ]
+    },
+    {
+     "name": "Monument Valley Pathway",
+     "distance": "21.2 mi out-and-back",
+     "time": "6 hr 55 min",
+     "difficulty": "Moderately challenging — the grade is flat, the length is the difficulty",
+     "elevation_gain": null,
+     "reviews": "4.4 (21) — title count 21; the star line shows 18 ratings. Thinly reviewed because it is a commuter pathway, not a destination trail",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "A paved municipal pathway linking Gering and Scottsbluff along the North Platte, listed by AllTrails for road biking and running. NPS separately states that Prairie View — the only bike-legal trail inside the monument, already on this card — connects to it, so the monument and the towns join into one ride. No walk-your-bike sections and no surface hazards reported.",
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. This is a city pathway (Gering / Scottsbluff), not NPS, so the monument's pet rule does not reach it and neither city publishes a readable trail pet rule. AllTrails says leashed, which is not a source we use for this field. The monument section of any ride is covered by the NPS rule; the rest is unknown.",
+     "season": "AllTrails gives best months as April through November — a 28 May arrival is well inside.",
+     "note": "The one entry at this stop that is not a short walk on a small butte: 21 miles of paved path along the valley. Ride a piece of it rather than the whole thing. Also the answer to what to do with the bike at a stop whose flagship trail is a strenuous asphalt climb.",
+     "note_source": "AllTrails result title and stat line read in browser; NPS bicycling page for the Prairie View connection",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/nebraska/monument-valley-pathway",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "NPS — Bicycling at Scotts Bluff National Monument", "url": "https://www.nps.gov/thingstodo/bicycling-scotts-bluff.htm", "tier": "official"}
+     ]
+    },
+    {
+     "name": "Cedar Ridge Trail (Wildcat Hills State Recreation Area)",
+     "distance": "1.1 mi out-and-back",
+     "time": "32 min",
+     "difficulty": "Moderately challenging",
+     "elevation_gain": null,
+     "reviews": "4.5 (29) — title count 29 on the .com page, 27 on the en-gb mirror; the star line shows 20 ratings",
+     "needs": ["elevation gain"],
+     "uses": ["hike", "bike"],
+     "dogs": null,
+     "dogs_note": "NEEDS CHECK. Managing authority is the Nebraska Game and Parks Commission, whose park rules live in Title 163 Chapter 5 rather than on the park page; no leash statement is published in indexed text and the widely repeated six-foot figure traces to third-party pet-travel sites, not the commission. The park's own number is 308-436-3777 — worth one call, since this is the only non-NPS walking at the stop.",
+     "season": "AllTrails has it open year-round. A day-use fee applies unless you hold an annual Nebraska state park pass — payable at the self-serve kiosk off Highway 71 or in the Visitor Center. Check whether the trip's park-pass position already covers this before paying twice.",
+     "note": "Ten miles south of Gering on Highway 71: 1,100 acres of pine-clad canyon and rock butte, with a nature centre and roughly three and a half miles of trail. Gives the stop a second destination instead of six days on one butte. Cedar Ridge is the best-reviewed of the park's trails; Northlook Nature Trail is longer-reviewed at 35 but scores only 3.7, and Bobcat Trail is 0.5 mi at 4.8 from 16.",
+     "note_source": "AllTrails result titles and stat lines read in browser, plus the AllTrails Wildcat Hills park page for which trails belong to the park and the fee note; Nebraska Game and Parks and Visit Scotts Bluff for acreage, trail mileage and the phone number",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/nebraska/cedar-ridge-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "Nebraska Game & Parks — Wildcat Hills", "url": "https://outdoornebraska.gov/location/wildcat-hills", "tier": "official"},
+      {"label": "AllTrails — Wildcat Hills State Recreation Area (park browse)", "url": "https://www.alltrails.com/parks/us/nebraska/wildcat-hills-state-recreation-area", "tier": "indexed"}
+     ]
+    }
+   ],
+   "area_browse_alltrails": {
+    "url": "https://www.alltrails.com/parks/us/nebraska/scotts-bluff-national-monument",
+    "note": "Verified park-level browse page for Scotts Bluff National Monument, found while re-reading the review counts. Candidate for AREA_BROWSE_ALLTRAILS['scottsbluff-ne'] so the trails heading stops falling back to the whole of Nebraska."
+   }
+  },
+  "custer-sd": {
+   "_review": "6 nights, arrive 3 Jun 2028. This is the closest to already-right of the thirteen. Five trails, all in Custer State Park and the Black Elk Wilderness, all 4.7 stars, all with 800 to 5,000 reviews, all dog-legal on a 10 ft leash, and the three Hard ones earn their places under the outstanding-reviews rule rather than in spite of it. The gap is not a walk, it is a wheel: the Black Hills' defining recreation asset is a 109-mile crushed-limestone rail-trail that runs through Custer and was not on the card at all. One addition.",
+   "trails": [
+    {
+     "name": "George S. Mickelson Trail — Custer State Park Spur",
+     "distance": "7.2 mi out-and-back",
+     "time": "2 hr 26 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "no review count is published in the result for this section. The main George S. Mickelson Trail listing reads '302 Reviews' at 4.7/5 with 490 on the star line",
+     "needs": ["review count for this section", "elevation gain"],
+     "uses": ["hike", "bike", "horse"],
+     "cruise": true,
+     "cruise_reason": "The state's own page gives the surface as crushed limestone and most of the trail at no more than a 4% grade — a converted rail bed with over 100 railroad bridges and four rock tunnels. This is the textbook version of what cruise is for: packed limestone, rail grade, no walk-your-bike sections, no puncture reports. The strenuous parts of the wider trail are all up at the Deadwood-to-Dumont end, 50 miles north of here.",
+     "dogs": true,
+     "dogs_note": "The spur runs into Custer State Park, whose published rule — already this stop's dogs_source — is 'Pets must be on a leash no longer than 10 feet'. South Dakota Game, Fish and Parks publishes no separate pet rule on its Mickelson Trail page, so the park rule is the one to work to on the spur, and the main line north and south of Custer is unstated.",
+     "season": "Open on a 3-9 Jun arrival. A trail pass is required for every user aged 12 and over except within city limits, sold at self-serve stations at all 14 trailheads — passes have to be carried on the person or the bicycle or you are liable for a fine.",
+     "note": "The section that links the town of Custer to the state park the rest of this card is built on, so it is the ride that connects the stop together rather than a separate outing. Trailheads all have parking, vault toilets and tables. If a longer day appeals, Hill City to Custer is 14.1 mi point-to-point with 1,154 ft of gain at 5.5-6 hr, and Custer to Pringle runs downhill southbound.",
+     "note_source": "AllTrails result stat line read in browser for the spur, and the main trail's title for the review figures; South Dakota Game, Fish and Parks George S. Mickelson Trail page for surface, grade, trailheads and the trail-pass rule; onX and the City of Deadwood for length and the crushed-limestone description",
+     "alltrails": {
+      "url": "https://www.alltrails.com/en/trail/us/south-dakota/george-s-mickelson-trail-and-custer-state-park-spur",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "SD Game, Fish & Parks — George S. Mickelson Trail", "url": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail", "tier": "official"},
+      {"label": "SD GFP — Mickelson Trail policies and trail pass", "url": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail/pages/44", "tier": "official"},
+      {"label": "AllTrails — George S. Mickelson Trail (main listing)", "url": "https://www.alltrails.com/trail/us/south-dakota/george-s-mickelson-trail", "tier": "indexed"}
+     ]
+    }
+   ]
+  },
+  "medora-nd": {
+   "_review": "6 nights, arrive 14 Jun 2028 — and every one of the five trails on the card is inside Theodore Roosevelt National Park, which bars dogs from every trail in both units. Six days, five walks, and the dog stays in the coach for all of them. That is the thing the box should have been asked and was not. The National Park Service's own pets page even says 'there are nearby trails where you can take your dogs for some exercise'; this addition is that trail. Nothing was removed — the park trails are still the reason to be here — but the card now has one entry the whole household can go on.",
+   "trails": [
+    {
+     "name": "Ekblom and Maah Daah Hey Trail",
+     "distance": "15.5 mi out-and-back",
+     "time": "5 hr 44 min",
+     "difficulty": "Moderately challenging",
+     "elevation_gain": null,
+     "reviews": "4.4 (9) — title count 9; the star line shows 12 ratings. Thin, and the parent Maah Daah Hey Trail listing carries 45",
+     "needs": ["elevation gain", "a better-reviewed short section"],
+     "uses": ["hike", "bike", "horse"],
+     "dogs": true,
+     "dogs_note": "This is USDA Forest Service ground — Dakota Prairie Grasslands, Little Missouri National Grassland — not National Park Service, and that is the entire point of the entry. The Forest Service publishes no dog restriction for the Maah Daah Hey, and National Grassland trails permit pets under control; NPS separately directs Theodore Roosevelt visitors to nearby non-park trails for exactly this reason. Worth confirming with Dakota Prairie Grasslands before relying on it, since what is recorded here is the absence of a restriction rather than a published permission.",
+     "season": "AllTrails gives best months as March through October; a 14-20 Jun arrival is well inside. Badlands heat and shadeless bentonite are the real limit in June, not the calendar — this is a first-light walk. The Maah Daah Hey Trail Association lists seasonal water caches along the trail; campgrounds on the main line are 18+ miles apart.",
+     "note": "Out-and-back, so the distance is a ceiling, not a commitment — turn round whenever the dog has had enough. Easiest access to the Maah Daah Hey from this stop is the Sully Creek trailhead in Rough Rider State Park, a mile and a half south of Medora on the east river road then half a mile west, with parking, a kiosk, water in the campground and a horse hitch rail; Trailforks maps the Sully Creek section itself as 1 mile of blue singletrack at about 18 minutes. The full Maah Daah Hey is a 144-mile non-motorized singletrack through the Badlands and is emphatically not what is being proposed here.",
+     "note_source": "AllTrails result title and stat line read in browser; US Forest Service Maah Daah Hey pages (fs.usda.gov destination page and Dakota Prairie Grasslands trail page) for management, length and water caches; Maah Daah Hey Trail Association for the Sully Creek trailhead detail; Trailforks for the Sully Creek section length and grade; NPS Theodore Roosevelt pets page for the nearby-trails statement",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/north-dakota/ekblom-and-maah-daah-hey-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "US Forest Service — Maah Daah Hey Trail", "url": "https://www.fs.usda.gov/visit/destination/maah-daah-hey-trail", "tier": "official"},
+      {"label": "USFS Dakota Prairie Grasslands — Maah Daah Hey Trail", "url": "https://www.fs.usda.gov/r01/dpg/recreation/trails/maah-daah-hey-trail", "tier": "official"},
+      {"label": "Maah Daah Hey Trail Association — Sully Creek trailhead", "url": "https://mdhta.com/trailheads/sully-creek", "tier": "community"},
+      {"label": "Trailforks — Maah Daah Hey, Sully Creek section", "url": "https://www.trailforks.com/trails/maah-daah-hey-sully-creek", "tier": "community"}
+     ]
+    }
+   ]
+  },
+  "crescent-city": {
+   "_review": "7 nights, arrive 3 Dec 2027. Three trails for a week in the redwoods, and the two highest-rated walks in the whole Crescent City index were both missing — Grove of Titans at 4.9 from 7,248 and Fern Falls via Boy Scout Tree at 4.8 from 5,026, both of which outrank two of the three that were on the card. Also missing: anywhere at all the dog can go. Redwood NSP bars pets from every trail and permits them on beaches, so the third addition is a beach. Three added, giving six for seven December nights.",
+   "trails": [
+    {
+     "name": "Grove of Titans",
+     "distance": "about 1.8 mi round trip",
+     "time": null,
+     "difficulty": null,
+     "elevation_gain": null,
+     "reviews": "4.9 (7,248)",
+     "needs": ["difficulty", "time", "elevation gain"],
+     "uses": ["hike"],
+     "dogs": false,
+     "dogs_note": "Redwood National and State Parks — 'No Pets on Park Trails'. Same authority and same rule as the three trails already on this card.",
+     "season": "AllTrails' own description says the trail is especially beautiful in the shoulder seasons and that parking is limited in peak season — a 3-10 Dec arrival is the opposite of the parking problem. The access is Howland Hill Road, which is narrow and unpaved: truck only, and check it after rain.",
+     "note": "The highest-rated trail anywhere near this stop and it was not on the card. Completed in summer 2022 as an elevated boardwalk with a suspension bridge, built to keep feet off the root systems of some of the largest redwoods by volume in the world; the Mill Creek Trail was rerouted through the grove in 2021 to make it work. Distance and time are not published in the AllTrails result and are not guessed here — the 1.8-mile figure is a third-party measurement and reviewers describe just over a mile each way and roughly two hours if you linger. The NPS page is the authority to read before going.",
+     "note_source": "AllTrails result title read in browser (7,248 Reviews, 4.9/5); NPS Grove of Titans Trail page for the 2022 construction and access; HappyWanders for the 1.8-mile round-trip figure; Redwood Hikes for the 2021 Mill Creek reroute",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/california/grove-of-titans",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "NPS — Grove of Titans Trail", "url": "https://www.nps.gov/places/got.htm", "tier": "official"},
+      {"label": "Redwood Hikes — The Grove of Titans", "url": "https://redwoodhikes.com/JedSmith/Titans.html", "tier": "community"}
+     ]
+    },
+    {
+     "name": "Fern Falls via Boy Scout Tree Trail",
+     "distance": "5.5 mi (8.9 km) out-and-back",
+     "time": "2.5-3 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "1,007 ft (307 m)",
+     "reviews": "4.8 (5,026)",
+     "uses": ["hike"],
+     "dogs": false,
+     "dogs_note": "Redwood National and State Parks — 'No Pets on Park Trails'.",
+     "season": "No seasonal window is published; the trail is a low-elevation redwood valley walk and is a December trail as much as a July one. It will be wet — Fern Falls is the point, and December is when it runs hardest. Access is Howland Hill Road, unpaved and narrow: truck only.",
+     "note": "The big redwood walk of Jedediah Smith and the one serious hike this stop was missing — 5.5 miles and a thousand feet through old growth to a fern-hung waterfall. Reviewers describe it as family-friendly despite the distance. Same road as the Grove of Titans, so the two make one very good day or two easy ones.",
+     "note_source": "AllTrails result title read in browser (5,026 Reviews, 4.8/5) and its stat line for distance, gain, time and difficulty; Hiiker corroborates the length at 8.3 km and the grade as medium",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/california/fern-falls-via-boy-scout-tree-trail",
+      "match": "exact",
+      "tier": "indexed"
+     }
+    },
+    {
+     "name": "Crescent Beach Loop Walk",
+     "distance": "1.0 mi loop",
+     "time": "18 min",
+     "difficulty": "Easy",
+     "elevation_gain": null,
+     "reviews": "109",
+     "needs": ["elevation gain"],
+     "uses": ["hike"],
+     "dogs": true,
+     "dogs_note": "CAREFULLY QUALIFIED. NPS bars pets from every trail in Redwood NSP but permits them on a leash of 6 ft or less 'in developed campgrounds, on beaches, in picnic areas, and on roads'. Crescent Beach is a beach, so the sand is open to the dog — this is the one place at this stop where that is true. The adjacent Coastal Trail: Crescent Beach Section Loop is explicitly closed to dogs, so if the loop leaves the sand the dog does not go with it. Read the NPS pets page and the signs at the lot, and keep to the beach.",
+     "season": "Open year-round. December on this coast means storms and king tides; check the tide before walking out, because the beach is the walk.",
+     "note": "A mile on the sand, eighteen minutes, five minutes from town — the walk you can do every day of a seven-night December stay when the weather has closed everything else, and the only one the dog is allowed on. It is on the card because of the dog, not because it is the best trail here.",
+     "note_source": "AllTrails result title and stat line read in browser; NPS Redwood National and State Parks pets page for the beach exception, already this stop's dogs_source",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/california/crescent-beach-loop-walk",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "NPS — Pets in Redwood National and State Parks", "url": "https://www.nps.gov/redw/planyourvisit/pets.htm", "tier": "official"}
+     ]
+    }
+   ],
+   "_also_considered": "Tolowa Loop Trail (4.5 mi, moderate, 44 reviews) and Yontocket Trail (2.5 mi, easy, 4.3 from 33) in Tolowa Dunes State Park north of town both show dogs permitted on AllTrails, which would make them the dog answer if true — but California State Parks publishes no readable pet rule for Tolowa Dunes and AllTrails is not a source for this field on this trip. Left off rather than recorded on a guess. If someone rings Redwood NSP or CA State Parks, this is worth asking about: two dog-legal trails would change this stop considerably."
+  },
+  "watson-lake-2": {
+   "_review": "2 nights, arrive 12 Sep 2027. One trail on the card — Wye Lake Loop in town, already flagged as past its season. Two nights wants two walks, and Watson Lake has a second one that the earlier pass missed and that the Yukon government documents itself.",
+   "trails": [
+    {
+     "name": "Liard Canyon Interpretive Trail",
+     "distance": "2.2 km (1.4 mi) one way, so 4.4 km return — the Town of Watson Lake describes the same route as 3 km",
+     "time": null,
+     "difficulty": "Easy — Komoot grades the route easy and Trailforks calls it very clear and easy to follow",
+     "elevation_gain": null,
+     "reviews": "no AllTrails listing — official source only. No trail database publishes a review count for it",
+     "needs": ["time", "elevation gain", "review count"],
+     "uses": ["hike"],
+     "dogs": true,
+     "dogs_note": "YUKON PARKS, not Parks Canada or BC Parks — the same jurisdiction and the same rule already recorded at this stop: pets must be leashed on trails AND within 50 m of trails, and in campgrounds, day-use areas and recreation parks; elsewhere in a park under active control. The 50 m rule matters on this one because the trail runs to a river bank where a dog off the path is still inside it. Note also that the car park is shared with the Town of Watson Lake's Lucky Lake day-use area, which is a municipal site and may carry its own bylaw.",
+     "season": "The trail itself is not gated, but the day-use area is closed 11 pm to 7 am and Yukon recreation-site services wind down in September — a 12-14 Sep arrival is the tail of the season, same as Wye Lake. Trailforks warns that the old trail at the far end is washed out, with a singletrack workaround about 50 m to the left, and that the Liard runs fast and dangerous in high water. Walk to the viewpoint, not down to the water.",
+     "note": "Forested one-way trail with interpretive panels, starting from the west end of Lucky Lake Park and ending at a view over the Liard River canyon — the Kaska name for the river is Nêt'i Tué', 'river flowing from mountains'. It follows historic routes of the explorer Robert Campbell, which ties it to the Robert Campbell Highway already in this stop's offroad box. Lucky Lake itself has a beach, a water slide and picnic tables at the trailhead.",
+     "note_source": "Government of Yukon Liard Canyon Recreation Site page (authority) for the 2.2 km length, the interpretive panels, the shared car park and the day-use hours; Town of Watson Lake parks and trails page for the 3 km figure and the Robert Campbell connection; Trailforks for the washout and river warning; Komoot for the easy grade",
+     "alltrails": null,
+     "other_links": [
+      {"label": "Government of Yukon — Liard Canyon Recreation Site", "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/camping/site/liard-canyon-recreation-site", "tier": "official"},
+      {"label": "Town of Watson Lake — Parks and Trails", "url": "https://watsonlake.ca/index.asp?SEC=45AAAF9B-997C-491B-843D-C6F9F3A1AF19&DE=89F475C1-1D2B-4D8A-8075-A9FC1720F418", "tier": "official"},
+      {"label": "Trailforks — Liard Canyon Interpretive Trail", "url": "https://www.trailforks.com/trails/liard-canyon-interpretive-trail", "tier": "community"},
+      {"label": "Komoot — Liard Canyon Trail", "url": "https://www.komoot.com/smarttour/e2672036095/liard-canyon-trail", "tier": "community"}
+     ]
+    }
+   ]
+  },
+  "prince-george": {
+   "_review": "2 nights, arrive 24 Sep 2027, and the single trail on the card is at the Ancient Forest — 115 km east on Highway 16, a 230 km round trip. That is a whole day of a two-day stop and there is nothing in Prince George itself. Added the in-town walk, which also happens to be the one place here with an explicit, published, on-leash dog rule.",
+   "trails": [
+    {
+     "name": "Cottonwood Island Loop Trail (Cottonwood Island Nature Park)",
+     "distance": "1.7 mi loop (the city gives the park's trails as 2.2 km)",
+     "time": "41 min",
+     "difficulty": "Easy",
+     "elevation_gain": "less than 10 m of change across the park",
+     "reviews": "4.3 (355) — title count 355; the star line shows 256 ratings",
+     "uses": ["hike"],
+     "cruise": null,
+     "cruise_reason": "Paved, granular and dirt, flat, and part of the Heritage River and Centennial Trail network — the surface is right. But the City of Prince George's park page does not state whether bikes are permitted on the park trails and AllTrails lists it for hiking, running and walking only, so cruise is left unset rather than claimed.",
+     "dogs": true,
+     "dogs_note": "The City of Prince George, the managing authority, states on its own park page: 'Cottonwood Island Nature Park is an on-leash area. Keep your pet on a leash at all times.' It also warns the park holds wildlife and to keep dogs close. This is a published authority rule, not an AllTrails inference — and it is a cleaner source than the stop's existing BC Parks boardwalk rule, which is specific to the Ancient Forest.",
+     "season": "No seasonal window published; the park is a riverside city park open year-round. Reviewers note it can be muddy when the river is high. A 24-26 Sep arrival is the good half of the shoulder — cottonwoods turning.",
+     "note": "32 hectares on the Nechako shoreline just north of downtown, next to the Prince George Railway and Forestry Museum, with heritage bridges, wetlands, washrooms, a picnic shelter and a canoe launch. The tree-bark carvings by Elmer Gunderson are the thing people remember. Flat, paved, forty minutes, five minutes from camp — exactly the walk a two-night stop with a 230 km day trip in it needs on the other day.",
+     "note_source": "AllTrails result title and stat line read in browser; City of Prince George park and trail pages (authority) for the leash rule, the trail network, the surface, the amenities and the carvings; hiking.princegeorge.tech for the 32-hectare area, 2.2 km length and sub-10 m elevation change",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/canada/british-columbia/cottonwood-island-loop-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {"label": "City of Prince George — Cottonwood Island Nature Park Trail", "url": "https://www.princegeorge.ca/parks-recreation/parks-trails/cottonwood-island-nature-park-trail", "tier": "official"},
+      {"label": "City of Prince George — Cottonwood Island Nature Park", "url": "https://www.princegeorge.ca/parks-recreation/parks-trails/cottonwood-island-nature-park", "tier": "official"}
+     ]
+    }
+   ],
+   "_also_considered": "L.C. Gunn Trail is the highest-count trail in the Prince George index at 389 reviews — 6.9 km out-and-back, moderately challenging, 2 hr 3 min, on the cutbanks above the Fraser. It is the better walk of the two and the right choice if the Ancient Forest day is dropped. Left off only because two nights does not stretch to three walks; if this stop ever gains a night, this is the trail to add. Moore's Meadow Loop (2.2 mi, easy, 54 min, 4.4 from 182) is the third."
+  }
+ },
+ "_no_change": {
+  "dease-lake": {
+   "verdict": "RE-CHECKED, NOTHING ADDED — and that is the finding, not a gap.",
+   "detail": "2 nights, arrive 17 Sep 2027, two entries on the card, both official-source-only with no trail database behind them. The box was re-opened rather than topped up and the earlier research holds: Recreation Sites and Trails BC lists three assets whose closest community is Dease Lake and all three are recreation SITES with no hiking listed; AllTrails has no Dease Lake area page; a fresh search across Tanzilla, Gnat Pass, Mount Edziza and Stikine returned nothing new. Gaia GPS's answer for 'best hike near Area F (Dease Lake)' is Beaver Lodge Trail in Boya Lake Provincial Park — which belongs to the Boya Lake stop two days earlier and is correctly not listed here. The only other thing in range is Spatsizi Plateau Wilderness Park, 160 km of trail served by an outfitter's cabin at Cold Fish Lake: expedition country, not a two-night stop.",
+   "warning_confirmed": "The db's existing warning about the 'Dease Lake Alpine Trail' is still live and still needed. The same syndicated content-farm copy came back on the first broad search from veronikasadventure, happytovisit, powertraveller, travelersuniverse and AAA, and the Tripadvisor listing still places it on the Sea to Sky Highway at Porteau, roughly 1,200 km south. Do not let it into this box.",
+   "what_would_help": "Nothing on the web will fix this stop. The Dease Lake or Stikine visitor services office is the only source likely to know of a local walk, which makes it a phone-call item rather than a research item."
+  }
+ }
+}

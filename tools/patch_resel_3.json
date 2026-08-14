@@ -1,0 +1,880 @@
+{
+ "_what": "Trail-set RE-SELECTION for 13 stops. Not a top-up: each box was re-asked as 'what SHOULD be here for this many nights, in this season, with a dog?' and the gap filled. Nothing under HAS is repeated and no near-duplicate of an existing entry was added.",
+ "_target": "Roughly one good walk per night, capped at six. Ordered per LINKS_STRATEGY.md sec.3 - easy/moderate band first, rating and count as one signal, hard only on outstanding reviews.",
+ "_sourcing": "Every URL was COPIED from a DuckDuckGo result read in the browser pane, never constructed. AllTrails review counts drift between indexed snapshots; where a star and a count were read together in one snippet that pair is recorded and the drift noted in stats_note.",
+ "_dogs": "dogs is set ONLY from the managing authority. Where only AllTrails or a blog asserts dog-friendliness the field is left unset and recorded in needs.",
+ "stops": {
+  "clearwater": {
+   "trails": [
+    {
+     "name": "Helmcken Falls Rim Trail",
+     "distance": "5.2 mi",
+     "time": "2-2.5 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "652 ft",
+     "reviews": "4.6 (816)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The stop's obvious missing walk. Wells Gray's icon is a 141 m (463 ft) plunge on the Murtle River, and the card carried no route to it at all - only Moul Falls, which AllTrails flags CLOSED, and Trophy Meadows, which is over by late September. The rim trail follows the canyon edge above the falls from the viewpoint car park. AllTrails: the road to Helmcken Falls is plowed in winter, so late-September access is not in question; parking is limited.",
+     "note_source": "AllTrails trail page snippet read in the browser (rating, count, length, gain, estimated time, difficulty on one line). BC Parks Wells Gray page for the pet rule.",
+     "dogs_source": "https://bcparks.ca/wells-gray-park/",
+     "dogs_source_quote": "In the backcountry (anywhere more than 1 km from a highway or park road), dogs may be off leash.",
+     "dogs_note": "Wells Gray is ZONED, not blanket: leashed within 1 km of a highway or park road, off leash permitted beyond that. This trail leaves a road-side car park, so treat it as leash-required for its first kilometre. Murtle Lake is a total pet ban and is not part of this stop.",
+     "stats_note": "Review count drifts across indexed snapshots - 769, 816 and 840 were all read this pass. 4.6 (816) is the star-and-count pair read together in a single AllTrails snippet; good enough to order the box, not to quote.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/explore/trail/canada/british-columbia/helmcken-falls-rim-trail",
+      "match": "exact",
+      "tier": "indexed"
+     }
+    },
+    {
+     "name": "West Lake Loop via Bailey's Chute",
+     "distance": "3.3 mi",
+     "difficulty": "Easy",
+     "elevation_gain": "547 ft",
+     "reviews": "4.6 (160)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The substantial easy loop the card was missing - three waterfalls on one walk. Bailey's Chute is under 1 km in; the loop continues past Marcus Falls and Myanth Falls and comes back around West Lake. Late September is the tail of the chinook run that makes Bailey's Chute worth standing at: salmon hurl themselves at the chute and fail. The out-and-back stub to the chute alone is 0.8 mi / 82 ft / 0.5-1 hr if the loop is more than the day needs.",
+     "note_source": "AllTrails: 'West Lake Loop via Bailey's Chute is considered an easy hike that covers 3.3 mi, with an elevation gain of 547 ft'; the 4.6 (160) pair from the Bailey's Chute point-of-interest page. Stub figures from the separate Bailey's Chute listing (126 reviews, 0.8 mi, 82 ft, 0.5-1 hr, out and back).",
+     "dogs_source": "https://bcparks.ca/wells-gray-park/",
+     "dogs_source_quote": "In the backcountry (anywhere more than 1 km from a highway or park road), dogs may be off leash.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/canada/british-columbia/baileys-chute-west-lake-loop",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Bailey's Chute (short version)",
+       "url": "https://www.alltrails.com/trail/canada/british-columbia/baileys-chute",
+       "tier": "indexed",
+       "note": "The 0.8 mi out-and-back to the chute only, 126 reviews. Same trailhead."
+      }
+     ],
+     "needs": ["time"]
+    },
+    {
+     "name": "Dawson Falls South",
+     "distance": "0.9 mi (1.4 km)",
+     "time": "0.5-1 hr",
+     "elevation_gain": "82 ft (25 m)",
+     "reviews": "4.7 (489)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The second of Wells Gray's three signature falls and the one the card skipped. Dawson spreads wide across the Murtle rather than plunging - a 90 m curtain rather than a drop - and it is on the same road as Helmcken, a few minutes short of it. Short, flat and easy with the dog. AllTrails reviewers describe a well-maintained main path plus a rougher side path down to the water's edge; the side path is the one that needs care.",
+     "note_source": "AllTrails Dawson Falls point-of-interest page: 'the best place to hike near Dawson Falls is Dawson Falls South, which has a 4.6 star rating from 422 reviews. This trail is 1.4 km long with an elevation gain of 25 m.' A second POI page read the same trail as 4.7 from 489 reviews; the trail page title showed 502.",
+     "dogs_source": "https://bcparks.ca/wells-gray-park/",
+     "dogs_source_quote": "In the backcountry (anywhere more than 1 km from a highway or park road), dogs may be off leash.",
+     "stats_note": "Counts read this pass: 422, 489, 502. Star read as 4.6 on one POI page and 4.7 on another. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/canada/british-columbia/dawson-falls-south",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["difficulty"]
+    }
+   ]
+  },
+  "bandon": {
+   "_review": "The existing box holds five entries but only four distinct walks: 'Bullards Beach' and 'Bullards Beach and North Loop Trail' are the same state park beach walk under two names. Worth folding into one before the next pass. Six nights, so two additions bring the box to six distinct walks - and both are the day trips the card was missing: everything on it was within ten minutes of camp.",
+   "trails": [
+    {
+     "name": "Sunset Bay to Cape Arago",
+     "distance": "7.9 mi (12.7 km)",
+     "difficulty": "Moderate",
+     "elevation_gain": "673 ft (205 m)",
+     "reviews": "4.7 (892)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The best-known walk on Oregon's south coast and absent from the card. It links three state parks along the cliff edge - Sunset Bay, Shore Acres, Cape Arago - on the old Cape Arago Pack Trail, ending above Simpson Reef where the sea lion and elephant seal haul-out is loudest in winter. About 45 min north of camp. It can be cut short at Shore Acres and walked back, which is what most people do.",
+     "season": "Shore Acres runs its Holiday Lights display from late November through New Year, floodlit gardens on the cliff, and the 27 Nov - 3 Dec stay is inside it. Cape Arago's south cove trail closes 1 Mar - 30 Jun for the seal pupping season, which does not touch these dates.",
+     "note_source": "AllTrails Cape Arago point-of-interest page: 'the best place to hike near Cape Arago is Sunset Bay to Cape Arago, which has a 4.7 star rating from 892 reviews. This trail is 12.7 km long with an elevation gain of 205 m.' The trail page title showed 959 reviews. Route description and the shorter Shore Acres turnaround from Coos Trails (coostrails.org), which puts the full walk at about 8.5 mi with the shortcuts.",
+     "dogs_source": "https://shoreacres.net/wp-content/uploads/2016/06/Trail-Map-Card-2016-web.pdf",
+     "dogs_source_quote": "Pets must be kept on a leash and under the physical control of the handler at all times. The leash may not exceed six feet in length. The handler is responsible for removal of all animal waste from park property, including hiking trails.",
+     "dogs_note": "The park's own trail map card, so this is the rule for the Sunset Bay / Shore Acres / Cape Arago trail system the walk uses. Six-foot leash, waste carried out, trails included.",
+     "stats_note": "Counts read this pass: 892 (with the 4.7 star, on the POI page) and 959 (trail page title). Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/explore/trail/us/oregon/sunset-bay-to-cape-arago",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "Coos Trails - Sunset Bay, Shore Acres and Cape Arago trails",
+       "url": "https://coostrails.org/cape-arago-pack-trail/",
+       "tier": "community",
+       "note": "Local trail group's description of the pack trail and where it can be picked up. Recommends starting at the south end from the Cape Arago group picnic area for the fullest version."
+      }
+     ],
+     "needs": ["time"]
+    },
+    {
+     "name": "Golden and Silver Falls",
+     "distance": "1.2 mi",
+     "time": "0.5-1 hr",
+     "difficulty": "Easy",
+     "elevation_gain": "180 ft",
+     "reviews": "4.7 (593)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "Two of the tallest waterfalls in the Oregon Coast Range - Silver at 259 ft and Golden at 254 ft - on a short easy walk, and the card had no forest walk at all. Golden and Silver Falls State Natural Area is 24 miles inland from Highway 101 up a narrow road from Allegany; the drive is the hard part, not the trail. The short version is a bridge crossing to Golden Falls and a 10-15 minute walk to Silver; the full three-trail system is 3.0 mi with about 570 ft of gain, or 5.8 mi / 840 ft if the upper viewpoint trails are added.",
+     "season": "Late November is the right time to be there rather than the wrong one - these falls are Coast Range creeks, at their most powerful in winter and spring and thin by late summer.",
+     "note_source": "AllTrails: 'Golden and Silver Falls is considered an easy hike that covers 1.2 mi, with an elevation gain of 180 ft. It takes about 0.5-1 hr to complete.' Star and count from the AllTrails park page for the natural area: 4.7 star rating from 593 reviews. Falls heights from Oregon Hikers field guide. Longer trail-system figures from Trail Scholar (3.0 mi / 570 ft) and Oregon Hiking (4 mi / 370 ft to both bases, 5.8 mi / 840 ft for all trails) - community tier, and they disagree with each other, so the AllTrails figure is the one recorded above.",
+     "dogs_source": "https://stateparks.oregon.gov/index.cfm?do=v.page&id=79",
+     "dogs_source_quote": "He can run free in a fenced off-leash area or hike with you on 12 miles of dog-friendly trails",
+     "dogs_note": "Oregon Parks and Recreation Department's statewide pet page: leashed dogs are welcome on state park trails. This is a State Natural Area under OPRD, and AllTrails reviewers describe it as a trail dog owners specifically seek out.",
+     "stats_note": "Counts read this pass: 470, 593, 612 and 626 across four indexed snapshots, with 4.6 and 4.7 both appearing. 4.7 (593) is a star-and-count pair read together. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/oregon/golden-and-silver-falls",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Golden and Silver Falls State Natural Area",
+       "url": "https://www.alltrails.com/parks/us/oregon/golden-and-silver-falls-state-natural-area",
+       "tier": "indexed",
+       "note": "Park-level page. Carries the 24-mile-from-101 access warning."
+      }
+     ]
+    }
+   ]
+  },
+  "fort-bragg": {
+   "_review": "Three trails for six nights, and all three were bluff-and-forest walks of the same kind. What was missing: the seal-watching boardwalk, the lighthouse headland, and the one route that is both dog-legal and rideable. Fern Canyon at Van Damme State Park was considered and deliberately left off - it is widely reported to ban dogs, and Russian Gulch Waterfall Loop already on the card is the same fern-canyon-to-waterfall walk.",
+   "trails": [
+    {
+     "name": "Laguna Point Boardwalk Loop",
+     "distance": "1.4 mi",
+     "time": "0.5-1 hr",
+     "difficulty": "Easy",
+     "elevation_gain": "59 ft",
+     "reviews": "4.7 (643)",
+     "uses": ["hike"],
+     "note": "MacKerricher's seal-watching boardwalk, three miles north of town and the most-walked thing in the park. Raised boardwalk out to viewing platforms over the harbour seal haul-out, wheelchair accessible, and mid-December is grey whale migration season off this stretch of coast. Flat, short, and the obvious first walk of the stop.",
+     "note_source": "AllTrails: 'Laguna Point Boardwalk Loop is considered an easy hike that covers 1.4 mi, with an elevation gain of 59 ft'; a second snapshot gave 2.3 km length, 18 m gain, 0.5-1 hr estimated time, circular. Star and count from the AllTrails MacKerricher park page: 'the most popular is Laguna Point Boardwalk Loop with an average 4.7 star rating from 643 community reviews.'",
+     "dogs_needs_check": true,
+     "dogs_note": "UNRESOLVED, and it matters here. MacKerricher is one of the few California state parks that allows leashed dogs on beaches and trails, and the Haul Road is explicitly included - but one secondary source states dogs are barred from Glass Beach Trail, Virgin Creek Beach and the Seal Rookery, and Laguna Point IS the seal rookery viewing station. No parks.ca.gov page was found this pass that states the rule either way. Do not assume the dog can come on this one; the park office is 707-964-9112. Recorded as unknown rather than guessed.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/california/laguna-point-boardwalk-loop",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["dogs"]
+    },
+    {
+     "name": "Point Cabrillo Light Station Coastal Trail",
+     "distance": "2.0 mi",
+     "time": "0.5-1 hr",
+     "difficulty": "Easy",
+     "elevation_gain": "147 ft",
+     "reviews": "4.6 (647)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "A loop across coastal prairie and bluff to the restored 1909 light station, with a working third-order Fresnel lens you can stand next to. Thirty acres of light station inside about 270 acres of undeveloped headland, halfway between Fort Bragg and Mendocino. Easy, level, and the single best whale-watching stand of the stop in mid-December.",
+     "note_source": "AllTrails: 'Point Cabrillo Light Station Coastal Trail is a loop trail that covers 2 mi, with an elevation gain of 147 ft. It takes about 0.5-1 hr to complete.' Star and count from the AllTrails park page: 4.6 star rating from 647 reviews; the trail page title showed 686. Komoot rates the same route easy at 2.0 mi / 72 ft / about 51 min. Park description and acreages from pointcabrillo.org.",
+     "dogs_source": "https://pointcabrillo.org",
+     "dogs_source_quote": "The State Historic Park is open from sunrise to sunset daily. The main floor of the Lighthouse is dog-friendly.",
+     "dogs_note": "The light station's own site, operating the park under California State Parks. If the dog is welcome inside the lighthouse the headland trail is not in question - but the quote is about the building, so treat the trail as leashed-and-welcome rather than formally published.",
+     "stats_note": "Counts read this pass: 647 (with the 4.6 star) and 686. Difficulty is Komoot's; AllTrails' own grade was not in any snippet read.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/california/point-cabrillo-light-station-coastal-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "Point Cabrillo Light Station (operator)",
+       "url": "https://pointcabrillo.org/visit/",
+       "tier": "official",
+       "note": "Hours, the Fresnel lens, and the extent of the park. Lighthouse main floor open 11am-4pm year-round."
+      }
+     ]
+    },
+    {
+     "name": "MacKerricher Haul Road Trail",
+     "distance": "4.5 mi one way (paved section); 8.2 mi as the Pudding Creek to Glass Beach round trip",
+     "time": "about 3 hr 20 min for the 8.2 mi version",
+     "difficulty": "Moderate (Komoot, for the full 8.2 mi; the paved section is flat)",
+     "uses": ["hike", "bike"],
+     "cruise": true,
+     "cruise_reason": "This is the gravel-cruise entry the whole Mendocino stop was missing. It is a former Union Lumber Company logging railbed - paved, multi-use, and Komoot measures the grades at under 5%, which is rail-grade by definition. It starts at the Pudding Creek Trestle, a 515 ft railroad bridge converted to foot and bike use in 2007, in walking distance of the north end of town. THE LIMIT: north of Virgin Creek the sand takes over - Komoot reports sections that are 'sandy and rough, especially near Virgin Creek where shifting sand occurs', and beyond the paved road it stops being a cruise. Ride the paved southern half and turn round.",
+     "note": "The everyday walk-and-ride of this stop, and the reason to be camped here rather than anywhere else on the Mendocino coast: flat, paved, coastal, and dog-legal, which almost nothing else in a California state park is.",
+     "note_source": "TrailLink lists the MacKerricher Haul Road Trail at 4.5 mi. Komoot's guide to the park: 'The most popular hiking route is Pudding Creek Beach & Glass Beach via the MacKerricher Haul Road - Mackerricher State Park, an 8.2 miles (13.1 km) trail that takes 3 hours 21 minutes to complete. This moderate route...' and, for surface: 'The main MacKerricher Haul Road is a paved multi-use trail, generally flat with slopes less than 5%. However, some sections can be sandy and rough, especially near Virgin Creek where shifting sand occurs.' Trestle history from DogTrekker's Haul Road entry.",
+     "dogs": true,
+     "dogs_source": "https://accessca.org/access-california/explore/explore-detail-view/?site_id=666",
+     "dogs_source_quote": "Hours: Sunrise to 10 pm. Haul Road trail: 6 am-10 pm. Dogs: On leash",
+     "dogs_note": "Access California's park record, reviewed June 2025, naming the Haul Road specifically and its own separate hours. Corroborated by MacKerricher's Tripadvisor park Q&A - 'dogs are allowed on leash and on designated trails, the boardwalks and the old Haul Road which runs from the north end of Fort Bragg at Pudding Creek, through MacKerricher, and north.' No parks.ca.gov page carrying the rule in text was found this pass, so this is one tier below where it should be; the same phone call that settles Laguna Point settles this.",
+     "alltrails": {
+      "match": "none",
+      "tier": "unlisted"
+     },
+     "other_links": [
+      {
+       "label": "TrailLink - MacKerricher Haul Road Trail",
+       "url": "https://www.traillink.com/trail-photo/mackerricher-haul-road-trail_77122/",
+       "tier": "community",
+       "note": "Length 4.5 mi. Only one TrailLink review, so there is no usable rating for this entry."
+      },
+      {
+       "label": "Komoot - Pudding Creek Beach and Glass Beach via the MacKerricher Haul Road",
+       "url": "https://www.komoot.com/smarttour/e1700452148/pudding-creek-beach-glass-beach-via-the-mackerricher-haul-road",
+       "tier": "community",
+       "note": "The surface description that sets cruise. 8.2 mi, 3 hr 21 min, moderate."
+      },
+      {
+       "label": "Mendocino Land Trust - MacKerricher Coastal Trail",
+       "url": "https://www.mendocinolandtrust.org/trails/mackerricher-coastal-trail/",
+       "tier": "community",
+       "note": "Confirms the route runs from Glass Beach north to the Inglenook Fen-Ten Mile Dunes Natural Preserve."
+      }
+     ],
+     "needs": ["reviews"],
+     "stats_note": "No AllTrails listing exists for the Haul Road as a trail - AllTrails indexes the park's boardwalk loops instead. TrailLink has one review and Komoot publishes no star, so this entry genuinely has no rating. Recorded as absent, not estimated."
+    }
+   ]
+  },
+  "newport": {
+   "_review": "Four entries for six nights, one of which ('Beverly Beach State Park Campground') is a campground and not a trail at all, and the rest all within ten minutes of camp on the same stretch of sand. What was missing was every day-trip walk: Newport sits between Cape Perpetua to the south and the Drift Creek suspension bridge to the north, and neither was on the card.",
+   "trails": [
+    {
+     "name": "Saint Perpetua and Giant Spruce Trail",
+     "distance": "4.4 mi",
+     "time": "2.5-3 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "1,007 ft",
+     "reviews": "503",
+     "uses": ["hike"],
+     "note": "Cape Perpetua is the highest point you can drive or walk to on the Oregon coast and the best viewpoint on it, and this route takes both halves of it from the visitor centre: up the Saint Perpetua switchbacks to the shelter and the 70-mile view, then down Cape Creek to a Sitka spruce more than 500 years old. About 25 miles south of camp, past Yachats. The Giant Spruce half alone is a separate AllTrails listing with 610 reviews, flat and easy, if the climb is more than the day wants.",
+     "note_source": "AllTrails: 'Saint Perpetua and Giant Spruce Trail is considered a moderate hike that covers 4.4 mi, with an elevation gain of 1,007 ft. It takes about 2.5-3 hr to complete.' Count 503 from the trail page title. USFS Siuslaw National Forest for the Giant Spruce Trail #1365 description - 'From the Cape Perpetua Visitor Center hike through the lush forest to a more than 500 year-old Sitka spruce tree.'",
+     "stats_note": "No star rating appeared alongside the count in any snippet read; the 503 is a raw count. The Giant Spruce Trail listing on its own showed 610 reviews.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/oregon/st-perpetua-and-giant-spruce-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "USFS Siuslaw NF - Giant Spruce Trail #1365",
+       "url": "https://www.fs.usda.gov/r06/siuslaw/recreation/trails/giant-spruce-trail-1365",
+       "tier": "official",
+       "note": "The authority for the lower half of this route."
+      },
+      {
+       "label": "AllTrails - Giant Spruce Trail (short version)",
+       "url": "https://www.alltrails.com/trail/us/oregon/giant-spruce-trail",
+       "tier": "indexed",
+       "note": "610 reviews. Reviewers: 'Flat and easy to walk with almost no elevation gain', out-and-back with an optional loop through the campground."
+      }
+     ],
+     "needs": ["dogs"],
+     "dogs_note": "Siuslaw National Forest. No published pet rule was read for this trail this pass - do not assume either way."
+    },
+    {
+     "name": "North Loop and Drift Creek Falls #1378 Loop",
+     "distance": "3.7 mi",
+     "time": "1.5-2 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "597 ft",
+     "uses": ["hike"],
+     "note": "The best-known hike within an hour of Newport and not on the card: a 100 ft suspension bridge slung across the canyon directly in front of a 75 ft waterfall, in the Siuslaw National Forest east of Lincoln City. The straight out-and-back to the falls is about 3 mi with 420-540 ft of gain; the #1378 loop adds the north leg. Well maintained, mostly shaded, and late November is high water.",
+     "note_source": "AllTrails: 'North Loop and Drift Creek Falls #1378 Loop is considered a moderate hike that covers 3.7 mi, with an elevation gain of 597 ft. It takes about 1.5-2 hr to complete.' Out-and-back figures from waterfallhikes.com (3.2 mi, ~540 ft, moderate) and Trailspotting (3 mi, easy, 420-490 ft) - community tier and they disagree, which is why the AllTrails loop figures are the ones recorded.",
+     "stats_note": "No review count or star was returned for either Drift Creek listing in any search read this pass, including a targeted 'star rating from' query. Genuinely absent, not omitted.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/oregon/north-loop-and-drift-creek-falls-1378-loop",
+      "match": "contains",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Drift Creek Falls (point of interest)",
+       "url": "https://www.alltrails.com/poi/us/oregon/drift-creek-falls",
+       "tier": "indexed",
+       "note": "AllTrails indexes two trails reaching the falls."
+      }
+     ],
+     "needs": ["reviews", "dogs"],
+     "dogs_note": "Multiple trail guides describe it as dog friendly; no Siuslaw National Forest page stating the rule was read this pass, so it is left unset."
+    },
+    {
+     "name": "Mike Miller Educational Trail",
+     "distance": "0.9 mi",
+     "difficulty": "Moderate",
+     "elevation_gain": "141 ft",
+     "reviews": "256",
+     "uses": ["hike"],
+     "note": "A mile of old-growth Sitka spruce a mile south of Newport in South Beach, on bridges and boardwalk with numbered interpretive posts and observation decks. Lincoln County's, not the state's. This is the walk for the days the November weather makes the beach pointless - it is short, sheltered, and takes 45-60 minutes.",
+     "note_source": "AllTrails: 'Mike Miller Educational Trail is considered a moderate hike that covers 0.9 mi, with an elevation gain of 141 ft.' Count 256 from the trail page title; a second snapshot showed 239 and a third 257. Lincoln County: 'The Mike Miller loop is ~1 mile, and is a perfect hike to experience the beauty of native coastal vegetation along with native wildlife.' Discover Newport gives 45-60 minutes.",
+     "stats_note": "Counts read this pass: 239, 256, 257. No star rating appeared with any of them.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/oregon/mike-miller-educational-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "Lincoln County - Mike Miller Park",
+       "url": "https://www.co.lincoln.or.us/1071/Mike-Miller-Park",
+       "tier": "official",
+       "note": "The managing authority. Also describes the Wilder Trail connection to Newport's Wilder Twin Park."
+      }
+     ],
+     "needs": ["time", "dogs"]
+    }
+   ]
+  },
+  "white-salmon": {
+   "_review": "Three trails for five nights, and one of them - Dog Mountain - is a 7-mile 2,800 ft climb whose whole point is the May wildflower display; in November it is a wet slog with no flowers and no permit requirement. What the card lacked was the year-round Gorge walking that is on the doorstep. The Coyote Wall complex is four miles east of White Salmon and was not listed at all.",
+   "trails": [
+    {
+     "name": "The Labyrinth to Coyote Wall Loop",
+     "distance": "6.8 mi",
+     "time": "3.5-4 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "1,453 ft",
+     "uses": ["hike", "bike"],
+     "note": "The nearest serious walk to camp - the trailhead is minutes east of White Salmon on WA-14 - and the most striking thing in this half of the Gorge: a curving basalt wall above the river, reached through the Labyrinth's oak groves, seasonal waterfalls and rock outcrops. WTA calls it a year-round hike, which is exactly what a 6-11 November stay needs. Open oak and grassland means the views work in flat winter light, unlike the forest hikes further west.",
+     "note_source": "AllTrails: 'The Labyrinth to Coyote Wall Loop is a loop trail that covers 6.8 mi, with an elevation gain of 1,453 ft. It takes about 3.5-4 hr to complete', and 'considered a moderate hike'. Cross-checks: Oregon Hikers 7.3 mi / 1,790 ft / moderate / all year; Trailforks 7 mi / 1,547 ft; Komoot 6.3 mi / 1,381 ft / moderate. WTA: 'This year-round hike offers great views of the Columbia River Gorge along with enchanting stands of oak, cascading waterfalls, dramatic basalt outcroppings, and profuse wildflowers in the spring.'",
+     "stats_note": "No review count was returned for this specific listing in any search read this pass. The neighbouring 'Coyote Wall Loop' listing shows 4.7 from 3,636 reviews on the AllTrails Columbia River Gorge NSA page, which is the area's popularity signal but is a different route and is not recorded as this trail's rating.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/washington/the-labyrinth-to-coyote-wall-loop",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "WTA - Coyote Wall / The Labyrinth Loop",
+       "url": "https://www.wta.org/go-hiking/hikes/catherine-creek-the-labyrinth",
+       "tier": "community",
+       "note": "Washington Trails Association. The year-round note comes from here."
+      }
+     ],
+     "needs": ["reviews", "dogs"],
+     "dogs_note": "Columbia River Gorge National Scenic Area, USFS. No published pet rule was read this pass."
+    },
+    {
+     "name": "Cape Horn Loop Trail",
+     "distance": "6.7 mi",
+     "difficulty": "Moderate",
+     "elevation_gain": "1,338 ft",
+     "reviews": "4.6 (4,572)",
+     "uses": ["hike"],
+     "note": "The Washington-side counterpart to the Oregon waterfall hikes already on the card, and better in November than most of them: a loop that climbs to a viewpoint about 1,200 ft above the Columbia, drops to the river through lava-rock fields and basalt towers, and passes Cape Horn Falls on the way. About 45 min west of camp on WA-14. Reviewers warn of rocky sections and blackberry thorns - long sleeves and long trousers.",
+     "season": "The lower half of this loop carries a spring closure for peregrine falcon nesting, commonly published as 1 Feb to 15 Jul. NOT VERIFIED against a Forest Service page this pass, and it does not affect a 6-11 November stay either way - noted so a future date change does not walk into it.",
+     "note_source": "AllTrails Cape Horn point-of-interest page: 'the best place to hike near Cape Horn is Cape Horn Loop Trail, which has a 4.6 star rating from 4,572 reviews. This trail is 6.7 mi long with an elevation gain of 1,338 ft.' Trail page titles showed 4,533 and 4,578. Route description and the thorn warning from the AllTrails trail page and WTA. A shorter point-to-point listing, Cape Horn Trail: East to West, is moderate, 3.8 mi, 928 ft, 2-2.5 hr, about 1,550 reviews.",
+     "stats_note": "Counts read this pass: 4,533, 4,572 (with the 4.6 star) and 4,578. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/washington/cape-horn-loop-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Cape Horn Trail: East to West (shorter version)",
+       "url": "https://www.alltrails.com/trail/us/washington/cape-horn-trail-east-to-west",
+       "tier": "indexed",
+       "note": "3.8 mi point to point, 928 ft, 2-2.5 hr, moderate. The half-day option."
+      },
+      {
+       "label": "WTA - Cape Horn",
+       "url": "https://www.wta.org/go-hiking/hikes/cape-horn",
+       "tier": "community"
+      }
+     ],
+     "needs": ["time", "dogs"]
+    },
+    {
+     "name": "Latourell Falls Loop",
+     "distance": "2.2 mi",
+     "difficulty": "Moderate",
+     "elevation_gain": "606 ft",
+     "reviews": "4.8 (11,712)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The most-reviewed walk within reach of this stop by a wide margin, and short. Latourell is the third tallest waterfall in the Gorge, a 249 ft plume straight off a wall of columnar basalt with the yellow lichen that makes it recognisable, and the loop takes in the upper falls too. Guy W. Talbot State Park on the Oregon side of the river, at the west end of the Historic Columbia River Highway. Early November is high water and the loop is open all year.",
+     "note_source": "AllTrails Latourell Falls point-of-interest page: 'the best place to hike near Latourell Falls is Latourell Falls Loop, which has a 4.8 star rating from 11,712 reviews. This trail is 2.2 mi long with an elevation gain of 606 ft.' Trail page title showed 11,757 and describes it as 'a moderately difficult trek through Guy W. Talbot State Park to Upper Latourell Falls'. Hikespeak gives 2.3 mi / 475 ft; Oregon Tails 2.3 mi.",
+     "dogs_source": "https://gorgefriends.org/find-a-hike/latourell-falls-loop/",
+     "dogs_source_quote": "Latourell Falls and Upper Latourell Falls are within Guy Talbot State Park, managed by Oregon State Parks. No permits are required. Dogs must be on a leash.",
+     "dogs_note": "Friends of the Columbia Gorge, quoting the managing authority (Oregon State Parks) and matching OPRD's statewide six-foot leash rule. No permit needed, which is worth knowing next to Dog Mountain.",
+     "stats_note": "Counts read this pass: 11,712 (with the 4.8 star) and 11,757. A separate short listing, 'Latourell Falls', is a different 0.5 km viewpoint walk with about 1,650 reviews - not this one.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/oregon/latourell-falls-loop-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["time"]
+    }
+   ]
+  },
+  "kofa-nwr": {
+   "_review": "Three entries for five nights in a refuge where AllTrails indexes fourteen trails. Palm Canyon is a 0.9 mi walk, Big Eye Mine is reached down a 15-mile offroad track, and Signal Peak is a full mountain - so the middle of the range was empty. Both additions are refuge-wide pet-legal, which at this stop is every trail.",
+   "trails": [
+    {
+     "name": "Horse Tanks",
+     "distance": "6.3 mi out and back",
+     "time": "2 hr 8 min (AllTrails average)",
+     "difficulty": "Moderately challenging",
+     "elevation_gain": "324 ft",
+     "reviews": "4.2 (64)",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The half-day walk this stop was missing. Runoff off the Kofa's rock faces has scoured swimming-pool-sized tinajas into the bedrock and they hold water through the dry months - which in a desert refuge established for bighorn sheep is exactly where the sheep are. Reached off King Road on an unnamed track; sources describe it as passable to most high-clearance vehicles with a few dicey washes, so it is a truck day, not a coach day. AllTrails notes you are unlikely to meet many other people.",
+     "season": "Late January is the good half of the year here. Kofa in summer is unwalkable; 22-27 Jan is close to ideal.",
+     "note_source": "AllTrails: 'Explore this 6.3-mile out-and-back trail near Yuma, Arizona. Generally considered a moderately challenging route, it takes an average of 2 h 8 min to complete... it's unlikely you'll encounter many other people while exploring.' Star and count from the AllTrails Horse Tanks point-of-interest page: 4.2 star rating from 64 reviews, 6.3 mi, 324 ft. Tinaja description from Trails Offroad's Horse Tanks route page; access-road condition from a first-hand van account (davidelmore.com).",
+     "dogs_source": "https://www.fws.gov/refuge/kofa/visit-us/rules-policies",
+     "dogs_source_quote": "Pets are permitted if they are confined or on a leash.",
+     "dogs_note": "US Fish and Wildlife Service, refuge-wide. Off-leash only for quail and cottontail hunting dogs. Same rule applies to every trail at this stop.",
+     "stats_note": "A second, much thinner listing exists - 'Horse Tanks Hike', 16 reviews - describing the same primitive route. The 64-review listing is the one recorded.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/arizona/horse-tanks",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Horse Tanks Hike (second listing)",
+       "url": "https://www.alltrails.com/trail/us/arizona/horse-tanks-hike",
+       "tier": "indexed",
+       "note": "16 reviews. 'Winding through the rugged Kofa National Wildlife Refuge... a primitive path... toward natural rock basins, or tanks.'"
+      }
+     ]
+    },
+    {
+     "name": "Crystal Hill",
+     "distance": "1.3 mi out and back",
+     "time": "47 min (AllTrails average)",
+     "difficulty": "Moderately challenging",
+     "reviews": "84",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The short walk of the stop, and the only one on the card with a reason to look at the ground rather than the horizon: Crystal Hill is a designated rock-collection area inside the refuge where surface quartz crystals may legally be picked up. It sits about 5.6 miles east of AZ-95 down a washboard gravel road, roughly eleven miles south of Quartzsite, in a 14-day dispersed camping area - so it doubles as a scouting run for a boondocking spot.",
+     "note_source": "AllTrails: 'Head out on this 1.3-mile out-and-back trail near Quartzsite, Arizona. Generally considered a moderately challenging route, it takes an average of 47 min to complete', 84 reviews from the page title. Access and collection rules from Roadtrippers ('It is a 14 day BLM camping area where you can also collect surface minerals', 5.6 miles from AZ 95) and The Dyrt (eleven miles south of Quartzsite along Highway 95, 5.7 miles of washboard gravel, USFWS land).",
+     "dogs_source": "https://www.fws.gov/refuge/kofa/visit-us/rules-policies",
+     "dogs_source_quote": "Pets are permitted if they are confined or on a leash.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/arizona/crystal-hill",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["elevation_gain"],
+     "stats_note": "No star rating and no elevation gain appeared in any snippet read for this listing - only the raw count of 84. Recorded as absent."
+    }
+   ]
+  },
+  "mancos": {
+   "_review": "The most mis-set box of the thirteen. Two of its three trails - Long House Loop and Badger House Community - are on Wetherill Mesa, which the NPS does not open until late May; this stop arrives 15 April. So a seven-night stay at Mesa Verde had exactly ONE walkable trail on the card, and no answer at all to where the dog goes, because Wetherill was also the only place in the park that allows pets. Two Chapin Mesa trails that ARE open in April, and the dog's actual walk outside the park, are added below.",
+   "trails": [
+    {
+     "name": "Mesa Verde Point Lookout Trail",
+     "distance": "2.1 mi out and back",
+     "time": "1-1.5 hr",
+     "elevation_gain": "524 ft",
+     "reviews": "4.7 (985)",
+     "uses": ["hike"],
+     "dogs": false,
+     "note": "The most-reviewed trail in Mesa Verde and it was not on the card. Switchbacks up the promontory that towers over the park entrance, to views over the Mancos and Montezuma valleys and out to the San Juans and La Platas. It starts from the Morefield campground area near the entrance, which means it is reachable on days when the Chapin Mesa road is busy, and it is open in April when half the park is not. NPS calls it 2.2 mi round trip; guide sites call it a lung-buster at altitude with no shade - in mid-April that is a feature.",
+     "note_source": "AllTrails: 'Mesa Verde Point Lookout Trail is an out-and-back trail that covers 2.1 mi, with an elevation gain of 524 ft. It takes about 1-1.5 hr to complete.' Star and count from the AllTrails Point Lookout POI page: 4.7 from 985 reviews; the park page gave 4.7 from 1,010 and the trail title 1,013. NPS: 'The Point Lookout Trail climbs up the iconic Point Lookout, the geological formation that towers above the park entrance... The 2.2-mile (3.5 km) roundtrip trail...'",
+     "dogs_source": "https://www.nps.gov/meve/planyourvisit/pets.htm",
+     "dogs_source_quote": "Pets must be leashed (6 feet/1.8 m or shorter leash) and under control at all times. Leashed pets are allowed on roads, parking lots, and paved areas on Mesa Top Loop and Park Point but not on trails, in ancestral sites or buildings.",
+     "dogs_note": "NPS. Pets are barred from every Mesa Verde trail except the Wetherill Mesa paved routes, and Wetherill is shut on these dates. The dog does not walk inside this park in April - see Sand Canyon below.",
+     "stats_note": "Counts read this pass: 985, 1,010, 1,013. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/mesa-verde-point-lookout-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "NPS - Point Lookout Trail",
+       "url": "https://www.nps.gov/places/point-lookout-trail.htm",
+       "tier": "official"
+      }
+     ]
+    },
+    {
+     "name": "Spruce Canyon Trail",
+     "distance": "2.5 mi loop",
+     "time": "1-1.5 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "538 ft",
+     "reviews": "538",
+     "uses": ["hike"],
+     "dogs": false,
+     "note": "The one Mesa Verde trail that goes DOWN into the canyons instead of along the mesa tops, and it is open in April. It drops out of Spruce Tree Canyon, follows the seasonal stream up the canyon floor for the better part of a mile under Douglas fir, and climbs a side canyon back to the mesa. It shares a trailhead area with Petroglyph Point, which is already on the card, so the two are one day out. Register at the trailhead as the park requires for the canyon trails.",
+     "note_source": "AllTrails: 'Spruce Canyon Trail is considered a moderate hike that covers 2.5 mi, with an elevation gain of 538 ft. It takes about 1-1.5 hr to complete', count 538 from the trail page title (a second snapshot gave 508). Route description from AllTrails and NPS: 'The Spruce Canyon Trail offers an opportunity to explore the canyon bottoms of Mesa Verde... Parts of this canyon trail offers the shade of Douglas Fir trees and the coolness and humidity of a natural wetland area.' COTREX (Colorado's official trail registry) also has it at ~2.5 mi, moderate.",
+     "dogs_source": "https://www.nps.gov/meve/planyourvisit/pets.htm",
+     "dogs_source_quote": "Leashed pets are allowed on roads, parking lots, and paved areas on Mesa Top Loop and Park Point but not on trails, in ancestral sites or buildings.",
+     "stats_note": "The review count (538) and the elevation gain in feet (538) are coincidentally identical - both were read this pass, from the title and the body of the same AllTrails page. Not a copy.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/colorado/spruce-canyon-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "NPS - Spruce Canyon Trail",
+       "url": "https://www.nps.gov/places/place-sc-trail.htm",
+       "tier": "official"
+      }
+     ]
+    },
+    {
+     "name": "Sand Canyon Trail",
+     "distance": "12.7 mi out and back (6.5 mi one way from the McElmo Canyon trailhead)",
+     "time": "6-6.5 hr for the full out and back",
+     "elevation_gain": "1,902 ft",
+     "reviews": "1,137",
+     "uses": ["hike", "bike", "horse"],
+     "dogs": true,
+     "note": "THIS IS WHERE THE DOG WALKS. Mesa Verde bans pets on every trail it opens in April, and Sand Canyon is 30 minutes away in Canyons of the Ancients National Monument, BLM ground, leashed dogs welcome - with a denser run of Ancestral Puebloan cliff dwellings and pueblos along the canyon walls than anything you can walk to unguided inside the park. It does not have to be walked whole: the lower trailhead in McElmo Canyon reaches the first ruins within the first mile or two and turning back there is the normal way to do it. The upper section is steep and rugged. Mid-April is the right season - this is slickrock and pinyon at 5,500-6,900 ft, unbearable by July.",
+     "season": "Open. No seasonal closure applies to these dates - which is the whole point of it at this stop.",
+     "note_source": "AllTrails: 'Sand Canyon Trail is an out-and-back trail that covers 12.7 mi, with an elevation gain of 1,902 ft. It takes about 6-6.5 hr to complete', count 1,137 from the trail page title (1,171 on a second snapshot). Hiking Project: '6.5 miles (one-way) from the trailhead in McElmo Canyon. The trail is open to hiking, horseback riding, and mountain biking, but the upper section is steep and rugged.' BLM's own Sand Canyon / Rock Creek brochure: 'This trail is over 6 miles (one-way) with an approximately 1,390-ft elevation gain from south to north.' Trailhead elevations (5,472 ft lower, 6,862 ft upper) from The Outbound.",
+     "dogs_source": "https://www.blm.gov/sites/blm.gov/files/docs/2021-08/Canyons_of_the_Ancients_FAQ.pdf",
+     "dogs_source_quote": "Are dogs allowed in the Monument? Yes. Dogs should be controlled with a leash.",
+     "dogs_note": "BLM Tres Rios Field Office, the managing authority. Corroborated by COTREX, Colorado's official trail registry, which records the Sand Canyon trail as 'Manager BLM Tres Rios Field Office ... Allows Dogs Leash'. Note the BLM's other rule for this area: 'it is restricted to designated routes (on trail only) in the Sand Canyon/Rock Creek Recreation Management Area' - no cross-country wandering here even though the rest of the monument allows it.",
+     "stats_note": "Counts read this pass: 1,137 and 1,171. No star rating appeared alongside either. The AllTrails and BLM lengths and gains disagree (12.7 mi / 1,902 ft round trip vs 'over 6 miles one-way' / 1,390 ft) - both are recorded rather than reconciled.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/en/trail/us/colorado/sand-canyon-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "BLM - Canyons of the Ancients, Sand Canyon and Rock Creek trails (brochure)",
+       "url": "https://npshistory.com/publications/blm/canyons-of-the-ancients/brochures/sand-canyon-rock-creek-trails.pdf",
+       "tier": "official"
+      },
+      {
+       "label": "COTREX - Sand Canyon Trail",
+       "url": "https://trails.colorado.gov/trails/sand-canyon-trail-s-23525",
+       "tier": "official",
+       "note": "Colorado's official trail registry. Records the manager and the leashed-dog permission."
+      }
+     ],
+     "needs": ["difficulty"]
+    }
+   ]
+  },
+  "munising-mi": {
+   "_review": "Five trails for six nights looks full until you apply the dog rule: Chapel Loop, Mosquito Falls and Log Slide are all pet-prohibited, leaving Miners Castle and the 800-foot Munising Falls path as the only walks the dog can join in six days. Both additions were chosen to fix that specifically, and the first of them is named in the NPS pet list.",
+   "trails": [
+    {
+     "name": "Miners Falls Trail",
+     "distance": "1.2 mi out and back",
+     "elevation_gain": "about 100 ft",
+     "reviews": "2,262",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The park's most powerful waterfall and, at 2,262 reviews, the busiest trail at this stop that was not on the card - Chapel Loop aside. The Miners River drops about 50 ft over a sandstone outcrop; the walk is a short forested out-and-back to two viewing platforms with 64 steps at the end. Crucially it is one of the four trails the NPS names as open to leashed pets, which makes it the best dog walk of the whole stay, and it is easily confused with Munising Falls already on the card - they are different waterfalls on different rivers.",
+     "note_source": "AllTrails trail page title: 2,262 reviews, located in Pictured Rocks National Lakeshore. Length and the falls description from waterfallhikes.com (1.2 mi, ~100 ft gain, 40-ft waterfall) and waterfallsguide.com (50-foot Miners River plunge, 1.2-mile forested out-and-back with 64 steps). onX: 'Miners Falls Trail is a 1.2 mile out-and-back trail located in the Pictured Rocks National Lakeshore near Munising, Michigan. Unlike most national parks, dogs are allowed on this trail when kept on a leash.'",
+     "dogs_source": "https://www.nps.gov/piro/planyourvisit/pets.htm",
+     "dogs_source_quote": "Leashed pets can join you at these locations: All Roads, Parking Lots, and Picnic Areas / Sand Point Beaches / Munising Falls Trail / Miners Falls Trail / Miners Castle - Paved Trails, Overlook Platforms / Miners Beach / Au Sable Access Road to the Light Station / Lake Superior Overlook and Beach / Sable Falls Trail",
+     "dogs_note": "NPS names Miners Falls Trail explicitly. The same page's photo caption is 'Dog on leash on the Miners Falls trail'. This is as clean as a pet permission gets.",
+     "stats_note": "No star rating appeared with the count in any snippet read. Difficulty is disputed between community sources - waterfallhikes calls it easy, MyHikes calls it moderate - so no grade is recorded; the 64 steps are the reason for the disagreement.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/miners-falls",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Miners Falls (point of interest)",
+       "url": "https://www.alltrails.com/poi/us/michigan/miners-falls",
+       "tier": "indexed",
+       "note": "'The falls drops about 40 feet (12 m) over a sandstone outcrop with a 10-foot (3.0 m) crest.'"
+      }
+     ],
+     "needs": ["time", "difficulty"]
+    },
+    {
+     "name": "Sand Point Marsh Trail",
+     "distance": "0.5 mi loop (NPS); AllTrails maps it as a 1.9 mi out and back",
+     "time": "39 min (AllTrails average)",
+     "difficulty": "Easy",
+     "reviews": "245",
+     "uses": ["hike"],
+     "note": "A wheelchair-accessible boardwalk loop over wetland and old dune ridges beside the Munising visitor centre, built in 1989 - the flattest, shortest, most bird-heavy half hour at this stop and the obvious evening walk after a day on the cliffs. Pram-friendly per AllTrails reviewers. The Sand Point area also has the beaches, which ARE named in the NPS pet list.",
+     "note_source": "AllTrails: 'Enjoy this 1.9-mile out-and-back trail near Munising, Michigan. Generally considered an easy route, it takes an average of 39 min to complete', 245 reviews from the page title (237 on a second snapshot). NPS: 'The Sand Point Marsh Trail is a half-mile wheelchair-accessible flat interpretive trail loop that traverses a beautiful wetland area. Most of the trail is a wooden boardwalk that crosses a rich variety of wetland habitats and old dune ridges. The rest of the trail is paved.'",
+     "dogs_needs_check": true,
+     "dogs_note": "READ THE NPS LIST CAREFULLY HERE. The pet page names 'Sand Point Beaches' - it does NOT name the Sand Point Marsh Trail, while it does name Munising Falls Trail, Miners Falls Trail and Sable Falls Trail individually. On a page that lists trails by name, that omission should be treated as a no until the visitor centre says otherwise; it is fifty yards from the trailhead. Recorded as unknown rather than assumed.",
+     "stats_note": "The NPS half-mile loop and the AllTrails 1.9 mi out-and-back are not the same measurement - AllTrails' track appears to include the approach. Both recorded.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/sand-point-marsh-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "NPS - Sand Point Marsh Trail",
+       "url": "https://www.nps.gov/places/sand-point-marsh-trail.htm",
+       "tier": "official"
+      }
+     ],
+     "needs": ["dogs"]
+    }
+   ]
+  },
+  "traverse-city-mi": {
+   "_review": "Four trails for seven nights, all four of them dune-and-bluff viewpoints of the same kind, and - the part that matters here - the National Lakeshore prohibits pets on most of them. The two additions are both on the NPS list of pet-open routes, and one of them is the paved rail-grade this whole trip has been short of.",
+   "trails": [
+    {
+     "name": "Sleeping Bear Heritage Trail",
+     "distance": "20 mi point to point (TrailLink 21.2 mi; the park describes about 22 mi)",
+     "elevation_gain": "583 ft over the full length",
+     "reviews": "706",
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "cruise": true,
+     "cruise_reason": "Paved, multiuse, and separated from the road for most of its length - a purpose-built recreation path rather than a repurposed one, running through the National Lakeshore between Empire and Bohemian Road and connecting Glen Arbor, the Dune Climb and the historic sites. No walk-your-bike sections are reported, no surface hazards, and it is explicitly on the NPS list of routes open to leashed pets. Twenty miles means picking a segment: Empire to the Dune Climb, or Glen Arbor out and back.",
+     "note": "The single best fit for this stop that was not on the card. Seven nights, a bike, a dog and a towed truck, and everything listed was a dune scramble the dog is banned from. This is the walk-and-ride that works every day of the week.",
+     "note_source": "AllTrails: 'Sleeping Bear Heritage Trail is a point to point trail that covers 20 mi, with an elevation gain of 583 ft', 706 reviews from the page title (681 on a second snapshot). TrailLink: 21.2 mi from M-22 and S Bohemian Road (Maple City) to W Salisbury Dr (Empire). Michigan Trails: 'a scenic, approximately 22-mile multiuse route extending through Sleeping Bear Dunes National Lakeshore between the village of Empire and Bohemian Road... connects communities, historic sites, forests and several of the nat[ional lakeshore's sites]'.",
+     "dogs_source": "https://www.nps.gov/slbe/planyourvisit/pets.htm",
+     "dogs_source_quote": "Pets must be controlled on a 6-foot leash at all times.",
+     "dogs_note": "Sleeping Bear Dunes publishes pet access as a map rather than a list. The areas open to pets, as reported from that map, are Shauger Hill, Alligator Hill, Bay View, Good Harbor Bay and the Sleeping Bear Heritage Trail. Note the seasonal counter-rule elsewhere in the park: pets are prohibited on the designated cross-country ski trails (Old Indian, Platte Plains system, Windy Moraine, Scenic Drive) from 1 December to 31 March - not these dates.",
+     "stats_note": "Counts read this pass: 681 and 706, no star alongside either. Lengths differ by source (20 / 21.2 / ~22 mi) because the trail has been extended in stages; all three are recorded.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/sleeping-bear-heritage-trail--4",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "TrailLink - Sleeping Bear Heritage Trail",
+       "url": "https://www.traillink.com/trail/sleeping-bear-heritage-trail/",
+       "tier": "community"
+      }
+     ],
+     "needs": ["time", "difficulty"]
+    },
+    {
+     "name": "Alligator Hill Easy Loop",
+     "distance": "2.7 mi loop",
+     "difficulty": "Easy",
+     "elevation_gain": "364 ft",
+     "reviews": "487",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The forest half of Sleeping Bear, which the card did not have at all, and the dog can come. Beech-maple forest climbing to overlooks on Glen Lake, Lake Michigan and the dunes, and consistently quieter than the Dune Climb side. The loop system is tiered: the Easy loop is 2.7 mi / 364 ft, adding the Intermediate loop makes 4.8 mi / 695 ft in 2-2.5 hr, and all three loops together are 6.2 mi / 882 ft in 2.5-3 hr - so the same trailhead scales to whatever the day is worth.",
+     "note_source": "AllTrails: 'Alligator Hill Easy Loop is considered an easy hike that covers 2.7 mi, with an elevation gain of 364 ft', 487 reviews from the page title; and for the longer versions, 'Alligator Hill Easy and Intermediate Loop is considered a moderate hike that covers 4.8 mi, with an elevation gain of 695 ft. It takes about 2-2.5 hr' and 'Alligator Hill Easy, Intermediate and Advanced Loop is considered a moderate hike that covers 6.2 mi, with an elevation gain of 882 ft. It takes about 2.5-3 hr'.",
+     "dogs_source": "https://www.nps.gov/slbe/planyourvisit/pets.htm",
+     "dogs_source_quote": "Pets must be controlled on a 6-foot leash at all times.",
+     "dogs_note": "Alligator Hill is one of the named pet-open areas on the Sleeping Bear pet map.",
+     "stats_note": "No star rating appeared with the count in any snippet read.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/alligator-hill-easy-loop",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "AllTrails - Alligator Hill Easy and Intermediate Loop",
+       "url": "https://www.alltrails.com/trail/us/michigan/alligator-hill-easy-and-intermediate-loop",
+       "tier": "indexed"
+      },
+      {
+       "label": "AllTrails - Alligator Hill Easy, Intermediate and Advanced Loop",
+       "url": "https://www.alltrails.com/trail/us/michigan/alligator-hill-easy-intermediate-and-advanced-loop",
+       "tier": "indexed"
+      }
+     ],
+     "needs": ["time"]
+    }
+   ]
+  },
+  "grand-marais-mn": {
+   "_review": "Five entries for six nights, and geographically lopsided: Tettegouche appears twice and Judge Magney once, all of them southwest down the shore, two of them an hour or more away. Nothing northeast toward the border and nothing in the Sawtooths behind the town. The two additions are the North Shore's best short hike and the tallest waterfall in Minnesota, and they sit on opposite sides of the stop.",
+   "trails": [
+    {
+     "name": "Oberg Mountain Loop Via Superior Hiking Trail",
+     "distance": "2.4 mi loop",
+     "time": "1-1.5 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "501 ft",
+     "reviews": "4.8 (2,558)",
+     "uses": ["hike"],
+     "note": "The highest-rated and most-reviewed walk anywhere near this stop, and it was not on the card. A short loop off the Superior Hiking Trail around the top of Oberg Mountain with a ring of overlooks - inland over Oberg Lake and the Sawtooths on one side, out over Lake Superior on the other. About 25 miles southwest of Grand Marais near Tofte. Effort-to-view ratio is the best on the North Shore.",
+     "note_source": "AllTrails Oberg Mountain point-of-interest page: 'the best place to hike near Oberg Mountain is Oberg Mountain Loop Via Superior Hiking Trail, which has a 4.8 star rating from 2,558 reviews. This trail is 2.4 mi...' and the trail page: 'considered a moderate hike that covers 2.4 mi, with an elevation gain of 501 ft. It takes about 1-1.5 hr to complete.' TrailFinder grades the same loop Easy at 2.3 mi / 380 ft, so the moderate grade is at the harder end of what sources say.",
+     "season": "Early July is fully open - this trail's famous season is late September for the maple colour, which these dates miss.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/minnesota/oberg-mountain-loop-via-superior-hiking-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["dogs"],
+     "dogs_note": "Superior National Forest / Superior Hiking Trail. No published pet rule was read this pass."
+    },
+    {
+     "name": "High Falls Trail, Grand Portage State Park",
+     "distance": "1.1 mi",
+     "elevation_gain": "65 ft",
+     "reviews": "4.8 (1,141)",
+     "uses": ["hike"],
+     "note": "The tallest waterfall in Minnesota - the 120 ft High Falls of the Pigeon River, on the Canadian border - reached by a paved, wheelchair-accessible path and boardwalk to viewing platforms. About 35 miles northeast of Grand Marais, past the end of everything else on this card, and the last thing before the border crossing. Short, flat, accessible, and the biggest single sight of the stop.",
+     "note_source": "AllTrails Grand Portage State Park page: 'the best place to hike in Grand Portage State Park is High Falls Trail, which has a 4.8 star rating from 1,141 reviews. This trail is 1.1 mi long with an elevation gain of 65 ft.' onX: 'Starting at the Grand Portage State Park Visitor Center just before the port of entry on the US/Canadian border, there is a paved and wheelchair accessible trail that leads to a boardwalk providing spectacular viewpoints of High Falls on the Pigeon River, the highest waterfall in M[innesota].'",
+     "season": "Open on these dates. Early July is past the spring melt peak but the Pigeon still carries water; this is not a trail that dries up.",
+     "stats_note": "Counts read this pass: 1,058, 1,124 and 1,141, all at 4.8. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/parks/us/minnesota/grand-portage-state-park",
+      "match": "contains",
+      "tier": "indexed",
+      "note": "Park-level page. No direct trail URL for High Falls Trail was returned in any result read this pass, so the park page is linked rather than a constructed trail slug."
+     },
+     "needs": ["time", "difficulty"],
+     "dogs": true,
+     "dogs_source": "https://www.revisor.mn.gov/rules/6100.1100/",
+     "dogs_source_quote": "No person shall allow a dog, cat, or other pet animal, except a service animal, to enter a building or beach or permit a dog, cat, or other pet animal to be unrestrained. Pet animals shall be personally attended at all times and shall be effectively restrained by a portable enclosure or by a leash not exceeding six feet in length.",
+     "dogs_note": "Minnesota Administrative Rule 6100.1100, the pet rule for all Minnesota state parks - so this is the authority, not a park page. Leashed dogs on the trail: yes. On the beach: no. Grand Portage State Park is jointly managed with the Grand Portage Band of Lake Superior Chippewa; no additional band rule was found this pass."
+    }
+   ]
+  },
+  "st-ignace-mi": {
+   "_review": "Three entries for six nights, two of them on Mackinac Island, and the third - Cut River Gorge - forty minutes west. Nothing at all within twenty minutes of camp. The additions add the mainland wilderness on the doorstep, the island's only real hiking trail as opposed to its carriage roads, and the big shoreline park over the bridge.",
+   "trails": [
+    {
+     "name": "Foley Creek Trail",
+     "distance": "2.9 mi out and back",
+     "time": "0.5-1 hr",
+     "elevation_gain": "36 ft",
+     "reviews": "4.0 (221)",
+     "uses": ["hike"],
+     "note": "The closest real walk to camp and the one the card was missing entirely: six miles north of St Ignace, from the Foley Creek Campground into the Horseshoe Bay Wilderness, an overlooked 3,800-acre piece of Lake Huron shoreline in the Hiawatha National Forest. Creek crossings, wetland edge and shaded forest, essentially flat. It connects onward into the 6.4-mile Horseshoe Bay Trail loop if the day wants more. Early August is bug-tolerable and the shoreline is the point.",
+     "note_source": "AllTrails: 'Foley Creek Trail is an out-and-back trail that covers 2.9 mi, with an elevation gain of 36 ft. It takes about 0.5-1 hr to complete', 223 reviews on the trail page title. Star and count from the AllTrails Horseshoe Bay Wilderness park page: 4.0 star rating from 221 reviews (a second snapshot gave 4.2 from 170 and 3.1 mi). Description from Discover St. Ignace: 'a peaceful loop through the woodlands of Hiawatha National Forest, winding past creek crossings, wetland edges, and shaded forest groves.' Wilderness acreage and the 6.4-mile loop figure from dwhike and Michigan Trails; trailhead directions from Superior Hiking: north on I-75 to exit 348, then Mackinac Trail 2.4 miles north to Foley Creek Campground.",
+     "stats_note": "Counts read this pass: 170, 213, 221, 223, with stars of 4.0 and 4.2. This is a thinly and inconsistently indexed trail; treat the rating as approximate.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/foley-creek-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "Discover St. Ignace - Foley Creek Trail",
+       "url": "https://stignace.com/hiking-walking/foley-creek-trail/",
+       "tier": "community"
+      }
+     ],
+     "needs": ["difficulty", "dogs"],
+     "dogs_note": "Hiawatha National Forest. No published pet rule was read this pass."
+    },
+    {
+     "name": "Tranquil Bluff Trail",
+     "distance": "3.1-3.2 mi (community sources; no AllTrails length was returned)",
+     "reviews": "166",
+     "uses": ["hike"],
+     "note": "The only genuine hiking trail on Mackinac Island, and the card had the island's carriage roads twice without it. Mackinac Island State Park covers more than 80 percent of the island; this route takes the high line along the interior bluffs above the east shore, past limestone formations and quiet forest glades, well away from the M-185 crowd already on the card. It meets Soldiers Garden Trail near Arch Rock, so it links to what is already listed rather than repeating it. Returning along the shore road makes a full day of roughly nine miles.",
+     "note_source": "AllTrails trail page: 166 reviews; 'this route offers stunning views of Lake Huron, with a unique rock arch that frames the water... Tranquil Bluff Trail, which is a fitting name because this area is very peaceful as you hike along the b[luff]'. Length and grade from community sources that disagree: SecretFalls 3.2 mi moderate, MyPacer 3.1 mi easy, Trailforks 93 ft gain on part 1. The Outbound: 'the longest and most beautiful hiking trail on the island'. Roam Lab's nine-mile round day is the shore-road return.",
+     "stats_note": "No AllTrails distance, grade, time or star rating was returned in any result read this pass - only the raw count of 166. The distance recorded is community tier and is flagged as such.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/michigan/tranquil-bluff-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["time", "difficulty", "elevation_gain", "dogs"],
+     "dogs_note": "Mackinac Island State Park. No published pet rule was read this pass - and the ferry companies have their own pet rules, which is a separate question worth asking before planning this day."
+    },
+    {
+     "name": "Red Pine Trail, Wilderness State Park",
+     "distance": "3.4 mi",
+     "elevation_gain": "52 ft",
+     "reviews": "4.5 (379)",
+     "uses": ["hike"],
+     "note": "The best-rated walk within half an hour of this stop, over the bridge at the top of the Lower Peninsula. Wilderness State Park is 10,500-plus acres of mostly coniferous forest with 26 miles of Lake Michigan shoreline and a designated dark sky preserve - which in early August, on a stop that already has a bridge and an island, is the thing the card had no equivalent of. Flat forest walking.",
+     "note_source": "AllTrails Wilderness State Park forest-trails page: 'the best forest trail to hike in Wilderness State Park is Red Pine Trail, which has a 4.5 star rating from 379 reviews. This trail is 3.4 mi long with an elevation gain of 52 ft.' Park description from the AllTrails park page: 'a large park, made of mostly coniferous forest. It has 26 miles of shoreline along Lake Michigan and a designated dark sky preserve.' Komoot puts the park at over 10,500 acres.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/parks/us/michigan/wilderness-state-park/forest",
+      "match": "contains",
+      "tier": "indexed",
+      "note": "No direct Red Pine Trail URL was returned in any result read this pass, so the park's forest-trails page is linked rather than a constructed trail slug."
+     },
+     "needs": ["time", "difficulty", "dogs"],
+     "dogs_note": "Michigan DNR state park. No published pet rule was read this pass."
+    }
+   ]
+  },
+  "duluth-mn": {
+   "_review": "Five entries for six nights and the set was already close to right - the Lakewalk, Enger, Hawk Ridge in town, Gooseberry and Jay Cooke as the two day trips. The one gap was a short climb with a view, which is what Duluth is actually made of. One addition, not five.",
+   "trails": [
+    {
+     "name": "Ely's Peak Trail",
+     "distance": "1.8 mi",
+     "time": "1-1.5 hr",
+     "difficulty": "Moderate",
+     "elevation_gain": "400 ft",
+     "reviews": "4.6 (1,520)",
+     "uses": ["hike"],
+     "note": "The short, steep, high-payoff walk the card lacked: a wooded climb at the far west end of Duluth on the Superior Hiking Trail to bare rock with panoramic views over the St Louis River valley, passing an old railroad tunnel. There is a scramble over large rocks near the summit, and reviewers report poison ivy along the trail - worth knowing with a dog. Trilliums earlier in the year; late June is past them.",
+     "note_source": "AllTrails: 'Ely's Peak Trail is considered a moderate hike that covers 1.8 mi, with an elevation gain of 400 ft. It takes about 1-1.5 hr to complete.' Star and count from the AllTrails Elys Peak point-of-interest page: 4.6 star rating from 1,520 reviews (a second snapshot gave 1,563; the trail title showed 1,575). Poison ivy and the tree-root/rock scramble from the AllTrails description and This Big Wild World; the railroad tunnel and the 1.5 mi loop variant from Lake Superior Circle Tour.",
+     "stats_note": "Counts read this pass: 1,520, 1,546, 1,563, 1,575. Ordering signal only.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/minnesota/elys-peak-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["dogs"],
+     "dogs_note": "Superior Hiking Trail on City of Duluth land, not a state park, so Minn. R. 6100.1100 does not settle it. No published pet rule was read this pass."
+    }
+   ]
+  },
+  "itasca-mn": {
+   "_review": "Four trails for five nights and they were sensibly chosen - headwaters, fire tower, Dr Roberts, Bohall. What the box had no version of was the thing Itasca is best set up for: a paved loop you ride rather than walk. Note for a future pass - the existing 'Aiton Heights Fire Tower Trail' and AllTrails' 'Itasca Fire Tower Trail' are the same fire tower, so no second fire-tower entry was added here.",
+   "trails": [
+    {
+     "name": "Itasca State Park Bike Trail",
+     "distance": "11.3 mi out and back (TrailLink measures the paved path at 5.8 mi one way, Headwaters Center to Douglas Lodge)",
+     "time": "4-4.5 hr on foot",
+     "elevation_gain": "577 ft",
+     "reviews": "274",
+     "uses": ["hike", "bike"],
+     "dogs": true,
+     "cruise": true,
+     "cruise_reason": "Paved throughout, off-road for its own length, and the park's own map spells out the ride: 'Pedal 8.5 miles of paved trail starting at the Jacob V. Brower Visitor Center; continue on the Wilderness Drive one-way road another 7.9 miles to create a 16.4 mile loop.' The Wilderness Drive half is one-way, single-lane and shared with slow park traffic, which is as calm as road riding gets. No walk-your-bike sections and no surface hazards reported. This is the best gravel-and-tarmac cruise on the Minnesota leg.",
+     "note": "Five nights at Itasca with a bike and a dog and the card offered only foot trails. The loop passes the Headwaters, Douglas Lodge, and the old-growth pine along Wilderness Drive - it is the single best way to see the park, and it is the one activity here that works on a hot late-June afternoon.",
+     "note_source": "AllTrails: 'Itasca State Park Bike Trail is an out-and-back trail that covers 11.3 mi, with an elevation gain of 577 ft. It takes about 4-4.5 hr to complete', 274 reviews from the page title. Minnesota DNR summer trails map (files.dnr.state.mn.us/maps/state_parks/spk00181_summer.pdf) for the 8.5 + 7.9 = 16.4 mile loop. Minnesota DNR virtual tour: 'A 16-mile paved trail winds through Itasca State Park. Approximately six miles of this trail is an off-road, paved trail that extends from Douglas Lodge to the Headwaters area.' TrailLink: 5.8 mi, Mary Gibbs Mississippi Headwaters Center to Douglas Lodge.",
+     "dogs_source": "https://www.revisor.mn.gov/rules/6100.1100/",
+     "dogs_source_quote": "No person shall allow a dog, cat, or other pet animal, except a service animal, to enter a building or beach or permit a dog, cat, or other pet animal to be unrestrained. Pet animals shall be personally attended at all times and shall be effectively restrained by a portable enclosure or by a leash not exceeding six feet in length.",
+     "dogs_note": "Minnesota Administrative Rule 6100.1100 - the state park pet rule, so this is the authority. Leashed and attended on the trail: yes. Beaches and buildings: no. Worth reading against the dog carrier on the bike - restrained in a portable enclosure is explicitly one of the two permitted forms.",
+     "stats_note": "No star rating appeared with the 274 count in any snippet read. AllTrails' 11.3 mi and TrailLink's 5.8 mi are the same path measured round trip and one way; the DNR's 16.4 mi is the full loop including the road half.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/minnesota/itasca-state-park-bike-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "other_links": [
+      {
+       "label": "Minnesota DNR - Itasca summer trails and facilities map",
+       "url": "https://files.dnr.state.mn.us/maps/state_parks/spk00181_summer.pdf",
+       "tier": "official",
+       "note": "The authority for the 16.4-mile loop and which sections are paved."
+      },
+      {
+       "label": "TrailLink - Itasca State Park Bike Trail",
+       "url": "https://www.traillink.com/trail/itasca-state-park-bike-trail/",
+       "tier": "community"
+      }
+     ],
+     "needs": ["difficulty"]
+    },
+    {
+     "name": "Nicollet Trail",
+     "distance": "4.7 mi out and back",
+     "time": "1 hr 42 min (AllTrails average)",
+     "difficulty": "Moderately challenging",
+     "reviews": "88",
+     "uses": ["hike"],
+     "dogs": true,
+     "note": "The quiet trail of the park. Everything else on this card is within sight of a road or a lodge; this one runs into the backcountry on the park's west side toward the Nicollet camp, and AllTrails notes you are unlikely to meet many other people. Longest walk on the card by some way, and the one that earns a five-night stay rather than a two-night one.",
+     "note_source": "AllTrails: 'Experience this 4.7-mile out-and-back trail near South Clearwater, Minnesota. Generally considered a moderately challenging route, it takes an average of 1 h 42 min to complete. This trail is great for camping, hiking, and skiing, and it's unlikely you'll encounter many other people wh[ile exploring]', 88 reviews from the page title.",
+     "dogs_source": "https://www.revisor.mn.gov/rules/6100.1100/",
+     "dogs_source_quote": "Pet animals shall be personally attended at all times and shall be effectively restrained by a portable enclosure or by a leash not exceeding six feet in length.",
+     "stats_note": "No star rating and no elevation gain appeared in any snippet read - only the raw count of 88.",
+     "alltrails": {
+      "url": "https://www.alltrails.com/trail/us/minnesota/nicollet-trail",
+      "match": "exact",
+      "tier": "indexed"
+     },
+     "needs": ["elevation_gain"]
+    }
+   ]
+  }
+ }
+}

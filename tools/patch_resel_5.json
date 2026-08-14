@@ -1,0 +1,559 @@
+{
+  "_what": "Trail-set RE-SELECTION for 13 east-extension stops. Not a top-up of links for names already on the cards — the question asked here was what each box SHOULD contain for the number of nights booked, then the gap was filled.",
+  "_why": "Every earlier pass took the trail names already present and found URLs for them. Nobody asked whether they were the right trails. Moab carried three trails for a seven-night stay across two national parks. Target is roughly one good walk per night, capped at six; where an existing entry is on the card for information but cannot actually be walked (dog-banned, or seasonally shut on these dates) it is not counted toward that target and the reason is recorded on the entry that replaces it.",
+  "_method": "Candidates were drawn from each area's genuinely best-known walks, then ordered per LINKS_STRATEGY.md §3 — easy and moderate as one band, rating and count as one signal, hard only on outstanding reviews. Every URL was COPIED from a DuckDuckGo result read directly in a browser pane; none was constructed from a name. Figures come from the AllTrails result title/snippet as displayed, or from a named secondary source recorded in stats_note. Nothing is guessed; what could not be sourced is in `needs`.",
+  "_dogs": "dogs true/false is recorded ONLY from the managing authority. Acadia's six named pet-closed trails, Great Smoky's exactly-two permitted trails, Buffalo National River's Ponca-to-Steel Creek exception, Hot Springs NP's all-26-miles and New River Gorge's all-trails rules were supplied already sourced and are applied here, not re-derived. AllTrails is never the source for a dog rule.",
+  "stops": {
+    "bar-harbor-me": {
+      "trails": [
+        {
+          "name": "Great Head Trail (Full Loop)",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/maine/great-head-trail-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.9 mi loop",
+          "elevation_gain": "272 ft",
+          "difficulty": "Moderate",
+          "reviews": "4.8 (6,815)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Reached from the Sand Beach lot on the Park Loop Road. NPS closes the Park Loop Road and the Cadillac Summit Road to vehicles from 1 Dec to 14 Apr; this stop is 16-22 Oct 2028, so the road is open. No conflict.",
+          "note": "The best walk on this card that was not already on it — the loop right around the headland east of Sand Beach, with the Beehive and the whole of Newport Cove in view. It is the one big-name Acadia hike that is neither an iron-rung climb nor a summit slog, and unlike the Beehive it is open to the dog.",
+          "note_source": "Dogs permitted — Great Head is not among the six trails Acadia closes to pets (Precipice, Beehive, Ladder, Beech Cliffs, Perpendicular, Jordan Cliffs). Six-foot leash.",
+          "other_links": [
+            {
+              "label": "NPS — Hike Great Head Trail",
+              "url": "https://www.nps.gov/thingstodo/hike-great-head-trail.htm",
+              "tier": "official",
+              "note": "The park's own page for this hike: granite steps, rocky scrambles, the Satterlee millstone and the ruins of the stone tea-house tower at the high point."
+            },
+            {
+              "label": "AllTrails — Great Head Trail (Short Option)",
+              "url": "https://www.alltrails.com/trail/us/maine/great-head-trail",
+              "tier": "indexed",
+              "note": "The cut-across version, 4.7 from 2,056 reviews. AllTrails' text on this listing is where the 'moderate' grade comes from: 'Great Head Trail is moderate and loops around the perimeter of the small peninsula called Great Head'."
+            }
+          ],
+          "stats_note": "1.9 mi / 272 ft / 4.8 come from AllTrails' Great Head area page, which names the Full Loop as the best hike there; the 6,815 review count is from the Full Loop listing's own result title. AllTrails published no completion time for either listing, so none is recorded.",
+          "needs": ["time — AllTrails publishes no estimate for either Great Head listing and no other source gives one that can be quoted"],
+          "resel": "ADDED in re-selection. Six nights, and of the five entries already on the card the Beehive is closed to dogs outright, which leaves four walkable days for six nights."
+        },
+        {
+          "name": "Ship Harbor Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/maine/ship-harbor-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.5 mi loop",
+          "elevation_gain": "72 ft",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy",
+          "reviews": "4.7 (5,685)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "On Route 102A on the quiet west side, not on the Park Loop Road, so the 1 Dec - 14 Apr road closure does not reach it. Open on these dates and open all winter.",
+          "note": "The short, flat, low-effort coastal one — a figure-of-eight through spruce out to blocky pink granite and tide pools at Ship Harbor. This is the walk for a wet October afternoon or a day when nobody wants a summit, and it is on the far side of the island from the Park Loop crowds.",
+          "note_source": "Dogs permitted — not among Acadia's six pet-closed trails. Six-foot leash.",
+          "other_links": [
+            {
+              "label": "NPS — Hike Ship Harbor Trail",
+              "url": "https://www.nps.gov/thingstodo/hike-ship-harbor-trail.htm",
+              "tier": "official"
+            },
+            {
+              "label": "AllTrails — Wonderland Trail",
+              "url": "https://www.alltrails.com/trail/us/maine/wonderland-trail",
+              "tier": "indexed",
+              "note": "The near-twin, 400 yards up the same road: 1.3 mi out-and-back, 75 ft, 0.5-1 hr, 4.6 from 3,793 reviews, an old gravel fire road out to the same shoreline. Deliberately NOT listed as a separate trail here — it is the same walk twice and one of the two is enough. Wonderland is the flatter and wheelchair-passable of the pair; Ship Harbor has the better shore."
+            }
+          ],
+          "stats_note": "Distance, gain, time, rating and count are from the AllTrails result title and snippet as displayed. AllTrails published no difficulty grade; 'Easy' is the label used by NPS's own hike page, yournpguide and MyHikes, which all independently call it an easy family walk. Footing is slick on the coastal rock and the bog bridges.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    },
+    "new-river-gorge-wv": {
+      "trails": [
+        {
+          "name": "Glade Creek Trail to Kates Falls",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/west-virginia/glade-creek-trail-to-kate-s-falls",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.6 mi one-way (NPS); AllTrails indexes the falls out-and-back separately",
+          "difficulty": "Moderate",
+          "reviews": "4.6",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "note": "The flattest long walk in the park and the one thing this card had none of — an abandoned narrow-gauge coal railway grade running level along Glade Creek to Kate's Falls. Everything else on the card is a rim trail or a stair climb. Turn round wherever the light goes; it is out-and-back, so there is no committing to the full distance.",
+          "note_source": "Dogs permitted — the NPS states leashed pets are allowed on every trail in New River Gorge. Already sourced at stop level; not re-derived.",
+          "other_links": [
+            {
+              "label": "NPS — Glade Creek Trail",
+              "url": "https://www.nps.gov/places/glade-creek-trail.htm",
+              "tier": "official",
+              "note": "Source of the 5.6 mi one-way length, the Moderate grade and the hiking-and-biking use: 'follows an abandoned narrow-gauge railroad along Glade Creek... an enjoyable stroll at a very moderate grade, popular with hikers of all ages and abilities'."
+            },
+            {
+              "label": "AllTrails — Kate's Falls via Glade Creek Trail",
+              "url": "https://www.alltrails.com/trail/us/west-virginia/kate-s-falls-via-glade-creek-trail",
+              "tier": "indexed",
+              "note": "A second listing of the same walk under a reversed name. Its description confirms the rail grade and the 'gentle, flat stroll'."
+            },
+            {
+              "label": "TrailLink — Glade Creek Trail",
+              "url": "https://www.traillink.com/trail/glade-creek-trail/",
+              "tier": "community"
+            }
+          ],
+          "stats_note": "AllTrails' result title for this listing carries the 4.6 star average but published no review count and no completion time on any of the pages that surfaced, so neither is recorded. The 5.6 mi and the Moderate grade are NPS's own figures, not AllTrails'.",
+          "needs": ["review count — AllTrails shows the 4.6 average but no count in any indexed result", "time"],
+          "cruise": false,
+          "cruise_reason": "Bike-legal per NPS and it is a former rail bed, which is the right shape for cruising with the dog in the carrier — but no source read here describes the SURFACE, and a rail grade can be anything from crushed limestone to loose ballast and washouts. Not called a cruise route on an assumption; this is the one to look at on the ground.",
+          "resel": "ADDED in re-selection. Six nights and five existing entries, but four of the five are rim-top viewpoint walks within a few miles of each other and the fifth is the Kaymoor stair descent. Nothing on the card was flat, long or riverside."
+        },
+        {
+          "name": "Sandstone Falls Boardwalk",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/west-virginia/sandstone-falls-boardwalk",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.2 mi one-way (0.25 mi of boardwalk)",
+          "time": "about 20 min round trip",
+          "difficulty": "Easy — fully accessible",
+          "reviews": "4.6 (887)",
+          "uses": ["hike"],
+          "dogs": true,
+          "note": "Not a day's walk and not offered as one — it is a quarter-mile of accessible boardwalk over the braided channels of the largest waterfall on the New River, 1,500 ft across and dropping 10-25 ft. It anchors the southern end of the park, which this card ignored entirely: pair it with Grandview and Glade Creek and the drive down River Road makes one full day.",
+          "note_source": "Dogs permitted — NPS states leashed pets are allowed on every trail in New River Gorge.",
+          "other_links": [
+            {
+              "label": "NPS — Sandstone Falls Boardwalk",
+              "url": "https://www.nps.gov/places/sandstone-falls-boardwalk.htm",
+              "tier": "official",
+              "note": "0.2 mi one-way, Easy, 'hiking and accessible'. Confirms the 1,500 ft span and the 10-25 ft drop."
+            },
+            {
+              "label": "AllTrails — Sandstone Falls Boardwalk and Island Loop Trail",
+              "url": "https://www.alltrails.com/trail/us/west-virginia/sandstone-falls-boardwalk-and-island-loop-trail",
+              "tier": "indexed",
+              "note": "The longer combination if the short boardwalk is not enough — same 4.6 average."
+            }
+          ],
+          "stats_note": "The AllTrails result title reads '887 Reviews' while the snippet also shows a bracketed (586); the title figure is the one recorded, per the rule that the title string as displayed is the copy. Access is off River Road (WV-26), single lane in places with an unpaved lot — that is a truck drive, not a coach one, and December ice on a one-lane river road is the thing to check before setting out.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    },
+    "boone-nc": {
+      "trails": [
+        {
+          "name": "Boone Fork Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/boone-fork-trail--8",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "5.1 mi loop",
+          "time": "2 h 3 min",
+          "difficulty": "Moderately challenging",
+          "reviews": "4.7 (4,625)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Trailhead is the Price Park picnic area on the Parkway at about MP 296.5. The Blue Ridge Parkway's winter closures are weather-driven gate closures rather than fixed dates — NPS gates sections when they ice and reopens them when they clear, and its own winter-recreation page states you may walk in behind a closed gate. So this is walkable in the 17-23 Dec window; what is not guaranteed is driving to the trailhead. Check nps.gov/blri/planyourvisit/roadclosures.htm the morning of.",
+          "note": "The best full-day walk near Blowing Rock and the one shape this card was missing — a real loop with a creek, Hebron Falls, meadow, rhododendron tunnel and a boulder-and-ladder section, rather than another rim viewpoint. Most people walk it counter-clockwise; the first mile to Hebron Falls carries most of the traffic and the middle two miles are empty.",
+          "note_source": "Dogs permitted on a leash — Blue Ridge Parkway rule, the same authority already sourced on this card for Moses Cone, Julian Price and Beacon Heights.",
+          "other_links": [
+            {
+              "label": "Explore Boone — Boone Fork Trail",
+              "url": "https://www.exploreboone.com/outdoors/hiking/boone-fork-trail/",
+              "tier": "community",
+              "note": "The county visitor bureau gives the loop as 5.5 miles against AllTrails' 5.1 — the usual GPS-versus-signed discrepancy, recorded rather than reconciled."
+            },
+            {
+              "label": "AllTrails — Boone Fork Trail Loop via Tanawha Trail",
+              "url": "https://www.alltrails.com/trail/us/north-carolina/boone-fork-trail-loop-via-tanawha",
+              "tier": "indexed",
+              "note": "4.6 from 239 reviews. A longer user-assembled version that joins the Tanawha Trail already on this card. Its description carries the warning worth having: 'giant boulders, stairways, and ladders... can be slippery or muddy'."
+            }
+          ],
+          "stats_note": "Distance, time, grade, rating and count are from the AllTrails result title and snippet as displayed. The ladder-and-boulder section is the part to think about in late December; wet rock and ice are the same hazard on a moderate trail as on a hard one.",
+          "resel": "ADDED in re-selection. Six nights, and of the five entries already on the card two are lake loops on the same estate pair, one is a 0.2 mi viewpoint spur, and the Grandfather Trail to Calloway Peak is the cables-and-ladders route on the ridge — which in the 17-23 Dec window is an ice question, not a fitness one. There was no ordinary all-day walk on it."
+        },
+        {
+          "name": "Erwins View Trail (Linville Falls)",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/erwins-view-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.8 mi out-and-back (NPS signs it 1.6 mi round trip)",
+          "elevation_gain": "265 ft",
+          "time": "0.5-1 hr",
+          "difficulty": "Moderate",
+          "reviews": "4.7 (2,051)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Reached from the Linville Falls Visitor Center at the end of the spur road off the Parkway at MP 316.4, about 35 miles south of Boone. Same weather-driven Parkway gate situation as Boone Fork — the trail does not close, the road to it might. Winter is arguably the better time to see it: bare trees open the gorge views that summer foliage hides.",
+          "note": "The biggest waterfall on the Blue Ridge Parkway, and the card had no waterfall at all. Four separate overlooks on one short walk — the first is half a mile in, so it pays out even if the weather turns. Gentle grades with stone steps near the last overlook.",
+          "note_source": "Dogs permitted on a leash — Blue Ridge Parkway rule, the authority that manages Linville Falls.",
+          "other_links": [
+            {
+              "label": "NPS — Linville Falls Hiking Trails",
+              "url": "https://www.nps.gov/blri/planyourvisit/linville-falls-trails.htm",
+              "tier": "official",
+              "note": "'A moderate 1.6 mile round-trip walk, offering hikers four overlooks... The first overlook is 0.5 miles from the visitor center.' Also the source for the fact that the Linville Falls trails as a group run moderate to strenuous."
+            },
+            {
+              "label": "AllTrails — Linville Falls Trail",
+              "url": "https://www.alltrails.com/trail/us/north-carolina/linville-falls-trail",
+              "tier": "indexed",
+              "note": "4.6 from 1,358 reviews — the shorter north-side line to the Upper Falls observation area. Fewer reviews and a lower average than Erwins View, so Erwins View is the one carried."
+            },
+            {
+              "label": "National Park Planner — Erwins View Trail (MP 316.4)",
+              "url": "https://npplan.com/parks-by-state/north-carolina-national-parks/blue-ridge-parkway-park-at-a-glance/blue-ridge-parkway-hiking-trails/blue-ridge-parkway-linville-falls-hiking-trails-mp-316-4/blue-ridge-parkway-erwins-view-trail-mp-316-4/",
+              "tier": "community",
+              "note": "Gives 2.25 mi round trip including all the overlook spurs, and 1.5 hours — the realistic figure if every overlook is walked."
+            }
+          ],
+          "stats_note": "Three lengths are published for the same walk and all three are recorded rather than averaged: AllTrails 1.8 mi, NPS 1.6 mi signed, National Park Planner 2.25 mi with every spur. AllTrails' gain, time, rating and count are from its result title and snippet as displayed.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    },
+    "asheville-nc-v3": {
+      "trails": [
+        {
+          "name": "Catawba Falls River Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/catawba-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.2 mi out-and-back",
+          "elevation_gain": "308 ft",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate",
+          "reviews": "4.6 (7,631)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Low elevation at Old Fort, roughly 30 minutes east of Asheville on I-40 — reachable when the Blue Ridge Parkway is gated for ice, which in the 23-30 Dec window is the deciding factor for half this card. Open all year per the Rutherford Outdoor Coalition. Two things to verify nearer the time: the trail was rebuilt with a new stairway to the upper falls, and Hurricane Helene in Sep 2024 hit the Old Fort side of Pisgah hard, so Grandfather Ranger District closures have been rolling.",
+          "note": "The biggest-name hike within an hour of Asheville that was not on this card — 7,631 reviews, more than any other trail on the stop. A wide gravel path along the Catawba headwaters past the 1920s hydro dam ruins, then a narrower climb in the last half mile to the 100 ft falls.",
+          "note_source": "Dogs permitted on a leash. Managing authority is the US Forest Service, National Forests in North Carolina (Grandfather Ranger District). The Forest Service's own Catawba Falls page publishes no trail-specific pet rule, so this rests on the standing national-forest rule that leashed pets are allowed on NF trails, not on a sentence naming this trail. Recorded as true with that caveat stated.",
+          "other_links": [
+            {
+              "label": "US Forest Service — Catawba Falls",
+              "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/catawba-falls",
+              "tier": "official"
+            },
+            {
+              "label": "MyHikes — Catawba Falls Trail",
+              "url": "https://myhikes.org/trails/catawba-falls-trail/",
+              "tier": "community",
+              "note": "Gives 2.9 mi against AllTrails' 2.2, and describes the new stair system to the upper falls."
+            }
+          ],
+          "stats_note": "Distance, gain, time, grade and star are from the AllTrails result snippet as displayed; the 7,631 count is from its result title. Published lengths for this walk range 2.2-2.9 mi depending on whether the upper-falls stairs are included — all recorded, none averaged.",
+          "resel": "ADDED in re-selection. Seven nights and only four entries, two of which (Triple Falls, Hooker Falls) are the same afternoon in DuPont State Forest and one of which (Mount Pisgah, 5,721 ft, Parkway MP 407) is the single most gate-prone trailhead on the card in Christmas week."
+        },
+        {
+          "name": "Explorer Loop (Bent Creek)",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/explorer-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "4.8 mi loop",
+          "elevation_gain": "521 ft",
+          "time": "2-2.5 hr",
+          "difficulty": "Moderate",
+          "reviews": "4.6 (600)",
+          "uses": ["hike", "bike"],
+          "dogs": true,
+          "season": "Bent Creek Experimental Forest sits low behind the NC Arboretum, fifteen minutes from downtown Asheville on NC-191, with its own road access that does not depend on the Parkway. Walkable in any weather this stop will produce.",
+          "note": "The card had no ordinary walk-from-camp — everything on it was a drive to a waterfall or a summit. Bent Creek is Asheville's own forest: gravel roads and old logging grades around Lake Powhatan, easy to shorten or lengthen, and the obvious place to go on a grey Christmas-week afternoon when the Parkway is shut.",
+          "note_source": "Dogs permitted on a leash — US Forest Service, Pisgah National Forest. Same caveat as Catawba Falls: this is the standing national-forest rule, not a trail-specific statement.",
+          "other_links": [
+            {
+              "label": "AllTrails — Bent Creek Trail, Bent Creek Gap Rd, and Explorer Loop via NC Arboretum",
+              "url": "https://www.alltrails.com/trail/us/north-carolina/bent-creek-trail-bent-creek-gap-rd-and-explorer-loop-via-nc-arboretum",
+              "tier": "indexed",
+              "note": "The 6.8 mi / 462 ft / 2.5-3 hr version starting from the Arboretum, 4.6 from 198 reviews. Useful because it shows how freely this network recombines."
+            },
+            {
+              "label": "Trailforks — Explorer Loop",
+              "url": "https://www.trailforks.com/trails/explorer-loop-39315/",
+              "tier": "community",
+              "note": "Listed as a multi-use trail in the Bent Creek Experimental Forest network — the source for the bike use here."
+            }
+          ],
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed.",
+          "cruise": false,
+          "cruise_reason": "Bike-legal and much of Bent Creek is gravel road, which is the right surface — but the Explorer Loop specifically is singletrack shared with mountain bikers and Trailforks catalogues it inside an MTB network. The cruise route here is Bent Creek Gap Road itself, not this loop. Recorded as not-a-cruise so the biking view does not inherit a trail that riders treat as MTB.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    },
+    "bryson-city-nc": {
+      "trails": [
+        {
+          "name": "Tsali Mouse Branch Loop and Mouse Overlook",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/tsali-trails-mouse-branch-loop-trail-with-overlook-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "8.6 mi loop",
+          "elevation_gain": "875 ft",
+          "difficulty": "Moderate",
+          "reviews": "4.5 (487)",
+          "uses": ["hike", "bike", "horse"],
+          "dogs": true,
+          "season": "The Forest Service states the Tsali Recreation Area itself is open year round (the campground inside it runs 15 Apr - 31 Oct only, which does not affect day use). Low, lakeside and outside the national park, so it is not exposed to the crest-line weather that shuts the Smokies roads. Usable across the whole 30 Dec - 6 Jan window.",
+          "note": "This is the answer to the problem that defines this stop. Great Smoky permits dogs on exactly two trails in the entire park, and both are already on this card — so for seven nights the dog has two walks. Tsali is twenty minutes away in the Nantahala National Forest, where the dog is legal, and it is a genuinely good place in its own right: rolling smooth singletrack on the ridges above Fontana Lake with an overlook worth the walk.",
+          "note_source": "Dogs permitted on a leash. Managing authority is the US Forest Service, Nantahala National Forest (Cheoah Ranger District). The Forest Service's Tsali page publishes no trail-specific pet rule, so this rests on the standing national-forest rule, not a sentence naming these loops. AllTrails' own claim that 'Dogs are welcome, but must be on a leash' on the sister listing was NOT used as the source.",
+          "other_links": [
+            {
+              "label": "US Forest Service — Tsali Recreation Area",
+              "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/tsali-recreation-area",
+              "tier": "official",
+              "note": "Source of the year-round opening and of the four-loop trail system."
+            },
+            {
+              "label": "Explore Bryson City — Tsali Mouse Branch Loop",
+              "url": "https://www.explorebrysoncity.com/trail/tsali-recreation-area-mouse-branch-loop/69f8db9e167add0e145584b7",
+              "tier": "community",
+              "note": "Gives the loop as 6.5-9 miles with 700-900 ft of gain depending on which connectors are used — which is why AllTrails' 8.6 mi should be read as one line through the network, not a fixed distance."
+            },
+            {
+              "label": "MTB Project — Tsali Mouse Branch and Thompson Loops",
+              "url": "https://www.mtbproject.com/trail/3641558/tsali-mouse-branch-and-thompson-loops",
+              "tier": "community",
+              "note": "The alternating-use schedule, which is the thing to know before driving out: bikes get Left and Right Loop on Sun/Mon/Wed/Fri and Mouse Branch and Thompson on Tue/Thu/Sat; horses take the other days. Walkers are not restricted, but sharing with horses is a different day out from sharing with bikes."
+            }
+          ],
+          "stats_note": "Distance, gain, star and count from the AllTrails result title and snippet as displayed. No completion time was published. The horse use is from the Forest Service's own description of the area; the bike use from AllTrails, MTB Project and Trailforks together.",
+          "needs": ["time"],
+          "cruise": false,
+          "cruise_reason": "Bike-legal on the published rotation days, but this is purpose-built mountain-bike singletrack — Bike the Sites and MTB Project both catalogue it as an MTB trail, and 875 ft of rolling climb over 8.6 mi is not cruising with a dog in a carrier. Stays in the trails box with a bike badge and out of the biking view.",
+          "resel": "ADDED in re-selection. This is the sharpest dog case on the whole east extension: seven nights at a stop whose managing authority permits pets on TWO trails park-wide, both already listed. Everything else on the card — Deep Creek, Juney Whank, Noland Divide — is closed to the dog, and the Gatlinburg Trail is on the far side of the crest."
+        },
+        {
+          "name": "Mingo Falls Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/north-carolina/mingo-falls-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.3 mi out-and-back",
+          "elevation_gain": "114 ft",
+          "time": "0.5-1 hr",
+          "difficulty": "Easy walk, moderate for the stairs",
+          "reviews": "4.7 (2,630)",
+          "uses": ["hike"],
+          "dogs": null,
+          "season": "On the Qualla Boundary at Cherokee, roughly 1,900 ft — low enough that the 30 Dec - 6 Jan window is a matter of ice on the wooden steps rather than access. No published seasonal closure found.",
+          "note": "A 120 ft waterfall, one of the tallest in the southern Appalachians, at the top of about 160 wooden steps and nothing else — fifteen minutes of climbing for a payout most day hikes do not match. It is NOT in the national park: it is on the Cherokee Indian Reservation, which is why it does not carry the park's pet ban, and no permit is needed to visit.",
+          "note_source": "DOG RULE NOT ESTABLISHED. The managing authority is the Eastern Band of Cherokee Indians, not the National Park Service, so Great Smoky's two-trail pet ban does not apply here — but no EBCI published rule for Mingo Falls was found, and the point of this entry is that it might be the dog's third walk. Recorded as unknown rather than assumed. Worth a call before relying on it.",
+          "other_links": [
+            {
+              "label": "NC Tripping — Mingo Falls, Cherokee",
+              "url": "https://www.nctripping.com/mingo-falls-cherokee/",
+              "tier": "community",
+              "note": "0.4 mi and about 160 stairs; 'Mingo' means 'Big Bear' in Cherokee."
+            }
+          ],
+          "stats_note": "0.3 mi / 114 ft / 0.5-1 hr / 4.7 / 2,630 from the AllTrails result title and snippet as displayed. Secondary guides give 0.4 mi and 98-114 ft — the difference is where the count starts at the car park. AllTrails also indexes this under an /en-gb/ locale path with a slightly different count (2,628); the canonical /trail/ path is the one recorded.",
+          "needs": ["dog rule from the Eastern Band of Cherokee Indians — this is the one that would give the dog a third legal walk at this stop"],
+          "resel": "ADDED in re-selection."
+        },
+        {
+          "name": "Kuwohi (Clingmans Dome) Observation Tower Trail",
+          "alltrails": {
+            "match": "none",
+            "tier": "unlisted"
+          },
+          "distance": "1.0 mi out-and-back, paved",
+          "elevation_gain": "337 ft",
+          "difficulty": "Short but steep — the paving misleads",
+          "uses": ["hike"],
+          "dogs": false,
+          "season": "CLOSED FOR THIS STOP. Kuwohi Road (formerly Clingmans Dome Road) is closed to vehicles 1 December through 31 March every year, and this stop is 30 Dec - 6 Jan. The summit and the tower stay open — but with the road shut the walk in is 14 to 16 miles round trip in winter conditions, which is a different proposition entirely and not one for this trip. NPS's seasonal road schedule is at https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+          "note": "Listed precisely BECAUSE it is shut. It is the highest point in the Smokies at 6,643 ft, the highest in Tennessee, and the single most obvious thing a visitor plans a Bryson City week around — and for these dates it cannot be driven to. Better on the card with the reason than absent and rediscovered at a locked gate. The dog could not go anyway: this is inside the national park, which permits pets on two trails and this is not one of them.",
+          "note_source": "Dogs PROHIBITED — Great Smoky Mountains National Park permits pets on exactly two trails park-wide, the Oconaluftee River Trail and the Gatlinburg Trail. Already sourced at stop level.",
+          "other_links": [
+            {
+              "label": "NPS — Seasonal Road Schedule, Great Smoky Mountains",
+              "url": "https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm",
+              "tier": "official",
+              "note": "Also the source for the OTHER half of this stop's road question: Newfound Gap Road (US 441) is 'open year-round, weather permitting' — a fixed closure it is not, but high-elevation ice shuts it repeatedly through the winter, and that is the road between camp and the Gatlinburg Trail, which is one of the dog's only two legal walks here."
+            },
+            {
+              "label": "Explore Bryson City — Kuwohi Road",
+              "url": "https://www.explorebrysoncity.com/things-to-do/scenic-drives/clingmans-dome-road",
+              "tier": "community",
+              "note": "'The road to Kuwohi is closed each winter, December 1 thru March 31, although you can still use the road as a hiking trail.'"
+            }
+          ],
+          "stats_note": "1.0 mi paved with 337 ft of gain is Tripadvisor's figure, corroborated by every guide read as 'a half-mile each way, steep'. No AllTrails listing surfaced under either Clingmans Dome or Kuwohi, so no trail link is carried and none was constructed.",
+          "needs": ["reviews — no AllTrails listing found under either name"],
+          "resel": "ADDED in re-selection as a seasonal warning, not as a walk."
+        }
+      ]
+    },
+    "hot-springs-ar-v3": {
+      "trails": [
+        {
+          "name": "Falls Branch Trail (Lake Catherine State Park)",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/falls-branch-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2 mi loop (Hiking Project 1.7 mi, Arklahoma Hiker 1.6 mi semi-loop)",
+          "elevation_gain": "203 ft",
+          "difficulty": "Moderate",
+          "reviews": "4.7 (4,479)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "The waterfall on Falls Creek is SEASONAL — it runs on rainfall, not all year. The stop is 11-18 Jan 2029, and January is one of Arkansas's wetter months, so these dates fall in the good half of the year for it rather than the bad. No closure; the park and trail are open.",
+          "note": "The best-reviewed walk within half an hour of Hot Springs by a wide margin — 4,479 reviews against 801 for the park's own Gulpha Gorge — and the card had nothing outside the national park at all. A National Recreation Trail through pine and hardwood, crossing Little Canyon Creek several times to a 10 ft waterfall, then back along the Ouachita River.",
+          "note_source": "Dogs permitted on a leash — Arkansas State Parks permit pets throughout their parks, the same authority already sourced on the Petit Jean and Mount Magazine cards. Lake Catherine is an Arkansas state park, not part of the national park.",
+          "other_links": [
+            {
+              "label": "Arkansas.com — Falls Branch Trail (National Recreation Trail)",
+              "url": "https://www.arkansas.com/state-parks/explore/trails/falls-branch-trail-national-recreation-trail",
+              "tier": "official"
+            },
+            {
+              "label": "Arklahoma Hiker — Lake Catherine: Falls Branch Trail + Falls Creek Falls",
+              "url": "https://arkokhiker.org/central-arkansas/lake-catherine-falls-branch-trail/",
+              "tier": "community",
+              "note": "Calls it the most scenic trail in the park and gives the falls as 10 ft."
+            }
+          ],
+          "stats_note": "Star and count from the AllTrails result title as displayed; AllTrails published no distance, time or grade in any indexed result. The 203 ft gain is LakeQuality's, the Moderate grade is Mountain Travel Guide's, and the length is given as 1.6, 1.7 and 2 miles by three different sources — all recorded, none averaged.",
+          "needs": ["time"],
+          "resel": "ADDED in re-selection. Seven nights and only three entries on the card, all three inside the national park and two of them on the same two hills above Bathhouse Row."
+        },
+        {
+          "name": "Gulpha Gorge Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/gulpha-gorge-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "1.5 mi out-and-back",
+          "elevation_gain": "380 ft",
+          "time": "0.5-1 hr",
+          "difficulty": "Moderate",
+          "reviews": "4.5 (801)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "Open year round; no published seasonal restriction. Mid-January in the Ouachitas is walkable — the risk is a wet creek crossing, not snow.",
+          "note": "The park's other side. Everything already on this card climbs the two hills directly behind Bathhouse Row; Gulpha Gorge runs up the creek from the park's own campground on the east flank and links into the Sunset Trail, so it can be walked as a short out-and-back or used as a way onto the long trail from a different start.",
+          "note_source": "Dogs permitted — Hot Springs National Park states dogs are welcome on all 26 miles of its trails. Already sourced at stop level.",
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed. The /en-gb/ locale copy of the same page reports 750 reviews against the US page's 801 — the US figure is recorded.",
+          "resel": "ADDED in re-selection."
+        },
+        {
+          "name": "Grand Promenade",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/grand-promenade",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "0.7 mi out-and-back",
+          "time": "16 min",
+          "difficulty": "Easy",
+          "reviews": "4.4 (1,148)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "AllTrails records it as open year-round. This is the walk for a January evening or a wet afternoon — brick underfoot, level, lit, and in town.",
+          "note": "Not a hike, and included deliberately: a landscaped brick promenade on the terrace above Bathhouse Row, threading the historic springs and their markers. It is the one walk on this card that can be done in an hour after dark with the dog, in a week where the other five all need daylight and a drive. Take care near the springs themselves — the water is hot enough to scald.",
+          "note_source": "Dogs permitted — Hot Springs National Park states dogs are welcome on all 26 miles of its trails; only the federal buildings on Bathhouse Row are closed to them, which matters here because the promenade runs directly behind them.",
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed. The 16 min average is AllTrails' own, and is honest — this is a stroll, not a hike.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    },
+    "petit-jean-ar": {
+      "area_browse_alltrails": "https://www.alltrails.com/parks/us/arkansas/petit-jean-state-park",
+      "trails": [
+        {
+          "name": "Petit Jean Canyon Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/canyon-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "2.8 mi out-and-back",
+          "elevation_gain": "482 ft",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate — steep, rocky sections",
+          "reviews": "4.7 (403)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "No published seasonal closure. Late January in the Arkansas River valley is the wet season, which is when Cedar Creek and its pools look their best — and also when the rock underfoot is at its most slippery.",
+          "note": "Checked specifically against Cedar Falls Trail, already on this card, because at Petit Jean the two are easy to confuse — and they are NOT the same walk. The Canyon Trail branches LEFT after the bridge on the Cedar Falls Trail, where the falls route goes right, and follows the yellow blazes down Cedar Creek Canyon past the Blue Hole, through small falls, emerald pools and boxcar-sized fallen boulders. The park's own description calls it one of the most beautiful and one of the least walked.",
+          "note_source": "Dogs permitted on a leash — Arkansas State Parks permit pets throughout the park; only public buildings and swimming areas are closed to them. Already sourced at stop level.",
+          "other_links": [
+            {
+              "label": "Explore the Ozarks — Petit Jean State Park Trails",
+              "url": "https://www.exploretheozarksonline.com/activities/parksnature/stateparks/arkansas/petitjean/trails.html",
+              "tier": "community",
+              "note": "The source that settled the duplicate question: 'Beginning after you cross the bridge on Cedar Falls Trail, hikers need to head left instead of right and follow the yellow blazes to Blue Hole.'"
+            },
+            {
+              "label": "Arklahoma Hiker — Petit Jean State Park trail map (PDF)",
+              "url": "https://arkokhiker.org/wp-content/uploads/2015/05/Petit-jean-state-park-Trails-Map-2015.pdf",
+              "tier": "community"
+            }
+          ],
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed.",
+          "resel": "ADDED in re-selection. Five nights, three entries, and all three start within a few hundred yards of Mather Lodge."
+        },
+        {
+          "name": "Mount Nebo Rim Trail",
+          "alltrails": {
+            "url": "https://www.alltrails.com/trail/us/arkansas/mount-nebo-rim-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "distance": "3.3 mi loop",
+          "elevation_gain": "311 ft",
+          "time": "1-1.5 hr",
+          "difficulty": "Moderate — stone steps in places",
+          "reviews": "4.7 (2,069)",
+          "uses": ["hike"],
+          "dogs": true,
+          "season": "No published seasonal closure on the trail. The access is the question: AR-155 climbs Mount Nebo in tight switchbacks, and in a late-January cold snap that road is the thing that decides whether this happens. Truck only regardless — it is not a coach road under any conditions.",
+          "note": "A different mountain, half an hour west. The Rim Trail runs the entire edge of a flat-topped mesa at about 1,350 ft, so the views are continuous rather than at one overlook, and the loop shape means it does not need retracing. Five times the reviews of anything on the Petit Jean card and the same 4.7 average.",
+          "note_source": "Dogs permitted on a leash — Arkansas State Parks rule, the same authority already sourced for Petit Jean itself.",
+          "other_links": [
+            {
+              "label": "Arklahoma Hiker — Mount Nebo: Rim Trail",
+              "url": "https://arkokhiker.org/west-ark/mount-nebo-rim-trail/",
+              "tier": "community",
+              "note": "Gives it as 3 mi starting from behind the visitor center."
+            },
+            {
+              "label": "Trailforks — Rim Trail, Mount Nebo State Park Monument Trails",
+              "url": "https://www.trailforks.com/trails/rim-trail-634738/",
+              "tier": "community",
+              "note": "Mount Nebo also carries a Monument Trails mountain-bike network, which is a separate system from this hiking rim loop."
+            }
+          ],
+          "stats_note": "All figures from the AllTrails result title and snippet as displayed. Published lengths elsewhere run 3 to 3.6 mi. One aggregator (Secret Falls) grades it 'Expert' and places it in Benton County, which is the wrong end of the state — that listing was disregarded.",
+          "resel": "ADDED in re-selection."
+        }
+      ]
+    }
+  }
+}

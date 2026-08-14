@@ -1,0 +1,637 @@
+{
+  "_what": "RE-SELECTION of the trails box on 13 stops. Earlier passes took the trail NAMES already on each card and found links for them; nobody asked whether they were the right trails. This pass asks what each box SHOULD contain for the nights booked, then supplies what is missing. Target is roughly one good walk per night, capped at six.",
+  "_how": "LINKS_STRATEGY.md §1 and §3. Every alltrails.com URL below was COPIED from a search result read directly in the browser pane at duckduckgo.com / html.duckduckgo.com — none is constructed from a name. Distance, time and difficulty come from the managing authority wherever the authority publishes them (NPS, Parks Canada, Alaska State Parks, USFS, Yukon Parks, Washington State Parks, BC Parks); AllTrails supplies star ratings and review counts and is tiered `indexed`, never `official`. Review counts were read from the result title string as displayed, not through a summarising fetch. Where a star rating was not visible in a result, only the raw count is recorded — §3 handles a count with no star.",
+  "_dogs": "`dogs` is set ONLY from the managing authority. AllTrails' dog-friendly flag is ignored throughout; it has twice on this trip called a trail dog-friendly that its park bans pets from.",
+  "_never_readded": "Nothing already on a card is repeated here, and no near-duplicate of one under another name. build_links.py merges at list AND field level, so this file adds and never replaces.",
+
+  "stops": {
+
+    "moab": {
+      "authority": "NPS Arches National Park; NPS Canyonlands National Park; BLM Moab Field Office",
+      "dates_checked": "1-8 Apr 2028, 7 nights. Depart 8 Apr is a FROZEN anchor — out before Easter Jeep Safari closes seven trails.",
+      "trails_note": "The card carried THREE trails for a seven-night stay covering both Arches and Canyonlands: Mesa Arch, Double Arch, Delicate Arch. That is two half-days and one morning. The three biggest omissions in Arches are added here. Grand View Point (Canyonlands, Island in the Sky) and Corona Arch (BLM) were the next two candidates and are named in `also_considered` rather than pushed past the six-trail cap.",
+      "also_considered": "Grand View Point Trail, Canyonlands Island in the Sky — 2 mi round trip, the best rim walk in the district; left off only because Mesa Arch already carries Canyonlands on this card and the six-trail cap binds. Corona Arch — BLM, 3 mi round trip, 'moderately strenuous' with safety cables and a short ladder (blm.gov/visit/corona-arch-trail), AllTrails https://www.alltrails.com/trail/us/utah/corona-and-bowtie-arch-trail. It is the obvious candidate for the DOG, because Arches and Canyonlands both ban pets from every trail — but BLM publishes no pet rule for it, so `dogs` could only be recorded null, and cables plus a ladder is a poor dog outing regardless. Worth a call to the Moab Field Office, 435-259-2100, before assuming the dog walks anywhere on this stop.",
+      "dogs_stop_level": "NPS Arches, Pets page, verbatim: 'Pets are not allowed: on any hiking trails, or anywhere off-trail, even while in a carrier; at any overlooks; in the visitor center or any building.' Leashed pets are confined to established roads, parking areas, campgrounds and picnic areas. Canyonlands applies the same rule. Every trail on this card is therefore dogs:false, and seven nights in Moab currently contain no researched walk the dog may join.",
+      "trails": [
+        {
+          "name": "Devils Garden Trail",
+          "distance": "7.9 mi (12.7 km) whole loop; 4.0 mi (6.4 km) round trip to Double O Arch; 1.8 mi (2.9 km) round trip to Landscape Arch",
+          "time": "3-5 hr whole trail; 2-3 hr to Double O Arch; 30-60 min to Landscape Arch",
+          "difficulty": "Hard — NPS files it under 'Longer, More Strenuous Hikes'. The section AS FAR AS Landscape Arch is a hard-packed easy trail; NPS: 'After Landscape Arch, the Devils Garden Trail becomes difficult, with rock scrambling, narrow ledges, and exposure to heights.'",
+          "elevation_gain": "40 ft (12 m) to Landscape Arch (NPS). NPS publishes NO elevation figure for the whole loop and the third-party guides disagree (1,150 ft vs 1,350 ft), so no figure is recorded for the full circuit.",
+          "reviews": "4.8 (16,069)",
+          "uses": ["hike"],
+          "dogs": false,
+          "alltrails": {
+            "name": "Devil's Garden Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/devils-garden-loop-trail-with-7-arches",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hiking in Arches",
+              "tier": "official",
+              "url": "https://www.nps.gov/arch/planyourvisit/hiking.htm",
+              "note": "Source for both sets of figures. 'Roundtrip just to Double O Arch: 4.0 miles (6.4 km), 2-3 hours. Whole Trail: 7.9 miles (12.7 km), 3-5 hours.' Landscape Arch Trail is listed separately at 1.8 mi, 30-60 min, 40 ft."
+            },
+            {
+              "label": "NPS — Devils Garden",
+              "tier": "official",
+              "url": "https://www.nps.gov/arch/planyourvisit/devils-garden.htm"
+            }
+          ],
+          "season": "Open year-round. NPS: 'Avoid when rock is wet or snowy' — early April in Moab is dry and cool, which is the best time of year for this trail; the reason it is normally avoided is summer heat, and 1-8 Apr misses that entirely.",
+          "note": "The single largest omission on the card. This is the trail that holds Landscape Arch — a 300 ft span, the longest in North America — plus Partition, Navajo, Double O and Dark Angel. The 1.8 mi round trip to Landscape Arch and back is a comfortable morning and is where most people should turn; the full 7.9 mi loop is a real day with exposure. Both are given above so the choice can be made at the trailhead. Bring 3 L of water per person for the full loop (NPS).",
+          "stats_note": "AllTrails indexes the whole loop under the slug 'devils-garden-loop-trail-with-7-arches' but titles the page 'Devil's Garden Trail'. The 16,069 count is the whole-loop listing; the en-gb mirror of the same page showed 15,999 on the same day, which is the usual drift between AllTrails locales and is why the count is only good enough to ORDER this trail, not to quote."
+        },
+        {
+          "name": "Park Avenue Trail",
+          "distance": "1.8 mi (3.2 km) round trip; 1 mi one way between Park Avenue Viewpoint and Courthouse Towers Viewpoint",
+          "time": "1 hour",
+          "difficulty": "Easy to moderate — NPS lists it under 'Short and Moderate Hikes', tagged both easy and moderate. The first stretch from Park Avenue Viewpoint is a paved wheelchair-accessible sidewalk; the trail proper drops a long flight of rock-cut stairs into the canyon floor.",
+          "elevation_gain": "322 ft (98 m) — 'or much less if you skip the stairs' (NPS)",
+          "reviews": "(4,583)",
+          "reviews_note": "Review count read from the AllTrails result title. No star rating was visible in any result read for this trail, so none is recorded.",
+          "uses": ["hike"],
+          "dogs": false,
+          "alltrails": {
+            "name": "Park Avenue Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/park-avenue",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Park Avenue and Courthouse Towers",
+              "tier": "official",
+              "url": "https://www.nps.gov/arch/planyourvisit/courthouse-towers.htm",
+              "note": "NPS's own place page for Park Avenue Viewpoint states plainly 'Dogs are not allowed on this trail.'"
+            }
+          ],
+          "season": "Open year-round; the canyon floor is shadeless and this is a summer-avoid trail, so early April is close to ideal.",
+          "note": "The first thing past the entrance station and the best hour-long walk in the park. A canyon floor between sheer 300 ft fins and monoliths — Courthouse Towers, the Organ, Sheep Rock, the Three Gossips. Walk it one way downhill with a car left at Courthouse Towers, or turn around at the base of the stairs for a much flatter out-and-back. NPS asks round-trip hikers to return along the trail rather than walk the road."
+        },
+        {
+          "name": "The Windows Loop and Turret Arch",
+          "distance": "1 mi (1.6 km) round trip",
+          "time": "30-60 min",
+          "difficulty": "Easy — NPS tags the listing easy and moderate; 'a gentle climb up a hard-packed trail and stone steps'. First 300 ft of the main trail may be wheelchair-accessible with assistance.",
+          "elevation_gain": "99 ft (30 m)",
+          "reviews": "(6,111)",
+          "reviews_note": "Count read from the AllTrails result title. The en-gb mirror of the same page showed 5,848 the same day; treat as approximate. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": false,
+          "alltrails": {
+            "name": "Windows Loop and Turret Arch Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/windows-loop-and-turret-arch-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — The Windows Section",
+              "tier": "official",
+              "url": "https://www.nps.gov/arch/planyourvisit/the-windows.htm",
+              "note": "NPS: 'The Windows Section is considered by some to be the beating heart of Arches National Park.' North Window, South Window, Turret Arch and Double Arch inside just over two square miles."
+            },
+            {
+              "label": "NPS — Hiking in Arches (distance, time, elevation)",
+              "tier": "official",
+              "url": "https://www.nps.gov/arch/planyourvisit/hiking.htm"
+            }
+          ],
+          "season": "Open year-round. Best at sunrise or sunset; the Windows face east and south, so the light through North and South Window is a first-hour subject.",
+          "note": "Double Arch is already on the card and shares this parking loop, but the Windows are a different trail and the reason most people come to this end of the park. Returning on the primitive route around the back side of the two Windows adds about half a mile and loses the crowd entirely."
+        }
+      ]
+    },
+
+    "bryce": {
+      "authority": "NPS Bryce Canyon National Park",
+      "dates_checked": "24-28 Mar 2028, 4 nights. Rim elevation 8,000-9,100 ft, so late March is still a snow-and-ice question, not a spring one.",
+      "trails_note": "The card had Fairyland Loop (8 mi), Navajo Loop and Mossy Cave — and was missing the single hike the park itself recommends first. NPS on the Queen's/Navajo Combination Loop: 'Our most popular hike in the park and the one we most recommend to first-time visitors.' Queen's Garden is the half of it that was absent. Also added: the one walk the DOG is allowed, and the one hike outside the Bryce Amphitheater. Two things worth knowing for 24-28 Mar that apply to trails ALREADY on the card and so are recorded here rather than re-added: the Wall Street side of the Navajo Loop is CLOSED during the winter months (NPS) and typically reopens in spring, so the loop may only be walkable as a Two Bridges out-and-back; and the Fairyland Point spur road closes in winter, which turns Fairyland Loop into a longer walk from the main road if it has not yet been plowed. Check Current Conditions before either day.",
+      "dogs_stop_level": "NPS publishes a per-trail Pets Yes/No on every Bryce trail page. It is No on every trail in the park EXCEPT the paved Sunset-to-Sunrise section of the Rim Trail: 'Pets are allowed on this trail but must remain on paved surfaces.' That single mile is the whole of the dog's Bryce.",
+      "trails": [
+        {
+          "name": "Queen's Garden Trail",
+          "distance": "1.8 mi (2.9 km) round trip from Sunrise Point; 2.9 mi (4.7 km) as the Queen's/Navajo Combination Loop",
+          "time": "1-2 hours; 2-3 hours for the combination loop",
+          "difficulty": "Moderate — NPS: 'less than 1000 feet elevation gain, moderate length', and 'the least difficult of the trails descending from the rim into the Bryce Canyon Amphitheater'. Typical grade 11%, maximum 25%, firm native sediment.",
+          "elevation_gain": "450 ft (137 m)",
+          "reviews": "(2,669)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. The en-gb mirror showed 2,546 the same day. No star rating was visible for this listing.",
+          "uses": ["hike"],
+          "dogs": false,
+          "alltrails": {
+            "name": "Queen Victoria via Queen's Garden Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/queen-victoria-via-queens-garden-loop",
+            "match": "contains",
+            "tier": "indexed",
+            "note": "AllTrails indexes the trail under its destination hoodoo and reads it as 2.1 mi / 456 ft out-and-back. NPS's 1.8 mi / 450 ft is the authority figure and is what is recorded above."
+          },
+          "other_links": [
+            {
+              "label": "NPS — Queen's Garden Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/queen-s-garden-trail.htm",
+              "note": "Full stat block: trailhead Sunrise Point, 1.8 mi roundtrip, 1-2 hours, 450 ft, Moderate, Pets not allowed."
+            },
+            {
+              "label": "NPS — Queen's/Navajo Combination Loop",
+              "tier": "official",
+              "url": "https://www.nps.gov/brca/planyourvisit/qgnavajocombo.htm"
+            }
+          ],
+          "season": "Open year-round. Late March is shoulder season: the descent is on packed, often icy tread in the shaded upper switchbacks and traction devices are the normal kit at this date. The park does not close it.",
+          "note": "The omission that mattered. Do it as the combination loop the park recommends — descend Queen's Garden from Sunrise Point, walk the amphitheater floor, climb the Navajo Loop switchbacks to Sunset Point, and close the circle on the paved Rim Trail. Navajo Loop was already on the card; this is the other half, and on its own it is the gentlest way below the rim at Bryce."
+        },
+        {
+          "name": "Rim Trail — Sunset Point to Sunrise Point (paved section)",
+          "distance": "1.0 mi (1.6 km) round trip, half a mile one way",
+          "time": "1 hour (NPS lists the activity duration as 20-60 minutes)",
+          "difficulty": "Easy — NPS: 'the easiest walk in the park'. Paved concrete, typical grade 3.3%, typical width 97 in; NPS rates this section accessible.",
+          "elevation_gain": "40 ft (12 m)",
+          "reviews": null,
+          "needs": "No review count and no star rating could be read for the AllTrails listing; the result title carried neither. Recorded absent rather than guessed.",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "NPS Bryce Canyon, Sunset Point to Sunrise Point Hike page, verbatim: 'Pets are allowed on paved surfaces.' and 'Pets are allowed on this trail but must remain on paved surfaces.' This is the ONLY trail in Bryce Canyon National Park where NPS answers Pets: Yes.",
+          "alltrails": {
+            "name": "Sunset Point and Sunrise Point via Rim Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/sunset-point-to-sunrise-point",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Sunset Point to Sunrise Point Hike",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm"
+            },
+            {
+              "label": "NPS — Walk the Rim Trail (full 5.5 mi Bryce Point to Fairyland Point)",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/walk-the-rim-trail.htm"
+            }
+          ],
+          "season": "Year-round; it is plowed and it is the section that stays walkable when everything below the rim is ice. Accessible restrooms at Sunset Point are open year-round.",
+          "note": "On a four-night stay where every other trail in the park is closed to pets, this is the dog's entire Bryce Canyon — and it happens to be the best mile of rim in the park, straight along the edge of the amphitheater with Thor's Hammer and the Silent City below. Oversized vehicles are not permitted in the Sunrise or Sunset parking areas while the shuttle runs; take the truck, not the coach."
+        },
+        {
+          "name": "Bristlecone Loop Trail",
+          "distance": "1.0 mi (1.6 km) loop",
+          "time": "1 hour (NPS lists the activity duration as 30-60 minutes)",
+          "difficulty": "Easy — NPS: 'elevation gain of 200 feet or less, shorter length'. AllTrails: 92% of reviewers call it easy.",
+          "elevation_gain": "200 ft (61 m)",
+          "reviews": "4.6 (2,200)",
+          "uses": ["hike"],
+          "dogs": false,
+          "alltrails": {
+            "name": "Bristlecone Loop Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/bristlecone-loop-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Bristlecone Loop Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/bristlecone-loop-trail.htm"
+            }
+          ],
+          "season": "NPS lists SEASON: Spring, Summer, Fall — winter is deliberately absent — and warns 'This trail may be inaccessible during mid-winter due to snow depths ranging from 2-15 ft (.7-5 m).' The stop arrives 24 March at the trailhead's 9,100 ft, which is the very start of the listed season and above the depth where 2-15 ft of settled snow is still lying in a normal year. Treat it as a maybe, not a plan: check Current Conditions the morning of, and have the amphitheater as the fallback.",
+          "note": "Added deliberately as the one hike on this card outside the Bryce Amphitheater, and as the thing the itinerary is at risk of missing rather than something to count on. Rainbow Point at the far south end of the park road, 1,800-year-old bristlecone pines, and a view that reaches into the Four Corners. It is also the reason to drive the full 18 miles of park road, which is worth a morning by itself."
+        }
+      ]
+    },
+
+    "zion": {
+      "authority": "NPS Zion National Park",
+      "dates_checked": "15-21 Mar 2028, 6 nights, based at Virgin, UT.",
+      "trails_note": "Four trails for six nights, and the existing four were well chosen — Angels Landing, Watchman, Pa'rus and the Riverside Walk are the right spine. Two obvious gaps: the Emerald Pools, which is the classic mid-canyon half-day and the connector everyone actually walks, and Canyon Overlook, which is the whole east side of the park and the single best view-per-mile hike Zion has. Both are added; the card is then at six for six nights and needs nothing else. Two dates facts that bear on trails already on the card: Angels Landing needs a PERMIT by lottery for the chained section past Scout Lookout (recreation.gov, seasonal and day-before lotteries) — six nights gives several day-before entries, which is the realistic route in; and the bottom-up Narrows beyond the end of the Riverside Walk is routinely closed in mid-March when Virgin River flow exceeds 150 cfs on spring runoff, so the Riverside Walk should be planned as the walk in its own right rather than as the approach to the Narrows.",
+      "dogs_stop_level": "Zion permits pets on the Pa'rus Trail and nowhere else. NPS's own trail listings answer PETS ALLOWED: Yes for Pa'rus and No for every other trail in the park, including both trails added below. Pa'rus is already on the card and is the dog's entire Zion.",
+      "trails": [
+        {
+          "name": "Emerald Pools Trails (Lower, Middle and Upper)",
+          "distance": "NPS publishes each segment one-way from the Emerald Pools Trailhead by Zion Lodge: Lower 0.6 mi (1.0 km), Middle 0.9 mi (1.4 km), Upper 0.3 mi (0.4 km) beyond the junction. NPS does not publish a single figure for walking all three; a Lower-Middle-Upper round trip from the Lodge is commonly reported as about 3 mi.",
+          "time": "1-2 hours per NPS for each of the three segments; allow a half day to link all three and return via the Kayenta Trail",
+          "difficulty": "Lower is EASY — 96.2% hard concrete, typical grade 7.1%, and NPS files it under 'Easy Hikes'. Middle and Upper are MODERATE — NPS: 'The initial ascent is quite steep'; Middle has a typical grade of 10.3% and a maximum of 38.1%, Upper a maximum of 37% with staircases stepping up to 30 in.",
+          "elevation_gain": "Lower 131 ft (40 m); Middle 333 ft (101 m); Upper 76 ft (23 m) — each figure is NPS's own measured gain for that segment",
+          "reviews": "(7,162)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible in any result read for this listing.",
+          "uses": ["hike"],
+          "dogs": false,
+          "dogs_source": "NPS trail pages for Lower, Middle and Upper Emerald Pools all state PETS ALLOWED: No.",
+          "alltrails": {
+            "name": "Emerald Pools Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/emerald-pools-trail",
+            "match": "contains",
+            "tier": "indexed",
+            "note": "AllTrails indexes the three NPS segments as one route starting from Zion Lodge."
+          },
+          "other_links": [
+            {
+              "label": "NPS — Lower Emerald Pool Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-lower-emerald-pool-trail.htm"
+            },
+            {
+              "label": "NPS — Middle Emerald Pools Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-middle-emerald-pools-trail.htm"
+            },
+            {
+              "label": "NPS — Upper Emerald Pools Trail",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-upper-emerald-pools.htm"
+            },
+            {
+              "label": "NPS — Zion Canyon Trail Descriptions",
+              "tier": "official",
+              "url": "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm"
+            }
+          ],
+          "season": "NPS lists SEASON: Year Round for all three segments. Mid-March is the best time for it: the waterfalls over the Lower Pool alcove are ephemeral and run on snowmelt, so a March visit is one of the few times of year they are actually falling. Do not enter the water — the pools are the wildlife water source and swimming is prohibited.",
+          "note": "The missing middle of Zion Canyon. Walk out from Zion Lodge to the Lower Pool and its dripping alcove, climb to Middle for the canyon view, add the short Upper spur to the base of the wall, and come back down the Kayenta Trail to the Grotto for a loop rather than a there-and-back. It is the half-day that sits naturally between an Angels Landing morning and a Riverside Walk afternoon."
+        },
+        {
+          "name": "Canyon Overlook Trail",
+          "distance": "1 mi (1.6 km) round trip — 0.5 mi (0.8 km) one way (NPS)",
+          "time": "1-2 hours (NPS duration); most people are back in about an hour",
+          "difficulty": "Moderate — NPS: 'a moderate, 1 mi (1.6 km) trail on the East Side of Zion', beginning with sandstone steps and a metal handrail over rocky terrain above a slot canyon. Long drop-offs, mostly fenced. Typical grade 7.6%, maximum 50.4%; overhanging rock with as little as 4 ft of vertical clearance in places.",
+          "elevation_gain": "154 ft (47 m)",
+          "reviews": "(16,356)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": false,
+          "dogs_source": "NPS Canyon Overlook page: PETS ALLOWED: No.",
+          "alltrails": {
+            "name": "Zion Canyon Overlook Trail",
+            "url": "https://www.alltrails.com/trail/us/utah/canyon-overlook-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Canyon Overlook",
+              "tier": "official",
+              "url": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
+            }
+          ],
+          "season": "NPS lists SEASON: Year Round. In March the slickrock can hold ice in the shaded slot section early in the day; it is an afternoon trail at this date. Best light is late afternoon, looking down the canyon at the Towers of the Virgin.",
+          "note": "By far the best view for the effort in the park, and the only trail on this card that is not in Zion Canyon proper. Take the TRUCK, not the coach: the trailhead sits immediately east of the Zion-Mount Carmel Tunnel, and oversized vehicles need a paid escort and one-way traffic control through it — the coach has no business on that road. NPS warns parking is extremely limited and that you must turn right to enter or exit the lot; be prepared to make more than one attempt, which six nights comfortably allows."
+        }
+      ]
+    },
+
+    "glacier": {
+      "authority": "NPS Glacier National Park",
+      "dates_checked": "22-27 May 2027, 5 nights, based at West Glacier. This date is the whole story of this stop and the previous selection did not reflect it.",
+      "trails_note": "The card had Avalanche Lake, Trail of the Cedars, and a line of prose — 'Rocky Point and lower Lake McDonald walks.' — which §3 rejects as a box item; Rocky Point is a real NPS trail at 1.1 mi one way with 85 ft of gain from 0.2 mi north of Fish Creek Campground, and that is what the line means. The re-selection question for 22-27 May is not 'what are the best trails in Glacier', it is 'what is REACHABLE on 22-27 May', and the honest answer is: only the west side, only as far up Going-to-the-Sun Road as it has been plowed, which in late May is normally Avalanche Creek. Everything the park is famous for above that — Logan Pass, the Highline, Hidden Lake, Grinnell — is behind a closed gate. So this box gets three walkable additions chosen for that constraint, plus Hidden Lake Overlook entered as CLOSED so the card says out loud what the dates are costing.",
+      "gtsr_evidence": "NPS's own record of Logan Pass opening dates (nps.gov/glac/learn/news/logan-pass-opening-and-closing-dates.htm) is unambiguous. Openings since 2010: 24 Jun 2010, 13 Jul 2011, 19 Jun 2012, 21 Jun 2013, 13 Jul 2020, 25 Jun 2021, 13 Jul 2022. The earliest opening in the whole 90-year record is 16 May 1987; the second earliest is 22 May 2005. In the last fifteen years the pass has never opened before 19 June. Arriving 22 May and leaving 27 May 2027, plan on the alpine section being shut and treat any opening as a windfall.",
+      "dogs_stop_level": "NPS Glacier, Pets page, verbatim: 'Pets are not permitted on trails, along lake shores outside of developed locations, in the backcountry, or in any building.' There is exactly ONE named exception in the whole park and it is worth the dog's entire five nights: 'When the bike path between Apgar and West Glacier is free of snow dogs are allowed on leash.' It is entered below as a trail for that reason. NPS also warns that when a road is closed to vehicle traffic it counts as backcountry and dogs are NOT allowed — which matters here, because the closed upper Going-to-the-Sun Road is exactly the sort of walk that looks like a road and is legally a trail.",
+      "trails": [
+        {
+          "name": "Apgar Bike Path (West Glacier to Apgar)",
+          "distance": "1.5 mi (2.4 km) one way",
+          "time": "about 45 min each way at walking pace; NPS publishes no time",
+          "difficulty": "Easy — NPS describes it as 'mostly level'. Asphalt.",
+          "elevation_gain": "NPS publishes none for this path; it is listed as 'mostly level'.",
+          "reviews": null,
+          "needs": "No trail-database listing was found for the Apgar-to-West-Glacier bike path under any name read, so it carries no rating and no review count. This is a recorded absence, not a failure to look — §3, 'no AllTrails listing, official source only'.",
+          "uses": ["hike", "bike"],
+          "uses_source": "NPS lists it as the Apgar Bike Path, an asphalt path; bike use is the name the authority gives it, not an inference.",
+          "dogs": true,
+          "dogs_source": "NPS Glacier Pets page, verbatim: 'When the bike path between Apgar and West Glacier is free of snow dogs are allowed on leash.' This is the only place in Glacier National Park where NPS permits a dog off pavement-adjacent developed areas, and the only walk on this five-night stop the dog may legally take.",
+          "alltrails": null,
+          "other_links": [
+            {
+              "label": "NPS — Hiking Lake McDonald (official mileage table)",
+              "tier": "official",
+              "url": "https://www.nps.gov/glac/planyourvisit/hikinglakemcdonald.htm",
+              "note": "'Apgar Bike Path — 1.5 mi (2.4 km), mostly level. Trailhead: Asphalt path south of Apgar Backcountry Permit Office.'"
+            },
+            {
+              "label": "NPS — Pets in Glacier",
+              "tier": "official",
+              "url": "https://www.nps.gov/glac/planyourvisit/pets.htm"
+            }
+          ],
+          "season": "The dog permission is conditional on the path being FREE OF SNOW — that is NPS's own wording, not a paraphrase. At Apgar's 3,150 ft, 22-27 May is normally well clear, but it is the one thing to confirm on arrival at the visitor centre rather than assume.",
+          "note": "Entered as a trail because for this stop it is the single most consequential walk on the card: Glacier bans pets from every trail in the park and names this one exception. It runs along the Middle Fork side from West Glacier village to Apgar on Lake McDonald — flat, asphalt, and it ends at the lake shore with the classic view straight up the lake to the peaks. If the dog gets one outing a day for five days, this is it."
+        },
+        {
+          "name": "Johns Lake Loop",
+          "distance": "3 mi (4.8 km) loop",
+          "time": "1.5-2 hours; NPS publishes no time",
+          "difficulty": "Easy — 160 ft of gain over three miles. AllTrails: 84% of reviewers say this trail is easy.",
+          "elevation_gain": "160 ft (49 m)",
+          "reviews": "(3,326)",
+          "reviews_note": "Count read from the AllTrails result title as displayed; the en-gb mirror read 3,201 the same day. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": false,
+          "dogs_source": "NPS Glacier bans pets on all trails; no exception is named for this one.",
+          "alltrails": {
+            "name": "Johns Lake Loop",
+            "url": "https://www.alltrails.com/trail/us/montana/johns-lake-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hiking Lake McDonald (official mileage table)",
+              "tier": "official",
+              "url": "https://www.nps.gov/glac/planyourvisit/hikinglakemcdonald.htm",
+              "note": "'Johns Lake Loop — 3 mi (4.8 km), Elevation gain: 160 ft (49 m). Trailhead: Johns Lake Trailhead.'"
+            }
+          ],
+          "season": "Low-elevation west-side forest just above Lake McDonald Lodge, on the section of Going-to-the-Sun Road that is plowed and open all year. It is walkable on these dates with no alpine question attached — which is precisely why it belongs on this card and not on a July one.",
+          "note": "The easy day this box was missing. Cedar and hemlock forest, Johns Lake itself, and — the real reason to go — Sacred Dancing Cascade and McDonald Falls on McDonald Creek, both running hard in late May on snowmelt. It is the best low-effort half-day available when the pass is shut, and it is at its absolute best on exactly these dates."
+        },
+        {
+          "name": "Apgar Lookout Trail",
+          "distance": "3.6 mi (5.8 km) one way — 7.2 mi (11.6 km) round trip",
+          "time": "4-5 hours round trip; NPS publishes no time",
+          "difficulty": "Strenuous — a sustained climb of roughly 1,850-1,966 ft in 3.6 miles on switchbacks.",
+          "elevation_gain": "1,850 ft (564 m) per NPS's Lake McDonald mileage table; 1,966 ft (599 m) per NPS's own Apgar Lookout Trailhead place page, with 107 ft of loss. Both are NPS figures and they disagree; both are recorded rather than one being picked.",
+          "reviews": "(2,902)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": false,
+          "dogs_source": "NPS Glacier bans pets on all trails; no exception is named for this one.",
+          "alltrails": {
+            "name": "Apgar Lookout",
+            "url": "https://www.alltrails.com/trail/us/montana/apgar-lookout-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Apgar Lookout Trailhead",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/apgar-lookout-trailhead.htm",
+              "note": "'Distance: 3.6 mi (5.8 km), one way. Elevation gain: 1,966 ft (599 m). Elevation loss: 107 ft (33 m).' Trailhead 0.5 mi north of the West Entrance then 2.4 mi down Quarter Circle Bridge Road. The view from the lookout is the one on the park's live webcam."
+            },
+            {
+              "label": "NPS — Hiking Lake McDonald (official mileage table)",
+              "tier": "official",
+              "url": "https://www.nps.gov/glac/planyourvisit/hikinglakemcdonald.htm"
+            }
+          ],
+          "season": "This is the reason it is on the card. The lookout sits at about 5,200 ft on a south-and-west-facing slope, and AllTrails' own description says the route 'is often free of snow in the late spring or early summer' — it is the recognised early-season Glacier hike, walkable weeks before anything at Logan Pass. It is graded Hard, which §3 normally pushes down the card, but on THESE dates it is the only real summit view in reach and it stays.",
+          "note": "The one proper climb available on 22-27 May, and it answers the exact problem this stop has: with the pass shut there is no high viewpoint on the card at all. A 1930s fire lookout above the west end of Lake McDonald, looking straight down the lake into the peaks and out over the Middle Fork. Steep and shadeless in its upper half after the 2003 Robert Fire; carry water and start early."
+        },
+        {
+          "name": "Hidden Lake Overlook",
+          "distance": "1.3 mi (2.1 km) one way to the Overlook — 2.6 mi round trip; 2.5 mi (4 km) one way to continue down to Hidden Lake itself",
+          "time": "1.5-2 hours round trip to the Overlook",
+          "difficulty": "Moderate — wooden boardwalk then packed soil, with several sets of stairs and switchbacks",
+          "elevation_gain": "608 ft (185 m) gain, 128 ft (39 m) loss to the Overlook; 639 ft gain and 921 ft loss continuing to the lake",
+          "reviews": "(12,051)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": false,
+          "dogs_source": "NPS Glacier bans pets on all trails.",
+          "alltrails": {
+            "name": "Hidden Lake Overlook",
+            "url": "https://www.alltrails.com/trail/us/montana/hidden-lake-overlook",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — Hidden Lake Trailhead",
+              "tier": "official",
+              "url": "https://www.nps.gov/places/hidden-lake-trailhead.htm",
+              "note": "'Hidden Lake Overlook — Distance: 1.3 miles (2.1 km), one way. Elevation gain: 608 ft (185 m). Elevation loss: 128 ft (39 m). Trail surface: wooden boardwalk and packed soil.' Trailhead is behind the Logan Pass Visitor Center."
+            },
+            {
+              "label": "NPS — Logan Pass opening and closing dates, 1933 to present",
+              "tier": "official",
+              "url": "https://www.nps.gov/glac/learn/news/logan-pass-opening-and-closing-dates.htm"
+            }
+          ],
+          "season": "CLOSED FOR THIS STOP. The trailhead is behind the Logan Pass Visitor Center and is reachable only when the alpine section of Going-to-the-Sun Road has been plowed open. NPS's own opening record shows Logan Pass has not opened before 19 June in the last fifteen years (24 Jun 2010, 13 Jul 2011, 19 Jun 2012, 21 Jun 2013, 13 Jul 2020, 25 Jun 2021, 13 Jul 2022), and only twice in ninety years has it opened as early as this stop's 22-27 May window. Even in the freak year that the gate is open, the boardwalk itself is normally under several feet of snow into July. Do not build a day around it.",
+          "note": "Listed deliberately as the thing these dates are costing, not as a plan. It is the most-walked trail in Glacier and the one everybody means by 'we went to Glacier' — boardwalk out from Logan Pass across the Hanging Gardens, mountain goats and bighorn at arm's length, and the Overlook onto Hidden Lake under Bearhat Mountain. Coming through on 22-27 May buys an empty west side, running waterfalls and no shuttle queue, and pays for it with this. Knowing that in advance is the point of the entry. The other big Logan Pass walks — the Highline Trail and Piegan Pass — are shut for the same reason and on the same evidence."
+        }
+      ]
+    },
+
+    "banff": {
+      "authority": "Parks Canada — Banff National Park",
+      "dates_checked": "30 May - 4 Jun 2027, 5 nights, based at Tunnel Mountain.",
+      "trails_note": "The card had Tunnel Mountain Summit, Johnston Canyon to Upper Falls and the Fenland Trail — three good picks, but all three are Banff-townsite trails, and the box contained NOTHING at Lake Louise. Five nights in Banff without the Lake Louise basin on the card is the gap. Two Lake Louise trails and one low-elevation Banff-area half-day are added. Note for the whole stop: Parks Canada states 'Moraine Lake Road is closed to personal vehicles year-round' — Moraine Lake, the Rockpile and Consolation Lakes are shuttle-only, and the shuttle season normally starts around the beginning of June, so 30 May - 4 Jun sits right on its opening edge. Book the Lake Louise / Moraine shuttle on Parks Canada's reservation system as soon as the window opens, or that whole valley is unreachable.",
+      "dogs_stop_level": "Parks Canada, Banff trail conditions page, verbatim: 'Dogs are allowed on all trails in the summer unless otherwise specified in trail restrictions and closures. Keep dogs on leash and under physical control at all times.' The dogs page adds the caveat that 'Dogs are not allowed on some trails' and points at the trail restrictions list, so `dogs: true` below means 'permitted under the park-wide summer rule, no restriction found for this trail' — check the Important Bulletins page on arrival, 403-762-1550. Banff is the first stop in weeks where the dog can actually come along, after Glacier banned it from everything.",
+      "trails": [
+        {
+          "name": "Lake Louise Lakeshore Trail",
+          "distance": "2.3 km (1.4 mi) one way — 4.6 km round trip",
+          "time": "1 hour round trip (Parks Canada)",
+          "difficulty": "Easy — Parks Canada lists it first among the Lake Louise area's Easy Trails. Wide, near-level, gravel and paved sections.",
+          "elevation_gain": "Parks Canada publishes no elevation figure for this trail; it is effectively flat along the shore. Recorded as unpublished rather than guessed.",
+          "reviews": "(5,124)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "Parks Canada Banff trail conditions: dogs allowed on all trails in summer, on leash, unless a specific restriction is posted. No restriction found for this trail.",
+          "alltrails": {
+            "name": "Lake Louise Lakeshore",
+            "url": "https://www.alltrails.com/trail/canada/alberta/lake-louise-lakeshore",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Hiking in Banff (official trail table)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking",
+              "note": "Lake Louise area table: 'Lake Louise Lakeshore Trail — 2.3 km one-way — 1 hour round trip', listed under Easy Trails."
+            }
+          ],
+          "season": "Walkable all year and not avalanche-exposed — Parks Canada's avalanche advisory covers the Moderate and Difficult Lake Louise trails, not this one. One caution specific to these dates: Lake Louise is a high, cold lake that commonly still carries ice into the first part of June, so on 30 May - 4 Jun the water may be white or grey rather than the turquoise the photographs promise. Parks Canada does not publish a thaw date, so this is flagged as a thing to check on the Lake Louise webcam the week before rather than stated as fact. It changes the pictures, not the walk.",
+          "note": "The omission that mattered on this card: five nights in Banff and nothing at all at Lake Louise. This is the walk everyone does and it earns it — straight out from the Chateau along the north shore under the Fairview cliffs to the head of the lake, where the Victoria Glacier fills the whole view and the quartzite climbing walls rise on the right. Flat, an hour, and the dog can come. Go at first light; by ten the lakeshore and its car park are full."
+        },
+        {
+          "name": "Sundance Canyon Loop",
+          "distance": "9.5 km (5.9 mi) round trip — a paved 3.7 km approach from Cave and Basin each way plus the canyon loop at the far end",
+          "time": "3 hours (Parks Canada)",
+          "difficulty": "Moderate — Parks Canada files it under the Banff area's Moderate hikes. The approach itself is paved and level; the canyon loop is where the climbing and the steps are.",
+          "elevation_gain": "Parks Canada publishes no elevation figure for this trail. Recorded as unpublished.",
+          "reviews": "(2,316)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible. AllTrails reads the route as 5.6 mi out-and-back, close to Parks Canada's 9.5 km.",
+          "uses": ["hike", "bike"],
+          "uses_source": "The 3.7 km approach from Cave and Basin is a paved multi-use path that Parks Canada permits bikes on; bikes must be left at the rack where the canyon loop begins. Recorded from the authority's own trail description, not inferred.",
+          "cruise": null,
+          "cruise_note": "The paved approach along the Bow is a strong `cruise` candidate — flat, paved, no walk-your-bike section on the approach itself — but the bike-legal boundary at the canyon rack needs confirming from Parks Canada before it is set true. Not asserted.",
+          "dogs": true,
+          "dogs_source": "Parks Canada Banff trail conditions: dogs allowed on all trails in summer, on leash, unless a specific restriction is posted. No restriction found for this trail.",
+          "alltrails": {
+            "name": "Sundance Canyon Trail",
+            "url": "https://www.alltrails.com/trail/canada/alberta/sundance-canyon-trail--2",
+            "match": "exact",
+            "tier": "indexed",
+            "note": "Note the '--2' suffix on the slug — exactly the kind of URL §1 forbids constructing. This one was copied from a result."
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Hiking in Banff (official trail table)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking",
+              "note": "Banff area table: 'Sundance Canyon Loop — 9.5 km round-trip — 3 hours', listed under Moderate hikes."
+            }
+          ],
+          "season": "Low-elevation Bow valley floor, and Parks Canada's mid-October-to-mid-June avalanche advisory does not touch it. It is one of the few genuinely reliable half-days at Banff on 30 May - 4 Jun, when everything with altitude is still out of season.",
+          "note": "Added as the dependable day. It starts at Cave and Basin — the hot springs where Banff National Park was invented in 1885, worth the stop on its own — then runs the paved path along the Bow with Mount Rundle across the water, and finishes in a genuine slot of a canyon with waterfalls, bridges and a stepped loop. Dog-legal on leash the whole way, and the flat paved approach means the effort is all optional and all at the far end."
+        },
+        {
+          "name": "Lake Agnes Trail (Lake Agnes Tea House)",
+          "distance": "3.9 km (2.4 mi) one way",
+          "time": "2.5 to 3 hours round trip (Parks Canada)",
+          "difficulty": "Moderate — Parks Canada's classification. A steady climb from the Lake Louise shore past Mirror Lake to the hanging valley holding Lake Agnes.",
+          "elevation_gain": "Parks Canada publishes no elevation figure for this trail. Recorded as unpublished rather than taking a third-party number.",
+          "reviews": "(15,919)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible. This is one of the most-reviewed trails in Canada, which is why it stays on the card despite the seasonal problem below.",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "Parks Canada Banff trail conditions: dogs allowed on all trails in summer, on leash, unless a specific restriction is posted. No restriction found for this trail — but see the season note; the restriction that bites here is avalanche, not pets.",
+          "alltrails": {
+            "name": "Lake Agnes Trail",
+            "url": "https://www.alltrails.com/trail/canada/alberta/lake-agnes-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Hiking in Banff (official trail table and avalanche advisory)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking",
+              "note": "Lake Louise area, Moderate trails: 'Except for the Tramline Trail, these trails are exposed to avalanche hazard and travel is not recommended from mid-October through to mid-June.' Lake Agnes Trail is named in that list."
+            },
+            {
+              "label": "Parks Canada — Banff trail conditions",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/banff/activ/randonnee-hiking/etat-sentiers-trail-conditions"
+            }
+          ],
+          "season": "CLOSED FOR THIS STOP — not by a gate, but by the managing authority's own advice, which is the reason it is flagged this hard. Parks Canada names the Lake Agnes Trail in the Lake Louise Moderate list and states: 'these trails are exposed to avalanche hazard and travel is not recommended from mid-October through to mid-June.' The stop runs 30 May to 4 Jun 2027, entirely inside that window and about two weeks short of its end. On top of that the tea house itself is a seasonal operation that does not normally open until the first part of June, so even a party willing to accept the hazard may find the reason for the walk shut. Do not plan a day on it; ring Lake Louise on 403-522-3833 for that week's conditions before considering it.",
+          "note": "Entered so the card says plainly what these dates cost at Lake Louise, and because it is the second most walked trail in the park — the climb past Mirror Lake to a hanging valley, a waterfall, a log tea house on the shore, and the Big Beehive above. If a warm spring has cleared it early and Parks Canada says so that week, it is the best half-day of the stop; on the published advice it is not. The Plain of Six Glaciers Trail sits in the same list under the same advisory for the same reason, and is out on the same dates."
+        }
+      ]
+    },
+
+    "jasper": {
+      "authority": "Parks Canada — Jasper National Park",
+      "dates_checked": "4-9 Jun 2027, 5 nights, based at Whistlers.",
+      "trails_note": "THE FINDING ON THIS STOP IS ABOUT A TRAIL ALREADY ON THE CARD. Parks Canada's Jasper trail conditions report lists 'Maligne Canyon (7, 7f) — Closed. Superintendent closure, no public access', and the day-hiking table carries the same trail as 'Maligne Canyon Closed until further notice'. The card's 'Sixth Bridge via Maligne Canyon Trail' is therefore not walkable as things stand, and that was not visible anywhere on the stop. It is not re-added here — it is already there — but it is the single most important thing to know about this box, and it should be re-checked against parks.canada.ca before the trip rather than assumed to have reopened. Second, the 2024 wildfire: Parks Canada states 'Edith Cavell Road closed until further notice due to 2024 wildfire damage. Astoria trailhead is not accessible.' That removes Path of the Glacier and Cavell Meadows — the two hikes a first-time visitor would otherwise be steered to — from the stop entirely, which is why neither appears below. With Maligne Canyon shut and Cavell unreachable, the card had effectively TWO working trails for five nights. Three are added: one easy walk by camp, one easy walk that restores Maligne Lake to the stop, and one alpine pass that is the best view-for-effort left on the Icefields Parkway.",
+      "dogs_stop_level": "Parks Canada publishes a per-trail DOGS column in the Jasper day-hiking table, which makes this stop unusually well sourced. It also posts a standing notice: 'Dogs are prohibited from trails and areas in sensitive habitats to reduce the stress that dogs have on grizzly bears, caribou, ground-nesting birds, and/or other sensitive species.' In practice at Maligne Lake that bans the dog from Bald Hills, Opal Hills and Lorraine/Mona Lakes — all marked 'No dogs allowed' in the trail report — while Mary Schäffer and Moose Lake Loop are fine. Every `dogs` value below is taken from that column, not inferred.",
+      "trails": [
+        {
+          "name": "Lake Annette Loop",
+          "distance": "2.4 km (1.5 mi) round trip loop",
+          "time": "1-1.5 hours (Parks Canada)",
+          "difficulty": "Easy — Parks Canada's own classification. Paved throughout; the trail conditions report describes it simply as 'Paved trail'. Suitable for strollers and wheelchairs.",
+          "elevation_gain": "0 m (Parks Canada publishes the elevation for this trail as 0 m)",
+          "reviews": "(1,338)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible.",
+          "uses": ["hike"],
+          "uses_source": "Parks Canada's day-hiking table gives Biking: No, Dogs: Yes, Horses: No for trail 4d. Bikes are NOT permitted, so this is a walking trail only — recorded from the authority's column, not inferred.",
+          "dogs": true,
+          "dogs_source": "Parks Canada Jasper day-hiking table, Across the river section, Lake Annette Loop (4d): Dogs — Yes.",
+          "alltrails": {
+            "name": "Lake Annette Loop",
+            "url": "https://www.alltrails.com/trail/canada/alberta/lake-annette-loop",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Day hiking in Jasper National Park (official trail table)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails",
+              "note": "'Lake Annette Loop — 2.4 km — 1-1.5 hours — 0 m — trail 4d — Easy — Biking No — Dogs Yes — Horses No.'"
+            },
+            {
+              "label": "Parks Canada — Jasper trail conditions",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/etat-sentiers-trail-conditions",
+              "note": "Lake Annette Loop (4d) reported Good, paved."
+            }
+          ],
+          "season": "Valley bottom at about 1,000 m, paved, and open long before anything with altitude. It is walkable on 4-9 Jun with no seasonal question at all, which is exactly why it belongs on a card for these dates.",
+          "note": "The easy one this box did not have — flat, paved, an hour, and the dog can come. Lake Annette sits with Lake Edith just across the Athabasca from town under the wall of Mount Tekarra, with a sand beach and interpretive panels round the shore. It is the obvious evening walk from Whistlers and the obvious wet-weather fallback, and with Maligne Canyon closed the stop needs one."
+        },
+        {
+          "name": "Mary Schäffer Loop, Maligne Lake",
+          "distance": "3.2 km (2.0 mi) round trip loop",
+          "time": "1-2 hours (Parks Canada)",
+          "difficulty": "Easy — Parks Canada's own classification, and the trail conditions report grades both halves of the loop Easy.",
+          "elevation_gain": "0 m (Parks Canada publishes the elevation for this trail as 0 m)",
+          "reviews": null,
+          "needs": "NO AllTrails listing was found for this trail under 'Mary Schäffer' or 'Mary Schaffer' across two searches read directly — the results returned Outdooractive, Trailforks, onX and Wikiloc but no alltrails.com page. Recorded as unlisted per §3 ('no AllTrails listing — official source only') rather than left looking unresearched. It therefore carries no rating and no review count.",
+          "uses": ["hike"],
+          "uses_source": "Parks Canada day-hiking table, trail 21: Biking No, Dogs Yes, Horses No.",
+          "dogs": true,
+          "dogs_source": "Parks Canada Jasper day-hiking table, Maligne Lake section, Mary Schäffer Loop (21): Dogs — Yes. Worth contrasting with the three trails immediately around it: Bald Hills, Opal Hills and Lorraine/Mona Lakes are all marked 'No dogs allowed' in the same report. At Maligne Lake this is the walk the dog gets.",
+          "alltrails": null,
+          "other_links": [
+            {
+              "label": "Parks Canada — Day hiking in Jasper National Park (official trail table)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails",
+              "note": "'Mary Schäffer Loop — 3.2 km — 1-2 hours — 0 m — trail 21 — Easy — Biking No — Dogs Yes — Horses No.'"
+            },
+            {
+              "label": "Trailforks — Mary Schäffer Loop",
+              "tier": "community",
+              "url": "https://www.trailforks.com/trails/mary-schaffer-loop-141/",
+              "note": "Community description, used only for character, not for figures: 'an easy stroll. In its first kilometre it passes Curly Phillips's historic boathouse (interpretive sign) and reaches a viewpoint.'"
+            },
+            {
+              "label": "Parks Canada — Jasper trail conditions",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/etat-sentiers-trail-conditions"
+            }
+          ],
+          "season": "Lakeshore at about 1,670 m. Maligne Lake itself is high and cold and thaws late — it is one of the last big lakes in the Rockies to clear — so on 4-9 Jun expect ice still on parts of it and check 511.alberta.ca for the state of the Maligne Lake Road before driving out. Parks Canada reports the loop itself in Good condition and does not flag it seasonally.",
+          "note": "Added because the Maligne valley was about to disappear from this stop entirely. Maligne Canyon is under a superintendent closure, and every other Maligne Lake trail on the card's level either bans dogs (Bald Hills, Opal Hills, Lorraine and Mona Lakes) or is a four-to-six-hour climb. This is the easy shoreline circuit at the north end of the lake, past Curly Phillips's 1928 boathouse to the viewpoint down the lake toward the Queen Elizabeth Ranges — and it is the trailhead for the Spirit Island boat, which is the reason most people drive out there. It carries no star rating because no trail database indexes it; that is a recorded absence, not a gap in the research."
+        },
+        {
+          "name": "Wilcox Pass",
+          "distance": "2.4 km (1.5 mi) return to the first viewpoint; 8 km (5.0 mi) return to the pass",
+          "time": "1 hour return to the first viewpoint; 2-3 hours return to the pass (Parks Canada)",
+          "difficulty": "Parks Canada's two sources disagree and both are recorded: the day-hiking table classes trail 50 Moderate, while the trail conditions report grades both segments — 'Wilcox Viewpoint - Red Chairs (50)' and 'Upper Wilcox Pass (50)' — as Difficult. Treat the first viewpoint as moderate and the full pass as the harder grade.",
+          "elevation_gain": "390 m (1,280 ft)",
+          "reviews": "(267)",
+          "reviews_note": "Count read from the AllTrails result title as displayed; the en-gb mirror read 268 the same day. No star rating was visible. The low count relative to how well known this hike is reflects that AllTrails also carries it under other route names, so treat it as a floor, not a verdict.",
+          "uses": ["hike"],
+          "uses_source": "Parks Canada day-hiking table, trail 50: Biking No, Dogs Yes, Horses No.",
+          "dogs": true,
+          "dogs_source": "Parks Canada Jasper day-hiking table, Icefields Parkway section, Wilcox Pass (50): Dogs — Yes.",
+          "alltrails": {
+            "name": "Wilcox Pass Trail",
+            "url": "https://www.alltrails.com/trail/canada/alberta/wilcox-pass-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Parks Canada — Day hiking in Jasper National Park (official trail table)",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails",
+              "note": "'Wilcox Pass — 2.4 km return to first viewpoint; 8 km return to pass — 1 hour return to first viewpoint, 2-3 hours return to Pass — 390 m — trail 50 — Moderate — Biking No — Dogs Yes — Horses No.'"
+            },
+            {
+              "label": "Parks Canada — Jasper trail conditions",
+              "tier": "official",
+              "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/etat-sentiers-trail-conditions"
+            }
+          ],
+          "season": "The one entry on this card with a real seasonal question. The pass tops out around 2,350 m and holds snow well into the summer; the commonly published usable season is late June to October, so 4-9 Jun is EARLY and the upper meadows are likely to be under snow with the trail hard to follow. This is not a closure — Parks Canada posts no closure and the trailhead off the Icefields Parkway at Wilcox Creek is reachable — so it is entered as walkable-with-a-caveat rather than flagged shut. The short 2.4 km leg to the first viewpoint and the red chairs is far more likely to go than the full 8 km to the pass, and on these dates that is the version to plan. Check the Jasper trail conditions report and 511.alberta.ca the day before.",
+          "note": "Added as the alpine day, because after the Cavell Road closure there was no longer one. It leaves the Icefields Parkway at the Columbia Icefield and climbs quickly out of the trees onto an open shoulder looking straight across at the Athabasca Glacier and Mount Athabasca — the single best view on the whole Parkway that does not involve paying to ride onto the ice. Bighorn sheep are close to guaranteed on the lower slopes. The dog is permitted, which on a trail of this quality is unusual. Do it as a day-trip out of Jasper in the truck; the Parkway is a fine coach road but this is not a coach errand."
+        }
+      ]
+    }
+
+  }
+}

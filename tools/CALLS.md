@@ -25,10 +25,25 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 - **208-423-7500** — A call to the Sawtooth NF Supervisor's Office, 208-423-7500, would settle whether it is driveable in early May.
   <sub>offroad.2</sub>
 
+## 2027-05-30 — Banff NP (Tunnel Mountain), AB  `banff`
+
+- **403-522-3833** — Do not plan a day on it; ring Lake Louise on 403-522-3833 for that week's conditions before considering it.
+  <sub>trails.5</sub>
+- **403-762-1550** — Keep dogs on leash and under physical control at all times.' The dogs page adds the caveat that 'Dogs are not allowed on some trails' and points at the trail restrictions list, so `dogs: true` below means 'permitted under the park-wide summer rule, no restriction found for this trail' — check the Important Bulletins page on arrival, 403-762-1550.
+  <sub>dogs_stop_level</sub>
+
 ## 2027-06-26 — Fairbanks / North Pole, AK  `fairbanks-1`
 
 - **(907) 459-7307** — Boreal Forest and Seasonal Wetland Trail — ADF&G Creamer's Field, (907) 459-7307.
   <sub>dogs_needs_check.3</sub>
+- **907-451-2695** — Alaska State Parks — Chena River State Recreation Area, Northern Region (907-451-2695)
+  <sub>authority</sub>
+- **907-451-2695** — Northern Region office, 907-451-2695.
+  <sub>dogs_stop_level</sub>
+- **907-451-2695** — Alaska State Parks Northern Region, 907-451-2695.
+  <sub>trails.0</sub>
+- **907-451-2695** — Alaska State Parks' own trail record, carrying the agency's Northern Region contact number 907-451-2695.
+  <sub>trails.0</sub>
 
 ## 2027-07-03 — Talkeetna, AK  `talkeetna`
 
@@ -37,10 +52,14 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-07-10 — Cooper Landing, AK  `cooper-landing`
 
+- **907-743-9500** — Chugach National Forest, 907-743-9500.
+  <sub>trails.3</sub>
 - **(907) 288-3178** — Seward Ranger District, (907) 288-3178.
   <sub>dogs_unpublished.action</sub>
 - **907-288-3178** — Seward Ranger District 907-288-3178 for the state of the top five miles.
   <sub>offroad.2</sub>
+- **907-743-9500** — Chugach National Forest Supervisor's Office, 907-743-9500, or the Seward Ranger District would settle it.
+  <sub>dogs_stop_level</sub>
 
 ## 2027-07-14 — Seward, AK  `seward`
 
@@ -51,8 +70,12 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-07-23 — Homer, AK  `homer`
 
+- **907-235-3170** — Homer City Hall, 907-235-3170, parks@ci.homer.ak.us.
+  <sub>trails.5</sub>
 - **(907) 235-3130** — Phone the Homer City Clerk on (907) 235-3130 (clerk@cityofhomer-ak.gov) and ask for the trail dog rule in Homer City Code Title 20 — one call covers the Spit trail and Diamond Creek, since both are city-managed.
   <sub>dogs_unpublished.action</sub>
+- **907-235-3170** — Homer City Hall, 907-235-3170 / parks@ci.homer.ak.us, would settle Bishop's Beach; Kachemak Bay State Park would settle the other two — and it matters, because a water taxi is involved and the operator's own dog policy is a second question on top of the park's.
+  <sub>dogs_stop_level</sub>
 
 ## 2027-08-10 — Valdez, AK  `valdez`
 
@@ -61,11 +84,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-15 — Chitina, AK  `chitina`
 
-- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+- **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-5234** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
-- **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-3217** — BLM Glennallen Field Office (907-822-3217) holds the map and trail details per NPS.
   <sub>trails.0</sub>
@@ -77,11 +100,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-23 — Fairbanks, AK (Dalton Hwy / Arctic Circle base)  `fairbanks-2`
 
+- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+  <sub>authority</sub>
 - **907-459-7307** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-474-2200** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
-  <sub>authority</sub>
-- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-451-2695** — Northern Area Office 907-451-2695.
   <sub>trails.2</sub>
@@ -101,10 +124,14 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-10-03 — Winthrop, WA (North Cascades)  `winthrop`
 
+- **(509) 996-4000** — Methow Valley Ranger District, 24 West Chewuch Road, Winthrop, (509) 996-4000, would settle it in one call, and it is worth making because this is the trail most likely to be walked with the dog on the whole stop.
+  <sub>trails.5</sub>
 - **509-996-4003** — Ask the Methow Valley Ranger District at 509-996-4003 for the gate position; the final stretch to the lookout is walk-only in some years.
   <sub>offroad.1</sub>
 - **509-996-4000** — Methow Valley District, 509-996-4000.
   <sub>scenicDrives_patch.2</sub>
+- **(509) 996-4000** — Ring the Wilderness Information Center or the Methow Valley Ranger District on (509) 996-4000 before taking the dog up Maple Pass.
+  <sub>trails_note</sub>
 
 ## 2027-10-19 — Olympic NP (Port Angeles), WA  `olympic`
 
@@ -206,6 +233,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 - **435-425-3791** — There is no seasonal closure to check, only conditions, so this must be phoned in the day before: Capitol Reef visitor center 435-425-3791 (press #1, then #4).
   <sub>offroad.0</sub>
 
+## 2028-04-01 — Moab, UT  `moab`
+
+- **435-259-2100** — Worth a call to the Moab Field Office, 435-259-2100, before assuming the dog walks anywhere on this stop.
+  <sub>also_considered</sub>
+
 ## 2028-04-08 — Black Canyon of the Gunnison NP, CO  `black-canyon-gunnison`
 
 - **970-641-2337** — Black Canyon of the Gunnison visitor center, 970-641-2337 ext.
@@ -234,6 +266,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
   <sub>offroad.3</sub>
 - **(307) 367-4326** — Phone the Pinedale Ranger District, (307) 367-4326, before committing a day to it.
   <sub>scenicDrives_patch.0</sub>
+
+## 2028-05-28 — Scottsbluff, NE  `scottsbluff-ne`
+
+- **308-436-3777** — The park's own number is 308-436-3777 — worth one call, since this is the only non-NPS walking at the stop.
+  <sub>trails.5</sub>
 
 ## 2028-06-09 — Badlands/Wall, SD  `badlands-sd`
 
@@ -284,8 +321,21 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 - **717-352-2211** — not published — DCNR does not post gate dates on the maps page, and the district office (717-352-2211) is the number that would settle it
   <sub>offroad.5</sub>
 
+## 2029-02-03 — Mountain View, AR  `mountain-view-ar`
+
+- **870-757-2211** — Blanchard Springs Caverns, 870-757-2211 (the number Recreation.gov publishes for the facility).
+  <sub>trails.3</sub>
+- **870-757-2211** — The closure statement, and the 870-757-2211 number.
+  <sub>trails.3</sub>
+
 ## 2029-02-08 — Eureka Springs, AR  `eureka-springs-ar-v3`
 
+- **479-559-2593** — Not enough to call anything closed for these dates, and too pointed to ignore — worth confirming with the park (Withrow Springs superintendent, 479-559-2593) before driving out.
+  <sub>trails.3</sub>
+- **479-559-2593** — Park superintendent contact: 479-559-2593, withrowsprings@arkansas.com.
+  <sub>trails.3</sub>
+- **479-559-2593** — which Withrow Springs trail is closed, given the state's 'Our other trails are open' line — 479-559-2593
+  <sub>trails.3</sub>
 - **479-253-7921** — Phone Eureka Springs Parks and Recreation / Lake Leatherwood at 479-253-7921 (or leatherwood@eurekaparks.com) and ask two things: are leashed dogs allowed on the Lake Leatherwood trail network, and is there a leash-length rule.
   <sub>dogs_unpublished.action</sub>
 

@@ -781,6 +781,271 @@
           "note": "One of the most accessible glaciers in Alaska and the obvious thing this card was missing, given the coach drives past its car park twice. A paved, wheelchair-accessible path from the pavilion out to a viewing station and down toward the ice, with interpretive panels and benches. It costs an hour on a travel day rather than a day out of the five, which is exactly why it belongs on a card that already has three short walks near the harbour and nothing at Thompson Pass."
         }
       ]
+    },
+
+    "homer": {
+      "authority": "Alaska State Parks — Kachemak Bay State Park (Alaska's first state park); City of Homer Parks & Recreation. Trail figures below are the Kachemak Bay State Park trail-guide figures as published by Friends of Kachemak Bay State Parks, the park's partner organisation, which reproduces the state trail fact sheets verbatim; the state's own copies are PDFs that would not render in the browser pane.",
+      "dates_checked": "23-29 Jul 2027, 6 nights. Late July is peak season in Homer — fireweed, the silver run starting on the Spit, and long light.",
+      "trails_note": "Every trail on the card was on the Homer side of the water: the Spit, Diamond Creek, the Homestead Trail. Six nights in Homer and nothing at all in KACHEMAK BAY STATE PARK, which is the reason people come and is the only Alaska state park you reach by boat. That is the gap. Two of its trails are added — they are two halves of one loop and one water-taxi day — plus the in-town beach walk. Alpine Ridge Trail was the other candidate across the bay and was deliberately left off: the park grades it Difficult with 'long climb, very very steep muddy sections', 2-4 hours ONE WAY and roughly 2,200 ft of gain, on 28 AllTrails reviews. §3 keeps a Hard trail only when the reviews are outstanding, and 28 is not outstanding; it is the wrong hike for this trip.",
+      "dogs_stop_level": "Neither Alaska State Parks nor the City of Homer publishes a pet rule on any of the pages read for this stop. All three entries below are therefore `dogs: null`. Homer City Hall, 907-235-3170 / parks@ci.homer.ak.us, would settle Bishop's Beach; Kachemak Bay State Park would settle the other two — and it matters, because a water taxi is involved and the operator's own dog policy is a second question on top of the park's.",
+      "trails": [
+        {
+          "name": "Grewingk Glacier Lake Trail",
+          "distance": "2.2 mi (3.5 km) one way from the Glacier Spit trailhead",
+          "time": "1 hour 20 minutes from Glacier Spit",
+          "difficulty": "Easy — the park's own rating is 'Easy, popular family hike'.",
+          "elevation_gain": "50 ft",
+          "reviews": null,
+          "needs": "AllTrails indexes this as part of longer user-assembled routes rather than as the park's own 2.2 mi trail, and no review count was visible in any result read for either listing. Recorded as absent. The two composite listings found are noted under `alltrails` so the link still works.",
+          "uses": ["hike"],
+          "dogs": null,
+          "alltrails": {
+            "name": "Glacier Lake Trail, Grewingk Tram and Saddle Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/glacier-lake-trail-grewingk-tram-saddle-trail",
+            "match": "contains",
+            "tier": "indexed",
+            "note": "This is a LONGER user-assembled route that CONTAINS the official trail — AllTrails reads it as 11.3 mi out-and-back with 458 m of gain, 5-5.5 hr, chaining Glacier Lake Trail, the hand-operated Grewingk tram across the creek, and the Saddle Trail. The card's figures above are the park's for the 2.2 mi Glacier Lake Trail alone, which is the walk being proposed. A second composite, 'Saddle Trail, Grewingk Lake, and Grewingk Peninsula Spur Trail' at 7.1 mi, is indexed at https://www.alltrails.com/trail/us/alaska/saddle-trail-grewingk-lake-and-grewingk-peninsula-spur-trail"
+          },
+          "other_links": [
+            {
+              "label": "Friends of Kachemak Bay State Parks — Glacier Lake Trail (state trail fact sheet)",
+              "tier": "official",
+              "url": "https://www.friendsofkachemakbay.org/glacier-lake",
+              "note": "'Glacier Lake Trail (2.2 mi/3.5 km). Rating: Easy, popular family hike. Hiking Time: 1 hour, 20 minutes from Glacier Spit. Elevation Gain: 50 ft.' Also the source of the two safety notes recorded below."
+            },
+            {
+              "label": "Alaska State Parks — Kachemak Bay State Park",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/kenai/kachemakbaysp.htm"
+            }
+          ],
+          "season": "In season and at its best in late July. Access is the whole planning problem, not the season: the trailhead is MARINE ACCESS ONLY, by water taxi from the Homer Spit. The park advises a morning drop-off at Glacier Spit — a wind-exposed beach — and an afternoon or evening pick-up at the Saddle Trailhead in Halibut Cove, which is a protected anchorage. Book the taxi as a drop-at-one-end, collect-at-the-other, and the two trails below become one clean day.",
+          "note": "The best day of the whole Homer stop and it was not on the card. Flat walking through spruce and cottonwood and out across the Grewingk Glacier's dry outwash plain to a broad open beach on Grewingk Glacier Lake, with icebergs in the water and the glacier and the Kenai Mountains filling the far end. Two warnings from the park, both worth carrying: access to the glacier along the SOUTH end of the lake is 'difficult and hazardous — please do not attempt this route'; and landslides off the surrounding ridges into the lake can generate splash waves of fifty feet or more, so stay off the low lake flats if you linger."
+        },
+        {
+          "name": "Saddle Trail",
+          "distance": "1.0 mi (1.6 km)",
+          "time": "25 minutes",
+          "difficulty": "Moderate — the park's rating, qualified as 'short, steep climbs'. It switchbacks through steep forested terrain.",
+          "elevation_gain": "350 ft",
+          "reviews": null,
+          "needs": "No standalone AllTrails listing for the Saddle Trail was found; it appears only inside the composite routes listed under Grewingk Glacier Lake Trail above. No review count, no star rating. Recorded as absent.",
+          "uses": ["hike"],
+          "dogs": null,
+          "alltrails": null,
+          "other_links": [
+            {
+              "label": "Friends of Kachemak Bay State Parks — Saddle Trail (state trail fact sheet)",
+              "tier": "official",
+              "url": "https://www.friendsofkachemakbay.org/saddle",
+              "note": "'Saddle Trail (1.0 mi/1.6 km). Rating: Moderate (short, steep climbs). Hiking Time: 25 minutes. Elevation Gain: 350 ft. Trailhead Access: Marine Access - Halibut cove (protected anchorage, mooring buoys), good afternoon pick-up.'"
+            }
+          ],
+          "season": "Same season and same access as Glacier Lake Trail. The park notes there is no water at the trailhead and no camping there, and asks visitors to respect private property near the trailhead. It also states plainly that 'cliffs prohibit hiking the beach from the trailhead to the Right Beach Campsite, boat transport is necessary' — you cannot walk round the shore, so the boat has to be arranged properly.",
+          "note": "Not a separate day out: this is the OTHER END of the Grewingk walk, and it is entered on its own because it is what makes the day work. Drop at Glacier Spit in the morning, walk the flat Glacier Lake Trail to the lake, then climb this mile over the low ridge to Halibut Cove and be collected from a sheltered anchorage in the afternoon rather than off an exposed beach. Twenty-five minutes and 350 ft is the price of not backtracking. It also gives access to the Alpine Ridge and Lagoon trails for anyone with more day than sense."
+        },
+        {
+          "name": "Bishop's Beach (and the Beluga Slough Trail)",
+          "distance": "The City of Homer publishes no measured length — it is a beach walk of 'miles of beautiful beach' below the bluffs, walked out and back as far as suits. The Beluga Slough Trail runs from the same car park to the Islands and Ocean Visitor Center.",
+          "time": "As long as you like; an hour out and back covers the good part",
+          "difficulty": "Easy — level gravel beach; the Beluga Slough Trail is a made trail with boardwalk sections.",
+          "elevation_gain": "Effectively none",
+          "reviews": "(16)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. It is a small number and it means very little here: this is a city beach park, not a hiking destination, and it is on the card for what it is rather than for its rating.",
+          "uses": ["hike"],
+          "dogs": null,
+          "needs": "The City of Homer's park page publishes no pet rule. Homer City Hall, 907-235-3170, parks@ci.homer.ak.us. Worth asking, because a beach two blocks from Old Town with 'miles of beautiful beach' would be the best dog walk of the stop if it is permitted.",
+          "alltrails": {
+            "name": "Bishop's Beach",
+            "url": "https://www.alltrails.com/trail/us/alaska/bishop-s-beach",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "City of Homer — Bishop's Beach Park",
+              "tier": "official",
+              "url": "https://www.cityofhomer-ak.gov/parks-trails/bishops-beach-park",
+              "note": "'Two blocks from Old Town at the end of Beluga Place... Ample parking, restroom facilities, Beluga Slough trailhead, and beach combing.' Covered pavilion with fire pit and BBQ grill, reservable at $25 for four hours or $50 for a full day; free to use when not posted as reserved. No camping. The city asks visitors to respect that everything above the 17 ft Mean High Water line is private property."
+            }
+          ],
+          "season": "Year-round and tide-dependent rather than season-dependent. Go on a falling tide — Kachemak Bay has one of the largest tidal ranges in the world and the flats it uncovers are the whole point. Late July gives light until well past ten at night, which makes this the evening walk of the stop.",
+          "note": "The in-town walk the card did not have. Homer Spit Trail and Diamond Creek are both already on there, but neither is the beach under the bluffs at the end of Beluga Place, with the volcanoes — Iliamna, Redoubt, Augustine — across the water and Grewingk Glacier visible on a clear evening. Tide-pool life on the flats, beachcombing, and a covered pavilion with a fire pit if the weather turns. The Beluga Slough Trail from the same car park runs to the Islands and Ocean Visitor Center, which is the best wet-afternoon building in Homer and free."
+        }
+      ]
+    },
+
+    "mccarthy": {
+      "authority": "NPS Wrangell-St. Elias National Park & Preserve",
+      "dates_checked": "17-23 Aug 2027, 6 nights.",
+      "verdict": "THIS SET WAS ALREADY ALMOST COMPLETE, and it is the other card in this batch that was clearly chosen rather than assembled. NPS's own McCarthy Road & Kennecott trail page lists exactly SIX day hikes for the area: Crystalline Hills, McCarthy Creek, the Wagon Road & Toe of the Kennicott Glacier, the Root Glacier / Erie Mine Trail, the Jumbo Mine Trail and the Bonanza Mine Trail. Five of the six were already on the card. Only McCarthy Creek was missing, and it is the one added.",
+      "trails_note": "Two corrections that apply to entries already on the card and are recorded here rather than re-added. (1) NPS titles the Root Glacier trail 'Root Glacier/Erie Mine Trail' and then states flatly: 'This is not a trail to the Erie Mine.' Anyone reading the AllTrails name and setting out for the Erie Mine on it will be wrong. (2) NPS's own grading of the two mine trails is STRENUOUS for both Jumbo and Bonanza, against Easy/Moderate for Root Glacier and the Wagon Road — worth carrying on the card, because on a six-night stop the difference decides which two days are the hard ones. Also: Bear Resistant Food Containers are REQUIRED for all backcountry camping in this park, and NPS notes the food storage box on the Erie Mine Trail 'was REMOVED'.",
+      "dogs_stop_level": "This is the good news of the whole Alaska leg and it deserves to be on the card. NPS Wrangell-St. Elias, Pets page, verbatim: 'Dogs are allowed on trails and in the backcountry, but they must be properly controlled at all times on leash.' 36 CFR 2.15 as applied here: 'Dogs are allowed on trails within the park and in the backcountry.' Six-foot leash, no dogs inside buildings, and leashes specifically required within the Kennecott Mines National Historic Landmark area and on the grounds around contact stations. After Arches, Canyonlands, Zion, Bryce, Glacier and Rocky Mountain, this is a national park where the dog walks EVERYTHING on the card. NPS adds one Alaska-specific warning worth heeding: trapping is legal from autumn through spring and unleashed dogs get caught in snares.",
+      "trails": [
+        {
+          "name": "McCarthy Creek Trail",
+          "distance": "13.1 mi (21.1 km) out and back to the far end (AllTrails). NPS publishes no distance and presents it as an out-and-back to be walked as far as suits — 'Take a day hike and explore a riverside trail.'",
+          "time": "A full day for the whole thing; an hour or two covers the good riverside section from town",
+          "difficulty": "Two answers, both recorded. NPS lists it plainly among its McCarthy-area day hikes with no grade attached. AllTrails grades the full 13.1 mi route 'challenging'. Walked from McCarthy as far as the creek stays pleasant it is an easy riverside stroll; walked to its end it is a long day on an old wagon road with creek crossings.",
+          "elevation_gain": "Not published by NPS, and no figure was read that could be attributed to the authority. Recorded as unknown.",
+          "reviews": "(2)",
+          "reviews_note": "Two reviews. Read from the AllTrails result title as displayed. That number says nothing about the trail's quality — it says almost nobody logs a walk that starts at the end of McCarthy's main street. It is on the card because the MANAGING AUTHORITY lists it as one of six area day hikes, not because a trail database rates it.",
+          "uses": ["hike"],
+          "dogs": true,
+          "dogs_source": "NPS Wrangell-St. Elias Pets page: 'Dogs are allowed on trails within the park and in the backcountry', on a leash not exceeding six feet.",
+          "alltrails": {
+            "name": "McCarthy Creek Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/mccarthy-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "NPS — McCarthy Road & Kennecott Trails",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm",
+              "note": "The authority's complete list of area day hikes, and the source for the claim that the card was missing only this one. NPS links a McCarthy Creek trail PDF from this page: 'Take a day hike and explore a riverside trail. Accessible from McCarthy.' The PDF itself could not be rendered in the browser pane, so no figures are taken from it."
+            },
+            {
+              "label": "NPS — Day Hiking in Wrangell-St. Elias",
+              "tier": "official",
+              "url": "https://www.nps.gov/wrst/planyourvisit/hiking-trails-routes.htm",
+              "note": "'While the McCarthy Road has very few day hikes, Kennecott has several trails, including the best ones in the park for glacier viewing.'"
+            }
+          ],
+          "season": "Snow-free and walkable in August. The one thing to check is water: this follows a glacier-fed creek drainage and the crossings rise and fall with the day's melt and rain — alaska.org's own note on it is 'Don't underestimate the swiftness of the [creek]'. Late August is past peak melt but a wet week still changes it. Ask at the Kennecott Visitor Center, which is open in summer.",
+          "note": "The only NPS-listed day hike in the McCarthy area that was not already on the card, and the only one that starts in the town itself rather than up at Kennecott — walk straight down McCarthy's main street past Ma Johnson's and the Wrangell Mountain Center and you are on it. It follows an old wagon road up the creek drainage into the interior of the park, so it is an easy out-and-back for as long as you feel like going and a serious day if you go to the end. On a six-night stop it is the low-effort day between Bonanza and Jumbo, and the dog is allowed on it."
+        }
+      ]
+    },
+
+    "cooper-landing": {
+      "authority": "USFS Chugach National Forest, Eastern Kenai Peninsula",
+      "dates_checked": "10-14 Jul 2027, 4 nights.",
+      "trails_note": "Three trails for four nights, and all three hang off the same road junction and the same drainage — Russian Lakes, Russian River Falls, and the Resurrection trail. One addition takes the box to four, which is the target for four nights, and it deliberately goes up the OTHER valley out of Cooper Landing. One thing to carry about the existing card that the dates make sharp: 10-14 July is the middle of the Russian River sockeye run, which means combat fishing at the confluence and the highest concentration of brown bears on the road system anywhere near Anchorage. Russian River Falls is already on the card and is exactly where the bears are. That is a reason to go early, carry spray and keep the dog leashed, not a reason to drop it — but it should not be a surprise on the day.",
+      "dogs_stop_level": "The USFS trail page for the addition below publishes no pet rule; its Restrictions section carries none. Dogs are generally permitted on Chugach National Forest trails but that is a generalisation, not a published rule for this trail, so `dogs` is recorded null. Chugach National Forest Supervisor's Office, 907-743-9500, or the Seward Ranger District would settle it.",
+      "trails": [
+        {
+          "name": "Crescent Creek Trail #308 (to Crescent Lake)",
+          "distance": "6.2 miles (10.0 km) one way to Crescent Lake — 12.4 mi out and back. AllTrails reads the out-and-back as 12.5 mi.",
+          "time": "3-4 hours one way (USFS)",
+          "difficulty": "Easy to moderate — the USFS's own grading, with the note 'Trail is suitable for family outings and day hiking.' AllTrails grades the full 12.5 mi out-and-back 'challenging', which is a statement about the total distance rather than about the terrain; the climb is 940 ft spread over more than six miles.",
+          "elevation_gain": "940 feet",
+          "reviews": "(196)",
+          "reviews_note": "Count read from the AllTrails result title as displayed on duckduckgo.com; the en-gb mirror read 190 the same day. No star rating was visible.",
+          "uses": ["hike", "bike", "horse"],
+          "uses_source": "USFS lists the recreation opportunities for trail 308 as Hiking, Fishing, Horse Riding and Camping, Biking, and Outdoor Science and Learning. Bike and horse use are the authority's own, not inferred. The USFS trail brochure adds one restriction worth knowing: the trail is closed to saddle and pack stock for part of the year — check the current dates with the district before planning a horse day.",
+          "cruise": false,
+          "cruise_reason": "Bike-legal is not the same as cruisable. This is 6.2 miles of narrow single-track climbing 940 ft up a creek valley and over a low ridge into a canyon — MTB terrain, not gravel-cruising terrain, and nothing like a rail grade. It stays on the card with a bike badge and is kept out of the biking view, per §4.",
+          "dogs": null,
+          "needs": "No published pet rule on the USFS trail page. Recorded as unknown. Chugach National Forest, 907-743-9500.",
+          "alltrails": {
+            "name": "Crescent Creek Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/crescent-creek-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "USFS — Crescent Creek Trail, Chugach National Forest",
+              "tier": "official",
+              "url": "https://www.fs.usda.gov/r10/chugach/recreation/trails/crescent-creek-trail",
+              "note": "Source for every figure above. 'This 6.2-mile trail climbs gradually up the narrow valley of Crescent Creek through spruce/birch forest to Crescent Lake. Frequent openings afford views of nearby mountains.' Difficulty Easy to moderate; Trip Time (one way) 3-4 hours; Recommended Season June-October; Elevation Gain 940 feet. Trailhead: Mile 45 Sterling Highway, south onto Quartz Creek Road, past Quartz Creek and Crescent Creek campgrounds to Mile 3.5."
+            },
+            {
+              "label": "USFS — Crescent Creek Trail brochure",
+              "tier": "official",
+              "url": "https://www.fs.usda.gov/media/246926"
+            }
+          ],
+          "season": "Squarely in season. USFS gives the recommended season as June to October and notes that 'Snow can remain on the upper part of the trail until early June' — 10-14 July is a month clear of that, and it is also when the meadows along the middle section are in full wildflower.",
+          "note": "The addition that gets this stop out of the Russian River drainage. Everything already on the card leaves from the same corner of Cooper Landing; this leaves from Quartz Creek Road, three and a half miles up the other valley, and climbs gently through birch and spruce to Crescent Lake sitting just below tree line. Wildflower meadows alternating with forest the whole way, and grayling in the lake. Four nights does not need the full 12.4 miles — the canyon section a few miles in is the good part and makes a comfortable half-day turnaround. There is a Forest Service cabin at the lake on reservation for anyone who wants to make it two days."
+        }
+      ]
+    },
+
+    "fairbanks-1": {
+      "authority": "Alaska State Parks — Chena River State Recreation Area, Northern Region (907-451-2695)",
+      "dates_checked": "26 Jun - 3 Jul 2027, 7 nights. Days either side of the solstice at 64.75°N: effectively no darkness, which changes what a seven-night stop can hold.",
+      "trails_note": "Five trails for seven nights, and every one of them was a flat urban or near-urban loop — Ester Dome Inner Loop, the Chena River Nature Trail, Wander Lake, Birch Hill White Bear Loop and the Boreal Forest & Seasonal Wetland Trail. Nothing on the card left the Fairbanks bowl, and nothing on it had a view. The Chena River State Recreation Area starts twenty-odd miles up Chena Hot Springs Road and is 397 square miles of forest, river and alpine tundra with the best hiking anywhere near Fairbanks; the card did not touch it. One addition, and it is the obvious one. Granite Tors Trail, in the same recreation area from the campground at milepost 39, was the runner-up and is the harder, longer version of the same idea — worth knowing about, not needed on a card that is now at six.",
+      "dogs_stop_level": "Alaska State Parks publishes no pet rule for the Chena River State Recreation Area on the pages read, and none per trail. Recorded null. Northern Region office, 907-451-2695.",
+      "trails": [
+        {
+          "name": "Angel Rocks Trail",
+          "distance": "3.7 mile loop. The same trailhead is also the start of the Angel Rocks to Chena Hot Springs traverse, an 8 mile one-way route ending at Chena Hot Springs at milepost 56.5.",
+          "time": "2-3 hours for the loop; a full day for the 8 mile traverse",
+          "difficulty": "Moderate/strenuous (Alaska State Parks). Steep in its middle section — the climb to the tors is the work; the loop back down is easy.",
+          "elevation_gain": "1,900 feet is the figure Alaska State Parks publishes, and it belongs to the 8 MILE TRAVERSE, not to the 3.7 mile loop. No separate gain figure for the loop alone was found in an authority source, so none is recorded for it.",
+          "reviews": "(1,343)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible. It is by a wide margin the most-reviewed trail in the Fairbanks area, which is the other half of the argument for adding it.",
+          "uses": ["hike", "horse"],
+          "uses_source": "Alaska State Parks lists the allowable uses for this trail as Hiking and Horseback Riding. Biking is NOT among them and is not claimed.",
+          "dogs": null,
+          "needs": "No published pet rule from Alaska State Parks for this trail or for the Chena River SRA as a whole. Recorded as unknown. Alaska State Parks Northern Region, 907-451-2695.",
+          "alltrails": {
+            "name": "Angel Rocks Trail",
+            "url": "https://www.alltrails.com/trail/us/alaska/angel-rocks-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "Alaska State Parks — Angel Rocks Loop (trail record, Chena River SRA)",
+              "tier": "official",
+              "url": "https://www.outerspatial.com/trails/angel-rocks-loop-73100",
+              "note": "Alaska State Parks' own trail record, carrying the agency's Northern Region contact number 907-451-2695. 'This 3.7 mile loop route provides access to alpine tundra, views of surrounding mountains, and unique rock outcroppings called tors... Trail Access: The trail begins at the Angel Rocks Trailhead at mi. 48.9 and ends at Chena Hot Springs at mi. 56.5 Chena Hot Springs Road. Allowable Uses: Hiking, Horseback Riding. Distance: 8 mile traverse (one-way). Total Elevation Gain: 1900 feet. Difficulty: Moderate/strenuous.'"
+            },
+            {
+              "label": "Alaska State Parks — Chena River State Recreation Area",
+              "tier": "official",
+              "url": "https://dnr.alaska.gov/parks/aspunits/northern/chenariversra.htm",
+              "note": "'Chena River State Recreation Area is a park for all seasons, with 397 square miles of forests, rivers, and alpine tundra.' 254,080 acres. The state's own Angel Rocks trail guide is a PDF at dnr.alaska.gov/parks/maps/angelrockchena.pdf which would not render in the browser pane, so no figures were taken from it."
+            }
+          ],
+          "season": "Fully in season on these dates, and it is one of the better weeks of the year for it — the tors are above tree line with a view over the Chena valley, and in the last days of June at this latitude the light does not go. There is a small parking fee at the Angel Rocks trailhead; a picnic area and restrooms are there too. Blueberries on the slopes come later, in August, so that is one thing these dates miss.",
+          "note": "The trail this stop was missing, and the answer to a card of five flat town loops. Granite tors — pinnacles of intruded rock left standing as the ground eroded around them — reached by a steep climb out of birch and spruce onto open alpine tundra, about fifty road miles from Fairbanks up Chena Hot Springs Road. Do the 3.7 mile loop. The alternative is to walk the 8 mile traverse right through to Chena Hot Springs and get in the pool at the far end, which needs two vehicles or a lift back and is a proper day; with seven nights and a towed truck, that is genuinely on the table and it is the best day available out of Fairbanks."
+        }
+      ]
+    },
+
+    "whitehorse-3": {
+      "authority": "City of Whitehorse (Grey Mountain Road and the Grey Mountain area). No City of Whitehorse or Government of Yukon page with trail figures was found for this trail in the searches read; the figures below come from yukonhiking.ca, the Yukon's established hiking guide, and are tiered `community`, not `official`. That is recorded plainly rather than dressed up.",
+      "dates_checked": "8-12 Sep 2027, 4 nights, third visit to Whitehorse.",
+      "trails_note": "Three trails for four nights and all three are at river level in or beside the town — Miles Canyon, the Yukon River trail, and Fish Lake. Fish Lake Lookout is the only one with any height in it. On 8-12 September the Yukon is in full autumn: the subalpine is turning and the alpine is already gold, and the card had nothing above the trees to see it from. One addition, chosen for exactly that.",
+      "dogs_stop_level": "No managing authority read for this stop publishes a pet rule for the Grey Mountain trails. Recorded null.",
+      "trails": [
+        {
+          "name": "Grey Mountain (The May)",
+          "distance": "5 km (3.1 mi) return to the first summit — 2.5 km each way. AllTrails reads it as a 3.1-mile out-and-back, which matches.",
+          "time": "2 hours return (yukonhiking.ca); AllTrails averages 1 h 42 min",
+          "difficulty": "The two sources disagree and both are recorded: yukonhiking.ca rates it EASY, on the grounds that 'the trailhead starts only 200 m lower than the summit, which means more alpine walking'; AllTrails calls it 'moderately challenging'. There are switchbacks that climb steadily near the top. Easy-to-moderate is the fair reading.",
+          "elevation_gain": "200 m (about 660 ft)",
+          "reviews": "(142)",
+          "reviews_note": "Count read from the AllTrails result title as displayed. No star rating was visible. A separate, thinner AllTrails listing exists for 'Grey Mountain Summit' at 21 reviews and another for 'Grey Mountain via Dream Trail' — the 142-review page is the one for the walk described here.",
+          "uses": ["hike"],
+          "uses_source": "Trailforks describes the Grey Mountain Summit Trail as multiuse and 'mostly bikeable but will require some pushing' — that is a community description of bike use, not an authority permission, so no bike use is claimed above.",
+          "cruise": false,
+          "cruise_reason": "Even the community source that calls it bikeable says it needs pushing and that the route braids and requires wayfinding. That fails the walk-your-bike test in §4 outright.",
+          "dogs": null,
+          "needs": "No published pet rule found from the City of Whitehorse or the Government of Yukon. Recorded as unknown.",
+          "alltrails": {
+            "name": "Grey Mountain Trail",
+            "url": "https://www.alltrails.com/trail/canada/yukon/grey-mountain-trail",
+            "match": "exact",
+            "tier": "indexed"
+          },
+          "other_links": [
+            {
+              "label": "yukonhiking.ca — Grey Mountain (The May)",
+              "tier": "community",
+              "url": "https://yukonhiking.ca/grey.html",
+              "note": "Source for distance, time, gain and the driving directions. 'Total Distance: 5 km. Return Time: 2 hours. Elevation Gain: 200 m. Difficulty: Easy.' Traditional Territory: Kwanlin Dün First Nation and Ta'an Kwäch'än Council. The Southern Tutchone name, The May, refers to the grey-white colour of the rocks."
+            }
+          ],
+          "season": "Early September is the best week of the year for this and the reason it is the one addition. The trail starts in the alpine, so the ground cover — dwarf birch, bearberry, blueberry — is already turning red and gold on these dates, and the view runs from Marsh Lake in the south to Lake Laberge in the north. Snow can arrive on the ridge any time from late September, so 8-12 Sep is ahead of it but not by much. Bears: the guide warns there is 'evidence of bear activity such as bear droppings and digging marks' despite how close it is to town, and to make noise on the crests.",
+          "note": "The one thing this box lacked — height, and a view of where you actually are. Grey Mountain is the landmark above Whitehorse and the trail starts at the communication towers, only 200 m below the first summit, so almost the whole walk is above the trees. Two hours return for a view over the town, the Yukon River and both lakes. THE ACCESS IS THE PLANNING POINT: Grey Mountain Road runs 6.3 km to the Grey Mountain Viewpoint car park, and the last 4 km up to the towers is unmaintained, rougher and narrow in places. That is a TRUCK errand, not a coach one, and on the third visit to Whitehorse the truck is already unhitched. Turning round at the first summit is the sensible plan; the ridge continues over two more peaks, the third of which has the best view of the city, and the connection between them involves faint trail and some bushwhacking."
+        }
+      ]
     }
 
   }

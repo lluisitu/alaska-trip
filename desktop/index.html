@@ -33180,6 +33180,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if(typeof renderIssues === 'function')
       renderIssues(window.CC_ISSUES, 'ccIssuesWrap', 'cc');
   };
+
+  // A one-stop trip opens its only card. Collapsed, All Stops is a single
+  // header strip above an empty page — which reads as broken, not as "click
+  // me". The other trips have 99 and 58 cards, so a list of collapsed headers
+  // is the whole point there; here there is nothing to choose between.
+  //
+  // It must not open while the view is hidden: initMiniMap() runs once, is
+  // remembered as done, and a Leaflet map built in a display:none container
+  // sizes itself to zero and stays blank for good. So this waits for the card
+  // to actually be on screen, and unhooks itself the moment it fires.
+  var autoOpen = function(){
+    var el = document.getElementById('card-' + CC_DATA.stop.id);
+    if(!el || el.classList.contains('open') || el.offsetParent === null) return false;
+    if(typeof toggleCard !== 'function') return false;
+    toggleCard(CC_DATA.stop.id);
+    return true;
+  };
+  var watch = function(){ setTimeout(function(){
+    if(autoOpen()) document.removeEventListener('click', watch, true); }, 0); };
+  document.addEventListener('click', watch, true);
   if(document.readyState !== 'loading') setTimeout(window.renderCloudcroft, 0);
   else document.addEventListener('DOMContentLoaded', window.renderCloudcroft);
 })();

@@ -61,6 +61,11 @@ def kv(decl):
                dict(re.findall(r'([\w-]+)\s*:\s*"((?:[^"\\]|\\.)*)"', raw))
     except Exception as e:
         print("  (kv skip",decl,e,")"); return {}
+# The Cloudcroft trip is shaped once, in build_cloudcroft.py, and emitted as a
+# plain const so this build can read it. It used to be assembled in JavaScript
+# at page-load time, which is invisible from here — the tab existed on the
+# desktop and simply was not on the phone.
+CCDATA  = grab('const CC_DATA =','{','}') or {}
 RGEOM       = grab('const ROUTE_GEOM =','{','}')
 EXTRGEOM    = grab('const EXT_ROUTE_GEOM =','{','}')
 LEGALERT    = grab('const LEG_ALERTS =','{','}')
@@ -85,6 +90,10 @@ DATA = {
  'routeGeom': RGEOM or {}, 'extRouteGeom': EXTRGEOM or {},
  'passes': (PASSES or {}).get('legs', {}), 'legInfo': (LEGINFO or {}).get('legs', {}),
  'petlog': PETLOG or {},
+ 'cc': [CCDATA['stop']] if CCDATA.get('stop') else [],
+ 'ccIssues': CCDATA.get('issues') or [],
+ 'ccLegNames': {'cloudcroft': CCDATA.get('legName', 'Cloudcroft, NM')},
+ 'ccLegColors': {'cloudcroft': CCDATA.get('legColor', '#7ec488')},
 }
 print(f"stops={len(DATA['stops'])} ext={len(DATA['ext'])} issues={len(DATA['issues'])} extIssues={len(DATA['extIssues'])}")
 print(f"legColors={len(LEGC)} extLegColors={len(EXTLEGC)}")
@@ -92,6 +101,7 @@ print(f"legAlerts={len(LEGALERT or {})} extLegAlerts={len(EXTLEGALERT or {})}")
 print(f"routeGeom={len(RGEOM or {})} extRouteGeom={len(EXTRGEOM or {})} routed legs")
 print(f"passes={len(DATA['passes'])} legs with pass data \u00b7 legInfo={len(DATA['legInfo'])} driving days")
 print(f"petlog: {len(DATA['petlog'].get('cell_gaps',[]))} cell gaps, {len(DATA['petlog'].get('supplies',[]))} supply notes")
+print(f"cloudcroft: {len(DATA['cc'])} stop, {len(DATA['ccIssues'])} gaps")
 
 BLOB = json.dumps(DATA, ensure_ascii=False, separators=(',',':'))
 
@@ -200,6 +210,7 @@ main{padding:0 12px 20px;}
 .sec.itin   .sec-t{background:rgba(232,176,75,.14);color:#e8b04b;}
 .sec.drive  .sec-t{background:rgba(180,142,232,.14);color:#b48ee8;}
 .sec.trail  .sec-t{background:rgba(95,180,214,.14);color:#5fb4d6;}
+.sec.off    .sec-t{background:rgba(217,119,87,.14);color:#e0906d;}
 .sec.holiday .sec-t{background:rgba(201,80,107,.15);color:#f0a8b6;}
 .sec.warn   .sec-t{background:rgba(217,119,87,.16);color:#e0906d;}
 .sec.audit  .sec-t{background:rgba(95,180,214,.12);color:#8ecbe6;}
@@ -277,6 +288,7 @@ main{padding:0 12px 20px;}
   padding:2px 6px;border-radius:20px;margin-right:6px;vertical-align:1px;}
 .trip-tag.bigloop{background:rgba(232,176,75,.16);color:#e8b04b;}
 .trip-tag.ext{background:rgba(180,142,232,.16);color:#b48ee8;}
+.trip-tag.cloudcroft{background:rgba(126,196,136,.16);color:#7ec488;}
 .empty{padding:26px 14px;text-align:center;color:var(--muted);font-size:.86rem;line-height:1.6;}
 /* ---------- bottom nav ---------- */
 nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;
@@ -304,6 +316,7 @@ Open it in Safari or Chrome on your phone and it will load normally.</div></nosc
   <div class="seg" id="tripSeg">
     <button data-trip="bigloop" class="active">Alaska Loop</button>
     <button data-trip="ext">East Trip</button>
+    <button data-trip="cloudcroft">Cloudcroft</button>
   </div>
   <div class="searchrow">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9aa4b2" stroke-width="2.4"
@@ -324,7 +337,7 @@ Open it in Safari or Chrome on your phone and it will load normally.</div></nosc
   </section>
   <section class="view" id="v-issues"><div id="issuesWrap"></div></section>
   <section class="view" id="v-offgrid"><div id="offgridWrap"></div></section>
-  <section class="view" id="v-search"><div id="srWrap"><div class="empty">Type at least two letters to search every stop, campground, trail and scenic drive across both trips.</div></div></section>
+  <section class="view" id="v-search"><div id="srWrap"><div class="empty">Type at least two letters to search every stop, campground, trail and scenic drive across every trip.</div></div></section>
 </main>
 
 <button class="backtop" id="backTop" aria-label="Back to top">↑</button>
@@ -347,10 +360,28 @@ Open it in Safari or Chrome on your phone and it will load normally.</div></nosc
 const D = __DATA__;
 let trip = 'bigloop';
 const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const stops = () => trip==='bigloop' ? D.stops : D.ext;
-const legNames = () => trip==='bigloop' ? D.legNames : D.extLegNames;
-const legColors = () => trip==='bigloop' ? D.legColors : D.extLegColors;
-const issues = () => trip==='bigloop' ? D.issues : D.extIssues;
+/* Three trips now, so these are lookups rather than either/or. A third arm on
+   each ternary is how one of them quietly keeps returning the Alaska data. */
+const TRIPS = {
+  bigloop:    {stops:'stops', names:'legNames',   colors:'legColors',
+               issues:'issues',    alerts:'legAlerts',    geom:'routeGeom',
+               title:'Austin \u2192 Alaska Big Loop',
+               sub:'40ft coach + towed 4x4 \u00b7 dog & cat \u00b7 departs Mar 22, 2027'},
+  ext:        {stops:'ext',   names:'extLegNames', colors:'extLegColors',
+               issues:'extIssues', alerts:'extLegAlerts', geom:'extRouteGeom',
+               title:'Northeast & Ozarks Extension',
+               sub:'40ft coach + towed 4x4 \u00b7 dog & cat \u00b7 departs Apr 30, 2028'},
+  cloudcroft: {stops:'cc',    names:'ccLegNames',  colors:'ccLegColors',
+               issues:'ccIssues',  alerts:null,           geom:null,
+               title:'Cloudcroft, NM',
+               sub:'40ft coach + towed 4x4 \u00b7 dog & cat \u00b7 Aug 22\u201329 \u00b7 dates fixed'},
+};
+const T = () => TRIPS[trip] || TRIPS.bigloop;
+const pick = k => { const n = T()[k]; return n ? (D[n] || {}) : {}; };
+const stops = () => D[T().stops] || [];
+const legNames = () => pick('names');
+const legColors = () => pick('colors');
+const issues = () => D[T().issues] || [];
 
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function fmt(d){ if(!d) return ''; const p=String(d).split('-');
@@ -393,6 +424,7 @@ function cardHTML(s,i){
   b += listBlock('itin','\ud83e\udd7e','Itinerary', s.activities, 'name', 'detail');
   b += listBlock('drive','\ud83d\ude99','Scenic drives (truck)', s.scenicDrives, 'name', 'tag');
   b += listBlock('trail','\u26f0\ufe0f','Trails', s.alltrails, 'name', 'tag');
+  b += listBlock('off','\ud83d\udede','Offroad / 4x4 (truck)', s.offroad, 'name', 'tag');
   if(s.holidayEvents && s.holidayEvents.length){
     let hv = '<ul>';
     s.holidayEvents.forEach(e=>{
@@ -481,7 +513,7 @@ function offgridHTML(){
   return out + '</div></div>';
 }
 
-const legAlerts = () => trip==='bigloop' ? (D.legAlerts||{}) : (D.extLegAlerts||{});
+const legAlerts = () => pick('alerts');
 function legAlertHTML(leg){
   const list = legAlerts()[leg];
   if(!list || !list.length) return '';
@@ -529,17 +561,15 @@ function renderIssues(){
 }
 function renderStats(){
   const a=stops(); const n=a.reduce((x,s)=>x+(s.nights||0),0);
-  const st=[[a.length,'Stops'],[n,'Nights'],[fmt(a[0]&&a[0].arrive),'Start'],[fmt(a[a.length-1]&&a[a.length-1].depart),'End']];
+  const st=[[a.length, a.length===1?'Stop':'Stops'],[n, n===1?'Night':'Nights'],[fmt(a[0]&&a[0].arrive),'Start'],[fmt(a[a.length-1]&&a[a.length-1].depart),'End']];
   document.getElementById('mStats').innerHTML = st.map(s=>'<div class="stat"><div class="n">'+s[0]+'</div><div class="l">'+s[1]+'</div></div>').join('');
-  document.getElementById('hTitle').textContent = trip==='bigloop' ? 'Austin → Alaska Big Loop' : 'Northeast & Ozarks Extension';
-  document.getElementById('hSub').textContent = trip==='bigloop'
-    ? '40ft coach + towed 4x4 · dog & cat · departs Mar 22, 2027'
-    : '40ft coach + towed 4x4 · dog & cat · departs Apr 30, 2028';
+  document.getElementById('hTitle').textContent = T().title;
+  document.getElementById('hSub').textContent = T().sub;
 }
 
 /* ---------------- map ---------------- */
 let map=null, layer=null;
-const routeGeom = () => trip==='bigloop' ? (D.routeGeom||{}) : (D.extRouteGeom||{});
+const routeGeom = () => pick('geom');
 /* Encoded-polyline decoder. The real driving geometry is baked in by
    tools/build_routes.py, so this needs no network — the road shape survives
    offline, which is the whole point on the Cassiar and the Alcan. */
@@ -654,7 +684,8 @@ function drawMap(){
 /* ---------------- search ---------------- */
 const IDX=[];
 function buildIndex(){
-  [['bigloop',D.stops,D.legNames],['ext',D.ext,D.extLegNames]].forEach(([t,arr,ln])=>{
+  Object.keys(TRIPS).forEach(t=>{
+    const arr = D[TRIPS[t].stops], ln = D[TRIPS[t].names];
     (arr||[]).forEach(s=>{
       const f=[];
       const push=(k,v)=>{ if(!v) return;
@@ -664,6 +695,7 @@ function buildIndex(){
       (s.activities||[]).forEach(x=>push('activity',x));
       (s.alltrails||[]).forEach(x=>push('trail',x));
       (s.scenicDrives||[]).forEach(x=>push('scenic drive',x));
+      (s.offroad||[]).forEach(x=>push('off-road route',x));
       (s.nearbyTowns||[]).forEach(x=>push('nearby town',x));
       (s.poi||[]).forEach(x=>push('point of interest',x));
       push('description',s.blurb); push('note',s.note);
@@ -676,7 +708,7 @@ function buildIndex(){
 function doSearch(q){
   q=(q||'').trim().toLowerCase();
   const w=document.getElementById('srWrap');
-  if(q.length<2){ w.innerHTML='<div class="empty">Type at least two letters to search every stop, campground, trail and scenic drive across both trips.</div>'; return; }
+  if(q.length<2){ w.innerHTML='<div class="empty">Type at least two letters to search every stop, campground, trail and scenic drive across every trip.</div>'; return; }
   const hits=[];
   IDX.forEach(e=>{
     let best=null,bs=-1;
@@ -686,7 +718,7 @@ function doSearch(q){
     if(best) hits.push({e:e,f:best,s:bs});
   });
   hits.sort((a,b)=>b.s-a.s);
-  if(!hits.length){ w.innerHTML='<div class="empty"><b>No match on either trip.</b><br>This searches planned stops, so a town you only drive through may not be listed.</div>'; return; }
+  if(!hits.length){ w.innerHTML='<div class="empty"><b>No match on any trip.</b><br>This searches planned stops, so a town you only drive through may not be listed.</div>'; return; }
   w.innerHTML='<div class="sechead">'+hits.length+' result'+(hits.length>1?'s':'')+'</div>' +
     hits.slice(0,40).map(hit=>{
       const e=hit.e,f=hit.f; const i=f.n.indexOf(q);
@@ -694,8 +726,8 @@ function doSearch(q){
       const snip=(from>0?'…':'')+esc(f.t.slice(from,i))+'<mark>'+esc(f.t.slice(i,i+q.length))+'</mark>'+
         esc(f.t.slice(i+q.length,to))+(to<f.t.length?'…':'');
       return '<div class="sr" onclick="goTo(\''+e.trip+'\',\''+e.id+'\')">'+
-        '<div class="sr-n"><span class="trip-tag '+(e.trip==='ext'?'ext':'bigloop')+'">'+
-        (e.trip==='ext'?'East':'Alaska')+'</span>'+esc(e.name)+'</div>'+
+        '<div class="sr-n"><span class="trip-tag '+e.trip+'">'+
+        ({bigloop:'Alaska',ext:'East',cloudcroft:'Cloudcroft'}[e.trip]||e.trip)+'</span>'+esc(e.name)+'</div>'+
         '<div class="sr-m">'+esc(e.leg)+' · '+fmt(e.arrive)+' – '+fmt(e.depart)+'</div>'+
         '<div class="sr-w"><i>'+esc(f.k)+':</i> '+snip+'</div></div>';
     }).join('');

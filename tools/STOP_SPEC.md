@@ -54,10 +54,24 @@ Roughly **one good walk per night, capped around six.** Per trail:
 | `needs[]` | Everything that could not be sourced, one line each |
 
 ### `offroad` — 4x4 routes
-**Every route gets its own listing link where one exists** — Trails Offroad,
-onX, a Forest Service road page, a BLM route page. A generic "scenic drives"
-index page is not a route link. This was flagged as top priority on the main
-trip and is the box most often left with a placeholder.
+**Every route gets its own listing link where one exists.** A generic "scenic
+drives" index page is not a route link. This was flagged as top priority on the
+main trip and is the box most often left with a placeholder.
+
+**Which sites, in order.** LLuis uses **Trails Offroad** and **Komoot**. Search
+those first, by county as well as by name — Trails Offroad's coverage was once
+written off for a whole district and it had three Scout Routes there, filed
+under the neighbouring town. **He does not use onX.** Where onX is genuinely the
+only per-route page that exists, link it but *say so in the link text*, so the
+card never points him silently at a site he does not read. Where nothing exists
+anywhere, say that too, and record the MVUM as the only evidence the road is
+open. The link text names the source; the reasoning goes in the note.
+
+Trails Offroad's free **Scout Route** listings publish no difficulty, no
+mileage field and no season — those are behind the paywall. The star rating on
+the page is a **user rating, not a difficulty grade**, and must never be read
+into a difficulty field. A paywall is not an absent authority: there is nobody
+to phone, so it stays unknown and does *not* become a `CALLS.md` entry.
 
 Get the **vehicle class** right. On many districts the only motorised-trail
 class is *"open to vehicles 50 inches or less in width"*, which excludes a
@@ -148,6 +162,15 @@ all of these, because they are what the answer usually turns out to be:
 - **Canal, ditch, levee and irrigation roads.**
 - **State park interior roads and campground loops.**
 - **The state's own cycling map** — most DOTs publish one.
+- **Komoot**, for the surface breakdown. It publishes metres of asphalt vs
+  unpaved vs path per route without an account, which is the single most useful
+  number for this question — a route returning "Path 31.9 km, Road <100 m" is
+  not a cruise no matter what it is called. It also flags segments where cycling
+  is not permitted. Komoot's own dog rules are **not** an authority; the land
+  manager still decides that.
+
+Record **every** candidate on the card, ruled-out ones included, with the reason
+each fails. A filtered list reads exactly like a list nobody checked.
 
 Record `cruise: true` with the surface and the length, or `cruise: false` with
 a `cruise_reason` naming what rules it out — sand, rock, gradient, traffic, or
@@ -184,6 +207,9 @@ be written as the latter.
 - [ ] Dog answer per trail, from an authority, or deliberately absent
 - [ ] Gravel/bike-carrier question answered against §2's full list
 - [ ] Offroad routes each carry their OWN listing link
+- [ ] Trails Offroad and Komoot searched by county, not just by route name
+- [ ] Any onX link labelled as the only source that exists
+- [ ] Ruled-out gravel candidates listed with their reasons, not dropped
 - [ ] Vehicle class checked — is the truck actually allowed?
 - [ ] Scenic drives, `rig: truck`
 - [ ] Highlights each carry `when` — hours, days, seasonal opening

@@ -48,197 +48,268 @@ CC_STATS = """function ccStatsHTML(){
 }
 """
 
+# --------------------------------------------------------------------------
+# The shaping lives in PYTHON, not in the page.
+#
+# It used to be built in JavaScript inside the injected block, which meant the
+# phone build could not see it — build_mobile.py reads consts out of the built
+# desktop file, and a value computed at page-load time is not a const. The tab
+# existed on the desktop and simply was not on the phone, which is the failure
+# this repo has already shipped once. One shaping, two consumers.
+# --------------------------------------------------------------------------
+
+GRAVEL = '\U0001F6B2'          # 🚲
+DOT = ' · '
+
+
+def esc(x):
+    return (str('' if x is None else x)
+            .replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))
+
+
+def more_links(arr):
+    """Second sources, as real anchors. `tag` is injected as raw HTML into a
+    <span class="tag">, so a Komoot or Forest Service link can ride along inside
+    it without inventing a box the other trips do not have."""
+    out = []
+    for l in arr or []:
+        out.append('<a href="%s" target="_blank" rel="noopener">%s</a>%s'
+                   % (l['url'], l.get('label') or 'source',
+                      ' — ' + l['note'] if l.get('note') else ''))
+    return DOT.join(out)
+
+
+def hours_for(db, name):
+    k = str(name or '').lower()
+    for x in db.get('hours') or []:
+        n = str(x.get('name') or '').lower()[:14]
+        if n and (n in k or k[:14] in n):
+            return x
+    return {}
+
+
+def joined(*bits):
+    return DOT.join([b for b in bits if b])
+
+
+def shape(db):
+    """Everything both builds need, in one dict.
+
+    `stop` is deliberately a STOPS-shaped entry: that is what makes the
+    dashboard's own renderCards() able to draw it, and what made the card stop
+    looking like a lookalike of itself.
+    """
+    st, m = db['stop'], db.get('monsoon') or {}
+
+    # The monsoon rule leads the card, because on these dates it governs the
+    # hour of every outdoor thing on it.
+    note = ''
+    if m.get('season'):
+        note = ('LATE AUGUST IS PEAK MONSOON, and it sets the clock for every day here: 5.65 in '
+                'of rain in August against 3.10 in September (WRCC 291931). NPS: “Finish '
+                'hiking in the morning and be out of canyons or away from washes before the '
+                'afternoon.” The gravel ride runs the Rio Peñasco, a confirmed '
+                'flash-flood channel with NO stream gauge — NWS El Paso: “due to the '
+                'lack of gauges on this stream, it is difficult to know where the flooding '
+                'currently is occurring.” There is nothing to check before you set off. '
+                'Ride it in the morning.')
+
+    trails = []
+    for t in db.get('trails') or []:
+        o = {'name': t['name'], 'url': (t.get('alltrails') or {}).get('url') or '',
+             'difficulty': t.get('difficulty'), 'time': t.get('time'),
+             'distance': t.get('distance'), 'rating': t.get('reviews'),
+             'uses': t.get('uses')}
+        if t.get('dogs') is not None:
+            o['dogs'] = t['dogs']
+        if t.get('cruise') is True:
+            o['cruise'] = True
+        o['tag'] = joined(
+            (t['elevation_gain'] + ' gain') if t.get('elevation_gain') else '',
+            t.get('note'), t.get('season'),
+            ('Not sourced: ' + ' | '.join(t['needs'])) if t.get('needs') else '',
+            ('Also: ' + more_links(t['other_links'])) if t.get('other_links') else '')
+        trails.append(o)
+
+    # The link text names the SOURCE. Seven of these roads exist on no site
+    # LLuis uses, and the card should say which is which at a glance rather than
+    # showing twelve identical-looking links.
+    offroad = [{'name': r['name'], 'url': r.get('url'),
+                'label': r.get('label') or r.get('listing_type') or 'route listing',
+                'rig': 'truck', 'distance': r.get('distance'),
+                'difficulty': r.get('difficulty'),
+                'tag': joined(r.get('vehicle_class'), r.get('note'), r.get('season'))}
+               for r in db.get('offroad') or []]
+
+    # Every cruise candidate is listed, ruled-out ones included. "Nothing here
+    # works" reads identically to "nobody checked" unless the reasons are on the
+    # card.
+    for x in db.get('cruise') or []:
+        ok = bool(re.match(r'\s*works', x.get('verdict') or '', re.I))
+        offroad.append({
+            'name': (GRAVEL + ' ' if ok else GRAVEL + '✗ ') + x['name'],
+            'url': x.get('url'), 'label': x.get('label') or x.get('tier') or 'source',
+            'rig': 'truck', 'cruise': ok, 'distance': x.get('length'),
+            'tag': joined('GRAVEL RIDE with the dog in the carrier' if ok
+                          else 'RULED OUT for the dog carrier',
+                          x.get('surface'), x.get('bike_legal'), x.get('verdict'),
+                          x.get('season'),
+                          ('Also: ' + more_links(x['other_links'])) if x.get('other_links') else '')})
+
+    drives = [{'name': d['name'], 'url': d.get('url'), 'rig': 'truck',
+               'distance': d.get('distance'),
+               'tag': joined(d.get('note'), d.get('season'))}
+              for d in db.get('scenicDrives') or []]
+
+    activities = []
+    for x in db.get('highlights') or []:
+        hr = hours_for(db, x['name'])
+        when = hr.get('when') or ''
+        if str(hr.get('open_in_late_september') or '').lower().startswith('no'):
+            when = 'CLOSED on these dates. ' + when
+        activities.append({'name': x['name'], 'when': when, 'detail': x.get('detail'),
+                           'links': (x.get('links') or [])
+                                    + ([{'label': 'hours', 'url': hr['url']}] if hr.get('url') else [])})
+
+    camps = db.get('campgrounds') or []
+    stop = {
+        'id': st['id'], 'name': st['name'], 'leg': 'cloudcroft',
+        'lat': st['lat'], 'lng': st['lng'], 'nights': st['nights'],
+        'arrive': st['arrive'], 'depart': st['depart'],
+        'blurb': st['blurb'], 'note': note,
+        'alltrails': trails, 'offroad': offroad, 'scenicDrives': drives,
+        'activities': activities,
+        'nearbyTowns': [
+            {'name': 'Alamogordo, NM', 'distance': '~35 min / 20 mi down US-82',
+             'note': 'Full resupply, fuel and the desert floor 4,300 ft below. The climb up is '
+                     'the hard part of the drive.'},
+            {'name': 'Mayhill, NM', 'distance': '~25 min / 18 mi east on US-82',
+             'note': 'The gentle approach from Artesia comes through here, and Camp Rio is on it.'}],
+        'poi': [{'name': 'Mexican Canyon Trestle vista', 'lat': 32.9642532, 'lng': -105.7474681,
+                 'type': 'sight'},
+                {'name': 'Trestle Recreation Area', 'lat': 32.957241, 'lng': -105.748959,
+                 'type': 'trail'},
+                {'name': 'White Sands National Park', 'lat': 32.809869, 'lng': -106.264225,
+                 'type': 'sight'}],
+        'weather': {'flag': 'amber' if m.get('season') else 'green',
+                    'reason': ('Peak monsoon. No day is safer than another — the mornings '
+                               'are.') if m.get('season') else 'No known seasonal-access conflict.'},
+        'tempF': {'avgMax': (db.get('tempF') or {}).get('avgMax'),
+                  'avgMin': (db.get('tempF') or {}).get('avgMin')},
+        'tz': st.get('tz'),
+        'camp': (camps[0]['name'] + ' — no operator here publishes a maximum length, so '
+                 'every option is a phone call before booking.') if camps else '',
+        'campNotes': [x['name'] + ' — ' + joined(
+                          ('max ' + x['max_length']) if x.get('max_length')
+                          else 'NO published max length', x.get('hookups'), x.get('phone'))
+                      + '. ' + (x.get('note') or '') for x in camps],
+        'campResearch': {
+            'verdict': 'Every operator silent on maximum length — all three are calls.',
+            'paid_options': [{'name': x['name'], 'url': x.get('url'), 'note': x.get('note')}
+                             for x in camps],
+            'boondock_options': [], 'caveats': [db.get('elevation_note') or '']},
+        'planNote': ' '.join('%s %s — %s. %s' % (d['dow'], d['date'][8:], d['shape'], d['detail'])
+                             for d in (db.get('plan') or {}).get('days') or []),
+    }
+
+    # The shot list and the light box live INSIDE the card on every other trip —
+    # photoBlock() and lightBlock() read them out of PHOTO[id] and LIGHT[id].
+    photo = [{'title': s['title'], 'subject': s.get('subject'),
+              'vantage': s['vantage'] + (
+                  ' <a href="https://www.google.com/maps/search/?api=1&query=%s,%s" '
+                  'target="_blank" rel="noopener">%s,%s</a>'
+                  % (s['lat'], s['lng'], s['lat'], s['lng'])
+                  if s.get('lat') and s.get('lng') else ''),
+              'light': s.get('light'), 'craft': s.get('craft')}
+             for s in db.get('shots') or []]
+
+    # red is "likely blocked", orange is "check season". An operator that
+    # publishes nothing is orange, never green — no prohibition is not permission.
+    highlights = []
+    for x in db.get('highlights') or []:
+        hr = hours_for(db, x['name'])
+        op = str(hr.get('open_in_late_september') or hr.get('open') or '').lower()
+        flag = 'red' if op.startswith('no') else 'green' if op.startswith('yes') else 'orange'
+        reason = ('Closed on these dates. ' + (hr.get('when') or '')) if flag == 'red' else \
+                 ('No operator publishes hours for these dates'
+                  + (' — phone ' + hr['phone'] if hr.get('phone') else '')
+                  + '. ' + (hr.get('when') or '')) if flag == 'orange' else (hr.get('when') or '')
+        highlights.append({
+            'stop_id': st['id'], 'stop_name': st['name'], 'name': x['name'],
+            'type': x.get('type') or 'sight', 'summary': x.get('detail') or '',
+            'link': ((x.get('links') or [{}])[0].get('url') or hr.get('url')
+                     or 'https://duckduckgo.com/?q=' + quote(x['name'] + ' Cloudcroft NM')),
+            'flag': flag, 'flag_reason': reason})
+
+    issues, n = [], 0
+    def add(cat, sev, issue, analysis, solution=''):
+        nonlocal n
+        n += 1
+        issues.append({'id': 'cc-%d' % n, 'category': cat, 'severity': sev,
+                       'stop_id': st['id'], 'stop_name': st['name'],
+                       'issue': issue, 'analysis': analysis, 'solution': solution})
+    for t in db.get('trails') or []:
+        for need in t.get('needs') or []:
+            add('research', 'orange', t['name'] + ' — ' + need,
+                'Recorded absent rather than guessed. The Forest Service publishes no figure for '
+                'this, and the app is not an authority.')
+    for u in db.get('aug_unknowns') or []:
+        add('research', 'orange', u if isinstance(u, str) else u.get('item', ''),
+            '' if isinstance(u, str) else (u.get('why') or u.get('note') or ''))
+    for x in db.get('aug_calls') or []:
+        add('camping', 'orange',
+            'Call: ' + (x if isinstance(x, str) else (x.get('who') or x.get('number') or '')),
+            '' if isinstance(x, str) else (x.get('question') or x.get('why') or ''),
+            '' if isinstance(x, str) else '☎ ' + (x.get('number') or ''))
+
+    # Overview: the blurb, the monsoon rule, and the week. Built with the page's
+    # own classes — .subhead, .rollup-wrap, .timeline-wrap, table.tl — so it
+    # matches the other two trips without a stylesheet of its own.
+    ov = '<p class="subhead" style="margin:0 0 10px 2px">%s</p>' % esc(st['blurb'])
+    if m.get('season'):
+        ov += ('<div class="rollup-wrap" style="border-left:3px solid #e0384d;margin-bottom:14px">'
+               '<p class="subhead" style="margin:0 0 6px">Late August is peak monsoon, and it sets '
+               'the clock for every day here</p><p style="font-size:.85rem;color:var(--muted);'
+               'margin:0;line-height:1.55">%s %s</p></div>'
+               % (esc(m.get('daily_pattern')), esc(m.get('lightning'))))
+    days = (db.get('plan') or {}).get('days') or []
+    if days:
+        ov += ('<p class="subhead" style="margin:14px 2px 6px">The week, day by day</p>'
+               '<p style="font-size:.78rem;color:var(--muted);margin:0 2px 8px">%s</p>'
+               '<div class="timeline-wrap"><table class="tl" id="ccTimelineTable">'
+               '<tr><th>Day</th><th>Date</th><th>Shape of the day</th><th>Detail</th></tr>%s'
+               '</table></div>'
+               % (esc((db.get('plan') or {}).get('_why')),
+                  ''.join('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>'
+                          % (esc(d['dow']), esc(d['date']), esc(d['shape']), esc(d['detail']))
+                          for d in days)))
+
+    return {'stop': stop, 'photo': photo, 'light': db.get('light') or {},
+            'highlights': highlights, 'issues': issues, 'overviewHTML': ov,
+            'legColor': '#7ec488', 'legName': 'Cloudcroft, NM'}
+
+
+# The page-side block is now assignment only. Everything above decided the
+# shape; this just hands it to the renderers the other two trips already use.
 RENDER_JS = r"""
 <script>
 (function(){
-  if (typeof CLOUDCROFT === 'undefined') return;
-  var c = CLOUDCROFT;
-
-  // Shape the research as a STOPS entry so the dashboard's own renderCards()
-  // draws it. The first version wrote a parallel renderer, which is why the card
-  // looked nothing like an Alaska stop and why the shot list and light box ended
-  // up in a different tab instead of inside the card where they belong.
-  var hoursFor = function(name){
-    var k = String(name||'').toLowerCase();
-    return (c.hours||[]).filter(function(x){
-      var n = String(x.name||'').toLowerCase().slice(0,14);
-      return n && (k.indexOf(n)>=0 || n.indexOf(k.slice(0,14))>=0); })[0]; };
-
-  var moreLinks = function(arr){
-    return (arr||[]).map(function(l){
-      return '<a href="'+l.url+'" target="_blank" rel="noopener">'+(l.label||'source')+'</a>'
-           + (l.note ? ' — '+l.note : ''); }).join(' \u00b7 '); };
-
-  var activities = (c.highlights||[]).map(function(x){
-    var hr = hoursFor(x.name) || {};
-    var when = hr.when || '';
-    var open = String(hr.open_in_late_september||'').toLowerCase();
-    if(open.indexOf('no')===0) when = 'CLOSED on these dates. ' + when;
-    return { name:x.name, when:when, detail:x.detail,
-             links:(x.links||[]).concat(hr.url?[{label:'hours',url:hr.url}]:[]) }; });
-
-  // The monsoon rule leads the card, because on these dates it governs the hour
-  // of every outdoor thing on it.
-  var m = c.monsoon||{};
-  var note = m.season
-    ? ('LATE AUGUST IS PEAK MONSOON, and it sets the clock for every day here: 5.65 in of rain in '
-       + 'August against 3.10 in September (WRCC 291931). NPS: \u201cFinish hiking in the morning and '
-       + 'be out of canyons or away from washes before the afternoon.\u201d The gravel ride runs the '
-       + 'Rio Pe\u00f1asco, a confirmed flash-flood channel with NO stream gauge \u2014 NWS El Paso: '
-       + '\u201cdue to the lack of gauges on this stream, it is difficult to know where the flooding '
-       + 'currently is occurring.\u201d There is nothing to check before you set off. Ride it in the '
-       + 'morning.')
-    : '';
-
-  var planTxt = c.plan ? (c.plan.days||[]).map(function(d){
-      return d.dow + ' ' + d.date.slice(8) + ' \u2014 ' + d.shape + '. ' + d.detail; }).join(' ') : '';
-
-  window.CC_STOP = {
-    id: c.stop.id, name: c.stop.name, leg: 'cloudcroft',
-    lat: c.stop.lat, lng: c.stop.lng, nights: c.stop.nights,
-    arrive: c.stop.arrive, depart: c.stop.depart,
-    blurb: c.stop.blurb,
-    note: note,
-    alltrails: (c.trails||[]).map(function(t){
-      var o = {name:t.name, url:(t.alltrails&&t.alltrails.url)||'',
-               difficulty:t.difficulty, time:t.time, distance:t.distance,
-               rating:t.reviews, uses:t.uses, tag:''};
-      if(t.dogs!==undefined && t.dogs!==null) o.dogs = t.dogs;
-      if(t.cruise===true) o.cruise = true;
-      var bits=[];
-      if(t.elevation_gain) bits.push(t.elevation_gain+' gain');
-      if(t.note) bits.push(t.note);
-      if(t.season) bits.push(t.season);
-      if((t.needs||[]).length) bits.push('Not sourced: '+t.needs.join(' | '));
-      if((t.other_links||[]).length) bits.push('Also: '+moreLinks(t.other_links));
-      o.tag = bits.join(' \u00b7 ');
-      return o; }),
-    offroad: (c.offroad||[]).map(function(r){
-      // The link text names the SOURCE. Seven of these roads exist on no site
-      // LLuis uses, and the card should say which is which at a glance rather
-      // than showing twelve identical-looking links.
-      return {name:r.name, url:r.url, label:r.label||r.listing_type||'route listing',
-              rig:'truck', distance:r.distance, difficulty:r.difficulty,
-              tag:[r.vehicle_class, r.note, r.season].filter(Boolean).join(' \u00b7 ')}; })
-      // Every cruise candidate is listed, ruled-out ones included. "Nothing here
-      // works" is only a real answer if the reasons are on the card — a filtered
-      // list looks identical to a list nobody checked.
-      .concat((c.cruise||[]).map(function(x){
-          var ok = /^\s*works/i.test(x.verdict||'');
-          return {name:(ok?'\uD83D\uDEB2 ':'\uD83D\uDEB2\u2717 ')+x.name,
-                  url:x.url, label:x.label||x.tier||'source',
-                  rig:'truck', cruise:ok, distance:x.length,
-                  tag:[ok ? 'GRAVEL RIDE with the dog in the carrier'
-                          : 'RULED OUT for the dog carrier', x.surface, x.bike_legal,
-                       x.verdict, x.season,
-                       (x.other_links||[]).length ? 'Also: '+moreLinks(x.other_links) : ''
-                      ].filter(Boolean).join(' \u00b7 ')}; })),
-    scenicDrives: (c.scenicDrives||[]).map(function(d){
-      return {name:d.name, url:d.url, rig:'truck', distance:d.distance,
-              tag:[d.note, d.season].filter(Boolean).join(' \u00b7 ')}; }),
-    activities: activities,
-    nearbyTowns: [{name:'Alamogordo, NM', distance:'~35 min / 20 mi down US-82',
-                   note:'Full resupply, fuel and the desert floor 4,300 ft below. The climb up is '
-                        +'the hard part of the drive.'},
-                  {name:'Mayhill, NM', distance:'~25 min / 18 mi east on US-82',
-                   note:'The gentle approach from Artesia comes through here, and Camp Rio is on it.'}],
-    poi: [{name:'Mexican Canyon Trestle vista', lat:32.9642532, lng:-105.7474681, type:'sight'},
-          {name:'Trestle Recreation Area', lat:32.957241, lng:-105.748959, type:'trail'},
-          {name:'White Sands National Park', lat:32.809869, lng:-106.264225, type:'sight'}],
-    weather: {flag: m.season ? 'amber' : 'green',
-              reason: m.season ? 'Peak monsoon. No day is safer than another \u2014 the mornings are.'
-                               : 'No known seasonal-access conflict.'},
-    tempF: {avgMax:(c.tempF||{}).avgMax, avgMin:(c.tempF||{}).avgMin},
-    tz: c.stop.tz,
-    camp: (c.campgrounds||[])[0] ? (c.campgrounds[0].name+' \u2014 no operator here publishes a '
-          +'maximum length, so every option is a phone call before booking.') : '',
-    campNotes: (c.campgrounds||[]).map(function(x){
-      return x.name+' \u2014 '+[x.max_length?('max '+x.max_length):'NO published max length',
-             x.hookups, x.phone].filter(Boolean).join(' \u00b7 ')+'. '+(x.note||''); }),
-    campResearch: {verdict:'Every operator silent on maximum length \u2014 all three are calls.',
-                   paid_options:(c.campgrounds||[]).map(function(x){
-                     return {name:x.name, url:x.url, note:x.note}; }),
-                   boondock_options:[], caveats:[c.elevation_note||'']},
-    planNote: planTxt
-  };
-
-  // The shot list and the light box live INSIDE the card on every other trip,
-  // and photoBlock()/lightBlock() read them out of PHOTO[id] and LIGHT[id].
-  if(typeof PHOTO !== 'undefined') PHOTO[c.stop.id] = (c.shots||[]).map(function(s){
-    return {title:s.title, subject:s.subject,
-            vantage:s.vantage + ((s.lat&&s.lng)
-              ? ' <a href="https://www.google.com/maps/search/?api=1&query='+s.lat+','+s.lng
-                +'" target="_blank" rel="noopener">'+s.lat+','+s.lng+'</a>' : ''),
-            light:s.light, craft:s.craft}; });
-  if(typeof LIGHT !== 'undefined') LIGHT[c.stop.id] = c.light;
-  if(typeof LEG_COLORS !== 'undefined') LEG_COLORS.cloudcroft = '#7ec488';
-  if(typeof LEG_NAMES !== 'undefined') LEG_NAMES.cloudcroft = 'Cloudcroft, NM';
-
-  var esc = function(x){ return String(x==null?'':x)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); };
-
-  /* ---- Highlights: the dashboard's own rollup, one leg deep ------------- */
-  window.CC_HIGHLIGHTS_BY_LEG = { cloudcroft: (c.highlights||[]).map(function(x){
-    var hr = hoursFor(x.name) || {};
-    var open = String(hr.open_in_late_september||hr.open||'').toLowerCase();
-    // red is "likely blocked", orange is "check season". An operator that
-    // publishes nothing is orange, never green — no prohibition is not permission.
-    var flag = open.indexOf('no')===0 ? 'red' : open.indexOf('yes')===0 ? 'green' : 'orange';
-    return { stop_id:c.stop.id, stop_name:c.stop.name, name:x.name,
-             type:x.type||'sight', summary:x.detail||'',
-             link:(x.links&&x.links[0]&&x.links[0].url) || hr.url
-                  || 'https://duckduckgo.com/?q='+encodeURIComponent(x.name+' Cloudcroft NM'),
-             flag:flag,
-             flag_reason: flag==='red' ? ('Closed on these dates. '+(hr.when||''))
-                        : flag==='orange' ? ('No operator publishes hours for these dates'
-                                             + (hr.phone?' — phone '+hr.phone:'')+'. '+(hr.when||''))
-                        : (hr.when||'') }; }) };
-
-  /* ---- Known issues: every gap, as an issue card ------------------------ */
-  var iss = [], nid = 0;
-  var push = function(o){ o.id = 'cc-'+(++nid); o.stop_id = c.stop.id;
-    o.stop_name = c.stop.name; iss.push(o); };
-  (c.trails||[]).forEach(function(t){ (t.needs||[]).forEach(function(n){
-    push({ category:'research', severity:'orange', issue:t.name+' — '+n,
-           analysis:'Recorded absent rather than guessed. The Forest Service publishes no '
-                  + 'figure for this and the app is not an authority.', solution:'' }); }); });
-  (c.aug_unknowns||[]).forEach(function(u){
-    push({ category:'research', severity:'orange',
-           issue: typeof u==='string' ? u : (u.item||''),
-           analysis: typeof u==='string' ? '' : (u.why||u.note||''), solution:'' }); });
-  (c.aug_calls||[]).forEach(function(x){
-    push({ category:'camping', severity:'orange',
-           issue: 'Call: ' + (typeof x==='string' ? x : (x.who||x.number||'')),
-           analysis: typeof x==='string' ? '' : (x.question||x.why||''),
-           solution: typeof x==='string' ? '' : ('☎ '+(x.number||'')) }); });
-  window.CC_ISSUES = iss;
-
-  /* ---- Overview: the blurb, the monsoon rule, and the week -------------- */
-  var ov = '<p class="subhead" style="margin:0 0 10px 2px">'+esc(c.stop.blurb)+'</p>';
-  if(m.season){
-    ov += '<div class="rollup-wrap" style="border-left:3px solid #e0384d;margin-bottom:14px">'
-       + '<p class="subhead" style="margin:0 0 6px">Late August is peak monsoon, and it sets the '
-       + 'clock for every day here</p><p style="font-size:.85rem;color:var(--muted);margin:0;'
-       + 'line-height:1.55">'+esc(m.daily_pattern||'')+' '+esc(m.lightning||'')+'</p></div>';
-  }
-  if(c.plan && (c.plan.days||[]).length){
-    ov += '<p class="subhead" style="margin:14px 2px 6px">The week, day by day</p>'
-       + '<p style="font-size:.78rem;color:var(--muted);margin:0 2px 8px">'
-       + esc(c.plan._why||'') + '</p>'
-       + '<div class="timeline-wrap"><table class="tl" id="ccTimelineTable"><tr>'
-       + '<th>Day</th><th>Date</th><th>Shape of the day</th><th>Detail</th></tr>'
-       + c.plan.days.map(function(d){ return '<tr><td>'+esc(d.dow)+'</td><td>'
-           + esc(d.date)+'</td><td>'+esc(d.shape)+'</td><td>'+esc(d.detail)
-           + '</td></tr>'; }).join('') + '</table></div>';
-  }
+  if (typeof CC_DATA === 'undefined') return;
+  window.CC_STOP = CC_DATA.stop;
+  window.CC_HIGHLIGHTS_BY_LEG = { cloudcroft: CC_DATA.highlights };
+  window.CC_ISSUES = CC_DATA.issues;
+  if(typeof PHOTO !== 'undefined')      PHOTO[CC_DATA.stop.id] = CC_DATA.photo;
+  if(typeof LIGHT !== 'undefined')      LIGHT[CC_DATA.stop.id] = CC_DATA.light;
+  if(typeof LEG_COLORS !== 'undefined') LEG_COLORS.cloudcroft  = CC_DATA.legColor;
+  if(typeof LEG_NAMES !== 'undefined')  LEG_NAMES.cloudcroft   = CC_DATA.legName;
 
   window.renderCloudcroft = function(){
     if(typeof renderCards !== 'function') return;
     renderCards('all', [window.CC_STOP], 'ccCardsWrap');
     var o = document.getElementById('ccOverviewWrap');
-    if(o) o.innerHTML = ov;
-    // Same two renderers the other trips use, pointed at this trip's data. A
-    // lookalike was written first, and it is why the card did not match.
+    if(o) o.innerHTML = CC_DATA.overviewHTML;
+    // The same two renderers the other trips use, pointed at this trip's data.
+    // A lookalike was written first, and it is why the card did not match.
     if(typeof renderHighlights === 'function')
       renderHighlights(window.CC_HIGHLIGHTS_BY_LEG, 'ccHighlightsWrap', 'ccHlFilterBar');
     if(typeof renderIssues === 'function')
@@ -249,8 +320,6 @@ RENDER_JS = r"""
 })();
 </script>
 """
-
-
 
 def replace_between(h, start, end, block, anchor, before=False):
     """Remove EVERY existing copy of the marked block, then insert one.
@@ -281,8 +350,13 @@ def main():
     h = re.sub(r'\n*' + re.escape(CSS_START) + r'.*?' + re.escape(CSS_END) + r'\n*', '\n',
                h, flags=re.S)
 
+    # CC_DATA is a plain const, deliberately. build_mobile.py reads consts out
+    # of the built desktop file; a value computed at page-load time is invisible
+    # to it, which is why the tab existed on the desktop and not on the phone.
     data = (DATA_START + '\nconst CLOUDCROFT = '
             + json.dumps(db, ensure_ascii=False, separators=(',', ':')) + ';\n'
+            + 'const CC_DATA = '
+            + json.dumps(shape(db), ensure_ascii=False, separators=(',', ':')) + ';\n'
             + CC_STATS + DATA_END)
     h = replace_between(h, DATA_START, DATA_END, data, 'const TRIP_MODES = {', before=True)
 

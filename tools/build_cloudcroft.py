@@ -35,256 +35,234 @@ DATA_END = '/* cloudcroft data end — build_cloudcroft.py */'
 VIEW_START = '<!-- cloudcroft views start — build_cloudcroft.py -->'
 VIEW_END = '<!-- cloudcroft views end — build_cloudcroft.py -->'
 
+
+
+CC_STATS = """function ccStatsHTML(){
+  var c = CLOUDCROFT, s = c.stop, n = function(a){ return (a||[]).length; };
+  var cruiseOk = (c.cruise||[]).filter(function(x){ return /^\\s*works/i.test(x.verdict||''); }).length;
+  var gaps = (c.trails||[]).reduce(function(t,x){ return t + ((x.needs||[]).length); }, 0);
+  return [[s.nights,'nights'],[s.elevation_ft.toLocaleString(),'feet'],[n(c.trails),'trails'],
+          [cruiseOk,'gravel rides'],[n(c.offroad),'4x4 routes'],[n(c.shots),'shots'],
+          [gaps,'gaps recorded']]
+    .map(function(p){ return '<div class="stat"><b>'+p[0]+'</b><span>'+p[1]+'</span></div>'; }).join('');
+}
+"""
+
 RENDER_JS = r"""
 <script>
 (function(){
   if (typeof CLOUDCROFT === 'undefined') return;
   var c = CLOUDCROFT;
-  var esc = function(x){ return String(x==null?'':x)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); };
-  var A = function(u,t){ return u ? '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+' ↗</a>' : ''; };
-  var P = function(t,k){ return '<span class="pill '+(k||'')+'">'+esc(t)+'</span>'; };
-  var dcls = function(d){ d=(d||'').toLowerCase();
-    return d.indexOf('easy')===0?'pill-easy':d.indexOf('moderate')===0?'pill-moderate':'pill-hard'; };
-  var dogP = function(v){ return v===true ? P('🐕 dogs OK','pill-dog-ok')
-    : v===false ? P('🚫 no dogs','pill-dog-no') : P('dog rule unpublished','cc-unk'); };
-  var needs = function(ns){ return (ns&&ns.length)
-    ? '<details><summary>Not sourced ('+ns.length+')</summary><ul class="cc-needs">'
-      + ns.map(function(n){return '<li>'+esc(n)+'</li>';}).join('') + '</ul></details>' : ''; };
-  var row = function(title,pills,body,links){
-    var lk = (links||[]).filter(Boolean);
-    return '<li><div class="iname">'+title+'</div>'
-      + (pills.length?'<div class="pills">'+pills.join('')+'</div>':'')
-      + body + (lk.length?'<div class="cc-lk">'+lk.join(' · ')+'</div>':'') + '</li>'; };
-  var sec = function(icon,title,sub,inner){
-    return '<section class="cc-sec"><div class="sec-head">'+icon+' '+esc(title)+'</div>'
-      + (sub?'<p class="cc-sub">'+esc(sub)+'</p>':'') + '<ul class="linklist">'+inner+'</ul></section>'; };
-  var set = function(id,html){ var el=document.getElementById(id); if(el) el.innerHTML=html; };
 
+  // Shape the research as a STOPS entry so the dashboard's own renderCards()
+  // draws it. The first version wrote a parallel renderer, which is why the card
+  // looked nothing like an Alaska stop and why the shot list and light box ended
+  // up in a different tab instead of inside the card where they belong.
   var hoursFor = function(name){
     var k = String(name||'').toLowerCase();
     return (c.hours||[]).filter(function(x){
       var n = String(x.name||'').toLowerCase().slice(0,14);
       return n && (k.indexOf(n)>=0 || n.indexOf(k.slice(0,14))>=0); })[0]; };
 
-  /* ---- Overview: orientation, the monsoon rule, and the week ------------ */
+  var moreLinks = function(arr){
+    return (arr||[]).map(function(l){
+      return '<a href="'+l.url+'" target="_blank" rel="noopener">'+(l.label||'source')+'</a>'
+           + (l.note ? ' — '+l.note : ''); }).join(' \u00b7 '); };
+
+  var activities = (c.highlights||[]).map(function(x){
+    var hr = hoursFor(x.name) || {};
+    var when = hr.when || '';
+    var open = String(hr.open_in_late_september||'').toLowerCase();
+    if(open.indexOf('no')===0) when = 'CLOSED on these dates. ' + when;
+    return { name:x.name, when:when, detail:x.detail,
+             links:(x.links||[]).concat(hr.url?[{label:'hours',url:hr.url}]:[]) }; });
+
+  // The monsoon rule leads the card, because on these dates it governs the hour
+  // of every outdoor thing on it.
   var m = c.monsoon||{};
-  var banner = !m.season ? '' : ('<div class="cc-alert"><b>Late August is the peak of the monsoon, '
-    + 'and it sets the clock for every day of this stay</b>'
-    + '<p>Cloudcroft’s own record puts <b>5.65 in of rain in August against 3.10 in September</b> '
-    + '(WRCC 291931) — these dates sit on the wettest fortnight of the year. Every authority '
-    + 'publishes the same rule. NPS: <i>“Finish hiking in the morning and be out of canyons or '
-    + 'away from washes before the afternoon.”</i></p>'
-    + '<p style="margin-top:8px">The gravel ride runs the <b>Rio Peñasco, a confirmed flash-flood '
-    + 'channel with no stream gauge</b> — NWS El Paso: <i>“due to the lack of gauges on this '
-    + 'stream, it is difficult to know where the flooding currently is occurring.”</i> There is '
-    + 'nothing to check before you set off. Ride it in the morning.</p></div>');
-  var plan = c.plan ? ('<section class="cc-sec"><div class="sec-head">📅 The week, day by day</div>'
-    + '<p class="cc-sub">'+esc(c.plan._why)+'</p><ul class="linklist">'
-    + (c.plan.days||[]).map(function(d){ return '<li><div class="iname">'+esc(d.dow)+' '
-        + esc(d.date.slice(8))+' — '+esc(d.shape)+'</div><div class="idet">'+esc(d.detail)
-        + '</div></li>'; }).join('') + '</ul></section>') : '';
-  set('ccOverview', '<div class="cc-card"><p class="cc-blurb">'+esc(c.stop.blurb)+'</p>'
-    + banner + plan + '</div>');
+  var note = m.season
+    ? ('LATE AUGUST IS PEAK MONSOON, and it sets the clock for every day here: 5.65 in of rain in '
+       + 'August against 3.10 in September (WRCC 291931). NPS: \u201cFinish hiking in the morning and '
+       + 'be out of canyons or away from washes before the afternoon.\u201d The gravel ride runs the '
+       + 'Rio Pe\u00f1asco, a confirmed flash-flood channel with NO stream gauge \u2014 NWS El Paso: '
+       + '\u201cdue to the lack of gauges on this stream, it is difficult to know where the flooding '
+       + 'currently is occurring.\u201d There is nothing to check before you set off. Ride it in the '
+       + 'morning.')
+    : '';
 
-  /* ---- All Stops: the stop card itself ---------------------------------- */
-  var trails = (c.trails||[]).map(function(t){
-    var ps=[];
-    if(t.difficulty) ps.push(P(t.difficulty,dcls(t.difficulty)));
-    if(t.time) ps.push(P('⏱ '+t.time,'pill-distance'));
-    if(t.distance) ps.push(P('📏 '+t.distance,'pill-distance'));
-    if(t.elevation_gain) ps.push(P('↑ '+t.elevation_gain,'pill-distance'));
-    if(t.reviews) ps.push(P('★ '+t.reviews,'pill-rating'));
-    ps.push(dogP(t.dogs));
-    (t.uses||[]).forEach(function(u){ ps.push(P(u, /^(hike|bike|horse)$/.test(u)?('pill-'+u):'cc-unk')); });
-    if(t.cruise===false) ps.push(P('🚲 not a carrier route','cc-unk'));
-    var b = t.note?'<div class="idet">'+esc(t.note)+'</div>':'';
-    if(t.cruise_reason) b += '<div class="idet">'+esc(t.cruise_reason)+'</div>';
-    if(t.season) b += '<div class="cc-season">'+esc(t.season)+'</div>';
-    b += needs(t.needs);
-    var lk = [(t.alltrails&&t.alltrails.url)?A(t.alltrails.url,'AllTrails'):''];
-    (t.other_links||[]).forEach(function(o){ lk.push(A(o.url,o.label||'source')); });
-    return row(esc(t.name),ps,b,lk); }).join('');
+  var planTxt = c.plan ? (c.plan.days||[]).map(function(d){
+      return d.dow + ' ' + d.date.slice(8) + ' \u2014 ' + d.shape + '. ' + d.detail; }).join(' ') : '';
 
-  var routes = function(arr){ return (arr||[]).map(function(r){
-    var ps=[P('🛻 truck','cc-truck')];
-    if(r.vehicle_class) ps.push(P(String(r.vehicle_class).slice(0,64),'cc-unk'));
-    if(r.distance) ps.push(P('📏 '+String(r.distance).slice(0,64),'pill-distance'));
-    if(r.difficulty) ps.push(P(String(r.difficulty).slice(0,72),'pill-distance'));
-    var b = r.note?'<div class="idet">'+esc(r.note)+'</div>':'';
-    if(r.season) b += '<div class="cc-season">'+esc(r.season)+'</div>';
-    return row(esc(r.name),ps,b,[A(r.url, r.listing_type||r.tier||'route listing')]); }).join(''); };
+  window.CC_STOP = {
+    id: c.stop.id, name: c.stop.name, leg: 'cloudcroft',
+    lat: c.stop.lat, lng: c.stop.lng, nights: c.stop.nights,
+    arrive: c.stop.arrive, depart: c.stop.depart,
+    blurb: c.stop.blurb,
+    note: note,
+    alltrails: (c.trails||[]).map(function(t){
+      var o = {name:t.name, url:(t.alltrails&&t.alltrails.url)||'',
+               difficulty:t.difficulty, time:t.time, distance:t.distance,
+               rating:t.reviews, uses:t.uses, tag:''};
+      if(t.dogs!==undefined && t.dogs!==null) o.dogs = t.dogs;
+      if(t.cruise===true) o.cruise = true;
+      var bits=[];
+      if(t.elevation_gain) bits.push(t.elevation_gain+' gain');
+      if(t.note) bits.push(t.note);
+      if(t.season) bits.push(t.season);
+      if((t.needs||[]).length) bits.push('Not sourced: '+t.needs.join(' | '));
+      if((t.other_links||[]).length) bits.push('Also: '+moreLinks(t.other_links));
+      o.tag = bits.join(' \u00b7 ');
+      return o; }),
+    offroad: (c.offroad||[]).map(function(r){
+      // The link text names the SOURCE. Seven of these roads exist on no site
+      // LLuis uses, and the card should say which is which at a glance rather
+      // than showing twelve identical-looking links.
+      return {name:r.name, url:r.url, label:r.label||r.listing_type||'route listing',
+              rig:'truck', distance:r.distance, difficulty:r.difficulty,
+              tag:[r.vehicle_class, r.note, r.season].filter(Boolean).join(' \u00b7 ')}; })
+      // Every cruise candidate is listed, ruled-out ones included. "Nothing here
+      // works" is only a real answer if the reasons are on the card — a filtered
+      // list looks identical to a list nobody checked.
+      .concat((c.cruise||[]).map(function(x){
+          var ok = /^\s*works/i.test(x.verdict||'');
+          return {name:(ok?'\uD83D\uDEB2 ':'\uD83D\uDEB2\u2717 ')+x.name,
+                  url:x.url, label:x.label||x.tier||'source',
+                  rig:'truck', cruise:ok, distance:x.length,
+                  tag:[ok ? 'GRAVEL RIDE with the dog in the carrier'
+                          : 'RULED OUT for the dog carrier', x.surface, x.bike_legal,
+                       x.verdict, x.season,
+                       (x.other_links||[]).length ? 'Also: '+moreLinks(x.other_links) : ''
+                      ].filter(Boolean).join(' \u00b7 ')}; })),
+    scenicDrives: (c.scenicDrives||[]).map(function(d){
+      return {name:d.name, url:d.url, rig:'truck', distance:d.distance,
+              tag:[d.note, d.season].filter(Boolean).join(' \u00b7 ')}; }),
+    activities: activities,
+    nearbyTowns: [{name:'Alamogordo, NM', distance:'~35 min / 20 mi down US-82',
+                   note:'Full resupply, fuel and the desert floor 4,300 ft below. The climb up is '
+                        +'the hard part of the drive.'},
+                  {name:'Mayhill, NM', distance:'~25 min / 18 mi east on US-82',
+                   note:'The gentle approach from Artesia comes through here, and Camp Rio is on it.'}],
+    poi: [{name:'Mexican Canyon Trestle vista', lat:32.9642532, lng:-105.7474681, type:'sight'},
+          {name:'Trestle Recreation Area', lat:32.957241, lng:-105.748959, type:'trail'},
+          {name:'White Sands National Park', lat:32.809869, lng:-106.264225, type:'sight'}],
+    weather: {flag: m.season ? 'amber' : 'green',
+              reason: m.season ? 'Peak monsoon. No day is safer than another \u2014 the mornings are.'
+                               : 'No known seasonal-access conflict.'},
+    tempF: {avgMax:(c.tempF||{}).avgMax, avgMin:(c.tempF||{}).avgMin},
+    tz: c.stop.tz,
+    camp: (c.campgrounds||[])[0] ? (c.campgrounds[0].name+' \u2014 no operator here publishes a '
+          +'maximum length, so every option is a phone call before booking.') : '',
+    campNotes: (c.campgrounds||[]).map(function(x){
+      return x.name+' \u2014 '+[x.max_length?('max '+x.max_length):'NO published max length',
+             x.hookups, x.phone].filter(Boolean).join(' \u00b7 ')+'. '+(x.note||''); }),
+    campResearch: {verdict:'Every operator silent on maximum length \u2014 all three are calls.',
+                   paid_options:(c.campgrounds||[]).map(function(x){
+                     return {name:x.name, url:x.url, note:x.note}; }),
+                   boondock_options:[], caveats:[c.elevation_note||'']},
+    planNote: planTxt
+  };
 
-  var cruise = (c.cruise||[]).map(function(x){
-    var ok = /^\s*works/i.test(x.verdict||'');
-    var ps=[P(ok?'🚲 gravel cruise':'🚲 ruled out', ok?'pill-cruise':'cc-unk')];
-    ['length','surface','gradient'].forEach(function(k){ if(x[k]) ps.push(P(String(x[k]).slice(0,58),'pill-distance')); });
-    if(x.bike_legal) ps.push(P('bike-legal: '+String(x.bike_legal).slice(0,46),'cc-unk'));
-    var b = x.verdict?'<div class="idet">'+esc(x.verdict)+'</div>':'';
-    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
-    return row(esc(x.name),ps,b,[A(x.url,x.tier||'source')]); }).join('');
+  // The shot list and the light box live INSIDE the card on every other trip,
+  // and photoBlock()/lightBlock() read them out of PHOTO[id] and LIGHT[id].
+  if(typeof PHOTO !== 'undefined') PHOTO[c.stop.id] = (c.shots||[]).map(function(s){
+    return {title:s.title, subject:s.subject,
+            vantage:s.vantage + ((s.lat&&s.lng)
+              ? ' <a href="https://www.google.com/maps/search/?api=1&query='+s.lat+','+s.lng
+                +'" target="_blank" rel="noopener">'+s.lat+','+s.lng+'</a>' : ''),
+            light:s.light, craft:s.craft}; });
+  if(typeof LIGHT !== 'undefined') LIGHT[c.stop.id] = c.light;
+  if(typeof LEG_COLORS !== 'undefined') LEG_COLORS.cloudcroft = '#7ec488';
+  if(typeof LEG_NAMES !== 'undefined') LEG_NAMES.cloudcroft = 'Cloudcroft, NM';
 
-  var camps = (c.campgrounds||[]).map(function(x){
-    var ps=[P(x.max_length?('max '+x.max_length):'⚠ no published max length', x.max_length?'pill-distance':'cc-warn')];
-    if(x.hookups) ps.push(P(String(x.hookups).slice(0,60),'pill-distance'));
-    if(x.phone) ps.push(P('☎ '+x.phone,'pill-rating'));
-    var b = x.note?'<div class="idet">'+esc(x.note)+'</div>':'';
-    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
-    return row(esc(x.name),ps,b,[A(x.url,'operator')]); }).join('');
+  var esc = function(x){ return String(x==null?'':x)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); };
 
-  var dogSec = '<li><div class="iname">Lincoln National Forest publishes no dog rule at all</div>'
-    + '<div class="idet">Seven of the eight trails therefore carry no dog verdict — an absence of '
-    + 'prohibition is not permission, and the two must never look the same at a trailhead. What binds '
-    + 'is <b>36 CFR 261.16(j)</b>: a six-foot leash, but only at developed recreation sites, not on '
-    + 'the tread.</div><div class="cc-season">'+esc((c.dogs||{}).rule)+'</div>'
-    + '<div class="cc-lk">'+A((c.dogs||{}).source,'36 CFR 261.16')+'</div></li>'
-    + '<li><div class="iname">In the village and at White Sands</div><div class="idet">'
-    + esc((c.dogs||{}).notes)+'</div></li>';
+  /* ---- Highlights: the dashboard's own rollup, one leg deep ------------- */
+  window.CC_HIGHLIGHTS_BY_LEG = { cloudcroft: (c.highlights||[]).map(function(x){
+    var hr = hoursFor(x.name) || {};
+    var open = String(hr.open_in_late_september||hr.open||'').toLowerCase();
+    // red is "likely blocked", orange is "check season". An operator that
+    // publishes nothing is orange, never green — no prohibition is not permission.
+    var flag = open.indexOf('no')===0 ? 'red' : open.indexOf('yes')===0 ? 'green' : 'orange';
+    return { stop_id:c.stop.id, stop_name:c.stop.name, name:x.name,
+             type:x.type||'sight', summary:x.detail||'',
+             link:(x.links&&x.links[0]&&x.links[0].url) || hr.url
+                  || 'https://duckduckgo.com/?q='+encodeURIComponent(x.name+' Cloudcroft NM'),
+             flag:flag,
+             flag_reason: flag==='red' ? ('Closed on these dates. '+(hr.when||''))
+                        : flag==='orange' ? ('No operator publishes hours for these dates'
+                                             + (hr.phone?' — phone '+hr.phone:'')+'. '+(hr.when||''))
+                        : (hr.when||'') }; }) };
 
-  set('ccStops', '<div class="cc-card">'
-    + sec('⛰️','Trails','About one walk per night, easy and moderate leading. Permitted uses come from the Forest Service trails table, not from the app.', trails)
-    + sec('🐕','The dog','', dogSec)
-    + sec('🚲','Gravel and the bike carrier','The dog rides in a carrier, so the question is a firm, flat, bike-legal surface — not whether there is mountain biking.', cruise)
-    + sec('🛻','4x4 and forest roads','Numbered Forest Service roads only. Every T-numbered route on this district is 50-inch width and excludes the truck.', routes(c.offroad))
-    + sec('🚙','Scenic drives','Day trips in the towed truck. The coach does not leave the campground.', routes(c.scenicDrives))
-    + sec('⛺','Camp — the 40 ft question','Not one operator publishes a maximum length, so every one is a phone call before booking.', camps)
-    + '</div>');
-
-  /* ---- Highlights & Weather: hours, shots, light, temps ------------------ */
-  var highlights = (c.highlights||[]).map(function(x){
-    var hr = hoursFor(x.name), ps=[];
-    if(hr){
-      var o = String(hr.open_in_late_september||hr.open||'').toLowerCase();
-      ps.push(o.indexOf('no')===0 ? P('closed on these dates','pill-dog-no')
-            : o.indexOf('yes')===0 ? P('open on these dates','pill-dog-ok')
-            : P('opening unknown','cc-unk'));
-      if(hr.phone) ps.push(P('☎ '+hr.phone,'pill-rating'));
-    }
-    var b = x.detail?'<div class="idet">'+esc(x.detail)+'</div>':'';
-    if(hr&&hr.when) b += '<div class="cc-when"><b>When —</b> '+esc(hr.when)+'</div>';
-    if(hr&&hr.note) b += '<div class="idet">'+esc(hr.note)+'</div>';
-    var lk = (x.links||[]).map(function(l){ return A(l.url,l.label); });
-    if(hr&&hr.url) lk.push(A(hr.url,'hours'));
-    return row(esc(x.name),ps,b,lk); }).join('');
-
-  var shots = (c.shots||[]).map(function(s){
-    var ps = (s.lat&&s.lng)
-      ? ['<span class="pill pill-rating"><a href="https://www.google.com/maps/search/?api=1&query='
-         +s.lat+','+s.lng+'" target="_blank" rel="noopener">📍 '+s.lat+', '+s.lng+'</a></span>']
-      : [P('no published coordinate','cc-unk')];
-    var b = (s.subject?'<div class="idet">'+esc(s.subject)+'</div>':'')
-      + '<div class="cc-when"><b>Vantage —</b> '+esc(s.vantage)+'</div>'
-      + '<div class="cc-season"><b>Light —</b> '+esc(s.light)+'</div>'
-      + '<div class="idet"><b>Craft —</b> '+esc(s.craft)+'</div>' + needs(s.needs);
-    return row(esc(s.title),ps,b,[]); }).join('');
-
-  var L = c.light||{}, gm=L.goldenMorning||[], ge=L.goldenEvening||[];
-  var cell = function(l,v,i){ return '<div><span>'+esc(l)+'</span><b>'+esc(v)+'</b><i>'+esc(i)+'</i></div>'; };
-  var moonPct = Math.round((L.moonFrac||0)*100), darkPct = Math.round((L.darkestFrac||0)*100);
-  var light = '<section class="cc-sec"><div class="sec-head">🌅 Light</div><div class="cc-light">'
-    + cell('Sunrise',L.sunrise,(L.sunriseDir||'')+' '+(L.sunriseAz||'')+'°')
-    + cell('Sunset',L.sunset,(L.sunsetDir||'')+' '+(L.sunsetAz||'')+'°')
-    + cell('Golden — morning',gm.join('–'),(L.goldenMinutes||'')+' min')
-    + cell('Golden — evening',ge.join('–'),(L.goldenMinutes||'')+' min')
-    + cell('Day length',(L.dayLength||'')+' h','')
-    + cell('Astronomical dark',(L.darkStart||'')+'–'+(L.darkEnd||''),(L.darkHours||'')+' h')
-    + cell('Moon on arrival',moonPct+'%',L.moonPhase||'')
-    + cell('Darkest night',L.darkestNight,'moon '+darkPct+'%')
-    + '</div><p class="idet" style="margin-top:10px">Computed by <code>build_light.py</code>, not '
-    + 'researched. Two numbers organise the stop. The sun sets at '+esc(L.sunsetAz)+'°, so the '
-    + 'western rim — which is everything worth photographing here — is <b>frontlit in the '
-    + 'morning and a silhouette in the evening</b>. And the moon is '+moonPct+'% on arrival with the '
-    + 'darkest night still '+darkPct+'%, so <b>this is a moonlight week, not a Milky Way week</b> '
-    + '— which is why the White Sands full-moon night on the 23rd is the night shot, and gypsum '
-    + 'is the one subject in the region that is better under a full moon than under none.</p></section>';
-
-  var wx = '<section class="cc-sec"><div class="sec-head">🌧️ Weather on these dates</div>'
-    + '<ul class="linklist"><li><div class="iname">'+esc((c.tempF||{}).avgMax)+'°F / '
-    + esc((c.tempF||{}).avgMin)+'°F average, and 5.65 in of rain in the month</div>'
-    + '<div class="idet">'+esc(m.daily_pattern||'')+'</div>'
-    + (m.lightning?'<div class="cc-season">'+esc(m.lightning)+'</div>':'')
-    + (c.what_august_looks_like?'<div class="idet">'+esc(c.what_august_looks_like)+'</div>':'')
-    + (c.crowds?'<div class="idet">'+esc(c.crowds)+'</div>':'')
-    + '</li></ul></section>';
-
-  var events = (c.events||[]).length ? sec('🎪','Events in the window','',
-    (c.events||[]).map(function(e){ return row(esc(e.name),[],
-      '<div class="idet">'+esc(e.dates||'')+'</div>'
-      + (e.impact?'<div class="cc-season">'+esc(e.impact)+'</div>':''), []); }).join('')) : '';
-
-  set('ccHighlights','<div class="cc-card">'
-    + sec('🥾','Highlights','Each carries its opening window where an operator publishes one — and says so where none does.', highlights)
-    + events + wx
-    + sec('📷','Shot list','Vantage and hour worked against these dates and this latitude.', shots)
-    + light + '</div>');
-
-  /* ---- Known Issues: the gaps and the calls ----------------------------- */
-  var gapRows = [];
+  /* ---- Known issues: every gap, as an issue card ------------------------ */
+  var iss = [], nid = 0;
+  var push = function(o){ o.id = 'cc-'+(++nid); o.stop_id = c.stop.id;
+    o.stop_name = c.stop.name; iss.push(o); };
   (c.trails||[]).forEach(function(t){ (t.needs||[]).forEach(function(n){
-    gapRows.push(row(esc(t.name),[],'<div class="idet">'+esc(n)+'</div>',[])); }); });
+    push({ category:'research', severity:'orange', issue:t.name+' — '+n,
+           analysis:'Recorded absent rather than guessed. The Forest Service publishes no '
+                  + 'figure for this and the app is not an authority.', solution:'' }); }); });
   (c.aug_unknowns||[]).forEach(function(u){
-    gapRows.push(row(esc(typeof u==='string'?u:(u.item||'')),[],
-      '<div class="idet">'+esc(typeof u==='string'?'':(u.why||u.note||''))+'</div>',[])); });
-  var calls = (c.aug_calls||[]).map(function(x){
-    return row(esc(typeof x==='string'?x:(x.number||x.who||'')),[],
-      '<div class="idet">'+esc(typeof x==='string'?'':(x.question||x.why||''))+'</div>',[]); }).join('');
-  set('ccIssues','<div class="cc-card">'
-    + sec('📋','What could not be sourced','A card with no gaps listed is usually a card that guessed.', gapRows.join(''))
-    + (calls?sec('☎️','Calls this stop generates','None is a blocker — each is recorded as unknown rather than guessed.', calls):'')
-    + '</div>');
+    push({ category:'research', severity:'orange',
+           issue: typeof u==='string' ? u : (u.item||''),
+           analysis: typeof u==='string' ? '' : (u.why||u.note||''), solution:'' }); });
+  (c.aug_calls||[]).forEach(function(x){
+    push({ category:'camping', severity:'orange',
+           issue: 'Call: ' + (typeof x==='string' ? x : (x.who||x.number||'')),
+           analysis: typeof x==='string' ? '' : (x.question||x.why||''),
+           solution: typeof x==='string' ? '' : ('☎ '+(x.number||'')) }); });
+  window.CC_ISSUES = iss;
+
+  /* ---- Overview: the blurb, the monsoon rule, and the week -------------- */
+  var ov = '<p class="subhead" style="margin:0 0 10px 2px">'+esc(c.stop.blurb)+'</p>';
+  if(m.season){
+    ov += '<div class="rollup-wrap" style="border-left:3px solid #e0384d;margin-bottom:14px">'
+       + '<p class="subhead" style="margin:0 0 6px">Late August is peak monsoon, and it sets the '
+       + 'clock for every day here</p><p style="font-size:.85rem;color:var(--muted);margin:0;'
+       + 'line-height:1.55">'+esc(m.daily_pattern||'')+' '+esc(m.lightning||'')+'</p></div>';
+  }
+  if(c.plan && (c.plan.days||[]).length){
+    ov += '<p class="subhead" style="margin:14px 2px 6px">The week, day by day</p>'
+       + '<p style="font-size:.78rem;color:var(--muted);margin:0 2px 8px">'
+       + esc(c.plan._why||'') + '</p>'
+       + '<div class="timeline-wrap"><table class="tl" id="ccTimelineTable"><tr>'
+       + '<th>Day</th><th>Date</th><th>Shape of the day</th><th>Detail</th></tr>'
+       + c.plan.days.map(function(d){ return '<tr><td>'+esc(d.dow)+'</td><td>'
+           + esc(d.date)+'</td><td>'+esc(d.shape)+'</td><td>'+esc(d.detail)
+           + '</td></tr>'; }).join('') + '</table></div>';
+  }
+
+  window.renderCloudcroft = function(){
+    if(typeof renderCards !== 'function') return;
+    renderCards('all', [window.CC_STOP], 'ccCardsWrap');
+    var o = document.getElementById('ccOverviewWrap');
+    if(o) o.innerHTML = ov;
+    // Same two renderers the other trips use, pointed at this trip's data. A
+    // lookalike was written first, and it is why the card did not match.
+    if(typeof renderHighlights === 'function')
+      renderHighlights(window.CC_HIGHLIGHTS_BY_LEG, 'ccHighlightsWrap', 'ccHlFilterBar');
+    if(typeof renderIssues === 'function')
+      renderIssues(window.CC_ISSUES, 'ccIssuesWrap', 'cc');
+  };
+  if(document.readyState !== 'loading') setTimeout(window.renderCloudcroft, 0);
+  else document.addEventListener('DOMContentLoaded', window.renderCloudcroft);
 })();
 </script>
 """
 
 
-# Layout classes the dashboard does not already define. Everything else reuses the
-# page's own vocabulary — .pill, .pill-easy, .pill-dog-ok, .sec-head, .linklist.
-CSS_RULES = """.cc-card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;margin:16px 0;}
-.cc-blurb{margin:0 0 18px;color:var(--text);max-width:76ch;}
-.cc-sec{margin:22px 0 0;}
-.cc-sub{margin:-4px 0 10px;color:var(--muted);font-size:.86rem;max-width:74ch;}
-.cc-card ul.linklist{list-style:none;margin:0;padding:0;}
-.cc-card ul.linklist>li{padding:13px 0;border-top:1px solid var(--border);}
-.cc-card ul.linklist>li:first-child{border-top:none;padding-top:2px;}
-.cc-card .iname{font-weight:650;line-height:1.4;}
-.cc-card .idet{margin-top:7px;font-size:.89rem;color:var(--muted);line-height:1.55;max-width:76ch;}
-.cc-when{margin-top:7px;font-size:.89rem;color:var(--text);background:var(--panel2);border-radius:6px;padding:8px 10px;max-width:76ch;}
-.cc-season{margin-top:7px;font-size:.86rem;color:var(--text);border-left:2px solid var(--accent);padding-left:10px;max-width:76ch;}
-.cc-lk{margin-top:9px;font-size:.8rem;}
-.cc-unk{border-style:dashed;}
-.cc-truck{color:var(--accent2);border-color:rgba(95,180,214,.45);}
-.cc-warn{background:rgba(230,163,74,.18);color:#e6a34a;border-color:rgba(230,163,74,.45);}
-.cc-light{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
-.cc-light>div{background:var(--panel2);border-radius:8px;padding:10px 12px;}
-.cc-light span{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);}
-.cc-light b{display:block;font-size:1.1rem;font-variant-numeric:tabular-nums;margin-top:2px;}
-.cc-light i{font-style:normal;font-size:.72rem;color:var(--muted);}
-.cc-card details{margin-top:8px;}
-.cc-card summary{cursor:pointer;font-size:.76rem;color:var(--muted);}
-ul.cc-needs{margin:8px 0 0;padding-left:20px;font-size:.83rem;color:var(--muted);}
-ul.cc-needs li{margin-bottom:5px;}
-.cc-alert{background:var(--panel2);border:1px solid var(--border);border-left:3px solid #e0384d;border-radius:8px;padding:14px 16px;margin:0 0 16px;}
-.cc-alert>b{display:block;margin-bottom:6px;}
-.cc-alert p b{color:var(--text);}
-.cc-alert p{margin:0;font-size:.89rem;color:var(--muted);line-height:1.55;}"""
-
 
 def replace_between(h, start, end, block, anchor, before=False):
     """Remove EVERY existing copy of the marked block, then insert one.
 
-    The first version replaced only the first start..end pair, which is not the
-    same thing: a run that inserted a second copy left the file growing by one
-    block per build and never converged. Stripping all copies first is
-    idempotent by construction and does not care how the duplicates got there.
+    Replacing only the first start..end pair is not the same thing: a run that
+    inserted a second copy left the file growing by one block per build and never
+    converging. The newlines around the block are consumed too — stripping the
+    block alone left the separator behind and the file gained a blank line at
+    each insertion point on every run.
 
-    `before=True` inserts immediately BEFORE the anchor rather than after —
-    needed for CSS, which has to land inside <style> and not after the closing
-    tag, where it is inert text in the body.
+    `before=True` inserts immediately BEFORE the anchor.
     """
-    # Consume the newlines around the old block too. Stripping the block alone
-    # left the separator behind, so every run added one blank line at each of the
-    # three insertion points and the md5 never settled — the file grew by three
-    # lines a build while looking otherwise identical.
     h = re.sub(r'\n*' + re.escape(start) + r'.*?' + re.escape(end) + r'\n*', '\n',
                h, flags=re.S)
     k = h.index(anchor)
@@ -293,74 +271,65 @@ def replace_between(h, start, end, block, anchor, before=False):
     return h[:k] + '\n' + block + '\n' + h[k:]
 
 
+
 def main():
     db = json.loads(DB.read_text())
     h = SRC.read_text()
 
-    # ---- css for the cc-only layout classes -------------------------------
-    css = CSS_START + "\n" + CSS_RULES + "\n" + CSS_END
-    h = replace_between(h, CSS_START, CSS_END, css, '</style>', before=True)
+    # Strip the bespoke CSS the earlier version injected — the card now uses the
+    # dashboard's own classes, so there is nothing left to style.
+    h = re.sub(r'\n*' + re.escape(CSS_START) + r'.*?' + re.escape(CSS_END) + r'\n*', '\n',
+               h, flags=re.S)
 
-    # ---- the data const ---------------------------------------------------
     data = (DATA_START + '\nconst CLOUDCROFT = '
             + json.dumps(db, ensure_ascii=False, separators=(',', ':')) + ';\n'
-            + '''function ccStatsHTML(){
-  const c = CLOUDCROFT, s = c.stop;
-  const n = (a)=> (a||[]).length;
-  const cruiseOk = (c.cruise||[]).filter(x=>/^\\s*works/i.test(x.verdict||'')).length;
-  const gaps = (c.trails||[]).reduce((t,x)=>t+((x.needs||[]).length),0);
-  return [
-    ['<b>'+s.nights+'</b>','nights'],
-    ['<b>'+s.elevation_ft.toLocaleString()+'</b>','feet'],
-    ['<b>'+n(c.trails)+'</b>','trails'],
-    ['<b>'+cruiseOk+'</b>','gravel rides'],
-    ['<b>'+n(c.offroad)+'</b>','4x4 routes'],
-    ['<b>'+n(c.shots)+'</b>','shots'],
-    ['<b>'+gaps+'</b>','gaps recorded'],
-  ].map(([v,l])=>'<div class="stat">'+v+'<span>'+l+'</span></div>').join('');
-}
-'''
-            + DATA_END)
-    # BEFORE the declaration, not after: anchoring after it dropped
-    # `const CLOUDCROFT = ...` inside the TRIP_MODES object literal, which is a
-    # syntax error that takes the whole page down. It has to precede TRIP_MODES
-    # anyway, since the cloudcroft entry reads ccStatsHTML.
+            + CC_STATS + DATA_END)
     h = replace_between(h, DATA_START, DATA_END, data, 'const TRIP_MODES = {', before=True)
 
-    # ---- the view blocks --------------------------------------------------
-    # One container per view, so the Cloudcroft mode uses the tabs the way the
-    # rest of the dashboard does instead of dumping everything into Overview.
-    # The first version injected a single block into view-overview, which meant
-    # "All Stops" — where a stop card actually belongs — rendered empty.
-    for vid, cid in (('view-overview', 'ccOverview'), ('view-stops', 'ccStops'),
-                     ('view-highlights', 'ccHighlights'), ('view-issues', 'ccIssues')):
-        st = '<!-- cloudcroft %s start — build_cloudcroft.py -->' % cid
-        en = '<!-- cloudcroft %s end — build_cloudcroft.py -->' % cid
-        blk = st + '\n<div class="cc-only hidden" id="%s"></div>\n' % cid + en
-        # Anchor on the id alone: view-overview carries class="view active",
-        # so matching the full opening tag misses it.
-        h = replace_between(h, st, en, blk, 'id="%s">' % vid)
+    # One container per view, each holding the same element the other two trips
+    # give their own renderer. Injected at the CLOSE of the section, so the main
+    # trip's ids come first in the document: where an id is unavoidably shared,
+    # the earlier one wins every lookup, and the main trip must be the one that
+    # wins. (A second plan bar, injected first, broke undo exactly this way.)
+    CONTAINERS = [
+        ('card',       'view-stops',      '<div class="cards" id="ccCardsWrap"></div>'),
+        ('overview',   'view-overview',   '<div id="ccOverviewWrap"></div>'),
+        ('highlights', 'view-highlights', '<div id="ccHighlightsWrap"></div>'),
+        ('issues',     'view-issues',     '<div id="ccIssuesWrap"></div>'),
+    ]
+    for tag, view, inner in CONTAINERS:
+        st = '<!-- cloudcroft %s start — build_cloudcroft.py -->' % tag
+        en = '<!-- cloudcroft %s end — build_cloudcroft.py -->' % tag
+        blk = st + '\n<div class="cc-only hidden">' + inner + '</div>\n' + en
+        # Spliced by offset, not by an anchor string. The obvious anchor — the
+        # section's own closing tag — is '\n  </section>', which is every
+        # section in the file; using it put all four blocks inside the first one.
+        h = re.sub(r'\n*' + re.escape(st) + r'.*?' + re.escape(en) + r'\n*', '\n', h, flags=re.S)
+        a = h.index('id="%s">' % view)
+        b = h.index('</section>', a)
+        h = h[:b] + blk + '\n' + h[b:]
+
+    # Remove the bespoke per-view containers the earlier version injected.
+    for cid in ('ccOverview', 'ccStops', 'ccHighlights', 'ccIssues'):
+        a = '<!-- cloudcroft %s start — build_cloudcroft.py -->' % cid
+        b = '<!-- cloudcroft %s end — build_cloudcroft.py -->' % cid
+        h = re.sub(r'\n*' + re.escape(a) + r'.*?' + re.escape(b) + r'\n*', '\n', h, flags=re.S)
 
     h = replace_between(h, VIEW_START, VIEW_END, VIEW_START + RENDER_JS + VIEW_END,
                         '</body>', before=True)
 
-    # A lone surrogate cannot be encoded as UTF-8, and the write that discovers
-    # that has already truncated the file in older versions. Catch it here, where
-    # the message can say WHERE it is, instead of at the encoder.
     bad = [i for i, ch in enumerate(h) if 0xD800 <= ord(ch) <= 0xDFFF]
     if bad:
         k = bad[0]
-        sys.exit('!! build_cloudcroft: unpaired surrogate at offset %d — %r\n'
-                 '   A \\uXXXX escape meant for JavaScript was single-backslashed in this '
-                 'script, so Python decoded it instead of passing it through.'
-                 % (k, h[max(0, k - 70):k + 10]))
+        sys.exit('!! build_cloudcroft: unpaired surrogate at offset %d - %r' % (k, h[max(0, k-70):k+10]))
 
     tmp = SRC.with_suffix('.html.tmp')
     tmp.write_text(h, encoding='utf-8')
     tmp.replace(SRC)
-    print(f'build_cloudcroft: {len(db["trails"])} trails, {len(db["offroad"])} 4x4 routes, '
-          f'{len(db["cruise"])} cruise entries, {len(db["shots"])} shots, '
-          f'{len(db["campgrounds"])} campgrounds injected')
+    print('build_cloudcroft: stop shaped for renderCards; %d trails, %d offroad+gravel, %d drives, '
+          '%d highlights, %d shots' % (len(db['trails']), len(db['offroad']) + len(db['cruise']),
+                                       len(db['scenicDrives']), len(db['highlights']),
+                                       len(db['shots'])))
 
 
 if __name__ == '__main__':

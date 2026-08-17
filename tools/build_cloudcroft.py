@@ -35,6 +35,208 @@ DATA_END = '/* cloudcroft data end — build_cloudcroft.py */'
 VIEW_START = '<!-- cloudcroft views start — build_cloudcroft.py -->'
 VIEW_END = '<!-- cloudcroft views end — build_cloudcroft.py -->'
 
+RENDER_JS = r"""
+<script>
+(function(){
+  if (typeof CLOUDCROFT === 'undefined') return;
+  var c = CLOUDCROFT;
+  var esc = function(x){ return String(x==null?'':x)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); };
+  var A = function(u,t){ return u ? '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+' ↗</a>' : ''; };
+  var P = function(t,k){ return '<span class="pill '+(k||'')+'">'+esc(t)+'</span>'; };
+  var dcls = function(d){ d=(d||'').toLowerCase();
+    return d.indexOf('easy')===0?'pill-easy':d.indexOf('moderate')===0?'pill-moderate':'pill-hard'; };
+  var dogP = function(v){ return v===true ? P('🐕 dogs OK','pill-dog-ok')
+    : v===false ? P('🚫 no dogs','pill-dog-no') : P('dog rule unpublished','cc-unk'); };
+  var needs = function(ns){ return (ns&&ns.length)
+    ? '<details><summary>Not sourced ('+ns.length+')</summary><ul class="cc-needs">'
+      + ns.map(function(n){return '<li>'+esc(n)+'</li>';}).join('') + '</ul></details>' : ''; };
+  var row = function(title,pills,body,links){
+    var lk = (links||[]).filter(Boolean);
+    return '<li><div class="iname">'+title+'</div>'
+      + (pills.length?'<div class="pills">'+pills.join('')+'</div>':'')
+      + body + (lk.length?'<div class="cc-lk">'+lk.join(' · ')+'</div>':'') + '</li>'; };
+  var sec = function(icon,title,sub,inner){
+    return '<section class="cc-sec"><div class="sec-head">'+icon+' '+esc(title)+'</div>'
+      + (sub?'<p class="cc-sub">'+esc(sub)+'</p>':'') + '<ul class="linklist">'+inner+'</ul></section>'; };
+  var set = function(id,html){ var el=document.getElementById(id); if(el) el.innerHTML=html; };
+
+  var hoursFor = function(name){
+    var k = String(name||'').toLowerCase();
+    return (c.hours||[]).filter(function(x){
+      var n = String(x.name||'').toLowerCase().slice(0,14);
+      return n && (k.indexOf(n)>=0 || n.indexOf(k.slice(0,14))>=0); })[0]; };
+
+  /* ---- Overview: orientation, the monsoon rule, and the week ------------ */
+  var m = c.monsoon||{};
+  var banner = !m.season ? '' : ('<div class="cc-alert"><b>Late August is the peak of the monsoon, '
+    + 'and it sets the clock for every day of this stay</b>'
+    + '<p>Cloudcroft’s own record puts <b>5.65 in of rain in August against 3.10 in September</b> '
+    + '(WRCC 291931) — these dates sit on the wettest fortnight of the year. Every authority '
+    + 'publishes the same rule. NPS: <i>“Finish hiking in the morning and be out of canyons or '
+    + 'away from washes before the afternoon.”</i></p>'
+    + '<p style="margin-top:8px">The gravel ride runs the <b>Rio Peñasco, a confirmed flash-flood '
+    + 'channel with no stream gauge</b> — NWS El Paso: <i>“due to the lack of gauges on this '
+    + 'stream, it is difficult to know where the flooding currently is occurring.”</i> There is '
+    + 'nothing to check before you set off. Ride it in the morning.</p></div>');
+  var plan = c.plan ? ('<section class="cc-sec"><div class="sec-head">📅 The week, day by day</div>'
+    + '<p class="cc-sub">'+esc(c.plan._why)+'</p><ul class="linklist">'
+    + (c.plan.days||[]).map(function(d){ return '<li><div class="iname">'+esc(d.dow)+' '
+        + esc(d.date.slice(8))+' — '+esc(d.shape)+'</div><div class="idet">'+esc(d.detail)
+        + '</div></li>'; }).join('') + '</ul></section>') : '';
+  set('ccOverview', '<div class="cc-card"><p class="cc-blurb">'+esc(c.stop.blurb)+'</p>'
+    + banner + plan + '</div>');
+
+  /* ---- All Stops: the stop card itself ---------------------------------- */
+  var trails = (c.trails||[]).map(function(t){
+    var ps=[];
+    if(t.difficulty) ps.push(P(t.difficulty,dcls(t.difficulty)));
+    if(t.time) ps.push(P('⏱ '+t.time,'pill-distance'));
+    if(t.distance) ps.push(P('📏 '+t.distance,'pill-distance'));
+    if(t.elevation_gain) ps.push(P('↑ '+t.elevation_gain,'pill-distance'));
+    if(t.reviews) ps.push(P('★ '+t.reviews,'pill-rating'));
+    ps.push(dogP(t.dogs));
+    (t.uses||[]).forEach(function(u){ ps.push(P(u, /^(hike|bike|horse)$/.test(u)?('pill-'+u):'cc-unk')); });
+    if(t.cruise===false) ps.push(P('🚲 not a carrier route','cc-unk'));
+    var b = t.note?'<div class="idet">'+esc(t.note)+'</div>':'';
+    if(t.cruise_reason) b += '<div class="idet">'+esc(t.cruise_reason)+'</div>';
+    if(t.season) b += '<div class="cc-season">'+esc(t.season)+'</div>';
+    b += needs(t.needs);
+    var lk = [(t.alltrails&&t.alltrails.url)?A(t.alltrails.url,'AllTrails'):''];
+    (t.other_links||[]).forEach(function(o){ lk.push(A(o.url,o.label||'source')); });
+    return row(esc(t.name),ps,b,lk); }).join('');
+
+  var routes = function(arr){ return (arr||[]).map(function(r){
+    var ps=[P('🛻 truck','cc-truck')];
+    if(r.vehicle_class) ps.push(P(String(r.vehicle_class).slice(0,64),'cc-unk'));
+    if(r.distance) ps.push(P('📏 '+String(r.distance).slice(0,64),'pill-distance'));
+    if(r.difficulty) ps.push(P(String(r.difficulty).slice(0,72),'pill-distance'));
+    var b = r.note?'<div class="idet">'+esc(r.note)+'</div>':'';
+    if(r.season) b += '<div class="cc-season">'+esc(r.season)+'</div>';
+    return row(esc(r.name),ps,b,[A(r.url, r.listing_type||r.tier||'route listing')]); }).join(''); };
+
+  var cruise = (c.cruise||[]).map(function(x){
+    var ok = /^\s*works/i.test(x.verdict||'');
+    var ps=[P(ok?'🚲 gravel cruise':'🚲 ruled out', ok?'pill-cruise':'cc-unk')];
+    ['length','surface','gradient'].forEach(function(k){ if(x[k]) ps.push(P(String(x[k]).slice(0,58),'pill-distance')); });
+    if(x.bike_legal) ps.push(P('bike-legal: '+String(x.bike_legal).slice(0,46),'cc-unk'));
+    var b = x.verdict?'<div class="idet">'+esc(x.verdict)+'</div>':'';
+    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
+    return row(esc(x.name),ps,b,[A(x.url,x.tier||'source')]); }).join('');
+
+  var camps = (c.campgrounds||[]).map(function(x){
+    var ps=[P(x.max_length?('max '+x.max_length):'⚠ no published max length', x.max_length?'pill-distance':'cc-warn')];
+    if(x.hookups) ps.push(P(String(x.hookups).slice(0,60),'pill-distance'));
+    if(x.phone) ps.push(P('☎ '+x.phone,'pill-rating'));
+    var b = x.note?'<div class="idet">'+esc(x.note)+'</div>':'';
+    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
+    return row(esc(x.name),ps,b,[A(x.url,'operator')]); }).join('');
+
+  var dogSec = '<li><div class="iname">Lincoln National Forest publishes no dog rule at all</div>'
+    + '<div class="idet">Seven of the eight trails therefore carry no dog verdict — an absence of '
+    + 'prohibition is not permission, and the two must never look the same at a trailhead. What binds '
+    + 'is <b>36 CFR 261.16(j)</b>: a six-foot leash, but only at developed recreation sites, not on '
+    + 'the tread.</div><div class="cc-season">'+esc((c.dogs||{}).rule)+'</div>'
+    + '<div class="cc-lk">'+A((c.dogs||{}).source,'36 CFR 261.16')+'</div></li>'
+    + '<li><div class="iname">In the village and at White Sands</div><div class="idet">'
+    + esc((c.dogs||{}).notes)+'</div></li>';
+
+  set('ccStops', '<div class="cc-card">'
+    + sec('⛰️','Trails','About one walk per night, easy and moderate leading. Permitted uses come from the Forest Service trails table, not from the app.', trails)
+    + sec('🐕','The dog','', dogSec)
+    + sec('🚲','Gravel and the bike carrier','The dog rides in a carrier, so the question is a firm, flat, bike-legal surface — not whether there is mountain biking.', cruise)
+    + sec('🛻','4x4 and forest roads','Numbered Forest Service roads only. Every T-numbered route on this district is 50-inch width and excludes the truck.', routes(c.offroad))
+    + sec('🚙','Scenic drives','Day trips in the towed truck. The coach does not leave the campground.', routes(c.scenicDrives))
+    + sec('⛺','Camp — the 40 ft question','Not one operator publishes a maximum length, so every one is a phone call before booking.', camps)
+    + '</div>');
+
+  /* ---- Highlights & Weather: hours, shots, light, temps ------------------ */
+  var highlights = (c.highlights||[]).map(function(x){
+    var hr = hoursFor(x.name), ps=[];
+    if(hr){
+      var o = String(hr.open_in_late_september||hr.open||'').toLowerCase();
+      ps.push(o.indexOf('no')===0 ? P('closed on these dates','pill-dog-no')
+            : o.indexOf('yes')===0 ? P('open on these dates','pill-dog-ok')
+            : P('opening unknown','cc-unk'));
+      if(hr.phone) ps.push(P('☎ '+hr.phone,'pill-rating'));
+    }
+    var b = x.detail?'<div class="idet">'+esc(x.detail)+'</div>':'';
+    if(hr&&hr.when) b += '<div class="cc-when"><b>When —</b> '+esc(hr.when)+'</div>';
+    if(hr&&hr.note) b += '<div class="idet">'+esc(hr.note)+'</div>';
+    var lk = (x.links||[]).map(function(l){ return A(l.url,l.label); });
+    if(hr&&hr.url) lk.push(A(hr.url,'hours'));
+    return row(esc(x.name),ps,b,lk); }).join('');
+
+  var shots = (c.shots||[]).map(function(s){
+    var ps = (s.lat&&s.lng)
+      ? ['<span class="pill pill-rating"><a href="https://www.google.com/maps/search/?api=1&query='
+         +s.lat+','+s.lng+'" target="_blank" rel="noopener">📍 '+s.lat+', '+s.lng+'</a></span>']
+      : [P('no published coordinate','cc-unk')];
+    var b = (s.subject?'<div class="idet">'+esc(s.subject)+'</div>':'')
+      + '<div class="cc-when"><b>Vantage —</b> '+esc(s.vantage)+'</div>'
+      + '<div class="cc-season"><b>Light —</b> '+esc(s.light)+'</div>'
+      + '<div class="idet"><b>Craft —</b> '+esc(s.craft)+'</div>' + needs(s.needs);
+    return row(esc(s.title),ps,b,[]); }).join('');
+
+  var L = c.light||{}, gm=L.goldenMorning||[], ge=L.goldenEvening||[];
+  var cell = function(l,v,i){ return '<div><span>'+esc(l)+'</span><b>'+esc(v)+'</b><i>'+esc(i)+'</i></div>'; };
+  var moonPct = Math.round((L.moonFrac||0)*100), darkPct = Math.round((L.darkestFrac||0)*100);
+  var light = '<section class="cc-sec"><div class="sec-head">🌅 Light</div><div class="cc-light">'
+    + cell('Sunrise',L.sunrise,(L.sunriseDir||'')+' '+(L.sunriseAz||'')+'°')
+    + cell('Sunset',L.sunset,(L.sunsetDir||'')+' '+(L.sunsetAz||'')+'°')
+    + cell('Golden — morning',gm.join('–'),(L.goldenMinutes||'')+' min')
+    + cell('Golden — evening',ge.join('–'),(L.goldenMinutes||'')+' min')
+    + cell('Day length',(L.dayLength||'')+' h','')
+    + cell('Astronomical dark',(L.darkStart||'')+'–'+(L.darkEnd||''),(L.darkHours||'')+' h')
+    + cell('Moon on arrival',moonPct+'%',L.moonPhase||'')
+    + cell('Darkest night',L.darkestNight,'moon '+darkPct+'%')
+    + '</div><p class="idet" style="margin-top:10px">Computed by <code>build_light.py</code>, not '
+    + 'researched. Two numbers organise the stop. The sun sets at '+esc(L.sunsetAz)+'°, so the '
+    + 'western rim — which is everything worth photographing here — is <b>frontlit in the '
+    + 'morning and a silhouette in the evening</b>. And the moon is '+moonPct+'% on arrival with the '
+    + 'darkest night still '+darkPct+'%, so <b>this is a moonlight week, not a Milky Way week</b> '
+    + '— which is why the White Sands full-moon night on the 23rd is the night shot, and gypsum '
+    + 'is the one subject in the region that is better under a full moon than under none.</p></section>';
+
+  var wx = '<section class="cc-sec"><div class="sec-head">🌧️ Weather on these dates</div>'
+    + '<ul class="linklist"><li><div class="iname">'+esc((c.tempF||{}).avgMax)+'°F / '
+    + esc((c.tempF||{}).avgMin)+'°F average, and 5.65 in of rain in the month</div>'
+    + '<div class="idet">'+esc(m.daily_pattern||'')+'</div>'
+    + (m.lightning?'<div class="cc-season">'+esc(m.lightning)+'</div>':'')
+    + (c.what_august_looks_like?'<div class="idet">'+esc(c.what_august_looks_like)+'</div>':'')
+    + (c.crowds?'<div class="idet">'+esc(c.crowds)+'</div>':'')
+    + '</li></ul></section>';
+
+  var events = (c.events||[]).length ? sec('🎪','Events in the window','',
+    (c.events||[]).map(function(e){ return row(esc(e.name),[],
+      '<div class="idet">'+esc(e.dates||'')+'</div>'
+      + (e.impact?'<div class="cc-season">'+esc(e.impact)+'</div>':''), []); }).join('')) : '';
+
+  set('ccHighlights','<div class="cc-card">'
+    + sec('🥾','Highlights','Each carries its opening window where an operator publishes one — and says so where none does.', highlights)
+    + events + wx
+    + sec('📷','Shot list','Vantage and hour worked against these dates and this latitude.', shots)
+    + light + '</div>');
+
+  /* ---- Known Issues: the gaps and the calls ----------------------------- */
+  var gapRows = [];
+  (c.trails||[]).forEach(function(t){ (t.needs||[]).forEach(function(n){
+    gapRows.push(row(esc(t.name),[],'<div class="idet">'+esc(n)+'</div>',[])); }); });
+  (c.aug_unknowns||[]).forEach(function(u){
+    gapRows.push(row(esc(typeof u==='string'?u:(u.item||'')),[],
+      '<div class="idet">'+esc(typeof u==='string'?'':(u.why||u.note||''))+'</div>',[])); });
+  var calls = (c.aug_calls||[]).map(function(x){
+    return row(esc(typeof x==='string'?x:(x.number||x.who||'')),[],
+      '<div class="idet">'+esc(typeof x==='string'?'':(x.question||x.why||''))+'</div>',[]); }).join('');
+  set('ccIssues','<div class="cc-card">'
+    + sec('📋','What could not be sourced','A card with no gaps listed is usually a card that guessed.', gapRows.join(''))
+    + (calls?sec('☎️','Calls this stop generates','None is a blocker — each is recorded as unknown rather than guessed.', calls):'')
+    + '</div>');
+})();
+</script>
+"""
+
+
 # Layout classes the dashboard does not already define. Everything else reuses the
 # page's own vocabulary — .pill, .pill-easy, .pill-dog-ok, .sec-head, .linklist.
 CSS_RULES = """.cc-card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;margin:16px 0;}
@@ -62,7 +264,8 @@ CSS_RULES = """.cc-card{background:var(--panel);border:1px solid var(--border);b
 ul.cc-needs{margin:8px 0 0;padding-left:20px;font-size:.83rem;color:var(--muted);}
 ul.cc-needs li{margin-bottom:5px;}
 .cc-alert{background:var(--panel2);border:1px solid var(--border);border-left:3px solid #e0384d;border-radius:8px;padding:14px 16px;margin:0 0 16px;}
-.cc-alert b{display:block;margin-bottom:6px;}
+.cc-alert>b{display:block;margin-bottom:6px;}
+.cc-alert p b{color:var(--text);}
 .cc-alert p{margin:0;font-size:.89rem;color:var(--muted);line-height:1.55;}"""
 
 
@@ -125,201 +328,22 @@ def main():
     h = replace_between(h, DATA_START, DATA_END, data, 'const TRIP_MODES = {', before=True)
 
     # ---- the view blocks --------------------------------------------------
-    # One .cc-only wrapper per view section, rendered client-side from CLOUDCROFT
-    # so the markup here stays small and the data stays in one place.
-    views = VIEW_START + '''
-<div class="cc-only hidden" id="ccOverview"></div>
-<script>
-(function(){
-  if (typeof CLOUDCROFT === 'undefined') return;
-  const c = CLOUDCROFT, esc = (s)=>String(s==null?'':s)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  const A = (u,t)=> u ? '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+' \\u2197</a>' : '';
-  const P = (t,k)=> '<span class="pill '+(k||'')+'">'+esc(t)+'</span>';
-  const dcls = d=>{ d=(d||'').toLowerCase();
-    return d.indexOf('easy')===0?'pill-easy':d.indexOf('moderate')===0?'pill-moderate':'pill-hard'; };
-  const dogP = v=> v===true ? P('\\uD83D\\uDC15 dogs OK','pill-dog-ok')
-                 : v===false ? P('\\uD83D\\uDEAB no dogs','pill-dog-no')
-                 : P('dog rule unpublished','cc-unk');
-  const needs = ns => (ns&&ns.length)
-    ? '<details><summary>Not sourced ('+ns.length+')</summary><ul class="cc-needs">'
-      + ns.map(n=>'<li>'+esc(n)+'</li>').join('') + '</ul></details>' : '';
-  const row = (title,pills,body,links)=>
-    '<li><div class="iname">'+title+'</div>'
-    + (pills.length?'<div class="pills">'+pills.join('')+'</div>':'')
-    + body + (links.filter(Boolean).length?'<div class="cc-lk">'+links.filter(Boolean).join(' \\u00b7 ')+'</div>':'')
-    + '</li>';
-  const sec = (icon,title,sub,inner)=>
-    '<section class="cc-sec"><div class="sec-head">'+icon+' '+esc(title)+'</div>'
-    + (sub?'<p class="cc-sub">'+esc(sub)+'</p>':'')
-    + '<ul class="linklist">'+inner+'</ul></section>';
+    # One container per view, so the Cloudcroft mode uses the tabs the way the
+    # rest of the dashboard does instead of dumping everything into Overview.
+    # The first version injected a single block into view-overview, which meant
+    # "All Stops" — where a stop card actually belongs — rendered empty.
+    for vid, cid in (('view-overview', 'ccOverview'), ('view-stops', 'ccStops'),
+                     ('view-highlights', 'ccHighlights'), ('view-issues', 'ccIssues')):
+        st = '<!-- cloudcroft %s start — build_cloudcroft.py -->' % cid
+        en = '<!-- cloudcroft %s end — build_cloudcroft.py -->' % cid
+        blk = st + '\n<div class="cc-only hidden" id="%s"></div>\n' % cid + en
+        # Anchor on the id alone: view-overview carries class="view active",
+        # so matching the full opening tag misses it.
+        h = replace_between(h, st, en, blk, 'id="%s">' % vid)
 
-  const hoursFor = (name)=>{
-    const k = String(name||'').toLowerCase();
-    return (c.hours||[]).find(x=>{
-      const n = String(x.name||'').toLowerCase();
-      return n.slice(0,14) && (k.indexOf(n.slice(0,14))>=0 || n.indexOf(k.slice(0,14))>=0);
-    });
-  };
+    h = replace_between(h, VIEW_START, VIEW_END, VIEW_START + RENDER_JS + VIEW_END,
+                        '</body>', before=True)
 
-  const trails = (c.trails||[]).map(t=>{
-    const ps = [];
-    if(t.difficulty) ps.push(P(t.difficulty, dcls(t.difficulty)));
-    if(t.time) ps.push(P('\\u23F1 '+t.time,'pill-distance'));
-    if(t.distance) ps.push(P('\\uD83D\\uDCCF '+t.distance,'pill-distance'));
-    if(t.elevation_gain) ps.push(P('\\u2191 '+t.elevation_gain,'pill-distance'));
-    if(t.reviews) ps.push(P('\\u2605 '+t.reviews,'pill-rating'));
-    ps.push(dogP(t.dogs));
-    (t.uses||[]).forEach(u=>ps.push(P(u, /^(hike|bike|horse)$/.test(u)?('pill-'+u):'cc-unk')));
-    if(t.cruise===false) ps.push(P('\\uD83D\\uDEB2 not a carrier route','cc-unk'));
-    let b = t.note?'<div class="idet">'+esc(t.note)+'</div>':'';
-    if(t.cruise_reason) b += '<div class="idet">'+esc(t.cruise_reason)+'</div>';
-    if(t.season) b += '<div class="cc-season">'+esc(t.season)+'</div>';
-    b += needs(t.needs);
-    const lk = [(t.alltrails&&t.alltrails.url)?A(t.alltrails.url,'AllTrails'):''].concat(
-      (t.other_links||[]).map(o=>A(o.url,o.label||'source')));
-    return row(esc(t.name), ps, b, lk);
-  }).join('');
-
-  const routes = (arr)=> (arr||[]).map(r=>{
-    const ps=[P('\\uD83D\\uDEFB truck','cc-truck')];
-    if(r.vehicle_class) ps.push(P(String(r.vehicle_class).slice(0,64),'cc-unk'));
-    if(r.distance) ps.push(P('\\uD83D\\uDCCF '+String(r.distance).slice(0,64),'pill-distance'));
-    if(r.difficulty) ps.push(P(String(r.difficulty).slice(0,72),'pill-distance'));
-    let b = r.note?'<div class="idet">'+esc(r.note)+'</div>':'';
-    if(r.season) b += '<div class="cc-season">'+esc(r.season)+'</div>';
-    return row(esc(r.name), ps, b, [A(r.url, r.listing_type||r.tier||'route listing')]);
-  }).join('');
-
-  const cruise = (c.cruise||[]).map(x=>{
-    const ok = /^\\s*works/i.test(x.verdict||'');
-    const ps=[P(ok?'\\uD83D\\uDEB2 gravel cruise':'\\uD83D\\uDEB2 ruled out', ok?'pill-cruise':'cc-unk')];
-    ['length','surface','gradient'].forEach(k=>{ if(x[k]) ps.push(P(String(x[k]).slice(0,58),'pill-distance')); });
-    if(x.bike_legal) ps.push(P('bike-legal: '+String(x.bike_legal).slice(0,46),'cc-unk'));
-    let b = x.verdict?'<div class="idet">'+esc(x.verdict)+'</div>':'';
-    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
-    return row(esc(x.name), ps, b, [A(x.url, x.tier||'source')]);
-  }).join('');
-
-  const highlights = (c.highlights||[]).map(x=>{
-    const hr = hoursFor(x.name), ps=[];
-    if(hr){
-      const o = String(hr.open_in_late_september||hr.open||'').toLowerCase();
-      ps.push(o.indexOf('no')===0 ? P('closed on these dates','pill-dog-no')
-            : o.indexOf('yes')===0 ? P('open on these dates','pill-dog-ok')
-            : P('opening unknown','cc-unk'));
-      if(hr.phone) ps.push(P('\\u260E '+hr.phone,'pill-rating'));
-    }
-    let b = x.detail?'<div class="idet">'+esc(x.detail)+'</div>':'';
-    if(hr&&hr.when) b += '<div class="cc-when"><b>When \\u2014</b> '+esc(hr.when)+'</div>';
-    if(hr&&hr.note) b += '<div class="idet">'+esc(hr.note)+'</div>';
-    const lk = (x.links||[]).map(l=>A(l.url,l.label));
-    if(hr&&hr.url) lk.push(A(hr.url,'hours'));
-    return row(esc(x.name), ps, b, lk);
-  }).join('');
-
-  const shots = (c.shots||[]).map(s=>{
-    const ps = (s.lat&&s.lng)
-      ? ['<span class="pill pill-rating"><a href="https://www.google.com/maps/search/?api=1&query='
-         +s.lat+','+s.lng+'" target="_blank" rel="noopener">\\uD83D\\uDCCD '+s.lat+', '+s.lng+'</a></span>']
-      : [P('no published coordinate','cc-unk')];
-    const b = (s.subject?'<div class="idet">'+esc(s.subject)+'</div>':'')
-      + '<div class="cc-when"><b>Vantage \\u2014</b> '+esc(s.vantage)+'</div>'
-      + '<div class="cc-season"><b>Light \\u2014</b> '+esc(s.light)+'</div>'
-      + '<div class="idet"><b>Craft \\u2014</b> '+esc(s.craft)+'</div>'
-      + needs(s.needs);
-    return row(esc(s.title), ps, b, []);
-  }).join('');
-
-  const camps = (c.campgrounds||[]).map(x=>{
-    const ps=[P(x.max_length? ('max '+x.max_length) : '\\u26A0 no published max length',
-                x.max_length?'pill-distance':'cc-warn')];
-    if(x.hookups) ps.push(P(String(x.hookups).slice(0,60),'pill-distance'));
-    if(x.phone) ps.push(P('\\u260E '+x.phone,'pill-rating'));
-    let b = x.note?'<div class="idet">'+esc(x.note)+'</div>':'';
-    if(x.season) b += '<div class="cc-season">'+esc(x.season)+'</div>';
-    return row(esc(x.name), ps, b, [A(x.url,'operator')]);
-  }).join('');
-
-  const L = c.light||{}, gm=L.goldenMorning||[], ge=L.goldenEvening||[];
-  const cell=(l,v,i)=>'<div><span>'+esc(l)+'</span><b>'+esc(v)+'</b><i>'+esc(i)+'</i></div>';
-  const light = '<section class="cc-sec"><div class="sec-head">\\uD83C\\uDF05 Light</div>'
-    + '<div class="cc-light">'
-    + cell('Sunrise', L.sunrise, (L.sunriseDir||'')+' '+(L.sunriseAz||'')+'\\u00b0')
-    + cell('Sunset', L.sunset, (L.sunsetDir||'')+' '+(L.sunsetAz||'')+'\\u00b0')
-    + cell('Golden \\u2014 morning', gm.join('\\u2013'), (L.goldenMinutes||'')+' min')
-    + cell('Golden \\u2014 evening', ge.join('\\u2013'), (L.goldenMinutes||'')+' min')
-    + cell('Day length', (L.dayLength||'')+' h', '')
-    + cell('Astronomical dark', (L.darkStart||'')+'\\u2013'+(L.darkEnd||''), (L.darkHours||'')+' h')
-    + cell('Moon on arrival', Math.round((L.moonFrac||0)*100)+'%', L.moonPhase||'')
-    + cell('Darkest night', L.darkestNight, 'moon '+Math.round((L.darkestFrac||0)*100)+'%')
-    + '</div><p class="idet" style="margin-top:10px">Computed by <code>build_light.py</code>, not '
-    + 'researched. Two numbers organise the stop: the sun sets at '+esc(L.sunsetAz)+'\\u00b0, so the '
-    + 'western rim \\u2014 which is everything worth photographing here \\u2014 is <b>frontlit in the '
-    + 'morning and a silhouette in the evening</b>. And the moon is '
-    + Math.round((L.moonFrac||0)*100)+'% on arrival and the darkest night is still '
-    + Math.round((L.darkestFrac||0)*100)+'%, so <b>this is a moonlight week, not a Milky Way '
-    + 'week</b> \\u2014 which is why the White Sands full-moon night on the 23rd is the '
-    + 'night shot here, and the gypsum is the one subject in the region that is better '
-    + 'under a full moon than under none.</p></section>';
-
-  // The monsoon banner leads, because on these dates it governs the HOURS of every
-  // outdoor thing below it — and the gravel ride runs a canyon with no stream gauge.
-  const m = c.monsoon||{};
-  const banner = !m.season ? '' : ('<div class="cc-alert"><b>Late August is the peak of the '
-    + 'monsoon, and it sets the clock for every day of this stay</b>'
-    + '<p>Cloudcroft\u2019s own record puts <b>5.65 in of rain in August against 3.10 in '
-    + 'September</b> (WRCC 291931) \u2014 the dates sit on the wettest fortnight of the year, not '
-    + 'the drying-out side of it. The rule every authority publishes is the same one. NPS: '
-    + '<i>\u201cFinish hiking in the morning and be out of canyons or away from washes before the '
-    + 'afternoon.\u201d</i> NWS Tucson adds <i>\u201cavoid being outside between mid afternoon and '
-    + 'mid evening, especially in higher elevations.\u201d</i></p>'
-    + '<p style="margin-top:8px">The gravel ride below runs the <b>Rio Pe\u00f1asco, a confirmed '
-    + 'flash-flood channel with no stream gauge</b> \u2014 NWS El Paso: <i>\u201cdue to the lack of '
-    + 'gauges on this stream, it is difficult to know where the flooding currently is '
-    + 'occurring.\u201d</i> There is nothing to check before you set off. Ride it in the morning.</p>'
-    + '</div>');
-
-  document.getElementById('ccOverview').innerHTML =
-      '<div class="cc-card">'
-    + '<p class="cc-blurb">'+esc(c.stop.blurb)+'</p>'
-    + banner
-    + (function(){
-        const pl = c.plan; if(!pl) return '';
-        return '<section class="cc-sec"><div class="sec-head">📅 The week, day by day</div>'
-          + '<p class="cc-sub">'+esc(pl._why)+'</p><ul class="linklist">'
-          + (pl.days||[]).map(function(d){
-              return '<li><div class="iname">'+esc(d.dow)+' '+esc(d.date.slice(8))+' \u2014 '
-                + esc(d.shape)+'</div><div class="idet">'+esc(d.detail)+'</div></li>';
-            }).join('')
-          + '</ul></section>';
-      })()
-    + sec('\\uD83E\\uDD7E','Itinerary and highlights','Each carries its opening window where an operator publishes one \\u2014 and says so where none does.', highlights)
-    + sec('\\u26F0\\uFE0F','Trails','About one walk per night, easy and moderate leading. Permitted uses come from the Forest Service trails table, not from the app.', trails)
-    + sec('\\uD83D\\uDC15','The dog','', '<li><div class="iname">Lincoln National Forest publishes no dog rule at all</div>'
-        + '<div class="idet">Seven of the eight trails above therefore carry no dog verdict \\u2014 an absence of '
-        + 'prohibition is not permission, and the two must never look the same at a trailhead. What binds is '
-        + '<b>36 CFR 261.16(j)</b>: a six-foot leash, but only at developed recreation sites, not on the tread.</div>'
-        + '<div class="cc-season">'+esc((c.dogs||{}).rule)+'</div>'
-        + '<div class="cc-lk">'+A((c.dogs||{}).source,'36 CFR 261.16')+'</div></li>'
-        + '<li><div class="iname">In the village and at White Sands</div><div class="idet">'
-        + esc((c.dogs||{}).notes)+'</div></li>')
-    + sec('\\uD83D\\uDEB2','Gravel and the bike carrier','The dog rides in a carrier, so the question is a firm, flat, bike-legal surface \\u2014 not whether there is mountain biking.', cruise)
-    + sec('\\uD83D\\uDEFB','4x4 and forest roads','Numbered Forest Service roads only \\u2014 the class that takes a full-size pickup. Every T-numbered route on this district is 50-inch width and excludes the truck.', routes(c.offroad))
-    + sec('\\uD83D\\uDE99','Scenic drives','Day trips in the towed truck. The coach does not leave the campground.', routes(c.scenicDrives))
-    + sec('\\uD83D\\uDCF7','Shot list','Vantage and hour worked against these dates and this latitude.', shots)
-    + light
-    + sec('\\u26FA','Camp \\u2014 the 40 ft question','Not one operator publishes a maximum length, so every one is a phone call before booking.', camps)
-    + '</div>';
-})();
-</script>
-''' + VIEW_END
-    h = replace_between(h, VIEW_START, VIEW_END, views, '<div class="ext-only hidden">')
-
-    # Write via a temp file and rename. A direct write_text() that raises partway
-    # leaves desktop/index.html TRUNCATED — a UnicodeEncodeError on a stray
-    # surrogate emptied the 5.9 MB master to 0 bytes here, and only the last
-    # commit saved it. Rename is atomic; a failed encode never touches the file.
     # A lone surrogate cannot be encoded as UTF-8, and the write that discovers
     # that has already truncated the file in older versions. Catch it here, where
     # the message can say WHERE it is, instead of at the encoder.

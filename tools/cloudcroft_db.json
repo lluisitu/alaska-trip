@@ -1,0 +1,1045 @@
+{
+  "_what": "Cloudcroft, NM — a one-stop trip mode on the dashboard. Researched to tools/STOP_SPEC.md. Dates 22-29 Aug 2029, 7 nights. Assembled from four research passes; every figure is what an authority or a listing published, and everything unsourced is carried in a `needs` array rather than filled in.",
+  "stop": {
+    "id": "cloudcroft",
+    "name": "Cloudcroft, NM",
+    "arrive": "2029-08-22",
+    "depart": "2029-08-29",
+    "nights": 7,
+    "lat": 32.9548,
+    "lng": -105.7434,
+    "elevation_ft": 8676,
+    "tz": "America/Denver",
+    "blurb": "Eight and a half thousand feet of fir and aspen sitting directly on top of the Chihuahuan Desert. The village is the surviving end of the Cloud-Climbing Railroad, whose 1899 trestle still stands in the canyon below the highway; the western rim looks down four thousand feet onto the gypsum at White Sands, an hour away by road."
+  },
+  "trails": [
+    {
+      "name": "La Pasada Encantada Trail (T233)",
+      "distance": "0.4 mi loop",
+      "time": "9 min (AllTrails avg); AllTrails FAQ says 0.5-1 hr",
+      "difficulty": "Easy",
+      "elevation_gain": "30 ft (AllTrails en-GB: 9 m)",
+      "reviews": "4.8 (80)",
+      "uses": [
+        "hike"
+      ],
+      "cruise": false,
+      "cruise_reason": "Forest Service lists only Backpacking and Day Hiking for T233 — no mountain biking. It is also a purpose-built sight-impaired interpretive trail with continuous 6x6 timber guide rails on both sides of the tread; riding it would be wrong even if it were legal.",
+      "season": "AllTrails gives best times as April through October. At ~9,000 ft this is a snow-season closure risk, not a formal closure. Trailhead is at Sleepy Grass Campground, off NM-130 about 1.2 mi south of the US-82 junction; Forest Service campgrounds in this cluster run roughly mid-May to mid-October (Deerhead: opens May 15, closes Oct 11), so late September is inside the serviced season.",
+      "note": "The single best dog walk of the stop for a 53-year-old at 9,000 ft on arrival day: 0.4 miles, essentially flat, firm graded tread, continuous handrails, Braille and raised-letter interpretive signs, and texture changes underfoot marking the stations. It is short enough to do twice. Reachable in the truck in under ten minutes from the village.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/la-pasada-encantada-trail",
+        "match": "exact",
+        "tier": "indexed"
+      },
+      "other_links": [
+        {
+          "label": "Lincoln NF trails table (T233, uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Sacramento RD trails list PDF",
+          "url": "https://www.fs.usda.gov/media/94736",
+          "tier": "official"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for this trail — 'dogs' deliberately left absent.",
+        "AllTrails locale pages disagree on the review count (80 on the US page, 76 on en-GB) and give two different rating counts (53 and 52) alongside the 4.8 stars. The 4.8 is stable across locales; the count is not."
+      ]
+    },
+    {
+      "name": "Osha, Pines North Trail and Pines Trail Loop",
+      "distance": "2.2 mi loop",
+      "time": "1 hr 1 min",
+      "difficulty": "Easy",
+      "elevation_gain": "370 ft",
+      "reviews": "4.6 (112)",
+      "uses": [
+        "hike"
+      ],
+      "cruise": false,
+      "cruise_reason": "Built on the Osha (T10) tread, which the Forest Service lists for Backpacking and Day Hiking only — no mountain biking. AllTrails' own description also notes rocks and tree roots through the mixed conifer.",
+      "season": "AllTrails gives best times as April through October. Same snow window as Osha proper.",
+      "note": "The gentler alternative to the Osha loop proper and the better first walk at altitude — 56 ft less climb and rated easy rather than moderate, on the same shaded ponderosa/aspen/fir ground. Popular for camping and hiking, quieter than the main Osha loop.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/en-gb/trail/us/new-mexico/osha-pines-north-trail-and-pines-trail-loop",
+        "match": "exact",
+        "tier": "indexed",
+        "note": "URL copied from a search result. Only the en-GB and plp.alltrails.com variants appeared in results; the US-locale slug was NOT constructed."
+      },
+      "other_links": [
+        {
+          "label": "Lincoln NF trails table (Osha T10, uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Osha Trail T10 Forest Service trail guide (PDF)",
+          "url": "https://www.fs.usda.gov/media/94558",
+          "tier": "official"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for this trail — 'dogs' deliberately left absent.",
+        "The Pines and Pines North segments are not separately listed in the Forest Service trails table; 'uses' here is inferred from Osha T10, which is the trail the Forest Service actually names. Confirm with Sacramento RD (575-682-2551) if bike legality ever matters."
+      ]
+    },
+    {
+      "name": "Osha Trail (T10)",
+      "distance": "2.5 mi loop (Forest Service gives T10 as 2.2 mi)",
+      "time": "1 hr 10 min",
+      "difficulty": "Moderate",
+      "elevation_gain": "426 ft",
+      "reviews": "4.7 (4,747)",
+      "uses": [
+        "hike"
+      ],
+      "cruise": false,
+      "cruise_reason": "Forest Service lists T10 as Backpacking and Day Hiking only — mountain biking is not an allowed use. Reviewers also report loose rock and exposed tree roots, and it is muddy and slick after rain.",
+      "season": "AllTrails gives best times as April through October. Trailhead parking is on US-82 just west of the village, so access itself is plowed year-round, but the tread carries snow and ice from roughly November into April. Late September is prime: aspens turning, monsoon over.",
+      "note": "The signature walk of the stop and the one most likely to be crowded. Non-motorized, family-graded, and it opens onto the western rim with a view down over the Tularosa Basin to the White Sands dunefield — worth doing on the first clear evening. Forest Service describes it as 'excellent for the whole family'. Trailhead is a short drive or a walkable distance from the village, so the coach never moves.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/osha-trail--2",
+        "match": "exact",
+        "tier": "indexed"
+      },
+      "other_links": [
+        {
+          "label": "Osha Trail T10 Forest Service trail guide (PDF)",
+          "url": "https://www.fs.usda.gov/media/94558",
+          "tier": "official"
+        },
+        {
+          "label": "Lincoln NF trails table (uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Sacramento Ranger District",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/sacramento-ranger-district",
+          "tier": "official"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for this trail — 'dogs' deliberately left absent.",
+        "REVIEW COUNT DRIFTS BADLY. Four different figures were returned for the same AllTrails page across two search engines and locales: 4,747 (US page), 4,655 (en-GB), 4,504 (cached US), plus a separate 'moderate, 2.5 mi, 426 ft' FAQ block. The 4.7 star figure was stable. Treat 4,747 as the highest observed, not as verified.",
+        "Distance disagrees between authorities: Forest Service says T10 is 2.2 miles, AllTrails says 2.5 miles, Trailforks says 2 miles. Not reconciled."
+      ]
+    },
+    {
+      "name": "Mexican Canyon Trestle / Cloud-Climbing Trestle Trail (T5001), from Trestle Recreation Area",
+      "distance": "2.2 mi (AllTrails 3.5 km); Forest Service gives T5001 itself as 1.3 mi",
+      "time": "1-1.5 hr",
+      "difficulty": "Moderate",
+      "elevation_gain": "525 ft (AllTrails en-GB: 160 m)",
+      "reviews": "4.6 (1,432)",
+      "uses": [
+        "hike",
+        "horse"
+      ],
+      "dogs": true,
+      "cruise": false,
+      "cruise_reason": "Only the first stretch by the replica depot is paved. The route then drops into Mexican Canyon on a steeper dirt track with rocky sections, and the return is a sustained climb — reviewers call the climb back the hardest part. The Forest Service trail page for T5001 lists Hiking and Horseback Riding only.",
+      "season": "Forest Service: 'Year round. Be advised that in winter snow is possible.' The Trestle Recreation Area day-use site itself is listed as 'Spring, Summer, Fall' and is currently open for day use. Late September is ideal.",
+      "note": "This is the stop's one trail with an explicit, published pet rule, because its trailhead is a Forest Service day-use site: 'All pets must be on a leash at all times.' Day use is $5 per vehicle per day, covered by the Interagency pass. Vault toilets, picnic tables, interpretive panels — but NO potable water, so carry the dog's. The payoff is signed viewpoints on the restored 1899 Mexican Canyon Trestle. Do NOT walk on the trestle. Truck it, do not move the coach: the site is at the west end of the village off US-82 and the lot is a day-use picnic area, not a rig-sized pull-through.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/mexican-canyon-trestle",
+        "match": "exact",
+        "tier": "indexed"
+      },
+      "other_links": [
+        {
+          "label": "Trestle Recreation Area (source of the pet rule)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-recreation-area",
+          "tier": "official"
+        },
+        {
+          "label": "Cloud-Climbing Trestle Trail T5001",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/cloud-climbing-trestle-trail-t5001",
+          "tier": "official"
+        },
+        {
+          "label": "Trestle Vista Observation Site (US-82 roadside view, no walking)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-vista-observation-site",
+          "tier": "official"
+        },
+        {
+          "label": "Cloud Climbing Rail Trails map (NM Rails-to-Trails PDF)",
+          "url": "https://nmrailstotrails.org/wp-content/uploads/2026/07/Trestle-Recreation-Trails.pdf",
+          "tier": "advocacy"
+        }
+      ],
+      "needs": [
+        "THE TWO FOREST SERVICE SOURCES CONTRADICT EACH OTHER ON USES. The T5001 trail page lists 'Hiking, Horseback Riding'. The forest-wide trails table lists 'Day Hiking, Horse Riding, Mountain Biking' for the same trail number. 'uses' above follows the trail page (the more specific authority) and omits bike. Worth one call to Sacramento RD (575-682-2551) before anyone rides it.",
+        "Review count drifts: 1,432 (US page), 1,384 (cached US), 1,338 (en-GB). Star drifts 4.6/4.7 between snapshots. 4.6 is the more frequent.",
+        "Elevation gain: 160 m / ~525 ft from the AllTrails FAQ block, but AllTrails area pages separately quoted 541 ft and 524 ft for the same trail. Figure is approximate.",
+        "'dogs': true rests on the Trestle Recreation Area page (the trailhead day-use site), not on a rule published for the trail tread itself."
+      ]
+    },
+    {
+      "name": "Switchback and Old Cloudcroft Highway Trail (T5004 + T5002)",
+      "distance": "4.4 mi loop",
+      "time": null,
+      "difficulty": "Moderate",
+      "elevation_gain": null,
+      "reviews": "4.6 (635)",
+      "uses": [
+        "hike",
+        "bike",
+        "horse"
+      ],
+      "cruise": false,
+      "cruise_reason": "Bike-legal — the Forest Service lists Mountain Biking for both T5004 and T5002 (and OHV under 50 in. on T5002) — but it is not a cruise. It begins through a tunnel beneath the road, climbs after a pedestrian bridge, and reviewers report loose rock and 'plenty of hill climbing'. Not a firm flat grade you would tow a dog carrier along.",
+      "season": "Both trails sit on the old railroad grade below the village and are usable spring through fall; the Forest Service gives the neighbouring T5001 as year-round with winter snow possible, and the same applies here. Late September is good.",
+      "note": "The longest of the easy-to-moderate options and the one that best rewards a whole morning. Historic railroad-grade walking with old trestles, forest and open sections, mountain views once you climb past the pedestrian bridge. Trailhead parking is LIMITED — arrive early. Restrooms at the Trestle depot recreation-area lot. Motorcycles and small OHVs are legal on the T5002 half, so expect the occasional machine; keep the dog leashed for that reason even though nothing requires it.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/switchback-and-old-cloudcroft-highway-trail",
+        "match": "exact",
+        "tier": "indexed"
+      },
+      "other_links": [
+        {
+          "label": "Lincoln NF trails table (T5002 2.6 mi, T5004 3.2 mi, uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Old Cloudcroft Highway Trail T5002 / Switchback T5004 trail guide",
+          "url": "https://www.fs.usda.gov/recarea/lincoln/recreation/bicycling/recarea/?recid=34380&actid=93",
+          "tier": "official"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for these trails — 'dogs' deliberately left absent.",
+        "Elevation gain not sourced — every search snippet truncated before the figure. NOT guessed.",
+        "Estimated time not sourced.",
+        "The shorter 'Old Cloudcroft Highway Trail Loop' variant is a separate AllTrails entry: 2.4 mi, 564 ft gain, moderate, 1-1.5 hr, at https://www.alltrails.com/trail/us/new-mexico/old-cloudcroft-highway-trail-loop — its review COUNT was not sourced (star shown as 4.6). Use it if 4.4 mi is too much."
+      ]
+    },
+    {
+      "name": "Sunspot Trail to Cathey Canyon and Rim Trail Loop (T105B + T105A + T105)",
+      "distance": "6.2 mi loop",
+      "time": "2 hr 39 min",
+      "difficulty": "Moderate",
+      "elevation_gain": "830 ft (AllTrails fr: 253 m)",
+      "reviews": "4.6 (219)",
+      "uses": [
+        "hike",
+        "horse"
+      ],
+      "cruise": false,
+      "cruise_reason": "Forest Service lists Cathey Canyon (T105A, 1.7 mi) and Sunspot Trail (T105B, 1.4 mi) for Backpacking, Day Hiking and Horse Riding ONLY — no mountain biking on either connector, even though the Rim Trail segment they join does allow bikes.",
+      "season": "AllTrails: 'The trail is open year-round and is beautiful to visit anytime.' Access is via NM-6563, the Sunspot Scenic Byway — 12.5 miles south from the NM-130 junction to the Cathey Canyon Vista turnoff. That highway is the constraint in snow, not the trail.",
+      "note": "The best half-day drive-and-walk of the stop and the highest ground the dog will cover here — near 9,000 ft along the Sacramento crest with overlooks west into the Tularosa Basin. Take the truck down the Sunspot Byway; it is a national scenic highway and a good outing in its own right. Can be shortened to a 3.6 mi loop by parking at Cathey Canyon Vista and using T105A with the Rim Trail and the Cathey Canyon Connector.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/sunspot-trail-to-cathy-canyon-and-rim-trail-loop",
+        "match": "exact",
+        "tier": "indexed",
+        "note": "AllTrails spells it 'Cathy'; the Forest Service spells it 'Cathey'."
+      },
+      "other_links": [
+        {
+          "label": "Lincoln NF trails table (T105A, T105B uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Rim Trail T105 (the segment this loop joins)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/rim-trail-t105",
+          "tier": "official"
+        },
+        {
+          "label": "Hiking Project, Cathey Canyon T105A (loop options)",
+          "url": "https://www.hikingproject.com/trail/7040484/cathey-canyon-trail-t105a",
+          "tier": "community"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for these trails — 'dogs' deliberately left absent.",
+        "Review count drifts 219 / 220 between snapshots; 4.6 star is stable.",
+        "No published seasonal closure or snow-gate date for NM-6563 (Sunspot Highway) was found. Confirm with Sacramento RD if the stay slips past October."
+      ]
+    },
+    {
+      "name": "Rim Trail (T105) — National Recreation Trail, Cloudcroft to Sunspot",
+      "distance": "31.2 mi end to end (Forest Service); AllTrails 'Cloudcroft to Sunspot' section is the popular through-hike",
+      "time": null,
+      "difficulty": "Hard end to end; the first 0.73 mi from the village is easy",
+      "elevation_gain": "3,553 ft for the Cloudcroft-to-Sunspot section; 5,249 ft for the full 31.1 mi NRT",
+      "reviews": "4.8 (91) for the Cloudcroft-to-Sunspot section; 4.5 (98) for the full National Recreation Rim Trail entry",
+      "uses": [
+        "hike",
+        "bike",
+        "horse"
+      ],
+      "cruise": false,
+      "cruise_reason": "Bike-legal for its full length per the Forest Service, but it is crest singletrack, not a graded rail-trail — and everything south of Slide Campground is also open to motorcycles. Wrong surface and wrong traffic for a dog in a bike carrier.",
+      "season": "Forest Service: 'Open all year.' Snow at 9,000 ft makes that nominal in midwinter. Late September is excellent.",
+      "note": "THIS IS THE NATIONAL RECREATION TRAIL DESIGNATION in the area — the first trail in New Mexico so designated. Forest Service, verbatim: 'It begins at the southern end of the Village Of Cloudcroft along NM130 and ends 31.2 miles later at the Sacramento River Road south of Sunspot. The first 0.73 miles (to Slide Campground) is non-motorized with the rest of the trail south of Slide being motorized for motorcycles. There are multiple trailheads along the route so smaller day-hikes are easily planned.' For a dog walk from camp, that first 0.73 mi non-motorized section is the piece that matters — it starts at the village edge and has no motor traffic. The trailhead is directly across the street from Deerhead Campground. The whole 31 miles is not the point on a five-night stay; the day-hikeable segments are.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/rim-trail-sections-1-and-2",
+        "match": "exact",
+        "tier": "indexed",
+        "note": "AllTrails titles this 'Rim Trail: Cloudcroft to Sunspot'. A separate AllTrails entry exists for the full 'National Recreation Rim Trail (Trail 105)', 31.1 mi, 5,249 ft, 4.5 (98)."
+      },
+      "other_links": [
+        {
+          "label": "Rim Trail T105, Lincoln NF",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/rim-trail-t105",
+          "tier": "official"
+        },
+        {
+          "label": "Deerhead Campground (T105 trailhead across the street)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/deerhead-campground",
+          "tier": "official"
+        },
+        {
+          "label": "lincoln-nf-trails.org T105 description",
+          "url": "http://lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T105.html",
+          "tier": "community"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for this trail — 'dogs' deliberately left absent.",
+        "Estimated time not sourced for either the full trail or the Cloudcroft-to-Sunspot section.",
+        "No published elevation gain for the 0.73 mi non-motorized village-to-Slide segment specifically.",
+        "SECTION LENGTHS from the AllTrails description do not add up to the Forest Service total: Section 1 is 11 mi to Karr Canyon Rd, Section 2 is 9.9 mi to Sunspot Hwy, Section 3 to Sacramento River Road. Forest Service says 31.2 mi total; AllTrails' own NRT entry says 31.1 mi; the older AllTrails text says 30.5 mi."
+      ]
+    },
+    {
+      "name": "Willie White Trail (T113)",
+      "distance": "10.4 mi out and back (Forest Service gives T113 as 5.2 mi one way)",
+      "time": "5 hr 28 min",
+      "difficulty": "Hard",
+      "elevation_gain": "2,372 ft (AllTrails de: 723 m)",
+      "reviews": "4.6 (73)",
+      "uses": [
+        "hike",
+        "bike",
+        "horse",
+        "ohv"
+      ],
+      "cruise": false,
+      "cruise_reason": "Bike-legal, but Forest Service describes it as motorized for vehicles under 50 in. wide, and it is a 5.2-mile canyon trail with 2,300+ ft of gain. Motorised traffic plus that grade rules out a bike carrier.",
+      "season": "AllTrails gives best times as April through October. Access is via Rio Penasco Road (County Road C017) past Bluff Springs — paved for the first couple of miles, then dirt, so wet weather and early snow close it in practice before the trail itself does.",
+      "note": "The one long day of the stop, and it is MOTORISED — the Forest Service says T113 and Wills Canyon are open to all motorized vehicles under 50 in. wide as well as hiking, biking and pack/saddle. Not a quiet dog walk, and 10.4 miles with 2,300 ft of climb is a serious day for both the dog and a 53-year-old at altitude. Worth listing because its trailhead sits just west of BLUFF SPRINGS along CR C17, which is the area's waterfall destination and the more realistic short outing from that same drive. It can be extended into a 10.6 mi loop with Wills Canyon (T500), rated 4.5 (154) on AllTrails.",
+      "alltrails": {
+        "url": "https://www.alltrails.com/trail/us/new-mexico/willie-white-trail",
+        "match": "exact",
+        "tier": "indexed"
+      },
+      "other_links": [
+        {
+          "label": "Willie White / Wills Canyon Forest Service trail guide (PDF)",
+          "url": "https://www.fs.usda.gov/media/94542",
+          "tier": "official"
+        },
+        {
+          "label": "Lincoln NF trails table (T113 5.2 mi, uses allowed)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+          "tier": "official"
+        },
+        {
+          "label": "Bluff Springs on AllTrails (point of interest)",
+          "url": "https://www.alltrails.com/poi/us/new-mexico/cloudcroft/bluff-springs",
+          "tier": "indexed"
+        }
+      ],
+      "needs": [
+        "Lincoln NF publishes no dog or leash rule for this trail — 'dogs' deliberately left absent.",
+        "Review count drifts: 73 (US title) vs 69 (cached) vs a rating count of 66. Star 4.6 stable.",
+        "BLUFF SPRINGS ITSELF could not be pinned to a named, measured trail. AllTrails carries it only as a point of interest ('one trail will get you there'), Benson Ridge / Bluff Springs Trail T5006 is 2.3 mi per the Forest Service, and no rating, review count, time or elevation gain was sourceable for a Bluff Springs walk. Left out of the trail list rather than invented.",
+        "Road surface and condition on CR C017 (Rio Penasco Rd) is from visitor reports, not from the county or the Forest Service. Not verified."
+      ]
+    }
+  ],
+  "dogs": {
+    "rule": "Bringing in or possessing an animal, other than a service animal, unless it is crated, caged, or upon a leash not longer than six feet, or otherwise under physical restrictive control.",
+    "source": "https://www.law.cornell.edu/cfr/text/36/261.16",
+    "notes": "FOUR SEPARATE AUTHORITIES, AND THEY DO NOT SAY THE SAME THING.\n\n(1) LINCOLN NATIONAL FOREST — publishes NO forest-wide dog or leash rule, and no per-trail dog rule. This was checked directly, not assumed: the forest's 'Occupancy and Use Prohibitions' order (https://www.fs.usda.gov/r03/lincoln/alerts/occupancy-and-use-prohibitions) lists five prohibitions (14-day camping, alcohol, parking, public nudity, body waste in caves) and NONE concerns animals. The 'Safety and Outdoor Ethics' page (https://www.fs.usda.gov/r03/lincoln/safety-ethics) says nothing about pets. The trails index and the individual trail pages for Rim Trail (T105) and Cloud-Climbing Trestle Trail (T5001) say nothing about pets. So on Lincoln NF TRAILS outside developed sites there is no published leash requirement — the dog is legal, and 'dogs' is left ABSENT on those entries rather than set true, because absence of a prohibition is not an authority granting permission.\n\n(2) 36 CFR 261.16(j) — the enforceable federal rule, quoted above in dogs_rule. It applies at DEVELOPED RECREATION SITES only (trailhead day-use areas, campgrounds, picnic areas), not to the trail tread out in the forest. This is the rule that actually binds at the Trestle Recreation Area parking lot, at Deerhead and Sleepy Grass campgrounds, and at any fee trailhead.\n\n(3) TRESTLE RECREATION AREA — the one Lincoln NF page in this area that states a pet rule, verbatim: \"Please pick up after your pets. All pets must be on a leash at all times.\" Source: https://www.fs.usda.gov/r03/lincoln/recreation/trestle-recreation-area . Same page: day use only, no camping, $5 per vehicle per day (Interagency and NM Enchantment passes accepted), vault toilets, no potable water, season 'Spring, Summer, Fall'. This is why 'dogs': true is set ONLY on the Mexican Canyon Trestle entry — that trail's trailhead IS the Trestle Recreation Area, and the authority affirmatively contemplates pets there.\n\n(4) VILLAGE OF CLOUDCROFT — has an animal control chapter but NOTHING specific to village trails or parks. What it does have, verbatim: Sec. 5-1-9(B) 'Animals Running At Large: It shall be unlawful for any keeper of a dog or cat or other pet animal to permit such animal to run at large.' and Sec. 5-1-1 definitions: 'RUNNING AT LARGE: An animal off the premises of the keeper and not under the direct control of a competent person. Direct control means connected by a secure leash not over six feet (6') in length or some other equivalent means of direct control.' Source: https://codelibrary.amlegal.com/codes/cloudcroftnm/latest/cloudcroft_nm/0-0-0-1225 (prohibited activities) and .../0-0-0-1157 (definitions). Practical effect: a six-foot leash inside village limits, everywhere, all the time. The village code contains no park-specific or trail-specific pet section at all — that silence is the finding, not an omission in this research. There is a fenced dog park at Zenith Park on James Canyon Hwy, but no Village-published rules page for it was found; treat it as unverified.\n\n(5) WHITE SANDS NATIONAL PARK (about an hour down US-82, ~4,235 ft) — the unusual one, and unusually GOOD. Verbatim: \"Pets love White Sands!\" and pets may accompany visitors if they are \"non-disruptive, on a leash no longer than six feet, and are under physical control at all times.\" The only exclusion is buildings: \"Do not bring pets inside the visitor center\" (36 CFR 2.15, no pets in federal buildings). There is no 'pets on paved surfaces only' restriction, which is the norm at most national parks — at White Sands the dog may go out on the dunes and on the trails. The park also provides \"two designated pet walking stations complete with pet poop pick-up bags\" outside the visitor center, one adjacent to the women's restroom and one behind the picnic tables. Source: https://www.nps.gov/whsa/planyourvisit/pets.htm . CAUTION not in the policy text: gypsum sand and full desert sun — this is a dawn or late-afternoon outing with water, never a midday one, and the dunes hold heat."
+  },
+  "cruise": [
+    {
+      "name": "Upper Rio Peñasco Road (County Road C17 / Rio Peñasco Road), Bluff Springs valley",
+      "surface": "100% gravel, graded valley-bottom county road (Gravelmap classifies the whole segment 'gravel 100%')",
+      "length": "12.39 mi point to point, Rio Peñasco Rd to Sunspot Hwy. Ride it as an out-and-back from the Bluff Springs end and take whatever length suits — the valley floor is the flat part.",
+      "gradient": "1,965 ft gain and only 292 ft loss over 12.39 mi in the uphill direction — about 3% average, but that average hides the shape: it is near-flat along the valley floor at the Bluff Springs end and does its climbing at the Sunspot Highway end. Max elevation 8,802 ft. Ridden out-and-back from the bottom, the first several miles are the gentlest rideable gravel anywhere on this district.",
+      "bike_legal": "yes — it is a public COUNTY road, not a Forest Service motorised trail. The Forest Service names it as such on its own Willie White Trail page: 'Trail #113: The Willie White Trail … begins just west of Bluff Springs along County Road C17 (Rio Penasco Road)'. Nothing on the MVUM restricts it, and the MVUM states in its own legend that it 'does not display nonmotorized uses' — the MVUM regulates motor vehicles only and imposes no bicycle restriction anywhere on this district.",
+      "verdict": "WORKS with a dog in a carrier, and this is the answer. Firm graded gravel, valley bottom, a public road with negligible traffic, and you choose your own turnaround so the gradient never has to bite. Ride out from the Bluff Springs end, turn when the road starts to tilt. This is the entry that makes the previous pass's 'none' wrong.",
+      "url": "https://gravelmap.com/map/route/71778-upper-rio-penasco",
+      "season": "Rideable roughly April to November; snow-limited in winter. Late September is ideal — post-monsoon, dry, aspens turning at this elevation. NOT affected by the MVUM's 30 September seasonal cliff, which applies only to FR 24x, 63 mi 3.8–7.4, 64B and 422.",
+      "tier": "community",
+      "source": "Gravelmap per-segment page (surface, length, elevation profile); Forest Service Willie White T113 page for the road's identity as County Road C17"
+    },
+    {
+      "name": "Water Canyon (Forest Service road off Upper Rio Peñasco Road, near Marcia)",
+      "surface": "Graded dirt, rock and gravel canyon road, described by onX as 'well-maintained' and 'generally two vehicles wide'",
+      "length": "2.4 mi to where it meets the Old Sunspot Hwy Trail — so about 4.8 mi out and back",
+      "gradient": "Canyon-floor road sitting just above the wash that feeds the Rio Peñasco — gentle by construction. onX rates it Technical Rating 1, its easiest. No published elevation profile; recorded as unknown rather than guessed.",
+      "bike_legal": "yes — a National Forest System road, and the Lincoln National Forest's own Biking page describes the forest's cycling network as 'a mix of singletrack, fire roads, and multi-use trails', with the Sacramento Ranger District named as particularly popular. The MVUM's designations govern motor vehicles only ('This map does not display nonmotorized uses').",
+      "verdict": "WORKS with a dog in a carrier — the best short option here. Two vehicles wide, well maintained, no obstacle over 10 inches, canyon-bottom so the gradient is mild, and it pairs directly with Upper Rio Peñasco Road for a longer day. Two live cautions from onX: large downed trees and minor rockfall are common in this canyon, and water flows on the main track after rain or snowmelt — check after weather. No cell service.",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/water-canyon-n7062d50wq8e",
+      "season": "Spring, Summer, Fall per onX; heavy snowfall makes it inaccessible in winter. Late September is in window.",
+      "tier": "community",
+      "source": "onX Offroad per-route page; fs.usda.gov Lincoln NF Biking page for the bike-legal status of forest roads"
+    },
+    {
+      "name": "Agua Chiquita forest road, off NM 6563",
+      "surface": "Short paved section at the NM 6563 turn-off, then gravel and dirt, then dirt and rock. onX: 'overall very well-maintained road… easily accessible by most vehicles including 2wd with decent clearance.'",
+      "length": "10.8 mi one way; loops back to NM 6563 via FS 460 at the south end",
+      "gradient": "Not published. onX gives Technical Rating 1 and 'no obstacles larger than 10 inches'; a majority of the route is wide enough for two vehicles. Recorded as unknown rather than estimated.",
+      "bike_legal": "yes — National Forest System road; Lincoln NF's Biking page includes fire roads in the forest's cycling network, and the MVUM regulates motor vehicles only",
+      "verdict": "WORKS with a dog in a carrier for a longer, quieter gravel day, with one honest caveat: it is the same road the 4x4 traffic uses, and it is popular for dispersed camping, so you will meet trucks. Ten miles of technical-rating-1 graded road at 8,000–9,000 ft is a real ride. Gradient is the unknown — worth a look at the first mile before committing the dog to the full length. No cell service. Substantial burn scar toward the south end.",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
+      "season": "Spring, Summer, Fall per onX. A few low spots become shallow-to-moderate water crossings after snowmelt or heavy rain; late September is normally past that.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Russia Canyon Road",
+      "surface": "100% gravel (Gravelmap)",
+      "length": "6.41 mi point to point, Russia Canyon Rd to State Road 6563",
+      "gradient": "1,335 ft gain against only 89 ft loss over 6.41 mi — roughly 4% sustained, essentially one continuous climb to a 9,081 ft high point",
+      "bike_legal": "yes — Gravelmap records it as a public gravel segment and it terminates on NM 6563; nothing on the MVUM restricts bicycles",
+      "verdict": "DOES NOT work as a cruise with a dog in a carrier. It is 6.4 miles of sustained 4% climb at 8,000–9,000 ft with roughly 1,335 ft of gain and almost no relief — that is a training ride, not a dog ride, and the descent direction only defers the problem because you still have to get back. Listed so it is not researched twice. If it is ridden at all, ride it downhill from NM 6563 with a shuttle in the truck.",
+      "url": "https://gravelmap.com/map/route/136540-russia-canyon-road",
+      "season": "Spring through autumn; snow-limited at 9,000 ft. Late September fine.",
+      "tier": "community",
+      "source": "Gravelmap per-segment page"
+    },
+    {
+      "name": "Rim Trail T105 (National Recreation Trail), Cloudcroft to Sunspot",
+      "surface": "Standard/Terra Trail — natural-surface singletrack along the crest of the Sacramentos",
+      "length": "31.2 mi per the Forest Service; 30.7 mi per the Lincoln NF Trails guide. Split into North, Middle and South segments with six Forest Service Rim Trail parking access points (P1–P6).",
+      "gradient": "8,740 ft down to 7,620 ft, 1,120 ft of difference across the length, but the trail rolls along the rim rather than descending steadily",
+      "bike_legal": "YES, explicitly — the Forest Service's own trail page reads verbatim: 'The trail is open for the following uses: Hiking, Horseback Riding, Mountain Biking, Motorcycle Trail Riding.' Current conditions on the same page: 'Open all year. Non-motorized use from Cloudcroft to Slide Campground. Motorcycle use allowed from Slide to the Sacramento River.' So the first 0.73 miles out of Cloudcroft is bicycles-and-feet only — no motorcycles to meet.",
+      "verdict": "BIKE-LEGAL BUT NOT A CRUISE. The Lincoln National Forest Trails guide grades T105 'Most Difficult', and it is natural-surface singletrack the whole way — wrong surface for a loaded bike with a dog on the back, and the consequence of a fall is not acceptable with the animal aboard. Recorded here because §2 asks the question directly and the answer is a clear no on surface and difficulty, not on legality. The one qualified exception: the first 0.73 mi from the Cloudcroft trailhead on NM 130 to Slide Campground is closed to motorcycles, so it is the only stretch where you would not meet a dirt bike — but it is still singletrack, and 0.73 mi is not a ride.",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/rim-trail-t105",
+      "season": "Open all year per the Forest Service; snow-limited in winter at 8,700 ft. Late September is prime.",
+      "tier": "official",
+      "source": "fs.usda.gov Rim Trail T105 page (length, uses, seasonal status); lincoln-nf-trails.org T105 page (30.7 mi, 8,740–7,620 ft, difficulty 'Most Difficult')"
+    },
+    {
+      "name": "NM 6563, the Sunspot Scenic Byway (paved climb, Cloudcroft to Sunspot)",
+      "surface": "Paved two-lane state highway",
+      "length": "15.53 mi one way",
+      "gradient": "Ridge road climbing from Cloudcroft at about 8,650 ft toward Sunspot at about 9,200 ft, rolling rather than steady. NMDOT's bicycle map carries a 'Steep Grade (>2.5%)' layer for the state; I did not get a clean route-level read of it for 6563 and am recording the grade as unquantified rather than estimating it.",
+      "bike_legal": "yes — a public state highway with no bicycle prohibition; it is not on NMDOT's 'Prohibited Interstate Travel' layer. Authority: NMDOT State Bicycle Guideline Map, https://services.arcgis.com/hOpd7wfnKm16p9D9/ArcGIS/rest/services/NMDOT_Bicycle_MapService/FeatureServer — the state's own cycling map, queried directly.",
+      "verdict": "DOES NOT work with a dog in a carrier, and the reason is shoulder, not law. Traffic is genuinely light — NMDOT's own AADT figure for route 6563 is 340 vehicles per day, against 1,040–6,570 on US 82. But NMDOT's 'Estimated Usable Shoulder Width' layer returns a long run of 6563 segments with an effective usable shoulder of 0.0 ft and a shoulder surface recorded as 'Combination' or 'Unpaved', in its lowest category. A blind-cornered mountain highway with no usable shoulder is the wrong place for a bike carrying a dog, however few cars there are. As a truck drive it is excellent — see scenicDrives. Note this is a 2013 traffic dataset; the shoulder data has no date published.",
+      "url": "https://www.newmexico.org/places-to-visit/scenic-byways/sunspot/",
+      "season": "Year-round, snow permitting. Late September is the best of it.",
+      "tier": "official",
+      "source": "NMDOT State Bicycle Guideline Map FeatureServer, layers 5 (Estimated Usable Shoulder Width), 7 (Steep Grade >2.5%) and 8 (AADT, 2013 data), queried directly; New Mexico Tourism byway page for length and description"
+    },
+    {
+      "name": "Village Spur Trail T5001A and the Trestle Recreation Area paved loop (T5001B Overlook, T5001D Devil's Elbow)",
+      "surface": "T5001D is paved and accessible; T5001B/T5001A are short groomed connector paths on the old railroad alignment; the first half-mile out of the Depot is paved per TrailLink",
+      "length": "T5001A 0.3 mi, T5001B 0.3 mi, T5001C Crossover 0.3 mi, T5001D 0.3 mi — call it a mile of paved and near-paved path all told",
+      "gradient": "Trestle Recreation Area trail system as a whole: 7,700 to 8,700 ft, graded 'Easy to Moderate' by the New Mexico Rails-to-Trails Association. T5001D is specifically a paved handicap-accessible trail, so it is flat.",
+      "bike_legal": "T5001A YES — the Forest Service's own entry reads 'The trail is open for the following uses: Hiking, horseback riding, mountain biking.' T5001B, T5001C and T5001D: no Forest Service use table found, so RECORDED AS UNKNOWN, not as permitted.",
+      "verdict": "TOO SHORT TO BE THE ANSWER, but genuinely bike-legal and worth knowing. T5001A links the Village of Cloudcroft to the Trestle Recreation Area on 0.3 flat miles of old rail alignment, with parking at the US 82 / NM 130 junction on the west end of the village. It is a five-minute pedal with the dog to a picnic area with water and restrooms, not a ride. The Trestle Recreation Area itself is a Forest Service day-use site: https://www.fs.usda.gov/r03/lincoln/recreation/trestle-recreation-area",
+      "url": "https://nmrailstotrails.org/wp-content/uploads/2026/07/Trestle-Recreation-Trails.pdf",
+      "season": "New Mexico Rails-to-Trails Association gives the system's ideal seasons as 'Early Spring to late Fall'. Late September is in window.",
+      "tier": "official",
+      "source": "New Mexico Rails-to-Trails Association 'Cloud Climbing Rail Trails Map' PDF (trail numbers, mileages, elevation band, difficulty, seasons); fs.usda.gov Village Spur Trail T5001A entry for the permitted-use list"
+    },
+    {
+      "name": "Cloud-Climbing Trestle Trail T5001 (the Mexican Canyon Trestle rail-trail)",
+      "surface": "First half-mile paved, remainder dirt pathway, on the former Alamogordo and Sacramento Mountain Railroad grade (TrailLink)",
+      "length": "1.3 mi per the Forest Service; 1 mi per TrailLink; 2.5 mi round trip per the New Mexico Rails-to-Trails Association",
+      "gradient": "Within the 7,700–8,700 ft Trestle system band; TrailLink calls it 'a moderately challenging, but beautiful, climb'. AllTrails' summary describes a steeper dirt track dropping into Mexican Canyon with rocky sections and the return climb as the hardest part.",
+      "bike_legal": "NO — and this is a live contradiction that has to be recorded rather than resolved in the app's favour. The Forest Service, which manages the land, publishes: 'Trail #T5001: The Cloud-climbing Trestle Trail is 1.3 miles long… The trail is open for the following uses: Hiking, Horseback Riding' and 'No motorized vehicles allowed.' Mountain biking is NOT in the Forest Service's use list. TrailLink (Rails-to-Trails Conservancy) lists Activities as 'Horseback Riding, Mountain Biking, Walking' and categorises it as a Rail-Trail. Per project rule, the authority beats the app: treat T5001 as closed to bicycles until the Sacramento Ranger District says otherwise.",
+      "verdict": "DOES NOT work — not bike-legal per the managing authority, and in any case a moderately challenging climb on a rocky dirt track rather than a cruise. It remains a very good WALK with the dog to the 1899 trestle. The bike-legal member of this family is T5001A, above.",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/cloud-climbing-trestle-trail-t5001",
+      "season": "New Mexico Rails-to-Trails Association: 'Ideal seasons — Early Spring to late Fall'. Late September fine.",
+      "tier": "official",
+      "source": "fs.usda.gov Cloud-Climbing Trestle Trail T5001 page (the authority); TrailLink https://www.traillink.com/trail/cloud-climbing-trestle-trail/ (the contradicting app); New Mexico Rails-to-Trails Association PDF"
+    },
+    {
+      "name": "Old Cloudcroft Highway Trail T5002 (the old Alamogordo–Cloudcroft highway grade)",
+      "surface": "Old highway bench cut into the mountainside on the upper portion, natural surface below",
+      "length": "2.5 mi (New Mexico Rails-to-Trails Association and lincoln-nf-trails.org); the Forest Service entry says 2.6 mi",
+      "gradient": "7,680 to 8,600 ft, 920 ft of difference. lincoln-nf-trails.org states it plainly: 'Gradients average below 8%, greatest being 13%.' Graded 'More Difficult'.",
+      "bike_legal": "UNRESOLVED — recorded as unknown, not as permitted. The New Mexico Rails-to-Trails Association marks T5002 with an asterisk meaning 'Multi-Use Trail — Motorized & Equestrian use', and T5002 appears in the MVUM's 'US Forest Service Motorized Trails' list, which on this district means the 50-inch-or-less class. Neither of those states the bicycle position. The Forest Service's own use table for T5002 was truncated in every copy I could reach; the surviving fragment begins 'The trail is open for the following uses: Hiking…' and cuts off.",
+      "verdict": "DOES NOT work with a dog in a carrier regardless of how the legality resolves — an 8% average gradient touching 13% over 2.5 miles is not a cruise, it is a climb. Recorded here because an old highway grade is exactly the kind of thing §2 says to check, and it turned out to be steep rather than gentle. Second, separate caution from lincoln-nf-trails.org: 'The upper portion of T5002 crosses private land and is, therefore, subject to closure at any time.' If the bicycle question ever matters, it goes to the Sacramento Ranger District on 575-682-2551.",
+      "url": "http://www.lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T5002.html",
+      "season": "Early spring to late fall per the New Mexico Rails-to-Trails Association. Its neighbour T5003 Toboggan Canyon was under a Forest Service closure order for heavy erosion from 26 Feb 2024 to 22 Feb 2027 — expiring before the trip, but re-check.",
+      "tier": "community",
+      "source": "lincoln-nf-trails.org T5002 page (length, elevation, gradients, private-land caution); New Mexico Rails-to-Trails Association PDF; Sacramento/Smokey Bear MVUM motorized-trail list"
+    }
+  ],
+  "cruise_checked": [
+    "RAIL-TRAILS AND OLD RAILROAD GRADES — CHECKED, and this is where the previous 'none' went wrong: they exist in quantity. The Cloud-Climbing Railroad (Alamogordo and Sacramento Mountain Railway, 1900–1947) left a whole trail system at the Trestle Recreation Area. But almost none of it is both bike-legal and gentle: T5001 is hiking/horseback only per the Forest Service, T5002 averages under 8% but tops 13%, T5003 has been under an erosion closure order, T5004 Switchback is a 3.2 mi loop of switchbacks. Only T5001A Village Spur is confirmed bike-legal, and it is 0.3 mi.",
+    "NEW MEXICO RAILS-TO-TRAILS ASSOCIATION — CHECKED. Their Cloud Climbing Rail Trails Map PDF ( https://nmrailstotrails.org/wp-content/uploads/2026/07/Trestle-Recreation-Trails.pdf ) was retrieved and read in full. It gives the trail numbers and one-way mileages (T5001 1.3, T5001A 0.3, T5001B 0.3, T5001C 0.3, T5001D 0.3, T5002 2.5, T5003 1.1, T5004 3.2 round trip), the system elevation band 7,700–8,700 ft, difficulty 'Easy to Moderate', ideal seasons 'Early Spring to late Fall', and flags T5001A/T5002/T5003 as multi-use motorised and equestrian and T5001D as a paved accessible trail. It does not state bicycle permissions.",
+    "TRAILLINK / RAILS-TO-TRAILS CONSERVANCY — CHECKED. Lists 4 Cloudcroft trails totalling about 6 miles. The Cloud-Climbing Trestle Trail page gives surfaces 'Asphalt, Dirt', category 'Rail-Trail', length 1 mile, and Activities including Mountain Biking — which CONTRADICTS the Forest Service's own use table for the same trail. Recorded as a conflict, resolved in the authority's favour.",
+    "PAVED MULTI-USE PATHS, VILLAGE AND COUNTY — CHECKED, returns almost nothing. The only confirmed paved path is inside the Trestle Recreation Area: T5001D Devil's Elbow Overlook, 0.3 mi, described by the New Mexico Rails-to-Trails Association as a paved handicap-accessible trail, plus the paved first half-mile out of the replica Depot. No village or Otero County paved multi-use path network was found. Zenith Park is a village park with a playground and open ground, not a path system.",
+    "GRADED GRAVEL FOREST SERVICE ROADS OPEN TO BICYCLES — CHECKED, and THIS IS THE REAL ANSWER, exactly as §2 predicts for national-forest country. Worked from the MVUM road list and onX's per-route pages. Water Canyon (2.4 mi, two vehicles wide, well maintained), Agua Chiquita (10.8 mi, technical rating 1, 'easily accessible by most vehicles including 2wd'), Karr Canyon FR 63 (3.6 mi, 'well-maintained gravel road with a gradual downhill grade') and Pumphouse (8.1 mi, well maintained) are all firm, graded, bike-legal surfaces. Legality basis: the MVUM regulates motor vehicles only and states in its own legend 'This map does not display nonmotorized uses', and the Lincoln National Forest's Biking page describes the forest's cycling network as 'a mix of singletrack, fire roads, and multi-use trails' with the Sacramento Ranger District named as particularly popular.",
+    "GRAVELMAP (the gravel-cycling community's own index) — CHECKED. https://gravelmap.com/browse/new-mexico/cloudcroft returns exactly 2 routes totalling 19 mi: Upper Rio Peñasco Rd (12.39 mi, 100% gravel, 1,965 ft gain / 292 ft loss, max 8,802 ft) and Russia Canyon Road (6.41 mi, 100% gravel, 1,335 ft gain / 89 ft loss, max 9,081 ft). Both individual segment pages were opened and read. Upper Rio Peñasco is the one that works; Russia Canyon is a sustained 4% climb.",
+    "RIM TRAIL T105 — CHECKED against §2's specific question, is any section rideable rather than technical. Answer: bike-legal along its whole 31.2 miles per the Forest Service's own use table, but graded 'Most Difficult' by the Lincoln National Forest Trails guide and natural-surface singletrack throughout. The 0.73 mi from Cloudcroft to Slide Campground is the only motorcycle-free stretch. No section qualifies as a cruise.",
+    "NEW MEXICO DOT BICYCLE MAP — CHECKED, and queried directly rather than eyeballed. The NMDOT State Bicycle Guideline Map FeatureServer ( https://services.arcgis.com/hOpd7wfnKm16p9D9/ArcGIS/rest/services/NMDOT_Bicycle_MapService/FeatureServer ) carries layers for Estimated Usable Shoulder Width, Rumble Strip, Steep Grade (>2.5%), AADT, Average Daily Truck Traffic and Prohibited Interstate Travel. Queried for routes 6563, 82, 130 and 24. Result that matters: NM 6563 AADT 340 vehicles/day, but a long run of 6563 segments record 0.0 ft effective usable shoulder in the lowest category. NM 130 returns AADT 120 and 860. US 82 returns 1,040 to 6,570 — much busier, and it is the Cloudcroft–Alamogordo climb the Forest Service itself recommends to road cyclists, which is a fit for a fit road cyclist and not for a dog carrier.",
+    "OTERO COUNTY — CHECKED indirectly and returned nothing of its own. No county trails or bike-path authority page was found. The one county asset that matters is County Road C17 (Rio Peñasco Road), identified as a county road by the Forest Service's Willie White T113 page, which is the surface the Upper Rio Peñasco gravel ride uses.",
+    "SUNSPOT HIGHWAY NM 6563 AS A PAVED CLIMB — CHECKED. 15.53 mi, paved, legal, genuinely quiet at 340 AADT, but ruled out for a dog carrier on shoulder width rather than on law or traffic. Byway sources read: New Mexico Tourism ( https://www.newmexico.org/places-to-visit/scenic-byways/sunspot/ ), Recreation.gov gateway 13868, sunspot.solar.",
+    "OLD HIGHWAY GRADES — CHECKED, both of them. T5002 Old Cloudcroft Highway Trail: gradients average below 8%, greatest 13%, 'More Difficult', upper portion crosses private land and can close at any time. T5009 Old Sunspot Highway: onX describes it as 'wide, very gradual, covered in a light layer of loose rock and gravel… overall very easy and a smooth ride' — which sounds perfect, but it is only 0.7 mi and it is a designated 50-inch motorised trail, so it is a connector, not a ride.",
+    "CANAL, DITCH, LEVEE AND IRRIGATION ROADS — CHECKED, returns nothing. Cloudcroft sits on a mountain crest at 8,676 ft; there is no irrigation infrastructure of this kind on the district. Genuinely absent, not unsearched.",
+    "STATE PARK INTERIOR ROADS AND CAMPGROUND LOOPS — CHECKED, returns nothing usable. There is no New Mexico State Park at Cloudcroft; the land is all Lincoln National Forest. Forest Service campground loops here (Lower Karr Canyon and the rest) are short primitive spurs, not ridable loops.",
+    "TRAILFORKS — ATTEMPTED AND BLOCKED, proves nothing either way. trailforks.com returns HTTP 403 to every request from this environment. Its search-result snippets were readable and indicated a 95-trail Cloudcroft network and a 7 km dirt/gravel 'Forest Road' multi-use trail, but I could not open a page to verify surface, length or permitted uses, so nothing from Trailforks is recorded as a finding.",
+    "ALLTRAILS — ATTEMPTED AND BLOCKED (403 to everything, which proves nothing). Snippets only, never used as a source for a permitted use or a length.",
+    "TRAILS OFFROAD — CHECKED for the 4x4 box and returns nothing local. Its 'Best Offroad Trails near Cloudcroft' page searches within 200 miles and its nearest result is the Manzanita Mountains near Albuquerque. There are no Trails Offroad routes in the Sacramento Ranger District.",
+    "ONX OFFROAD, COMPLETE NEW MEXICO SITEMAP — CHECKED exhaustively rather than by search. Enumerated all 35 offroad-trails sitemap files and extracted 711 distinct New Mexico route pages, then filtered for the Cloudcroft area. That is how Agua Chiquita, Water Canyon, Peñasco Springs and the 50-inch exclusions were found, and it is how I can say with confidence that no per-route offroad listing exists for FR 64."
+  ],
+  "offroad": [
+    {
+      "name": "Westside Road (Forest Road 90), High Rolls to Sacramento River Road",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/westside-road-n2qv9olwrz95",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX gives Trail Type 'Full-Width Road' and lists 'Full Width' among the ride types on its own page; FR 90 appears as a numbered ROAD (90, 90A, 90B, 90E, 90F) in the MVUM's Forest Service Roads list, not in its Forest Service Motorized Trails list",
+      "distance": "11.5 mi mapped by onX; onX's own text says 'The trail is about 28 miles' end to end, so treat 11.5 mi as the mapped segment and the full run as longer — figure not reconcilable from published sources",
+      "difficulty": "onX Technical Rating 2 (Easy). onX: 'The majority of the trail is easy when dry and there is a steep grade at the beginning or ending of the trail depending on which direction you travel. When snow or rain is present, there may be some sketchy areas with steep grades and steep narrow drop-offs.'",
+      "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation on FR 90 — open year-round to highway-legal vehicles subject to snow. Late September is prime.",
+      "note": "Begins past the gas station in High Rolls; right onto Westside Road, pavement ends past the houses, keep LEFT at every Y. Ends with a steep ascent and views over the forest, then Sacramento River Road takes you back under 20 miles to Cloudcroft. Numerous spurs lead to 50-inch ATV trails the truck may not enter. Only community status report on file: Matt Hinkle, 6 Apr 2024, 2023 GMC Canyon — 'Open / Normal, easy trail with everything passable, would recommend airing down for comfort.' A mid-size pickup completing it is the closest thing to a full-size datapoint published.",
+      "tier": "community",
+      "source": "onX Offroad per-route page; vehicle class cross-checked against the Sacramento/Smokey Bear MVUM road and motorized-trail lists"
+    },
+    {
+      "name": "Karr Canyon (Forest Road 63), High Rolls up to the Karr Canyon picnic area",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/karr-canyon-edq0p135y6ov",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'; FR 63 is listed as a Forest Service ROAD on the MVUM and appears in the MVUM seasonal ROAD table, never in the motorized-trail list",
+      "distance": "3.6 mi (onX). The MVUM seasonal row for road 63 runs to milepost 7.4, so the road itself is longer than onX's mapped segment.",
+      "difficulty": "onX Technical Rating 1 — the easiest rating onX gives in this area. onX: 'primarily a well-maintained gravel road with a gradual downhill grade and very few obstacles.' The Forest Service's own Lower Karr Canyon Campground page is blunter: 'Forest Road 63 is gravel and can be rough.'",
+      "season": "onX Best Time: Spring, Summer, Fall. CARRY THIS: the MVUM seasonal table designates road 63 miles 3.8–7.4 open to highway-legal vehicles ONLY 31 May – 30 September. The lower 0–3.8 miles carry no seasonal designation. A late-September stay must finish that upper section on or before 30 Sep.",
+      "note": "From US 82 at the Village of High Rolls, turn south onto FR 63 (Karr Canyon Road); Lower Karr Canyon Campground is roughly 5 miles in on the right. Gradual descent, several pull-offs, hiking access. FS campground page: https://www.fs.usda.gov/r03/lincoln/recreation/lower-karr-canyon-campground",
+      "tier": "community",
+      "source": "onX Offroad per-route page + fs.usda.gov Lower Karr Canyon Campground page + MVUM seasonal table"
+    },
+    {
+      "name": "Pumphouse (off Apache Canyon Road, NM 130 south of Cloudcroft)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/pumphouse-mgd6gd9176o9",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road'; onX states in its own overview that this is 'the only full-size vehicle trail' at that trailhead, everything else off Apache Canyon Road being 50-inch or narrower",
+      "distance": "8.1 mi, out and back (dead-ends in a small open area with room to turn around)",
+      "difficulty": "onX Technical Rating 1. onX: 'The surface is well maintained and a combination of dirt and rocks with no large obstacles making it easily accessible for most vehicles including some 2WDs with good clearance.' Caveat from the same page: 'Trail does have some areas of loose rocks and minor rutting due to water runoff as well as mud that 2WD vehicles will find difficult.'",
+      "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found. Snow can make it impassable in winter. Late September is ideal.",
+      "note": "THE ONE TO DO FIRST in a full-size truck — it is the route onX itself singles out as full-size-capable, it is technical rating 1, and it dead-ends with a turnaround so there is no commitment risk. Turn onto Apache Canyon Road off NM 130; trailhead is just over half a mile east. Starts just over single-vehicle width and tapers, with passing room in most places. Minor rockfall and downed trees are routine. Community report, Jermunji M, 3 Jul 2026, 2005 Lexus GX 470: 'Open / Normal … Very rocky road, but passable by almost any type of vehicle.' Busy on holiday weekends; a late-September weekday should be quiet.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Agua Chiquita (Forest road off NM 6563, the Sunspot Highway)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'. onX's neighbouring Water Canyon page states the contrast explicitly: the connecting Old Sunspot Hwy Trail is 'open to everything except full-width vehicles'.",
+      "distance": "10.8 mi; can be run as a loop — it connects to FS 460 at the south end, which returns to NM 6563",
+      "difficulty": "onX Technical Rating 1. onX: 'an overall very well-maintained road that will be easily accessible by most vehicles including 2wd with decent clearance… no obstacles larger than 10 inches.' A short paved section where it leaves NM 6563, then gravel and dirt.",
+      "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found on this road. A few low-lying spots become shallow-to-moderate water crossings after snowmelt or heavy rain — late September is after monsoon and normally dry.",
+      "note": "The longest genuinely easy full-width route reachable straight off the Sunspot Highway, and the one that can be made a loop rather than an out-and-back. Substantial burn scar visible toward the south end. No cell service anywhere on it. Multiple 50-inch-or-less motorised spurs branch off, signed — the truck must stay on the main road.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Benson Ridge (off NM 6563, ~8 miles south of Cloudcroft)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/benson-ridge-jn2qvmw3xq95",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'",
+      "distance": "5.7 mi, ending in a small open meadow with room to camp and turn",
+      "difficulty": "onX Technical Rating 2. onX: 'no obstacles larger than 10\" along the route and most 4x4 and AWD vehicles will easily complete the trail'; one short steep ascent with loose rock that some high-clearance 2WDs find difficult. Single-vehicle wide but with passing room.",
+      "season": "onX Best Time: Spring, Summer, Fall (winter explicitly excluded — 'may be impassable due to heavy snowfall'). No MVUM seasonal designation found. Late September is in window.",
+      "note": "Heavily wooded, so views are limited to one open stretch looking south. Cell service dies about 5 miles in. Prone to downed trees and loose rock across the track. onX warns predatory wildlife is active here — relevant with the dog. Recent community reports: Zack Seagraves, 29 Nov 2025, 2018 Lexus GX, 'Open'; Jennifer Stroud, 5 Aug 2025, 'Open / Dusty / Muddy-Wet — nice easy ride, a few muddy spots but not an issue.' Benson Ridge South (1.1 mi) and Wayne Canyon (3.1 mi) are separate onX-listed full-width spurs off it.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Alamo Canyon (Forest Service road, Lincoln NF)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/alamo-canyon-m3qxpv2g1609",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'. NOT to be confused with the Alamo Canyon TRAIL T104, which is a separate T-numbered route: the Forest Service's own trail entry reads 'Trail #104: The Alamo Canyon trail is 6.9 miles long. It begins 1 mile from south end of Scenic Drive and ends on private land off Forest Service Road 90.'",
+      "distance": "1.7 mi",
+      "difficulty": "onX Technical Rating 2. onX: 'primarily dirt with a few rocky sections and small washouts. Conditions can become more challenging during rainy periods, but overall it is an easy-to-moderate trail best suited for high-clearance vehicles.'",
+      "season": "onX Best Time: Spring, Summer, Fall, Winter — the only Cloudcroft-area full-width route onX rates as all four seasons. No MVUM seasonal designation found.",
+      "note": "Short and quiet — a half-morning, not a day. Narrow dirt road with several dispersed campsites. Useful as a low-commitment first shakedown of the truck on this district, or as an add-on to a Westside Road day.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Three Mile Canyon Road (Sacramento Mountains, to Carr Gap)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/three-mile-canyon-road-nyo658nxd60v",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'; onX describes it as 'a Forest Service road located in the Sacramento Mountain range and Lincoln National Forest', with a short portion on maintained dirt county roads",
+      "distance": "10.1 mi",
+      "difficulty": "onX Technical Rating 3 — the hardest on this list, and the one to think twice about. onX: 'about three-quarters rough going… loose rocks, very rutted-out mud pits, and fallen trees… doable in most stock 4x4 vehicles, should be driven with caution as there are no guard rails for the massive drops into the canyon, and no cell service throughout the trail.' Wet or snowy it becomes 'an entirely different beast' — sliding risk, winch recommended.",
+      "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found. Only worth doing bone dry, which late September usually is, but abort if it has rained.",
+      "note": "Two cattle gates to open and close. Cattle, sheep, javelina, deer and bear regularly on the road. Unguarded drops into the canyon is the line that matters for a solo driver with animals aboard — if this one goes wrong there is no cell service to call from. Connects to James Ridge (3 mi, onX Technical Rating 2, https://www.onxmaps.com/offroad/trails/us/new-mexico/james-ridge-mgd6gvw2d6o9 ) which runs up to Sixteen Springs Canyon Road. Community report, Kevin Price, 3 Jul 2026, 2023 Ford Bronco: 'Open / Normal… decent size ruts that might concern somewhat if it was a bad rain, but I think a fitted 4x4 would be fine.'",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "Peñasco Springs (lower Rio Peñasco canyons, desert end)",
+      "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/penasco-springs-xdwz7rm2o6l5",
+      "listing_type": "onx",
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width' — but see the note, the published width is not the practical width",
+      "distance": "11.9 mi, out and back (ends in dense overgrowth with room for one or two vehicles to turn)",
+      "difficulty": "onX Technical Rating 3. onX: 'just over single-vehicle-width at the beginning and becomes a very narrow single-vehicle track for the remainder with little to no room to pass… some short steeper grades with loose rocky surfaces, off-camber sections, and some deeper rutting… washes have soft sand bottoms… obstacles between 10 and 12 inches with some of the rocks being sharp. Foliage overgrowth is present in several areas and makes the trail extremely narrow.'",
+      "season": "onX Best Time: Spring, Summer, Fall, Winter — it drops to the desert base of the range, so it is the one route here that is not snow-limited. It crosses a dry riverbed, so it IS flash-flood limited: do not enter it with rain forecast.",
+      "note": "LISTED WITH A WARNING, not a recommendation. onX classes it full-width, but 'very narrow single-vehicle track with little to no room to pass', pinstriping brush and sharp rock for most of 12 miles is a poor match for a truck that has to tow again in five days. Also the only route here with soft sand. Passes the old San Jose cabin. If the Rio Peñasco side is the day, the Water Canyon / Upper Rio Peñasco Road pairing (see cruise entries) is the softer version of the same country.",
+      "tier": "community",
+      "source": "onX Offroad per-route page"
+    },
+    {
+      "name": "FR 64 — Sacramento Canyon / Sacramento River Road",
+      "url": null,
+      "listing_type": null,
+      "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — FR 64, together with 64C, 64D, 64E and 64J, is in the MVUM's Forest Service ROADS list; only FR 64B carries a seasonal designation (mi 0.0–0.2, highway-legal vehicles 31 May – 30 Sep). No T-number, so no 50-inch restriction.",
+      "distance": null,
+      "difficulty": null,
+      "season": "FR 64 itself carries no MVUM seasonal designation; FR 64B mi 0.0–0.2 is 31 May – 30 Sep only",
+      "note": "RECORDED AS UNLISTED, NOT AS ABSENT. FR 64 is legitimately open to the truck and it is the road the Rim Trail's south terminus meets — the Forest Service's own Rim Trail page says T105 'ends 31.2 miles later at the Sacramento River Road south of Sunspot' (https://www.fs.usda.gov/r03/lincoln/recreation/trails/rim-trail-t105). But I could not find a per-route offroad listing for it. I enumerated onX Offroad's complete New Mexico route sitemap — 711 route pages — and there is no FR 64 / Sacramento Canyon / Sacramento River Road offroad entry; Trails Offroad has no Cloudcroft-area routes at all (its 'best trails near Cloudcroft' page returns results within 200 miles, nearest being the Manzanitas near Albuquerque). onX does hold a Forest Road 64 page on its HIKING product ( https://www.onxmaps.com/backcountry/trails/hiking/us/new-mexico/forest-road-64-8yzy31gwe614 ) which is not a 4x4 route listing and is not offered as one. Earlier research's third route should be replaced by Pumphouse or Agua Chiquita, both of which have real listings. If FR 64 matters, the Sacramento Ranger District (575-682-2551) is the call.",
+      "tier": "unlisted",
+      "source": "MVUM road list; fs.usda.gov Rim Trail T105 page; exhaustive scan of onX Offroad's New Mexico sitemap (offroad-trails-sitemap1–35) and of trailsoffroad.com's Cloudcroft pages"
+    },
+    {
+      "name": "EXCLUDED BY VEHICLE CLASS — do not put these on the card as truck routes",
+      "url": "https://www.fs.usda.gov/media/241180",
+      "listing_type": "forest service road page",
+      "vehicle_class": "50-inch motorised TRAIL (excludes a full-size pickup) — read on the Sacramento/Smokey Bear MVUM legend, 'Trails Open to Vehicles 50 inches or Less in Width', and corroborated route-by-route",
+      "distance": null,
+      "difficulty": null,
+      "season": null,
+      "note": "The MVUM's 'US Forest Service Motorized Trails' list is T-numbered throughout and includes T105, T113, T132, T235, T253D, T5002, T5003, T5005, T5005A, T5005B, T5006, T5007, T5007A, T5007C, T5008, T5008D, T5009, T5543, T5573, T5574. Every one of these is barred to the truck because the district's only motorised-trail classes are 50-inch-or-less and motorcycle-only. That kills, specifically: Willie White T113 ( https://www.fs.usda.gov/r03/lincoln/recreation/trails/willie-white-trail-t113 ), Hubbell Canyon T9277, Lick Canyon T5543, Elk Canyon T253D, Heart Attack Canyon T235, Courtney Mine T132, Wills Canyon T5008 and Old Sunspot Highway T5009. onX lists several of these as if they were routes — 'Wills Canyon - FS 5008', 'Willie White - FS 113', 'Hubbell Canyon - FS 9277', 'Benson Canyon - FS 5005', 'Benson/Bluff Springs - FS 5006' — which is exactly how a full-size truck gets driven onto a route it is not entitled to be on. onX itself confirms the trap on two of its pages: its Old Sunspot Highway - FS 5009 page gives Trail Type '50\" Trail' with ride types 'Single Track, 50 Inch' only, and its Water Canyon page says the Old Sunspot Hwy Trail is 'open to everything except full-width vehicles'.",
+      "tier": "official",
+      "source": "Sacramento & Smokey Bear Ranger Districts MVUM, FS-873-3082, 22 Feb 2018; fs.usda.gov trail pages; onX Offroad per-route pages"
+    }
+  ],
+  "scenicDrives": [
+    {
+      "name": "Sunspot Scenic Byway (NM 6563)",
+      "url": "https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2093",
+      "distance": "14 miles one way (FHWA byway record); the Forest Service calls it 15 miles and gives the driving route as NM130 south from Cloudcroft, right onto NM6563 after about 2 miles, then about 18 miles to the end",
+      "season": "Paved and nominally open year-round, but it runs the 9,000 ft front rim and holds snow and ice; the byway is not plowed to highway standard. Late September is prime — aspen on the rim and clear air over the Tularosa Basin.",
+      "note": "MAJOR CHANGE AT THE FAR END. The Sunspot Astronomy & Visitors Center, the Dunn Solar Telescope and the surrounding grounds and hiking trails are CLOSED TO THE PUBLIC indefinitely (liquid mercury found in the Dunn telescope on 5 Jan 2026). In Feb 2026 the National Science Foundation said it will permanently close and demolish the Sacramento Peak / Sunspot observatory once the mercury is removed, contributing up to $100,000 toward interpretive signage. The Forest Service page for the visitor center still reads 'Site Open' and is stale. The DRIVE and its overlooks are still worth doing — but do not plan the day around going inside anything. Apache Point Observatory, a separate NMSU/ARC facility on the same road, does run public visits; phone 575-437-6822 before driving up. Verify all of this again nearer the date.",
+      "tier": "official",
+      "source": "FHWA America's Byways record; Forest Service Lincoln NF Scenic Drives; NMSU Sunspot 'Plan your visit'; KOB (Feb 2026) on the NSF demolition decision",
+      "rig": "truck"
+    },
+    {
+      "name": "US-82 Cloudcroft Highway and the Mexican Canyon Trestle Vista",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/mexican-canyon-trestle-vista-us82",
+      "distance": "About 16-17 miles each way, Cloudcroft down to Alamogordo — roughly 4,300 ft of descent",
+      "season": "Open all year. In late September this is the pleasant direction to do it: cool at the top, hot on the basin floor. Snow and ice make it a serious road Nov-Mar.",
+      "note": "The Mexican Canyon Trestle Vista is a signed pullout on US-82 just NW of the village with interpretive panels, about 10 parking spaces, no restrooms and no water. Best light on the trestle is morning. This same road carries New Mexico's only highway tunnel and a sustained ~6% grade with tight curves — irrelevant in the truck, decisive for the coach (see elevation_note).",
+      "tier": "official",
+      "source": "Forest Service, Lincoln NF — Mexican Canyon Trestle Vista US82, and Trestle Vista Observation Site",
+      "rig": "truck"
+    },
+    {
+      "name": "NM-244 over the Mescalero divide to Ruidoso",
+      "url": "https://discovercloudcroft.com/visit/cloudcroft-from-ruidoso.html",
+      "distance": "About 30-35 miles one way, 40-45 minutes in good weather",
+      "season": "Best late September — this is the aspen and maple run between the two mountain villages. The pass holds ice into late morning in winter. Cell service is patchy the whole way.",
+      "note": "Runs through the lands of the Mescalero Apache Tribe; stay on the highway and observe tribal signage. Ruidoso end: the Smokey Bear Ranger District has been repeatedly closing trails and day-use sites around Cedar Creek for monsoon flood damage (Order 03-08-01-26-002 closed Cedar Creek, Perk Canyon and the Fitness Trail 2 Jun - 30 Sep 2026). Check Lincoln NF alerts before planning a hike at that end.",
+      "tier": "community",
+      "source": "Discover Cloudcroft visitor guide for distance/time; Forest Service Lincoln NF alerts for the Ruidoso-end closures",
+      "rig": "truck"
+    },
+    {
+      "name": "Fresnal Canyon Road (FR 162C)",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/opportunities/scenic-drives",
+      "distance": "unknown — the Forest Service does not publish a length for this route",
+      "season": "Dry-weather road. Gravel surface, can wash after monsoon rain; late September is usually past the worst of it but a monsoon tail is possible.",
+      "note": "Listed by the Forest Service itself as a Sacramento Ranger District scenic drive: 'a winding gravel road with panoramic overlooks of the Tularosa Basin and White Sands National Park.' It is a numbered Forest Service ROAD on the Sacramento Ranger District MVUM, not a trail, so there is no width class problem for a full-size pickup. Length and current surface condition should be confirmed with the district (575-682-2551).",
+      "tier": "official",
+      "source": "Forest Service, Lincoln NF — Scenic Drives; Sacramento Ranger District MVUM road list",
+      "rig": "truck"
+    },
+    {
+      "name": "Dunes Drive, White Sands National Park",
+      "url": "https://www.nps.gov/whsa/planyourvisit/driving-dunes-drive.htm",
+      "distance": "8 miles each way, 16 miles round trip, about 45 minutes of driving from the visitor center",
+      "season": "Open daily year-round except Thanksgiving and Christmas Day; hours vary by season. Late September afternoons on the basin floor are still hot — go late in the day and stay for sunset.",
+      "note": "Part paved and part hard-packed gypsum, graded at least twice a week by park crews. CLOSURES: White Sands Missile Range regularly closes Dunes Drive (and sometimes US-70) for up to three hours during tests; notice can come as little as 24 hours ahead. Check the park closure page the morning you go; for US-70 specifically call WSMR at 575-678-1178. This is roughly 70 miles from Cloudcroft via US-82 and US-70.",
+      "tier": "official",
+      "source": "National Park Service — Driving Dunes Drive, Road Conditions, and Park Closures pages",
+      "rig": "truck"
+    }
+  ],
+  "highlights": [
+    {
+      "name": "The last great trestle of the Cloud-Climbing Railroad, from a pullout on US-82",
+      "detail": "The 1899 Mexican Canyon Trestle — 323 ft long, 52 ft above the canyon floor, one of seven survivors of the 51 trestles built on the Alamogordo & Sacramento Mountain Railway — stands in plain view from a signed vista on US-82 just northwest of the village. Interpretive panels, about ten parking spaces, no water and no restrooms.",
+      "links": [
+        {
+          "label": "Forest Service — Mexican Canyon Trestle Vista US82",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/mexican-canyon-trestle-vista-us82"
+        },
+        {
+          "label": "Forest Service — Trestle Vista Observation Site",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-vista-observation-site"
+        },
+        {
+          "label": "Wikipedia — Mexican Canyon Trestle (verified: 1899, NRHP 7 May 1979, ref. 79001543)",
+          "url": "https://en.wikipedia.org/wiki/Mexican_Canyon_Trestle"
+        }
+      ]
+    },
+    {
+      "name": "Walk down onto the 1899 grade itself — Trestle Recreation Area",
+      "detail": "Day-use picnic site at the west end of the village off US-82 near the NM130 junction, reached by Forest Road 24M, with water, restrooms, interpretive panels and the trailheads for the Cloud-Climbing Trestle Trail network. $5 per vehicle per day, or an Interagency or New Mexico Enchantment Pass. Open spring, summer and fall, day use only. Pets on leash throughout.",
+      "links": [
+        {
+          "label": "Forest Service — Trestle Recreation Area",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-recreation-area"
+        },
+        {
+          "label": "Wikipedia — Alamogordo and Sacramento Mountain Railway (1898-1948, 32 miles, grades to 6.4%)",
+          "url": "https://en.wikipedia.org/wiki/Alamogordo_and_Sacramento_Mountain_Railway"
+        }
+      ]
+    },
+    {
+      "name": "The solar observatory at Sacramento Peak is shut — and the NSF intends to demolish it",
+      "detail": "Liquid mercury was found inside the Richard B. Dunn Solar Telescope on 5 January 2026; NMSU closed the observatory, visitor center, grounds and local hiking trails to the public indefinitely, and in February 2026 the National Science Foundation said it would permanently close and demolish the site once the mercury is removed. Drive the byway for the rim views, not for a tour. Apache Point Observatory next door is a separate operation that does run public visits — phone first.",
+      "links": [
+        {
+          "label": "NMSU Sunspot Solar Observatory — plan your visit (closure notice)",
+          "url": "https://sunspot.nmsu.edu/visit/planvisit.html"
+        },
+        {
+          "label": "Sunspot Solar Observatory (outreach site)",
+          "url": "https://sunspot.solar/visit/"
+        },
+        {
+          "label": "KOB — NSF to permanently close and demolish the observatory (Feb 2026)",
+          "url": "https://www.kob.com/new-mexico/sunspot-solar-observatory-to-be-permanently-closed-demolished/"
+        },
+        {
+          "label": "Apache Point Observatory (575-437-6822)",
+          "url": "https://www.apo.nmsu.edu/"
+        }
+      ]
+    },
+    {
+      "name": "White Sands — one of the very few national parks where the dog can walk the whole dunefield",
+      "detail": "About 70 miles down the hill via US-82 and US-70. Leashed pets are allowed on every trail, across the dunefield, on Dunes Drive and at the picnic areas — just not inside the visitor center or any federal building, and never left tied or unattended. The 8-mile Dunes Drive is a 16-mile round trip of about 45 minutes; missile tests can close it for up to three hours with as little as 24 hours' notice.",
+      "links": [
+        {
+          "label": "NPS — Driving Dunes Drive",
+          "url": "https://www.nps.gov/whsa/planyourvisit/driving-dunes-drive.htm"
+        },
+        {
+          "label": "NPS — Pets at White Sands",
+          "url": "https://www.nps.gov/whsa/planyourvisit/pets.htm"
+        },
+        {
+          "label": "NPS — Park Closures (missile testing)",
+          "url": "https://www.nps.gov/whsa/planyourvisit/park-closures.htm"
+        }
+      ]
+    },
+    {
+      "name": "A nine-hole course from 1899 that was the highest in North America for fifty years",
+      "detail": "The Lodge Golf Course sits at about 9,000 ft, opened in 1899, celebrated its 125th season in 2024, and is now the 5th highest course in the US and 7th highest in the world. Open to the public, April to October, first tee drops 150 ft. Tee times online; 575-682-2098.",
+      "links": [
+        {
+          "label": "The Lodge Golf Course",
+          "url": "https://www.223collectionhotels.com/thelodge/golf"
+        },
+        {
+          "label": "The Lodge at Cloudcroft",
+          "url": "https://www.223collectionhotels.com/the-lodge"
+        }
+      ]
+    },
+    {
+      "name": "The railroad and pioneer story, in a museum that has closed for the whole of September before",
+      "detail": "Sacramento Mountains Museum & Pioneer Village, 1000 Highway 82, spreads six to eight relocated historic buildings over 2½ wooded acres. $5 adults, $3 children 6-12, $1 off with military ID. Summer hours Wed-Sat 10-4. IMPORTANT: the museum's own site lists it closed for all of September 2025 — confirm September opening before building a day around it. 575-682-2932.",
+      "links": [
+        {
+          "label": "Sacramento Mountains Museum & Pioneer Village",
+          "url": "https://cloudcroftmuseum.com/"
+        },
+        {
+          "label": "Museum events page",
+          "url": "https://cloudcroftmuseum.com/events/"
+        }
+      ]
+    },
+    {
+      "name": "Melodrama in a mountain village — boo the villain",
+      "detail": "The Cloudcroft Light Opera Company is an all-volunteer 501(c)(3) that puts on family melodramas and interactive murder mysteries for the village and the Tularosa Basin. Its 'Upcoming Events' page currently reads 'details coming soon', so the September schedule is not published this far out — check the site or their Facebook nearer the date.",
+      "links": [
+        {
+          "label": "Cloudcroft Light Opera Company",
+          "url": "https://www.cloudcroftlightopera.org"
+        },
+        {
+          "label": "Upcoming events",
+          "url": "https://www.cloudcroftlightopera.org/upcoming-events"
+        }
+      ]
+    },
+    {
+      "name": "The Osha Trail — a fir-forest loop with White Sands 4,000 ft below you",
+      "detail": "Non-motorized loop starting just west of the village off US-82, roughly 2.5 miles round, easy grade, with the west rim opening onto the Tularosa Basin and the dunes. The obvious daily dog walk from a Cloudcroft base.",
+      "links": [
+        {
+          "label": "Forest Service — Osha Trail T10 (trail sheet)",
+          "url": "https://www.fs.usda.gov/media/94558"
+        },
+        {
+          "label": "Forest Service — Lincoln NF hiking",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/opportunities/hiking"
+        }
+      ]
+    },
+    {
+      "name": "The Rim Trail — 31 miles of National Recreation Trail along the crest, and the first stretch is walkers only",
+      "detail": "Trail 105 runs 31.2 miles from the south end of the village on NM130 to the Sacramento River Road south of Sunspot, following an old railroad grade. Open all year. Hiking only from Cloudcroft to Slide Campground; no OHVs anywhere on it and motorcycles only south of Slide — which makes the Cloudcroft end quiet, and good with a dog.",
+      "links": [
+        {
+          "label": "Forest Service — Rim Trail (T105)",
+          "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails/rim-trail-t105"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "name": "Mexican Canyon Trestle Vista (US-82) / Trestle Vista Observation Site",
+      "when": "Open year round, all hours — Forest Service lists the site status as Open with no season and no posted opening or closing time. Free. Parking is a pull-off directly off US-82 with approximately 10 spaces, also free. No restrooms, no potable water. The managing office, Sacramento Ranger District, 4 Lost Lodge Rd, Cloudcroft, is open Monday-Friday 09:00-15:00 — that is the OFFICE, not the vista.",
+      "open_in_late_september": "yes",
+      "phone": "575-682-2551 (Sacramento Ranger District); 575-434-7200 (Lincoln NF Supervisor's Office)",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-vista-observation-site",
+      "note": "A second FS page, /recreation/mexican-canyon-trestle-vista-us82, lists the pin as 32.964,-105.748; the observation-site page's map link gives 32.9642532,-105.7474681. Elevation is not published by the FS. No fee, no gate, so a pre-dawn or after-dark arrival is physically possible — whether it is permitted is not published."
+    },
+    {
+      "name": "Trestle (Depot) Recreation Area, Lincoln National Forest",
+      "when": "Open spring, summer and fall — DAY USE ONLY, no camping. No opening or closing clock time is published. Fee $5 per vehicle per day, or a New Mexico Enchantment Pass. Vault toilets and picnic tables; no potable water. Pets permitted, leashed at all times, clean up after them.",
+      "open_in_late_september": "yes",
+      "phone": "575-682-2551 (Sacramento Ranger District)",
+      "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trestle-recreation-area",
+      "note": "FS map pin 32.957241,-105.748959. 'Day use only' with no published hours is the exact ambiguity that matters for a blue-hour shot — worth asking the district office."
+    },
+    {
+      "name": "Sacramento Mountains Museum & Pioneer Village",
+      "when": "PROBABLY CLOSED FOR THIS STOP. Regular hours are winter (weather permitting) 10:00-16:00 Friday and Saturday, and summer from Memorial Day 10:00-16:00 Wednesday to Saturday; closed Sunday, Monday, Tuesday. Admission adults $5.00, children 6-12 $3.00, $1.00 discount per person for military with valid ID. But the museum shuts every autumn to build its Haunted Village: its own homepage carried 'We will be closed the month of September 2025 to prepare for Haunted Village', and its events page for the 13th annual event says 'We will be closed from Sept 2 to October 11 to prepare'. That is a recurring annual pattern, not a one-off, and it covers the whole of a late-September stay.",
+      "open_in_late_september": "no",
+      "phone": "575-682-2932",
+      "url": "https://cloudcroftmuseum.com/",
+      "note": "1000 Highway 82, Cloudcroft NM 88317, directly across from the Chamber. This should be a CALLS.md item: confirm the 2027 closure window before building a day around it, because 'closed Sept 2 - Oct 11' would remove the museum from the card entirely. Email smhsmuseum@yahoo.com."
+    },
+    {
+      "name": "The Lodge Golf Course, Cloudcroft (nine holes, 1899)",
+      "when": "'Open Daily | April - October' — so open in late September. Nine holes, established 1899, played from different tees with separate flags to make 18 in the Scottish tradition; 4,858 yards men's, 4,319 yards ladies. Described by the operator as the 5th highest course in the US and 7th highest in the world, at about 9,000 ft. Tee times booked online through the-lodge-golf-course.book.teeitup.com. Limited carts for rent — availability must be confirmed by phone. Dress code enforced: collared shirt, tailored trousers or shorts, golf or soft-soled shoes. Daily opening and closing clock times and green fees are NOT published.",
+      "open_in_late_september": "yes",
+      "phone": "575-682-2098",
+      "url": "https://www.223collectionhotels.com/thelodge/golf",
+      "note": "thelodgeresort.com now 301-redirects to 223collectionhotels.com — the property has changed branding, so any older Lodge URL on the card is stale. Green fees, cart fee and first/last tee time are unpublished: phone."
+    },
+    {
+      "name": "Cloudcroft Light Opera Company (CLOC)",
+      "when": "NOTHING IS PUBLISHED. The company's own Upcoming Events page reads 'Details on our upcoming events are coming soon!' and lists no performance, no date, no venue, no ticket price and no season. The site gives no telephone number. It is an all-volunteer 501(c)(3) putting on family-oriented theatre for Cloudcroft, the Sacramento Mountains and the Tularosa Basin. Whether anything runs in late September is unknown and cannot be resolved from any published source.",
+      "open_in_late_september": "unknown",
+      "phone": "no number published by CLOC — route the question through the Cloudcroft Chamber of Commerce, 575-682-2733",
+      "url": "https://www.cloudcroftlightopera.org/upcoming-events",
+      "note": "Also on Facebook and Instagram as @CloudcroftLightOperaCo, where schedules appear to be announced in practice. Recorded as unknown rather than guessed; a 2027 schedule will not exist until well into 2027 in any case, so this is a call to make close to departure, not now."
+    },
+    {
+      "name": "White Sands National Park",
+      "when": "PARK: open daily year round except Thanksgiving and Christmas. Gates open 07:00; the park closes 30 MINUTES AFTER LOCAL SUNSET, and NPS states local sunset runs 8 minutes earlier than Alamogordo's predicted sunset. The 1-hour-after-sunset extension is a summer exception covering 22 May - 7 Sep only, so a late-September visit gets the 30-minute rule. VISITOR CENTER: 09:00-17:00 daily, year round, closed Thanksgiving and Christmas; dogs not admitted (federal building). FEES: $25 per vehicle, $15 per person on foot or bicycle, $20 motorcycle, $45 White Sands annual, each valid seven consecutive days; America the Beautiful accepted. PETS: leashed, six-foot maximum, throughout the park. SUNSET STROLL: ranger-guided, Friday/Saturday/Sunday as staffing and weather allow, start time varies 16:00-19:00 by season and is timed to END at sunset, 45-60 minutes, meets at the sunset-stroll sign parking area 8 miles from the fee station, free with entry, no reservations taken; suspended July-August for heat and monsoon, therefore RUNNING in late September; non-disruptive leashed pets welcome. FULL MOON NIGHT: monthly on the full moon, May-October, with extended hours; Moonlight Hike the night before each full moon, March-December.",
+      "open_in_late_september": "yes",
+      "phone": "575-479-6124 (park); ext. 236 for programme status; 575-678-1178 (White Sands Missile Range, for US-70)",
+      "url": "https://www.nps.gov/whsa/planyourvisit/hours.htm",
+      "note": "MISSILE CLOSURES — the closure schedule IS published, as a dated table on the park's own page https://www.nps.gov/whsa/planyourvisit/park-closures.htm, and NPS asks visitors on a tight schedule to check it the day before arrival. Dunes Drive closes for up to three hours; US-70 between Alamogordo and Las Cruces closes with it, which also cuts the drive home. WSMR notice to the park may be as little as 24 hours. Unexpected weather closures go out, in NPS's stated order of priority, to the park's Facebook page and then NM DOT road conditions. FOR THIS STOP: computed full moons are 16 Sep and 15 Oct 2027, so a 25-30 Sep stay MISSES the Full Moon Night programme in both months — the compensation is that it lands on the new moon (30 Sep) for the astro shot."
+    },
+    {
+      "name": "Apache Point Observatory / Sunspot Solar Observatory Visitor Center",
+      "when": "APACHE POINT: the grounds are open to the public DURING DAYLIGHT HOURS ONLY and it is not possible to go inside the buildings — the observatory states its site staff is too small. It 'occasionally offers site open houses', but no schedule is published. No admission, no tour, no night access. SUNSPOT VISITOR CENTER, 18 miles south of Cloudcroft at the end of the Sunspot Scenic Byway (NM-6563): sunspot.solar states 9:00-17:00 daily during peak season, with the Dunn Solar Telescope observation room open only on select days and callers told to ring for current times and the tour schedule. CONTRADICTION ON RECORD: the Forest Service page lists the visitor centre status as 'Open', while Apache Point's own visitor page says that as of early 2026 the Sunspot visitor centre is temporarily closed. Late-September status therefore unknown — phone before driving 36 miles round trip.",
+      "open_in_late_september": "unknown",
+      "phone": "575-434-7190 (Sunspot Visitor Center, published on sunspot.solar); 575-437-6822 supplied in the brief for Apache Point — NOT verified against apo.nmsu.edu, which publishes no number on its visiting page",
+      "url": "https://www.apo.nmsu.edu/mainpage/visitingsite/",
+      "note": "The 'daylight hours only' rule is the load-bearing fact and it kills the obvious idea of shooting the night sky from the observatory grounds. No restrooms and no potable water at the FS Sunspot site. Whether 'peak season' includes late September is exactly what is unpublished. Make this a CALLS.md item."
+    },
+    {
+      "name": "The village itself — shops and restaurants, shoulder season",
+      "when": "UNKNOWN AND NOT PUBLISHED. No authority — Chamber, Village or otherwise — publishes consolidated shoulder-season trading hours for Burro Avenue. Two fixed points that ARE published: the Village Office is Monday-Friday 08:00-16:30, and the Chamber of Commerce answers on 575-682-2733. The Chamber's own event calendar shows nothing at all between the Labor Day Hoopla and Heritage Day Car Show (5-6 September, Zenith Park) and the Christmas Market in late November, which is consistent with a genuine shoulder week but is not a statement about trading hours.",
+      "open_in_late_september": "unknown",
+      "phone": "575-682-2733 (Chamber); 575-682-2411 (Village Office, Mon-Fri 08:00-16:30)",
+      "url": "https://www.chamberdata.net/EvtListing.aspx?dbid2=nmclcr",
+      "note": "STALE URL WARNING for the card: villageofcloudcroftnm.net now 301-redirects to an unrelated third-party domain and must not be linked. The working village site is cloudcroftvillage.com. Expect individual restaurants to be closed one or two weekdays midweek in shoulder season — that is the pattern in mountain villages generally, not a sourced fact about Cloudcroft, and is recorded here as an assumption to check, not a finding."
+    },
+    {
+      "name": "Seasonal events in late September (Oktoberfest, Aspencade, Aspenfest, Haunted Village)",
+      "when": "CLOUDCROFT OKTOBERFEST — the one that can land inside the stay. Hosted by Cloudcroft Brewing Company, 1301 Burro Avenue, not by the Chamber, and the dates MOVE: the brewery's own listing ran it Friday-Sunday 4-6 October one year, while a New Mexico statewide Oktoberfest round-up put Cloudcroft's on Saturday 27 September in 2025. Typically live music Friday evening, brat plates from noon Saturday and Sunday, and a best-dressed Trachten contest. ASPENCADE TOURS — mid-October, previously advertised as meeting 09:00 at the Cloudcroft Chamber over a weekend around 17-18 October; after a late-September stay. ASPENFEST is RUIDOSO's event, not Cloudcroft's, first Saturday in October, about 45 minutes north. HAUNTED VILLAGE — October, at the Sacramento Mountains Museum, and the reason the museum shuts from early September. LABOR DAY HOOPLA & HERITAGE DAY CAR SHOW — 5-6 September, Zenith Park; before a late-September arrival. The Chamber calendar currently lists NO event between early September and late November.",
+      "open_in_late_september": "unknown — Oktoberfest may or may not fall inside the stay",
+      "phone": "575-682-2733 (Chamber); Cloudcroft Brewing Company is the operator for Oktoberfest",
+      "url": "https://www.cloudcroftvillage.com/events/octoberfest/",
+      "note": "THIS IS A CAMPGROUND-AVAILABILITY QUESTION, not just an activity. A last-weekend-of-September Oktoberfest in a village this small fills beds and sites and puts traffic on Burro Avenue; if the 2027 date lands inside the five nights, either book early or shift the window. No 2027 date is published by anyone yet — put it on the list to re-check in 2027."
+    }
+  ],
+  "shots": [
+    {
+      "title": "The 1899 trestle from the US-82 vista, first light",
+      "subject": "Mexican Canyon Trestle — 323 ft long, 52 ft above the canyon floor, built 1899 for the Alamogordo & Sacramento Mountains Railroad (the 'Cloud Climbing Railroad', worked 1899-1947), listed on the National Register 7 May 1979, ref. 79001543. It is the last big standing trestle on the route and the single image the village is known by. Worth it because it is a 60-second walk from a free pull-off and needs no permit, no hike and no dog arrangement.",
+      "vantage": "Mexican Canyon Trestle Vista, pull-off on US-82 immediately NW of the village. Forest Service publishes the pin as 32.9642532,-105.7474681 (Trestle Vista Observation Site page, Lincoln NF); free, no gate, roughly ten spaces. The NRHP coordinate for the trestle itself is 32.9636,-105.7478 — from the vista pin that is ~60-80 m away on a bearing of roughly 200-240 deg, i.e. BELOW you and to the south-west. Park the truck here; the coach never comes up this pull-off.",
+      "lat": 32.9642532,
+      "lng": -105.7474681,
+      "light": "MORNING. The trestle lies west/south-west of and below the camera, and Mexican Canyon drains west toward the Tularosa Basin, so every square inch of sky behind the subject is western sky. In late September the sun rises az ~90 deg at ~06:48 and is at az ~100 deg / 13 deg altitude by 08:00 — over your shoulder, raking straight across the trestle's east-facing timbers. Shoot 07:00-08:30. By 16:00-19:00 the sun has swung to az 240-270 deg, directly behind the subject: that is flare and a black lattice, which is a legitimate picture but not a picture of a trestle. If you want that version, take it in the last 20 minutes before sunset (~18:45) and expose for the sky.",
+      "craft": "70-200 mm to compress the lattice and shoot over the highway furniture; f/8-f/11 so the near and far bents both resolve. What ruins it: the guardrail and roadside scrub in the bottom of the frame — the fix is focal length, not position, because there is nowhere else to stand. Second killer is hand-holding 200 mm in cold thin air at 07:00; brace on the rail or bring the tripod.",
+      "season": "Year round — US-82 is the main highway over the pass and is kept open. Late September is fine and the basin haze is at its lowest before the day warms.",
+      "needs": [
+        "Vista elevation not published by the Forest Service (a third-party byway listing says 8,517 ft — not sourced from an authority, do not print it).",
+        "Whether the pull-off is signed and safely enterable for eastbound as well as westbound traffic — unverified.",
+        "Bearing vista-to-trestle is computed from two separately published pins ~70 m apart; treat as approximate."
+      ]
+    },
+    {
+      "title": "Last light on the gypsum, White Sands",
+      "subject": "The dunefield of White Sands National Park — the largest gypsum dune field on earth, an hour and 4,000 ft down the hill from the campground. The famous frame is low sun raking the ripples so the crests separate from the troughs. It is also the rare marquee landscape where the DOG IS LEGAL: NPS allows leashed pets (6 ft maximum) throughout, excluded only from the visitor center and other federal buildings.",
+      "vantage": "Deep dunefield off Dunes Drive, roughly 6-8 miles in from the fee station — past the point where the road surface turns to packed gypsum and the vegetation stops. NPS-published pins: visitor center 32.7796594,-106.1723908; the backcountry camping loop, in the heart of the dunes, 32.809869,-106.264225. The ranger Sunset Stroll meets at a signed parking area 8 miles from the fee station, which is a good proxy for where the dunes are deepest. Truck only; the coach stays in Cloudcroft.",
+      "lat": 32.809869,
+      "lng": -106.264225,
+      "light": "EVENING, and the gate is the constraint, not the light. Sun sets az ~270 deg — dead west, straight down the axis of the basin and into the San Andres Mountains, which is why this shot works here and not at 30 deg either side of the equinox. Golden hour from ~18:25; computed sunset ~19:03, and NPS states local sunset at the park runs 8 minutes earlier than Alamogordo's predicted sunset. THE PARK CLOSES 30 MINUTES AFTER LOCAL SUNSET in late September — the 1-hour-after-sunset extension is a summer exception that runs only 22 May - 7 Sep. So you get roughly 20-25 usable minutes after the sun goes and then you must be driving the 8 miles out. Plan the exit before you plan the frame. Blue hour proper (ends ~19:13) is the last thing you will get; astronomical dark at ~20:20 happens outside the gate.",
+      "craft": "24-70 mm; f/11 with focus about a third into the nearest dune holds both the ripple texture and the range. What ruins it: your own footprints. Walk in on the leeward flank and shoot back across untracked crests, and check the frame edges before you press. Second killer: changing a lens in blowing gypsum — it is a mild abrasive and it gets into the mount.",
+      "season": "Open daily year round except Thanksgiving and Christmas. The live risk is a missile test: Dunes Drive closes for up to three hours and US-70 between Alamogordo and Las Cruces closes with it, on as little as 24 hours' notice. Check nps.gov/whsa/planyourvisit/park-closures.htm the day before, and build a spare evening into the five nights.",
+      "needs": [
+        "No NPS coordinate published for the sunset-stroll sign parking area itself; the pin given is NPS's backcountry-loop pin in the same part of the dunefield.",
+        "Whether the backcountry loop trail is open for day use in 2027 (backcountry camping has been suspended in recent years) — 575-479-6124."
+      ]
+    },
+    {
+      "title": "Four thousand feet down — White Sands from the Osha rim",
+      "subject": "The western rim of the Osha Trail, looking straight down onto the Tularosa Basin. The Forest Service's own fact sheet for the trail says it 'offers stunning views of the Tularosa Basin which includes White Sands National Monument' (the sheet is dated April 2015 and predates the 2019 redesignation as a national park). This is the picture that explains the stop: the white sheet of gypsum lying 4,000 ft below a fir forest. 2.1 miles, 8,600 ft, graded easy-to-moderate by the FS, benches at the vistas — appropriate ground for a 53-year-old walker. Pets are explicitly allowed: 'Hikers, pets and pack animals only', leashed.",
+      "vantage": "Rim vistas on the western half of the Osha Trail loop. Main trailhead just west of Cloudcroft at the junction of US-82 and Muchachita Street, 'just down the road from the Mexican Canyon Trestle Vista', parking on site (Forest Service fact sheet, fs.usda.gov/media/94558). The Forest Service publishes no coordinate for this trailhead, so none is recorded here.",
+      "lat": null,
+      "lng": null,
+      "light": "TWO DIFFERENT PICTURES, and morning is the one most people get wrong. You are aimed WEST and DOWN. The gypsum only reads as a white sheet when it is frontlit, which means morning: 07:30-09:30, sun at az 95-110 deg behind your shoulder, and basin haze at its daily minimum before convection starts. In the evening the sun is at az 250-270 deg — behind and beyond the dunes — and the basin goes to contre-jour: you lose the white entirely but gain the San Andres as stacked blue ridges with the sun dropping into them, ~18:25-19:03. Pick one deliberately. If you take the evening version, you will finish a 2.1-mile loop at 8,600 ft in the dark: head torch, and the dog on a short lead.",
+      "craft": "100-400 mm to lift the dunefield out of 30+ miles of basin; f/8. What ruins it is atmosphere — heat shimmer and dust across that distance turn the whole thing into a grey band, so shoot early or the morning after a front has been through. A 24 mm wide of this view is always disappointing; the subject is small and far away and needs the long end.",
+      "season": "FS: open all year, most used summer and fall. No water and no restrooms on the trail.",
+      "needs": [
+        "No published coordinate for the Osha trailhead from the Forest Service.",
+        "Which of the rim benches has the clean line to the dunefield — not published; establish it on the first morning.",
+        "Trail time not published by the FS."
+      ]
+    },
+    {
+      "title": "Aspen gold on the Sunspot Byway",
+      "subject": "The aspen stands along NM-6563, the Sunspot Scenic Byway, which New Mexico Tourism describes as 'a 16-mile ribbon of asphalt, surrounded by aspens' running south from Cloudcroft along the Sacramento crest to the Sunspot and Apache Point observatories. Aspen here sits at roughly 8,600-9,200 ft, which is why late September is even a candidate this far south. Paved the whole way — a straightforward truck drive with the dog aboard.",
+      "vantage": "Pullouts along NM-6563 between Cloudcroft and the observatories, roughly 16-18 miles. From the village take NM-130 south then right onto NM-6563 (Forest Service directions for the Sunspot Solar Observatory Visitor Center at the byway's end). Neither the Forest Service nor New Mexico Tourism publishes coordinates for individual pullouts, so none is recorded.",
+      "lat": null,
+      "lng": null,
+      "light": "BACK- OR SIDE-LIT, which for a west-facing rim pullout means the last 90 minutes before sunset: ~17:30-19:00, sun az 250-270 deg, low enough to fire straight through the leaves and make them glow rather than merely look yellow. Overcast is the honourable alternative and saturates the gold better than blue sky does. The hour to avoid is 11:00-15:00, when the sun sits 46-56 deg up and flattens everything.",
+      "craft": "35-85 mm; f/4-5.6 to lift white trunks off a gold background. The biggest single improvement is a polarizer used at ~90 deg to the sun — it strips the specular glare off the leaf surfaces and the colour deepens visibly. What ruins it is wind: aspen leaves are hinged to flutter in almost no air at all, so 1/250 s minimum even in still conditions, and abandon the shot in a real breeze.",
+      "season": "THE RISK ON THIS ONE IS THE DATE. New Mexico Tourism's own advice is that aspen colour 'is fleeting, lasting only about a week in most places' and to fix your travel dates in advance but not your destination. No agency publishes a peak-colour date for the Sacramento Mountains. Late September at 9,000 ft is plausibly at or just before turn, and could easily be a week early. Treat it as opportunistic, not scheduled.",
+      "needs": [
+        "No authority publishes a fall-colour report or peak window for the Sacramento Mountains; Sacramento Ranger District 575-682-2551 is the number to ask on arrival.",
+        "No sourced coordinates for the best aspen pullouts."
+      ]
+    },
+    {
+      "title": "Milky Way over the Sacramento rim",
+      "subject": "Night sky from the ridge the observatories chose. Apache Point Observatory (home of the 3.5 m ARC telescope and the Sloan Digital Sky Survey telescope) and the Sunspot Solar Observatory both sit on this crest about 18 miles south of the village — the siting is the evidence for how dark and steady this air is, and it is better evidence than any brochure. THE CONSTRAINT MOST LISTS GET WRONG: Apache Point's own visitor page says the grounds are open to the public 'during daylight hours only' and buildings cannot be entered. You cannot shoot from the observatory after dark. The night shot happens from public roadside, not from the science.",
+      "vantage": "Public pullouts on NM-6563 south of the village, and the Mexican Canyon Trestle Vista at 32.9642532,-105.7474681, which is a free, ungated Forest Service pull-off with no posted closing time. Note the light-dome problem: Alamogordo lies WSW and 4,000 ft below, so a west-facing rim vantage puts a town glow exactly where the galactic core sits on a late-September evening. For the core, prefer a pullout with a clear south to south-east horizon; use the rim only if you want the basin lights as a deliberate foreground element. The Trestle Recreation Area is DAY USE ONLY and is not a night option.",
+      "lat": 32.9642532,
+      "lng": -105.7474681,
+      "light": "NEEDS A DARK MOON, and the arrival date is not fixed, so this shot is specified by requirement: a night with the moon under about 30% illuminated, or setting before astronomical dark. Computed for 2027 that means the back half of a late-September stay — full moon 16 Sep, then 33% on 25 Sep falling to 13% on 27 Sep, 2% on 29 Sep, and NEW MOON on 30 Sep. A 25-30 Sep stay therefore ends on three effectively moonless nights. Astronomical dark begins ~20:20 MDT. The galactic core is already in the south-west and setting by then, so the core window is roughly 20:20-21:30 and closes early; the fainter summer arch overhead runs later.",
+      "craft": "14-24 mm at f/2.8 or faster, ISO 3200-6400, 10-15 s untracked — the 500 rule suggests 25 s at 20 mm but coma and star drift bite well before that. Focus manually on a bright star at live-view magnification and tape the ring. What ruins it: dew on the front element. At 8,600 ft the glass radiates to a clear sky and fogs within the hour — a lens warmer band, not a cloth, and check the front element between frames.",
+      "season": "Clear-sky dependent. Late September sits after the monsoon has broken but the Sacramentos still build afternoon cloud that does not always clear by dark.",
+      "needs": [
+        "No dark-sky designation could be sourced for Cloudcroft or the Sacramento Mountains — do not claim one on the card.",
+        "Whether overnight parking or after-dark occupancy is permitted at the Trestle Vista pull-off is not published; Sacramento Ranger District 575-682-2551.",
+        "No sourced coordinate for a south-facing pullout on NM-6563."
+      ]
+    },
+    {
+      "title": "Under the bents — the trestle from the Trestle Recreation Area",
+      "subject": "The counter-shot to the postcard: the trestle's timber bents from close range and below, rather than the whole span from the highway. The Forest Service day-use area sits on the canyon floor side of the structure with picnic tables, vault toilets and about a 10-space feel, and it is the only sanctioned way to be near the trestle rather than looking at it. Dogs allowed, leashed at all times. Worth the walk because the 1899 carpentry is the actual subject and it is unreadable at 200 mm from the highway.",
+      "vantage": "Trestle (Depot) Recreation Area, E Little Mexican Rd, Cloudcroft. Forest Service map pin 32.957241,-105.748959. Day use only — no camping. $5 per vehicle per day, or a New Mexico Enchantment Pass. Vault toilets, picnic tables, no potable water.",
+      "lat": 32.957241,
+      "lng": -105.748959,
+      "light": "From below the subject stands against sky, so this is a tonal problem, not a golden-hour one. Midday (sun 46-56 deg up, az 135-210 deg) actually gives the most detail in the weathered timber and the least blown sky if you keep the sun outside the frame — unusual for a landscape stop, useful when the mornings are already committed to the vista shot. The alternative is the last light and blue hour, timbers black against colour to the west; but see the note below, because the area is signed day use.",
+      "craft": "16-35 mm from directly beneath a bent, shooting up the diagonals; f/8. What ruins it is a bare white sky behind dark timber — the frame has no midtones and no amount of recovery invents them, so shoot it with cloud in the sky or accept the graphic black-on-white version and commit to it.",
+      "season": "Forest Service lists the area as spring, summer and fall — open in late September. Day use only.",
+      "needs": [
+        "No posted opening and closing clock times for the recreation area; 'day use only' is all the FS publishes. Sacramento Ranger District 575-682-2551.",
+        "Whether a trail actually reaches beneath the trestle from the recreation area, and its length, is not published by the Forest Service.",
+        "The canyon's westward drainage is inferred from the railroad's Alamogordo-to-Cloudcroft climb and the published elevations, not from a published map bearing."
+      ]
+    }
+  ],
+  "campgrounds": [
+    {
+      "name": "Sugar Pines RV Park",
+      "max_length": null,
+      "hookups": "Full hookups — water, sewer, 30 AMP electric only, free Wi-Fi. 16 sites.",
+      "season": "Not published by the operator. Third-party listings describe it as open all year; confirm by phone.",
+      "reservations": "By telephone to the park — 575-682-3375. Also listed on Hipcamp and RoverPass.",
+      "phone": "575-682-3375",
+      "url": "https://www.sugarpinesrvpark.com",
+      "note": "The only RV park inside the Village of Cloudcroft, 601 Columbine Boulevard, at about 8,400-9,000 ft, walking distance to the shops and the Trestle Recreation Area — the best of the options for a dog that wants a walk from the door. TWO THINGS TO SETTLE BY PHONE. (1) The operator publishes NO maximum RV length anywhere on its site; the Allstays directory lists 45 ft max, 16 sites, 4 pull-throughs, but that is third-party and must not be relied on for a 40 ft coach on a village street. (2) 30 AMP ONLY — no 50 amp service. For a 2005 40 ft coach that means one air conditioner at a time and careful load management; at 8,600 ft in late September you probably will not want air conditioning at all, so this may be a non-issue, but the electric heater and the microwave together will not be. Also: maximum 4 persons per site, and check-ins after dark are not permitted."
+    },
+    {
+      "name": "Silver Springs RV Park and Trout Pond",
+      "max_length": null,
+      "hookups": "Full hookups — water, sewer, Wi-Fi, with 20, 30 and 50 amp service by site class. Clubhouse, community fire pit, stocked one-acre rainbow trout pond.",
+      "season": "Open all year (winter sites by phone). The RV-storage season pass runs 15 May - 30 September, which is the park's own definition of the main season.",
+      "reservations": "Online through the park's Premier Campground booking link from silverspringsrv.com, or by phone.",
+      "phone": "575-682-1148",
+      "url": "https://silverspringsrv.com",
+      "note": "449 NM-244, about 5 miles from Cloudcroft at nearly 9,000 ft — on the Ruidoso road, so the NM-244 drive starts at the gate. THE LENGTH IS UNPUBLISHED and the third-party figures disagree badly: RVshare, Outdoorsy and GoCampingAmerica all say 38 RV sites, all back-in, rigs to 45 ft; AllBiz says 42 spaces to 60 ft. Do not book on either number — phone. Two operator rules that matter for this rig: EVERY SITE IS BACK-IN (no pull-throughs, so the truck has to be unhooked before the site), and each site is limited to one RV and one vehicle with an additional charge for extras — the towed pickup will either be the one vehicle or will cost extra. Pets welcome on leash, not left unattended, $100 cleaning fee for waste left behind, no pets in the clubhouse. Office closed Wednesdays."
+    },
+    {
+      "name": "Boot Hill RV Resort, Alamogordo",
+      "max_length": null,
+      "hookups": "Full hookups, 20/30/50 amp, pull-throughs and back-ins, gated, laundry, showers, dog runs, movie room, exercise room.",
+      "season": "Open all year. The park warns sites fill fast in winter and spring.",
+      "reservations": "Call or text 575-888-7031 for availability and to reserve; office 575-439-6224, boothillrv@gmail.com. Also bookable through Good Sam.",
+      "phone": "575-439-6224",
+      "url": "https://boothillrvparknm.com/",
+      "note": "1 Dog Ranch Road, Alamogordo, at about 4,350 ft — this is the fallback that removes the US-82 climb from the itinerary entirely, at the cost of camping in the desert instead of the pines and driving up the hill each day (about 30 minutes). It is the only one of the three that is unambiguously a big-rig park: pull-throughs, 50 amp, gated, enclosed dog runs. BUT the operator publishes no maximum length either — AAA lists 32 sites, 80 ft max RV length, 16 pull-throughs, 50 full hookups, 20/30/50 amp; another directory lists pull-thrus at 32 x 83 ft. Confirm on the phone. Rates as published: standard $55 + tax nightly, deluxe covered $70, premium $85. ALTERNATIVE WORTH A CALL: Camp Rio (formerly Camp at Cloudcroft), 2180 Rio Penasco Road, Mayhill NM, 575-687-3715, camprionm.com — 6,500 ft, about 30 minutes east of Cloudcroft on the gentle side of US-82, full hookups with 30 and 50 amp, 50-amp PULL-THROUGHS, open year-round, pets on leash welcome. It publishes no maximum length either, but third-party listings describe 34 full-hookup sites with room for rigs to 75 ft. If Silver Springs turns out to be short, this is the next call."
+    }
+  ],
+  "light": {
+    "date": "2029-08-25",
+    "declination": 10.55,
+    "tz": "America/Denver",
+    "sunrise": "06:33",
+    "sunset": "19:37",
+    "sunriseAz": 77,
+    "sunsetAz": 283,
+    "sunriseDir": "ENE",
+    "sunsetDir": "WNW",
+    "dayLength": 13.1,
+    "goldenMorning": [
+      "06:33",
+      "07:06"
+    ],
+    "goldenEvening": [
+      "19:04",
+      "19:37"
+    ],
+    "goldenMinutes": 33,
+    "darkness": "partial",
+    "darkStart": "21:04",
+    "darkEnd": "05:06",
+    "darkHours": 8.0,
+    "darkNote": "Astronomical dark 21:04 to 05:06 — 8.0 hours.",
+    "moonFrac": 0.98,
+    "moonPhase": "full moon",
+    "darkestNight": "2029-08-28",
+    "darkestFrac": 0.82,
+    "aurora": {
+      "geomagLat": 40.6,
+      "band": "no",
+      "bandNote": "too far south to be worth planning around",
+      "verdict": "none",
+      "nights": 7,
+      "usableNights": 7,
+      "primeNights": 0,
+      "maxDarkHours": 9.2,
+      "best": []
+    }
+  },
+  "elevation_note": "Cloudcroft is 8,676 ft; the campgrounds on the mountain sit between about 8,400 and 9,000 ft. THE COACH: the problem is not sitting at altitude, it is getting there. US-82 from Alamogordo climbs about 4,300 ft in roughly 16-17 miles at a sustained ~6% grade with tight curves and New Mexico's only highway tunnel — RV forums are consistent that this is a hard pull up and a serious brake test down, and the tunnel's posted clearance is not something I could source, so it needs checking with NMDOT before committing a 13'6\" coach. The gentle alternative is to arrive from the EAST on US-82 via Artesia and Mayhill, which is a long gradual climb rather than a wall; that also puts Camp Rio at Mayhill and 16 Springs on the way in. At 8,600 ft a naturally aspirated gas coach loses roughly 3% of power per 1,000 ft — about a quarter of its output — while a turbodiesel loses much less; either way plan the climb in low gear, watch coolant and transmission temperature, and descend on the engine brake rather than the service brakes. The generator will also derate and may need a jet/altitude adjustment for extended use, and propane appliances light less willingly. THE DOG: coming up from Alamogordo or the plains, the dog is gaining 4,000-5,000 ft in under an hour. Give it 24-48 hours before any long walk, keep water in front of it constantly, keep the first day's outings short and flat (the Trestle Recreation Area loop rather than the Osha rim), and watch for laboured breathing, unusual lethargy or refusal to eat — the same signs you would watch in yourself. Late September at 8,600 ft has a big diurnal swing and freezing nights are entirely possible, so the dog's bed comes inside and the water bowl does not stay out overnight; the same applies to the cat's water. The upside is real: this is one of the coolest places in the Southwest in September, and every trail listed here except White Sands is dog-legal on a leash.",
+  "area_browse_alltrails": "https://www.alltrails.com/us/new-mexico/cloudcroft"
+}

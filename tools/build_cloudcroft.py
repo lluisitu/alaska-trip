@@ -60,7 +60,10 @@ CSS_RULES = """.cc-card{background:var(--panel);border:1px solid var(--border);b
 .cc-card details{margin-top:8px;}
 .cc-card summary{cursor:pointer;font-size:.76rem;color:var(--muted);}
 ul.cc-needs{margin:8px 0 0;padding-left:20px;font-size:.83rem;color:var(--muted);}
-ul.cc-needs li{margin-bottom:5px;}"""
+ul.cc-needs li{margin-bottom:5px;}
+.cc-alert{background:var(--panel2);border:1px solid var(--border);border-left:3px solid #e0384d;border-radius:8px;padding:14px 16px;margin:0 0 16px;}
+.cc-alert b{display:block;margin-bottom:6px;}
+.cc-alert p{margin:0;font-size:.89rem;color:var(--muted);line-height:1.55;}"""
 
 
 def replace_between(h, start, end, block, anchor, before=False):
@@ -254,13 +257,43 @@ def main():
     + 'researched. Two numbers organise the stop: the sun sets at '+esc(L.sunsetAz)+'\\u00b0, so the '
     + 'western rim \\u2014 which is everything worth photographing here \\u2014 is <b>frontlit in the '
     + 'morning and a silhouette in the evening</b>. And the moon is '
-    + Math.round((L.moonFrac||0)*100)+'% on arrival with the darkest night still at '
-    + Math.round((L.darkestFrac||0)*100)+'%, so on these dates <b>the Milky Way shot is not '
-    + 'available</b> \\u2014 it would have been, three weeks later.</p></section>';
+    + Math.round((L.moonFrac||0)*100)+'% on arrival and the darkest night is still '
+    + Math.round((L.darkestFrac||0)*100)+'%, so <b>this is a moonlight week, not a Milky Way '
+    + 'week</b> \\u2014 which is why the White Sands full-moon night on the 23rd is the '
+    + 'night shot here, and the gypsum is the one subject in the region that is better '
+    + 'under a full moon than under none.</p></section>';
+
+  // The monsoon banner leads, because on these dates it governs the HOURS of every
+  // outdoor thing below it — and the gravel ride runs a canyon with no stream gauge.
+  const m = c.monsoon||{};
+  const banner = !m.season ? '' : ('<div class="cc-alert"><b>Late August is the peak of the '
+    + 'monsoon, and it sets the clock for every day of this stay</b>'
+    + '<p>Cloudcroft\u2019s own record puts <b>5.65 in of rain in August against 3.10 in '
+    + 'September</b> (WRCC 291931) \u2014 the dates sit on the wettest fortnight of the year, not '
+    + 'the drying-out side of it. The rule every authority publishes is the same one. NPS: '
+    + '<i>\u201cFinish hiking in the morning and be out of canyons or away from washes before the '
+    + 'afternoon.\u201d</i> NWS Tucson adds <i>\u201cavoid being outside between mid afternoon and '
+    + 'mid evening, especially in higher elevations.\u201d</i></p>'
+    + '<p style="margin-top:8px">The gravel ride below runs the <b>Rio Pe\u00f1asco, a confirmed '
+    + 'flash-flood channel with no stream gauge</b> \u2014 NWS El Paso: <i>\u201cdue to the lack of '
+    + 'gauges on this stream, it is difficult to know where the flooding currently is '
+    + 'occurring.\u201d</i> There is nothing to check before you set off. Ride it in the morning.</p>'
+    + '</div>');
 
   document.getElementById('ccOverview').innerHTML =
       '<div class="cc-card">'
     + '<p class="cc-blurb">'+esc(c.stop.blurb)+'</p>'
+    + banner
+    + (function(){
+        const pl = c.plan; if(!pl) return '';
+        return '<section class="cc-sec"><div class="sec-head">📅 The week, day by day</div>'
+          + '<p class="cc-sub">'+esc(pl._why)+'</p><ul class="linklist">'
+          + (pl.days||[]).map(function(d){
+              return '<li><div class="iname">'+esc(d.dow)+' '+esc(d.date.slice(8))+' \u2014 '
+                + esc(d.shape)+'</div><div class="idet">'+esc(d.detail)+'</div></li>';
+            }).join('')
+          + '</ul></section>';
+      })()
     + sec('\\uD83E\\uDD7E','Itinerary and highlights','Each carries its opening window where an operator publishes one \\u2014 and says so where none does.', highlights)
     + sec('\\u26F0\\uFE0F','Trails','About one walk per night, easy and moderate leading. Permitted uses come from the Forest Service trails table, not from the app.', trails)
     + sec('\\uD83D\\uDC15','The dog','', '<li><div class="iname">Lincoln National Forest publishes no dog rule at all</div>'
@@ -283,7 +316,24 @@ def main():
 ''' + VIEW_END
     h = replace_between(h, VIEW_START, VIEW_END, views, '<div class="ext-only hidden">')
 
-    SRC.write_text(h)
+    # Write via a temp file and rename. A direct write_text() that raises partway
+    # leaves desktop/index.html TRUNCATED — a UnicodeEncodeError on a stray
+    # surrogate emptied the 5.9 MB master to 0 bytes here, and only the last
+    # commit saved it. Rename is atomic; a failed encode never touches the file.
+    # A lone surrogate cannot be encoded as UTF-8, and the write that discovers
+    # that has already truncated the file in older versions. Catch it here, where
+    # the message can say WHERE it is, instead of at the encoder.
+    bad = [i for i, ch in enumerate(h) if 0xD800 <= ord(ch) <= 0xDFFF]
+    if bad:
+        k = bad[0]
+        sys.exit('!! build_cloudcroft: unpaired surrogate at offset %d — %r\n'
+                 '   A \\uXXXX escape meant for JavaScript was single-backslashed in this '
+                 'script, so Python decoded it instead of passing it through.'
+                 % (k, h[max(0, k - 70):k + 10]))
+
+    tmp = SRC.with_suffix('.html.tmp')
+    tmp.write_text(h, encoding='utf-8')
+    tmp.replace(SRC)
     print(f'build_cloudcroft: {len(db["trails"])} trails, {len(db["offroad"])} 4x4 routes, '
           f'{len(db["cruise"])} cruise entries, {len(db["shots"])} shots, '
           f'{len(db["campgrounds"])} campgrounds injected')

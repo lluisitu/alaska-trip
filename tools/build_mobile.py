@@ -211,6 +211,7 @@ main{padding:0 12px 20px;}
 .sec.drive  .sec-t{background:rgba(180,142,232,.14);color:#b48ee8;}
 .sec.trail  .sec-t{background:rgba(95,180,214,.14);color:#5fb4d6;}
 .sec.off    .sec-t{background:rgba(217,119,87,.14);color:#e0906d;}
+.sec.cruise .sec-t{background:rgba(126,196,136,.14);color:#7ec488;}
 .sec.holiday .sec-t{background:rgba(201,80,107,.15);color:#f0a8b6;}
 .sec.warn   .sec-t{background:rgba(217,119,87,.16);color:#e0906d;}
 .sec.audit  .sec-t{background:rgba(95,180,214,.12);color:#8ecbe6;}
@@ -425,6 +426,7 @@ function cardHTML(s,i){
   b += listBlock('drive','\ud83d\ude99','Scenic drives (truck)', s.scenicDrives, 'name', 'tag');
   b += listBlock('trail','\u26f0\ufe0f','Trails', s.alltrails, 'name', 'tag');
   b += listBlock('off','\ud83d\udede','Offroad / 4x4 (truck)', s.offroad, 'name', 'tag');
+  b += listBlock('cruise','\ud83d\udeb2','Gravel & the bike carrier', s.cruise, 'name', 'tag');
   if(s.holidayEvents && s.holidayEvents.length){
     let hv = '<ul>';
     s.holidayEvents.forEach(e=>{
@@ -696,6 +698,7 @@ function buildIndex(){
       (s.alltrails||[]).forEach(x=>push('trail',x));
       (s.scenicDrives||[]).forEach(x=>push('scenic drive',x));
       (s.offroad||[]).forEach(x=>push('off-road route',x));
+      (s.cruise||[]).forEach(x=>push('gravel ride',x));
       (s.nearbyTowns||[]).forEach(x=>push('nearby town',x));
       (s.poi||[]).forEach(x=>push('point of interest',x));
       push('description',s.blurb); push('note',s.note);

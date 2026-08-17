@@ -67,15 +67,20 @@ def esc(x):
             .replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))
 
 
-def more_links(arr):
-    """Second sources, as real anchors. `tag` is injected as raw HTML into a
+def more_links(arr, brief=False):
+    """Second sources, as real anchors. The note is injected as raw HTML into a
     <span class="tag">, so a Komoot or Forest Service link can ride along inside
-    it without inventing a box the other trips do not have."""
+    it without inventing a box the other trips do not have.
+
+    `brief` drops the per-link commentary. On the card the link itself is the
+    point; the paragraph explaining what Komoot's surface breakdown proves is
+    what made each trail unreadable.
+    """
     out = []
     for l in arr or []:
         out.append('<a href="%s" target="_blank" rel="noopener">%s</a>%s'
                    % (l['url'], l.get('label') or 'source',
-                      ' — ' + l['note'] if l.get('note') else ''))
+                      '' if brief or not l.get('note') else ' — ' + l['note']))
     return DOT.join(out)
 
 
@@ -124,11 +129,19 @@ def shape(db):
             o['dogs'] = t['dogs']
         if t.get('cruise') is True:
             o['cruise'] = True
-        o['tag'] = joined(
+        # `note`, not `tag` — the other trips use note, and the renderer shows
+        # only the first of the two. And it stays SHORT: what the walk is, when
+        # it is usable, and where a second source is. Everything that could not
+        # be sourced — review-count drift, authorities contradicting each other
+        # on distance or permitted uses — is already an entry on the Known
+        # Issues board, and repeating it on the card is what turned every trail
+        # into six lines of small print nobody reads.
+        o['note'] = joined(
             (t['elevation_gain'] + ' gain') if t.get('elevation_gain') else '',
             t.get('note'), t.get('season'),
-            ('Not sourced: ' + ' | '.join(t['needs'])) if t.get('needs') else '',
-            ('Also: ' + more_links(t['other_links'])) if t.get('other_links') else '')
+            ('%d gap%s recorded — see Known Issues' % (len(t['needs']), '' if len(t['needs']) == 1 else 's'))
+            if t.get('needs') else '',
+            ('Also: ' + more_links(t['other_links'], brief=True)) if t.get('other_links') else '')
         trails.append(o)
 
     # The link text names the SOURCE. Seven of these roads exist on no site
@@ -138,27 +151,33 @@ def shape(db):
                 'label': r.get('label') or r.get('listing_type') or 'route listing',
                 'rig': 'truck', 'distance': r.get('distance'),
                 'difficulty': r.get('difficulty'),
-                'tag': joined(r.get('vehicle_class'), r.get('note'), r.get('season'))}
+                'note': joined(r.get('vehicle_class'), r.get('note'), r.get('season'))}
                for r in db.get('offroad') or []]
 
-    # Every cruise candidate is listed, ruled-out ones included. "Nothing here
-    # works" reads identically to "nobody checked" unless the reasons are on the
-    # card.
+    # The gravel rides get their OWN box. The dog rides in a carrier, so this is
+    # a separate research question from 4x4 — and mixed in among twenty-one
+    # routes it was simply not findable. `cruise` and `cruiseWhy` are the
+    # dashboard's own fields for it, so the pill and its tooltip come free.
+    #
+    # Every candidate is listed, ruled-out ones included: "nothing here works"
+    # reads identically to "nobody checked" unless the reasons are on the card.
+    cruise = []
     for x in db.get('cruise') or []:
         ok = bool(re.match(r'\s*works', x.get('verdict') or '', re.I))
-        offroad.append({
-            'name': (GRAVEL + ' ' if ok else GRAVEL + '✗ ') + x['name'],
-            'url': x.get('url'), 'label': x.get('label') or x.get('tier') or 'source',
-            'rig': 'truck', 'cruise': ok, 'distance': x.get('length'),
-            'tag': joined('GRAVEL RIDE with the dog in the carrier' if ok
-                          else 'RULED OUT for the dog carrier',
-                          x.get('surface'), x.get('bike_legal'), x.get('verdict'),
-                          x.get('season'),
-                          ('Also: ' + more_links(x['other_links'])) if x.get('other_links') else '')})
+        cruise.append({
+            'name': x['name'], 'url': x.get('url'),
+            'label': x.get('label') or x.get('tier') or 'source',
+            'rig': 'truck', 'cruise': ok, 'cruiseWhy': x.get('verdict') or '',
+            'distance': x.get('length'),
+            'note': joined(x.get('surface'), x.get('gradient'), x.get('bike_legal'),
+                           x.get('season'),
+                           ('Also: ' + more_links(x['other_links'], brief=True))
+                           if x.get('other_links') else '')})
+    cruise.sort(key=lambda c: not c['cruise'])
 
     drives = [{'name': d['name'], 'url': d.get('url'), 'rig': 'truck',
                'distance': d.get('distance'),
-               'tag': joined(d.get('note'), d.get('season'))}
+               'note': joined(d.get('note'), d.get('season'))}
               for d in db.get('scenicDrives') or []]
 
     activities = []
@@ -177,7 +196,7 @@ def shape(db):
         'lat': st['lat'], 'lng': st['lng'], 'nights': st['nights'],
         'arrive': st['arrive'], 'depart': st['depart'],
         'blurb': st['blurb'], 'note': note,
-        'alltrails': trails, 'offroad': offroad, 'scenicDrives': drives,
+        'alltrails': trails, 'offroad': offroad, 'cruise': cruise, 'scenicDrives': drives,
         'activities': activities,
         'nearbyTowns': [
             {'name': 'Alamogordo, NM', 'distance': '~35 min / 20 mi down US-82',
@@ -420,8 +439,8 @@ def main():
     tmp = SRC.with_suffix('.html.tmp')
     tmp.write_text(h, encoding='utf-8')
     tmp.replace(SRC)
-    print('build_cloudcroft: stop shaped for renderCards; %d trails, %d offroad+gravel, %d drives, '
-          '%d highlights, %d shots' % (len(db['trails']), len(db['offroad']) + len(db['cruise']),
+    print('build_cloudcroft: stop shaped for renderCards; %d trails, %d offroad, %d gravel, %d drives, '
+          '%d highlights, %d shots' % (len(db['trails']), len(db['offroad']), len(db['cruise']),
                                        len(db['scenicDrives']), len(db['highlights']),
                                        len(db['shots'])))
 

@@ -398,6 +398,25 @@
  },
  "cruise": [
   {
+   "name": "FR 5661 / Pumphouse Ridge — the ridge-top logging roads",
+   "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+   "label": "Forest Service — Lincoln NF trails",
+   "surface": "Five dead-end spurs off FR 5661 — T5661C 1.1 mi, T5661D 0.5 mi, T5661F 2.6 mi, T5661H 0.4 mi (the district guide says 0.6), T5661Q 0.8 mi — all of them, in the Forest Service district guide’s own words, \"closed logging roads, 15 feet and more in width, usually with some grass cover\". FR 5661 itself is a full-width dirt-and-rock forest road, \"occasionally rough\", running 8.0 miles from FR 24B to a turnaround.",
+   "length": "8.0 mi road + ~5.4 mi of ridge spurs",
+   "gradient": "Around 5%, maximum 12%. The ridge sits at roughly 8,800 ft and the longest spur (T5661F) runs 8,760–8,980 ft — 220 ft of difference over 2.6 miles. Difficulty is graded \"Easiest\", and T5661H is called \"the most level path of the five\".",
+   "bike_legal": "Yes, from the authority: the Forest Service lists \"Mountain Biking\" among the permitted uses on all five Pumphouse Ridge trails, alongside backpacking, day hiking, horse riding and OHV trail riding.",
+   "verdict": "Works, and it is the best carrier ride at this stop. Fifteen-foot grassed logging road is a firmer, flatter and far quieter surface than anything else researched here, the spurs all dead-end so there is no through traffic, and 5% average with 220 ft of difference is exactly what a loaded carrier wants. Ride the spurs, not FR 5661 — the road is the drive-in and is the rough part. CHECK THE GATE FIRST: the Forest Service page currently carries \"access to them via motorized vehicles is temporarily unavailable due to seasonal conditions … the gate at FR 24 B being locked until seasonal conditions permit, sometime in the spring\". That reads as a winter notice left standing, but it is on the live page, and a locked FR 24B gate turns an 8-mile drive-in into an 8-mile ride-in before the riding starts.",
+   "season": "Ridge-top at 8,800 ft. In peak monsoon a grass-covered logging road holds water — ride it in the morning like everything else here.",
+   "tier": "official",
+   "source": "fs.usda.gov Lincoln NF trails list (permitted uses, lengths, gate status); lincoln-nf-trails.org Sacramento district trail pages (tread, gradients, elevation, difficulty)",
+   "other_links": [
+    {
+     "label": "Lincoln NF district guide — Pumphouse Ridge 3 (T5661F)",
+     "url": "https://lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T5661F.html"
+    }
+   ]
+  },
+  {
    "name": "Upper Rio Peñasco Road (County Road C17 / Rio Peñasco Road), Bluff Springs valley",
    "surface": "100% gravel, graded valley-bottom county road (Gravelmap classifies the whole segment 'gravel 100%')",
    "length": "12.39 mi point to point, Rio Peñasco Rd to Sunspot Hwy. Ride it as an out-and-back from the Bluff Springs end and take whatever length suits — the valley floor is the flat part.",
@@ -578,14 +597,14 @@
    "label": "onX — the only per-route listing that exists"
   },
   {
-   "name": "Pumphouse (off Apache Canyon Road, NM 130 south of Cloudcroft)",
+   "name": "Pumphouse — Forest Road 5661 (off FR 24B, NM 130 south of Cloudcroft)",
    "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/pumphouse-mgd6gd9176o9",
    "listing_type": "onX (no Trails Offroad listing)",
    "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road'; onX states in its own overview that this is 'the only full-size vehicle trail' at that trailhead, everything else off Apache Canyon Road being 50-inch or narrower",
-   "distance": "8.1 mi, out and back (dead-ends in a small open area with room to turn around)",
+   "distance": "8.1 mi out and back (onX); the district guide gives FR 5661 as ending at a turnaround 8.0 miles from FR 24B",
    "difficulty": "onX Technical Rating 1. onX: 'The surface is well maintained and a combination of dirt and rocks with no large obstacles making it easily accessible for most vehicles including some 2WDs with good clearance.' Caveat from the same page: 'Trail does have some areas of loose rocks and minor rutting due to water runoff as well as mud that 2WD vehicles will find difficult.'",
    "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found. Snow can make it impassable in winter.",
-   "note": "THE ONE TO DO FIRST in a full-size truck — it is the route onX itself singles out as full-size-capable, it is technical rating 1, and it dead-ends with a turnaround so there is no commitment risk. Turn onto Apache Canyon Road off NM 130; trailhead is just over half a mile east. Starts just over single-vehicle width and tapers, with passing room in most places. Minor rockfall and downed trees are routine. Community report, Jermunji M, 3 Jul 2026, 2005 Lexus GX 470: 'Open / Normal … Very rocky road, but passable by almost any type of vehicle.' Busy on holiday weekends; a late-September weekday should be quiet. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
+   "note": "THE ONE TO DO FIRST in a full-size truck — it is the route onX itself singles out as full-size-capable, it is technical rating 1, and it dead-ends with a turnaround so there is no commitment risk. Turn onto Apache Canyon Road off NM 130; trailhead is just over half a mile east. Starts just over single-vehicle width and tapers, with passing room in most places. Minor rockfall and downed trees are routine. Community report, Jermunji M, 3 Jul 2026, 2005 Lexus GX 470: 'Open / Normal … Very rocky road, but passable by almost any type of vehicle.' Busy on holiday weekends; a late-September weekday should be quiet. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class. This is FR 5661, and it is also the access to the Pumphouse Ridge logging roads — see the gravel box, which is where the ride is.",
    "tier": "community",
    "source": "onX Offroad per-route page",
    "label": "onX — the only per-route listing that exists"
@@ -1289,6 +1308,10 @@
   {
    "item": "Seven of the twelve 4x4 routes here have no listing on any site LLuis uses",
    "why": "Pumphouse, Agua Chiquita, Karr Canyon FR 63, Westside Road FR 90, Benson Ridge, Alamo Canyon and Peñasco Springs appear on Trails Offroad nowhere and on Komoot nowhere. onX is the only per-route source that exists, and each card now says so rather than linking it silently."
+  },
+  {
+   "item": "Pumphouse Ridge 4 (T5661H) length disagrees between authorities",
+   "why": "The Forest Service trails list says 0.4 miles and gives its start as \"Forest Road 6551\"; the Sacramento district trail guide says 0.6 miles off FR 5661. The 6551 looks like a transposition. Not reconciled."
   }
  ],
  "aug_calls": [
@@ -1316,6 +1339,11 @@
    "who": "Cloudcroft Chamber of Commerce / Gran Fondo Cloudcroft organiser",
    "number": "see coolcloudcroft.com and cloudcroftbikeracing.com - no number sourced",
    "ask": "2029 Gran Fondo date, and whether it takes campground capacity in the village."
+  },
+  {
+   "who": "Sacramento Ranger District, Lincoln NF",
+   "number": "575-682-2551",
+   "question": "Is the FR 24B gate open in late August, and is FR 5661 drivable to the Pumphouse Ridge trailheads? The trails page carries a seasonal notice saying the gate is locked \"until seasonal conditions permit, sometime in the spring\", which looks like a winter notice left up — but if it is live, the ride needs an 8-mile approach on foot or bike."
   }
  ],
  "plan": {

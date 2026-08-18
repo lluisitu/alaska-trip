@@ -5061,12 +5061,12 @@ function renderCards(filter, srcList, wrapId){
             <p class="grid4-box-title g4-offroad"><span class="ic">🛞</span>Offroad / 4x4${regionBrowseLink(s.id, s.name,'offroad')}</p>
             <div class="grid4-box-body">${linkList(s.offroad, 'offroad', s.name, s.arrive, s.depart, s.id)}</div>
           </div>
-/* gravel box start — hand-maintained, not generated */
+          <!-- gravel box start — hand-maintained, not generated -->
           ${(s.cruise && s.cruise.length) ? `<div class="grid4-box">
             <p class="grid4-box-title g4-cruise"><span class="ic">🚲</span>Gravel &amp; the bike carrier</p>
             <div class="grid4-box-body">${linkList(s.cruise, 'offroad', s.name, s.arrive, s.depart, s.id)}</div>
           </div>` : ''}
-/* gravel box end */
+          <!-- gravel box end -->
           <div class="grid4-box">
             <p class="grid4-box-title g4-town"><span class="ic">🏘️</span>Closest small towns worth a visit</p>
             <div class="grid4-box-body">${townsGrid(s.nearbyTowns, s.id)}</div>

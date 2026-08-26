@@ -150,6 +150,38 @@ def shape(db):
     # Drive time from camp is a PILL, not a footnote. It is the first thing that
     # decides whether a route is a choice at all, and it was not on the card at
     # all until a two-hour drive got recommended as a local pick.
+    # The card is a CURATED list, not everything that was researched. A route
+    # beyond the radius, or one that could not be timed at all, is not a choice
+    # and does not earn a line — it stays in cloudcroft_db.json, and the box
+    # ends with a single line saying how many were held back and why, so that
+    # nothing disappears silently.
+    RADIUS = 30
+
+    def near(x):
+        return x.get('always_show') or (x.get('drive_min') is not None
+                                        and x['drive_min'] <= RADIUS)
+
+    def held_back(items):
+        far  = [x for x in items if not near(x) and x.get('drive_min') is not None]
+        untimed = [x for x in items if not near(x) and x.get('drive_min') is None]
+        if not far and not untimed:
+            return []
+        bits = []
+        if far:
+            bits.append('%d beyond %d minutes (%s)' % (len(far), RADIUS, ', '.join(
+                '%s %d min' % (x.get('base_name', x['name']).split(' (')[0].split(' —')[0], x['drive_min'])
+                for x in sorted(far, key=lambda y: y['drive_min']))))
+        if untimed:
+            bits.append('%d with no trailhead coordinate published, so never routed (%s)'
+                        % (len(untimed), ', '.join(
+                            x.get('base_name', x['name']).split(' (')[0].split(' —')[0]
+                            for x in untimed)))
+        return [{'name': 'Researched and held back: ' + ' · '.join(bits),
+                 'url': None, 'label': None,
+                 'note': 'Not dropped — kept in tools/cloudcroft_db.json with the full research, '
+                         'so none of it gets looked up twice. They are off the card because a '
+                         'route you cannot reach in half an hour is not a choice.'}]
+
     def from_camp(x):
         m = x.get('drive_min')
         if m is None: return None
@@ -163,7 +195,8 @@ def shape(db):
                 'difficulty': r.get('difficulty'),
                 'note': joined(r.get('elevation'), r.get('vehicle_class'), r.get('note'),
                                r.get('season'))}
-               for r in db.get('offroad') or []]
+               for r in db.get('offroad') or [] if near(r)] \
+              + held_back(db.get('offroad') or [])
 
     # The gravel rides get their OWN box. The dog rides in a carrier, so this is
     # a separate research question from 4x4 — and mixed in among twenty-one
@@ -174,6 +207,8 @@ def shape(db):
     # reads identically to "nobody checked" unless the reasons are on the card.
     cruise = []
     for x in db.get('cruise') or []:
+        if not near(x):
+            continue
         ok = bool(re.match(r'\s*works', x.get('verdict') or '', re.I))
         cruise.append({
             'name': x['name'], 'url': x.get('url'),
@@ -185,6 +220,7 @@ def shape(db):
                            ('Also: ' + more_links(x['other_links'], brief=True))
                            if x.get('other_links') else '')})
     cruise.sort(key=lambda c: not c['cruise'])
+    cruise += held_back(db.get('cruise') or [])
 
     drives = [{'name': d['name'], 'url': d.get('url'), 'rig': 'truck',
                'distance': d.get('distance'),

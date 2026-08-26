@@ -389,6 +389,38 @@
     "BLUFF SPRINGS ITSELF could not be pinned to a named, measured trail. AllTrails carries it only as a point of interest ('one trail will get you there'), Benson Ridge / Bluff Springs Trail T5006 is 2.3 mi per the Forest Service, and no rating, review count, time or elevation gain was sourceable for a Bluff Springs walk. Left out of the trail list rather than invented.",
     "Road surface and condition on CR C017 (Rio Penasco Rd) is from visitor reports, not from the county or the Forest Service. Not verified."
    ]
+  },
+  {
+   "name": "Chippeway Trail (T250) — the upper ridge, from the FR 623 trailhead",
+   "distance": "3.1 mi one way end to end (Forest Service says 3.2). The walk worth doing is an out-and-back along the top — turn round at the canyon rim.",
+   "time": null,
+   "difficulty": "More Difficult — but the grade is earned entirely by the lower half",
+   "elevation_gain": "980 ft end to end, 8,080–9,060 ft",
+   "reviews": null,
+   "uses": [
+    "hike",
+    "horse"
+   ],
+   "dogs": null,
+   "cruise": false,
+   "cruise_reason": "Not a carrier route, and not a choice either: the Forest Service permits only backpacking, day hiking and horse riding on T250 — no mountain biking.",
+   "season": "No published season. At 9,060 ft it is a snow-window trail like everything else here.",
+   "note": "This is what is at the end of FR 623, and it is a genuinely good walk IF you stop at the right place. The district guide describes the top as \"a wide and easy-to-follow trail\" running the ridge, taking in \"a former timber road\" for 0.7 mile, with \"occasional filtered distant views\" and \"abundant opportunities … to explore other old timber routes\". Then it reaches the rim and drops down switchbacks into Russia Canyon at \"average gradients of 30%, 50% maximum\" — that descent is what earns the More Difficult grade, and there is no reason to go down it. Walk the ridge out and back instead. Two things make it quieter than anything else off these roads: no bikes and no OHVs are permitted, and the upper trailhead is unsigned. The trail ends at County Road C004, Russia Canyon — the same road that is a gravel candidate on this card.",
+   "alltrails": {
+    "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails"
+   },
+   "other_links": [
+    {
+     "label": "Lincoln NF district guide — T250 (elevations, gradients, directions)",
+     "url": "https://lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T250.html"
+    }
+   ],
+   "needs": [
+    "The upper trailhead is UNSIGNED and sits 5.4 miles along FR 623 from NM 6563, on a road the district guide says needs high clearance. That puts it past the 30-minute radius as a standalone outing — it is 15 minutes to where FR 623 leaves the highway and then 5.4 miles of forest road. Treat it as the turnaround of the FR 623 drive, not as a separate walk.",
+    "No trailhead coordinate published, so it could not be routed like the other entries. The 35-minute figure is 15 routed minutes plus a forest-road estimate, not a routed time.",
+    "The two authorities disagree on length: Forest Service 3.2 miles, district guide 3.1.",
+    "Lincoln NF publishes no dog rule for this trail, so the dog field is deliberately empty."
+   ]
   }
  ],
  "dogs": {
@@ -890,7 +922,8 @@
    "note": "The MVUM's 'US Forest Service Motorized Trails' list is T-numbered throughout and includes T105, T113, T132, T235, T253D, T5002, T5003, T5005, T5005A, T5005B, T5006, T5007, T5007A, T5007C, T5008, T5008D, T5009, T5543, T5573, T5574. Every one of these is barred to the truck because the district's only motorised-trail classes are 50-inch-or-less and motorcycle-only. That kills, specifically: Willie White T113 ( https://www.fs.usda.gov/r03/lincoln/recreation/trails/willie-white-trail-t113 ), Hubbell Canyon T9277, Lick Canyon T5543, Elk Canyon T253D, Heart Attack Canyon T235, Courtney Mine T132, Wills Canyon T5008 and Old Sunspot Highway T5009. onX lists several of these as if they were routes — 'Wills Canyon - FS 5008', 'Willie White - FS 113', 'Hubbell Canyon - FS 9277', 'Benson Canyon - FS 5005', 'Benson/Bluff Springs - FS 5006' — which is exactly how a full-size truck gets driven onto a route it is not entitled to be on. onX itself confirms the trap on two of its pages: its Old Sunspot Highway - FS 5009 page gives Trail Type '50\" Trail' with ride types 'Single Track, 50 Inch' only, and its Water Canyon page says the Old Sunspot Hwy Trail is 'open to everything except full-width vehicles'. Two more turned up in the Cloudcroft-area sweep and are barred the same way, by onX's own Trail Type rather than by the MVUM: Little Apache Trail (from Silver Overflow Campground) and Zinker Canyon Trail are both Trail Type \"Single Track\", ride types \"Single Track\" only. Schofield/Benson FS 5007C is T5007C, already on the 50-inch list above. Pines North and Pines South are singletrack and ATV.",
    "tier": "official",
    "source": "Sacramento & Smokey Bear Ranger Districts MVUM, FS-873-3082, 22 Feb 2018; fs.usda.gov trail pages; onX Offroad per-route pages",
-   "label": "Forest Service — road page"
+   "label": "Forest Service — road page",
+   "always_show": true
   },
   {
    "name": "La Luz Canyon Road to Calico Peak — the desert-to-alpine climb (the one you did)",

@@ -83,9 +83,15 @@ T-numbered **trail** usually does not. Say which, and say where you read it.
 **Drive time from camp is required, and it is the first filter.** A route is not
 a choice if getting there eats the morning. Record `drive_min` and `drive_mi`
 for every route, sort the box nearest-first, and render the time as a pill so it
-is visible without opening anything. **The default radius is 30 minutes**, and
-anything beyond it is prefixed `TOO FAR —` and sorted last rather than deleted —
-it stays as the record of why it is not a choice.
+is visible without opening anything. **The default radius is 30 minutes.**
+
+**A card is a curated list, not an inventory.** Anything beyond the radius, or
+that could not be timed at all, does not go on the card — it stays in the stop's
+db with its full research so nobody looks it up twice, and the box ends with one
+line naming what was held back and why. Marking a too-far route and leaving it
+on the card is not curation; it still costs a line and still has to be read past.
+The exception is a **do-not-drive** entry — a vehicle-class exclusion is a
+warning, not a choice, and is pinned on the card regardless.
 
 Route it, do not estimate it. `router.project-osrm.org` is already used by
 `build_routes.py`; feed it the campground and a trailhead coordinate taken from
@@ -224,7 +230,7 @@ be written as the latter.
 - [ ] Dog answer per trail, from an authority, or deliberately absent
 - [ ] Gravel/bike-carrier question answered against §2's full list
 - [ ] Every route carries a drive time from camp, and the box is sorted by it
-- [ ] Anything beyond 30 minutes is marked TOO FAR, not silently listed as local
+- [ ] Anything beyond 30 minutes is OFF the card, with a one-line held-back note
 - [ ] Offroad routes each carry their OWN listing link
 - [ ] Trails Offroad and Komoot searched by county, not just by route name
 - [ ] Any onX link labelled as the only source that exists

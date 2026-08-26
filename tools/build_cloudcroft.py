@@ -147,9 +147,19 @@ def shape(db):
     # The link text names the SOURCE. Seven of these roads exist on no site
     # LLuis uses, and the card should say which is which at a glance rather than
     # showing twelve identical-looking links.
+    # Drive time from camp is a PILL, not a footnote. It is the first thing that
+    # decides whether a route is a choice at all, and it was not on the card at
+    # all until a two-hour drive got recommended as a local pick.
+    def from_camp(x):
+        m = x.get('drive_min')
+        if m is None: return None
+        if m == 0:    return 'in the village'
+        return '%d min from camp%s' % (m, (' / %.1f mi' % x['drive_mi']) if x.get('drive_mi') else '')
+
     offroad = [{'name': r['name'], 'url': r.get('url'),
                 'label': r.get('label') or r.get('listing_type') or 'route listing',
                 'rig': 'truck', 'distance': r.get('distance'),
+                'time': from_camp(r),
                 'difficulty': r.get('difficulty'),
                 'note': joined(r.get('elevation'), r.get('vehicle_class'), r.get('note'),
                                r.get('season'))}
@@ -169,7 +179,7 @@ def shape(db):
             'name': x['name'], 'url': x.get('url'),
             'label': x.get('label') or x.get('tier') or 'source',
             'rig': 'truck', 'cruise': ok, 'cruiseWhy': x.get('verdict') or '',
-            'distance': x.get('length'),
+            'distance': x.get('length'), 'time': from_camp(x),
             'note': joined(x.get('surface'), x.get('gradient'), x.get('bike_legal'),
                            x.get('season'),
                            ('Also: ' + more_links(x['other_links'], brief=True))

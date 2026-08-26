@@ -80,6 +80,23 @@ T-numbered **trail** usually does not. Say which, and say where you read it.
 
 `rig` is always `"truck"` — a standing decision, never researched per entry.
 
+**Drive time from camp is required, and it is the first filter.** A route is not
+a choice if getting there eats the morning. Record `drive_min` and `drive_mi`
+for every route, sort the box nearest-first, and render the time as a pill so it
+is visible without opening anything. **The default radius is 30 minutes**, and
+anything beyond it is prefixed `TOO FAR —` and sorted last rather than deleted —
+it stays as the record of why it is not a choice.
+
+Route it, do not estimate it. `router.project-osrm.org` is already used by
+`build_routes.py`; feed it the campground and a trailhead coordinate taken from
+a per-route page. Two traps: the first `"latitude"` in a page's HTML is often
+not the route's, so validate every coordinate against a bounding box for the
+area and discard the ones that fall outside; and a listing's straight-line
+proximity means nothing in mountains — Burleson Ridge is 22 miles from
+Cloudcroft and 2¼ hours away, because the only approach is a slow forest road.
+Where no coordinate can be sourced, the route is recorded as untimed and
+unranked, never assumed near.
+
 ### `scenicDrives`
 Paved and graded touring routes, `rig: "truck"`. Distance, season, and the
 managing authority's own page.
@@ -206,6 +223,8 @@ be written as the latter.
 - [ ] Every trail has distance, time, difficulty, gain, reviews, uses
 - [ ] Dog answer per trail, from an authority, or deliberately absent
 - [ ] Gravel/bike-carrier question answered against §2's full list
+- [ ] Every route carries a drive time from camp, and the box is sorted by it
+- [ ] Anything beyond 30 minutes is marked TOO FAR, not silently listed as local
 - [ ] Offroad routes each carry their OWN listing link
 - [ ] Trails Offroad and Komoot searched by county, not just by route name
 - [ ] Any onX link labelled as the only source that exists

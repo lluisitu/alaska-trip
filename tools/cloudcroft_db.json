@@ -398,77 +398,6 @@
  },
  "cruise": [
   {
-   "name": "FR 5661 / Pumphouse Ridge — the ridge-top logging roads",
-   "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
-   "label": "Forest Service — Lincoln NF trails",
-   "surface": "Five dead-end spurs off FR 5661 — T5661C 1.1 mi, T5661D 0.5 mi, T5661F 2.6 mi, T5661H 0.4 mi (the district guide says 0.6), T5661Q 0.8 mi — all of them, in the Forest Service district guide’s own words, \"closed logging roads, 15 feet and more in width, usually with some grass cover\". FR 5661 itself is a full-width dirt-and-rock forest road, \"occasionally rough\", running 8.0 miles from FR 24B to a turnaround.",
-   "length": "8.0 mi road + ~5.4 mi of ridge spurs",
-   "gradient": "Around 5%, maximum 12%. The ridge sits at roughly 8,800 ft and the longest spur (T5661F) runs 8,760–8,980 ft — 220 ft of difference over 2.6 miles. Difficulty is graded \"Easiest\", and T5661H is called \"the most level path of the five\".",
-   "bike_legal": "Yes, from the authority: the Forest Service lists \"Mountain Biking\" among the permitted uses on all five Pumphouse Ridge trails, alongside backpacking, day hiking, horse riding and OHV trail riding.",
-   "verdict": "Works, and it is the best carrier ride at this stop. Fifteen-foot grassed logging road is a firmer, flatter and far quieter surface than anything else researched here, the spurs all dead-end so there is no through traffic, and 5% average with 220 ft of difference is exactly what a loaded carrier wants. Ride the spurs, not FR 5661 — the road is the drive-in and is the rough part. CHECK THE GATE FIRST: the Forest Service page currently carries \"access to them via motorized vehicles is temporarily unavailable due to seasonal conditions … the gate at FR 24 B being locked until seasonal conditions permit, sometime in the spring\". That reads as a winter notice left standing, but it is on the live page, and a locked FR 24B gate turns an 8-mile drive-in into an 8-mile ride-in before the riding starts.",
-   "season": "Ridge-top at 8,800 ft. In peak monsoon a grass-covered logging road holds water — ride it in the morning like everything else here.",
-   "tier": "official",
-   "source": "fs.usda.gov Lincoln NF trails list (permitted uses, lengths, gate status); lincoln-nf-trails.org Sacramento district trail pages (tread, gradients, elevation, difficulty)",
-   "other_links": [
-    {
-     "label": "Lincoln NF district guide — Pumphouse Ridge 3 (T5661F)",
-     "url": "https://lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T5661F.html"
-    }
-   ]
-  },
-  {
-   "name": "Upper Rio Peñasco Road (County Road C17 / Rio Peñasco Road), Bluff Springs valley",
-   "surface": "100% gravel, graded valley-bottom county road (Gravelmap classifies the whole segment 'gravel 100%')",
-   "length": "12.39 mi point to point, Rio Peñasco Rd to Sunspot Hwy. Ride it as an out-and-back from the Bluff Springs end and take whatever length suits — the valley floor is the flat part.",
-   "gradient": "1,965 ft gain and only 292 ft loss over 12.39 mi in the uphill direction — about 3% average, but that average hides the shape: it is near-flat along the valley floor at the Bluff Springs end and does its climbing at the Sunspot Highway end. Max elevation 8,802 ft. Ridden out-and-back from the bottom, the first several miles are the gentlest rideable gravel anywhere on this district.",
-   "bike_legal": "yes — it is a public COUNTY road, not a Forest Service motorised trail. The Forest Service names it as such on its own Willie White Trail page: 'Trail #113: The Willie White Trail … begins just west of Bluff Springs along County Road C17 (Rio Penasco Road)'. Nothing on the MVUM restricts it, and the MVUM states in its own legend that it 'does not display nonmotorized uses' — the MVUM regulates motor vehicles only and imposes no bicycle restriction anywhere on this district.",
-   "verdict": "WORKS with a dog in a carrier, and this is the answer. Firm graded gravel, valley bottom, a public road with negligible traffic, and you choose your own turnaround so the gradient never has to bite. Ride out from the Bluff Springs end, turn when the road starts to tilt. This is the entry that makes the previous pass's 'none' wrong.",
-   "url": "https://gravelmap.com/map/route/71778-upper-rio-penasco",
-   "season": "Rideable roughly April to November; snow-limited in winter. NOT affected by the MVUM's 30 September seasonal cliff, which applies only to FR 24x, 63 mi 3.8–7.4, 64B and 422. — MONSOON, AND THIS IS THE ONE THAT MATTERS: 22–29 Aug is the wettest fortnight of the Cloudcroft year (5.65 in in August against 3.10 in September, WRCC 291931). NWS El Paso names the Rio Peñasco in flood warnings and adds that \"due to the lack of gauges on this stream, it is difficult to know where the flooding currently is occurring\" — there is NO river level to check before you go. NPS: \"Even if skies are clear overhead, rainfall upstream can send a wall of water rushing down arroyos.\" Ride it in the MORNING and be out of the canyon before early afternoon, every day of the stay.",
-   "tier": "community",
-   "source": "Gravelmap per-segment page (surface, length, elevation profile); Forest Service Willie White T113 page for the road's identity as County Road C17",
-   "label": "Gravelmap"
-  },
-  {
-   "name": "Water Canyon (Forest Service road off Upper Rio Peñasco Road, near Marcia)",
-   "surface": "Graded dirt, rock and gravel canyon road, described by onX as 'well-maintained' and 'generally two vehicles wide'",
-   "length": "2.4 mi to where it meets the Old Sunspot Hwy Trail — so about 4.8 mi out and back",
-   "gradient": "Canyon-floor road sitting just above the wash that feeds the Rio Peñasco — gentle by construction. onX rates it Technical Rating 1, its easiest. No published elevation profile; recorded as unknown rather than guessed.",
-   "bike_legal": "yes — a National Forest System road, and the Lincoln National Forest's own Biking page describes the forest's cycling network as 'a mix of singletrack, fire roads, and multi-use trails', with the Sacramento Ranger District named as particularly popular. The MVUM's designations govern motor vehicles only ('This map does not display nonmotorized uses').",
-   "verdict": "WORKS with a dog in a carrier — the best short option here. Two vehicles wide, well maintained, no obstacle over 10 inches, canyon-bottom so the gradient is mild, and it pairs directly with Upper Rio Peñasco Road for a longer day. Two live cautions from onX: large downed trees and minor rockfall are common in this canyon, and water flows on the main track after rain or snowmelt — check after weather. No cell service.",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/water-canyon-n7062d50wq8e",
-   "season": "Spring, Summer, Fall per onX; heavy snowfall makes it inaccessible in winter. — MONSOON, AND THIS IS THE ONE THAT MATTERS: 22–29 Aug is the wettest fortnight of the Cloudcroft year (5.65 in in August against 3.10 in September, WRCC 291931). NWS El Paso names the Rio Peñasco in flood warnings and adds that \"due to the lack of gauges on this stream, it is difficult to know where the flooding currently is occurring\" — there is NO river level to check before you go. NPS: \"Even if skies are clear overhead, rainfall upstream can send a wall of water rushing down arroyos.\" Ride it in the MORNING and be out of the canyon before early afternoon, every day of the stay.",
-   "tier": "community",
-   "source": "onX Offroad per-route page; fs.usda.gov Lincoln NF Biking page for the bike-legal status of forest roads",
-   "label": "onX"
-  },
-  {
-   "name": "Agua Chiquita forest road, off NM 6563",
-   "surface": "Short paved section at the NM 6563 turn-off, then gravel and dirt, then dirt and rock. onX: 'overall very well-maintained road… easily accessible by most vehicles including 2wd with decent clearance.'",
-   "length": "10.8 mi one way; loops back to NM 6563 via FS 460 at the south end",
-   "gradient": "Not published. onX gives Technical Rating 1 and 'no obstacles larger than 10 inches'; a majority of the route is wide enough for two vehicles. Recorded as unknown rather than estimated.",
-   "bike_legal": "yes — National Forest System road; Lincoln NF's Biking page includes fire roads in the forest's cycling network, and the MVUM regulates motor vehicles only",
-   "verdict": "WORKS with a dog in a carrier for a longer, quieter gravel day, with one honest caveat: it is the same road the 4x4 traffic uses, and it is popular for dispersed camping, so you will meet trucks. Ten miles of technical-rating-1 graded road at 8,000–9,000 ft is a real ride. Gradient is the unknown — worth a look at the first mile before committing the dog to the full length. No cell service. Substantial burn scar toward the south end.",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
-   "season": "Spring, Summer, Fall per onX. A few low spots become shallow-to-moderate water crossings after snowmelt or heavy rain;",
-   "tier": "community",
-   "source": "onX Offroad per-route page",
-   "label": "onX"
-  },
-  {
-   "name": "Russia Canyon Road",
-   "surface": "100% gravel (Gravelmap)",
-   "length": "6.41 mi point to point, Russia Canyon Rd to State Road 6563",
-   "gradient": "1,335 ft gain against only 89 ft loss over 6.41 mi — roughly 4% sustained, essentially one continuous climb to a 9,081 ft high point",
-   "bike_legal": "yes — Gravelmap records it as a public gravel segment and it terminates on NM 6563; nothing on the MVUM restricts bicycles",
-   "verdict": "DOES NOT work as a cruise with a dog in a carrier. It is 6.4 miles of sustained 4% climb at 8,000–9,000 ft with roughly 1,335 ft of gain and almost no relief — that is a training ride, not a dog ride, and the descent direction only defers the problem because you still have to get back. Listed so it is not researched twice. If it is ridden at all, ride it downhill from NM 6563 with a shuttle in the truck.",
-   "url": "https://gravelmap.com/map/route/136540-russia-canyon-road",
-   "season": "Spring through autumn; snow-limited at 9,000 ft.",
-   "tier": "community",
-   "source": "Gravelmap per-segment page",
-   "label": "Gravelmap"
-  },
-  {
    "name": "Rim Trail T105 (National Recreation Trail), Cloudcroft to Sunspot",
    "surface": "Standard/Terra Trail — natural-surface singletrack along the crest of the Sacramentos",
    "length": "31.2 mi per the Forest Service; 30.7 mi per the Lincoln NF Trails guide. Split into North, Middle and South segments with six Forest Service Rim Trail parking access points (P1–P6).",
@@ -485,7 +414,11 @@
      "url": "https://www.komoot.com/smarttour/e2813626409/rim-trail-cloudcroft-to-sunspot"
     }
    ],
-   "label": "Forest Service"
+   "label": "Forest Service",
+   "drive_min": 0,
+   "drive_mi": 0.0,
+   "base_name": "Rim Trail T105 (National Recreation Trail), Cloudcroft to Sunspot",
+   "alpine": false
   },
   {
    "name": "NM 6563, the Sunspot Scenic Byway (paved climb, Cloudcroft to Sunspot)",
@@ -508,7 +441,11 @@
      "url": "https://www.komoot.com/highlight/6062082"
     }
    ],
-   "label": "New Mexico True"
+   "label": "New Mexico True",
+   "drive_min": 0,
+   "drive_mi": 0.0,
+   "base_name": "NM 6563, the Sunspot Scenic Byway (paved climb, Cloudcroft to Sunspot)",
+   "alpine": false
   },
   {
    "name": "Village Spur Trail T5001A and the Trestle Recreation Area paved loop (T5001B Overlook, T5001D Devil's Elbow)",
@@ -521,7 +458,11 @@
    "season": "New Mexico Rails-to-Trails Association gives the system's ideal seasons as 'Early Spring to late Fall'.",
    "tier": "official",
    "source": "New Mexico Rails-to-Trails Association 'Cloud Climbing Rail Trails Map' PDF (trail numbers, mileages, elevation band, difficulty, seasons); fs.usda.gov Village Spur Trail T5001A entry for the permitted-use list",
-   "label": "NM Rails-to-Trails"
+   "label": "NM Rails-to-Trails",
+   "drive_min": 0,
+   "drive_mi": 0.0,
+   "base_name": "Village Spur Trail T5001A and the Trestle Recreation Area paved loop (T5001B Overlook, T5001D Devil's Elbow)",
+   "alpine": false
   },
   {
    "name": "Cloud-Climbing Trestle Trail T5001 (the Mexican Canyon Trestle rail-trail)",
@@ -534,7 +475,11 @@
    "season": "New Mexico Rails-to-Trails Association: 'Ideal seasons — Early Spring to late Fall'.",
    "tier": "official",
    "source": "fs.usda.gov Cloud-Climbing Trestle Trail T5001 page (the authority); TrailLink https://www.traillink.com/trail/cloud-climbing-trestle-trail/ (the contradicting app); New Mexico Rails-to-Trails Association PDF",
-   "label": "Forest Service"
+   "label": "Forest Service",
+   "drive_min": 0,
+   "drive_mi": 0.0,
+   "base_name": "Cloud-Climbing Trestle Trail T5001 (the Mexican Canyon Trestle rail-trail)",
+   "alpine": false
   },
   {
    "name": "Old Cloudcroft Highway Trail T5002 (the old Alamogordo–Cloudcroft highway grade)",
@@ -547,7 +492,102 @@
    "season": "Early spring to late fall per the New Mexico Rails-to-Trails Association. Its neighbour T5003 Toboggan Canyon was under a Forest Service closure order for heavy erosion from 26 Feb 2024 to 22 Feb 2027 — expiring before the trip, but re-check.",
    "tier": "community",
    "source": "lincoln-nf-trails.org T5002 page (length, elevation, gradients, private-land caution); New Mexico Rails-to-Trails Association PDF; Sacramento/Smokey Bear MVUM motorized-trail list",
-   "label": "lincoln-nf-trails.org"
+   "label": "lincoln-nf-trails.org",
+   "drive_min": 0,
+   "drive_mi": 0.0,
+   "base_name": "Old Cloudcroft Highway Trail T5002 (the old Alamogordo–Cloudcroft highway grade)",
+   "alpine": false
+  },
+  {
+   "name": "FR 5661 / Pumphouse Ridge — the ridge-top logging roads",
+   "url": "https://www.fs.usda.gov/r03/lincoln/recreation/trails",
+   "label": "Forest Service — Lincoln NF trails",
+   "surface": "Five dead-end spurs off FR 5661 — T5661C 1.1 mi, T5661D 0.5 mi, T5661F 2.6 mi, T5661H 0.4 mi (the district guide says 0.6), T5661Q 0.8 mi — all of them, in the Forest Service district guide’s own words, \"closed logging roads, 15 feet and more in width, usually with some grass cover\". FR 5661 itself is a full-width dirt-and-rock forest road, \"occasionally rough\", running 8.0 miles from FR 24B to a turnaround.",
+   "length": "8.0 mi road + ~5.4 mi of ridge spurs",
+   "gradient": "Around 5%, maximum 12%. The ridge sits at roughly 8,800 ft and the longest spur (T5661F) runs 8,760–8,980 ft — 220 ft of difference over 2.6 miles. Difficulty is graded \"Easiest\", and T5661H is called \"the most level path of the five\".",
+   "bike_legal": "Yes, from the authority: the Forest Service lists \"Mountain Biking\" among the permitted uses on all five Pumphouse Ridge trails, alongside backpacking, day hiking, horse riding and OHV trail riding.",
+   "verdict": "Works, and it is the best carrier ride at this stop. Fifteen-foot grassed logging road is a firmer, flatter and far quieter surface than anything else researched here, the spurs all dead-end so there is no through traffic, and 5% average with 220 ft of difference is exactly what a loaded carrier wants. Ride the spurs, not FR 5661 — the road is the drive-in and is the rough part. CHECK THE GATE FIRST: the Forest Service page currently carries \"access to them via motorized vehicles is temporarily unavailable due to seasonal conditions … the gate at FR 24 B being locked until seasonal conditions permit, sometime in the spring\". That reads as a winter notice left standing, but it is on the live page, and a locked FR 24B gate turns an 8-mile drive-in into an 8-mile ride-in before the riding starts.",
+   "season": "Ridge-top at 8,800 ft. In peak monsoon a grass-covered logging road holds water — ride it in the morning like everything else here.",
+   "tier": "official",
+   "source": "fs.usda.gov Lincoln NF trails list (permitted uses, lengths, gate status); lincoln-nf-trails.org Sacramento district trail pages (tread, gradients, elevation, difficulty)",
+   "other_links": [
+    {
+     "label": "Lincoln NF district guide — Pumphouse Ridge 3 (T5661F)",
+     "url": "https://lincoln-nf-trails.org/Trails/Sacramento/S-Trail-Pages/T5661F.html"
+    }
+   ],
+   "drive_min": 7,
+   "drive_mi": 1.9,
+   "base_name": "FR 5661 / Pumphouse Ridge — the ridge-top logging roads",
+   "alpine": false
+  },
+  {
+   "name": "Russia Canyon Road",
+   "surface": "100% gravel (Gravelmap)",
+   "length": "6.41 mi point to point, Russia Canyon Rd to State Road 6563",
+   "gradient": "1,335 ft gain against only 89 ft loss over 6.41 mi — roughly 4% sustained, essentially one continuous climb to a 9,081 ft high point",
+   "bike_legal": "yes — Gravelmap records it as a public gravel segment and it terminates on NM 6563; nothing on the MVUM restricts bicycles",
+   "verdict": "DOES NOT work as a cruise with a dog in a carrier. It is 6.4 miles of sustained 4% climb at 8,000–9,000 ft with roughly 1,335 ft of gain and almost no relief — that is a training ride, not a dog ride, and the descent direction only defers the problem because you still have to get back. Listed so it is not researched twice. If it is ridden at all, ride it downhill from NM 6563 with a shuttle in the truck.",
+   "url": "https://gravelmap.com/map/route/136540-russia-canyon-road",
+   "season": "Spring through autumn; snow-limited at 9,000 ft.",
+   "tier": "community",
+   "source": "Gravelmap per-segment page",
+   "label": "Gravelmap",
+   "drive_min": 18,
+   "drive_mi": 7.4,
+   "base_name": "Russia Canyon Road",
+   "alpine": false
+  },
+  {
+   "name": "Upper Rio Peñasco Road (County Road C17 / Rio Peñasco Road), Bluff Springs valley",
+   "surface": "100% gravel, graded valley-bottom county road (Gravelmap classifies the whole segment 'gravel 100%')",
+   "length": "12.39 mi point to point, Rio Peñasco Rd to Sunspot Hwy. Ride it as an out-and-back from the Bluff Springs end and take whatever length suits — the valley floor is the flat part.",
+   "gradient": "1,965 ft gain and only 292 ft loss over 12.39 mi in the uphill direction — about 3% average, but that average hides the shape: it is near-flat along the valley floor at the Bluff Springs end and does its climbing at the Sunspot Highway end. Max elevation 8,802 ft. Ridden out-and-back from the bottom, the first several miles are the gentlest rideable gravel anywhere on this district.",
+   "bike_legal": "yes — it is a public COUNTY road, not a Forest Service motorised trail. The Forest Service names it as such on its own Willie White Trail page: 'Trail #113: The Willie White Trail … begins just west of Bluff Springs along County Road C17 (Rio Penasco Road)'. Nothing on the MVUM restricts it, and the MVUM states in its own legend that it 'does not display nonmotorized uses' — the MVUM regulates motor vehicles only and imposes no bicycle restriction anywhere on this district.",
+   "verdict": "WORKS with a dog in a carrier, and this is the answer. Firm graded gravel, valley bottom, a public road with negligible traffic, and you choose your own turnaround so the gradient never has to bite. Ride out from the Bluff Springs end, turn when the road starts to tilt. This is the entry that makes the previous pass's 'none' wrong.",
+   "url": "https://gravelmap.com/map/route/71778-upper-rio-penasco",
+   "season": "Rideable roughly April to November; snow-limited in winter. NOT affected by the MVUM's 30 September seasonal cliff, which applies only to FR 24x, 63 mi 3.8–7.4, 64B and 422. — MONSOON, AND THIS IS THE ONE THAT MATTERS: 22–29 Aug is the wettest fortnight of the Cloudcroft year (5.65 in in August against 3.10 in September, WRCC 291931). NWS El Paso names the Rio Peñasco in flood warnings and adds that \"due to the lack of gauges on this stream, it is difficult to know where the flooding currently is occurring\" — there is NO river level to check before you go. NPS: \"Even if skies are clear overhead, rainfall upstream can send a wall of water rushing down arroyos.\" Ride it in the MORNING and be out of the canyon before early afternoon, every day of the stay.",
+   "tier": "community",
+   "source": "Gravelmap per-segment page (surface, length, elevation profile); Forest Service Willie White T113 page for the road's identity as County Road C17",
+   "label": "Gravelmap",
+   "drive_min": 30,
+   "drive_mi": 13.0,
+   "base_name": "Upper Rio Peñasco Road (County Road C17 / Rio Peñasco Road), Bluff Springs valley",
+   "alpine": false
+  },
+  {
+   "name": "TOO FAR — Agua Chiquita forest road, off NM 6563",
+   "surface": "Short paved section at the NM 6563 turn-off, then gravel and dirt, then dirt and rock. onX: 'overall very well-maintained road… easily accessible by most vehicles including 2wd with decent clearance.'",
+   "length": "10.8 mi one way; loops back to NM 6563 via FS 460 at the south end",
+   "gradient": "Not published. onX gives Technical Rating 1 and 'no obstacles larger than 10 inches'; a majority of the route is wide enough for two vehicles. Recorded as unknown rather than estimated.",
+   "bike_legal": "yes — National Forest System road; Lincoln NF's Biking page includes fire roads in the forest's cycling network, and the MVUM regulates motor vehicles only",
+   "verdict": "WORKS with a dog in a carrier for a longer, quieter gravel day, with one honest caveat: it is the same road the 4x4 traffic uses, and it is popular for dispersed camping, so you will meet trucks. Ten miles of technical-rating-1 graded road at 8,000–9,000 ft is a real ride. Gradient is the unknown — worth a look at the first mile before committing the dog to the full length. No cell service. Substantial burn scar toward the south end.",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
+   "season": "Spring, Summer, Fall per onX. A few low spots become shallow-to-moderate water crossings after snowmelt or heavy rain;",
+   "tier": "community",
+   "source": "onX Offroad per-route page",
+   "label": "onX",
+   "drive_min": 34,
+   "drive_mi": 14.9,
+   "base_name": "Agua Chiquita forest road, off NM 6563",
+   "alpine": false
+  },
+  {
+   "name": "TOO FAR — Water Canyon (Forest Service road off Upper Rio Peñasco Road, near Marcia)",
+   "surface": "Graded dirt, rock and gravel canyon road, described by onX as 'well-maintained' and 'generally two vehicles wide'",
+   "length": "2.4 mi to where it meets the Old Sunspot Hwy Trail — so about 4.8 mi out and back",
+   "gradient": "Canyon-floor road sitting just above the wash that feeds the Rio Peñasco — gentle by construction. onX rates it Technical Rating 1, its easiest. No published elevation profile; recorded as unknown rather than guessed.",
+   "bike_legal": "yes — a National Forest System road, and the Lincoln National Forest's own Biking page describes the forest's cycling network as 'a mix of singletrack, fire roads, and multi-use trails', with the Sacramento Ranger District named as particularly popular. The MVUM's designations govern motor vehicles only ('This map does not display nonmotorized uses').",
+   "verdict": "WORKS with a dog in a carrier — the best short option here. Two vehicles wide, well maintained, no obstacle over 10 inches, canyon-bottom so the gradient is mild, and it pairs directly with Upper Rio Peñasco Road for a longer day. Two live cautions from onX: large downed trees and minor rockfall are common in this canyon, and water flows on the main track after rain or snowmelt — check after weather. No cell service.",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/water-canyon-n7062d50wq8e",
+   "season": "Spring, Summer, Fall per onX; heavy snowfall makes it inaccessible in winter. — MONSOON, AND THIS IS THE ONE THAT MATTERS: 22–29 Aug is the wettest fortnight of the Cloudcroft year (5.65 in in August against 3.10 in September, WRCC 291931). NWS El Paso names the Rio Peñasco in flood warnings and adds that \"due to the lack of gauges on this stream, it is difficult to know where the flooding currently is occurring\" — there is NO river level to check before you go. NPS: \"Even if skies are clear overhead, rainfall upstream can send a wall of water rushing down arroyos.\" Ride it in the MORNING and be out of the canyon before early afternoon, every day of the stay.",
+   "tier": "community",
+   "source": "onX Offroad per-route page; fs.usda.gov Lincoln NF Biking page for the bike-legal status of forest roads",
+   "label": "onX",
+   "drive_min": 55,
+   "drive_mi": 14.6,
+   "base_name": "Water Canyon (Forest Service road off Upper Rio Peñasco Road, near Marcia)",
+   "alpine": false
   }
  ],
  "cruise_checked": [
@@ -571,32 +611,6 @@
  ],
  "offroad": [
   {
-   "name": "Westside Road (Forest Road 90), High Rolls to Sacramento River Road",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/westside-road-n2qv9olwrz95",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX gives Trail Type 'Full-Width Road' and lists 'Full Width' among the ride types on its own page; FR 90 appears as a numbered ROAD (90, 90A, 90B, 90E, 90F) in the MVUM's Forest Service Roads list, not in its Forest Service Motorized Trails list",
-   "distance": "11.5 mi mapped by onX; onX's own text says 'The trail is about 28 miles' end to end, so treat 11.5 mi as the mapped segment and the full run as longer — figure not reconcilable from published sources",
-   "difficulty": "onX Technical Rating 2 (Easy). onX: 'The majority of the trail is easy when dry and there is a steep grade at the beginning or ending of the trail depending on which direction you travel. When snow or rain is present, there may be some sketchy areas with steep grades and steep narrow drop-offs.'",
-   "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation on FR 90 — open year-round to highway-legal vehicles subject to snow.",
-   "note": "Begins past the gas station in High Rolls; right onto Westside Road, pavement ends past the houses, keep LEFT at every Y. Ends with a steep ascent and views over the forest, then Sacramento River Road takes you back under 20 miles to Cloudcroft. Numerous spurs lead to 50-inch ATV trails the truck may not enter. Only community status report on file: Matt Hinkle, 6 Apr 2024, 2023 GMC Canyon — 'Open / Normal, easy trail with everything passable, would recommend airing down for comfort.' A mid-size pickup completing it is the closest thing to a full-size datapoint published. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
-   "tier": "community",
-   "source": "onX Offroad per-route page; vehicle class cross-checked against the Sacramento/Smokey Bear MVUM road and motorized-trail lists",
-   "label": "onX — the only per-route listing that exists"
-  },
-  {
-   "name": "Karr Canyon (Forest Road 63), High Rolls up to the Karr Canyon picnic area",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/karr-canyon-edq0p135y6ov",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'; FR 63 is listed as a Forest Service ROAD on the MVUM and appears in the MVUM seasonal ROAD table, never in the motorized-trail list",
-   "distance": "3.6 mi (onX). The MVUM seasonal row for road 63 runs to milepost 7.4, so the road itself is longer than onX's mapped segment.",
-   "difficulty": "onX Technical Rating 1 — the easiest rating onX gives in this area. onX: 'primarily a well-maintained gravel road with a gradual downhill grade and very few obstacles.' The Forest Service's own Lower Karr Canyon Campground page is blunter: 'Forest Road 63 is gravel and can be rough.'",
-   "season": "onX Best Time: Spring, Summer, Fall. CARRY THIS: the MVUM seasonal table designates road 63 miles 3.8–7.4 open to highway-legal vehicles ONLY 31 May – 30 September. The lower 0–3.8 miles carry no seasonal designation. A late-September stay must finish that upper section on or before 30 Sep.",
-   "note": "From US 82 at the Village of High Rolls, turn south onto FR 63 (Karr Canyon Road); Lower Karr Canyon Campground is roughly 5 miles in on the right. Gradual descent, several pull-offs, hiking access. FS campground page: https://www.fs.usda.gov/r03/lincoln/recreation/lower-karr-canyon-campground. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
-   "tier": "community",
-   "source": "onX Offroad per-route page + fs.usda.gov Lower Karr Canyon Campground page + MVUM seasonal table",
-   "label": "onX — the only per-route listing that exists"
-  },
-  {
    "name": "Pumphouse — Forest Road 5661 (off FR 24B, NM 130 south of Cloudcroft)",
    "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/pumphouse-mgd6gd9176o9",
    "listing_type": "onX (no Trails Offroad listing)",
@@ -607,20 +621,64 @@
    "note": "THE ONE TO DO FIRST in a full-size truck — it is the route onX itself singles out as full-size-capable, it is technical rating 1, and it dead-ends with a turnaround so there is no commitment risk. Turn onto Apache Canyon Road off NM 130; trailhead is just over half a mile east. Starts just over single-vehicle width and tapers, with passing room in most places. Minor rockfall and downed trees are routine. Community report, Jermunji M, 3 Jul 2026, 2005 Lexus GX 470: 'Open / Normal … Very rocky road, but passable by almost any type of vehicle.' Busy on holiday weekends; a late-September weekday should be quiet. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class. This is FR 5661, and it is also the access to the Pumphouse Ridge logging roads — see the gravel box, which is where the ride is.",
    "tier": "community",
    "source": "onX Offroad per-route page",
-   "label": "onX — the only per-route listing that exists"
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 7,
+   "drive_mi": 2.0,
+   "base_name": "Pumphouse — Forest Road 5661 (off FR 24B, NM 130 south of Cloudcroft)",
+   "alpine": false
   },
   {
-   "name": "Agua Chiquita (Forest road off NM 6563, the Sunspot Highway)",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
+   "name": "Silver Spring (FR 162), High Rolls up into Lincoln NF",
+   "url": "https://www.trailsoffroad.com/US/new-mexico/scout-routes/2102-silver-spring",
+   "label": "Trails Offroad — Scout Route",
+   "listing_type": "Trails Offroad",
+   "vehicle_class": "Numbered Forest ROAD (FR 162) — the truck is allowed. Note there are TWO FR 162s on Trails Offroad; the other is in the Cibola NF, 250 miles away.",
+   "distance": null,
+   "difficulty": null,
+   "season": "No published season. Snow or mud named as the seasonal hazard.",
+   "note": "Not on this card in any form until now. \"A dirt road that winds through Lincoln National Forest… the west portion is just over 6,600 feet and is primarily a graded gravel road with great views of the desert and valleys below\", climbing east to over 8,700 ft — the same 2,100 ft of graded gravel out of High Rolls as Westside Road FR 90 and Karr Canyon FR 63, which start from the same place. Denser forest and more camping at the east end, a fire-tower overlook, and signed private parcels along it. One free coordinate: a west-side camping spot at 32.97571, -105.82628.",
+   "source": "Trails Offroad Scout Route 2102",
+   "tier": "indexed",
+   "drive_min": 13,
+   "drive_mi": 7.6,
+   "base_name": "Silver Spring (FR 162), High Rolls up into Lincoln NF",
+   "alpine": false
+  },
+  {
+   "name": "ALPINE — FR 623, Sunspot Highway to the Chippaway Trailhead",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/fr623-9e7qeee3nq1y",
+   "label": "onX — the only per-route listing that exists",
    "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'. onX's neighbouring Water Canyon page states the contrast explicitly: the connecting Old Sunspot Hwy Trail is 'open to everything except full-width vehicles'.",
-   "distance": "10.8 mi; can be run as a loop — it connects to FS 460 at the south end, which returns to NM 6563",
-   "difficulty": "onX Technical Rating 1. onX: 'an overall very well-maintained road that will be easily accessible by most vehicles including 2wd with decent clearance… no obstacles larger than 10 inches.' A short paved section where it leaves NM 6563, then gravel and dirt.",
-   "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found on this road. — LIVE FOREST ORDER: Lincoln NF closes the Rio Peñasco, Bluff Springs, Wills Canyon and Agua Chiquita areas to off-road motor vehicle use, and a second order closes areas \"due to continued flooding effects through monsoon season\". Re-check both before the stay.",
-   "note": "The longest genuinely easy full-width route reachable straight off the Sunspot Highway, and the one that can be made a loop rather than an out-and-back. Substantial burn scar visible toward the south end. No cell service anywhere on it. Multiple 50-inch-or-less motorised spurs branch off, signed — the truck must stay on the main road. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
+   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
+   "distance": "5.6 mi",
+   "difficulty": "onX Technical Rating 2 (easy)",
+   "season": "onX Best Time: Spring, Summer, Fall, Winter.",
+   "note": "The closest thing here to what you liked about La Luz Canyon Road, but the whole route stays up on the tableland instead of climbing to it — it leaves NM 6563, the Sunspot Highway, which runs 8,600–9,200 ft, and never drops off. onX: \"rough in places, with plenty of sharp rocks, and there is a large water crossing that can be bypassed through a dispersed camping area.\" A rider report calls it \"rocky 95% of the trail\". Sharp rock is the thing to watch — this is a sidewall route, not a comfort route. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
+   "elevation": null,
    "tier": "community",
-   "source": "onX Offroad per-route page",
-   "label": "onX — the only per-route listing that exists"
+   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class",
+   "drive_min": 15,
+   "drive_mi": 6.1,
+   "base_name": "FR 623, Sunspot Highway to the Chippaway Trailhead",
+   "alpine": true
+  },
+  {
+   "name": "ALPINE — Karr Main",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/karr-main-9e7qe5ov2q1y",
+   "label": "onX — the only per-route listing that exists",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
+   "distance": "3.5 mi",
+   "difficulty": "onX Technical Rating 2 (easy)",
+   "season": "onX Best Time: Spring, Summer, Fall, Winter.",
+   "note": "Thick forest the whole way and decently maintained — \"no obstacles larger than 10 inches\", though light grades may trouble a 2WD. Standing water after rain. Single-vehicle width, ending at a small clearing with room to turn. Pairs with Karr Canyon FR 63, already on this card, which climbs to the same picnic area. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
+   "elevation": null,
+   "tier": "community",
+   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class",
+   "drive_min": 17,
+   "drive_mi": 6.8,
+   "base_name": "Karr Main",
+   "alpine": true
   },
   {
    "name": "Benson Ridge (off NM 6563, ~8 miles south of Cloudcroft)",
@@ -633,7 +691,11 @@
    "note": "Heavily wooded, so views are limited to one open stretch looking south. Cell service dies about 5 miles in. Prone to downed trees and loose rock across the track. onX warns predatory wildlife is active here — relevant with the dog. Recent community reports: Zack Seagraves, 29 Nov 2025, 2018 Lexus GX, 'Open'; Jennifer Stroud, 5 Aug 2025, 'Open / Dusty / Muddy-Wet — nice easy ride, a few muddy spots but not an issue.' Benson Ridge South (1.1 mi) and Wayne Canyon (3.1 mi) are separate onX-listed full-width spurs off it. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
    "tier": "community",
    "source": "onX Offroad per-route page",
-   "label": "onX — the only per-route listing that exists"
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 19,
+   "drive_mi": 8.0,
+   "base_name": "Benson Ridge (off NM 6563, ~8 miles south of Cloudcroft)",
+   "alpine": false
   },
   {
    "name": "Alamo Canyon (Forest Service road, Lincoln NF)",
@@ -646,7 +708,11 @@
    "note": "Short and quiet — a half-morning, not a day. Narrow dirt road with several dispersed campsites. Useful as a low-commitment first shakedown of the truck on this district, or as an add-on to a Westside Road day. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
    "tier": "community",
    "source": "onX Offroad per-route page",
-   "label": "onX — the only per-route listing that exists"
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 21,
+   "drive_mi": 8.4,
+   "base_name": "Alamo Canyon (Forest Service road, Lincoln NF)",
+   "alpine": false
   },
   {
    "name": "Three Mile Canyon Road (Sacramento Mountains, to Carr Gap)",
@@ -659,7 +725,133 @@
    "note": "Two cattle gates to open and close. Cattle, sheep, javelina, deer and bear regularly on the road. Unguarded drops into the canyon is the line that matters for a solo driver with animals aboard — if this one goes wrong there is no cell service to call from. Connects to James Ridge (3 mi, onX Technical Rating 2, https://www.onxmaps.com/offroad/trails/us/new-mexico/james-ridge-mgd6gvw2d6o9 ) which runs up to Sixteen Springs Canyon Road. Community report, Kevin Price, 3 Jul 2026, 2023 Ford Bronco: 'Open / Normal… decent size ruts that might concern somewhat if it was a bad rain, but I think a fitted 4x4 would be fine.'. Trails Offroad adds the road number FR 228 and the 10-mile length, and warns it is \"an ungraded dirt road that may have deep mud holes and ruts with no bypass after significant rain or snow\" — which lands squarely on this 22–29 Aug peak-monsoon window. Cattle range freely through multiple unlocked gates. Difficulty and season are behind the paywall; the 4.8/5 on the page is a user rating, not a difficulty grade.",
    "tier": "indexed",
    "source": "Trails Offroad Scout Route 2111",
-   "label": "Trails Offroad — Scout Route"
+   "label": "Trails Offroad — Scout Route",
+   "drive_min": 21,
+   "drive_mi": 14.6,
+   "base_name": "Three Mile Canyon Road (Sacramento Mountains, to Carr Gap)",
+   "alpine": false
+  },
+  {
+   "name": "Karr Canyon (Forest Road 63), High Rolls up to the Karr Canyon picnic area",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/karr-canyon-edq0p135y6ov",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'; FR 63 is listed as a Forest Service ROAD on the MVUM and appears in the MVUM seasonal ROAD table, never in the motorized-trail list",
+   "distance": "3.6 mi (onX). The MVUM seasonal row for road 63 runs to milepost 7.4, so the road itself is longer than onX's mapped segment.",
+   "difficulty": "onX Technical Rating 1 — the easiest rating onX gives in this area. onX: 'primarily a well-maintained gravel road with a gradual downhill grade and very few obstacles.' The Forest Service's own Lower Karr Canyon Campground page is blunter: 'Forest Road 63 is gravel and can be rough.'",
+   "season": "onX Best Time: Spring, Summer, Fall. CARRY THIS: the MVUM seasonal table designates road 63 miles 3.8–7.4 open to highway-legal vehicles ONLY 31 May – 30 September. The lower 0–3.8 miles carry no seasonal designation. A late-September stay must finish that upper section on or before 30 Sep.",
+   "note": "From US 82 at the Village of High Rolls, turn south onto FR 63 (Karr Canyon Road); Lower Karr Canyon Campground is roughly 5 miles in on the right. Gradual descent, several pull-offs, hiking access. FS campground page: https://www.fs.usda.gov/r03/lincoln/recreation/lower-karr-canyon-campground. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
+   "tier": "community",
+   "source": "onX Offroad per-route page + fs.usda.gov Lower Karr Canyon Campground page + MVUM seasonal table",
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 23,
+   "drive_mi": 11.3,
+   "base_name": "Karr Canyon (Forest Road 63), High Rolls up to the Karr Canyon picnic area",
+   "alpine": false
+  },
+  {
+   "name": "ALPINE — Atkinson Canyon, off NM 6563 south of Cloudcroft",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/atkinson-canyon-nyo65r9ryz0v",
+   "label": "onX — the only per-route listing that exists",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
+   "distance": "4.1 mi out and back",
+   "difficulty": "onX Technical Rating 1 (easy)",
+   "season": "onX Best Time: Spring, Summer, Fall. onX: \"Winter months the snow is substantial in this area and may be heavy enough to make the trail impassable.\"",
+   "note": "The gentle one, and the easiest alpine road on this card. Dirt and rock with \"obstacles no larger than 8 inches\", passable by most vehicles including some 2WDs when dry, muddy after rain. Single-vehicle width with occasional passing places, ending at a three-way spur junction. Tree cover means it is a forest drive rather than a viewpoint drive — onX notes only \"a small Alamogordo/White Sands vista\". Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
+   "elevation": null,
+   "tier": "community",
+   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class",
+   "drive_min": 24,
+   "drive_mi": 10.4,
+   "base_name": "Atkinson Canyon, off NM 6563 south of Cloudcroft",
+   "alpine": true
+  },
+  {
+   "name": "TOO FAR — Benson Ridge South",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/benson-ridge-south-j064on14nq15",
+   "label": "onX — the only per-route listing that exists",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
+   "distance": "1.1 mi",
+   "difficulty": "onX Technical Rating 2 (easy)",
+   "season": "onX Best Time: Spring, Summer, Fall.",
+   "note": "A short add-on to Benson Ridge, already on this card. It ends at the Shortcut Trailhead — and STOP THERE: onX states the trail beyond \"is a motorcycle trail that is not open to full-size vehicles.\" Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
+   "elevation": null,
+   "tier": "community",
+   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class",
+   "drive_min": 32,
+   "drive_mi": 11.3,
+   "base_name": "Benson Ridge South",
+   "alpine": true
+  },
+  {
+   "name": "TOO FAR — Agua Chiquita (Forest road off NM 6563, the Sunspot Highway)",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/agua-chiquita-4j0642lr4z15",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX Trail Type 'Full-Width Road', ride types include 'Full Width'. onX's neighbouring Water Canyon page states the contrast explicitly: the connecting Old Sunspot Hwy Trail is 'open to everything except full-width vehicles'.",
+   "distance": "10.8 mi; can be run as a loop — it connects to FS 460 at the south end, which returns to NM 6563",
+   "difficulty": "onX Technical Rating 1. onX: 'an overall very well-maintained road that will be easily accessible by most vehicles including 2wd with decent clearance… no obstacles larger than 10 inches.' A short paved section where it leaves NM 6563, then gravel and dirt.",
+   "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation found on this road. — LIVE FOREST ORDER: Lincoln NF closes the Rio Peñasco, Bluff Springs, Wills Canyon and Agua Chiquita areas to off-road motor vehicle use, and a second order closes areas \"due to continued flooding effects through monsoon season\". Re-check both before the stay.",
+   "note": "The longest genuinely easy full-width route reachable straight off the Sunspot Highway, and the one that can be made a loop rather than an out-and-back. Substantial burn scar visible toward the south end. No cell service anywhere on it. Multiple 50-inch-or-less motorised spurs branch off, signed — the truck must stay on the main road. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
+   "tier": "community",
+   "source": "onX Offroad per-route page",
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 34,
+   "drive_mi": 14.9,
+   "base_name": "Agua Chiquita (Forest road off NM 6563, the Sunspot Highway)",
+   "alpine": false
+  },
+  {
+   "name": "TOO FAR — Carr Gap Canyon (FR 607), Mayhill end of Three Mile Canyon",
+   "url": "https://www.trailsoffroad.com/US/new-mexico/scout-routes/2110-carr-gap-canyon",
+   "label": "Trails Offroad — Scout Route",
+   "listing_type": "Trails Offroad",
+   "vehicle_class": "Numbered Forest ROAD (FR 607), not a T-numbered 50-inch trail — the truck is allowed. The Lincoln NF MVUM remains the authority.",
+   "distance": null,
+   "difficulty": null,
+   "season": null,
+   "note": "The road Three Mile Canyon runs into, and it had no listing of its own until now. \"A gravel road that twists through the Sacramento Mountains\" — narrow, winding, scenic, with three dispersed-campsite coordinates published free on the page. Trails Offroad names weather as the only difficulty: \"There aren’t any difficult sections other than the possibility of weather.\" Length and difficulty are paywalled. 25 miles from camp, so it is a drive-then-ride, not a from-camp ride.",
+   "source": "Trails Offroad Scout Route 2110",
+   "tier": "indexed",
+   "drive_min": 41,
+   "drive_mi": 25.5,
+   "base_name": "Carr Gap Canyon (FR 607), Mayhill end of Three Mile Canyon",
+   "alpine": false
+  },
+  {
+   "name": "TOO FAR — Westside Road (Forest Road 90), High Rolls to Sacramento River Road",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/westside-road-n2qv9olwrz95",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "Forest Service ROAD (takes a full-size pickup) — onX gives Trail Type 'Full-Width Road' and lists 'Full Width' among the ride types on its own page; FR 90 appears as a numbered ROAD (90, 90A, 90B, 90E, 90F) in the MVUM's Forest Service Roads list, not in its Forest Service Motorized Trails list",
+   "distance": "11.5 mi mapped by onX; onX's own text says 'The trail is about 28 miles' end to end, so treat 11.5 mi as the mapped segment and the full run as longer — figure not reconcilable from published sources",
+   "difficulty": "onX Technical Rating 2 (Easy). onX: 'The majority of the trail is easy when dry and there is a steep grade at the beginning or ending of the trail depending on which direction you travel. When snow or rain is present, there may be some sketchy areas with steep grades and steep narrow drop-offs.'",
+   "season": "onX Best Time: Spring, Summer, Fall. No MVUM seasonal designation on FR 90 — open year-round to highway-legal vehicles subject to snow.",
+   "note": "Begins past the gas station in High Rolls; right onto Westside Road, pavement ends past the houses, keep LEFT at every Y. Ends with a steep ascent and views over the forest, then Sacramento River Road takes you back under 20 miles to Cloudcroft. Numerous spurs lead to 50-inch ATV trails the truck may not enter. Only community status report on file: Matt Hinkle, 6 Apr 2024, 2023 GMC Canyon — 'Open / Normal, easy trail with everything passable, would recommend airing down for comfort.' A mid-size pickup completing it is the closest thing to a full-size datapoint published. Trails Offroad has no listing for this road — its own Cloudcroft-area pages offer \"Robledo Loop (87.88 miles away)\" at Las Cruces as the nearest guide. onX is the only per-route source that exists for it, and the Lincoln NF MVUM is the authority for vehicle class.",
+   "tier": "community",
+   "source": "onX Offroad per-route page; vehicle class cross-checked against the Sacramento/Smokey Bear MVUM road and motorized-trail lists",
+   "label": "onX — the only per-route listing that exists",
+   "drive_min": 53,
+   "drive_mi": 22.5,
+   "base_name": "Westside Road (Forest Road 90), High Rolls to Sacramento River Road",
+   "alpine": false
+  },
+  {
+   "name": "TOO FAR — Burleson Ridge, spur off Westside Road FR 90",
+   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/burleson-ridge-1mzjygyo7zd7",
+   "label": "onX — the only per-route listing that exists",
+   "listing_type": "onX (no Trails Offroad listing)",
+   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
+   "distance": "3.1 mi out and back",
+   "difficulty": "onX Technical Rating 3 — the most technical of the alpine set",
+   "season": "onX Best Time: Spring, Summer, Fall.",
+   "note": "The one with published elevations, and the one that most resembles the top half of a canyon climb: it branches off Westside Road (already on this card) and climbs from 7,626 ft to 8,111 ft through \"sparse pine forests and open ridges\" with, in onX's words, \"stunning high-altitude views\". Mostly dirt and loose rock, with occasional rutted sections needing line choice. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
+   "elevation": "7,626 → 8,111 ft (611 ft gain)",
+   "tier": "community",
+   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class",
+   "drive_min": 136,
+   "drive_mi": 22.0,
+   "base_name": "Burleson Ridge, spur off Westside Road FR 90",
+   "alpine": true
   },
   {
    "name": "Peñasco Springs (lower Rio Peñasco canyons, desert end)",
@@ -699,102 +891,6 @@
    "tier": "official",
    "source": "Sacramento & Smokey Bear Ranger Districts MVUM, FS-873-3082, 22 Feb 2018; fs.usda.gov trail pages; onX Offroad per-route pages",
    "label": "Forest Service — road page"
-  },
-  {
-   "name": "Carr Gap Canyon (FR 607), Mayhill end of Three Mile Canyon",
-   "url": "https://www.trailsoffroad.com/US/new-mexico/scout-routes/2110-carr-gap-canyon",
-   "label": "Trails Offroad — Scout Route",
-   "listing_type": "Trails Offroad",
-   "vehicle_class": "Numbered Forest ROAD (FR 607), not a T-numbered 50-inch trail — the truck is allowed. The Lincoln NF MVUM remains the authority.",
-   "distance": null,
-   "difficulty": null,
-   "season": null,
-   "note": "The road Three Mile Canyon runs into, and it had no listing of its own until now. \"A gravel road that twists through the Sacramento Mountains\" — narrow, winding, scenic, with three dispersed-campsite coordinates published free on the page. Trails Offroad names weather as the only difficulty: \"There aren’t any difficult sections other than the possibility of weather.\" Length and difficulty are paywalled. 25 miles from camp, so it is a drive-then-ride, not a from-camp ride.",
-   "source": "Trails Offroad Scout Route 2110",
-   "tier": "indexed"
-  },
-  {
-   "name": "Silver Spring (FR 162), High Rolls up into Lincoln NF",
-   "url": "https://www.trailsoffroad.com/US/new-mexico/scout-routes/2102-silver-spring",
-   "label": "Trails Offroad — Scout Route",
-   "listing_type": "Trails Offroad",
-   "vehicle_class": "Numbered Forest ROAD (FR 162) — the truck is allowed. Note there are TWO FR 162s on Trails Offroad; the other is in the Cibola NF, 250 miles away.",
-   "distance": null,
-   "difficulty": null,
-   "season": "No published season. Snow or mud named as the seasonal hazard.",
-   "note": "Not on this card in any form until now. \"A dirt road that winds through Lincoln National Forest… the west portion is just over 6,600 feet and is primarily a graded gravel road with great views of the desert and valleys below\", climbing east to over 8,700 ft — the same 2,100 ft of graded gravel out of High Rolls as Westside Road FR 90 and Karr Canyon FR 63, which start from the same place. Denser forest and more camping at the east end, a fire-tower overlook, and signed private parcels along it. One free coordinate: a west-side camping spot at 32.97571, -105.82628.",
-   "source": "Trails Offroad Scout Route 2102",
-   "tier": "indexed"
-  },
-  {
-   "name": "ALPINE — FR 623, Sunspot Highway to the Chippaway Trailhead",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/fr623-9e7qeee3nq1y",
-   "label": "onX — the only per-route listing that exists",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
-   "distance": "5.6 mi",
-   "difficulty": "onX Technical Rating 2 (easy)",
-   "season": "onX Best Time: Spring, Summer, Fall, Winter.",
-   "note": "The closest thing here to what you liked about La Luz Canyon Road, but the whole route stays up on the tableland instead of climbing to it — it leaves NM 6563, the Sunspot Highway, which runs 8,600–9,200 ft, and never drops off. onX: \"rough in places, with plenty of sharp rocks, and there is a large water crossing that can be bypassed through a dispersed camping area.\" A rider report calls it \"rocky 95% of the trail\". Sharp rock is the thing to watch — this is a sidewall route, not a comfort route. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
-   "elevation": null,
-   "tier": "community",
-   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class"
-  },
-  {
-   "name": "ALPINE — Atkinson Canyon, off NM 6563 south of Cloudcroft",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/atkinson-canyon-nyo65r9ryz0v",
-   "label": "onX — the only per-route listing that exists",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
-   "distance": "4.1 mi out and back",
-   "difficulty": "onX Technical Rating 1 (easy)",
-   "season": "onX Best Time: Spring, Summer, Fall. onX: \"Winter months the snow is substantial in this area and may be heavy enough to make the trail impassable.\"",
-   "note": "The gentle one, and the easiest alpine road on this card. Dirt and rock with \"obstacles no larger than 8 inches\", passable by most vehicles including some 2WDs when dry, muddy after rain. Single-vehicle width with occasional passing places, ending at a three-way spur junction. Tree cover means it is a forest drive rather than a viewpoint drive — onX notes only \"a small Alamogordo/White Sands vista\". Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
-   "elevation": null,
-   "tier": "community",
-   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class"
-  },
-  {
-   "name": "ALPINE — Burleson Ridge, spur off Westside Road FR 90",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/burleson-ridge-1mzjygyo7zd7",
-   "label": "onX — the only per-route listing that exists",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
-   "distance": "3.1 mi out and back",
-   "difficulty": "onX Technical Rating 3 — the most technical of the alpine set",
-   "season": "onX Best Time: Spring, Summer, Fall.",
-   "note": "The one with published elevations, and the one that most resembles the top half of a canyon climb: it branches off Westside Road (already on this card) and climbs from 7,626 ft to 8,111 ft through \"sparse pine forests and open ridges\" with, in onX's words, \"stunning high-altitude views\". Mostly dirt and loose rock, with occasional rutted sections needing line choice. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
-   "elevation": "7,626 → 8,111 ft (611 ft gain)",
-   "tier": "community",
-   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class"
-  },
-  {
-   "name": "ALPINE — Karr Main",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/karr-main-9e7qe5ov2q1y",
-   "label": "onX — the only per-route listing that exists",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
-   "distance": "3.5 mi",
-   "difficulty": "onX Technical Rating 2 (easy)",
-   "season": "onX Best Time: Spring, Summer, Fall, Winter.",
-   "note": "Thick forest the whole way and decently maintained — \"no obstacles larger than 10 inches\", though light grades may trouble a 2WD. Standing water after rain. Single-vehicle width, ending at a small clearing with room to turn. Pairs with Karr Canyon FR 63, already on this card, which climbs to the same picnic area. Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
-   "elevation": null,
-   "tier": "community",
-   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class"
-  },
-  {
-   "name": "ALPINE — Benson Ridge South",
-   "url": "https://www.onxmaps.com/offroad/trails/us/new-mexico/benson-ridge-south-j064on14nq15",
-   "label": "onX — the only per-route listing that exists",
-   "listing_type": "onX (no Trails Offroad listing)",
-   "vehicle_class": "onX Trail Type \"Full-Width Road\"; ride types include Full Width, so the truck is entitled to be on it. The MVUM remains the authority.",
-   "distance": "1.1 mi",
-   "difficulty": "onX Technical Rating 2 (easy)",
-   "season": "onX Best Time: Spring, Summer, Fall.",
-   "note": "A short add-on to Benson Ridge, already on this card. It ends at the Shortcut Trailhead — and STOP THERE: onX states the trail beyond \"is a motorcycle trail that is not open to full-size vehicles.\" Trails Offroad has no listing for this road — it carries only three Scout Routes in the whole of Otero County. onX is the only per-route source that exists for it, and the Sacramento MVUM is the authority for vehicle class.",
-   "elevation": null,
-   "tier": "community",
-   "source": "onX Offroad per-route page; Sacramento & Smokey Bear MVUM for vehicle class"
   },
   {
    "name": "La Luz Canyon Road to Calico Peak — the desert-to-alpine climb (the one you did)",
@@ -1396,6 +1492,18 @@
   {
    "item": "Pumphouse Ridge 4 (T5661H) length disagrees between authorities",
    "why": "The Forest Service trails list says 0.4 miles and gives its start as \"Forest Road 6551\"; the Sacramento district trail guide says 0.6 miles off FR 5661. The 6551 looks like a transposition. Not reconciled."
+  },
+  {
+   "item": "No drive time from camp established for Peñasco Springs (lower Rio Peñasco canyons, desert end)",
+   "why": "No per-route page publishes a trailhead coordinate for it, so it could not be routed. Everything else in the 4x4 and gravel boxes carries an OSRM driving time from the village; this one is unranked and may be outside the 30-minute radius."
+  },
+  {
+   "item": "No drive time from camp established for FR 64 — Sacramento Canyon / Sacramento River Road",
+   "why": "No per-route page publishes a trailhead coordinate for it, so it could not be routed. Everything else in the 4x4 and gravel boxes carries an OSRM driving time from the village; this one is unranked and may be outside the 30-minute radius."
+  },
+  {
+   "item": "No drive time from camp established for La Luz Canyon Road to Calico Peak — the desert-to-alpine climb (the one you did)",
+   "why": "No per-route page publishes a trailhead coordinate for it, so it could not be routed. Everything else in the 4x4 and gravel boxes carries an OSRM driving time from the village; this one is unranked and may be outside the 30-minute radius."
   }
  ],
  "aug_calls": [

@@ -151,7 +151,8 @@ def shape(db):
                 'label': r.get('label') or r.get('listing_type') or 'route listing',
                 'rig': 'truck', 'distance': r.get('distance'),
                 'difficulty': r.get('difficulty'),
-                'note': joined(r.get('vehicle_class'), r.get('note'), r.get('season'))}
+                'note': joined(r.get('elevation'), r.get('vehicle_class'), r.get('note'),
+                               r.get('season'))}
                for r in db.get('offroad') or []]
 
     # The gravel rides get their OWN box. The dog rides in a carrier, so this is

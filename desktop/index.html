@@ -701,6 +701,35 @@ svg.leaflet-image-layer.leaflet-interactive path {
     .pw-verdict{background:#f4f4f4 !important;border-left-color:#666 !important;}
     @page{margin:14mm;}
   }
+
+/* big-map modal start — hand-maintained, not generated */
+/* CARTO's dark basemap averaged 11.9 brightness and the whole dark theme was
+   built around it. It now serves every tile stamped API KEY REQUIRED. Esri's
+   Dark Gray Base is the darkest keyless replacement at 71.7, which reads as a
+   light map on this page — so it is dimmed here to land near 43, close to where
+   CARTO sat. Roads and labels dim with it, so contrast against the ground is
+   unchanged. */
+.leaflet-tile{filter:brightness(.6) contrast(1.06);}
+.minimap-wrap{position:relative;}
+.mm-expand{position:absolute;top:8px;right:8px;z-index:600;cursor:pointer;
+  background:var(--panel);color:var(--text);border:1px solid var(--border);
+  border-radius:7px;padding:5px 9px;font:inherit;font-size:.74rem;line-height:1;
+  box-shadow:0 1px 6px rgba(0,0,0,.45);}
+.mm-expand:hover{background:var(--panel2);}
+.mapmodal{position:fixed;inset:0;z-index:4000;background:rgba(0,0,0,.82);
+  display:flex;align-items:center;justify-content:center;padding:24px;}
+.mapmodal-inner{width:min(1400px,96vw);height:min(900px,90vh);background:var(--panel);
+  border:1px solid var(--border);border-radius:14px;overflow:hidden;
+  display:flex;flex-direction:column;}
+.mapmodal-head{display:flex;align-items:center;gap:12px;padding:11px 14px;
+  border-bottom:1px solid var(--border);}
+.mapmodal-head b{font-size:.95rem;}
+.mapmodal-head .sub{color:var(--muted);font-size:.78rem;}
+.mapmodal-close{margin-left:auto;cursor:pointer;background:var(--panel2);
+  color:var(--text);border:1px solid var(--border);border-radius:7px;
+  padding:5px 11px;font:inherit;font-size:.8rem;}
+.mapmodal-map{flex:1;min-height:0;}
+/* big-map modal end */
 </style>
 <script>/* leaflet inlined by build_vendor.py */
 /* @preserve
@@ -2465,8 +2494,8 @@ buildMonthBar();
 
 // ---- Map ----
 const map = L.map('map', {scrollWheelZoom:false}).setView([55,-125], 3);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-  attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:12
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{
+  attribution:'Tiles &copy; Esri — Esri, HERE, Garmin, &copy; OpenStreetMap contributors', maxZoom:12
 }).addTo(map);
 
 // Route markers + polyline live in their own layer group so they can be
@@ -4888,7 +4917,81 @@ function later(fn, fallback){
   catch(e){ return fallback; }
 }
 const extStops = () => later(() => EXT_DATA.STOPS, []);
-const allStops = () => STOPS.concat(extStops());
+
+/* big-map modal js start — hand-maintained, not generated */
+// The card minimap is ~230px tall, which is fine for "roughly where" and no use
+// for reading a trailhead against a road. This opens the same data full-size.
+// Every trip gets it: the stop is looked up through allStops(), which now
+// includes the one-stop trip.
+let BIGMAP = null;
+function closeBigMap(){
+  if(!BIGMAP) return;
+  try { BIGMAP.map.remove(); } catch(e) { /* already gone */ }
+  BIGMAP.el.remove();
+  BIGMAP = null;
+  document.removeEventListener('keydown', bigMapKey);
+}
+function bigMapKey(e){ if(e.key === 'Escape') closeBigMap(); }
+function openBigMap(id){
+  closeBigMap();
+  const s = allStops().find(x => x.id === id);
+  if(!s) return;
+  const legColor = (typeof LEG_COLORS !== 'undefined' && LEG_COLORS[s.leg])
+    || (typeof EXT_LEG_COLORS !== 'undefined' && EXT_LEG_COLORS[s.leg]) || '#5fb4d6';
+  const pins = s.poi || [];
+  const el = document.createElement('div');
+  el.className = 'mapmodal';
+  el.innerHTML = `<div class="mapmodal-inner">
+      <div class="mapmodal-head">
+        <b>${s.name}</b>
+        <span class="sub">${pins.length} pin${pins.length===1?'':'s'} — click a marker for its name</span>
+        <button class="mapmodal-close" onclick="closeBigMap()">Close &times;</button>
+      </div>
+      <div class="mapmodal-map" id="bigmap"></div>
+    </div>`;
+  // Click the backdrop to dismiss, but not a click inside the panel.
+  el.addEventListener('click', e => { if(e.target === el) closeBigMap(); });
+  document.body.appendChild(el);
+  document.addEventListener('keydown', bigMapKey);
+
+  const map = L.map('bigmap', {scrollWheelZoom:true}).setView([s.lat, s.lng], 12);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+    {attribution:'Tiles &copy; Esri — Esri, HERE, Garmin, &copy; OpenStreetMap contributors', maxZoom:16}).addTo(map);
+  const ms = [ L.circleMarker([s.lat,s.lng],
+      {radius:9,color:'#fff',fillColor:legColor,fillOpacity:1,weight:2})
+      .addTo(map).bindTooltip(s.name, {permanent:true, direction:'right', offset:[8,0]}) ];
+  pins.forEach(p => {
+    if(p.lat == null || p.lng == null) return;
+    const c = POI_COLORS[p.type] || '#e8b04b';
+    ms.push(L.circleMarker([p.lat,p.lng], {radius:7,color:c,fillColor:c,fillOpacity:.9,weight:2})
+      .addTo(map)
+      .bindTooltip(p.name, {permanent:true, direction:'right', offset:[8,0], className:'mm-lab'})
+      .bindPopup(`<b>${p.name}</b><br><span style="text-transform:capitalize">${p.type}</span>`));
+  });
+  BIGMAP = {map, el};
+  // Same lesson as the card minimap, and one fixed delay is not enough: a modal
+  // that has just been appended can still measure 0x0, and a Leaflet map that
+  // reads 0x0 once keeps that size for good and loads no tiles at all. So retry
+  // until it actually has a size, then fit. Bounded, and it stops on success.
+  let tries = 0;
+  const fit = () => {
+    if(!BIGMAP || BIGMAP.map !== map) return;          // modal already closed
+    map.invalidateSize();
+    const sz = map.getSize();
+    if(sz.x === 0 || sz.y === 0){
+      if(++tries < 40) return setTimeout(fit, 50);      // ~2s of retries
+      return;
+    }
+    try {
+      const b = L.featureGroup(ms).getBounds();
+      if(b.isValid()) map.fitBounds(b, {padding:[40,40], maxZoom:14, animate:false});
+    } catch(e) { /* keep the opening view */ }
+  };
+  requestAnimationFrame(() => requestAnimationFrame(fit));
+}
+/* big-map modal js end */
+const allStops = () => STOPS.concat(extStops(),
+  (typeof CC_STOP !== 'undefined' && CC_STOP) ? [CC_STOP] : []);
 const allBookings = () => later(() => BOOKINGS, []);
 const allIssues = () => later(() => ISSUES, []).concat(later(() => EXT_ISSUES, []));
 
@@ -4913,7 +5016,7 @@ function initMiniMap(s){
     // Start already zoomed in — fit tightly to the stop + its highlights rather than a generic fixed zoom,
     // so close-together stops zoom in close and spread-out ones (e.g. a 100km detour) still show everything.
     const mm = L.map('minimap-'+s.id, {scrollWheelZoom:false, attributionControl:false}).setView([s.lat,s.lng], 12);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:14}).addTo(mm);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16}).addTo(mm);
 
     // Build the full marker list (base + POIs) before binding any tooltips —
     // once the view is finalized we compute each label's on-screen position
@@ -5051,6 +5154,7 @@ function renderCards(filter, srcList, wrapId){
           <div>
             <p class="sec-head sh-map"><span class="ic">🗺️</span>Local map — highlights &amp; trails near this stop</p>
             <div class="minimap-wrap">
+              <button class="mm-expand" onclick="openBigMap('${s.id}')" title="Open a full-size map">&#10530; Bigger map</button>
               <div class="minimap" id="minimap-${s.id}"></div>
               <div class="minimap-legend">
                 <span><span class="dot" style="background:${LEG_COLORS[s.leg]}"></span>this stop</span>
@@ -32410,7 +32514,7 @@ document.getElementById('extLegPanel').innerHTML = '<p class="subhead" style="ma
 
 // ---- Map ----
 const extMap = L.map('ext-map', {scrollWheelZoom:false}).setView([40,-90], 4);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:12}).addTo(extMap);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{attribution:'Tiles &copy; Esri — Esri, HERE, Garmin, &copy; OpenStreetMap contributors', maxZoom:12}).addTo(extMap);
 
 const extRouteLayerGroup = L.layerGroup();
 const extLatLngs = [];
@@ -32582,6 +32686,7 @@ function extRenderCards(){
           <div>
             <p class="sec-head sh-map"><span class="ic">🗺️</span>Local map — highlights &amp; trails near this stop</p>
             <div class="minimap-wrap">
+              <button class="mm-expand" onclick="openBigMap('${s.id}')" title="Open a full-size map">&#10530; Bigger map</button>
               <div class="minimap" id="minimap-${s.id}"></div>
               <div class="minimap-legend">
                 <span><span class="dot" style="background:${EXT_LEG_COLORS[s.leg]}"></span>this stop</span>

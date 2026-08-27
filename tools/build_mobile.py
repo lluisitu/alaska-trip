@@ -220,6 +220,9 @@ main{padding:0 12px 20px;}
 .sec.trail  .sec-t{background:rgba(95,180,214,.14);color:#5fb4d6;}
 .sec.off    .sec-t{background:rgba(217,119,87,.14);color:#e0906d;}
 .sec.cruise .sec-t{background:rgba(126,196,136,.14);color:#7ec488;}
+/* Esri Dark Gray Base is lighter than the CARTO layer it replaces; dim it
+   to sit on the dark phone build the same way. */
+.leaflet-tile{filter:brightness(.6) contrast(1.06);}
 .sec.holiday .sec-t{background:rgba(201,80,107,.15);color:#f0a8b6;}
 .sec.warn   .sec-t{background:rgba(217,119,87,.16);color:#e0906d;}
 .sec.audit  .sec-t{background:rgba(95,180,214,.12);color:#8ecbe6;}
@@ -677,7 +680,7 @@ function drawMap(){
   n.className=''; n.textContent='Tap a pin for the stop name and dates. Pinch to zoom.';
   if(!map){
     map = L.map('mMap',{scrollWheelZoom:false, attributionControl:false}).setView([55,-120],3);
-    const tl = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:12});
+    const tl = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:12});
     let tileErr=0, tileOk=false;
     tl.on('tileload', ()=>{ tileOk=true; });
     tl.on('tileerror', ()=>{ if(++tileErr>=4 && !tileOk)

@@ -176,6 +176,31 @@ shift several days. A change that crosses a hard anchor should fail loudly, not 
 - `build_routes.py` in the repo lags the version that was verified green. `build_vendor.py` no longer
   does — it was rewritten and verified against the pins.
 
+## The written-down method — read these before researching anything
+
+`CLAUDE.md` is the only file a session loads on its own, so these are listed
+here or they are never found:
+
+| | |
+|---|---|
+| `tools/STOP_SPEC.md` | **What a finished stop card contains.** Every box and what it must carry, the full gravel/bike-carrier sweep, and the rules that override everything. Written after a card shipped missing its shot list, hours, per-route 4x4 links and the entire gravel answer — all omitted from the *brief*, not fumbled by the research |
+| `tools/NEW_TRIP.md` | **How a new trip gets built** — the two files it is, the four hand-edits a rebuild will not reproduce, and the traps already paid for |
+| `tools/LINKS_STRATEGY.md` | How each link box gets filled, across 157 stops |
+| `tools/SHOTLIST_STRATEGY.md` | The same discipline for the 565 shots |
+
+Three standing decisions that change most answers and are not re-litigated:
+the coach **never leaves the campground** — every drive and trailhead is reached
+in the towed truck; the dog rides in a **bike carrier**, so "is there gravel
+here" means firm, flat and bike-legal, not mountain biking; and **easy and
+moderate lead**, with rating and review count read as one signal.
+
+LLuis subscribes to **onX Offroad, Trails Offroad and Komoot**. All three are
+first-class sources. Claude reads them logged-out, so paywalled figures stay
+recorded as unknown — and are worth asking him for, since he can see them.
+
+**Drive time from camp is the first filter**, and the default radius is 30
+minutes. A card is a curated list, not an inventory.
+
 ## Where the rest of the reasoning lives
 
 Every `tools/build_*.py` opens with a docstring explaining *why* it exists — roughly 24,000

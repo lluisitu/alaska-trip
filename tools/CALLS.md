@@ -84,9 +84,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-15 — Chitina, AK  `chitina`
 
-- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
-  <sub>authority</sub>
 - **907-822-5234** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
+  <sub>authority</sub>
+- **907-823-2242** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
 - **907-822-3217** — Elias National Park & Preserve (907-822-5234; Chitina Ranger Station 907-823-2242); BLM Glennallen Field Office (Liberty Falls, 907-822-3217)
   <sub>authority</sub>
@@ -100,11 +100,11 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2027-08-23 — Fairbanks, AK (Dalton Hwy / Arctic Circle base)  `fairbanks-2`
 
-- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+- **907-459-7307** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-474-2200** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
-- **907-459-7307** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
+- **907-451-2695** — Alaska State Parks, Northern Area Office, Chena River SRA (907-451-2695); BLM Eastern Interior Field Office, White Mountains NRA (907-474-2200); ADF&G Creamer's Field Migratory Waterfowl Refuge (Farmhouse Visitor Center 907-459-7307)
   <sub>authority</sub>
 - **907-451-2695** — Northern Area Office 907-451-2695.
   <sub>trails.2</sub>
@@ -296,9 +296,9 @@ guessed, which is the safe state. Making the call turns a blank into an answer.
 
 ## 2028-09-18 — Perth/Merrickville, ON  `perth-on`
 
-- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
-  <sub>offroad.0</sub>
 - **613-264-7329** — 239; road emergency 613-264-7329.
+  <sub>offroad.0</sub>
+- **613-259-2398** — Manager of Public Works 613-259-2398 ext.
   <sub>offroad.0</sub>
 
 ## 2028-09-23 — Lake Placid, NY  `lake-placid-ny`

@@ -58,14 +58,21 @@ Roughly **one good walk per night, capped around six.** Per trail:
 drives" index page is not a route link. This was flagged as top priority on the
 main trip and is the box most often left with a placeholder.
 
-**Which sites, in order.** LLuis uses **Trails Offroad** and **Komoot**. Search
-those first, by county as well as by name — Trails Offroad's coverage was once
-written off for a whole district and it had three Scout Routes there, filed
-under the neighbouring town. **He does not use onX.** Where onX is genuinely the
-only per-route page that exists, link it but *say so in the link text*, so the
-card never points him silently at a site he does not read. Where nothing exists
-anywhere, say that too, and record the MVUM as the only evidence the road is
-open. The link text names the source; the reasoning goes in the note.
+**Which sites.** LLuis subscribes to **onX Offroad**, **Trails Offroad** and
+**Komoot** — all three are first-class, and none needs apologising for in the
+link text. Search all of them, by county as well as by route name: Trails
+Offroad's coverage was once written off for a whole district when it had three
+Scout Routes there, filed under the neighbouring town. onX has by far the widest
+per-route coverage of this kind of country and is usually the only site with a
+page for a given forest road. Where nothing exists anywhere, say so, and record
+the MVUM as the only evidence the road is open. The link text names the source;
+the reasoning goes in the note.
+
+**A subscription does not make Claude able to read the paid content.** These
+sites are read as their public pages — logged-out. Anything behind a paywall
+(Trails Offroad's technical rating, mileage and season on free Scout Route
+listings, for instance) is still recorded as unknown, and the fact that LLuis
+can now see it himself is a reason to ask him, not to guess it.
 
 Trails Offroad's free **Scout Route** listings publish no difficulty, no
 mileage field and no season — those are behind the paywall. The star rating on
@@ -232,8 +239,7 @@ be written as the latter.
 - [ ] Every route carries a drive time from camp, and the box is sorted by it
 - [ ] Anything beyond 30 minutes is OFF the card, with a one-line held-back note
 - [ ] Offroad routes each carry their OWN listing link
-- [ ] Trails Offroad and Komoot searched by county, not just by route name
-- [ ] Any onX link labelled as the only source that exists
+- [ ] onX, Trails Offroad and Komoot all searched, by county as well as by name
 - [ ] Ruled-out gravel candidates listed with their reasons, not dropped
 - [ ] Vehicle class checked — is the truck actually allowed?
 - [ ] Scenic drives, `rig: truck`

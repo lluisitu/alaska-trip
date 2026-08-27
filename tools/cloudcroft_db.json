@@ -421,6 +421,31 @@
     "The two authorities disagree on length: Forest Service 3.2 miles, district guide 3.1.",
     "Lincoln NF publishes no dog rule for this trail, so the dog field is deliberately empty."
    ]
+  },
+  {
+   "name": "James Ridge — ridge-top road walking above Sixteen Springs Canyon",
+   "distance": "About 0.5 mi one way to the ridge top, on an unnumbered road between County Road C-9 (Sixteen Springs Road) and FR 5583. Longer if you keep going — the roads continue.",
+   "time": "19 min from camp / 11.1 mi (routed to the lookout)",
+   "difficulty": "Described as \"a steep little jaunt\". No authority grades it.",
+   "elevation_gain": null,
+   "reviews": null,
+   "uses": [
+    "hike"
+   ],
+   "dogs": null,
+   "cruise": false,
+   "cruise_reason": "Steep and short; the ridge roads themselves are the rideable part, not this pitch.",
+   "season": "No published season.",
+   "note": "THE ANSWER FOR THE WIMSATT / JAMES RIDGE BLOCK, and it is not what you would hope: the Forest Service lists NO designated trail anywhere in it. Not James Ridge, Deep Slough, North Orr, Orr, Turkey Pen, Beard, Bradford, Sullivan, Dry, Slough, Hyatt, Rawlins or Pumphouse Canyon — none of them has a trail entry. A trip report from someone who stayed in the Wimsatt development puts it plainly: \"There are no official trails in this part of the Lincoln National Forest, but many roads, some with number designations, some without, that could be used for hiking.\" So the walking here IS the road network — which suits a week where the truck is doing the driving, because you can park anywhere along it and walk on. The one destination worth aiming at is the James Ridge Lookout tower; the same report describes a half-mile steep walk up an unnumbered road off Sixteen Springs to dispersed camping on the ridge top with \"nice views off to the south\".",
+   "alltrails": {
+    "url": "https://southernnewmexicoexplorer.blogspot.com/2015/10/james-ridge-lincoln-national-forest.html"
+   },
+   "other_links": [],
+   "needs": [
+    "Community trip report, not an authority — the Forest Service publishes nothing for this block, so distance, grade and surface are one person's account from Oct 2015 and are not verified.",
+    "The connecting road is UNNUMBERED, so it cannot be checked on the MVUM in advance. Confirm on the ground, or ask the Sacramento Ranger District, 575-682-2551.",
+    "No dog rule published, so the dog field is deliberately empty."
+   ]
   }
  ],
  "dogs": {
@@ -1619,5 +1644,73 @@
     "detail": "Down US-82 in the morning for the same reason you came up it in one. Departing on the 29th clears the Labor Day weekend crush entirely."
    }
   ]
- }
+ },
+ "poi": [
+  {
+   "name": "Osha Trail (T10) trailhead",
+   "lat": 32.96771,
+   "lng": -105.74775,
+   "type": "trail"
+  },
+  {
+   "name": "Osha / Pines North + Pines Loop trailhead",
+   "lat": 32.96159,
+   "lng": -105.74554,
+   "type": "trail"
+  },
+  {
+   "name": "Cloud-Climbing Trestle Trail (T5001) trailhead",
+   "lat": 32.96366,
+   "lng": -105.74761,
+   "type": "trail"
+  },
+  {
+   "name": "Switchback + Old Cloudcroft Highway (T5004/T5002) trailhead",
+   "lat": 32.96441,
+   "lng": -105.74795,
+   "type": "trail"
+  },
+  {
+   "name": "Rim Trail (T105) north trailhead, Cloudcroft",
+   "lat": 32.94462,
+   "lng": -105.74341,
+   "type": "trail"
+  },
+  {
+   "name": "La Pasada Encantada (T233) — Sleepy Grass Campground",
+   "lat": 32.94192,
+   "lng": -105.73553,
+   "type": "trail"
+  },
+  {
+   "name": "Willie White Trail (T113) trailhead",
+   "lat": 32.82025,
+   "lng": -105.73533,
+   "type": "trail"
+  },
+  {
+   "name": "Sunspot Trail / Cathey Canyon + Rim Trail Loop trailhead",
+   "lat": 32.78778,
+   "lng": -105.82173,
+   "type": "trail"
+  },
+  {
+   "name": "James Ridge Lookout — ridge-top walking, 19 min east",
+   "lat": 32.96482,
+   "lng": -105.60526,
+   "type": "trail"
+  },
+  {
+   "name": "Trestle Recreation Area (day-use site)",
+   "lat": 32.957241,
+   "lng": -105.748959,
+   "type": "sight"
+  },
+  {
+   "name": "Mexican Canyon Trestle vista, US-82",
+   "lat": 32.9642532,
+   "lng": -105.7474681,
+   "type": "sight"
+  }
+ ]
 }

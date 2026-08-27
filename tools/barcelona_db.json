@@ -1,0 +1,2024 @@
+{
+ "_what": "Barcelona base, 26 Sep - 11 Oct 2026, 15 nights. Visiting family, so roughly half the days are family days and half are excursions. Researched to tools/STOP_SPEC.md, built to tools/NEW_TRIP.md. Dates are FIXED by flights and cannot move.",
+ "brief": {
+  "base": "Barcelona city (family). Rental car for the whole stay.",
+  "radius": "All of Catalonia - LLuis set this explicitly, overriding the 30-minute default in STOP_SPEC. Drive time is still recorded for every entry and the list is still sorted nearest-first, because it is what decides whether a day works, not whether it qualifies.",
+  "split": "About half family days, half excursions.",
+  "wants": [
+   "small towns he has not seen",
+   "beaches he has not seen",
+   "easy/moderate but exceptional hikes",
+   "cultural places",
+   "the best food on each excursion"
+  ],
+  "constraint_notes": [
+   "LLuis is from Barcelona. The famous set is assumed seen unless he says otherwise; he is cutting the candidate list himself rather than listing what he has done.",
+   "No motorhome, no towed truck, no dog and no cat on this trip. The Alaska rig rules, the 40 ft length rule and the bike-carrier gravel question do NOT apply and must not be inherited."
+  ],
+  "return_rule": "Most excursions must return to Barcelona the same day. One or two overnights out are allowed. LLuis set this explicitly - it is what demotes the far corners (Val d'Aran, Aiguestortes, Mont-rebei, Terra Alta, the Ebre delta) from day trips to the one-or-two overnight slots, or off the card entirely.",
+  "who": "LLuis plus his mother and family on the day trips. This is the single most important filter on this trip and it OVERRIDES the Alaska default of 'easy and moderate lead'. Every walk has to work for a mixed-age group: short, low gradient, firm underfoot, no exposure, no scrambling, and somewhere to sit and something to eat at the end. Where a longer or harder extension exists it is recorded as an OPTION for whoever wants it, never as the walk itself.",
+  "family_days": "Flexible - no fixed family commitments. The calendar can be built around the hard opening constraints (Saturday-only, Sunday-only, Monday closures) rather than round family dates.",
+  "food_register": "Best LOCAL cooking, not starred destination dining. What the town is actually good at, at a table a family can sit down at. Closing days matter more than accolades - a great restaurant shut on Monday is not a recommendation.",
+  "merce_sitges_method": "LLuis asked to use LAST YEAR as the reference for both, since neither 2026 programme is published yet: La Merce 2025 and the 58th Sitges Festival (2025). Model what to expect from those, and flag clearly that it is a pattern from last year, not a 2026 listing.",
+  "walk_limit": "About 4 km is comfortable for the group, mother included - LLuis's own figure. That is a real budget, not a ceiling to aim at: 4 km of flat, firm path is a different thing from 4 km of rough ground, so distance is chosen with the surface, not against it. It retires the earlier 'assume very short' assumption."
+ },
+ "flights": {
+  "out": {
+   "date": "2026-09-25",
+   "segments": [
+    "AUS 17:25 -> ORD 20:22 UA1990",
+    "ORD 21:40 -> BCN 13:15+1 UA769"
+   ],
+   "arrive_bcn": "2026-09-26T13:15",
+   "source": "United itinerary supplied by LLuis"
+  },
+  "home": {
+   "date": "2026-10-11",
+   "segments": [
+    "BCN 15:15 -> ORD 18:00 UA770",
+    "ORD 20:03 -> AUS 22:58 UA312"
+   ],
+   "source": "United itinerary supplied by LLuis"
+  },
+  "note": "Arrival day is a half day - on the ground 13:15, plus passport queue and the drive in. Departure day gives a morning only; BCN airport wants you there by about 12:30."
+ },
+ "stop": {
+  "id": "bcn",
+  "name": "Barcelona",
+  "arrive": "2026-09-26",
+  "depart": "2026-10-11",
+  "nights": 15,
+  "lat": 41.387,
+  "lng": 2.17,
+  "tz": "Europe/Madrid",
+  "blurb": "Fifteen nights based in Barcelona with family, and a rental car for the whole stay. Half the days belong to the family; the rest are day trips out into Catalonia, chosen for small towns and beaches LLuis has not already seen, walks that work for a mixed-age group, and the best local cooking rather than destination dining. The trip lands inside La Merce and ends inside the Sitges festival, neither of which was planned."
+ },
+ "events": [
+  {
+   "name": "La Merce 2026 - Barcelona's Festa Major",
+   "dates": "Wed 23 - Sun 27 September 2026",
+   "impact": "Lands on arrival. He is on the ground 26, 27 and 28 Sep, which is the closing weekend - the part with the piromusical, correfoc, castellers and the giants. No travel needed: it is happening where he is staying.",
+   "verified": "2026 programme is published",
+   "url": "https://www.barcelona.cat/lamerce/en",
+   "needs": [
+    "The per-district breakdown was still pending on the programme site"
+   ],
+   "CORRECTION": "I first recorded 23-28 Sep from a secondary source. The 2026 festival actually ENDS on Sunday 27. Monday 28 is not a Merce day at all.",
+   "main_day": "Thursday 24 September",
+   "what_lluis_gets": "He lands 13:15 on Saturday 26. That evening is the correfoc infantil in the afternoon and the Correfoc de la Merce after dark. Sunday 27 ends with the Piromusical at 22:00.",
+   "piromusical": "22:00 Sunday 27 September at BOGATELL BEACH - moved from Montjuic this year because the fairground is being renovated. Music chosen by a well-known Catalan band.",
+   "castellers": "Thursday 24 at midday - he misses these, he is still in the air.",
+   "scale": "109 concerts across 14 venues and 16 stages; about 500 activities in total.",
+   "districts": "First year it reaches all 10 districts - which is the answer to his 'not touristy' ask: the neighbourhood programme is real, not a token.",
+   "guest_city": "Shanghai, with articulated dragons at the Forum. New stage at Placa de les Glories."
+  },
+  {
+   "name": "XXX Concurs de Castells - Torredembarra preliminary session",
+   "dates": "Sun 27 Sep 2026, 10:00",
+   "where": "Placa del Castell, Torredembarra",
+   "impact": "12 colles, in a small coastal town square, on his second morning. 1h06 from Barcelona. This is the warm-up round of the biennial competition and is far less of a scrum than Tarragona.",
+   "verified": "concursdecastells.cat official site",
+   "url": "https://www.concursdecastells.cat/concurs-26-cdc",
+   "needs": [
+    "Whether the Torredembarra session is ticketed or free - the official page says nothing"
+   ]
+  },
+  {
+   "name": "XXX Concurs de Castells de Tarragona",
+   "dates": "Sat 3 Oct 16:30 and Sun 4 Oct 10:00, 2026",
+   "where": "Tarraco Arena Placa (TAP), Tarragona",
+   "impact": "The biggest castells event there is, held only in even years, and it falls inside his fortnight. 18 colles Saturday, the best 12 Sunday.",
+   "problem": "TICKETS ARE ALMOST CERTAINLY GONE. 2026 used a lottery: registration 14-16 July 2026, draw 20 July, winners bought from 24 July. Capacity is tiny - 2,119 seats for Saturday and 779 for Sunday. Today is 26 Aug 2026, so the normal route has closed.",
+   "verified": "concursdecastells.cat official site",
+   "url": "https://www.concursdecastells.cat/compra-d-entrades-cdc",
+   "needs": [
+    "Whether any returns/resale exist",
+    "Whether the giant screen on carrer Mallorca runs in 2026 - it is mentioned on an English visitor page that otherwise shows stale 2024 dates"
+   ]
+  },
+  {
+   "name": "Sitges Film Festival (59th)",
+   "dates": "8-18 Oct 2026",
+   "impact": "Overlaps his last four days. Sitges will be full and expensive; it is either the reason to go or the reason not to.",
+   "verified": "Confirmed 8-18 October 2026 on the festival site",
+   "url": "https://sitgesfilmfestival.com/en/",
+   "needs": [
+    "Confirm on the festival's own site"
+   ],
+   "status": "Programme is being released in stages. Announced so far: a strand of Spanish genre productions, a retrospective of fantastic classics, an Asian fantastic strand, and a 50th-anniversary tribute to CARRIE (De Palma).",
+   "still_missing": "Screening times and the ticket on-sale date.",
+   "for_lluis": "Of his window only 8, 9 and 10 October are possible - the 11th he flies. The Carrie anniversary is the most concrete thing to build an evening around so far."
+  }
+ ],
+ "season": {
+  "air": "Late Sep about 26C max / 17C min; early Oct about 23-24C max / 16C min.",
+  "sea": "About 24C in late September, about 22C in early October - swimming is genuinely still on for the whole fortnight.",
+  "source": "Weatherspark / holiday-weather / freetoursbyfoot summaries",
+  "food_season": [
+   "Calcots are NOT in season - that is roughly December to April. Do not plan a calcotada.",
+   "Verema (grape harvest) is finishing; wine country is at its most alive.",
+   "Bolets (wild mushrooms) start through October - this is the beginning of rovello season."
+  ],
+  "needs": [
+   "Confirm sea temperature against a Catalan source (Meteocat / Puertos del Estado) rather than tourist-site averages"
+  ]
+ },
+ "verified_hours": [
+  {
+   "name": "Ciutat iberica d'Ullastret (MAC)",
+   "when": "1 Oct - 31 May: Tue-Sun 10:00-18:00. Closed Mondays.",
+   "url": "https://patrimoni.gencat.cat/en/collection/iberian-city-ullastret"
+  },
+  {
+   "name": "Castell de Miravet",
+   "when": "1 Oct - 30 Apr: 10:00-17:30. Sundays and holidays 10:00-15:00. Ticket office closes 30 min before.",
+   "phone": "+34 977 407 368",
+   "url": "https://patrimoni.gencat.cat/en/monuments/monumentos/miravet-castle",
+   "needs": [
+    "Whether it is closed Mondays - the listing did not say"
+   ]
+  },
+  {
+   "name": "Pas de Barca de Miravet",
+   "when": "Daily 08:00-13:00 and 15:00-19:00 (until sunset in winter); Sundays and holidays from 09:00.",
+   "url": "https://www.turismemiravet.cat/horarismiravet/pasdebarca/"
+  },
+  {
+   "name": "Catedral del Vi - Celler Cooperatiu del Pinell de Brai",
+   "when": "Shop and visits Tue-Sun 10:00-19:00. Closed Mondays.",
+   "phone": "977 42 62 34",
+   "url": "https://catedraldelvi.com/"
+  },
+  {
+   "name": "Monestir de Sant Pere de Rodes",
+   "when": "1 Oct - 31 May: 10:00-17:30; Fri/Sat/Sun to 19:00. Closed non-holiday Mondays.",
+   "url": "https://www.elportdelaselva.cat/en/tourism/what-to-visit/sant-pere-de-rodes-monastery/"
+  },
+  {
+   "name": "Muntanya de Sal, Cardona",
+   "when": "Closed Mondays (except holidays). Tue-Fri 10:00-15:00; Sat-Sun 10:00-18:00, tours every 30 min, last tour 16:30.",
+   "url": "https://www.barcelonaturisme.com/wv3/en/page/2907/salt-mountain-cardona.html",
+   "needs": [
+    "Tour language times - weekday tours listed as 11:30 Catalan / 13:30 Spanish"
+   ]
+  },
+  {
+   "name": "Institut Pere Mata, Reus",
+   "when": "From 1 Oct: SATURDAYS ONLY, 16:00-18:00. Closed Sundays and public holidays. Guided tour only, booked through Reus tourist office.",
+   "url": "https://www.reus.cat/en/pere-mata-institute",
+   "note": "A hard constraint - in October this is a Saturday-afternoon-only building."
+  }
+ ],
+ "candidates": [
+  {
+   "name": "Colonia Guell",
+   "drive_min": 23,
+   "drive_mi": null,
+   "drive_km": 17,
+   "lat": 41.3624658,
+   "lng": 2.0279074,
+   "geocode_query": "Colonia Guell, Santa Coloma de Cervello, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Terrassa",
+   "drive_min": 30,
+   "drive_mi": null,
+   "drive_km": 28,
+   "lat": 41.5629623,
+   "lng": 2.0100492,
+   "geocode_query": "Terrassa, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Sant Sadurni d'Anoia",
+   "drive_min": 42,
+   "drive_mi": null,
+   "drive_km": 46,
+   "lat": 41.4244663,
+   "lng": 1.7863949,
+   "geocode_query": "Sant Sadurni d'Anoia, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Coll d'Estenalles",
+   "drive_min": 54,
+   "drive_mi": null,
+   "drive_km": 46,
+   "lat": 41.670496,
+   "lng": 1.994937,
+   "geocode_query": "Coll d'Estenalles, Mura, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Vic",
+   "drive_min": 65,
+   "drive_mi": null,
+   "drive_km": 70,
+   "lat": 41.9302021,
+   "lng": 2.2545943,
+   "geocode_query": "Vic, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Talamanca",
+   "drive_min": 66,
+   "drive_mi": null,
+   "drive_km": 71,
+   "lat": 41.7381785,
+   "lng": 1.9772537,
+   "geocode_query": "Talamanca, Bages, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Torredembarra",
+   "drive_min": 66,
+   "drive_mi": null,
+   "drive_km": 81,
+   "lat": 41.146155,
+   "lng": 1.3959508,
+   "geocode_query": "Torredembarra, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Mura",
+   "drive_min": 67,
+   "drive_mi": null,
+   "drive_km": 56,
+   "lat": 41.6998219,
+   "lng": 1.9764684,
+   "geocode_query": "Mura, Bages, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Tamarit",
+   "drive_min": 71,
+   "drive_mi": null,
+   "drive_km": 86,
+   "lat": 41.1306707,
+   "lng": 1.3602736,
+   "geocode_query": "Tamarit, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Girona",
+   "drive_min": 77,
+   "drive_mi": null,
+   "drive_km": 101,
+   "lat": 41.9793006,
+   "lng": 2.8199439,
+   "geocode_query": "Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Cardona",
+   "drive_min": 78,
+   "drive_mi": null,
+   "drive_km": 89,
+   "lat": 41.9142758,
+   "lng": 1.68133,
+   "geocode_query": "Cardona, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Tarragona",
+   "drive_min": 78,
+   "drive_mi": null,
+   "drive_km": 95,
+   "lat": 41.1172364,
+   "lng": 1.2546057,
+   "geocode_query": "Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Sant Feliu de Guixols",
+   "drive_min": 80,
+   "drive_mi": null,
+   "drive_km": 103,
+   "lat": 41.7838827,
+   "lng": 3.0283195,
+   "geocode_query": "Sant Feliu de Guixols, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Montfalco Murallat",
+   "drive_min": 82,
+   "drive_mi": null,
+   "drive_km": 96,
+   "lat": 41.6887884,
+   "lng": 1.339827,
+   "geocode_query": "Montfalco Murallat, Les Oluges, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Reus",
+   "drive_min": 84,
+   "drive_mi": null,
+   "drive_km": 106,
+   "lat": 41.1555564,
+   "lng": 1.1076133,
+   "geocode_query": "Reus, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Montblanc",
+   "drive_min": 86,
+   "drive_mi": null,
+   "drive_km": 114,
+   "lat": 41.3762309,
+   "lng": 1.1620703,
+   "geocode_query": "Montblanc, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Montseny (Santa Fe)",
+   "drive_min": 87,
+   "drive_mi": null,
+   "drive_km": 74,
+   "lat": 41.773035,
+   "lng": 2.4635068,
+   "geocode_query": "Santa Fe del Montseny, Fogars de Montclus, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Solsona",
+   "drive_min": 93,
+   "drive_mi": null,
+   "drive_km": 106,
+   "lat": 41.9945762,
+   "lng": 1.5184038,
+   "geocode_query": "Solsona, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Baga",
+   "drive_min": 94,
+   "drive_mi": null,
+   "drive_km": 122,
+   "lat": 42.2527659,
+   "lng": 1.8625903,
+   "geocode_query": "Baga, Bergueda, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Poblet",
+   "drive_min": 95,
+   "drive_mi": null,
+   "drive_km": 122,
+   "lat": 41.381231,
+   "lng": 1.0824256,
+   "geocode_query": "Monestir de Poblet, Vimbodi i Poblet, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Platja del Castell / Cala Estreta",
+   "drive_min": 98,
+   "drive_mi": null,
+   "drive_km": 119,
+   "lat": 41.8627327,
+   "lng": 3.1562156,
+   "geocode_query": "Platja de Castell, Palamos, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Madremanya",
+   "drive_min": 98,
+   "drive_mi": null,
+   "drive_km": 121,
+   "lat": 41.9900799,
+   "lng": 2.9568764,
+   "geocode_query": "Madremanya, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Besalu",
+   "drive_min": 99,
+   "drive_mi": null,
+   "drive_km": 131,
+   "lat": 42.1986443,
+   "lng": 2.6959559,
+   "geocode_query": "Besalu, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Guimera",
+   "drive_min": 101,
+   "drive_mi": null,
+   "drive_km": 114,
+   "lat": 41.5646664,
+   "lng": 1.1834968,
+   "geocode_query": "Guimera, Urgell, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Empuries / L'Escala",
+   "drive_min": 105,
+   "drive_mi": null,
+   "drive_km": 140,
+   "lat": 42.1331579,
+   "lng": 3.1182194,
+   "geocode_query": "Empuries, L'Escala, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "L'Ametlla de Mar",
+   "drive_min": 106,
+   "drive_mi": null,
+   "drive_km": 145,
+   "lat": 40.8838957,
+   "lng": 0.8024645,
+   "geocode_query": "L'Ametlla de Mar, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Ullastret",
+   "drive_min": 106,
+   "drive_mi": null,
+   "drive_km": 132,
+   "lat": 42.0008975,
+   "lng": 3.0689759,
+   "geocode_query": "Ullastret, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Ribes de Freser (Nuria)",
+   "drive_min": 106,
+   "drive_mi": null,
+   "drive_km": 119,
+   "lat": 42.3057283,
+   "lng": 2.167817,
+   "geocode_query": "Ribes de Freser, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Vallbona de les Monges",
+   "drive_min": 107,
+   "drive_mi": null,
+   "drive_km": 135,
+   "lat": 41.5249704,
+   "lng": 1.0890539,
+   "geocode_query": "Vallbona de les Monges, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Peratallada",
+   "drive_min": 108,
+   "drive_mi": null,
+   "drive_km": 135,
+   "lat": 41.9778141,
+   "lng": 3.0898815,
+   "geocode_query": "Peratallada, Forallac, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Rupit",
+   "drive_min": 110,
+   "drive_mi": null,
+   "drive_km": 106,
+   "lat": 42.024334,
+   "lng": 2.4653919,
+   "geocode_query": "Rupit i Pruit, Barcelona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Cala Montgo / Montgri",
+   "drive_min": 111,
+   "drive_mi": null,
+   "drive_km": 143,
+   "lat": 42.1116492,
+   "lng": 3.1615939,
+   "geocode_query": "Cala Montgo, L'Escala, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Sant Llorenc de la Muga",
+   "drive_min": 114,
+   "drive_mi": null,
+   "drive_km": 155,
+   "lat": 42.3199618,
+   "lng": 2.7888647,
+   "geocode_query": "Sant Llorenc de la Muga, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Santa Pau / Garrotxa",
+   "drive_min": 115,
+   "drive_mi": null,
+   "drive_km": 120,
+   "lat": 42.153847,
+   "lng": 2.5832151,
+   "geocode_query": "Santa Pau, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Gosol",
+   "drive_min": 115,
+   "drive_mi": null,
+   "drive_km": 141,
+   "lat": 42.2365129,
+   "lng": 1.6605511,
+   "geocode_query": "Gosol, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Prades",
+   "drive_min": 118,
+   "drive_mi": null,
+   "drive_km": 143,
+   "lat": 41.3096688,
+   "lng": 0.9873776,
+   "geocode_query": "Prades, Baix Camp, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Alquezar-like: Sant Llorenc de Morunys",
+   "drive_min": 120,
+   "drive_mi": null,
+   "drive_km": 129,
+   "lat": 42.1360783,
+   "lng": 1.5885869,
+   "geocode_query": "Sant Llorenc de Morunys, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "La Morera de Montsant",
+   "drive_min": 122,
+   "drive_mi": null,
+   "drive_km": 145,
+   "lat": 41.2592748,
+   "lng": 0.8290253,
+   "geocode_query": "La Morera de Montsant, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Siurana",
+   "drive_min": 123,
+   "drive_mi": null,
+   "drive_km": 144,
+   "lat": 41.2583112,
+   "lng": 0.9325259,
+   "geocode_query": "Siurana, Cornudella de Montsant, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "El Port de la Selva",
+   "drive_min": 127,
+   "drive_mi": null,
+   "drive_km": 166,
+   "lat": 42.3373159,
+   "lng": 3.2047232,
+   "geocode_query": "El Port de la Selva, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Miravet",
+   "drive_min": 128,
+   "drive_mi": null,
+   "drive_km": 161,
+   "lat": 41.0379498,
+   "lng": 0.5976192,
+   "geocode_query": "Miravet, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Tortosa",
+   "drive_min": 131,
+   "drive_mi": null,
+   "drive_km": 177,
+   "lat": 40.8110158,
+   "lng": 0.5209333,
+   "geocode_query": "Tortosa, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "El Pinell de Brai",
+   "drive_min": 142,
+   "drive_mi": null,
+   "drive_km": 178,
+   "lat": 41.0170682,
+   "lng": 0.5151803,
+   "geocode_query": "El Pinell de Brai, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Beget",
+   "drive_min": 143,
+   "drive_mi": null,
+   "drive_km": 147,
+   "lat": 42.3208761,
+   "lng": 2.4801501,
+   "geocode_query": "Beget, Camprodon, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Delta de l'Ebre (Riumar)",
+   "drive_min": 144,
+   "drive_mi": null,
+   "drive_km": 180,
+   "lat": 40.7266434,
+   "lng": 0.8368483,
+   "geocode_query": "Riumar, Deltebre, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Horta de Sant Joan",
+   "drive_min": 168,
+   "drive_mi": null,
+   "drive_km": 193,
+   "lat": 40.9554904,
+   "lng": 0.315402,
+   "geocode_query": "Horta de Sant Joan, Tarragona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Congost de Mont-rebei",
+   "drive_min": 205,
+   "drive_mi": null,
+   "drive_km": 189,
+   "lat": 42.0806267,
+   "lng": 0.6824183,
+   "geocode_query": "Congost de Mont-rebei, Sant Esteve de la Sarga, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Espot (Aiguestortes)",
+   "drive_min": 216,
+   "drive_mi": null,
+   "drive_km": 257,
+   "lat": 42.5762878,
+   "lng": 1.0884847,
+   "geocode_query": "Espot, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Vielha (Val d'Aran)",
+   "drive_min": 252,
+   "drive_mi": null,
+   "drive_km": 313,
+   "lat": 42.7017572,
+   "lng": 0.7954744,
+   "geocode_query": "Vielha, Lleida",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  },
+  {
+   "name": "Cala Futadera",
+   "drive_min": null,
+   "drive_mi": null,
+   "drive_km": null,
+   "lat": null,
+   "lng": null,
+   "geocode_query": "Cala Futadera, Tossa de Mar, Girona",
+   "status": "candidate — awaiting LLuis's seen/skip cut"
+  }
+ ],
+ "unknowns": [
+  "Whether the Torredembarra castells session on 27 Sep is ticketed.",
+  "Whether any route remains to Concurs de Castells tickets for 3-4 Oct.",
+  "Cala Futadera could not be geocoded, so it is untimed and unranked.",
+  "The La Mola summit restaurant: one source says the monastery has a restaurant, another says the hostal at La Mola closed permanently in early 2024. Unresolved - do not plan lunch there yet.",
+  "OSRM drive times are free-flow with no traffic. Getting out of Barcelona on a weekday morning is worse than these numbers; treat them as a floor.",
+  "Surface, not distance, is now the binding constraint on walks: about 4 km is fine, but how the group handles roots, loose stone and stream crossings is still unestablished."
+ ],
+ "calls": [
+  {
+   "who": "Concurs de Castells organisation",
+   "number": null,
+   "ask": "Any returns or resale for 3-4 Oct, and is the free giant screen on carrer Mallorca running in 2026?",
+   "needs": [
+    "No public phone number found on the official site"
+   ]
+  },
+  {
+   "who": "Castell de Miravet",
+   "number": "+34 977 407 368",
+   "ask": "Are you closed on Mondays in October?"
+  },
+  {
+   "who": "Reus tourist office",
+   "number": null,
+   "ask": "Book the Institut Pere Mata Saturday guided tour - which Saturdays in October, and in which language?"
+  },
+  {
+   "who": "La Rectoria de Sant Joan de Fabregues (Rupit)",
+   "number": "+34 622 02 70 73",
+   "ask": "Book a table - they serve Saturdays, Sundays and holidays only."
+  },
+  {
+   "who": "Monestir de Sant Llorenc del Munt (la Mola)",
+   "number": "937 435 454 / 629 503 040",
+   "ask": "Is the summit restaurant serving on a weekday in early October?"
+  },
+  {
+   "who": "Turisme de Camprodon",
+   "number": "972 74 00 10",
+   "ask": "How to arrange seeing the Majestat inside Sant Cristofol de Beget."
+  },
+  {
+   "who": "Oficina de Turisme de Montblanc",
+   "number": null,
+   "ask": "October hours for the walls/pas de ronda, Santa Maria and the Museu Comarcal.",
+   "needs": [
+    "No phone number sourced yet"
+   ]
+  }
+ ],
+ "shortlist": {
+  "_how": "LLuis marked all 34 candidates himself on the review page https://claude.ai/code/artifact/ed30888b-408a-43c3-88de-651e59a04d71 . These are his verdicts, not inferred ones. Where he left only a comment, the verdict is read from that comment and the original wording is kept alongside it.",
+  "decisions": {
+   "merce": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": "yes, find me unique activities more focused in neghboorhood than touristy ones"
+   },
+   "torredembarra": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "too crowded"
+   },
+   "concurs": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "too crowded"
+   },
+   "sitges": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": "yes, find me a great movie to watch and plan an afternoon dinner and movie or vi"
+   },
+   "colonia-guell": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "no"
+   },
+   "terrassa": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "no"
+   },
+   "penedes": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "show me more details"
+   },
+   "sant-llorenc": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "show me more details"
+   },
+   "vic": {
+    "verdict": "been",
+    "label": "OUT - already seen",
+    "lluis_note": "already done, but great reestaurant top of rupit on a chruch, still there?"
+   },
+   "girona": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": "yes, visit friends"
+   },
+   "cardona": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "no"
+   },
+   "sant-feliu-tossa": {
+    "verdict": "been",
+    "label": "OUT - already seen",
+    "lluis_note": ""
+   },
+   "segarra": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "reus": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "montblanc": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": "show me more info"
+   },
+   "montseny": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "solsona": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "castell-estreta": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "emporda-interior": {
+    "verdict": "been",
+    "label": "OUT - already seen",
+    "lluis_note": ""
+   },
+   "besalu": {
+    "verdict": "again",
+    "label": "IN - been before, happy to return",
+    "lluis_note": ""
+   },
+   "empuries": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "nuria": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "ametlla": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "garrotxa": {
+    "verdict": "been",
+    "label": "OUT - already seen",
+    "lluis_note": ""
+   },
+   "gosol": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": ""
+   },
+   "prades": {
+    "verdict": "been",
+    "label": "OUT - already seen",
+    "lluis_note": ""
+   },
+   "priorat": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "rodes": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "terra-alta": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "show me more info"
+   },
+   "delta": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "beget": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": "show me more info"
+   },
+   "montrebei": {
+    "verdict": "yes",
+    "label": "IN",
+    "lluis_note": "show me more info"
+   },
+   "espot": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   },
+   "aran": {
+    "verdict": "no",
+    "label": "OUT",
+    "lluis_note": ""
+   }
+  },
+  "summary": {
+   "again": [
+    "besalu"
+   ],
+   "been": [
+    "emporda-interior",
+    "garrotxa",
+    "prades",
+    "sant-feliu-tossa",
+    "vic"
+   ],
+   "no": [
+    "aran",
+    "beget",
+    "cardona",
+    "castell-estreta",
+    "colonia-guell",
+    "concurs",
+    "delta",
+    "espot",
+    "penedes",
+    "priorat",
+    "reus",
+    "rodes",
+    "sant-llorenc",
+    "solsona",
+    "terra-alta",
+    "terrassa",
+    "torredembarra"
+   ],
+   "yes": [
+    "ametlla",
+    "empuries",
+    "girona",
+    "gosol",
+    "merce",
+    "montblanc",
+    "montrebei",
+    "montseny",
+    "nuria",
+    "segarra",
+    "sitges"
+   ]
+  },
+  "_closed": "LLuis marked all six outstanding on 27 Aug 2026. The candidate list is now CLOSED: 12 destinations in, 22 out. No further cutting is expected - the work from here is depth, not selection.",
+  "final": {
+   "in": [
+    "ametlla",
+    "besalu",
+    "empuries",
+    "girona",
+    "gosol",
+    "merce",
+    "montblanc",
+    "montrebei",
+    "montseny",
+    "nuria",
+    "segarra",
+    "sitges"
+   ],
+   "overnight": "Mont-rebei is the only survivor beyond day-trip range, and LLuis allowed one or two nights out. Terra Alta and Beget - the other two overnight candidates - are both out, so Mont-rebei takes the single overnight slot uncontested.",
+   "shape": "12 destinations against roughly 7-8 excursion days in 15. That is slightly more than fits if each is a full day, so some will pair up (Montblanc with Poblet already does) and one or two may still fall out on the calendar rather than on merit."
+  }
+ },
+ "open_questions": [
+  {
+   "q": "A restaurant at the top of Rupit, next to a church - is it still open?",
+   "asked_by": "LLuis",
+   "status": "ANSWERED",
+   "why": "He has done Vic and the Collsacabra, but wants to know whether this place survived.",
+   "answer": "La Rectoria de Sant Joan de Fabregues. It shares its building with the 11th-century Romanesque church of Sant Joan de Fabregues, about 2.5 km from Rupit - a restored rectory, which is why he remembers it as being on a church. Still open.",
+   "catch": "Saturdays, Sundays and holidays only. Weekdays are groups-by-arrangement. Book ahead.",
+   "phone": "+34 622 02 70 73",
+   "url": "https://santjoandefabregues.com/en/restaurant",
+   "listed_by": "Ajuntament de Rupit i Pruit, https://www.rupitpruit.cat/turisme/on-menjar"
+  }
+ ],
+ "detail_round": {
+  "_what": "Research on the six LLuis marked 'show me more' before deciding.",
+  "penedes": {
+   "verema": "Festa de la Verema 2026: 21 experiences at 20 cellers, running 29-30 Aug through 26 SEPTEMBER, with some activities continuing on October weekends. He lands on the 26th, so he misses essentially all of the organised harvest festival - but the October weekend proposals are still live, and the harvest itself is still happening.",
+   "martinell": "The 'wine cathedrals' at Nulles and Rocafort de Queralt (Rocafort is Martinell, 1918). Same architect as the Pinell de Brai celler in the Terra Alta option.",
+   "urls": [
+    "https://www.penedesturisme.cat/en/penedes-harvest-fest",
+    "https://www.penedesturisme.cat/ca/ruta-del-vi/cellers"
+   ],
+   "needs": [
+    "Which specific October-weekend experiences are running, and whether they book out"
+   ]
+  },
+  "sant-llorenc": {
+   "la_mola_restaurant": "RESOLVED, mostly. The Diputacio de Barcelona parks site and mNACTEC both describe restaurant service in the old rooms of the monastery at the summit, alongside an information point and a room of period photographs. The claim that 'the hostal closed permanently in early 2024' came from a third-party hiking page and is not corroborated by either authority.",
+   "guided_visits": "Monastery guided visits Sundays at 11:00.",
+   "phone": "937 435 454 / 629 503 040",
+   "urls": [
+    "https://parcs.diba.cat/en/web/santllorenc/detall/-/contingut/215256/monestir-de-sant-llorenc-del-munt"
+   ],
+   "needs": [
+    "Phone to confirm the restaurant is serving on the actual date - two official pages describing a service is not the same as it being open that day"
+   ]
+  },
+  "montblanc": {
+   "walls": "About 1,500 m of 14th-century wall with 30 towers - the best-preserved in Catalonia. The pas de ronda is walkable.",
+   "also": "Santa Maria church (the 'cathedral of the mountain'), carrer dels Jueus, Placa Major, the old bridge, Museu Comarcal de la Conca de Barbera.",
+   "needs": [
+    "Opening hours for the walls, the church and the museum on his dates - not published in what was found; the Montblanc tourist office has them"
+   ]
+  },
+  "terra-alta": {
+   "horta": "Centre Picasso, 200+ works. Picasso stayed twice, 1898-99 and 1909; the Cubist landscapes came out of the second visit. Also the Ecomuseu dels Ports and the walk up Santa Barbara.",
+   "stay": [
+    {
+     "name": "Hotel Miralles",
+     "where": "Av. Generalitat 19-21, Horta de Sant Joan",
+     "phone": "977 43 55 55"
+    },
+    {
+     "name": "Hotel Les Capcades",
+     "where": "Horta de Sant Joan",
+     "note": "13 rooms with terraces"
+    }
+   ],
+   "timings": "Ferry 08:00-13:00 / 15:00-19:00. Miravet castle 10:00-17:30 from 1 Oct, 10:00-15:00 Sundays and holidays. Pinell de Brai Tue-Sun 10:00-19:00, closed Mondays.",
+   "needs": [
+    "Room availability for the specific night once he picks one"
+   ]
+  },
+  "beget": {
+   "access": "GIV-5223 off the C-38 between Camprodon and Mollo - 14 km of continuous curves. That is the reason it stayed remote, and the reason it is a slow drive at the end of a long one.",
+   "church": "Sant Cristofol - Lombard bell tower, and inside, the Majestat: a 2 m polychrome Christ in Majesty, one of the most valuable pieces of Catalan Romanesque.",
+   "access_to_majestat": "Visits confirmed through Camprodon tourism, 972 74 00 10 / turisme@camprodon.cat. It is NOT simply open - this is the whole reason to go, so it gets phoned.",
+   "also": "Two medieval bridges over the streams that form the head of the Llierca.",
+   "urls": [
+    "https://ripollesturisme.cat/en/romanic/beget/"
+   ]
+  },
+  "montrebei": {
+   "parking": "Reservation is MANDATORY all year, even on free-access days, and must be made at least 24 hours ahead. La Masieta (the main car park) runs 08:30-16:45 outside high season. Vehicles over 2.30 m high cannot enter - a rental car is fine.",
+   "alternative": "La Pertusa car park is free, open 24 h, and needs no reservation.",
+   "caution": "Non-refundable, one day, one vehicle. Poor phone coverage at the site - download the confirmation before leaving.",
+   "urls": [
+    "https://www.fundaciocatalunya-lapedrera.com/en/nature-spaces/congost-mont-rebei/book-parking"
+   ],
+   "needs": [
+    "Which of the two access sides he would use, since they are different walks"
+   ]
+  }
+ },
+ "research": {
+  "_status": "First pass on the ten LLuis confirmed. Walks chosen for a mixed-age family group, not for a fit solo walker. Incomplete - see research_gaps.",
+  "nuria": {
+   "how": "Drive to Ribes de Freser (1h46), then the rack railway. The train does all the climbing, which is exactly why this one suits the group.",
+   "fares": "Return: adult 14-64 EUR 33, over-65 EUR 28, child 4-13 EUR 21.50, under-4 free. The ticket includes the Coma del Clot cable car, the exhibitions and the basilica.",
+   "frequency": "PATTERN, NOT A 2026 FACT: after early September the service has run nine circulations on weekdays and fourteen at weekends and on holidays through to end October. A weekday visit therefore has materially fewer trains, and the last one down governs the day.",
+   "urls": [
+    "https://turistren.cat/en/trains/cremallera-de-nuria/"
+   ],
+   "needs": [
+    "FGC's published 2026 October calendar - exact first and last train. This decides the day and must not be guessed."
+   ]
+  },
+  "empuries": {
+   "hours": "1-14 October: 10:00-18:00, EVERY day. From 15 Oct it drops to 10:00-17:00, Tue-Sun. His whole window falls in the good half.",
+   "prices": "EUR 7 general; EUR 5 for over-65s and pensioners; under-16s free.",
+   "free_day": "Free entry the first Sunday of the month, October to June - that is Sunday 4 October 2026.",
+   "url": "https://www.mac.cat/ca/Visita-ns-Portada/Empuries-Portada-Seu/Planifica-la-visita-Empuries",
+   "walking": "The site is flat and laid out on the sand - it reads as a stroll rather than a hike, which suits the group.",
+   "food": [
+    {
+     "name": "Anxoves el Xillu",
+     "where": "L'Escala",
+     "why": "Anchovy specialist - the thing L'Escala is actually famous for",
+     "needs": [
+      "Opening days and hours"
+     ]
+    },
+    {
+     "name": "L'Esculapi",
+     "where": "Placa Major, Sant Marti d'Empuries",
+     "phone": "972 77 00 53",
+     "when": "Friday to Sunday 12:00-14:00 and 19:30-21:30",
+     "note": "Simple; on the square in the old village"
+    },
+    {
+     "name": "Meson del Conde",
+     "where": "Sant Marti d'Empuries",
+     "needs": [
+      "Hours, and whether it is worth it"
+     ]
+    }
+   ],
+   "needs": [
+    "A proper local lunch recommendation beyond the two found - the town has 90+ restaurants and the good local one has not been isolated yet"
+   ],
+   "worked_example": "https://claude.ai/code/artifact/06eaf131-2fe0-4397-8542-c19555620267",
+   "proposed_date": "Wed 30 September 2026 - chosen, not defaulted. The site closes at 20:00 until 30 Sep and 18:00 from 1 Oct. Sunset is 19:31 and golden hour 18:54-19:31, so the 30th is the last date in the fortnight when you can be inside the ruins while the light turns.",
+   "route": {
+    "min": 102,
+    "km": 139,
+    "roads": "C-31 > B-10 > C-33 > AP-7 (95 km) > GI-623 (10 km)",
+    "source": "OSRM, full geometry, 2,568 points"
+   },
+   "ap7": "Toll-free between Tarragona and La Jonquera since 1 Sep 2021, still is. Side effect: it became the Barcelona commuter corridor and the metropolitan stretch jams near-daily, which is why the routed 1h42 is a floor. In Aug 2026 the Generalitat opened a working group on reinstating the tolls - nothing decided, nothing that bites before these dates.",
+   "parking": "MAC-Empuries has NO car park of its own; surrounding lots are municipal or private. The municipal parking by the Hostal Empuries is normally free outside mid-Sep to July. Reserved reduced-mobility bays in front of the Visitor Reception Centre.",
+   "accessibility": "Greek city adapted along most of its length; a specific signposted accessible route into the Roman city, but parts of the Roman city have steps and awkward paving. Audio guides carry a magnetic loop, as do reception and the shop.",
+   "walk": {
+    "name": "Passeig d'Empuries",
+    "distance": "about 2.5 km one way",
+    "time": "about 50 minutes",
+    "surface": "Paved throughout, built 1992, pine-shaded, almost no elevation change",
+    "why": "Out-and-back, abandonable at any point - the right shape for a mixed-pace group. Well inside the 4 km budget.",
+    "held_back": "The cami de ronda continues to Cala Montgo but that is over 5 km from Sant Marti in a straight line. Too far for this group - Cala Montgo becomes a short drive."
+   },
+   "light_30sep": {
+    "sunrise": "07:44",
+    "sunset": "19:31",
+    "sunsetAz": 267,
+    "golden_evening": "18:54-19:31",
+    "dayLength": 11.8,
+    "moon": "waning gibbous, 83%",
+    "source": "this repo's build_light.py, for 42.1398 N 3.1177 E"
+   },
+   "food_final": [
+    {
+     "name": "Meson del Conde",
+     "where": "Placa Major 4, Sant Marti",
+     "phone": "972 77 03 06",
+     "since": 1965,
+     "when": "Closed Mondays. Tue-Thu and Sun 10:00-18:00, Fri-Sat to 23:00.",
+     "note": "On a Wednesday it is lunch or nothing. Arros de peus de porc i gambes, stuffed squid, grilled octopus with romesco.",
+     "url": "https://www.mesondelconde.com/en/"
+    },
+    {
+     "name": "L'Esculapi",
+     "where": "Placa Major, Sant Marti",
+     "phone": "972 77 00 53",
+     "when": "Friday to Sunday only, 12:00-14:00 and 19:30-21:30",
+     "note": "Rules it out on a Wednesday."
+    },
+    {
+     "name": "Anxoves el Xillu",
+     "where": "L'Escala",
+     "needs": [
+      "Opening days and hours - not published"
+     ]
+    }
+   ]
+  },
+  "montseny": {
+   "walks": [
+    {
+     "name": "Font del Frare, from the Can Casades information centre",
+     "distance": "1 km circular",
+     "time": "about 30 minutes",
+     "grade": "Adapted, purple-waymarked, suitable for a pram",
+     "why": "The one that works for everybody, including if walking is limited",
+     "verdict": "Keep as the wet-weather or tired-day fallback, not the default."
+    },
+    {
+     "name": "Volta al Panta de Santa Fe",
+     "distance": "2.7 km circular",
+     "grade": "Easy and flat, well waymarked, forest, wetland and wooden walkways",
+     "caution": "NOT pram-suitable - roots, stones, stream crossings and mud after rain",
+     "verdict": "IN RANGE at 2.7 km. The roots, stones and stream crossings are the real question now, not the distance."
+    }
+   ],
+   "base": "Can Casades information centre at Santa Fe - exhibition on the Montseny, sequoias in the garden, picnic area.",
+   "needs": [
+    "Can Casades opening hours in October",
+    "Somewhere to eat at Santa Fe or in Montseny village"
+   ]
+  },
+  "gosol": {
+   "picasso": "Centre Picasso, showing work from the Gosol period - he made over 300 pieces here. EUR 4.",
+   "HARD_CONSTRAINT": "The Gosol Picasso museum opens WEEKENDS AND HOLIDAYS ONLY. A weekday trip gets the village and the mountain but not the museum.",
+   "walks": [
+    {
+     "name": "The old village ruins above Gosol",
+     "grade": "Short but uphill on rough ground",
+     "what": "Abandoned houses up to a square with the cemetery and the remains of Santa Maria",
+     "verdict": "Now plausible - it is short, and the limit is the rough ground, not the length."
+    },
+    {
+     "name": "Gresolet viewpoint",
+     "time": "about 30 minutes, easy",
+     "what": "The north face of the Pedraforca, straight on"
+    },
+    {
+     "name": "The 2 km circular family route",
+     "grade": "Easy, circular"
+    }
+   ],
+   "needs": [
+    "Which of these the group can actually do, and a restaurant in Gosol or Saldes - the sources suggest a picnic, which is a real answer but needs checking against October weather"
+   ]
+  },
+  "segarra": {
+   "vallbona": {
+    "hours": "March-October: Tuesday to Saturday 10:30-13:30 and 16:30-18:30. Closed non-holiday Mondays.",
+    "guided": "Guided visits 10:30 / 12:30 / 16:00 in Catalan and 11:30 / 13:30 / 17:00 in Spanish, plus 18:00 in Catalan to 31 October. The visit is guided - you cannot simply wander.",
+    "phone": "973 330 266",
+    "url": "https://www.monestirvallbona.cat/",
+    "needs": [
+     "SUNDAY hours - the published table runs Tuesday to Saturday and says nothing about Sunday, which matters because a weekend trip is likelier"
+    ]
+   },
+   "needs": [
+    "Montfalco Murallat: whether the interior street is freely walkable and where to park",
+    "Somewhere to eat in the Segarra - nothing sourced yet"
+   ]
+  },
+  "ametlla": {
+   "cala_forn": "Small U-shaped cove between the Sant Jordi d'Alfama and Tres Cales developments. Access on foot is EASY - an asphalt path - and there is a car park. Showers and lifeguard in season.",
+   "path": "The GR-92 coastal path runs L'Ametlla to L'Ampolla via El Perello; wooden walkways drop to the coves. You can walk a stretch and come back inland.",
+   "why_it_fits": "Easy access matters here: this is the beach day that does not require anybody to scramble.",
+   "needs": [
+    "Whether the coves have any shade and facilities out of season",
+    "A rice or seafood restaurant in the port - not yet researched"
+   ]
+  },
+  "montblanc_poblet": {
+   "poblet_hours": "To 12 October it closes at 17:45. From 13 October winter hours: Mon-Sat 10:00-12:30 and 15:00-17:25. LLuis leaves on the 11th, so he is inside the better timetable throughout.",
+   "poblet_price": "EUR 10.50 general.",
+   "poblet_visit": "Self-guided through the official app 'Poblet, guia oficial'. HEADPHONES ARE COMPULSORY - worth knowing before four people turn up without any.",
+   "poblet_contact": "977 870 089 ext. 275 / visita@poblet.cat",
+   "montblanc": "Walls 1,500 m with 30 towers, pas de ronda walkable. Hours still unsourced.",
+   "urls": [
+    "https://www.poblet.cat/es/visita-turistica/"
+   ],
+   "needs": [
+    "Montblanc walls/museum October hours",
+    "A local restaurant in Montblanc or the Conca"
+   ]
+  },
+  "montrebei": {
+   "CORRECTION": "I described this to LLuis as 'arguably the most spectacular EASY walk in Catalonia'. That was wrong for this group and he marked it IN partly on my wording. Rutes Pirineus grades the classic route MEDIUM, not easy: 9.2 km, 3h10 walking, 150 m gain.",
+   "the_real_problem": "Not the distance - the exposure. The path carved into the gorge wall is between 0.6 m and 1.5 m wide, with a drop of 40-60 m to the river. There are handrails fixed to the rock but SOME SECTIONS HAVE NONE and others are deteriorating, and there is no barrier on the void side. Rutes Pirineus says explicitly it is not recommended for anyone with vertigo or mobility limitations.",
+   "the_short_option": {
+    "what": "La Masieta to the mouth of the gorge and back.",
+    "time": "About 30 minutes each way - roughly 4 km round trip, which is exactly LLuis's stated budget.",
+    "milestone": "The Sant Jaume hanging bridge is 15 minutes in.",
+    "catch": "You reach the gorge and look into it, then turn round before the carved path. The carved path IS the thing people come for, so this is seeing it rather than doing it. That may still be worth a 3h25 drive; it may not. LLuis's call, not mine."
+   },
+   "montfalco_side": "Worse for this group, not better: the Montfalco walkways are 16-17 km round trip with about 1,000 m of ascent and aerial staircases. Rule it out.",
+   "parking": "Booking mandatory year-round, at least 24 h ahead, non-refundable, one day one vehicle. La Masieta 08:30-16:45 off-season. No phone signal on site - download the pass first.",
+   "grade": "Medium. 510-635 m altitude.",
+   "urls": [
+    "https://www.rutespirineus.cat/rutes/congost-de-mont-rebei",
+    "https://www.fundaciocatalunya-lapedrera.com/en/nature-spaces/congost-mont-rebei/book-parking"
+   ],
+   "status": "FLAGGED TO LLUIS - awaiting his decision on the short option versus dropping it."
+  }
+ },
+ "research_gaps": [
+  "Nuria: the exact FGC October 2026 timetable.",
+  "Food: Segarra, Girona, Besalu, Gosol and L'Ametlla all still need a local restaurant with its closing day.",
+  "La Merce and Sitges: to be modelled on the 2025 editions, as LLuis asked. Not started.",
+  "Montblanc walls and museum October hours.",
+  "Whether the exposure at Mont-rebei begins before the gorge mouth or only inside it.",
+  "Whether the free municipal parking at Empuries holds in the last days of September - the wording was 'the rest of the year' against a mid-September boundary."
+ ],
+ "calendar_shape": {
+  "_insight": "A pattern is emerging that should drive the whole calendar rather than being discovered late: in October the good things are open at WEEKENDS and shut on MONDAYS.",
+  "weekend_only": [
+   "Gosol's Picasso museum (weekends and holidays)",
+   "Institut Pere Mata, Reus (Saturdays 16:00-18:00) - though Reus is currently ruled out",
+   "La Rectoria at Rupit (Saturdays, Sundays and holidays)",
+   "Nuria's rack railway runs 14 circulations at weekends against nine on weekdays"
+  ],
+  "closed_mondays": [
+   "Vallbona de les Monges",
+   "Ullastret",
+   "Sant Pere de Rodes",
+   "Cardona salt mountain",
+   "Pinell de Brai"
+  ],
+  "mondays_in_window": [
+   "Mon 28 Sep",
+   "Mon 5 Oct"
+  ],
+  "conclusion": "The two Mondays are family days by default. The weekends carry the trips that have a weekend-only element. Empuries is one of the few things open every day, so it can absorb a midweek slot."
+ },
+ "plan": {
+  "_why": "Built from the constraints outwards, not from preference. The two Mondays are family days because Catalonia shuts on Mondays. Empuries is pinned to 30 Sep by its own closing time. Gosol needs a weekend for the museum. Vallbona needs Tue-Sat. Everything else fills in around those four fixed points. Family days are flexible, so they absorb the slack.",
+  "excursion_days": 11,
+  "family_days": 3,
+  "days": [
+   {
+    "date": "2026-09-26",
+    "dow": "Sat",
+    "dest": "arrive",
+    "title": "La Mercè",
+    "why": "Land 13:15. Into town, drop bags, and walk into the festa. Nothing scheduled."
+   },
+   {
+    "date": "2026-09-27",
+    "dow": "Sun",
+    "dest": "merce",
+    "title": "La Mercè",
+    "why": "Full day of the Festa Major. No driving."
+   },
+   {
+    "date": "2026-09-28",
+    "dow": "Mon",
+    "dest": "family",
+    "title": "Family / Mercè tail",
+    "why": "MONDAY — monuments shut across Catalonia. Mercè's last day."
+   },
+   {
+    "date": "2026-09-29",
+    "dow": "Tue",
+    "dest": "montseny",
+    "title": "Montseny — Santa Fe",
+    "why": "Closest good walk; a gentle first outing after two days of festa."
+   },
+   {
+    "date": "2026-09-30",
+    "dow": "Wed",
+    "dest": "empuries",
+    "title": "Empúries + Sant Martí + Cala Montgó",
+    "why": "FIXED: last day the site closes at 20:00, so the only date you get golden hour inside the ruins."
+   },
+   {
+    "date": "2026-10-01",
+    "dow": "Thu",
+    "dest": "family",
+    "title": "Family",
+    "why": ""
+   },
+   {
+    "date": "2026-10-02",
+    "dow": "Fri",
+    "dest": "segarra",
+    "title": "Segarra: Montfalcó + Guimerà + Vallbona",
+    "why": "Friday — Vallbona opens Tue–Sat, so this must not slide to a Sunday."
+   },
+   {
+    "date": "2026-10-03",
+    "dow": "Sat",
+    "dest": "gosol",
+    "title": "Gósol and the Cadí",
+    "why": "SATURDAY — the Picasso museum opens weekends and holidays only."
+   },
+   {
+    "date": "2026-10-04",
+    "dow": "Sun",
+    "dest": "besalu",
+    "title": "Besalú",
+    "why": "The one you've seen but would return to. Sunday, and it needs nothing to be open."
+   },
+   {
+    "date": "2026-10-05",
+    "dow": "Mon",
+    "dest": "family",
+    "title": "Family",
+    "why": "MONDAY — closures again."
+   },
+   {
+    "date": "2026-10-06",
+    "dow": "Tue",
+    "dest": "nuria",
+    "title": "Vall de Núria",
+    "why": ""
+   },
+   {
+    "date": "2026-10-07",
+    "dow": "Wed",
+    "dest": "ametlla",
+    "title": "L'Ametlla de Mar — Cala Forn",
+    "why": "Beach day; sea still around 22°C."
+   },
+   {
+    "date": "2026-10-08",
+    "dow": "Thu",
+    "dest": "girona",
+    "title": "Girona — friends",
+    "why": "Social day, walking incidental."
+   },
+   {
+    "date": "2026-10-09",
+    "dow": "Fri",
+    "dest": "montblanc",
+    "title": "Montblanc + Poblet",
+    "why": "Poblet still on the 17:45 closing until 12 Oct."
+   },
+   {
+    "date": "2026-10-10",
+    "dow": "Sat",
+    "dest": "sitges",
+    "title": "Sitges — film and dinner",
+    "why": "Festival runs 8–18 Oct. Your last full day."
+   },
+   {
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "dest": "depart",
+    "title": "Fly home",
+    "why": "BCN by about 12:30 for the 15:15."
+   }
+  ],
+  "montrebei": "NOT PLACED. It needs two days and LLuis has not yet said whether he wants the short version, to drop it, or to walk it alone. If it goes in, it takes 8-9 Oct and Girona and Montblanc shift.",
+  "_superseded": "LLuis said he will not do all of them. The fixed 16-day itinerary is kept below for reference but is NOT the deliverable - what he asked for is a clear marking of which trips are tied to particular days and which can float. See day_constraints."
+ },
+ "light": {
+  "merce": {
+   "date": "2026-09-27",
+   "lat": 41.387,
+   "lng": 2.17,
+   "sunrise": "07:44",
+   "sunset": "19:41",
+   "dayLength": 11.9,
+   "goldenEvening": [
+    "19:04",
+    "19:41"
+   ],
+   "sunsetAz": 268,
+   "moonPhase": "full moon",
+   "moonFrac": 0.99
+  },
+  "montseny": {
+   "date": "2026-09-29",
+   "lat": 41.773,
+   "lng": 2.4635,
+   "sunrise": "07:45",
+   "sunset": "19:36",
+   "dayLength": 11.8,
+   "goldenEvening": [
+    "18:59",
+    "19:36"
+   ],
+   "sunsetAz": 267,
+   "moonPhase": "waning gibbous",
+   "moonFrac": 0.9
+  },
+  "empuries": {
+   "date": "2026-09-30",
+   "lat": 42.1398,
+   "lng": 3.1177,
+   "sunrise": "07:44",
+   "sunset": "19:31",
+   "dayLength": 11.8,
+   "goldenEvening": [
+    "18:54",
+    "19:31"
+   ],
+   "sunsetAz": 267,
+   "moonPhase": "waning gibbous",
+   "moonFrac": 0.83
+  },
+  "segarra": {
+   "date": "2026-10-02",
+   "lat": 41.6888,
+   "lng": 1.3398,
+   "sunrise": "07:53",
+   "sunset": "19:35",
+   "dayLength": 11.7,
+   "goldenEvening": [
+    "18:58",
+    "19:35"
+   ],
+   "sunsetAz": 266,
+   "moonPhase": "waning quarter",
+   "moonFrac": 0.62
+  },
+  "gosol": {
+   "date": "2026-10-03",
+   "lat": 42.2365,
+   "lng": 1.6606,
+   "sunrise": "07:53",
+   "sunset": "19:32",
+   "dayLength": 11.7,
+   "goldenEvening": [
+    "18:55",
+    "19:32"
+   ],
+   "sunsetAz": 265,
+   "moonPhase": "waning quarter",
+   "moonFrac": 0.51
+  },
+  "besalu": {
+   "date": "2026-10-04",
+   "lat": 42.1986,
+   "lng": 2.696,
+   "sunrise": "07:50",
+   "sunset": "19:26",
+   "dayLength": 11.6,
+   "goldenEvening": [
+    "18:49",
+    "19:26"
+   ],
+   "sunsetAz": 265,
+   "moonPhase": "waning quarter",
+   "moonFrac": 0.4
+  },
+  "nuria": {
+   "date": "2026-10-06",
+   "lat": 42.3972,
+   "lng": 2.1534,
+   "sunrise": "07:54",
+   "sunset": "19:25",
+   "dayLength": 11.5,
+   "goldenEvening": [
+    "18:47",
+    "19:25"
+   ],
+   "sunsetAz": 264,
+   "moonPhase": "waning crescent",
+   "moonFrac": 0.19
+  },
+  "ametlla": {
+   "date": "2026-10-07",
+   "lat": 40.8839,
+   "lng": 0.8025,
+   "sunrise": "08:00",
+   "sunset": "19:30",
+   "dayLength": 11.5,
+   "goldenEvening": [
+    "18:53",
+    "19:30"
+   ],
+   "sunsetAz": 263,
+   "moonPhase": "waning crescent",
+   "moonFrac": 0.11
+  },
+  "girona": {
+   "date": "2026-10-08",
+   "lat": 41.9793,
+   "lng": 2.8199,
+   "sunrise": "07:53",
+   "sunset": "19:19",
+   "dayLength": 11.4,
+   "goldenEvening": [
+    "18:42",
+    "19:19"
+   ],
+   "sunsetAz": 263,
+   "moonPhase": "waning crescent",
+   "moonFrac": 0.05
+  },
+  "montblanc": {
+   "date": "2026-10-09",
+   "lat": 41.3762,
+   "lng": 1.1621,
+   "sunrise": "08:01",
+   "sunset": "19:24",
+   "dayLength": 11.4,
+   "goldenEvening": [
+    "18:47",
+    "19:24"
+   ],
+   "sunsetAz": 262,
+   "moonPhase": "new moon",
+   "moonFrac": 0.02
+  },
+  "sitges": {
+   "date": "2026-10-10",
+   "lat": 41.2354,
+   "lng": 1.8114,
+   "sunrise": "07:59",
+   "sunset": "19:20",
+   "dayLength": 11.4,
+   "goldenEvening": [
+    "18:43",
+    "19:20"
+   ],
+   "sunsetAz": 262,
+   "moonPhase": "new moon",
+   "moonFrac": 0.0
+  }
+ },
+ "day_constraints": {
+  "mondays": {
+   "dates": [
+    "2026-09-28",
+    "2026-10-05"
+   ],
+   "what": "Catalonia largely shuts. Vallbona, Ullastret, Cardona, Pinell, Sant Pere de Rodes all close. Meson del Conde at Sant Marti closes too. Treat both as family days."
+  },
+  "fixed_to_a_date": [
+   {
+    "what": "La Merce",
+    "when": "Sat 26 and Sun 27 September only",
+    "why": "The festival ends on the 27th. Correfoc on the Saturday evening he lands; Piromusical 22:00 Sunday at Bogatell beach."
+   },
+   {
+    "what": "Empuries, if he wants golden light inside the ruins",
+    "when": "Wed 30 September",
+    "why": "Closes 20:00 to 30 Sep, 18:00 from 1 Oct; sunset 19:31. Any other day the gate shuts before the light turns. The site itself is open every day, so a plain visit can go anywhere.",
+    "bonus": "Sunday 4 October is free entry - first Sunday of the month, October to June."
+   },
+   {
+    "what": "Sitges",
+    "when": "Thu 8, Fri 9 or Sat 10 October",
+    "why": "Festival runs 8-18 Oct; he flies on the 11th."
+   }
+  ],
+  "fixed_to_a_weekday": [
+   {
+    "what": "Segarra - Vallbona monastery",
+    "when": "Tuesday to Saturday",
+    "why": "Closed non-holiday Mondays and the published table shows no Sunday. Visits are guided at fixed times, so arrival has to match one: 10:30, 12:30, 16:00 Catalan; 11:30, 13:30, 17:00 Spanish; 18:00 Catalan to 31 Oct."
+   },
+   {
+    "what": "Nuria",
+    "when": "A weekend is materially better",
+    "why": "Recent pattern is 14 circulations at weekends against 9 on weekdays. The last train down governs the day, so the thin weekday service is a real constraint."
+   },
+   {
+    "what": "Gosol - Centre Picasso",
+    "when": "UNKNOWN, probably weekends",
+    "why": "The museum publishes summer hours to 22 Sep and winter hours from November and says nothing about October. A secondary source said weekends and holidays only; the museum's own pages do not confirm it. 973 37 29 77."
+   }
+  ],
+  "any_day": [
+   {
+    "what": "Montblanc and Poblet",
+    "caveat": "Guided town tour daily at 11:00 - leave Barcelona by 09:00. Poblet closes 17:45 until 12 Oct, which covers the whole stay. Headphones compulsory at Poblet."
+   },
+   {
+    "what": "Besalu",
+    "caveat": "Hours for the mikve and monastery still to pin down."
+   },
+   {
+    "what": "Montseny",
+    "caveat": "Can Casades information centre only opens 10:00-15:00."
+   },
+   {
+    "what": "L'Ametlla de Mar",
+    "caveat": "Nothing to open. Sea about 22 C."
+   },
+   {
+    "what": "Girona",
+    "caveat": "Depends on his friends, not on opening hours."
+   },
+   {
+    "what": "Mont-rebei",
+    "caveat": "Parking must be booked at least 24 h ahead - so not spontaneous. Still awaiting his decision on whether it goes in at all."
+   }
+  ]
+ },
+ "destinations": [
+  {
+   "id": "merce",
+   "name": "La Merce - Barcelona's Festa Major",
+   "lat": 41.387,
+   "lng": 2.17,
+   "drive_min": 0,
+   "drive_km": 0,
+   "tier": "date",
+   "family": "all",
+   "family_why": "Flat, in town, and you dip in and out. But choose: the correfoc is fire and a dense crowd.",
+   "what": "Barcelona's Festa Major, 23-27 September 2026. LLuis lands 13:15 on the 26th, so he gets the last two days - the Correfoc de la Merce that same evening, and the Piromusical closing the festival at 22:00 on the 27th, on Bogatell beach this year rather than Montjuic. About 500 activities, 109 concerts over 14 venues and 16 stages; 2026 is the first year it reaches all ten districts, which is the answer to wanting the neighbourhood version rather than the postcard one.",
+   "walk": "City walking, flat, abandon at will.",
+   "food": null,
+   "when": "SATURDAY 26 AND SUNDAY 27 SEPTEMBER ONLY. The festival ends on the 27th - there is no Merce on Monday the 28th.",
+   "gaps": [
+    "The per-district programme was still pending when checked - that is the piece that actually answers 'not the touristy version'.",
+    "The castellers are Thursday 24 at midday. He is in the air. Lost."
+   ],
+   "links": [
+    {
+     "label": "La Merce 2026",
+     "url": "https://www.barcelona.cat/lamerce/en"
+    }
+   ]
+  },
+  {
+   "id": "montseny",
+   "name": "Montseny - Santa Fe",
+   "lat": 41.773035,
+   "lng": 2.4635068,
+   "drive_min": 87,
+   "drive_km": 74,
+   "tier": "free",
+   "family": "all",
+   "family_why": "Two walks and you choose on the day - one of them is pram-passable.",
+   "what": "Beech and silver fir above the Valles, and the gentlest first outing on the list. Base at the Can Casades information centre: exhibition, sequoias in the garden, picnic area of three tables and a fountain. Early October is the very start of the bolets.",
+   "walk": "Font del Frare: 1 km circular, about 30 minutes, purple waymarks, adapted, passable with a pram. Or the Volta al Panta de Santa Fe: 2.7 km, flat and well marked through forest, wetland and wooden walkways - but roots, loose stone and stream crossings, so the surface decides it, not the distance.",
+   "food": "Hostal Santa Fe - traditional Catalan and Montseny cooking. 93 847 50 11, book at weekends.",
+   "when": "Any day. Can Casades opens 10:00-15:00 only, so collect maps early. 938 475 113.",
+   "gaps": [],
+   "links": [
+    {
+     "label": "Can Casades (Diputacio parks)",
+     "url": "https://parcs.diba.cat/en/web/montseny/detall/-/contingut/155678/centre-d-informacio-can-casades"
+    }
+   ]
+  },
+  {
+   "id": "empuries",
+   "name": "Empuries, Sant Marti and Cala Montgo",
+   "lat": 42.1398,
+   "lng": 3.1177,
+   "drive_min": 102,
+   "drive_km": 139,
+   "tier": "date",
+   "family": "all",
+   "family_why": "Flat and laid out on the sand. The Greek city is adapted along most of its length; parts of the Roman city have steps and awkward paving, and that is the half to skip.",
+   "what": "A Greek harbour and a Roman city lying on the beach, a walled village of forty people with lunch on its square sixty metres from the gate, and a swim at Cala Montgo afterwards. EUR 7, EUR 5 for over-65s, under-16s free. No car park of its own, but the municipal parking is normally free at this time of year.",
+   "walk": "Passeig d'Empuries: about 2.5 km one way, paved throughout, built 1992, pine-shaded, almost no elevation change, abandonable anywhere. The cami de ronda continues to Cala Montgo but that is over 5 km - held back, and Cala Montgo becomes a five-minute drive instead.",
+   "food": "Meson del Conde, Placa Major 4, Sant Marti - on the square since 1965. 972 77 03 06. CLOSED MONDAYS, and on a weekday it stops at 18:00, so it is lunch not dinner.",
+   "when": "Open every day, so a plain visit goes anywhere. But it closes 20:00 to 30 SEPTEMBER and 18:00 from 1 October, and sunset is 19:31 - WEDNESDAY 30 SEPTEMBER is the only day left where you can be inside the ruins in golden light. Sunday 4 October is free entry instead.",
+   "gaps": [],
+   "links": [
+    {
+     "label": "MAC Empuries - hours and prices",
+     "url": "https://www.mac.cat/ca/Visita-ns-Portada/Empuries-Portada-Seu/Planifica-la-visita-Empuries"
+    },
+    {
+     "label": "Accessibility",
+     "url": "http://www.macempuries.cat/ca/Visita-ns/Accessibilitat"
+    }
+   ]
+  },
+  {
+   "id": "segarra",
+   "name": "Segarra: Montfalco Murallat, Guimera, Vallbona",
+   "lat": 41.6887884,
+   "lng": 1.339827,
+   "drive_min": 82,
+   "drive_km": 96,
+   "tier": "weekday",
+   "family": "care",
+   "family_why": "Montfalco is level once you are through the gate. GUIMERA IS THE PROBLEM - built on a steep hillside, its lanes stepped throughout. Vallbona is a flat guided visit.",
+   "what": "Dry, empty, upland Catalonia - the part of the country that never got rich and so never got rebuilt. Montfalco Murallat is a 13th-century walled village of fifteen houses with one gate, one circular street, the old cistern and the communal bread oven, still lived in.",
+   "walk": "Barely a walk. A lap of a village you could cross in ninety seconds, plus a path round the outside of the walls.",
+   "food": "Cister de Vallbona in Vallbona de les Monges - homemade, local produce. Also Sant Jordi in Guimera and Restaurant Montfalco in Les Oluges.",
+   "when": "TUESDAY TO SATURDAY. Vallbona closes non-holiday Mondays and publishes no Sunday hours, and the visit is GUIDED AT FIXED TIMES: 10:30, 12:30, 16:00 Catalan; 11:30, 13:30, 17:00 Spanish; plus 18:00 Catalan to 31 October. March-October 10:30-13:30 and 16:30-18:30. 973 330 266.",
+   "gaps": [
+    "None of the three restaurants publishes hours anywhere reachable.",
+    "Montfalco's car park is free, 15-20 cars - but the climb is an 800 m lane wide enough for one vehicle."
+   ],
+   "links": [
+    {
+     "label": "Monestir de Vallbona",
+     "url": "https://www.monestirvallbona.cat/"
+    },
+    {
+     "label": "Montfalco Murallat",
+     "url": "https://visit.somsegarra.cat/en/city/montfalco-murallat"
+    }
+   ]
+  },
+  {
+   "id": "gosol",
+   "name": "Gosol and the Cadi",
+   "lat": 42.2365129,
+   "lng": 1.6605511,
+   "drive_min": 115,
+   "drive_km": 141,
+   "tier": "weekday",
+   "family": "care",
+   "family_why": "The square and the Gresolet viewpoint are fine. The old village ruins are short but rough and uphill - that is the bit to leave out.",
+   "what": "Under the Pedraforca, in the village where Picasso spent the summer of 1906 and left with the beginnings of Cubism. The Centre Picasso holds the most representative collection of the 302 works from that period. EUR 6 / 5 / 3.",
+   "walk": "Gresolet viewpoint, about 30 minutes, easy, for the north face of the Pedraforca head on. Also a 2 km circular family route.",
+   "food": "Not sourced. Every source found recommends a picnic, which is a real answer in a village this size but wants checking against October weather.",
+   "when": "PROBABLY WEEKENDS - but nobody will say. The museum publishes summer hours (20 June-22 September) and winter hours (November-March) and is silent on October, which is exactly when he would go. 973 37 29 77, they answer on WhatsApp.",
+   "gaps": [
+    "October opening hours genuinely unpublished. An earlier 'weekends and holidays only' answer came from a secondary source and the museum's own pages do not confirm it.",
+    "No restaurant sourced in Gosol or Saldes."
+   ],
+   "links": [
+    {
+     "label": "Centre Picasso Gosol",
+     "url": "https://centrepicasso.art/"
+    }
+   ]
+  },
+  {
+   "id": "besalu",
+   "name": "Besalu",
+   "lat": 42.1986443,
+   "lng": 2.6959559,
+   "drive_min": 99,
+   "drive_km": 131,
+   "tier": "free",
+   "family": "care",
+   "family_why": "Street level and small. THE 36 STEPS DOWN INTO THE MIKVE are the only obstacle, and easy to sit out on the square.",
+   "what": "The one he has seen but would go back to. The 11th-century bridge is the postcard; the mikve - the Jewish ritual bath beside the old synagogue - is what most people miss, a subterranean Romanesque chamber reached by 36 steps down to the pool that took river water. Sant Pere was founded in 977.",
+   "walk": "Street level. The Anella Verda runs out through the market gardens if you want more.",
+   "food": "Pont Vell, beside the Romanesque bridge - Michelin-listed, family-run, local produce, and the view is the point. Can Quei in the old centre for plainer traditional cooking; also Curia Reial and El Jardi de Can Marc for rice and grilled meats.",
+   "when": "Any day - nothing here is time-critical.",
+   "gaps": [
+    "Opening hours for the mikve and the monastery not yet pinned to October."
+   ],
+   "links": []
+  },
+  {
+   "id": "nuria",
+   "name": "Vall de Nuria",
+   "lat": 42.3972,
+   "lng": 2.1534,
+   "drive_min": 106,
+   "drive_km": 119,
+   "tier": "weekday",
+   "family": "all",
+   "family_why": "THE MOST ACCESSIBLE GOOD DAY ON THE LIST. The train does all the climbing; the lake path has been improved for accessibility and there is a lift specifically to reach the cable car.",
+   "what": "Drive to Ribes de Freser and hand the mountain to a rack railway that has been climbing it since 1931. The valley at the top has no road into it at all, which is why it feels the way it does. 1,964 m, in October, with the larches going. Return fares EUR 33 adult, EUR 28 over-65, EUR 21.50 child 4-13, under-4s free - including the Coma del Clot cable car, the exhibitions and the basilica.",
+   "walk": "The Volta al Llac: flat, easy, free, under half an hour. Small wooden bridges, streams and fountains, and the 17th-century hermitage of Sant Gil.",
+   "food": "The sanctuary complex has its own places. Not researched - a captive site, which usually means adequate rather than good.",
+   "when": "A WEEKEND IS MATERIALLY BETTER. Recent pattern is fourteen circulations at weekends against nine on weekdays from early September to end October, and the last train down governs the day.",
+   "gaps": [
+    "FGC's actual 2026 October timetable could not be sourced, and it is the single thing that decides this day. Check it before fixing a date."
+   ],
+   "links": [
+    {
+     "label": "Cremallera de Nuria (FGC)",
+     "url": "https://turistren.cat/en/trains/cremallera-de-nuria/"
+    }
+   ]
+  },
+  {
+   "id": "ametlla",
+   "name": "L'Ametlla de Mar - Cala Forn",
+   "lat": 40.8838957,
+   "lng": 0.8024645,
+   "drive_min": 106,
+   "drive_km": 145,
+   "tier": "free",
+   "family": "all",
+   "family_why": "Access is an asphalt path with a car park at the end of it. Nobody has to scramble down anything - which is why this is the beach day rather than a prettier cove further north.",
+   "what": "The Costa Daurada nobody photographs. Cala Forn is a small U-shaped cove held between rocks, between the Sant Jordi d'Alfama and Tres Cales developments. Sea about 22 C - the last realistic swimming day of the trip.",
+   "walk": "From the cove the GR-92 runs south towards L'Ampolla with wooden walkways dropping into one cove after another. Walk as much or as little as you want and turn back.",
+   "food": "La Llotja on the port - chef Marc Miro, in the Michelin guide, and the rice is what everyone cites. BUT it runs EUR 60-100 a head, which is above the local register asked for. Either the one blowout, or find a port-front alternative.",
+   "when": "Any day. Nothing opens or shuts.",
+   "gaps": [
+    "No modest port-front alternative to La Llotja researched yet."
+   ],
+   "links": []
+  },
+  {
+   "id": "girona",
+   "name": "Girona - friends",
+   "lat": 41.9793006,
+   "lng": 2.8199439,
+   "drive_min": 77,
+   "drive_km": 101,
+   "tier": "free",
+   "family": "care",
+   "family_why": "Walking is incidental. The cathedral staircase and the wall circuit are the only climbs and both are optional.",
+   "what": "Not a sightseeing day. He is seeing friends, so this is a social day that happens to be in a beautiful place, and it has deliberately not been programmed.",
+   "walk": null,
+   "food": "Left to his friends, who will know better.",
+   "when": "Any day - depends on his friends, not on opening hours.",
+   "gaps": [],
+   "links": []
+  },
+  {
+   "id": "montblanc",
+   "name": "Montblanc and Poblet",
+   "lat": 41.3762309,
+   "lng": 1.1620703,
+   "drive_min": 86,
+   "drive_km": 114,
+   "tier": "free",
+   "family": "care",
+   "family_why": "The town is walkable and mostly level; the pas de ronda along the top of the ramparts is the optional hard part. Poblet's interior is largely flat.",
+   "what": "The best-preserved town walls in Catalonia - about 1,500 m of 14th-century curtain with 30 towers - and half an hour further on, the royal pantheon of the Crown of Aragon.",
+   "walk": "The pas de ronda round the top of the walls, if wanted. Otherwise level streets.",
+   "food": "Not sourced. The Conca de Barbera is good wine country and the tourist office keeps a list.",
+   "when": "Any day, but there is a GUIDED TOWN TOUR EVERY DAY AT 11:00, two hours, from the tourist office - Santa Maria, Sant Miquel, the old hospital of Santa Magdalena, the walls and the Sant Jordi gate. Leave Barcelona by 09:00. Poblet closes 17:45 until 12 October, which covers the whole stay; EUR 10.50, self-guided by app and HEADPHONES ARE COMPULSORY. Office 977 861 733, Mon-Fri 9-15, Sat 10-14 and 16-18.",
+   "gaps": [
+    "Montblanc walls and museum opening hours not published anywhere reachable.",
+    "No restaurant sourced."
+   ],
+   "links": [
+    {
+     "label": "Monestir de Poblet",
+     "url": "https://www.poblet.cat/es/visita-turistica/"
+    },
+    {
+     "label": "Montblanc Medieval",
+     "url": "https://www.montblancmedieval.cat/"
+    }
+   ]
+  },
+  {
+   "id": "sitges",
+   "name": "Sitges - a film and dinner",
+   "lat": 41.2354,
+   "lng": 1.8114,
+   "drive_min": 40,
+   "drive_km": 39,
+   "tier": "date",
+   "family": "all",
+   "family_why": "Flat seafront town. Busy during the festival - that is the only caution.",
+   "what": "The 59th Sitges festival runs 8-18 October. Announced so far: a strand of Spanish genre productions, a retrospective of fantastic classics, an Asian fantastic strand, and a 50th-anniversary tribute to CARRIE - which is the most concrete thing to build an evening around. Last year the main house was the Auditori at the Hotel Melia, 1,380 seats, with the Tramuntana room, Cinema Casino Prado, l'Escorxador, the Miramar centre and the Mercat Vell for the family programme.",
+   "walk": "Seafront and old town, flat throughout.",
+   "food": "To be chosen with the film, once there is a film.",
+   "when": "THURSDAY 8, FRIDAY 9 OR SATURDAY 10 OCTOBER. The festival runs to the 18th but he flies on the 11th. Saturday is the busiest; Friday is probably the civilised one.",
+   "gaps": [
+    "Screening times and the ticket on-sale date are not published, so the film cannot be chosen yet. This is the outstanding ask."
+   ],
+   "links": [
+    {
+     "label": "Sitges Film Festival",
+     "url": "https://sitgesfilmfestival.com/en"
+    }
+   ]
+  },
+  {
+   "id": "montrebei",
+   "name": "Congost de Mont-rebei",
+   "lat": 42.0806,
+   "lng": 0.6824,
+   "drive_min": 205,
+   "drive_km": 189,
+   "tier": "free",
+   "family": "no",
+   "family_why": "NOT FOR THE GROUP. Graded medium, not easy: 9.2 km, 3h10, with a path 0.6-1.5 m wide above a 40-60 m drop, handrails missing in places and no barrier over the void. Explicitly not recommended for vertigo or limited mobility.",
+   "what": "A walkway cut into a vertical limestone gorge above turquoise water, and the furthest thing on the list. Still awaiting a decision on whether it goes in at all.",
+   "walk": "The short option is La Masieta to the mouth of the gorge and back - about 30 minutes each way, roughly 4 km, exactly the stated budget. But you turn round before the carved path, which is the reason people come. Seeing it rather than doing it.",
+   "food": null,
+   "when": "Any day, but PARKING MUST BE BOOKED AT LEAST 24 HOURS AHEAD, all year, non-refundable, one day one vehicle. La Masieta runs 08:30-16:45 off-season and there is no phone signal on site, so download the pass first.",
+   "gaps": [
+    "Awaiting LLuis's decision: short version, drop it, or he walks it alone.",
+    "Whether the exposure begins before the gorge mouth or only inside it."
+   ],
+   "links": [
+    {
+     "label": "Book the parking",
+     "url": "https://www.fundaciocatalunya-lapedrera.com/en/nature-spaces/congost-mont-rebei/book-parking"
+    }
+   ]
+  }
+ ],
+ "light_stop": {
+  "date": "2026-10-03",
+  "declination": -4.08,
+  "tz": "Europe/Madrid",
+  "sunrise": "07:50",
+  "sunset": "19:30",
+  "sunriseAz": 95,
+  "sunsetAz": 265,
+  "sunriseDir": "E",
+  "sunsetDir": "W",
+  "dayLength": 11.7,
+  "goldenMorning": [
+   "07:50",
+   "08:27"
+  ],
+  "goldenEvening": [
+   "18:54",
+   "19:30"
+  ],
+  "goldenMinutes": 37,
+  "darkness": "partial",
+  "darkStart": "21:02",
+  "darkEnd": "06:18",
+  "darkHours": 9.3,
+  "darkNote": "Astronomical dark 21:02 to 06:18 — 9.3 hours.",
+  "moonFrac": 0.51,
+  "moonPhase": "waning quarter",
+  "darkestNight": "2026-10-10",
+  "darkestFrac": 0.0,
+  "aurora": {
+   "geomagLat": 43.2,
+   "band": "no",
+   "bandNote": "too far south to be worth planning around",
+   "verdict": "none",
+   "nights": 15,
+   "usableNights": 15,
+   "primeNights": 6,
+   "maxDarkHours": 10.7,
+   "best": [
+    {
+     "date": "2026-10-10",
+     "darkHours": 10.7,
+     "moon": 0.0
+    },
+    {
+     "date": "2026-10-09",
+     "darkHours": 10.6,
+     "moon": 0.02
+    },
+    {
+     "date": "2026-10-08",
+     "darkHours": 10.6,
+     "moon": 0.05
+    },
+    {
+     "date": "2026-10-07",
+     "darkHours": 10.5,
+     "moon": 0.11
+    }
+   ]
+  }
+ },
+ "shots": [
+  {
+   "title": "The piromusical off Bogatell",
+   "subject": "La Merce's closing fireworks, 22:00 Sunday 27 September. Moved to the beach this year from Montjuic, which means for the first time they go up over water.",
+   "vantage": "The beach itself, north of the crowd, far enough back to get the reflection in the wet sand. Arrive early - this is the single biggest gathering of the fortnight.",
+   "light": "Full dark. Moon 99% and rising, so the sky will not be black - expect a bright, milky background rather than a clean one.",
+   "craft": "Tripod, ISO 100, f/11, 2-4 second exposures on bulb. The mistake is zooming in: leave the skyline in or it is just sparks."
+  },
+  {
+   "title": "The Greek mole at Empuries, 19:00",
+   "subject": "The harbour wall running into the water on the seaward edge of the Greek city - the reason the city is where it is.",
+   "vantage": "Low, on the sand at the site's edge, shooting west-north-west.",
+   "light": "30 September, sunset 19:31 at azimuth 267. Golden hour 18:54-19:31, and the site does not close until 20:00 - the only day in the fortnight both are true.",
+   "craft": "Wide, 20-24 mm, f/8, and get the camera down near the stone so the wet surface catches it."
+  },
+  {
+   "title": "Montfalco Murallat from outside the wall",
+   "subject": "Fifteen houses, one gate, one circular street, and a 13th-century wall still holding it all in. From outside it reads as a single building.",
+   "vantage": "The path that runs right round the outside of the walls. Walk to the far side so the village is between you and the light.",
+   "light": "2 October, sunset 19:35. Late afternoon - the stone is the whole subject and it needs raking light, not overhead.",
+   "craft": "85-135 mm to compress the wall into a single mass. Wide makes it look small, which is the opposite of the point."
+  },
+  {
+   "title": "The Pedraforca from Gresolet",
+   "subject": "The north face head on - the mountain that made Gosol worth Picasso's summer.",
+   "vantage": "The Gresolet viewpoint, about 30 minutes' easy walk. The one place the north face is not foreshortened.",
+   "light": "3 October, sunset 19:32, moon at 51%. A north face is in shadow most of the day; early morning or the last hour is when it has any modelling at all.",
+   "craft": "50-85 mm. Include some of the beech in the foreground or the scale disappears."
+  },
+  {
+   "title": "Sant Gil and the lake, Nuria",
+   "subject": "The 17th-century hermitage on the Volta al Llac, with the cirque behind it.",
+   "vantage": "The far side of the lake on the flat circuit - about fifteen minutes round, and the reflection is the shot.",
+   "light": "6 October, sunset 19:25 but the valley walls take the sun long before that. Moon only 19% - a genuinely dark sky if you stay, though the last train governs that.",
+   "craft": "35-50 mm, f/8. Wind kills the reflection, so shoot it early if the water is still."
+  }
+ ]
+}

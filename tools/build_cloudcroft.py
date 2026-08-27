@@ -251,12 +251,10 @@ def shape(db):
                      'the hard part of the drive.'},
             {'name': 'Mayhill, NM', 'distance': '~25 min / 18 mi east on US-82',
              'note': 'The gentle approach from Artesia comes through here, and Camp Rio is on it.'}],
-        'poi': [{'name': 'Mexican Canyon Trestle vista', 'lat': 32.9642532, 'lng': -105.7474681,
-                 'type': 'sight'},
-                {'name': 'Trestle Recreation Area', 'lat': 32.957241, 'lng': -105.748959,
-                 'type': 'trail'},
-                {'name': 'White Sands National Park', 'lat': 32.809869, 'lng': -106.264225,
-                 'type': 'sight'}],
+        # Walking trailheads and sights, from the db. The 4x4 and gravel routes
+        # are deliberately NOT pinned: the truck is doing those, and the map is
+        # there to answer "where do I walk from".
+        'poi': db.get('poi') or [],
         'weather': {'flag': 'amber' if m.get('season') else 'green',
                     'reason': ('Peak monsoon. No day is safer than another — the mornings '
                                'are.') if m.get('season') else 'No known seasonal-access conflict.'},
@@ -398,8 +396,27 @@ RENDER_JS = r"""
     toggleCard(CC_DATA.stop.id);
     return true;
   };
+  // initMiniMap() measures its container 60ms after the card opens, and when
+  // the open is automatic that lands before the just-switched view has laid
+  // out — Leaflet then sizes the map to a 0x0 box and stays at its opening
+  // setView, with every trailhead pin off screen. A user click never hits this
+  // because the view is already painted. So re-measure and re-fit once the
+  // layout has settled.
+  var repairMap = function(){
+    var m = (typeof MINIMAPS !== 'undefined') && MINIMAPS[CC_DATA.stop.id];
+    if(!m || !m.map) return;
+    m.map.invalidateSize();
+    try {
+      var b = L.featureGroup(m.markers).getBounds();
+      if(b.isValid()) m.map.fitBounds(b, {padding:[26,26], maxZoom:12, animate:false});
+    } catch(e) { /* leave the map as initMiniMap left it */ }
+  };
   var watch = function(){ setTimeout(function(){
-    if(autoOpen()) document.removeEventListener('click', watch, true); }, 0); };
+    if(autoOpen()){
+      document.removeEventListener('click', watch, true);
+      setTimeout(repairMap, 250);
+      setTimeout(repairMap, 900);
+    } }, 0); };
   document.addEventListener('click', watch, true);
   if(document.readyState !== 'loading') setTimeout(window.renderCloudcroft, 0);
   else document.addEventListener('DOMContentLoaded', window.renderCloudcroft);

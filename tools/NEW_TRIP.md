@@ -47,7 +47,7 @@ it already solves the traps:
 - Blocks are spliced **by offset**, not by anchoring on `</section>` — that
   string is every section in the file.
 
-## 2. The four hand-edits that are NOT generated
+## 2. The hand-edits that are NOT generated
 
 Page structure. A rebuild will not reproduce them:
 
@@ -58,6 +58,36 @@ Page structure. A rebuild will not reproduce them:
 3. `desktop/index.html` — the `MODE_CLASS` map in `setTripMode`
 4. `tools/build_mobile.py` — the `TRIPS` table, **or the trip has no phone
    build at all**
+5. `tools/build_mobile.py` again — and this is NOT the same edit. The `TRIPS`
+   table only names keys; something has to *put those keys into `DATA`*. Add a
+   `grab('const <TRIP>_DATA =','{','}')` beside `CCDATA`, and the four `DATA`
+   entries next to the `cc*` ones. Barcelona was first built with a correct
+   `TRIPS` row pointing at keys nothing ever wrote — a phone build that loads
+   and shows an empty trip, which is the exact failure item 4 exists to
+   prevent, one level further down.
+6. `desktop/index.html` — `poiNumberForActivity()`. It resolves a stop through
+   `STOPS_BY_ID` and `EXT_DATA` only, so a trip whose stop lives in its own
+   const scores **zero pin badges** however well its lists match its map.
+   Cloudcroft had shipped that way (0 of 37) and nobody noticed; adding the arm
+   took it to 6 of 37, and Barcelona to 32 of 36. Use `later(() =>
+   <TRIP>_DATA.stop…)` — never a bare `typeof`, because the const is declared
+   further down the file and `typeof` on it throws.
+
+### Two things the shared renderer does that you must undo
+
+**The Offroad / 4x4 box is drawn whether or not you filled it**, and when the
+array is empty it still prints "Search for 4x4/off-road trails near here". On a
+trip with no 4x4 that is not an unanswered question — the question does not
+exist — and an empty box reads as *nobody checked*, which is the one thing a
+card must never say. The gravel box beside it is already guarded by
+`s.cruise && s.cruise.length`. **Do not simply guard the offroad one to match:**
+eleven Alaska stops have an empty offroad box on purpose and that browse link is
+the right research prompt for them. Strip it in your own trip's render block,
+with a `MutationObserver` — the card body is built when the card is *expanded*,
+not when it is rendered, so a one-shot strip runs before the box exists.
+
+**`.subhead` uppercases.** It is a heading class. A blurb of more than a dozen
+words put through it is a wall of capitals nobody reads. Short labels only.
 
 ## 3. Curate, then build
 

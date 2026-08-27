@@ -66,6 +66,9 @@ def kv(decl):
 # at page-load time, which is invisible from here — the tab existed on the
 # desktop and simply was not on the phone.
 CCDATA  = grab('const CC_DATA =','{','}') or {}
+# Same story for Barcelona: shaped once in build_barcelona.py and emitted as a
+# plain const so this build can see it.
+BCNDATA = grab('const BCN_DATA =','{','}') or {}
 RGEOM       = grab('const ROUTE_GEOM =','{','}')
 EXTRGEOM    = grab('const EXT_ROUTE_GEOM =','{','}')
 LEGALERT    = grab('const LEG_ALERTS =','{','}')
@@ -94,6 +97,10 @@ DATA = {
  'ccIssues': CCDATA.get('issues') or [],
  'ccLegNames': {'cloudcroft': CCDATA.get('legName', 'Cloudcroft, NM')},
  'ccLegColors': {'cloudcroft': CCDATA.get('legColor', '#7ec488')},
+ 'bcn': [BCNDATA['stop']] if BCNDATA.get('stop') else [],
+ 'bcnIssues': BCNDATA.get('issues') or [],
+ 'bcnLegNames': {'barcelona': BCNDATA.get('legName', 'Barcelona & Catalonia')},
+ 'bcnLegColors': {'barcelona': BCNDATA.get('legColor', '#d98a3c')},
 }
 print(f"stops={len(DATA['stops'])} ext={len(DATA['ext'])} issues={len(DATA['issues'])} extIssues={len(DATA['extIssues'])}")
 print(f"legColors={len(LEGC)} extLegColors={len(EXTLEGC)}")
@@ -102,6 +109,7 @@ print(f"routeGeom={len(RGEOM or {})} extRouteGeom={len(EXTRGEOM or {})} routed l
 print(f"passes={len(DATA['passes'])} legs with pass data \u00b7 legInfo={len(DATA['legInfo'])} driving days")
 print(f"petlog: {len(DATA['petlog'].get('cell_gaps',[]))} cell gaps, {len(DATA['petlog'].get('supplies',[]))} supply notes")
 print(f"cloudcroft: {len(DATA['cc'])} stop, {len(DATA['ccIssues'])} gaps")
+print(f"barcelona: {len(DATA['bcn'])} stop, {len(DATA['bcnIssues'])} gaps")
 
 BLOB = json.dumps(DATA, ensure_ascii=False, separators=(',',':'))
 
@@ -376,6 +384,14 @@ const TRIPS = {
                issues:'ccIssues',  alerts:null,           geom:null,
                title:'Cloudcroft, NM',
                sub:'40ft coach + towed 4x4 \u00b7 dog & cat \u00b7 Aug 22\u201329 \u00b7 dates fixed'},
+
+  // 4th of the four hand-edits NEW_TRIP.md lists. Without this entry the trip
+  // has no phone build at all — it exists on the desktop and silently not on
+  // the phone, which this repo has already shipped once.
+  barcelona:  {stops:'bcn',   names:'bcnLegNames', colors:'bcnLegColors',
+               issues:'bcnIssues', alerts:null,           geom:null,
+               title:'Barcelona & Catalonia',
+               sub:'rental car \u00b7 no rig, no pets \u00b7 Sep 26 \u2013 Oct 11, 2026'},
 };
 const T = () => TRIPS[trip] || TRIPS.bigloop;
 const pick = k => { const n = T()[k]; return n ? (D[n] || {}) : {}; };

@@ -378,6 +378,7 @@ RENDER_JS = r"""
       renderHighlights(window.CC_HIGHLIGHTS_BY_LEG, 'ccHighlightsWrap', 'ccHlFilterBar');
     if(typeof renderIssues === 'function')
       renderIssues(window.CC_ISSUES, 'ccIssuesWrap', 'cc');
+    startHealer();
   };
 
   // A one-stop trip opens its only card. Collapsed, All Stops is a single
@@ -411,12 +412,37 @@ RENDER_JS = r"""
       if(b.isValid()) m.map.fitBounds(b, {padding:[26,26], maxZoom:12, animate:false});
     } catch(e) { /* leave the map as initMiniMap left it */ }
   };
+  // Watch for the SYMPTOM, not for an event that might cause it.
+  //
+  // A Leaflet map built while its container is 0x0 keeps an internal size of
+  // {0,0} for good: it loads no tiles at all and paints a flat #ddd rectangle
+  // with only the zoom control on it. Fixing it is easy — invalidateSize() then
+  // re-fit — but knowing WHEN is not. Hooking the auto-open missed opening the
+  // card by hand, restoring it from the URL hash, and widening the window
+  // afterwards. A ResizeObserver on the container looked like the general
+  // answer and simply never fires for this element.
+  //
+  // So poll the condition itself: container has width, map thinks it has none.
+  // It stops the moment the map is healthy, and gives up after 30 seconds.
+  var healer = null;
+  var startHealer = function(){
+    if(healer) return;
+    var tries = 0;
+    healer = setInterval(function(){
+      if(++tries > 60){ clearInterval(healer); healer = null; return; }
+      var m = (typeof MINIMAPS !== 'undefined') && MINIMAPS[CC_DATA.stop.id];
+      var el = document.getElementById('minimap-' + CC_DATA.stop.id);
+      if(!m || !m.map || !el || !el.offsetWidth) return;   // nothing to judge yet
+      var sz = m.map.getSize();
+      if(sz.x === 0 || sz.y === 0){ repairMap(); return; }
+      clearInterval(healer); healer = null;                // healthy — done
+    }, 500);
+  };
+  // A window resize can leave the map stale too, so re-arm on it.
+  window.addEventListener('resize', function(){ startHealer(); });
+
   var watch = function(){ setTimeout(function(){
-    if(autoOpen()){
-      document.removeEventListener('click', watch, true);
-      setTimeout(repairMap, 250);
-      setTimeout(repairMap, 900);
-    } }, 0); };
+    if(autoOpen()) document.removeEventListener('click', watch, true); }, 0); };
   document.addEventListener('click', watch, true);
   if(document.readyState !== 'loading') setTimeout(window.renderCloudcroft, 0);
   else document.addEventListener('DOMContentLoaded', window.renderCloudcroft);
